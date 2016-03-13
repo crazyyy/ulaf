@@ -37,6 +37,8 @@ class Backup {
 
 	public function run() {
 
+		Path::get_instance()->cleanup();
+
 		if ( $this->type !== 'file' ) {
 			$this->backup_database();
 		}
@@ -44,6 +46,8 @@ class Backup {
 		if ( $this->type !== 'database' ) {
 			$this->backup_files();
 		}
+
+		Path::get_instance()->cleanup();
 
 	}
 
@@ -81,7 +85,7 @@ class Backup {
 		// Set the file backup engine settings
 		foreach( $file_backup_engines as &$backup_engine ) {
 			$backup_engine->set_backup_filename( $this->backup_filename );
-			$backup_engine->set_excludes( new Excludes( array( '*.zip', 'index.html', '.htaccess', '.*-running' ) ) );
+			$backup_engine->set_excludes( new Excludes( array( '*.zip', 'index.html', '.htaccess', '.*-running', '.files' ) ) );
 		}
 
 		// Zip up the database dump
@@ -176,6 +180,16 @@ class Backup {
 		// Ensure we don't store duplicate warnings by md5'ing the error as the key
 		$this->warnings[ $context ][ $_key = md5( implode( ':', (array) $warning ) ) ] = $warning;
 
+	}
+
+	/**
+	 * Back compat with old error mathod
+	 *
+	 * @deprecated 3.4 Backup->warning( $context, $warning )
+	 */
+	public function error( $context, $message ) {
+		_deprecated_function( __FUNCTION__, '3.4', 'Backup->warning( $context, $warning )' );
+		$this->warning( $context, $message );
 	}
 
 	public function get_database_backup_filepath() {

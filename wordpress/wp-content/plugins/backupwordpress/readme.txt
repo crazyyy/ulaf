@@ -2,8 +2,8 @@
 Contributors: humanmade, willmot, pauldewouters, joehoyle, mattheu, tcrsavage, cuvelier
 Tags: back up, backup, backups, database, zip, db, files, archive, wp-cli, humanmade
 Requires at least: 3.9
-Tested up to: 4.4.1
-Stable tag: 3.4.3
+Tested up to: 4.4.2
+Stable tag: 3.5
 
 Simple automated backups of your WordPress-powered website.
 
@@ -157,6 +157,35 @@ users should see major improvements to reliability.
 * This is a critical update. Fixes a bug in the core backup library. Please update immediately.
 
 == Changelog ==
+
+### 3.5 / 2016-03-10
+
+* Reduce duplication and improve code readability when echoing filesizes
+* Improve how filesizes are handled in the Your Site list
+* Switch to storing site size data in a file, large sites could cause database errors when saving the option
+* Re-remove the PHP User and Group Requirements
+* Check that the backup file exists before attempting to check it's contents
+* Only call getPerms on readable files to ensure we avoid a fatal error
+* Ensure error are correctly check in verify_backup
+* Use Symfony Process instead of shell_exec for all our system calls
+* More unit tests
+* Update dependencies
+* Detect disabled functions defined in php.ini, now accounts for different separators.
+
+### 3.4.5 / 2016-02-23
+
+* Fix fatal error on upgrade
+
+### 3.4.4 / 2016-02-23
+
+* Ensure temporary files are correctly cleaned up before and after running a backup.
+* Avoid killing site if plugin is active on PHP 52
+* Allow custom secure key using filter
+* Fixes a bug which caused the root path to the WordPress install to be miscalulated in certain setups.
+
+### 3.4.4-beta
+
+* Fixes a bug which caused the root path to the WordPress install to be miscalulated in certain setups.
 
 ### 3.4.3
 
