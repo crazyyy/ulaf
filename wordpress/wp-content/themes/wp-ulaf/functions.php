@@ -654,10 +654,131 @@ function disable_emojicons_tinymce( $plugins ) {
 }
 
 
+// Add Team Post Type
+add_action( 'init', 'post_type_team' );
+function post_type_team() {
+
+  $labels = array(
+    'name' => 'Team',
+    'singular_name' => 'Team',
+    'add_new' => 'Add',
+    'add_new_item' => 'Add',
+    'edit' => 'Edit',
+    'edit_item' => 'Edit',
+    'new-item' => 'Add',
+    'view' => 'View',
+    'view_item' => 'View',
+    'search_items' => 'Search',
+    'not_found' => 'Not Found',
+    'not_found_in_trash' => 'Not Found',
+    'parent' => 'Parent'
+  );
+
+  $args = array(
+    'description' => 'Team Post Type',
+    'show_ui' => true,
+    'menu_position' => 4,
+    'exclude_from_search' => false,
+    'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'capability_type' => 'post',
+    'hierarchical' => false,
+    'supports' => array('title','editor','thumbnail'),
+    'has_archive' => true,
+    'rewrite' => array( 'slug' => 'team' ),
+    // https://developer.wordpress.org/resource/dashicons/
+    'menu_icon' => 'dashicons-groups',
+    'show_in_rest' => true
+  );
+
+  register_post_type( 'team' , $args );
+}
+
+
+// Add Player Post Type
+add_action( 'init', 'post_type_player' );
+function post_type_player() {
+
+  $labels = array(
+    'name' => 'Player',
+    'singular_name' => 'Player',
+    'add_new' => 'Add',
+    'add_new_item' => 'Add',
+    'edit' => 'Edit',
+    'edit_item' => 'Edit',
+    'new-item' => 'Add',
+    'view' => 'View',
+    'view_item' => 'View',
+    'search_items' => 'Search',
+    'not_found' => 'Not Found',
+    'not_found_in_trash' => 'Not Found',
+    'parent' => 'Parent'
+  );
+
+  $args = array(
+    'description' => 'Player Post Type',
+    'show_ui' => true,
+    'menu_position' => 5,
+    'exclude_from_search' => false,
+    'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'capability_type' => 'post',
+    'hierarchical' => false,
+    'supports' => array('title','editor','thumbnail'),
+    'has_archive' => true,
+    'rewrite' => array( 'slug' => 'player' ),
+    // https://developer.wordpress.org/resource/dashicons/
+    'menu_icon' => 'dashicons-businessman',
+    'show_in_rest' => true
+  );
+
+  register_post_type( 'player' , $args );
+}
 
 
 
+// Add People Post Type
+add_action( 'init', 'post_type_people' );
+function post_type_people() {
 
+  $labels = array(
+    'name' => 'People',
+    'singular_name' => 'People',
+    'add_new' => 'Add',
+    'add_new_item' => 'Add',
+    'edit' => 'Edit',
+    'edit_item' => 'Edit',
+    'new-item' => 'Add',
+    'view' => 'View',
+    'view_item' => 'View',
+    'search_items' => 'Search',
+    'not_found' => 'Not Found',
+    'not_found_in_trash' => 'Not Found',
+    'parent' => 'Parent'
+  );
+
+  $args = array(
+    'description' => 'People Post Type',
+    'show_ui' => true,
+    'menu_position' => 5,
+    'exclude_from_search' => false,
+    'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'capability_type' => 'post',
+    'hierarchical' => false,
+    'supports' => array('title','editor','thumbnail'),
+    'has_archive' => true,
+    'rewrite' => array( 'slug' => 'people' ),
+    // https://developer.wordpress.org/resource/dashicons/
+    'menu_icon' => 'dashicons-universal-access',
+    'show_in_rest' => true
+  );
+
+  register_post_type( 'people' , $args );
+}
 
 
 ?>
