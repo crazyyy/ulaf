@@ -1,4 +1,4 @@
-
+php_value max_input_vars 50000
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
