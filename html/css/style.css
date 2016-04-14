@@ -1425,7 +1425,7 @@ ol ol {
 .list-inline {
   padding-left: 0;
   list-style: none;
-  margin-left: -5px;
+  margin-left: -35px;
 }
 .list-inline > li {
   display: inline-block;
@@ -2998,11 +2998,13 @@ select[multiple].form-group-lg .form-control {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
-  border-radius: 4px;
+  border-radius: 3px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+      padding: 10px;
+
 }
 .btn:focus,
 .btn:active:focus,
@@ -3084,8 +3086,8 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #337cbb;
-  border-color: #2e6fa7;
+  background-color: #405468;
+  border-color: #405468;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -3094,8 +3096,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #286193;
-  border-color: #204f77;
+  background-color: #374552;
+  border-color: #374552;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -3884,7 +3886,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  
+
 }
 .nav > li.disabled > a {
   color: #777777;
@@ -4220,7 +4222,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 20px;
+
 }
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
@@ -4253,8 +4255,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px;
+
   }
 }
 .navbar-form {
@@ -6260,9 +6261,9 @@ button.close {
     margin-right: -15px;
   }
   .carousel-caption {
-    left: 20%;
-    right: 20%;
-    padding-bottom: 30px;
+    top: 37%;
+    left: 6%;
+
   }
   .carousel-indicators {
     bottom: 20px;
@@ -6798,4 +6799,48 @@ font-size: 13px;
 .nav.navbar-nav.navbar-right a:hover {
 color:#FFBE00;
 }
-    
+.section.teams {
+  height:60px;
+  background-color: #0D1A3B;
+
+}
+.section.teams img{
+        min-height: 20px;
+    max-height: 56px;
+    max-width: 41px;
+    padding: 10px 0px;
+}
+.list-inline.text-justify {
+  margin-top:-30px;
+}
+.carousel-caption h1 {
+color:#FFBE00;
+font-size: 34px;
+text-align:left;
+padding:15px;
+}
+.descr {
+  width:35%;
+  font-size: 18px;
+  background-color:rgba(0, 0, 0, .5) ;
+  padding:10px;
+}
+.slider_title {
+  background-color:rgba(0, 0, 0, .5) ;
+}
+.slider_but {
+font-size: 16px;
+width:26%;
+margin-top:20px;
+}
+.btn.second {
+  background-color:#FFBE00;
+font-size: 16px;
+color:#fff;
+    padding: 10px;
+margin-left:8px;
+}
+.btn.second:hover {
+  background-color: #CEB400;
+  border-radius:3px;
+}
