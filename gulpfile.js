@@ -1,5 +1,5 @@
 /* if work with html set TRUE, else - FALSE */
-var htmlOWp = false,
+var htmlOWp = true,
   // set wordpress template folder
   wpThemeName = 'wp-ulaf',
   // and set wordpress domain
