@@ -1666,7 +1666,6 @@ ul ul, ol ul, ul ol, ol ol {
 }
 
 .list-inline {
-  margin-left: -35px;
   padding-left: 0;
   list-style: none;
 }
@@ -2234,11 +2233,8 @@ pre code {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
   }
-  .col-md-12.teams {
+  .col-md-12 {
     width: 100%;
-    margin-top: 8px;
-    position: absolute;
-    margin-left: -43px;
   }
   .col-md-11 {
     width: 91.66666667%;
@@ -4300,12 +4296,12 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
   border-width: 1px 0 0;
 }
 
-.navbar-brand {
+.navbar-brand {/*
   font-size: 18px;
   line-height: 20px;
   float: left;
   height: 50px;
-  padding: 15px 15px;
+  padding: 15px 15px;*/
 }
 
 .navbar-brand:hover, .navbar-brand:focus {
