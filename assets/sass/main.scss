@@ -246,7 +246,23 @@ picture {
     margin-left: 5px;
   }
 }
+.section.history {
+  background-color: #0D1A3B;
+  border-top: 3px solid black;
+  h2 {
+    color:#ffbe00;
+    font-size: 18px;
+    margin:20px 0;
 
+  }
+  p {
+    color:#fff;
+    padding-top: 5px;
+  }
+}
+.section.photo {
+  background-color: #0D1A3B;
+}
 
 
 @import 'import/print';
