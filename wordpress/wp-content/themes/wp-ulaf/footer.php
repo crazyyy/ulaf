@@ -1,19 +1,38 @@
-    </div><!-- /.inner -->
-  </section><!-- /section -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>© Ulaf 2016</p>
+                </div>
+                <div class="col-sm-6">
 
-</div><!-- /wrapper -->
+                            <ul class="list-inline social">
+                                <li>
+                                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/social/email.png" alt="ulaf"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/social/facebook.png" alt="ulaf Facebook"></a>
+                                </li>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/social/vkontakte.png" alt="ulaf VK"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/social/twitter.png" alt="ulaf Twitter"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/social/youtube.png" alt="ulaf YouTube"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/social/instagram.png" alt="ulaf Instagram"></a>
+                                </li>
+                            </ul>
 
-<footer role="contentinfo">
-  <div class="inner">
+                </div>
 
-    <p class="copyright">
-      &copy; <?php echo date("Y"); ?> Собственность <?php bloginfo('name'); ?>.
-    </p><!-- /copyright -->
-
-  </div><!-- /.inner -->
-</footer><!-- /footer -->
-
-    <?php wp_footer(); ?>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
