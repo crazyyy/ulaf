@@ -1,39 +1,78 @@
 <?php get_header(); ?>
-  <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+  <div class="section history">
+     <div class="container">
+        <div class="row">
+
+        <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+
+    <article id="post-<?php the_ID(); ?>" <?php post_class(col-md-12); ?>>
+
+<h2><?php the_title(); ?></h2>
+<?php the_content(); ?>
+<div class="section photo">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/teams/sbor.jpeg">
+                                </div>
+                                <div class="col-md-4">
+                                  <img src="<?php echo get_template_directory_uri(); ?>/img/teams/sbor2.jpeg">
+                                </div>
+                                <div class="col-md-4"></div>
+                            </div>
+                        </div>
+                    </div>
+
+<div class="container container-comments">
+        <div class="row">
+        <div class="col-md-12">
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 
 
-      <h1 class="single-title inner-title"><?php the_title(); ?></h1>
-      <?php if ( has_post_thumbnail()) :?>
-        <a class="single-thumb" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-          <?php the_post_thumbnail(); // Fullsize image for the single post ?>
-        </a>
-      <?php endif; ?><!-- /post thumbnail -->
+
 
       <span class="date"><?php the_time('d F Y'); ?> <?php the_time('H:i'); ?></span>
-      <span class="author"><?php _e( 'Published by', 'wpeasy' ); ?> <?php the_author_posts_link(); ?></span>
+
       <span class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'wpeasy' ), __( '1 Comment', 'wpeasy' ), __( '% Comments', 'wpeasy' )); ?></span><!-- /post details -->
 
-      <?php the_content(); ?>
 
-      <?php the_tags( __( 'Tags: ', 'wpeasy' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
+      <span class="tags"><p><?php the_tags( __( 'Tags: ', 'wpeasy' ), ', ', '<br>'); // Separated by commas with a line break at the end ?></p></span>
 
-      <p><?php _e( 'Categorised in: ', 'wpeasy' ); the_category(', '); // Separated by commas ?></p>
+      <span class="category"><p><?php _e( 'Categorised in: ', 'wpeasy' ); the_category(', '); // Separated by commas ?></p></span>
 
-      <p><?php _e( 'This post was written by ', 'wpeasy' ); the_author(); ?></p>
+      <span class="post"><p><?php _e( 'This post was written by ', 'wpeasy' ); the_author(); ?></p></span>
 
-      <?php edit_post_link(); ?>
+
 
       <?php comments_template(); ?>
 
     </article>
-  <?php endwhile; else: ?>
-    <article>
+    </div>
+  </div>
+</div>
+
+
+
+    </article>
+  <?php endwhile; else: // If 404 page error ?>
+<article class="col-md-12">
 
       <h2 class="page-title inner-title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
 
     </article>
   <?php endif; ?>
-<?php get_sidebar(); ?>
+
+
+          <div class="">
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
 <?php get_footer(); ?>
