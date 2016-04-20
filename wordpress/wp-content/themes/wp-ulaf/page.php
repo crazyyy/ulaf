@@ -9,13 +9,12 @@
 <h2><?php the_title(); ?></h2>
 <?php the_content(); ?>
 
-<h1 class="page-title inner-title"><?php the_title(); ?></h1>
-      <?php the_content(); ?>
-      <?php edit_post_link(); ?>
+
+
 
     </article>
   <?php endwhile; else: // If 404 page error ?>
-    <article class="col-md-12">
+<article class="col-md-12">
 
       <h2 class="page-title inner-title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
 
