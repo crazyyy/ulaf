@@ -1,10 +1,18 @@
 <?php get_header(); ?>
-  <article>
 
-    <h1 class="cat-title inner-title"><?php _e( 'Categories for', 'wpeasy' ); the_category(', '); ?></h1>
-    <?php get_template_part('loop'); ?>
-    <?php get_template_part('pagination'); ?>
+  <section class="section-news">
+    <div class="container">
+      <div class="row">
 
-  </article>
-<?php get_sidebar(); ?>
+        <h1 class="cat-title inner-title col-md-12"><?php _e( 'Categories for', 'wpeasy' ); the_category(', '); ?></h1>
+
+        <?php get_template_part('loop'); ?>
+
+        <?php get_template_part('pagination'); ?>
+
+      </div><!-- row -->
+    </div><!-- container -->
+  </section><!-- section-news -->
+
 <?php get_footer(); ?>
+

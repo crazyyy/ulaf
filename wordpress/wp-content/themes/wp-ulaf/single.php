@@ -7,7 +7,7 @@
 
             <article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12'); ?>>
 
-              <h1><?php the_title(); ?></h1>
+              <h1 class="page-title"><?php the_title(); ?></h1>
               <?php the_content(); ?>
 
               <span class="date"><?php the_time('d F Y'); ?> <?php the_time('H:i'); ?></span>

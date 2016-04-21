@@ -344,18 +344,12 @@ picture {
   }
 }
 
-
-
 /* Page */
 .section-history {
   border-top: 3px solid $nigger-blue;
   background-color: $dark-blue;
-  h2 {
-    font-size: 18px;
-
-    padding: 15px 0;
-
-    color: $gold;
+  article {
+    padding: 20px;
   }
   p {
     color: #fff;
@@ -367,7 +361,15 @@ picture {
 /* //Page */
 
 /* Single */
+article {
+  .page-title {
+    font-size: 160%;
 
+    margin-bottom: 20px;
+
+    color: $gold;
+  }
+}
 .container-comments {
   .date {
     padding-top: 15px;

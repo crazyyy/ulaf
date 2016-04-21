@@ -7,7 +7,7 @@
 
           <article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12'); ?>>
 
-            <h1 class="page-title inner-title"><?php the_title(); ?></h1>
+            <h1 class="page-title"><?php the_title(); ?></h1>
             <?php the_content(); ?>
             <?php edit_post_link(); ?>
 
