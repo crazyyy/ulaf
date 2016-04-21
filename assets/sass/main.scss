@@ -451,9 +451,7 @@ article {
 /**
  * SINGLE PLAYER
  */
-.container-content {
 
-}
 
 
 /**
@@ -483,6 +481,26 @@ footer {
     padding-top: 12px;
 
     color: #fff;
+  }
+}
+.player-card {
+  height: 300px;
+  ul {
+
+    display: flex;
+    flex-direction: column-reverse;
+
+    height: 300px;
+
+
+
+    justify-content:flex-end
+
+    li {
+      display: block;
+
+
+    }
   }
 }
 
