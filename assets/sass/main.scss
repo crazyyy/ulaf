@@ -18,7 +18,7 @@ body {
   line-height: $base-line-height;
 
   color: $base-font-color;
-  background-color: $base-background-color;
+  background-color: $dark-blue;
 
   -webkit-font-smoothing: antialiased;
 }
@@ -74,6 +74,7 @@ picture {
   height: 90px;
   padding-top: 10px;
 
+  border-radius: 0;
   background-color: $nigger-blue;
   .navbar-brand {
     display: block;
@@ -343,56 +344,124 @@ picture {
   }
 }
 
+
+
+/* Page */
+.section-history {
+  border-top: 3px solid $nigger-blue;
+  background-color: $dark-blue;
+  h2 {
+    font-size: 18px;
+
+    padding: 15px 0;
+
+    color: $gold;
+  }
+  p {
+    color: #fff;
+  }
+}
+.section-photo {
+  background-color: $dark-blue;
+}
+/* //Page */
+
+/* Single */
+
+.container-comments {
+  .date {
+    padding-top: 15px;
+
+    color: $gold;
+  }
+  .comments {
+    color: $gold;
+    a {
+      display: none;
+    }
+  }
+  .tags {
+    text-align: right;
+
+    color: $gold;
+    p {
+      color: $gold;
+      a {
+        color: grey;
+        &:hover {
+          text-decoration: none;
+
+          color: $gold;
+        }
+      }
+    }
+  }
+}
+.category {
+  text-align: right;
+
+  color: $gold;
+  p {
+    color: $gold;
+    a {
+      color: grey;
+      &:hover {
+        text-decoration: none;
+
+        color: $gold;
+      }
+    }
+  }
+}
+/* //Single */
+
+/* Single-Player */
+
+.container-content {
+  background-color: $dark-blue;
+  .single-thumb {
+    display: block;
+    overflow: hidden;
+
+    width: 200px;
+  }
+  img {
+    min-width: 100%;
+  }
+}
+
+
+/* //Single-Player */
+
 /* Footer */
 footer {
   height: 60px;
 
   background-color: $light-blue;
   .social {
-    text-align: right;
     padding-top: 12px;
+
+    text-align: right;
     li {
       width: 45px;
       height: 40px;
       a {
-        width:100%;
-        height:100%;
+        width: 100%;
+        height: 100%;
       }
       img {
         width: 100%;
-
       }
     }
   }
   p {
-    color: #fff;
     padding-top: 12px;
+
+    color: #fff;
   }
 }
 
 /* //Footer */
-
-/* Page */
-.history {
-  background-color: $dark-blue;
-  border-top:3px solid $nigger-blue;
-  h2 {
-    color:$gold;
-    padding:15px 0;
-    font-size: 18px;
-  }
-  p {
-    color:#fff;
-  }
-}
-.photo {
-  background-color: $dark-blue;
-}
-/* //Page */
-
-
-
-
 
 
 @import 'import/print';

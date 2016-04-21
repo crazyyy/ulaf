@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+ <footer>
+=======
     <footer>
+>>>>>>> master
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
@@ -29,10 +33,21 @@
                             </ul>
 
                 </div>
+<<<<<<< HEAD
 
             </div>
         </div>
     </footer>
 
+
+
+=======
+
+            </div>
+        </div>
+    </footer>
+>>>>>>> master
+
 </body>
+
 </html>

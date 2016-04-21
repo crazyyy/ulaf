@@ -1,39 +1,41 @@
 <?php get_header(); ?>
-  <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+  <section class="section-history">
+     <div class="container">
+        <div class="row">
 
+          <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
+            <article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12'); ?>>
 
-      <h1 class="single-title inner-title"><?php the_title(); ?></h1>
-      <?php if ( has_post_thumbnail()) :?>
-        <a class="single-thumb" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-          <?php the_post_thumbnail(); // Fullsize image for the single post ?>
-        </a>
-      <?php endif; ?><!-- /post thumbnail -->
+              <h1><?php the_title(); ?></h1>
+              <?php the_content(); ?>
 
-      <span class="date"><?php the_time('d F Y'); ?> <?php the_time('H:i'); ?></span>
-      <span class="author"><?php _e( 'Published by', 'wpeasy' ); ?> <?php the_author_posts_link(); ?></span>
-      <span class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'wpeasy' ), __( '1 Comment', 'wpeasy' ), __( '% Comments', 'wpeasy' )); ?></span><!-- /post details -->
+              <span class="date"><?php the_time('d F Y'); ?> <?php the_time('H:i'); ?></span>
+              <span class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'wpeasy' ), __( '1 Comment', 'wpeasy' ), __( '% Comments', 'wpeasy' )); ?></span>
+              <span class="tags"><?php the_tags( __( 'Tags: ', 'wpeasy' ), ', ', '<br>'); ?></span>
+              <span class="category"><?php _e( 'Categorised in: ', 'wpeasy' ); the_category(', '); ?></span>
+              <span class="post"><?php _e( 'This post was written by ', 'wpeasy' ); the_author(); ?></span>
 
-      <?php the_content(); ?>
+            </article>
 
-      <?php the_tags( __( 'Tags: ', 'wpeasy' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
+          <?php endwhile; else: // If 404 page error ?>
 
-      <p><?php _e( 'Categorised in: ', 'wpeasy' ); the_category(', '); // Separated by commas ?></p>
+            <article class="col-md-12">
 
-      <p><?php _e( 'This post was written by ', 'wpeasy' ); the_author(); ?></p>
+              <h2 class="page-title inner-title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
 
-      <?php edit_post_link(); ?>
+            </article>
 
-      <?php comments_template(); ?>
+          <?php endif; ?>
 
-    </article>
-  <?php endwhile; else: ?>
-    <article>
+          <div class="col-md-12 section-comments">
+            <?php comments_template(); ?>
+          </div><!-- /.col-md-12 section-comments -->
 
-      <h2 class="page-title inner-title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
+      </div><!-- row -->
+    </div><!-- container -->
+  </section><!-- section-history -->
 
-    </article>
-  <?php endif; ?>
-<?php get_sidebar(); ?>
+  <?php get_template_part('relative-pages'); ?>
+
 <?php get_footer(); ?>
