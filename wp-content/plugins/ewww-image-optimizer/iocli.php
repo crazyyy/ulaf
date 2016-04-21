@@ -188,6 +188,7 @@ function ewww_image_optimizer_bulk_media( $delay = 0 ) {
 		$attachments = get_option('ewww_image_optimizer_bulk_attachments');
 	// since we aren't resuming, and weren't given a list of IDs, we will optimize everything
         } else {
+		global $wpdb;
                 // load up all the image attachments we can find
 		$attachments = $wpdb->get_col( "SELECT ID FROM $wpdb->posts WHERE (post_type = 'attachment' OR post_type = 'ims_image') AND post_mime_type LIKE '%%image%%'" );
         }

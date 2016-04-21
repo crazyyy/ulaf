@@ -6,7 +6,7 @@
       <article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12'); ?>>
 
         <div class="row">
-          <h1 class="single-title inner-title col-md-12"><?php the_title(); ?></h1>
+          <h1 class="single-title page-title col-md-12"><?php the_title(); ?></h1>
 
           <div class="player-main-photo col-md-3">
             <?php if ( has_post_thumbnail()) :?>
@@ -21,13 +21,6 @@
           </div><!-- /.col-md-9 player-bio -->
 
         </div><!-- /.row -->
-
-
-
-
-
-
-
 
 
 
