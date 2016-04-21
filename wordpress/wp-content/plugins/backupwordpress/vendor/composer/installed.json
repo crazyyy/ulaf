@@ -55,23 +55,23 @@
     },
     {
         "name": "symfony/finder",
-        "version": "v2.8.3",
-        "version_normalized": "2.8.3.0",
+        "version": "v2.8.4",
+        "version_normalized": "2.8.4.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/finder.git",
-            "reference": "877bb4b16ea573cc8c024e9590888fcf7eb7e0f7"
+            "reference": "ca24cf2cd4e3826f571e0067e535758e73807aa1"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/finder/zipball/877bb4b16ea573cc8c024e9590888fcf7eb7e0f7",
-            "reference": "877bb4b16ea573cc8c024e9590888fcf7eb7e0f7",
+            "url": "https://api.github.com/repos/symfony/finder/zipball/ca24cf2cd4e3826f571e0067e535758e73807aa1",
+            "reference": "ca24cf2cd4e3826f571e0067e535758e73807aa1",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.9"
         },
-        "time": "2016-02-22 16:12:45",
+        "time": "2016-03-10 10:53:53",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -106,23 +106,23 @@
     },
     {
         "name": "symfony/process",
-        "version": "v2.8.3",
-        "version_normalized": "2.8.3.0",
+        "version": "v2.8.4",
+        "version_normalized": "2.8.4.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/process.git",
-            "reference": "7dedd5b60550f33dca16dd7e94ef8aca8b67bbfe"
+            "reference": "fb467471952ef5cf8497c029980e556b47545333"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/process/zipball/7dedd5b60550f33dca16dd7e94ef8aca8b67bbfe",
-            "reference": "7dedd5b60550f33dca16dd7e94ef8aca8b67bbfe",
+            "url": "https://api.github.com/repos/symfony/process/zipball/fb467471952ef5cf8497c029980e556b47545333",
+            "reference": "fb467471952ef5cf8497c029980e556b47545333",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.9"
         },
-        "time": "2016-02-02 13:33:15",
+        "time": "2016-03-23 13:11:46",
         "type": "library",
         "extra": {
             "branch-alias": {

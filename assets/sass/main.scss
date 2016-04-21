@@ -89,7 +89,9 @@ picture {
   max-width: 100%;
   margin: 0;
 }
-/* navbar */
+/**
+ * HEADER
+ */
 .navbar {
   position: relative;
 
@@ -163,14 +165,15 @@ picture {
   }
 }
 
-/* navbar */
+/** /HEADER */
 
-/* team nav */
 
+/**
+ * TEAM NAV
+ */
 .section-teams {
   height: 60px;
   padding: 0;
-  /* background-color: $dark-blue; */
   .col-md-12-teams {
     padding-right: 0;
     padding-left: 0;
@@ -214,7 +217,9 @@ picture {
   }
 }
 
-
+/**
+ * HOME SLIDER
+ */
 .carousel-caption h1 {
   font-size: 34px;
 
@@ -259,7 +264,9 @@ picture {
   }
 }
 
-/* section news block */
+/**
+ * FRONTPAGE SECTION NEWS // BOTTOM
+ */
 .section-news {
   padding: 10px;
 
@@ -364,23 +371,9 @@ picture {
     }
   }
 }
-
-/* Page */
-.section-history {
-  border-top: 3px solid $nigger-blue;
-  background-color: $dark-blue;
-  article {
-    padding: 20px;
-    color: #fff;
-  }
-
-}
-.section-photo {
-  background-color: $dark-blue;
-}
-/* //Page */
-
-/* Single */
+/**
+ * PAGE AND SINGLE
+ */
 article {
   color: #fff;
   .page-title {
@@ -391,6 +384,25 @@ article {
     color: $gold;
   }
 }
+
+/**
+ * PAGE
+ */
+.section-history {
+  border-top: 3px solid $nigger-blue;
+  background-color: $dark-blue;
+  article {
+    padding: 20px;
+
+    color: #fff;
+  }
+}
+.section-photo {
+  background-color: $dark-blue;
+}
+/**
+ * SINGLE
+ */
 .container-comments {
   .date {
     padding-top: 15px;
@@ -419,44 +431,34 @@ article {
       }
     }
   }
-}
-.category {
-  text-align: right;
+  .category {
+    text-align: right;
 
-  color: $gold;
-  p {
     color: $gold;
-    a {
-      color: grey;
-      &:hover {
-        text-decoration: none;
+    p {
+      color: $gold;
+      a {
+        color: grey;
+        &:hover {
+          text-decoration: none;
 
-        color: $gold;
+          color: $gold;
+        }
       }
     }
   }
 }
-/* //Single */
-
-/* Single-Player */
-
+/**
+ * SINGLE PLAYER
+ */
 .container-content {
-  /* background-color: $dark-blue; */
-  /*   .single-thumb {
-  display: block;
-  overflow: hidden;
 
-  width: 200px;
-}
-img {
-  min-width: 100%;
-} */
 }
 
 
-/* //Single-Player */
-
-/* Footer */
+/**
+ * FOOTER
+ */
 footer {
   height: 60px;
 
@@ -483,8 +485,5 @@ footer {
     color: #fff;
   }
 }
-
-/* //Footer */
-
 
 @import 'import/print';
