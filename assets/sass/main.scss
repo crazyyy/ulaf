@@ -70,10 +70,11 @@ picture {
 /* navbar */
 .navbar {
   position: relative;
-border-radius: 0;
+
   height: 90px;
   padding-top: 10px;
 
+  border-radius: 0;
   background-color: $nigger-blue;
   .navbar-brand {
     display: block;
@@ -343,35 +344,7 @@ border-radius: 0;
   }
 }
 
-/* Footer */
-footer {
-  height: 60px;
 
-  background-color: $light-blue;
-  .social {
-    padding-top: 12px;
-
-    text-align: right;
-    li {
-      width: 45px;
-      height: 40px;
-      a {
-        width: 100%;
-        height: 100%;
-      }
-      img {
-        width: 100%;
-      }
-    }
-  }
-  p {
-    padding-top: 12px;
-
-    color: #fff;
-  }
-}
-
-/* //Footer */
 
 /* Page */
 .section-history {
@@ -427,7 +400,6 @@ footer {
 .category {
   text-align: right;
 
-<<<<<<< HEAD
   color: $gold;
   p {
     color: $gold;
@@ -461,9 +433,35 @@ footer {
 
 /* //Single-Player */
 
+/* Footer */
+footer {
+  height: 60px;
+
+  background-color: $light-blue;
+  .social {
+    padding-top: 12px;
+
+    text-align: right;
+    li {
+      width: 45px;
+      height: 40px;
+      a {
+        width: 100%;
+        height: 100%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+  p {
+    padding-top: 12px;
+
+    color: #fff;
+  }
+}
+
+/* //Footer */
 
 
-
-=======
->>>>>>> master
 @import 'import/print';
