@@ -1,6 +1,6 @@
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-  <div class="row">
+  <div id="post-<?php the_ID(); ?>" <?php post_class('row'); ?>>
     <div class="col-md-4">
       <a rel="nofollow" class="feature-img" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
         <?php if ( has_post_thumbnail()) :
@@ -20,11 +20,15 @@
       <?php wpeExcerpt('wpeExcerpt20'); ?>
 
       <a href="<?php the_permalink(); ?>" class="read-more">Читать полностью...</a>
+
+      <span class="author"><?php _e( 'Published by', 'wpeasy' ); ?> <?php the_author_posts_link(); ?></span>
+      <span class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'wpeasy' ), __( '1 Comment', 'wpeasy' ), __( '% Comments', 'wpeasy' )); ?></span><!-- /post details -->
+
     </div>
 
   </div><!-- /.row -->
 
-  <?php endwhile; else: ?>
+<?php endwhile; else: ?>
 
     <div class="row">
       <div class="col-md-12">
