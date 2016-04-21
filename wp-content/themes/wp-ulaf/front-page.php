@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
    <!-- slider -->
 
     <div id="fullcarousel-example" data-interval="6000" class="carousel slide" data-ride="carousel">
@@ -101,3 +102,5 @@
     </section><!-- section-news -->
 
 <?php get_footer(); ?>
+
+
