@@ -7,29 +7,48 @@
 
   <title><?php wp_title( '' ); ?><?php if ( wp_title( '', false ) ) { echo ' :'; } ?> <?php bloginfo( 'name' ); ?></title>
 
-<!-- icons -->
+  <link href="http://www.google-analytics.com/" rel="dns-prefetch"><!-- dns prefetch -->
+
+  <!-- icons -->
   <link href="<?php echo get_template_directory_uri(); ?>/favicon.ico" rel="shortcut icon">
 
   <!--[if lt IE 9]>
-    <script type="text/javascript" img src="<?php echo get_template_directory_uri(); ?>/js/html5shiv.js"></script>
-    <script type="text/javascript" img src="<?php echo get_template_directory_uri(); ?>/js/selectivizr.js"></script>
-    <script type="text/javascript" img src="<?php echo get_template_directory_uri(); ?>/js/respond.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/html5shiv.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/selectivizr.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/respond.js"></script>
   <![endif]-->
-
+  <!-- css + javascript -->
   <?php wp_head(); ?>
-
-    <script type="text/javascript" img src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script type="text/javascript" img src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
-
-  </head>
+</head>
 <body <?php body_class(); ?>>
+<!-- wrapper -->
+<div class="wrapper">
+  <header role="banner">
+    <div class="inner">
+
+      <div class="logo">
+        <?php if ( is_front_page() && is_home() ){ } else { ?>
+          <a href="<?php echo home_url(); ?>">
+            <?php  } ?>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="<?php wp_title( '' ); ?>" title="<?php wp_title( '' ); ?>" class="logo-img">
+            <?php if ( is_front_page() && is_home() ){
+            } else { ?>
+          </a>
+        <?php } ?>
+      </div><!-- /logo -->
+
+      <nav class="nav" role="navigation">
+        <?php wpeHeadNav(); ?>
+      </nav><!-- /nav -->
+
+    </div><!-- /.inner -->
+  </header><!-- /header -->
 
   <div class="navbar">
     <div class="container">
       <div class="row">
         <div class="col-md-1">
-          <a class="navbar-brand"><img alt="" img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></a>
+          <a class="navbar-brand"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></a>
         </div>
         <div class="col-md-11">
           <nav class="header-nav">
