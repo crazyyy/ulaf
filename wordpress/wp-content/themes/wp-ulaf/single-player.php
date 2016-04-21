@@ -1,25 +1,32 @@
 <?php get_header(); ?>
-
 <section class="container container-content">
   <div class="row">
+    <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+
+      <article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12'); ?>>
+
+        <div class="row">
+          <h1 class="single-title inner-title col-md-12"><?php the_title(); ?></h1>
+
+          <div class="player-main-photo col-md-3">
+            <?php if ( has_post_thumbnail()) :?>
+              <a class="single-thumb" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                <?php the_post_thumbnail(); // Fullsize image for the single post ?>
+              </a>
+            <?php endif; ?><!-- /post thumbnail -->
+          </div><!-- /.player-main-photo -->
+
+          <div class="col-md-9 player-bio">
+            <?php the_content(); ?>
+          </div><!-- /.col-md-9 player-bio -->
+
+        </div><!-- /.row -->
 
 
 
-       <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-    <article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12'); ?>>
 
 
-      <h1 class="single-title inner-title"><?php the_title(); ?></h1>
 
-
-      <?php if ( has_post_thumbnail()) :?>
-        <a class="single-thumb" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-          <?php the_post_thumbnail(); // Fullsize image for the single post ?>
-        </a>
-      <?php endif; ?><!-- /post thumbnail -->
-
-
-      <?php the_content(); ?>
 
 
 
@@ -61,10 +68,6 @@
     <td>team jearsey number</td>
     <td><?php the_field('player_number');?></td>
   </tr>
-
-
-
-
 </table>
 
 <?php
