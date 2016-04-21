@@ -5,8 +5,8 @@
 
       <article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12'); ?>>
 
-        <div class="row">
-          <h1 class="single-title page-title col-md-12"><?php the_title(); ?></h1>
+        <div class="row player-card">
+
 
           <div class="player-main-photo col-md-3">
             <?php if ( has_post_thumbnail()) :?>
@@ -15,14 +15,26 @@
               </a>
             <?php endif; ?><!-- /post thumbnail -->
           </div><!-- /.player-main-photo -->
+          <div class="col-md-9 player-character">
 
-          <div class="col-md-9 player-bio">
-            <?php the_content(); ?>
-          </div><!-- /.col-md-9 player-bio -->
+
+          <ul class="description">
+          <li>ВИКТОР ЯНЧАК</li>
+              <li>ГОД РОЖДЕНИЯ:</li>
+              <li>РОСТ:</li>
+              <li>ВЕС:</li>
+              <li>В КОМАНДЕ С: </li>
+              <li>ИГРОВОЙ НОМЕР:</li>
+          </ul>
+          </div><!--/ player-character -->
+
 
         </div><!-- /.row -->
-
-
+    <div class="row">
+    <div class="col-md-12 player-bio">
+            <?php the_content(); ?>
+          </div><!-- /.col-md-9 player-bio -->
+      </div><!-- /row -->
 
       <?php the_tags( __( 'Tags: ', 'wpeasy' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
 
