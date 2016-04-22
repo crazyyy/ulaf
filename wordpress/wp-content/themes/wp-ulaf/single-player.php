@@ -27,7 +27,113 @@
               <li>ИГРОВОЙ НОМЕР:</li>
           </ul>
           </div><!--/ player-character -->
+          <div class="col-md-12">
+                <table class="player-score">
+                  <tr>
+                    <th></th>
+                    <th>123456</th>
+                    <th>123456</th>
+                    <th>123456</th>
+                    <th>123456</th>
+                    <th>123456</th>
+                    <th>123456</th>
+                    <th>123456</th>
+                  </tr>
 
+                  <tr class="player-work">
+                      <td>КОЛИЧЕСТВО БРОСКОВ</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                    </tr>
+                    <tr class="oposing-teams">
+                      <td>ПОЙМАНЫХ БРОСКОВ</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                    </tr>
+                    <tr class="player-work">
+                      <td>НАБРАНЫХ ЯРДОВ ПАСОМ</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                    </tr>
+                    <tr class="oposing-teams">
+                      <td>ТАЧДАУН ПАСОМ</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                    </tr>
+                    <tr class="player-work">
+                      <td>ТАЧДАУН БЕГОМ</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                    </tr>
+                    <tr class="oposing-teams">
+                      <td>НАБРАНЫХ ЯРДОВ (БЕГ)</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                    </tr>
+                    <tr class="player-work">
+                      <td>ПЕРЕХВАТЫ</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                    </tr>
+                    <tr class="player-work">
+                      <td>ПЕРЕХВАТЫ</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                      <td>name</td>
+                    </tr>
+                    <tr class="player-work">
+                      <td>123 </td>
+                      <td> </td>
+                      <td> </td>
+                      <td> </td>
+                      <td> </td>
+                      <td> </td>
+                      <td> </td>
+                      <td> </td>
+                    </tr>
+
+
+                </table>
+          </div><!-- player-score -->
 
         </div><!-- /.row -->
     <div class="row">

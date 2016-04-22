@@ -486,20 +486,53 @@ footer {
 .player-card {
   height: 300px;
   ul {
-
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
 
     height: 300px;
 
-
-
-    justify-content:flex-end
-
+    justify-content: flex-end;
     li {
       display: block;
+    }
+  }
+}
+.player-score {
+  position: relative;
 
+  text-align: center;
+  &:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 
+    display: block;
+
+    content: '';
+
+    border-radius: 25px;
+    background-color: rgba(50,50,48,.4);
+  }
+  th {
+    border: none;
+  }
+  tr {
+    background-color: rgba(50,50,48,.4);
+    &:nth-child(2n+1),
+    &:last-child {
+      background-color: rgba(50,50,48,.1);
+    }
+    td {
+      font-size: 15px;
+
+      padding: 0 0 0 20px;
+
+      border: none;
+      &:first-child {
+        text-align: left;
+      }
     }
   }
 }
