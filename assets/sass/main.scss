@@ -483,18 +483,29 @@ footer {
     color: #fff;
   }
 }
+.container-content {
+  padding-top: 30px;
+
+  border-top: 3px solid #000215;
+}
 .player-card {
   height: 300px;
   ul {
     display: flex;
     flex-direction: column;
 
-    height: 300px;
+    height: 200px;
 
     justify-content: flex-end;
     li {
       display: block;
     }
+  }
+  .quarterback-image {
+    display: flex;
+
+    align-content: flex-start;
+    justify-content: flex-end;
   }
 }
 .player-score {
@@ -513,28 +524,57 @@ footer {
     content: '';
 
     border-radius: 25px;
-    background-color: rgba(50,50,48,.4);
+    background-color: rgba(50,50,48,.5);
   }
   th {
+    padding-left: 20px;
+
     border: none;
   }
   tr {
-    background-color: rgba(50,50,48,.4);
+    background-color: rgba(50,50,48,.5);
     &:nth-child(2n+1),
     &:last-child {
       background-color: rgba(50,50,48,.1);
+      th {
+        width: 145px;
+        height: 143px;
+
+        text-align: center;
+        &:first-child {
+          background-color: rgba(50,50,48,.1);
+        }
+        img {
+          max-width: 100%;
+        }
+      }
     }
     td {
       font-size: 15px;
 
       padding: 0 0 0 20px;
 
+      color: $gold;
       border: none;
       &:first-child {
         text-align: left;
+
+        color: #fff;
       }
     }
   }
 }
+
+.player-bio {
+  padding-top: 50px;
+}
+
+.player-game-photo {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 
 @import 'import/print';
