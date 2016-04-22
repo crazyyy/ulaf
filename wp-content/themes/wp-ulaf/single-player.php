@@ -16,28 +16,30 @@
             <?php endif; ?><!-- /post thumbnail -->
           </div><!-- /.player-main-photo -->
           <div class="col-md-9 player-character">
+            <span class="quarterback-image"><img src="<?php echo get_template_directory_uri(); ?>/img/teams/qb.png"></span>
 
-
-          <ul class="description">
-          <li>ВИКТОР ЯНЧАК</li>
+            <ul class="description">
+           <li>ВИКТОР ЯНЧАК</li>
               <li>ГОД РОЖДЕНИЯ:</li>
               <li>РОСТ:</li>
               <li>ВЕС:</li>
               <li>В КОМАНДЕ С: </li>
               <li>ИГРОВОЙ НОМЕР:</li>
-          </ul>
+
+           </ul>
+
           </div><!--/ player-character -->
           <div class="col-md-12">
                 <table class="player-score">
                   <tr>
-                    <th></th>
-                    <th>123456</th>
-                    <th>123456</th>
-                    <th>123456</th>
-                    <th>123456</th>
-                    <th>123456</th>
-                    <th>123456</th>
-                    <th>123456</th>
+                    <th><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></th>
+                    <th><img src="<?php echo get_template_directory_uri(); ?>/img/teams/bulgogs.png"></th>
+                    <th><img src="<?php echo get_template_directory_uri(); ?>/img/teams/pirates.png"></th>
+                    <th><img src="<?php echo get_template_directory_uri(); ?>/img/teams/eagles.png"></th>
+                    <th><img src="<?php echo get_template_directory_uri(); ?>/img/teams/bandits.png"></th>
+                    <th><img src="<?php echo get_template_directory_uri(); ?>/img/teams/wolves.png"></th>
+                    <th><img src="<?php echo get_template_directory_uri(); ?>/img/teams/atlants.png"></th>
+                    <th>Общая</th>
                   </tr>
 
                   <tr class="player-work">
@@ -50,7 +52,7 @@
                       <td>name</td>
                       <td>name</td>
                     </tr>
-                    <tr class="oposing-teams">
+                    <tr>
                       <td>ПОЙМАНЫХ БРОСКОВ</td>
                       <td>name</td>
                       <td>name</td>
@@ -70,7 +72,7 @@
                       <td>name</td>
                       <td>name</td>
                     </tr>
-                    <tr class="oposing-teams">
+                    <tr>
                       <td>ТАЧДАУН ПАСОМ</td>
                       <td>name</td>
                       <td>name</td>
@@ -90,7 +92,7 @@
                       <td>name</td>
                       <td>name</td>
                     </tr>
-                    <tr class="oposing-teams">
+                    <tr>
                       <td>НАБРАНЫХ ЯРДОВ (БЕГ)</td>
                       <td>name</td>
                       <td>name</td>
@@ -144,16 +146,14 @@
 
       <?php the_tags( __( 'Tags: ', 'wpeasy' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
 
-      <p><?php _e( 'Categorised in: ', 'wpeasy' ); the_category(', '); // Separated by commas ?></p>
-
-      <p><?php _e( 'This post was written by ', 'wpeasy' ); the_author(); ?></p>
-
-      <?php edit_post_link(); ?>
 
 
 
 
-<table>
+
+
+
+<table class="player-career">
   <tr>
     <td>team</td>
     <td>
@@ -186,7 +186,38 @@
 $images = get_field('player_gallery');
 
 if( $images ): ?>
-    <ul>
+
+
+<!-- Slider -->
+
+<style type="text/css">
+        #featured { width: 940px; height: 450px; background: #009cff url('orbit/loading.gif') no-repeat center center; overflow: hidden; }</style>
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/orbit.css">
+
+
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.4.1.min.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.orbit.min.js"></script>
+
+    <script type="text/javascript">
+      $(window).load(function() {
+        $('#featured').orbit({
+          'bullets': true,
+          'timer' : true,
+          'animation' : 'horizontal-slide'
+        });
+      });
+    </script>
+    <div id="featured">
+      <img src="http://localhost:9090/wp-content/uploads/2016/03/Lycy5Nr-fpY.jpg" alt="Link" />
+      <img src="http://localhost:9090/wp-content/uploads/2016/03/lvxcQi_DqJ8.jpg" alt="Ezio" rel="ezioCaption" />
+      <img src="http://localhost:9090/wp-content/uploads/2016/03/M4CX8FcWdus.jpg" alt="Master Chief" />
+      <img src="http://localhost:9090/wp-content/uploads/2016/03/m5FfQKMN5DU.jpg"  alt="Marcus Fenix" rel="marcusCaption" />
+    </div>
+    <span class="orbit-caption" id="ezioCaption">This is an <em>awesome caption</em> for Ezio. <strong>Note:</strong> This whole image is linked</span>
+    <span class="orbit-caption" id="marcusCaption">This is an <em>awesome caption</em> for Marcus with a <a href="http://www.zurb.com/playground" target="_blank" style="color: #fff">link</a></span>
+
+
+    <ul class="player-game-photo">
         <?php foreach( $images as $image ): ?>
             <li>
                 <a href="<?php echo $image['url']; ?>">
@@ -196,6 +227,8 @@ if( $images ): ?>
             </li>
         <?php endforeach; ?>
     </ul>
+
+<!-- //Slider -->
 <?php endif; ?>
 
 
