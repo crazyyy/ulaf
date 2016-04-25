@@ -600,5 +600,41 @@ padding: 15px 0;
     color:$gold;
   }
 }
+.team-colors {
+  display: inline-block;
+  border: 1px solid black;
+height: 25px;
+
+span {
+  display: inline-block;
+  height: 100%;
+  width: 25px;
+
+}
+}
+.team_name {
+  font-size: 30px;
+  color:$gold;
+}
+.description {
+  padding-bottom: 20px;
+  text-align: center;
+li {
+  display:inline-block;
+  width:23%;
+  padding-top: 20px;
+  span {
+     color:$gold;
+
+  }
+
+  a {
+    display:inline-block;
+  }
+}
+}
+.team-character {
+  text-align: center;
+}
 
 @import 'import/print';
