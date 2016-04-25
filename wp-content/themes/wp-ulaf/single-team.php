@@ -220,7 +220,27 @@ if( $images ): ?>
     </article>
   <?php endif; ?>
 
+  <h2><span class="team_achievements">Достижения команды</span></h2>
+ <span class="text-achiv"><?php
 
+// check if the repeater field has rows of data
+if( have_rows('team_achievements') ):
+
+  // loop through the rows of data
+    while ( have_rows('team_achievements') ) : the_row();
+
+        // display a sub field value
+        the_sub_field('team_achievements');
+
+    endwhile;
+
+else :
+
+    // no rows found
+
+endif;
+
+  ?></span>
 
   </div>
 </section>
