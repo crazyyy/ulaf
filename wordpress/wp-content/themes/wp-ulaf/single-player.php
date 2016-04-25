@@ -191,7 +191,7 @@ if( $images ): ?>
 <!-- Slider -->
 
 <style type="text/css">
-        #featured { width: 940px; height: 450px; background: #009cff url('orbit/loading.gif') no-repeat center center; overflow: hidden; }</style>
+        </style>
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/orbit.css">
 
 
@@ -208,24 +208,18 @@ if( $images ): ?>
       });
     </script>
     <div id="featured">
-      <img src="http://localhost:9090/wp-content/uploads/2016/03/Lycy5Nr-fpY.jpg" alt="Link" />
-      <img src="http://localhost:9090/wp-content/uploads/2016/03/lvxcQi_DqJ8.jpg" alt="Ezio" rel="ezioCaption" />
-      <img src="http://localhost:9090/wp-content/uploads/2016/03/M4CX8FcWdus.jpg" alt="Master Chief" />
-      <img src="http://localhost:9090/wp-content/uploads/2016/03/m5FfQKMN5DU.jpg"  alt="Marcus Fenix" rel="marcusCaption" />
+        <?php foreach( $images as $image ): ?>
+
+                     <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+        <?php endforeach; ?>
     </div>
     <span class="orbit-caption" id="ezioCaption">This is an <em>awesome caption</em> for Ezio. <strong>Note:</strong> This whole image is linked</span>
     <span class="orbit-caption" id="marcusCaption">This is an <em>awesome caption</em> for Marcus with a <a href="http://www.zurb.com/playground" target="_blank" style="color: #fff">link</a></span>
 
 
     <ul class="player-game-photo">
-        <?php foreach( $images as $image ): ?>
-            <li>
-                <a href="<?php echo $image['url']; ?>">
-                     <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
-                </a>
-                <p><?php echo $image['caption']; ?></p>
-            </li>
-        <?php endforeach; ?>
+
     </ul>
 
 <!-- //Slider -->
@@ -233,10 +227,10 @@ if( $images ): ?>
 
 
 
-<h2>player stats</h2>
-<h3>player qb stats</h3>
+  <span class="head-table"><h2>player stats</h2></span>
+  <span class="heading-stats"><h3>player qb stats</h3></span>
 
-<table>
+<table class="game-stats">
 
 <tr>
   <th>game date</th>

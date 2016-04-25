@@ -575,6 +575,30 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
+#featured {
+ width: 940px;
+ height: 450px;
+ background: #009cff url('orbit/loading.gif') no-repeat center center; overflow: hidden;
+margin:auto;
+padding: 15px 0;
+}
+.head-table {
+  h2{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 25px;
+  }
+}
+.heading-stats {
+  font-size: 18px;
+  color:$gold;
+}
+.game-stats {
+  td {
+    text-align: center;
+    color:$gold;
+  }
+}
 
 @import 'import/print';
