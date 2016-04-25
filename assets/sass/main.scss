@@ -636,5 +636,14 @@ li {
 .team-character {
   text-align: center;
 }
+.team_achievements {
+  color:$gold;
+  font-size: 25px;
+}
+.text-achiv {
+  color:#fff;
+    display: block;
+
+}
 
 @import 'import/print';
