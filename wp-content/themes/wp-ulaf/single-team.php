@@ -5,39 +5,73 @@
 
       <article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12'); ?>>
 
-        <div class="row player-card">
+        <div class="row team-card">
 
 
-          <div class="player-main-photo col-md-2">
-            <ul class="description">
-           <li>Vinnytsia Wolves</li>
-              <li>ГОРОД : <?php the_field('team_city');?></li>
-              <li>ГОД ОСНОВАНИЯ: <?php
+          <div class="player-main-photo col-md-12">
+           <span class="team_name">Vinnytsia Wolves</span>
+          <ul class="description">
+            <li><span>ГОРОД :</span> <?php the_field('team_city');?></li>
+            <li><span>ГОД ОСНОВАНИЯ:</span>
+               <?php
+              // get raw date
+              $date = get_field('date', false, false);
+              // make date object
+              $date = new DateTime($date);
+              ?>
+              <?php
+              ?>
+              <?php echo $date->format('j M Y'); ?>
+            </li>
+                            <li><span>ЦВЕТА:</span>
+          <span class="team-colors">
+                            <?php
+              // check if the repeater field has rows of data
+              if( have_rows('colors') ):
 
-// get raw date
-$date = get_field('date', false, false);
+                // loop through the rows of data
+                  while ( have_rows('colors') ) : the_row();
+              ?>
+            <span style="background-color:<?php the_sub_field('colors'); ?>">
+            </span>
+
+              <?php
+                  endwhile;
+
+              else :
+
+              endif;
+              ?>
+            </span><!-- team-colors -->
 
 
-// make date object
-$date = new DateTime($date);
-?>
-<?php
-?>
-<?php echo $date->format('j M Y'); ?></li>
-              <li>ЦВЕТА:</li>
-              <li>ГЛАВНЫЙ ТРЕНЕР: <?php the_field('head_coach');?></li>
-           </ul>
+            </li>
+
+            <li><span>ГЛАВНЫЙ ТРЕНЕР:</span> <?php
+
+                $posts = get_field('head_coach');
+
+                if( $posts ): ?>
+
+                  <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+
+                        <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank"><?php echo get_the_title( $p->ID ); ?></a>
+                  <?php endforeach; ?>
+
+                <?php endif; ?>
+                </li>
+          </ul>
           </div><!-- /.player-main-photo -->
-          <div class="col-md-10 player-character">
+          <div class="col-md-12 team-character">
             <?php if ( has_post_thumbnail()) :?>
 
-                <img src="<?php echo get_template_directory_uri(); ?>/img/vin-wolves.jpg"> <!-- // Fullsize image for the single post  -->
-              </a>
+                 <?php the_post_thumbnail(); // Fullsize image for the single post ?>
+
             <?php endif; ?><!-- /post thumbnail -->
 
 
 
-          </div><!--/ player-character -->
+          </div><!--/ team-character -->
           <div class="col-md-12">
                 <table class="player-score">
                   <tr>
@@ -129,7 +163,7 @@ $date = new DateTime($date);
 
 <?php
 
-$images = get_field('player_gallery');
+$images = get_field('team_gallery');
 
 if( $images ): ?>
 
@@ -173,74 +207,6 @@ if( $images ): ?>
 
 
 
-  <span class="head-table"><h2>player stats</h2></span>
-  <span class="heading-stats"><h3>player qb stats</h3></span>
-
-<table class="game-stats">
-
-<tr>
-  <th>game date</th>
-  <th>player team</th>
-  <th>opposing team</th>
-  <th>player yds</th>
-  <th>pass compl</th>
-  <th>yds compl</th>
-</tr>
-
-<?php
-
-// check if the repeater field has rows of data
-if( have_rows('player_qb_stats') ):
-
-  // loop through the rows of data
-    while ( have_rows('player_qb_stats') ) : the_row();
-
-?>
-
- <tr>
-
-<td>date</td>
-<td>
-    <?php
-      $posts = get_sub_field('player_team');
-      if( $posts ): ?>
-        <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
-              <a href="<?php echo get_permalink( $p->ID ); ?>"><?php echo get_the_title( $p->ID ); ?></a>
-        <?php endforeach; ?>
-      <?php endif; ?>
-</td>
-<td>
-      <?php
-      $posts = get_sub_field('opposing_team');
-      if( $posts ): ?>
-        <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
-              <a href="<?php echo get_permalink( $p->ID ); ?>"><?php echo get_the_title( $p->ID ); ?></a>
-        <?php endforeach; ?>
-      <?php endif; ?>
-</td>
-<td>
-  <?php the_sub_field('pass_yds');?>
-</td>
-<td>
-  <?php the_sub_field('pass_compl');?>
-</td>
-<td>
-  <?php the_sub_field('yds_compl');?>
-</td>
-
-
- </tr>
-<?php
-
-    endwhile;
-
-endif;
-
-?>
-
-
-
-</table>
 
 
       <?php comments_template(); ?>
