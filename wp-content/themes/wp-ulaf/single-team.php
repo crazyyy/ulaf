@@ -8,63 +8,50 @@
         <div class="row player-card">
 
 
-          <div class="player-main-photo col-md-3">
+          <div class="player-main-photo col-md-2">
+            <ul class="description">
+           <li>Vinnytsia Wolves</li>
+              <li>ГОРОД : <?php the_field('team_city');?></li>
+              <li>ГОД ОСНОВАНИЯ: <?php
+
+// get raw date
+$date = get_field('date', false, false);
+
+
+// make date object
+$date = new DateTime($date);
+?>
+<?php
+?>
+<?php echo $date->format('j M Y'); ?></li>
+              <li>ЦВЕТА:</li>
+              <li>ГЛАВНЫЙ ТРЕНЕР: <?php the_field('head_coach');?></li>
+           </ul>
+          </div><!-- /.player-main-photo -->
+          <div class="col-md-10 player-character">
             <?php if ( has_post_thumbnail()) :?>
-              <a class="single-thumb" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                <?php the_post_thumbnail(); // Fullsize image for the single post ?>
+
+                <img src="<?php echo get_template_directory_uri(); ?>/img/vin-wolves.jpg"> <!-- // Fullsize image for the single post  -->
               </a>
             <?php endif; ?><!-- /post thumbnail -->
-          </div><!-- /.player-main-photo -->
-          <div class="col-md-9 player-character">
-            <span class="quarterback-image"><img src="<?php echo get_template_directory_uri(); ?>/img/teams/qb.png"></span>
 
-            <ul class="description">
-           <li>ВИКТОР ЯНЧАК</li>
-              <li>ГОД РОЖДЕНИЯ:</li>
-              <li>РОСТ:</li>
-              <li>ВЕС:</li>
-              <li>В КОМАНДЕ С: </li>
-              <li>ИГРОВОЙ НОМЕР:</li>
 
-           </ul>
 
           </div><!--/ player-character -->
           <div class="col-md-12">
                 <table class="player-score">
                   <tr>
-                    <th><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></th>
+                    <th>Результат последних игр :</th>
                     <th><img src="<?php echo get_template_directory_uri(); ?>/img/teams/bulgogs.png"></th>
                     <th><img src="<?php echo get_template_directory_uri(); ?>/img/teams/pirates.png"></th>
                     <th><img src="<?php echo get_template_directory_uri(); ?>/img/teams/eagles.png"></th>
                     <th><img src="<?php echo get_template_directory_uri(); ?>/img/teams/bandits.png"></th>
                     <th><img src="<?php echo get_template_directory_uri(); ?>/img/teams/wolves.png"></th>
-                    <th><img src="<?php echo get_template_directory_uri(); ?>/img/teams/atlants.png"></th>
-                    <th>Общая</th>
+                    <th><img src="<?php echo get_template_directory_uri(); ?>/img/teams/atlants.png"></th
                   </tr>
 
                   <tr class="player-work">
-                      <td>КОЛИЧЕСТВО БРОСКОВ</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                    </tr>
-                    <tr>
-                      <td>ПОЙМАНЫХ БРОСКОВ</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                    </tr>
-                    <tr class="player-work">
-                      <td>НАБРАНЫХ ЯРДОВ ПАСОМ</td>
-                      <td>name</td>
+                      <td>1st Quarter</td>
                       <td>name</td>
                       <td>name</td>
                       <td>name</td>
@@ -73,8 +60,7 @@
                       <td>name</td>
                     </tr>
                     <tr>
-                      <td>ТАЧДАУН ПАСОМ</td>
-                      <td>name</td>
+                      <td>2nd Quarter</td>
                       <td>name</td>
                       <td>name</td>
                       <td>name</td>
@@ -83,8 +69,7 @@
                       <td>name</td>
                     </tr>
                     <tr class="player-work">
-                      <td>ТАЧДАУН БЕГОМ</td>
-                      <td>name</td>
+                      <td>3rd Quarter</td>
                       <td>name</td>
                       <td>name</td>
                       <td>name</td>
@@ -93,18 +78,7 @@
                       <td>name</td>
                     </tr>
                     <tr>
-                      <td>НАБРАНЫХ ЯРДОВ (БЕГ)</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                    </tr>
-                    <tr class="player-work">
-                      <td>ПЕРЕХВАТЫ</td>
-                      <td>name</td>
+                      <td>4th Quarter</td>
                       <td>name</td>
                       <td>name</td>
                       <td>name</td>
@@ -113,8 +87,7 @@
                       <td>name</td>
                     </tr>
                     <tr class="player-work">
-                      <td>ПЕРЕХВАТЫ</td>
-                      <td>name</td>
+                      <td>Result</td>
                       <td>name</td>
                       <td>name</td>
                       <td>name</td>
@@ -122,9 +95,9 @@
                       <td>name</td>
                       <td>name</td>
                     </tr>
+
                     <tr class="player-work">
                       <td>123 </td>
-                      <td> </td>
                       <td> </td>
                       <td> </td>
                       <td> </td>
@@ -153,33 +126,6 @@
 
 
 
-<table class="player-career">
-  <tr>
-    <td>team</td>
-    <td>
-    <?php
-      $posts = get_field('player_team');
-
-      if( $posts ): ?>
-        <ul>
-        <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
-            <li>
-              <a href="<?php echo get_permalink( $p->ID ); ?>"><?php echo get_the_title( $p->ID ); ?></a>
-            </li>
-        <?php endforeach; ?>
-        </ul>
-      <?php endif; ?>
-    </td>
-  </tr>
-  <tr>
-    <td>position</td>
-    <td><?php the_field('player_position');?></td>
-  </tr>
-  <tr>
-    <td>team jearsey number</td>
-    <td><?php the_field('player_number');?></td>
-  </tr>
-</table><!-- //player-career -->
 
 <?php
 
