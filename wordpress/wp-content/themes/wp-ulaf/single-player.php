@@ -181,22 +181,21 @@
   </tr>
 </table><!-- //player-career -->
 
+
+
+
+
 <?php
 
 $images = get_field('player_gallery');
 
 if( $images ): ?>
-
-
 <!-- Slider -->
-
-<style type="text/css">
-        </style>
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/orbit.css">
-
-
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/orbit.css">
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.4.1.min.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.orbit.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.orbit.min.js"></script>
+
+
 
     <script type="text/javascript">
       $(window).load(function() {
@@ -207,23 +206,21 @@ if( $images ): ?>
         });
       });
     </script>
+
+
     <div id="featured">
+
         <?php foreach( $images as $image ): ?>
-
-                     <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
-
+        <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
         <?php endforeach; ?>
+
     </div>
-    <span class="orbit-caption" id="ezioCaption">This is an <em>awesome caption</em> for Ezio. <strong>Note:</strong> This whole image is linked</span>
-    <span class="orbit-caption" id="marcusCaption">This is an <em>awesome caption</em> for Marcus with a <a href="http://www.zurb.com/playground" target="_blank" style="color: #fff">link</a></span>
 
-
-    <ul class="player-game-photo">
-
-    </ul>
 
 <!-- //Slider -->
 <?php endif; ?>
+
+
 
 
 
