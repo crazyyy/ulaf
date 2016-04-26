@@ -245,9 +245,11 @@ picture {
 
 .slider_but {
   font-size: 16px;
-
+position:absolute;
+top:40%;
+left:10%;
   width: 35%;
-  margin-top: 20px;
+
 }
 
 .btn.second {
@@ -576,74 +578,116 @@ footer {
   justify-content: space-between;
 }
 #featured {
- width: 940px;
- height: 450px;
- background: #009cff url('orbit/loading.gif') no-repeat center center; overflow: hidden;
-margin:auto;
-padding: 15px 0;
+  overflow: hidden;
+
+  width: 940px;
+  height: 450px;
+  margin: auto;
+  padding: 15px 0;
+
+  background: #009cff url('orbit/loading.gif') no-repeat center center;
 }
 .head-table {
-  h2{
-  font-size: 25px;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 25px;
+  h2 {
+    font-size: 25px;
+    font-weight: bold;
+
+    padding-top: 25px;
+
+    text-align: center;
   }
 }
 .heading-stats {
   font-size: 18px;
-  color:$gold;
+
+  color: $gold;
 }
 .game-stats {
   td {
     text-align: center;
-    color:$gold;
+
+    color: $gold;
   }
 }
 .team-colors {
   display: inline-block;
+
+  height: 25px;
+
   border: 1px solid black;
-height: 25px;
+  span {
+    display: inline-block;
 
-span {
-  display: inline-block;
-  height: 100%;
-  width: 25px;
-
-}
+    width: 25px;
+    height: 100%;
+  }
 }
 .team_name {
   font-size: 30px;
-  color:$gold;
+
+  color: $gold;
 }
 .description {
   padding-bottom: 20px;
+
   text-align: center;
-li {
-  display:inline-block;
-  width:23%;
-  padding-top: 20px;
-  span {
-     color:$gold;
+  li {
+    display: inline-block;
 
+    width: 23%;
+    padding-top: 20px;
+    span {
+      color: $gold;
+    }
+    a {
+      display: inline-block;
+    }
   }
-
-  a {
-    display:inline-block;
-  }
-}
 }
 .team-character {
   text-align: center;
 }
 .team_achievements {
-  color:$gold;
   font-size: 25px;
+
+  color: $gold;
 }
 .text-achiv {
-  color:#fff;
-    display: block;
+  display: block;
+
+  color: #fff;
+}
+.item-slide {
+  position: relative;
+  .slider_title {
+    display:flex;
+    justify-content:center;
+    position: absolute;
+    top: 14%;
+    left: 10%;
+
+    width: 70%;
+    h1 {
+      font-size: 32px;
+    padding-top: 10px;
+      color: $gold;
+    }
+  }
+  .descr {
+    position: absolute;
+    top: 29%;
+    left: 10%;
+    color: #fff;
+  }
+}
+.owl-controls {
+margin-top: 0 !important;
+
+  .owl-dots {
+  position:absolute;
+  top:95%;
+  left: 48%;
 
 }
-
+}
 @import 'import/print';

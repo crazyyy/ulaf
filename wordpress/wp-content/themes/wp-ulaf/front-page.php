@@ -1,11 +1,9 @@
 <?php /* Template Name: Home Page */ get_header(); ?>
 
-   <!-- slider -->
 
-    <div id="fullcarousel-example" data-interval="600" class="carousel slide" data-ride="carousel">
 
-        <div class="carousel-inner">
 
+<div class="owl-home-slide">
 
 
                 <?php
@@ -13,61 +11,48 @@
           $images = get_field('slider_images');
 
           if( $images ):
-$i = 0;
-
-
-
-
 
  foreach( $images as $image ):
 
-if ( $i == 0) {
-  $active = "active";
-} else {
-  $active = "";
-}
+
 
   ?>
 
 
-            <div class="item <?php echo $active; ?>">
+
+     <div class="item-slide">
 
              <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
-            </div>
-
-<?php $i++;  ?>
-
-            <?php endforeach; ?>
-            <?php endif; ?>
-
-
-
-
-
-
-        </div>
-    </div>
-    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"><i class="icon-prev fa fa-angle-left"></i></a>
-    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next"><i class="icon-next fa fa-angle-right"></i> </a>
-
-    <div class="item">
-        <div class="carousel-caption">
+        <div class="slider_text">
             <div class="slider_title">
                 <h1><?php the_field('slide_title');?></h1>
             </div>
 
             <div class="descr">
                 <p><?php the_field('slide_description');?></p>
+
             </div>
             <div class="slider_but">
                 <a class="btn btn-primary">Присоединяйтесь</a>
                 <a class="btn second">Подробнее</a>
             </div>
+          </div>
         </div>
-    </div>
-    <a class="left carousel-control" href="#fullcarousel-example" data-slide="prev"><i class="icon-prev fa fa-angle-left"></i></a>
-    <a class="right carousel-control" href="#fullcarousel-example" data-slide="next"><i class="icon-next fa fa-angle-right"></i></a>
-   <!-- slider -->
+
+
+            <?php endforeach; ?>
+            <?php endif; ?>
+
+
+
+</div>
+<!-- /.owl-carousel -->
+
+
+
+
+
+
 
 
     <section class="section-news">

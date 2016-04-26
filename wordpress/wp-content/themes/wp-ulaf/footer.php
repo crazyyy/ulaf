@@ -34,5 +34,44 @@
         </div><!-- container -->
       </footer>
     </div><!-- wrapper -->
+
+
+
+<link rel="stylesheet" href="http://www.owlcarousel.owlgraphic.com/assets/owlcarousel/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="http://www.owlcarousel.owlgraphic.com/assets/owlcarousel/assets/owl.theme.default.min.css">
+
+<script src="http://www.owlcarousel.owlgraphic.com/assets/vendors/jquery.min.js"></script>
+<script src="http://www.owlcarousel.owlgraphic.com/assets/owlcarousel/owl.carousel.js"></script>
+
+
+<script>
+$('.owl-home-slide').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    items:1,
+    autoplay: false,
+    autoplayTimeout: 5000,
+})
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </body>
 </html>
