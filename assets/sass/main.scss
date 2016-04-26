@@ -734,8 +734,28 @@ left:0;
 right:0;
 }
 }
-
-
+.owl-people-slide.owl-carousel.owl-theme.owl-loaded {
+    position:relative;
+  .owl-prev {
+  position:absolute;
+  top:50%;
+left:0;
+}
+.owl-next {
+  position:absolute;
+  top:50%;
+right:0;
+}
+}
+.player-bio.poeple {
+  padding-top: 30px;
+}
+.description.people {
+  li {
+    width: 100%;
+    text-align: left;
+  }
+}
 
 
 

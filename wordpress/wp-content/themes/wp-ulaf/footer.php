@@ -79,6 +79,17 @@ $('.owl-team-slide').owlCarousel({
     autoplayTimeout: 5000,
 })
 </script>
+<script>
+$('.owl-people-slide').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    navText:['&#x3c;','&#x3e;'],
+    items:1,
+    autoplay: true,
+    autoplayTimeout: 5000,
+})
+</script>
 
 
 
