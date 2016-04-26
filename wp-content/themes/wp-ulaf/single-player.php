@@ -185,36 +185,25 @@
 
 
 
-<div class="owl-player-slide">
+  <div class="owl-player-slide">
 
+          <?php
 
-                <?php
+              $images = get_field('player_gallery');
 
-          $images = get_field('player_gallery');
+              if( $images ):
 
-          if( $images ):
+        foreach( $images as $image ):
 
- foreach( $images as $image ):
-
-
-
-  ?>
-
-
-
-     <div class="item-slide">
-
+          ?>
+        <div class="item-slide">
              <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
-
         </div>
-
 
             <?php endforeach; ?>
             <?php endif; ?>
 
-
-
-</div>
+  </div>
 
 
 
@@ -225,81 +214,68 @@
 
 <table class="game-stats">
 
-<tr>
-  <th>game date</th>
-  <th>player team</th>
-  <th>opposing team</th>
-  <th>player yds</th>
-  <th>pass compl</th>
-  <th>yds compl</th>
-</tr>
+    <tr>
+      <th>game date</th>
+      <th>player team</th>
+      <th>opposing team</th>
+      <th>player yds</th>
+      <th>pass compl</th>
+      <th>yds compl</th>
+    </tr>
 
-<?php
-
-// check if the repeater field has rows of data
-if( have_rows('player_qb_stats') ):
-
-  // loop through the rows of data
-    while ( have_rows('player_qb_stats') ) : the_row();
-
-?>
-
- <tr>
-
-<td>date</td>
-<td>
-    <?php
-      $posts = get_sub_field('player_team');
-      if( $posts ): ?>
-        <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
-              <a href="<?php echo get_permalink( $p->ID ); ?>"><?php echo get_the_title( $p->ID ); ?></a>
-        <?php endforeach; ?>
-      <?php endif; ?>
-</td>
-<td>
       <?php
-      $posts = get_sub_field('opposing_team');
-      if( $posts ): ?>
-        <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
-              <a href="<?php echo get_permalink( $p->ID ); ?>"><?php echo get_the_title( $p->ID ); ?></a>
-        <?php endforeach; ?>
-      <?php endif; ?>
-</td>
-<td>
-  <?php the_sub_field('pass_yds');?>
-</td>
-<td>
-  <?php the_sub_field('pass_compl');?>
-</td>
-<td>
-  <?php the_sub_field('yds_compl');?>
-</td>
+        // check if the repeater field has rows of data
+        if( have_rows('player_qb_stats') ):
 
+          // loop through the rows of data
+            while ( have_rows('player_qb_stats') ) : the_row();
+      ?>
+     <tr>
+        <td>date</td>
+        <td>
+            <?php
+              $posts = get_sub_field('player_team');
+              if( $posts ): ?>
+                <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+                      <a href="<?php echo get_permalink( $p->ID ); ?>"><?php echo get_the_title( $p->ID ); ?></a>
+                <?php endforeach; ?>
+              <?php endif; ?>
+        </td>
+        <td>
+              <?php
+              $posts = get_sub_field('opposing_team');
+              if( $posts ): ?>
+                <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+                      <a href="<?php echo get_permalink( $p->ID ); ?>"><?php echo get_the_title( $p->ID ); ?></a>
+                <?php endforeach; ?>
+              <?php endif; ?>
+        </td>
+        <td>
+          <?php the_sub_field('pass_yds');?>
+        </td>
+        <td>
+          <?php the_sub_field('pass_compl');?>
+        </td>
+        <td>
+          <?php the_sub_field('yds_compl');?>
+        </td>
+    </tr>
+        <?php
+          endwhile;
+        endif;
+        ?>
 
- </tr>
-<?php
-
-    endwhile;
-
-endif;
-
-?>
-
-
-
-</table>
-
+  </table>
 
       <?php comments_template(); ?>
-
-    </article>
+</article>
   <?php endwhile; else: ?>
-    <article class="col-md-12">
+  <article class="col-md-12">
 
       <h2 class="page-title inner-title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
 
-    </article>
-  <?php endif; ?>
+  </article>
+    <?php endif; ?>
 
 
 
