@@ -245,11 +245,12 @@ picture {
 
 .slider_but {
   font-size: 16px;
-position:absolute;
-top:40%;
-left:10%;
-  width: 35%;
 
+  position: absolute;
+  top: 40%;
+  left: 10%;
+
+  width: 35%;
 }
 
 .btn.second {
@@ -660,16 +661,20 @@ footer {
 .item-slide {
   position: relative;
   .slider_title {
-    display:flex;
-    justify-content:center;
     position: absolute;
     top: 14%;
     left: 10%;
 
+    display: flex;
+
     width: 70%;
+
+    justify-content: center;
     h1 {
       font-size: 32px;
-    padding-top: 10px;
+
+      padding-top: 10px;
+
       color: $gold;
     }
   }
@@ -677,17 +682,70 @@ footer {
     position: absolute;
     top: 29%;
     left: 10%;
+
     color: #fff;
   }
 }
 .owl-controls {
-margin-top: 0 !important;
-
+  margin-top: 0 !important;
   .owl-dots {
-  position:absolute;
-  top:95%;
-  left: 48%;
+    position: absolute;
+    top: 95%;
+    left: 48%;
+  }
+}
+.owl-player-slide.owl-carousel.owl-theme.owl-loaded {
+  position:relative;
 
+.owl-prev {
+  position:absolute;
+  top:50%;
+left:0;
+}
+.owl-next {
+  position:absolute;
+  top:50%;
+right:0;
 }
 }
+.owl-team-slide.owl-carousel.owl-theme.owl-loaded {
+  position:relative;
+  .owl-prev {
+  position:absolute;
+  top:50%;
+left:0;
+}
+.owl-next {
+  position:absolute;
+  top:50%;
+right:0;
+}
+}
+.owl-home-slide.owl-carousel.owl-theme.owl-loaded {
+    position:relative;
+  .owl-prev {
+  position:absolute;
+  top:50%;
+left:0;
+}
+.owl-next {
+  position:absolute;
+  top:50%;
+right:0;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @import 'import/print';

@@ -48,14 +48,37 @@
 $('.owl-home-slide').owlCarousel({
     loop:true,
     margin:10,
-    nav:false,
+    nav:true,
+    navText:['&#x3c;','&#x3e;'],
     items:1,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 5000,
 })
 </script>
 
+<script>
+$('.owl-player-slide').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    navText:['&#x3c;','&#x3e;'],
+    items:1,
+    autoplay: true,
+    autoplayTimeout: 5000,
+})
+</script>
 
+<script>
+$('.owl-team-slide').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    navText:['&#x3c;','&#x3e;'],
+    items:1,
+    autoplay: true,
+    autoplayTimeout: 5000,
+})
+</script>
 
 
 

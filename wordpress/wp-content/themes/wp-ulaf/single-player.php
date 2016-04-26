@@ -185,40 +185,36 @@
 
 
 
-<?php
-
-$images = get_field('player_gallery');
-
-if( $images ): ?>
-<!-- Slider -->
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/orbit.css">
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.4.1.min.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.orbit.min.js"></script>
+<div class="owl-player-slide">
 
 
+                <?php
 
-    <script type="text/javascript">
-      $(window).load(function() {
-        $('#featured').orbit({
-          'bullets': true,
-          'timer' : true,
-          'animation' : 'horizontal-slide'
-        });
-      });
-    </script>
+          $images = get_field('player_gallery');
+
+          if( $images ):
+
+ foreach( $images as $image ):
 
 
-    <div id="featured">
 
-        <?php foreach( $images as $image ): ?>
-        <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
-        <?php endforeach; ?>
-
-    </div>
+  ?>
 
 
-<!-- //Slider -->
-<?php endif; ?>
+
+     <div class="item-slide">
+
+             <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+        </div>
+
+
+            <?php endforeach; ?>
+            <?php endif; ?>
+
+
+
+</div>
 
 
 

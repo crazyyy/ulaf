@@ -181,16 +181,36 @@
             });
           });
       </script>
-      <div id="featured">
-            <?php foreach( $images as $image ): ?>
+<div class="owl-team-slide">
+
+
+                <?php
+
+          $images = get_field('team_gallery');
+
+          if( $images ):
+
+ foreach( $images as $image ):
+
+
+
+  ?>
+
+
+
+     <div class="item-slide">
+
              <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+        </div>
+
+
             <?php endforeach; ?>
-      </div>
+            <?php endif; ?>
 
-      <span class="orbit-caption" id="ezioCaption">This is an <em>awesome caption</em> for Ezio. <strong>Note:</strong> This whole image is linked</span>
 
-      <span class="orbit-caption" id="marcusCaption">This is an <em>awesome caption</em> for Marcus with a <a href="http://www.zurb.com/playground" target="_blank" style="color: #fff">link</a></span>
 
+</div>
         <!-- //Slider -->
         <?php endif; ?>
 
