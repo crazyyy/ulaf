@@ -20,9 +20,10 @@
                 // make date object
                 $date = new DateTime($date);
                 ?>
-                <?php
-                ?>
+
                 <?php echo $date->format('j M Y'); ?>
+
+
               </li><!-- //ГОД ОСНОВАНИЯ -->
               <li><span>ЦВЕТА:</span>
                   <span class="team-colors">
@@ -65,7 +66,7 @@
           <div class="col-md-12 team-character">
             <?php if ( has_post_thumbnail()) :?>
 
-                 <?php the_post_thumbnail(); // Fullsize image for the single post ?>
+                 <?php the_post_thumbnail('full'); // Fullsize image for the single post ?>
 
             <?php endif; ?><!-- /post thumbnail -->
 

@@ -28,7 +28,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-1">
-          <a class="navbar-brand"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></a>
+          <a href="http://ulaf.pp.ua/" class="navbar-brand"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></a>
         </div>
         <div class="col-md-11">
           <nav class="header-nav">
@@ -44,72 +44,27 @@
             <div class="row">
                 <div class="col-md-12 col-md-12-teams">
                     <ul class="clearfix">
+                      <ul class="all-review-page">
+                          <?php
+                          $temp = $wp_query;
+                          $wp_query= null;
+                          query_posts('post_type=team'.'&showposts=100&orderby=date&order=ASC');
+                          while (have_posts()) : the_post();?>
                         <li>
-                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/teams/lions.png"></a>
+                            <a rel="nofollow" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+
+                            <?php if ( has_post_thumbnail()) :
+                              the_post_thumbnail('medium');
+                            else: ?>
+                              <img src="<?php echo catchFirstImage(); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>" />
+                            <?php endif; ?>
+                            </a><!-- /post thumbnail -->
                         </li>
-                        <li>
-                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/teams/bandits.png"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/teams/pirates.png"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/teams/atlants.png"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/teams/bulgogs.png"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/teams/les.png"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/teams/slavs.png"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/teams/eagles.png"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/teams/glad.png"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/teams/mon.png"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/teams/wolves.png"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/teams/rockets.png"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/teams/jeps.png"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/teams/sharks.png"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/teams/vikings.png"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/teams/tigers.png"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/teams/dolph.png"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/teams/hummers.png"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/teams/cossacs.png"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/teams/bears.png"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/teams/bizonu.png"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/teams/titans.png"></a>
-                        </li>
+
+                          <?php endwhile; ?>
+
+                          <?php $wp_query = null; $wp_query = $temp;?>
+                      </ul><!-- all-review-page -->
                     </ul>
                 </div>
             </div>

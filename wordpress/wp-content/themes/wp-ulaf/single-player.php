@@ -23,15 +23,34 @@
 
 
 
-            <ul class="description">
-              <li><?php the_title(); ?></li>
-              <li>ГОД РОЖДЕНИЯ: birthdate</li>
-              <li>РОСТ: height</li>
-              <li>ВЕС: weight</li>
-              <li>В КОМАНДЕ С: date</li>
-              <li>ИГРОВОЙ НОМЕР: <?php the_field('player_number');?></li>
-           </ul>
+            <ul class="description single-player">
+            <li><?php the_title(); ?></li>
+            <li>КОМАНДА : <?php the_field('player_team');?></li>
+              <li><span>ДАТА РОЖДЕНИЯ (ВОЗРАСТ): </span><?php
+                // get raw date
+                $date = get_field('player_age', false, false);
+                // make date object
+                $date = new DateTime($date);
+                ?>
+                <?php
+                ?>
+                <?php echo $date->format('j M Y');?>
 
+                     <?php
+
+                      $birthday = $date->format('Y');
+                      $current_year = date("Y");
+                      $age = $current_year - $birthday;
+                      echo $age;
+                        ?>
+
+                </li>
+                <li><span>РОСТ:</span> <?php the_field('height');?></li>
+                <li><span>ВЕС:</span> <?php the_field('weight');?></li>
+                <li><span>В КОМАНДЕ :</span> <?php the_field('experience');?></li>
+                <li><span>ИГРОВОЙ НОМЕР:</span> <?php the_field('player_number');?></li>
+           </ul>
+         </div>
 <!--
 <table class="player-career">
   <tr>

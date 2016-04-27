@@ -570,6 +570,10 @@ footer {
 
 .player-bio {
   padding-top: 50px;
+
+  p {
+    color:#fff;
+  }
 }
 
 .player-game-photo {
@@ -756,7 +760,15 @@ right:0;
     text-align: left;
   }
 }
-
+.description.single-player {
+  li {
+    width: 100%;
+    text-align: left;
+    span {
+      color:$gold;
+    }
+  }
+}
 
 
 
