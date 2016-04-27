@@ -37,75 +37,59 @@
 
 
 
-<link rel="stylesheet" href="http://www.owlcarousel.owlgraphic.com/assets/owlcarousel/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="http://www.owlcarousel.owlgraphic.com/assets/owlcarousel/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="http://www.owlcarousel.owlgraphic.com/assets/owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="http://www.owlcarousel.owlgraphic.com/assets/owlcarousel/assets/owl.theme.default.min.css">
 
-<script src="http://www.owlcarousel.owlgraphic.com/assets/vendors/jquery.min.js"></script>
-<script src="http://www.owlcarousel.owlgraphic.com/assets/owlcarousel/owl.carousel.js"></script>
-
-
-<script>
-$('.owl-home-slide').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    navText:['&#x3c;','&#x3e;'],
-    items:1,
-    autoplay: true,
-    autoplayTimeout: 5000,
-})
-</script>
-
-<script>
-$('.owl-player-slide').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    navText:['&#x3c;','&#x3e;'],
-    items:1,
-    autoplay: true,
-    autoplayTimeout: 5000,
-})
-</script>
-
-<script>
-$('.owl-team-slide').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    navText:['&#x3c;','&#x3e;'],
-    items:1,
-    autoplay: true,
-    autoplayTimeout: 5000,
-})
-</script>
-<script>
-$('.owl-people-slide').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    navText:['&#x3c;','&#x3e;'],
-    items:1,
-    autoplay: true,
-    autoplayTimeout: 5000,
-})
-</script>
+  <script src="http://www.owlcarousel.owlgraphic.com/assets/vendors/jquery.min.js"></script>
+  <script src="http://www.owlcarousel.owlgraphic.com/assets/owlcarousel/owl.carousel.js"></script>
 
 
+  <script>
+  $('.owl-home-slide').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      navText:['&#x3c;','&#x3e;'],
+      items:1,
+      autoplay: true,
+      autoplayTimeout: 5000,
+  })
+  </script>
 
+  <script>
+  $('.owl-player-slide').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      navText:['&#x3c;','&#x3e;'],
+      items:1,
+      autoplay: true,
+      autoplayTimeout: 5000,
+  })
+  </script>
 
-
-
-
-
-
-
-
-
-
-
-
-
+  <script>
+  $('.owl-team-slide').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      navText:['&#x3c;','&#x3e;'],
+      items:1,
+      autoplay: true,
+      autoplayTimeout: 5000,
+  })
+  </script>
+  <script>
+  $('.owl-people-slide').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      navText:['&#x3c;','&#x3e;'],
+      items:1,
+      autoplay: true,
+      autoplayTimeout: 5000,
+  })
+  </script>
 
   </body>
 </html>
