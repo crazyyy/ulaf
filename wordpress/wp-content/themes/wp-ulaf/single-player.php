@@ -16,143 +16,23 @@
             <?php endif; ?><!-- /post thumbnail -->
           </div><!-- /.player-main-photo -->
           <div class="col-md-9 player-character">
+
+
+
             <span class="quarterback-image"><img src="<?php echo get_template_directory_uri(); ?>/img/teams/qb.png"></span>
 
-            <ul class="description">
-           <li>ВИКТОР ЯНЧАК</li>
-              <li>ГОД РОЖДЕНИЯ:</li>
-              <li>РОСТ:</li>
-              <li>ВЕС:</li>
-              <li>В КОМАНДЕ С: </li>
-              <li>ИГРОВОЙ НОМЕР:</li>
 
+
+            <ul class="description">
+              <li><?php the_title(); ?></li>
+              <li>ГОД РОЖДЕНИЯ: birthdate</li>
+              <li>РОСТ: height</li>
+              <li>ВЕС: weight</li>
+              <li>В КОМАНДЕ С: date</li>
+              <li>ИГРОВОЙ НОМЕР: <?php the_field('player_number');?></li>
            </ul>
 
-          </div><!--/ player-character -->
-          <div class="col-md-12">
-                <table class="player-score">
-                  <tr>
-                    <th><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></th>
-                    <th><img src="<?php echo get_template_directory_uri(); ?>/img/teams/bulgogs.png"></th>
-                    <th><img src="<?php echo get_template_directory_uri(); ?>/img/teams/pirates.png"></th>
-                    <th><img src="<?php echo get_template_directory_uri(); ?>/img/teams/eagles.png"></th>
-                    <th><img src="<?php echo get_template_directory_uri(); ?>/img/teams/bandits.png"></th>
-                    <th><img src="<?php echo get_template_directory_uri(); ?>/img/teams/wolves.png"></th>
-                    <th><img src="<?php echo get_template_directory_uri(); ?>/img/teams/atlants.png"></th>
-                    <th>Общая</th>
-                  </tr>
-
-                  <tr class="player-work">
-                      <td>КОЛИЧЕСТВО БРОСКОВ</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                    </tr>
-                    <tr>
-                      <td>ПОЙМАНЫХ БРОСКОВ</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                    </tr>
-                    <tr class="player-work">
-                      <td>НАБРАНЫХ ЯРДОВ ПАСОМ</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                    </tr>
-                    <tr>
-                      <td>ТАЧДАУН ПАСОМ</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                    </tr>
-                    <tr class="player-work">
-                      <td>ТАЧДАУН БЕГОМ</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                    </tr>
-                    <tr>
-                      <td>НАБРАНЫХ ЯРДОВ (БЕГ)</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                    </tr>
-                    <tr class="player-work">
-                      <td>ПЕРЕХВАТЫ</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                    </tr>
-                    <tr class="player-work">
-                      <td>ПЕРЕХВАТЫ</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                      <td>name</td>
-                    </tr>
-                    <tr class="player-work">
-                      <td>123 </td>
-                      <td> </td>
-                      <td> </td>
-                      <td> </td>
-                      <td> </td>
-                      <td> </td>
-                      <td> </td>
-                      <td> </td>
-                    </tr>
-
-
-                </table>
-          </div><!-- player-score -->
-
-        </div><!-- /.row -->
-    <div class="row">
-    <div class="col-md-12 player-bio">
-            <?php the_content(); ?>
-          </div><!-- /.col-md-9 player-bio -->
-      </div><!-- /row -->
-
-      <?php the_tags( __( 'Tags: ', 'wpeasy' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
-
-
-
-
-
-
-
-
+<!--
 <table class="player-career">
   <tr>
     <td>team</td>
@@ -177,34 +57,62 @@
   </tr>
   <tr>
     <td>team jearsey number</td>
-    <td><?php the_field('player_number');?></td>
+    <td></td>
   </tr>
 </table><!-- //player-career -->
 
 
 
 
+          </div><!--/ player-character -->
 
-  <div class="owl-player-slide">
 
-          <?php
 
-              $images = get_field('player_gallery');
+<!-- <?php the_field('player_position');?> -->
 
-              if( $images ):
+<?php
+  $allpositions = get_field('player_position');
 
-        foreach( $images as $image ):
+  if( $allpositions ):
+    foreach( $allpositions as $position ):
 
-          ?>
-        <div class="item-slide">
-             <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
-        </div>
 
-            <?php endforeach; ?>
-            <?php endif; ?>
 
-  </div>
+      if ($position =='qb') {
 
+         get_template_part('includes/player-score-qb');
+
+      } else if ($position =='wr' ) {
+
+         get_template_part('includes/player-score-wr');
+
+      } else if ($position =='c' ) {
+
+
+      } else {
+        // nothing
+      }
+
+
+
+    endforeach;
+  endif;
+?>
+
+
+
+
+
+
+
+        </div><!-- /.row -->
+    <div class="row">
+    <div class="col-md-12 player-bio">
+            <?php the_content(); ?>
+          </div><!-- /.col-md-9 player-bio -->
+      </div><!-- /row -->
+
+      <?php the_tags( __( 'Tags: ', 'wpeasy' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
 
 
 
@@ -266,6 +174,38 @@
         ?>
 
   </table>
+
+
+
+
+
+
+
+
+  <div class="owl-player-slide">
+
+          <?php
+
+              $images = get_field('player_gallery');
+
+              if( $images ):
+
+        foreach( $images as $image ):
+
+          ?>
+        <div class="item-slide">
+             <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+        </div>
+
+            <?php endforeach; ?>
+            <?php endif; ?>
+
+  </div>
+
+
+
+
+
 
       <?php comments_template(); ?>
 </article>
