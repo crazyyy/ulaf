@@ -44,6 +44,17 @@
   <script src="http://www.owlcarousel.owlgraphic.com/assets/owlcarousel/owl.carousel.js"></script>
 
 
+
+    <script src="http://www.jqueryscript.net/demo/jQuery-Plugin-For-Fixed-Table-Header-Footer-Columns-TableHeadFixer/tableHeadFixer.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".player-score").tableHeadFixer({"head" : false, "left" : 1});
+      });
+    </script>
+
+
+
+
   <script>
   $('.owl-home-slide').owlCarousel({
       loop:true,
