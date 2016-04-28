@@ -1,48 +1,147 @@
 <div class="col-md-12">
 <h4>player stats as K</h4>
+
+
       <table class="player-score">
+
+
         <tr>
           <th><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></th>
-          <th><img src="<?php echo get_template_directory_uri(); ?>/img/teams/bulgogs.png"></th>
-          <th><img src="<?php echo get_template_directory_uri(); ?>/img/teams/pirates.png"></th>
-          <th><img src="<?php echo get_template_directory_uri(); ?>/img/teams/eagles.png"></th>
-          <th><img src="<?php echo get_template_directory_uri(); ?>/img/teams/bandits.png"></th>
-          <th><img src="<?php echo get_template_directory_uri(); ?>/img/teams/wolves.png"></th>
-          <th><img src="<?php echo get_template_directory_uri(); ?>/img/teams/atlants.png"></th>
-          <th>Общая</th>
-        </tr>
 
-        <tr class="player-work">
-            <td>ФИЛД ГОЛОВ</td>
-            <td>name</td>
-            <td>name</td>
-            <td>name</td>
-            <td>name</td>
-            <td>name</td>
-            <td>name</td>
-            <td>name</td>
-          </tr>
-          <tr>
-            <td>НАИБОЛИЕ ДЛИННЫЙ</td>
-            <td>name</td>
-            <td>name</td>
-            <td>name</td>
-            <td>name</td>
-            <td>name</td>
-            <td>name</td>
-            <td>name</td>
-          </tr>
+
+                <?php
+
+                // check if the repeater field has rows of data
+                if( have_rows('player_kicker') ):
+
+                  // loop through the rows of data
+                    while ( have_rows('player_kicker') ) : the_row();
+                  ?>
+
+          <th>
+
+                <?php
+                      $posts = get_sub_field('opposing_team');
+                      if( $posts ):
+                        foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+                <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $p->ID ) ); ?>" alt="">
+
+                        <?php endforeach; ?>
+                      <?php endif; ?>
+
+          </th>
+
+
+                     <?php endwhile; endif; ?>
+
+          <th>Общая</th>
+      </tr>
+
+
           <tr class="player-work">
-            <td>НАИБОЛИЕ ДЛИННОЕ ПРОБИТИЕ</td>
-            <td>name</td>
-            <td>name</td>
-            <td>name</td>
-            <td>name</td>
-            <td>name</td>
-            <td>name</td>
-            <td>name</td>
+            <td>ФИЛДГОЛОВ</td>
+
+                  <?php
+
+                  $i = 0;
+
+                // check if the repeater field has rows of data
+                if( have_rows('player_kicker') ):
+
+                  // loop through the rows of data
+                    while ( have_rows('player_kicker') ) : the_row();
+                  ?>
+            <td>
+
+                <?php the_sub_field('fg'); ?>
+
+                </td>
+                <?php
+                $i = $i + get_sub_field('fg');
+
+                 ?>
+
+                <?php endwhile; endif; ?>
+
+            <td>
+
+
+            <?php echo $i; ?>
+
+            </td>
           </tr>
-          <tr>
+
+
+         <tr>
+            <td>НАИБОЛИЕ ДЛИННЫЙ ФИЛДГОЛ</td>
+
+
+                  <?php
+
+                  $i = 0;
+
+                // check if the repeater field has rows of data
+                if( have_rows('player_kicker') ):
+
+                  // loop through the rows of data
+                    while ( have_rows('player_kicker') ) : the_row();
+                  ?>
+            <td>
+
+                <?php the_sub_field('longest'); ?>
+
+                </td>
+                <?php
+                $i = $i + get_sub_field('longest');
+
+                 ?>
+
+                <?php endwhile; endif; ?>
+
+            <td>
+
+
+            <?php echo $i; ?>
+
+            </td>
+          </tr>
+
+
+          <tr class="player-work">
+            <td>НАИБОЛИЕ ДЛИННЫЙ КИКОФФ</td>
+
+                  <?php
+
+                  $i = 0;
+
+                // check if the repeater field has rows of data
+                if( have_rows('player_kicker') ):
+
+                  // loop through the rows of data
+                    while ( have_rows('player_kicker') ) : the_row();
+                  ?>
+            <td>
+
+                <?php the_sub_field('longest_kickoff'); ?>
+
+                </td>
+                <?php
+                $i = $i + get_sub_field('longest_kickoff');
+
+                 ?>
+
+                <?php endwhile; endif; ?>
+
+            <td>
+
+
+            <?php echo $i; ?>
+
+            </td>
+      </tr>
+
+
+
           <tr class="player-work">
             <td>123 </td>
             <td> </td>
