@@ -25,7 +25,19 @@
 
             <ul class="description single-player">
             <li><?php the_title(); ?></li>
-            <li>КОМАНДА : <?php the_field('player_team');?></li>
+            <li><span>КОМАНДА :</span>  <?php
+
+                    $posts = get_field('player_team');
+
+                    if( $posts ): ?>
+
+                      <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+
+                      <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank"><?php echo get_the_title( $p->ID ); ?></a>
+                      <?php endforeach; ?>
+
+                    <?php endif; ?>
+              </li>
               <li><span>ДАТА РОЖДЕНИЯ (ВОЗРАСТ): </span><?php
                 // get raw date
                 $date = get_field('player_age', false, false);

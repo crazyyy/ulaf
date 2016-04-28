@@ -64,6 +64,7 @@
                           <?php endwhile; ?>
 
                           <?php $wp_query = null; $wp_query = $temp;?>
+                          <?php wp_reset_query(); ?>
                       </ul><!-- all-review-page -->
                     </ul>
                 </div>
