@@ -1,5 +1,18 @@
-<div class="col-md-12">
-<h4>player stats as RB</h4>
+<div class="col-md-12 player-achievements">
+  <div class="col-md-12 inner">
+    <h4>player stats as RB</h4>
+
+<style>
+      .inner > div {
+      overflow-y:hidden !important;
+      height:500px;
+      }
+
+      .player-score {
+        width: 1400px !important;
+      }
+    </style>
+
 
 
       <table class="player-score">
@@ -335,6 +348,5 @@
 
 
       </table><!-- player-score -->
+    </div><!-- inner -->
 </div>
-
-

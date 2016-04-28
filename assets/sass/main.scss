@@ -511,9 +511,9 @@ footer {
     justify-content: flex-end;
   }
 }
+.inner {
 .player-score {
   position: relative;
-
   text-align: center;
   &:before {
     position: absolute;
@@ -561,11 +561,11 @@ footer {
       border: none;
       &:first-child {
         text-align: left;
-
         color: #fff;
       }
     }
   }
+}
 }
 
 .player-bio {
