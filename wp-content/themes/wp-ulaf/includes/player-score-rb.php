@@ -5,7 +5,7 @@
 <style>
       .inner > div {
       overflow-y:hidden !important;
-      height:500px;
+      height:425px;
       }
 
       .player-score {
