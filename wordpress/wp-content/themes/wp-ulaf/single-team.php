@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <section class="container container-content">
-  <div class="row">
+  <div class="row team-head">
     <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
       <article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12'); ?>>
@@ -239,9 +239,43 @@
                 </table>
           </div><!-- player-score -->
         </div>
-      </div><!-- /.row -->
+
+
+</div><!-- /.row -->
+
+
+
+
+
+
 
     <div class="row">
+      <div class="col-md-12 people-desciption">
+        <h4>Основатели и Тренера</h4>
+            <div class="col-md-3">
+               <?php
+
+                    $posts = get_field('people');
+
+                    if( $posts ): ?>
+
+                      <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+
+                        <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $p->ID, "medium" ) ); ?>" alt="">
+                        <?php $url = $thumb[0];?>
+
+
+                        <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank"><?php echo get_the_title( $p->ID ); ?></a>
+                      <?php endforeach; ?>
+
+                      <?php endif; ?>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+
+
+        </div>
         <div class="col-md-12 player-bio">
             <?php the_content(); ?>
         </div><!-- /.col-md-9 player-bio -->
