@@ -722,19 +722,6 @@ left:0;
 right:0;
 }
 }
-.owl-home-slide.owl-carousel.owl-theme.owl-loaded {
-    position:relative;
-  .owl-prev {
-  position:absolute;
-  top:50%;
-left:0;
-}
-.owl-next {
-  position:absolute;
-  top:50%;
-right:0;
-}
-}
 .owl-people-slide.owl-carousel.owl-theme.owl-loaded {
     position:relative;
   .owl-prev {
@@ -766,8 +753,26 @@ right:0;
     }
   }
 }
+.inner > div {
+      overflow-y:hidden !important;
+      height:425px;
+      }
 
-
+      .player-score {
+        width: 1400px !important;
+      }
+.inner.teams {
+      height: 330px;
+ }
+ .people-desciption {
+h4 {
+  padding: 15px 10px;
+}
+ .people-block {
+  text-align: center;
+  display:inline-block;
+ }
+ }
 
 
 

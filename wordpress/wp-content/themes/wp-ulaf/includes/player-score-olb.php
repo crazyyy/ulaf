@@ -2,17 +2,6 @@
 <div class="col-md-12 inner">
     <h4>player stats as OLB</h4>
 
-<style>
-      .inner > div {
-      overflow-y:hidden !important;
-      height:425px;
-      }
-
-      .player-score {
-        width: 1400px !important;
-      }
-    </style>
-
 
       <table class="player-score">
 
