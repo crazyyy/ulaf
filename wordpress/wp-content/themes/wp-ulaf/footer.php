@@ -59,8 +59,7 @@
   $('.owl-home-slide').owlCarousel({
       loop:true,
       margin:10,
-      nav:true,
-      navText:['&#x3c;','&#x3e;'],
+      nav:false,
       items:1,
       autoplay: true,
       autoplayTimeout: 5000,
@@ -101,6 +100,17 @@
       autoplayTimeout: 5000,
   })
   </script>
+  <script>
+  $('.owl-footer-slide').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:false,
+      items:4,
+      autoplay: true,
+      autoplayTimeout: 5000,
+  })
+  </script>
+
 
   </body>
 </html>

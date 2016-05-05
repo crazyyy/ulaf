@@ -512,66 +512,68 @@ footer {
   }
 }
 .inner {
-.player-score {
-  position: relative;
-  text-align: center;
-  &:before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  .player-score {
+    position: relative;
 
-    display: block;
+    text-align: center;
+    &:before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
 
-    content: '';
+      display: block;
 
-    border-radius: 25px;
-    background-color: rgba(50,50,48,.5);
-  }
-  th {
-    padding-left: 20px;
-    border: none;
-  }
-  tr {
-    background-color: rgba(50,50,48,.5);
-    &:nth-child(2n+1),
-    &:last-child {
-      background-color: rgba(50,50,48,.1);
-      th {
-        width: 145px;
-        height: 143px;
+      content: '';
 
-        text-align: center;
-        &:first-child {
-          background-color: rgba(50,50,48,.1);
-        }
-        img {
-          max-width: 100%;
-        }
-      }
+      border-radius: 25px;
+      background-color: rgba(50,50,48,.5);
     }
-    td {
-      font-size: 15px;
+    th {
+      padding-left: 20px;
 
-      padding: 0 0 0 20px;
-
-      color: $gold;
       border: none;
-      &:first-child {
-        text-align: left;
-        color: #fff;
+    }
+    tr {
+      background-color: rgba(50,50,48,.5);
+      &:nth-child(2n+1),
+      &:last-child {
+        background-color: rgba(50,50,48,.1);
+        th {
+          width: 145px;
+          height: 143px;
+
+          text-align: center;
+          &:first-child {
+            background-color: rgba(50,50,48,.1);
+          }
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+      td {
+        font-size: 15px;
+
+        padding: 0 0 0 20px;
+
+        color: $gold;
+        border: none;
+        &:first-child {
+          text-align: left;
+
+          color: #fff;
+        }
       }
     }
   }
-}
 }
 
 .player-bio {
   padding-top: 50px;
-
   p {
-    color:#fff;
+    color: #fff;
   }
 }
 
@@ -637,6 +639,7 @@ footer {
   text-align: center;
   li {
     display: inline-block;
+
     width: 23%;
     span {
       color: $gold;
@@ -648,6 +651,10 @@ footer {
 }
 .team-character {
   text-align: center;
+  position:relative;
+  .team-logo {
+    position:absolute;
+  }
 }
 .team_achievements {
   font-size: 25px;
@@ -696,44 +703,43 @@ footer {
   }
 }
 .owl-player-slide.owl-carousel.owl-theme.owl-loaded {
-  position:relative;
-
-.owl-prev {
-  position:absolute;
-  top:50%;
-left:0;
-}
-.owl-next {
-  position:absolute;
-  top:50%;
-right:0;
-}
+  position: relative;
+  .owl-prev {
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+  .owl-next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
 }
 .owl-team-slide.owl-carousel.owl-theme.owl-loaded {
-  position:relative;
+  position: relative;
   .owl-prev {
-  position:absolute;
-  top:50%;
-left:0;
-}
-.owl-next {
-  position:absolute;
-  top:50%;
-right:0;
-}
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+  .owl-next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
 }
 .owl-people-slide.owl-carousel.owl-theme.owl-loaded {
-    position:relative;
+  position: relative;
   .owl-prev {
-  position:absolute;
-  top:50%;
-left:0;
-}
-.owl-next {
-  position:absolute;
-  top:50%;
-right:0;
-}
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+  .owl-next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
 }
 .player-bio.poeple {
   padding-top: 30px;
@@ -741,38 +747,52 @@ right:0;
 .description.people {
   li {
     width: 100%;
+
     text-align: left;
   }
 }
 .description.single-player {
   li {
     width: 100%;
+
     text-align: left;
     span {
-      color:$gold;
+      color: $gold;
     }
   }
 }
 .inner > div {
-      overflow-y:hidden !important;
-      height:425px;
-      }
+  overflow-y: hidden !important;
 
-      .player-score {
-        width: 1400px !important;
-      }
-.inner.teams {
-      height: 330px;
- }
- .people-desciption {
-h4 {
-  padding: 15px 10px;
+  height: 425px;
 }
- .people-block {
+
+.player-score {
+  width: 1400px !important;
+}
+.inner.teams {
+  height: 331px;
+}
+.people-desciption {
   text-align: center;
-  display:inline-block;
- }
- }
+  h4 {
+    padding: 15px 10px;
+
+    color: #fff;
+  }
+}
+.sponsors {
+  text-align: center;
+  h4 {
+    padding: 15px 10px;
+
+    color: #fff;
+  }
+  img {
+    border: none;
+    border-radius: no;
+  }
+}
 
 
 

@@ -84,22 +84,25 @@
           <!-- end news loop -->
         </div><!-- news_block -->
 
-        <div class="row our-partners">
-          <h3>Наши Партнеры</h3>
+        <div class="owl-footer-slide">
 
-          <div class="col-md-12">
-            <ol class="brands">
-              <li><img src="<?php echo get_template_directory_uri(); ?>/img/partners/brand.jpg"></li>
-              <li><img src="<?php echo get_template_directory_uri(); ?>/img/partners/brand2.png"></li>
-              <li><img src="<?php echo get_template_directory_uri(); ?>/img/partners/brand3.png"></li>
-              <li><img src="<?php echo get_template_directory_uri(); ?>/img/partners/brand4.png"></li>
-              <li><img src="<?php echo get_template_directory_uri(); ?>/img/partners/brand5.png"></li>
-              <li><img src="<?php echo get_template_directory_uri(); ?>/img/partners/brand6.png"></li>
-              <li><img src="<?php echo get_template_directory_uri(); ?>/img/partners/brand7.png"></li>
-              <li><img src="<?php echo get_template_directory_uri(); ?>/img/partners/brand7.jpg"></li>
-            </ol>
-          </div>
-        </div><!-- our-partners -->
+          <?php
+
+              $images = get_field('sponsors_gallery');
+
+              if( $images ):
+
+        foreach( $images as $image ):
+
+          ?>
+        <div class="item-slide">
+             <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+        </div>
+
+            <?php endforeach; ?>
+            <?php endif; ?>
+
+  </div>
 
       </div><!-- container -->
     </section><!-- section-news -->

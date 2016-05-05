@@ -64,13 +64,28 @@
             </ul><!-- //description -->
           </div><!-- /.player-main-photo -->
           <div class="col-md-12 team-character">
+
+          <span class="team-logo">
             <?php if ( has_post_thumbnail()) :?>
 
                  <?php the_post_thumbnail('full'); // Fullsize image for the single post ?>
 
             <?php endif; ?><!-- /post thumbnail -->
+</span>
 
 
+
+
+
+            <?php
+
+$image = get_field('main_image');
+
+if( !empty($image) ): ?>
+
+  <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+<?php endif; ?>
 
           </div><!--/ team-character -->
           <div class="col-md-12">
@@ -263,11 +278,11 @@
                       <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
 
 
-            <div class="col-md-3">
+            <div class="col-md-3 people-desciption">
 
 
                         <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $p->ID, "medium" ) ); ?>" alt="">
-                        <?php $url = $thumb[0];?>
+
 
 
                         <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank"><?php echo get_the_title( $p->ID ); ?></a>
@@ -381,6 +396,39 @@
           endif;
 
         ?></span>
+
+    <div class="row">
+      <div class="col-md-12 sponsors">
+        <h4>Спонсоры команды</h4>
+        <div class="row">
+
+               <?php
+
+                    $posts = get_field('sponsors');
+
+                    if( $posts ): ?>
+
+                      <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+
+
+            <div class="col-md-1 people-desciption">
+
+
+                        <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $p->ID, "medium" ) ); ?>" alt="">
+
+
+
+                        <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank"><?php echo get_the_title( $p->ID ); ?></a>
+
+            </div>
+
+                      <?php endforeach; ?>
+
+                      <?php endif; ?>
+
+        </div><!-- /.row -->
+    </div><!--people-desciption -->
+  </div><!-- row -->
 
   </div>
 </section>
