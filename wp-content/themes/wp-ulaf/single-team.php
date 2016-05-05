@@ -246,13 +246,14 @@
 
 
 
-
-
-
     <div class="row">
       <div class="col-md-12 people-desciption">
         <h4>Основатели и Тренера</h4>
-            <div class="col-md-3">
+
+
+
+<div class="row">
+
                <?php
 
                     $posts = get_field('people');
@@ -261,18 +262,25 @@
 
                       <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
 
+
+            <div class="col-md-3">
+
+
                         <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $p->ID, "medium" ) ); ?>" alt="">
                         <?php $url = $thumb[0];?>
 
 
                         <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank"><?php echo get_the_title( $p->ID ); ?></a>
+
+            </div>
+
                       <?php endforeach; ?>
 
                       <?php endif; ?>
-            </div>
-            <div class="col-md-3"></div>
-            <div class="col-md-3"></div>
-            <div class="col-md-3"></div>
+
+  </div><!-- /.row -->
+
+
 
 
         </div>
