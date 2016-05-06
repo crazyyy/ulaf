@@ -2,22 +2,15 @@
   <div class="container">
     <div class="row">
 
-<!-- http://www.hongkiat.com/blog/wordpress-related-posts-without-plugins/ -->
-
-
       <div class="col-md-4">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/teams/sbor.jpeg">
+
+      <?php wpb_related_pages(); ?>
+      <?php if ( has_post_thumbnail()) :?>
+
+                 <?php the_post_thumbnail('full'); // Fullsize image for the single post ?>
+
+            <?php endif; ?><!-- /post thumbnail -->
       </div>
-
-
-
-      <div class="col-md-4">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/teams/sbor2.jpeg">
-      </div>
-      <div class="col-md-4">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/teams/sbor2.jpeg">
-      </div>
-
 
 
     </div><!-- row -->
