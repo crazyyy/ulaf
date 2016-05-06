@@ -650,10 +650,11 @@ footer {
   }
 }
 .team-character {
+  position: relative;
+
   text-align: center;
-  position:relative;
   .team-logo {
-    position:absolute;
+    position: absolute;
   }
 }
 .team_achievements {
@@ -791,6 +792,28 @@ footer {
   img {
     border: none;
     border-radius: no;
+  }
+}
+.owl-footer-slide {
+  .sponsors-footer-images {
+      display: block;
+
+      @extend .clearfix;
+      li {
+        position: relative;
+
+        display: inline-block;
+        float: left;
+
+        width: 60%;
+        height: 160px;
+        padding: 0 10px;
+        img {
+          width: 100%;
+
+          @extend .align-center;
+        }
+      }
   }
 }
 
