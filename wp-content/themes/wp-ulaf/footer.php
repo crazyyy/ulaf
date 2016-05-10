@@ -9,23 +9,23 @@
             <div class="col-sm-6">
               <ul class="list-inline social">
                 <li>
-                  <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/social/email.png" alt="ulaf"></a>
+                  <a href="mailto:info@ulafua.com" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/social/email.png" alt="ulaf"></a>
                 </li>
                 <li>
-                  <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/social/facebook.png" alt="ulaf Facebook"></a>
+                  <a href="https://www.facebook.com/ULAF-1701766046732430" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/social/facebook.png" alt="ulaf Facebook"></a>
                 </li>
                 </li>
                 <li>
-                  <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/social/vkontakte.png" alt="ulaf VK"></a>
+                  <a href="https://vk.com/public116822349" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/social/vkontakte.png" alt="ulaf VK"></a>
                 </li>
                 <li>
-                  <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/social/twitter.png" alt="ulaf Twitter"></a>
+                  <a href="https://twitter.com/ULAFCOOL" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/social/twitter.png" alt="ulaf Twitter"></a>
                 </li>
                 <li>
-                  <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/social/youtube.png" alt="ulaf YouTube"></a>
+                  <a href="#" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/social/youtube.png" alt="ulaf YouTube"></a>
                 </li>
                 <li>
-                  <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/social/instagram.png" alt="ulaf Instagram"></a>
+                  <a href="https://www.instagram.com/ULAFCOOL/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/social/instagram.png" alt="ulaf Instagram"></a>
                 </li>
               </ul>
             </div><!-- col-sm-6 -->
@@ -46,7 +46,23 @@
   <script src="http://www.jqueryscript.net/demo/jQuery-Plugin-For-Fixed-Table-Header-Footer-Columns-TableHeadFixer/tableHeadFixer.js"></script>
   <script>
     $(document).ready(function() {
-      $(".player-score-qb, .player-score-wr").tableHeadFixer({"head" : false, "left" : 1});
+      $(".team-score").tableHeadFixer({"head" : false, "left" : 1});
+      $(".player-score-qb").tableHeadFixer({"head" : false, "left" : 1});
+      $(".player-score-wr").tableHeadFixer({"head" : false, "left" : 1});
+      $(".player-score-te").tableHeadFixer({"head" : false, "left" : 1});
+      $(".player-score-c").tableHeadFixer({"head" : false, "left" : 1});
+      $(".player-score-cb").tableHeadFixer({"head" : false, "left" : 1});
+      $(".player-score-de").tableHeadFixer({"head" : false, "left" : 1});
+      $(".player-score-dt").tableHeadFixer({"head" : false, "left" : 1});
+      $(".player-score-fb").tableHeadFixer({"head" : false, "left" : 1});
+      $(".player-score-fs").tableHeadFixer({"head" : false, "left" : 1});
+      $(".player-score-ilb").tableHeadFixer({"head" : false, "left" : 1});
+      $(".player-score-mlb").tableHeadFixer({"head" : false, "left" : 1});
+      $(".player-score-olb").tableHeadFixer({"head" : false, "left" : 1});
+      $(".player-score-k").tableHeadFixer({"head" : false, "left" : 1});
+      $(".player-score-p").tableHeadFixer({"head" : false, "left" : 1});
+      $(".player-score-rb").tableHeadFixer({"head" : false, "left" : 1});
+      $(".player-score-ss").tableHeadFixer({"head" : false, "left" : 1});
     });
   </script>
 
