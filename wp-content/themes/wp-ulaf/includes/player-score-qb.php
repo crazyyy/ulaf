@@ -5,7 +5,7 @@
 
 
 
-      <table class="player-score">
+      <table class="player-score player-score-qb">
 
 
         <tr>

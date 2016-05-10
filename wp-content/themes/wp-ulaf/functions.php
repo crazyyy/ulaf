@@ -684,7 +684,7 @@ function post_type_team() {
     'publicly_queryable' => true,
     'capability_type' => 'post',
     'hierarchical' => false,
-    'supports' => array('title','editor','thumbnail'),
+    'supports' => array('title','editor','thumbnail','comments'),
     'has_archive' => true,
     'rewrite' => array( 'slug' => 'team' ),
     // https://developer.wordpress.org/resource/dashicons/
@@ -780,9 +780,6 @@ function post_type_people() {
   register_post_type( 'people' , $args );
 }
 
-
-
-
 add_action( 'init', 'post_type_games' );
 function post_type_games() {
 
@@ -824,7 +821,7 @@ function post_type_games() {
 }
 
 
-add_action( 'init', 'post_type_Sponsors' );
+add_action( 'init', 'post_type_sponsors' );
 function post_type_sponsors() {
 
   $labels = array(
@@ -855,48 +852,14 @@ function post_type_sponsors() {
     'hierarchical' => false,
     'supports' => array('title','editor','thumbnail'),
     'has_archive' => true,
-    'rewrite' => array( 'slug' => 'Sponsors' ),
+    'rewrite' => array( 'slug' => 'sponsors' ),
     // https://developer.wordpress.org/resource/dashicons/
     'menu_icon' => 'dashicons-admin-site',
     'show_in_rest' => true
   );
 
-  register_post_type( 'Sponsors' , $args );
+  register_post_type( 'sponsors' , $args );
 }
 
-function wpb_related_pages() {
-$orig_post = $post;
-global $post;
-$tags = wp_get_post_tags($post->ID);
-if ($tags) {
-$tag_ids = array();
-foreach($tags as $individual_tag)
-$tag_ids[] = $individual_tag->term_id;
-$args=array(
-'post_type' => 'page',
-'tag__in' => $tag_ids,
-'post__not_in' => array($post->ID),
-'posts_per_page'=>5
-);
-$my_query = new WP_Query( $args );
-if( $my_query->have_posts() ) {
-echo '<div id="relatedpages"><h3>Related Pages</h3><ul>';
-while( $my_query->have_posts() ) {
-$my_query->the_post(); ?>
-<li><div class="relatedthumb"><a href="<? the_permalink()?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_post_thumbnail('thumb'); ?></a></div>
-<div class="relatedcontent">
-<h3><a href="<? the_permalink()?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
-<?php the_time('M j, Y') ?>
-</div>
-</li>
-<? }
-echo '</ul></div>';
-} else {
-echo "No Related Pages Found:";
-}
-}
-$post = $orig_post;
-wp_reset_query();
-}
 
 ?>

@@ -43,12 +43,67 @@
 
 
 
+
+
           <td><?php the_field('score');?></td>
 
           <td>123123</td>
       </tr>
     </div>
     <div class="col-md-12">
+            <?php
+                // get raw date
+                $searchdate = get_field('date', false, false);
+
+                ?>
+
+
+        <?php
+
+        $args = array(
+          'post_type' => 'player',
+
+          'meta_query' => array(
+            // 'key' => 'date',
+            // 'value' => $date,
+            // // 'compare' => 'BETWEEN',
+            // 'type' => 'DATE',
+
+
+            'meta_key' => 'date',
+            'meta_value' => $searchdate
+
+
+            )
+          );
+
+
+
+        query_posts( $args ); if (have_posts()): while (have_posts()) : the_post(); ?>
+
+<h2 style="font-size: 20px; color: #fff;">
+
+
+
+<?php the_title(); ?>
+</h2>
+
+        <?php endwhile; else: ?>
+
+
+
+
+          <div>
+            <h2 class="title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
+          </div><!-- /article -->
+        <?php endif; ?>
+
+
+
+
+
+
+
 
     </div>
     <div class="col-md-12">
