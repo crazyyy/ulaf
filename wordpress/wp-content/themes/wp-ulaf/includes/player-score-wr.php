@@ -1,5 +1,5 @@
 <div class="col-md-12">
-<div class="col-md-12 inner">
+<div class="col-md-12 inner player-score-container-wr">
     <h4>player stats as WR</h4>
 
 

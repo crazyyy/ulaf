@@ -1,22 +1,45 @@
 <?php /* Template Name: Home Page */ get_header(); ?>
 
   <div class="owl-home-slide">
-    <?php $images = get_field('slider_images'); if( $images ): foreach( $images as $image ): ?>
+
+
+                          <?php if( have_rows('slider') ): ?>
+    <?php while( have_rows('slider') ): the_row();
+                      // vars
+                      $link = get_sub_field('slider_link');
+                      $link2 = get_sub_field('slider_link2');
+                      $image = get_sub_field('slider_image');
+                      $content = get_sub_field('slider_title');
+                      $description = get_sub_field('slider_description'); ?>
 
       <div class="item-slide">
-        <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
 
-          <h1 class="slider_title"><?php the_field('slide_title');?></h1>
-          <h5 class="descr"><?php the_field('slide_description');?></h5>
+
+                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+
+
+
+
+          <h1 class="slider_title"><?php echo $content; ?></h1>
+          <h5 class="descr"><?php echo $description; ?></h5>
 
           <div class="slider_but">
-            <a href="" class="btn btn-primary">Присоединяйтесь</a>
-            <a href="" class="btn second">Подробнее</a>
+<?php if( $link ): ?>
+            <a href="<?php echo $link; ?>" class="btn btn-primary">Присоединяйтесь</a>
+         <?php endif; ?>
+
+<?php if( $link2 ): ?>
+            <a href="<?php echo $link2; ?>" class="btn second">Подробнее</a>
+         <?php endif; ?>
+
+
+
           </div>
 
       </div><!-- item-slide -->
+                 <?php endwhile; ?>
 
-    <?php endforeach; endif; ?>
+                  <?php endif; ?>
   </div><!-- /.owl-home-slide -->
 
   <section class="section-news">

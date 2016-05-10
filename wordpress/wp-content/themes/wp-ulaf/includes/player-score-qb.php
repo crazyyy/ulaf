@@ -1,5 +1,5 @@
 <div class="col-md-12">
-<div class="col-md-12 inner">
+<div class="col-md-12 inner player-position-qb">
     <h4>player stats as QB</h4>
 
 
@@ -320,7 +320,7 @@
 
 
           <tr class="player-work">
-            <td>123 </td>
+            <td>&nbsp;</td>
             <td> </td>
             <td> </td>
             <td> </td>

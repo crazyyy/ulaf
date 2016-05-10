@@ -1,11 +1,11 @@
 <div class="col-md-12">
-<div class="col-md-12 inner">
+<div class="col-md-12 inner player-position-fs">
     <h4>player stats as FS</h4>
 
 
 
 
-      <table class="player-score">
+      <table class="player-score player-score-fs">
 
 
         <tr>
@@ -248,7 +248,7 @@
 
 
           <tr class="player-work">
-            <td>123 </td>
+            <td>&nbsp;</td>
             <td> </td>
             <td> </td>
             <td> </td>
