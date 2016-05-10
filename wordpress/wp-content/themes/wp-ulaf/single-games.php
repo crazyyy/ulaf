@@ -4,7 +4,7 @@
     <div class="col-md-12">
       <tr>
           <td><?php the_title(); ?></td>
-<?php
+            <?php
                 // get raw date
                 $date = get_field('date', false, false);
                 // make date object
@@ -58,7 +58,7 @@
 
     </div>
 
-  </div>
-</section>
+  </div><!-- row -->
+</section><!-- container container-content -->
 
 <?php get_footer(); ?>

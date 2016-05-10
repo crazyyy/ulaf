@@ -95,19 +95,18 @@
         foreach( $images as $image ):
 
           ?>
-
-
-            <div class="item-slide-sponsors">
-
-                 <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
-
-
-            </div><!-- item-slide-sponsors -->
+        <div class="item-slide sponsors-footer-images">
+          <ul>
+            <li>
+             <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+             </li>
+          </ul>
+        </div>
 
             <?php endforeach; ?>
             <?php endif; ?>
 
-  </div><!-- owl-footer-slide -->
+      </div>
 
       </div><!-- container -->
     </section><!-- section-news -->

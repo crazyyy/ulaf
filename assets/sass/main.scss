@@ -653,6 +653,7 @@ footer {
   position: relative;
 
   text-align: center;
+
   .team-logo {
     position: absolute;
   }
@@ -795,11 +796,25 @@ footer {
   }
 }
 .owl-footer-slide {
-  .item-slide-sponsors {
-    position: relative;
-    img {
-      @extend .align-center ;
-    }
+  .sponsors-footer-images {
+      display: block;
+
+      @extend .clearfix;
+      li {
+        position: relative;
+
+        display: inline-block;
+        float: left;
+
+        width: 60%;
+        height: 160px;
+        padding: 0 10px;
+        img {
+          width: 100%;
+
+          @extend .align-center;
+        }
+      }
   }
 }
 
