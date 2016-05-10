@@ -55,6 +55,7 @@
                 // get raw date
                 $searchdate = get_field('date', false, false);
 
+echo     $searchdate;
                 ?>
 
 
@@ -81,16 +82,12 @@
 
         query_posts( $args ); if (have_posts()): while (have_posts()) : the_post(); ?>
 
-<h2 style="font-size: 20px; color: #fff;">
-
-
+<!-- <h2 style="font-size: 20px; color: #fff;">
 
 <?php the_title(); ?>
-</h2>
+</h2> -->
 
         <?php endwhile; else: ?>
-
-
 
 
           <div>
@@ -100,12 +97,87 @@
 
 
 
+<hr>
+<hr>
+<hr>
+
+        <?php $fivesdrafts = $wpdb->get_results("SELECT * FROM $wpdb->posts WHERE post_status = 'Publish' AND post_type = 'player'");
+        if ( $fivesdrafts ) {
+          foreach ( $fivesdrafts as $post )
+          {
+            setup_postdata( $post );
+            ?>
+<!--             <h2>
+  <a href="<?php the_permalink(); ?>" rel="bookmark" title="Permalink: <?php the_title(); ?>">
+    <?php the_title(); ?>
+  </a>
+</h2> -->
+            <?php
+          }
+        }
+        else
+        {
+          ?>
+          <h2>Not Found</h2>
+          <?php
+        }
+        ?>
+
+<hr>
+<hr>
+<hr>
+
+
+<?php
+
+// args
+$args = array(
+  'numberposts' => -1,
+  'post_type'   => 'player',
+  'meta_query'  => array(
+    'relation'    => 'OR',
+    array(
+      'key'   => 'player_position',
+      'value'   => 'qb',
+      'compare' => 'LIKE'
+    ),
+    array(
+      'key'   => 'player_position',
+      'value'   => 'wr',
+      'compare' => 'LIKE'
+    )
+  )
+);
+
+
+// query
+$the_query = new WP_Query( $args );
+
+?>
+<?php if( $the_query->have_posts() ): ?>
+  <ul>
+  <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+    <li>
+      <a href="<?php the_permalink(); ?>">
+
+        <?php the_title(); ?>
+      </a>
+    </li>
+  <?php endwhile; ?>
+  </ul>
+<?php endif; ?>
+
+<?php wp_reset_query();  // Restore global post data stomped by the_post(). ?>
+
 
 
 
 
 
     </div>
+
+
+
     <div class="col-md-12">
 
     </div>
