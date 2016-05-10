@@ -5,7 +5,7 @@
 
 
 
-      <table class="player-score">
+      <table class="player-score player-score-dt">
 
 
         <tr>
@@ -317,7 +317,7 @@
 
 
           <tr class="player-work">
-            <td>123 </td>
+            <td>&nbsp; </td>
             <td> </td>
             <td> </td>
             <td> </td>

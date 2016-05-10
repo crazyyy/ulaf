@@ -53,132 +53,87 @@
 
             <div class="col-md-12 inner teams">
 
-              <table class="player-score team-opossing">
-                <tr>
-                  <th>Результат последних игр :</th>
-                  <?php if( have_rows('team_game') ): while ( have_rows('team_game') ) : the_row(); ?>
-                    <th>
-                      <?php $posts = get_sub_field('opposing_team'); if( $posts ): foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
-                        <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $p->ID ) ); ?>" alt="">
+      <table class="team-score team-opossing">
+          <tr>
+            <th>Результат последних игр :</th>
+            <?php if( have_rows('team_game') ): while ( have_rows('team_game') ) : the_row(); ?>
+              <th>
+                  <?php $posts = get_sub_field('opposing_team'); if( $posts ): foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+                  <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $p->ID ) ); ?>" alt="">
                       <?php endforeach; endif; ?>
-                    </th>
-                  <?php endwhile; endif; ?>
-                </tr>
+              </th>
+                     <?php endwhile; endif; ?>
+          </tr>
+          <tr class="player-work">
+                <td>1st Quarter</td>
 
-                <tr class="player-work">
-                  <td>1st Quarter</td>
-                  <?php $i = 0;
+                    <?php $i = 0;// check if the repeater field has rows of data
+                      if( have_rows('team_game') ):
+                      // loop through the rows of data
+                      while ( have_rows('team_game') ) : the_row();?>
+
+                <td>
+                      <?php the_sub_field('1st_quarter'); ?>
+                </td>
+
+                    <?php $i = $i + get_sub_field('1st_quarter'); ?>
+                    <?php endwhile; endif; ?>
+
+                <td>
+                    <?php echo $i; ?>
+                </td>
+            </tr>
+            <tr>
+                <td>2nd Quarter</td>
+
+                    <?php $i = 0;
+                  // check if the repeater field has rows of data
+                  if( have_rows('team_game') ):
+                    // loop through the rows of data
+                      while ( have_rows('team_game') ) : the_row();?>
+
+                <td>
+                    <?php the_sub_field('2nd_quarter'); ?>
+                </td>
+                    <?php $i = $i + get_sub_field('2nd_quarter');?>
+                    <?php endwhile; endif; ?>
+                <td>
+                   <?php echo $i; ?>
+                </td>
+            </tr>
+            <tr>
+                <td>3rd Quarter</td>
+                      <?php $i = 0;
                     // check if the repeater field has rows of data
                     if( have_rows('team_game') ):
-                    // loop through the rows of data
-                    while ( have_rows('team_game') ) : the_row();
-                  ?>
-                  <td>
-                    <?php the_sub_field('1st_quarter'); ?>
-                  </td>
-                  <?php $i = $i + get_sub_field('1st_quarter'); ?>
-                  <?php endwhile; endif; ?>
-                  <td>
-                    <?php echo $i; ?>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>2nd Quarter</td>
-                  <?php
-
-                  $i = 0;
-
-                // check if the repeater field has rows of data
-                if( have_rows('team_game') ):
-
-                  // loop through the rows of data
-                    while ( have_rows('team_game') ) : the_row();
-                  ?>
-             <td>
-
-                <?php the_sub_field('2nd_quarter'); ?>
-
+                      // loop through the rows of data
+                        while ( have_rows('team_game') ) : the_row();?>
+                <td>
+                    <?php the_sub_field('3rd_quarter'); ?>
                 </td>
-                <?php
-                $i = $i + get_sub_field('2nd_quarter');
-
-                 ?>
-
-                <?php endwhile; endif; ?>
-
-            <td>
-
-
-            <?php echo $i; ?>
-
-            </td>
-          </tr>
-           <tr>
-            <td>3rd Quarter</td>
-
-                  <?php
-
-                  $i = 0;
-
-                // check if the repeater field has rows of data
-                if( have_rows('team_game') ):
-
-                  // loop through the rows of data
-                    while ( have_rows('team_game') ) : the_row();
-                  ?>
-            <td>
-
-                <?php the_sub_field('3rd_quarter'); ?>
-
+                    <?php
+                    $i = $i + get_sub_field('3rd_quarter');?>
+                    <?php endwhile; endif; ?>
+                <td>
+                <?php echo $i; ?>
                 </td>
-                <?php
-                $i = $i + get_sub_field('3rd_quarter');
-
-                 ?>
-
-                <?php endwhile; endif; ?>
-
-            <td>
-
-
-            <?php echo $i; ?>
-
-            </td>
-          </tr>
-          <tr>
-            <td>4th Quarter</td>
-
-                  <?php
-
-                  $i = 0;
-
-                // check if the repeater field has rows of data
-                if( have_rows('team_game') ):
-
-                  // loop through the rows of data
-                    while ( have_rows('team_game') ) : the_row();
-                  ?>
-            <td>
-
-                <?php the_sub_field('4th_quarter'); ?>
-
+            </tr>
+            <tr>
+                <td>4th Quarter</td>
+                      <?php $i = 0;
+                    // check if the repeater field has rows of data
+                    if( have_rows('team_game') ):
+                      // loop through the rows of data
+                        while ( have_rows('team_game') ) : the_row();?>
+                <td>
+                    <?php the_sub_field('4th_quarter'); ?>
                 </td>
-                <?php
-                $i = $i + get_sub_field('4th_quarter');
-
-                 ?>
-
-                <?php endwhile; endif; ?>
-
-            <td>
-
-
-            <?php echo $i; ?>
-
-            </td>
+                    <?php $i = $i + get_sub_field('4th_quarter'); ?>
+                    <?php endwhile; endif; ?>
+                <td>
+                <?php echo $i; ?>
+                </td>
           </tr>
-
 
        </table><!-- player-score team-opossing -->
       </div><!-- player-score -->
