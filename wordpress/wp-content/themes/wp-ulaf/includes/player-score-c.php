@@ -1,6 +1,6 @@
 <div class="col-md-12">
 <h4>player stats as Center</h4>
-      <table class="player-score">
+      <table class="player-score player-score-c">
         <tr>
           <th><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></th>
           <th><img src="<?php echo get_template_directory_uri(); ?>/img/teams/bulgogs.png"></th>

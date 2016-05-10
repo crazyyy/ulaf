@@ -124,14 +124,7 @@
 
 
     endforeach;
-  endif;
-?>
-
-
-
-
-
-
+  endif; ?>
 
         </div><!-- /.row -->
     <div class="row">
@@ -141,20 +134,6 @@
       </div><!-- /row -->
 
       <?php the_tags( __( 'Tags: ', 'wpeasy' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   <div class="owl-player-slide">
 

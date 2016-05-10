@@ -9,7 +9,7 @@
 
               <h1 class="page-title"><?php the_title(); ?></h1>
               <?php the_content(); ?>
-
+            <?php get_template_part('relative-pages'); ?>
               <span class="date"><?php the_time('d F Y'); ?> <?php the_time('H:i'); ?></span>
               <span class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'wpeasy' ), __( '1 Comment', 'wpeasy' ), __( '% Comments', 'wpeasy' )); ?></span>
               <span class="tags"><?php the_tags( __( 'Tags: ', 'wpeasy' ), ', ', '<br>'); ?></span>
@@ -36,6 +36,6 @@
     </div><!-- container -->
   </section><!-- section-history -->
 
-  <?php get_template_part('relative-pages'); ?>
+
 
 <?php get_footer(); ?>
