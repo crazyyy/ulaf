@@ -19,7 +19,6 @@
 
 
 
-
           <h1 class="slider_title"><?php echo $content; ?></h1>
           <h5 class="descr"><?php echo $description; ?></h5>
 
