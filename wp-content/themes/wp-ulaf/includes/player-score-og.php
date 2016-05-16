@@ -1,14 +1,14 @@
 
-<div class="col-md-12 inner player-position-c">
-    <h4>player stats as С</h4>
-    <table class="player-score player-score-c">
+<div class="col-md-12 inner player-position-og">
+    <h4>player stats as OG</h4>
+    <table class="player-score player-score-og">
         <tr>
             <th><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></th>
                   <?php
                   // check if the repeater field has rows of data
-                  if( have_rows('player_center') ):
+                  if( have_rows('player_og') ):
                     // loop through the rows of data
-                      while ( have_rows('player_center') ) : the_row(); ?>
+                      while ( have_rows('player_og') ) : the_row(); ?>
             <th>
                   <?php  $posts = get_sub_field('opposing_team');
                         if( $posts ):
@@ -24,9 +24,9 @@
             <td>Ярдов (Бег)</td>
                   <?php $i = 0;
                 // check if the repeater field has rows of data
-                if( have_rows('player_center') ):
+                if( have_rows('player_og') ):
                   // loop through the rows of data
-                    while ( have_rows('player_center') ) : the_row(); ?>
+                    while ( have_rows('player_og') ) : the_row(); ?>
             <td>
                 <?php the_sub_field('rush_yrds'); ?>
             </td>
@@ -40,13 +40,13 @@
             <td>Ударов Квотербека с его стороны</td>
                   <?php $i = 0;
                 // check if the repeater field has rows of data
-                if( have_rows('player_center') ):
+                if( have_rows('player_og') ):
                   // loop through the rows of data
-                    while ( have_rows('player_center') ) : the_row(); ?>
+                    while ( have_rows('player_og') ) : the_row(); ?>
             <td>
-                <?php the_sub_field('hit_qb_from_si_side'); ?>
+                <?php the_sub_field('hits_qb_from_his_side'); ?>
             </td>
-                <?php $i = $i + get_sub_field('hit_qb_from_si_side'); ?>
+                <?php $i = $i + get_sub_field('hits_qb_from_his_side'); ?>
                 <?php endwhile; endif; ?>
             <td>
             <?php echo $i; ?>
