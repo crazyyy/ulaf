@@ -1089,144 +1089,183 @@ footer {
 
 //PLAYER POSITION TABLE HEIGHT//
 .player-position-qb > div {
-height:422px !important;
+  height: 422px !important;
 }
 .player-position-te > div {
-height:422px !important;
+  height: 422px !important;
 }
 .player-position-fs > div {
-height:405px !important;
+  height: 405px !important;
 }
 .player-position-cb > div {
-height:412px !important;
+  height: 412px !important;
 }
 .player-position-k > div {
-height:350px !important;
+  height: 350px !important;
 }
 .player-position-p > div {
-height:280px !important;
+  height: 280px !important;
 }
 .player-position-c > div {
-height:250px !important;
+  height: 250px !important;
 }
 .player-position-og > div {
-height:250px !important;
+  height: 250px !important;
 }
 .player-position-ot > div {
-height:250px !important;
+  height: 250px !important;
 }
+//*PLAYER POSITION TABLE HEIGHT*//
 .inner-title {
-  padding:15px 25px;
+  padding: 15px 25px;
 }
 .best-players {
   position: relative;
 
-    text-align: center;
-    &:before {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      display: block;
-      content: '';
-      border-radius: 25px;
-
-    }
-    th {
-      padding-left: 20px;
-      border: none;
-    }
-    tr {
-      background-color: rgba(50,50,48,.5);
-      &:nth-child(2n+1),
-      &:last-child {
-        background-color: rgba(50,50,48,.1);
-        th {
-          width: 145px;
-          height: 143px;
-
-          text-align: center;
-          &:first-child {
-            background-color: rgba(50,50,48,.1);
-          }
-          img {
-            max-width: 100%;
-          }
-        }
-      }
-      td {
-        font-size: 18px;
-        padding: 10px 13px 10px 0 ;
-        color: #fff;
-        border: none;
-        &:first-child {
-          color: $gold;
-        }
-      }
-    }
   text-align: center;
-  tr {
+  text-align: center;
+  &:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 
+    display: block;
+
+    content: '';
+
+    border-radius: 25px;
+  }
+  th {
+    padding-left: 20px;
+
+    border: none;
+  }
+  tr {
+    background-color: rgba(50,50,48,.5);
+    &:nth-child(2n+1),
+    &:last-child {
+      background-color: rgba(50,50,48,.1);
+      th {
+        width: 145px;
+        height: 143px;
+
+        text-align: center;
+        &:first-child {
+          background-color: rgba(50,50,48,.1);
+        }
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+    td {
+      font-size: 18px;
+
+      padding: 10px 13px 10px 0 ;
+
+      color: #fff;
+      border: none;
+      &:first-child {
+        color: $gold;
+      }
+    }
   }
 }
 .championship {
-  margin:30px 0;
-  border-bottom:1px solid grey;
+  margin: 30px 0;
+
+  border-bottom: 1px solid grey;
   background-color: rgba(50,50,48,.5);
   div {
     border-right: 1px solid grey;
-
   }
   .game-date {
-    padding-top: 7px;
     font-size: 30px;
+
+    padding-top: 7px;
   }
   .game-score {
     font-size: 40px;
+
     padding-top: 7px;
+
     text-align: center;
     span {
       width: 39px;
-    height: 60px;
-    margin-right: 3px;
-    color:#0070a7;
+      height: 60px;
+      margin-right: 3px;
+
+      color: $gold;
     }
   }
   .team-game {
     font-size: 34px;
-    color:$gold;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+
+    display: flex;
+
+    color: #0070a7;
+
+    justify-content: space-between;
+    align-items: center;
   }
   .team-city {
-    margin-top: 15px;
     font-size: 20px;
+
+    margin-top: 15px;
+
     text-align: center;
   }
 }
 .single-game {
-  color:#fff;
+  color: #fff;
   h1 {
-    color:$gold;
     font-size: 30px;
+
+    color: $gold;
   }
-.team-single-game {
-  display:flex;
-  justify-content:space-around;
-  align-items:flex-start;
-  color:#0070a7;
-  font-size: 120px;
-  .single-game-score {
-    height:180px;
-     background-color: rgba(50,50,49,.3);
-     border-radius: 20%;
-     display:flex;
-    margin: 0 -80px;
+  .team-single-game {
+    font-size: 120px;
+
+    display: flex;
+
+    color: #0070a7;
+
+    justify-content: space-around;
+    align-items: flex-start;
+    .single-game-score {
+      display: flex;
+
+      height: 180px;
+      margin: 0 -80px;
+
+      border-radius: 20%;
+      background-color: rgba(50,50,49,.3);
+    }
+  }
 }
+.players-game-stats {
+  text-align: center;
+  ul{
+    border-bottom: 1px solid grey;
+    li {
+      display:flex;
+        justify-content:space-between;
+    }
+  }
+  .second-team-players {
+    display:flex;
+    justify-content:flex-start;
+    a {
+        padding-left: 130px;
+    }
+  }
 }
 
-}
-//*PLAYER POSITION TABLE HEIGHT*//
+
+
+
+
+
 @import 'import/print';
