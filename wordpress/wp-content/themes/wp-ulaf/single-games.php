@@ -1,10 +1,8 @@
 <?php get_header(); ?>
 <section class="container container-content">
-  <div class="row">
-    <div class="col-md-12">
-      <tr>
-          <td><?php the_title(); ?></td>
-            <?php
+  <div class="row single-game">
+    <h1><?php the_title(); ?></h1>
+    <?php
                 // get raw date
                 $date = get_field('date', false, false);
                 // make date object
@@ -13,6 +11,11 @@
                 <?php
                 ?>
                 <?php echo $date->format('j M Y');?>
+    <div class="col-md-12 team-single-game">
+
+      <tr>
+
+
                 <td>
 
                   <?php
@@ -25,7 +28,10 @@
 
                     <?php endif; ?>
                 </td>
-
+                <td>
+                <span class="single-game-score"><?php the_field('score_first_team');?></span>
+                <span class="single-game-score"><?php the_field('score_second_team');?></span>
+                </td>
           <td>
 
                 <?php
@@ -39,31 +45,12 @@
                     <?php endif; ?>
 
           </td>
-
-
-
-
-
-
-          <td><?php the_field('score');?></td>
-
-          <td>123123</td>
       </tr>
     </div>
     <div class="col-md-12">
-            <?php
-                // get raw date
-                $searchdate = get_field('date', false, false);
-
-echo     $searchdate;
-                ?>
-
-
         <?php
-
         $args = array(
           'post_type' => 'player',
-
           'meta_query' => array(
             // 'key' => 'date',
             // 'value' => $date,
@@ -73,8 +60,6 @@ echo     $searchdate;
 
             'meta_key' => 'date',
             'meta_value' => $searchdate
-
-
             )
           );
 
@@ -97,9 +82,7 @@ echo     $searchdate;
 
 
 
-<hr>
-<hr>
-<hr>
+
 
         <?php $fivesdrafts = $wpdb->get_results("SELECT * FROM $wpdb->posts WHERE post_status = 'Publish' AND post_type = 'player'");
         if ( $fivesdrafts ) {
@@ -122,10 +105,6 @@ echo     $searchdate;
           <?php
         }
         ?>
-
-<hr>
-<hr>
-<hr>
 
 
 <?php

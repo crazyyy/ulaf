@@ -1170,9 +1170,63 @@ height:250px !important;
 
   }
 }
+.championship {
+  margin:30px 0;
+  border-bottom:1px solid grey;
+  background-color: rgba(50,50,48,.5);
+  div {
+    border-right: 1px solid grey;
 
+  }
+  .game-date {
+    padding-top: 7px;
+    font-size: 30px;
+  }
+  .game-score {
+    font-size: 40px;
+    padding-top: 7px;
+    text-align: center;
+    span {
+      width: 39px;
+    height: 60px;
+    margin-right: 3px;
+    color:#0070a7;
+    }
+  }
+  .team-game {
+    font-size: 34px;
+    color:$gold;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  .team-city {
+    margin-top: 15px;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+.single-game {
+  color:#fff;
+  h1 {
+    color:$gold;
+    font-size: 30px;
+  }
+.team-single-game {
+  display:flex;
+  justify-content:space-around;
+  align-items:flex-start;
+  color:#0070a7;
+  font-size: 120px;
+  .single-game-score {
+    height:180px;
+     background-color: rgba(50,50,49,.3);
+     border-radius: 20%;
+     display:flex;
+    margin: 0 -80px;
+}
+}
+
+}
 //*PLAYER POSITION TABLE HEIGHT*//
-
-
-
 @import 'import/print';
