@@ -2,6 +2,7 @@
   <?php if (have_posts()): while (have_posts()) : the_post(); ?>
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <h1 class="page-title inner-title"><?php the_title(); ?></h1>
+        <div class="container">
         <div class="row championship">
 
           <div class="col-md-1 game-date">
@@ -22,8 +23,8 @@
             Вінниця
           </div>
       </div><!-- row championship -->
-
-
+    </div>
+<div class="container">
       <div class="row championship">
 
           <div class="col-md-1 game-date">
@@ -43,7 +44,7 @@
           <div class="col-md-1 team-city">
             Харків
         </div><!-- row championship -->
-
+      </div>
 
 
 
