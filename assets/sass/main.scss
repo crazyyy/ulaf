@@ -974,7 +974,7 @@ footer {
 
 // Relative posts//
 .relative-posts {
-  padding: 20px 0;
+  padding: 20px 10px;
   h4 {
     line-height: 1.4;
 
@@ -1067,14 +1067,12 @@ footer {
     color: $gold;
     &:hover {
       text-decoration: none;
-
       color: #c61e03;
     }
   }
   img {
     &:hover {
       transition: all .5s;
-
       box-shadow: 0 0 20px 5px rgba(255, 255, 255, 1);
     }
   }
@@ -1185,6 +1183,11 @@ footer {
     margin-bottom: -20px;
   }
 .championship {
+  &:hover {
+    transition: all .3s;
+    box-shadow: 0 0 20px 5px #fff;
+    background-color: rgba(50,50,48,.1);
+  }
   margin: 30px 0;
 
   border-bottom: 1px solid grey;
@@ -1276,9 +1279,15 @@ footer {
     }
   }
 }
-
-
-
+.team-game-score {
+  margin-bottom: 20px;
+  .gold-score {
+    color:$gold;
+  }
+  td {
+    text-align: center;
+  }
+}
 
 
 

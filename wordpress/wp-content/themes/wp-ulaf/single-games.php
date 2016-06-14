@@ -2,8 +2,7 @@
 <section class="container container-content">
   <div class="row single-game">
     <h1><?php the_title(); ?></h1>
-    <?php
-                // get raw date
+              <?php // get raw date
                 $date = get_field('date', false, false);
                 // make date object
                 $date = new DateTime($date);
@@ -12,65 +11,76 @@
                 ?>
                 <?php echo $date->format('j M Y');?>
     <div class="col-md-12 team-single-game">
-
       <tr>
-
-
-                <td>
-
-                  <?php
-                      $posts = get_field('team');
-                      if( $posts ):
-                        foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
-                <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $p->ID ) ); ?>" alt="">
-
-                        <?php endforeach; ?>
-
-                    <?php endif; ?>
-                </td>
-                <td>
-                <span class="single-game-score"><?php the_field('score_first_team');?></span>
-                <span class="single-game-score"><?php the_field('score_second_team');?></span>
-                </td>
-          <td>
-
-                <?php
-                      $posts = get_field('opposing_team');
-                      if( $posts ):
-                        foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
-                <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $p->ID ) ); ?>" alt="">
-
-                        <?php endforeach; ?>
-
-                    <?php endif; ?>
-
-          </td>
+        <td>
+          <?php  $posts = get_field('team'); if( $posts ):
+             foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+            <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $p->ID ) ); ?>" alt="">
+                <?php endforeach; ?>
+                 <?php endif; ?>
+        </td>
+        <td>
+          <span class="single-game-score"><?php the_field('score_first_team');?></span>
+          <span class="single-game-score"><?php the_field('score_second_team');?></span>
+        </td>
+        <td>
+          <?php  $posts = get_field('opposing_team');  if( $posts ):
+            foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+             <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $p->ID ) ); ?>" alt="">
+               <?php endforeach; ?>
+               <?php endif; ?>
+               <?php wp_reset_query(); ?>
+        </td>
       </tr>
     </div>
-    <table>
+    <table class="team-game-score">
       <tr>
         <td>Команды</td>
         <td>1st Quarter</td>
         <td>2nd Quarter</td>
         <td>3rd Quarter</td>
         <td>4th Quarter</td>
-      </tr><tr>
-        <td>Волки</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr><tr>
-        <td>Бандиты</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+      </tr>
+      <tr>
+        <td class="gold-score"><?php  $posts = get_field('team');  if( $posts ):
+            foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+             <?php echo get_the_title( $p->ID ); ?>
+               <?php endforeach; ?>
+               <?php endif; ?>
+        </td>
+        <?php // check if the repeater field has rows of data
+                      if( have_rows('first_team') ):
+                      // loop through the rows of data
+                      while ( have_rows('first_team') ) : the_row();?>
+        <td class="gold-score">
+        <?php the_sub_field('1st_quarter'); ?>
+      </td>
+        <td class="gold-score"><?php the_sub_field('2nd_quarter'); ?></td>
+        <td class="gold-score"><?php the_sub_field('3rd_quarter'); ?></td>
+        <td class="gold-score"><?php the_sub_field('4th_quarter'); ?></td>
+      <?php endwhile; endif; ?>
+      </tr>
+      <tr>
+        <td class="gold-score"><?php  $posts = get_field('opposing_team');  if( $posts ):
+            foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+             <?php echo get_the_title( $p->ID ); ?>
+               <?php endforeach; ?>
+               <?php endif; ?>
+        </td>
+        <?php // check if the repeater field has rows of data
+                      if( have_rows('second_team') ):
+                      // loop through the rows of data
+                      while ( have_rows('second_team') ) : the_row();?>
+        <td class="gold-score">
+        <?php the_sub_field('1st_quarter'); ?>
+      </td>
+        <td class="gold-score"><?php the_sub_field('2nd_quarter'); ?></td>
+        <td class="gold-score"><?php the_sub_field('3rd_quarter'); ?></td>
+        <td class="gold-score"><?php the_sub_field('4th_quarter'); ?></td>
+      <?php endwhile; endif; ?>
       </tr>
       </table>
-    <div class="col-md-12 players-game-stats">
-
-
+    <!-- <div class="col-md-12 players-game-stats">
       <table>
         <tr>
           <td>
@@ -347,7 +357,7 @@
 
     </div>
 
-  </div><!-- row -->
+      </div>row -->
 </section><!-- container container-content -->
 
 <?php get_footer(); ?>

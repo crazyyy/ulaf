@@ -7,7 +7,6 @@
 
         <div class="row player-card">
 
-
           <div class="player-main-photo col-md-3">
             <?php if ( has_post_thumbnail()) :?>
               <a class="single-thumb" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
@@ -17,58 +16,41 @@
           </div><!-- /.player-main-photo -->
           <div class="col-md-9 player-character">
 
-
-
             <span class="quarterback-image"><img src="<?php echo get_template_directory_uri(); ?>/img/teams/qb.png"></span>
-
-
-
             <ul class="description single-player">
-            <li><?php the_title(); ?></li>
-            <li><span>КОМАНДА :</span>  <?php
-
-                    $posts = get_field('player_team');
-
-                    if( $posts ): ?>
-
-                      <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
-
-                      <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank"><?php echo get_the_title( $p->ID ); ?></a>
-                      <?php endforeach; ?>
-
-                    <?php endif; ?>
-              </li>
-              <li><span>ДАТА РОЖДЕНИЯ (ВОЗРАСТ): </span><?php
-                // get raw date
-                $date = get_field('player_age', false, false);
-                // make date object
-                $date = new DateTime($date);
-                ?>
-                <?php
-                ?>
-                <?php echo $date->format('j M Y');?>
-
-                     <?php
-
-                      $birthday = $date->format('Y');
-                      $current_year = date("Y");
-                      $age = $current_year - $birthday;
-                      echo $age;
-                        ?>
-
+              <li><?php the_title(); ?></li>
+              <li><span>КОМАНДА :</span>  <?php
+                      $posts = get_field('player_team');
+                      if( $posts ): ?>
+                        <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+                        <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank"><?php echo get_the_title( $p->ID ); ?></a>
+                        <?php endforeach; ?>
+                      <?php endif; ?>
                 </li>
-                <li><span>РОСТ:</span> <?php the_field('height');?></li>
-                <li><span>ВЕС:</span> <?php the_field('weight');?></li>
-                <li><span>В КОМАНДЕ :</span> <?php the_field('experience');?></li>
-                <li><span>ИГРОВОЙ НОМЕР:</span> <?php the_field('player_number');?></li>
+                <li><span>ДАТА РОЖДЕНИЯ (ВОЗРАСТ): </span><?php
+                  // get raw date
+                  $date = get_field('player_age', false, false);
+                  // make date object
+                  $date = new DateTime($date); ?>
+                  <?php
+                  ?>
+                  <?php echo $date->format('j M Y');?>
+                       <?php
+                        $birthday = $date->format('Y');
+                        $current_year = date("Y");
+                        $age = $current_year - $birthday;
+                        echo $age; ?>
+                  </li>
+                  <li><span>РОСТ:</span> <?php the_field('height');?></li>
+                  <li><span>ВЕС:</span> <?php the_field('weight');?></li>
+                  <li><span>В КОМАНДЕ :</span> <?php the_field('experience');?></li>
+                  <li><span>ИГРОВОЙ НОМЕР:</span> <?php the_field('player_number');?></li>
            </ul>
          </div>
-
         </div><!--/ player-character -->
 
-<?php
+  <?php
   $allpositions = get_field('player_position');
-
   if( $allpositions ):
     foreach( $allpositions as $position ):
 
@@ -121,12 +103,9 @@
         // nothing
       }
 
-
-
     endforeach;
-  endif; ?>
-
-        </div><!-- /.row -->
+    endif; ?>
+</div><!-- /.row -->
     <div class="row">
     <div class="col-md-12 player-bio">
             <?php the_content(); ?>
@@ -136,29 +115,15 @@
       <?php the_tags( __( 'Tags: ', 'wpeasy' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
 
   <div class="owl-player-slide">
-
-          <?php
-
-              $images = get_field('player_gallery');
-
+          <?php $images = get_field('player_gallery');
               if( $images ):
-
-        foreach( $images as $image ):
-
-          ?>
+        foreach( $images as $image ): ?>
         <div class="item-slide">
              <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
         </div>
-
             <?php endforeach; ?>
             <?php endif; ?>
-
   </div>
-
-
-
-
-
 
       <?php comments_template(); ?>
 </article>
@@ -166,11 +131,8 @@
   <article class="col-md-12">
 
       <h2 class="page-title inner-title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
-
   </article>
     <?php endif; ?>
-
-
 
   </div>
 </section>
