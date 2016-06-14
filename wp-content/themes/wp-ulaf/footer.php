@@ -22,7 +22,7 @@
                   <a href="https://twitter.com/ULAFCOOL" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/social/twitter.png" alt="ulaf Twitter"></a>
                 </li>
                 <li>
-                  <a href="#" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/social/youtube.png" alt="ulaf YouTube"></a>
+                  <a href="https://www.youtube.com/channel/UCX-eSs3MKCWTAnm3rQJ7WJQ" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/social/youtube.png" alt="ulaf YouTube"></a>
                 </li>
                 <li>
                   <a href="https://www.instagram.com/ULAFCOOL/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/social/instagram.png" alt="ulaf Instagram"></a>

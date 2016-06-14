@@ -9,6 +9,7 @@
             <div class="col-md-1 game-date">
               15.05
             </div>
+            <a href="http://ulaf.pp.ua/games/monra">
             <div class="col-md-4 team-game">
               <span>Волки (Винница)</span>
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/wolves.png">
@@ -21,7 +22,9 @@
               <span>Монархи (Ровно)</span>
             </div>
       </div><!-- row championship -->
+        </a>
     </div>
+
 
     <div class="container game-info">
       <h2>Дивизион B</h2>
@@ -29,6 +32,7 @@
             <div class="col-md-1 game-date">
               15.05
             </div>
+            <a href="#">
             <div class="col-md-4 team-game">
               <span>Орлы (Здолбунов)</span>
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/eagles.png">
@@ -41,6 +45,7 @@
               <span>Джокеры (Киев)</span>
             </div>
       </div><!-- row championship -->
+        </a>
     </div>
 
     <div class="container game-info">
@@ -49,6 +54,7 @@
             <div class="col-md-1 game-date">
               14.05
             </div>
+            <a href="#">
             <div class="col-md-4 team-game">
               <span>Атланты (Харьков)</span>
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/atlants.png">
@@ -61,6 +67,7 @@
               <span>Зубры (Минск)</span>
             </div>
       </div><!-- row championship -->
+    </a>
     </div>
 
     <div class="container game-info">
@@ -69,6 +76,7 @@
             <div class="col-md-1 game-date">
               08.05
             </div>
+            <a href="#">
             <div class="col-md-4 team-game">
               <span>Ракеты (Днепр)</span>
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/rockets.png">
@@ -81,6 +89,7 @@
               <span>Тигры (Харьков)</span>
             </div>
       </div><!-- row championship -->
+    </a>
     </div>
 
     <div class="container game-info">
@@ -89,6 +98,7 @@
             <div class="col-md-1 game-date">
               07.05
             </div>
+            <a href="#">
             <div class="col-md-4 team-game">
               <span>Гепарды (Южный)</span>
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/jeps.png">
@@ -101,6 +111,7 @@
               <span>Дельфины (Мариуполь)</span>
             </div>
       </div><!-- row championship -->
+    </a>
     </div>
 
         <div class="container game-info">
@@ -109,6 +120,7 @@
             <div class="col-md-1 game-date">
               08.05
             </div>
+            <a href="#">
             <div class="col-md-4 team-game">
               <span>Пираты (Одесса)</span>
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/pirates.png">
@@ -121,6 +133,7 @@
               <span>Львы (Львов)</span>
             </div>
       </div><!-- row championship -->
+    </a>
     </div>
 
     <div class="container game-info">
@@ -129,6 +142,7 @@
             <div class="col-md-1 game-date">
               08.05
             </div>
+            <a href="#">
             <div class="col-md-4 team-game">
               <span>Лесорубы (Ужгород)</span>
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/les.png">
@@ -141,6 +155,7 @@
               <span>Бандиты (Киев)</span>
             </div>
       </div><!-- row championship -->
+    </a>
     </div>
 
     <div class="container game-info">
@@ -149,6 +164,7 @@
             <div class="col-md-1 game-date">
               24.04
             </div>
+            <a href="#">
             <div class="col-md-4 team-game">
               <span>Монархи (Ровно)</span>
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/mon.png">
@@ -161,6 +177,7 @@
               <span>Джокеры (Киев)</span>
             </div>
       </div><!-- row championship -->
+    </a>
     </div>
 
       <div class="container game-info">
@@ -169,6 +186,7 @@
             <div class="col-md-1 game-date">
               24.04
             </div>
+            <a href="#">
             <div class="col-md-4 team-game">
               <span>Орлы (Здолбунов)</span>
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/eagles.png">
@@ -181,6 +199,7 @@
               <span>Гладиаторы (Хмельницк.)</span>
             </div>
       </div><!-- row championship -->
+    </a>
     </div>
 
     <div class="container game-info">
@@ -189,6 +208,7 @@
           <div class="col-md-1 game-date">
               24.04
             </div>
+            <a href="#">
             <div class="col-md-4 team-game">
               <span>Бульдоги (Киев)</span>
               <img src="<?php echo get_template_directory_uri(); ?>/img/teams/bulgogs.png">
@@ -201,6 +221,7 @@
               <span>Львы (Львов)</span>
             </div>
     </div><!-- row championship -->
+  </a>
   </div>
 
 
@@ -211,6 +232,7 @@
             <div class="col-md-1 game-date">
               23.04
             </div>
+            <a href="#">
             <div class="col-md-4 team-game">
               <span>Патриоты (Київ)</span>
               <img src="<?php echo get_template_directory_uri(); ?>/img/teams/.png">
@@ -223,6 +245,7 @@
               <span>Зубры (Минск)</span>
             </div>
       </div><!-- row championship -->
+    </a>
     </div>
 
     <div class="container game-info">
@@ -231,6 +254,7 @@
             <div class="col-md-1 game-date">
               24.04
             </div>
+            <a href="#">
             <div class="col-md-4 team-game">
               <span>Гепарды (Южный)</span>
               <img src="<?php echo get_template_directory_uri(); ?>/img/teams/jeps.png">
@@ -243,6 +267,7 @@
               <span>Викинги (Николоев)</span>
             </div>
       </div><!-- row championship -->
+    </a>
     </div>
 
     <div class="container game-info">
@@ -251,6 +276,7 @@
             <div class="col-md-1 game-date">
               17.04
             </div>
+            <a href="#">
             <div class="col-md-4 team-game">
               <span>Атланты (Харьков)</span>
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/atlants.png">
@@ -263,6 +289,7 @@
               <span>Пираты (Одесса) </span>
             </div>
       </div><!-- row championship -->
+    </a>
     </div>
 
 
