@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-  <section class="section-news">
+  <section class="section-news category">
     <div class="container">
       <div class="row category-news">
 
