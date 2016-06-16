@@ -363,6 +363,9 @@ picture {
     }
   }
 }
+.section-news.category {
+background-image: url(../img/bg/body-bg.png);
+}
 /**
  * PAGE AND SINGLE
  */
@@ -501,7 +504,7 @@ article {
 footer {
   height: 60px;
 
-  background-color: $light-blue;
+  background-color:#000215;
   .social {
     padding-top: 12px;
 
