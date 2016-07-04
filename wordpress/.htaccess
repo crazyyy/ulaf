@@ -1,6 +1,20 @@
 Redirect permanent /news/zubry---patrioty-prevyu- /collaboratively-empower-collaborative.htm
 Redirect permanent /teams/wolves /team/vinnitskie-volki
 
+AddDefaultCharset UTF-8
+php_value memory_limit 512M
+
+# supress php errors
+php_flag display_startup_errors off
+php_flag display_errors off
+php_flag html_errors off
+php_value docref_root 0
+php_value docref_ext 0
+
+# enable PHP error logging
+php_flag  log_errors on
+php_value error_log  d:/Works/Verstka/ulaf/wordpress/PHP_errors.log
+
 # BEGIN All In One WP Security
 #AIOWPS_BLOCK_WP_FILE_ACCESS_START
 <Files license.txt>
