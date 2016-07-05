@@ -132,7 +132,7 @@ picture {
 .header-nav {
   padding-top: 20px;
   .headnav {
-    @extend .clearfix;
+
     @extend .justify-child;
   }
   li {
