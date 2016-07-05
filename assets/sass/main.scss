@@ -1107,13 +1107,12 @@ footer {
     padding: 15px 0;
   }
   div {
-    margin-top: 15px;
-    padding-bottom: 15px;
 
-    border-bottom: 1px solid grey;
     div {
       border: none;
-      overflow:hidden;
+      div {
+        border:none;
+      }
       img {
         width:370px;
         height:auto;
@@ -1537,7 +1536,10 @@ footer {
 .owl-controls {
   display: none !important;
 }
-
+.news-page {
+  padding:35px;
+  border-bottom:1px solid #fff !important;
+}
 /* import */
 @import 'import/print';
 @import 'owl/owl.carousel.min';

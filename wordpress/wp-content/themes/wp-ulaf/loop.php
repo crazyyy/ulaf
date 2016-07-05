@@ -1,6 +1,7 @@
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
   <div id="post-<?php the_ID(); ?>" <?php post_class('row'); ?>>
+  <div class="col-md-12 news-page">
     <div class="col-md-4">
       <a rel="nofollow" class="feature-img" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
         <?php if ( has_post_thumbnail()) :
@@ -24,8 +25,8 @@
       <span class="author"><?php _e( 'Published by', 'wpeasy' ); ?> <?php the_author_posts_link(); ?></span>
       <span class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'wpeasy' ), __( '1 Comment', 'wpeasy' ), __( '% Comments', 'wpeasy' )); ?></span><!-- /post details -->
 
+      </div>
     </div>
-
   </div><!-- /.row -->
 
 <?php endwhile; else: ?>
