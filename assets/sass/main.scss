@@ -899,8 +899,13 @@ footer {
 .description.single-player {
   li {
     width: 100%;
-
     text-align: left;
+    a {
+      img {
+        height:50px;
+        width:50px;
+      }
+    }
     span {
       color: $gold;
     }
