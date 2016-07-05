@@ -1109,11 +1109,7 @@ footer {
   div {
 
     div {
-      border: none;
-      div {
-        border:none;
-      }
-      img {
+            img {
         width:370px;
         height:auto;
       }
@@ -1538,7 +1534,7 @@ footer {
 }
 .news-page {
   padding:35px;
-  border-bottom:1px solid #fff !important;
+  border-bottom:1px solid #fff;
 }
 /* import */
 @import 'import/print';
