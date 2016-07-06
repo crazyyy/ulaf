@@ -865,8 +865,8 @@ add_action( 'init', 'post_type_friends' );
 function post_type_friends() {
 
   $labels = array(
-    'name' => 'friends',
-    'singular_name' => 'friends',
+    'name' => 'Friends',
+    'singular_name' => 'Friends',
     'add_new' => 'Add',
     'add_new_item' => 'Add',
     'edit' => 'Edit',
@@ -881,7 +881,7 @@ function post_type_friends() {
   );
 
   $args = array(
-    'description' => 'friends Post Type',
+    'description' => 'Friends Post Type',
     'show_ui' => true,
     'menu_position' => 5,
     'exclude_from_search' => false,
@@ -901,5 +901,31 @@ function post_type_friends() {
   register_post_type( 'friends' , $args );
 }
 
+function wpb_set_post_views($postID) {
+    $count_key = 'wpb_post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count==''){
+        $count = 0;
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+    }else{
+        $count++;
+        update_post_meta($postID, $count_key, $count);
+    }
+}
+//To keep the count accurate, lets get rid of prefetching
+remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
+
+function wpb_track_post_views ($post_id) {
+    if ( !is_single() ) return;
+    if ( empty ( $post_id) ) {
+        global $post;
+        $post_id = $post->ID;
+    }
+    wpb_set_post_views($post_id);
+}
+add_action( 'wp_head', 'wpb_track_post_views');
+
+ new WP_Query( array ('post__not_in' => $featuredpostid, 'orderby' => 'date', 'posts_per_page' => '3', 'order' => 'DESC' ) );
 
 ?>
