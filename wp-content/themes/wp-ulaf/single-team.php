@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
   <section class="container container-content">
     <div class="row team-head">
       <?php if (have_posts()): while (have_posts()) : the_post(); ?>
@@ -31,6 +31,17 @@
                 <li><span>ГЛАВНЫЙ ТРЕНЕР:</span>
                   <?php $posts = get_field('head_coach'); if( $posts ): foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
                     <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank"><?php echo get_the_title( $p->ID ); ?></a>
+                    <li>
+                      <span>ГИМН:</span> <?php the_field('hymn'); ?>
+                    </li>
+                    <li>
+                      <span>ТРЕНИРОВКИ:</span><?php the_field('practice'); ?>
+                    </li>
+                    <li>
+                      <span>КОНТАКТЫ:</span><a href="<?php the_field('link_vk');?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/social/vkontakte.png" alt="VK"></a>
+                    <a href="<?php the_field('link_fb');?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/social/facebook.png" alt="Facebook"></a>
+                    <a href="<?php the_field('link_inatagram');?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/social/instagram.png" alt="Instagram"></a>
+                    </li>
                   <?php endforeach; endif; ?>
                 </li><!-- //ГЛАВНЫЙ ТРЕНЕР -->
               </ul><!-- //description -->

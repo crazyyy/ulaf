@@ -47,7 +47,7 @@
                   <li><span>ВЕС:</span> <?php the_field('weight');?></li>
                   <li><span>ИГРАЕТ С :</span> <?php the_field('start_to_play');?></li>
                   <li><span>ИГРОВОЙ НОМЕР:</span> <?php the_field('player_number');?></li>
-                  <li><span>ССЫЛКИ НА СОЦ СЕТИ:</span>
+                  <li><span>КОНТАКТЫ:</span>
 
                     <a href="<?php the_field('link_vk');?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/social/vkontakte.png" alt="VK"></a>
                     <a href="<?php the_field('link_fb');?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/social/facebook.png" alt="Facebook"></a>
