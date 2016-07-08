@@ -1548,6 +1548,22 @@ footer {
 
   border-bottom: 1px solid #fff;
 }
+
+.championship-table {
+  tr {
+    text-align: center;
+    td {
+      color: $gold;
+      a {
+        &:hover {
+          text-decoration: none;
+
+          color: $gold;
+        }
+      }
+    }
+  }
+}
 /* import */
 @import 'import/print';
 @import 'owl/owl.carousel.min';
