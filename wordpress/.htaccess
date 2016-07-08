@@ -1,3 +1,19 @@
+AddDefaultCharset UTF-8
+php_value memory_limit 512M
+php_value max_input_vars 50000
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
 Redirect permanent /news/zubry---patrioty-prevyu- /collaboratively-empower-collaborative.htm
 Redirect 301 http://ulafua.com/ua/ http://ulafua.com/
 Redirect 301 /about http://ulafua.com/o-nas.htm
@@ -38,10 +54,6 @@ Redirect 301 /news/prevyu-yug-ili-zapad http://ulafua.com/compellingly-maximize-
 Redirect 301 /news/rakety-letyat-k-tigram http://ulafua.com/appropriately-transition-one-to-one.htm
 Redirect 301 /news/utrennij-efir-na-radio http://ulafua.com/enthusiastically-utilize-accurate.htm
 Redirect 301 /news/ulaf-1-j-tur-buldogi-pobedili-lvov-v-vyezdnom-matche http://ulafua.com/progressively-extend-24-365-schemas.htm
-
-
-AddDefaultCharset UTF-8
-php_value memory_limit 512M
 
 # supress php errors
 php_flag display_startup_errors off
@@ -210,16 +222,6 @@ RewriteRule .* http://127.0.0.1 [L]
 #AIOWPS_BLOCK_SPAMBOTS_END
 # END All In One WP Security
 
-php_value max_input_vars 50000
 
-# BEGIN WordPress
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
-RewriteRule ^index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
-</IfModule>
 
-# END WordPress
+
