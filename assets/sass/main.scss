@@ -1548,8 +1548,13 @@ footer {
 
   border-bottom: 1px solid #fff;
 }
-
+.team-table-position {
+    p {
+    color: #fff;
+    padding-top: 25px;
+  }
 .championship-table {
+  margin-top: 25px;
   tr {
     text-align: center;
     td {
@@ -1563,6 +1568,7 @@ footer {
       }
     }
   }
+}
 }
 /* import */
 @import 'import/print';
