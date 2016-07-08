@@ -6593,3 +6593,12 @@
       autoplay: true,
       autoplayTimeout: 5000,
   })
+
+  $('.owl-roster-slide').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:false,
+      items:4,
+      autoplay: true,
+      autoplayTimeout: 5000,
+  })
