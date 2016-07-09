@@ -22,3 +22,4 @@ wp-content/wp-cache-config.php
 wordpress/wp-content/ai1wm-backups/
 /wordpress/wp-content/cache
 *.map
+/wordpress/wp-content/themes/wp-ulaf/js/maps/*.map
