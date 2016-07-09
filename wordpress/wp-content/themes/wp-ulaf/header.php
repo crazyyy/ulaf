@@ -49,7 +49,8 @@
                 <div class="col-md-12 col-md-12-teams col-sm-12 col-xs-12">
                     <ul class="clearfix">
                       <ul class="all-review-page">
-                          <?php $temp = $wp_query; $wp_query= null; query_posts('post_type=team'.'&showposts=100&orderby=date&order=ASC'); while (have_posts()) : the_post();?>
+                          <?php
+                          $temp = $wp_query; $wp_query= null; query_posts('post_type=team'.'&showposts=100&orderby=date&order=ASC'); while (have_posts()) : the_post();?>
                             <li>
                                 <a rel="nofollow" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 
