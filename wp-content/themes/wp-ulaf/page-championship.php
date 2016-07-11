@@ -3,6 +3,72 @@
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 
+<div class="container game-info">
+      <h2>Дивизион A</h2>
+        <div class="row championship">
+            <div class="col-md-1 game-date">
+              10.07
+            </div>
+            <a href="#">
+            <div class="col-md-4 team-game">
+              <span>Bandits (Kiev)</span>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/teams/bandits.png">
+            </div>
+            <div class="col-md-2 game-score">
+              <span>46-15</span>
+            </div>
+            <div class="col-md-5 team-game">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/teams/bulgogs.png">
+              <span>Bulldogs (Kiev)</span>
+            </div>
+      </div><!-- row championship -->
+        </a>
+    </div>
+
+<div class="container game-info">
+      <h2>Дивизион C</h2>
+        <div class="row championship">
+            <div class="col-md-1 game-date">
+              10.07
+            </div>
+            <a href="#">
+            <div class="col-md-4 team-game">
+              <span>Rockets (Dnepr)</span>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/teams/rockets.png">
+            </div>
+            <div class="col-md-2 game-score">
+              <span>26-00</span>
+            </div>
+            <div class="col-md-5 team-game">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/teams/jeps.png">
+              <span>Gepardes (Yuzhny)</span>
+            </div>
+      </div><!-- row championship -->
+        </a>
+    </div>
+
+<div class="container game-info">
+      <h2>Дивизион A</h2>
+        <div class="row championship">
+            <div class="col-md-1 game-date">
+              09.07
+            </div>
+            <a href="#">
+            <div class="col-md-4 team-game">
+              <span>Аtlantes (Kharkov)</span>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/teams/atlants.png">
+            </div>
+            <div class="col-md-2 game-score">
+              <span>27-14</span>
+            </div>
+            <div class="col-md-5 team-game">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/teams/patrioty.png">
+              <span>Patriots (Kiev)</span>
+            </div>
+      </div><!-- row championship -->
+        </a>
+    </div>
+
     <div class="container game-info">
       <h2>Дивизион B</h2>
         <div class="row championship">
