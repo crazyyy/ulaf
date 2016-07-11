@@ -13,7 +13,7 @@
                         <th>%</th>
                         <th>ОЗ</th>
                         <th>ОП</th>
-
+                        <th>Очки</th>
                     </tr>
             </thead>
               <?php $posts = get_field('table_team_a'); if( $posts ): ?>
@@ -28,6 +28,7 @@
                   <td><?php the_field('%', $p->ID); ?></td>
                   <td><?php the_field('total_scores', $p->ID); ?></td>
                   <td><?php the_field('total_losts', $p->ID); ?></td>
+                  <td><?php the_field('points', $p->ID); ?></td>
               </tr>
               <?php endforeach; ?>
             </tbody>
@@ -44,6 +45,7 @@
                         <th>%</th>
                         <th>ОЗ</th>
                         <th>ОП</th>
+                        <th>Очки</th>
 
                     </tr>
             </thead>
@@ -52,13 +54,16 @@
           <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
               <tr>
                   <td>
-                  <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank"><?php echo get_the_title( $p->ID ); ?></a>
+                <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank">
+                <?php echo get_the_post_thumbnail( $p->ID, 'thumbnail' ); ?>
+                <?php echo get_the_title( $p->ID ); ?></a>
                       </td>
                   <td><?php the_field('wins', $p->ID); ?></td>
                   <td><?php the_field('losts', $p->ID); ?></td>
                   <td><?php the_field('%', $p->ID); ?></td>
                   <td><?php the_field('total_scores', $p->ID); ?></td>
                   <td><?php the_field('total_losts', $p->ID); ?></td>
+                  <td><?php the_field('points', $p->ID); ?></td>
               </tr>
               <?php endforeach; ?>
             </tbody>
@@ -74,7 +79,7 @@
                         <th>%</th>
                         <th>ОЗ</th>
                         <th>ОП</th>
-
+                        <th>Очки</th>
                     </tr>
             </thead>
               <?php $posts = get_field('table_team_c'); if( $posts ): ?>
@@ -89,6 +94,7 @@
                   <td><?php the_field('%', $p->ID); ?></td>
                   <td><?php the_field('total_scores', $p->ID); ?></td>
                   <td><?php the_field('total_losts', $p->ID); ?></td>
+                  <td><?php the_field('points', $p->ID); ?></td>
               </tr>
               <?php endforeach; ?>
             </tbody>
