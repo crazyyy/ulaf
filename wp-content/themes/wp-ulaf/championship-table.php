@@ -21,7 +21,9 @@
           <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
               <tr>
                   <td>
-                  <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank"><?php echo get_the_title( $p->ID ); ?></a>
+                  <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank">
+                <?php echo get_the_post_thumbnail( $p->ID, 'thumbnail' ); ?>
+                <?php echo get_the_title( $p->ID ); ?></a>
                       </td>
                   <td><?php the_field('wins', $p->ID); ?></td>
                   <td><?php the_field('losts', $p->ID); ?></td>
@@ -87,7 +89,9 @@
           <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
               <tr>
                   <td>
-                  <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank"><?php echo get_the_title( $p->ID ); ?></a>
+                  <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank">
+                <?php echo get_the_post_thumbnail( $p->ID, 'thumbnail' ); ?>
+                <?php echo get_the_title( $p->ID ); ?></a>
                       </td>
                   <td><?php the_field('wins', $p->ID); ?></td>
                   <td><?php the_field('losts', $p->ID); ?></td>
