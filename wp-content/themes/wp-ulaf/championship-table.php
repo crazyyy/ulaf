@@ -1,4 +1,5 @@
 <?php /* Template Name: Table-championship Page */ get_header(); ?>
+<div class="wrapper table-background">
   <section class="container">
     <div class="row">
       <div class="col-md-12 team-table-position">
@@ -96,6 +97,6 @@
       </div>
     </div>
   </section>
-
+</div>
   <?php get_template_part('relative-pages'); ?>
 <?php get_footer(); ?>
