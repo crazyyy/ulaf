@@ -53,7 +53,6 @@
                           $temp = $wp_query; $wp_query= null; query_posts('post_type=team'.'&showposts=100&orderby=date&order=ASC'); while (have_posts()) : the_post();?>
                             <li>
                                 <a rel="nofollow" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-
                                 <?php if ( has_post_thumbnail()) :
                                   the_post_thumbnail('medium');
                                 else: ?>
