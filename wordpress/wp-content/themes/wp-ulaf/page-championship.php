@@ -395,7 +395,7 @@
             </div>
             <div class="col-md-5 team-game">
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/zubr.jpg">
-              <span>Bisons(Минск)</span>
+              <span>Bisons(Minsk)</span>
             </div>
       </div><!-- row championship -->
         </a>
@@ -639,7 +639,7 @@
             </div>
             <div class="col-md-5 team-game">
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/zubr.jpg">
-              <span>Bisons(Минск)</span>
+              <span>Bisons(Minsk)</span>
             </div>
       </div><!-- row championship -->
     </a>
@@ -809,7 +809,7 @@
             </div>
             <a href="#">
             <div class="col-md-4 team-game">
-              <span>Patriots (Київ)</span>
+              <span>Patriots (Kiev)</span>
               <img src="<?php echo get_template_directory_uri(); ?>/img/teams/patrioty.png">
             </div>
             <div class="col-md-2 game-score">
@@ -817,7 +817,7 @@
             </div>
             <div class="col-md-5 team-game">
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/zubr.jpg">
-              <span>Bisons(Минск)</span>
+              <span>Bisons(Minsk)</span>
             </div>
       </div><!-- row championship -->
     </a>
@@ -839,7 +839,7 @@
             </div>
             <div class="col-md-5 team-game">
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/vikings.png">
-              <span>Vikings (Николоев)</span>
+              <span>Vikings (Nikolaev)</span>
             </div>
       </div><!-- row championship -->
     </a>
