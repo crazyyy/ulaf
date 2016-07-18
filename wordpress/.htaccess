@@ -45,7 +45,7 @@ Redirect 301 /contact http://ulafua.com/kontakty.htm
 Redirect 301 /photos http://ulafua.com/foto.htm
 Redirect 301 /articles http://ulafua.com/news
 Redirect 301 /first-article http://ulafua.com/novost-kotoruyu-zhdali-vse-igroki-i-lyubiteli-amerikanskogo-futbola-v-ukraine.htm
-Redirect 301 /sudejskij-komitet.htm http://ulafua.com/sudejskij-komitet.htm
+#Redirect 301 /sudejskij-komitet.htm http://ulafua.com/sudejskij-komitet.htm
 Redirect 301 /news/indiya-v-teme http://ulafua.com/authoritatively-brand-functionalized.htm
 Redirect 301 /teams/team http://ulafua.com/kalendar.htm
 Redirect 301 /news/gej-druzyaki-sensatsiya http://ulafua.com/intrinsicly-enable-inexpensive.htm
