@@ -1376,15 +1376,28 @@ footer {
   }
 }
 .gallery {
+  h3 {
+    font-size: 20px;
+    color:$gold;
+  }
   li {
     display: inline-block;
-
     padding-right: 15px;
     padding-bottom: 15px;
+    a {
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      padding-bottom:5px;
+      line-height:2;
+      &:hover {
+        color:$gold;
+      }
+    }
     img {
       width: 265px;
       height: 180px;
-
+      display: block;
       border-radius: 5%;
       &:hover {
         transition: all .3s;
@@ -1562,7 +1575,6 @@ footer {
   .team-table-position {
     p {
       padding-top: 25px;
-
       color: #fff;
     }
     .championship-table {
