@@ -7,6 +7,28 @@
       <h2>Дивизион A</h2>
         <div class="row championship">
             <div class="col-md-1 game-date">
+              16.07
+            </div>
+            <a href="#">
+            <div class="col-md-4 team-game">
+              <span>Pirates (Odessa)</span>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/teams/pirates.png">
+            </div>
+            <div class="col-md-2 game-score">
+              <span>00-48</span>
+            </div>
+            <div class="col-md-5 team-game">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/teams/les.png">
+              <span>Lumberjacks (Uzhgorod)</span>
+            </div>
+      </div><!-- row championship -->
+        </a>
+    </div>
+
+<div class="container game-info">
+      <h2>Дивизион A</h2>
+        <div class="row championship">
+            <div class="col-md-1 game-date">
               10.07
             </div>
             <a href="#">
