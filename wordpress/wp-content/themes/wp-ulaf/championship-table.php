@@ -44,10 +44,10 @@
                         <th>Команды</th>
                         <th>В</th>
                         <th>П</th>
-                        <th>%</th>
+                        <th>Очки</th>
                         <th>ОЗ</th>
                         <th>ОП</th>
-                        <th>Очки</th>
+                        <th>+/-</th>
 
                     </tr>
             </thead>
@@ -62,10 +62,10 @@
                       </td>
                   <td><?php the_field('wins', $p->ID); ?></td>
                   <td><?php the_field('losts', $p->ID); ?></td>
-                  <td><?php the_field('%', $p->ID); ?></td>
+                  <td><?php the_field('points', $p->ID); ?></td>
                   <td><?php the_field('total_scores', $p->ID); ?></td>
                   <td><?php the_field('total_losts', $p->ID); ?></td>
-                  <td><?php the_field('points', $p->ID); ?></td>
+                  <td><?php the_field('difference', $p->ID); ?></td>
               </tr>
               <?php endforeach; ?>
             </tbody>
@@ -78,10 +78,10 @@
                         <th>Команды</th>
                         <th>В</th>
                         <th>П</th>
-                        <th>%</th>
+                        <th>Очки</th>
                         <th>ОЗ</th>
                         <th>ОП</th>
-                        <th>Очки</th>
+                        <th>+/-</th>
                     </tr>
             </thead>
               <?php $posts = get_field('table_team_c'); if( $posts ): ?>
@@ -95,10 +95,10 @@
                       </td>
                   <td><?php the_field('wins', $p->ID); ?></td>
                   <td><?php the_field('losts', $p->ID); ?></td>
-                  <td><?php the_field('%', $p->ID); ?></td>
+                  <td><?php the_field('points', $p->ID); ?></td>
                   <td><?php the_field('total_scores', $p->ID); ?></td>
                   <td><?php the_field('total_losts', $p->ID); ?></td>
-                  <td><?php the_field('points', $p->ID); ?></td>
+                  <td><?php the_field('difference', $p->ID); ?></td>
               </tr>
               <?php endforeach; ?>
             </tbody>

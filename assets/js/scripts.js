@@ -6547,7 +6547,7 @@
       items:1,
       autoplay: true,
       autoplayTimeout: 8000,
-      slideSpeed: 400,
+      slideSpeed: 1000,
   })
 
 
