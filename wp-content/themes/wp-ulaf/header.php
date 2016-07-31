@@ -7,7 +7,8 @@
 
   <title><?php wp_title( '' ); ?><?php if ( wp_title( '', false ) ) { echo ' :'; } ?> <?php bloginfo( 'name' ); ?></title>
 
-  <link href="http://www.google-analytics.com/" rel="dns-prefetch"><!-- dns prefetch -->
+  <link href="http://www.google-analytics.com/" rel="dns-prefetch">
+  <link href="https://mc.yandex.ru" rel="dns-prefetch">
 
   <!-- icons -->
   <link href="<?php echo get_template_directory_uri(); ?>/favicon.ico" rel="shortcut icon">
@@ -45,32 +46,25 @@
     </div><!-- .container -->
   </header><!-- navbar -->
 
-<!-- Teams logo -->
-    <section class="section-teams">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-md-12-teams col-sm-12 col-xs-12">
-                    <ul class="clearfix">
-                      <ul class="all-review-page">
-                          <?php
-                          $temp = $wp_query; $wp_query= null; query_posts('post_type=team'.'&showposts=100&orderby=date&order=ASC'); while (have_posts()) : the_post();?>
-                            <li>
-                                <a rel="nofollow" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                                <?php if ( has_post_thumbnail()) :
-                                  the_post_thumbnail('medium');
-                                else: ?>
-                                  <img src="<?php echo catchFirstImage(); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>" />
-                                <?php endif; ?>
-                                </a><!-- /post thumbnail -->
-                            </li>
-
-                          <?php endwhile; ?>
-                          <?php $wp_query = null; $wp_query = $temp;?>
-                          <?php wp_reset_query(); ?>
-                      </ul><!-- all-review-page -->
-                    </ul>
-                </div>
-            </div>
+  <!-- Teams logo -->
+  <section class="section-teams">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-md-12-teams col-sm-12 col-xs-12">
+          <ul class="all-review-page clearfix">
+            <?php $temp = $wp_query; $wp_query= null; query_posts('post_type=team'.'&showposts=100&orderby=date&order=ASC'); while (have_posts()) : the_post();?>
+              <li>
+                  <a rel="nofollow" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                    <?php if ( has_post_thumbnail()) : the_post_thumbnail('medium'); else: ?>
+                      <img src="<?php echo catchFirstImage(); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>" />
+                    <?php endif; ?>
+                  </a><!-- /post thumbnail -->
+              </li>
+            <?php endwhile; $wp_query = null; $wp_query = $temp;?>
+            <?php wp_reset_query(); ?>
+          </ul><!-- all-review-page -->
         </div>
-    </section><!-- section-teams -->
-   <!-- header end  -->
+      </div>
+    </div>
+  </section><!-- section-teams -->
+  <!-- header end  -->
