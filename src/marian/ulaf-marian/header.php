@@ -21,6 +21,9 @@
   <!-- css + javascript -->
   <?php wp_head(); ?>
 
+    <link media="all" href="<?php echo get_template_directory_uri(); ?>/css/lb-style.css" rel="stylesheet">
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/lb.js"></script>
+
 </head>
 <body <?php body_class(); ?>>
 <!-- wrapper -->
@@ -31,10 +34,11 @@
     <div class="container">
       <div class="row">
         <div class="col-md-1 col-sm-2 col-xs-2">
-          <a href="<?php echo home_url(); ?>" class="navbar-brand"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></a>
+          <a href="http://ulafua.com/" class="navbar-brand"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></a>
             <span class="mobil-nav-btn">
-              <img  src="<?php echo get_template_directory_uri(); ?>/img/mob-nav.png">
+                <img  src="http://localhost:9090/wp-content/themes/wp-ulaf/img/mob-nav.png">
             </span>
+
         </div>
         <div class="col-md-11 col-sm-10 col-xs-10">
           <nav class="header-nav">
