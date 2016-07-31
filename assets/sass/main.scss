@@ -442,14 +442,47 @@ picture {
 /**
  * PAGE AND SINGLE
  */
+.page-title {
+  font-size: 180%;
+
+  position: relative;
+
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+
+  text-align: center;
+
+  color: $gold;
+  &:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    width: 150px;
+    height: 1px;
+    margin-left: -75px;
+
+    background-color: $gold;
+
+    @extend .dblock;
+  }
+}
 article {
   color: #fff;
-  .page-title {
-    font-size: 160%;
-
-    margin-bottom: 20px;
-
-    color: $gold;
+  &.post {
+    ol,
+    ul {
+      margin: 0 0 20px;
+      padding: 0 0 0 40px;
+      li {
+        &:before {
+          display: none;
+        }
+      }
+    }
+    ul {
+      list-style: disc;
+    }
   }
 }
 
@@ -1185,10 +1218,30 @@ footer {
       box-shadow: 0 0 20px 5px rgba(255, 255, 255, 1);
     }
   }
-  .pagination {
-    text-align: center;
+}
+.pagination {
+  padding: 10px 30px;
 
-    border: none;
+  text-align: center;
+
+  border: none;
+
+  @extend .clearfix;
+  a,
+  span {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  .current {
+    font-weight: bold;
+  }
+  .prev {
+    float: left;
+  }
+  .next {
+    float: right;
+  }
+  a {
     &:hover {
       text-decoration: none;
 
@@ -1429,28 +1482,27 @@ footer {
       line-height: 2;
 
       display: block;
+      overflow: hidden;
 
+      width: 265px;
+      height: 180px;
       padding-bottom: 5px;
 
       text-align: center;
       text-decoration: none;
-      &:hover {
-        color: $gold;
-      }
-    }
-    img {
-      display: block;
-
-      width: 265px;
-      height: 180px;
 
       border-radius: 5%;
       &:hover {
         transition: all .3s;
 
+        color: $gold;
         background-color: rgba(50,50,48,.1);
         box-shadow: 0 0 20px 5px #fff;
       }
+    }
+    img {
+      width: 100%;
+      min-height: 100%;
     }
   }
 }
@@ -1460,9 +1512,69 @@ footer {
   display: none !important;
 }
 .news-page {
-  padding: 35px;
+  position: relative;
 
-  border-bottom: 1px solid #fff;
+  padding: 35px;
+  &:after {
+    position: absolute;
+    right: 70px;
+    bottom: 0;
+    left: 70px;
+
+    height: 1px;
+
+    background-color: $gold;
+
+    @extend .dblock;
+  }
+  .feature-img {
+    display: block;
+    overflow: hidden;
+
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .inner-title {
+    font-size: 160%;
+
+    padding: 0 0 10px;
+    a {
+      position: relative;
+      &:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 80%;
+        height: 1px;
+
+        background-color: $gold;
+
+        @extend .dblock;
+      }
+    }
+  }
+  .date {
+    font-size: 80%;
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: lighten($gold, 15%);
+  }
+  p {
+    line-height: 1.6;
+  }
+  .author {
+    font-size: 80%;
+
+    display: block;
+
+    color: lighten($gold, 15%);
+  }
 }
 .table-background {
   padding-bottom: 40px;

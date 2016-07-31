@@ -3,11 +3,8 @@
     <div class="container">
       <div class="row category-news">
 
-
-        <h1 class="cat-title inner-title col-md-12"><?php _e( 'Categories for', 'wpeasy' ); the_category(', '); ?></h1>
-
+        <h1 class="page-title col-md-12"><?php the_category(', '); ?></h1>
         <?php get_template_part('loop'); ?>
-
         <?php get_template_part('pagination'); ?>
 
       </div><!-- row -->
