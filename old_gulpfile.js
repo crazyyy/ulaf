@@ -28,11 +28,11 @@ var paths = {
   },
   scripts: {
     src: basePaths.src + 'js/**',
+    vendor_src: basePaths.src + 'jsapp/',
     dest: basePaths.dest + 'js/'
   },
   styles: {
     src: basePaths.src + 'sass/',
-    css: basePaths.src + 'css/',
     dest: basePaths.dest + 'css/'
   },
   fonts: {
@@ -46,21 +46,23 @@ var paths = {
 var appFiles = {
   styles: paths.styles.src + '**/*.scss',
   scripts: [paths.scripts.src],
-};
-var changeEvent = function(evt) {
-  gutil.log('File', gutil.colors.cyan(evt.path.replace(new RegExp('/.*(?=/' + basePaths.src + ')/'), '')), 'was', gutil.colors.magenta(evt.type));
+  vendor_scripts: [paths.scripts.vendor_src]
 };
 var spriteConfig = {
-  imgName: 'super_sprite.png',
-  cssName: '_super_sprite.scss',
-  imgPath: '../img/' + 'super_sprite.png'
+  imgName: 'sprite.png',
+  cssName: '_sprite.scss',
+  imgPath: '../img/' + 'sprite.png'
 };
+var changeEvent = function (evt) {
+  gutil.log('File', gutil.colors.cyan(evt.path.replace(new RegExp('/.*(?=/' + basePaths.src + ')/'), '')), 'was', gutil.colors.magenta(evt.type));
+};
+
 var gulp = require('gulp'),
   gutil = require('gulp-util'),
   es = require('event-stream'),
   runSequence = require('run-sequence'),
   browserSync = require('browser-sync'),
-  reload = browserSync.reload,
+  reload =  browserSync.reload,
   pngquant = require('imagemin-pngquant'),
   plugins = require("gulp-load-plugins")({
     pattern: ['gulp-*', 'gulp.*'],
@@ -74,133 +76,121 @@ var autoprefixer = require('autoprefixer'),
   cssnext = require('cssnext');
 
 // Copy web fonts to dist
-gulp.task('fonts', function() {
+gulp.task('fonts', function () {
   return gulp.src(paths.fonts.src)
     .pipe(plugins.newer(paths.fonts.dest))
     .pipe(gulp.dest(paths.fonts.dest))
-    .pipe(plugins.size({
-      showFiles: true,
-      title: 'task:fonts'
-    }));
+    .pipe(plugins.size({showFiles: true, title: 'task:fonts'}));
 });
 
 // Optimize images
-gulp.task('images', function() {
+gulp.task('images', function () {
   return gulp.src(paths.images.srcimg)
     .pipe(plugins.newer(paths.images.dest))
     .pipe(plugins.imagemin({
       progressive: true,
       interlaced: true,
-      svgoPlugins: [{
-        removeViewBox: false
-      }],
-      use: [pngquant()]
+        svgoPlugins: [{removeViewBox: false}],
+        use: [pngquant()]
     }))
-    .pipe(plugins.size({
-      showFiles: true,
-      title: 'task:images'
-    }))
+    .pipe(plugins.size({showFiles: true, title: 'task:images'}))
     .pipe(gulp.dest(paths.images.dest));
 });
 
-
 // Generate sprites
-gulp.task('sprite', function() {
+gulp.task('sprite', function () {
   var spriteData = gulp.src(paths.sprite.src + '*.png')
-    .pipe(plugins.spritesmith({
+   .pipe(plugins.spritesmith({
       imgName: spriteConfig.imgName,
       cssName: spriteConfig.cssName,
       imgPath: spriteConfig.imgPath,
-      cssVarMap: function(sprite) {
+      cssVarMap: function (sprite) {
         sprite.name = 'sprite-' + sprite.name;
       }
-    }))
-    .pipe(plugins.if('*.png', gulp.dest(paths.images.src)))
-    .pipe(plugins.if('*.scss', gulp.dest(paths.styles.src)))
-    .pipe(plugins.size({
-      showFiles: true,
-      title: ' task:sprite'
-    }));
+   }))
+  .pipe(plugins.if('*.png', gulp.dest(paths.images.src)))
+  .pipe(plugins.if('*.scss', gulp.dest(paths.styles.src)))
+  .pipe(plugins.size({showFiles: true, title: ' task:sprite'}));
 });
 
 // find images in css end encode it to base64
-gulp.task('base64', function() {
+gulp.task('base64', function(){
   return gulp.src(paths.styles.src + '_base64.scss')
-    .pipe(plugins.base64({
-      extensions: ['svg', 'png', 'gif', 'jpg', /\.jpg#datauri$/i],
-      maxImageSize: 20 * 1024, // bytes
-      debug: false
-    }))
-    .pipe(gulp.dest(paths.styles.src));
+  .pipe(plugins.base64({
+    extensions: ['svg', 'png', 'gif',  'jpg', /\.jpg#datauri$/i],
+    maxImageSize: 20*1024, // bytes
+    debug: false
+  }))
+  .pipe(gulp.dest(paths.styles.src));
+});
+
+// Concat vendor script to one file
+gulp.task('scripts:vendor', function() {
+  return gulp.src([
+    appFiles.vendor_scripts + 'modernizr.js',
+    appFiles.vendor_scripts + 'jquery-1.12.2.js',
+    // appFiles.vendor_scripts + 'jquery-1.12.2.js',
+  ])
+  .pipe(customPlumber('Error Compiling Vendor Scripts'))
+  .pipe(plugins.newer(paths.scripts.dest))
+  .pipe(plugins.sourcemaps.init())
+  .pipe(plugins.size({showFiles: true, title: 'vendor scripts to concat:'}))
+  .pipe(plugins.concat('vendor.js'))
+  .pipe(plugins.if('*.js', plugins.uglify()))
+  .pipe(plugins.sourcemaps.write('maps', {includeContent: true}))
+  .pipe(gulp.dest(paths.scripts.dest))
+  .pipe(plugins.size({showFiles: true, title: 'vendor script concated:'}));
 });
 
 // Optimize script
-gulp.task('scripts', function() {
+gulp.task('scripts:development', function () {
   gulp.src(appFiles.scripts)
     .pipe(plugins.newer(paths.scripts.dest))
     .pipe(customPlumber('Error Compiling Scripts'))
     .pipe(plugins.sourcemaps.init())
     .pipe(plugins.if('*.js', plugins.uglify()))
-    .pipe(plugins.sourcemaps.write('maps', {
-      includeContent: true
-    }))
+    .pipe(plugins.sourcemaps.write('maps', {includeContent: true}))
     .pipe(gulp.dest(paths.scripts.dest))
-    .pipe(plugins.size({
-      showFiles: true,
-      title: 'task:scripts:'
-    }));
+    .pipe(plugins.size({showFiles: true, title: 'task:scripts:'}));
 });
 
 // Compile and automatically prefix stylesheets
-gulp.task('scss', function() {
+gulp.task('sass', function () {
   // For best performance, don't add Sass partials to `gulp.src`
   return gulp.src(appFiles.styles)
     .pipe(customPlumber('Error Running Sass'))
-    .pipe(plugins.newer(paths.styles.css))
+    .pipe(plugins.newer(paths.styles.dest))
     .pipe(plugins.sourcemaps.init())
     .pipe(plugins.sass({
       outputStyle: 'compressed',
       precision: 10,
       onError: console.error.bind(console, 'Sass error:')
     }))
-    .pipe(plugins.sourcemaps.write('maps', {
-      includeContent: true
-    }))
-    .pipe(gulp.dest(paths.styles.css))
-    .pipe(plugins.size({
-      showFiles: true,
-      title: 'task:styles'
-    }));
+    .pipe(plugins.sourcemaps.write('maps', {includeContent: true}))
+    .pipe(gulp.dest(paths.styles.dest))
+    .pipe(plugins.size({showFiles: true, title: 'task:styles'}));
 });
 
-
 // postcss autoprefix
-gulp.task('postcss', function() {
+gulp.task('postcss', function () {
   var processors = [
-    autoprefixer({
-      browsers: ['ie >= 8', 'ie_mob >= 10', 'ff >= 20', 'chrome >= 24', 'safari >= 5', 'opera >= 12', 'ios >= 7', 'android >= 2.3', '> 1%', 'last 4 versions', 'bb >= 10']
-    }),
+    autoprefixer({browsers: ['ie >= 8', 'ie_mob >= 10', 'ff >= 20', 'chrome >= 24', 'safari >= 5', 'opera >= 12', 'ios >= 7', 'android >= 2.3', '> 1%', 'last 4 versions', 'bb >= 10']}),
     mqpacker,
     csswring,
     cssnext()
   ];
-  return gulp.src(paths.styles.css + '**/*.css')
-    .pipe(customPlumber('Error Compiling PostCSS'))
-    .pipe(plugins.newer(paths.styles.dest))
-    .pipe(plugins.sourcemaps.init())
-    .pipe(plugins.postcss(processors))
-    .pipe(plugins.sourcemaps.write('maps', {
-      includeContent: true
-    }))
-    .pipe(gulp.dest(paths.styles.dest))
-    .pipe(plugins.size({
-      showFiles: true,
-      title: 'task:postcss'
-    }));
+  return gulp.src(paths.styles.dest + '**/*.css')
+  .pipe(customPlumber('Error Compiling PostCSS'))
+  .pipe(plugins.newer(paths.styles.dest))
+  .pipe(plugins.sourcemaps.init())
+  .pipe(plugins.postcss(processors))
+  .pipe(plugins.sourcemaps.write('maps', {includeContent: true}))
+  .pipe(gulp.dest(paths.styles.dest))
+  .pipe(plugins.size({showFiles: true, title: 'task:postcss'}));
 });
 
 // clear gulp cache
-gulp.task('cache:clear', function(done) {
+gulp.task('cache:clear', function (done) {
   return plugins.cache.clearAll(done);
 });
 
@@ -226,7 +216,8 @@ gulp.task('browserSync', function() {
 
 gulp.task('styles', function(callback) {
   runSequence(
-    ['scss'], ['postcss'],
+    ['sass'],
+    ['postcss'],
     callback
   )
 })
@@ -234,7 +225,12 @@ gulp.task('styles', function(callback) {
 // Consolidated dev phase task
 gulp.task('serve', function(callback) {
   runSequence(
-    'cache:clear', ['sprite', 'base64', 'images'], ['scripts'], ['scss', 'fonts'], ['postcss'], ['browserSync', 'watch'],
+    'cache:clear',
+    ['sprite', 'base64', 'images'],
+    ['scripts:vendor', 'scripts:development'],
+    ['sass', 'fonts'],
+    ['postcss'],
+    ['browserSync', 'watch'],
     callback
   );
 });
@@ -245,13 +241,14 @@ gulp.task('watch', function() {
     basePaths.dest + '**/*.{html,htm,php}'
   ]).on('change', reload);
 
-  gulp.watch(paths.sprite.src, ['cache:clear', 'sprite', 'images', 'styles', reload]);
+  gulp.watch(paths.sprite.src, ['cache:clear','sprite','images','styles',reload]);
   gulp.watch(paths.images.srcimg, ['images', reload]);
-  gulp.watch(paths.styles.src + '/_base64.scss', ['base64', reload]);
+  gulp.watch(paths.styles.src + '/_base64.scss', ['base64',reload]);
   gulp.watch(appFiles.styles, ['styles', reload]);
   gulp.watch(paths.sprite.src, ['styles', reload]);
-  gulp.watch(paths.fonts.src, ['fonts', reload]);
-  gulp.watch(appFiles.scripts, ['scripts', reload]);
+  gulp.watch(paths.fonts.src, ['fonts',reload]);
+  gulp.watch(appFiles.scripts, ['scripts:development', reload]);
+  gulp.watch(appFiles.vendor_scripts + '**/*', ['scripts:vendor', reload]);
 });
 
 // Custom Plumber function for catching errors
@@ -261,7 +258,7 @@ function customPlumber(errTitle) {
       // Customizing error title
       title: errTitle || 'Error running Gulp',
       message: 'Error: <%= error.message %>',
-      sound: "Bottle"
+      sound:    "Bottle"
     })
   });
 };
