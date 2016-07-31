@@ -6,8 +6,7 @@
               <p>© Ulaf 2016</p>
             </div><!-- col-sm-6 -->
 
-        <!-- Socials -->
-
+            <!-- Socials -->
             <div class="col-sm-9 col-sm-9 col-xs-9 subscribe">
               <ul class="list-inline social">
                 <li>
@@ -30,7 +29,7 @@
                   <a href="https://www.instagram.com/ULAFCOOL/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/social/instagram.png" alt="ulaf Instagram"></a>
                 </li>
               </ul>
-            </div><!-- col-sm-6 -->
+            </div><!-- subscribe col-sm-6 -->
 
           </div><!-- row -->
         </div><!-- container -->
