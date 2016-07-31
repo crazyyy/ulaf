@@ -38,27 +38,31 @@ class Ai1wm_Compressor extends Ai1wm_Archiver {
 	/**
 	 * Add a file to the archive
 	 *
-	 * @param string $file         File to add to the archive
-	 * @param string $new_filename Write the file with a different name
-	 * @param int    $offset       File offset
-	 * @param int    $timeout      Process timeout
+	 * @param string $file             File to add to the archive
+	 * @param string $new_filename     Write the file with a different name
+	 * @param int    $current_filesize File size
+	 * @param int    $offset           File offset
+	 * @param int    $timeout          Process timeout
 	 *
 	 * @throws \Ai1wm_Not_Accesible_Exception
 	 * @throws \Ai1wm_Not_Readable_Exception
 	 * @throws \Ai1wm_Not_Writable_Exception
 	 */
-	public function add_file( $file, $new_filename = '', $offset = 0, $timeout = 0 ) {
+	public function add_file( $file, $new_filename = '', $current_filesize = 0, $offset = 0, $timeout = 0 ) {
 		// open the file for reading in binary mode
 		$handle = $this->open_file_for_reading( $file );
-
-		// get file block header of the file we are trying to archive
-		$block = $this->get_file_block( $file, $new_filename );
 
 		// set file offset or set file header
 		if ( $offset ) {
 			// set file offset
 			fseek( $handle, $offset, SEEK_SET );
+
+			// set file size
+			$this->current_filesize = $current_filesize;
 		} else {
+			// get file block header of the file we are trying to archive
+			$block = $this->get_file_block( $file, $new_filename );
+
 			// write file block header to our archive file
 			$this->write_to_handle( $this->file_handle, $block, $this->filename );
 		}

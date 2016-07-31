@@ -27,12 +27,20 @@ class Ai1wm_Export_Content {
 
 	public static function execute( $params ) {
 
+		// Set current filesize
+		if ( isset( $params['current_filesize'] ) ) {
+			$current_filesize = (int) $params['current_filesize'];
+		} else {
+			$current_filesize = 0;
+		}
+
 		// Set content offset
 		if ( isset( $params['content_offset'] ) ) {
 			$content_offset = (int) $params['content_offset'];
 		} else {
 			$content_offset = 0;
 		}
+
 		// Set filemap offset
 		if ( isset( $params['filemap_offset'] ) ) {
 			$filemap_offset = (int) $params['filemap_offset'];
@@ -88,7 +96,7 @@ class Ai1wm_Export_Content {
 				try {
 
 					// Add file to archive
-					if ( ( $content_offset = $archive->add_file( WP_CONTENT_DIR . DIRECTORY_SEPARATOR . $path, $path, $content_offset, 10 ) ) ) {
+					if ( ( $content_offset = $archive->add_file( WP_CONTENT_DIR . DIRECTORY_SEPARATOR . $path, $path, $current_filesize, $content_offset, 10 ) ) ) {
 
 						// Set progress
 						if ( ( $processed += $content_offset ) ) {
@@ -97,6 +105,9 @@ class Ai1wm_Export_Content {
 
 						// Set progress
 						Ai1wm_Status::info( sprintf( __( 'Archiving %d files...<br />%d%% complete', AI1WM_PLUGIN_NAME ), $total_files, $progress ) );
+
+						// Set current filesize
+						$params['current_filesize'] = $archive->get_current_filesize();
 
 						// Set content offset
 						$params['content_offset'] = $content_offset;
@@ -112,6 +123,9 @@ class Ai1wm_Export_Content {
 
 						return $params;
 					}
+
+					// Set current filesize
+					$current_filesize = 0;
 
 					// Set content offset
 					$content_offset = 0;
@@ -135,6 +149,9 @@ class Ai1wm_Export_Content {
 
 			$archive->close();
 		}
+
+		// Set current filesize
+		$params['current_filesize'] = $current_filesize;
 
 		// Set content offset
 		$params['content_offset'] = $content_offset;
