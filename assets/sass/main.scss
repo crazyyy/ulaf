@@ -46,29 +46,11 @@ body {
   position: relative;
 
   color: $base-font-color;
+  background: url('../img/page-bg.jpg') fixed;
   background-color: $dark-blue;
+  background-size: cover;
 
   -webkit-font-smoothing: antialiased;
-  &:after,
-  &:before {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    content: '';
-  }
-  &:after {
-    z-index: -1;
-
-    background-image: url(../img/bg/body-bg.png);
-  }
-  &:before {
-    z-index: -2;
-
-    background-image: linear-gradient(135deg, rgba(47,46,47,1) 0%,  rgba(1,1,1,1) 100%);
-  }
 }
 h1,
 h2,
@@ -257,7 +239,7 @@ picture {
       display: inline-block;
       float: left;
 
-      width: 3.6%;
+      width: 3.4%;
       height: 100%;
       margin: 0 .28%;
       a {
@@ -475,8 +457,8 @@ article {
  * PAGE
  */
 .section-history {
-  border-top: 3px solid $nigger-blue;
-  background-color: $dark-blue;
+  border: none;
+  background: none;
   article {
     padding: 20px;
 
@@ -533,7 +515,8 @@ article {
 .relative-pages {
   padding-bottom: 30px;
 
-  background-color: $dark-blue;
+  border: none;
+  background: none;
 }
 /**
  * SINGLE
@@ -1089,7 +1072,7 @@ footer {
     }
   }
 }
-.relative-posts .hover_image
+
 // Relative posts//
 .relative-posts {
   padding: 20px 10px;

@@ -13,9 +13,9 @@
   <link href="<?php echo get_template_directory_uri(); ?>/favicon.ico" rel="shortcut icon">
 
   <!--[if lt IE 9]>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/html5shiv.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/selectivizr.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/respond.js"></script>
   <![endif]-->
 
   <!-- css + javascript -->
@@ -24,19 +24,20 @@
     <link media="all" href="<?php echo get_template_directory_uri(); ?>/css/lb-style.css" rel="stylesheet">
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/lb.js"></script>
 
+
 </head>
 <body <?php body_class(); ?>>
 <!-- wrapper -->
 <div class="wrapper">
 
-  <!-- Navbar -->
+<!-- Navbar -->
   <header class="navbar">
     <div class="container">
       <div class="row">
         <div class="col-md-1 col-sm-2 col-xs-2">
           <a href="http://ulafua.com/" class="navbar-brand"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></a>
             <span class="mobil-nav-btn">
-                <img  src="http://localhost:9090/wp-content/themes/wp-ulaf/img/mob-nav.png">
+                <img  src="<?php echo get_template_directory_uri(); ?>/img/mob-nav.png">
             </span>
 
         </div>

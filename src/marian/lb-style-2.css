@@ -1,5 +1,26 @@
 /*# Marian Lumberjack */
 
+body::after {
+    background: none;
+}
+body::before {
+    background: none;
+}
+body {
+    background: url("../img/page-bg.jpg") fixed;
+    background-size: cover;
+}
+
+.section-history,
+.relative-pages {
+    border: none;
+    background: none;
+}
+
+.wrapper {
+
+}
+
 .header-nav {
     padding-left: 20px;
     padding-top: 25px;
@@ -46,7 +67,8 @@
 }
 .championship-table {
     background: rgba(0, 0, 0, 0.40); ;
-
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(255,255,255,0.75);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(255,255,255,255.75);
     box-shadow: 0px 0px 30px 0px rgba(255,255,255,0.75);
 }
 .championship-table td a {
@@ -63,6 +85,9 @@
 }
 .mobil-nav-btn {
     display: none;
+}
+.section-teams ul li {
+    width: 3.4%;
 }
 
 
