@@ -1,1 +1,0 @@
-<?php die(); ?>{"headers":{"Content-Encoding":"Content-Encoding: gzip","Vary":"Vary: Accept-Encoding, Cookie","Last-Modified":"Last-Modified: Mon, 22 Aug 2016 23:07:25 GMT","Content-Type":"Content-Type: text\/html; charset=\"UTF-8\""},"uri":"ulafua.com\/kontakty.htm","blog_id":1,"post":24,"key":"ulafua.com80\/kontakty.htmgzipc8ff4c244ab43c77a166dc8fc5aae4d0"}

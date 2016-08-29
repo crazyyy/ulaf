@@ -1,1 +1,0 @@
-<?php die(); ?>{"headers":{"Content-Encoding":"Content-Encoding: gzip","Vary":"Vary: Accept-Encoding, Cookie","Last-Modified":"Last-Modified: Sun, 21 Aug 2016 23:38:32 GMT","Content-Type":"Content-Type: text\/html; charset=\"UTF-8\""},"uri":"ulafua.com\/","blog_id":1,"post":22,"key":"ulafua.com80\/gzipc8ff4c244ab43c77a166dc8fc5aae4d0"}

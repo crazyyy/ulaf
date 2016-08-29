@@ -1,1 +1,0 @@
-<?php die(); ?>{"headers":{"Content-Encoding":"Content-Encoding: gzip","Vary":"Vary: Accept-Encoding, Cookie","Last-Modified":"Last-Modified: Wed, 17 Aug 2016 13:02:22 GMT","Content-Type":"Content-Type: text\/html; charset=\"UTF-8\""},"uri":"ulafua.com\/wild-card-round.htm?_=1471438431842","blog_id":1,"post":1201,"key":"ulafua.com80\/wild-card-round.htm?_=1471438431842gzip"}

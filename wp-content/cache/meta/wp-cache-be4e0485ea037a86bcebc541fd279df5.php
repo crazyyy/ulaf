@@ -1,1 +1,0 @@
-<?php die(); ?>{"headers":{"Content-Encoding":"Content-Encoding: gzip","Vary":"Vary: Accept-Encoding, Cookie","Last-Modified":"Last-Modified: Sat, 13 Aug 2016 22:51:46 GMT","Content-Type":"Content-Type: text\/html; charset=\"UTF-8\""},"uri":"ulafua.com\/istoriya-ulaf.htm","blog_id":1,"post":84,"key":"ulafua.com80\/istoriya-ulaf.htmgzip0c922c5173d0fa4d7cf45ff169dd5efb"}
