@@ -1,7 +1,7 @@
 // Avoid `console` errors in browsers that lack a console.
-(function () {
+(function() {
   var method;
-  var noop = function () {};
+  var noop = function() {};
   var methods = ['assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error', 'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log', 'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd', 'timeline', 'timelineEnd', 'timeStamp', 'trace', 'warn'];
   var length = methods.length;
   var console = (window.console = window.console || {});
@@ -11,9 +11,9 @@
 
     // Only stub undefined methods.
     if (!console[method]) {
-        console[method] = noop;
+      console[method] = noop;
     }
-}
+  }
 }());
 
 // Place any jQuery/helper plugins in here.
@@ -29,7 +29,8 @@
  * @todo Test Zepto
  * @todo stagePadding calculate wrong active classes
  */
-;(function($, window, document, undefined) {
+;
+(function($, window, document, undefined) {
 
   var drag, state, e;
 
@@ -199,8 +200,7 @@
     this._pipe = [];
 
     $.each(Owl.Plugins, $.proxy(function(key, plugin) {
-      this._plugins[key[0].toLowerCase() + key.slice(1)]
-        = new plugin(this);
+      this._plugins[key[0].toLowerCase() + key.slice(1)] = new plugin(this);
     }, this));
 
     $.each(Owl.Pipe, $.proxy(function(priority, worker) {
@@ -284,13 +284,13 @@
   /**
    * Update pipe.
    */
-  Owl.Pipe = [ {
-    filter: [ 'width', 'items', 'settings' ],
+  Owl.Pipe = [{
+    filter: ['width', 'items', 'settings'],
     run: function(cache) {
       cache.current = this._items && this._items[this.relative(this._current)];
     }
   }, {
-    filter: [ 'items', 'settings' ],
+    filter: ['items', 'settings'],
     run: function() {
       var cached = this._clones,
         clones = this.$stage.children('.cloned');
@@ -301,7 +301,7 @@
       }
     }
   }, {
-    filter: [ 'items', 'settings' ],
+    filter: ['items', 'settings'],
     run: function() {
       var i, n,
         clones = this._clones,
@@ -323,11 +323,12 @@
       }
     }
   }, {
-    filter: [ 'width', 'items', 'settings' ],
+    filter: ['width', 'items', 'settings'],
     run: function() {
       var rtl = (this.settings.rtl ? 1 : -1),
         width = (this.width() / this.settings.items).toFixed(3),
-        coordinate = 0, merge, i, n;
+        coordinate = 0,
+        merge, i, n;
 
       this._coordinates = [];
       for (i = 0, n = this._clones.length + this._items.length; i < n; i++) {
@@ -339,20 +340,25 @@
       }
     }
   }, {
-    filter: [ 'width', 'items', 'settings' ],
+    filter: ['width', 'items', 'settings'],
     run: function() {
-      var i, n, width = (this.width() / this.settings.items).toFixed(3), css = {
-        'width': Math.abs(this._coordinates[this._coordinates.length - 1]) + this.settings.stagePadding * 2,
-        'padding-left': this.settings.stagePadding || '',
-        'padding-right': this.settings.stagePadding || ''
-      };
+      var i, n, width = (this.width() / this.settings.items).toFixed(3),
+        css = {
+          'width': Math.abs(this._coordinates[this._coordinates.length - 1]) + this.settings.stagePadding * 2,
+          'padding-left': this.settings.stagePadding || '',
+          'padding-right': this.settings.stagePadding || ''
+        };
 
       this.$stage.css(css);
 
-      css = { 'width': this.settings.autoWidth ? 'auto' : width - this.settings.margin };
+      css = {
+        'width': this.settings.autoWidth ? 'auto' : width - this.settings.margin
+      };
       css[this.settings.rtl ? 'margin-left' : 'margin-right'] = this.settings.margin;
 
-      if (!this.settings.autoWidth && $.grep(this._mergers, function(v) { return v > 1 }).length > 0) {
+      if (!this.settings.autoWidth && $.grep(this._mergers, function(v) {
+          return v > 1
+        }).length > 0) {
         for (i = 0, n = this._coordinates.length; i < n; i++) {
           css.width = Math.abs(this._coordinates[i]) - Math.abs(this._coordinates[i - 1] || 0) - this.settings.margin;
           this.$stage.children().eq(i).css(css);
@@ -362,30 +368,30 @@
       }
     }
   }, {
-    filter: [ 'width', 'items', 'settings' ],
+    filter: ['width', 'items', 'settings'],
     run: function(cache) {
       cache.current && this.reset(this.$stage.children().index(cache.current));
     }
   }, {
-    filter: [ 'position' ],
+    filter: ['position'],
     run: function() {
       this.animate(this.coordinates(this._current));
     }
   }, {
-    filter: [ 'width', 'position', 'items', 'settings' ],
+    filter: ['width', 'position', 'items', 'settings'],
     run: function() {
       var rtl = this.settings.rtl ? 1 : -1,
         padding = this.settings.stagePadding * 2,
         begin = this.coordinates(this.current()) + padding,
         end = begin + this.width() * rtl,
-        inner, outer, matches = [], i, n;
+        inner, outer, matches = [],
+        i, n;
 
       for (i = 0, n = this._coordinates.length; i < n; i++) {
         inner = this._coordinates[i - 1] || 0;
         outer = Math.abs(this._coordinates[i]) + padding * rtl;
 
-        if ((this.op(inner, '<=', begin) && (this.op(inner, '>', end)))
-          || (this.op(outer, '<', begin) && this.op(outer, '>', end))) {
+        if ((this.op(inner, '<=', begin) && (this.op(inner, '>', end))) || (this.op(outer, '<', begin) && this.op(outer, '>', end))) {
           matches.push(i);
         }
       }
@@ -398,7 +404,7 @@
         this.$stage.children().eq(this.current()).addClass(this.settings.centerClass);
       }
     }
-  } ];
+  }];
 
   /**
    * Initializes the carousel.
@@ -492,11 +498,21 @@
     }
 
     if (this.settings === null || this._breakpoint !== match) {
-      this.trigger('change', { property: { name: 'settings', value: settings } });
+      this.trigger('change', {
+        property: {
+          name: 'settings',
+          value: settings
+        }
+      });
       this._breakpoint = match;
       this.settings = settings;
       this.invalidate('settings');
-      this.trigger('changed', { property: { name: 'settings', value: this.settings } });
+      this.trigger('changed', {
+        property: {
+          name: 'settings',
+          value: this.settings
+        }
+      });
     }
   };
 
@@ -526,14 +542,18 @@
    * @returns {jQuery|HTMLElement} - The item container.
    */
   Owl.prototype.prepare = function(item) {
-    var event = this.trigger('prepare', { content: item });
+    var event = this.trigger('prepare', {
+      content: item
+    });
 
     if (!event.data) {
       event.data = $('<' + this.settings.itemElement + '/>')
         .addClass(this.settings.itemClass).append(item)
     }
 
-    this.trigger('prepared', { content: event.data });
+    this.trigger('prepared', {
+      content: event.data
+    });
 
     return event.data;
   };
@@ -545,7 +565,9 @@
   Owl.prototype.update = function() {
     var i = 0,
       n = this._pipe.length,
-      filter = $.proxy(function(p) { return this[p] }, this._invalidated),
+      filter = $.proxy(function(p) {
+        return this[p]
+      }, this._invalidated),
       cache = {};
 
     while (i < n) {
@@ -694,16 +716,24 @@
     var isTouch = isTouchSupport(),
       isTouchIE = isTouchSupportIE();
 
-    if (this.settings.mouseDrag){
-      this.$stage.on('mousedown', $.proxy(function(event) { this.eventsRouter(event) }, this));
-      this.$stage.on('dragstart', function() { return false });
-      this.$stage.get(0).onselectstart = function() { return false };
+    if (this.settings.mouseDrag) {
+      this.$stage.on('mousedown', $.proxy(function(event) {
+        this.eventsRouter(event)
+      }, this));
+      this.$stage.on('dragstart', function() {
+        return false
+      });
+      this.$stage.get(0).onselectstart = function() {
+        return false
+      };
     } else {
       this.$element.addClass('owl-text-select-on');
     }
 
-    if (this.settings.touchDrag && !isTouchIE){
-      this.$stage.on('touchstart touchcancel', $.proxy(function(event) { this.eventsRouter(event) }, this));
+    if (this.settings.touchDrag && !isTouchIE) {
+      this.$stage.on('touchstart touchcancel', $.proxy(function(event) {
+        this.eventsRouter(event)
+      }, this));
     }
 
     // catch transitionEnd event
@@ -752,8 +782,7 @@
     this.drag.offsetY = this.$stage.position().top;
 
     if (this.settings.rtl) {
-      this.drag.offsetX = this.$stage.position().left + this.$stage.width() - this.width()
-        + this.settings.margin;
+      this.drag.offsetX = this.$stage.position().left + this.$stage.width() - this.width() + this.settings.margin;
     }
 
     // catch position // ie to fix
@@ -780,7 +809,9 @@
       this.drag.targetEl.draggable = false;
     }
 
-    $(document).on('mousemove.owl.dragEvents mouseup.owl.dragEvents touchmove.owl.dragEvents touchend.owl.dragEvents', $.proxy(function(event) {this.eventsRouter(event)},this));
+    $(document).on('mousemove.owl.dragEvents mouseup.owl.dragEvents touchmove.owl.dragEvents touchend.owl.dragEvents', $.proxy(function(event) {
+      this.eventsRouter(event)
+    }, this));
   };
 
   /**
@@ -969,15 +1000,17 @@
    * @return {Number} - The absolute position of the closest item.
    */
   Owl.prototype.closest = function(coordinate) {
-    var position = -1, pull = 30, width = this.width(), coordinates = this.coordinates();
+    var position = -1,
+      pull = 30,
+      width = this.width(),
+      coordinates = this.coordinates();
 
     if (!this.settings.freeDrag) {
       // check closest item
       $.each(coordinates, $.proxy(function(index, value) {
         if (coordinate > value - pull && coordinate < value + pull) {
           position = index;
-        } else if (this.op(coordinate, '<', value)
-          && this.op(coordinate, '>', coordinates[index + 1] || value - width)) {
+        } else if (this.op(coordinate, '<', value) && this.op(coordinate, '>', coordinates[index + 1] || value - width)) {
           position = this.state.direction === 'left' ? index + 1 : index;
         }
         return position === -1;
@@ -1043,7 +1076,12 @@
     position = this.normalize(position);
 
     if (this._current !== position) {
-      var event = this.trigger('change', { property: { name: 'position', value: position } });
+      var event = this.trigger('change', {
+        property: {
+          name: 'position',
+          value: position
+        }
+      });
 
       if (event.data !== undefined) {
         position = this.normalize(event.data);
@@ -1053,7 +1091,12 @@
 
       this.invalidate('position');
 
-      this.trigger('changed', { property: { name: 'position', value: this._current } });
+      this.trigger('changed', {
+        property: {
+          name: 'position',
+          value: this._current
+        }
+      });
     }
 
     return this._current;
@@ -1082,11 +1125,11 @@
     this._speed = 0;
     this._current = position;
 
-    this.suppress([ 'translate', 'translated' ]);
+    this.suppress(['translate', 'translated']);
 
     this.animate(this.coordinates(position));
 
-    this.release([ 'translate', 'translated' ]);
+    this.release(['translate', 'translated']);
   };
 
   /**
@@ -1131,7 +1174,8 @@
    * @returns {Number}
    */
   Owl.prototype.maximum = function(relative) {
-    var maximum, width, i = 0, coordinate,
+    var maximum, width, i = 0,
+      coordinate,
       settings = this.settings;
 
     if (relative) {
@@ -1213,13 +1257,19 @@
   Owl.prototype.clones = function(position) {
     var odd = this._clones.length / 2,
       even = odd + this._items.length,
-      map = function(index) { return index % 2 === 0 ? even + index / 2 : odd - (index + 1) / 2 };
+      map = function(index) {
+        return index % 2 === 0 ? even + index / 2 : odd - (index + 1) / 2
+      };
 
     if (position === undefined) {
-      return $.map(this._clones, function(v, i) { return map(i) });
+      return $.map(this._clones, function(v, i) {
+        return map(i)
+      });
     }
 
-    return $.map(this._clones, function(v, i) { return v === position ? map(i) : null });
+    return $.map(this._clones, function(v, i) {
+      return v === position ? map(i) : null
+    });
   };
 
   /**
@@ -1410,7 +1460,10 @@
   Owl.prototype.add = function(content, position) {
     position = position === undefined ? this._items.length : this.normalize(position, true);
 
-    this.trigger('add', { content: content, position: position });
+    this.trigger('add', {
+      content: content,
+      position: position
+    });
 
     if (this._items.length === 0 || position === this._items.length) {
       this.$stage.append(content);
@@ -1424,7 +1477,10 @@
 
     this.invalidate('items');
 
-    this.trigger('added', { content: content, position: position });
+    this.trigger('added', {
+      content: content,
+      position: position
+    });
   };
 
   /**
@@ -1440,7 +1496,10 @@
       return;
     }
 
-    this.trigger('remove', { content: this._items[position], position: position });
+    this.trigger('remove', {
+      content: this._items[position],
+      position: position
+    });
 
     this._items[position].remove();
     this._items.splice(position, 1);
@@ -1448,7 +1507,10 @@
 
     this.invalidate('items');
 
-    this.trigger('removed', { content: null, position: position });
+    this.trigger('removed', {
+      content: null,
+      position: position
+    });
   };
 
   /**
@@ -1459,9 +1521,9 @@
     var handler = $.proxy(function(callback, event) {
       return $.proxy(function(e) {
         if (e.relatedTarget !== this) {
-          this.suppress([ event ]);
+          this.suppress([event]);
           callback.apply(this, [].slice.call(arguments, 1));
-          this.release([ event ]);
+          this.release([event]);
         }
       }, this);
     }, this);
@@ -1553,7 +1615,7 @@
       this.off(this.$stage.get(0), this.transitionEndVendor, this.e._transitionEnd);
     }
 
-    for ( var i in this._plugins) {
+    for (var i in this._plugins) {
       this._plugins[i].destroy();
     }
 
@@ -1561,7 +1623,9 @@
       this.$stage.off('mousedown touchstart touchcancel');
       $(document).off('.owl.dragEvents');
       this.$stage.get(0).onselectstart = function() {};
-      this.$stage.off('dragstart', function() { return false });
+      this.$stage.off('dragstart', function() {
+        return false
+      });
     }
 
     // remove event handlers in the ".owl.carousel" namespace
@@ -1641,14 +1705,23 @@
    */
   Owl.prototype.trigger = function(name, data, namespace) {
     var status = {
-      item: { count: this._items.length, index: this.current() }
-    }, handler = $.camelCase(
-      $.grep([ 'on', name, namespace ], function(v) { return v })
+        item: {
+          count: this._items.length,
+          index: this.current()
+        }
+      },
+      handler = $.camelCase(
+        $.grep(['on', name, namespace], function(v) {
+          return v
+        })
         .join('-').toLowerCase()
-    ), event = $.Event(
-      [ name, 'owl', namespace || 'carousel' ].join('.').toLowerCase(),
-      $.extend({ relatedTarget: this }, status, data)
-    );
+      ),
+      event = $.Event(
+        [name, 'owl', namespace || 'carousel'].join('.').toLowerCase(),
+        $.extend({
+          relatedTarget: this
+        }, status, data)
+      );
 
     if (!this._supress[name]) {
       $.each(this._plugins, function(name, plugin) {
@@ -1700,7 +1773,7 @@
       this.transformVendor = isTransform();
 
       // take transitionend event name by detecting transition
-      var endVendors = [ 'transitionend', 'webkitTransitionEnd', 'transitionend', 'oTransitionEnd' ];
+      var endVendors = ['transitionend', 'webkitTransitionEnd', 'transitionend', 'oTransitionEnd'];
       this.transitionEndVendor = endVendors[isTransition()];
 
       // take vendor name from transform name
@@ -1734,8 +1807,8 @@
         };
       }
 
-    if (event.pageX === undefined) {
-      return {
+      if (event.pageX === undefined) {
+        return {
           x: event.clientX,
           y: event.clientY
         };
@@ -1750,15 +1823,16 @@
    * @returns {Array} - Contains the supported CSS property name and its index or `false`.
    */
   function isStyleSupported(array) {
-    var p, s, fake = document.createElement('div'), list = array;
+    var p, s, fake = document.createElement('div'),
+      list = array;
     for (p in list) {
       s = list[p];
       if (typeof fake.style[s] !== 'undefined') {
         fake = null;
-        return [ s, p ];
+        return [s, p];
       }
     }
-    return [ false ];
+    return [false];
   }
 
   /**
@@ -1768,7 +1842,7 @@
    * @returns {Number}
    */
   function isTransition() {
-    return isStyleSupported([ 'transition', 'WebkitTransition', 'MozTransition', 'OTransition' ])[1];
+    return isStyleSupported(['transition', 'WebkitTransition', 'MozTransition', 'OTransition'])[1];
   }
 
   /**
@@ -1777,7 +1851,7 @@
    * @returns {String} The supported property name or false.
    */
   function isTransform() {
-    return isStyleSupported([ 'transform', 'WebkitTransform', 'MozTransform', 'OTransform', 'msTransform' ])[0];
+    return isStyleSupported(['transform', 'WebkitTransform', 'MozTransform', 'OTransform', 'msTransform'])[0];
   }
 
   /**
@@ -1786,7 +1860,7 @@
    * @returns {String} The supported property name or false.
    */
   function isPerspective() {
-    return isStyleSupported([ 'perspective', 'webkitPerspective', 'MozPerspective', 'OPerspective', 'MsPerspective' ])[0];
+    return isStyleSupported(['perspective', 'webkitPerspective', 'MozPerspective', 'OPerspective', 'MsPerspective'])[0];
   }
 
   /**
@@ -1833,7 +1907,8 @@
  * @author Bartosz Wojciechowski
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+;
+(function($, window, document, undefined) {
 
   /**
    * Creates the lazy plugin.
@@ -1877,7 +1952,9 @@
             i = ((settings.center && n * -1) || 0),
             position = ((e.property && e.property.value) || this._core.current()) + i,
             clones = this._core.clones().length,
-            load = $.proxy(function(i, v) { this.load(v) }, this);
+            load = $.proxy(function(i, v) {
+              this.load(v)
+            }, this);
 
           while (i++ < n) {
             this.load(clones / 2 + this._core.relative(position));
@@ -1916,15 +1993,22 @@
     }
 
     $elements.each($.proxy(function(index, element) {
-      var $element = $(element), image,
+      var $element = $(element),
+        image,
         url = (window.devicePixelRatio > 1 && $element.attr('data-src-retina')) || $element.attr('data-src');
 
-      this._core.trigger('load', { element: $element, url: url }, 'lazy');
+      this._core.trigger('load', {
+        element: $element,
+        url: url
+      }, 'lazy');
 
       if ($element.is('img')) {
         $element.one('load.owl.lazy', $.proxy(function() {
           $element.css('opacity', 1);
-          this._core.trigger('loaded', { element: $element, url: url }, 'lazy');
+          this._core.trigger('loaded', {
+            element: $element,
+            url: url
+          }, 'lazy');
         }, this)).attr('src', url);
       } else {
         image = new Image();
@@ -1933,7 +2017,10 @@
             'background-image': 'url(' + url + ')',
             'opacity': '1'
           });
-          this._core.trigger('loaded', { element: $element, url: url }, 'lazy');
+          this._core.trigger('loaded', {
+            element: $element,
+            url: url
+          }, 'lazy');
         }, this);
         image.src = url;
       }
@@ -1967,7 +2054,8 @@
  * @author Bartosz Wojciechowski
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+;
+(function($, window, document, undefined) {
 
   /**
    * Creates the auto height plugin.
@@ -1994,13 +2082,12 @@
         }
       }, this),
       'changed.owl.carousel': $.proxy(function(e) {
-        if (this._core.settings.autoHeight && e.property.name == 'position'){
+        if (this._core.settings.autoHeight && e.property.name == 'position') {
           this.update();
         }
       }, this),
       'loaded.owl.lazy': $.proxy(function(e) {
-        if (this._core.settings.autoHeight && e.element.closest('.' + this._core.settings.itemClass)
-          === this._core.$stage.children().eq(this._core.current())) {
+        if (this._core.settings.autoHeight && e.element.closest('.' + this._core.settings.itemClass) === this._core.$stage.children().eq(this._core.current())) {
           this.update();
         }
       }, this)
@@ -2052,7 +2139,8 @@
  * @author Bartosz Wojciechowski
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+;
+(function($, window, document, undefined) {
 
   /**
    * Creates the video plugin.
@@ -2267,19 +2355,15 @@
       html, wrap;
 
     if (video.type === 'youtube') {
-      html = '<iframe width="' + width + '" height="' + height + '" src="http://www.youtube.com/embed/'
-        + video.id + '?autoplay=1&v=' + video.id + '" frameborder="0" allowfullscreen></iframe>';
+      html = '<iframe width="' + width + '" height="' + height + '" src="http://www.youtube.com/embed/' + video.id + '?autoplay=1&v=' + video.id + '" frameborder="0" allowfullscreen></iframe>';
     } else if (video.type === 'vimeo') {
-      html = '<iframe src="http://player.vimeo.com/video/' + video.id + '?autoplay=1" width="' + width
-        + '" height="' + height
-        + '" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+      html = '<iframe src="http://player.vimeo.com/video/' + video.id + '?autoplay=1" width="' + width + '" height="' + height + '" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
     }
 
     item.addClass('owl-video-playing');
     this._playing = item;
 
-    wrap = $('<div style="height:' + height + 'px; width:' + width + 'px" class="owl-video-frame">'
-      + html + '</div>');
+    wrap = $('<div style="height:' + height + 'px; width:' + width + 'px" class="owl-video-frame">' + html + '</div>');
     target.after(wrap);
   };
 
@@ -2292,8 +2376,7 @@
   Video.prototype.isInFullScreen = function() {
 
     // if Vimeo Fullscreen mode
-    var element = document.fullscreenElement || document.mozFullScreenElement
-      || document.webkitFullscreenElement;
+    var element = document.fullscreenElement || document.mozFullScreenElement || document.webkitFullscreenElement;
 
     if (element && $(element).parent().hasClass('owl-video-frame')) {
       this._core.speed(0);
@@ -2347,7 +2430,8 @@
  * @author Bartosz Wojciechowski
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+;
+(function($, window, document, undefined) {
 
   /**
    * Creates the animate plugin.
@@ -2416,7 +2500,9 @@
 
     if (outgoing) {
       left = this.core.coordinates(this.previous) - this.core.coordinates(this.next);
-      previous.css( { 'left': left + 'px' } )
+      previous.css({
+          'left': left + 'px'
+        })
         .addClass('animated owl-animated-out')
         .addClass(outgoing)
         .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', clear);
@@ -2430,7 +2516,9 @@
   };
 
   Animate.prototype.clear = function(e) {
-    $(e.target).css( { 'left': '' } )
+    $(e.target).css({
+        'left': ''
+      })
       .removeClass('animated owl-animated-out owl-animated-in')
       .removeClass(this.core.settings.animateIn)
       .removeClass(this.core.settings.animateOut);
@@ -2462,7 +2550,8 @@
  * @author Bartosz Wojciechowski
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+;
+(function($, window, document, undefined) {
 
   /**
    * Creates the autoplay plugin.
@@ -2539,8 +2628,7 @@
       return;
     }
 
-    if (this.core.state.isTouch || this.core.state.isScrolling
-      || this.core.state.isSwiping || this.core.state.inMotion) {
+    if (this.core.state.isTouch || this.core.state.isScrolling || this.core.state.isSwiping || this.core.state.inMotion) {
       return;
     }
 
@@ -2594,7 +2682,8 @@
  * @author Artus Kolanowski
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+;
+(function($, window, document, undefined) {
   'use strict';
 
   /**
@@ -2682,9 +2771,7 @@
             var current = this._core.current(),
               maximum = this._core.maximum(),
               minimum = this._core.minimum();
-            e.data = e.property.value > maximum
-              ? current >= maximum ? minimum : maximum
-              : e.property.value < minimum ? maximum : e.property.value;
+            e.data = e.property.value > maximum ? current >= maximum ? minimum : maximum : e.property.value < minimum ? maximum : e.property.value;
           }
         }
       }, this),
@@ -2720,12 +2807,12 @@
   Navigation.Defaults = {
     nav: false,
     navRewind: true,
-    navText: [ 'prev', 'next' ],
+    navText: ['prev', 'next'],
     navSpeed: false,
     navElement: 'div',
     navContainer: false,
     navContainerClass: 'owl-nav',
-    navClass: [ 'owl-prev', 'owl-next' ],
+    navClass: ['owl-prev', 'owl-next'],
     slideBy: 1,
     dotClass: 'owl-dot',
     dotsClass: 'owl-dots',
@@ -2747,10 +2834,11 @@
 
     // create the indicator template
     if (!options.dotsData) {
-      this._templates = [ $('<div>')
+      this._templates = [$('<div>')
         .addClass(options.dotClass)
         .append($('<span>'))
-        .prop('outerHTML') ];
+        .prop('outerHTML')
+      ];
     }
 
     // create controls container if needed
@@ -2761,12 +2849,10 @@
     }
 
     // create DOM structure for absolute navigation
-    this._controls.$indicators = options.dotsContainer ? $(options.dotsContainer)
-      : $('<div>').hide().addClass(options.dotsClass).appendTo(this._controls.$container);
+    this._controls.$indicators = options.dotsContainer ? $(options.dotsContainer) : $('<div>').hide().addClass(options.dotsClass).appendTo(this._controls.$container);
 
     this._controls.$indicators.on('click', 'div', $.proxy(function(e) {
-      var index = $(e.target).parent().is(this._controls.$indicators)
-        ? $(e.target).index() : $(e.target).parent().index();
+      var index = $(e.target).parent().is(this._controls.$indicators) ? $(e.target).index() : $(e.target).parent().index();
 
       e.preventDefault();
 
@@ -2774,8 +2860,7 @@
     }, this));
 
     // create DOM structure for relative navigation
-    $container = options.navContainer ? $(options.navContainer)
-      : $('<div>').addClass(options.navContainerClass).prependTo(this._controls.$container);
+    $container = options.navContainer ? $(options.navContainer) : $('<div>').addClass(options.navContainerClass).prependTo(this._controls.$container);
 
     this._controls.$next = $('<' + options.navElement + '>');
     this._controls.$previous = this._controls.$next.clone();
@@ -2833,8 +2918,7 @@
       options = this._core.settings,
       lower = this._core.clones().length / 2,
       upper = lower + this._core.items().length,
-      size = options.center || options.autoWidth || options.dotData
-        ? 1 : options.dotsEach || options.items;
+      size = options.center || options.autoWidth || options.dotData ? 1 : options.dotsEach || options.items;
 
     if (options.slideBy !== 'page') {
       options.slideBy = Math.min(options.slideBy, options.items);
@@ -2908,8 +2992,7 @@
     event.page = {
       index: $.inArray(this.current(), this._pages),
       count: this._pages.length,
-      size: settings && (settings.center || settings.autoWidth || settings.dotData
-        ? 1 : settings.dotsEach || settings.items)
+      size: settings && (settings.center || settings.autoWidth || settings.dotData ? 1 : settings.dotsEach || settings.items)
     };
   }
 
@@ -2993,7 +3076,8 @@
  * @author Artus Kolanowski
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+;
+(function($, window, document, undefined) {
   'use strict';
 
   /**
@@ -3107,16 +3191,16 @@
       settings.parent = $("<div></div>");
       setParent();
 
-      if(settings.head == true)
+      if (settings.head == true)
         fixHead();
 
-      if(settings.foot == true)
+      if (settings.foot == true)
         fixFoot();
 
-      if(settings.left > 0)
+      if (settings.left > 0)
         fixLeft();
 
-      if(settings.right > 0)
+      if (settings.right > 0)
         fixRight();
 
       // self.setCorner();
@@ -3142,13 +3226,13 @@
       parent.append(table);
       parent
         .css({
-          'width' : '100%',
-          'height' : container.css("height"),
-          'overflow' : 'scroll',
-          'max-height' : container.css("max-height"),
-          'min-height' : container.css("min-height"),
-          'max-width' : container.css('max-width'),
-          'min-width' : container.css('min-width')
+          'width': '100%',
+          'height': container.css("height"),
+          'overflow': 'scroll',
+          'max-height': container.css("max-height"),
+          'min-height': container.css("min-height"),
+          'max-width': container.css('max-width'),
+          'min-width': container.css('min-width')
         });
 
       parent.scroll(function() {
@@ -3159,50 +3243,50 @@
         var top = parent.scrollTop();
         var left = parent.scrollLeft();
 
-        if(settings.head)
+        if (settings.head)
           this.find("thead tr > *").css("top", top);
 
-        if(settings.foot)
+        if (settings.foot)
           this.find("tfoot tr > *").css("bottom", scrollHeight - clientHeight - top);
 
-        if(settings.left > 0)
+        if (settings.left > 0)
           settings.leftColumns.css("left", left);
 
-        if(settings.right > 0)
+        if (settings.right > 0)
           settings.rightColumns.css("right", scrollWidth - clientWidth - left);
       }.bind(table));
     }
 
-    function fixHead () {
+    function fixHead() {
       var thead = $(settings.table).find("thead");
       var tr = thead.find("tr");
       var cells = thead.find("tr > *");
 
       setBackground(cells);
       cells.css({
-        'position' : 'relative'
+        'position': 'relative'
       });
     }
 
-    function fixFoot () {
+    function fixFoot() {
       var tfoot = $(settings.table).find("tfoot");
       var tr = tfoot.find("tr");
       var cells = tfoot.find("tr > *");
 
       setBackground(cells);
       cells.css({
-        'position' : 'relative'
+        'position': 'relative'
       });
     }
 
-    function fixLeft () {
+    function fixLeft() {
       var table = $(settings.table);
 
       var fixColumn = settings.left;
 
       settings.leftColumns = $();
 
-      for(var i = 1; i <= fixColumn; i++) {
+      for (var i = 1; i <= fixColumn; i++) {
         settings.leftColumns = settings.leftColumns
           .add(table.find("tr > *:nth-child(" + i + ")"));
       }
@@ -3214,19 +3298,19 @@
 
         setBackground(cell);
         cell.css({
-          'position' : 'relative'
+          'position': 'relative'
         });
       });
     }
 
-    function fixRight () {
+    function fixRight() {
       var table = $(settings.table);
 
       var fixColumn = settings.right;
 
       settings.rightColumns = $();
 
-      for(var i = 1; i <= fixColumn; i++) {
+      for (var i = 1; i <= fixColumn; i++) {
         settings.rightColumns = settings.rightColumns
           .add(table.find("tr > *:nth-last-child(" + i + ")"));
       }
@@ -3238,7 +3322,7 @@
 
         setBackground(cell);
         cell.css({
-          'position' : 'relative'
+          'position': 'relative'
         });
       });
 
@@ -3280,7 +3364,8 @@
  * @todo Test Zepto
  * @todo stagePadding calculate wrong active classes
  */
-;(function($, window, document, undefined) {
+;
+(function($, window, document, undefined) {
 
   var drag, state, e;
 
@@ -3450,8 +3535,7 @@
     this._pipe = [];
 
     $.each(Owl.Plugins, $.proxy(function(key, plugin) {
-      this._plugins[key[0].toLowerCase() + key.slice(1)]
-        = new plugin(this);
+      this._plugins[key[0].toLowerCase() + key.slice(1)] = new plugin(this);
     }, this));
 
     $.each(Owl.Pipe, $.proxy(function(priority, worker) {
@@ -3535,13 +3619,13 @@
   /**
    * Update pipe.
    */
-  Owl.Pipe = [ {
-    filter: [ 'width', 'items', 'settings' ],
+  Owl.Pipe = [{
+    filter: ['width', 'items', 'settings'],
     run: function(cache) {
       cache.current = this._items && this._items[this.relative(this._current)];
     }
   }, {
-    filter: [ 'items', 'settings' ],
+    filter: ['items', 'settings'],
     run: function() {
       var cached = this._clones,
         clones = this.$stage.children('.cloned');
@@ -3552,7 +3636,7 @@
       }
     }
   }, {
-    filter: [ 'items', 'settings' ],
+    filter: ['items', 'settings'],
     run: function() {
       var i, n,
         clones = this._clones,
@@ -3574,11 +3658,12 @@
       }
     }
   }, {
-    filter: [ 'width', 'items', 'settings' ],
+    filter: ['width', 'items', 'settings'],
     run: function() {
       var rtl = (this.settings.rtl ? 1 : -1),
         width = (this.width() / this.settings.items).toFixed(3),
-        coordinate = 0, merge, i, n;
+        coordinate = 0,
+        merge, i, n;
 
       this._coordinates = [];
       for (i = 0, n = this._clones.length + this._items.length; i < n; i++) {
@@ -3590,20 +3675,25 @@
       }
     }
   }, {
-    filter: [ 'width', 'items', 'settings' ],
+    filter: ['width', 'items', 'settings'],
     run: function() {
-      var i, n, width = (this.width() / this.settings.items).toFixed(3), css = {
-        'width': Math.abs(this._coordinates[this._coordinates.length - 1]) + this.settings.stagePadding * 2,
-        'padding-left': this.settings.stagePadding || '',
-        'padding-right': this.settings.stagePadding || ''
-      };
+      var i, n, width = (this.width() / this.settings.items).toFixed(3),
+        css = {
+          'width': Math.abs(this._coordinates[this._coordinates.length - 1]) + this.settings.stagePadding * 2,
+          'padding-left': this.settings.stagePadding || '',
+          'padding-right': this.settings.stagePadding || ''
+        };
 
       this.$stage.css(css);
 
-      css = { 'width': this.settings.autoWidth ? 'auto' : width - this.settings.margin };
+      css = {
+        'width': this.settings.autoWidth ? 'auto' : width - this.settings.margin
+      };
       css[this.settings.rtl ? 'margin-left' : 'margin-right'] = this.settings.margin;
 
-      if (!this.settings.autoWidth && $.grep(this._mergers, function(v) { return v > 1 }).length > 0) {
+      if (!this.settings.autoWidth && $.grep(this._mergers, function(v) {
+          return v > 1
+        }).length > 0) {
         for (i = 0, n = this._coordinates.length; i < n; i++) {
           css.width = Math.abs(this._coordinates[i]) - Math.abs(this._coordinates[i - 1] || 0) - this.settings.margin;
           this.$stage.children().eq(i).css(css);
@@ -3613,30 +3703,30 @@
       }
     }
   }, {
-    filter: [ 'width', 'items', 'settings' ],
+    filter: ['width', 'items', 'settings'],
     run: function(cache) {
       cache.current && this.reset(this.$stage.children().index(cache.current));
     }
   }, {
-    filter: [ 'position' ],
+    filter: ['position'],
     run: function() {
       this.animate(this.coordinates(this._current));
     }
   }, {
-    filter: [ 'width', 'position', 'items', 'settings' ],
+    filter: ['width', 'position', 'items', 'settings'],
     run: function() {
       var rtl = this.settings.rtl ? 1 : -1,
         padding = this.settings.stagePadding * 2,
         begin = this.coordinates(this.current()) + padding,
         end = begin + this.width() * rtl,
-        inner, outer, matches = [], i, n;
+        inner, outer, matches = [],
+        i, n;
 
       for (i = 0, n = this._coordinates.length; i < n; i++) {
         inner = this._coordinates[i - 1] || 0;
         outer = Math.abs(this._coordinates[i]) + padding * rtl;
 
-        if ((this.op(inner, '<=', begin) && (this.op(inner, '>', end)))
-          || (this.op(outer, '<', begin) && this.op(outer, '>', end))) {
+        if ((this.op(inner, '<=', begin) && (this.op(inner, '>', end))) || (this.op(outer, '<', begin) && this.op(outer, '>', end))) {
           matches.push(i);
         }
       }
@@ -3649,7 +3739,7 @@
         this.$stage.children().eq(this.current()).addClass(this.settings.centerClass);
       }
     }
-  } ];
+  }];
 
   /**
    * Initializes the carousel.
@@ -3743,11 +3833,21 @@
     }
 
     if (this.settings === null || this._breakpoint !== match) {
-      this.trigger('change', { property: { name: 'settings', value: settings } });
+      this.trigger('change', {
+        property: {
+          name: 'settings',
+          value: settings
+        }
+      });
       this._breakpoint = match;
       this.settings = settings;
       this.invalidate('settings');
-      this.trigger('changed', { property: { name: 'settings', value: this.settings } });
+      this.trigger('changed', {
+        property: {
+          name: 'settings',
+          value: this.settings
+        }
+      });
     }
   };
 
@@ -3777,14 +3877,18 @@
    * @returns {jQuery|HTMLElement} - The item container.
    */
   Owl.prototype.prepare = function(item) {
-    var event = this.trigger('prepare', { content: item });
+    var event = this.trigger('prepare', {
+      content: item
+    });
 
     if (!event.data) {
       event.data = $('<' + this.settings.itemElement + '/>')
         .addClass(this.settings.itemClass).append(item)
     }
 
-    this.trigger('prepared', { content: event.data });
+    this.trigger('prepared', {
+      content: event.data
+    });
 
     return event.data;
   };
@@ -3796,7 +3900,9 @@
   Owl.prototype.update = function() {
     var i = 0,
       n = this._pipe.length,
-      filter = $.proxy(function(p) { return this[p] }, this._invalidated),
+      filter = $.proxy(function(p) {
+        return this[p]
+      }, this._invalidated),
       cache = {};
 
     while (i < n) {
@@ -3945,16 +4051,24 @@
     var isTouch = isTouchSupport(),
       isTouchIE = isTouchSupportIE();
 
-    if (this.settings.mouseDrag){
-      this.$stage.on('mousedown', $.proxy(function(event) { this.eventsRouter(event) }, this));
-      this.$stage.on('dragstart', function() { return false });
-      this.$stage.get(0).onselectstart = function() { return false };
+    if (this.settings.mouseDrag) {
+      this.$stage.on('mousedown', $.proxy(function(event) {
+        this.eventsRouter(event)
+      }, this));
+      this.$stage.on('dragstart', function() {
+        return false
+      });
+      this.$stage.get(0).onselectstart = function() {
+        return false
+      };
     } else {
       this.$element.addClass('owl-text-select-on');
     }
 
-    if (this.settings.touchDrag && !isTouchIE){
-      this.$stage.on('touchstart touchcancel', $.proxy(function(event) { this.eventsRouter(event) }, this));
+    if (this.settings.touchDrag && !isTouchIE) {
+      this.$stage.on('touchstart touchcancel', $.proxy(function(event) {
+        this.eventsRouter(event)
+      }, this));
     }
 
     // catch transitionEnd event
@@ -4003,8 +4117,7 @@
     this.drag.offsetY = this.$stage.position().top;
 
     if (this.settings.rtl) {
-      this.drag.offsetX = this.$stage.position().left + this.$stage.width() - this.width()
-        + this.settings.margin;
+      this.drag.offsetX = this.$stage.position().left + this.$stage.width() - this.width() + this.settings.margin;
     }
 
     // catch position // ie to fix
@@ -4031,7 +4144,9 @@
       this.drag.targetEl.draggable = false;
     }
 
-    $(document).on('mousemove.owl.dragEvents mouseup.owl.dragEvents touchmove.owl.dragEvents touchend.owl.dragEvents', $.proxy(function(event) {this.eventsRouter(event)},this));
+    $(document).on('mousemove.owl.dragEvents mouseup.owl.dragEvents touchmove.owl.dragEvents touchend.owl.dragEvents', $.proxy(function(event) {
+      this.eventsRouter(event)
+    }, this));
   };
 
   /**
@@ -4220,15 +4335,17 @@
    * @return {Number} - The absolute position of the closest item.
    */
   Owl.prototype.closest = function(coordinate) {
-    var position = -1, pull = 30, width = this.width(), coordinates = this.coordinates();
+    var position = -1,
+      pull = 30,
+      width = this.width(),
+      coordinates = this.coordinates();
 
     if (!this.settings.freeDrag) {
       // check closest item
       $.each(coordinates, $.proxy(function(index, value) {
         if (coordinate > value - pull && coordinate < value + pull) {
           position = index;
-        } else if (this.op(coordinate, '<', value)
-          && this.op(coordinate, '>', coordinates[index + 1] || value - width)) {
+        } else if (this.op(coordinate, '<', value) && this.op(coordinate, '>', coordinates[index + 1] || value - width)) {
           position = this.state.direction === 'left' ? index + 1 : index;
         }
         return position === -1;
@@ -4294,7 +4411,12 @@
     position = this.normalize(position);
 
     if (this._current !== position) {
-      var event = this.trigger('change', { property: { name: 'position', value: position } });
+      var event = this.trigger('change', {
+        property: {
+          name: 'position',
+          value: position
+        }
+      });
 
       if (event.data !== undefined) {
         position = this.normalize(event.data);
@@ -4304,7 +4426,12 @@
 
       this.invalidate('position');
 
-      this.trigger('changed', { property: { name: 'position', value: this._current } });
+      this.trigger('changed', {
+        property: {
+          name: 'position',
+          value: this._current
+        }
+      });
     }
 
     return this._current;
@@ -4333,11 +4460,11 @@
     this._speed = 0;
     this._current = position;
 
-    this.suppress([ 'translate', 'translated' ]);
+    this.suppress(['translate', 'translated']);
 
     this.animate(this.coordinates(position));
 
-    this.release([ 'translate', 'translated' ]);
+    this.release(['translate', 'translated']);
   };
 
   /**
@@ -4382,7 +4509,8 @@
    * @returns {Number}
    */
   Owl.prototype.maximum = function(relative) {
-    var maximum, width, i = 0, coordinate,
+    var maximum, width, i = 0,
+      coordinate,
       settings = this.settings;
 
     if (relative) {
@@ -4464,13 +4592,19 @@
   Owl.prototype.clones = function(position) {
     var odd = this._clones.length / 2,
       even = odd + this._items.length,
-      map = function(index) { return index % 2 === 0 ? even + index / 2 : odd - (index + 1) / 2 };
+      map = function(index) {
+        return index % 2 === 0 ? even + index / 2 : odd - (index + 1) / 2
+      };
 
     if (position === undefined) {
-      return $.map(this._clones, function(v, i) { return map(i) });
+      return $.map(this._clones, function(v, i) {
+        return map(i)
+      });
     }
 
-    return $.map(this._clones, function(v, i) { return v === position ? map(i) : null });
+    return $.map(this._clones, function(v, i) {
+      return v === position ? map(i) : null
+    });
   };
 
   /**
@@ -4661,7 +4795,10 @@
   Owl.prototype.add = function(content, position) {
     position = position === undefined ? this._items.length : this.normalize(position, true);
 
-    this.trigger('add', { content: content, position: position });
+    this.trigger('add', {
+      content: content,
+      position: position
+    });
 
     if (this._items.length === 0 || position === this._items.length) {
       this.$stage.append(content);
@@ -4675,7 +4812,10 @@
 
     this.invalidate('items');
 
-    this.trigger('added', { content: content, position: position });
+    this.trigger('added', {
+      content: content,
+      position: position
+    });
   };
 
   /**
@@ -4691,7 +4831,10 @@
       return;
     }
 
-    this.trigger('remove', { content: this._items[position], position: position });
+    this.trigger('remove', {
+      content: this._items[position],
+      position: position
+    });
 
     this._items[position].remove();
     this._items.splice(position, 1);
@@ -4699,7 +4842,10 @@
 
     this.invalidate('items');
 
-    this.trigger('removed', { content: null, position: position });
+    this.trigger('removed', {
+      content: null,
+      position: position
+    });
   };
 
   /**
@@ -4710,9 +4856,9 @@
     var handler = $.proxy(function(callback, event) {
       return $.proxy(function(e) {
         if (e.relatedTarget !== this) {
-          this.suppress([ event ]);
+          this.suppress([event]);
           callback.apply(this, [].slice.call(arguments, 1));
-          this.release([ event ]);
+          this.release([event]);
         }
       }, this);
     }, this);
@@ -4804,7 +4950,7 @@
       this.off(this.$stage.get(0), this.transitionEndVendor, this.e._transitionEnd);
     }
 
-    for ( var i in this._plugins) {
+    for (var i in this._plugins) {
       this._plugins[i].destroy();
     }
 
@@ -4812,7 +4958,9 @@
       this.$stage.off('mousedown touchstart touchcancel');
       $(document).off('.owl.dragEvents');
       this.$stage.get(0).onselectstart = function() {};
-      this.$stage.off('dragstart', function() { return false });
+      this.$stage.off('dragstart', function() {
+        return false
+      });
     }
 
     // remove event handlers in the ".owl.carousel" namespace
@@ -4892,14 +5040,23 @@
    */
   Owl.prototype.trigger = function(name, data, namespace) {
     var status = {
-      item: { count: this._items.length, index: this.current() }
-    }, handler = $.camelCase(
-      $.grep([ 'on', name, namespace ], function(v) { return v })
+        item: {
+          count: this._items.length,
+          index: this.current()
+        }
+      },
+      handler = $.camelCase(
+        $.grep(['on', name, namespace], function(v) {
+          return v
+        })
         .join('-').toLowerCase()
-    ), event = $.Event(
-      [ name, 'owl', namespace || 'carousel' ].join('.').toLowerCase(),
-      $.extend({ relatedTarget: this }, status, data)
-    );
+      ),
+      event = $.Event(
+        [name, 'owl', namespace || 'carousel'].join('.').toLowerCase(),
+        $.extend({
+          relatedTarget: this
+        }, status, data)
+      );
 
     if (!this._supress[name]) {
       $.each(this._plugins, function(name, plugin) {
@@ -4951,7 +5108,7 @@
       this.transformVendor = isTransform();
 
       // take transitionend event name by detecting transition
-      var endVendors = [ 'transitionend', 'webkitTransitionEnd', 'transitionend', 'oTransitionEnd' ];
+      var endVendors = ['transitionend', 'webkitTransitionEnd', 'transitionend', 'oTransitionEnd'];
       this.transitionEndVendor = endVendors[isTransition()];
 
       // take vendor name from transform name
@@ -4985,8 +5142,8 @@
         };
       }
 
-    if (event.pageX === undefined) {
-      return {
+      if (event.pageX === undefined) {
+        return {
           x: event.clientX,
           y: event.clientY
         };
@@ -5001,15 +5158,16 @@
    * @returns {Array} - Contains the supported CSS property name and its index or `false`.
    */
   function isStyleSupported(array) {
-    var p, s, fake = document.createElement('div'), list = array;
+    var p, s, fake = document.createElement('div'),
+      list = array;
     for (p in list) {
       s = list[p];
       if (typeof fake.style[s] !== 'undefined') {
         fake = null;
-        return [ s, p ];
+        return [s, p];
       }
     }
-    return [ false ];
+    return [false];
   }
 
   /**
@@ -5019,7 +5177,7 @@
    * @returns {Number}
    */
   function isTransition() {
-    return isStyleSupported([ 'transition', 'WebkitTransition', 'MozTransition', 'OTransition' ])[1];
+    return isStyleSupported(['transition', 'WebkitTransition', 'MozTransition', 'OTransition'])[1];
   }
 
   /**
@@ -5028,7 +5186,7 @@
    * @returns {String} The supported property name or false.
    */
   function isTransform() {
-    return isStyleSupported([ 'transform', 'WebkitTransform', 'MozTransform', 'OTransform', 'msTransform' ])[0];
+    return isStyleSupported(['transform', 'WebkitTransform', 'MozTransform', 'OTransform', 'msTransform'])[0];
   }
 
   /**
@@ -5037,7 +5195,7 @@
    * @returns {String} The supported property name or false.
    */
   function isPerspective() {
-    return isStyleSupported([ 'perspective', 'webkitPerspective', 'MozPerspective', 'OPerspective', 'MsPerspective' ])[0];
+    return isStyleSupported(['perspective', 'webkitPerspective', 'MozPerspective', 'OPerspective', 'MsPerspective'])[0];
   }
 
   /**
@@ -5084,7 +5242,8 @@
  * @author Bartosz Wojciechowski
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+;
+(function($, window, document, undefined) {
 
   /**
    * Creates the lazy plugin.
@@ -5128,7 +5287,9 @@
             i = ((settings.center && n * -1) || 0),
             position = ((e.property && e.property.value) || this._core.current()) + i,
             clones = this._core.clones().length,
-            load = $.proxy(function(i, v) { this.load(v) }, this);
+            load = $.proxy(function(i, v) {
+              this.load(v)
+            }, this);
 
           while (i++ < n) {
             this.load(clones / 2 + this._core.relative(position));
@@ -5167,15 +5328,22 @@
     }
 
     $elements.each($.proxy(function(index, element) {
-      var $element = $(element), image,
+      var $element = $(element),
+        image,
         url = (window.devicePixelRatio > 1 && $element.attr('data-src-retina')) || $element.attr('data-src');
 
-      this._core.trigger('load', { element: $element, url: url }, 'lazy');
+      this._core.trigger('load', {
+        element: $element,
+        url: url
+      }, 'lazy');
 
       if ($element.is('img')) {
         $element.one('load.owl.lazy', $.proxy(function() {
           $element.css('opacity', 1);
-          this._core.trigger('loaded', { element: $element, url: url }, 'lazy');
+          this._core.trigger('loaded', {
+            element: $element,
+            url: url
+          }, 'lazy');
         }, this)).attr('src', url);
       } else {
         image = new Image();
@@ -5184,7 +5352,10 @@
             'background-image': 'url(' + url + ')',
             'opacity': '1'
           });
-          this._core.trigger('loaded', { element: $element, url: url }, 'lazy');
+          this._core.trigger('loaded', {
+            element: $element,
+            url: url
+          }, 'lazy');
         }, this);
         image.src = url;
       }
@@ -5218,7 +5389,8 @@
  * @author Bartosz Wojciechowski
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+;
+(function($, window, document, undefined) {
 
   /**
    * Creates the auto height plugin.
@@ -5245,13 +5417,12 @@
         }
       }, this),
       'changed.owl.carousel': $.proxy(function(e) {
-        if (this._core.settings.autoHeight && e.property.name == 'position'){
+        if (this._core.settings.autoHeight && e.property.name == 'position') {
           this.update();
         }
       }, this),
       'loaded.owl.lazy': $.proxy(function(e) {
-        if (this._core.settings.autoHeight && e.element.closest('.' + this._core.settings.itemClass)
-          === this._core.$stage.children().eq(this._core.current())) {
+        if (this._core.settings.autoHeight && e.element.closest('.' + this._core.settings.itemClass) === this._core.$stage.children().eq(this._core.current())) {
           this.update();
         }
       }, this)
@@ -5303,7 +5474,8 @@
  * @author Bartosz Wojciechowski
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+;
+(function($, window, document, undefined) {
 
   /**
    * Creates the video plugin.
@@ -5518,19 +5690,15 @@
       html, wrap;
 
     if (video.type === 'youtube') {
-      html = '<iframe width="' + width + '" height="' + height + '" src="http://www.youtube.com/embed/'
-        + video.id + '?autoplay=1&v=' + video.id + '" frameborder="0" allowfullscreen></iframe>';
+      html = '<iframe width="' + width + '" height="' + height + '" src="http://www.youtube.com/embed/' + video.id + '?autoplay=1&v=' + video.id + '" frameborder="0" allowfullscreen></iframe>';
     } else if (video.type === 'vimeo') {
-      html = '<iframe src="http://player.vimeo.com/video/' + video.id + '?autoplay=1" width="' + width
-        + '" height="' + height
-        + '" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+      html = '<iframe src="http://player.vimeo.com/video/' + video.id + '?autoplay=1" width="' + width + '" height="' + height + '" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
     }
 
     item.addClass('owl-video-playing');
     this._playing = item;
 
-    wrap = $('<div style="height:' + height + 'px; width:' + width + 'px" class="owl-video-frame">'
-      + html + '</div>');
+    wrap = $('<div style="height:' + height + 'px; width:' + width + 'px" class="owl-video-frame">' + html + '</div>');
     target.after(wrap);
   };
 
@@ -5543,8 +5711,7 @@
   Video.prototype.isInFullScreen = function() {
 
     // if Vimeo Fullscreen mode
-    var element = document.fullscreenElement || document.mozFullScreenElement
-      || document.webkitFullscreenElement;
+    var element = document.fullscreenElement || document.mozFullScreenElement || document.webkitFullscreenElement;
 
     if (element && $(element).parent().hasClass('owl-video-frame')) {
       this._core.speed(0);
@@ -5598,7 +5765,8 @@
  * @author Bartosz Wojciechowski
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+;
+(function($, window, document, undefined) {
 
   /**
    * Creates the animate plugin.
@@ -5667,7 +5835,9 @@
 
     if (outgoing) {
       left = this.core.coordinates(this.previous) - this.core.coordinates(this.next);
-      previous.css( { 'left': left + 'px' } )
+      previous.css({
+          'left': left + 'px'
+        })
         .addClass('animated owl-animated-out')
         .addClass(outgoing)
         .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', clear);
@@ -5681,7 +5851,9 @@
   };
 
   Animate.prototype.clear = function(e) {
-    $(e.target).css( { 'left': '' } )
+    $(e.target).css({
+        'left': ''
+      })
       .removeClass('animated owl-animated-out owl-animated-in')
       .removeClass(this.core.settings.animateIn)
       .removeClass(this.core.settings.animateOut);
@@ -5713,7 +5885,8 @@
  * @author Bartosz Wojciechowski
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+;
+(function($, window, document, undefined) {
 
   /**
    * Creates the autoplay plugin.
@@ -5790,8 +5963,7 @@
       return;
     }
 
-    if (this.core.state.isTouch || this.core.state.isScrolling
-      || this.core.state.isSwiping || this.core.state.inMotion) {
+    if (this.core.state.isTouch || this.core.state.isScrolling || this.core.state.isSwiping || this.core.state.inMotion) {
       return;
     }
 
@@ -5845,7 +6017,8 @@
  * @author Artus Kolanowski
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+;
+(function($, window, document, undefined) {
   'use strict';
 
   /**
@@ -5933,9 +6106,7 @@
             var current = this._core.current(),
               maximum = this._core.maximum(),
               minimum = this._core.minimum();
-            e.data = e.property.value > maximum
-              ? current >= maximum ? minimum : maximum
-              : e.property.value < minimum ? maximum : e.property.value;
+            e.data = e.property.value > maximum ? current >= maximum ? minimum : maximum : e.property.value < minimum ? maximum : e.property.value;
           }
         }
       }, this),
@@ -5971,12 +6142,12 @@
   Navigation.Defaults = {
     nav: false,
     navRewind: true,
-    navText: [ 'prev', 'next' ],
+    navText: ['prev', 'next'],
     navSpeed: false,
     navElement: 'div',
     navContainer: false,
     navContainerClass: 'owl-nav',
-    navClass: [ 'owl-prev', 'owl-next' ],
+    navClass: ['owl-prev', 'owl-next'],
     slideBy: 1,
     dotClass: 'owl-dot',
     dotsClass: 'owl-dots',
@@ -5998,10 +6169,11 @@
 
     // create the indicator template
     if (!options.dotsData) {
-      this._templates = [ $('<div>')
+      this._templates = [$('<div>')
         .addClass(options.dotClass)
         .append($('<span>'))
-        .prop('outerHTML') ];
+        .prop('outerHTML')
+      ];
     }
 
     // create controls container if needed
@@ -6012,12 +6184,10 @@
     }
 
     // create DOM structure for absolute navigation
-    this._controls.$indicators = options.dotsContainer ? $(options.dotsContainer)
-      : $('<div>').hide().addClass(options.dotsClass).appendTo(this._controls.$container);
+    this._controls.$indicators = options.dotsContainer ? $(options.dotsContainer) : $('<div>').hide().addClass(options.dotsClass).appendTo(this._controls.$container);
 
     this._controls.$indicators.on('click', 'div', $.proxy(function(e) {
-      var index = $(e.target).parent().is(this._controls.$indicators)
-        ? $(e.target).index() : $(e.target).parent().index();
+      var index = $(e.target).parent().is(this._controls.$indicators) ? $(e.target).index() : $(e.target).parent().index();
 
       e.preventDefault();
 
@@ -6025,8 +6195,7 @@
     }, this));
 
     // create DOM structure for relative navigation
-    $container = options.navContainer ? $(options.navContainer)
-      : $('<div>').addClass(options.navContainerClass).prependTo(this._controls.$container);
+    $container = options.navContainer ? $(options.navContainer) : $('<div>').addClass(options.navContainerClass).prependTo(this._controls.$container);
 
     this._controls.$next = $('<' + options.navElement + '>');
     this._controls.$previous = this._controls.$next.clone();
@@ -6084,8 +6253,7 @@
       options = this._core.settings,
       lower = this._core.clones().length / 2,
       upper = lower + this._core.items().length,
-      size = options.center || options.autoWidth || options.dotData
-        ? 1 : options.dotsEach || options.items;
+      size = options.center || options.autoWidth || options.dotData ? 1 : options.dotsEach || options.items;
 
     if (options.slideBy !== 'page') {
       options.slideBy = Math.min(options.slideBy, options.items);
@@ -6159,8 +6327,7 @@
     event.page = {
       index: $.inArray(this.current(), this._pages),
       count: this._pages.length,
-      size: settings && (settings.center || settings.autoWidth || settings.dotData
-        ? 1 : settings.dotsEach || settings.items)
+      size: settings && (settings.center || settings.autoWidth || settings.dotData ? 1 : settings.dotsEach || settings.items)
     };
   }
 
@@ -6244,7 +6411,8 @@
  * @author Artus Kolanowski
  * @license The MIT License (MIT)
  */
-;(function($, window, document, undefined) {
+;
+(function($, window, document, undefined) {
   'use strict';
 
   /**
@@ -6338,10 +6506,10 @@
   $.fn.owlCarousel.Constructor.Plugins.Hash = Hash;
 
 })(window.Zepto || window.jQuery, window, document);
- /* End of Owl JS*/
+/* End of Owl JS*/
 
- /*Table Fixer*/
- (function($) {
+/*Table Fixer*/
+(function($) {
 
   $.fn.tableHeadFixer = function(param) {
     var defaults = {
@@ -6358,16 +6526,16 @@
       settings.parent = $("<div></div>");
       setParent();
 
-      if(settings.head == true)
+      if (settings.head == true)
         fixHead();
 
-      if(settings.foot == true)
+      if (settings.foot == true)
         fixFoot();
 
-      if(settings.left > 0)
+      if (settings.left > 0)
         fixLeft();
 
-      if(settings.right > 0)
+      if (settings.right > 0)
         fixRight();
 
       // self.setCorner();
@@ -6393,13 +6561,13 @@
       parent.append(table);
       parent
         .css({
-          'width' : '100%',
-          'height' : container.css("height"),
-          'overflow' : 'scroll',
-          'max-height' : container.css("max-height"),
-          'min-height' : container.css("min-height"),
-          'max-width' : container.css('max-width'),
-          'min-width' : container.css('min-width')
+          'width': '100%',
+          'height': container.css("height"),
+          'overflow': 'scroll',
+          'max-height': container.css("max-height"),
+          'min-height': container.css("min-height"),
+          'max-width': container.css('max-width'),
+          'min-width': container.css('min-width')
         });
 
       parent.scroll(function() {
@@ -6410,50 +6578,50 @@
         var top = parent.scrollTop();
         var left = parent.scrollLeft();
 
-        if(settings.head)
+        if (settings.head)
           this.find("thead tr > *").css("top", top);
 
-        if(settings.foot)
+        if (settings.foot)
           this.find("tfoot tr > *").css("bottom", scrollHeight - clientHeight - top);
 
-        if(settings.left > 0)
+        if (settings.left > 0)
           settings.leftColumns.css("left", left);
 
-        if(settings.right > 0)
+        if (settings.right > 0)
           settings.rightColumns.css("right", scrollWidth - clientWidth - left);
       }.bind(table));
     }
 
-    function fixHead () {
+    function fixHead() {
       var thead = $(settings.table).find("thead");
       var tr = thead.find("tr");
       var cells = thead.find("tr > *");
 
       setBackground(cells);
       cells.css({
-        'position' : 'relative'
+        'position': 'relative'
       });
     }
 
-    function fixFoot () {
+    function fixFoot() {
       var tfoot = $(settings.table).find("tfoot");
       var tr = tfoot.find("tr");
       var cells = tfoot.find("tr > *");
 
       setBackground(cells);
       cells.css({
-        'position' : 'relative'
+        'position': 'relative'
       });
     }
 
-    function fixLeft () {
+    function fixLeft() {
       var table = $(settings.table);
 
       var fixColumn = settings.left;
 
       settings.leftColumns = $();
 
-      for(var i = 1; i <= fixColumn; i++) {
+      for (var i = 1; i <= fixColumn; i++) {
         settings.leftColumns = settings.leftColumns
           .add(table.find("tr > *:nth-child(" + i + ")"));
       }
@@ -6465,19 +6633,19 @@
 
         setBackground(cell);
         cell.css({
-          'position' : 'relative'
+          'position': 'relative'
         });
       });
     }
 
-    function fixRight () {
+    function fixRight() {
       var table = $(settings.table);
 
       var fixColumn = settings.right;
 
       settings.rightColumns = $();
 
-      for(var i = 1; i <= fixColumn; i++) {
+      for (var i = 1; i <= fixColumn; i++) {
         settings.rightColumns = settings.rightColumns
           .add(table.find("tr > *:nth-last-child(" + i + ")"));
       }
@@ -6489,7 +6657,7 @@
 
         setBackground(cell);
         cell.css({
-          'position' : 'relative'
+          'position': 'relative'
         });
       });
 
@@ -6517,79 +6685,143 @@
 })(jQuery);
 /*End of TB */
 
+/** end of jq plugins and start configs and custom scripts  */
 
- $(document).ready(function() {
-      $(".team-score").tableHeadFixer({"head" : false, "left" : 1});
-      $(".player-score-qb").tableHeadFixer({"head" : false, "left" : 1});
-      $(".player-score-wr").tableHeadFixer({"head" : false, "left" : 1});
-      $(".player-score-te").tableHeadFixer({"head" : false, "left" : 1});
-      $(".player-score-c").tableHeadFixer({"head" : false, "left" : 1});
-      $(".player-score-cb").tableHeadFixer({"head" : false, "left" : 1});
-      $(".player-score-de").tableHeadFixer({"head" : false, "left" : 1});
-      $(".player-score-dt").tableHeadFixer({"head" : false, "left" : 1});
-      $(".player-score-fb").tableHeadFixer({"head" : false, "left" : 1});
-      $(".player-score-fs").tableHeadFixer({"head" : false, "left" : 1});
-      $(".player-score-ilb").tableHeadFixer({"head" : false, "left" : 1});
-      $(".player-score-mlb").tableHeadFixer({"head" : false, "left" : 1});
-      $(".player-score-olb").tableHeadFixer({"head" : false, "left" : 1});
-      $(".player-score-k").tableHeadFixer({"head" : false, "left" : 1});
-      $(".player-score-p").tableHeadFixer({"head" : false, "left" : 1});
-      $(".player-score-rb").tableHeadFixer({"head" : false, "left" : 1});
-      $(".player-score-ss").tableHeadFixer({"head" : false, "left" : 1});
-    });
+$(document).ready(function() {
+  $(".team-score").tableHeadFixer({
+    "head": false,
+    "left": 1
+  });
+  $(".player-score-qb").tableHeadFixer({
+    "head": false,
+    "left": 1
+  });
+  $(".player-score-wr").tableHeadFixer({
+    "head": false,
+    "left": 1
+  });
+  $(".player-score-te").tableHeadFixer({
+    "head": false,
+    "left": 1
+  });
+  $(".player-score-c").tableHeadFixer({
+    "head": false,
+    "left": 1
+  });
+  $(".player-score-cb").tableHeadFixer({
+    "head": false,
+    "left": 1
+  });
+  $(".player-score-de").tableHeadFixer({
+    "head": false,
+    "left": 1
+  });
+  $(".player-score-dt").tableHeadFixer({
+    "head": false,
+    "left": 1
+  });
+  $(".player-score-fb").tableHeadFixer({
+    "head": false,
+    "left": 1
+  });
+  $(".player-score-fs").tableHeadFixer({
+    "head": false,
+    "left": 1
+  });
+  $(".player-score-ilb").tableHeadFixer({
+    "head": false,
+    "left": 1
+  });
+  $(".player-score-mlb").tableHeadFixer({
+    "head": false,
+    "left": 1
+  });
+  $(".player-score-olb").tableHeadFixer({
+    "head": false,
+    "left": 1
+  });
+  $(".player-score-k").tableHeadFixer({
+    "head": false,
+    "left": 1
+  });
+  $(".player-score-p").tableHeadFixer({
+    "head": false,
+    "left": 1
+  });
+  $(".player-score-rb").tableHeadFixer({
+    "head": false,
+    "left": 1
+  });
+  $(".player-score-ss").tableHeadFixer({
+    "head": false,
+    "left": 1
+  });
+});
 
+$('.owl-home-slide').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: false,
+  items: 1,
+  autoplay: true,
+  autoplayTimeout: 8000,
+  slideSpeed: 1000,
+})
 
+$('.owl-player-slide').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  navText: ['&#x3c;', '&#x3e;'],
+  items: 1,
+  autoplay: true,
+  autoplayTimeout: 5000,
+})
 
-  $('.owl-home-slide').owlCarousel({
-      loop:true,
-      margin:10,
-      nav:false,
-      items:1,
-      autoplay: true,
-      autoplayTimeout: 8000,
-  })
+$('.owl-team-slide').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  navText: ['&#x3c;', '&#x3e;'],
+  items: 1,
+  autoplay: true,
+  autoplayTimeout: 5000,
+})
 
+$('.owl-people-slide').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  navText: ['&#x3c;', '&#x3e;'],
+  items: 1,
+  autoplay: true,
+  autoplayTimeout: 5000,
+})
 
+$('.owl-footer-slide').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: false,
+  items: 4,
+  autoplay: true,
+  autoplayTimeout: 5000,
+})
 
-  $('.owl-player-slide').owlCarousel({
-      loop:true,
-      margin:10,
-      nav:true,
-      navText:['&#x3c;','&#x3e;'],
-      items:1,
-      autoplay: true,
-      autoplayTimeout: 5000,
-  })
+$('.owl-roster-slide').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: false,
+  items: 4,
+  autoplay: true,
+  autoplayTimeout: 5000,
+})
 
+jQuery(document).ready(function() {
+  $('.mobil-nav-btn').click(function() {
+    $('.header-nav').slideToggle('medium');
+  });
 
-
-  $('.owl-team-slide').owlCarousel({
-      loop:true,
-      margin:10,
-      nav:true,
-      navText:['&#x3c;','&#x3e;'],
-      items:1,
-      autoplay: true,
-      autoplayTimeout: 5000,
-  })
-
-
-  $('.owl-people-slide').owlCarousel({
-      loop:true,
-      margin:10,
-      nav:true,
-      navText:['&#x3c;','&#x3e;'],
-      items:1,
-      autoplay: true,
-      autoplayTimeout: 5000,
-  })
-
-
-  $('.owl-footer-slide').owlCarousel({
-      loop:true,
-      margin:10,
-      nav:false,
-      items:4,
-      autoplay: true,
-      autoplayTimeout: 5000,
-  })
+  $('.menu-item-has-children').click(function() {
+    $('.menu-item-has-children').children('.sub-menu').slideToggle('medium');
+  });
+});
