@@ -45,8 +45,14 @@
                   </li>
                   <li><span>РОСТ:</span> <?php the_field('height');?></li>
                   <li><span>ВЕС:</span> <?php the_field('weight');?></li>
-                  <li><span>В КОМАНДЕ :</span> <?php the_field('experience');?></li>
+                  <li><span>ИГРАЕТ С :</span> <?php the_field('start_to_play');?></li>
                   <li><span>ИГРОВОЙ НОМЕР:</span> <?php the_field('player_number');?></li>
+                  <li><span>КОНТАКТЫ:</span>
+
+                    <a href="<?php the_field('link_vk');?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/social/vkontakte.png" alt="VK"></a>
+                    <a href="<?php the_field('link_fb');?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/social/facebook.png" alt="Facebook"></a>
+                    <a href="<?php the_field('link_inatagram');?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/social/instagram.png" alt="Instagram"></a>
+                  </li>
            </ul><!-- player description -->
          </div>
         </div><!--/ player-character -->

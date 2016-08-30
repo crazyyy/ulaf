@@ -1,8 +1,59 @@
-Redirect permanent /news/zubry---patrioty-prevyu- /collaboratively-empower-collaborative.htm
-Redirect permanent /teams/wolves /team/vinnitskie-volki
-
 AddDefaultCharset UTF-8
 php_value memory_limit 512M
+php_value max_input_vars 50000
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+Redirect permanent /news/zubry---patrioty-prevyu- /collaboratively-empower-collaborative.htm
+Redirect 301 http://ulafua.com/ua/ http://ulafua.com/
+Redirect 301 /about http://ulafua.com/o-nas.htm
+Redirect permanent /teams/wolves http://ulafua.com/team/vinnitskie-volki
+Redirect 301 /teams/kozaki http://ulafua.com/team/kazaki
+Redirect 301 /teams/slavyane http://ulafua.com/team/slavyani
+Redirect 301 /teams/gladiatory http://ulafua.com/team/gladiatory
+Redirect 301 /teams/rockets http://ulafua.com/team/volki
+Redirect 301 /teams/titany http://ulafua.com/team/titany
+Redirect 301 /teams/lesoruby http://ulafua.com/team/lesoruby
+Redirect 301 /teams/gepardy http://ulafua.com/team/gepardy
+Redirect 301 /teams/orly http://ulafua.com/team/orly
+Redirect 301 /teams/monarhi http://ulafua.com/team/monarhi
+Redirect 301 /teams/hammerers http://ulafua.com/team/molotobojtsi
+Redirect 301 /teams/lions http://ulafua.com/team/lvy
+Redirect 301 /teams/tigry http://ulafua.com/team/tigry
+Redirect 301 /teams/medvedi http://ulafua.com/team/medvedi
+Redirect 301 /teams/akuly http://ulafua.com/team/akuly
+Redirect 301 /teams/azovskie-delfiny http://ulafua.com/team/delfiny
+Redirect 301 /teams/piraty http://ulafua.com/team/piraty
+Redirect 301 /teams/bizony http://ulafua.com/team/bizony
+Redirect 301 /teams/vikingi http://ulafua.com/team/vikingi
+Redirect 301 /teams/bandity http://ulafua.com/team/bandity
+Redirect 301 /teams/atlanty http://ulafua.com/team/atlanty
+Redirect 301 /teams/buldogi http://ulafua.com/team/buldogi
+Redirect 301 /sbornaya http://ulafua.com/sbornaya.htm
+Redirect 301 /pravila-igry http://ulafua.com/pravila-igry.htm
+Redirect 301 /contact http://ulafua.com/kontakty.htm
+Redirect 301 /photos http://ulafua.com/foto.htm
+Redirect 301 /articles http://ulafua.com/news
+Redirect 301 /first-article http://ulafua.com/novost-kotoruyu-zhdali-vse-igroki-i-lyubiteli-amerikanskogo-futbola-v-ukraine.htm
+#Redirect 301 /sudejskij-komitet.htm http://ulafua.com/sudejskij-komitet.htm
+Redirect 301 /news/indiya-v-teme http://ulafua.com/authoritatively-brand-functionalized.htm
+Redirect 301 /teams/team http://ulafua.com/kalendar.htm
+Redirect 301 /news/gej-druzyaki-sensatsiya http://ulafua.com/intrinsicly-enable-inexpensive.htm
+Redirect 301 /news/debyutnyj-match-titanov http://ulafua.com/dramatically-seize-frictionless.htm
+Redirect 301 /news/prevyu-yug-ili-zapad http://ulafua.com/compellingly-maximize-reliable.htm
+Redirect 301 /news/rakety-letyat-k-tigram http://ulafua.com/appropriately-transition-one-to-one.htm
+Redirect 301 /news/utrennij-efir-na-radio http://ulafua.com/enthusiastically-utilize-accurate.htm
+Redirect 301 /news/ulaf-1-j-tur-buldogi-pobedili-lvov-v-vyezdnom-matche http://ulafua.com/progressively-extend-24-365-schemas.htm
 
 # supress php errors
 php_flag display_startup_errors off
@@ -171,16 +222,6 @@ RewriteRule .* http://127.0.0.1 [L]
 #AIOWPS_BLOCK_SPAMBOTS_END
 # END All In One WP Security
 
-php_value max_input_vars 50000
 
-# BEGIN WordPress
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
-RewriteRule ^index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
-</IfModule>
 
-# END WordPress
+

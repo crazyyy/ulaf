@@ -5,7 +5,7 @@
         <div class="row">
 
           <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-
+            <?php wpb_set_post_views(get_the_ID()); ?>
             <article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12 col-xs-12'); ?>>
 
               <h1 class="page-title"><?php the_title(); ?></h1>
@@ -24,13 +24,9 @@
             </article>
 
           <?php endwhile; else: // If 404 page error ?>
-
             <article class="col-md-12">
-
               <h2 class="page-title inner-title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
-
             </article>
-
           <?php endif; ?>
 
           <div class="col-md-12 section-comments">

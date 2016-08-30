@@ -32,7 +32,7 @@
   <section class="section-news">
     <div class="container">
       <div class="row news_block">
-        <h3 class="col-md-12 news-title">Последние Новости</h3>
+        <h3 class="col-md-12 news-title">Последние новости</h3>
         <!-- start news loop -->
         <?php query_posts("showposts=4&cat=1"); ?>
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -51,12 +51,12 @@
 
       </div><!-- news_block -->
 
-<!-- Sponsors Slider -->
+      <!-- Sponsors Slider -->
       <div class="owl-footer-slide">
         <?php $images = get_field('sponsors_gallery'); if( $images ): foreach( $images as $image ): ?>
           <div class="item-slide sponsors-footer-images">
             <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
-          </div><!-- sponsors-footer-images -->
+          </div>
         <?php endforeach; endif; ?>
       </div><!-- owl-footer-slide -->
     </div><!-- container -->
