@@ -50,11 +50,19 @@ class Site_Size {
 		// Include database size except for file only schedule.
 		if ( 'file' !== $this->type ) {
 
-			global $wpdb;
-			$tables = $wpdb->get_results( 'SHOW TABLE STATUS FROM `' . DB_NAME . '`', ARRAY_A );
+			$size = (int) get_transient( 'hmbkp_database_size' );
 
-			foreach ( $tables as $table ) {
-				$size += (float) $table['Data_length'];
+			if ( ! $size ) {
+
+				global $wpdb;
+
+				$tables = $wpdb->get_results( 'SHOW TABLE STATUS FROM `' . DB_NAME . '`', ARRAY_A );
+
+				foreach ( $tables as $table ) {
+					$size += (float) $table['Data_length'];
+				}
+
+				set_transient( 'hmbkp_database_size', $size, WEEK_IN_SECONDS );
 			}
 		}
 
@@ -155,59 +163,87 @@ class Site_Size {
 	}
 
 	/**
-	 * Get the total filesize for a given file or directory
+	 * Get the total filesize for a given file or directory. Aware of exclusions.
 	 *
-	 * If $file is a file then just return the result of `filesize()`.
-	 * If $file is a directory then recursively calculate the size.
+	 * If $file is a file then return the result of `filesize()` or 0 if it's excluded.
+	 * If $file is a directory then recursively calculate the size without
+	 * the size of excluded files/directories.
 	 *
-	 * @param \SplFileInfo   $file The file or directory you want to know the size of
+	 * @param \SplFileInfo   $file The file or directory you want to know the size of.
 	 *
-	 * @return int           The total filesize of the file or directory
+	 * @return int           The total filesize of the file or directory without
+	 *                       the size of excluded files/directories.
 	 */
 	public function filesize( \SplFileInfo $file ) {
 
-		// Skip missing or unreadable files
+		// Skip missing or unreadable files.
 		if ( ! file_exists( $file->getPathname() ) || ! $file->getRealpath() || ! $file->isReadable() ) {
 			return 0;
 		}
 
-		// If it's a file then just pass back the filesize
+		// If it's a file then return its filesize or 0 if it's excluded.
 		if ( $file->isFile() ) {
-			return $file->getSize();
+
+			if ( $this->excludes && $this->excludes->is_file_excluded( $file ) ) {
+				return 0;
+			} else {
+				return $file->getSize();
+			}
 		}
 
-		// If it's a directory then pull it from the cached filesize array
+		// If it's a directory then pull it from the cached filesize array.
 		if ( $file->isDir() ) {
 			return $this->directory_filesize( $file );
 		}
-
 	}
 
 	public function directory_filesize( \SplFileInfo $file ) {
 
-		// If we haven't calculated the site size yet then kick it off in a thread
+		// For performance reasons we cache the root.
+		if ( $file->getRealPath() === PATH::get_root() && $this->excludes ) {
+
+			$directory_sizes = get_transient( 'hmbkp_root_size' );
+
+			if ( $directory_sizes ) {
+				return (int) $directory_sizes;
+			}
+		}
+
+		// If we haven't calculated the site size yet then kick it off in a thread.
 		$directory_sizes = $this->get_cached_filesizes();
 
 		if ( ! is_array( $directory_sizes ) ) {
 			$this->rebuild_directory_filesizes();
 
-			// Intentionally return null so the caller can tell that the size is being calculated
+			// Intentionally return null so the caller can tell that the size is being calculated.
 			return null;
 		}
 
-		// The filepaths are stored in keys so we need to flip for use with preg_grep
+		/*
+		 * Ensure we only include files in the current path, the filepaths are stored in keys
+		 * so we need to flip for use with preg_grep.
+		 */
 		$directory_sizes = array_flip( preg_grep( '(' . wp_normalize_path( $file->getRealPath() ) . ')', array_flip( $directory_sizes ) ) );
 
 		if ( $this->excludes ) {
+
 			$excludes = implode( '|', $this->excludes->get_excludes_for_regex() );
+
 			if ( $excludes ) {
 				// Use PREG_GREP_INVERT to remove any filepaths which match an exclude rule
 				$directory_sizes = array_flip( preg_grep( '(' . $excludes . ')', array_flip( $directory_sizes ), PREG_GREP_INVERT ) );
 			}
 		}
 
-		// Directory size is now just a sum of all files across all sub directories
-		return absint( array_sum( $directory_sizes ) );
+		$directory_sizes = absint( array_sum( $directory_sizes ) );
+
+		// For performance reasons we cache the root.
+		if ( $file->getRealPath() === PATH::get_root() && $this->excludes ) {
+			set_transient( 'hmbkp_root_size', $directory_sizes, DAY_IN_SECONDS );
+		}
+
+		// Directory size is now just a sum of all files across all sub directories.
+		return (int) $directory_sizes;
 
 	}
 

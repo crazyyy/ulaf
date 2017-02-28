@@ -9,7 +9,7 @@
           <!-- Gallery Page -->
             <div class="col-md-12 gallery">
               <h1 class="page-title"><?php the_title(); ?></h1>
-              <?php $images = get_field('gallery'); if( $images ): ?>
+              <!-- <?php $images = get_field('gallery'); if( $images ): ?>
                 <ul>
                   <?php foreach( $images as $image ): ?>
                     <li>
@@ -20,7 +20,8 @@
                     </li>
                   <?php endforeach; ?>
                 </ul>
-              <?php endif; ?>
+              <?php endif; ?> -->
+              <?php the_content(); ?>
             </div> <!-- gallery -->
 
           </div>

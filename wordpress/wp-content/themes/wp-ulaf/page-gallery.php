@@ -5,7 +5,6 @@
     <div class="section content">
       <div class="container">
         <div class="row">
-
           <!-- Gallery Page -->
             <div class="col-md-12 gallery">
               <?php $posts = get_field('gallery'); if( $posts ): ?>
@@ -21,7 +20,6 @@
                 </ul>
               <?php endif; ?>
             </div> <!-- gallery -->
-
           </div>
         </div>
       </div>
