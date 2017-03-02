@@ -1,0 +1,1 @@
+<?php die(); ?>{"headers":{"Content-Encoding":"Content-Encoding: gzip","Vary":"Vary: Accept-Encoding, Cookie","Last-Modified":"Last-Modified: Mon, 27 Feb 2017 13:55:19 GMT","Content-Type":"Content-Type: application\/rss+xml; charset=\"UTF-8\""},"uri":"ulafua.com\/feed","blog_id":1,"post":0,"key":"ulafua.com80\/feedgzip"}

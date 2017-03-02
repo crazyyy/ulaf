@@ -31,7 +31,7 @@ var paths = {
     dest: basePaths.dest + 'js/'
   },
   styles: {
-    src: basePaths.src + 'sass/',
+    src: basePaths.src + 'scss/',
     css: basePaths.src + 'css/',
     dest: basePaths.dest + 'css/'
   },

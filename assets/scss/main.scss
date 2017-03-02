@@ -55,37 +55,36 @@
       .header-menu {
         li {
           a {
-            padding: 10px 30px;
             line-height: 3.4;
+
+            padding: 10px 30px;
           }
         }
       }
     }
   }
 }
-.stm-header
-{
-  .stm-main-menu{
-    .stm-main-menu-unit{
-      .header-menu{
-        .sub-menu{
-            width: 300px;
+.stm-header {
+  .stm-main-menu {
+    .stm-main-menu-unit {
+      .header-menu {
+        .sub-menu {
+          width: 300px;
         }
       }
     }
   }
 }
-.sidebar{
-  #categories-2{
-    h6{
+.sidebar {
+  #categories-2 {
+    h6 {
       display: none;
-
     }
   }
 }
-.background{
-  height: 900px;
+.back {
   width: 900px;
+  height: 900px;
+
   background-color: red;
 }
-
