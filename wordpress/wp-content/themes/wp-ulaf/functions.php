@@ -94,12 +94,12 @@ if (function_exists('add_theme_support')) {
 function wpeHeadNav() {
   wp_nav_menu(
   array(
-    'theme_location'  => 'header-menu',
-    'menu'            => '',
+    'theme_location'  => 'custom-menu',
+    'menu'            => 'header-menu',
     'container'       => 'div',
     'container_class' => 'menu-{menu slug}-container',
     'container_id'    => '',
-    'menu_class'      => 'menu',
+    'menu_class'      => 'header-menu',
     'menu_id'         => '',
     'echo'            => true,
     'fallback_cb'     => 'wp_page_menu',
@@ -107,7 +107,7 @@ function wpeHeadNav() {
     'after'           => '',
     'link_before'     => '',
     'link_after'      => '',
-    'items_wrap'      => '<ul class="headnav">%3$s</ul>',
+    'items_wrap'      => '<ul class="header-menu stm-list-duty heading-font clearfix">%3$s</ul>',
     'depth'           => 0,
     'walker'          => ''
     )

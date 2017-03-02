@@ -1,40 +1,64 @@
 <?php get_header(); ?>
 
-  <section class="section-history">
-     <div class="container">
-        <div class="row">
+    <div id="main">
+      <!--SINGLE POST-->
+      <div id="post-3147" class="post-3147 post type-post status-publish format-standard has-post-thumbnail hentry category-ifaf tag-general-meeting tag-ifaf">
+        <div class="stm-single-post stm-default-page">
+          <div class="container">
+            <div class="row stm-format-">
 
-          <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-            <?php wpb_set_post_views(get_the_ID()); ?>
-            <article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12 col-xs-12'); ?>>
 
-              <h1 class="page-title"><?php the_title(); ?></h1>
-              <?php the_content(); ?>
+  <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+              <div class="col-md-9 col-md-push-3 col-sm-12">
+                <div class="sidebar-margin-top clearfix"></div>
+                <div class="stm-small-title-box">
+                  <div class="stm-title-box-unit ">
+                    <div class="stm-page-title">
+                      <div class="container">
+                        <div class="clearfix stm-title-box-title-wrapper">
+                          <h3><?php the_title(); ?></h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Post thumbnail-->
+                <div class="post-thumbnail">
 
-              <?php get_template_part('relative-pages'); ?>
 
-              <span class="date"><?php the_time('d F Y'); ?> <?php the_time('H:i'); ?></span>
+      <?php if ( has_post_thumbnail()) :?>
+        <a class="single-thumb" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+          <?php the_post_thumbnail(); // Fullsize image for the single post ?>
+        </a>
+      <?php endif; ?><!-- /post thumbnail -->
+                  </div>
+                <div class="stm-single-post-meta clearfix heading-font">
+                  <div class="stm-meta-left-part">
+                    <div class="stm-date">
+                      <i class="fa fa-calendar-o"></i><?php the_time('d F Y'); ?></div>
+                    <div class="stm-author">
+                      <i class="fa fa-user"></i><?php the_author(); ?></div>
+                  </div>
+                  <div class="stm-comments-num">
+                    <a href="http://www.ifaf.info/ifaf/ifaf-annual-general-meeting-september-23rd-2017/#respond" class="stm-post-comments">
+                      <i class="fa fa-commenting"></i><?php comments_number(); ?></a>
+                  </div>
+                </div>
+                <div class="post-content">
+                 <?php the_content(); ?>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="stm-post-meta-bottom heading-font clearfix">
+                  <div class="stm_post_tags">
+                    <?php the_tags(' <i class="fa fa-tag"></i>') ?></div>
 
-              <span class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'wpeasy' ), __( '1 Comment', 'wpeasy' ), __( '% Comments', 'wpeasy' )); ?></span>
+                </div>
+                <!--Comments-->
+                 <?php comments_template(); ?>
+              </div>
 
-              <span class="tags"><?php the_tags( __( 'Tags: ', 'wpeasy' ), ', ', '<br>'); ?></span>
-              <span class="category"><?php _e( 'Categorised in: ', 'wpeasy' ); the_category(', '); ?></span>
-              <span class="post"><?php _e( 'This post was written by ', 'wpeasy' ); the_author(); ?></span>
 
-            </article>
+  <?php endwhile; endif; ?>
 
-          <?php endwhile; else: // If 404 page error ?>
-            <article class="col-md-12">
-              <h2 class="page-title inner-title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
-            </article>
-          <?php endif; ?>
-
-          <div class="col-md-12 section-comments">
-            <?php comments_template(); ?>
-          </div><!-- /.col-md-12 section-comments -->
-
-      </div><!-- row -->
-    </div><!-- container -->
-  </section><!-- section-history -->
 
 <?php get_footer(); ?>

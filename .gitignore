@@ -7,7 +7,6 @@ thumbs.db
 .project
 .DS_Store
 .idea
-*.map
 
 .sass-cache
 .sublime-gulp.cache
@@ -21,10 +20,8 @@ bower_components/
 
 npm-debug.log
 sftp-config.json
-sxd
 .phpintel
 
-wp-config.php
 wp-content/advanced-cache.php
 wp-content/backup-db/
 wp-content/backups/
@@ -34,8 +31,6 @@ wp-content/upgrade/
 wp-content/uploads/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
-wordpress/wp-content/ai1wm-backups/
-wordpress/wp-content/cache
 
 /.htaccess
 /license.txt

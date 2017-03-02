@@ -1,7 +1,7 @@
 {
-  "wp_theme_name": "wp-ulaf",
-  "wp_site_name": "ulafua.com",
-  "name": "ULAF",
+  "wp_theme_name": "wp-framework",
+  "wp_site_name": "wp-framework.dev",
+  "name": "wp-framework",
   "version": "2016.07.24",
   "description": "simple html and css framework. before run you need to install 'npm install -g gulp browserify babel jade stylus http-server'",
   "homepage": "https://github.com/crazyyy/wp-framework#readme",
