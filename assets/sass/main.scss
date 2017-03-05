@@ -55,80 +55,37 @@
       .header-menu {
         li {
           a {
-            line-height: 3.4;
-
             padding: 10px 30px;
+            line-height: 3.4;
           }
         }
       }
     }
   }
 }
-.stm-header {
-  .stm-main-menu {
-    .stm-main-menu-unit {
-      .header-menu {
-        .sub-menu {
-          width: 300px;
+.stm-header
+{
+  .stm-main-menu{
+    .stm-main-menu-unit{
+      .header-menu{
+        .sub-menu{
+            width: 300px;
         }
       }
     }
   }
 }
-.sidebar {
-  #categories-2 {
-    h6 {
+.sidebar{
+  #categories-2{
+    h6{
       display: none;
+
     }
   }
 }
-
-.player-card {
-  background-color: #323232;
-  height: 280px;
+.back{
+  height: 900px;
+  width: 900px;
+  background-color: red;
 }
-.player-pic{
-  width: 130px;
-  height: 130px;
-  background-color: white;
-  position: absolute;
-    top: 80px;
-    left: 80px;
-
-}
-.player-picture{
-  width: 23%;
-}
-.description{
-      padding-top: 80px;
-    color: white;
-    font-size: 28px;
-    text-transform: uppercase;
-
-    padding-right: 8px;
-}
-.stats-bar{
-  width: 330px;
-  height: 30px;
-  background-color: #e8e8e0;
-  border-radius: 2px;
-  margin-top: 25px;
-  float: left;
-
-}
-.games,.tds,.yards{
-  font-size: 15px;
-  float: left;
-  margin-left: 20px;
-  margin-top: 4px;
-  color: #111;
-  text-transform: none;
-
-}
-.games{
-  &:after{
-    height: 5px;
-    width: 10px;
-    background-color: red;
-  }
-}
+фівіфв
