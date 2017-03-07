@@ -78,7 +78,7 @@
           <!--Logo-->
           <div class="logo-main" style="margin-top: 0px;margin-right: 9px;">
             <a class="bloglogo" href="<?php echo home_url(); ?>">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/logo1.png" alt="">
             </a>
           </div>
           <div class="stm-main-menu">

@@ -52,9 +52,43 @@
 
         <article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12'); ?>>
 
-          <div class="row teamm-card">
+          <div class="row team-card">
 
-            <photo -->
+            <div class="player-main-photo col-md-12">
+              <h2 class="team_name"><?php the_title(); ?></h2>
+
+              <ul class="description">
+                <li><span>ГОРОД :</span> <?php the_field('team_city');?></li>
+                <li><span>ГОД ОСНОВАНИЯ:</span>
+                  <?php
+                    $date = get_field('date', false, false);
+                    $date = new DateTime($date);
+                    echo $date->format('j M Y');
+                  ?>
+                </li>
+                <li><span>ЦВЕТА:</span>
+                  <span class="team-colors">
+                    <?php
+                      if( have_rows('colors') ): while ( have_rows('colors') ) : the_row(); ?>
+                      <span style="background-color:<?php the_sub_field('colors'); ?>"></span>
+                    <?php endwhile; endif; ?>
+                  </span><!-- team-colors -->
+                </li><!-- //ЦВЕТА -->
+                <li><span>ГЛАВНЫЙ ТРЕНЕР:</span>
+                  <?php $posts = get_field('head_coach'); if( $posts ): foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+                    <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank"><?php echo get_the_title( $p->ID ); ?></a>
+                    <li>
+                      <span>ГИМН:</span> <?php the_field('hymn'); ?>
+                    </li>
+                    <li>
+                      <span>ТРЕНИРОВКИ:</span><?php the_field('practice'); ?>
+                    </li>
+
+                  <?php endforeach; endif; ?>
+                </li><!-- //ГЛАВНЫЙ ТРЕНЕР -->
+              </ul><!-- //description -->
+
+            </div><!-- /.player-main-photo -->
 
             <div class="col-md-12 team-character">
 
