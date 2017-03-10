@@ -140,35 +140,7 @@
                 </div>
               </div>
             </div>
-            <ul class="stm-mobile-menu-list heading-font">
-              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2679"><a href="http://www.ifaf.info/"><span>Home</span></a></li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-2680"><a href="http://www.ifaf.info/news/"><span>News</span></a></li>
-              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2682"><a href="http://www.ifaf.info/ifaf/ifaf-annual-general-meeting-september-23rd-2017/#"><span>About</span></a>
-                <ul class="sub-menu">
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2683"><a href="http://www.ifaf.info/ifaf-who-we-are/"><span>IFAF | Who we are</span></a></li>
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2765"><a href="http://www.ifaf.info/ifaf-history/"><span>IFAF | History</span></a></li>
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2687"><a href="http://www.ifaf.info/ifaf-structure/"><span>IFAF | Structure</span></a></li>
-                </ul>
-              </li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2987"><a href="http://www.ifaf.info/federations/"><span>Federations</span></a></li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2967"><a href="http://www.ifaf.info/competitions/"><span>Competitions</span></a></li>
-              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3091"><a href="http://www.ifaf.info/ifaf/ifaf-annual-general-meeting-september-23rd-2017/#"><span>Anti-Doping</span></a>
-                <ul class="sub-menu">
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3094"><a href="http://www.ifaf.info/prohibited-lists-therapeutic-use-exemption-tue/"><span>Prohibited Lists &amp; TUE</span></a></li>
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3093"><a href="http://www.ifaf.info/anti-doping-information-education-materials/"><span>Information &amp; Education</span></a></li>
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3092"><a href="http://www.ifaf.info/rules-and-regulations/"><span>Regulations</span></a></li>
-                </ul>
-              </li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2702"><a href="http://www.ifaf.info/documents/"><span>Documents</span></a></li>
-              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2917"><a href="http://www.ifaf.info/ifaf/ifaf-annual-general-meeting-september-23rd-2017/#"><span>ITC</span></a>
-                <ul class="sub-menu">
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3130"><a href="http://www.ifaf.info/itc-2017/"><span>ITC | 2017</span></a></li>
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2918"><a href="http://www.ifaf.info/itc-2016/"><span>ITC | 2016</span></a></li>
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2925"><a href="http://www.ifaf.info/itc-regulations-forms/"><span>ITC | Regulations</span></a></li>
-                </ul>
-              </li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2681"><a href="http://www.ifaf.info/contact-us/"><span>Contact</span></a></li>
-            </ul>
+
           </div>
         </div>
       </div>

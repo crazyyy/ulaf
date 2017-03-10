@@ -46,7 +46,68 @@
 
 
       </div>
+<div class="row full-offensive-stats">
+          <div class="col-md-12">
+            <table>
+        <!-- Заголовок таблицы -->
+              <tr>
+                <td class="first-td">Сезон</td>
 
+                <td>Противник</td>
+
+                <td colspan="2"></td>
+
+                <td colspan="5">Пасом</td>
+
+                <td colspan="5">Бегом</td>
+
+                <td colspan="2">Фамблы</td>
+              </tr>
+              <tr>
+                <td colspan="2"></td>
+                <td colspan="4">G</td>
+
+                <td>Rec</td>
+
+                <td>Yds</td>
+
+                <td>Avg</td>
+
+                <td>TD</td>
+
+                <td>Att</td>
+
+                <td>Yds</td>
+
+                <td>Avg</td>
+
+                <td>TD</td>
+
+                <td>Cov</td>
+
+                <td>Lost</td>
+              </tr>
+              <tr class="stats">
+                <td>2016</td>
+                <td>Волки Винница</td>
+                <td colspan="4">10</td>
+                <td>56</td>
+                <td>1120</td>
+                <td>5.4</td>
+                <td>15</td>
+                <td>120</td>
+                <td>1120</td>
+                <td>11</td>
+                <td>11</td>
+                <td>11</td>
+                <td>11</td>
+
+
+              </tr>
+        <!-- Конец Заголовока таблицы -->
+            </table>
+          </div>
+        </div>
 
 
 

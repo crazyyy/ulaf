@@ -69,6 +69,7 @@
           </div>
           <div class="col-md-4 current-team">
               <img src="<?php echo get_template_directory_uri(); ?>/img/steelers.png" alt="" class= "team-logo">
+
           </div>
         </div><!--/ player-character -->
         <h3>Offensive stats</h3>

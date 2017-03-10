@@ -1,7 +1,7 @@
 <?php /* Template Name: Home Page */ get_header(); ?>
 
 <!-- Home Slider -->
-  <div class="col-md-12 col-sm-12 col-xs-12 owl-home-slide">
+  <!-- <div class="col-md-12 col-sm-12 col-xs-12 owl-home-slide">
         <?php if( have_rows('slider') ): ?>
         <?php while( have_rows('slider') ): the_row();
                       // vars
@@ -22,10 +22,10 @@
             <a href="<?php echo $link2; ?>" class="btn second">Подробнее</a>
             <?php endif; ?>
         </div>
-      </div><!-- item-slide -->
+      </div>item-slide
                  <?php endwhile; ?>
                   <?php endif; ?>
-    </div>
+    </div> -->
     <!-- /.owl-home-slide -->
 
     <!-- News -->
