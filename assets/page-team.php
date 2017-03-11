@@ -1,4 +1,4 @@
-<?php /* Template Name: Champioship Page */ get_header(); ?>
+<?php /* Template Name: Team ULAF */ get_header(); ?>
 
 
 

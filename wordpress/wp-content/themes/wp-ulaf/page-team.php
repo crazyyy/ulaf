@@ -1,4 +1,4 @@
-<?php /* Template Name: Champioship Page */ get_header(); ?>
+<?php /* Template Name: Team ULAF */ get_header(); ?>
 
 
 
@@ -6,13 +6,42 @@
   <?php if (have_posts()): while (have_posts()) : the_post(); ?>
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-<div class="container">
-  <div class="row">
+<div class="our-team">
+  <div class="container">
+    <div class="row">
+
     <div class="col-md-5 left-bg-block ">
+          <div class="team-sign">
+            Наша Команда
+          </div>
+          <div class="team-list">
+            <a href="#"><span>Максим Шило</span></a>
+            <a href="#"><span>Максим Шило</span></a>
+            <a href="#"><span>Максим Шило</span></a>
+            <a href="#"><span>Максим Шило</span></a>
+            <a href="#"><span>Максим Шило</span></a>
+            <a href="#"><span>Максим Шило</span></a>
+            <a href="#"><span>Максим Шило</span></a>
+          </div>
+    </div>
+    <div class="col-md-7 right-bg-block">
+        <div class="person-image">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/landry1.jpg" alt="">
+          <div class="person-info">
+            <span class="person-name">Джарвис Лендри</span>
+            <span class="person-role">Игрок</span>
+            <span class="person-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda velit pariatur deserunt nam eveniet aliquid aliquam. Assumenda dolores voluptas dolorem, blanditiis rem eaque provident, porro facere impedit consectetur laudantium animi.</span>
+          </div>
+        </div>
 
     </div>
+    </div>
   </div>
+
+
 </div>
+
+
 <div class="container game-info">
       <h2>Дивизион A</h2>
         <div class="row championship">
@@ -916,3 +945,4 @@
   <?php endif; ?>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
+
