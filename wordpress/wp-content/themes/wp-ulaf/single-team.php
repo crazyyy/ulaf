@@ -5,13 +5,21 @@
       <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
       <div class="row team-card" >
-      <div class="col-md-3 team-picture">
+       <div class="team-background-image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/slider-4.jpg);background-size: cover;">
+<div class="col-md-3 team-picture">
             <div class="player-pic">
                 <?php if ( has_post_thumbnail()) :?>
               <a class="single-thumb" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                 <?php the_post_thumbnail(); // Fullsize image for the single post ?>
               </a>
             <?php endif; ?>
+                <div class="colors">
+                <?php
+                      if( have_rows('colors') ): while ( have_rows('colors') ) : the_row(); ?>
+                      <span style="background-color:<?php the_sub_field('colors'); ?>"></span>
+                    <?php endwhile; endif; ?>
+
+                </div>
                 <div class="socials">
                 <a href="<?php the_field('link_vk');?>"><i class="fa fa-vk" aria-hidden="true"></i></a>
                   <a href="<?php the_field('link_instagram');?>"><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -22,11 +30,21 @@
           </div>
           <div class="col-md-3 description">
             <div class="player-name"><?php the_title(); ?></div>
-            <div class="stats-bar">
-              <div class="games">Игры : <?php the_field('number_of_games');?></div>
-              <div class="tds">Тачдауны : <?php the_field('touchdowns');?></div>
-              <div class="yards">Победы : <?php the_field('yards');?></div>
-            </div>
+            <!-- <div class="stats-bar"> -->
+              <div class="team-anthem">Гимн : <?php
+
+                $file = get_field('hymn');
+
+                if( $file ): ?>
+
+                <audio controls>
+
+                <source src="<?php echo $file['url']; ?>" type="audio/mpeg">
+                </audio>
+
+                <?php endif; ?>
+                </div>
+
             <div class="biography">
               <div class="born">Дата основания: <span><?php
                     $date = get_field('date', false, false);
@@ -39,7 +57,7 @@
               <div class="position">Город: <span><?php the_field('team_city');?></span></div>
             </div>
           </div>
-      <div class="team-background-image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/slider-4.jpg);background-size: cover;">
+
 
       </div>
 
@@ -250,20 +268,20 @@
           <?php the_content(); ?>
         </div><!-- /.col-md-9 player-bio -->
       </div><!-- /row -->
-
       <?php $images = get_field('team_gallery'); if( $images ): ?>
+ <div class="fotorama"
+     data-nav="thumbs" data-allowfullscreen="true" data-loop="true" data-width="100%"
+     >
+     <?php $images = get_field('team_gallery'); if( $images ): foreach( $images as $image ): ?>
+  <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+<?php endforeach; endif; ?>
+</div>
 
-        <div class="owl-team-slide">
-          <?php $images = get_field('team_gallery'); if( $images ): foreach( $images as $image ): ?>
+     <?php endif; ?>
 
-            <div class="item-slide">
-              <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
-            </div>
 
-          <?php endforeach; endif; ?>
-        </div><!-- owl-team-slide -->
 
-      <?php endif; ?>
+
 
       <?php if( have_rows('team_achievements') ) :  ?>
         <h2 class="team_achievements">Достижения команды</h2>

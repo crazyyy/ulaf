@@ -133,6 +133,7 @@
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/ticker.js"></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/skrollr.js"></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/owl.carousel.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 </body>
 
 </html>

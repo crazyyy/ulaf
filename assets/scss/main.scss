@@ -147,9 +147,7 @@
 }
 
 
-.biography {
-  padding-top: 70px;
-}
+
 .born,
 .nationality,
 .team,
@@ -232,7 +230,7 @@
   width: 1200px;
   height: 280px;
 
-  opacity: .3;
+  opacity: 1;
   background-color: #323232;
   background-position: 190px;
 }
@@ -353,4 +351,55 @@ td {
     line-height: 24px;
     }
   }
+}
+.team-colors{
+float: left;
+
+
+  .first-color{
+    background-color: red;
+    height: 20px;
+  width: 20px;
+  }
+  .second-color{
+    background-color: white;
+    height: 20px;
+  width: 20px;
+  }
+  .third-color{
+    background-color: black;
+    height: 20px;
+  width: 20px;
+  }
+}
+.games{
+  audio{
+
+  }
+}
+.team-anthem{
+ font-size: 15px;
+ margin-top: 15px;
+}
+.colors{
+  height: 20px;
+  padding-left: 17px;
+   span{
+      height: 25px;
+      width: 25px;
+      display: inline-block;
+
+    }
+}
+.first-color,.second-color,.third-color{
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    float: left;
+    margin-left:11px;
+
+}
+.fotorama{
+  width: auto;
+
 }

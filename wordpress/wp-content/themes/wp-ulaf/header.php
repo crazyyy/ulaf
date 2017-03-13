@@ -13,6 +13,7 @@
   <link rel="icon" href="http://www.ifaf.info/wp-content/uploads/2016/10/cropped-IFAF-LOGO-512-1-192x192.png" sizes="192x192">
   <link rel="apple-touch-icon-precomposed" href="http://www.ifaf.info/wp-content/uploads/2016/10/cropped-IFAF-LOGO-512-1-180x180.png">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css" type="text/css" media="all">
+  <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 </head>
 
 <body class="post-template-default single single-post postid-3147 single-format-standard stm-shop-sidebar wpb-js-composer js-comp-ver-4.12.1 vc_responsive" data-gr-c-s-loaded="true" style="padding-bottom: 405px;">
