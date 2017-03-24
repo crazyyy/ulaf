@@ -475,50 +475,22 @@
             </div>
           </div>
         </div>
-        <div class="container clients-images">
-        <div class="row">
-          <div class="slider-img">
-            <!-- Slide Start -->
 
-            <div class="slide col-md-4">
-              <div class="clients-item-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/FISU.png" alt="">
-              </div>
-            </div>
-
-            <div class="slide col-md-4">
-              <div class="clients-item-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/FISU.png" alt="">
-              </div>
-            </div>
-             <div class="slide col-md-4">
-              <div class="clients-item-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/FISU.png" alt="">
-              </div>
-            </div>
-
-            <!-- Slide End -->
-            <!-- Slide Start -->
-            <!-- Slide End -->
-            <!-- Slide Start -->
-            <!-- Slide End -->
+<div class="container">
+        <div class="row slider">
+          <div class="slide col-md-12">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/FISU.png" alt="">
+          </div>
+          <div class="slide col-md-12">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/FISU.png" alt="">
+          </div>
+          <div class="slide col-md-12">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/ifaf-news.jpg" alt="">
           </div>
         </div>
       </div>
-      <script>
-        $(document).ready(function(){
-        $('.slider-img').owlCarousel({
-
-    nav: true,
-    items: 1,
-    itemClass: '.slide',
-    nav: true,
-    loop:true,
-    center:true
-        });
-});
-      </script>
         <div class="vc_row-full-width vc_clearfix"></div>
+
         <div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-parallax="2" data-vc-parallax-image="http://ulafua.com/wp-content/uploads/2017/03/paralax-1.jpg" class="vc_row wpb_row vc_row-fluid vc_row-has-fill vc_general vc_parallax vc_parallax-content-moving" style="background-image: url(http://ulafua.com/wp-content/uploads/2017/03/paralax-1.jpg); background-repeat: no-repeat;background-size: cover;">
           <div class="wpb_column vc_column_container vc_col-sm-12">
             <div class="vc_column-inner vc_custom_1476626466570">
@@ -550,6 +522,7 @@ all of which possess national federations dedicated solely to American football.
     </div>
     <!--main-->
   </div>
+
   <div data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid stm-red-bg">
           <div class="wpb_column vc_column_container vc_col-sm-12">
             <div class="vc_column-inner ">

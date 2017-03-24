@@ -32,12 +32,15 @@
   }
  // owlCarousel//////////////////////
   (function() {
-  $(".sliders").owlCarousel({
-    loop: true,
-
-    items: 1
+    $('.slider').owlCarousel({
+    loop:true,
+    nav: false,
+    items: 3,
+    autoplay:true,
+    autoplayTimeout:2000
     });
   }());
+
   ////////////////////////////////////
   function stm_header_transparent() {
     /*HEADER TRANSPARENT FIXED*/
