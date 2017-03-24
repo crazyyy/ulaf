@@ -32,6 +32,8 @@ elseif($gallery_default_params["gallery_img_image_natural_size_thumbnail"] == 'n
     border-radius: <?php echo $gallery_default_params["gallery_img_thumb_image_border_radius"]; ?>px;
     border: <?php echo $gallery_default_params["gallery_img_thumb_image_border_width"]; ?>px solid #<?php echo $gallery_default_params["gallery_img_thumb_image_border_color"]; ?>;
     box-sizing: border-box;
+    position: relative;
+    display: inline-block;
 }
 #huge_it_gallery<?php echo $galleryID; ?> li img {
 <?php if($gallery_default_params["gallery_img_image_natural_size_thumbnail"] == 'resize'){?>
@@ -84,6 +86,9 @@ section #huge_it_gallery<?php echo $galleryID; ?> li a {
     left: 0;
     z-index: 6;
     max-height: 100%;
+}
+li#fullPreview{
+    list-style: none;
 }
 .load_more3 {
     margin: 10px 0;

@@ -679,6 +679,11 @@ jQuery(function() {
                                 self.$fullimage.find( 'img' ).remove();
                                 self.$largeImg = $img.fadeIn( 350 );
                                 self.$fullimage.append( self.$largeImg );
+                                if(galleryImgDisableRightClickElastic == 'on') {
+                                    self.$largeImg.bind('contextmenu', function () {
+                                        return false;
+                                    });
+                                }
                             }
 
                             self.setHeights();

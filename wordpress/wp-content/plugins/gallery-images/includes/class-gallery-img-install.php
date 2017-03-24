@@ -40,6 +40,28 @@ class Gallery_Img_Install {
 				delete_option( $name, $value );
 			}
 		}
+        if( !get_option( 'gallery_img_lightbox_type' ) ) {
+            if (!get_option( 'gallery_img_version' )) {
+                update_option( 'gallery_img_lightbox_type', 'new_type' );
+            }
+            else {
+                update_option( 'gallery_img_lightbox_type', 'old_type' );
+            }
+        }
+
+        $lightbox_new_options = array(
+            'gallery_img_lightbox_lightboxView'                               => 'view1',
+            'gallery_img_lightbox_speed_new'                                  => '600',
+            'gallery_img_lightbox_overlayClose_new'                           => 'true',
+            'gallery_img_lightbox_loop_new'                                   => 'true',
+        );
+
+		if(!get_option( 'gallery_img_lightbox_lightboxView' )) {
+            foreach ($lightbox_new_options as $name => $value) {
+                add_option( $name, $value);
+		    }
+        }
+
 		$new_options = array(
 			'gallery_img_admin_image_hover_preview'             => 'on',
 			'gallery_img_light_box_size_fix'                    => 'false',
@@ -66,6 +88,10 @@ class Gallery_Img_Install {
 				array( 'option_name' => 'gallery_img_'.$option_name),
 				array( 'option_name' => $option_name )
 			);
+		}
+
+		if ( ! get_option( 'gallery_img_disable_right_click' ) ) {
+			update_option( 'gallery_img_disable_right_click', 'off' );
 		}
 	}
 
@@ -225,5 +251,3 @@ INSERT INTO `$table_name` (`id`, `name`, `sl_height`, `sl_width`, `pause_on_hove
 		}
 	}
 }
-
-Gallery_Img_Install::init();

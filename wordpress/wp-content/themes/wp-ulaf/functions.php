@@ -136,6 +136,8 @@ function wpeFootNav() {
     )
   );
 }
+//ShowPosts
+
 // WPE sidebar navigation
 function wpeSideNav() {
   wp_nav_menu(

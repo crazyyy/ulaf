@@ -10,6 +10,7 @@
 			<input type="hidden" class="pagenum" value="1"/>
 			<input type="hidden" id="total" value="<?php echo $total; ?>"/>
 			<?php
+			echo "count(page_images)".count($page_images);
 			foreach ( $page_images as $key => $row ) {
 				if ( ! isset( $_COOKIE[ 'Like_' . $row->id . '' ] ) ) {
 					$_COOKIE[ 'Like_' . $row->id . '' ] = '';
@@ -175,7 +176,8 @@
 	</div>
 	<?php
 	$a = $disp_type;
-	if ( $a == 1 ) {
+
+	if ( ($a == 1)&&(count($images)>$num) ) {
 		$gallery_img_content_load_nonce = wp_create_nonce( 'gallery_img_content_load_nonce' );
 		?>
 		<div class="load_more5">

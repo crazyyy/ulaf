@@ -6,9 +6,6 @@
         <div class="stm-single-post stm-default-page">
           <div class="container">
             <div class="row stm-format-">
-
-
-  <?php if (have_posts()): while (have_posts()) : the_post(); ?>
               <div class="col-md-9 col-md-push-3 col-sm-12">
                 <div class="sidebar-margin-top clearfix"></div>
                 <div class="stm-small-title-box">
@@ -24,43 +21,44 @@
                 </div>
                 <!--Post thumbnail-->
                 <div class="post-thumbnail">
-
-
-      <?php if ( has_post_thumbnail()) :?>
+                   <?php if ( has_post_thumbnail()) :?>
         <a class="single-thumb" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
           <?php the_post_thumbnail(); // Fullsize image for the single post ?>
         </a>
-      <?php endif; ?><!-- /post thumbnail -->
-                  </div>
+      <?php endif; ?>
+
+      </div>
                 <div class="stm-single-post-meta clearfix heading-font">
                   <div class="stm-meta-left-part">
                     <div class="stm-date">
-                      <i class="fa fa-calendar-o"></i><?php the_time('d F Y'); ?></div>
+                      <i class="fa fa-calendar-o"></i><?php the_time('d F Y'); ?> </div>
                     <div class="stm-author">
                       <i class="fa fa-user"></i><?php the_author(); ?></div>
                   </div>
-
                   <div class="stm-comments-num">
                     <a href="http://www.ifaf.info/ifaf/ifaf-annual-general-meeting-september-23rd-2017/#respond" class="stm-post-comments">
                       <i class="fa fa-commenting"></i><?php comments_number(); ?></a>
                   </div>
-
                 </div>
-
                 <div class="post-content">
-                 <?php the_content(); ?>
+                  <?php the_content(); ?>
                   <div class="clearfix"></div>
                 </div>
                 <div class="stm-post-meta-bottom heading-font clearfix">
                   <div class="stm_post_tags">
-                    <?php the_tags(' <i class="fa fa-tag"></i>') ?></div>
+                    <?php the_tags(' <i class="fa fa-tag"></i>') ?> </div>
 
                 </div>
                 <!--Comments-->
-                 <?php comments_template(); ?>
+                <div class="stm_post_comments">
+                  <?php comments_template(); ?>
+                </div>
               </div>
+              <!--Sidebar-->
               <div class="col-md-3 col-md-pull-9 hidden-sm hidden-xs">
-                <?php get_sidebar('left'); ?>
+                <aside id="categories-2" class="widget widget-default widget_categories">
+                  <?php get_sidebar('left'); ?>
+                </aside>
 
                 <aside id="stm_recent_posts-2" class="widget widget-default widget_stm_recent_posts">
                   <div class="widget-title">
@@ -94,9 +92,22 @@
                       <div class="image">
                         <img width="150" height="150" src="img/AlbahriFahadAsianBeachGamesDay1MVu_O23c-Krl-150x150.jpg" class="img-responsive wp-post-image" alt="IFAF Beach Football World Championship" srcset="http://www.ifaf.info/wp-content/uploads/2017/01/AlbahriFahadAsianBeachGamesDay1MVu_O23c-Krl-150x150.jpg 150w, http://www.ifaf.info/wp-content/uploads/2017/01/AlbahriFahadAsianBeachGamesDay1MVu_O23c-Krl-200x200.jpg 200w" sizes="(max-width: 150px) 100vw, 150px"> </div>
                       <div class="stm-post-content">
+                        <div class="date heading-font">
+                          January 27, 2017 </div>
+                        <span class="h5">The IFAF Beach Football World Championship from 2nd to 5th November 2017</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="clearfix"></div>
+                </aside>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--main-->
+  </div>
 
-
-  <?php endwhile; endif; ?>
-
-
+<?php get_footer(); ?>
 

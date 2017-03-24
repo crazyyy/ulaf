@@ -126,7 +126,7 @@ function gallery_img_get_default_options() {
 		'gallery_img_light_box_data'                                    => 'false',
 		'gallery_img_light_box_classname'                               => 'false',
 		'gallery_img_light_box_fadeout'                                 => '300',
-		'gallery_img_light_box_closebutton'                             => 'false',
+		'gallery_img_light_box_closebutton'                             => 'true',
 		'gallery_img_light_box_current'                                 => 'image',
 		'gallery_img_light_box_previous'                                => 'previous',
 		'gallery_img_light_box_next'                                    => 'next',
@@ -428,12 +428,59 @@ function gallery_img_get_default_options() {
 		'gallery_img_ht_view10_paginator_color'                            => '1046B3',
 		'gallery_img_ht_view10_paginator_icon_color'                       => '1046B3',
 		'gallery_img_ht_view10_paginator_icon_size'                        => '18',
-		'gallery_img_ht_view10_paginator_position'                         => 'center'
+		'gallery_img_ht_view10_paginator_position'                         => 'center',
+		'gallery_img_lightbox_slideAnimationType'                         => 'effect_1',
+		'gallery_img_lightbox_lightboxView'                               => 'view1',
+		'gallery_img_lightbox_speed_new'                                  => '600',
+		'gallery_img_lightbox_width_new'                                  => '100',
+		'gallery_img_lightbox_height_new'                                 => '100',
+		'gallery_img_lightbox_videoMaxWidth'                              => '790',
+		'gallery_img_lightbox_overlayDuration'                            => '150',
+		'gallery_img_lightbox_overlayClose_new'                           => 'true',
+		'gallery_img_lightbox_loop_new'                                   => 'true',
+		'gallery_img_lightbox_escKey_new'                                 => 'true',
+		'gallery_img_lightbox_keyPress_new'                               => 'true',
+		'gallery_img_lightbox_arrows'                                     => 'true',
+		'gallery_img_lightbox_mouseWheel'                                 => 'true',
+		'gallery_img_lightbox_download'                                   => 'false',
+		'gallery_img_lightbox_showCounter'                                => 'true',
+		'gallery_img_lightbox_nextHtml'                                   => '',     //not used
+		'gallery_img_lightbox_prevHtml'                                   => '',     //not used
+		'gallery_img_lightbox_sequence_info'                              => 'image',
+		'gallery_img_lightbox_sequenceInfo'                               => 'of',
+		'gallery_img_lightbox_slideshow_new'                              => 'true',
+		'gallery_img_lightbox_slideshow_auto_new'                         => 'false',
+		'gallery_img_lightbox_slideshow_speed_new'                        => '2500',
+		'gallery_img_lightbox_slideshow_start_new'                        => '',     //not used
+		'gallery_img_lightbox_slideshow_stop_new'                         => '',     //not used
+		'gallery_img_lightbox_watermark'                                  => 'false',
+		'gallery_img_lightbox_socialSharing'                              => 'true',
+		'gallery_img_lightbox_facebookButton'                             => 'true',
+		'gallery_img_lightbox_twitterButton'                              => 'true',
+		'gallery_img_lightbox_googleplusButton'                           => 'true',
+		'gallery_img_lightbox_pinterestButton'                            => 'false',
+		'gallery_img_lightbox_linkedinButton'                             => 'false',
+		'gallery_img_lightbox_tumblrButton'                               => 'false',
+		'gallery_img_lightbox_redditButton'                               => 'false',
+		'gallery_img_lightbox_bufferButton'                               => 'false',
+		'gallery_img_lightbox_diggButton'                                 => 'false',
+		'gallery_img_lightbox_vkButton'                                   => 'false',
+		'gallery_img_lightbox_yummlyButton'                               => 'false',
+		'gallery_img_lightbox_watermark_text'                             => 'WaterMark',
+		'gallery_img_lightbox_watermark_textColor'                        => 'ffffff',
+		'gallery_img_lightbox_watermark_textFontSize'                     => '30',
+		'gallery_img_lightbox_watermark_containerBackground'              => '000000',
+		'gallery_img_lightbox_watermark_containerOpacity'                 => '90',
+		'gallery_img_lightbox_watermark_containerWidth'                   => '300',
+		'gallery_img_lightbox_watermark_position_new'                     => '9',
+		'gallery_img_lightbox_watermark_opacity'                          => '70',
+		'gallery_img_lightbox_watermark_margin'                           => '10',
+		'gallery_img_lightbox_watermark_img_src_new'                      => GALLERY_IMG_IMAGES_PATH . '/admin_images/No-image-found.jpg',
+		'gallery_img_lightbox_type'                                       => 'new_type'
 	);
 
 	return $gallery_default__params;
 }
-
 /**
  * Get all general options parameters in a single array
  *

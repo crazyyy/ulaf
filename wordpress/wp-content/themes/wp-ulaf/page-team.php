@@ -3,8 +3,8 @@
 
 
 
-  <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+ <!--  <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+   <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>> -->
 
 <div class="our-team">
   <div class="container">
@@ -14,25 +14,45 @@
           <div class="team-sign">
             Наша Команда
           </div>
-          <div class="team-list">
-            <a href="#"><span>Максим Шило</span></a>
-            <a href="#"><span>Максим Шило</span></a>
-            <a href="#"><span>Максим Шило</span></a>
-            <a href="#"><span>Максим Шило</span></a>
-            <a href="#"><span>Максим Шило</span></a>
-            <a href="#"><span>Максим Шило</span></a>
-            <a href="#"><span>Максим Шило</span></a>
-          </div>
+          <ul class="team-list" style="overflow-y:auto; height: 325px;">
+            <li class="tablink" onclick="openName(event, 'Maxim')"><span>Максим Шило</span></li>
+            <li class="tablink" onclick="openName(event, 'Misha')"><span>Миша Гусак</span></li>
+            <li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li>
+            <li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li>
+          </ul>
     </div>
     <div class="col-md-7 right-bg-block">
-        <div class="person-image">
+      <div class="person" id="Maxim" style="display: none;">
+        <div class="person-image w3-animate-right">
           <img src="<?php echo get_template_directory_uri(); ?>/img/landry1.jpg" alt="">
           <div class="person-info">
-            <span class="person-name">Джарвис Лендри</span>
+            <span class="person-name">Максим Шило</span>
+            <span class="person-role">Игрок</span>
+            <span class="person-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum repudiandae optio sequi voluptatibus quaerat veritatis cupiditate amet laborum praesentium illo labore provident vitae ipsum nobis, perferendis debitis, blanditiis eaque maiores explicabo ea dicta soluta eveniet facere minima? Dignissimos dolorem est, illo dolorum vero quam reprehenderit saepe animi dolor in! Nulla, commodi minus quidem eius nam debitis distinctio quo sit repellat impedit veritatis harum ducimus quasi nostrum deserunt quaerat exercitationem dignissimos corrupti. Id magnam earum placeat dignissimos explicabo quae libero aliquam reiciendis obcaecati in. Eos error repudiandae dolore voluptatibus nisi cum vero quas voluptatem adipisci odit similique saepe aliquam, commodi reiciendis.</span>
+          </div>
+        </div>
+      </div>
+      <div class="person" id="Misha" style="display: none;">
+        <div class="person-image w3-animate-right">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/brady.jpg" alt="">
+          <div class="person-info">
+            <span class="person-name">Миша Гусак</span>
             <span class="person-role">Игрок</span>
             <span class="person-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda velit pariatur deserunt nam eveniet aliquid aliquam. Assumenda dolores voluptas dolorem, blanditiis rem eaque provident, porro facere impedit consectetur laudantium animi.</span>
           </div>
         </div>
+      </div>
+      <div class="person" id="Kolya" style="display: none;">
+        <div class="person-image w3-animate-right">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/mack.jpg" alt="">
+          <div class="person-info">
+            <span class="person-name">Коля Лесовой</span>
+            <span class="person-role">Игрок</span>
+            <span class="person-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda velit pariatur deserunt nam eveniet aliquid aliquam. Assumenda dolores voluptas dolorem, blanditiis rem eaque provident, porro facere impedit consectetur laudantium animi.</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
     </div>
     </div>
@@ -40,9 +60,32 @@
 
 
 </div>
+</div>
+<script>
+function openName(evt, personName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("person");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+
+  document.getElementById(personName).style.display = "block";
+  evt.currentTarget.className;
 
 
-<div class="container game-info">
+}
+</script>
+<script>
+  $(document).ready(function(){
+    $('.team-list').scroll(function(){
+        $("span").text( x+= 1);
+    });
+});
+
+</script>
+<?php get_footer(); ?>
+
+<!-- <div class="container game-info">
       <h2>Дивизион A</h2>
         <div class="row championship">
             <div class="col-md-1 game-date">
@@ -60,7 +103,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/les.png">
               <span>Lumberjacks (Uzhgorod)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
         </a>
     </div>
 
@@ -82,7 +125,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/bulgogs.png">
               <span>Bulldogs (Kiev)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
         </a>
     </div>
 
@@ -104,7 +147,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/jeps.png">
               <span>Gepardes (Yuzhny)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
         </a>
     </div>
 
@@ -126,7 +169,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/patrioty.png">
               <span>Patriots (Kiev)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
         </a>
     </div>
 
@@ -148,7 +191,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/slavs.png">
               <span>Slavs (Kiev)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
         </a>
     </div>
 
@@ -171,7 +214,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/mon.png">
               <span>Monarchs (Rovno)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
         </a>
     </div>
 
@@ -194,7 +237,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/vikings.png">
               <span>Vikings (Nikolaev)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
         </a>
     </div>
 
@@ -216,7 +259,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/eagles.png">
               <span>Eagles (Zdolbunov)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
         </a>
     </div>
 
@@ -238,7 +281,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/atlants.png">
               <span>Аtlantes (Kharkov)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
         </a>
     </div>
 
@@ -260,7 +303,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/tigers.png">
               <span>Tigers (Kharkov)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
         </a>
     </div>
 
@@ -282,7 +325,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/bandits.png">
               <span>Bandits (Kiev)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
         </a>
     </div>
 
@@ -304,7 +347,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/patrioty.png">
               <span>Patriots (Kiev)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
         </a>
     </div>
 
@@ -326,7 +369,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/tigers.png">
               <span>Tigers (Kharkov)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
         </a>
     </div>
 
@@ -348,7 +391,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/slavs.png">
               <span>Slavs (Kiev)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
         </a>
     </div>
 
@@ -370,7 +413,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/wolves.png">
               <span>Wolves (Vinnitsa)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
         </a>
     </div>
 
@@ -392,7 +435,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/pirates.png">
               <span>Pirates (Odessa)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
         </a>
     </div>
 
@@ -414,7 +457,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/zubr.jpg">
               <span>Bisons(Минск)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
         </a>
     </div>
 
@@ -436,7 +479,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/dolph.png">
               <span>Dolphins (Mariupol)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
         </a>
     </div>
 
@@ -458,7 +501,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/zubr.jpg">
               <span>Bisons(Minsk)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
         </a>
     </div>
 
@@ -480,7 +523,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/eagles.png">
               <span>Eagles (Zdolbunov)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
         </a>
     </div>
 
@@ -502,7 +545,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/wolves.png">
               <span>Wolves (Vinnitsa)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
         </a>
     </div>
 
@@ -524,7 +567,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/mon.png">
               <span>Monarchs (Rovno)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
         </a>
     </div>
 
@@ -546,7 +589,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/bandits.png">
               <span>Bandits (Kiev)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
         </a>
     </div>
 
@@ -568,7 +611,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/lions.png">
               <span>Lions (Lvov)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
         </a>
     </div>
 
@@ -590,7 +633,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/rockets.png">
               <span>Rockets (Dnepr)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
         </a>
     </div>
 
@@ -612,7 +655,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/jeps.png">
               <span>Gepardes (Yuzhny)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
         </a>
     </div>
 
@@ -634,7 +677,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/bulgogs.png">
               <span>Bulldogs (Kiev)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
         </a>
     </div>
 
@@ -657,7 +700,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/mon.png">
               <span>Monarchs (Rovno)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
         </a>
     </div>
 
@@ -680,7 +723,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/dzhokery.png">
               <span>Jokers (Kiev)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
         </a>
     </div>
 
@@ -702,7 +745,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/zubr.jpg">
               <span>Bisons(Minsk)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
     </a>
     </div>
 
@@ -724,7 +767,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/tigers.png">
               <span>Tigers (Kharkov)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
     </a>
     </div>
 
@@ -746,7 +789,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/dolph.png">
               <span>Dolphins (Mariupol)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
     </a>
     </div>
 
@@ -768,7 +811,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/lions.png">
               <span>Lions (Lvov)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
     </a>
     </div>
 
@@ -790,7 +833,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/bandits.png">
               <span>Bandits (Kiev)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
     </a>
     </div>
 
@@ -812,7 +855,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/dzhokery.png">
               <span>Jokers (Kiev)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
     </a>
     </div>
 
@@ -834,7 +877,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/glad.png">
               <span>Gladiators (Хмельницк.)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
     </a>
     </div>
 
@@ -856,7 +899,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/lions.png">
               <span>Lions (Lvov)</span>
             </div>
-    </div><!-- row championship -->
+    </div>row championship
   </a>
   </div>
 
@@ -880,7 +923,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/zubr.jpg">
               <span>Bisons(Minsk)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
     </a>
     </div>
 
@@ -902,7 +945,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/vikings.png">
               <span>Vikings (Nikolaev)</span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
     </a>
     </div>
 
@@ -924,7 +967,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/teams/pirates.png">
               <span>Pirates (Odessa) </span>
             </div>
-      </div><!-- row championship -->
+      </div>row championship
     </a>
     </div>
 
@@ -934,14 +977,14 @@
 
 
 
-    </article>
-  <?php endwhile; else: // If 404 page error ?>
-    <article>
+    </article> -->
+ <!--  <?php endwhile; else: // If 404 page error ?>
+   <article>
 
-      <h2 class="page-title inner-title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
+     <h2 class="page-title inner-title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
 
 
-    </article>
-  <?php endif; ?>
-<?php get_sidebar(); ?>
+   </article>
+ <?php endif; ?> -->
+
 

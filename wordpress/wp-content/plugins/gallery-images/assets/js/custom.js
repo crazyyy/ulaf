@@ -325,47 +325,100 @@ function galleryImgDislikeClick() {
     return false;
 }
 function galleryImglightboxInit() {
-    jQuery(".gallery-img-content a[href$='.jpg'], .gallery-img-content a[href$='.jpeg'], .gallery-img-content a[href$='.png'], .gallery-img-content a[href$='.gif']").addClass('gallery_group'+galleryId);
-    jQuery(".gallery_group"+galleryId).removeClass('cboxElement').removeClass('cboxElement').gicolorbox({rel: 'gallery_group'+galleryId});
-    jQuery(".giyoutube").removeClass('cboxElement').removeClass('cboxElement').gicolorbox({iframe: true, innerWidth: 640, innerHeight: 390});
-    jQuery(".givimeo").removeClass('cboxElement').removeClass('cboxElement').gicolorbox({iframe: true, innerWidth: 640, innerHeight: 390});
-    jQuery(".iframe").removeClass('cboxElement').removeClass('cboxElement').gicolorbox({iframe: true, width: "80%", height: "80%"});
-    jQuery(".inline").removeClass('cboxElement').removeClass('cboxElement').gicolorbox({inline: true, width: "50%"});
-    jQuery(".callbacks").removeClass('cboxElement').removeClass('cboxElement').gicolorbox({
-        onOpen: function () {
-            alert('onOpen: gicolorbox is about to open');
-        },
-        onLoad: function () {
-            alert('onLoad: gicolorbox has started to load the targeted content');
-        },
-        onComplete: function () {
-            alert('onComplete: gicolorbox has displayed the loaded content');
-        },
-        onCleanup: function () {
-            alert('onCleanup: gicolorbox has begun the close process');
-        },
-        onClosed: function () {
-            alert('onClosed: gicolorbox has completely closed');
-        }
-    });
+    if(galleryImgLigtboxType == 'old_type') {
+        jQuery(".gallery-img-content a[href$='.jpg'], .gallery-img-content a[href$='.jpeg'], .gallery-img-content a[href$='.png'], .gallery-img-content a[href$='.gif']").addClass('gallery_group' + galleryId);
+        jQuery(".gallery_group" + galleryId).removeClass('cboxElement').removeClass('cboxElement').gicolorbox({rel: 'gallery_group' + galleryId});
+        jQuery(".giyoutube").removeClass('cboxElement').removeClass('cboxElement').gicolorbox({
+            iframe: true,
+            innerWidth: 640,
+            innerHeight: 390
+        });
+        jQuery(".givimeo").removeClass('cboxElement').removeClass('cboxElement').gicolorbox({
+            iframe: true,
+            innerWidth: 640,
+            innerHeight: 390
+        });
+        jQuery(".iframe").removeClass('cboxElement').removeClass('cboxElement').gicolorbox({
+            iframe: true,
+            width: "80%",
+            height: "80%"
+        });
+        jQuery(".inline").removeClass('cboxElement').removeClass('cboxElement').gicolorbox({
+            inline: true,
+            width: "50%"
+        });
+        jQuery(".callbacks").removeClass('cboxElement').removeClass('cboxElement').gicolorbox({
+            onOpen: function () {
+                alert('onOpen: gicolorbox is about to open');
+            },
+            onLoad: function () {
+                alert('onLoad: gicolorbox has started to load the targeted content');
+            },
+            onComplete: function () {
+                alert('onComplete: gicolorbox has displayed the loaded content');
+            },
+            onCleanup: function () {
+                alert('onCleanup: gicolorbox has begun the close process');
+            },
+            onClosed: function () {
+                alert('onClosed: gicolorbox has completely closed');
+            }
+        });
 
-    /******************Clone bug update***************************/
-    var groups = galleryId;
-    var group_count_slider = 0;
-    var i = 1;
-    jQuery(".slider-content").each(function () {
-        group_count_slider++;
-    });
-    jQuery(".gallery_group" + i).removeClass('cboxElement').removeClass('cboxElement').gicolorbox({rel: 'gallery_group' + i});
-    for (var i = 1; i <= group_count_slider; i++) {
-        jQuery(".gallery_group_" + groups + "_" + i).removeClass('cboxElement').removeClass('cboxElement').gicolorbox({rel: 'gallery_group_' + groups + "_" + i});
-        jQuery(".g-main-slider .clone  a").removeClass();
+        /******************Clone bug update***************************/
+        var groups = galleryId;
+        var group_count_slider = 0;
+        var i = 1;
+        jQuery(".slider-content").each(function () {
+            group_count_slider++;
+        });
+        jQuery(".gallery_group" + i).removeClass('cboxElement').removeClass('cboxElement').gicolorbox({rel: 'gallery_group' + i});
+        for (var i = 1; i <= group_count_slider; i++) {
+            jQuery(".gallery_group_" + groups + "_" + i).removeClass('cboxElement').removeClass('cboxElement').gicolorbox({rel: 'gallery_group_' + groups + "_" + i});
+            jQuery(".g-main-slider .clone  a").removeClass();
+        }
+        jQuery('.non-retina').removeClass('cboxElement').removeClass('cboxElement').gicolorbox({
+            rel: 'group5',
+            transition: 'none'
+        })
+        jQuery('.retina').removeClass('cboxElement').removeClass('cboxElement').gicolorbox({
+            rel: 'group5',
+            transition: 'none',
+            retinaImage: true,
+            retinaUrl: true
+        });
     }
-    jQuery('.non-retina').removeClass('cboxElement').removeClass('cboxElement').gicolorbox({rel: 'group5', transition: 'none'})
-    jQuery('.retina').removeClass('cboxElement').removeClass('cboxElement').gicolorbox({rel: 'group5', transition: 'none', retinaImage: true, retinaUrl: true});
+    else if(galleryImgLigtboxType == 'new_type') {
+        var watermark_class='',imgsrc;
+        if(is_watermark){
+            watermark_class='watermark';
+        }
+
+        jQuery(".gallery-img-content a[href$='.jpg'], .gallery-img-content a[href$='.jpeg'], .gallery-img-content a[href$='.png'], .gallery-img-content a[href$='.gif']").addClass('gallery_responsive_lightbox');
+        jQuery(".gallery-img-content a.gallery_responsive_lightbox > img").addClass(watermark_class).attr('data-src', '');
+        jQuery(".gallery-img-content a.gallery_responsive_lightbox").each(function(){
+            imgsrc = jQuery(this).attr('href');
+            jQuery(this).find('img').attr('data-imgsrc', imgsrc);
+        });
+        jQuery(".gallery-img-content a.gallery_responsive_lightbox").lightbox();
+    }
 }
+
+
 jQuery(document).ready(function () {
+    
     jQuery('.gallery-img-content').on("click tap", '.huge_it_gallery_like_wrapper', galleryImgRatingClick);
     jQuery('.gallery-img-content').on("click tap", '.huge_it_gallery_dislike_wrapper', galleryImgDislikeClick);
     galleryImglightboxInit();
+
+    if(galleryImgDisableRightClick == 'on') {
+        jQuery('.gallery-img-content img').each(function () {
+            jQuery(this).bind('contextmenu', function () {
+                return false;
+            });
+        });
+        jQuery('#gicolorbox').bind('contextmenu', '#gicboxLoadedContent img', function () {
+            return false;
+        });
+    }
 });

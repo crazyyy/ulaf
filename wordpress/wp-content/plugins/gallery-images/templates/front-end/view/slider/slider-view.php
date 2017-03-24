@@ -471,9 +471,11 @@
 		});
 		huge_it_popup_resize_gallery_<?php echo $galleryID; ?>();
 		/* Disable right click.*/
+		<?php if( get_option( 'gallery_img_disable_right_click' ) == 'on' ): ?>
 		jQuery('div[id^="huge_it_container"]').bind("contextmenu", function () {
 			return false;
 		});
+		<?php endif; ?>
 		/*HOVER SLIDESHOW*/
 		jQuery("#huge_it_slideshow_image_container_gallery_<?php echo $galleryID; ?>, .huge_it_slideshow_image_container_gallery_<?php echo $galleryID; ?>, .huge_it_slideshow_dots_container_gallery_<?php echo $galleryID; ?>,#huge_it_slideshow_right_gallery_<?php echo $galleryID; ?>,#huge_it_slideshow_left_gallery_<?php echo $galleryID; ?>").hover(function(){
 			//errorlogjQuery(".huge_it_slideshow_image_wrap_gallery_<?php echo $galleryID; ?>").after(" -- hover -- <br /> ");

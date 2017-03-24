@@ -57,7 +57,7 @@
           a {
             line-height: 3.4;
 
-            padding: 10px 30px;
+            padding: 15px;
           }
         }
       }
@@ -276,8 +276,8 @@ td {
   height: 100%;
   margin-top: 55px;
   margin-bottom: 50px;
-  a {
-    display: block;
+  li {
+    cursor: pointer;
     float: left;
 
     box-sizing: border-box;
@@ -286,6 +286,9 @@ td {
     padding: 4px;
 
     border: 1px solid transparent;
+    &:before{
+      background-color: #d9d9d9;
+    }
     &:hover,
     &.active {
       border: 1px solid #fff;
@@ -326,7 +329,7 @@ td {
     /* bottom: 0px; */
 
     background-color: rgba(32,22,0,.5);
-    bottom: 0;
+    bottom: -5px;
     color:#fff;
     .person-name{
       float: left;
@@ -402,4 +405,15 @@ float: left;
 .fotorama{
   width: auto;
 
+}
+.home{
+  padding-bottom: 0;
+}
+.logo-main{
+  img{
+
+    height: 95px;
+    margin-top: 22px;
+    margin-left: 25px;
+  }
 }

@@ -1,12 +1,12 @@
 === Gallery ===
 Contributors: Huge-IT
-Donate link: http://huge-it.com/wordpress-gallery/
+Donate link: https://huge-it.com/wordpress-gallery/
 Tags: gallery, image gallery, gallery image, lightbox gallery, wordpress gallery, photo gallery, content gallery, media gallery, youtube gallery, images gallery, responsive gallery, thumbnail gallery,
 Requires at least: 3.0.1
-Tested up to: 4.7.1
-Stable tag: 2.1.2
+Tested up to: 4.7.3
+Stable tag: 2.1.4
 License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Gallery image is the best gallery plugin to use if you want to be original with your website. Responsive image gallery with many views.
 
@@ -16,11 +16,12 @@ Gallery image is the best gallery plugin to use if you want to be original with 
 
 = Gallery Image is one of the easiest plugins to use, even if you are new in WordPress. =
 
-* [Wordpress Image Gallery](http://huge-it.com/wordpress-gallery/)
-* [Demo Image Gallery](http://huge-it.com/wordpress-plugins-gallery-demo/)
-* [FAQ Image Gallery](http://huge-it.com/wordpress-gallery-faq/)
-* [User Manual Image Gallery](http://huge-it.com/wordpress-gallery-user-manual/)
-* [Image Gallery Support](http://huge-it.com/contact-us/)
+* [Wordpress Image Gallery](https://huge-it.com/wordpress-gallery/)
+* [Demo Image Gallery](https://huge-it.com/wordpress-plugins-gallery-demo/)
+* [FAQ Image Gallery](https://huge-it.com/wordpress-gallery-faq/)
+* [User Manual Image Gallery](https://huge-it.com/wordpress-gallery-user-manual/)
+* [Image Gallery Support](https://huge-it.com/contact-us/)
+* [Image Gallery Forum](https://huge-it.com/forums/forum/wordpress/wordpress-gallery/)
 * [Image Gallery Github Project](https://github.com/Huge-IT/gallery-images)
 
 https://www.youtube.com/watch?v=fNz0hW01k3k
@@ -258,27 +259,27 @@ As the gallery doesn't show any description.
 
 > #### Demos
 >
->[Gallery /Content Popup](http://huge-it.com/wordpress-plugins-gallery-demo/#plugin_demo_wrapper)
+>[Gallery /Content Popup](https://huge-it.com/wordpress-plugins-gallery-demo/#plugin_demo_wrapper)
 >
->[Content Slider](http://huge-it.com/wordpress-gallery-demo-2-content-slider/#plugin_demo_wrapper)
+>[Content Slider](https://huge-it.com/wordpress-gallery-demo-2-content-slider/#plugin_demo_wrapper)
 >
->[Lightbox Gallery](http://huge-it.com/wordpress-gallery-demo-3-lightbox-gallery/#plugin_demo_wrapper)
+>[Lightbox Gallery](https://huge-it.com/wordpress-gallery-demo-3-lightbox-gallery/#plugin_demo_wrapper)
 >
->[Slider](http://huge-it.com/wordpress-gallery-demo-4-slideshow/#plugin_demo_wrapper)
+>[Slider](https://huge-it.com/wordpress-gallery-demo-4-slideshow/#plugin_demo_wrapper)
 >
->[Thumbnails Gallery](http://huge-it.com/wordpress-gallery-demo-5-thumbnails/#plugin_demo_wrapper)
+>[Thumbnails Gallery](https://huge-it.com/wordpress-gallery-demo-5-thumbnails/#plugin_demo_wrapper)
 >
->[Justified Gallery](http://huge-it.com/wordpress-gallery-demo-6-justified-gallery/#plugin_demo_wrapper)
+>[Justified Gallery](https://huge-it.com/wordpress-gallery-demo-6-justified-gallery/#plugin_demo_wrapper)
 >
->[Blog Style Gallery](http://huge-it.com/wordpress-gallery-demo-7-blog-style-view/#plugin_demo_wrapper)
+>[Blog Style Gallery](https://huge-it.com/wordpress-gallery-demo-7-blog-style-view/#plugin_demo_wrapper)
 
 > #### FAQ & User Manual
 >
->[FAQ](http://huge-it.com/wordpress-gallery-faq/)
+>[FAQ](https://huge-it.com/wordpress-gallery-faq/)
 >
->[User Manual](http://huge-it.com/wordpress-gallery-user-manual/)
+>[User Manual](https://huge-it.com/wordpress-gallery-user-manual/)
 
-If you think, that you found a bug in our [WordPress Image Gallery](http://huge-it.com/wordpress-gallery/) plugin or have any question contact us at [info@huge-it.com](mailto:info@huge-it.com)
+If you think, that you found a bug in our [WordPress Image Gallery](https://huge-it.com/wordpress-gallery/) plugin or have any question contact us at [info@huge-it.com](mailto:info@huge-it.com)
 
 == Installation ==
 
@@ -310,26 +311,26 @@ If you think, that you found a bug in our [WordPress Image Gallery](http://huge-
 
 Now you can set your Image Gallery options, images and use our Image Gallery.
 
-If you think, that you found a bug in our [WordPress Image Gallery](http://huge-it.com/wordpress-gallery/) plugin or have any question contact us at [info@huge-it.com](mailto:info@huge-it.com)
+If you think, that you found a bug in our [WordPress Image Gallery](https://huge-it.com/wordpress-gallery/) plugin or have any question contact us at [info@huge-it.com](mailto:info@huge-it.com)
 
 == Screenshots ==
     
-1.  [WordPress Image Gallery view 1](http://huge-it.com/wordpress-plugins-gallery-demo/#plugin_demo_wrapper) - Gallery / Content Popup
-2.  [WordPress Image Gallery view 2](http://huge-it.com/wordpress-gallery-demo-2-content-slider/#plugin_demo_wrapper) - Content Slider
-3.  [WordPress Image Gallery view 3](http://huge-it.com/wordpress-gallery-demo-3-lightbox-gallery/#plugin_demo_wrapper) - Lightbox Gallery
-4.  [WordPress Image Gallery view 4](http://huge-it.com/wordpress-gallery-demo-4-slideshow/#plugin_demo_wrapper) - Slider
-5.  [WordPress Image Gallery view 5](http://huge-it.com/wordpress-gallery-demo-5-thumbnails/#plugin_demo_wrapper) - Thumbnails
-51.  [WordPress Image Gallery view 6](http://huge-it.com/wordpress-gallery-demo-6-justified-gallery/#plugin_demo_wrapper) - Justified Gallery
-52.  [WordPress Image Gallery view 7](http://huge-it.com/wordpress-gallery-demo-7-blog-style-view/#plugin_demo_wrapper) - Blog Style View
-7.  [WordPress Image Gallery](http://wordpress.org/plugins/gallery-images/) - Image Gallery admin page  
-72.  [WordPress Image Gallery](http://wordpress.org/plugins/gallery-images/) - Image Gallery uploader
-73.  [WordPress Image Gallery](http://wordpress.org/plugins/gallery-images/) - Image Gallery General options
-74.  [WordPress Image Gallery](http://wordpress.org/plugins/gallery-images/) - Image Gallery General options Lightbox gallery
-75.  [WordPress Image Gallery](http://wordpress.org/plugins/gallery-images/) - Image Gallery add widget
-76.  [WordPress Image Gallery](http://wordpress.org/plugins/gallery-images/) - Image Gallery General options
-77.  [WordPress Image Gallery](http://wordpress.org/plugins/gallery-images/) - Image Gallery Lightbox options
-78.  [WordPress Image Gallery](http://wordpress.org/plugins/gallery-images/) - Image Gallery General options
-79.  [WordPress Image Gallery](http://wordpress.org/plugins/gallery-images/) - Image Gallery General options Content Slider
+1.  [WordPress Image Gallery view 1](https://huge-it.com/wordpress-plugins-gallery-demo/#plugin_demo_wrapper) - Gallery / Content Popup
+2.  [WordPress Image Gallery view 2](https://huge-it.com/wordpress-gallery-demo-2-content-slider/#plugin_demo_wrapper) - Content Slider
+3.  [WordPress Image Gallery view 3](https://huge-it.com/wordpress-gallery-demo-3-lightbox-gallery/#plugin_demo_wrapper) - Lightbox Gallery
+4.  [WordPress Image Gallery view 4](https://huge-it.com/wordpress-gallery-demo-4-slideshow/#plugin_demo_wrapper) - Slider
+5.  [WordPress Image Gallery view 5](https://huge-it.com/wordpress-gallery-demo-5-thumbnails/#plugin_demo_wrapper) - Thumbnails
+51.  [WordPress Image Gallery view 6](https://huge-it.com/wordpress-gallery-demo-6-justified-gallery/#plugin_demo_wrapper) - Justified Gallery
+52.  [WordPress Image Gallery view 7](https://huge-it.com/wordpress-gallery-demo-7-blog-style-view/#plugin_demo_wrapper) - Blog Style View
+7.  [WordPress Image Gallery](https://wordpress.org/plugins/gallery-images/) - Image Gallery admin page  
+72.  [WordPress Image Gallery](https://wordpress.org/plugins/gallery-images/) - Image Gallery uploader
+73.  [WordPress Image Gallery](https://wordpress.org/plugins/gallery-images/) - Image Gallery General options
+74.  [WordPress Image Gallery](https://wordpress.org/plugins/gallery-images/) - Image Gallery General options Lightbox gallery
+75.  [WordPress Image Gallery](https://wordpress.org/plugins/gallery-images/) - Image Gallery add widget
+76.  [WordPress Image Gallery](https://wordpress.org/plugins/gallery-images/) - Image Gallery General options
+77.  [WordPress Image Gallery](https://wordpress.org/plugins/gallery-images/) - Image Gallery Lightbox options
+78.  [WordPress Image Gallery](https://wordpress.org/plugins/gallery-images/) - Image Gallery General options
+79.  [WordPress Image Gallery](https://wordpress.org/plugins/gallery-images/) - Image Gallery General options Content Slider
 
 == Frequently Asked Questions ==
 
@@ -345,7 +346,7 @@ If you think, that you found a bug in our [WordPress Image Gallery](http://huge-
  
 = Where to find functionality details? =
  
-*  All details, including demonstration and description you can find here [Gallery details,](http://huge-it.com/wordpress-gallery/)
+*  All details, including demonstration and description you can find here [Gallery details,](https://huge-it.com/wordpress-gallery/)
  
  
 = Is there some limits for adding images? =
@@ -526,7 +527,7 @@ In both cases contact **[info@huge-it.com](mailto:info@huge-it.com)**
 *  Plugin has pagination function, you can easily select how many images to show per page.
 
 
-If you think, that you found a bug in our [WordPress Image Gallery](http://huge-it.com/wordpress-gallery/) plugin or have any question contact us at [info@huge-it.com](mailto:info@huge-it.com).
+If you think, that you found a bug in our [WordPress Image Gallery](https://huge-it.com/wordpress-gallery/) plugin or have any question contact us at [info@huge-it.com](mailto:info@huge-it.com).
 
 == Other Notes ==
 
@@ -552,7 +553,7 @@ Usage:
 * Shortcode: find a shortcode of your Image Gallery Copy and Paste the shortcode in your WordPress posts. Or add this code automatically, when posting your Image Gallery there is a button  Add Gallery pressing on it the shortcode inserts into your post.
 * Template Include: This code made to be inserted into your template, it makes the inserting Image Gallery easy for using in a custom location within the theme. 
 
-**Upgrade to [WordPress Image Gallery Pro](http://huge-it.com/wordpress-gallery/) to add some features:**
+**Upgrade to [WordPress Image Gallery Pro](https://huge-it.com/wordpress-gallery/) to add some features:**
 
 ### Step 2. General Options
 
@@ -884,6 +885,12 @@ The commercial version users can do unlimited customization, if your images/vide
 
 
 == Changelog ==
+
+= 2.1.4 =
+* We have optimized the front end of the Gallery by moving the lazy CSS from templates. This will help with SEO and page load.
+
+= 2.1.3 =
+* 1) We have added a new option called Image Protection, disabling image save.
 
 = 2.1.2 =
 * 1) Added auto-loader

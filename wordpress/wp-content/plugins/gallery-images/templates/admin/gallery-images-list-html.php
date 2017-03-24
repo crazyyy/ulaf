@@ -249,155 +249,46 @@ if ( isset( $_GET['id'] ) && $_GET['id'] != '' ) {
 											value="10"><?php echo __( 'Elastic Grid', 'gallery-img' ); ?></option>
 									</select>
 								</li>
-								<div id="gallery-current-options-0"
-								     class="gallery-current-options <?php if ( $row->huge_it_sl_effects == 0 ) {
-									     echo ' active';
-								     } ?>">
-									<ul id="view7">
 
-										<li>
-											<label
-												for="display_type"><?php echo __( 'Displaying Content', 'gallery-images' ); ?></label>
-											<select id="display_type" name="display_type">
+                                <li id="gallery-current-options-0"
+                                     class="gallery-current-options  <?php
 
-												<option <?php if ( $row->display_type == 0 ) {
-													echo 'selected';
-												} ?>
-													value="0"><?php echo __( 'Pagination', 'gallery-images' ); ?></option>
-												<option <?php if ( $row->display_type == 1 ) {
-													echo 'selected';
-												} ?>
-													value="1"><?php echo __( 'Load More', 'gallery-images' ); ?></option>
-												<option <?php if ( $row->display_type == 2 ) {
-													echo 'selected';
-												} ?>
-													value="2"><?php echo __( 'Show All', 'gallery-images' ); ?></option>
+                                     if ( !($row->huge_it_sl_effects == 1) && !($row->huge_it_sl_effects == 3) ) {
+                                         echo ' active';
+                                     } ?>">
+                                    <ul id="view7">
+                                        <li>
+                                            <label
+                                                    for="display_type"><?php echo __( 'Displaying Content', 'gallery-img' ); ?></label>
+                                            <select id="display_type" name="display_type">
 
-											</select>
-										</li>
-										<li id="content_per_page">
-											<label
-												for="content_per_page"><?php echo __( 'Images Per Page', 'gallery-images' ); ?></label>
-											<input type="text" name="content_per_page" id="content_per_page"
-											       value="<?php echo esc_attr( $row->content_per_page ); ?>"
-											       class="text_area"/>
-										</li>
-
-
-									</ul>
-								</div>
-								<div id="gallery-current-options-5"
-								     class="gallery-current-options <?php if ( $row->huge_it_sl_effects == 5 ) {
-									     echo ' active';
-								     } ?>">
-									<ul id="view7">
-
-										<li>
-											<label
-												for="display_type"><?php echo __( 'Displaying Content', 'gallery-images' ); ?></label>
-											<select id="display_type" name="display_type">
-
-												<option <?php if ( $row->display_type == 0 ) {
-													echo 'selected';
-												} ?>
-													value="0"><?php echo __( 'Pagination', 'gallery-images' ); ?></option>
-												<option <?php if ( $row->display_type == 1 ) {
-													echo 'selected';
-												} ?>
-													value="1"><?php echo __( 'Load More', 'gallery-images' ); ?></option>
-												<option <?php if ( $row->display_type == 2 ) {
-													echo 'selected';
-												} ?>
-													value="2"><?php echo __( 'Show All', 'gallery-images' ); ?></option>
-
-											</select>
-										</li>
-										<li id="content_per_page">
-											<label
-												for="content_per_page"><?php echo __( 'Images Per Page', 'gallery-images' ); ?></label>
-											<input type="text" name="content_per_page" id="content_per_page"
-											       value="<?php echo esc_attr( $row->content_per_page ); ?>"
-											       class="text_area"/>
-										</li>
+                                                <option <?php if ( $row->display_type == 0 ) {
+                                                    echo 'selected';
+                                                } ?>
+                                                        value="0"><?php echo __( 'Pagination', 'gallery-img' ); ?></option>
+                                                <option <?php if ( $row->display_type == 1 ) {
+                                                    echo 'selected';
+                                                } ?>
+                                                        value="1"><?php echo __( 'Load More', 'gallery-img' ); ?></option>
+                                                <option <?php if ( $row->display_type == 2 ) {
+                                                    echo 'selected';
+                                                } ?>
+                                                        value="2"><?php echo __( 'Show All', 'gallery-img' ); ?></option>
+                                            </select>
+                                        </li>
+                                        <li id="content_per_page_li">
+                                            <label
+                                                    for="content_per_page"><?php echo __( 'Images Per Page', 'gallery-img' ); ?></label>
+                                            <input type="text" name="content_per_page" id="content_per_page"
+                                                   value="<?php echo esc_attr( $row->content_per_page ); ?>"
+                                                   class="text_area"/>
+                                        </li>
 
 
-									</ul>
-								</div>
-								<div id="gallery-current-options-4"
-								     class="gallery-current-options <?php if ( $row->huge_it_sl_effects == 4 ) {
-									     echo ' active';
-								     } ?>">
-									<ul id="view7">
+                                    </ul>
+                                </li>
 
-										<li>
-											<label
-												for="display_type"><?php echo __( 'Displaying Content', 'gallery-images' ); ?></label>
-											<select id="display_type" name="display_type">
-
-												<option <?php if ( $row->display_type == 0 ) {
-													echo 'selected';
-												} ?>
-													value="0"><?php echo __( 'Pagination', 'gallery-images' ); ?></option>
-												<option <?php if ( $row->display_type == 1 ) {
-													echo 'selected';
-												} ?>
-													value="1"><?php echo __( 'Load More', 'gallery-images' ); ?></option>
-												<option <?php if ( $row->display_type == 2 ) {
-													echo 'selected';
-												} ?>
-													value="2"><?php echo __( 'Show All', 'gallery-images' ); ?></option>
-
-											</select>
-										</li>
-										<li id="content_per_page">
-											<label
-												for="content_per_page"><?php echo __( 'Images Per Page', 'gallery-images' ); ?></label>
-											<input type="text" name="content_per_page" id="content_per_page"
-											       value="<?php echo esc_attr( $row->content_per_page ); ?>"
-											       class="text_area"/>
-										</li>
-
-
-									</ul>
-								</div>
-								<div id="gallery-current-options-6"
-								     class="gallery-current-options <?php if ( $row->huge_it_sl_effects == 6 ) {
-									     echo ' active';
-								     } ?>">
-									<ul id="view7">
-
-										<li>
-											<label
-												for="display_type"><?php echo __( 'Displaying Content', 'gallery-images' ); ?></label>
-											<select id="display_type" name="display_type">
-
-												<option <?php if ( $row->display_type == 0 ) {
-													echo 'selected';
-												} ?>
-													value="0"><?php echo __( 'Pagination', 'gallery-images' ); ?></option>
-												<option <?php if ( $row->display_type == 1 ) {
-													echo 'selected';
-												} ?>
-													value="1"><?php echo __( 'Load More', 'gallery-images' ); ?></option>
-												<option <?php if ( $row->display_type == 2 ) {
-													echo 'selected';
-												} ?>
-													value="2"><?php echo __( 'Show All', 'gallery-images' ); ?></option>
-
-											</select>
-										</li>
-										<li id="content_per_page">
-											<label
-												for="content_per_page"><?php echo __( 'Images Per Page', 'gallery-images' ); ?></label>
-											<input type="text" name="content_per_page" id="content_per_page"
-											       value="<?php echo esc_attr( $row->content_per_page ); ?>"
-											       class="text_area"/>
-										</li>
-
-
-									</ul>
-								</div>
-								<div id="gallery-current-options-3"
+								<li id="gallery-current-options-3"
 								     class="gallery-current-options <?php if ( $row->huge_it_sl_effects == 3 ) {
 									     echo ' active';
 								     } ?>">
@@ -499,44 +390,8 @@ if ( isset( $_GET['id'] ) && $_GET['id'] != '' ) {
 											</select>
 										</li>
 									</ul>
-								</div>
-								<div id="gallery-current-options-7"
-								     class="gallery-current-options <?php if ( $row->huge_it_sl_effects == 7 ) {
-									     echo ' active';
-								     } ?>">
-									<ul id="view7">
+								</li>
 
-										<li>
-											<label
-												for="display_type"><?php echo __( 'Displaying Content', 'gallery-images' ); ?></label>
-											<select id="display_type" name="display_type">
-
-												<option <?php if ( $row->display_type == 0 ) {
-													echo 'selected';
-												} ?>
-													value="0"><?php echo __( 'Pagination', 'gallery-images' ); ?></option>
-												<option <?php if ( $row->display_type == 1 ) {
-													echo 'selected';
-												} ?>
-													value="1"><?php echo __( 'Load More', 'gallery-images' ); ?></option>
-												<option <?php if ( $row->display_type == 2 ) {
-													echo 'selected';
-												} ?>
-													value="2"><?php echo __( 'Show All', 'gallery-images' ); ?></option>
-
-											</select>
-										</li>
-										<li id="content_per_page">
-											<label
-												for="content_per_page"><?php echo __( 'Images Per Page', 'gallery-images' ); ?></label>
-											<input type="text" name="content_per_page" id="content_per_page"
-											       value="<?php echo esc_attr( $row->content_per_page ); ?>"
-											       class="text_area"/>
-										</li>
-
-
-									</ul>
-								</div>
 								<div id="gallery-current-options-1"
 								     class="gallery-current-options <?php if ( $row->huge_it_sl_effects == 1 ) {
 									     echo ' active';
@@ -553,37 +408,7 @@ if ( isset( $_GET['id'] ) && $_GET['id'] != '' ) {
 										</li>
 									</ul>
 								</div>
-								<div id="gallery-current-options-10"
-									 class="gallery-current-options <?php if ( $row->huge_it_sl_effects == 10 ) {
-										 echo ' active';
-									 } ?>">
-									<ul id="view10">
 
-										<li>
-											<label
-												for="display_type"><?php echo __( 'Displaying Content', 'gallery-img' ); ?></label>
-											<select id="display_type" name="display_type">
-
-												<option <?php if ( $row->display_type == 0 ) {
-													echo 'selected';
-												} ?>
-													value="0"><?php echo __( 'Pagination', 'gallery-img' ); ?></option>
-												<option <?php if ( $row->display_type == 2 ) {
-													echo 'selected';
-												} ?>
-													value="2"><?php echo __( 'Show All', 'gallery-img' ); ?></option>
-
-											</select>
-										</li>
-										<li id="content_per_page">
-											<label
-												for="content_per_page"><?php echo __( 'Images Per Page', 'gallery-img' ); ?></label>
-											<input type="text" name="content_per_page" id="content_per_page"
-												   value="<?php echo esc_attr( $row->content_per_page ); ?>"
-												   class="text_area"/>
-										</li>
-									</ul>
-								</div>
 								<li class="for_slider">
 									<label
 										for="pause_on_hover"><?php echo __( 'Pause on hover', 'gallery-images' ); ?></label>
@@ -606,21 +431,36 @@ if ( isset( $_GET['id'] ) && $_GET['id'] != '' ) {
 									       value="<?php echo esc_html( stripslashes( $row->param ) ); ?>"
 									       class="text_area"/>
 								</li>
-								<li>
-									<label for="rating"><?php echo __( 'Ratings', 'gallery-images' ); ?></label>
-									<select id="rating" name="rating">
+                                    <ul id="rating_inp">
+                                        <li  >
+                                            <label for="rating"><?php echo __( 'Ratings', 'gallery-img' ); ?></label>
+                                            <select id="rating" name="rating">
 
-										<option <?php if ( $row->rating == 'off' ) {
+                                                <option <?php if ( $row->rating == 'off' ) {
+                                                    echo 'selected';
+                                                } ?> value="off"><?php echo __( 'Off', 'gallery-img' ); ?></option>
+                                                <option <?php if ( $row->rating == 'dislike' ) {
+                                                    echo 'selected';
+                                                } ?>
+                                                        value="dislike"><?php echo __( 'Like/Dislike', 'gallery-img' ); ?></option>
+                                                <option <?php if ( $row->rating == 'heart' ) {
+                                                    echo 'selected';
+                                                } ?> value="heart"><?php echo __( 'Heart', 'gallery-img' ); ?></option>
+
+                                            </select>
+                                        </li>
+                                    </ul>
+								<li>
+									<label for="disable_right_click"><?php echo __( 'Disable Image Right Click', 'gallery-img' ); ?></label>
+									<select id="disable_right_click" name="disable_right_click">
+
+										<option <?php if ( get_option( 'gallery_img_disable_right_click' ) == 'on' ) {
 											echo 'selected';
-										} ?> value="off"><?php echo __( 'Off', 'gallery-images' ); ?></option>
-										<option <?php if ( $row->rating == 'dislike' ) {
+										} ?> value="on"><?php echo __( 'On', 'gallery-img' ); ?></option>
+										<option <?php if ( get_option( 'gallery_img_disable_right_click' ) == 'off' ) {
 											echo 'selected';
 										} ?>
-											value="dislike"><?php echo __( 'Like/Dislike', 'gallery-images' ); ?></option>
-										<option <?php if ( $row->rating == 'heart' ) {
-											echo 'selected';
-										} ?> value="heart"><?php echo __( 'Heart', 'gallery-images' ); ?></option>
-
+											value="off"><?php echo __( 'Off', 'gallery-img' ); ?></option>
 									</select>
 								</li>
 							</ul>

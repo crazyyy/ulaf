@@ -1107,24 +1107,9 @@
 	<?php
 	$a = $disp_type;
 	if ( $a == 1 ) {
-		$protocol                    = stripos( $_SERVER['SERVER_PROTOCOL'], 'https' ) === true ? 'https://' : 'http://';
-		$actual_link                 = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] . "";
-		$pattern                     = "/\?p=/";
-		$pattern2                    = "/&page-img[0-9]+=[0-9]+/";
-		$pattern3                    = "/\?page-img[0-9]+=[0-9]+/";
-		$gallery_img_blog_load_nonce = wp_create_nonce( 'gallery_img_blog_load_nonce' );
-		if ( preg_match( $pattern, $actual_link ) ) {
-			if ( preg_match( $pattern2, $actual_link ) ) {
-				$actual_link = preg_replace( $pattern2, '', $actual_link );
-				header( "Location:" . $actual_link . "" );
-				exit;
-			}
-		} elseif ( preg_match( $pattern3, $actual_link ) ) {
-			$actual_link = preg_replace( $pattern3, '', $actual_link );
-			header( "Location:" . $actual_link . "" );
-			exit;
-		}
-		?>
+        $gallery_img_blog_load_nonce = wp_create_nonce( 'gallery_img_blog_load_nonce' );
+
+        ?>
 		<div class="load_more">
 			<div class="load_more_button"
 			     data-blog-nonce-value="<?php echo $gallery_img_blog_load_nonce; ?>"><?= $gallery_default_params['gallery_img_video_ht_view9_loadmore_text']; ?></div>

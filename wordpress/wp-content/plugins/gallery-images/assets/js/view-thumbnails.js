@@ -99,9 +99,11 @@ function Gallery_Img_Thumbnails(id) {
     _this.init = function () {
         _this.documentReady();
         _this.addEventListeners();
-        if (param_obj.gallery_img_image_natural_size_thumbnail == 'natural') {
-            _this.naturalImageThumb();
-        }
+        jQuery(window).load(function () {
+            if (param_obj.gallery_img_image_natural_size_thumbnail == 'natural') {
+                _this.naturalImageThumb();
+            }
+        });
     };
     this.init();
 }
