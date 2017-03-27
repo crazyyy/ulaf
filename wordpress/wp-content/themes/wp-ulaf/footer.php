@@ -10,7 +10,7 @@
                   <div class="widget-title">
                     <h6>О нас</h6></div>
                   <div class="textwidget">
-                    <div class="stm-text-lighten">IFAF is composed of 103 members nations on six continents (North and South America, Europe, Asia, Africa and Oceania), all of which possess national federations dedicated solely to American football.</div>
+                    <div class="stm-text-lighten">Миссия Украинской лиги Американского футбола - это Популяризация Американского футбола в Украине, оздоровление нации, популяризация здорового образа жизни, а также повышение рейтинга нашей страны на международной арене.</div>
                   </div>
                 </div>
               </aside>
@@ -19,14 +19,14 @@
                   <div class="widget-title">
                     <h6>Последние новости</h6></div>
                   <ul>
+                   <?php query_posts("showposts=2"); ?>
+                   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                     <li>
-                      <a href="http://www.ifaf.info/ifaf/ifaf-took-part-wadas-webinar/">IFAF Took Part in WADA’s Webinar</a>
-                      <span class="post-date">February 1, 2017</span>
+                      <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                      <span class="post-date"><?php the_time('m-d-Y'); ?></span>
                     </li>
-                    <li>
-                      <a href="http://www.ifaf.info/ifaf/2017-ifaf-beach-football-world-championship/">The IFAF Beach Football World Championship from 2nd to 5th November 2017</a>
-                      <span class="post-date">January 27, 2017</span>
-                    </li>
+                    <?php endwhile; endif; ?>
+                    <?php wp_reset_query(); ?>
                   </ul>
                 </div>
               </aside>
@@ -36,14 +36,14 @@
                     <h6>Ссылки</h6></div>
                   <div class="menu-widget-menu-container">
                     <ul id="menu-widget-menu" class="menu">
-                      <li id="menu-item-2703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-84 current_page_item menu-item-2703"><a href="http://www.ifaf.info/">Главная</a></li>
-                      <li id="menu-item-2710" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2710"><a href="http://www.ifaf.info/news/">Новости</a></li>
-                      <li id="menu-item-2707" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2707"><a href="http://www.ifaf.info/federations/">Команды</a></li>
-                      <li id="menu-item-2704" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2704"><a href="http://www.ifaf.info/competitions/">Друзья и партнеры</a></li>
-                      <li id="menu-item-2709" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2709"><a href="http://www.ifaf.info/media/">Медиа</a></li>
-                      <li id="menu-item-2706" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2706"><a href="http://www.ifaf.info/documents/">Сборная</a></li>
-                      <li id="menu-item-2708" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2708"><a href="http://www.ifaf.info/ifaf-who-we-are/">О нас</a></li>
-                      <li id="menu-item-2705" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2705"><a href="http://www.ifaf.info/contact-us/">Контакты</a></li>
+                      <li id="menu-item-2703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-84 current_page_item menu-item-2703"><a href="<?php the_permalink(); ?>">Главная</a></li>
+                      <li id="menu-item-2710" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2710"><a href="<?php the_permalink(); ?>">Новости</a></li>
+                      <li id="menu-item-2707" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2707"><a href="<?php the_permalink(); ?>">Команды</a></li>
+                      <li id="menu-item-2704" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2704"><a href="<?php the_permalink(); ?>">Друзья и партнеры</a></li>
+                      <li id="menu-item-2709" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2709"><a href="<?php the_permalink(); ?>">Медиа</a></li>
+                      <li id="menu-item-2706" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2706"><a href="<?php the_permalink(); ?>">Сборная</a></li>
+                      <li id="menu-item-2708" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2708"><a href="<?php the_permalink(); ?>">О нас</a></li>
+                      <li id="menu-item-2705" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2705"><a href="<?php the_permalink(); ?>">Контакты</a></li>
                     </ul>
                   </div>
                 </div>
@@ -55,11 +55,11 @@
                   <ul class="stm-list-duty heading-font">
                     <li class="widget_contacts_address">
                       <div class="icon"><i class="fa fa-map-marker"></i></div>
-                      <div class="text">Киев,ул.Рандомная 109<div>
+                      <div class="text">Ukraine, Kyiv — 04201, st. Kondratuka, 7, office 712<div>
                     </li>
                     <li class="widget_contacts_phone">
                       <div class="icon"><i class="fa fa-phone"></i></div>
-                      <div class="text">+33 (0) 1 43 11 14 70</div>
+                      <div class="text">+38 097 111 51 21</div>
                     </li>
                     <li>
                       <div class="icon"><i class="fa fa-fax"></i></div>
@@ -67,7 +67,7 @@
                     </li>
                     <li class="widget_contacts_mail">
                       <div class="icon"><i class="fa fa-envelope"></i></div>
-                      <div class="text"><a href="mailto:info@ifaf.info">ulaf@bigmir.net</a></div>
+                      <div class="text"><a href="mailto:info@ulafua.com">info@ulafua.com</a></div>
                     </li>
                   </ul>
                 </div>

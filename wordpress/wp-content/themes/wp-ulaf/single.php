@@ -62,43 +62,25 @@
 
                 <aside id="stm_recent_posts-2" class="widget widget-default widget_stm_recent_posts">
                   <div class="widget-title">
-                    <h4>Latest news</h4></div>
+                    <h4>Последние новости</h4></div>
+                  <?php query_posts("showposts=3"); ?>
+                  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                   <div class="widget_media clearfix">
-                    <a href="http://www.ifaf.info/competitions/official-logo-beach-football-world-championship/">
+                    <a href="<?php the_permalink(); ?>">
                       <div class="image">
-                        <img width="150" height="150" src="img/2017-beach-football-world-championship-logo-150x150.jpg" class="img-responsive wp-post-image" alt="beach football world championship" srcset="http://www.ifaf.info/wp-content/uploads/2017/02/2017-beach-football-world-championship-logo-150x150.jpg 150w, http://www.ifaf.info/wp-content/uploads/2017/02/2017-beach-football-world-championship-logo-200x200.jpg 200w" sizes="(max-width: 150px) 100vw, 150px"> </div>
+                       <?php if ( has_post_thumbnail()) : the_post_thumbnail('medium'); else: ?>
+                        <img width="150" height="150" src="<?php echo catchFirstImage(); ?>" class="img-responsive wp-post-image" alt="<?php the_title(); ?>" sizes="(max-width: 150px) 100vw, 150px">
+                        <?php endif; ?> </div>
                       <div class="stm-post-content">
                         <div class="date heading-font">
-                          February 18, 2017 </div>
-                        <span class="h5">The Official Logo of the Beach Football World Championship Revealed</span>
+                          <?php the_time('m-d-Y'); ?> </div>
+                        <span class="h5"><?php the_title(); ?></span>
                       </div>
                     </a>
                   </div>
-                  <div class="clearfix"></div>
-                  <div class="widget_media clearfix">
-                    <a href="http://www.ifaf.info/ifaf/ifaf-took-part-wadas-webinar/">
-                      <div class="image">
-                        <img width="150" height="150" src="img/wada-play-true1-150x150.jpg" class="img-responsive wp-post-image" alt="Webinar" srcset="http://www.ifaf.info/wp-content/uploads/2017/02/wada-play-true1-150x150.jpg 150w, http://www.ifaf.info/wp-content/uploads/2017/02/wada-play-true1-200x200.jpg 200w" sizes="(max-width: 150px) 100vw, 150px"> </div>
-                      <div class="stm-post-content">
-                        <div class="date heading-font">
-                          February 1, 2017 </div>
-                        <span class="h5">IFAF Took Part in WADA’s Webinar</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="clearfix"></div>
-                  <div class="widget_media clearfix">
-                    <a href="http://www.ifaf.info/ifaf/2017-ifaf-beach-football-world-championship/">
-                      <div class="image">
-                        <img width="150" height="150" src="img/AlbahriFahadAsianBeachGamesDay1MVu_O23c-Krl-150x150.jpg" class="img-responsive wp-post-image" alt="IFAF Beach Football World Championship" srcset="http://www.ifaf.info/wp-content/uploads/2017/01/AlbahriFahadAsianBeachGamesDay1MVu_O23c-Krl-150x150.jpg 150w, http://www.ifaf.info/wp-content/uploads/2017/01/AlbahriFahadAsianBeachGamesDay1MVu_O23c-Krl-200x200.jpg 200w" sizes="(max-width: 150px) 100vw, 150px"> </div>
-                      <div class="stm-post-content">
-                        <div class="date heading-font">
-                          January 27, 2017 </div>
-                        <span class="h5">The IFAF Beach Football World Championship from 2nd to 5th November 2017</span>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="clearfix"></div>
+                  <?php endwhile; endif; ?>
+                  <?php wp_reset_query(); ?>
+
                 </aside>
               </div>
             </div>
