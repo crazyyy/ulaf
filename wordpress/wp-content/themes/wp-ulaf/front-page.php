@@ -142,13 +142,13 @@
 
 <div class="container">
         <div class="row slider">
-          <div class="slide col-md-12">
+          <div class="slide col-md-12 col-sm-12">
             <img src="<?php echo get_template_directory_uri(); ?>/img/FISU.png" alt="">
           </div>
-          <div class="slide col-md-12">
+          <div class="slide col-md-12 col-sm-12">
             <img src="<?php echo get_template_directory_uri(); ?>/img/FISU.png" alt="">
           </div>
-          <div class="slide col-md-12">
+          <div class="slide col-md-12 col-sm-12">
             <img src="<?php echo get_template_directory_uri(); ?>/img/ifaf-news.jpg" alt="">
           </div>
         </div>

@@ -12,17 +12,17 @@
 
     <div class="col-md-5 left-bg-block ">
           <div class="team-sign">
-            Наша Команда
+            <?php the_title(); ?>
           </div>
           <ul class="team-list" style="overflow-y:auto; height: 325px;">
-            <li class="tablink" onclick="openName(event, 'Maxim')"><span>Максим Шило</span></li>
+            <li class="tablink" style="display: block;" onclick="openName(event, 'Maxim')"><span>Максим Шило</span></li>
             <li class="tablink" onclick="openName(event, 'Misha')"><span>Миша Гусак</span></li>
             <li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li>
             <li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li>
           </ul>
     </div>
     <div class="col-md-7 right-bg-block">
-      <div class="person" id="Maxim" style="display: none;">
+      <div class="person" id="Maxim" style="display: block;">
         <div class="person-image w3-animate-right">
           <img src="<?php echo get_template_directory_uri(); ?>/img/landry1.jpg" alt="">
           <div class="person-info">
@@ -78,7 +78,6 @@ function openName(evt, personName) {
 <script>
   $(document).ready(function(){
     $('.team-list').scroll(function(){
-        $("span").text( x+= 1);
     });
 });
 

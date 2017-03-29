@@ -11,7 +11,7 @@
                 <ul>
                   <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
                     <li>
-                      <a href="<?php echo get_permalink( $p->ID ); ?>">
+                      <a href="<?php echo get_permalink( $p->ID ); ?>" class="photo-title">
                         <?php echo get_the_title( $p->ID ); ?>
                         <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $p->ID, "medium" ) ); ?>" alt="">
                       </a>
@@ -23,6 +23,7 @@
           </div>
         </div>
       </div>
+    </div>
     </article>
   <?php endwhile; endif; ?>
 <?php get_footer(); ?>

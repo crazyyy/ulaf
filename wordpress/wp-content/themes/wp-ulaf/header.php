@@ -9,9 +9,9 @@
   <meta name="msapplication-TileImage" content="http://www.ifaf.info/wp-content/uploads/2016/10/cropped-IFAF-LOGO-512-1-270x270.png">
   <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="http://www.ifaf.info/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]-->
   <!--[if IE  8]><link rel="stylesheet" type="text/css" href="http://www.ifaf.info/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css" media="screen"><![endif]-->
-  <link rel="icon" href="http://www.ifaf.info/wp-content/uploads/2016/10/cropped-IFAF-LOGO-512-1-32x32.png" sizes="32x32">
-  <link rel="icon" href="http://www.ifaf.info/wp-content/uploads/2016/10/cropped-IFAF-LOGO-512-1-192x192.png" sizes="192x192">
-  <link rel="apple-touch-icon-precomposed" href="http://www.ifaf.info/wp-content/uploads/2016/10/cropped-IFAF-LOGO-512-1-180x180.png">
+  <link rel="icon" href="<?php echo get_template_directory_uri(); ?>favicon.ico" sizes="32x32">
+  <link rel="icon" href="<?php echo get_template_directory_uri(); ?>favicon.ico" sizes="192x192">
+  <link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>favicon.ico">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css" type="text/css" media="all">
   <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">

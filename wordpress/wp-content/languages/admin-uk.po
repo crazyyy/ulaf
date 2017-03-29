@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the WordPress - 4.7.x - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-01-27 19:24:08+0000\n"
+"PO-Revision-Date: 2017-03-15 23:17:29+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: GlotPress/2.3.0\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: uk_UA\n"
 "Project-Id-Version: WordPress - 4.7.x - Administration\n"
 
@@ -26,143 +26,143 @@ msgctxt "start of week"
 msgid "1"
 msgstr "1"
 
-#: wp-admin/about.php:228
+#: wp-admin/about.php:232
 msgid "Customize changesets make changes in the customizer persistent, like autosave drafts. They also make exciting new features like starter content possible."
 msgstr "Набори змін для інтерфейсу налаштування фіксують зміни в ньому, також як автозбереження чернеток. Вони також роблять можливими такі чудові особливості як початковий вміст."
 
-#: wp-admin/about.php:227
+#: wp-admin/about.php:231
 msgid "Customize Changesets"
 msgstr "Набори змін інтерфейсу налаштування"
 
 #. translators: 1: register_setting(), 2:
 #. https://make.wordpress.org/core/2016/10/26/registering-your-settings-in-wordpress-4-7/
-#: wp-admin/about.php:220
+#: wp-admin/about.php:224
 msgid "%1$s <a href=\"%2$s\">has been enhanced</a> to include type, description, and REST API visibility."
 msgstr "%1$s <a href=\"%2$s\">була поліпшена</a> щоб включати тип, опис, і видимість для REST API."
 
-#: wp-admin/about.php:216
+#: wp-admin/about.php:220
 msgid "Settings Registration API"
 msgstr "API реєстрації налаштувань"
 
 #. translators: %s:
 #. https://make.wordpress.org/core/2016/09/08/wp_hook-next-generation-actions-and-filters/
-#: wp-admin/about.php:210
+#: wp-admin/about.php:214
 msgid "The code that lies beneath actions and filters has been overhauled and modernized, fixing bugs along the way."
 msgstr "Код відповідальний за дії та фільтри був переглянутий і модернізований, по шляху виправлені помилки."
 
-#: wp-admin/about.php:200
+#: wp-admin/about.php:204
 msgid "List tables, now with more than bulk edit and delete."
 msgstr "Список таблиць, тепер не тільки з масовим зміненням і видаленням."
 
-#: wp-admin/about.php:199
+#: wp-admin/about.php:203
 msgid "Custom Bulk Actions"
 msgstr "Довільні множинні дії"
 
 #. translators: %s:
 #. https://make.wordpress.org/core/2016/09/09/new-functions-hooks-and-behaviour-for-theme-developers-in-wordpress-4-7/
-#: wp-admin/about.php:193
+#: wp-admin/about.php:197
 msgid "WordPress 4.7 includes <a href=\"%s\">new functions, hooks, and behavior</a> for theme developers."
 msgstr "WordPress 4.7 включає <a href=\"%s\"> нові функції, хуки і поведінку</a> для розробників тем."
 
-#: wp-admin/about.php:189
+#: wp-admin/about.php:193
 msgid "More Theme API Goodies"
 msgstr "Ще більше хорошого в API тем"
 
-#: wp-admin/about.php:186
+#: wp-admin/about.php:190
 msgid "By opening up the page template functionality to all post types, theme developers have even more flexibility with the WordPress template hierarchy."
 msgstr "Відкривши функціональність шаблонів сторінок для всіх типів записів, у розробників тем тепер є ще більше гнучкості з ієрархією шаблонів WordPress."
 
-#: wp-admin/about.php:185
+#: wp-admin/about.php:189
 msgid "Post Type Templates"
 msgstr "Шаблони типів записів"
 
 #. translators: %s: smiling face with smiling eyes emoji
-#: wp-admin/about.php:178
+#: wp-admin/about.php:182
 msgid "Even More Developer Happiness %s"
 msgstr "Ще більше щастя розробникам %s"
 
 #. translators: %s: https://developer.wordpress.org/rest-api/
-#: wp-admin/about.php:166
+#: wp-admin/about.php:170
 msgid "Content endpoints provide machine-readable external access to your WordPress site with a clear, standards-driven interface, paving the way for new and innovative methods of interacting with sites through plugins, themes, apps, and beyond. Ready to get started with development? <a href=\"%s\">Check out the REST API reference.</a>"
 msgstr "Кінцеві точки API надають машинозчитуваний зовнішній доступ до вашого сайту WordPress використовуючи чіткий, зроблений за стандартами інтерфейс, прокладаючи шлях для нових та інноваційних методів взаємодії з сайтами через плагіни, теми, додатки та інше. Готові почати розробку? <a href=\"%s\">Подивіться документацію по REST API.</a>"
 
-#: wp-admin/about.php:161
+#: wp-admin/about.php:165
 msgid "WordPress 4.7 comes with REST API endpoints for posts, comments, terms, users, meta, and settings."
 msgstr "WordPress 4.7 поставляється з REST API кінцевими точками для записів, коментарів, елементів, користувачів, мета і налаштувань."
 
-#: wp-admin/about.php:160
+#: wp-admin/about.php:164
 msgid "Introducing REST API Content Endpoints"
 msgstr "Представляємо REST API кінцеві точки для вмісту"
 
-#: wp-admin/about.php:153
+#: wp-admin/about.php:157
 msgid "Just because your site is in one language doesn&#8217;t mean that everybody helping manage it prefers that language for their admin. Add more languages to your site and a user language option will show up in your user&#8217;s profiles."
 msgstr "Тільки тому, що ваш сайт зроблений на одній мові, зовсім не означає що всі, хто управляє ним, бажають цю ж мову в майстерні. Додайте більше мов на ваш сайт і можливості вибору з'являться в профілях користувачів."
 
-#: wp-admin/about.php:151
+#: wp-admin/about.php:155
 msgid "Dashboard in your language"
 msgstr "Майстерня на вашій мові"
 
-#: wp-admin/about.php:148
+#: wp-admin/about.php:152
 msgid "Managing your document collection is easier with WordPress 4.7. Uploading PDFs will generate thumbnail images so you can more easily distinguish between all your documents."
 msgstr "Керувати вашої колекцією документів стало простіше з WordPress 4.7. Для завантажуваних PDF файлів будуть генеруватися мініатюри, так що вам буде простіше розрізняти ваші документи."
 
-#: wp-admin/about.php:146
+#: wp-admin/about.php:150
 msgid "PDF Thumbnail Previews"
 msgstr "Попередній перегляд мініатюр PDF"
 
-#: wp-admin/about.php:138
+#: wp-admin/about.php:142
 msgid "Sometimes you just need a few visual tweaks to make your site perfect. WordPress 4.7 allows you to add custom CSS and instantly see how your changes affect your site. The live preview allows you to work quickly without page refreshes slowing you down."
 msgstr "Іноді вам потрібно лише кілька візуальних налаштувань щоб зробити ваш сайт досконалим. WordPress 4.7 дозволяє додавати довільну CSS і відразу ж бачити як ці зміни вплинуть на сайт. Живий перегляд дозволяє працювати швидко і не уповільнює вас необхідністю оновлення сторінки."
 
-#: wp-admin/about.php:133
+#: wp-admin/about.php:137
 msgid "Many menus for sites contain links to the pages of your site, but what happens when you don&#8217;t have any pages yet? Now you can add new pages while building menus instead of leaving the customizer and abandoning your changes. Once you&#8217;ve published your customizations, you&#8217;ll have new pages ready for you to fill with content."
 msgstr "Багато меню для сайтів містять посилання на сторінки сайту, але що буде якщо у вас поки немає ніяких сторінок? Тепер можна створювати нові сторінки під час побудови меню, замість того щоб виходити з інтерфейсу налаштування і скасовувати зміни. Як тільки ви опублікуєте ваші налаштування, нові сторінки будуть готові до їх наповнення змістом."
 
-#: wp-admin/about.php:131
+#: wp-admin/about.php:135
 msgid "Smoother Menu Building"
 msgstr "Плавне створення меню"
 
-#: wp-admin/about.php:125
+#: wp-admin/about.php:129
 msgid "Sometimes a big atmospheric video as a moving header image is just what you need to showcase your wares; go ahead and try it out with Twenty Seventeen. Need some video inspiration? Try searching for sites with video headers available for download and use."
 msgstr "Іноді велике атмосферне відео у вигляді рухомого зображення заголовка це те, що вам потрібно для презентації свого товару; так давайте, спробуйте це з Twenty Seventeen! Шукаєте натхнення? Пошукайте сайти з доступними для завантаження і використання відеозаголовками."
 
-#: wp-admin/about.php:115
+#: wp-admin/about.php:119
 msgid "Video Headers"
 msgstr "Відео заголовки"
 
-#: wp-admin/about.php:112
+#: wp-admin/about.php:116
 msgid "Visible icons appear to show you which parts of your site can be customized while live previewing. Click on a shortcut and get straight to editing. Paired with starter content, getting started with customizing your site is faster than ever."
 msgstr "Видимі значки з'явилися на тих місцях сайту, які можуть бути налаштовані в режимі живого попереднього перегляду. Натисніть на ярлик і прямо перейдете до редагування. Разом з початковим вмістом почати з налаштуванням вашого сайту тепер ще швидше ніж будь-коли."
 
-#: wp-admin/about.php:102
+#: wp-admin/about.php:106
 msgid "Edit Shortcuts"
 msgstr "Ярлики редагування"
 
-#: wp-admin/about.php:85
+#: wp-admin/about.php:89
 msgid "To help give you a solid base to build from, individual themes can provide starter content that appears when you go to customize your brand new site. This can range from placing a business information widget in the best location to providing a sample menu with social icon links to a static front page complete with beautiful images. Don&#8217;t worry - nothing new will appear on the live site until you&#8217;re ready to save and publish your initial theme setup."
 msgstr "Щоб дати вам тверду основу для побудови, окремі теми можуть надавати початковий вміст який з'являється під час налаштування вашого нового сайту. Це може варіювати від віджета з діловою інформацією в кращому місці, меню з значками соціальних мереж і аж до статичної головної сторінки наповненою гарними зображеннями. Не турбуйтеся, нічого нового не з'явиться на сайті до тих пір, поки ви не будете готові зберегти і опублікувати початкові налаштування теми."
 
-#: wp-admin/about.php:84
+#: wp-admin/about.php:88
 msgid "Theme Starter Content"
 msgstr "Початкові представлення теми"
 
-#: wp-admin/about.php:79
+#: wp-admin/about.php:83
 msgid "WordPress 4.7 adds new features to the customizer to help take you through the initial setup of a theme, with non-destructive live previews of all your changes in one uninterrupted workflow."
 msgstr "WordPress 4.7 додає нові особливості в інтерфейс налаштування, полегшуючи початкову установку теми недеструктивним переглядом всіх ваших змін в єдиному безперервному робочому процесі."
 
-#: wp-admin/about.php:78
+#: wp-admin/about.php:82
 msgid "Your Site, Your Way"
 msgstr "Ваш сайт - Ваш шлях"
 
-#: wp-admin/about.php:72
+#: wp-admin/about.php:76
 msgid "Twenty Seventeen focuses on business sites and features a customizable front page with multiple sections. Personalize it with widgets, navigation, social menus, a logo, custom colors, and more. Our default theme for 2017 works great in many languages, on any device, and for a wide range of users."
 msgstr "Twenty Seventeen призначена для ділових сайтів представляє настроювану головну сторінку з множинними розділами. Налаштуйте її віджетами, навігацією, соціальним меню, логотипом, довільними кольорами і не тільки. Наша тема для 2017 відмінно підходить для багатьох мов, будь-яких пристроїв і широкого кола користувачів."
 
-#: wp-admin/about.php:66
+#: wp-admin/about.php:70
 msgid "A brand new default theme brings your site to life with immersive featured images and video headers."
 msgstr "Повністю нова тема за замовчуванням пожвавить ваш сайт завдяки захоплюючим зображенням та відео заголовкам."
 
-#: wp-admin/about.php:65
+#: wp-admin/about.php:69
 msgid "Presenting Twenty Seventeen"
 msgstr "Представляємо Twenty Seventeen"
 
@@ -273,7 +273,7 @@ msgstr "Вибачте, Ви не дозволено робити вкладен
 
 #: wp-admin/freedoms.php:45 wp-admin/includes/plugin-install.php:235
 #: wp-admin/includes/plugin-install.php:599 wp-admin/plugin-install.php:82
-#: wp-admin/plugins.php:392
+#: wp-admin/plugins.php:400
 msgid "https://wordpress.org/plugins/"
 msgstr "https://uk.wordpress.org/plugins/"
 
@@ -312,7 +312,7 @@ msgstr "Оригінальний розмір"
 #: wp-admin/options-media.php:35 wp-admin/options-permalink.php:46
 #: wp-admin/options-reading.php:39 wp-admin/options-writing.php:46
 #: wp-admin/plugin-editor.php:157 wp-admin/plugin-install.php:99
-#: wp-admin/plugins.php:410 wp-admin/revision.php:121
+#: wp-admin/plugins.php:418 wp-admin/revision.php:121
 #: wp-admin/theme-editor.php:43 wp-admin/theme-install.php:115
 #: wp-admin/themes.php:119 wp-admin/tools.php:29 wp-admin/update-core.php:576
 #: wp-admin/upload.php:67 wp-admin/upload.php:211 wp-admin/user-edit.php:56
@@ -411,7 +411,7 @@ msgctxt "plugin"
 msgid "%s was successfully deleted."
 msgstr "%s успішно видалено."
 
-#: wp-admin/plugins.php:388
+#: wp-admin/plugins.php:396
 msgid "The search for installed plugins will search for terms in their name, description, or author."
 msgstr "Пошук встановлених плагінів буде шукати збіги в назві, описі, та авторі."
 
@@ -915,13 +915,13 @@ msgid "The name of the database you want to use with WordPress."
 msgstr "Назва бази даних, яку ви хочете використовувати з WordPress."
 
 #. translators: 1: plugin name, 2: plugin author
-#: wp-admin/plugins.php:310
+#: wp-admin/plugins.php:318
 msgctxt "plugin"
 msgid "%1$s by %2$s"
 msgstr "%1$s від %2$s"
 
 #. translators: 1: plugin name, 2: plugin author
-#: wp-admin/plugins.php:306
+#: wp-admin/plugins.php:314
 msgid "%1$s by %2$s (will also <strong>delete its data</strong>)"
 msgstr "%1$s від %2$s (також <strong>видаляться його дані</strong>)"
 
@@ -935,7 +935,7 @@ msgstr "Універсальний час (%1$s) — %2$s."
 msgid "There is a pending change of the admin email to %s."
 msgstr "Очікує зміна e-mail адреси адміністратора на %s."
 
-#: wp-admin/install.php:390
+#: wp-admin/install.php:376
 msgid "WordPress has been installed. Thank you, and enjoy!"
 msgstr "WordPress встановлено. Насолоджуйтесь!"
 
@@ -1235,7 +1235,7 @@ msgid "Welcome to %s. This is your first post. Edit or delete it, then start blo
 msgstr "Ласкаво просимо до %s. Це ваш перший запис. Відредагуйте чи видаліть його, та починайте вести блог!"
 
 #. translators: %s: WordPress version number
-#: wp-admin/about.php:263
+#: wp-admin/about.php:267
 msgid "<strong>Version %s</strong> addressed one security issue."
 msgstr "У <strong>версії %s</strong> виправлено одну проблему безпеки."
 
@@ -1252,15 +1252,15 @@ msgstr "Ви можете змінити забраження свого обл�
 msgid "Profile Picture"
 msgstr "Зображення облікового запису"
 
-#: wp-admin/about.php:47 wp-admin/about.php:260
+#: wp-admin/about.php:47 wp-admin/about.php:264
 msgid "Maintenance and Security Releases"
 msgstr "Випуски обслуговування та безпеки"
 
-#: wp-admin/about.php:257
+#: wp-admin/about.php:261
 msgid "Security Releases"
 msgstr "Випуски безпеки"
 
-#: wp-admin/about.php:254
+#: wp-admin/about.php:258
 msgid "Maintenance Releases"
 msgstr "Випуски обслуговування"
 
@@ -1460,23 +1460,23 @@ msgstr "Фільтрувати список тем"
 msgid "%s files"
 msgstr "файли %s"
 
-#: wp-admin/plugins.php:490
+#: wp-admin/plugins.php:498
 msgid "All selected plugins are up to date."
 msgstr "Всі обрані плагіни оновлені."
 
-#: wp-admin/plugins.php:473
+#: wp-admin/plugins.php:481
 msgid "The selected plugin has been <strong>deleted</strong>."
 msgstr "Обраний плагін <strong>видалено</strong>."
 
-#: wp-admin/plugin-install.php:105 wp-admin/plugins.php:416
+#: wp-admin/plugin-install.php:105 wp-admin/plugins.php:424
 msgid "Plugins list"
 msgstr "Список плагінів"
 
-#: wp-admin/plugin-install.php:104 wp-admin/plugins.php:415
+#: wp-admin/plugin-install.php:104 wp-admin/plugins.php:423
 msgid "Plugins list navigation"
 msgstr "Навігація по списку плагінів"
 
-#: wp-admin/plugin-install.php:103 wp-admin/plugins.php:414
+#: wp-admin/plugin-install.php:103 wp-admin/plugins.php:422
 msgid "Filter plugins list"
 msgstr "Фільтрувати список плагінів"
 
@@ -1656,7 +1656,7 @@ msgstr "Навігація по списку елементів"
 msgid "Filter items list"
 msgstr "Фільтрувати список елементів"
 
-#: wp-admin/includes/class-wp-press-this.php:1521
+#: wp-admin/includes/class-wp-press-this.php:1526
 msgid "Saving&hellip;"
 msgstr "Збереження&hellip;"
 
@@ -1705,9 +1705,9 @@ msgstr[2] "Спам <span class=\"count\">(%s)</span>"
 msgctxt "comments"
 msgid "Approved <span class=\"count\">(%s)</span>"
 msgid_plural "Approved <span class=\"count\">(%s)</span>"
-msgstr[0] "Одобрено <span class=\"count\">(%s)</span>"
-msgstr[1] "Одобрено <span class=\"count\">(%s)</span>"
-msgstr[2] "Одобрено <span class=\"count\">(%s)</span>"
+msgstr[0] "Схвалено <span class=\"count\">(%s)</span>"
+msgstr[1] "Схвалено <span class=\"count\">(%s)</span>"
+msgstr[2] "Схвалено <span class=\"count\">(%s)</span>"
 
 #. translators: %s: pending comments count
 #: wp-admin/includes/class-wp-comments-list-table.php:214
@@ -1821,7 +1821,7 @@ msgstr "У колонці <strong>Відправлено</strong> відобра
 
 #: wp-admin/edit-comments.php:173
 msgid "In the <strong>Comment</strong> column, hovering over any comment gives you options to approve, reply (and approve), quick edit, edit, spam mark, or trash that comment."
-msgstr "У колонці <strong>Коментар</strong>, наведення на будь-який коментар дає вам можливість одобрити, відповісти (та одобрити), швидко редагувати, редагувати, позначити як спам, або перемістити до кошика цей коментар."
+msgstr "У колонці <strong>Коментар</strong>, наведення на будь-який коментар дає вам можливість схвалити, відповісти (та схвалити), швидко редагувати, редагувати, позначити як спам, або перемістити до кошика цей коментар."
 
 #. translators: 1: comments count 2: post title
 #: wp-admin/edit-comments.php:137
@@ -1888,7 +1888,7 @@ msgstr "Вам буде потрібен цей пароль, щоб увійт�
 
 #: wp-admin/includes/class-wp-list-table.php:672
 msgid "No approved comments"
-msgstr "Немає одобрених коментарів"
+msgstr "Немає схвалених коментарів"
 
 #: wp-admin/includes/class-wp-list-table.php:660
 #: wp-admin/includes/class-wp-list-table.php:672
@@ -1906,9 +1906,9 @@ msgstr[2] "%s коментарів очікують"
 #: wp-admin/includes/class-wp-list-table.php:654
 msgid "%s approved comment"
 msgid_plural "%s approved comments"
-msgstr[0] "%s одобрений коментар"
-msgstr[1] "%s одобрені коментарі"
-msgstr[2] "%s одобрених коментарів"
+msgstr[0] "%s схвалений коментар"
+msgstr[1] "%s схвалені коментарі"
+msgstr[2] "%s схвалених коментарів"
 
 #: wp-admin/includes/class-wp-list-table.php:653
 msgid "%s comment"
@@ -1955,7 +1955,7 @@ msgstr[2] "%s записів цього автора"
 msgid "Live Preview &#8220;%s&#8221;"
 msgstr "Попередній перегляд &#8220;%s&#8221;"
 
-#: wp-admin/includes/class-wp-press-this.php:1524
+#: wp-admin/includes/class-wp-press-this.php:1529
 msgid "More actions"
 msgstr "Інші дії"
 
@@ -2205,7 +2205,7 @@ msgstr "<a href=\"https://codex.wordpress.org/Editing_Files\">Документа
 msgid "<a href=\"https://codex.wordpress.org/Template_Tags\">Documentation on Template Tags</a>"
 msgstr "<a href=\"https://codex.wordpress.org/Template_Tags\">Документація по позначкам шаблонів</a>"
 
-#: wp-admin/plugins.php:409
+#: wp-admin/plugins.php:417
 msgid "<a href=\"https://codex.wordpress.org/Managing_Plugins#Plugin_Management\">Documentation on Managing Plugins</a>"
 msgstr "<a href=\"https://codex.wordpress.org/Managing_Plugins#Plugin_Management\">Документація з управління плагінами</a>"
 
@@ -2284,7 +2284,7 @@ msgstr "https://codex.wordpress.org/Introduction_to_Blogging#Managing_Comments"
 msgid "The <a href=\"https://codex.wordpress.org/Glossary#Character_set\">character encoding</a> of your site (UTF-8 is recommended)"
 msgstr "<a href=\"https://codex.wordpress.org/Glossary#Character_set\">Кодування</a> вашого сайту (рекомендовано UTF-8)"
 
-#: wp-admin/includes/class-wp-press-this.php:1529
+#: wp-admin/includes/class-wp-press-this.php:1534
 msgid "Standard Editor"
 msgstr "Стандартний редактор"
 
@@ -2385,7 +2385,7 @@ msgstr "1 запис не оновлений, хтось його редагує
 msgid "1 page not updated, somebody is editing it."
 msgstr "1 сторінка не оновлена, хтось її редагує."
 
-#: wp-admin/plugins.php:296
+#: wp-admin/plugins.php:304
 msgid "These plugins may be active on other sites in the network."
 msgstr "Ці плагіни можуть використовуватися на інших сайтах мережі."
 
@@ -2398,15 +2398,15 @@ msgstr[0] "%s елемент"
 msgstr[1] "%s елементи"
 msgstr[2] "%s елементів"
 
-#: wp-admin/plugins.php:298
+#: wp-admin/plugins.php:306
 msgid "You are about to remove the following plugins:"
 msgstr "Ви збираєтеся видалити наступні плагіни:"
 
-#: wp-admin/plugins.php:294
+#: wp-admin/plugins.php:302
 msgid "Delete Plugins"
 msgstr "Видалити плагіни"
 
-#: wp-admin/includes/class-wp-press-this.php:1363
+#: wp-admin/includes/class-wp-press-this.php:1367
 msgid "Hide post options"
 msgstr "Сховати параметри запису"
 
@@ -2540,59 +2540,59 @@ msgstr "Ця категорія не може бути додана. Будь л
 msgid "Error while adding the category. Please try again later."
 msgstr "Помилка при додаванні категорії. Будь ласка, спробуйте пізніше."
 
-#: wp-admin/includes/class-wp-press-this.php:883
+#: wp-admin/includes/class-wp-press-this.php:887
 msgid "Toggle add category"
 msgstr "Перемикач додавання категорій"
 
-#: wp-admin/includes/class-wp-press-this.php:908
+#: wp-admin/includes/class-wp-press-this.php:912
 msgid "Search categories by name"
 msgstr "Шукати категорії за іменем"
 
-#: wp-admin/includes/class-wp-press-this.php:910
+#: wp-admin/includes/class-wp-press-this.php:914
 msgid "Search categories"
 msgstr "Шукати категорії"
 
-#: wp-admin/includes/class-wp-press-this.php:1162
+#: wp-admin/includes/class-wp-press-this.php:1166
 msgctxt "Used in Press This to indicate where the content comes from."
 msgid "Source:"
 msgstr "Джерело:"
 
-#: wp-admin/includes/class-wp-press-this.php:1361
+#: wp-admin/includes/class-wp-press-this.php:1365
 msgid "Show post options"
 msgstr "Показати параметри запису"
 
-#: wp-admin/includes/class-wp-press-this.php:1268
+#: wp-admin/includes/class-wp-press-this.php:1272
 msgid "Press This!"
 msgstr "Press This!"
 
-#: wp-admin/includes/class-wp-press-this.php:1369
+#: wp-admin/includes/class-wp-press-this.php:1373
 msgid "Scan site for content"
 msgstr "Сканувати контент на сайті"
 
-#: wp-admin/includes/class-wp-press-this.php:1370
+#: wp-admin/includes/class-wp-press-this.php:1374
 msgid "Enter a URL to scan"
 msgstr "Ввести посилання (URL) для сканування"
 
-#: wp-admin/includes/class-wp-press-this.php:1371
+#: wp-admin/includes/class-wp-press-this.php:1375
 msgid "Scan"
 msgstr "Сканувати"
 
-#: wp-admin/includes/class-wp-press-this.php:1397
+#: wp-admin/includes/class-wp-press-this.php:1402
 msgid "You should upgrade <a href=\"%s\" target=\"_blank\">your bookmarklet</a> to the latest version!"
 msgstr "Ви маєте оновити <a href=\"%s\" target=\"_blank\">ваш букмарклет</a> до останньої версії!"
 
-#: wp-admin/includes/class-wp-press-this.php:1406
-#: wp-admin/includes/class-wp-press-this.php:1407
+#: wp-admin/includes/class-wp-press-this.php:1411
+#: wp-admin/includes/class-wp-press-this.php:1412
 msgid "Post title"
 msgstr "Заголовок запису"
 
-#: wp-admin/includes/class-wp-press-this.php:1411
+#: wp-admin/includes/class-wp-press-this.php:1416
 msgid "Suggested media"
 msgstr "Пропоновані медіа"
 
-#: wp-admin/includes/class-wp-press-this.php:1478
-#: wp-admin/includes/class-wp-press-this.php:1489
-#: wp-admin/includes/class-wp-press-this.php:1500
+#: wp-admin/includes/class-wp-press-this.php:1483
+#: wp-admin/includes/class-wp-press-this.php:1494
+#: wp-admin/includes/class-wp-press-this.php:1505
 msgid "Back to post options"
 msgstr "Повернутися до налаштування записів"
 
@@ -3732,7 +3732,7 @@ msgstr "Розміри, перераховані нижче, визначают�
 
 #: wp-admin/options-discussion.php:145
 msgid "Comment must be manually approved"
-msgstr "Коментар мусить бути одобрений вручну"
+msgstr "Коментар мусить бути схвалений вручну"
 
 #: wp-admin/nav-menus.php:545
 msgid "<strong>Clicking the arrow to the right of any menu item</strong> in the editor will reveal a standard group of settings. Additional settings such as link target, CSS classes, link relationships, and link descriptions can be enabled and disabled via the Screen Options tab."
@@ -3748,19 +3748,19 @@ msgstr "Меню можуть відображатися в областях, п
 msgid "Your theme does not natively support menus, but you can use them in sidebars by adding a &#8220;Custom Menu&#8221; widget on the <a href=\"%s\">Widgets</a> screen."
 msgstr "Ваша тема не підтримує довільні меню, однак ви можете використовувати їх в бічних колонках, додавши туди віджет &laquo;Довільне меню&raquo; на екрані <a href=\"%s\">&laquo;Віджети&raquo;</a>."
 
-#: wp-admin/install.php:369
+#: wp-admin/install.php:365
 msgid "Sorry, that isn&#8217;t a valid email address. Email addresses look like <code>username@example.com</code>."
 msgstr "Вибачте, це некоректне адресу e-mail. Приклад адреси:<code>username@example.com</code>."
 
-#: wp-admin/install.php:364
+#: wp-admin/install.php:361
 msgid "You must provide an email address."
 msgstr "Ви повинні ввести адресу e-mail."
 
-#: wp-admin/install.php:359
+#: wp-admin/install.php:357
 msgid "Your passwords do not match. Please try again."
 msgstr "Паролі не збігаються. Будь ласка, спробуйте ще раз."
 
-#: wp-admin/install.php:354
+#: wp-admin/install.php:353
 msgid "The username you provided has invalid characters."
 msgstr "Введене ім'я користувача містить некоректні символи."
 
@@ -4443,7 +4443,7 @@ msgstr "Посилання на файл:"
 
 #: wp-admin/edit-comments.php:174
 msgid "In the <strong>In Response To</strong> column, there are three elements. The text is the name of the post that inspired the comment, and links to the post editor for that entry. The View Post link leads to that post on your live site. The small bubble with the number in it shows the number of approved comments that post has received. If there are pending comments, a red notification circle with the number of pending comments is displayed. Clicking the notification circle will filter the comments screen to show only pending comments on that post."
-msgstr "У колонці <strong>\"У відповідь на\"</strong> містяться три елементи. Текст - це назва запису, до якого був залишений коментар, і посилання на редагування цього запису. Посилання \"Переглянути запис\" веде до цього запису на зовнішній частині сайту. Маленька бульбашка з номером показує кількість одобрених коментарів цього запису. Якщо є коментарі в очікуванні, відображається червоний кружечок сповіщення з кількістю коментарів в очікуванні. Натиснувши на кружечок сповіщення, можна побачити коментарі в очікуванні, залишені тільки до цього запису."
+msgstr "У колонці <strong>\"У відповідь на\"</strong> містяться три елементи. Текст - це назва запису, до якого був залишений коментар, і посилання на редагування цього запису. Посилання \"Переглянути запис\" веде до цього запису на зовнішній частині сайту. Маленька бульбашка з номером показує кількість схвалених коментарів цього запису. Якщо є коментарі в очікуванні, відображається червоний кружечок сповіщення з кількістю коментарів в очікуванні. Натиснувши на кружечок сповіщення, можна побачити коментарі в очікуванні, залишені тільки до цього запису."
 
 #. translators: 1: user id, 2: user login
 #: wp-admin/users.php:382
@@ -5288,7 +5288,7 @@ msgstr "Щоби дозволити використання цієї сторі
 
 #: wp-admin/includes/class-wp-comments-list-table.php:187
 msgid "No comments awaiting moderation."
-msgstr "Немає коментарів, що чекають на одобрення."
+msgstr "Немає коментарів, що чекають на схвалення."
 
 #: wp-admin/includes/plugin-install.php:492
 msgctxt "Plugin installer section title"
@@ -5341,7 +5341,7 @@ msgstr "Ви можете експортувати файл із вмістом 
 msgid "New users will receive an email letting them know they&#8217;ve been added as a user for your site. This email will also contain their password. Check the box if you don&#8217;t want the user to receive a welcome email."
 msgstr "Нові користувачі отримають елекронного листа з повідомленням про те, що їх додано до користувачів вашого сайту. Цей лист також міститиме їхній пароль. Поставте галочку, якщо ви не хочете, щоб користувач отримав листа з привітанням."
 
-#: wp-admin/plugins.php:443
+#: wp-admin/plugins.php:451
 msgid "The plugin generated %d characters of <strong>unexpected output</strong> during activation. If you notice &#8220;headers already sent&#8221; messages, problems with syndication feeds or other issues, try deactivating or removing this plugin."
 msgstr "Цей плагін згенерував стільки символів <strong>неочікуваного виводу</strong> під час активації: %d. Якщо ви помітите повідомлення &#8220;заголовки вже надіслані&#8221;, проблеми з каналами чи інші неполадки, спробуйте вимкнути чи видалити цей плагін."
 
@@ -5416,7 +5416,7 @@ msgid "Contributing Developers"
 msgstr "Розробники"
 
 #. translators: 1: WordPress version number, 2: plural number of bugs.
-#: wp-admin/about.php:268
+#: wp-admin/about.php:272
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "У <strong>версії %1$s</strong> виправлено %2$s помилку."
@@ -5425,7 +5425,7 @@ msgstr[2] "У <strong>версії %1$s</strong> виправлено %2$s по�
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:51 wp-admin/about.php:276
+#: wp-admin/about.php:48 wp-admin/about.php:55 wp-admin/about.php:280
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "У <strong>версії %1$s</strong> виправлено декілька проблем безпеки та %2$s помилку."
@@ -5433,13 +5433,14 @@ msgstr[1] "У <strong>версії %1$s</strong> виправлено декіл
 msgstr[2] "У <strong>версії %1$s</strong> виправлено декілька проблем безпеки та %2$s помилок."
 
 #. translators: %s: Codex URL
-#: wp-admin/about.php:49 wp-admin/about.php:53 wp-admin/about.php:280
+#: wp-admin/about.php:50 wp-admin/about.php:53 wp-admin/about.php:57
+#: wp-admin/about.php:284
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "Більше інформації можна отримати з <a href=\"%s\">деталей випуску</a>."
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:272
+#: wp-admin/about.php:276
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "У <strong>версії %1$s</strong> виправлено проблему безпеки та %2$s помилку."
@@ -5451,15 +5452,15 @@ msgid "Welcome to your WordPress Dashboard! This is the screen you will see when
 msgstr "Ласкаво просимо до вашої Майстерні WordPress! Це розділ, який ви будете бачити, коли увійдете на свій сайт. Звідси є доступ до всіх елементів керування сайтом. Ви можете отримати допомогу по будь-якому розділу, натиснувши вкладку \"Допомога\" над заголовком розділу."
 
 #. translators: %s: WordPress version number
-#: wp-admin/about.php:48 wp-admin/about.php:265
+#: wp-admin/about.php:52 wp-admin/about.php:269
 msgid "<strong>Version %s</strong> addressed some security issues."
 msgstr "У <strong>версії %s</strong> виправлено декілька проблем безпеки."
 
-#: wp-admin/about.php:253
+#: wp-admin/about.php:257
 msgid "Maintenance Release"
 msgstr "Випуск обслуговування"
 
-#: wp-admin/about.php:256
+#: wp-admin/about.php:260
 msgid "Security Release"
 msgstr "Випуск безпеки"
 
@@ -5467,7 +5468,7 @@ msgstr "Випуск безпеки"
 msgid "What&#8217;s New"
 msgstr "Що нового"
 
-#: wp-admin/about.php:259
+#: wp-admin/about.php:263
 msgid "Maintenance and Security Release"
 msgstr "Випуск обслуговування та безпеки"
 
@@ -5479,7 +5480,7 @@ msgstr "Цей розділ дозволяє вам обирати структ�
 msgid "Welcome to WordPress %1$s. <a href=\"%2$s\">Learn more</a>."
 msgstr "Ласкаво просимо до WordPress %1$s. <a href=\"%2$s\">Дізнатися більше</a>."
 
-#: wp-admin/about.php:239
+#: wp-admin/about.php:243
 msgid "Return to Updates"
 msgstr "Повернутися до поновлень"
 
@@ -5487,7 +5488,7 @@ msgstr "Повернутися до поновлень"
 msgid "You can upload media files here without creating a post first. This allows you to upload files to use with posts and pages later and/or to get a web link for a particular file that you can share. There are three options for uploading files:"
 msgstr "Тут можна завантажувати файли, не створюючи матеріал. Це дозволяє завантажити файли для подальшого використання в публікаціях та сторінках та/або отримати посилання на окремий файл, щоб поділитися ним. Завантажити файли можна трьома способами:"
 
-#: wp-admin/plugins.php:397
+#: wp-admin/plugins.php:405
 msgid "Troubleshooting"
 msgstr "Вирішення проблем"
 
@@ -5759,11 +5760,11 @@ msgstr "Схоже, для виклику функції add_meta_box() був �
 msgid "Welcome to WordPress %s"
 msgstr "Ласкаво просимо до WordPress %s"
 
-#: wp-admin/about.php:239
+#: wp-admin/about.php:243
 msgid "Return to Dashboard &rarr; Updates"
 msgstr "Повернутися до \"Майстерні\" &rarr; \"Оновлення\""
 
-#: wp-admin/about.php:242
+#: wp-admin/about.php:246
 msgid "Go to Dashboard &rarr; Home"
 msgstr "Перейти до \"Майстерні\" &rarr; \"Домашня сторінка\""
 
@@ -5916,7 +5917,7 @@ msgstr "ПОМИЛКА: ви відповідаєте на коментар до
 #: wp-admin/options-general.php:39 wp-admin/options-media.php:28
 #: wp-admin/options-permalink.php:20 wp-admin/options-reading.php:22
 #: wp-admin/options-writing.php:20 wp-admin/plugin-editor.php:143
-#: wp-admin/plugin-install.php:80 wp-admin/plugins.php:385
+#: wp-admin/plugin-install.php:80 wp-admin/plugins.php:393
 #: wp-admin/revision.php:115 wp-admin/theme-editor.php:25
 #: wp-admin/theme-install.php:98 wp-admin/themes.php:82
 #: wp-admin/update-core.php:556 wp-admin/upload.php:48 wp-admin/upload.php:189
@@ -5993,7 +5994,7 @@ msgstr "Додати"
 #: wp-admin/options-media.php:33 wp-admin/options-permalink.php:43
 #: wp-admin/options-reading.php:37 wp-admin/options-writing.php:44
 #: wp-admin/plugin-editor.php:154 wp-admin/plugin-install.php:97
-#: wp-admin/plugins.php:408 wp-admin/revision.php:119
+#: wp-admin/plugins.php:416 wp-admin/revision.php:119
 #: wp-admin/theme-editor.php:38 wp-admin/theme-install.php:113
 #: wp-admin/themes.php:117 wp-admin/tools.php:27 wp-admin/update-core.php:574
 #: wp-admin/upload.php:65 wp-admin/upload.php:209 wp-admin/user-edit.php:54
@@ -6095,7 +6096,7 @@ msgstr "Редактор"
 msgid "Add New User"
 msgstr "Додати нового користувача"
 
-#: wp-admin/comment.php:149 wp-admin/plugins.php:290 wp-admin/plugins.php:296
+#: wp-admin/comment.php:149 wp-admin/plugins.php:298 wp-admin/plugins.php:304
 #: wp-admin/theme-editor.php:272
 msgid "Caution:"
 msgstr "Увага:"
@@ -6188,7 +6189,7 @@ msgstr ""
 msgid "Featured Images"
 msgstr "Головні зображення"
 
-#: wp-admin/includes/class-wp-press-this.php:841
+#: wp-admin/includes/class-wp-press-this.php:845
 #: wp-admin/includes/meta-boxes.php:385 wp-admin/includes/theme.php:263
 msgid "Post Formats"
 msgstr "Формат публікацій"
@@ -6239,7 +6240,7 @@ msgid "You can find additional themes for your site by using the Theme Browser/I
 msgstr "На цьому екрані ви можете знайти додаткові теми для вашого сайту за допомогою скрипта перегляду/встановлення тем, який відобразить теми з <a href=\"%s\">каталогу WordPress</a>. Ці теми створюються третіми особами, поширюються безкоштовно і сумісні з ліцензією WordPress."
 
 #. translators: %s: WordPress Plugin Directory URL
-#: wp-admin/plugins.php:391
+#: wp-admin/plugins.php:399
 msgid "If you would like to see more plugins to choose from, click on the &#8220;Add New&#8221; button and you will be able to browse or search for additional plugins from the <a href=\"%s\">WordPress Plugin Directory</a>. Plugins in the WordPress Plugin Directory are designed and developed by third parties, and are compatible with the license WordPress uses. Oh, and they&#8217;re free!"
 msgstr "Якщо ви хотіли б розширити вибір плагінів, натисніть на кнопку &#8220;Додати новий&#8221;, і ви зможете подивитися або знайти додаткові плагіни в <a href=\"%s\">каталозі WordPress</a>. Плагіни в каталозі WordPress створюються третіми особами і сумісні з ліцензією WordPress. Так, і вони безкоштовні!"
 
@@ -6408,11 +6409,11 @@ msgstr "%1$s з %2$s"
 msgid "%s Page Template"
 msgstr "Шаблон сторінки «%s»"
 
-#: wp-admin/includes/ajax-actions.php:3783 wp-admin/plugins.php:441
+#: wp-admin/includes/ajax-actions.php:3783 wp-admin/plugins.php:449
 msgid "You cannot delete a plugin while it is active on the main site."
 msgstr "Ви не можете видалити плагін, поки він діє на основному сайті."
 
-#: wp-admin/plugins.php:290
+#: wp-admin/plugins.php:298
 msgid "This plugin may be active on other sites in the network."
 msgstr "Цей плагін може бути діючий на інших сайтах мережі."
 
@@ -7008,7 +7009,7 @@ msgstr "Оберіть плагін для редагування з випад�
 msgid "You can customize the display of this screen using the Screen Options tab and/or the dropdown filters above the links table."
 msgstr "Ви можете налаштовувати вигляд цього екрану, використовуючи вкладку \"Параметри екрану\", та/або випадаючі фільтри над таблицею посилань."
 
-#: wp-admin/plugins.php:399
+#: wp-admin/plugins.php:407
 msgid "Most of the time, plugins play nicely with the core of WordPress and with other plugins. Sometimes, though, a plugin&#8217;s code will get in the way of another plugin, causing compatibility issues. If your site starts doing strange things, this may be the problem. Try deactivating all your plugins and re-activating them in various combinations until you isolate which one(s) caused the issue."
 msgstr "У більшості випадків плаґіни коректно працюють з ядром WordPress та іншими плаґінами. Втім, іноді код одного плаґіну може стати перешкодою для роботи іншого, викликаючи проблеми сумісності. Якщо на вашому сайті відбуваються дивні речі, причина може бути в цьому. Спробуйте деактивувати всі плаґіни і повторно активувати їх у різних комбінаціях, щоб визначити, який з них став причиною проблеми."
 
@@ -7172,7 +7173,7 @@ msgstr "На вкладці \"Параметри екрану\" ви может�
 msgid "You can refine the list to show only posts in a specific category or from a specific month by using the dropdown menus above the posts list. Click the Filter button after making your selection. You also can refine the list by clicking on the post author, category or tag in the posts list."
 msgstr "Список публікацій можна деталізувати. Можна показати публікації певної категорії, певної дати, автора. Скористайтеся випадаючим меню, а потім натисніть на кнопку «Фільтрувати»."
 
-#: wp-admin/plugins.php:526
+#: wp-admin/plugins.php:534
 msgid "Search Installed Plugins"
 msgstr "Шукати встановлені плагіни"
 
@@ -7626,7 +7627,7 @@ msgstr "Все"
 msgid "Please enter a valid menu name."
 msgstr "Будь ласка, введіть правильну назву меню."
 
-#: wp-admin/about.php:242
+#: wp-admin/about.php:246
 msgid "Go to Dashboard"
 msgstr "Перейти до майстерні"
 
@@ -7641,19 +7642,19 @@ msgstr[2] "Необхідно <span class=\"count\">(%s)</span>"
 msgid "Inactive:"
 msgstr "Недіючі:"
 
-#: wp-admin/plugins.php:330
+#: wp-admin/plugins.php:338
 msgid "Yes, delete these files and data"
 msgstr "Так, видалити ці файли та дані"
 
-#: wp-admin/plugins.php:317
+#: wp-admin/plugins.php:325
 msgid "Are you sure you wish to delete these files and data?"
 msgstr "Ви впевнені, що хочете видалити ці файли та дані?"
 
-#: wp-admin/plugins.php:288
+#: wp-admin/plugins.php:296
 msgid "Delete Plugin"
 msgstr "Видалити плагін"
 
-#: wp-admin/plugins.php:292
+#: wp-admin/plugins.php:300
 msgid "You are about to remove the following plugin:"
 msgstr "Ви збираєтеся видалити наступний плагін:"
 
@@ -7720,11 +7721,11 @@ msgstr "Цей коментар наразі в кошику."
 
 #: wp-admin/edit-comments.php:281
 msgid "This comment is already approved."
-msgstr "Цей коментар вже одобрено."
+msgstr "Цей коментар вже схвалено."
 
 #: wp-admin/comment.php:135
 msgid "This comment is currently approved."
-msgstr "Цей коментар наразі одобрено."
+msgstr "Цей коментар наразі схвалено."
 
 #: wp-admin/comment.php:80
 msgid "Moderate Comment"
@@ -8144,57 +8145,57 @@ msgstr "Відвідати сайт плагіну"
 msgid "Network Deactivate"
 msgstr "Вимкнути для мережі"
 
-#: wp-admin/plugins.php:488
+#: wp-admin/plugins.php:496
 msgid "Selected plugins <strong>deactivated</strong>."
 msgstr "Вибрані плагіни <strong>вимкнені</strong>."
 
-#: wp-admin/plugins.php:486
+#: wp-admin/plugins.php:494
 msgid "Plugin <strong>deactivated</strong>."
 msgstr "Плагін <strong>вимкнений</strong>."
 
-#: wp-admin/plugins.php:484
+#: wp-admin/plugins.php:492
 msgid "Selected plugins <strong>activated</strong>."
 msgstr "Обрані плагіни <strong>активовані</strong>."
 
-#: wp-admin/plugins.php:482
+#: wp-admin/plugins.php:490
 msgid "Plugin <strong>activated</strong>."
 msgstr "Плагін <strong>активовано</strong>."
 
-#: wp-admin/plugins.php:475
+#: wp-admin/plugins.php:483
 msgid "The selected plugins have been <strong>deleted</strong>."
 msgstr "Обрані плагіни <strong>видалені</strong>."
 
-#: wp-admin/plugins.php:467
+#: wp-admin/plugins.php:475
 msgid "Plugin could not be deleted due to an error: %s"
 msgstr "Плагін не вдалося видалити через помилку: %s"
 
-#: wp-admin/plugins.php:445
+#: wp-admin/plugins.php:453
 msgid "Plugin could not be activated because it triggered a <strong>fatal error</strong>."
 msgstr "Плагін не вдалося активувати, бо він спричинив <strong>критичну помилку</strong>."
 
 #. translators: 1: plugin file 2: error message
-#: wp-admin/plugins.php:430
+#: wp-admin/plugins.php:438
 msgid "The plugin %1$s has been <strong>deactivated</strong> due to an error: %2$s"
 msgstr "Плагін %1$s був <strong>вимкнений</strong> через помилку: %2$s"
 
 #. translators: WP_PLUGIN_DIR constant value
-#: wp-admin/plugins.php:402
+#: wp-admin/plugins.php:410
 msgid "If something goes wrong with a plugin and you can&#8217;t use WordPress, delete or rename that file in the %s directory and it will be automatically deactivated."
 msgstr "Якщо з плагіном щось піде не так і ви не зможете використовувати WordPress, видаліть або перейменуйте файл у директорії %s, і плагін буде автоматично вимкнений."
 
-#: wp-admin/plugins.php:387
+#: wp-admin/plugins.php:395
 msgid "Plugins extend and expand the functionality of WordPress. Once a plugin is installed, you may activate it or deactivate it here."
 msgstr "Плагіни розширюють можливості WordPress. Коли плагін встановлено, ви можете вмикати та вимикати його тут."
 
-#: wp-admin/plugins.php:336
+#: wp-admin/plugins.php:344
 msgid "No, return me to the plugin list"
 msgstr "Ні, повернутись до списку плагінів"
 
-#: wp-admin/plugins.php:330
+#: wp-admin/plugins.php:338
 msgid "Yes, delete these files"
 msgstr "Так, видалити ці файли"
 
-#: wp-admin/plugins.php:319
+#: wp-admin/plugins.php:327
 msgid "Are you sure you wish to delete these files?"
 msgstr "Ви впевнені, що хочете видалити ці файли?"
 
@@ -8572,11 +8573,11 @@ msgstr "Чорний список"
 
 #: wp-admin/options-discussion.php:155
 msgid "When a comment contains any of these words in its content, name, URL, email, or IP, it will be held in the <a href=\"edit-comments.php?comment_status=moderated\">moderation queue</a>. One word or IP per line. It will match inside words, so &#8220;press&#8221; will match &#8220;WordPress&#8221;."
-msgstr "Коли коментар містить будь-яке з цих слів у вмісті, назві, посиланні, адресі e-mail, або IP-адресі, він буде затриманий для <a href=\"edit-comments.php?comment_status=moderated\">одобрення</a>. Одне слово чи IP-адреса в одному рядку. Будуть включені внутрішні слова, наприклад слово \"press\" знайдеться у слові \"WordPress\"."
+msgstr "Коли коментар містить будь-яке з цих слів у вмісті, назві, посиланні, адресі e-mail, або IP-адресі, він буде затриманий для <a href=\"edit-comments.php?comment_status=moderated\">схвалення</a>. Одне слово чи IP-адреса в одному рядку. Будуть включені внутрішні слова, наприклад слово \"press\" знайдеться у слові \"WordPress\"."
 
 #: wp-admin/options-discussion.php:153
 msgid "Hold a comment in the queue if it contains %s or more links. (A common characteristic of comment spam is a large number of hyperlinks.)"
-msgstr "Затримати коментар для одобрення, якщо він містить %s, або більше посилань. (Поширена особливість коментаря зі спамом в тому, що він містить багато посилань.)"
+msgstr "Затримати коментар для схвалення, якщо він містить %s, або більше посилань. (Поширена особливість коментаря зі спамом в тому, що він містить багато посилань.)"
 
 #: wp-admin/options-discussion.php:151 wp-admin/options-discussion.php:152
 msgid "Comment Moderation"
@@ -8584,7 +8585,7 @@ msgstr "Модерація коментарів"
 
 #: wp-admin/options-discussion.php:147
 msgid "Comment author must have a previously approved comment"
-msgstr "Автор коментаря мусить мати раніше одобрений коментар"
+msgstr "Автор повинен мати раніше схвалений коментар"
 
 #: wp-admin/options-discussion.php:141 wp-admin/options-discussion.php:142
 msgid "Before a comment appears"
@@ -8592,7 +8593,7 @@ msgstr "Перед появою коментаря"
 
 #: wp-admin/options-discussion.php:137
 msgid "A comment is held for moderation"
-msgstr "Коментар чекає на одобрення"
+msgstr "Коментар чекає на схвалення"
 
 #: wp-admin/options-discussion.php:133
 msgid "Anyone posts a comment"
@@ -8708,7 +8709,7 @@ msgid "Profile"
 msgstr "Обліковий запис"
 
 #. translators: add new plugin
-#: wp-admin/menu.php:208 wp-admin/plugins.php:496
+#: wp-admin/menu.php:208 wp-admin/plugins.php:504
 msgctxt "plugin"
 msgid "Add New"
 msgstr "Додати"
@@ -8798,7 +8799,7 @@ msgstr "Додати"
 msgid "Add New Link"
 msgstr "Додати нове посилання"
 
-#: wp-admin/install.php:388
+#: wp-admin/install.php:374
 msgid "Success!"
 msgstr "Чудово!"
 
@@ -10139,16 +10140,16 @@ msgstr "Відхилити цей коментар"
 #: wp-admin/includes/class-wp-comments-list-table.php:563
 #: wp-admin/includes/dashboard.php:632
 msgid "Approve this comment"
-msgstr "Одобрити цей коментар"
+msgstr "Схвалити цей коментар"
 
-#: wp-admin/includes/class-wp-press-this.php:1520
+#: wp-admin/includes/class-wp-press-this.php:1525
 #: wp-admin/includes/meta-boxes.php:269 wp-admin/includes/meta-boxes.php:270
 msgid "Submit for Review"
 msgstr "Відправити на узгодження"
 
 #: wp-admin/tools.php:16 wp-admin/tools.php:40 wp-admin/tools.php:51
 msgid "Press This"
-msgstr "Press This"
+msgstr "Опублікувати"
 
 #: wp-admin/includes/nav-menu.php:363 wp-admin/includes/nav-menu.php:648
 msgid "Page"
@@ -10727,7 +10728,7 @@ msgstr "До кошика"
 #: wp-admin/includes/class-wp-comments-list-table.php:563
 #: wp-admin/includes/dashboard.php:632
 msgid "Approve"
-msgstr "Одобрити"
+msgstr "Схвалити"
 
 #: wp-admin/includes/class-wp-comments-list-table.php:293
 #: wp-admin/includes/class-wp-comments-list-table.php:558
@@ -10776,9 +10777,9 @@ msgstr[2] "%s коментарів позначено як спам."
 #: wp-admin/edit-comments.php:248
 msgid "%s comment approved"
 msgid_plural "%s comments approved"
-msgstr[0] "%s коментар одобрено"
-msgstr[1] "%s коментарі одобрено"
-msgstr[2] "%s коментарів одобрено"
+msgstr[0] "%s коментар схвалено"
+msgstr[1] "%s коментарі схвалено"
+msgstr[2] "%s коментарів схвалено"
 
 #: wp-admin/includes/class-wp-media-list-table.php:154
 #: wp-admin/includes/class-wp-media-list-table.php:514
@@ -10866,11 +10867,11 @@ msgstr "Невідома дія."
 
 #: wp-admin/comment.php:127
 msgid "Approve Comment"
-msgstr "Одобрити коментар"
+msgstr "Схвалити коментар"
 
 #: wp-admin/comment.php:126
 msgid "You are about to approve the following comment:"
-msgstr "Ви збираєтеся одобрити наступний коментар:"
+msgstr "Ви збираєтеся схвалити наступний коментар:"
 
 #: wp-admin/comment.php:123
 msgid "Permanently Delete Comment"

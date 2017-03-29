@@ -135,6 +135,7 @@
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/skrollr.js"></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/owl.carousel.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3.0.3/dist/isotope.pkgd.min.js"></script>
   <?php wp_footer(); ?>
 </body>
 

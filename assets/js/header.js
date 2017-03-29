@@ -30,6 +30,19 @@
       $stm_header.css('min-height', headerH + 'px');
     }
   }
+  //isotope///////////////////////
+  $('.grid').isotope({
+
+  // options
+  itemSelector: '.grid-item',
+  layoutMode: 'fitRows'
+});
+$('.filters-select').on( 'change', function() {
+  // get filter value from option value
+  var filterValue = this.value;
+  $('.grid').isotope({ filter: filterValue });
+  $('.grid-item').show();
+});
  // owlCarousel//////////////////////
   (function() {
     $('.slider').owlCarousel({

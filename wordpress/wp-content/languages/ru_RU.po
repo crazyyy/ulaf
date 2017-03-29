@@ -2249,12 +2249,12 @@ msgid "Sorry, you are not allowed to do that."
 msgstr "Извините, вам не разрешено выполнять данное действие."
 
 #. translators: %s: site title
-#: wp-includes/pluggable.php:1720
+#: wp-includes/pluggable.php:1736
 msgid "[%s] Password Changed"
 msgstr "[%s] Пароль изменён"
 
 #. translators: %s: user name
-#: wp-includes/pluggable.php:1715
+#: wp-includes/pluggable.php:1731
 msgid "Password changed for user: %s"
 msgstr "Пароль пользователя %s изменён."
 
@@ -3460,7 +3460,7 @@ msgstr "Ваша ссылка для сброса пароля некоррек�
 msgid "Username may not be longer than 60 characters."
 msgstr "Имя пользователя не может быть длиннее 60 символов."
 
-#: wp-includes/pluggable.php:1790
+#: wp-includes/pluggable.php:1806
 msgid "To set your password, visit the following address:"
 msgstr "Чтобы задать пароль, перейдите по следующей ссылке:"
 
@@ -4231,15 +4231,15 @@ msgstr "Имена типов записей должны быть от 1 до 2
 
 #. translators: 1: Trackback/pingback website name, 2: website IP, 3: website
 #. hostname
-#: wp-includes/pluggable.php:1436 wp-includes/pluggable.php:1447
-#: wp-includes/pluggable.php:1597 wp-includes/pluggable.php:1607
+#: wp-includes/pluggable.php:1452 wp-includes/pluggable.php:1463
+#: wp-includes/pluggable.php:1613 wp-includes/pluggable.php:1623
 msgid "Website: %1$s (IP: %2$s, %3$s)"
 msgstr "Сайт: %1$s (IP: %2$s, %3$s)"
 
 #. translators: 1: comment author, 2: author IP, 3: author domain
 #. translators: 1: Comment author name, 2: comment author's IP, 3: comment
 #. author IP's hostname
-#: wp-includes/pluggable.php:1457 wp-includes/pluggable.php:1617
+#: wp-includes/pluggable.php:1473 wp-includes/pluggable.php:1633
 msgid "Author: %1$s (IP: %2$s, %3$s)"
 msgstr "Автор: %1$s (IP: %2$s, %3$s)"
 
@@ -4374,15 +4374,15 @@ msgid "%s must set a database connection for use with escaping."
 msgstr "Класс %s должен указать соединение, используемое для экранирования."
 
 #. translators: 1: Comment text
-#: wp-includes/pluggable.php:1438 wp-includes/pluggable.php:1449
-#: wp-includes/pluggable.php:1460 wp-includes/pluggable.php:1623
+#: wp-includes/pluggable.php:1454 wp-includes/pluggable.php:1465
+#: wp-includes/pluggable.php:1476 wp-includes/pluggable.php:1639
 msgid "Comment: %s"
 msgstr "Комментарий: %s"
 
 #. translators: 1: Trackback/pingback/comment author URL
-#: wp-includes/pluggable.php:1437 wp-includes/pluggable.php:1448
-#: wp-includes/pluggable.php:1459 wp-includes/pluggable.php:1599
-#: wp-includes/pluggable.php:1609 wp-includes/pluggable.php:1621
+#: wp-includes/pluggable.php:1453 wp-includes/pluggable.php:1464
+#: wp-includes/pluggable.php:1475 wp-includes/pluggable.php:1615
+#: wp-includes/pluggable.php:1625 wp-includes/pluggable.php:1637
 msgid "URL: %s"
 msgstr "URL: %s"
 
@@ -4427,15 +4427,15 @@ msgctxt "noun"
 msgid "Trash"
 msgstr "Корзина"
 
-#: wp-includes/pluggable.php:1439
+#: wp-includes/pluggable.php:1455
 msgid "You can see all trackbacks on this post here:"
 msgstr "Здесь вы можете посмотреть все обратные ссылки на запись:"
 
-#: wp-includes/pluggable.php:1450
+#: wp-includes/pluggable.php:1466
 msgid "You can see all pingbacks on this post here:"
 msgstr "Здесь вы можете посмотреть все уведомления к записи:"
 
-#: wp-includes/pluggable.php:1461
+#: wp-includes/pluggable.php:1477
 msgid "You can see all comments on this post here:"
 msgstr "Здесь вы можете посмотреть все комментарии к данной записи:"
 
@@ -7177,7 +7177,7 @@ msgctxt "add new from admin bar"
 msgid "User"
 msgstr "Пользователя"
 
-#: wp-includes/pluggable.php:1043 wp-includes/pluggable.php:1086
+#: wp-includes/pluggable.php:1059 wp-includes/pluggable.php:1102
 msgid "You should specify a nonce action to be verified by using the first parameter."
 msgstr "Первым параметром функции нужно указать заранее известное действие для проверки."
 
@@ -7287,7 +7287,7 @@ msgstr "(Это сообщение было добавлено в версии %
 msgid "%1$s was called <strong>incorrectly</strong>. %2$s %3$s"
 msgstr "Функция %1$s вызвана <strong>неправильно</strong>. %2$s %3$s"
 
-#: wp-includes/pluggable.php:1467
+#: wp-includes/pluggable.php:1483
 msgid "Permalink: %s"
 msgstr "Постоянная ссылка: %s"
 
@@ -7813,7 +7813,7 @@ msgstr "В сети «%1$s» новый сайт: %2$s"
 msgid "Sorry, that site already exists!"
 msgstr "Извините, такой сайт уже существует!"
 
-#: wp-includes/pluggable.php:1758
+#: wp-includes/pluggable.php:1774
 msgid "New user registration on your site %s:"
 msgstr "На вашем сайте «%s» зарегистрирован новый пользователь:"
 
@@ -8048,7 +8048,7 @@ msgid "Site Name:"
 msgstr "Имя сайта:"
 
 #. translators: 1: Post title
-#: wp-includes/pluggable.php:1434
+#: wp-includes/pluggable.php:1450
 msgid "New trackback on your post \"%s\""
 msgstr "Новая обратная ссылка на вашу запись \"%s\""
 
@@ -8060,27 +8060,27 @@ msgstr "Если вы администратор сети &#8212; убедите
 msgid "If your site does not display, please contact the owner of this network."
 msgstr "Если ваш сайт не отображается, свяжитесь с администратором этой сети."
 
-#: wp-includes/pluggable.php:1455
+#: wp-includes/pluggable.php:1471
 msgid "New comment on your post \"%s\""
 msgstr "Новый комментарий к записи \"%s\""
 
 #. translators: 1: Post title
-#: wp-includes/pluggable.php:1445
+#: wp-includes/pluggable.php:1461
 msgid "New pingback on your post \"%s\""
 msgstr "Новое уведомление к вашей записи \"%s\""
 
 #. translators: 1: Post title
-#: wp-includes/pluggable.php:1594
+#: wp-includes/pluggable.php:1610
 msgid "A new trackback on the post \"%s\" is waiting for your approval"
 msgstr "Новая обратная ссылка к записи \"%s\" ожидает проверки"
 
 #. translators: 1: Post title
-#: wp-includes/pluggable.php:1604
+#: wp-includes/pluggable.php:1620
 msgid "A new pingback on the post \"%s\" is waiting for your approval"
 msgstr "Новое уведомление к записи \"%s\" ожидает проверки"
 
 #. translators: 1: Post title
-#: wp-includes/pluggable.php:1614
+#: wp-includes/pluggable.php:1630
 msgid "A new comment on the post \"%s\" is waiting for your approval"
 msgstr "Новый комментарий к записи \"%s\" ожидает проверки"
 
@@ -9072,47 +9072,47 @@ msgid "PM"
 msgstr "ПП"
 
 #. translators: 1: blog name, 2: post title
-#: wp-includes/pluggable.php:1463
+#: wp-includes/pluggable.php:1479
 msgid "[%1$s] Comment: \"%2$s\""
 msgstr "[%1$s] Комментарий: \"%2$s\""
 
 #. translators: 1: blog name, 2: post title
-#: wp-includes/pluggable.php:1441
+#: wp-includes/pluggable.php:1457
 msgid "[%1$s] Trackback: \"%2$s\""
 msgstr "[%1$s] Обратная ссылка: \"%2$s\""
 
 #. translators: 1: blog name, 2: post title
-#: wp-includes/pluggable.php:1452
+#: wp-includes/pluggable.php:1468
 msgid "[%1$s] Pingback: \"%2$s\""
 msgstr "[%1$s] Уведомление: \"%2$s\""
 
 #. translators: Comment moderation. 1: Comment action URL
-#: wp-includes/pluggable.php:1471 wp-includes/pluggable.php:1632
+#: wp-includes/pluggable.php:1487 wp-includes/pluggable.php:1648
 msgid "Trash it: %s"
 msgstr "В корзину: %s"
 
 #. translators: Comment moderation. 1: Comment action URL
-#: wp-includes/pluggable.php:1473 wp-includes/pluggable.php:1635
+#: wp-includes/pluggable.php:1489 wp-includes/pluggable.php:1651
 msgid "Delete it: %s"
 msgstr "Удалить: %s"
 
 #. translators: Comment moderation. 1: Comment action URL
-#: wp-includes/pluggable.php:1475 wp-includes/pluggable.php:1639
+#: wp-includes/pluggable.php:1491 wp-includes/pluggable.php:1655
 msgid "Spam it: %s"
 msgstr "Спам: %s"
 
 #. translators: Comment moderation. 1: Comment action URL
-#: wp-includes/pluggable.php:1628
+#: wp-includes/pluggable.php:1644
 msgid "Approve it: %s"
 msgstr "Одобрить: %s"
 
 #. translators: Comment moderation notification email subject. 1: Site name, 2:
 #. Post title
-#: wp-includes/pluggable.php:1647
+#: wp-includes/pluggable.php:1663
 msgid "[%1$s] Please moderate: \"%2$s\""
 msgstr "[%1$s] Проверьте, пожалуйста: \"%2$s\""
 
-#: wp-includes/pluggable.php:1762
+#: wp-includes/pluggable.php:1778
 msgid "[%s] New User Registration"
 msgstr "[%s] Регистрация нового пользователя"
 
@@ -9590,12 +9590,12 @@ msgstr "Следующие комментарии &rarr;"
 msgid "&laquo; Older Comments"
 msgstr "&larr; Предыдущие комментарии"
 
-#: wp-includes/pluggable.php:1759 wp-includes/pluggable.php:1789
+#: wp-includes/pluggable.php:1775 wp-includes/pluggable.php:1805
 #: wp-login.php:329
 msgid "Username: %s"
 msgstr "Имя пользователя: %s"
 
-#: wp-includes/pluggable.php:1795
+#: wp-includes/pluggable.php:1811
 msgid "[%s] Your username and password info"
 msgstr "[%s] Ваше имя пользователя и пароль"
 
@@ -9737,7 +9737,7 @@ msgstr[1] "%s дня"
 msgstr[2] "%s дней"
 
 #. translators: Comment moderation. 1: Number of comments awaiting approval
-#: wp-includes/pluggable.php:1642
+#: wp-includes/pluggable.php:1658
 msgid "Currently %s comment is waiting for approval. Please visit the moderation panel:"
 msgid_plural "Currently %s comments are waiting for approval. Please visit the moderation panel:"
 msgstr[0] "В настоящее время ожидает проверки %s комментарий. Пожалуйста, посетите панель модерирования:"
@@ -9770,11 +9770,11 @@ msgstr "Без названия"
 msgid "Give the feed a title (optional):"
 msgstr "Назовите ленту (необязательно):"
 
-#: wp-includes/pluggable.php:1600
+#: wp-includes/pluggable.php:1616
 msgid "Trackback excerpt: "
 msgstr "Отрывок обратной ссылки:"
 
-#: wp-includes/pluggable.php:1610
+#: wp-includes/pluggable.php:1626
 msgid "Pingback excerpt: "
 msgstr "Отрывок уведомления:"
 
@@ -10520,8 +10520,8 @@ msgid "Are you sure you want to do this?"
 msgstr "Вы уверены, что хотите это сделать?"
 
 #. translators: 1: Comment author URL
-#: wp-includes/pluggable.php:1458 wp-includes/pluggable.php:1619
-#: wp-includes/pluggable.php:1760
+#: wp-includes/pluggable.php:1474 wp-includes/pluggable.php:1635
+#: wp-includes/pluggable.php:1776
 msgid "Email: %s"
 msgstr "E-mail: %s"
 

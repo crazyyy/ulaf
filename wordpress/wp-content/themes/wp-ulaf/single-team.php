@@ -106,7 +106,7 @@
                 <td>Lost</td>
               </tr>
               <tr class="stats">
-                <td>2016</td>
+                <td>2017</td>
                 <td>Волки Винница</td>
                 <td colspan="4">10</td>
                 <td>56</td>
@@ -131,111 +131,7 @@
 
         <article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12'); ?>>
 
-          <div class="row teamm-card">
 
-            <photo -->
-
-            <div class="col-md-12 team-character">
-
-              <span class="team-logo">
-                <?php if ( has_post_thumbnail()) :?>
-                  <?php the_post_thumbnail('full'); // Fullsize image for the single post ?>
-                <?php endif; ?><!-- /post thumbnail -->
-              </span><!-- team-logo -->
-
-              <?php $image = get_field('main_image'); if( !empty($image) ): ?>
-                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-              <?php endif; ?>
-
-            </div><!--/ team-character -->
-
-            <div class="col-md-12 inner teams">
-
-      <table class="team-score team-opossing">
-          <tr>
-            <th>Результат последних игр :</th>
-            <?php if( have_rows('team_game') ): while ( have_rows('team_game') ) : the_row(); ?>
-              <th>
-                  <?php $posts = get_sub_field('opposing_team'); if( $posts ): foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
-                  <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $p->ID ) ); ?>" alt="">
-                      <?php endforeach; endif; ?>
-              </th>
-                     <?php endwhile; endif; ?>
-          </tr>
-          <tr class="player-work">
-                <td>1st Quarter</td>
-
-                    <?php $i = 0;// check if the repeater field has rows of data
-                      if( have_rows('team_game') ):
-                      // loop through the rows of data
-                      while ( have_rows('team_game') ) : the_row();?>
-
-                <td>
-                      <?php the_sub_field('1st_quarter'); ?>
-                </td>
-
-                    <?php $i = $i + get_sub_field('1st_quarter'); ?>
-                    <?php endwhile; endif; ?>
-
-                <td>
-                    <?php echo $i; ?>
-                </td>
-            </tr>
-            <tr>
-                <td>2nd Quarter</td>
-
-                    <?php $i = 0;
-                  // check if the repeater field has rows of data
-                  if( have_rows('team_game') ):
-                    // loop through the rows of data
-                      while ( have_rows('team_game') ) : the_row();?>
-
-                <td>
-                    <?php the_sub_field('2nd_quarter'); ?>
-                </td>
-                    <?php $i = $i + get_sub_field('2nd_quarter');?>
-                    <?php endwhile; endif; ?>
-                <td>
-                   <?php echo $i; ?>
-                </td>
-            </tr>
-            <tr>
-                <td>3rd Quarter</td>
-                      <?php $i = 0;
-                    // check if the repeater field has rows of data
-                    if( have_rows('team_game') ):
-                      // loop through the rows of data
-                        while ( have_rows('team_game') ) : the_row();?>
-                <td>
-                    <?php the_sub_field('3rd_quarter'); ?>
-                </td>
-                    <?php
-                    $i = $i + get_sub_field('3rd_quarter');?>
-                    <?php endwhile; endif; ?>
-                <td>
-                <?php echo $i; ?>
-                </td>
-            </tr>
-            <tr>
-                <td>4th Quarter</td>
-                      <?php $i = 0;
-                    // check if the repeater field has rows of data
-                    if( have_rows('team_game') ):
-                      // loop through the rows of data
-                        while ( have_rows('team_game') ) : the_row();?>
-                <td>
-                    <?php the_sub_field('4th_quarter'); ?>
-                </td>
-                    <?php $i = $i + get_sub_field('4th_quarter'); ?>
-                    <?php endwhile; endif; ?>
-                <td>
-                <?php echo $i; ?>
-                </td>
-          </tr>
-
-       </table><!-- player-score team-opossing -->
-      </div><!-- player-score -->
-    </div>
   </div><!-- /.row -->
 
 
@@ -250,10 +146,10 @@
               <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
 
                 <div class="col-md-3 people-desciption">
-                  <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank">
+
                     <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $p->ID, "medium" ) ); ?>" alt="">
                     <?php echo get_the_title( $p->ID ); ?>
-                  </a>
+
                 </div><!-- people-desciption -->
 
               <?php endforeach; ?>

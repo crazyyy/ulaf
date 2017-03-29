@@ -53,7 +53,6 @@
               </div>
 
                  <?php get_template_part('pagination'); ?>
-
             </div>
             <!--Sidebar-->
             <div class="col-md-3 col-md-pull-9 hidden-sm hidden-xs">

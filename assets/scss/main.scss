@@ -260,13 +260,14 @@ td {
   background-color: #525252;
 }
 .team-sign {
-  font-size: 50px;
+  font-size: 30px;
 
-  margin-top: 90px;
+  margin-top: 50px;
 
   text-transform: uppercase;
 
   color: white;
+  text-align: center;
 }
 .team-list {
   float: left;
@@ -420,4 +421,81 @@ float: left;
 .slide{
 
   width: 400px;
+}
+.pagination{
+.page-numbers{
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 45px;
+    display: inline-block;
+    min-width: 45px;
+    min-height: 45px;
+    text-align: center;
+    text-decoration: none!important;
+    color: #bfbfbf;
+    border: 2px solid #bfbfbf;
+    border-radius: 5px;
+    &:hover{
+    color: #fff;
+    border-color: #00529b;
+    background-color: #00529b;
+    }
+}
+.current{
+  color: #fff;
+    border-color: #00529b;
+    background-color: #00529b;
+}
+}
+.filters-select{
+  float: right;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+.team-table-position{
+  h3{
+    margin-top: 5px;
+  }
+}
+
+.grid-item{
+  z-index:-1;
+
+}
+.results{
+  h2{
+    font-size: 55px;
+    margin-top: 15px;
+    &:after{
+      position: relative;
+      content: '';
+      display: block;
+      width: auto;
+      height: 1px;
+      background-color: grey;
+      margin-top: 20px;
+    }
+  }
+}
+.photo-title{
+    text-align: center;
+    font-size: 32px;
+    padding: 19px;
+    text-decoration: none;
+    color: black;
+    &:hover{
+      color:black;
+      text-decoration:none;
+    }
+    img{
+      padding: 20px;
+    }
+}
+.gallery{
+  li{
+    &:before{
+      background-color: white;
+    }
+  }
 }
