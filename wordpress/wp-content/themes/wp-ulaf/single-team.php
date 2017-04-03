@@ -55,6 +55,8 @@
               <div class="team">Главный тренер: <span></span></div>
 
               <div class="position">Город: <span><?php the_field('team_city');?></span></div>
+              <button><a class="roster-link" href="<?php the_field('roster_link');?>" style="    color: white;
+    text-decoration: none;">Ростер</a></button>
             </div>
           </div>
 

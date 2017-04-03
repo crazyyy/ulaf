@@ -139,19 +139,40 @@
             </div>
           </div>
         </div>
+<?php
 
+$posts = get_field('relationship_field_name');
+
+if( $posts ): ?>
+    <ul>
+    <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+        <?php setup_postdata($post); ?>
+        <li>
+            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            <span>Custom field from $post: <?php the_field('author'); ?></span>
+        </li>
+    <?php endforeach; ?>
+    </ul>
+    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+<?php endif; ?>
 <div class="container">
+<?php
+
+$posts = get_field('our_partners');
+
+if( $posts ): ?>
         <div class="row slider">
-          <div class="slide col-md-12 col-sm-12">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/FISU.png" alt="">
+        <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+        <?php setup_postdata($post); ?>
+          <div class="slide col-md-8 col-sm-12">
+            <?php if ( has_post_thumbnail()) : the_post_thumbnail('medium'); else: ?>
+                                     <img src="<?php echo catchFirstImage(); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>" />
+                                    <?php endif; ?>
           </div>
-          <div class="slide col-md-12 col-sm-12">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/FISU.png" alt="">
-          </div>
-          <div class="slide col-md-12 col-sm-12">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/ifaf-news.jpg" alt="">
-          </div>
+          <?php endforeach; ?>
         </div>
+        <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+<?php endif; ?>
       </div>
         <div class="vc_row-full-width vc_clearfix"></div>
 
@@ -176,6 +197,20 @@ all of which possess national federations dedicated solely to American football.
             </div>
           </div>
         </div>
+         <div data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid stm-red-bg">
+          <div class="wpb_column vc_column_container vc_col-sm-12">
+            <div class="vc_column-inner ">
+              <div class="wpb_wrapper">
+                <div class="stm-call-to-action clearfix">
+                  <a class="button btn-secondary btn-md btn-style-4" href="https://vk.com/ulafua" title="Перейти!">Перейти!</a>
+                  <div class="stm-call-to-action-inner">
+                    <h4 style="color:#ffffff">Тренерам команд и судьям.</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="vc_row-full-width vc_clearfix"></div>
 
 
@@ -187,18 +222,5 @@ all of which possess national federations dedicated solely to American football.
     <!--main-->
   </div>
 
-  <div data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid stm-red-bg">
-          <div class="wpb_column vc_column_container vc_col-sm-12">
-            <div class="vc_column-inner ">
-              <div class="wpb_wrapper">
-                <div class="stm-call-to-action clearfix">
-                  <a class="button btn-secondary btn-md btn-style-4" href="https://vk.com/ulafua" title="Перейти!">Перейти!</a>
-                  <div class="stm-call-to-action-inner">
-                    <h4 style="color:#ffffff">Тренерам,игрокам,функционерам команд.</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
 <?php get_footer(); ?>
