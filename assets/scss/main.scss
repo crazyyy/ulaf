@@ -264,10 +264,10 @@ td {
 
   margin-top: 50px;
 
+  text-align: center;
   text-transform: uppercase;
 
   color: white;
-  text-align: center;
 }
 .team-list {
   float: left;
@@ -278,7 +278,6 @@ td {
   margin-top: 55px;
   margin-bottom: 50px;
   li {
-    cursor: pointer;
     float: left;
 
     box-sizing: border-box;
@@ -286,8 +285,10 @@ td {
     margin-bottom: 4px;
     padding: 4px;
 
+    cursor: pointer;
+
     border: 1px solid transparent;
-    &:before{
+    &:before {
       background-color: #d9d9d9;
     }
     &:hover,
@@ -320,6 +321,7 @@ td {
   }
   .person-info {
     position: absolute;
+    bottom: -5px;
     left: 0;
 
     box-sizing: border-box;
@@ -327,184 +329,203 @@ td {
     padding: 20px;
 
     text-align: center;
+
+    color: #fff;
     /* bottom: 0px; */
-
     background-color: rgba(32,22,0,.5);
-    bottom: -5px;
-    color:#fff;
-    .person-name{
+    .person-name {
+      font-size: 30px;
+
       float: left;
-    margin-bottom: 17px;
-    width: 100%;
-    color: #ffffff;
-    font-size: 30px;
-    text-transform: uppercase;
+
+      width: 100%;
+      margin-bottom: 17px;
+
+      text-transform: uppercase;
+
+      color: #fff;
     }
-    .person-role{
-          width: 100%;
-    margin-bottom: 17px;
-    float: left;
-    font-size: 20px;
-    color: #ffffff;
-    }
-    .person-description{
+    .person-role {
+      font-size: 20px;
+
       float: left;
-    width: 100%;
-    color: #ffffff;
-    font-size: 14px;
-    line-height: 24px;
+
+      width: 100%;
+      margin-bottom: 17px;
+
+      color: #fff;
+    }
+    .person-description {
+      font-size: 14px;
+      line-height: 24px;
+
+      float: left;
+
+      width: 100%;
+
+      color: #fff;
     }
   }
 }
-.team-colors{
-float: left;
+.team-colors {
+  float: left;
+  .first-color {
+    width: 20px;
+    height: 20px;
 
-
-  .first-color{
     background-color: red;
-    height: 20px;
-  width: 20px;
   }
-  .second-color{
-    background-color: white;
+  .second-color {
+    width: 20px;
     height: 20px;
-  width: 20px;
-  }
-  .third-color{
-    background-color: black;
-    height: 20px;
-  width: 20px;
-  }
-}
-.games{
-  audio{
 
+    background-color: white;
+  }
+  .third-color {
+    width: 20px;
+    height: 20px;
+
+    background-color: black;
   }
 }
-.team-anthem{
- font-size: 15px;
- margin-top: 15px;
+
+.team-anthem {
+  font-size: 15px;
+
+  margin-top: 15px;
 }
-.colors{
+.colors {
   height: 20px;
   padding-left: 17px;
-   span{
-      height: 25px;
-      width: 25px;
-      display: inline-block;
+  span {
+    display: inline-block;
 
-    }
-}
-.first-color,.second-color,.third-color{
     width: 25px;
     height: 25px;
-    background-color: red;
-    float: left;
-    margin-left:11px;
-
+  }
 }
-.fotorama{
+.first-color,
+.second-color,
+.third-color {
+  float: left;
+
+  width: 25px;
+  height: 25px;
+  margin-left: 11px;
+
+  background-color: red;
+}
+.fotorama {
   width: auto;
-
 }
-.home{
+.home {
   padding-bottom: 0;
 }
-.logo-main{
-  img{
-
+.logo-main {
+  img {
     height: 95px;
     margin-top: 22px;
     margin-left: 25px;
   }
 }
-.slide{
-
+.slide {
   width: 400px;
 }
-.pagination{
-.page-numbers{
-    margin: 0 10px;
+.pagination {
+  .page-numbers {
     font-size: 14px;
     font-weight: 700;
     line-height: 45px;
+
     display: inline-block;
+
     min-width: 45px;
     min-height: 45px;
+    margin: 0 10px;
+
     text-align: center;
     text-decoration: none!important;
+
     color: #bfbfbf;
     border: 2px solid #bfbfbf;
     border-radius: 5px;
-    &:hover{
+    &:hover {
+      color: #fff;
+      border-color: #00529b;
+      background-color: #00529b;
+    }
+  }
+  .current {
     color: #fff;
     border-color: #00529b;
     background-color: #00529b;
-    }
+  }
 }
-.current{
-  color: #fff;
-    border-color: #00529b;
-    background-color: #00529b;
-}
-}
-.filters-select{
+.filters-select {
   float: right;
+
   margin-top: 15px;
   margin-right: 15px;
 }
-.team-table-position{
-  h3{
+.team-table-position {
+  h3 {
     margin-top: 5px;
   }
 }
 
-.grid-item{
-  z-index:-1;
-
+.grid-item {
+  z-index: -1;
 }
-.results{
-  h2{
+.results {
+  h2 {
     font-size: 55px;
+
     margin-top: 15px;
-    &:after{
+    &:after {
       position: relative;
-      content: '';
+
       display: block;
+
       width: auto;
       height: 1px;
-      background-color: grey;
       margin-top: 20px;
+
+      content: '';
+
+      background-color: grey;
     }
   }
 }
-.photo-title{
-    text-align: center;
-    font-size: 32px;
-    padding: 19px;
+.photo-title {
+  font-size: 32px;
+
+  padding: 19px;
+
+  text-align: center;
+  text-decoration: none;
+
+  color: black;
+  &:hover {
     text-decoration: none;
+
     color: black;
-    &:hover{
-      color:black;
-      text-decoration:none;
-    }
-    img{
-      padding: 20px;
-    }
+  }
+  img {
+    padding: 20px;
+  }
 }
-.gallery{
-  li{
-    &:before{
+.gallery {
+  li {
+    &:before {
       background-color: white;
     }
   }
 }
 
-  a{
-    .roster-link{
-    color:white;
+a {
+  .roster-link {
     padding-top: 100px;
-  }
-  }
 
-
+    color: white;
+  }
+}
