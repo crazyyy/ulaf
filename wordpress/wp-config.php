@@ -1,6 +1,4 @@
 <?php
-define('WP_CACHE', true); //Added by WP-Cache Manager
-define( 'WPCACHEHOME', 'E:\MyProjects\ulaf\wordpress\wp-content\plugins\wp-super-cache/' ); //Added by WP-Cache Manager
 define('DB_NAME', 'p284179_ulaf');
 define('DB_USER', 'p284179_ulaf');
 define('DB_PASSWORD', '5HC7Z3d2f8');

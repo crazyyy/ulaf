@@ -3,8 +3,8 @@
 
 
 
- <!--  <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-   <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>> -->
+<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+ <!--     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>> -->
 
 <div class="our-team">
   <div class="container">
@@ -67,57 +67,12 @@
     </div>
   </div>
 
+<?php endwhile; endif; ?>
+
 
 </div>
 </div>
-<script>
 
-$(document).ready(function(cityName) {
-  $(".right-bg-block div").hide();
-  // Cache tout les textes et les sous-menu
-
-  $(".left-bg-block li:first").attr("id","active");
-  // Ajoute la class active au premier menu
-
-  $(".right-bg-block .person:first").fadeIn();
-  $(".right-bg-block .person-image:first").fadeIn();
-  $(".right-bg-block .person-info:first").fadeIn();
-  // Montre le premier texte à l'apparition de la page
-
-
-  $('.left-bg-block span').click(function(e) {
-      e.preventDefault();
-     if ($(this).closest("li").attr("id") == "active"){
-          //si le menu cliquer est déjà ouvert.
-       return
-     }else{
-       $(".right-bg-block div").hide();
-          // Cache tous les éléments
-
-        $(".left-bg-block li").attr("id","");
-          // Rénitialise tout les menu active
-
-        $(this).parent().attr("id","active");
-          // active le parent du li selectionner
-
-        $(getClass('.person') + $(this).attr('name')).fadeIn();
-          // Montre le texte
-          //
-        }
-
-
-  });
-
-});
-
-</script>
-<script>
-  $(document).ready(function(){
-    $('.team-list').scroll(function(){
-    });
-});
-
-</script>
 <?php get_footer(); ?>
 
 <!-- <div class="container game-info">
@@ -1023,13 +978,3 @@ function openName(evt, personName) {
 
 
     </article> -->
- <!--  <?php endwhile; else: // If 404 page error ?>
-   <article>
-
-     <h2 class="page-title inner-title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
-
-
-   </article>
- <?php endif; ?> -->
-
-
