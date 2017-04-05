@@ -14,16 +14,25 @@
           <div class="team-sign">
             <?php the_title(); ?>
           </div>
-          <ul class="team-list" style="overflow-y:auto; height: 325px;">
-            <li class="tablink" style="display: block;" onclick="openName(event, 'Maxim')"><span>Максим Шило</span></li>
-            <li class="tablink" onclick="openName(event, 'Misha')"><span>Миша Гусак</span></li>
-            <li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li>
-            <li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li><li class="tablink" onclick="openName(event, 'Kolya')"><span>Коля Лесовой</span></li>
+          <?php
+
+          $posts = get_field('team');
+
+          if( $posts ): ?>
+            <ul class="team-list" style="overflow-y:auto; height: 325px;">
+          <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+          <?php setup_postdata($post); ?>
+            <li><span name="tab1"><?php the_title(); ?></span></li>
+
+          <?php endforeach; ?>
           </ul>
+
+          <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+<?php endif; ?>
     </div>
     <div class="col-md-7 right-bg-block">
-      <div class="person" id="Maxim" style="display: block;">
-        <div class="person-image w3-animate-right">
+      <div class="person" id="tab1">
+        <div class="person-image">
           <img src="<?php echo get_template_directory_uri(); ?>/img/landry1.jpg" alt="">
           <div class="person-info">
             <span class="person-name">Максим Шило</span>
@@ -32,8 +41,8 @@
           </div>
         </div>
       </div>
-      <div class="person" id="Misha" style="display: none;">
-        <div class="person-image w3-animate-right">
+      <div class="person" id="tab2">
+        <div class="person-image">
           <img src="<?php echo get_template_directory_uri(); ?>/img/brady.jpg" alt="">
           <div class="person-info">
             <span class="person-name">Миша Гусак</span>
@@ -42,8 +51,8 @@
           </div>
         </div>
       </div>
-      <div class="person" id="Kolya" style="display: none;">
-        <div class="person-image w3-animate-right">
+      <div class="person" id="tab3">
+        <div class="person-image">
           <img src="<?php echo get_template_directory_uri(); ?>/img/mack.jpg" alt="">
           <div class="person-info">
             <span class="person-name">Коля Лесовой</span>
@@ -62,18 +71,45 @@
 </div>
 </div>
 <script>
-function openName(evt, personName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("person");
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
 
-  document.getElementById(personName).style.display = "block";
-  evt.currentTarget.className;
+$(document).ready(function(cityName) {
+  $(".right-bg-block div").hide();
+  // Cache tout les textes et les sous-menu
+
+  $(".left-bg-block li:first").attr("id","active");
+  // Ajoute la class active au premier menu
+
+  $(".right-bg-block .person:first").fadeIn();
+  $(".right-bg-block .person-image:first").fadeIn();
+  $(".right-bg-block .person-info:first").fadeIn();
+  // Montre le premier texte à l'apparition de la page
 
 
-}
+  $('.left-bg-block span').click(function(e) {
+      e.preventDefault();
+     if ($(this).closest("li").attr("id") == "active"){
+          //si le menu cliquer est déjà ouvert.
+       return
+     }else{
+       $(".right-bg-block div").hide();
+          // Cache tous les éléments
+
+        $(".left-bg-block li").attr("id","");
+          // Rénitialise tout les menu active
+
+        $(this).parent().attr("id","active");
+          // active le parent du li selectionner
+
+        $(getClass('.person') + $(this).attr('name')).fadeIn();
+          // Montre le texte
+          //
+        }
+
+
+  });
+
+});
+
 </script>
 <script>
   $(document).ready(function(){
@@ -85,6 +121,16 @@ function openName(evt, personName) {
 <?php get_footer(); ?>
 
 <!-- <div class="container game-info">
+function openName(evt, personName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("person");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+
+  document.getElementById(personName).style.display = "block";
+  evt.currentTarget.className;
+
       <h2>Дивизион A</h2>
         <div class="row championship">
             <div class="col-md-1 game-date">

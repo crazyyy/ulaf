@@ -358,6 +358,8 @@
     </div>
 
       </div>row -->
+    </div>
+  </div>
 </section><!-- container container-content -->
 
 <?php get_footer(); ?>
