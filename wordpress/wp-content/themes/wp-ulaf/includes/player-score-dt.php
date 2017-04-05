@@ -11,12 +11,9 @@
                   // loop through the rows of data
                     while ( have_rows('player_defensive_tacke') ) : the_row(); ?>
           <th>
-                <?php  $posts = get_sub_field('opposing_team');
-                      if( $posts ):
-                      foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+                <?php  $posts = get_sub_field('opposing_team'); if( $posts ): foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
                 <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $p->ID ) ); ?>" alt="">
-                      <?php endforeach; ?>
-                      <?php endif; ?>
+                      <?php endforeach; endif; ?>
           </th>
                      <?php endwhile; endif; ?>
           <th>Общая</th>

@@ -1,8 +1,9 @@
 <?php /* Template Name: Home Page */ get_header(); ?>
 
-      <div id="main">
-      <div class="stm-title-box-unit transparent-header_on">
-      </div>
+  <div id="main">
+
+    <div class="stm-title-box-unit transparent-header_on"></div>
+
       <div class="container">
         <div class="vc_row wpb_row vc_row-fluid">
           <div class="wpb_column vc_column_container vc_col-sm-12">
@@ -16,6 +17,7 @@
         </div>
 
         <div class="vc_row-full-width vc_clearfix"></div>
+
         <div data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid vc_custom_1462188886536 vc_row-has-fill">
           <div class="wpb_column vc_column_container vc_col-sm-12">
             <div class="vc_column-inner ">
@@ -75,12 +77,8 @@
             </div>
           </div>
         </div>
-<?php
-
-$posts = get_field('relationship_field_name');
-
-if( $posts ): ?>
-    <ul>
+<?php $posts = get_field('relationship_field_name'); if( $posts ): ?>
+  <ul>
     <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
         <?php setup_postdata($post); ?>
         <li>
@@ -89,7 +87,7 @@ if( $posts ): ?>
         </li>
     <?php endforeach; ?>
     </ul>
-    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+    <?php wp_reset_postdata(); ?>
 <?php endif; ?>
 <div class="container">
 <?php
@@ -102,8 +100,8 @@ if( $posts ): ?>
         <?php setup_postdata($post); ?>
           <div class="slide col-md-8 col-sm-12">
             <?php if ( has_post_thumbnail()) : the_post_thumbnail('medium'); else: ?>
-                                     <img src="<?php echo catchFirstImage(); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>" />
-                                    <?php endif; ?>
+              <img src="<?php echo catchFirstImage(); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>" />
+            <?php endif; ?>
           </div>
           <?php endforeach; ?>
         </div>
