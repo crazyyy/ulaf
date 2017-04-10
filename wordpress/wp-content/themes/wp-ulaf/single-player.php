@@ -62,13 +62,19 @@
                         $current_year = date("Y");
                         $age = $current_year - $birthday;
                         echo $age; ?></span></div>
-              <div class="team">Команда: <span><?php the_field('current_team');?></span></div>
+              <div class="team">Игровой номер: <span><?php the_field('player_number');?></span></div>
               <div class="height-weight">Рост и вес: <span><?php the_field('height');?> см | <?php the_field('weight');?> кг</span></div>
               <div class="position">Позиция: <span><?php the_field('player_position');?></span></div>
             </div>
           </div>
           <div class="col-md-4 current-team">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/steelers.png" alt="" class= "team-logo">
+                    <?php
+                      $posts = get_field('player_team');
+                      if( $posts ): ?>
+                        <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+                        <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank"><?php echo get_the_post_thumbnail( $p->ID ); ?></a>
+                        <?php endforeach; ?>
+                      <?php endif; ?>
 
           </div>
         </div><!--/ player-character -->
@@ -91,8 +97,9 @@
                 <td colspan="2">Фамблы</td>
               </tr>
               <tr>
+
                 <td colspan="2"></td>
-                <td colspan="4">G</td>
+                <td colspan="4"></td>
 
                 <td>Rec</td>
 
@@ -115,19 +122,35 @@
                 <td>Lost</td>
               </tr>
               <tr class="stats">
-                <td>2016</td>
-                <td>Волки Винница</td>
-                <td colspan="4">10</td>
-                <td>56</td>
-                <td>1120</td>
-                <td>5.4</td>
-                <td>15</td>
-                <td>120</td>
-                <td>1120</td>
-                <td>11</td>
-                <td>11</td>
-                <td>11</td>
-                <td>11</td>
+              <?php
+
+// check if the repeater field has rows of data
+                  if( have_rows('offensive_stats') ):
+
+  // loop through the rows of data
+                  while ( have_rows('offensive_stats') ) : the_row();?>
+
+
+
+                <td><?php the_sub_field('season'); ?></td>
+                <td><?php the_sub_field('oposing_team'); ?></td>
+                <td colspan="4"></td>
+
+                <td><?php the_sub_field('pass_receptions'); ?></td>
+                <td><?php the_sub_field('passing_yards'); ?></td>
+                <td><?php the_sub_field('average_yards_by_pass'); ?></td>
+                <td><?php the_sub_field('passing_tds'); ?></td>
+                <td><?php the_sub_field('rush_attemps'); ?></td>
+                <td><?php the_sub_field('rushing_yards'); ?></td>
+                <td><?php the_sub_field('rushing_yards_average'); ?></td>
+                <td><?php the_sub_field('rushing_tds'); ?></td>
+                <td><?php the_sub_field('covered_fumbles'); ?></td>
+                <td><?php the_sub_field('losted_fumbles'); ?></td>
+                 <?php endwhile; endif; ?>
+
+
+
+
 
 
               </tr>
@@ -155,7 +178,7 @@
               </tr>
               <tr>
                 <td colspan="2"></td>
-                <td colspan="4">G</td>
+                <td colspan="4"></td>
 
                 <td>Comb  </td>
 
@@ -176,18 +199,31 @@
                 <td>Forced</td>
               </tr>
               <tr class="stats">
-                <td>2016</td>
-                <td>Волки Винница</td>
-                <td colspan="4">10</td>
-                <td>56</td>
-                <td>1120</td>
-                <td>5.4</td>
-                <td>15</td>
-                <td>120</td>
-                <td>1120</td>
-                <td>11</td>
-                <td>11</td>
-                <td>11</td>
+                <?php
+
+// check if the repeater field has rows of data
+                  if( have_rows('defensive_stats') ):
+
+  // loop through the rows of data
+                  while ( have_rows('defensive_stats') ) : the_row();?>
+
+
+
+                <td><?php the_sub_field('season'); ?></td>
+                <td><?php the_sub_field('oposing_team'); ?></td>
+                <td colspan="4"></td>
+
+                <td><?php the_sub_field('combined_tackles'); ?></td>
+                <td><?php the_sub_field('total_tackles'); ?></td>
+                <td><?php the_sub_field('tackles_assists'); ?></td>
+                <td><?php the_sub_field('sacks'); ?></td>
+                <td><?php the_sub_field('safetys'); ?></td>
+                <td><?php the_sub_field('passes_defended'); ?></td>
+                <td><?php the_sub_field('interceptions'); ?></td>
+                <td><?php the_sub_field('tds'); ?></td>
+                <td><?php the_sub_field('forced_fumbles'); ?></td>
+
+                 <?php endwhile; endif; ?>
 
 
               </tr>

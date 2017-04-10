@@ -77,18 +77,7 @@
             </div>
           </div>
         </div>
-<?php $posts = get_field('relationship_field_name'); if( $posts ): ?>
-  <ul>
-    <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
-        <?php setup_postdata($post); ?>
-        <li>
-            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-            <span>Custom field from $post: <?php the_field('author'); ?></span>
-        </li>
-    <?php endforeach; ?>
-    </ul>
-    <?php wp_reset_postdata(); ?>
-<?php endif; ?>
+
 <div class="container">
 <?php
 
@@ -116,15 +105,15 @@ if( $posts ): ?>
               <div class="wpb_wrapper">
                 <div class="wpb_text_column wpb_content_element ">
                   <div class="wpb_wrapper">
-                    <h3 style="text-align: center;"><span style="color: #ffffff;">IFAF is composed of 103 members nations on six continents<br>
-(North and South America, Europe, Asia, Africa and Oceania)<br>
-all of which possess national federations dedicated solely to American football.</span></h3>
+                    <h3 style="text-align: center;"><span style="color: #ffffff;">Презентация наших рекламных возможностей и медийных проявления для партнеров и спонсоров.
+                    <br>
+                    <br></span></h3>
                   </div>
                 </div>
                 <div class="stm-call-to-action clearfix">
                   <a class="button btn-secondary btn-md btn-style-4" href="http://www.ifaf.info/wp-content/uploads/2016/11/IFAF-Membership-form.pdf" title="Download" target="_blank">Скачать</a>
                   <div class="stm-call-to-action-inner">
-                    <h4 style="color:#ffffff">Download Questionnaire for applying for IFAF Membership!</h4>
+                    <h4 style="color:#ffffff"></h4>
                   </div>
                 </div>
               </div>

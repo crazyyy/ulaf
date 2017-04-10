@@ -51,8 +51,22 @@
                     $date = new DateTime($date);
                     echo $date->format('j M Y');
                   ?></div>
-              <div class="nationality">Президент: <span></span></div>
-              <div class="team">Главный тренер: <span></span></div>
+              <div class="nationality">Президент: <span>
+                <?php
+                      $posts = get_field('team_president');
+                      if( $posts ): ?>
+                        <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+                        <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank"><?php echo get_the_title( $p->ID ); ?></a>
+                        <?php endforeach; ?>
+                      <?php endif; ?>
+              </span></div>
+              <div class="team">Главный тренер: <span><?php
+                      $posts = get_field('head_coach');
+                      if( $posts ): ?>
+                        <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+                        <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank"><?php echo get_the_title( $p->ID ); ?></a>
+                        <?php endforeach; ?>
+                      <?php endif; ?></span></div>
 
               <div class="position">Город: <span><?php the_field('team_city');?></span></div>
               <button><a class="roster-link" href="<?php the_field('roster_link');?>" style="    color: white;
@@ -68,12 +82,13 @@
       </div>
 <div class="row full-offensive-stats">
           <div class="col-md-12">
+
             <table>
         <!-- Заголовок таблицы -->
               <tr>
                 <td class="first-td">Сезон</td>
 
-                <td>Противник</td>
+                <td>Игр</td>
 
                 <td colspan="2"></td>
 
@@ -85,42 +100,60 @@
               </tr>
               <tr>
                 <td colspan="2"></td>
-                <td colspan="4">G</td>
+                <td colspan="4"></td>
 
-                <td>Rec</td>
 
-                <td>Yds</td>
-
-                <td>Avg</td>
-
-                <td>TD</td>
-
-                <td>Att</td>
 
                 <td>Yds</td>
 
                 <td>Avg</td>
 
                 <td>TD</td>
+
+                <td></td>
+
+
+
+                <td>Yds</td>
+
+                <td>Avg</td>
+                <td>TD</td>
+                <td></td>
 
                 <td>Cov</td>
 
                 <td>Lost</td>
               </tr>
               <tr class="stats">
-                <td>2017</td>
-                <td>Волки Винница</td>
-                <td colspan="4">10</td>
-                <td>56</td>
-                <td>1120</td>
-                <td>5.4</td>
-                <td>15</td>
-                <td>120</td>
-                <td>1120</td>
-                <td>11</td>
-                <td>11</td>
-                <td>11</td>
-                <td>11</td>
+               <?php
+
+// check if the repeater field has rows of data
+                  if( have_rows('stats') ):
+
+  // loop through the rows of data
+                  while ( have_rows('stats') ) : the_row();?>
+
+
+
+                <td><?php the_sub_field('season'); ?></td>
+                <td><?php the_sub_field('games_number'); ?></td>
+                <td colspan="4"></td>
+
+                <td><?php the_sub_field('passing_yards'); ?></td>
+                <td><?php the_sub_field('passing_yards_avg'); ?></td>
+                <td><?php the_sub_field('passing_tds'); ?></td>
+                <td></td>
+                <td><?php the_sub_field('running_yards'); ?></td>
+                <td><?php the_sub_field('running_yards_avg'); ?></td>
+                <td><?php the_sub_field('running_tds'); ?></td>
+                <td></td>
+                <td><?php the_sub_field('covered_fumbles'); ?></td>
+                <td><?php the_sub_field('fumbles_lost'); ?></td>
+                 <?php endwhile; endif; ?>
+
+
+
+
 
 
               </tr>
@@ -149,8 +182,8 @@
 
                 <div class="col-md-3 people-desciption">
 
-                    <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $p->ID, "medium" ) ); ?>" alt="">
-                    <?php echo get_the_title( $p->ID ); ?>
+                   <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $p->ID, "medium" ) ); ?>" alt="">
+                    <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank"><?php echo get_the_title( $p->ID ); ?></a>
 
                 </div><!-- people-desciption -->
 

@@ -1438,12 +1438,15 @@ table {
 }
 
 .stm-footer {
-  position: fixed;
+  position: relative;
   z-index: 5;
   right: 0;
   bottom: 0;
   left: 0;
   width: 100%;
+}
+.people-name{
+  padding-bottom: 25px;
 }
 
 .stm-call-to-action {
@@ -2714,6 +2717,32 @@ td {
 .gallery li:before {
   background-color: white;
 }
+.pagination{
+.page-numbers{
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 45px;
+    display: inline-block;
+    min-width: 45px;
+    min-height: 45px;
+    text-align: center;
+    text-decoration: none!important;
+    color: #bfbfbf;
+    border: 2px solid #bfbfbf;
+    border-radius: 5px;
+    &:hover{
+    color: #fff;
+    border-color: #00529b;
+    background-color: #00529b;
+    }
+}
+.current{
+  color: #fff;
+    border-color: #00529b;
+    background-color: #00529b;
+}
+}
 
 @media print {
   *, :after, :before {
@@ -2931,9 +2960,7 @@ td {
     padding-bottom: 0 !important;
   }
 
-  .stm-footer {
-    position: static;
-  }
+
 }
 
 @media (max-width: 920px) {

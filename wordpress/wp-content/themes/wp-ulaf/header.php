@@ -73,11 +73,21 @@
         </div>
       </div>
     </div>
+    <?php if ( is_page(22) ){
 
+                ?>
     <div class="stm-header stm-transparent-header stm-header-fixed-mode">
+
+
       <div class="stm-header-inner">
-        <div class="stm-header-background" style="background-image: url('http://www.ifaf.info/wp-content/uploads/2016/10/header-about-us.jpg')"></div>
+        <div class="stm-header-background"></div>
         <div class="container stm-header-container">
+          <? } else { ?>
+          <div class="stm-header stm-non-transparent-header stm-header-fixed-mode stm-header-fixed stm-header-fixed-intermediate" style="min-height: 230px;">
+      <div class="stm-header-inner">
+        <div class="stm-header-background" style="background-image: url(&#39;http://ulafua.com/wp-content/uploads/2017/03/header.jpg&#39;);"></div>
+        <div class="container stm-header-container">
+         <?php  } ?>
           <!--Logo-->
           <div class="logo-main" style="margin-top: 0px; margin-right: 9px;">
             <a class="bloglogo" href="<?php echo home_url(); ?>">

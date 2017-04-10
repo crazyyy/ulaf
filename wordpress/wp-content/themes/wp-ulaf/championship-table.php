@@ -121,7 +121,40 @@
       <div class="col-md-12 team-table-position-2016 grid-item">
 
         <div class="full-table-2016">
+<h3>Дивизион A</h3>
 
+<table class="championship-table">
+            <thead>
+                    <tr>
+                        <th>Команды</th>
+                        <th>В</th>
+                        <th>П</th>
+                        <th>Очки</th>
+                        <th>ОЗ</th>
+                        <th>ОП</th>
+                        <th>+/-</th>
+                    </tr>
+            </thead>
+              <?php $posts = get_field('table_team_a'); if( $posts ): ?>
+            <tbody>
+          <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+              <tr>
+                  <td>
+                  <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank">
+                <?php echo get_the_post_thumbnail( $p->ID, 'thumbnail' ); ?>
+                <?php echo get_the_title( $p->ID ); ?></a>
+                      </td>
+                  <td><?php the_field('wins', $p->ID); ?></td>
+                  <td><?php the_field('losts', $p->ID); ?></td>
+                  <td><?php the_field('points', $p->ID); ?></td>
+                  <td><?php the_field('total_scores', $p->ID); ?></td>
+                  <td><?php the_field('total_losts', $p->ID); ?></td>
+                  <td><?php the_field('difference', $p->ID); ?></td>
+              </tr>
+              <?php endforeach; ?>
+            </tbody>
+            <?php endif; ?>
+      </table>
       <h3>Дивизион B</h3>
         <table class="championship-table">
             <thead>
