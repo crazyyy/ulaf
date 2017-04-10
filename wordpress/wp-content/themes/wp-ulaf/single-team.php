@@ -220,28 +220,28 @@
           <h5 class="text-achiv"><?php the_sub_field('team_achievements'); ?></h5>
         <?php endwhile;  ?>
       <?php endif; ?>
+<div class="container">
+<h4>Спонсоры команды</h4>
+<?php
 
-      <?php $posts = get_field('sponsors'); if( $posts ): ?>
-        <div class="row">
-          <div class="col-md-12 sponsors">
-            <h4>Спонсоры команды</h4>
-            <div class="row">
+$posts = get_field('sponsors');
 
-              <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+if( $posts ): ?>
+        <div class="row slider">
 
-                <div class="col-md-1 people-desciption">
-                  <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank">
-                    <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $p->ID, "medium" ) ); ?>" alt="">
-                    <?php echo get_the_title( $p->ID ); ?>
-                  </a>
-                </div><!-- people-desciption -->
+        <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+        <?php setup_postdata($post); ?>
+          <div class="slide col-md-8 col-sm-12">
+            <?php if ( has_post_thumbnail()) : the_post_thumbnail('medium'); else: ?>
+              <img src="<?php echo catchFirstImage(); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>" />
+            <?php endif; ?>
+          </div>
+          <?php endforeach; ?>
+        </div>
+        <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+<?php endif; ?>
+      </div>
 
-              <?php endforeach; ?>
-
-          </div><!-- /.row -->
-        </div><!--people-desciption -->
-      </div><!-- row -->
-    <?php endif; ?>
 
     <?php comments_template(); ?>
 

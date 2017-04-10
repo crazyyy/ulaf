@@ -1,7 +1,8 @@
 <?php get_header(); ?>
 <section class="container container-content">
   <div class="row single-game">
-    <h1><?php the_title(); ?></h1>
+    <h1 class="game-title"><?php the_title(); ?></h1>
+    <hr>
               <?php // get raw date
                 $date = get_field('date', false, false);
                 // make date object
@@ -13,11 +14,12 @@
     <div class="col-md-12 team-single-game">
       <tr>
         <td>
-          <?php  $posts = get_field('team'); if( $posts ):
+          <?php  $posts = get_field('first-team'); if( $posts ):
              foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
             <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $p->ID ) ); ?>" alt="">
                 <?php endforeach; ?>
                  <?php endif; ?>
+                 <?php wp_reset_query(); ?>
         </td>
         <td>
           <span class="single-game-score"><?php the_field('score_first_team');?></span>
