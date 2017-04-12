@@ -3,14 +3,14 @@
 
   <section class="container">
 
-    <div class="row grid">
+    <div class="row grid-2">
 <select class="filters-select">
           <option value=".team-table-position-2017">Сезон 2017</option>
           <option value=".team-table-position-2016">Сезон 2016</option>
         </select>
-      <div class="col-md-12 team-table-position-2017 grid-item">
+      <div class="col-md-12 team-table-position-2017 grid-item-2">
 
-        <div class="full-table-2017">
+
          <h3>Дивизион A</h3>
 
 <table class="championship-table">
@@ -25,7 +25,7 @@
                         <th>+/-</th>
                     </tr>
             </thead>
-              <?php $posts = get_field('table_team_a'); if( $posts ): ?>
+              <?php $posts = get_field('table_2017_a'); if( $posts ): ?>
             <tbody>
           <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
               <tr>
@@ -34,12 +34,12 @@
                 <?php echo get_the_post_thumbnail( $p->ID, 'thumbnail' ); ?>
                 <?php echo get_the_title( $p->ID ); ?></a>
                       </td>
-                  <td><?php the_field('wins', $p->ID); ?></td>
-                  <td><?php the_field('losts', $p->ID); ?></td>
-                  <td><?php the_field('points', $p->ID); ?></td>
-                  <td><?php the_field('total_scores', $p->ID); ?></td>
-                  <td><?php the_field('total_losts', $p->ID); ?></td>
-                  <td><?php the_field('difference', $p->ID); ?></td>
+                  <td><?php the_field('wins_2017', $p->ID); ?></td>
+                  <td><?php the_field('losts_2017', $p->ID); ?></td>
+                  <td><?php the_field('points_2017', $p->ID); ?></td>
+                  <td><?php the_field('total_scores_2017', $p->ID); ?></td>
+                  <td><?php the_field('total_conceded_2017', $p->ID); ?></td>
+                  <td><?php the_field('difference_2017', $p->ID); ?></td>
               </tr>
               <?php endforeach; ?>
             </tbody>
@@ -60,7 +60,7 @@
 
                     </tr>
             </thead>
-              <?php $posts = get_field('table_team_b'); if( $posts ): ?>
+              <?php $posts = get_field('table_2017_b'); if( $posts ): ?>
             <tbody>
           <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
               <tr>
@@ -69,12 +69,12 @@
                 <?php echo get_the_post_thumbnail( $p->ID, 'thumbnail' ); ?>
                 <?php echo get_the_title( $p->ID ); ?></a>
                       </td>
-                  <td><?php the_field('wins', $p->ID); ?></td>
-                  <td><?php the_field('losts', $p->ID); ?></td>
-                  <td><?php the_field('points', $p->ID); ?></td>
-                  <td><?php the_field('total_scores', $p->ID); ?></td>
-                  <td><?php the_field('total_losts', $p->ID); ?></td>
-                  <td><?php the_field('difference', $p->ID); ?></td>
+                  <td><?php the_field('wins_2017', $p->ID); ?></td>
+                  <td><?php the_field('losts_2017', $p->ID); ?></td>
+                  <td><?php the_field('points_2017', $p->ID); ?></td>
+                  <td><?php the_field('total_scores_2017', $p->ID); ?></td>
+                  <td><?php the_field('total_conceded_2017', $p->ID); ?></td>
+                  <td><?php the_field('difference_2017', $p->ID); ?></td>
               </tr>
               <?php endforeach; ?>
             </tbody>
@@ -93,7 +93,7 @@
                         <th>+/-</th>
                     </tr>
             </thead>
-              <?php $posts = get_field('table_team_c'); if( $posts ): ?>
+              <?php $posts = get_field('table_2017_c'); if( $posts ): ?>
             <tbody>
           <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
               <tr>
@@ -102,25 +102,25 @@
                 <?php echo get_the_post_thumbnail( $p->ID, 'thumbnail' ); ?>
                 <?php echo get_the_title( $p->ID ); ?></a>
                       </td>
-                  <td><?php the_field('wins', $p->ID); ?></td>
-                  <td><?php the_field('losts', $p->ID); ?></td>
-                  <td><?php the_field('points', $p->ID); ?></td>
-                  <td><?php the_field('total_scores', $p->ID); ?></td>
-                  <td><?php the_field('total_losts', $p->ID); ?></td>
-                  <td><?php the_field('difference', $p->ID); ?></td>
+                 <td><?php the_field('wins_2017', $p->ID); ?></td>
+                  <td><?php the_field('losts_2017', $p->ID); ?></td>
+                  <td><?php the_field('points_2017', $p->ID); ?></td>
+                  <td><?php the_field('total_scores_2017', $p->ID); ?></td>
+                  <td><?php the_field('total_conceded_2017', $p->ID); ?></td>
+                  <td><?php the_field('difference_2017', $p->ID); ?></td>
               </tr>
               <?php endforeach; ?>
             </tbody>
             <?php endif; ?>
       </table>
-      </div>
+
       <!-- 2016 year -->
 
 
       </div>
-      <div class="col-md-12 team-table-position-2016 grid-item">
+      <div class="col-md-12 team-table-position-2016 grid-item-2">
 
-        <div class="full-table-2016">
+
 <h3>Дивизион A</h3>
 
 <table class="championship-table">
@@ -222,7 +222,7 @@
             </tbody>
             <?php endif; ?>
       </table>
-      </div>
+
       <!-- 2016 year -->
 
 

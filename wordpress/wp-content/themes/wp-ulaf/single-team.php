@@ -69,8 +69,14 @@
                       <?php endif; ?></span></div>
 
               <div class="position">Город: <span><?php the_field('team_city');?></span></div>
-              <button><a class="roster-link" href="<?php the_field('roster_link');?>" style="    color: white;
-    text-decoration: none;">Ростер</a></button>
+                   <?php
+                      $posts = get_field('roster_link');
+                      if( $posts ): ?>
+                        <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+                          <a class="roster-link" href="<?php echo get_permalink( $p->ID ); ?>" target="_blank"><button>Ростер</button></a>
+                        <?php endforeach; ?>
+                        <?php endif; ?>
+
             </div>
           </div>
 

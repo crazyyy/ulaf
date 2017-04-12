@@ -30,12 +30,14 @@
       $stm_header.css('min-height', headerH + 'px');
     }
   }
-  //isotope///////////////////////
+  //isotope results///////////////////////
   $('.grid').isotope({
 
   // options
+  //
   itemSelector: '.grid-item',
-  layoutMode: 'fitRows'
+  layoutMode: 'fitRows',
+  filter: '.game-info-2017'
 });
 $('.filters-select').on( 'change', function() {
   // get filter value from option value
@@ -43,6 +45,22 @@ $('.filters-select').on( 'change', function() {
   $('.grid').isotope({ filter: filterValue });
   $('.grid-item').show();
 });
+///////isotope table/////////////
+$('.grid-2').isotope({
+
+  // options
+  //
+  itemSelector: '.grid-item-2',
+  layoutMode: 'fitRows',
+  filter: '.team-table-position-2017'
+});
+$('.filters-select').on( 'change', function() {
+  // get filter value from option value
+  var filterValue = this.value;
+  $('.grid-2').isotope({ filter: filterValue });
+  $('.grid-item-2').show();
+});
+/////////////////////////////////////
  // owlCarousel//////////////////////
   (function() {
     $('.slider').owlCarousel({

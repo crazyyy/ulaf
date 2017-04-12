@@ -12,76 +12,73 @@
           <option value=".game-info-2017">Сезон 2017</option>
           <option value=".game-info-2016">Сезон 2016</option>
         </select>
-        <h2 >Результати</h2>
+        <h2 >Результаты</h2>
 
 
         <div class="grid">
           <div class="col-md-12 game-info-2017 grid-item">
-            <h4>Дивизион A</h4>
+          <?php
 
-            <div class="col-md-1 game-date">
-              16.07
-            </div>
-            <a href="#">
-            <div class="col-md-4 team-game">
-              <span>Pirates (Odessa)</span>
-            <img src="<?php echo get_template_directory_uri(); ?>/img/teams/pirates.png">
-            </div>
-            <div class="col-md-2 game-score">
-              <span>00-48</span>
-            </div>
-            <div class="col-md-5 team-game">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/teams/les.png">
-              <span>Lumberjacks (Uzhgorod)</span>
-            </div>
+// check if the repeater field has rows of data
+                  if( have_rows('game_result') ):
 
-        </a>
-        <h4>Дивизион A</h4>
+  // loop through the rows of data
+                  while ( have_rows('game_result') ) : the_row();?>
+          <h3><?php the_sub_field('division'); ?></h3>
 
-            <div class="col-md-1 game-date">
-              16.07
-            </div>
-            <a href="#">
-            <div class="col-md-4 team-game">
-              <span>Pirates (Odessa)</span>
-            <img src="<?php echo get_template_directory_uri(); ?>/img/teams/pirates.png">
-            </div>
-            <div class="col-md-2 game-score">
-              <span>00-48</span>
-            </div>
-            <div class="col-md-5 team-game">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/teams/les.png">
-              <span>Lumberjacks (Uzhgorod)</span>
-            </div>
+        <?php $posts = get_sub_field('full_game_result_link');if( $posts ): ?>
+                  <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+              <a href="<?php echo get_permalink( $p->ID ); ?>">
+                      <div class="game-bar">
+                <div class="col-md-2 game-date">
+                    <?php
+                    $date = the_sub_field('game_date');
 
-        </a>
-        <h4>Дивизион A</h4>
+                  ?>
+                </div>
 
-            <div class="col-md-1 game-date">
-              16.07
-            </div>
-            <a href="#">
-            <div class="col-md-4 team-game">
-              <span>Pirates (Odessa)</span>
-            <img src="<?php echo get_template_directory_uri(); ?>/img/teams/pirates.png">
-            </div>
-            <div class="col-md-2 game-score">
-              <span>00-48</span>
-            </div>
-            <div class="col-md-5 team-game">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/teams/les.png">
-              <span>Lumberjacks (Uzhgorod)</span>
-            </div>
+                <div class="col-md-3 team-game result-left-team">
+                     <?php $posts = get_sub_field('home_team_name');
+                     if( $posts ): ?>
+                     <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+                      <span><?php echo get_the_title($p->ID); ?></span>
+                      <?php endforeach; endif; ?>
+                     <?php $posts = get_sub_field('home_team_logo');
+                     if( $posts ): foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+                  <img class="result-pic" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $p->ID ) ); ?>" alt="">
+                      <?php endforeach; endif; ?>
 
-        </a>
-    </div>
+                </div>
+               <div class="col-md-1 game-score">
+                 <span><?php the_sub_field('game_score_result'); ?></span>
+               </div>
+               <div class="col-md-5 team-game">
+
+                     <?php $posts = get_sub_field('away_team_logo'); if( $posts ): foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+                  <img class="result-pic" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $p->ID ) ); ?>" alt="">
+                      <?php endforeach; endif; ?>
+                       <?php $posts = get_sub_field('away_team_name');
+                     if( $posts ): ?>
+                     <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+                      <span><?php echo get_the_title($p->ID); ?></span>
+                      <?php endforeach; endif; ?>
+              </div>
+             </div>
+            </a>
+
+
+      <?php endforeach; endif; ?>
 
 
 
-<div class="col-md-12 game-info-2016 grid-item">
-      <h4
->Дивизион C</h4
->
+<?php endwhile; endif; ?>
+
+        </div>
+
+
+
+    <div class="col-md-12 game-info-2016 grid-item">
+      <h4>Дивизион C</h4>
 
             <div class="col-md-1 game-date">
               26.06
@@ -100,11 +97,13 @@
             </div>
 
         </a>
-    </div>
-        </div>
-</div>
-        </div>
+      </div>
 
+
+
+    </div>
+  </div>
+</div>
 
 
 
