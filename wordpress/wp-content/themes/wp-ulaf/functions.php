@@ -661,8 +661,8 @@ add_action( 'init', 'post_type_team' );
 function post_type_team() {
 
   $labels = array(
-    'name' => 'Team',
-    'singular_name' => 'Team',
+    'name' => 'Команди',
+    'singular_name' => 'Команди',
     'add_new' => 'Add',
     'add_new_item' => 'Add',
     'edit' => 'Edit',
@@ -703,8 +703,8 @@ add_action( 'init', 'post_type_player' );
 function post_type_player() {
 
   $labels = array(
-    'name' => 'Player',
-    'singular_name' => 'Player',
+    'name' => 'Гравці',
+    'singular_name' => 'Гравець',
     'add_new' => 'Add',
     'add_new_item' => 'Add',
     'edit' => 'Edit',
@@ -746,8 +746,8 @@ add_action( 'init', 'post_type_people' );
 function post_type_people() {
 
   $labels = array(
-    'name' => 'People',
-    'singular_name' => 'People',
+    'name' => 'Персоналії',
+    'singular_name' => 'Персонаж',
     'add_new' => 'Add',
     'add_new_item' => 'Add',
     'edit' => 'Edit',
@@ -786,8 +786,8 @@ add_action( 'init', 'post_type_games' );
 function post_type_games() {
 
   $labels = array(
-    'name' => 'Games',
-    'singular_name' => 'Games',
+    'name' => 'Ігри',
+    'singular_name' => 'Гра',
     'add_new' => 'Add',
     'add_new_item' => 'Add',
     'edit' => 'Edit',
@@ -827,8 +827,8 @@ add_action( 'init', 'post_type_sponsors' );
 function post_type_sponsors() {
 
   $labels = array(
-    'name' => 'Sponsors',
-    'singular_name' => 'Sponsors',
+    'name' => 'Спонсори',
+    'singular_name' => 'Спонсор',
     'add_new' => 'Add',
     'add_new_item' => 'Add',
     'edit' => 'Edit',
@@ -867,8 +867,8 @@ add_action( 'init', 'post_type_friends' );
 function post_type_friends() {
 
   $labels = array(
-    'name' => 'Friends',
-    'singular_name' => 'Friends',
+    'name' => 'Друзі',
+    'singular_name' => 'Друг',
     'add_new' => 'Add',
     'add_new_item' => 'Add',
     'edit' => 'Edit',

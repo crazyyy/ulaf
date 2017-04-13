@@ -1,9 +1,10 @@
 <?php
+define( 'WPCACHEHOME', 'D:\Works\Verstka\ulaf\wordpress\wp-content\plugins\wp-super-cache/' ); //Added by WP-Cache Manager
 define('DB_NAME', 'p284179_ulaf');
 define('DB_USER', 'p284179_ulaf');
 define('DB_PASSWORD', '5HC7Z3d2f8');
 
-define('DB_HOST', 'p284179.mysql.ihc.ru');
+define('DB_HOST', 'localhost');
 
 define('DISABLE_WP_CRON', true);
 define('FS_METHOD', 'direct');
@@ -14,7 +15,7 @@ define('CACHE_WRITE_WHITELIST','_transient|limit_login_'); // do not reset cache
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
 
-$table_prefix  = 'bunnr_';
+$table_prefix  = 'aydci_';
 
 define('WPLANG', 'ru_RU');
 define('DISALLOW_FILE_EDIT', true);

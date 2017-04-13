@@ -17,27 +17,17 @@
 
         <div class="grid">
           <div class="col-md-12 game-info-2017 grid-item">
-          <?php
+          <?php if( have_rows('game_result') ): while ( have_rows('game_result') ) : the_row();?>
+            <h3><?php the_sub_field('division'); ?></h3>
+            <?php $posts = get_sub_field('full_game_result_link');if( $posts ): ?>
+              <?php foreach( $posts as $p ):  ?>
+                <a href="<?php echo get_permalink( $p->ID ); ?>">
+                  <div class="game-bar">
+                    <div class="col-md-2 game-date">
+                      <?php $date = the_sub_field('game_date'); ?>
+                    </div>
 
-// check if the repeater field has rows of data
-                  if( have_rows('game_result') ):
-
-  // loop through the rows of data
-                  while ( have_rows('game_result') ) : the_row();?>
-          <h3><?php the_sub_field('division'); ?></h3>
-
-        <?php $posts = get_sub_field('full_game_result_link');if( $posts ): ?>
-                  <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
-              <a href="<?php echo get_permalink( $p->ID ); ?>">
-                      <div class="game-bar">
-                <div class="col-md-2 game-date">
-                    <?php
-                    $date = the_sub_field('game_date');
-
-                  ?>
-                </div>
-
-                <div class="col-md-3 team-game result-left-team">
+                    <div class="col-md-3 team-game result-left-team">
                      <?php $posts = get_sub_field('home_team_name');
                      if( $posts ): ?>
                      <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>

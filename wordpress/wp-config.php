@@ -1,4 +1,5 @@
 <?php
+define( 'WPCACHEHOME', 'D:\Works\Verstka\ulaf\wordpress\wp-content\plugins\wp-super-cache/' ); //Added by WP-Cache Manager
 define('DB_NAME', 'p284179_ulaf');
 define('DB_USER', 'p284179_ulaf');
 define('DB_PASSWORD', '5HC7Z3d2f8');
@@ -14,7 +15,7 @@ define('CACHE_WRITE_WHITELIST','_transient|limit_login_'); // do not reset cache
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
 
-$table_prefix  = 'dfiux_';
+$table_prefix  = 'igmgz_';
 
 define('WPLANG', 'ru_RU');
 define('DISALLOW_FILE_EDIT', true);
