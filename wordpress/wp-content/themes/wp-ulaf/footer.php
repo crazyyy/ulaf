@@ -36,14 +36,14 @@
                     <h6>Ссылки</h6></div>
                   <div class="menu-widget-menu-container">
                     <ul id="menu-widget-menu" class="menu">
-                      <li id="menu-item-2703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-84 current_page_item menu-item-2703"><a href="<?php the_permalink(); ?>">Главная</a></li>
-                      <li id="menu-item-2710" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2710"><a href="<?php the_permalink(); ?>">Новости</a></li>
+                      <li id="menu-item-2703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-84 current_page_item menu-item-2703"><a href="http://ulafua.com/">Главная</a></li>
+                      <li id="menu-item-2710" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2710"><a href="http://ulafua.com/news">Новости</a></li>
                       <li id="menu-item-2707" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2707"><a href="<?php the_permalink(); ?>">Команды</a></li>
-                      <li id="menu-item-2704" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2704"><a href="<?php the_permalink(); ?>">Друзья и партнеры</a></li>
-                      <li id="menu-item-2709" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2709"><a href="<?php the_permalink(); ?>">Медиа</a></li>
-                      <li id="menu-item-2706" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2706"><a href="<?php the_permalink(); ?>">Сборная</a></li>
-                      <li id="menu-item-2708" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2708"><a href="<?php the_permalink(); ?>">О нас</a></li>
-                      <li id="menu-item-2705" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2705"><a href="<?php the_permalink(); ?>">Контакты</a></li>
+                      <li id="menu-item-2704" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2704"><a href="http://ulafua.com/druzya-i-partnery.htm">Друзья и партнеры</a></li>
+                      <li id="menu-item-2709" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2709"><a href="http://ulafua.com/foto.htm">Медиа</a></li>
+                      <li id="menu-item-2706" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2706"><a href="http://ulafua.com/sostav.htm">Сборная</a></li>
+                      <li id="menu-item-2708" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2708"><a href="http://ulafua.com/istoriya-ulaf.htm">О нас</a></li>
+                      <li id="menu-item-2705" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2705"><a href="http://ulafua.com/kontakty.htm">Контакты</a></li>
                     </ul>
                   </div>
                 </div>

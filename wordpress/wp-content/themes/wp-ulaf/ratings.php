@@ -1,9 +1,5 @@
-<?php /* Template Name: Champioship Page */ get_header(); ?>
-
-
-
-
-  <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+<?php /* Template Name: Ratings */ get_header(); ?>
+<?php if (have_posts()): while (have_posts()) : the_post(); ?>
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
         <div class="container results">

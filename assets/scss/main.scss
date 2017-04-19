@@ -1455,7 +1455,7 @@ table {
   width: auto;
 height: 136px;
 font-size: 18px;
-border: 1px solid black;
+border: 1px solid white;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -2782,6 +2782,59 @@ z-index: 1;
 .roster-link{
   color: white;
   text-decoration:none;
+}
+.kalendar-2,.results{
+  #wrapper{
+      background-image: url("../img/game-bg.jpg");
+      color:white;
+      h2,h3,.game-bar{
+        color:white;
+      }
+    }
+}
+.away-team-total-yds{
+  float: right;
+}
+.single-games{
+  #wrapper{
+      background-image: url("../img/game-bg.jpg");
+      color:white;
+      h1,tr,td{
+        color:white;
+      }
+      .single-game-score{
+        font-size: 62px;
+        margin: 55px 0 35px 0;
+        display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-content: stretch;
+         align-items: center;
+        .game-date{
+          margin-top: 35px;
+          font-size: 38px;
+        }
+      }
+      .team-single-game{
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-content: stretch;
+         align-items: center;
+        .col-md-4{
+          display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+        }
+
+      }
+  }
+
 }
 
 @media print {
