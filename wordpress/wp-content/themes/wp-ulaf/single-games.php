@@ -97,17 +97,35 @@
       <?php endwhile; endif; ?>
       </tr>
       </table>
+<div class="total-yds col-md-12">
+   <div class="home-team-total-yds col-md-9">
+        <div>Всего ярдов:500</div>
+        <div>Ярдов бегом:250</div>
+        <div>Ярдов пасом:250</div>
+        <div>Результативные действия:</div>
+        <div class="score-authors">
 
-      <div class="home-team-total-yds">
+  <span class="score-type">TD</span>
+  <span class="score-player-number">#18</span>
+  <span class="score-player-name">Хомин Евгений</span>
+</div>
+      </div>
+      <div class="away-team-total-yds col-md-3">
         <div>Всего ярдов:500</div>
         <div>Ярдов бегом:250</div>
         <div>Ярдов пасом:250</div>
+        <div>Результативные действия:</div>
+        <div class="score-authors">
+
+  <span class="score-type">TD</span>
+  <span class="score-player-number">#18</span>
+  <span class="score-player-name">Хомин Евгений</span>
+</div>
       </div>
-      <div class="away-team-total-yds">
-        <div>Всего ярдов:500</div>
-        <div>Ярдов бегом:250</div>
-        <div>Ярдов пасом:250</div>
-      </div>
+</div>
+<hr>
+
+
 
     </div>
   </div>
