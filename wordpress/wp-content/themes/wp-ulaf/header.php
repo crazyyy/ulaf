@@ -78,9 +78,7 @@
         </div>
       </div>
     </div>
-    <?php if ( is_page(22) ){
-
-                ?>
+    <?php if ( is_page(22) ){  ?>
     <div class="stm-header stm-transparent-header stm-header-fixed-mode">
 
 

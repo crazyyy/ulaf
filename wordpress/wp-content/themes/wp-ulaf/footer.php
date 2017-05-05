@@ -120,23 +120,21 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+  <?php wp_footer(); ?>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-migrate.js"></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery_form.js"></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.js"></script>
-  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/owl.js"></script>
+  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/owl.carousel.min.js"></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/imagesloaded.js"></script>
-  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/isotope.js"></script>
-  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/select2.js"></script>
-  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/splash.js"></script>
-  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/header.js"></script>
+  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/isotope.pkgd.min.js"></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/smoothScroll.js"></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/ticker.js"></script>
+  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/fotorama.js"></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/skrollr.js"></script>
-  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/owl.carousel.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
-  <script src="https://unpkg.com/isotope-layout@3.0.3/dist/isotope.pkgd.min.js"></script>
-  <?php wp_footer(); ?>
-</body>
+  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/select2.js"></script>
 
+  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
+
+</body>
 </html>
