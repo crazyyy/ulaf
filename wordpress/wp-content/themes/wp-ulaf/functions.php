@@ -117,6 +117,28 @@ function wpeHeadNav() {
     )
   );
 }
+function wpeHeadNavMobile() {
+  wp_nav_menu(
+  array(
+    'theme_location'  => 'custom-menu',
+    'menu'            => 'header-menu-2',
+    'container'       => 'div',
+    'container_class' => 'menu-{menu slug}-container',
+    'container_id'    => '',
+    'menu_class'      => 'header-menu',
+    'menu_id'         => '',
+    'echo'            => true,
+    'fallback_cb'     => 'wp_page_menu',
+    'before'          => '',
+    'after'           => '',
+    'link_before'     => '',
+    'link_after'      => '',
+    'items_wrap'      => '<ul class="stm-mobile-menu-list heading-font">%3$s</ul>',
+    'depth'           => 0,
+    'walker'          => ''
+    )
+  );
+}
 // WPE footer navigation
 function wpeFootNav() {
   wp_nav_menu(

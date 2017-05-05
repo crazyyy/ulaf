@@ -1,12 +1,12 @@
 <?php get_header(); ?>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
   <section class="container container-content">
     <div class="row team-head">
       <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
       <div class="row team-card" >
-       <div class="team-background-image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/slider-4.jpg);background-size: cover;">
-<div class="col-md-3 team-picture">
+        <div class="team-background-image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/slider-4.jpg);background-size: cover;">
+        <div class="col-md-3 team-picture">
             <div class="player-pic">
                 <?php if ( has_post_thumbnail()) :?>
               <a class="single-thumb" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
@@ -233,7 +233,7 @@
 $posts = get_field('sponsors');
 
 if( $posts ): ?>
-        <div class="row slider">
+        <div class="row slider owl-carousel owl-theme">
 
         <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
         <?php setup_postdata($post); ?>

@@ -78,26 +78,24 @@
           </div>
         </div>
 
-<div class="container">
-<?php
+        <div class="container">
+          <?php $posts = get_field('our_partners'); if( $posts ): ?>
 
-$posts = get_field('our_partners');
-
-if( $posts ): ?>
-        <div class="row slider">
-        <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
-        <?php setup_postdata($post); ?>
-          <div class="slide col-md-8 col-sm-12">
-            <?php if ( has_post_thumbnail()) : the_post_thumbnail('medium'); else: ?>
-              <img src="<?php echo catchFirstImage(); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>" />
-            <?php endif; ?>
-          </div>
-          <?php endforeach; ?>
+            <div class="row slider owl-carousel owl-theme">
+              <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+                <?php setup_postdata($post); ?>
+                  <div class="slide col-md-8 col-sm-12">
+                    <?php if ( has_post_thumbnail()) : the_post_thumbnail('medium'); else: ?>
+                      <img src="<?php echo catchFirstImage(); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>" />
+                    <?php endif; ?>
+                  </div>
+                <?php endforeach; ?>
+              </div>
+              <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+              <?php endif; ?>
         </div>
-        <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-<?php endif; ?>
-      </div>
         <div class="vc_row-full-width vc_clearfix"></div>
+
 
         <div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-parallax="2" data-vc-parallax-image="http://ulafua.com/wp-content/uploads/2017/03/paralax-1.jpg" class="vc_row wpb_row vc_row-fluid vc_row-has-fill vc_general vc_parallax vc_parallax-content-moving" style="background-image: url(http://ulafua.com/wp-content/uploads/2017/03/paralax-1.jpg); background-repeat: no-repeat;background-size: cover;">
           <div class="wpb_column vc_column_container vc_col-sm-12">
@@ -120,6 +118,9 @@ if( $posts ): ?>
             </div>
           </div>
         </div>
+
+
+
          <div data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid stm-red-bg">
           <div class="wpb_column vc_column_container vc_col-sm-12">
             <div class="vc_column-inner ">

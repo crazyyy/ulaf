@@ -61,12 +61,13 @@ if (typeof jQuery === 'undefined') {
     var siteMinHeight = winH - footerH;
 
     $('#wrapper').css({
-      'min-height': siteMinHeight + 'px'
+      'min-height': '100%'
+      // 'min-height': siteMinHeight + 'px'
     });
 
-    $('body').css({
-      'padding-bottom': footerH + 'px'
-    });
+    // $('body').css({
+    //   'padding-bottom': footerH + 'px'
+    // });
 
   }
 
@@ -229,9 +230,7 @@ $('.filters-select').on('change', function() {
 
 ///////isotope table/////////////
 $('.grid-2').isotope({
-
   // options
-  //
   itemSelector: '.grid-item-2',
   layoutMode: 'fitRows',
   filter: '.team-table-position-2017'
@@ -249,7 +248,7 @@ $('.filters-select').on('change', function() {
 
 // owlCarousel//////////////////////
 (function() {
-  $('.slider').owlCarousel({
+  $('.owl-carousel').owlCarousel({
     loop: true,
     nav: false,
     items: 3,

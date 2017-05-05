@@ -7,7 +7,10 @@
 @import 'grid/bootstrap';
 @import 'grid/bootstrap-theme';
 
-@import 'import/owl';
+@import 'owl/owl.carousel';
+@import 'owl/owl.theme.default';
+
+@import 'import/fotorama';
 @import 'import/fancybox';
 @import 'import/animate';
 @import 'import/splash-icons';
@@ -818,7 +821,7 @@ table {
 #wrapper {
   position: relative;
   z-index: 45;
-  overflow: hidden;
+  // overflow: hidden;
   background-color: #f8f8f8;
 }
 
