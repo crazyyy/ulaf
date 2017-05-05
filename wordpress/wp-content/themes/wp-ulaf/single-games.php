@@ -99,27 +99,50 @@
       </table>
 <div class="total-yds col-md-12">
    <div class="home-team-total-yds col-md-9">
-        <div>Всего ярдов:500</div>
-        <div>Ярдов бегом:250</div>
-        <div>Ярдов пасом:250</div>
+        <div>Всего ярдов:<?php the_field('total_game_yards') ?></div>
+        <div>Ярдов пасом:<?php the_field('total_game_pass_yards') ?></div>
+        <div>Ярдов бегом:<?php the_field('total_game_rush_yards') ?></div>
         <div>Результативные действия:</div>
         <div class="score-authors">
-
-  <span class="score-type">TD</span>
-  <span class="score-player-number">#18</span>
-  <span class="score-player-name">Хомин Евгений</span>
+<?php
+    if( have_rows('point_scorer') ):
+       while ( have_rows('point_scorer') ) : the_row();?>
+  <span class="score-type"><?php the_sub_field('score_type'); ?></span>
+  <span class="score-player-number">#<?php the_sub_field('scorer_number'); ?></span>
+  <div class="score-player-name">
+  <?php
+       $posts = get_field('score_author');
+          if( $posts ): ?>
+            <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+               <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank"><?php echo get_the_title( $p->ID ); ?></a>
+             <?php endforeach; ?>
+         <?php endif; ?>
+  </div>
+<?php endwhile; endif; ?>
 </div>
+
       </div>
       <div class="away-team-total-yds col-md-3">
-        <div>Всего ярдов:500</div>
-        <div>Ярдов бегом:250</div>
-        <div>Ярдов пасом:250</div>
+        <div>Всего ярдов:<?php the_field('total_game_yards_away') ?></div>
+        <div>Ярдов бегом:<?php the_field('total_game_pass_yards_away') ?></div>
+        <div>Ярдов пасом:<?php the_field('total_game_rush_yards_away') ?></div>
         <div>Результативные действия:</div>
         <div class="score-authors">
-
-  <span class="score-type">TD</span>
-  <span class="score-player-number">#18</span>
-  <span class="score-player-name">Хомин Евгений</span>
+<?php
+    if( have_rows('point_scorer_away') ):
+       while ( have_rows('point_scorer_away') ) : the_row();?>
+  <span class="score-type"><?php the_sub_field('score_type_away'); ?></span>
+  <span class="score-player-number">#<?php the_sub_field('scorer_number_away'); ?></span>
+  <div class="score-player-name">
+  <?php
+       $posts = get_field('score_author_away');
+          if( $posts ): ?>
+            <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+               <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank"><?php echo get_the_title( $p->ID ); ?></a>
+             <?php endforeach; ?>
+         <?php endif; ?>
+  </div>
+<?php endwhile; endif; ?>
 </div>
       </div>
 </div>

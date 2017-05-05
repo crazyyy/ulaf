@@ -31,7 +31,7 @@
               <tr>
                   <td>
                   <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank">
-                <?php echo get_the_post_thumbnail( $p->ID, 'thumbnail' ); ?>
+                <?php echo get_the_post_thumbnail( $p->ID, array(100,100) ); ?>
                 <?php echo get_the_title( $p->ID ); ?></a>
                       </td>
                   <td><?php the_field('wins_2017', $p->ID); ?></td>

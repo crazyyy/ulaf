@@ -11,7 +11,7 @@
         <select class="filters-select">
           <option value=".game-info-2017">Сезон 2017</option>
         </select>
-        <h2 >Рейтинги</h2>
+        <h2 >Результаты</h2>
 
 
         <div class="grid">

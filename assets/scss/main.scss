@@ -2772,9 +2772,19 @@ z-index: 1;
 }
 }
 .championship-table{
+  th{
+    text-align:center;
+  }
   thead{
     background-color: grey;
   }
+  img{
+
+    max-width: 100px;
+    height: 100px;
+
+  }
+
 }
 .calendar-division-title{
   text-align:center;
@@ -2795,11 +2805,11 @@ z-index: 1;
 .away-team-total-yds{
   float: right;
 }
-.single-games{
+.single-games,.page-template-ratings{
   #wrapper{
       background-image: url("../img/game-bg.jpg");
       color:white;
-      h1,tr,td{
+      h1,tr,td,h2,h4{
         color:white;
       }
       hr{
@@ -2839,6 +2849,39 @@ z-index: 1;
   }
 
 }
+
+
+.js-trigger,.wr-label {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 4px;
+  background: #696969;
+  color: black;
+  font-family: arial;
+  -webkit-transition: background-color 0.1s, color 0.1s;
+  &:hover {
+  background: #C9C9C9;
+  color: white;
+}
+}
+
+
+
+.js-hidden,.wrs {
+  -webkit-transition: height .3s ease;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 10px;
+  dislay:none
+}
+
+
+
+
+
 
 @media print {
   *, :after, :before {
@@ -3174,6 +3217,16 @@ z-index: 1;
 
   #main {
     padding-bottom: 20px;
+    background: #D9D9D9;
+  }
+  .page-id-553{
+    #wrapper{
+      .wrapper{
+
+        background-image: url("../img/table-background.jpg");
+      }
+    }
+
   }
 
   .stm-title-box-title-wrapper h3 {

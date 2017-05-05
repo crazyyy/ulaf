@@ -71,7 +71,25 @@ $('.filters-select').on( 'change', function() {
     autoplayTimeout:2000
     });
   }());
+////////////slide toggle/////////////
+(function(){
+  var slideDown = function(){
+  var $trigger = $('.js-trigger'),
+      $hidden = $('.js-hidden'),
+      $trigger1 = $('.js-trigger-1'),
+      $hidden1 = $('.js-hidden-1');
 
+    $trigger.on('click', function(){
+      $hidden.slideToggle();
+    })
+    $trigger1.on('click', function(){
+      $hidden1.slideToggle();
+    })
+
+  }
+
+  slideDown();
+}());
   ////////////////////////////////////
   function stm_header_transparent() {
     /*HEADER TRANSPARENT FIXED*/

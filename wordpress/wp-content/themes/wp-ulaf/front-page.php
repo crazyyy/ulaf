@@ -111,7 +111,7 @@ if( $posts ): ?>
                   </div>
                 </div>
                 <div class="stm-call-to-action clearfix">
-                  <a class="button btn-secondary btn-md btn-style-4" href="http://www.ifaf.info/wp-content/uploads/2016/11/IFAF-Membership-form.pdf" title="Download" target="_blank">Скачать</a>
+                  <a class="button btn-secondary btn-md btn-style-4" href="https://file.ludi.in.ua/index.php/s/Ev0DGQcsPEXVEag" title="Download" target="_blank">Скачать</a>
                   <div class="stm-call-to-action-inner">
                     <h4 style="color:#ffffff"></h4>
                   </div>
@@ -125,7 +125,7 @@ if( $posts ): ?>
             <div class="vc_column-inner ">
               <div class="wpb_wrapper">
                 <div class="stm-call-to-action clearfix">
-                  <a class="button btn-secondary btn-md btn-style-4" href="https://vk.com/ulafua" title="Перейти!">Перейти!</a>
+                  <a class="button btn-secondary btn-md btn-style-4" href="http://ulaf.amfoot.net/" title="Перейти!">Перейти!</a>
                   <div class="stm-call-to-action-inner">
                     <h4 style="color:#ffffff">Тренерам команд и судьям.</h4>
                   </div>
