@@ -66,6 +66,11 @@
                       <i class="fa fa-vk"></i>
                     </a>
                   </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <i class="fa fa-youtube"></i>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
