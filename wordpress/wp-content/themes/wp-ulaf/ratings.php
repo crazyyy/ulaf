@@ -38,6 +38,7 @@
 
                 <td><?php the_sub_field('rating'); ?></td>
                 <td><?php the_sub_field('rating_name'); ?></td>
+                <td><?php the_sub_field('rating_team'); ?></td>
                 <td colspan="5"></td>
 
                 <td><?php the_sub_field('rating_games'); ?></td>

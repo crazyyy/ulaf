@@ -65,7 +65,7 @@
                     </a>
                   </li>
                   <li>
-                    <a href="#" target="_blank">
+                    <a href="https://www.youtube.com/channel/UCX-eSs3MKCWTAnm3rQJ7WJQ" target="_blank">
                       <i class="fa fa-youtube"></i>
                     </a>
                   </li>
@@ -90,7 +90,7 @@
           <!--Logo-->
           <div class="logo-main" style="margin-top: 0px;">
             <a class="bloglogo" href="<?php echo home_url(); ?>">
-              <img src="http://www.ifaf.info/wp-content/uploads/2016/05/IFAF-LOGO-160.png" title="Home" alt="Logo">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/logo1.png" title="Home" alt="Logo">
             </a>
           </div>
           <div class="stm-main-menu">
@@ -104,7 +104,7 @@
       <div class="stm-header-mobile clearfix">
         <div class="logo-main" style="margin-top: 0px;">
           <a class="bloglogo" href="<?php echo home_url(); ?>">
-            <img src="http://www.ifaf.info/wp-content/uploads/2016/05/IFAF-LOGO-160.png" title="Home" alt="Logo">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/logo1.png" title="Home" alt="Logo">
           </a>
         </div>
         <div class="stm-mobile-right">

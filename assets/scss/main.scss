@@ -85,13 +85,13 @@ img {
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit;
+  color: #fff;
 }
 
 h3 small {
   font-weight: 400;
   line-height: 1;
-  color: #777;
+  color: #fff;
 }
 
 h1, h2 {
@@ -822,7 +822,7 @@ table {
   position: relative;
   z-index: 45;
   // overflow: hidden;
-  background-color: #f8f8f8;
+  background-color: #999999;
 }
 
 #main {
@@ -2528,7 +2528,14 @@ textarea:focus, input[type=text]:focus {
   margin-top: 50px;
   background-color: #323232;
 }
-
+.team-game{
+  display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+align-content: center;
+align-items: center;
+}
 .team-background-image {
   width: 1200px;
   height: 280px;
@@ -2722,11 +2729,11 @@ z-index: 1;
 }
 .result-left-team{
   display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-content: stretch;
-    align-items: center;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+align-content: center;
+align-items: center;
 }
 .photo-title {
   font-size: 32px;

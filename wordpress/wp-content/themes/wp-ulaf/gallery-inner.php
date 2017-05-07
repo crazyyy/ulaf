@@ -9,19 +9,14 @@
           <!-- Gallery Page -->
             <div class="col-md-12 gallery">
               <h1 class="page-title"><?php the_title(); ?></h1>
-              <!-- <?php $images = get_field('gallery'); if( $images ): ?>
-                <ul>
-                  <?php foreach( $images as $image ): ?>
-                    <li>
-                      <a href="<?php echo $image['url']; ?>">
-                        <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
-                      </a>
-                      <p><?php echo $image['caption']; ?></p>
-                    </li>
-                  <?php endforeach; ?>
-                </ul>
-              <?php endif; ?> -->
-              <?php the_content(); ?>
+              <?php $images = get_field('ulaf_gallery'); if( $images ): ?>
+               <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-loop="true" data-width="100%">
+              <?php $images = get_field('ulaf_gallery'); if( $images ): foreach( $images as $image ): ?>
+              <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+             <?php endforeach; endif; ?>
+             </div>
+
+              <?php endif; ?>
             </div> <!-- gallery -->
 
           </div>

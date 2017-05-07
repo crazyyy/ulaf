@@ -253,7 +253,21 @@ $('.filters-select').on('change', function() {
     nav: false,
     items: 3,
     autoplay: true,
-    autoplayTimeout: 2000
+    autoplayTimeout: 2000,
+    responsive:{
+        1200:{
+          items:3
+        },
+        500:{
+            items:1
+        },
+        400:{
+            items:1
+        },
+        300:{
+            items:1
+        }
+      }
   });
 }());
 

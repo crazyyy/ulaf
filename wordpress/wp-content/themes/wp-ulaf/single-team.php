@@ -206,13 +206,11 @@
         </div><!-- /.col-md-9 player-bio -->
       </div><!-- /row -->
       <?php $images = get_field('team_gallery'); if( $images ): ?>
- <div class="fotorama"
-     data-nav="thumbs" data-allowfullscreen="true" data-loop="true" data-width="100%"
-     >
+      <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-loop="true" data-width="100%">
      <?php $images = get_field('team_gallery'); if( $images ): foreach( $images as $image ): ?>
-  <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
-<?php endforeach; endif; ?>
-</div>
+       <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+      <?php endforeach; endif; ?>
+      </div>
 
      <?php endif; ?>
 

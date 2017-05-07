@@ -106,9 +106,14 @@
                     <i class="fa fa-instagram"></i>
                   </a>
                 </li>
-                <li class="stm-social-linkedin">
+                <li class="stm-social-vk">
                   <a href="https://vk.com/ulafua" target="_blank">
                     <i class="fa fa-vk"></i>
+                  </a>
+                </li>
+                <li class="stm-social-vk">
+                  <a href="https://www.youtube.com/channel/UCX-eSs3MKCWTAnm3rQJ7WJQ" target="_blank">
+                    <i class="fa fa-youtube"></i>
                   </a>
                 </li>
               </ul>
