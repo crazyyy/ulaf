@@ -48,6 +48,7 @@
 
                       <div class="person-info">
                         <span class="person-name"><?php the_title(); ?></span>
+                        <button><a href="<?php echo get_permalink( $post->ID ); ?>">Профиль</a></button>
                         <span class="person-role"><?php the_field('person_role_tabs'); ?></span>
                         <span class="person-description"><?php the_field('person_bio_short'); ?></span>
                       </div>
