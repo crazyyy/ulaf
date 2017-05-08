@@ -8,11 +8,11 @@
 
           <h2 class="col-lg-12 col-md-12"><?php the_title(); ?> </h2>
 
-          <div class="vertical-tabs">
+          <div class="vertical-tabs col-lg-12 col-md-12">
 
             <?php $posts = get_field('team'); if( $posts ): ?>
 
-              <ul class="tabs vertical" data-tab="">
+              <ul class="tabs vertical col-md-5" data-tab="">
                 <?php $i = 1; foreach( $posts as $post): ?>
                   <?php setup_postdata($post); ?>
 
@@ -26,7 +26,7 @@
 
             <?php endif; ?>
 
-            <div class="tabs-content">
+            <div class="tabs-content col-md-7">
 
               <?php $posts = get_field('team'); if( $posts ): ?>
                 <?php $i = 1; foreach( $posts as $post): ?>
