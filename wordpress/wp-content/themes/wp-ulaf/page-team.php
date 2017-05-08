@@ -69,22 +69,30 @@
 
 
 <h2> <?php the_title(); ?> </h2>
+
 <div class="vertical-tabs">
 <?php $posts = get_field('team'); if( $posts ): ?>
   <ul class="tabs vertical" data-tab="">
   <?php foreach( $posts as $post): ?>
     <?php setup_postdata($post); ?>
-    <li class="tab-title"><a href="#panela1" aria-selected="true" tabindex="0"><?php the_title(); ?></a></li>
+
+      <li class="tab-title"><a href="#panela1" aria-selected="true" tabindex="0"><?php the_title(); ?></a></li>
+
+
      <?php endforeach; ?>
 
   </ul>
   <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
     <?php endif; ?>
+
   <div class="tabs-content">
     <div class="content active" id="panela1" aria-hidden="false" >
+
       <?php if( have_rows('person_description_tabs') ): while ( have_rows('person_description_tabs') ) : the_row();?>
       <div class="person-image">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/landry1.jpg" alt="">
+
+          <?php the_post_thumbnail('large'); ?>
+
           <div class="person-info">
             <span class="person-name"><?php the_sub_field('person_name_tabs'); ?></span>
             <span class="person-role"><?php the_sub_field('person_role_tabs'); ?></span>
@@ -92,6 +100,7 @@
           </div>
         </div>
         <?php endwhile; endif; ?>
+
     </div>
   </div>
 </div>
