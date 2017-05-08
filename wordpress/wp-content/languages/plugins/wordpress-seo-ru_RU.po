@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Yoast SEO - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-04-25 05:38:43+0000\n"
+"PO-Revision-Date: 2017-05-06 09:16:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,13 +11,175 @@ msgstr ""
 "Language: ru\n"
 "Project-Id-Version: Plugins - Yoast SEO - Stable (latest release)\n"
 
+#. Translators: %1$s expands to the number of internal links
+#: languages/yoast-seo-js.php:49
+msgid "This page has %1$s internal link(s)."
+msgstr "На странице %1$s внутренних ссылок."
+
+#: languages/yoast-seo-js.php:45
+msgid "This page has %1$s nofollowed internal link(s) and %2$s normal internal link(s)."
+msgstr "На странице %1$s внутренних nofollow ссылок и %2$s обычных внутренних ссылок."
+
+#. Translators: %1$s expands the number of internal links
+#: languages/yoast-seo-js.php:42
+msgid "This page has %1$s internal link(s), all nofollowed."
+msgstr "На странице %1$s внутренних ссылок, все с аттрибутом nofollow."
+
+#. translators: %s expands to 'Yoast SEO Premium'.
+#: admin/metabox/class-metabox-add-keyword-tab.php:35
+msgid "Other benefits of %s for you:"
+msgstr "Другие возможности %s для вас:"
+
+#. translators: %s expands to 'Yoast SEO'.
+#: admin/config-ui/components/class-component-configuration-choices.php:57
+msgid "Let us set up %s for you"
+msgstr "Дайте нам настроить %s за вас"
+
+#. translators: %s expands to 'Yoast SEO'.
+#: admin/config-ui/components/class-component-configuration-choices.php:36
+msgid "Configure %s in a few steps"
+msgstr "Настройте %s за пару шагов"
+
+#. translators: %1$s expands to a 'strong' start tag, %2$s to a 'strong' end
+#. tag.
+#: admin/class-help-center.php:76
+#: admin/metabox/class-metabox-add-keyword-tab.php:45
+msgid "%1$sSocial media preview%2$s: Facebook &amp; Twitter"
+msgstr "%1$sПредпросмотр в соцсетях%2$s: Facebook &amp; Twitter"
+
+#: languages/yoast-seo-js.php:391
+msgid "Scroll to see the preview content."
+msgstr "Прокрутите чтобы сделать предпросмотр содержимого."
+
 #: languages/yoast-components.php:81
 msgid "Enter authorization code here..."
 msgstr "Введите код авторизации"
 
+#. translators: 1: open link tag 2: close link tag
+#: admin/views/tabs/dashboard/features.php:45
+msgid "The Cornerstone content functionality enables you to mark and filter cornerstone content on your website. %1$sRead more about how cornerstone content can help you improve your site structure.%2$s"
+msgstr "Функция ключевого содержимого позволяет вам отмечать и фильтровать содержимое на вашем сайте. %1$sЧитайте больше о том, как ключевое содержимое может помочь вам улучшить структуру вашего сайта.%2$s"
+
+#: admin/views/tabs/dashboard/features.php:41
+msgid "Cornerstone content"
+msgstr "Ключевое содержимое"
+
+#. translators: %1$s expands to Yoast SEO.
+#: admin/config-ui/fields/class-field-success-message.php:19
+msgid "%1$s will now take care of all the needed technical optimization of your site. To really improve your site's performance in the search results, it's important to start creating content that ranks well for keywords you care about. Check out this video in which we explain how to use the %1$s metabox when you edit posts or pages."
+msgstr "%1$s теперь позаботится обо всем, что касается технической оптимизации вашего сайта. Для того, чтобы улучшить показатели вашего сайта в поисковой выдаче, очень важно создавать содержимое, которое хорошо подходит для тех ключевых слов, которые вам важны. Посмотрите это видео, в котором мы объясняем как использовать %1$s метабокс когда вы редактируете статьи или страницы."
+
+#. translators: %s expands to Yoast SEO.
+#: admin/config-ui/fields/class-field-mailchimp-signup.php:25
+msgid "Your %1$s plugin is now set up. SEO, however, is subject to constant change. Sign up for our newsletter if you would like to keep up-to-date regarding %1$s, other plugins by Yoast and important news in the world of SEO."
+msgstr "Ваш %1$s плагин настроен. Однако, SEO - это объект, подверженный постоянным изменениям. Подпишитесь на нашу новостную рассылку, если вы хотите быть в курсе всех обновлений касаемо %1$s, других плагинов Yoast и важных новостей в мире SEO."
+
+#: admin/config-ui/fields/class-field-mailchimp-signup.php:20
+msgid "Stay up-to-date"
+msgstr "Быть в курсе последних событий"
+
+#. translators: %1$s resolves to Local SEO
+#: admin/config-ui/components/class-component-suggestions.php:74
+msgid "If you want to outrank the competition in a specific town or region, check out our %1$s plugin! You’ll be able to easily insert Google maps, opening hours, contact information and a store locator. Besides that %1$s helps you to improve the usability of your contact page."
+msgstr "Если вы хотите иметь более высокий ранг по сравнению с конкурентами в определенном городе или регионе, смотрите наш %1$s плагин! Вы лекго сможете добавить Google карты, часы работы, контактную информацию и поиск местоположений. Кроме этого %1$s помогает вам улучшить удобство использования вашей страницы контактов."
+
+#: admin/config-ui/components/class-component-suggestions.php:72
+msgid "Attract more customers near you"
+msgstr "Привлечь больше клиентов возле вас"
+
+#. translators: %1$s resolves to Yoast SEO
+#: admin/config-ui/components/class-component-suggestions.php:60
+msgid "Do you want to know all the ins and outs of the %1$s plugin? Do you want to learn all about our advanced settings? Want to be able to really get the most out of the %1$s plugin? Check out our %1$s plugin training and start outranking the competition!"
+msgstr "Хотите ли вы знать все тонкости %1$s плагина? Хотите ли вы узнать все о наших расширенных настройках? Хотите иметь возможность действительно получить все от %1$s плагина? Узнайте больше о нашем обучении работе с плагином %1$s и начните превосходить конкурентов! "
+
+#. translators: %1$s resolves to Yoast SEO, %2$s resolves to Yoast SEO plugin
+#. training
+#: admin/config-ui/components/class-component-suggestions.php:58
+msgid "Get the most out of %1$s with the %2$s"
+msgstr "Получите больше от %1$s с %2$s"
+
+#. translators: %1$s resolves to SEO copywriting training
+#: admin/config-ui/components/class-component-suggestions.php:47
+msgid "Do you want to learn how to write content that generates traffic? Check out our %1$s. We will help you to write awesome copy that will rank in the search engines. The %1$s covers all the main steps in SEO copywriting: from keyword research to publishing."
+msgstr "Хотите ли вы научиться создавать содержимое, которое генерирует трафик? Смотрите наш %1$s. Мы поможем вам создавать отличные статьи, которые будут высоко ранжироваться в поисковых системах. %1$s покрывает все самые главные шаги в написании SEO-статей: от поиска ключевых слов до публикации."
+
+#: admin/config-ui/components/class-component-suggestions.php:45
+msgid "Learn how to write copy that ranks"
+msgstr "Узнайте как писать статьи, которые высоко ранжируются"
+
 #: admin/config-ui/components/class-component-suggestions.php:36
 msgid "Upgrade to Premium"
 msgstr "Обновитесь до Премиум"
+
+#. translators: %1$s resolves to Yoast SEO Premium
+#: admin/config-ui/components/class-component-suggestions.php:34
+msgid "Do you want to outrank your competition? %1$s gives you awesome additional features that'll help you to set up your SEO strategy like a professional. Use the multiple focus keywords functionality, the redirect manager and our internal linking tool. %1$s will also give you access to premium support."
+msgstr "Хотите ли вы иметь более высокий ранг по сравнению с конкурентами? %1$s предоставляет отличные дополнительные возможности, которые помогут вам профессионально построить вашу SEO стратегию. Используйте функцию добавления множества ключевых слов, менеджера редиректов и наш инструмент внутренней перелинковки. %1$s также предоставит вам доступ к премиум поддержке."
+
+#. translators: %s resolves to Yoast SEO Premium
+#: admin/config-ui/components/class-component-suggestions.php:32
+msgid "Outrank the competition with %s"
+msgstr "Превзойти конкурентов с %s"
+
+#: admin/config-ui/components/class-component-configuration-choices.php:67
+msgid "Configuration service"
+msgstr "Сервис настройки"
+
+#. translators: %1$s expands to 'Yoast SEO', %2$s expands to 'Yoast SEO
+#. Premium'.
+#: admin/config-ui/components/class-component-configuration-choices.php:61
+msgid "While we strive to make setting up %1$s as easy as possible, we understand it can still be daunting. If you would rather have us set up %1$s for you (and get a copy of %2$s in the process), order a %1$s configuration service and sit back while we configure your site."
+msgstr "В то время как мы стараемся сделать настройку %1$s максимально легкой, мы понимаем, что она может отпугивать. Если вы хотите переложить возможность настройки %1$s на нас ( и получить копию %2$s), закажите сервис настройки %1$s у нас и расслабьтесь пока мы настроим ваш сайт."
+
+#. translators: %s expands to 'Yoast SEO'.
+#: admin/config-ui/components/class-component-configuration-choices.php:48
+msgid "Configure %s"
+msgstr "Настроить %s"
+
+#. translators: %1$s expands to 'Yoast SEO'.
+#: admin/config-ui/components/class-component-configuration-choices.php:41
+msgid "Welcome to the %1$s configuration wizard. In a few simple steps we'll help you configure your SEO settings to match your website's needs! %1$s will take care of all the technical optimizations your site needs."
+msgstr "Добро пожаловать в мастера настройки %1$s . В несколько простых шагов мы поможем вам настроить SEO под нужды вашего сайта! %1$s позаботится о всех аспектах технической оптимизации необходимых для вашего сайта. "
+
+#. translators: %s expands to 'Yoast SEO'.
+#: admin/config-ui/components/class-component-configuration-choices.php:30
+msgid "Please choose the %s configuration of your liking:"
+msgstr "Пожалуйста выберите настройки %s по вашему предпочтению:"
+
+#: admin/config-ui/class-configuration-structure.php:61
+msgid "You might like"
+msgstr "Вам может понравиться"
+
+#: admin/config-ui/class-configuration-structure.php:58
+msgid "Newsletter"
+msgstr "Новостная рассылка"
+
+#. translators: %1$s resolves to Yoast SEO, %2$s resolves to the starting tag
+#. of the link to the wizard, %3$s resolves to the closing link tag
+#: admin/config-ui/class-configuration-page.php:222
+msgid "We have detected that you have not finished this wizard yet, so we recommend you to %2$sstart the configuration wizard to configure %1$s%3$s."
+msgstr "Мы обнаружили что вы ещё не закончили настройку, поэтому мы рекомендуем вам %2$sзапустить мастера настройки для того, чтобы сконфигурировать %1$s%3$s."
+
+#: admin/config-ui/class-configuration-page.php:218
+msgid "The configuration wizard helps you to easily configure your site to have the optimal SEO settings."
+msgstr "Мастер настройки поможет вам с легкостью сконфигурировать оптимальные SEO настройки для вашего сайта."
+
+#: admin/class-cornerstone-filter.php:39
+msgid "Cornerstone articles"
+msgstr "Ключевые статьи"
+
+#. translators: 1: link open tag; 2: link close tag.
+#: admin/class-cornerstone-field.php:30
+msgid "This article is %1$scornerstone content%2$s"
+msgstr "Эта статья - %1$sключевое содержимое%2$s"
+
+#: vendor/yoast/whip/src/messages/Whip_UpgradePhpMessage.php:49
+msgid "If you cannot upgrade your PHP version yourself, you can send an email to your host. We have %1$sexamples here%2$s. If they don't want to upgrade your PHP version, we would suggest you switch hosts. Have a look at one of our recommended %3$sWordPress hosting partners%4$s, they've all been vetted by our Yoast support team and provide all the features a modern host should provide."
+msgstr "Если вы не можете обновить версию вашего PHP самостоятельно, вы можете отправить письмо на электронную почту вашего хостинг провайдера. %1$sПримеры есть здесь%2$s. Если они не хотят обновлять версию вашего PHP, мы советуем вам поменять хостинг провайдера. Взгляните на одного из наших рекомендуемых %3$sпартнеров с хостингом под WordPress%4$s, они были отобраны нашей командой службы поддержки Yoast и предоставляют все функции, которые должен предоставлять современный хостинг провайдер."
+
+#: vendor/yoast/whip/src/messages/Whip_UpgradePhpMessage.php:47
+msgid "If you cannot upgrade your PHP version yourself, you can send an email to your host. We have %1$sexamples here%2$s. If they don't want to upgrade your PHP version, we would suggest you switch hosts. Have a look at one of the recommended %3$sWordPress hosting partners%4$s."
+msgstr "Если вы не можете обновить версию вашего PHP самостоятельно, вы можете отправить письмо на электронную почту вашего хостинг провайдера. %1$sПримеры есть здесь%2$s. Если они не хотят обновлять версию вашего PHP, мы советуем вам поменять хостинг провайдера. Взгляните на одного из наших рекомендуемых %3$sпартнеров с хостингом под WordPress%4$s."
 
 #: vendor/yoast/whip/src/messages/Whip_UpgradePhpMessage.php:44
 msgid "Can't update? Ask your host!"
@@ -31,6 +193,14 @@ msgstr "Вы должны обновить версию PHP до 5.6 или до
 msgid "To which version should I update?"
 msgstr "До какой версии мне нужно обновить?"
 
+#: vendor/yoast/whip/src/messages/Whip_UpgradePhpMessage.php:33
+msgid "Hosts have the ability to update your PHP version, but sometimes they don't dare to do that because they're afraid they'll break your site."
+msgstr "Хостинг провайдеры имеют возможность обновить версию вашего PHP, но иногда они не делают этого, потому что бояться повредить ваш сайт."
+
+#: vendor/yoast/whip/src/messages/Whip_UpgradePhpMessage.php:32
+msgid "Hey, we've noticed that you're running an outdated version of PHP. PHP is the programming language that WordPress and Yoast SEO are built on. The version that is currently used for your site is no longer supported. Newer versions of PHP are both faster and more secure. In fact, your version of PHP no longer receives security updates, which is why we're sending you to this notice."
+msgstr "Эй, мы обнаружили что вы используете устаревшую версию PHP. PHP - это язык программирования на котором построены WordPress и Yoast SEO. Используемая версия не поддерживается. Новая версия PHP намного быстрее и безопаснее. По сути, ваша версия PHP больше не получает обновлений безопасности, поэтому мы посылаем вам эту заметку."
+
 #: vendor/yoast/whip/src/messages/Whip_UpgradePhpMessage.php:31
 msgid "Your site could be faster and more secure with a newer PHP version."
 msgstr "Ваш сайт может быть быстрее и безопаснее с новой версией PHP."
@@ -43,6 +213,10 @@ msgstr "Сообщение от %1$s"
 #: admin/views/partial-help-center-video.php:31
 msgid "Get %s now &raquo;"
 msgstr "Получите %s сейчас &raquo;"
+
+#: admin/views/partial-help-center-video.php:28
+msgid "Go Premium and our experts will be there for you to answer any questions you might have about the setup and use of the plugin."
+msgstr "Перейдите на Premium и наши специалисты будут рады ответить на любые вопросы, которые могут возникнуть при настройке и использовании плагина."
 
 #: admin/banner/class-admin-banner-sidebar.php:97
 #: admin/class-help-center.php:78
@@ -63,6 +237,34 @@ msgstr "Сохранить изменения"
 #: admin/class-premium-popup.php:75
 msgid "1 year free updates and upgrades included!"
 msgstr "1 год бесплатных обновлений и улучшений включен!"
+
+#. translators: %2$s expands to 'RS Head Cleaner' plugin name of possibly
+#. conflicting plugin with regard to differentiating output between search
+#. engines and normal users.
+#: admin/class-plugin-conflict.php:160
+msgid "The plugin %2$s changes your site's output and in doing that differentiates between search engines and normal users, a process that's called cloaking. We highly recommend that you disable it."
+msgstr "Плагин %2$s изменяет вывод вашего сайта и делает различным то, что видят поисковые системы и обычные пользователи, это называется cloaking, мы рекомендуем чтобы вы отключили это."
+
+#: admin/class-help-center.php:72
+#: admin/metabox/class-metabox-add-keyword-tab.php:42
+msgid "Superfast internal links suggestions"
+msgstr "Быстрые предложения внутренних ссылок"
+
+#. translators: %1$s expands to a 'strong' start tag, %2$s to a 'strong' end
+#. tag.
+#: admin/class-help-center.php:70
+#: admin/metabox/class-metabox-add-keyword-tab.php:40
+msgid "%1$sNo more dead links%2$s: easy redirect manager"
+msgstr "%1$sНет больше мертвых ссылок%2$s: простое управление перенаправлением"
+
+#. translators: %1$s: expands to 'Yoast SEO Premium'.
+#: admin/class-help-center.php:65
+msgid "Other benefits of %1$s for you:"
+msgstr "Другие преимущества %1$s:"
+
+#: admin/class-help-center.php:63
+msgid "Go Premium and our experts will be there for you to answer any questions you might have about the set-up and use of the plug-in!"
+msgstr "Перейдите на премиум и наши эксперты помогут вам со всеми вопросами, которые у вас могут быть по настройке и использованию плагина!"
 
 #: admin/metabox/class-metabox-add-keyword-tab.php:28
 msgid "Want to add more than one keyword?"
@@ -87,6 +289,10 @@ msgid "Social media preview"
 msgstr "Предварительный просмотр в социальных сетях"
 
 #: admin/banner/class-admin-banner-sidebar.php:95
+msgid "Find related posts superfast"
+msgstr "Быстро найти похожие сообщения"
+
+#: admin/banner/class-admin-banner-sidebar.php:95
 msgid "Internal linking suggestions"
 msgstr "Рекомендации по внутренней перелинковке"
 
@@ -97,6 +303,10 @@ msgstr "Легкий менеджер переадресации"
 #: admin/banner/class-admin-banner-sidebar.php:94
 msgid "No more dead links"
 msgstr "Нет больше мертвых ссылок"
+
+#: admin/banner/class-admin-banner-sidebar.php:93
+msgid "Increase your SEO reach"
+msgstr "Увеличить SEO-доступность"
 
 #: admin/banner/class-admin-banner-sidebar.php:93
 msgid "Multiple keywords"
@@ -123,6 +333,12 @@ msgstr "Переменная"
 #: admin/views/tabs/advanced/rss.php:26
 msgid "Available variables"
 msgstr "Доступные переменные"
+
+#. translators: %1$s will be a link to a review explanation page. Text between
+#. %2$s and %3$s will be a link to an SEO copywriting course page.
+#: admin/config-ui/fields/class-field-upsell-site-review.php:19
+msgid "If you want more help creating awesome content, check out our %2$sSEO copywriting course%3$s. Do you want to know all about the features of the plugin, consider doing our %1$s!"
+msgstr "Если вам нужно больше помощи по созданию качественного содержимого, просмотрите наш %2$sкурс SEO копирайтинга%3$s. Если вы хотите знать все о возможностях плагина, подумайте пройти наш %1$s!"
 
 #: admin/class-admin.php:651
 msgid "Scroll to see the table content."
@@ -328,9 +544,20 @@ msgstr "Плотность ключевых слов не очень высок�
 msgid "Step %1$d: %2$s"
 msgstr "Шаг %1$d: %2$s"
 
+#. translators: %1$s expands to Yoast SEO
+#: admin/views/tabs/dashboard/general.php:18
+msgid "Need help determining your settings? Configure %1$s step-by-step."
+msgstr "Нужна помочь в определении настроек? Настраивайте %1$s шаг за шагом."
+
 #: admin/views/partial-alerts-warnings.php:11
 msgid "No new notifications."
 msgstr "Нет новых уведомлений."
+
+#. translators: %1$s expands anchor to knowledge base article, %2$s expands to
+#. </a>
+#: admin/google_search_console/views/gsc-display.php:126
+msgid "Please refer to %1$sour article about how to connect your website to Google Search Console%2$s if you need assistance."
+msgstr "Пожалуйста посмотрите %1$sнашу статью о том как подключить консоль поиска Google%2$s к вашему сайту, если вам нужна помощь."
 
 #: admin/class-bulk-editor-list-table.php:857
 msgid "Save all"
@@ -2229,6 +2456,17 @@ msgstr "Срок действия лицензии истек. Вам необх
 msgid "You've reached your activation limit. You must <a href=\"%s\">upgrade your license</a> to use it on this site."
 msgstr "Вы достигли лимита активаций. Вам необходимо <a href=\"%s\">продлить лицензию</a>, чтобы использовать её на этом сайте."
 
+#: vendor/yoast/license-manager/class-license-manager.php:616
+msgid "<a href=\"%s\">Your license is expiring in %d day, would you like to extend it?</a> "
+msgid_plural "<a href=\"%s\">Your license is expiring in %d days, would you like to extend it?</a> "
+msgstr[0] "<a href=\"%s\">Ваша лицензия истекает через %d дней, хотите продлить её?</a>"
+msgstr[1] ""
+msgstr[2] ""
+
+#: vendor/yoast/license-manager/class-license-manager.php:610
+msgid "<a href=\"%s\">Did you know you can upgrade your license?</a> "
+msgstr "<a href=\"%s\">Знаете ли вы, что можете расширить свою лицензию?</a>"
+
 #: vendor/yoast/license-manager/class-license-manager.php:605
 msgid "You have used %d/%d activation. "
 msgid_plural "You have used %d/%d activations. "
@@ -3415,7 +3653,7 @@ msgstr "Bing: инструменты вебмастера"
 
 #: admin/views/tabs/dashboard/webmaster-tools.php:13
 msgid "You can use the boxes below to verify with the different Webmaster Tools, if your site is already verified, you can just forget about these. Enter the verify meta values for:"
-msgstr "Вы можете использовать эти поля, чтобы подтвердить права на сайт в различных сервисах Веб-мастера (если Ваш сайт уже прошел проверку - ничего не вводите). Введите метаданные для проверки сервисами:"
+msgstr "Вы можете использовать эти поля, для подтверждения прав на свой сайт в различных сервисах Веб-мастеров. Если ваш сайт уже прошел проверку на этих сервисах, то ничего вводить не надо. Введите метаданные для проверки сервисами:"
 
 #: admin/views/tabs/dashboard/knowledge-graph.php:49
 msgid "Your name"
@@ -3579,7 +3817,7 @@ msgstr "Ошибки, произошедшие во время индексир�
 
 #: admin/google_search_console/class-gsc.php:304
 msgid "Issue categories"
-msgstr "Проблемы категорий"
+msgstr "Категории проблем"
 
 #: admin/google_search_console/class-gsc.php:247
 msgid "Incorrect Google Authorization Code."
@@ -3641,7 +3879,7 @@ msgstr "%1$s обнаружил, что вы используете версию
 
 #: admin/google_search_console/class-gsc-service.php:137
 msgid "Yoast plugins share some code between them to make your site faster. As a result of that, we need all Yoast plugins to be up to date. We've detected this isn't the case, so please update the Yoast plugins that aren't up to date yet."
-msgstr "Yoast плагины распределяют код между собой, чтобы сделать Ваш сайт быстрее. Как следствие, все Yoast плагины должны быть обновлены до последней версии. Мы обнаружили, что в Вашем случае это не так. Пожалуйста, обновите Yoast плагины, использующие старые версии."
+msgstr "Yoast плагины разделяют код между собой, чтобы сделать ваш сайт быстрее. Как следствие, все Yoast плагины должны быть обновлены до последней версии. Мы обнаружили, что в вашем случае это не так. Пожалуйста, обновите Yoast плагины, использующие старые версии."
 
 #: admin/google_search_console/class-gsc-platform-tabs.php:45
 #: admin/google_search_console/class-gsc.php:307
@@ -3689,7 +3927,7 @@ msgstr "Google не удалось проиндексировать этот URL
 
 #: admin/google_search_console/class-gsc-category-filters.php:116
 msgid "URL points to a non-existent page."
-msgstr "URL-адрес ведёт на несуществующую страницу."
+msgstr "URL указывает на несуществующую страницу."
 
 #: admin/google_search_console/class-gsc-category-filters.php:116
 msgid "Not found"
@@ -4038,14 +4276,14 @@ msgstr "Первый абзац не содержит фокусное ключ�
 #. the keyword count.
 #: languages/yoast-seo-js.php:75
 msgid "The keyword density is %1$s, which is great; the focus keyword was found %2$d times."
-msgstr "Плотность ключевых слов отличная — %1$s; фокусное ключевое слово было найдено %2$d раз."
+msgstr "Плотность ключевых слов %1$s, что считается отличной, ключевое слово было найдено %2$d раз."
 
 #. Translators: %1$s expands to the keyword density percentage, %2$d expands to
 #. the keyword count, 	   %3$s expands to the maximum keyword density
 #. percentage.
 #: languages/yoast-seo-js.php:71
 msgid "The keyword density is %1$s, which is over the advised %3$s maximum; the focus keyword was found %2$d times."
-msgstr "Плотность ключевых слов — %1$s, это гораздо больше рекомендуемого максимума (%3$s); фокусное ключевое слово было найдено %2$d раз."
+msgstr "Плотность ключевых слов %1$s, что превышает максимально допустимые %3$s, ключевое слово было найдено %2$d раз."
 
 #: languages/yoast-seo-js.php:89
 msgid "A meta description has been specified, but it does not contain the focus keyword."
@@ -4061,7 +4299,7 @@ msgstr "Мета описание содержит менее %1$d символ�
 
 #: languages/yoast-seo-js.php:183
 msgid "You have not used the focus keyword in any subheading (such as an H2) in your copy."
-msgstr "Ни один подзаголовок (например, H2) в вашем тексте не содержит фокусное ключевое слово."
+msgstr "Вы не использовали фокусное ключевое слово в подзаголовках (например, H2) вашей статьи."
 
 #: languages/yoast-seo-js.php:186
 msgid "The focus keyword appears in %2$d (out of %1$d) subheadings in the copy. While not a major ranking factor, this is beneficial."
@@ -4071,19 +4309,27 @@ msgstr "Ключевое слово / ключевая фраза найдена
 msgid "The images on this page are missing alt attributes."
 msgstr "У изображений на этой странице отсутствует атрибут alt."
 
+#: languages/yoast-seo-js.php:104
+msgid "No outbound links appear in this page, consider adding some as appropriate."
+msgstr "Страница не содержит исходящих ссылок, попробуйте их добавить."
+
+#: languages/yoast-seo-js.php:111
+msgid "This page has %1$s nofollowed outbound link(s) and %2$s normal outbound link(s)."
+msgstr "Эта страница содержит ссылки с атрибутом nofollow (%1$s) и обычные исходящие ссылки  (%2$s)."
+
 #. Translators: %1$s expands the number of outbound links
 #: languages/yoast-seo-js.php:108
 msgid "This page has %1$s outbound link(s), all nofollowed."
-msgstr "Эта страница содержит исходящие ссылки с атрибутом nofollow (%1$s)."
+msgstr "Эта страница имеет %1$s исходящих ссылок, все с nofollow."
 
 #. Translators: %1$s expands to the number of outbound links
 #: languages/yoast-seo-js.php:115
 msgid "This page has %1$s outbound link(s)."
-msgstr "Эта страница содержит исходящие ссылки (%1$s)."
+msgstr "Эта страница имеет %1$s исходящих ссылок."
 
 #: languages/yoast-seo-js.php:228
 msgid "You're linking to another page with the focus keyword you want this page to rank for. Consider changing that if you truly want this page to rank."
-msgstr "Вы ссылаетесь на другую страницу с помощью ключевого слова, рейтинг по которому хотите увеличить. Измените это, если хотите, чтобы страница улучшила свой рейтинг."
+msgstr "Вы ссылаетесь на другую страницу с фокусным ключевым словом, для которого вы хотите вы хотите ранжировать эту страницу. Рассмотрите возможность изменения, если вы действительно хотите ранжировать эту страницу."
 
 #: languages/yoast-seo-js.php:231
 msgid "No images appear in this page, consider adding some as appropriate."
@@ -4121,11 +4367,11 @@ msgstr "Вы уже использовали это фокусное ключе�
 #. is already used
 #: languages/yoast-seo-js.php:305
 msgid "You've used this focus keyword %1$sonce before%2$s, be sure to make very clear which URL on your site is the most important for this keyword."
-msgstr "Вы уже использовали это фокусное ключевое слово %1$sодин раз%2$s, поэтому следует определить, какой из этих двух URL на Вашем сайте наиболее важен для этого слова."
+msgstr "Вы уже использовали это фокусное ключевое слово %1$sодин раз%2$s, поэтому следует определить, какой из этих двух URL на вашем сайте наиболее важен для этого слова."
 
 #: languages/yoast-seo-js.php:301
 msgid "You've never used this focus keyword before, very good."
-msgstr "Очень хорошо, Вы еще не использовали это фокусное ключевое слово."
+msgstr "Очень хорошо, вы еще не использовали это фокусное ключевое слово."
 
 #: languages/yoast-seo-js.php:58
 msgid "No focus keyword was set for this page. If you do not set a focus keyword, no score can be calculated."
@@ -4631,7 +4877,7 @@ msgstr "Просто еще один сайт WordPress"
 #. translators: 1: link open tag; 2: link close tag.
 #: admin/class-admin-init.php:95
 msgid "You still have the default WordPress tagline, even an empty one is probably better. %1$sYou can fix this in the customizer%2$s."
-msgstr "На Вашем сайте WordPress до сих пор выставлено дефолтное описание, даже полное его отсутствие, вероятно, лучше. %1$sЭто можно исправить в настройках%2$s."
+msgstr "У вас в WordPress, до сих пор установлено название сайта по умолчанию. Наверно лучше сделать его пустым, чем как сейчас. %1$s вы всегда можете исправить его в настройщике %2$s."
 
 #: admin/ajax.php:256
 msgid "You have used HTML in your value which is not allowed."
