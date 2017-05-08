@@ -8,7 +8,7 @@
 
           <h2 class="col-lg-12 col-md-12"><?php the_title(); ?> </h2>
 
-          <div class="vertical-tabs">
+          <div class="vertical-tabs col-lg-12 col-md-12">
 
             <?php $posts = get_field('team'); if( $posts ): ?>
 
