@@ -1,14 +1,97 @@
 <?php /* Template Name: Team ULAF */ get_header(); ?>
 
+  <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+
+
+    <div class="our-team">
+      <div class="container">
+        <div class="row">
+
+          <h2><?php the_title(); ?> </h2>
+
+          <div class="vertical-tabs">
+
+            <?php $posts = get_field('team'); if( $posts ): ?>
+
+              <ul class="tabs vertical" data-tab="">
+                <?php $i = 1; foreach( $posts as $post): ?>
+                  <?php setup_postdata($post); ?>
+
+                  <?php if($i == 1) { $arguments = 'aria-selected="true" tabindex="0"'; } else { $arguments = 'aria-selected="false" tabindex="-1"'; } ?>
+
+                  <li class="tab-title"><a href="#panela<?php echo $i; ?>" <?php echo $arguments; ?>><?php the_title(); ?></a></li>
+
+                <?php $i++; endforeach; ?>
+              </ul>
+              <?php wp_reset_postdata(); ?>
+
+            <?php endif; ?>
+
+
+          <div class="tabs-content">
+
+
+            <?php $posts = get_field('team'); if( $posts ): ?>
+              <?php $i = 1; foreach( $posts as $post): ?>
+                <?php setup_postdata($post); ?>
+
+                <?php if($i == 1) {
+                    $class = 'content active';
+                  } else {
+                    $class = 'content';
+                } ?>
+
+                  <div class="<?php echo $class; ?>" id="panela<?php echo $i; ?>" <?php echo $arguments; ?>>
+
+                    <div class="person-image">
+                    <?php the_post_thumbnail('large'); ?>
+
+                      <div class="person-info">
+                        <span class="person-name"><?php the_title(); ?></span>
+                        <span class="person-role"><?php the_field('person_role_tabs'); ?></span>
+                        <span class="person-description"><?php the_field('person_bio_short'); ?></span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                <?php $i++; endforeach; ?>
+
+              <?php wp_reset_postdata(); ?>
+
+            <?php endif; ?>
 
 
 
-<?php if (have_posts()): while (have_posts()) : the_post(); ?>
- <!--     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>> -->
+          </div>
 
-<div class="our-team">
-  <div class="container">
-    <div class="row">
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+<?php endwhile; endif; ?>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<?php get_footer(); ?>
+
+
+
+
 
     <!-- <div class="col-md-5 left-bg-block ">
           <div class="team-sign">
@@ -62,62 +145,3 @@
         </div>
       </div>
     </div> -->
-
-    </div>
-
-
-
-
-<h2> <?php the_title(); ?> </h2>
-
-<div class="vertical-tabs">
-<?php $posts = get_field('team'); if( $posts ): ?>
-  <ul class="tabs vertical" data-tab="">
-  <?php foreach( $posts as $post): ?>
-    <?php setup_postdata($post); ?>
-
-      <li class="tab-title"><a href="#panela1" aria-selected="true" tabindex="0"><?php the_title(); ?></a></li>
-
-
-     <?php endforeach; ?>
-
-  </ul>
-  <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-    <?php endif; ?>
-
-  <div class="tabs-content">
-    <div class="content active" id="panela1" aria-hidden="false" >
-
-      <?php if( have_rows('person_description_tabs') ): while ( have_rows('person_description_tabs') ) : the_row();?>
-      <div class="person-image">
-
-          <?php the_post_thumbnail('large'); ?>
-
-          <div class="person-info">
-            <span class="person-name"><?php the_sub_field('person_name_tabs'); ?></span>
-            <span class="person-role"><?php the_sub_field('person_role_tabs'); ?></span>
-            <span class="person-description"><?php the_sub_field('person_bio_short'); ?></span>
-          </div>
-        </div>
-        <?php endwhile; endif; ?>
-
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-    </div>
-  </div>
-
-<?php endwhile; endif; ?>
-
-
-</div>
-</div>
-
-<?php get_footer(); ?>
-
