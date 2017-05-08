@@ -1,8 +1,8 @@
 <?php /* Template Name: Table-championship Page */ get_header(); ?>
 <div class="wrapper table-background">
 
-  <section class="container">
-
+  <section class="parallax">
+    <div class="parallax-inner">
     <div class="row grid-2">
 <select class="filters-select">
           <option value=".team-table-position-2017">Сезон 2017</option>
@@ -227,6 +227,7 @@
 
 
       </div>
+    </div>
     </div>
   </section>
 </div>

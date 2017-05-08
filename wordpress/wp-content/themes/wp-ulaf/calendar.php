@@ -21,7 +21,7 @@
                       <?php endforeach; endif; ?>
 
                 </div>
-                <div class="col-md-1 game-date">
+                <div class="col-md-2 game-date">
                     <?php $date = the_sub_field('game_date');?>
                 </div>
                <div class="col-md-5 team-game">
@@ -55,7 +55,7 @@
                       <?php endforeach; endif; ?>
 
                 </div>
-                <div class="col-md-1 game-date">
+                <div class="col-md-2 game-date">
                     <?php
                     $date = the_sub_field('game_date');
 
@@ -111,7 +111,7 @@
                       <?php endforeach; endif; ?>
 
                 </div>
-                <div class="col-md-1 game-date">
+                <div class="col-md-2 game-date">
                     <?php
                     $date = the_sub_field('game_date');
 

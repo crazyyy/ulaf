@@ -52,11 +52,11 @@ button, input, select, textarea {
 }
 
 a {
-  color: #337ab7;
+  color: white;
   text-decoration: none;
 
   &:hover {
-    color: #23527c;
+    color: white;
     text-decoration: underline;
   }
 
@@ -1457,17 +1457,19 @@ table {
 .game-bar{
   width: auto;
 height: 136px;
-font-size: 18px;
+font-size: 30px;
 border: 1px solid white;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: flex-start;
-    align-items: center;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+align-content: center;
+align-items: center;
 margin-bottom: 10px;
 color:black;
-
+&:hover{
+  box-shadow: 0 0 6px rgba(255, 255, 255, 1);
+}
 }
 .stm-call-to-action {
   padding: 18px 0;
@@ -1504,6 +1506,7 @@ color:black;
 
 .stm-news-tabs-wrapper .stm-single-post-loop {
   margin-bottom: 30px;
+
 }
 
 .stm-single-post-loop {
@@ -1617,7 +1620,7 @@ color:black;
     font-weight: 700;
     margin-bottom: 9px;
     text-transform: uppercase;
-    color: #a4a4a4;
+    color: white;
   }
 
   .title {
@@ -1649,11 +1652,11 @@ color:black;
       vertical-align: top;
       text-transform: uppercase;
       opacity: .7;
-      color: #a4a4a4;
+      color: white;
     }
 
     .post_list_item_tags a, .comments-number a {
-      color: #a4a4a4;
+      color: #fff;
     }
 
     .post_list_item_tags .fa, .comments-number .fa {
@@ -1954,7 +1957,7 @@ aside.widget {
     font-weight: 700;
     margin-bottom: 10px;
     text-transform: uppercase;
-    color: #a4a4a4;
+    color: white;
   }
 
   .h5 {
@@ -2383,9 +2386,8 @@ textarea:focus, input[type=text]:focus {
 }
 
 .vc_custom_1462188886536 {
-  padding-top: 7px !important;
-  padding-bottom: 7px !important;
-  background-color: #f0f0f0 !important;
+
+  background-color: #c9c9c9 !important;
 }
 
 .vc_custom_1476626466570 {
@@ -2735,6 +2737,11 @@ justify-content: space-around;
 align-content: center;
 align-items: center;
 }
+.rejtingi{
+  table{
+    margin-bottom: 50px;
+  }
+}
 .photo-title {
   font-size: 32px;
   padding: 19px;
@@ -2805,7 +2812,7 @@ align-items: center;
 }
 .kalendar-2,.results{
   #wrapper{
-      background-image: url("../img/game-bg.jpg");
+      background: url("../img/game-bg.jpg") fixed repeat 100%;
       color:white;
       h2,h3,.game-bar{
         color:white;
@@ -2817,7 +2824,7 @@ align-items: center;
 }
 .single-games,.page-template-ratings{
   #wrapper{
-      background-image: url("../img/game-bg.jpg");
+      background: url("../img/game-bg.jpg") fixed repeat 100%;
       color:white;
       h1,tr,td,h2,h4{
         color:white;
@@ -2859,7 +2866,28 @@ align-items: center;
   }
 
 }
-
+.turnirnaya-tablitsa{
+  td{
+    color:white;
+  }
+.category-news{
+  .date{
+    color:white
+  }
+}
+  .parallax{
+    padding: 0 100px;
+    background: url("../img/table-background.jpg") repeat fixed 100%;
+  }
+  #wrapper{
+      a{
+        color:white;
+      }
+      h3{
+        color: #fff;
+      }
+    }
+  }
 
 .js-trigger,.wr-label {
   cursor: pointer;
@@ -3229,15 +3257,7 @@ align-items: center;
     padding-bottom: 20px;
     background: #D9D9D9;
   }
-  .page-id-553{
-    #wrapper{
-      .wrapper{
 
-        background-image: url("../img/table-background.jpg");
-      }
-    }
-
-  }
 
   .stm-title-box-title-wrapper h3 {
     float: none;

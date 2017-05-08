@@ -109,15 +109,19 @@
        while ( have_rows('point_scorer') ) : the_row();?>
   <span class="score-type"><?php the_sub_field('score_type'); ?></span>
   <span class="score-player-number">#<?php the_sub_field('scorer_number'); ?></span>
-  <div class="score-player-name">
-  <?php
-       $posts = get_field('score_author');
-          if( $posts ): ?>
-            <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+  <span class="score-player-name">
+  <?php $posts = get_sub_field('score_author'); if( $posts ): ?>
+      <?php foreach( $posts as $p ): ?>
                <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank"><?php echo get_the_title( $p->ID ); ?></a>
-             <?php endforeach; ?>
-         <?php endif; ?>
-  </div>
+      <?php endforeach; ?>
+  <?php endif; ?>
+  <?php $posts = get_field('head_coach'); if( $posts ): ?>
+      <?php foreach( $posts as $p ): ?>
+          <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank"><?php echo get_the_title( $p->ID ); ?></a>
+      <?php endforeach; ?>
+  <?php endif; ?>
+  </span>
+  <div></div>
 <?php endwhile; endif; ?>
 </div>
 
@@ -133,15 +137,16 @@
        while ( have_rows('point_scorer_away') ) : the_row();?>
   <span class="score-type"><?php the_sub_field('score_type_away'); ?></span>
   <span class="score-player-number">#<?php the_sub_field('scorer_number_away'); ?></span>
-  <div class="score-player-name">
+  <span class="score-player-name">
   <?php
-       $posts = get_field('score_author_away');
+       $posts = get_sub_field('score_author_away');
           if( $posts ): ?>
             <?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
                <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank"><?php echo get_the_title( $p->ID ); ?></a>
              <?php endforeach; ?>
          <?php endif; ?>
-  </div>
+  </span>
+  <div></div>
 <?php endwhile; endif; ?>
 </div>
       </div>

@@ -21,7 +21,7 @@
            <?php $posts = get_sub_field('full_game_result_link');if( $posts ): ?>
                 <?php foreach( $posts as $p ): ?>
               <a href="<?php echo get_permalink( $p->ID ); ?>">
-                      <div class="game-bar">
+             <div class="game-bar">
                 <div class="col-md-2 game-date">
                  <?php $date = the_sub_field('game_date');?>
                 </div>
