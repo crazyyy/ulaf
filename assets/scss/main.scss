@@ -7,7 +7,10 @@
 @import 'grid/bootstrap';
 @import 'grid/bootstrap-theme';
 
-@import 'import/owl';
+@import 'owl/owl.carousel';
+@import 'owl/owl.theme.default';
+
+@import 'import/fotorama';
 @import 'import/fancybox';
 @import 'import/animate';
 @import 'import/splash-icons';
@@ -49,11 +52,11 @@ button, input, select, textarea {
 }
 
 a {
-  color: #337ab7;
+  color: white;
   text-decoration: none;
 
   &:hover {
-    color: #23527c;
+    color: white;
     text-decoration: underline;
   }
 
@@ -82,13 +85,13 @@ img {
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit;
+  color: #fff;
 }
 
 h3 small {
   font-weight: 400;
   line-height: 1;
-  color: #777;
+  color: #fff;
 }
 
 h1, h2 {
@@ -818,8 +821,8 @@ table {
 #wrapper {
   position: relative;
   z-index: 45;
-  overflow: hidden;
-  background-color: #f8f8f8;
+  // overflow: hidden;
+  background-color: #999999;
 }
 
 #main {
@@ -1454,17 +1457,19 @@ table {
 .game-bar{
   width: auto;
 height: 136px;
-font-size: 18px;
-border: 1px solid black;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: flex-start;
-    align-items: center;
+font-size: 30px;
+border: 1px solid white;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+align-content: center;
+align-items: center;
 margin-bottom: 10px;
 color:black;
-
+&:hover{
+  box-shadow: 0 0 6px rgba(255, 255, 255, 1);
+}
 }
 .stm-call-to-action {
   padding: 18px 0;
@@ -1501,6 +1506,7 @@ color:black;
 
 .stm-news-tabs-wrapper .stm-single-post-loop {
   margin-bottom: 30px;
+
 }
 
 .stm-single-post-loop {
@@ -1614,7 +1620,7 @@ color:black;
     font-weight: 700;
     margin-bottom: 9px;
     text-transform: uppercase;
-    color: #a4a4a4;
+    color: white;
   }
 
   .title {
@@ -1646,11 +1652,11 @@ color:black;
       vertical-align: top;
       text-transform: uppercase;
       opacity: .7;
-      color: #a4a4a4;
+      color: white;
     }
 
     .post_list_item_tags a, .comments-number a {
-      color: #a4a4a4;
+      color: #fff;
     }
 
     .post_list_item_tags .fa, .comments-number .fa {
@@ -1951,7 +1957,7 @@ aside.widget {
     font-weight: 700;
     margin-bottom: 10px;
     text-transform: uppercase;
-    color: #a4a4a4;
+    color: white;
   }
 
   .h5 {
@@ -2380,9 +2386,8 @@ textarea:focus, input[type=text]:focus {
 }
 
 .vc_custom_1462188886536 {
-  padding-top: 7px !important;
-  padding-bottom: 7px !important;
-  background-color: #f0f0f0 !important;
+
+  background-color: #c9c9c9 !important;
 }
 
 .vc_custom_1476626466570 {
@@ -2525,7 +2530,14 @@ textarea:focus, input[type=text]:focus {
   margin-top: 50px;
   background-color: #323232;
 }
-
+.team-game{
+  display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+align-content: center;
+align-items: center;
+}
 .team-background-image {
   width: 1200px;
   height: 280px;
@@ -2719,11 +2731,16 @@ z-index: 1;
 }
 .result-left-team{
   display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-content: stretch;
-    align-items: center;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+align-content: center;
+align-items: center;
+}
+.rejtingi{
+  table{
+    margin-bottom: 50px;
+  }
 }
 .photo-title {
   font-size: 32px;
@@ -2772,9 +2789,19 @@ z-index: 1;
 }
 }
 .championship-table{
+  th{
+    text-align:center;
+  }
   thead{
     background-color: grey;
   }
+  img{
+
+    max-width: 100px;
+    height: 100px;
+
+  }
+
 }
 .calendar-division-title{
   text-align:center;
@@ -2783,6 +2810,116 @@ z-index: 1;
   color: white;
   text-decoration:none;
 }
+.kalendar-2,.results{
+  #wrapper{
+      background: url("../img/game-bg.jpg") fixed repeat 100%;
+      color:white;
+      h2,h3,.game-bar{
+        color:white;
+      }
+    }
+}
+.away-team-total-yds{
+  float: right;
+}
+.single-games,.page-template-ratings{
+  #wrapper{
+      background: url("../img/game-bg.jpg") fixed repeat 100%;
+      color:white;
+      h1,tr,td,h2,h4{
+        color:white;
+      }
+      hr{
+        color:white;
+      }
+      .single-game-score{
+        font-size: 62px;
+        margin: 55px 0 35px 0;
+        display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-content: stretch;
+         align-items: center;
+        .game-date{
+          margin-top: 35px;
+          font-size: 38px;
+        }
+      }
+      .team-single-game{
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-content: stretch;
+         align-items: center;
+        .col-md-4{
+          display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+        }
+
+      }
+  }
+
+}
+.turnirnaya-tablitsa{
+  td{
+    color:white;
+  }
+.category-news{
+  .date{
+    color:white
+  }
+}
+  .parallax{
+    padding: 0 100px;
+    background: url("../img/table-background.jpg") repeat fixed 100%;
+  }
+  #wrapper{
+      a{
+        color:white;
+      }
+      h3{
+        color: #fff;
+      }
+    }
+  }
+
+.js-trigger,.wr-label {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 4px;
+  background: #696969;
+  color: black;
+  font-family: arial;
+  -webkit-transition: background-color 0.1s, color 0.1s;
+  &:hover {
+  background: #C9C9C9;
+  color: white;
+}
+}
+
+
+
+.js-hidden,.wrs {
+  -webkit-transition: height .3s ease;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 10px;
+  dislay:none
+}
+
+
+
+
+
 
 @media print {
   *, :after, :before {
@@ -3118,7 +3255,9 @@ z-index: 1;
 
   #main {
     padding-bottom: 20px;
+    background: #D9D9D9;
   }
+
 
   .stm-title-box-title-wrapper h3 {
     float: none;

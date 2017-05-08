@@ -1,8 +1,8 @@
 <?php /* Template Name: Table-championship Page */ get_header(); ?>
 <div class="wrapper table-background">
 
-  <section class="container">
-
+  <section class="parallax">
+    <div class="parallax-inner">
     <div class="row grid-2">
 <select class="filters-select">
           <option value=".team-table-position-2017">Сезон 2017</option>
@@ -31,7 +31,7 @@
               <tr>
                   <td>
                   <a href="<?php echo get_permalink( $p->ID ); ?>" target="_blank">
-                <?php echo get_the_post_thumbnail( $p->ID, 'thumbnail' ); ?>
+                <?php echo get_the_post_thumbnail( $p->ID, array(100,100) ); ?>
                 <?php echo get_the_title( $p->ID ); ?></a>
                       </td>
                   <td><?php the_field('wins_2017', $p->ID); ?></td>
@@ -227,6 +227,7 @@
 
 
       </div>
+    </div>
     </div>
   </section>
 </div>

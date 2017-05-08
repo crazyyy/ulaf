@@ -1,7 +1,6 @@
 <!doctype html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
-
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +19,6 @@
   <![endif]-->
   <!-- css + javascript -->
   <?php wp_head(); ?>
-  <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 
 </head>
 <body <?php body_class(); ?>>
@@ -66,6 +64,11 @@
                       <i class="fa fa-vk"></i>
                     </a>
                   </li>
+                  <li>
+                    <a href="https://www.youtube.com/channel/UCX-eSs3MKCWTAnm3rQJ7WJQ" target="_blank">
+                      <i class="fa fa-youtube"></i>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -73,23 +76,19 @@
         </div>
       </div>
     </div>
+
     <?php if ( is_page(22) ){
+        $header_nav_class = 'stm-header stm-transparent-header stm-header-fixed-mode';
+      } else {
+        $header_nav_class = 'stm-header stm-non-transparent-header stm-header-fixed-mode';
+      } ?>
 
-                ?>
-    <div class="stm-header stm-transparent-header stm-header-fixed-mode">
-
-
+    <div class="<?php echo $header_nav_class; ?>">
       <div class="stm-header-inner">
-        <div class="stm-header-background"></div>
+        <div class="stm-header-background" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/header.jpg')"></div>
         <div class="container stm-header-container">
-          <? } else { ?>
-          <div class="stm-header stm-non-transparent-header stm-header-fixed-mode stm-header-fixed stm-header-fixed-intermediate" style="min-height: 230px;">
-      <div class="stm-header-inner">
-        <div class="stm-header-background" style="background-image: url(&#39;http://ulafua.com/wp-content/uploads/2017/03/header.jpg&#39;);"></div>
-        <div class="container stm-header-container">
-         <?php  } ?>
           <!--Logo-->
-          <div class="logo-main" style="margin-top: 0px; margin-right: 9px;">
+          <div class="logo-main" style="margin-top: 0px;">
             <a class="bloglogo" href="<?php echo home_url(); ?>">
               <img src="<?php echo get_template_directory_uri(); ?>/img/logo1.png" title="Home" alt="Logo">
             </a>
@@ -129,23 +128,28 @@
                   <div class="stm-top-socials">
                     <ul class="top-bar-socials stm-list-duty">
                       <li>
-                        <a href="#" target="_blank">
+                        <a href="https://www.facebook.com/ulaf.ua/" target="_blank">
                           <i class="fa fa-facebook"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#" target="_blank">
+                        <a href="https://twitter.com/ulafcool" target="_blank">
                           <i class="fa fa-twitter"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#" target="_blank">
+                        <a href="https://www.instagram.com/ulafcool/" target="_blank">
                           <i class="fa fa-instagram"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#" target="_blank">
+                        <a href="https://vk.com/ulafua" target="_blank">
                           <i class="fa fa-linkedin"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank">
+                          <i class="fa fa-youtube"></i>
                         </a>
                       </li>
                     </ul>
@@ -153,9 +157,7 @@
                 </div>
               </div>
             </div>
-            <ul class="stm-mobile-menu-list heading-font">
-             <?php wpeHeadNav(); ?>
-            </ul>
+            <?php wpeHeadNavMobile(); ?>
           </div>
         </div>
       </div>
