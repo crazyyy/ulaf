@@ -12,7 +12,7 @@
 
             <?php $posts = get_field('team'); if( $posts ): ?>
 
-              <ul class="tabs vertical" data-tab="">
+              <ul class="tabs vertical col-md-5" data-tab="">
                 <?php $i = 1; foreach( $posts as $post): ?>
                   <?php setup_postdata($post); ?>
 
@@ -26,7 +26,7 @@
 
             <?php endif; ?>
 
-            <div class="tabs-content">
+            <div class="tabs-content col-md-7">
 
               <?php $posts = get_field('team'); if( $posts ): ?>
                 <?php $i = 1; foreach( $posts as $post): ?>

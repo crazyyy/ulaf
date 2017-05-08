@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <section class="container container-content-game">
   <div class="row single-game">
     <h1 class="game-title"><?php the_title(); ?></h1>
