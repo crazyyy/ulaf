@@ -7,7 +7,7 @@
 
             <aside id="text-2" class="widget widget_text">
               <div class="widget-wrapper">
-                <div class="widget-title">О нас</h6></div>
+                <div class="widget-title">О нас</div>
                 <div class="textwidget">
                   <div class="stm-text-lighten">Миссия Украинской лиги Американского футбола - это Популяризация Американского футбола в Украине, оздоровление нации, популяризация здорового образа жизни, а также повышение рейтинга нашей страны на международной арене.</div>
                 </div>
@@ -16,8 +16,7 @@
 
             <aside id="recent-posts-3" class="widget widget_recent_entries">
               <div class="widget-wrapper">
-                <div class="widget-title">
-                  <h6>Последние новости</h6></div>
+                <div class="widget-title">Последние новости</div>
                 <ul>
                  <?php query_posts("showposts=2"); ?>
                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -33,7 +32,7 @@
 
             <aside id="nav_menu-2" class="widget widget_nav_menu">
               <div class="widget-wrapper">
-                <div class="widget-title"><h6>Ссылки</h6></div>
+                <div class="widget-title">Ссылки</div>
                 <div class="menu-widget-menu-container">
                   <ul id="menu-widget-menu" class="menu">
                     <li><a href="http://ulafua.com/">Главная</a></li>
@@ -51,7 +50,7 @@
 
             <aside id="contacts-2" class="widget widget_contacts">
               <div class="widget-wrapper">
-                <div class="widget-title"><h6>Наши контакты</h6></div>
+                <div class="widget-title">Наши контакты</div>
                 <ul class="stm-list-duty heading-font">
                   <li class="widget_contacts_address">
                     <div class="icon"><i class="fa fa-map-marker"></i></div>
@@ -91,27 +90,27 @@
               <div class="h6 footer-socials-title">Мы в соц.сетях: </div>
               <ul class="footer-bottom-socials stm-list-duty">
                 <li class="stm-social-facebook">
-                  <a href="https://www.facebook.com/ulaf.ua/" target="_blank">
+                  <a href="https://www.facebook.com/ulaf.ua/" rel="nofollow" target="_blank">
                     <i class="fa fa-facebook"></i>
                   </a>
                 </li>
                 <li class="stm-social-twitter">
-                  <a href="https://twitter.com/ulafcool" target="_blank">
+                  <a href="https://twitter.com/ulafcool" rel="nofollow" target="_blank">
                     <i class="fa fa-twitter"></i>
                   </a>
                 </li>
                 <li class="stm-social-instagram">
-                  <a href="https://www.instagram.com/ulafcool/" target="_blank">
+                  <a href="https://www.instagram.com/ulafcool/" rel="nofollow" target="_blank">
                     <i class="fa fa-instagram"></i>
                   </a>
                 </li>
                 <li class="stm-social-vk">
-                  <a href="https://vk.com/ulafua" target="_blank">
+                  <a href="https://vk.com/ulafua" rel="nofollow" target="_blank">
                     <i class="fa fa-vk"></i>
                   </a>
                 </li>
                 <li class="stm-social-vk">
-                  <a href="https://www.youtube.com/channel/UCX-eSs3MKCWTAnm3rQJ7WJQ" target="_blank">
+                  <a href="https://www.youtube.com/channel/UCX-eSs3MKCWTAnm3rQJ7WJQ" rel="nofollow" target="_blank">
                     <i class="fa fa-youtube"></i>
                   </a>
                 </li>
