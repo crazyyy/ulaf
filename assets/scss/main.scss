@@ -1325,14 +1325,20 @@ table {
   }
 }
 
-.widget-wrapper .widget-title h6 {
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 30px;
-  letter-spacing: .7px;
-  text-transform: uppercase;
-  color: #00529b;
+.widget-wrapper {
+  .widget-title {
+    font-size: 16px;
+    font-weight: 700;
+
+    margin-bottom: 30px;
+
+    letter-spacing: .7px;
+    text-transform: uppercase;
+
+    color: #00529b;
+  }
 }
+
 
 .widget_text {
   font-weight: 300;

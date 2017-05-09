@@ -7,7 +7,7 @@
 
             <aside id="text-2" class="widget widget_text">
               <div class="widget-wrapper">
-                <div class="widget-title"><h6>О нас</h6></div>
+                <div class="widget-title">О нас</h6></div>
                 <div class="textwidget">
                   <div class="stm-text-lighten">Миссия Украинской лиги Американского футбола - это Популяризация Американского футбола в Украине, оздоровление нации, популяризация здорового образа жизни, а также повышение рейтинга нашей страны на международной арене.</div>
                 </div>
