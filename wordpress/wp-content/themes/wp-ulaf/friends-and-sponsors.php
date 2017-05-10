@@ -17,16 +17,17 @@
                 </div>
               </div>
               <div class="row row-3 row-sm-2">
-            <?php query_posts(array( 'post_type' => 'sponsors','showposts' => 100 ) ); ?>
-                      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+               <?php query_posts(array( 'post_type' => 'sponsors','showposts' => 100 ) ); ?>
+                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <div class="col-md-4 col-sm-6">
                   <div class="stm-single-post-loop post-3186 post type-post status-publish format-standard has-post-thumbnail hentry category-ifaf category-other tag-wada">
                     <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                       <div class="image">
                         <div class="stm-plus"></div>
                         <?php if ( has_post_thumbnail()) : the_post_thumbnail('medium'); else: ?>
-                                     <img src="<?php echo catchFirstImage(); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>" />
-                                    <?php endif; ?> </div>
+                        <img src="<?php echo catchFirstImage(); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>" />
+                        <?php endif; ?>
+                      </div>
                       <div class="date heading-font">
                         <?php the_time('m-d-Y'); ?> </div>
                       <div class="title heading-font">
@@ -76,12 +77,12 @@
                     </a>
                   </div>
                   <?php endwhile; else: ?>
-  <div class="row">
-    <div class="col-md-12">
-      <h2 class="title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
-    </div><!-- col-md-12 -->
-  </div><!-- /.row -->
-<?php endif; ?>
+                  <div class="row">
+                   <div class="col-md-12">
+                     <h2 class="title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
+                   </div><!-- col-md-12 -->
+                  </div><!-- /.row -->
+                 <?php endif; ?>
 
                 </aside>
             </div>
