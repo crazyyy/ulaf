@@ -1,37 +1,24 @@
 <?php /* Template Name: Team ULAF */ get_header(); ?>
-
   <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-
     <div class="our-team">
       <div class="container">
         <div class="row">
-
           <h2 class="col-lg-12 col-md-12"><?php the_title(); ?> </h2>
-
           <div class="vertical-tabs col-lg-12 col-md-12">
-
             <?php $posts = get_field('team'); if( $posts ): ?>
-
               <ul class="tabs vertical col-md-5" data-tab="">
                 <?php $i = 1; foreach( $posts as $post): ?>
                   <?php setup_postdata($post); ?>
-
                   <?php if($i == 1) { $arguments = 'aria-selected="true" tabindex="0"'; } else { $arguments = 'aria-selected="false" tabindex="-1"'; } ?>
-
                   <li class="tab-title"><a href="#panela<?php echo $i; ?>" <?php echo $arguments; ?>><?php the_title(); ?></a></li>
-
                 <?php $i++; endforeach; ?>
               </ul>
               <?php wp_reset_postdata(); ?>
-
             <?php endif; ?>
-
             <div class="tabs-content col-md-7">
-
               <?php $posts = get_field('team'); if( $posts ): ?>
                 <?php $i = 1; foreach( $posts as $post): ?>
                   <?php setup_postdata($post); ?>
-
                   <?php if($i == 1) { $class = 'content active'; } else { $class = 'content'; } ?>
                   <div class="<?php echo $class; ?>" id="panela<?php echo $i; ?>" <?php echo $arguments; ?>>
                     <div class="person-image">
@@ -42,20 +29,13 @@
                       </div><!-- person-info -->
                     </div><!-- person-image -->
                   </div><!-- content -->
-
                 <?php $i++; endforeach; ?>
                 <?php wp_reset_postdata(); ?>
-
               <?php endif; ?>
-
             </div><!-- tabs-content -->
-
           </div><!-- vertical-tabs -->
-
         </div><!-- row -->
       </div><!-- container -->
     </div><!-- our-team -->
-
   <?php endwhile; endif; ?>
-
 <?php get_footer(); ?>
