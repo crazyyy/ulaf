@@ -88,7 +88,7 @@
           <?php wp_reset_postdata();  ?>
         <?php endif; ?>
       </div><!-- container -->
-
+      <div id="mapdiv" style="width: 600px; height: 400px;"></div>
       <div class="vc_row-full-width vc_clearfix"></div>
 
       <div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-parallax="2" data-vc-parallax-image="<?php echo get_template_directory_uri(); ?>/img/paralax-1.jpg" class="vc_row wpb_row vc_row-fluid vc_row-has-fill vc_general vc_parallax vc_parallax-content-moving" style="background-size: cover; background: url(<?php echo get_template_directory_uri(); ?>/img/paralax-1.jpg) fixed repeat 100%;">
