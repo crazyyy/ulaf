@@ -487,29 +487,13 @@
         <!-- Конец Заголовока таблицы -->
             </table>
 
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
+      </div>
+     </div>
     </article>
   <?php endwhile; else: // If 404 page error ?>
-    <article>
-
-      <h4
- class="page-title inner-title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h4
->
-
-
-    </article>
-  <?php endif; ?>
-  </div>
+ <article>
+<h4 class="page-title inner-title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h4>
+</article>
+<?php endif; ?>
+</div>
 <?php get_footer(); ?>
