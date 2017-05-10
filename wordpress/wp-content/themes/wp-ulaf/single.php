@@ -22,12 +22,11 @@
                 <!--Post thumbnail-->
                 <div class="post-thumbnail">
                    <?php if ( has_post_thumbnail()) :?>
-        <a class="single-thumb" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-          <?php the_post_thumbnail(); // Fullsize image for the single post ?>
-        </a>
-      <?php endif; ?>
-
-      </div>
+                     <a class="single-thumb" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                      <?php the_post_thumbnail(); // Fullsize image for the single post ?>
+                     </a>
+                   <?php endif; ?>
+               </div>
                 <div class="stm-single-post-meta clearfix heading-font">
                   <div class="stm-meta-left-part">
                     <div class="stm-date">
