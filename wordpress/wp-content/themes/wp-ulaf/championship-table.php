@@ -4,16 +4,16 @@
   <section class="parallax">
     <div class="parallax-inner">
     <div class="row grid-2">
-<select class="filters-select">
+        <select class="filters-select">
           <option value=".team-table-position-2017">Сезон 2017</option>
           <option value=".team-table-position-2016">Сезон 2016</option>
         </select>
       <div class="col-md-12 team-table-position-2017 grid-item-2">
 
 
-         <h3>Дивизион A</h3>
+      <h3>Дивизион A</h3>
 
-<table class="championship-table">
+      <table class="championship-table">
             <thead>
                     <tr>
                         <th>Команды</th>
@@ -46,7 +46,7 @@
             <?php endif; ?>
       </table>
 
-      <h3>Дивизион B</h3>
+        <h3>Дивизион B</h3>
         <table class="championship-table">
             <thead>
                     <tr>
@@ -80,7 +80,7 @@
             </tbody>
             <?php endif; ?>
       </table>
-<h3>Дивизион C</h3>
+      <h3>Дивизион C</h3>
       <table class="championship-table">
             <thead>
                     <tr>
@@ -121,9 +121,9 @@
       <div class="col-md-12 team-table-position-2016 grid-item-2">
 
 
-<h3>Дивизион A</h3>
+      <h3>Дивизион A</h3>
 
-<table class="championship-table">
+      <table class="championship-table">
             <thead>
                     <tr>
                         <th>Команды</th>
@@ -189,7 +189,7 @@
             </tbody>
             <?php endif; ?>
       </table>
-<h3>Дивизион C</h3>
+      <h3>Дивизион C</h3>
       <table class="championship-table">
             <thead>
                     <tr>
