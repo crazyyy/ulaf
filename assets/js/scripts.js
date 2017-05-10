@@ -304,15 +304,28 @@ $('.filters-select').on('change', function() {
 //////////////////////////////////
 ///Sticky Header//////////
 $(function(){
-  $(window).scroll(function() {
+  $(window).scroll(function(){
+    var winTop = $(window).scrollTop();
+    if(winTop >= 30){
+      $(".stm-transparent-header .stm-header-inner").css({
+        'background-color': 'black',
+        top: '-25px'
+      });
+      $(".stm-non-transparent-header .stm-header-inner").css({
+        top: '-25px'
+      });
 
-    if ($(window).scrollTop() > 100) {
-        $('.main_h').addClass('sticky');
-    } else {
-        $('.main_h').removeClass('sticky');
+    }else{
+      $(".stm-transparent-header .stm-header-inner").css({
+        'background-color': 'transparent',
+        'top': '50px'
+      });
+      $(".stm-non-transparent-header .stm-header-inner").css({
+        'top': '50px'
+      });
     }
-});
-});//ready func.
+  })
+})//ready func.
 ///
 ///
 /* // MIsha`s work */

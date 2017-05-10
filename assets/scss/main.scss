@@ -1246,10 +1246,9 @@ table {
     }
   }
   &.stm-transparent-header .stm-header-inner {
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 50px;
     left: 0;
-
     width: 100%;
 
     background-color: transparent;
@@ -1258,6 +1257,13 @@ table {
 
       opacity: 0;
     }
+  }
+  &.stm-non-transparent-header .stm-header-inner {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    transition: all 1s ease;
   }
 }
 
@@ -1293,7 +1299,12 @@ table {
     text-transform: uppercase;
   }
 }
+.sticky{
+  background-color: black;
+  opacity: 1;
+  top: 0px;
 
+}
 .rev_slider {
   background-color: #000;
 }
