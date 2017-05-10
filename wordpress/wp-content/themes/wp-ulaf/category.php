@@ -24,8 +24,9 @@
                       <div class="image">
                         <div class="stm-plus"></div>
                         <?php if ( has_post_thumbnail()) : the_post_thumbnail('medium'); else: ?>
-                                     <img src="<?php echo catchFirstImage(); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>" />
-                                    <?php endif; ?> </div>
+                        <img src="<?php echo catchFirstImage(); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>" />
+                        <?php endif; ?>
+                      </div>
                       <div class="date heading-font">
                         <?php the_time('m-d-Y'); ?> </div>
                       <div class="title heading-font">
@@ -75,12 +76,12 @@
                     </a>
                   </div>
                   <?php endwhile; else: ?>
-  <div class="row">
-    <div class="col-md-12">
-      <h2 class="title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
-    </div><!-- col-md-12 -->
-  </div><!-- /.row -->
-<?php endif; ?>
+                  <div class="row">
+                    <div class="col-md-12">
+                     <h2 class="title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
+                    </div><!-- col-md-12 -->
+                 </div><!-- /.row -->
+                 <?php endif; ?>
 
                 </aside>
             </div>
