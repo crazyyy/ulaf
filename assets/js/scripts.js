@@ -346,7 +346,184 @@ AmCharts.makeChart( "mapdiv", {
    */
   "dataProvider": {
     "map": "ukraineLow",
-    "getAreasFromMap": true
+    "getAreasFromMap": true,
+    "showDescriptionOnHover" : true,
+    "images": [
+      {
+        "type": "circle",
+        "label": "Lviv",
+        "latitude": 49.83,
+        "longitude": 24,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Lions Lviv "
+      },
+      {
+        "type": "circle",
+        "label": "Odessa",
+        "latitude": 46.29,
+        "longitude": 30.43,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Pirates Odesa"
+      },
+      {
+        "type": "circle",
+        "label": "Vinnytsia",
+        "latitude": 49.14,
+        "longitude": 28.28,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Wolves Vinnytsia"
+      },
+      {
+        "type": "circle",
+        "label": "Kyiv",
+        "latitude": 50.4,
+        "longitude": 30.61,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Bandits Kyiv  <br> Slavs Kyiv  <br> Patriots Kyiv <br> Rebels Kyiv <br> Jokers Kyiv <br> Bulldogs Kyiv"
+
+      },
+       {
+        "type": "circle",
+        "label": "Uzhhorod",
+        "latitude": 48.37,
+        "longitude": 22.17,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Lumberjacks Uzhgorod "
+
+      },
+      {
+        "type": "circle",
+        "label": "Kharkiv",
+        "latitude": 50,
+        "longitude": 36.13,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Atlantes Kharkiv <br> Kharkiv Tigers"
+
+      },
+      {
+        "type": "circle",
+        "label": "Kamianets-Podilskyi",
+        "latitude": 48.71,
+        "longitude": 26.35,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Titans-K-PNU Kamyanets-Podilsky"
+
+      },
+      {
+        "type": "circle",
+        "label": "Mariupol",
+        "latitude": 47.05,
+        "longitude": 37.32,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Azov Dolphins Mariupol"
+
+      },
+      {
+        "type": "circle",
+        "label": "Mykolaiv",
+        "latitude": 46.7,
+        "longitude": 32,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Vikings Mykolaiv "
+
+      },
+       {
+        "type": "circle",
+        "label": "Kherson",
+        "latitude": 46.5,
+        "longitude": 32.35,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Sharks Kherson"
+
+      },
+      {
+        "type": "circle",
+        "label": "Yuzhne",
+        "latitude": 46.5,
+        "longitude": 30.7,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Gepards Yuzhny"
+
+      },
+      {
+        "type": "circle",
+        "label": "Dnipro",
+        "latitude": 48.27,
+        "longitude": 34.59,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Rockets Dnipro <br> Spartans Dnipro"
+
+      },
+
+      {
+        "type": "circle",
+        "label": "Khmelnytskyi",
+        "latitude": 49.35,
+        "longitude": 27,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Gladiators Khmelnytskyi"
+
+      },
+      {
+        "type": "circle",
+        "label": "Zdolbuniv",
+        "latitude": 50.30,
+        "longitude": 26.15,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Eagles Zdolbuniv "
+
+      },
+       {
+        "type": "circle",
+        "label": "Zaporizhzhia",
+        "latitude": 47.50,
+        "longitude": 35.08,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Cossacks Zaporizhzhia"
+
+      },
+      {
+        "type": "circle",
+        "label": "Bila Tserkva",
+        "latitude": 49.47,
+        "longitude": 30.07,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Hawks Bila Tserkva"
+
+      }
+    ]
   },
 
   /**
@@ -355,14 +532,397 @@ AmCharts.makeChart( "mapdiv", {
    * selectedColor indicates color of the clicked area.
    */
   "areasSettings": {
-    "autoZoom": true,
-    "selectedColor": "#CC0000"
+    "autoZoom": false,
+    "selectedColor": "#CC0000",
+    "color" : "#999999",
+    "accessibleLabel" : ""
   },
-
+  "zoomControl": {
+    "zoomControlEnabled": false,
+    "maxZoomLevel": 1
+  },
   /**
    * let's say we want a small map to be displayed, so let's create it
    */
   "smallMap": {}
 } );
 ///////////////////////////////////
+///LADIES TEAM MAP
+///////////////////////////////////
+AmCharts.makeChart( "mapdiv2", {
+  /**
+   * this tells amCharts it's a map
+   */
+  "type": "map",
+
+  /**
+   * create data provider object
+   * map property is usually the same as the name of the map file.
+   * getAreasFromMap indicates that amMap should read all the areas available
+   * in the map data and treat them as they are included in your data provider.
+   * in case you don't set it to true, all the areas except listed in data
+   * provider will be treated as unlisted.
+   */
+  "dataProvider": {
+    "map": "ukraineLow",
+    "getAreasFromMap": true,
+    "showDescriptionOnHover" : true,
+    "images": [
+      {
+        "type": "circle",
+        "label": "Vinnytsia",
+        "latitude": 49.14,
+        "longitude": 28.28,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Wolves Vinnytsia"
+      },
+      {
+        "type": "circle",
+        "label": "Kyiv",
+        "latitude": 50.4,
+        "longitude": 30.61,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Rebels Kyiv <br> Bulldogs Kyiv"
+
+      },
+
+      {
+        "type": "circle",
+        "label": "Kamianets-Podilskyi",
+        "latitude": 48.71,
+        "longitude": 26.35,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Titanidas Kamyanets-Podilsky"
+
+      },
+
+      {
+        "type": "circle",
+        "label": "Dnipro",
+        "latitude": 48.27,
+        "longitude": 34.59,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Valkyrias Dnipro"
+
+      }
+
+
+    ]
+  },
+
+  /**
+   * create areas settings
+   * autoZoom set to true means that the map will zoom-in when clicked on the area
+   * selectedColor indicates color of the clicked area.
+   */
+  "areasSettings": {
+    "autoZoom": false,
+    "selectedColor": "#CC0000",
+    "color" : "#999999",
+    "accessibleLabel" : ""
+  },
+  "zoomControl": {
+    "zoomControlEnabled": false,
+    "maxZoomLevel": 1
+  },
+  /**
+   * let's say we want a small map to be displayed, so let's create it
+   */
+  "smallMap": {}
+} );
+//////////////////////////////////
+///KIDS TEAMS MAP////////////
+/////////////////////////////
+AmCharts.makeChart( "mapdiv3", {
+  /**
+   * this tells amCharts it's a map
+   */
+  "type": "map",
+
+  /**
+   * create data provider object
+   * map property is usually the same as the name of the map file.
+   * getAreasFromMap indicates that amMap should read all the areas available
+   * in the map data and treat them as they are included in your data provider.
+   * in case you don't set it to true, all the areas except listed in data
+   * provider will be treated as unlisted.
+   */
+  "dataProvider": {
+    "map": "ukraineLow",
+    "getAreasFromMap": true,
+    "showDescriptionOnHover" : true,
+    "images": [
+      {
+        "type": "circle",
+        "label": "Lviv",
+        "latitude": 49.83,
+        "longitude": 24,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Lions Lviv "
+      },
+
+      {
+        "type": "circle",
+        "label": "Vinnytsia",
+        "latitude": 49.14,
+        "longitude": 28.28,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Wolves Vinnytsia"
+      },
+      {
+        "type": "circle",
+        "label": "Kyiv",
+        "latitude": 50.4,
+        "longitude": 30.61,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Patriots Kyiv"
+
+      },
+      {
+        "type": "circle",
+        "label": "Mariupol",
+        "latitude": 47.05,
+        "longitude": 37.32,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Azov Dolphins Mariupol"
+
+      },
+      {
+        "type": "circle",
+        "label": "Mykolaiv",
+        "latitude": 46.7,
+        "longitude": 32,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Vikings Mykolaiv "
+
+      },
+      {
+        "type": "circle",
+        "label": "Yuzhne",
+        "latitude": 46.5,
+        "longitude": 30.7,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Gepards Yuzhny"
+
+      },
+      {
+        "type": "circle",
+        "label": "Khmelnytskyi",
+        "latitude": 49.35,
+        "longitude": 27,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Silver Bullets Khmelnytskyi"
+
+      },
+      {
+        "type": "circle",
+        "label": "Zdolbuniv",
+        "latitude": 50.30,
+        "longitude": 26.15,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Eagles Zdolbuniv "
+
+      },
+      {
+        "type": "circle",
+        "label": "Bila Tserkva",
+        "latitude": 49.47,
+        "longitude": 30.07,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Hawks Bila Tserkva"
+
+      }
+    ]
+  },
+
+  /**
+   * create areas settings
+   * autoZoom set to true means that the map will zoom-in when clicked on the area
+   * selectedColor indicates color of the clicked area.
+   */
+  "areasSettings": {
+    "autoZoom": false,
+    "selectedColor": "#CC0000",
+    "color" : "#999999",
+    "accessibleLabel" : ""
+  },
+  "zoomControl": {
+    "zoomControlEnabled": false,
+    "maxZoomLevel": 1
+  },
+  /**
+   * let's say we want a small map to be displayed, so let's create it
+   */
+  "smallMap": {}
+} );
+////////////////////////////
+////////////////////////////
+///TEAM MAP CHEERLEADERS////
+/////////////////////////////
+/////////////////////////////
+AmCharts.makeChart( "mapdiv4", {
+  /**
+   * this tells amCharts it's a map
+   */
+  "type": "map",
+
+  /**
+   * create data provider object
+   * map property is usually the same as the name of the map file.
+   * getAreasFromMap indicates that amMap should read all the areas available
+   * in the map data and treat them as they are included in your data provider.
+   * in case you don't set it to true, all the areas except listed in data
+   * provider will be treated as unlisted.
+   */
+  "dataProvider": {
+    "map": "ukraineLow",
+    "getAreasFromMap": true,
+    "showDescriptionOnHover" : true,
+    "images": [
+      {
+        "type": "circle",
+        "label": "Lviv",
+        "latitude": 49.83,
+        "longitude": 24,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Lions Lviv "
+      },
+      {
+        "type": "circle",
+        "label": "Odessa",
+        "latitude": 46.29,
+        "longitude": 30.43,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Pirates Odesa"
+      },
+      {
+        "type": "circle",
+        "label": "Vinnytsia",
+        "latitude": 49.14,
+        "longitude": 28.28,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Wolves Vinnytsia"
+      },
+      {
+        "type": "circle",
+        "label": "Kyiv",
+        "latitude": 50.4,
+        "longitude": 30.61,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Bandits Kyiv  <br> Slavs Kyiv  <br> Patriots Kyiv <br> Jokers Kyiv <br> Bulldogs Kyiv"
+
+      },
+      {
+        "type": "circle",
+        "label": "Kamianets-Podilskyi",
+        "latitude": 48.71,
+        "longitude": 26.35,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Titans-K-PNU Kamyanets-Podilsky"
+
+      },
+      {
+        "type": "circle",
+        "label": "Mariupol",
+        "latitude": 47.05,
+        "longitude": 37.32,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Azov Dolphins Mariupol"
+
+      },
+      {
+        "type": "circle",
+        "label": "Mykolaiv",
+        "latitude": 46.7,
+        "longitude": 32,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Vikings Mykolaiv "
+
+      },
+      {
+        "type": "circle",
+        "label": "Dnipro",
+        "latitude": 48.27,
+        "longitude": 34.59,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Rockets Dnipro"
+
+      },
+      {
+        "type": "circle",
+        "label": "Khmelnytskyi",
+        "latitude": 49.35,
+        "longitude": 27,
+        "labelColor": "#cc0000",
+        "labelRollOverColor": "#000000",
+        "title": "",
+        "description": "Gladiators Khmelnytskyi"
+
+      }
+    ]
+  },
+
+  /**
+   * create areas settings
+   * autoZoom set to true means that the map will zoom-in when clicked on the area
+   * selectedColor indicates color of the clicked area.
+   */
+  "areasSettings": {
+    "autoZoom": false,
+    "selectedColor": "#CC0000",
+    "color" : "#999999",
+    "accessibleLabel" : ""
+  },
+  "zoomControl": {
+    "zoomControlEnabled": false,
+    "maxZoomLevel": 1
+  },
+  /**
+   * let's say we want a small map to be displayed, so let's create it
+   */
+  "smallMap": {}
+} );
+////////////////////////////
 /* // MIsha`s work */

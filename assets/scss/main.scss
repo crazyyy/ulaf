@@ -3279,7 +3279,33 @@ td {
     margin-left: 105px;
   }
 }
-
+.wpb_wrapper,{
+  h3{
+    color: #fff;
+  }
+}
+.stm-call-to-action-inner{
+  h4{
+    color: #fff;
+  }
+}
+.ammapDescriptionWindow
+{
+   font-size:11px;
+   font-family:verdana,helvetica,arial,sans-serif;
+   background-color:#FFFFFF;
+   border-style:solid;
+   border-color:#DADADA;
+   border-width:1px;
+   color:#000000;
+   padding:8px;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+.ammapDescriptionWindowCloseButton{
+  display: none;
+}
 @media print {
   *,
   :after,

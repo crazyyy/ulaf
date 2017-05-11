@@ -88,7 +88,7 @@
           <?php wp_reset_postdata();  ?>
         <?php endif; ?>
       </div><!-- container -->
-      <div id="mapdiv" style="width: 600px; height: 400px;"></div>
+      <div id="mapdiv" style="width: 100%; height: 600px;margin: 80px 0;"></div>
       <div class="vc_row-full-width vc_clearfix"></div>
 
       <div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-parallax="2" data-vc-parallax-image="<?php echo get_template_directory_uri(); ?>/img/paralax-1.jpg" class="vc_row wpb_row vc_row-fluid vc_row-has-fill vc_general vc_parallax vc_parallax-content-moving" style="background-size: cover; background: url(<?php echo get_template_directory_uri(); ?>/img/paralax-1.jpg) fixed repeat 100%;">
@@ -97,13 +97,13 @@
             <div class="wpb_wrapper">
               <div class="wpb_text_column wpb_content_element ">
                 <div class="wpb_wrapper">
-                  <h3 style="text-align: center;">Презентация наших рекламных возможностей и медийных проявления для партнеров и спонсоров.</h3>
+                  <h3 style="text-align: center;">Презентация наших рекламных возможностей и медийных проявлений для партнеров и спонсоров.</h3>
                 </div>
               </div>
               <div class="stm-call-to-action clearfix">
-                <a class="button btn-secondary btn-md btn-style-4" href="https://file.ludi.in.ua/index.php/s/Ev0DGQcsPEXVEag" rel="nofollow" target="_blank">Скачать</a>
+                <a class="button btn-secondary btn-md btn-style-4" href="https://drive.google.com/file/d/0B1o4CqfAm5ffTFhEQ05NRk55cHM/view" rel="nofollow" target="_blank">Скачать</a>
                 <div class="stm-call-to-action-inner">
-                  <h4>Call to action content</h4>
+
                 </div>
               </div>
             </div>
