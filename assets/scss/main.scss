@@ -3071,12 +3071,30 @@ td {
 .away-team-total-yds {
   float: right;
 }
+.stm-single-post-meta{
+  color:white;
+  a{
+    color:white;
+  }
+}
 .single-games,
-.page-template-ratings {
+.page-template-ratings-qb,
+.page-template-ratings-lb,
+.page-template-ratings-s,
+.page-template-ratings-wr,
+.page-template-ratings-te,
+.page-template-ratings-dl,
+.page-template-ratings-rb,
+.page-template-ratings-k,
+.page-template-ratings-cb,
+.page-template-ratings-ol,
+.page-template-ratings
+ {
   #wrapper {
     color: white;
     background: url('../img/ratings-bg.jpg') fixed repeat 100%;
     h1,
+    h3,
     tr,
     td,
     h2,

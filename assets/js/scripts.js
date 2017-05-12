@@ -244,6 +244,24 @@ $('.filters-select').on('change', function() {
   });
   $('.grid-item-2').show();
 });
+//////////////////////////////////////
+///Isotope Ratings
+///////////////////
+$('.grid-3').isotope({
+  // options
+  itemSelector: '.grid-item-3',
+  layoutMode: 'fitRows',
+  filter: '.rating-division-a'
+});
+
+$('.filters-select').on('change', function() {
+  // get filter value from option value
+  var filterValue = this.value;
+  $('.grid-3').isotope({
+    filter: filterValue
+  });
+  $('.grid-item-3').show();
+});
 /////////////////////////////////////
 
 // owlCarousel//////////////////////
@@ -306,7 +324,7 @@ $('.filters-select').on('change', function() {
 $(function(){
   $(window).scroll(function(){
     var winTop = $(window).scrollTop();
-    if(winTop >= 30){
+    if(winTop >= 10){
       $(".stm-transparent-header .stm-header-inner").css({
         'background-color': 'black',
         top: '-25px'

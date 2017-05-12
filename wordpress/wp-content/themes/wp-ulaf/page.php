@@ -24,13 +24,8 @@
       <div class="container">
 
         <div class="vc_row wpb_row vc_row-fluid">
-          <div class="wpb_column vc_column_container vc_col-sm-8">
+          <div class="wpb_column vc_column_container vc_col-sm-12">
            <?php the_content(); ?>
-          </div>
-          <div class="wpb_column vc_column_container vc_col-sm-4">
-            <div class="vc_column-inner ">
-              <?php get_sidebar('right'); ?>
-            </div>
           </div>
         </div>
         <div class="clearfix">
