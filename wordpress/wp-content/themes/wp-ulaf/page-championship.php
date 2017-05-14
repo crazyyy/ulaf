@@ -21,7 +21,7 @@
                  <?php $date = the_sub_field('game_date');?>
               </div>
 
-              <div class="col-md-3 team-game result-left-team">
+              <div class="col-md-4 team-game result-left-team">
                <?php $posts = get_sub_field('home_team_name'); if( $posts ): ?>
                <?php foreach( $posts as $p ): ?>
                <span><?php echo get_the_title($p->ID); ?></span>
@@ -31,10 +31,10 @@
                <?php endforeach; endif; ?>
 
               </div>
-              <div class="col-md-1 game-score">
+              <div class="col-md-2 game-score">
                  <span><?php the_sub_field('game_score_result'); ?></span>
               </div>
-              <div class="col-md-5 team-game">
+              <div class="col-md-4 team-game">
                <?php $posts = get_sub_field('away_team_logo'); if( $posts ): foreach( $posts as $p ): ?>
                <img class="result-pic" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $p->ID ) ); ?>" alt="">
                <?php endforeach; endif; ?>

@@ -1598,7 +1598,7 @@ table {
   text-align: center;
 }
 .game-bar {
-  font-size: 30px;
+  font-size: 25px;
 
   display: flex;
   flex-direction: row;
@@ -2748,12 +2748,11 @@ input[type=text]:focus {
 }
 .team-game {
   display: flex;
-  flex-direction: row;
-
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: center;
 }
 .team-background-image {
   width: 1200px;
@@ -2971,13 +2970,12 @@ td {
   }
 }
 .result-left-team {
-  display: flex;
-  flex-direction: row;
-
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
+      display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-content: stretch;
+    align-items: center;
 }
 .rejtingi {
   table {
@@ -3106,11 +3104,11 @@ td {
     }
     .single-game-score {
       font-size: 62px;
-
+margin: 55px 0 35px 0;
       display: flex;
       flex-direction: row;
 
-      margin: 55px 0 35px 0;
+
 
       flex-wrap: wrap;
       justify-content: center;
@@ -3323,6 +3321,9 @@ td {
 }
 .ammapDescriptionWindowCloseButton{
   display: none;
+}
+.game-score{
+  text-align:center;
 }
 @media print {
   *,
