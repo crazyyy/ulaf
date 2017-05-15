@@ -45,27 +45,27 @@
               <div class="stm-top-socials-holder">
                 <ul class="top-bar-socials stm-list-duty">
                   <li>
-                    <a href="https://www.facebook.com/ulaf.ua/" target="_blank">
+                    <a rel="nofollow" href="https://www.facebook.com/ulaf.ua/" target="_blank">
                       <i class="fa fa-facebook"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://twitter.com/ulafcool" target="_blank">
+                    <a rel="nofollow" href="https://twitter.com/ulafcool" target="_blank">
                       <i class="fa fa-twitter"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/ulafcool/" target="_blank">
+                    <a rel="nofollow" href="https://www.instagram.com/ulafcool/" target="_blank">
                       <i class="fa fa-instagram"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://vk.com/ulafua" target="_blank">
+                    <a rel="nofollow" href="https://vk.com/ulafua" target="_blank">
                       <i class="fa fa-vk"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.youtube.com/channel/UCX-eSs3MKCWTAnm3rQJ7WJQ" target="_blank">
+                    <a rel="nofollow" href="https://www.youtube.com/channel/UCX-eSs3MKCWTAnm3rQJ7WJQ" target="_blank">
                       <i class="fa fa-youtube"></i>
                     </a>
                   </li>
@@ -128,27 +128,27 @@
                   <div class="stm-top-socials">
                     <ul class="top-bar-socials stm-list-duty">
                       <li>
-                        <a href="https://www.facebook.com/ulaf.ua/" target="_blank">
+                        <a rel="nofollow" href="https://www.facebook.com/ulaf.ua/" target="_blank">
                           <i class="fa fa-facebook"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="https://twitter.com/ulafcool" target="_blank">
+                        <a rel="nofollow" href="https://twitter.com/ulafcool" target="_blank">
                           <i class="fa fa-twitter"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.instagram.com/ulafcool/" target="_blank">
+                        <a rel="nofollow" href="https://www.instagram.com/ulafcool/" target="_blank">
                           <i class="fa fa-instagram"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="https://vk.com/ulafua" target="_blank">
+                        <a rel="nofollow" href="https://vk.com/ulafua" target="_blank">
                           <i class="fa fa-linkedin"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#" target="_blank">
+                        <a rel="nofollow" href="#" target="_blank">
                           <i class="fa fa-youtube"></i>
                         </a>
                       </li>

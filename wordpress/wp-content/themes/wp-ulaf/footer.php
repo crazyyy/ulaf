@@ -5,72 +5,12 @@
         <div class="container">
           <div class="widgets stm-cols-4 clearfix">
 
-            <aside id="text-2" class="widget widget_text">
-              <div class="widget-wrapper">
-                <div class="widget-title">О нас</div>
-                <div class="textwidget">
-                  <div class="stm-text-lighten">Миссия Украинской лиги Американского футбола - это Популяризация Американского футбола в Украине, оздоровление нации, популяризация здорового образа жизни, а также повышение рейтинга нашей страны на международной арене.</div>
-                </div>
-              </div>
-            </aside>
-
-            <aside id="recent-posts-3" class="widget widget_recent_entries">
-              <div class="widget-wrapper">
-                <div class="widget-title">Последние новости</div>
-                <ul>
-                 <?php query_posts("showposts=2"); ?>
-                   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                    <li>
-                      <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                      <span class="post-date"><?php the_time('m-d-Y'); ?></span>
-                    </li>
-                    <?php endwhile; endif; ?>
-                  <?php wp_reset_query(); ?>
-                </ul>
-              </div>
-            </aside>
-
-            <aside id="nav_menu-2" class="widget widget_nav_menu">
-              <div class="widget-wrapper">
-                <div class="widget-title">Ссылки</div>
-                <div class="menu-widget-menu-container">
-                  <ul id="menu-widget-menu" class="menu">
-                    <li><a href="http://ulafua.com/">Главная</a></li>
-                    <li><a href="http://ulafua.com/news">Новости</a></li>
-                    <li><a href="<?php the_permalink(); ?>">Команды</a></li>
-                    <li><a href="http://ulafua.com/druzya-i-partnery.htm">Друзья и партнеры</a></li>
-                    <li><a href="http://ulafua.com/foto.htm">Медиа</a></li>
-                    <li><a href="http://ulafua.com/sostav.htm">Сборная</a></li>
-                    <li><a href="http://ulafua.com/istoriya-ulaf.htm">О нас</a></li>
-                    <li><a href="http://ulafua.com/kontakty.htm">Контакты</a></li>
-                  </ul>
-                </div>
-              </div>
-            </aside>
-
-            <aside id="contacts-2" class="widget widget_contacts">
-              <div class="widget-wrapper">
-                <div class="widget-title">Наши контакты</div>
-                <ul class="stm-list-duty heading-font">
-                  <li class="widget_contacts_address">
-                    <div class="icon"><i class="fa fa-map-marker"></i></div>
-                    <div class="text">Ukraine, Kyiv — 04201, st. Kondratuka, 7, office 712<div>
-                  </li>
-                  <li class="widget_contacts_phone">
-                    <div class="icon"><i class="fa fa-phone"></i></div>
-                    <div class="text">+38 097 111 51 21</div>
-                  </li>
-                  <li>
-                    <div class="icon"><i class="fa fa-fax"></i></div>
-                    <div class="text">+33 (0) 1 43 11 14 71</div>
-                  </li>
-                  <li class="widget_contacts_mail">
-                    <div class="icon"><i class="fa fa-envelope"></i></div>
-                    <div class="text"><a href="mailto:info@ulafua.com">info@ulafua.com</a></div>
-                  </li>
-                </ul>
-              </div>
-            </aside>
+            <?php if ( is_active_sidebar('widgetarea2') ) : ?>
+              <?php dynamic_sidebar( 'widgetarea2' ); ?>
+            <?php else : ?>
+              <!-- If you want display static widget content - write code here
+              RU: Здесь код вывода того, что необходимо для статического контента виджетов -->
+            <?php endif; ?>
 
           </div>
         </div>

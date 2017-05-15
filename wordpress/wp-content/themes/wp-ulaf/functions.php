@@ -192,6 +192,7 @@ add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
 function register_html5_menu() {
   register_nav_menus(array(
     'header-menu' => __('Меню в шапке', 'wpeasy'),
+    'header-menu-2' => __('Мобильное меню в шапку', 'wpeasy'),
     'sidebar-menu' => __('Меню в сайдбар', 'wpeasy'),
     'footer-menu' => __('Меню в подвал', 'wpeasy')
   ));
