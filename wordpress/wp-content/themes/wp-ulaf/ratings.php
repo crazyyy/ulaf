@@ -3,20 +3,22 @@
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
         <div class="container results">
-        <h2 >Рейтинги</h2>
+
         <div class="row grid-3">
         <div class="col-md-12 rating-division-a grid-item-3">
-          <h4>Defensive Tackles</h4>
-          <h4>Defensive Ends</h4>
-          <h4>Linebackers</h4>
-          <h4>Safeties</h4>
-          <h4>Cornerbacks</h4>
-          <h4>Quarterbacks</h4>
-          <h4>Offensive Linemans</h4>
-          <h4>Runningbacks</h4>
-          <h4>Wide Receivers</h4>
-          <h4>Tight ends</h4>
-          <h4>Kickers</h4>
+          <h2>Defense</h2>
+          <h4><a href="http://ulafua.com/defensive-tackles.htm">Defensive Tackles</a></h4>
+          <h4><a href="http://ulafua.com/defensive-ends.htm">Defensive Ends</a></h4>
+          <h4><a href="http://ulafua.com/linebackers.htm">Linebackers</a></h4>
+          <h4><a href="http://ulafua.com/safeties.htm">Safeties</a></h4>
+          <h4><a href="http://ulafua.com/cornerbacks.htm">Cornerbacks</a></h4>
+          <h2>Offence</h2>
+          <h4><a href="http://ulafua.com/quarterbacks.htm">Quarterbacks</a></h4>
+          <h4><a href="http://ulafua.com/offensive-linemans.htm">Offensive Linemans</a></h4>
+          <h4><a href="http://ulafua.com/runningbacks.htm">Runningbacks</a></h4>
+          <h4><a href="http://ulafua.com/wide-receivers.htm">Wide Receivers</a></h4>
+          <h4><a href="http://ulafua.com/tight-ends.htm">Tight ends</a></h4>
+          <h4><a href="http://ulafua.com/kickers.htm">Kickers</a></h4>
         </div>
       </div>
      </div>

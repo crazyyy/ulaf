@@ -426,7 +426,7 @@ AmCharts.makeChart("mapdiv", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "<a href='http://ulafua.com/team/atlanty'>Atlantes Kharkiv</a> <br> <a href='http://ulafua.com/team/?post_type=team&p=180'>Kharkiv Tigers</a>"
+        "description": "<a href='http://ulafua.com/team/atlanty'>Atlantes Kharkiv</a> <br> <a href='http://ulafua.com/team/tigry'>Kharkiv Tigers</a>"
 
       }, {
         "type": "circle",
