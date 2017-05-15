@@ -379,7 +379,7 @@ AmCharts.makeChart("mapdiv", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "Lions Lviv "
+        "description": "<a href='http://ulafua.com/team/lvy'>Lions Lviv</a> "
       }, {
         "type": "circle",
         "label": "Odessa",
@@ -388,7 +388,7 @@ AmCharts.makeChart("mapdiv", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "Pirates Odesa"
+        "description": "<a href='http://ulafua.com/team/piraty'>Pirates Odesa</a>"
       }, {
         "type": "circle",
         "label": "Vinnytsia",
@@ -397,7 +397,7 @@ AmCharts.makeChart("mapdiv", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "Wolves Vinnytsia"
+        "description": "<a href='http://ulafua.com/team/vinnitskie-volki'>Wolves Vinnytsia</a>"
       }, {
         "type": "circle",
         "label": "Kyiv",
@@ -406,7 +406,7 @@ AmCharts.makeChart("mapdiv", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "<a href='#'>Bandits Kyiv</a> <br> Slavs Kyiv  <br> Patriots Kyiv <br> Rebels Kyiv <br> Jokers Kyiv <br> Bulldogs Kyiv"
+        "description": "<a href='http://ulafua.com/team/bandity'>Bandits Kyiv</a> <br><a href='http://ulafua.com/team/slavyani'> Slavs Kyiv </a> <br><a href='http://ulafua.com/team/patrioty'> Patriots Kyiv </a><br><a href='http://ulafua.com/team/rebels'> Rebels Kyiv </a><br><a href='http://ulafua.com/team/dzhokery'> Jokers Kyiv </a><br> <a href='http://ulafua.com/team/buldogi'>Bulldogs Kyiv</a>"
 
       }, {
         "type": "circle",
@@ -416,7 +416,7 @@ AmCharts.makeChart("mapdiv", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "Lumberjacks Uzhgorod "
+        "description": "<a href='http://ulafua.com/team/lesoruby'>Lumberjacks Uzhgorod</a> "
 
       }, {
         "type": "circle",
@@ -426,7 +426,7 @@ AmCharts.makeChart("mapdiv", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "Atlantes Kharkiv <br> Kharkiv Tigers"
+        "description": "<a href='http://ulafua.com/team/atlanty'>Atlantes Kharkiv</a> <br> <a href='http://ulafua.com/team/?post_type=team&p=180'>Kharkiv Tigers</a>"
 
       }, {
         "type": "circle",
@@ -436,7 +436,7 @@ AmCharts.makeChart("mapdiv", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "Titans-K-PNU Kamyanets-Podilsky"
+        "description": "<a href='http://ulafua.com/team/titany'>Titans-K-PNU Kamyanets-Podilsky</a>"
 
       }, {
         "type": "circle",
@@ -446,7 +446,7 @@ AmCharts.makeChart("mapdiv", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "Azov Dolphins Mariupol"
+        "description": "<a href='http://ulafua.com/team/delfiny'>Azov Dolphins Mariupol</a>"
 
       }, {
         "type": "circle",
@@ -456,7 +456,7 @@ AmCharts.makeChart("mapdiv", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "Vikings Mykolaiv "
+        "description": "<a href='http://ulafua.com/team/vikingi'>Vikings Mykolaiv</a> "
 
       }, {
         "type": "circle",
@@ -466,7 +466,7 @@ AmCharts.makeChart("mapdiv", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "Sharks Kherson"
+        "description": "<a href='http://ulafua.com/team/akuly'>Sharks Kherson</a>"
 
       }, {
         "type": "circle",
@@ -476,7 +476,7 @@ AmCharts.makeChart("mapdiv", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "Gepards Yuzhny"
+        "description": "<a href='http://ulafua.com/team/gepardy'>Gepards Yuzhny</a>"
 
       }, {
         "type": "circle",
@@ -486,7 +486,7 @@ AmCharts.makeChart("mapdiv", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "Rockets Dnipro <br> Spartans Dnipro"
+        "description": "<a href='http://ulafua.com/team/rakety'>Rockets Dnipro</a> <br><a href='http://ulafua.com/team/spartans'>Spartans Dnipro</a> "
 
       },
 
@@ -498,7 +498,7 @@ AmCharts.makeChart("mapdiv", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "Gladiators Khmelnytskyi"
+        "description": "<a href='http://ulafua.com/team/gladiatory'>Gladiators Khmelnytskyi</a>"
 
       }, {
         "type": "circle",
@@ -508,7 +508,7 @@ AmCharts.makeChart("mapdiv", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "Eagles Zdolbuniv "
+        "description": "<a href='http://ulafua.com/team/orly'>Eagles Zdolbuniv</a> "
 
       }, {
         "type": "circle",
@@ -518,7 +518,7 @@ AmCharts.makeChart("mapdiv", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "Cossacks Zaporizhzhia"
+        "description": "<a href='http://ulafua.com/team/kazaki'>Cossacks Zaporizhzhia</a>"
 
       }, {
         "type": "circle",
@@ -528,7 +528,7 @@ AmCharts.makeChart("mapdiv", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "Hawks Bila Tserkva"
+        "description": "<a href='http://ulafua.com/team/hawks'>Hawks Bila Tserkva</a>"
 
       }
     ]
@@ -583,7 +583,7 @@ AmCharts.makeChart("mapdiv2", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "Wolves Vinnytsia"
+        "description": "<a href='http://ulafua.com/team/wolves-girls'>Wolves Vinnytsia</a>"
       }, {
         "type": "circle",
         "label": "Kyiv",
@@ -592,7 +592,7 @@ AmCharts.makeChart("mapdiv2", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "Rebels Kyiv <br> Bulldogs Kyiv"
+        "description": "<a href='http://ulafua.com/team/rebels-girls'></a>Rebels Kyiv <br> <a href='http://ulafua.com/team/bulldogs-girls'>Bulldogs Kyiv</a>"
 
       },
 
@@ -604,7 +604,7 @@ AmCharts.makeChart("mapdiv2", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "Titanidas Kamyanets-Podilsky"
+        "description": "<a href='http://ulafua.com/team/titanides'>Titanides Kamyanets-Podilsky</a>"
 
       },
 
@@ -616,7 +616,7 @@ AmCharts.makeChart("mapdiv2", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "Valkyrias Dnipro"
+        "description": "<a href='http://ulafua.com/team/valkyrias-girls'>Valkyrias Dnipro</a>"
 
       }
 
@@ -673,7 +673,7 @@ AmCharts.makeChart("mapdiv3", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "Lions Lviv "
+        "description": "<a href='http://ulafua.com/team/lions-u-15'>Lions Lviv</a> "
       },
 
       {
@@ -684,7 +684,7 @@ AmCharts.makeChart("mapdiv3", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "Wolves Vinnytsia"
+        "description": "<a href='http://ulafua.com/team/wolves-u-15'>Wolves Vinnytsia</a>"
       }, {
         "type": "circle",
         "label": "Kyiv",
@@ -693,7 +693,7 @@ AmCharts.makeChart("mapdiv3", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "Patriots Kyiv"
+        "description": "<a href='http://ulafua.com/team/patriots-u-15'>Patriots Kyiv</a>"
 
       }, {
         "type": "circle",
@@ -703,7 +703,7 @@ AmCharts.makeChart("mapdiv3", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "Azov Dolphins Mariupol"
+        "description": "<a href='http://ulafua.com/team/azov-dolphins-u-15'>Azov Dolphins Mariupol</a>"
 
       }, {
         "type": "circle",
@@ -713,7 +713,7 @@ AmCharts.makeChart("mapdiv3", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "Vikings Mykolaiv "
+        "description": "<a href='http://ulafua.com/team/vikings-u-15'>Vikings Mykolaiv</a> "
 
       }, {
         "type": "circle",
@@ -723,7 +723,7 @@ AmCharts.makeChart("mapdiv3", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "Gepards Yuzhny"
+        "description": "<a href='http://ulafua.com/team/gepards-u-15'>Gepards Yuzhny</a>"
 
       }, {
         "type": "circle",
@@ -733,7 +733,7 @@ AmCharts.makeChart("mapdiv3", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "Silver Bullets Khmelnytskyi"
+        "description": "<a href='http://ulafua.com/team/silver-bullets-u-15'>Silver Bullets Khmelnytskyi</a>"
 
       }, {
         "type": "circle",
@@ -743,7 +743,7 @@ AmCharts.makeChart("mapdiv3", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "Eagles Zdolbuniv "
+        "description": "<a href='http://ulafua.com/team/eagles-u-15'>Eagles Zdolbuniv</a> "
 
       }, {
         "type": "circle",
@@ -753,7 +753,7 @@ AmCharts.makeChart("mapdiv3", {
         "labelColor": "#cc0000",
         "labelRollOverColor": "#000000",
         "title": "",
-        "description": "Hawks Bila Tserkva"
+        "description": "<a href='http://ulafua.com/team/hawks-u-15'>Hawks Bila Tserkva</a>"
 
       }
     ]
@@ -810,7 +810,7 @@ AmCharts.makeChart("mapdiv4", {
       "labelColor": "#cc0000",
       "labelRollOverColor": "#000000",
       "title": "",
-      "description": "Lions Lviv "
+      "description": "<a href='https://vk.com/cheerteam_lions'>Lions Lviv</a> "
     }, {
       "type": "circle",
       "label": "Odessa",
@@ -819,7 +819,7 @@ AmCharts.makeChart("mapdiv4", {
       "labelColor": "#cc0000",
       "labelRollOverColor": "#000000",
       "title": "",
-      "description": "Pirates Odesa"
+      "description": "<a href='https://vk.com/odessapirates'>Pirates Odesa</a>"
     }, {
       "type": "circle",
       "label": "Vinnytsia",
@@ -828,7 +828,7 @@ AmCharts.makeChart("mapdiv4", {
       "labelColor": "#cc0000",
       "labelRollOverColor": "#000000",
       "title": "",
-      "description": "Wolves Vinnytsia"
+      "description": "<a href='https://vk.com/wolvescheerleadingteam'>Wolves Vinnytsia</a>"
     }, {
       "type": "circle",
       "label": "Kyiv",
@@ -837,7 +837,7 @@ AmCharts.makeChart("mapdiv4", {
       "labelColor": "#cc0000",
       "labelRollOverColor": "#000000",
       "title": "",
-      "description": "<a href='#'>Bandits Kyiv</a>  <br> Slavs Kyiv  <br> Patriots Kyiv <br> Jokers Kyiv <br> Bulldogs Kyiv"
+      "description": "<a href='https://vk.com/cheer_bandits'>Bandits Kyiv</a>  <br> <a href='https://vk.com/slavs_cheerleading_girls?_smt=groups_list%3A1'>Slavs Kyiv</a>  <br> <a href='https://vk.com/patriots_cheer'>Patriots Kyiv</a> <br> <a href='https://vk.com/jokers_sweets'>Jokers Kyiv</a> <br> <a href='https://vk.com/bulldogs_cheerleaders'>Bulldogs Kyiv</a>"
 
     }, {
       "type": "circle",
@@ -847,7 +847,7 @@ AmCharts.makeChart("mapdiv4", {
       "labelColor": "#cc0000",
       "labelRollOverColor": "#000000",
       "title": "",
-      "description": "Titans-K-PNU Kamyanets-Podilsky"
+      "description": "<a href='https://vk.com/kp_af'>Titans-K-PNU Kamyanets-Podilsky</a>"
 
     }, {
       "type": "circle",
@@ -857,7 +857,7 @@ AmCharts.makeChart("mapdiv4", {
       "labelColor": "#cc0000",
       "labelRollOverColor": "#000000",
       "title": "",
-      "description": "Azov Dolphins Mariupol"
+      "description": "<a href='https://vk.com/azov_dolphins'>Azov Dolphins Mariupol</a>"
 
     }, {
       "type": "circle",
@@ -867,7 +867,7 @@ AmCharts.makeChart("mapdiv4", {
       "labelColor": "#cc0000",
       "labelRollOverColor": "#000000",
       "title": "",
-      "description": "Vikings Mykolaiv "
+      "description": "<a href='https://vk.com/cheerleading_niko'>Vikings Mykolaiv</a> "
 
     }, {
       "type": "circle",
@@ -877,7 +877,7 @@ AmCharts.makeChart("mapdiv4", {
       "labelColor": "#cc0000",
       "labelRollOverColor": "#000000",
       "title": "",
-      "description": "Rockets Dnipro"
+      "description": "<a href='https://vk.com/show_models_dnepr'>Rockets Dnipro</a>"
 
     }, {
       "type": "circle",
@@ -887,7 +887,7 @@ AmCharts.makeChart("mapdiv4", {
       "labelColor": "#cc0000",
       "labelRollOverColor": "#000000",
       "title": "",
-      "description": "Gladiators Khmelnytskyi"
+      "description": "<a href='https://vk.com/club123202350'>Gladiators Khmelnytskyi</a>"
 
     }]
   },
