@@ -75,7 +75,7 @@
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/fotorama.js"></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/skrollr.js"></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/select2.js"></script>
- <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/ammap.js"></script>
+  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/ammap.js"></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/ukraineLow.js"></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
 

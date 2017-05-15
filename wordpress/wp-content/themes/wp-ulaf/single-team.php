@@ -156,22 +156,9 @@
           <h5 class="text-achiv"><?php the_sub_field('team_achievements'); ?></h5>
         <?php endwhile;  ?>
       <?php endif; ?>
-  <div class="container">
-    <h4>Спонсоры команды</h4>
-      <?php $posts = get_field('sponsors'); if( $posts ): ?>
-        <div class="row slider owl-carousel owl-theme">
-        <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
-        <?php setup_postdata($post); ?>
-          <div class="slide col-md-8 col-sm-12">
-            <?php if ( has_post_thumbnail()) : the_post_thumbnail('medium'); else: ?>
-              <img src="<?php echo catchFirstImage(); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>" />
-            <?php endif; ?>
-          </div>
-          <?php endforeach; ?>
-        </div>
-        <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-        <?php endif; ?>
-  </div>
+
+      <?php get_template_part('includes/sponsors'); ?>
+
  <?php comments_template(); ?>
 </article>
   <?php endwhile; else: ?>

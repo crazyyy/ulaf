@@ -1249,6 +1249,7 @@ table {
     position: fixed;
     top: 50px;
     left: 0;
+
     width: 100%;
 
     background-color: transparent;
@@ -1262,7 +1263,9 @@ table {
     position: fixed;
     top: 50px;
     left: 0;
+
     width: 100%;
+
     transition: all 1s ease;
   }
 }
@@ -1299,11 +1302,11 @@ table {
     text-transform: uppercase;
   }
 }
-.sticky{
-  background-color: black;
-  opacity: 1;
-  top: 0px;
+.sticky {
+  top: 0;
 
+  opacity: 1;
+  background-color: black;
 }
 .rev_slider {
   background-color: #000;
@@ -2748,11 +2751,12 @@ input[type=text]:focus {
 }
 .team-game {
   display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-content: stretch;
-    align-items: center;
+  flex-direction: row;
+
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: center;
 }
 .team-background-image {
   width: 1200px;
@@ -2926,15 +2930,29 @@ td {
   padding-bottom: 0;
 }
 
-.logo-main img {
-  height: 95px;
-  margin-top: 22px;
-  margin-left: 25px;
+.logo-main {
+  img {
+    height: 95px;
+    margin-top: 22px;
+    margin-left: 25px;
+  }
 }
 
-.slide {
-  width: 400px;
+.sponsors-block-slider {
+  .slide {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+  }
 }
+
 
 .filters-select {
   position: relative;
@@ -2970,12 +2988,13 @@ td {
   }
 }
 .result-left-team {
-      display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-content: stretch;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-content: stretch;
+  align-items: center;
 }
 .rejtingi {
   table {
@@ -3069,10 +3088,10 @@ td {
 .away-team-total-yds {
   float: right;
 }
-.stm-single-post-meta{
-  color:white;
-  a{
-    color:white;
+.stm-single-post-meta {
+  color: white;
+  a {
+    color: white;
   }
 }
 .single-games,
@@ -3086,8 +3105,7 @@ td {
 .page-template-ratings-k,
 .page-template-ratings-cb,
 .page-template-ratings-ol,
-.page-template-ratings
- {
+.page-template-ratings {
   #wrapper {
     color: white;
     background: url('../img/ratings-bg.jpg') fixed repeat 100%;
@@ -3104,11 +3122,11 @@ td {
     }
     .single-game-score {
       font-size: 62px;
-margin: 55px 0 35px 0;
+
       display: flex;
       flex-direction: row;
 
-
+      margin: 55px 0 35px 0;
 
       flex-wrap: wrap;
       justify-content: center;
@@ -3188,8 +3206,6 @@ margin: 55px 0 35px 0;
   }
 }
 
-
-
 .js-hidden,
 .wrs {
   overflow: hidden;
@@ -3202,14 +3218,6 @@ margin: 55px 0 35px 0;
 
   dislay: none;
 }
-
-
-
-
-
-
-
-
 
 .vertical-tabs {
   position: relative;
@@ -3295,36 +3303,36 @@ margin: 55px 0 35px 0;
     margin-left: 105px;
   }
 }
-.wpb_wrapper,{
-  h3{
+.wpb_wrapper {
+  h3 {
     color: #fff;
   }
 }
-.stm-call-to-action-inner{
-  h4{
+.stm-call-to-action-inner {
+  h4 {
     color: #fff;
   }
 }
-.ammapDescriptionWindow
-{
-   font-size:11px;
-   font-family:verdana,helvetica,arial,sans-serif;
-   background-color:#FFFFFF;
-   border-style:solid;
-   border-color:#DADADA;
-   border-width:1px;
-   color:#000000;
-   padding:8px;
-   -webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-   box-sizing: border-box;
+.ammapDescriptionWindow {
+  font-size: 12px;
+
+  box-sizing: border-box;
+  padding: 8px;
+
+  color: #000;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dadada;
+  background-color: #fff;
 }
-.ammapDescriptionWindowCloseButton{
+
+.ammapDescriptionWindowCloseButton {
   display: none;
 }
-.game-score{
-  text-align:center;
+.game-score {
+  text-align: center;
 }
+
 @media print {
   *,
   :after,
