@@ -1,0 +1,64 @@
+.learn-press-question-options > li.answer-option > label p.single-lines {
+  padding: 0 20px 0 60px;
+  line-height: 50px; }
+
+.sorting-choice {
+  list-style: none;
+  margin: 0 0 20px 0;
+  padding: 0; }
+  .sorting-choice .answer-option label {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    color: #777; }
+  .sorting-choice .answer-option .sort-hand {
+    display: inline-block;
+    width: 20px;
+    height: 17px;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    left: 15px;
+    border-top: 3px solid #DDD;
+    border-bottom: 3px solid #DDD;
+    cursor: move; }
+    .sorting-choice .answer-option .sort-hand:hover {
+      border-color: #00adff; }
+      .sorting-choice .answer-option .sort-hand:hover:before {
+        border-color: #00adff; }
+    .sorting-choice .answer-option .sort-hand:before {
+      content: '';
+      border-bottom: 3px solid #DDD;
+      width: 20px;
+      display: inline-block;
+      position: absolute;
+      top: 4px; }
+  .sorting-choice .answer-option .option-title {
+    margin: 0;
+    padding: 0 20px 0 50px;
+    line-height: 30px; }
+  .sorting-choice .answer-option.answered-correct .option-title {
+    color: #00a0d2; }
+    .sorting-choice .answer-option.answered-correct .option-title:before {
+      background: #00a0d2; }
+  .sorting-choice .answer-option.answered-wrong .option-title {
+    color: #ff4d66; }
+    .sorting-choice .answer-option.answered-wrong .option-title:before {
+      background: #ff4d66; }
+  .sorting-choice .answer-option.answered-correct .sort-hand, .sorting-choice .answer-option.answered-wrong .sort-hand {
+    border-color: #DCDCDC;
+    cursor: not-allowed; }
+    .sorting-choice .answer-option.answered-correct .sort-hand:before, .sorting-choice .answer-option.answered-wrong .sort-hand:before {
+      border-color: #DCDCDC; }
+  .sorting-choice .correct-answer-label {
+    font-size: smaller;
+    margin-bottom: 20px;
+    margin-top: -15px; }
+
+.lp-question-sorting-choice-display-position {
+  display: inline-block;
+  background: #4ABEFF;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 5px 10px; }

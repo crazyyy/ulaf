@@ -1,0 +1,204 @@
+@use "sass:color";
+@use "sass:meta";
+@use "import/reset";
+@use "import/variables";
+@use "import/buttons";
+@use "import/forms";
+@use "import/lists";
+@use "import/tables";
+@use "import/mixin";
+@use "import/helpers";
+
+@use "../../node_modules/rfs/scss";
+
+//@import 'grid/grid-bootstrap';
+//@use "import/grid";
+@use "grid-reflex/reflex";
+
+@use "import/wordpress";
+
+//////////////////////////// col-     | mobile      |   320-575
+$mobile: 320px; // mobile
+$mobile-lst: 575px; // mobile last
+//////////////////////////// col-xs   | mobile wide |   576-767
+$xs: 576px; // xs
+$xs-lst: 767px; // xs last
+//////////////////////////// col-sm   | tablet      |   768-991
+$sm: 768px; // sm tablet
+$sm-lst: 991px; // sm tablet last
+//////////////////////////// col-md   | desktop     |   992-1199
+$md: 992px; // desktop
+$md-lst: 1199px; // md desktop last
+//////////////////////////// col-lg   | hd          |   1200-1599
+$lg: 1200px; // hd lg
+$lg-lst: 1599px; // hd lg last
+//////////////////////////// col-xlg  | full-hd     |   1600+
+$xlg: 1600px; // full-hd xlg
+
+$breakpoints: (
+  mobile:     $mobile, // mobile
+  mobile-lst: $mobile-lst, // mobile last
+  xs:     $xs, // xs
+  xs-lst: $xs-lst, // xs last
+  sm:     $sm, // sm tablet
+  sm-lst: $sm-lst, // sm tablet last
+  md:     $md, // desktop
+  md-lst: $md-lst, // md desktop last
+  lg:      $lg, // hd lg
+  lg-last: $lg-lst, // hd lg last
+  xlg: $xlg, // full-hd xlg
+  // Tweakpoints
+  //desktopAd: 810px,
+  //mobileLandscape: 480px,
+);
+$show-breakpoints: (mobile, xs, sm, md, lg, xlg);
+@use "import/mq" with (
+  $breakpoints: $breakpoints,
+  //$show-breakpoints: $show-breakpoints
+);
+@include mq.add-breakpoint(xs, 576px);
+@include mq.add-breakpoint(xlg, 1600px);
+
+//@media (min-width: $lg) and (max-width: $lg-lst) {}
+
+// https://github.com/twbs/rfs
+// https://codepen.io/MartijnCuppens/pen/vqaEBG?editors=0100
+// @use "../../node_modules/rfs/scss";
+// @include scss.rfs(26px, font-size);
+
+// Grid Debugger
+//[class*=col-] {
+//  box-sizing: border-box;
+//  border: 1px solid red;
+//  margin-bottom: 0 !important;
+//}
+
+// Basic Styles
+////////////////////////////////////////////////
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+  font-family: variables.$font-family-base;
+  font-weight: variables.$fnorm;
+  line-height: variables.$base-line-height;
+}
+
+body {
+  min-width: 320px;
+  transition: variables.$base-transition;
+  color: variables.$base-font-color;
+  background-color: variables.$base-background-color;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  //font-size: variables.$base-font-size;
+  @include scss.rfs(variables.$base-font-size, font-size);
+  font-family: variables.$heading-font-family;
+  line-height: variables.$heading-line-height;
+  //margin: 0 0 variables.$small-spacing;
+  @include scss.rfs(0 0 variables.$small-spacing, margin);
+}
+
+p,
+pre,
+img,
+picture {
+  //margin: 0 0 variables.$small-spacing;
+  @include scss.rfs(0 0 variables.$small-spacing, margin);
+  max-width: 100%;
+}
+
+a {
+  transition: variables.$base-transition;
+  text-decoration: none;
+  color: variables.$action-color;
+  &:active,
+  &:focus,
+  &:hover {
+    color: color.adjust(variables.$action-color, $lightness: -15%);
+  }
+  &:active,
+  &:focus {
+    color: color.adjust(variables.$action-color, $lightness: 15%);
+    outline: none;
+  }
+}
+
+hr {
+  //margin: 0 0 variables.$small-spacing;
+  @include scss.rfs(0 0 variables.$small-spacing, margin);
+  border-bottom: variables.$base-border;
+}
+
+// Grid
+////////////////////////////////////////////////
+
+.wrapper,
+.container {
+  position: relative;
+  //width: 100%; // fix responsive
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: variables.$width;
+}
+
+// Header
+////////////////////////////////////////////////
+
+header,
+nav ul li {
+  display: inline-block;
+}
+
+header {
+  background-color: variables.$gray-light;
+  .header--logo img {
+    max-width: 100%;
+  }
+}
+
+// Content
+////////////////////////////////////////////////
+
+
+// Footer
+////////////////////////////////////////////////
+
+footer {
+  height: variables.$footer;
+  margin: auto 0;
+  background-color: variables.$gray-light;
+}
+
+// Mobile
+////////////////////////////////////////////////
+
+@media (min-width: 576px) { .col-xs-example {} }
+
+@media (min-width: 768px) { .col-sm-example {} }
+
+@media (min-width: 992px) { .col-md-example {} }
+
+@media (min-width: 1200px) { .col-lg-example {} }
+
+@include meta.load-css("media");
+// @import "fonts/font_roboto";
+
+@include meta.load-css("import/base64");
+@include meta.load-css("import/print");

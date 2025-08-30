@@ -1,0 +1,7 @@
+#admin-editor-lp_question.lp-admin-editor.sorting_choice .list-question-answers .answer-correct {
+    display: none;
+}
+
+#admin-editor-lp_quiz .question-item.sorting_choice .question-settings .answer-correct{
+    display: none;
+}

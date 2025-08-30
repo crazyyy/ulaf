@@ -1,0 +1,100 @@
+.learn-press-question-options {
+    > li.answer-option {
+        > label {
+            p.single-lines {
+                padding: 0 20px 0 60px;
+                line-height: 50px;
+            }
+        }
+    }
+}
+
+.sorting-choice {
+    list-style: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+    .answer-option {
+        label {
+            margin: 0;
+            font-weight: 400;
+            font-size: 16px;
+            color: #777;
+        }
+        .sort-hand {
+            display: inline-block;
+            width: 20px;
+            height: 17px;
+            position: absolute;
+            top: 50%;
+            margin-top: -8px;
+            left: 15px;
+            border-top: 3px solid #DDD;
+            border-bottom: 3px solid #DDD;
+            cursor: move;
+            &:hover {
+                border-color: #00adff;
+                &:before {
+                    border-color: #00adff;
+                }
+            }
+            &:before {
+                content: '';
+                border-bottom: 3px solid #DDD;
+                width: 20px;
+                display: inline-block;
+                position: absolute;
+                top: 4px;
+            }
+        }
+        .option-title {
+            margin: 0;
+            padding: 0 20px 0 50px;
+            line-height: 30px;
+        }
+        &.answered-correct {
+            .option-title {
+                color: #00a0d2;
+                &:before {
+                    background: #00a0d2;
+                }
+            }
+        }
+        &.answered-wrong {
+            .option-title {
+                color: #ff4d66;
+                &:before {
+                    background: #ff4d66;
+                }
+            }
+        }
+
+        &.answered-correct,
+        &.answered-wrong {
+            .sort-hand {
+                border-color: #DCDCDC;
+                &:before {
+                    border-color: #DCDCDC;
+                }
+                cursor: not-allowed;
+            }
+        }
+    }
+    .correct-answer-label {
+        font-size: smaller;
+        margin-bottom: 20px;
+        margin-top: -15px;
+        &.answered-correct {
+        }
+        &.answered-wrong {
+        }
+    }
+}
+
+.lp-question-sorting-choice-display-position {
+    display: inline-block;
+    background: #4ABEFF;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 5px 10px;
+}

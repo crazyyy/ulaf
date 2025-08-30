@@ -1,1 +1,10 @@
-assets/js/modernizr.js
+gulpfile.js
+node_modules/**
+modules/*/node_modules/**
+modules/*/assets/vendor/**
+modules/*/assets/*/vendor/**/.history/
+/.history/
+/.vscode/
+/wp-content/uploads/
+/wp-admin/
+/wp-includes/

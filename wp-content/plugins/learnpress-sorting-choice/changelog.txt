@@ -1,0 +1,3 @@
+= 3.0.1 =
+~ Fixed: load js dependencies wrong priority
+~ Fixed: check question is itself before change css class

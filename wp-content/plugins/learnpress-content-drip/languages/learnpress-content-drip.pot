@@ -1,0 +1,269 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-16 17:13+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: learnpress-content-drip.php:52
+#, php-format
+msgid ""
+"<strong>%s</strong> addon version %s requires %s version %s or higher is "
+"<strong>installed</strong> and <strong>activated</strong>."
+msgstr ""
+
+#: learnpress-content-drip.php:53
+msgid "LearnPress Content Drip"
+msgstr ""
+
+#: learnpress-content-drip.php:55
+msgid "LearnPress"
+msgstr ""
+
+#: inc/class-lp-email-drip-item-available.php:26
+msgid "Drip Item Available"
+msgstr ""
+
+#: inc/class-lp-email-drip-item-available.php:27
+msgid "Send this email to user when an item was blocked become available."
+msgstr ""
+
+#: inc/class-lp-email-drip-item-available.php:30
+msgid "[{{site_title}}] Item available for learning"
+msgstr ""
+
+#: inc/class-lp-email-drip-item-available.php:31
+msgid "{{item_name}} has become available."
+msgstr ""
+
+#: inc/functions.php:39
+msgid "1. Specific time after enrolled course"
+msgstr ""
+
+#: inc/functions.php:40
+msgid "2. Open the course items sequentially"
+msgstr ""
+
+#: inc/functions.php:41
+msgid "3. Open item bases on prerequisite items"
+msgstr ""
+
+#: inc/load.php:206
+msgid "Are you sure you want to reset drip items."
+msgstr ""
+
+#: inc/load.php:207
+msgid "After enrolled course"
+msgstr ""
+
+#: inc/load.php:235
+msgid "Content drip"
+msgstr ""
+
+#: inc/load.php:241
+msgid "Enable"
+msgstr ""
+
+#: inc/load.php:244
+msgid "All settings in items of this course will become locked if turn off."
+msgstr ""
+
+#: inc/load.php:246
+msgid "No"
+msgstr ""
+
+#: inc/load.php:247
+msgid "Yes"
+msgstr ""
+
+#: inc/load.php:252
+msgid "Drip type"
+msgstr ""
+
+#: inc/load.php:258
+msgid "<strong>Drip type:</strong>"
+msgstr ""
+
+#: inc/load.php:259
+msgid "1. Open course item after enrolled course specific time."
+msgstr ""
+
+#: inc/load.php:260
+msgid ""
+"2. Open lesson #2 after completed lesson #1, open lesson #3 after completed "
+"lesson #2, and so on..."
+msgstr ""
+
+#: inc/load.php:261
+msgid "3. Open course item after completed prerequisite items."
+msgstr ""
+
+#: inc/load.php:262
+msgid "Settings"
+msgstr ""
+
+#: inc/load.php:294 inc/load.php:295
+msgid "Drip Items"
+msgstr ""
+
+#: inc/load.php:362
+msgid "Settings saved"
+msgstr ""
+
+#: inc/admin/class-drip-items-list-table.php:51
+msgid "Start"
+msgstr ""
+
+#: inc/admin/class-drip-items-list-table.php:55
+msgid "Step"
+msgstr ""
+
+#: inc/admin/class-drip-items-list-table.php:59
+#: inc/admin/class-drip-items-list-table.php:81
+msgid "Type"
+msgstr ""
+
+#: inc/admin/class-drip-items-list-table.php:69
+msgid "Apply"
+msgstr ""
+
+#: inc/admin/class-drip-items-list-table.php:71
+msgid "Close"
+msgstr ""
+
+#: inc/admin/class-drip-items-list-table.php:80
+msgid "Item name"
+msgstr ""
+
+#: inc/admin/class-drip-items-list-table.php:82
+msgid "Prerequisite"
+msgstr ""
+
+#: inc/admin/class-drip-items-list-table.php:83
+msgid "Delay access"
+msgstr ""
+
+#: inc/admin/class-drip-items-list-table.php:128
+msgid "Update"
+msgstr ""
+
+#: inc/admin/class-drip-items-list-table.php:130
+msgid "Reset"
+msgstr ""
+
+#: inc/admin/class-drip-items-list-table.php:166
+#: inc/admin/views/drip-items.php:32
+msgid "Edit"
+msgstr ""
+
+#: inc/admin/class-drip-items-list-table.php:171
+msgid "View"
+msgstr ""
+
+#: inc/admin/class-drip-items-list-table.php:214
+msgid "Immediately"
+msgstr ""
+
+#: inc/admin/class-drip-items-list-table.php:215
+msgid "After..."
+msgstr ""
+
+#: inc/admin/class-drip-items-list-table.php:216
+msgid "Specific date"
+msgstr ""
+
+#: inc/admin/class-drip-items-list-table.php:259
+msgid "Unknown Type"
+msgstr ""
+
+#: inc/admin/views/drip-items.php:16
+msgid "Invalid course"
+msgstr ""
+
+#: inc/admin/views/drip-items.php:27
+msgid "Drip items"
+msgstr ""
+
+#: inc/admin/views/drip-items.php:29
+msgid "Course:"
+msgstr ""
+
+#: inc/admin/views/drip-items.php:34
+msgid "- Drip type: "
+msgstr ""
+
+#: templates/restrict-content.php:22
+msgid "minute"
+msgstr ""
+
+#: templates/restrict-content.php:23
+msgid "hour"
+msgstr ""
+
+#: templates/restrict-content.php:24
+msgid "day"
+msgstr ""
+
+#: templates/restrict-content.php:25
+msgid "week"
+msgstr ""
+
+#: templates/restrict-content.php:32
+#, php-format
+msgid ""
+"Sorry! You can not view this item right now. It will become available on "
+"<strong>%s</strong>."
+msgstr ""
+
+#: templates/restrict-content.php:36 templates/restrict-content.php:57
+msgid ""
+"Sorry! You can not view this item right now. It will become available when "
+"you completed "
+msgstr ""
+
+#: templates/restrict-content.php:52
+msgid "and "
+msgstr ""
+
+#: templates/restrict-content.php:52 templates/restrict-content.php:64
+msgid "after "
+msgstr ""
+
+#: templates/restrict-content.php:52 templates/restrict-content.php:64
+msgid "(s)"
+msgstr ""
+
+#: templates/restrict-content.php:52 templates/restrict-content.php:64
+msgid "on "
+msgstr ""
+
+#: templates/restrict-content.php:64
+msgid " and "
+msgstr ""
+
+#: templates/restrict-content.php:73
+#, php-format
+msgid ""
+"Sorry! You can not view this item right now. It will become available when "
+"you complete <strong><a href=\"%s\">%s</a></strong> %s. <br>"
+msgstr ""
+
+#: templates/restrict-content.php:79
+msgid " and after "
+msgstr ""
+
+#: templates/restrict-content.php:82
+msgid "Complete time: "
+msgstr ""

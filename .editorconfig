@@ -1,13 +1,38 @@
+# EditorConfig helps developers define and maintain consistent
+# coding styles between different editors and IDEs
 # editorconfig.org
-root = true
+# Stop the editor from looking for .editorconfig files in the parent directories
+root                        = true
 
 [*]
-indent_style = space
-indent_size = 2
-end_of_line = lf
-charset = utf-8
-trim_trailing_whitespace = true
-insert_final_newline = true
+end_of_line                 = lf
+charset                     = utf-8
+
+indent_style                = space
+indent_size                 = 2
+
+# Caveat: Prettier won’t trim trailing whitespace inside template strings, but your editor might.
+trim_trailing_whitespace    = true
+insert_final_newline        = true
+
+max_line_length = 80
 
 [*.md]
-trim_trailing_whitespace = false
+trim_trailing_whitespace    = false
+
+[package.json]
+indent_style                = space
+indent_size                 = 2
+
+[{.jshintrc,*.json,*.yml}]
+indent_style                = space
+indent_size                 = 2
+
+[{*.txt,wp-config-sample.php}]
+end_of_line                 = lf
+
+[*.{yml,yaml}]
+indent_size = 2
+
+[docker-compose.yml]
+indent_size = 4

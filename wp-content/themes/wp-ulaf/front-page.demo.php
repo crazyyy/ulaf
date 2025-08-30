@@ -1,0 +1,788 @@
+<?php /* Template Name: Demo Home Page */ get_header(); ?>
+<?php
+  /**
+   * Displays the site header.
+   * @package WordPress
+   * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+   */
+
+  $wrapper_classes  = 'site-header';
+  $wrapper_classes .= has_custom_logo() ? ' has-logo' : '';
+?>
+<!doctype html>
+<html <?php language_attributes(); ?> class="no-js">
+
+<head>
+  <meta charset="<?php bloginfo('charset'); ?>">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="profile" href="https://gmpg.org/xfn/11">
+
+  <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
+
+  <link href="//www.google-analytics.com/" rel="dns-prefetch">
+  <link href="//fonts.googleapis.com" rel="dns-prefetch">
+  <link href="//cdnjs.cloudflare.com" rel="dns-prefetch">
+  <link href="//cdn.jsdelivr.net" rel="dns-prefetch">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <!-- icons -->
+  <link href="<?php echo get_template_directory_uri(); ?>/img/favicon/icon.png" rel="shortcut icon">
+
+  <!--[if lt IE 9]>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <?php wp_head(); ?>
+</head>
+
+<body <?php body_class(); ?> itemscope itemtype="https://schema.org/WebPage">
+  <?php wp_body_open(); ?>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">ULAF</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#teams" class="nav-link">Teams</a></li>
+                <li><a href="#news" class="nav-link">News</a></li>
+                <li><a href="#statistics" class="nav-link">Statistics</a></li>
+                <li><a href="#partners" class="nav-link">Partners</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Image Slider -->
+    <section class="hero" id="home">
+        <div class="slider">
+            <div class="slide active" style="background-image: url('assets/football-action-1.png?prompt=American%20football%20players%20in%20action%20during%20a%20game%2C%20dynamic%20sports%20photography%2C%20blue%20and%20white%20uniforms');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1 class="slide-title">Ukrainian League of American Football</h1>
+                    <p class="slide-subtitle">Passion, Power, and Pride on the Field</p>
+                    <a href="#about" class="cta-button">Learn More</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('assets/football-action-2.png?prompt=American%20football%20stadium%20with%20crowd%20cheering%2C%20evening%20game%20atmosphere%2C%20blue%20and%20white%20team%20colors');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1 class="slide-title">Elite Competition</h1>
+                    <p class="slide-subtitle">Where Champions Are Made</p>
+                    <a href="#teams" class="cta-button">View Teams</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('assets/football-action-3.png?prompt=American%20football%20touchdown%20celebration%2C%20players%20celebrating%20victory%2C%20blue%20jerseys%2C%20stadium%20lights');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1 class="slide-title">Join the Action</h1>
+                    <p class="slide-subtitle">Experience the Thrill of American Football</p>
+                    <a href="#contact" class="cta-button">Get Involved</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- About Section -->
+        <section class="section" id="about">
+            <h2 class="section-title">About ULAF</h2>
+            <div class="about-container">
+                <div class="about-content">
+                    <p class="about-text">
+                        The Ukrainian League of American Football (ULAF) was founded in 2018 with a mission to bring the excitement and strategy of American football to Ukraine. Our league has grown from a small group of passionate enthusiasts to a competitive organization featuring eight teams across major Ukrainian cities.
+                    </p>
+                    <p class="about-text">
+                        We are committed to developing local talent, promoting American football culture, and creating opportunities for Ukrainian athletes to compete at the highest levels. Through partnerships with international organizations and dedicated coaching staff, ULAF continues to elevate the standard of American football in Eastern Europe.
+                    </p>
+                    <p class="about-text">
+                        Our vision is to establish Ukraine as a competitive force in European American football while fostering community engagement and youth development through this dynamic sport.
+                    </p>
+                </div>
+                <div class="about-image" style="background-image: url('assets/team-huddle.png?prompt=American%20football%20team%20huddle%20on%20field%2C%20players%20in%20blue%20jerseys%2C%20team%20spirit%2C%20professional%20sports%20photography');"></div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section class="section" id="news">
+            <h2 class="section-title">Latest News</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-image" style="background-image: url('assets/news-1.png?prompt=American%20football%20championship%20trophy%20ceremony%2C%20players%20celebrating%2C%20blue%20uniforms%2C%20stadium%20lights');"></div>
+                    <div class="news-content">
+                        <div class="news-date">December 15, 2024</div>
+                        <h3 class="news-title">ULAF Championship Finals Set for January</h3>
+                        <p class="news-excerpt">The top two teams will face off in an epic showdown to determine this season's champion. Tickets are now available for what promises to be an unforgettable match.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-image" style="background-image: url('assets/news-2.png?prompt=American%20football%20player%20scoring%20touchdown%2C%20action%20shot%2C%20blue%20uniform%2C%20stadium%20background');"></div>
+                    <div class="news-content">
+                        <div class="news-date">December 10, 2024</div>
+                        <h3 class="news-title">Record-Breaking Season Continues</h3>
+                        <p class="news-excerpt">Several players have already broken league records this season, with offensive statistics reaching new heights across multiple teams.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-image" style="background-image: url('assets/news-3.png?prompt=American%20football%20coach%20giving%20instructions%20to%20team%2C%20sideline%20scene%2C%20professional%20sports');"></div>
+                    <div class="news-content">
+                        <div class="news-date">December 5, 2024</div>
+                        <h3 class="news-title">New Coaching Staff Announced</h3>
+                        <p class="news-excerpt">The league welcomes experienced coaches from international football programs to help develop the next generation of Ukrainian players.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Teams Section -->
+        <section class="section" id="teams">
+            <h2 class="section-title">Our Teams</h2>
+            <div class="teams-container">
+                <div class="teams-slider">
+                    <div class="teams-track" id="teamsTrack">
+                        <div class="team-card">
+                            <div class="team-logo">KT</div>
+                            <h3 class="team-name">Kyiv Thunder</h3>
+                            <p class="team-location">Kyiv, Ukraine</p>
+                            <div class="team-record">
+                                <div class="team-record-item">
+                                    <div class="team-record-value">8</div>
+                                    <div class="team-record-label">Wins</div>
+                                </div>
+                                <div class="team-record-item">
+                                    <div class="team-record-value">2</div>
+                                    <div class="team-record-label">Losses</div>
+                                </div>
+                                <div class="team-record-item">
+                                    <div class="team-record-value">1</div>
+                                    <div class="team-record-label">Ties</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-logo">LL</div>
+                            <h3 class="team-name">Lviv Lions</h3>
+                            <p class="team-location">Lviv, Ukraine</p>
+                            <div class="team-record">
+                                <div class="team-record-item">
+                                    <div class="team-record-value">7</div>
+                                    <div class="team-record-label">Wins</div>
+                                </div>
+                                <div class="team-record-item">
+                                    <div class="team-record-value">3</div>
+                                    <div class="team-record-label">Losses</div>
+                                </div>
+                                <div class="team-record-item">
+                                    <div class="team-record-value">1</div>
+                                    <div class="team-record-label">Ties</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-logo">OS</div>
+                            <h3 class="team-name">Odesa Sharks</h3>
+                            <p class="team-location">Odesa, Ukraine</p>
+                            <div class="team-record">
+                                <div class="team-record-item">
+                                    <div class="team-record-value">6</div>
+                                    <div class="team-record-label">Wins</div>
+                                </div>
+                                <div class="team-record-item">
+                                    <div class="team-record-value">4</div>
+                                    <div class="team-record-label">Losses</div>
+                                </div>
+                                <div class="team-record-item">
+                                    <div class="team-record-value">1</div>
+                                    <div class="team-record-label">Ties</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-logo">KE</div>
+                            <h3 class="team-name">Kharkiv Eagles</h3>
+                            <p class="team-location">Kharkiv, Ukraine</p>
+                            <div class="team-record">
+                                <div class="team-record-item">
+                                    <div class="team-record-value">5</div>
+                                    <div class="team-record-label">Wins</div>
+                                </div>
+                                <div class="team-record-item">
+                                    <div class="team-record-value">5</div>
+                                    <div class="team-record-label">Losses</div>
+                                </div>
+                                <div class="team-record-item">
+                                    <div class="team-record-value">1</div>
+                                    <div class="team-record-label">Ties</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-logo">DD</div>
+                            <h3 class="team-name">Dnipro Dynamo</h3>
+                            <p class="team-location">Dnipro, Ukraine</p>
+                            <div class="team-record">
+                                <div class="team-record-item">
+                                    <div class="team-record-value">4</div>
+                                    <div class="team-record-label">Wins</div>
+                                </div>
+                                <div class="team-record-item">
+                                    <div class="team-record-value">6</div>
+                                    <div class="team-record-label">Losses</div>
+                                </div>
+                                <div class="team-record-item">
+                                    <div class="team-record-value">1</div>
+                                    <div class="team-record-label">Ties</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-logo">ZC</div>
+                            <h3 class="team-name">Zaporizhzhia Cossacks</h3>
+                            <p class="team-location">Zaporizhzhia, Ukraine</p>
+                            <div class="team-record">
+                                <div class="team-record-item">
+                                    <div class="team-record-value">3</div>
+                                    <div class="team-record-label">Wins</div>
+                                </div>
+                                <div class="team-record-item">
+                                    <div class="team-record-value">7</div>
+                                    <div class="team-record-label">Losses</div>
+                                </div>
+                                <div class="team-record-item">
+                                    <div class="team-record-value">1</div>
+                                    <div class="team-record-label">Ties</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-logo">PW</div>
+                            <h3 class="team-name">Poltava Warriors</h3>
+                            <p class="team-location">Poltava, Ukraine</p>
+                            <div class="team-record">
+                                <div class="team-record-item">
+                                    <div class="team-record-value">2</div>
+                                    <div class="team-record-label">Wins</div>
+                                </div>
+                                <div class="team-record-item">
+                                    <div class="team-record-value">8</div>
+                                    <div class="team-record-label">Losses</div>
+                                </div>
+                                <div class="team-record-item">
+                                    <div class="team-record-value">1</div>
+                                    <div class="team-record-label">Ties</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-logo">VV</div>
+                            <h3 class="team-name">Vinnytsia Vipers</h3>
+                            <p class="team-location">Vinnytsia, Ukraine</p>
+                            <div class="team-record">
+                                <div class="team-record-item">
+                                    <div class="team-record-value">1</div>
+                                    <div class="team-record-label">Wins</div>
+                                </div>
+                                <div class="team-record-item">
+                                    <div class="team-record-value">9</div>
+                                    <div class="team-record-label">Losses</div>
+                                </div>
+                                <div class="team-record-item">
+                                    <div class="team-record-value">1</div>
+                                    <div class="team-record-label">Ties</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-nav prev" id="teamsPrev">‹</button>
+                <button class="slider-nav next" id="teamsNext">›</button>
+                <div class="slider-indicators" id="teamsIndicators"></div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="section" id="statistics">
+            <h2 class="section-title">Player Statistics</h2>
+            <div class="stats-container">
+                <div class="stats-controls">
+                    <button class="filter-btn active" data-filter="all">All Players</button>
+                    <button class="filter-btn" data-filter="offense">Offense</button>
+                    <button class="filter-btn" data-filter="defense">Defense</button>
+                    <button class="filter-btn" data-filter="special">Special Teams</button>
+                </div>
+                <table class="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>Team</th>
+                            <th>Position</th>
+                            <th>Touchdowns</th>
+                            <th>Yards</th>
+                            <th>Tackles</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-position="offense">
+                            <td>Oleksandr Kovalenko</td>
+                            <td>Kyiv Thunder</td>
+                            <td>QB</td>
+                            <td>18</td>
+                            <td>2,847</td>
+                            <td>-</td>
+                        </tr>
+                        <tr data-position="offense">
+                            <td>Dmytro Petrenko</td>
+                            <td>Lviv Lions</td>
+                            <td>RB</td>
+                            <td>12</td>
+                            <td>1,456</td>
+                            <td>-</td>
+                        </tr>
+                        <tr data-position="defense">
+                            <td>Viktor Shevchenko</td>
+                            <td>Odesa Sharks</td>
+                            <td>LB</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>89</td>
+                        </tr>
+                        <tr data-position="offense">
+                            <td>Andriy Bondarenko</td>
+                            <td>Kharkiv Eagles</td>
+                            <td>WR</td>
+                            <td>9</td>
+                            <td>1,234</td>
+                            <td>-</td>
+                        </tr>
+                        <tr data-position="defense">
+                            <td>Maxim Ivanov</td>
+                            <td>Dnipro Dynamo</td>
+                            <td>DB</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>67</td>
+                        </tr>
+                        <tr data-position="special">
+                            <td>Roman Tkachenko</td>
+                            <td>Kyiv Thunder</td>
+                            <td>K</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="section" id="gallery">
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-container">
+                <div class="gallery-slider">
+                    <div class="gallery-track" id="galleryTrack">
+                        <div class="gallery-slide" style="background-image: url('assets/gallery-1.png?prompt=American%20football%20game%20action%20shot%2C%20players%20tackling%2C%20blue%20uniforms%2C%20stadium%20crowd%2C%20professional%20sports%20photography');">
+                            <div class="gallery-overlay">
+                                <h3 class="gallery-title">Championship Game Action</h3>
+                                <p class="gallery-description">Intense moments from the ULAF Championship finals</p>
+                            </div>
+                        </div>
+                        <div class="gallery-slide" style="background-image: url('assets/gallery-2.png?prompt=American%20football%20training%20session%2C%20players%20practicing%20drills%2C%20coaching%20staff%2C%20outdoor%20field');">
+                            <div class="gallery-overlay">
+                                <h3 class="gallery-title">Training Excellence</h3>
+                                <p class="gallery-description">Teams preparing for the upcoming season</p>
+                            </div>
+                        </div>
+                        <div class="gallery-slide" style="background-image: url('assets/gallery-3.png?prompt=American%20football%20victory%20celebration%2C%20team%20lifting%20trophy%2C%20confetti%2C%20stadium%20lights%2C%20championship%20moment');">
+                            <div class="gallery-overlay">
+                                <h3 class="gallery-title">Victory Celebration</h3>
+                                <p class="gallery-description">Champions celebrating their hard-earned victory</p>
+                            </div>
+                        </div>
+                        <div class="gallery-slide" style="background-image: url('assets/gallery-4.png?prompt=American%20football%20youth%20program%2C%20young%20players%20learning%2C%20coach%20instruction%2C%20development%20training');">
+                            <div class="gallery-overlay">
+                                <h3 class="gallery-title">Youth Development</h3>
+                                <p class="gallery-description">Building the next generation of Ukrainian football players</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-nav prev" id="galleryPrev">‹</button>
+                <button class="slider-nav next" id="galleryNext">›</button>
+                <div class="slider-indicators" id="galleryIndicators"></div>
+            </div>
+        </section>
+
+        <!-- Next Game Section -->
+        <section class="section" id="next-game">
+            <h2 class="section-title">Next Game</h2>
+            <div class="next-game-container">
+                <div class="next-game-bg"></div>
+                <div class="next-game-content">
+                    <h3 class="next-game-title">Championship Semi-Final</h3>
+                    <div class="game-teams">
+                        <div class="game-team">
+                            <div class="game-team-logo">KT</div>
+                            <div class="game-team-name">Kyiv Thunder</div>
+                        </div>
+                        <div class="game-vs">VS</div>
+                        <div class="game-team">
+                            <div class="game-team-logo">LL</div>
+                            <div class="game-team-name">Lviv Lions</div>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <div class="game-detail">
+                            <div class="game-detail-label">Date</div>
+                            <div class="game-detail-value">January 15, 2025</div>
+                        </div>
+                        <div class="game-detail">
+                            <div class="game-detail-label">Time</div>
+                            <div class="game-detail-value">19:00</div>
+                        </div>
+                        <div class="game-detail">
+                            <div class="game-detail-label">Venue</div>
+                            <div class="game-detail-value">Olympic Stadium, Kyiv</div>
+                        </div>
+                    </div>
+                    <a href="#" class="cta-button">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="section" id="newsletter">
+            <h2 class="section-title">Stay Updated</h2>
+            <div class="newsletter-container">
+                <p class="about-text">Subscribe to our newsletter and never miss the latest ULAF news, game schedules, and exclusive content.</p>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="section" id="partners">
+            <h2 class="section-title">Our Partners</h2>
+            <div class="partners-container">
+                <div class="partners-grid">
+                    <div class="partner-logo">SportTech UA</div>
+                    <div class="partner-logo">KyivSport</div>
+                    <div class="partner-logo">UkrainianTV</div>
+                    <div class="partner-logo">Elite Gear</div>
+                    <div class="partner-logo">Stadium Plus</div>
+                    <div class="partner-logo">ProSports</div>
+                    <div class="partner-logo">Athletic Zone</div>
+                    <div class="partner-logo">ChampionFit</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-section">
+                    <h3>Ukrainian League of American Football</h3>
+                    <p>ULAF is dedicated to promoting American football in Ukraine, developing local talent, and creating exciting opportunities for athletes and fans alike. Join us in building the future of Ukrainian football.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Navigation</h3>
+                    <ul class="footer-nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#teams">Teams</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <p>Email: info@ulaf.com.ua</p>
+                    <p>Phone: +380 44 123 4567</p>
+                    <p>Address: 123 Football Street<br>Kyiv, Ukraine 01001</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Partner Logos</h3>
+                    <div class="footer-partners">
+                        <div class="footer-partner">SportTech UA</div>
+                        <div class="footer-partner">KyivSport</div>
+                        <div class="footer-partner">UkrainianTV</div>
+                        <div class="footer-partner">Elite Gear</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ukrainian League of American Football. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="/privacy">Privacy Policy</a>
+                    <a href="/terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <img class="lightbox-image" id="lightboxImage" src="" alt="">
+            <button class="lightbox-close" id="lightboxClose">×</button>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Image slider functionality
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[index].classList.add('active');
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        // Auto-play slider
+        setInterval(nextSlide, 5000);
+
+        // Teams slider functionality
+        const teamsTrack = document.getElementById('teamsTrack');
+        const teamsPrev = document.getElementById('teamsPrev');
+        const teamsNext = document.getElementById('teamsNext');
+        const teamsIndicators = document.getElementById('teamsIndicators');
+        const teamCards = document.querySelectorAll('.team-card');
+        
+        let currentTeamIndex = 0;
+        const cardsPerView = window.innerWidth > 768 ? 3 : 1;
+        const maxTeamIndex = Math.max(0, teamCards.length - cardsPerView);
+
+        // Create team indicators
+        for (let i = 0; i <= maxTeamIndex; i++) {
+            const indicator = document.createElement('div');
+            indicator.className = `slider-indicator ${i === 0 ? 'active' : ''}`;
+            indicator.addEventListener('click', () => moveToTeam(i));
+            teamsIndicators.appendChild(indicator);
+        }
+
+        function moveToTeam(index) {
+            currentTeamIndex = Math.max(0, Math.min(index, maxTeamIndex));
+            const translateX = -currentTeamIndex * (300 + 32); // card width + gap
+            teamsTrack.style.transform = `translateX(${translateX}px)`;
+            
+            // Update indicators
+            document.querySelectorAll('#teamsIndicators .slider-indicator').forEach((indicator, i) => {
+                indicator.classList.toggle('active', i === currentTeamIndex);
+            });
+        }
+
+        function nextTeam() {
+            if (currentTeamIndex < maxTeamIndex) {
+                moveToTeam(currentTeamIndex + 1);
+            } else {
+                moveToTeam(0);
+            }
+        }
+
+        function prevTeam() {
+            if (currentTeamIndex > 0) {
+                moveToTeam(currentTeamIndex - 1);
+            } else {
+                moveToTeam(maxTeamIndex);
+            }
+        }
+
+        teamsNext.addEventListener('click', nextTeam);
+        teamsPrev.addEventListener('click', prevTeam);
+
+        // Auto-play teams slider
+        setInterval(nextTeam, 4000);
+
+        // Gallery slider functionality
+        const galleryTrack = document.getElementById('galleryTrack');
+        const galleryPrev = document.getElementById('galleryPrev');
+        const galleryNext = document.getElementById('galleryNext');
+        const galleryIndicators = document.getElementById('galleryIndicators');
+        const gallerySlides = document.querySelectorAll('.gallery-slide');
+        
+        let currentGalleryIndex = 0;
+        const maxGalleryIndex = gallerySlides.length - 1;
+
+        // Create gallery indicators
+        for (let i = 0; i <= maxGalleryIndex; i++) {
+            const indicator = document.createElement('div');
+            indicator.className = `slider-indicator ${i === 0 ? 'active' : ''}`;
+            indicator.addEventListener('click', () => moveToGallery(i));
+            galleryIndicators.appendChild(indicator);
+        }
+
+        function moveToGallery(index) {
+            currentGalleryIndex = Math.max(0, Math.min(index, maxGalleryIndex));
+            const translateX = -currentGalleryIndex * 100; // 100% per slide
+            galleryTrack.style.transform = `translateX(${translateX}%)`;
+            
+            // Update indicators
+            document.querySelectorAll('#galleryIndicators .slider-indicator').forEach((indicator, i) => {
+                indicator.classList.toggle('active', i === currentGalleryIndex);
+            });
+        }
+
+        function nextGallery() {
+            if (currentGalleryIndex < maxGalleryIndex) {
+                moveToGallery(currentGalleryIndex + 1);
+            } else {
+                moveToGallery(0);
+            }
+        }
+
+        function prevGallery() {
+            if (currentGalleryIndex > 0) {
+                moveToGallery(currentGalleryIndex - 1);
+            } else {
+                moveToGallery(maxGalleryIndex);
+            }
+        }
+
+        galleryNext.addEventListener('click', nextGallery);
+        galleryPrev.addEventListener('click', prevGallery);
+
+        // Auto-play gallery slider
+        setInterval(nextGallery, 6000);
+
+        // Lightbox functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightboxImage');
+        const lightboxClose = document.getElementById('lightboxClose');
+
+        gallerySlides.forEach(slide => {
+            slide.addEventListener('click', () => {
+                const bgImage = slide.style.backgroundImage;
+                const imageUrl = bgImage.slice(5, -2); // Remove 'url("' and '")'
+                lightboxImage.src = imageUrl;
+                lightbox.classList.add('active');
+            });
+        });
+
+        lightboxClose.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+            }
+        });
+
+        // Statistics filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const tableRows = document.querySelectorAll('.stats-table tbody tr');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                const filter = button.dataset.filter;
+
+                tableRows.forEach(row => {
+                    if (filter === 'all') {
+                        row.style.display = '';
+                    } else {
+                        const position = row.dataset.position;
+                        if (position === filter) {
+                            row.style.display = '';
+                        } else {
+                            row.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+
+        // Newsletter form
+        const newsletterForm = document.querySelector('.newsletter-form');
+        newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = e.target.querySelector('.newsletter-input').value;
+            alert(`Thank you for subscribing with email: ${email}`);
+            e.target.reset();
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+                navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.15)';
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+                navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            }
+        });
+    </script>
+</body>
+</html>

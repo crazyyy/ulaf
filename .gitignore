@@ -1,39 +1,102 @@
-*.log
-*.map
-thumbs.db
-*.swp
-*~
-*.iws
-.project
-.DS_Store
+# IDE-specific files
+*.sublime-*
+.fleet
+.history
 .idea
-
-.sass-cache
-.sublime-gulp.cache
-*.sublime-project
-*.sublime-workspace
-
-/.hg
-_gsdata_
-node_modules/
-bower_components/
-
-npm-debug.log
-sftp-config.json
 .phpintel
+.project
+.vscode
+GitExtensions.settings
 
-wp-content/advanced-cache.php
+# Version control and temporary files
+*.backup
+*.bak
+*.bck
+*.disabled
+*.iws
+*.map
+*.orig
+*.swp
+*.tmp
+*~
+.Spotlight-V100
+.Trashes
+._*
+.cvs
+.git
+.hg
+.listing
+.svn
+.tmp
+tmp
+
+# Dependency management
+bower_components/*
+!bower_components/.gitkeep
+node_modules
+node_modules/**
+.sass-cache
+npm-debug.log
+package-lock.json
+yarn-error.log
+yarn.lock
+
+# Server Specific configs
+.user.ini
+
+# WordPress-specific files
+wp-content/ai1wm-backups/
+wp-content/aiowps_backups/
 wp-content/backup-db/
+wp-content/backups-dup-pro/
 wp-content/backups/
 wp-content/blogs.dir/
 wp-content/cache/
+wp-content/ewww/
+wp-content/litespeed/
+wp-content/updraft/
 wp-content/upgrade/
-wp-content/uploads/
+wp-content/uploads/siteground-optimizer-assets/
+wp-content/wflogs/
+wp-content/advanced-cache.php
+wp-content/db.php
+wp-content/debug.log
+wp-content/mu-plugins/aios-firewall-loader.php
+wp-content/object-cache.php
+wp-content/sgo-config.php
+wp-content/uploads/*/*.log
 wp-content/wp-cache-config.php
-wp-content/plugins/hello.php
+aios-bootstrap.php
+.maintenance
 
-/.htaccess
-/license.txt
-/readme.html
-/sitemap.xml
-/sitemap.xml.gz
+# Exclude sensitive configuration files
+wp-config.php
+
+# ddev-generated files
+wp-config-ddev.php
+/drushrc.php
+
+# Optional: Exclude generated files
+license.txt
+readme.html
+sitemap*.xml
+sitemap*.xml.gz
+
+# System-generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Application files
+*.app
+*.exe
+*.war
+
+# Large media files
+*.mp4
+*.tiff
+*.avi
+*.flv
+*.mov
+*.wmv
+

@@ -1,0 +1,1166 @@
+# Translation of Plugins - Health Check &amp; Troubleshooting - Stable (latest release) in Ukrainian
+# This file is distributed under the same license as the Plugins - Health Check &amp; Troubleshooting - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-03-27 19:32:28+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: uk_UA\n"
+"Project-Id-Version: Plugins - Health Check &amp; Troubleshooting - Stable (latest release)\n"
+
+#. translators: %s: The date and time the screenshot was taken.
+#: pages/screenshots.php:114
+msgid "Published on %s"
+msgstr "Опубліковано %s"
+
+#: pages/screenshots.php:100
+msgid "Delete screenshot"
+msgstr "Видалити скріншот"
+
+#: pages/screenshots.php:80
+msgid "Copy forum markup"
+msgstr "Копіювати розмітку форуму"
+
+#: pages/screenshots.php:64
+msgid "View screenshot"
+msgstr "Переглянути скріншот"
+
+#: HealthCheck/Tools/class-health-check-files-integrity.php:135
+#: HealthCheck/Tools/class-health-check-files-integrity.php:147
+msgid "This is an unknown file"
+msgstr "Це невідомий файл"
+
+#: HealthCheck/Tools/class-health-check-debug-log-viewer.php:61
+msgid "Debug log contents"
+msgstr "Вміст журналу налагодження"
+
+#. translators: The localized URL to the Debugging in WordPress article, if
+#. available.
+#: HealthCheck/Tools/class-health-check-debug-log-viewer.php:56
+msgid "https://wordpress.org/documentation/article/debugging-in-wordpress/#wp_debug_log"
+msgstr "https://wordpress.org/documentation/article/debugging-in-wordpress/#wp_debug_log"
+
+#: HealthCheck/Tools/class-health-check-debug-log-viewer.php:6
+msgid "Debug logs"
+msgstr "Журнали налагодження"
+
+#: HealthCheck/Tools/class-health-check-beta-features.php:63
+msgid "Disable beta features"
+msgstr "Вимкнути бета функції"
+
+#: HealthCheck/Tools/class-health-check-beta-features.php:57
+msgid "Enable beta features"
+msgstr "Увімкнути бета функції"
+
+#: HealthCheck/Tools/class-health-check-beta-features.php:20
+msgid "Beta features"
+msgstr "Бета-функції"
+
+#: HealthCheck/class-health-check-screenshots.php:248
+msgid "Take screenshot"
+msgstr "Зробити скріншот"
+
+#: HealthCheck/class-health-check-screenshots.php:147
+msgid "Screenshot"
+msgstr "Знімок екрану"
+
+#: HealthCheck/class-health-check-screenshots.php:132
+#: HealthCheck/class-health-check-screenshots.php:146 pages/screenshots.php:17
+msgid "Screenshots"
+msgstr "Скриншоти"
+
+#: mu-plugin/health-check-troubleshooting-mode.php:1619
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: mu-plugin/health-check-troubleshooting-mode.php:1618
+msgid "Confirm"
+msgstr "Підтвердити"
+
+#: mu-plugin/health-check-troubleshooting-mode.php:196
+msgid "Install the latest classic default theme"
+msgstr "Встановіть останню класичну тему за замовчуванням"
+
+#: mu-plugin/health-check-troubleshooting-mode.php:187
+msgid "Install the latest default theme"
+msgstr "Встановіть останню тему за замовчуванням"
+
+#: pages/site-status.php:20
+msgid "WordPress update needed!"
+msgstr "Потрібне оновлення WordPress!"
+
+#: mu-plugin/health-check-troubleshooting-mode.php:922
+msgid "Disable anyway"
+msgstr "Все одно вимкніть."
+
+#: mu-plugin/health-check-troubleshooting-mode.php:837
+msgid "Enable anyway"
+msgstr "Увімкнути все одно"
+
+#: HealthCheck/Tools/class-health-check-phpinfo.php:19
+msgid "PHP Info"
+msgstr "Інформація PHP"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:815
+msgid "Database collation"
+msgstr "Порівняння бази даних"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:809
+msgid "Database charset"
+msgstr "Кодування бази даних"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:803
+msgid "Table prefix"
+msgstr "Префікс таблиці"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:785
+msgid "Database username"
+msgstr "Ім'я користувача бази даних"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:715
+msgid "Are pretty permalinks supported?"
+msgstr "Підтримка зручних для читання URL"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:519
+msgid "Max number of files allowed"
+msgstr "Допустима максимальна кількість файлів"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:515
+msgid "Max effective file size"
+msgstr "Максимальний ефективний розмір файлу"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:511
+msgid "Max size of an uploaded file"
+msgstr "Максимальний розмір завантажуваного файлу"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:507
+msgid "Max size of post data allowed"
+msgstr "Максимальний розмір даних запиту POST"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:502
+msgid "File uploads"
+msgstr "Завантаження файлів"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:485
+msgid "File upload settings"
+msgstr "Налаштування завантаження файлу"
+
+#. translators: %s: wp-content directory name.
+#: HealthCheck/BackCompat/class-wp-debug-data.php:148
+msgid "Drop-ins are single files, found in the %s directory, that replace or enhance WordPress features in ways that are not possible for traditional plugins."
+msgstr "Вкраплення - поодинокі файли, при поміщенні в папку %s, замінють або розширюють можливості WordPress способами, не доступними для звичайних плагінів."
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:129
+msgid "Environment type"
+msgstr "Тип оточення"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:119
+msgid "Is this site discouraging search engines?"
+msgstr "Заборона на індексацію сайту"
+
+#. translators: %s: WP_ENVIRONMENT_TYPES
+#: compat.php:56
+msgid "The %s constant is no longer supported."
+msgstr "Константа %s більше не підтримується."
+
+#: HealthCheck/Tools/class-health-check-plugin-compatibility.php:40
+msgid "Highest supported PHP"
+msgstr "Максимально підтримувана версія PHP"
+
+#: HealthCheck/Tools/class-health-check-plugin-compatibility.php:39
+msgid "Minimum PHP"
+msgstr "Мінімальна версія PHP"
+
+#: HealthCheck/Tools/class-health-check-plugin-compatibility.php:37
+msgid "Plugin"
+msgstr "Плагін"
+
+#: HealthCheck/Tools/class-health-check-plugin-compatibility.php:101
+msgid "Could not be determined"
+msgstr "Неможливо визначити"
+
+#: HealthCheck/Tools/class-health-check-plugin-compatibility.php:65
+msgid "Check plugins"
+msgstr "Перевірити плагіни"
+
+#: HealthCheck/Tools/class-health-check-plugin-compatibility.php:10
+msgid "The compatibility check will need to send requests to the <a href=\"https://wptide.org\">WPTide</a> project to fetch the test results for each of your plugins."
+msgstr "Інструмент перевірки сумісності буде відправляти запити на сайт проекту <a href=\"https://wptide.org\">WPTide</a>, для результатів перевірки кожного плагіну."
+
+#: HealthCheck/Tools/class-health-check-plugin-compatibility.php:9
+msgid "Attempt to identify the compatibility of your plugins before upgrading PHP, note that a compatibility check may not always be accurate, and you may want to contact the plugin author to confirm that things will continue working."
+msgstr "Перевірка сумісності плагінів вашого сайту перед оновленням версії PHP, ця перевірка може бути не завжди точна, при наявності сумнівів можливо варто звернутися до автора плагіну, для підтвердження того, що плагін продовжить коректно працювати."
+
+#: HealthCheck/Tools/class-health-check-plugin-compatibility.php:6
+msgid "Plugin compatibility"
+msgstr "Сумісність плагінів"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:165
+msgid "Inactive Themes"
+msgstr "Неактивні теми"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:160
+msgid "Parent Theme"
+msgstr "Батьківська тема"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:85
+msgid "Timezone"
+msgstr "Часовий пояс"
+
+#. translators: %s: URL to Site Health Status page.
+#: pages/debug-data.php:38
+msgid "This page can show you every detail about the configuration of your WordPress website. For any improvements that could be made, see the <a href=\"%s\">Site Health Status</a> page."
+msgstr "Ця сторінка показує подробиці про конфігурацію вашого сайту WordPress. Якщо що-небудь може бути покращено, ви побачите це на <a href=\"%s\">сторінці стану сайту</a>."
+
+#: mu-plugin/health-check-troubleshooting-mode.php:315
+msgid "When bulk-disabling plugins, a site failure occurred. Because of this the change was automatically reverted."
+msgstr "При масовому відключенні плагінів виникла помилка на сайті. Зроблено автоматичний відкат зроблених змін."
+
+#: mu-plugin/health-check-troubleshooting-mode.php:290
+msgid "When bulk-enabling plugins, a site failure occurred. Because of this the change was automatically reverted."
+msgstr "При масовому включенні плагінів виникла помилка на сайті. Виконано автоматичний відкат зроблених змін."
+
+#: mu-plugin/health-check-troubleshooting-mode.php:265
+msgid "When enabling troubleshooting on the selected plugins, a site failure occurred. Because of this the selected plugins were kept disabled while troubleshooting mode started."
+msgstr "Виникла помилка на сайті при включенні режиму усунення неполадок для обраних плагінів. Вибрані плагіни залишаться деактивованими при запуску режиму усунення неполадок."
+
+#: pages/phpinfo.php:17
+msgid "Extended PHP Information"
+msgstr "Детальна інформація про PHP"
+
+#: pages/debug-data.php:19 pages/site-health-header.php:56
+msgid "The Site Health check requires JavaScript."
+msgstr "Відображення інформації про здоров'я сайту вимагає включеного JavaScript."
+
+#: pages/site-health-header.php:21
+msgid "Secondary menu"
+msgstr "Вторинне меню"
+
+#: pages/site-health-header.php:17
+msgid "Site Health"
+msgstr "Здоров'я сайту"
+
+#: HealthCheck/Tools/class-health-check-phpinfo.php:78
+msgid "View extended PHP information"
+msgstr "Подивитися детальну інформацію про PHP"
+
+#: pages/debug-data.php:50 pages/screenshots.php:81
+msgid "Copied!"
+msgstr "Скопійовано!"
+
+#: pages/debug-data.php:48
+msgid "Copy site info to clipboard"
+msgstr "Скопіювати інформацію в буфер обміну"
+
+#: pages/debug-data.php:42
+msgid "If you want to export a handy list of all the information on this page, you can use the button below to copy it to the clipboard. You can then paste it in a text file and save it to your device, or paste it in an email exchange with a support engineer or theme/plugin developer for example."
+msgstr "Якщо вам потрібно експортувати інформацію з цієї сторінки, ви можете скористатися кнопкою нижче для копіювання її в буфер обміну. Ви можете вставити її в текстовий файл і зберегти на диск або, наприклад, відправити в повідомленні співробітникам підтримки або розробникам теми або плагіна."
+
+#: pages/debug-data.php:32
+msgid "Site Health Info"
+msgstr "Інформація про здоров'я сайту"
+
+#: pages/troubleshoot.php:21
+msgid "Troubleshooting mode"
+msgstr "Режим усунення неполадок"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:978
+#: HealthCheck/BackCompat/class-wp-debug-data.php:1024
+msgid "Theme directory location"
+msgstr "Місцезнаходження директорії тем"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:974
+msgid "Theme features"
+msgstr "Можливості теми"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:940
+msgid "None"
+msgstr "Немає"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:697
+msgid "Is SUHOSIN installed?"
+msgstr "Чи встановлений SUHOSIN?"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:628
+msgid "PHP version"
+msgstr "Версія PHP"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:623
+msgid "Web server"
+msgstr "ПЗ вебсервера"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:479
+msgid "ImageMagick version string"
+msgstr "Рядок версії ImageMagick"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:474
+msgid "ImageMagick version number"
+msgstr "Номер версії ImageMagick"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:350
+msgid "Shows whether WordPress is able to write to the directories it needs access to."
+msgstr "Показує можливість WordPress запису в папки, куди потрібен доступ."
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:251
+msgid "These settings alter where and how parts of WordPress are loaded."
+msgstr "Ці налаштування змінюють звідки і як завантажуються компоненти WordPress."
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:138
+msgid "Directories and Sizes"
+msgstr "Папки та розміри"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:125
+msgctxt "comment status"
+msgid "Closed"
+msgstr "Закриті"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:125
+msgctxt "comment status"
+msgid "Open"
+msgstr "Відкриті"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:100
+msgid "No permalink structure set"
+msgstr "Структура постійних посилань не встановлена"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:81
+msgid "User Language"
+msgstr "Мова користувача"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:77
+msgid "Site Language"
+msgstr "Мова сайту"
+
+#: compat.php:159
+msgctxt "localized PHP upgrade information page"
+msgid "https://wordpress.org/support/update-php/"
+msgstr "https://uk.wordpress.org/support/update-php/"
+
+#: HealthCheck/Tools/class-health-check-files-integrity.php:197
+msgid "Error"
+msgstr "Помилка"
+
+#: HealthCheck/BackCompat/class-wp-site-health.php:30
+msgid "Once weekly"
+msgstr "Раз в тиждень"
+
+#: HealthCheck/class-health-check.php:341
+msgid "Info"
+msgstr "Інформація"
+
+#: HealthCheck/BackCompat/class-wp-site-health.php:112
+msgctxt "Page title"
+msgid "Site Health"
+msgstr "Здоров'я сайту"
+
+#. translators: %s: Critical issue counter, if any.
+#: HealthCheck/BackCompat/class-wp-site-health.php:106
+msgctxt "Menu Title"
+msgid "Site Health %s"
+msgstr "Здоров'я сайту %s"
+
+#: HealthCheck/BackCompat/class-wp-site-health.php:99
+msgctxt "Issue counter label for the admin menu"
+msgid "Critical issues"
+msgstr "Критичні проблеми"
+
+#. translators: %d: The HTTP response code returned.
+#: HealthCheck/class-health-check-loopback.php:95
+msgid "The loopback request returned an unexpected http status code, %d, it was not possible to determine if this will prevent features from working as expected."
+msgstr "Петльовий запит повернув несподівану відповідь http - %d, було неможливо визначити наскільки це впливає на працездатність."
+
+#: HealthCheck/class-health-check-loopback.php:79
+msgid "The loopback request to your site failed, this means features relying on them are not currently working as expected."
+msgstr "Петльовий запит до вашого сайту не вдався, можливості, які залежать від його працездатності зараз не працюють як потрібно."
+
+#. translators: %d: The amount of notices that are visible.
+#: mu-plugin/health-check-troubleshooting-mode.php:1507
+msgid "Notices (%d)"
+msgstr "Сповіщень (%d)"
+
+#. translators: %d: The amount of available themes.
+#: mu-plugin/health-check-troubleshooting-mode.php:1422
+msgid "Available themes (%d)"
+msgstr "Встановлених тем (%d)"
+
+#. translators: %d: The amount of available plugins.
+#: mu-plugin/health-check-troubleshooting-mode.php:1317
+msgid "Available plugins (%d)"
+msgstr "Встановлених плагінів (%d)"
+
+#: mu-plugin/health-check-troubleshooting-mode.php:1268
+msgid "enabled"
+msgstr "увімкнений"
+
+#. translators: %s: The running status of Troubleshooting Mode.
+#: mu-plugin/health-check-troubleshooting-mode.php:1265
+msgid "Troubleshooting Mode - %s"
+msgstr "Режим усунення неполадок - %s"
+
+#: mu-plugin/health-check-troubleshooting-mode.php:1175
+msgctxt "Prefix for inactive themes in troubleshooting mode"
+msgid "Switch to"
+msgstr "Перемкнутися на"
+
+#: mu-plugin/health-check-troubleshooting-mode.php:1175
+msgctxt "Prefix for the active theme in troubleshooting mode"
+msgid "Active:"
+msgstr "Активна:"
+
+#: HealthCheck/Tools/class-health-check-files-integrity.php:242
+#: HealthCheck/Tools/class-health-check-files-integrity.php:251
+msgid "You do not have access to this file."
+msgstr "У вас немає доступу до цього файлу."
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:600
+msgid "(Does not support 64bit values)"
+msgstr "(64-бітні значення не підтримуються)"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:624
+msgid "Unable to determine what web server software is used"
+msgstr "Неможливо визначити, яке програмне забезпечення веб-сервера використовується"
+
+#. translators: %s: The custom message that may be included with the email.
+#: HealthCheck/Tools/class-health-check-mail-check.php:74
+msgid "Additional message from admin: %s"
+msgstr "Додаткове повідомлення адміністратора: %s"
+
+#. translators: %1$s: website name. %2$s: website url. %3$s: The date the
+#. message was sent. %4$s: The time the message was sent.
+#: HealthCheck/Tools/class-health-check-mail-check.php:63
+msgid "Hi! This test message was sent by the Health Check plugin from %1$s (%2$s) on %3$s at %4$s. Since you’re reading this, it obviously works."
+msgstr "Привіт! Це тестове повідомлення надіслано плагіном Health Check з %1$s (%2$s) %3$s в %4$s. Так як ви читаєте це, то очевидно що пошта працює."
+
+#. Plugin Name of the plugin
+#: health-check.php
+msgid "Health Check & Troubleshooting"
+msgstr "Health Check & Troubleshooting"
+
+#: HealthCheck/class-health-check-troubleshoot.php:172
+msgid "You have successfully enabled Troubleshooting Mode, all plugins will appear inactive until you disable Troubleshooting Mode, or log out and back in again."
+msgstr "Ви успішно ввімкнули режим усунення неполадок, всі плагіни з'являться неактивними, поки ви не вимкнете режим усунення несправностей, або вийдете з системи і знову знову."
+
+#. translators: %s: The active theme name.
+#: HealthCheck/class-health-check-loopback.php:196
+msgid "Active theme: %s"
+msgstr "Активна тема: %s"
+
+#: HealthCheck/class-health-check-loopback.php:188
+#: HealthCheck/class-health-check-loopback.php:199
+msgid "Waiting..."
+msgstr "Чекайте..."
+
+#: mu-plugin/health-check-troubleshooting-mode.php:1459
+msgid "Switch to this theme"
+msgstr "Перейти до цієї теми"
+
+#. translators: %s: Theme name.
+#: mu-plugin/health-check-troubleshooting-mode.php:1455
+msgid "Switch the active theme to %s"
+msgstr "Переключити активну тему на %s"
+
+#: mu-plugin/health-check-troubleshooting-mode.php:1383
+msgid "Enable"
+msgstr "Ввімкнути"
+
+#. translators: %s: Plugin name.
+#: mu-plugin/health-check-troubleshooting-mode.php:1379
+msgid "Enable the plugin, %s, while troubleshooting."
+msgstr "Увімкніть плагін, %s, під час усунення несправностей."
+
+#: mu-plugin/health-check-troubleshooting-mode.php:1362
+msgid "Disable"
+msgstr "Вимкнути"
+
+#. translators: %s: Plugin name.
+#: mu-plugin/health-check-troubleshooting-mode.php:1358
+msgid "Disable the plugin, %s, while troubleshooting."
+msgstr "Вимкніть плагін %s в режимі усунення неполадок."
+
+#: mu-plugin/health-check-troubleshooting-mode.php:1564
+msgid "Dismiss notices"
+msgstr "Приховати нотатку"
+
+#: mu-plugin/health-check-troubleshooting-mode.php:1527
+msgid "Plugin actions, such as activating and deactivating, are not available while in Troubleshooting Mode."
+msgstr "Дії плагінів, такі як активація та деактивація, недоступні в режимі усунення неполадок."
+
+#: mu-plugin/health-check-troubleshooting-mode.php:1519
+msgid "There are no notices to show."
+msgstr "Нотаток немає."
+
+#: mu-plugin/health-check-troubleshooting-mode.php:1296
+msgid "Here you can enable individual plugins or themes, helping you to find out what might be causing strange behaviors on your site. Do note that <strong>any changes you make to settings will be kept</strong> when you disable Troubleshooting Mode."
+msgstr "Тут можна вмикати окремі плагіни або теми, що допоможе вам знайти те, що створює дивні речі на вашому сайті. Зверніть увагу, <strong>всі змінені налаштування збережуться</strong> при виході з режиму усунення неполадок."
+
+#: mu-plugin/health-check-troubleshooting-mode.php:1292
+msgid "Your site is currently in Troubleshooting Mode. This has <strong>no effect on your site visitors</strong>, they will continue to view your site as usual, but for you it will look as if you had just installed WordPress for the first time."
+msgstr "Ваш сайт зараз в режимі усунення неполадок. <strong>Це не впливає на відвідувачів сайту!</strong> Відвідувачі бачать ваш сайт як зазвичай, але для вас він такий, наче ви щойно встановили WordPress."
+
+#. Translators: %1$s: The theme slug that was switched to.. %2$s: The
+#. force-enable link markup.
+#: mu-plugin/health-check-troubleshooting-mode.php:984
+msgid "When switching the active theme to %1$s, a site failure occurred. Because of this we reverted the theme to the one you used previously. %2$s"
+msgstr "При зміні активної теми на %1$s виникла помилка сайту. Ця зміна була автоматично скасована. %2$s"
+
+#. Translators: %1$s: The plugin slug that was disabled. %2$s: The
+#. force-disable link markup.
+#: mu-plugin/health-check-troubleshooting-mode.php:901
+msgid "When disabling the plugin, %1$s, a site failure occurred. Because of this the change was automatically reverted. %2$s"
+msgstr "При відключенні плагіну %1$s виникла помилка сайту. Ця зміна була автоматично скасована. %2$s"
+
+#. Translators: %1$s: The link-button markup to force enable the plugin. %2$s:
+#. The force-enable link markup.
+#: mu-plugin/health-check-troubleshooting-mode.php:816
+msgid "When enabling the plugin, %1$s, a site failure occurred. Because of this the change was automatically reverted. %2$s"
+msgstr "При включенні плагіну %1$s виникла помилка сайту. Ця зміна була автоматично скасована. %2$s"
+
+#: HealthCheck/class-health-check-troubleshoot.php:98
+msgid "We could not remove the old must-use plugin."
+msgstr "Не вийшло видалити старий необхідний (MU) плагін."
+
+#: HealthCheck/Tools/class-health-check-mail-check.php:153
+msgid "Send test mail"
+msgstr "Послати тестове повідомлення"
+
+#: HealthCheck/Tools/class-health-check-mail-check.php:147
+msgid "Additional message"
+msgstr "Додаткове повідомлення"
+
+#. translators: %s: website url.
+#: HealthCheck/Tools/class-health-check-mail-check.php:59
+msgid "Health Check – Test Message from %s"
+msgstr "Health Check – тестове повідомлення від %s"
+
+#: HealthCheck/Tools/class-health-check-files-integrity.php:181
+msgid "One possible reason for this may be that your installation contains translated versions. An easy way to clear this is to reinstall WordPress. Don't worry. This will only affect WordPress' own files, not your themes, plugins or uploaded media."
+msgstr "Інша можлива причина, якщо ваш WordPress містить локалізовані версії. Легкий спосіб усунути це - перевстановити WordPress. Не турбуйтеся, це торкнеться тільки власних файлів ядра WordPress, теми, плагіни і завантажені файли зачеплені ніяк не будуть."
+
+#. translators: %s: .htaccess
+#: HealthCheck/BackCompat/class-wp-debug-data.php:734
+msgid "Your %s file contains only core WordPress features."
+msgstr "Файл %s містить тільки основні правила WordPress."
+
+#. translators: %s: .htaccess
+#: HealthCheck/BackCompat/class-wp-debug-data.php:731
+msgid "Custom rules have been added to your %s file."
+msgstr "Користувацькі правила були додані в файл %s."
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:738
+msgid ".htaccess rules"
+msgstr "Правила .htaccess"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:448
+#: HealthCheck/BackCompat/class-wp-debug-data.php:470
+msgid "Not available"
+msgstr "Недоступно"
+
+#. translators: %s: Latest WordPress version number.
+#. translators: %s: Latest plugin version number.
+#. translators: %s: Latest theme version number.
+#: HealthCheck/BackCompat/class-wp-debug-data.php:58
+#: HealthCheck/BackCompat/class-wp-debug-data.php:889
+#: HealthCheck/BackCompat/class-wp-debug-data.php:921
+#: HealthCheck/BackCompat/class-wp-debug-data.php:993
+#: HealthCheck/BackCompat/class-wp-debug-data.php:1073
+msgid "(Latest version: %s)"
+msgstr "(Остання версія: %s)"
+
+#. translators: Prefix for the active theme in a listing.
+#: mu-plugin/health-check-troubleshooting-mode.php:1465
+msgid "Active:"
+msgstr "Активний:"
+
+#: mu-plugin/health-check-troubleshooting-mode.php:1159
+msgid "Themes"
+msgstr "Теми"
+
+#: HealthCheck/Tools/class-health-check-files-integrity.php:264
+msgid "Modified"
+msgstr "Змінений"
+
+#: HealthCheck/Tools/class-health-check-files-integrity.php:262
+msgid "Original"
+msgstr "Оригінал"
+
+#: HealthCheck/Tools/class-health-check-mail-check.php:141
+msgid "Email"
+msgstr "Email"
+
+#: HealthCheck/Tools/class-health-check-mail-check.php:23
+msgid "The Mail Check will invoke the <code>wp_mail()</code> function and check if it succeeds. We will use the E-mail address you have set up, but you can change it below if you like."
+msgstr "Перевірка пошти викликає функцію <code>wp_mail()</code> і перевіряє, чи вона успішно. Ми будемо використовувати встановлену Вами адресу E-mail, але ви можете змінити її нижче, якщо хочете."
+
+#: HealthCheck/Tools/class-health-check-mail-check.php:22
+msgid "Mail Check"
+msgstr "Перевірка пошти"
+
+#: HealthCheck/Tools/class-health-check-files-integrity.php:285
+msgid "Check the Files Integrity"
+msgstr "Перевірка цілісності файлів"
+
+#: HealthCheck/Tools/class-health-check-files-integrity.php:21
+msgid "The File Integrity checks all the core files with the <code>checksums</code> provided by the WordPress API to see if they are intact. If there are changes you will be able to make a Diff between the files hosted on WordPress.org and your installation to see what has been changed."
+msgstr "Перевірка цілісності файлів порівнює <code>контрольні суми</code> файлів ядра з значеннями наданими WordPress API, щоб переконатися що вони не змінені. Якщо є зміни, то ви зможете побачити різницю між вашим файлом і файлом від WordPress.org, щоб побачити, що саме було змінено."
+
+#: HealthCheck/Tools/class-health-check-files-integrity.php:20
+msgid "File integrity"
+msgstr "Цілісність файлів"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:682
+#: HealthCheck/BackCompat/class-wp-debug-data.php:687
+msgid "cURL version"
+msgstr "Версія cURL"
+
+#: HealthCheck/Tools/class-health-check-mail-check.php:100
+msgid "It seems there was a problem sending the e-mail."
+msgstr "Схоже, виникла проблема з надсиланням e-mail."
+
+#: HealthCheck/Tools/class-health-check-mail-check.php:89
+msgid "We have just sent an e-mail using <code>wp_mail()</code> and it seems to work. Please check your inbox and spam folder to see if you received it."
+msgstr "Ми щойно відправили email повідомлення використовуючи <code>wp_mail()</code> і це спрацювало. Перевірте ваші вхідні повідомлення, а також папку спаму."
+
+#: HealthCheck/class-health-check-loopback.php:171
+msgid "Result from testing without any plugins active and a default theme"
+msgstr "Результати тестування без активних плагінів і з темою за замовчуванням"
+
+#: HealthCheck/Tools/class-health-check-files-integrity.php:187
+#: HealthCheck/Tools/class-health-check-files-integrity.php:193
+msgid "Reason"
+msgstr "Причина"
+
+#: HealthCheck/Tools/class-health-check-files-integrity.php:185
+#: HealthCheck/Tools/class-health-check-files-integrity.php:191
+msgid "File"
+msgstr "Файл"
+
+#: HealthCheck/class-health-check.php:340
+#: HealthCheck/Tools/class-health-check-files-integrity.php:183
+#: HealthCheck/Tools/class-health-check-files-integrity.php:189
+msgid "Status"
+msgstr "Статус"
+
+#: HealthCheck/Tools/class-health-check-files-integrity.php:180
+msgid "It appears as if some files may have been modified."
+msgstr "Схоже, що деякі файли були змінені."
+
+#: HealthCheck/Tools/class-health-check-files-integrity.php:176
+msgid "All files passed the check. Everything seems to be ok!"
+msgstr "Всі файли пройшли перевірку. Схоже все добре!"
+
+#: HealthCheck/Tools/class-health-check-files-integrity.php:108
+msgid "File not found"
+msgstr "Файл не знайдено"
+
+#: HealthCheck/Tools/class-health-check-files-integrity.php:105
+msgid "(View Diff)"
+msgstr "(Переглянути різницю)"
+
+#: HealthCheck/Tools/class-health-check-files-integrity.php:105
+msgid "Content changed"
+msgstr "Вміст змінено"
+
+#: HealthCheck/class-health-check.php:343
+#: HealthCheck/class-health-check.php:352 pages/tools.php:21
+msgid "Tools"
+msgstr "Інструменти"
+
+#: HealthCheck/class-health-check-troubleshoot.php:244
+#: mu-plugin/health-check-troubleshooting-mode.php:1198
+#: mu-plugin/health-check-troubleshooting-mode.php:1286
+msgid "Disable Troubleshooting Mode"
+msgstr "Вимкнути режим усунення неполадок"
+
+#: mu-plugin/health-check-troubleshooting-mode.php:178
+msgid "You don't have any of the default themes installed. A default theme helps you determine if your current theme is causing conflicts."
+msgstr "У вас немає встановлених тем за замовчуванням. Тема за замовчуванням допомагає визначити чи є ваша поточна тема джерелом проблеми."
+
+#: HealthCheck/class-health-check.php:332
+msgctxt "Menu, Section and Page Title"
+msgid "Health Check"
+msgstr "Перевірка здоров'я"
+
+#. Translators: %s: Plugin slug.
+#: mu-plugin/health-check-troubleshooting-mode.php:1127
+msgid "Enable %s"
+msgstr "Увімкнути %s"
+
+#. Translators: %s: Plugin slug.
+#: mu-plugin/health-check-troubleshooting-mode.php:1110
+msgid "Disable %s"
+msgstr "Вимкнути %s"
+
+#: mu-plugin/health-check-troubleshooting-mode.php:1071
+msgid "Manage active plugins"
+msgstr "Керуйте активними плагінами"
+
+#: mu-plugin/health-check-troubleshooting-mode.php:332
+#: mu-plugin/health-check-troubleshooting-mode.php:406
+msgid "Enable while troubleshooting"
+msgstr "Увімкнути в режимі усунення неполадок"
+
+#: mu-plugin/health-check-troubleshooting-mode.php:333
+#: mu-plugin/health-check-troubleshooting-mode.php:392
+msgid "Disable while troubleshooting"
+msgstr "Вимкнути в режимі усунення неполадок"
+
+#: pages/troubleshoot.php:34
+msgid "A Troubleshooting Mode menu is added to your admin bar, which will allow you to enable plugins individually, switch back to your current theme, and disable Troubleshooting Mode."
+msgstr "Меню режиму усунення неполадок буде додано на панель інструментів адміністратора, ви можете включати окремі плагіни, перемкнутися назад на вашу тему і відключити режим усунення неполадок."
+
+#: pages/troubleshoot.php:30
+msgid "By enabling the Troubleshooting Mode, all plugins will appear inactive and your site will switch to the default theme only for you. All other users will see your site as usual."
+msgstr "При включенні Режиму усунення неполадок всі плагіни будуть деактивовані і буде переключена тема на тему за замовчуванням тільки для вас. Решта відвідувачів будуть бачити ваш сайт як зазвичай."
+
+#: pages/troubleshoot.php:25
+msgid "When troubleshooting issues on your site, you are likely to be told to disable all plugins and switch to the default theme."
+msgstr "При усуненні неполадок на сайті, швидше за все вам рекомендували вимкнути всі плагіни і перейти на тему за замовчуванням."
+
+#. translators: %1$d: The HTTP response code. %2$s: The error message returned.
+#: HealthCheck/class-health-check-loopback.php:82
+msgid "Error encountered: (%1$d) %2$s"
+msgstr "Виникла помилка: (%1$d) %2$s"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:797
+msgid "Database name"
+msgstr "Назва бази даних"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:665
+msgid "Max input time"
+msgstr "Max input time"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:580
+msgid "Ghostscript version"
+msgstr "Версія Ghostscript"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:575
+msgid "Unable to determine if Ghostscript is installed"
+msgstr "Неможливо визначити чи встановлено Ghostscript"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:559
+msgid "GD version"
+msgstr "Версія GD"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:545
+msgid "Imagick Resource Limits"
+msgstr "Imagick ліміти ресурсів"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:460
+msgid "Active editor"
+msgstr "Активний редактор"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:189
+msgid "Media Handling"
+msgstr "Обробка мультимедіа"
+
+#: HealthCheck/class-health-check.php:314
+#: mu-plugin/health-check-troubleshooting-mode.php:326
+msgid "Troubleshoot"
+msgstr "Усунення несправностей"
+
+#: HealthCheck/class-health-check-troubleshoot.php:176
+msgid "Return to the Dashboard"
+msgstr "Повернутися в майстерню"
+
+#: HealthCheck/class-health-check-troubleshoot.php:149
+msgid "We were unable to replace the plugin file required to enable the Troubleshooting Mode."
+msgstr "Ми не змогли замінити файл плагіну, що потребується для режиму усунення неполадок."
+
+#: HealthCheck/class-health-check-troubleshoot.php:255
+msgid "Enable Troubleshooting Mode"
+msgstr "Ввімкнути режим усунення неполадок"
+
+#: mu-plugin/health-check-troubleshooting-mode.php:1080
+msgid "Plugins"
+msgstr "Плагіни"
+
+#: mu-plugin/health-check-troubleshooting-mode.php:1061
+msgid "Troubleshooting Mode"
+msgstr "Режим усунення неполадок"
+
+#: pages/troubleshoot.php:38
+msgid "Please note, that due to how Must Use plugins work, any such plugin will not be disabled for the troubleshooting session."
+msgstr "Зверніть увагу: необхідні (MU) плагіни не можуть бути відключені для сесії рішення проблем."
+
+#: pages/troubleshoot.php:26
+msgid "Understandably, you do not wish to do so as it may affect your site visitors, leaving them with lost functionality."
+msgstr "Зрозуміло, що вам не хочеться цього робити, так як це зачепить відвідувачів і порушить функціональність сайту."
+
+#: HealthCheck/class-health-check-troubleshoot.php:105
+msgid "We were unable to copy the plugin file required to enable the Troubleshooting Mode."
+msgstr "Ми не змогли скопіювати файл плагіну необхідний для режиму рішення проблем."
+
+#: HealthCheck/class-health-check-troubleshoot.php:90
+msgid "We were unable to create the mu-plugins directory."
+msgstr "Неможливо створити папку mu-plugins."
+
+#: HealthCheck/class-health-check.php:342
+#: HealthCheck/class-health-check.php:351
+msgid "Troubleshooting"
+msgstr "Усунення неполадок"
+
+#: HealthCheck/class-health-check-loopback.php:103
+msgid "The loopback request to your site completed successfully."
+msgstr "Петлевий запит до вашого сайту успішний."
+
+#. translators: %s: Plugin version number.
+#. translators: %s: Theme version number.
+#: HealthCheck/BackCompat/class-wp-debug-data.php:843
+#: HealthCheck/BackCompat/class-wp-debug-data.php:882
+#: HealthCheck/BackCompat/class-wp-debug-data.php:1066
+msgid "Version %s"
+msgstr "Версія %s"
+
+#. translators: %s: Plugin author name.
+#. translators: %s: Theme author name.
+#: HealthCheck/BackCompat/class-wp-debug-data.php:837
+#: HealthCheck/BackCompat/class-wp-debug-data.php:876
+#: HealthCheck/BackCompat/class-wp-debug-data.php:1060
+msgid "By %s"
+msgstr "Від %s"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:827
+#: HealthCheck/BackCompat/class-wp-debug-data.php:866
+#: HealthCheck/BackCompat/class-wp-debug-data.php:1050
+msgid "No version or author information is available."
+msgstr "Немає даних про версії або автора."
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:600
+msgid "(Supports 64bit values)"
+msgstr "(Підтримує 64-бітні значення)"
+
+#. Author of the plugin
+#: health-check.php
+msgid "The WordPress.org community"
+msgstr "Спільнота WordPress.org"
+
+#. Description of the plugin
+#: health-check.php
+msgid "Checks the health of your WordPress install."
+msgstr "Перевіряє стан здоров'я вашого встановлення WordPress."
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: health-check.php
+msgid "https://wordpress.org/plugins/health-check/"
+msgstr "https://uk.wordpress.org/plugins/health-check/"
+
+#: HealthCheck/Tools/class-health-check-phpinfo.php:22 pages/phpinfo.php:26
+msgid "The phpinfo() function has been disabled by your host. Please contact the host if you need more information about your setup."
+msgstr "Функція phpinfo() була відключена на вашому хостингу. Якщо вам потрібна інформація, то зверніться в підтримку хостингу."
+
+#. translators: 1: Theme name. 2: Theme slug.
+#: HealthCheck/BackCompat/class-wp-debug-data.php:930
+#: HealthCheck/BackCompat/class-wp-debug-data.php:949
+#: HealthCheck/BackCompat/class-wp-debug-data.php:1004
+#: HealthCheck/BackCompat/class-wp-debug-data.php:1080
+msgid "%1$s (%2$s)"
+msgstr "%1$s (%2$s)"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:969
+msgid "Parent theme"
+msgstr "Батьківська тема"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:964
+#: HealthCheck/BackCompat/class-wp-debug-data.php:1019
+msgid "Author website"
+msgstr "Сайт автора"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:960
+#: HealthCheck/BackCompat/class-wp-debug-data.php:1015
+msgid "Author"
+msgstr "Автор"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:946
+#: HealthCheck/BackCompat/class-wp-debug-data.php:1001
+msgid "Name"
+msgstr "Назва"
+
+#. translators: 1: Plugin version number. 2: Plugin author name.
+#. translators: 1: Theme version number. 2: Theme author name.
+#: HealthCheck/BackCompat/class-wp-debug-data.php:832
+#: HealthCheck/BackCompat/class-wp-debug-data.php:871
+#: HealthCheck/BackCompat/class-wp-debug-data.php:1055
+msgid "Version %1$s by %2$s"
+msgstr "Версія %1$s Від автора %2$s"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:791
+msgid "Database host"
+msgstr "Сервер бази даних"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:780
+msgid "Client version"
+msgstr "Версія клієнта"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:775
+msgid "Server version"
+msgstr "Версія СУБД"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:770
+msgid "Extension"
+msgstr "Розширення"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:706
+msgid "Is the Imagick library available?"
+msgstr "Imagick доступний?"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:673
+msgid "PHP post max size"
+msgstr "PHP post max size (максимальний розмір POST-запиту)"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:669
+msgid "Upload max filesize"
+msgstr "Upload max filesize (максимальний розмір завантаження)"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:660
+msgid "PHP memory limit"
+msgstr "Обмеження пам'яті PHP"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:655
+msgid "PHP time limit"
+msgstr "PHP time limit (ліміт часу виконання скриптів)"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:651
+msgid "PHP max input variables"
+msgstr "PHP max input variables"
+
+#. translators: %s: ini_get()
+#: HealthCheck/BackCompat/class-wp-debug-data.php:488
+#: HealthCheck/BackCompat/class-wp-debug-data.php:644
+msgid "Unable to determine some settings, as the %s function has been disabled."
+msgstr "Неможливо визначити деякі налаштування, оскільки функція %s була відключена."
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:641
+msgid "Server settings"
+msgstr "Налаштування сервера"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:634
+msgid "Unable to determine PHP SAPI"
+msgstr "Неможливо визначити PHP SAPI"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:633
+msgid "PHP SAPI"
+msgstr "PHP SAPI"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:607
+msgid "Unable to determine PHP version"
+msgstr "Неможливо визначити версію PHP"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:619
+msgid "Unable to determine server architecture"
+msgstr "Неможливо визначити архітектуру сервера"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:618
+msgid "Server architecture"
+msgstr "Серверна архітектура"
+
+#. translators: 1: The IP address WordPress.org resolves to. 2: The error
+#. returned by the lookup.
+#: HealthCheck/BackCompat/class-wp-debug-data.php:433
+msgid "Unable to reach WordPress.org at %1$s: %2$s"
+msgstr "Неможливо з'єднатися з WordPress.org %1$s: %2$s"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:425
+msgid "WordPress.org is reachable"
+msgstr "WordPress.org доступний"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:424
+#: HealthCheck/BackCompat/class-wp-debug-data.php:430
+msgid "Communication with WordPress.org"
+msgstr "Зв'язок з WordPress.org"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:407
+msgid "Network count"
+msgstr "Число мереж"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:402
+msgid "Site count"
+msgstr "Число сайтів"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:397
+#: HealthCheck/BackCompat/class-wp-debug-data.php:414
+msgid "User count"
+msgstr "Число користувачів"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:1094
+msgid "The must use plugins directory"
+msgstr "Папка обов'язкових (MU) плагінів"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:373
+msgid "The themes directory"
+msgstr "Директорія тем"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:368
+msgid "The plugins directory"
+msgstr "Директорія плагінів"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:363
+msgid "The uploads directory"
+msgstr "Директорія uploads"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:358
+msgid "The wp-content directory"
+msgstr "Директорія wp-content"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:354
+#: HealthCheck/BackCompat/class-wp-debug-data.php:359
+#: HealthCheck/BackCompat/class-wp-debug-data.php:364
+#: HealthCheck/BackCompat/class-wp-debug-data.php:369
+#: HealthCheck/BackCompat/class-wp-debug-data.php:374
+#: HealthCheck/BackCompat/class-wp-debug-data.php:1095
+msgid "Not writable"
+msgstr "Недоступна для запису"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:354
+#: HealthCheck/BackCompat/class-wp-debug-data.php:359
+#: HealthCheck/BackCompat/class-wp-debug-data.php:364
+#: HealthCheck/BackCompat/class-wp-debug-data.php:369
+#: HealthCheck/BackCompat/class-wp-debug-data.php:374
+#: HealthCheck/BackCompat/class-wp-debug-data.php:1095
+msgid "Writable"
+msgstr "Доступна для запису"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:353
+msgid "The main WordPress directory"
+msgstr "Основна директорія WordPress"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:349
+msgid "Filesystem Permissions"
+msgstr "Права на файлову систему"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:205
+#: HealthCheck/BackCompat/class-wp-debug-data.php:215
+#: HealthCheck/BackCompat/class-wp-debug-data.php:224
+#: HealthCheck/BackCompat/class-wp-debug-data.php:233
+#: HealthCheck/BackCompat/class-wp-debug-data.php:242
+#: HealthCheck/BackCompat/class-wp-debug-data.php:286
+#: HealthCheck/BackCompat/class-wp-debug-data.php:291
+#: HealthCheck/BackCompat/class-wp-debug-data.php:301
+#: HealthCheck/BackCompat/class-wp-debug-data.php:306
+#: HealthCheck/BackCompat/class-wp-debug-data.php:503
+msgid "Disabled"
+msgstr "Вимкнено"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:210
+#: HealthCheck/BackCompat/class-wp-debug-data.php:215
+#: HealthCheck/BackCompat/class-wp-debug-data.php:224
+#: HealthCheck/BackCompat/class-wp-debug-data.php:233
+#: HealthCheck/BackCompat/class-wp-debug-data.php:242
+#: HealthCheck/BackCompat/class-wp-debug-data.php:286
+#: HealthCheck/BackCompat/class-wp-debug-data.php:291
+#: HealthCheck/BackCompat/class-wp-debug-data.php:301
+#: HealthCheck/BackCompat/class-wp-debug-data.php:306
+#: HealthCheck/BackCompat/class-wp-debug-data.php:503
+msgid "Enabled"
+msgstr "Увімкнено"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:218
+#: HealthCheck/BackCompat/class-wp-debug-data.php:227
+#: HealthCheck/BackCompat/class-wp-debug-data.php:236
+#: HealthCheck/BackCompat/class-wp-debug-data.php:245
+#: HealthCheck/BackCompat/class-wp-debug-data.php:260
+#: HealthCheck/BackCompat/class-wp-debug-data.php:265
+#: HealthCheck/BackCompat/class-wp-debug-data.php:331
+#: HealthCheck/BackCompat/class-wp-debug-data.php:336
+#: HealthCheck/BackCompat/class-wp-debug-data.php:965
+#: HealthCheck/BackCompat/class-wp-debug-data.php:1020
+msgid "Undefined"
+msgstr "Не визначено"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:250
+msgid "WordPress Constants"
+msgstr "Константи WordPress"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:200
+msgid "Database"
+msgstr "База даних"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:195
+msgid "The options shown below relate to your server setup. If changes are required, you may need your web host&#8217;s assistance."
+msgstr "Налаштування нижче відносяться до конфігурації вашого сервера. Для внесення змін, при їх необхідності, вам слід звернутися в технічну підтримку вашого хостингу."
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:194
+msgid "Server"
+msgstr "Сервер"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:183
+msgid "Inactive Plugins"
+msgstr "Неактивні плагіни"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:177
+msgid "Active Plugins"
+msgstr "Активні плагіни"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:171
+msgid "Must Use Plugins"
+msgstr "Необхідні плагіни"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:155
+msgid "Active Theme"
+msgstr "Активна тема"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:144
+msgid "Drop-ins"
+msgstr "Вкраплення"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:109
+msgid "Is this a multisite?"
+msgstr "Використання режиму мережі?"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:124
+msgid "Default comment status"
+msgstr "Статус коментарів за замовчуванням"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:114
+msgid "Can anyone register on this site?"
+msgstr "Будь-хто може зареєструватися на сайті?"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:105
+#: HealthCheck/BackCompat/class-wp-debug-data.php:110
+#: HealthCheck/BackCompat/class-wp-debug-data.php:115
+#: HealthCheck/BackCompat/class-wp-debug-data.php:120
+#: HealthCheck/BackCompat/class-wp-debug-data.php:698
+#: HealthCheck/BackCompat/class-wp-debug-data.php:707
+#: HealthCheck/BackCompat/class-wp-debug-data.php:716
+msgid "No"
+msgstr "Ні"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:105
+#: HealthCheck/BackCompat/class-wp-debug-data.php:110
+#: HealthCheck/BackCompat/class-wp-debug-data.php:115
+#: HealthCheck/BackCompat/class-wp-debug-data.php:120
+#: HealthCheck/BackCompat/class-wp-debug-data.php:698
+#: HealthCheck/BackCompat/class-wp-debug-data.php:707
+#: HealthCheck/BackCompat/class-wp-debug-data.php:716
+msgid "Yes"
+msgstr "Так"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:104
+msgid "Is this site using HTTPS?"
+msgstr "Цей сайт використовує HTTPS?"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:99
+msgid "Permalink structure"
+msgstr "Структура постійних посилань"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:94
+msgid "Site URL"
+msgstr "Адреса сайту"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:89
+msgid "Home URL"
+msgstr "Домашня сторінка URL"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:72
+#: HealthCheck/BackCompat/class-wp-debug-data.php:955
+#: HealthCheck/BackCompat/class-wp-debug-data.php:1010
+#: HealthCheck/Tools/class-health-check-plugin-compatibility.php:38
+msgid "Version"
+msgstr "Версія"
+
+#: HealthCheck/BackCompat/class-wp-debug-data.php:69
+msgid "WordPress"
+msgstr "WordPress"

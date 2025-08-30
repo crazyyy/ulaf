@@ -1,0 +1,252 @@
+.article__wrap {
+  margin: 1rem auto;
+  max-width: 71.25rem;
+  padding: 1rem;
+
+  .item__post {
+    .item__wrapBadge {
+      display: flex;
+      gap: .25rem;
+      top: 0;
+
+      .item__badge {
+        background-color: grey;
+        color: #fff;
+        width: fit-content;
+
+        a {
+          color: #fff;
+          font-size: .85rem;
+          font-weight: 400;
+          padding: 0 1rem;
+          position: relative;
+          text-transform: uppercase;
+          z-index: 2;
+        }
+      }
+    }
+
+    h1 {
+      color: #191919;
+      font-size: 2.2rem;
+      font-weight: 500;
+      line-height: 1;
+      margin: 1rem 0;
+    }
+
+    .item__img {
+      margin: 1.5rem 0;
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .item__date {
+      align-items: center;
+      color: #191919;
+      display: flex;
+      font-size: .75rem;
+      font-weight: 600;
+
+      svg {
+        fill: #191919;
+        margin-right: .3rem;
+      }
+    }
+
+    .item__preContent {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      margin: 1rem 0;
+    }
+
+    .item__btnLinks {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+
+      &.my-1 {
+        margin: 1rem 0;
+      }
+
+      .item__btnLink {
+        align-items: center;
+        background-color: #1d3056;
+        border: .0625rem solid #0000;
+        color: #fff;
+        display: flex;
+        gap: .5rem;
+        justify-content: center;
+        padding: .5rem;
+        transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+        span {
+          font-size: .9375rem;
+          font-weight: 400;
+          line-height: 1.25rem;
+          text-transform: uppercase;
+        }
+
+        svg {
+          fill: #fff;
+        }
+
+        &:hover {
+          background-color: #fff;
+          border-color: #1d3056;
+          color: #1d3056;
+
+          svg {
+            fill: #1d3056;
+          }
+        }
+      }
+    }
+
+    .item__share {
+      align-items: flex-end;
+      display: flex;
+      flex-direction: column;
+
+      &.mobile__view {
+        align-items: flex-start;
+        margin: 1.5rem 0;
+      }
+
+      .item__shareTitle {
+        color: #1d3056;
+        font-size: 1.25rem;
+        font-weight: 500;
+      }
+
+      ul {
+        display: flex;
+        gap: .25rem;
+        margin: 0;
+        padding: 0;
+
+        li {
+          list-style: none;
+
+          a {
+            align-items: center;
+            border-radius: 50%;
+            display: flex;
+            height: 2.2rem;
+            justify-content: center;
+            width: 2.2rem;
+
+            &.item__fb {
+              background-color: #3b5998;
+            }
+
+            &.item__x {
+              background-color: #1da1f2;
+            }
+
+            &.item__ln {
+              background-color: #0077b5;
+            }
+
+            &:hover {
+              filter: saturate(1.5) brightness(1.2);
+            }
+          }
+        }
+      }
+    }
+
+    .item__content {
+      color: #1d3056;
+      font-size: 1rem;
+    }
+
+    .nav-links {
+      .nav-next, .nav-previous {
+        max-width: 23.5rem;
+      }
+    }
+  }
+
+  .aside__section {
+    .aside__title {
+      color: #1d3056;
+      font-size: 1.25rem;
+      font-weight: 500;
+    }
+
+    .posts__list {
+      margin: 0 0 2rem;
+      padding: 0;
+
+      li {
+        list-style: none;
+        margin-bottom: .5rem;
+
+        a {
+          align-items: flex-start;
+          display: flex;
+          gap: .5rem;
+
+          div {
+            flex: 1;
+            max-width: 10rem;
+
+            img {
+              height: auto;
+              object-fit: cover;
+              width: 100%;
+            }
+          }
+
+          h4 {
+            flex: 2;
+            font-size: .9375rem;
+            font-weight: 600;
+            line-height: 1;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .article__wrap {
+    display: flex;
+    gap: 2rem;
+    margin: 3rem auto;
+    padding: 0;
+
+    .item__post {
+      padding-left: 1rem;
+
+      .item__wrapBadge .item__badge a {
+        align-items: center;
+        display: flex;
+        font-size: 1rem;
+        padding: 0 1.5rem;
+      }
+
+      .item__share.mobile__view {
+        display: none;
+      }
+    }
+
+    .aside__section {
+      max-width: 21.25rem;
+      min-width: 21.25rem;
+      padding-right: 1rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .article__wrap .item__post .item__share.pc__view {
+    display: none;
+  }
+}

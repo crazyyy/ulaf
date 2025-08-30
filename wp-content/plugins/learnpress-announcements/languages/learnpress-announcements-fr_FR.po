@@ -1,0 +1,242 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: LearnPress - Announcements\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-11-13 17:19+0700\n"
+"PO-Revision-Date: 2017-11-13 17:19+0700\n"
+"Last-Translator: Tung Pham <tung@foobla.com>\n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: inc/load.php:222 inc/lp-field.php:62
+msgid " ago"
+msgstr ""
+
+#: inc/load.php:288 inc/lp-announcement-post-type.php:37
+#: inc/lp-announcement-post-type.php:45 inc/lp-announcement-post-type.php:52
+#: inc/lp-announcement-post-type.php:76 inc/lp-announcement-post-type.php:83
+msgid "Announcements"
+msgstr ""
+
+#: inc/load.php:366
+msgid ""
+"<strong>LearnPress Announcements</strong> notice. Please install and active "
+"<strong>Learnpress Plugin</strong> before you can using this addon"
+msgstr ""
+
+#: inc/lp-announcement-post-type.php:38
+msgid "Add Item"
+msgstr ""
+
+#: inc/lp-announcement-post-type.php:39
+msgid "Edit Item"
+msgstr ""
+
+#: inc/lp-announcement-post-type.php:40
+msgid "New Item"
+msgstr ""
+
+#: inc/lp-announcement-post-type.php:41
+msgid "View Item"
+msgstr ""
+
+#: inc/lp-announcement-post-type.php:42
+msgid "Search Items"
+msgstr ""
+
+#: inc/lp-announcement-post-type.php:43
+msgid "No items found"
+msgstr ""
+
+#: inc/lp-announcement-post-type.php:44
+msgid "No items found in Trash"
+msgstr ""
+
+#: inc/lp-announcement-post-type.php:46
+msgid "Item Archives"
+msgstr ""
+
+#: inc/lp-announcement-post-type.php:47
+msgid "Insert item"
+msgstr ""
+
+#: inc/lp-announcement-post-type.php:48
+msgid "Uploaded to this item"
+msgstr ""
+
+#: inc/lp-announcement-post-type.php:53 inc/lp-email-announcements.php:23
+msgid "Announcement"
+msgstr ""
+
+#: inc/lp-announcement-post-type.php:85
+msgid ""
+"Click the button \"Send Mail\" to send the new announcement for all students "
+"who were enrolled this course"
+msgstr ""
+
+#: inc/lp-announcement-post-type.php:90
+msgid "Display Comments"
+msgstr ""
+
+#: inc/lp-announcement-post-type.php:92
+msgid "Allow the users who is enrolled comment for the all announcements"
+msgstr ""
+
+#: inc/lp-announcement-post-type.php:114 inc/lp-announcement-post-type.php:119
+msgid "Course"
+msgstr ""
+
+#: inc/lp-announcement-post-type.php:115 inc/lp-announcement-post-type.php:120
+msgid "Author"
+msgstr ""
+
+#: inc/lp-announcement-post-type.php:150
+#: templates/frontend-announcements-item.php:47
+msgid "Edit"
+msgstr ""
+
+#: inc/lp-announcement-post-type.php:152
+msgid "View"
+msgstr ""
+
+#: inc/lp-announcement-post-type.php:155
+msgid "Remove Filter"
+msgstr ""
+
+#: inc/lp-announcement-post-type.php:157
+msgid "Filter"
+msgstr ""
+
+#: inc/lp-announcement-post-type.php:167
+msgid "Not assigned yet"
+msgstr ""
+
+#: inc/lp-email-announcements.php:30
+msgid "[{{site_title}}] You have a new announcement ({{announcement_name}})"
+msgstr ""
+
+#: inc/lp-email-announcements.php:31
+msgid "New Announcement"
+msgstr ""
+
+#: inc/lp-email-announcements.php:59
+msgid "Error! Please try again!"
+msgstr ""
+
+#: inc/lp-email-announcements.php:60
+msgid "Error! The course isn't created or is removed."
+msgstr ""
+
+#: inc/lp-email-announcements.php:61
+msgid "Error! The announcement does not exist or is removed."
+msgstr ""
+
+#: inc/lp-field.php:74 templates/frontend-announcements-item.php:14
+#: templates/meta-box-field.php:89 templates/popup-loop-item.php:8
+msgid "No Title"
+msgstr ""
+
+#: inc/lp-field.php:93
+msgid "Are you want to send mail for all user?"
+msgstr ""
+
+#: inc/lp-field.php:93
+msgid "Send Mail"
+msgstr ""
+
+#: inc/lp-field.php:94
+msgid "Edit Announcement"
+msgstr ""
+
+#: inc/lp-field.php:95
+msgid "Are you sure you want to remove this item?"
+msgstr ""
+
+#: inc/lp-field.php:95
+msgid "Remove Announcement"
+msgstr ""
+
+#: templates/frontend-announcements-item.php:18
+msgid "No Content"
+msgstr ""
+
+#: templates/frontend-announcements-item.php:63
+msgid "<p> Comments is closed </p>"
+msgstr ""
+
+#: templates/frontend-announcements-not-found.php:10
+msgid "Announcements is empty"
+msgstr ""
+
+#: templates/meta-box-field.php:44
+msgid "Title Announcement"
+msgstr ""
+
+#: templates/meta-box-field.php:50
+msgid "Content Announcement"
+msgstr ""
+
+#: templates/meta-box-field.php:57
+msgid "Edit Course"
+msgstr ""
+
+#: templates/meta-box-field.php:57
+msgid "Course Title"
+msgstr ""
+
+#: templates/meta-box-field.php:62
+msgid "Multi-course"
+msgstr ""
+
+#: templates/meta-box-field.php:69
+msgid "Send email for student is enrolled when create new an announcement"
+msgstr ""
+
+#: templates/meta-box-field.php:76
+msgid "Display the comments on new announcement post"
+msgstr ""
+
+#: templates/meta-box-field.php:83
+msgid "Something is wrong. Please fill up \"Title\" and \"Content\" fields!"
+msgstr ""
+
+#: templates/meta-box-field.php:89
+msgid "Post"
+msgstr ""
+
+#: templates/meta-box-field.php:120 templates/meta-box-field.php:121
+msgid "Remove"
+msgstr ""
+
+#: templates/meta-box-field.php:120
+msgid "Are you sure you want to remove these items from announcement?"
+msgstr ""
+
+#: templates/popup-not-found.php:7
+msgid "Course is empty"
+msgstr ""
+
+#: templates/popup.php:14
+msgid "Course Lists"
+msgstr ""
+
+#: templates/popup.php:16
+msgid "Type here to search item"
+msgstr ""
+
+#: templates/popup.php:25 templates/popup.php:26
+msgid "Select"
+msgstr ""
+
+#: templates/popup.php:27
+msgid "Close"
+msgstr ""

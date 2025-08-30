@@ -1,0 +1,17 @@
+**/*.min.js
+**/*.build.js
+**/node_modules/**
+node_modules/**
+node_modules
+**/vendor/**
+build
+coverage
+cypress
+vendor
+.git
+.hg
+/.history/
+/.vscode/
+/wp-content/uploads/
+/wp-admin/
+/wp-includes/

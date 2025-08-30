@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#: inc/PHPExcel/PHPExcel/Calculation/FormulaParser.php:325
+#: inc/PHPExcel/PHPExcel/Calculation/FormulaParser.php:347
+#: inc/PHPExcel/PHPExcel/Calculation/FormulaParser.php:352
+#: inc/PHPExcel/PHPExcel/Calculation/FormulaParser.php:433
+#: inc/PHPExcel/PHPExcel/Calculation/FormulaParser.php:454
+#: inc/PHPExcel/PHPExcel/Worksheet/AutoFilter/Column/Rule.php:317
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-18 14:33+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: learnpress-gradebook.php:51
+#, php-format
+msgid ""
+"<strong>%s</strong> addon version %s requires %s version %s or higher is "
+"<strong>installed</strong> and <strong>activated</strong>."
+msgstr ""
+
+#: learnpress-gradebook.php:52
+msgid "LearnPress Gradebook"
+msgstr ""
+
+#: learnpress-gradebook.php:54
+msgid "LearnPress"
+msgstr ""
+
+#: inc/class-gradebook-export.php:412
+msgid "User ID"
+msgstr ""
+
+#: inc/class-gradebook-export.php:413
+msgid "User login"
+msgstr ""
+
+#: inc/class-gradebook-export.php:414
+msgid "User email"
+msgstr ""
+
+#: inc/class-gradebook-export.php:415
+msgid "User display name"
+msgstr ""
+
+#: inc/class-gradebook-export.php:422
+#, php-format
+msgid "(Required %s%%)"
+msgstr ""
+
+#: inc/class-gradebook-export.php:424
+#, php-format
+msgid "(Required %s/%s point)"
+msgstr ""
+
+#: inc/class-gradebook-export.php:429
+#: inc/admin/class-gradebook-list-table.php:117
+#: inc/admin/class-gradebook-list-table.php:121
+msgid "Average"
+msgstr ""
+
+#: inc/class-gradebook-export.php:430
+#: inc/admin/class-gradebook-list-table.php:142
+msgid "Enrolled"
+msgstr ""
+
+#: inc/class-gradebook-export.php:431
+#: inc/admin/class-gradebook-list-table.php:144
+#: inc/admin/views/gradebook-details.php:21
+msgid "Status"
+msgstr ""
+
+#: inc/class-lp-email-gradebook.php:28 inc/load.php:306 inc/load.php:437
+#: inc/admin/class-gradebook-list-table.php:75
+#: inc/admin/class-gradebook-list-table.php:76 inc/admin/gradebook.php:13
+#: templates/dashboard.php:19
+msgid "Gradebook"
+msgstr ""
+
+#: inc/class-lp-email-gradebook.php:29
+msgid "Settings for email when a course is rejected."
+msgstr ""
+
+#: inc/class-lp-email-gradebook.php:31
+msgid "[{{site_title}}] Your course {{course_name}} has been rejected"
+msgstr ""
+
+#: inc/class-lp-email-gradebook.php:32
+msgid "Rejected course"
+msgstr ""
+
+#: inc/class-lp-gradebook-query.php:170
+msgid "course"
+msgstr ""
+
+#: inc/class-lp-gradebook-query.php:171
+msgid "courses"
+msgstr ""
+
+#: inc/load.php:211 inc/admin/class-gradebook-list-table.php:108
+#: inc/admin/class-gradebook-list-table.php:179 templates/course.php:49
+msgid "Student"
+msgstr ""
+
+#: inc/load.php:215 inc/admin/class-gradebook-list-table.php:141
+msgid "Email"
+msgstr ""
+
+#: inc/load.php:219 templates/course.php:52
+msgid "Completed"
+msgstr ""
+
+#: inc/load.php:223 templates/course.php:55
+msgid "Grade"
+msgstr ""
+
+#: inc/load.php:318
+msgid "Courses"
+msgstr ""
+
+#: inc/load.php:325 templates/course.php:24 templates/courses.php:30
+msgid "Course"
+msgstr ""
+
+#: inc/load.php:390
+msgid "Course Gradebook"
+msgstr ""
+
+#: inc/load.php:404
+msgid "Number of items per page"
+msgstr ""
+
+#: inc/load.php:457
+msgid "View"
+msgstr ""
+
+#: inc/admin/class-gradebook-list-table.php:125
+msgid "Average (Final)"
+msgstr ""
+
+#: inc/admin/class-gradebook-list-table.php:133
+msgid "Final"
+msgstr ""
+
+#: inc/admin/class-gradebook-list-table.php:181
+msgid "username, email, display name, etc..."
+msgstr ""
+
+#: inc/admin/class-gradebook-list-table.php:183
+msgid "From"
+msgstr ""
+
+#: inc/admin/class-gradebook-list-table.php:185
+msgid "To"
+msgstr ""
+
+#: inc/admin/class-gradebook-list-table.php:213
+msgid "Details"
+msgstr ""
+
+#: inc/admin/class-gradebook-list-table.php:231
+msgid "Finished"
+msgstr ""
+
+#: inc/admin/class-gradebook-list-table.php:231
+msgid "In Progress"
+msgstr ""
+
+#: inc/admin/gradebook.php:16
+msgid "Error"
+msgstr ""
+
+#: inc/admin/gradebook.php:50
+msgid "Export to CSV"
+msgstr ""
+
+#: inc/admin/views/gradebook-details.php:17
+msgid "Title"
+msgstr ""
+
+#: inc/admin/views/gradebook-details.php:18
+msgid "Type"
+msgstr ""
+
+#: inc/admin/views/gradebook-details.php:19
+msgid "Passing Grade"
+msgstr ""
+
+#: inc/admin/views/gradebook-details.php:20
+msgid "Results"
+msgstr ""
+
+#: inc/admin/views/gradebook-details.php:38
+#, php-format
+msgid "%s%%"
+msgstr ""
+
+#: inc/admin/views/gradebook-details.php:53
+#, php-format
+msgid "%s/%s questions (%s%%)"
+msgstr ""
+
+#: inc/admin/views/gradebook-details.php:59
+msgid "completed"
+msgstr ""
+
+#: templates/course.php:30
+msgid "Instructor"
+msgstr ""
+
+#: templates/course.php:39
+msgid "Student name, email"
+msgstr ""
+
+#: templates/course.php:41
+msgid "Filter"
+msgstr ""
+
+#: templates/course.php:126
+msgid "Export"
+msgstr ""
+
+#: templates/course.php:130
+msgid "No data."
+msgstr ""
+
+#: templates/courses.php:25
+msgid "Gradebook - Courses"
+msgstr ""
+
+#: templates/courses.php:31
+msgid "Users"
+msgstr ""
+
+#: templates/users.php:19
+msgid "Gradebook - Users"
+msgstr ""

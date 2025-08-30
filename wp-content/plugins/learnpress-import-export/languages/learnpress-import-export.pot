@@ -1,0 +1,492 @@
+# Copyright (C) 2025 ThimPress
+# This file is distributed under the same license as the LearnPress - Export/Import Courses plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: LearnPress - Export/Import Courses 4.0.7\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/learnpress-import-export\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-02-25T11:37:18+03:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.8.1\n"
+"X-Domain: learnpress-import-export\n"
+
+#. Plugin Name of the plugin
+msgid "LearnPress - Export/Import Courses"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "http://thimpress.com/learnpress"
+msgstr ""
+
+#. Description of the plugin
+msgid "Export and Import your courses with all lesson and quiz in easiest way."
+msgstr ""
+
+#. Author of the plugin
+msgid "ThimPress"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://thimpress.com"
+msgstr ""
+
+#: config/migration-plugin.php:10
+msgid "Tutor LMS"
+msgstr ""
+
+#: config/migration-plugin.php:20
+msgid "Migrate the Tutor data to LearnPress with the LearnPress Migration Tool."
+msgstr ""
+
+#: config/migration.php:7
+#: config/migration.php:8
+msgid "Migration Tool"
+msgstr ""
+
+#: inc/admin/background/class-lp-import-export-background.php:69
+msgid "Order on"
+msgstr ""
+
+#: inc/admin/background/class-lp-import-export-background.php:83
+msgid "Can not create order"
+msgstr ""
+
+#: inc/admin/providers/learnpress/class-lp-import-user-data.php:101
+msgid "Course(s) found on this file"
+msgstr ""
+
+#: inc/admin/providers/learnpress/class-lp-import-user-data.php:116
+msgid "Confirm Import"
+msgstr ""
+
+#: inc/admin/providers/learnpress/class-lp-import-user-data.php:118
+#: inc/admin/views/learnpress/export/step-2.php:48
+msgid "Cancel"
+msgstr ""
+
+#: inc/admin/views/export.php:17
+#: inc/admin/views/settings-page.php:11
+msgid "Export"
+msgstr ""
+
+#: inc/admin/views/export.php:27
+msgid "Select source"
+msgstr ""
+
+#: inc/admin/views/export.php:44
+msgid "Continue"
+msgstr ""
+
+#: inc/admin/views/export.php:62
+msgid "Recent exported"
+msgstr ""
+
+#: inc/admin/views/export.php:68
+#: inc/admin/views/export.php:71
+#: inc/admin/views/import.php:65
+#: inc/admin/views/import.php:68
+msgid "Remove selected"
+msgstr ""
+
+#: inc/admin/views/export.php:78
+#: inc/admin/views/import.php:75
+msgid "File"
+msgstr ""
+
+#: inc/admin/views/export.php:79
+#: inc/admin/views/import.php:76
+msgid "Time"
+msgstr ""
+
+#: inc/admin/views/export.php:80
+#: inc/admin/views/import.php:77
+msgid "Size"
+msgstr ""
+
+#: inc/admin/views/export.php:95
+#: inc/admin/views/import.php:92
+msgid "Download"
+msgstr ""
+
+#: inc/admin/views/export.php:98
+#: inc/admin/views/import.php:95
+msgid "View"
+msgstr ""
+
+#: inc/admin/views/export.php:101
+#: inc/admin/views/import.php:98
+#: inc/admin/views/learnpress/import-user/step-1.php:30
+#: inc/admin/views/learnpress/import/step-1.php:30
+#: inc/admin/views/settings-page.php:12
+msgid "Import"
+msgstr ""
+
+#: inc/admin/views/export.php:104
+#: inc/admin/views/import.php:101
+msgid "Remove"
+msgstr ""
+
+#: inc/admin/views/export.php:113
+#: inc/admin/views/import.php:110
+msgid "No exported files"
+msgstr ""
+
+#: inc/admin/views/import.php:22
+msgid "Import Courses"
+msgstr ""
+
+#: inc/admin/views/import.php:59
+msgid "Recent imported"
+msgstr ""
+
+#: inc/admin/views/learnpress/export/step-1.php:15
+msgid "Select courses"
+msgstr ""
+
+#: inc/admin/views/learnpress/export/step-1.php:22
+msgid "Course"
+msgstr ""
+
+#: inc/admin/views/learnpress/export/step-1.php:23
+msgid "Status"
+msgstr ""
+
+#: inc/admin/views/learnpress/export/step-1.php:24
+msgid "Author/Instructor"
+msgstr ""
+
+#: inc/admin/views/learnpress/export/step-1.php:53
+msgid "Select all"
+msgstr ""
+
+#: inc/admin/views/learnpress/export/step-1.php:60
+msgid "No course available to export."
+msgstr ""
+
+#: inc/admin/views/learnpress/export/step-1.php:65
+msgid "Next"
+msgstr ""
+
+#: inc/admin/views/learnpress/export/step-1.php:67
+#: inc/admin/views/learnpress/export/step-2.php:47
+msgid "Back"
+msgstr ""
+
+#: inc/admin/views/learnpress/export/step-2.php:13
+#: inc/admin/views/learnpress/export/step-3.php:18
+msgid "Exporting..."
+msgstr ""
+
+#: inc/admin/views/learnpress/export/step-2.php:19
+msgid "Download file"
+msgstr ""
+
+#: inc/admin/views/learnpress/export/step-2.php:22
+msgid "Download file after exporting is completed"
+msgstr ""
+
+#: inc/admin/views/learnpress/export/step-2.php:25
+msgid "Save exported file"
+msgstr ""
+
+#: inc/admin/views/learnpress/export/step-2.php:28
+msgid "Save exported file on your server so you can download it later"
+msgstr ""
+
+#: inc/admin/views/learnpress/export/step-2.php:41
+msgid "Custom name of export file"
+msgstr ""
+
+#: inc/admin/views/learnpress/export/step-2.php:45
+msgid "Export now"
+msgstr ""
+
+#: inc/admin/views/learnpress/export/step-3.php:22
+msgid "Exported"
+msgstr ""
+
+#: inc/admin/views/learnpress/export/step-3.php:36
+msgid "Export new"
+msgstr ""
+
+#: inc/admin/views/learnpress/export/step-3.php:38
+msgid "Export again!"
+msgstr ""
+
+#: inc/admin/views/learnpress/import-user/form-import.php:9
+msgid "Import Users"
+msgstr ""
+
+#: inc/admin/views/learnpress/import-user/form-import.php:30
+msgid "Download example CSV file "
+msgstr ""
+
+#: inc/admin/views/learnpress/import-user/form-import.php:30
+msgid "here"
+msgstr ""
+
+#: inc/admin/views/learnpress/import-user/step-1.php:11
+#: inc/admin/views/learnpress/import/step-1.php:11
+msgid "Save imported file"
+msgstr ""
+
+#: inc/admin/views/learnpress/import-user/step-1.php:15
+#: inc/admin/views/learnpress/import/step-1.php:15
+msgid "Save imported file on your server so you can download/import it later"
+msgstr ""
+
+#: inc/admin/views/learnpress/import-user/step-2.php:9
+#: inc/admin/views/learnpress/import/step-2.php:9
+msgid "Importing..."
+msgstr ""
+
+#: inc/admin/views/learnpress/import-user/step-3.php:12
+#: inc/admin/views/learnpress/import/step-3.php:12
+msgid "Import Successfully!"
+msgstr ""
+
+#: inc/admin/views/learnpress/import-user/step-3.php:15
+#: inc/admin/views/learnpress/import/step-3.php:15
+msgid "Import another"
+msgstr ""
+
+#: inc/admin/views/learnpress/import-user/step-3.php:17
+#: inc/admin/views/learnpress/import/step-3.php:17
+msgid "Import Fail!"
+msgstr ""
+
+#: inc/admin/views/settings-page.php:18
+#: inc/load.php:84
+#: inc/load.php:85
+msgid "Import/Export"
+msgstr ""
+
+#: inc/functions.php:162
+msgid "Can not create dir [%d]"
+msgstr ""
+
+#: inc/functions.php:171
+msgid "Error with WP_Filesystem"
+msgstr ""
+
+#: inc/functions.php:270
+msgid "FileSystem error!"
+msgstr ""
+
+#: inc/functions.php:328
+msgid "The file %s doesn't exists"
+msgstr ""
+
+#: inc/Migration/Controllers/EnqueueScriptsController.php:124
+msgid "Migrating!"
+msgstr ""
+
+#: inc/Migration/Controllers/EnqueueScriptsController.php:125
+msgid "Success!"
+msgstr ""
+
+#: inc/Migration/Controllers/TutorMigrationController.php:127
+msgid "Clear failed!"
+msgstr ""
+
+#: inc/Migration/Controllers/TutorMigrationController.php:135
+msgid "Clear successfully!"
+msgstr ""
+
+#: inc/Migration/Controllers/TutorMigrationController.php:159
+msgid "Migration Successful!"
+msgstr ""
+
+#: inc/Migration/Controllers/TutorMigrationController.php:160
+msgid "The migration from Tutor LMS to LearnPress is successfully done."
+msgstr ""
+
+#: inc/Migration/Controllers/TutorMigrationController.php:165
+msgid "Courses Migrated: %s"
+msgstr ""
+
+#: inc/Migration/Controllers/TutorMigrationController.php:168
+msgid "Lessons Migrated: %s"
+msgstr ""
+
+#: inc/Migration/Controllers/TutorMigrationController.php:171
+msgid "Quizzes Migrated: %s"
+msgstr ""
+
+#: inc/Migration/Controllers/TutorMigrationController.php:174
+msgid "Questions Migrated: %s"
+msgstr ""
+
+#: inc/Migration/Controllers/TutorMigrationController.php:190
+msgid "You are not allowed to migrate."
+msgstr ""
+
+#: inc/Migration/Controllers/TutorMigrationController.php:194
+msgid "There are no tutor courses."
+msgstr ""
+
+#: inc/Migration/Controllers/TutorMigrationController.php:203
+msgid "The courses have been migrated."
+msgstr ""
+
+#: inc/Migration/Controllers/TutorMigrationController.php:207
+msgid "Course item is required."
+msgstr ""
+
+#: inc/Migration/Controllers/TutorMigrationController.php:293
+msgid "Migrated course!"
+msgstr ""
+
+#: inc/Migration/Controllers/TutorMigrationController.php:299
+msgid "All course migrated!"
+msgstr ""
+
+#: inc/Migration/Controllers/TutorMigrationController.php:363
+msgid "Migrated section!"
+msgstr ""
+
+#: inc/Migration/Controllers/TutorMigrationController.php:369
+msgid "All section migrated!"
+msgstr ""
+
+#: inc/Migration/Controllers/TutorMigrationController.php:580
+msgid "Migrated course item!"
+msgstr ""
+
+#: inc/Migration/Controllers/TutorMigrationController.php:586
+msgid "All course item migrated!"
+msgstr ""
+
+#: inc/Migration/Controllers/TutorMigrationController.php:764
+msgid "Migrated question!"
+msgstr ""
+
+#: inc/Migration/Controllers/TutorMigrationController.php:783
+msgid "Migrated all question!"
+msgstr ""
+
+#: inc/Migration/Controllers/TutorMigrationController.php:1128
+msgid "Migrated course process!"
+msgstr ""
+
+#: inc/Migration/Controllers/TutorMigrationController.php:1135
+msgid "All data migrated successfully."
+msgstr ""
+
+#: inc/Migration/Helpers/Template.php:164
+msgid "Path %s not exists."
+msgstr ""
+
+#: views/admin/before-migrate-popup.php:34
+msgid "Are you sure you want to migrate from %s to LearnPress ?"
+msgstr ""
+
+#: views/admin/before-migrate-popup.php:36
+#: views/admin/clear-migrated-data-popup.php:35
+msgid "No, Maybe Later!"
+msgstr ""
+
+#: views/admin/before-migrate-popup.php:37
+#: views/admin/clear-migrated-data-popup.php:36
+msgid "Yes, Let' start!"
+msgstr ""
+
+#: views/admin/clear-migrated-data-popup.php:33
+msgid "Are you sure? This will reset the migration process, and all migrated data on LearnPress will be deleted."
+msgstr ""
+
+#: views/admin/migrate-success-popup.php:19
+msgid "Go To Course Lists"
+msgstr ""
+
+#: views/admin/migrate-success-popup.php:20
+msgid "View Report"
+msgstr ""
+
+#: views/admin/migration.php:57
+msgid "Courses Data"
+msgstr ""
+
+#: views/admin/migration.php:59
+msgid "Migrate courses into LearnPress."
+msgstr ""
+
+#: views/admin/migration.php:87
+msgid "Sections Data"
+msgstr ""
+
+#: views/admin/migration.php:89
+msgid "Migrate sections into LearnPress."
+msgstr ""
+
+#: views/admin/migration.php:119
+msgid "Course Items Data"
+msgstr ""
+
+#: views/admin/migration.php:121
+msgid "Migrate lessons, quizzes and assignments into LearnPress."
+msgstr ""
+
+#: views/admin/migration.php:151
+msgid "Questions Data"
+msgstr ""
+
+#: views/admin/migration.php:153
+msgid "Migrate questions into LearnPress."
+msgstr ""
+
+#: views/admin/migration.php:183
+msgid "User Learning Progress Data"
+msgstr ""
+
+#: views/admin/migration.php:185
+msgid "Migrate user learning progress."
+msgstr ""
+
+#: views/admin/migration.php:225
+msgid "Don't worry, your TutorLMS data will stay safe during the migration."
+msgstr ""
+
+#: views/admin/migration.php:230
+msgid "Migrate Now"
+msgstr ""
+
+#: views/admin/migration.php:233
+msgid "Clear Migrated Data"
+msgstr ""
+
+#: views/admin/migration/header.php:10
+msgid "Migration"
+msgstr ""
+
+#: views/admin/migration/report.php:21
+msgid "Migrate %1s - By %2s"
+msgstr ""
+
+#: views/admin/migration/report.php:23
+msgid "Course Migrated (%s)"
+msgstr ""
+
+#: views/admin/migration/report.php:51
+msgid "Course : %1s"
+msgstr ""
+
+#: views/admin/migration/report.php:55
+msgid "View Course"
+msgstr ""
+
+#: views/admin/migration/report.php:69
+msgid "Lesson : %1s"
+msgstr ""
+
+#: views/admin/migration/report.php:86
+msgid "Quiz : %1s"
+msgstr ""
+
+#: views/admin/migration/report.php:103
+msgid "Assignment : %1s"
+msgstr ""

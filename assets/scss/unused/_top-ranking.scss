@@ -1,0 +1,1034 @@
+.section__topRankingWrap {
+  background-color: #17253f;
+  padding: .625rem 0;
+
+  .section__topRanking {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 71.25rem;
+    position: relative;
+
+    .topRanking__heading {
+      align-items: center;
+      display: flex;
+      gap: 1.25rem;
+      justify-content: space-around;
+      padding: .625rem;
+      width: 100%;
+
+      img {
+        width: 5rem;
+      }
+
+      .topRanking__title {
+        color: #fff;
+        font-size: 3.125rem;
+        font-weight: 400;
+        line-height: 1;
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+
+    .topRanking__update {
+      align-items: center;
+      color: #fff;
+      display: flex;
+      fill: #fff;
+      flex: 50%;
+      font-size: 1.125rem;
+      font-weight: 400;
+      justify-content: flex-end;
+      order: 0;
+      padding: 0 .9375rem;
+      width: 100%;
+
+      span {
+        align-items: center;
+        display: flex;
+      }
+
+      svg {
+        margin-right: .3125rem;
+      }
+    }
+
+    .topRanking__back {
+      display: flex;
+      flex: 50%;
+      gap: 2.5rem;
+      justify-content: flex-start;
+      width: 100%;
+
+      a {
+        align-items: center;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        font-size: 1.125rem;
+        font-weight: 600;
+        line-height: 1;
+        padding: .3125rem .9375rem;
+        text-decoration: none;
+        text-transform: none;
+        width: max-content;
+
+        &:hover {
+          background-color: initial;
+          color: #fff;
+          opacity: .9;
+        }
+
+        svg {
+          padding-right: .35rem;
+        }
+      }
+
+      form {
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        margin: 0;
+        position: relative;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.section__playersWrap {
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  .section__players {
+    background-color: #29aae1;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 100%;
+    padding: 3.125rem 0 0;
+    width: 100%;
+
+    .section__rankings {
+      background: #29aae1;
+      margin: 0 auto;
+      max-width: 71.25rem;
+      padding: 0;
+      width: 100%;
+
+      .player__item {
+        align-items: center;
+        background: #1d30564d;
+        display: flex;
+        justify-content: space-between;
+        max-height: 11.25rem;
+        transition: background .3s,border-radius .3s,opacity .3s;
+        width: 100%;
+
+        .player__arrow {
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          width: 3.125rem;
+
+          svg {
+            font-size: 1.5rem;
+            opacity: .7;
+
+            &:hover {
+              cursor: pointer;
+              opacity: 1;
+            }
+          }
+        }
+
+        .player__overall {
+          padding: 0;
+          width: 60%;
+
+          .player__info {
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+
+            .player__number {
+              align-items: flex-end;
+              color: #fff;
+              display: flex;
+              flex-direction: row;
+              font-size: 3em;
+              font-weight: 400;
+              line-height: .95;
+              margin-bottom: .75rem;
+              margin-right: .3125rem;
+              max-width: 100%;
+              width: auto;
+            }
+
+            .player__name {
+              align-items: flex-end;
+              color: #fff;
+              display: flex;
+              font-size: 1.5em;
+              font-weight: 300;
+              line-height: 1;
+              margin: 0;
+              text-transform: capitalize;
+              width: 100%;
+
+              a {
+                color: #fff;
+                font-weight: 400;
+                text-decoration: none;
+              }
+            }
+          }
+
+          .player__box {
+            background-color: #0003;
+            border: .0625rem solid #fff;
+            display: flex;
+            margin-top: 1.25rem;
+            width: 100%;
+
+            .player__nation {
+              align-items: center;
+              border: solid hsla(0, 0%, 100%, 0.671);
+              border-width: 0 .0625rem 0 0;
+              display: flex;
+              padding: .3125rem 0 .3125rem .3125rem;
+              width: 50%;
+
+              .player__flag {
+                display: flex;
+                width: 40%;
+
+                img {
+                  aspect-ratio: 1/1;
+                  border: 0;
+                  border-radius: 0;
+                  box-shadow: none;
+                  height: auto;
+                  margin: 0 auto;
+                  object-fit: cover;
+                  vertical-align: middle;
+                  width: 1.75rem;
+                }
+              }
+
+              .player__country {
+                color: #fff;
+                font-size: .9375rem;
+                font-weight: 700;
+                line-height: .9375rem;
+                text-align: center;
+                text-transform: uppercase;
+                width: 60%;
+              }
+            }
+
+            .player__points {
+              align-items: center;
+              display: flex;
+              flex: 1;
+              justify-content: space-evenly;
+
+              .player__pointTitle {
+                color: #fff;
+                font-size: .9375rem;
+                font-weight: 100;
+                line-height: .9375rem;
+                text-align: center;
+              }
+
+              .player__pointTNumber {
+                color: #fff;
+                font-size: .8125rem;
+                font-weight: 600;
+                line-height: .9375rem;
+                text-align: center;
+              }
+            }
+          }
+        }
+
+        .player__img {
+          align-self: flex-end;
+          display: flex;
+          flex: none;
+          width: 8.125rem;
+
+          img {
+            height: 12.5rem;
+            object-fit: contain;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section__additionalInfo {
+  background-color: #237499;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 71.25rem;
+
+  > div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.25rem .9375rem;
+  }
+
+  .additionalInfo__title {
+    color: #fff;
+    font-size: 1.5625rem;
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+  }
+
+  .additionalInfo__data {
+    color: #fff;
+    font-size: 2.1875rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+    text-align: center;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  .title {
+    color: #fff;
+    font-size: 1.375rem;
+    font-weight: 300;
+    line-height: 1;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  .content {
+    color: #fff;
+    font-size: 1.6875rem;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  .additionalInfo__paired {
+    align-items: center;
+    border-top: .125rem solid #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .additionalInfo__imgWrap {
+      border: .0625rem solid #fff;
+      border-radius: 50%;
+      height: 3.125rem;
+      width: 3.125rem;
+
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+
+  .additionalInfo__hand {
+    align-items: flex-start;
+    border-top: .125rem solid #fff;
+    width: 100%;
+
+    h4 {
+      color: #fff;
+      font-size: 1.375rem;
+      font-weight: 300;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    h5 {
+      color: #fff;
+      font-size: 1.6875rem;
+      font-weight: 400;
+      margin: 0;
+    }
+  }
+
+  .additionalInfo__birth, .additionalInfo__height {
+    border-top: .125rem solid #fff;
+    width: 50%;
+  }
+
+  .additionalInfo__birth {
+    border-right: .0625rem solid #fff;
+  }
+
+  .additionalInfo__born, .additionalInfo__lives {
+    border-top: .125rem solid #fff;
+    width: 100%;
+  }
+}
+
+.section__matchYears {
+  background-color: #29aae1;
+  border-top: .125rem solid #fff;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.25rem;
+  gap: 1rem;
+  justify-content: center;
+  margin: auto;
+  max-width: 71.25rem;
+  padding-top: .625rem;
+
+  #years-stats-select {
+    background-color: initial;
+    border: none;
+    border-bottom: .0625rem solid #fff;
+    color: #fff;
+    font-size: 1.5rem;
+    outline: 0;
+
+    &:focus-visible {
+      border: none;
+      border-bottom: .0625rem solid #fff;
+      outline: 0;
+    }
+
+    option {
+      background: #237499;
+      color: #fff;
+    }
+  }
+}
+
+.section__matchPlayer {
+  background-color: #29aae1;
+  margin: auto;
+  max-width: 71.25rem;
+
+  .matchPlayer__title {
+    color: #fff;
+    padding: .625rem 0;
+    text-align: center;
+  }
+
+  .tab__matchPlayer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    max-width: 71.25rem;
+
+    > div {
+      align-items: center;
+      border: .01rem solid #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1.25rem .625rem;
+      text-align: center;
+      width: 50%;
+
+      h6 {
+        color: #fff;
+        font-size: 1.5625rem;
+        font-weight: 300;
+        margin: 0;
+      }
+
+      span {
+        color: #fff;
+        font-size: 3.125rem;
+        font-weight: 400;
+        line-height: 1;
+      }
+    }
+  }
+}
+
+span.oldPosition {
+  align-content: center;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-size: 1.25rem;
+
+  &.up {
+    color: #00ff0d;
+  }
+
+  &.down {
+    color: red;
+
+    &:before {
+      border-bottom: .3125rem solid;
+      border-left: .1875rem solid #0000;
+      border-right: .1875rem solid #0000;
+      content: "";
+      display: inline-block;
+      margin-right: .1rem;
+    }
+  }
+
+  &.up:before {
+    border-bottom: .3125rem solid;
+    border-left: .1875rem solid #0000;
+    border-right: .1875rem solid #0000;
+    content: "";
+    display: inline-block;
+    margin-right: .1rem;
+  }
+
+  &.down:before {
+    border: .1875rem solid #0000;
+    border-bottom: none;
+    border-top: .3125rem solid red;
+    margin-top: .1rem;
+  }
+
+  &.up:before {
+    border-bottom-color: #00ff0d;
+  }
+}
+
+.section__sliderSelect.section__category {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  max-width: 71.25rem;
+  position: relative;
+  top: -2.8125rem;
+  width: 100%;
+}
+
+form#category_player-form {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+#annual-data-container {
+  #tournament-position-data, .tournament-position-col, .tournament-position-row, .tp-col {
+    display: flex;
+  }
+
+  #tournament-position-data {
+    border-top: .625rem solid #123;
+    justify-content: center;
+  }
+
+  .tournament-position-row {
+    border-bottom: .0625rem solid #123;
+    justify-content: space-around;
+  }
+
+  .tournament-position-col {
+    align-items: center;
+    border: .0625rem solid #123;
+    box-sizing: border-box;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding: 0 1.25rem;
+  }
+
+  .tp-col {
+    width: auto;
+
+    &.tp-title {
+      text-align: left;
+    }
+
+    &.tp-data {
+      text-align: right;
+    }
+  }
+
+  table#data-tournament-table {
+    border-collapse: collapse;
+    border-style: hidden;
+    margin: 0 auto;
+    table-layout: fixed;
+    width: 100%;
+  }
+}
+
+#anual-tournament-data-table .t-body tr {
+  border-bottom: .0625rem solid;
+}
+
+#annual-data-container {
+  tr.t-row {
+    background-color: var(--blue-header);
+    color: #fff;
+    font-weight: 700;
+    height: 2.5rem;
+  }
+
+  td.t-col, thead th.t-col {
+    font-size: 1.125rem;
+    font-weight: 400;
+    padding: 1.5rem;
+  }
+
+  .th-name {
+    background-color: var(--blue-header);
+  }
+
+  .header-col {
+    text-align: center;
+    width: 33%;
+
+    &:first-child {
+      text-align: left;
+      width: 33%;
+    }
+  }
+
+  #container-header-tournament {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.header-col {
+  display: none;
+}
+
+.inner-container-table {
+  overflow-x: auto;
+}
+
+select#select-year-tournament {
+  background-color: #17253f;
+  color: #fff;
+  width: auto;
+}
+
+#annual-data-container h3 {
+  margin: 0;
+}
+
+div {
+  &#tournament-position-container {
+    margin: 1.25rem auto;
+  }
+
+  &#anual-tournament-data-table {
+    margin: 0 auto;
+    max-width: 71.25rem;
+  }
+}
+
+.header-tournament-data-table h3 {
+  font-size: 1.75rem !important;
+  font-weight: 400 !important;
+  margin: 2rem auto !important;
+  text-align: center !important;
+  text-transform: none !important;
+}
+
+.tp-col {
+  &.tp-data {
+    color: var(--azure-fip);
+    font-size: 3.125rem;
+  }
+
+  &.tp-title {
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+}
+
+.simplebar-scrollbar.simplebar-visible:before {
+  background-color: #1d3056 !important;
+  opacity: .8;
+}
+
+.simplebar-scrolling .simplebar-scrollbar.simplebar-visible:before {
+  background-color: #1d3056 !important;
+  opacity: 1;
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .section__playersWrap .section__players .section__rankings .player__item .player__overall .player__box {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  .section__playersWrap .section__players .section__rankings .player__item {
+    align-items: stretch;
+    min-height: 21.875rem;
+
+    .player__arrow {
+      width: 5rem;
+
+      svg {
+        font-size: 2.5rem;
+      }
+    }
+
+    .player__overall {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 0 0 1.25rem;
+      width: 65%;
+
+      .player__info {
+        align-items: flex-end;
+        flex-direction: row;
+
+        .player__number {
+          font-size: 8rem;
+          margin-bottom: 0;
+          margin-right: 1rem;
+        }
+
+        .player__name {
+          font-size: 4rem;
+          width: 70%;
+        }
+      }
+
+      .player__box {
+        .player__nation .player__country {
+          font-size: 1.875rem;
+          line-height: 1.875rem;
+        }
+
+        .player__points {
+          .player__pointTitle {
+            font-size: 1.25rem;
+            line-height: 1.875rem;
+          }
+
+          .player__pointTNumber {
+            font-size: 1.875rem;
+            line-height: 1.875rem;
+          }
+        }
+      }
+    }
+
+    .player__img {
+      align-items: flex-end;
+
+      img {
+        height: 25rem;
+        object-position: bottom;
+      }
+    }
+  }
+
+  .section__additionalInfo {
+    > div {
+      padding: 1.25rem 0;
+    }
+
+    .additionalInfo__paired {
+      border-right: .125rem solid #fff;
+      justify-content: center;
+      width: 50%;
+
+      .additionalInfo__imgWrap {
+        margin-right: 1.25rem;
+        order: -1;
+      }
+    }
+
+    .additionalInfo__hand {
+      align-items: center;
+      width: 50%;
+    }
+
+    .additionalInfo__birth, .additionalInfo__born, .additionalInfo__height, .additionalInfo__lives {
+      width: 25%;
+    }
+
+    .additionalInfo__born h5, .additionalInfo__lives h5 {
+      font-size: 1.875rem;
+    }
+  }
+
+  .section__matchPlayer .tab__matchPlayer > div {
+    border: 0;
+    padding: 1.25rem 0;
+    width: 16.6%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tournament-position-row {
+    &:last-child {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 66.6%;
+
+      .tournament-position-col {
+        width: 50%;
+      }
+    }
+
+    &:first-child {
+      flex-direction: column;
+      width: 33.3%;
+    }
+  }
+
+  td.t-col {
+    &.tb-name {
+      padding-left: 3.125rem;
+    }
+
+    &.tb-date, &.tb-points, &.tb-roundName {
+      text-align: center;
+    }
+  }
+
+  th.t-col {
+    &.th-date, &.th-roundName {
+      text-align: center;
+    }
+  }
+
+  td.t-col.tb-name, th.t-col.th-name {
+    padding-left: 8%;
+    text-align: left;
+  }
+
+  td.t-col.tb-points {
+    padding-right: 8%;
+    text-align: right;
+  }
+
+  th.t-col {
+    &.th-points {
+      padding-right: 8%;
+      text-align: right;
+    }
+
+    &.th-type {
+      padding-left: 4%;
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: 880px) {
+  .section__playersWrap .section__players .section__rankings .player__item {
+    .player__overall {
+      align-items: stretch;
+      width: 60%;
+
+      .player__info {
+        .player__number {
+          font-size: 6rem;
+        }
+
+        .player__name {
+          font-size: 3rem;
+          width: 50%;
+        }
+      }
+
+      .player__box {
+        width: 25rem;
+
+        .player__points .player__pointTitle {
+          font-size: 1.875rem;
+        }
+      }
+    }
+
+    .player__img {
+      width: 40%;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .section__topRankingWrap {
+    padding: .625rem;
+
+    .section__topRanking {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+
+      .topRanking__heading {
+        flex: 1;
+        gap: 2.1875rem;
+        order: 2;
+        width: auto;
+      }
+
+      .topRanking__update {
+        flex: none;
+        order: 3;
+        width: 15.625rem;
+      }
+
+      .topRanking__back {
+        flex: none;
+        gap: .75rem;
+        height: fit-content;
+        order: 1;
+        width: 15.625rem;
+
+        a {
+          order: 2;
+        }
+
+        form {
+          order: 1;
+        }
+      }
+    }
+  }
+
+  .section__playersWrap .section__players .section__rankings .player__item .player__overall .player__info {
+    .player__number {
+      font-size: 8rem;
+    }
+
+    .player__name {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .section__additionalInfo .additionalInfo__data {
+    font-size: 1.5625rem;
+  }
+
+  .section__matchYears {
+    padding-bottom: .625rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #annual-data-container .tournament-position-col {
+    flex: 3 1 50%;
+    padding: 0 .625rem;
+  }
+
+  #tournament-position-data .tp-col {
+    &.tp-title {
+      font-size: 1rem;
+    }
+
+    &.tp-data {
+      font-size: 2.8125rem;
+    }
+  }
+
+  #annual-data-container {
+    .tournament-position-row {
+      flex-flow: row wrap;
+    }
+
+    #tournament-position-data {
+      flex-direction: column;
+    }
+
+    td.t-col, thead th.t-col {
+      font-size: 0.9375rem !important;
+      padding: .8rem .5rem;
+    }
+
+    .th-type {
+      text-align: left;
+    }
+
+    td.t-col.tb-name {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .tb-name, .th-name {
+      left: 0;
+      position: sticky;
+      text-align: left;
+      z-index: 1;
+    }
+
+    td.t-col.tb-points {
+      text-align: right !important;
+    }
+
+    .tb-name {
+      background-color: #fff;
+    }
+
+    table#data-tournament-table {
+      table-layout: fixed;
+    }
+
+    .col-sticky {
+      width: 7.5rem;
+    }
+
+    col {
+      width: 10.9375rem;
+
+      &:last-child {
+        width: 3.75rem;
+      }
+    }
+
+    .header-col {
+      text-align: center;
+      width: 20%;
+
+      &:first-child {
+        text-align: left;
+        width: 20%;
+      }
+    }
+
+    col {
+      &:nth-child(3) {
+        width: 6.25rem;
+      }
+
+      &:nth-child(4) {
+        width: 6.875rem;
+      }
+    }
+  }
+}
