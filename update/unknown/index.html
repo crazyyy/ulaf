@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ukrainian League of American Football (ULAF) - Official website featuring teams, news, statistics, and upcoming games.">
+    <meta name="keywords" content="Ukrainian League, American Football, ULAF, Ukraine, Football Teams, Sports">
+    <meta name="author" content="Ukrainian League of American Football">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Ukrainian League of American Football (ULAF)">
+    <meta property="og:description" content="Official website of the Ukrainian League of American Football featuring teams, news, and statistics.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ulaf.ua">
+    <meta property="og:image" content="/images/ulaf-og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ukrainian League of American Football (ULAF)">
+    <meta name="twitter:description" content="Official website of the Ukrainian League of American Football">
+    
+    <title>Ukrainian League of American Football (ULAF) - Official Website</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <i class="bi bi-shield-fill-check me-2 fs-3"></i>
+                <span>ULAF</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#teams">Teams</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#news">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#statistics">Statistics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#partners">Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" 
+                            aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" 
+                            aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" 
+                            aria-label="Slide 3"></button>
+                </div>
+                
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/placeholder.svg?height=800&width=1920" 
+                             class="d-block w-100" alt="ULAF Championship Game">
+                        <div class="overlay"></div>
+                        <div class="carousel-caption content-overlay">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <h1 class="text-balance">Ukrainian League of American Football</h1>
+                                        <p class="lead mb-4">Experience the thrill of American football in Ukraine. Join us for an exciting season of competition, teamwork, and athletic excellence.</p>
+                                        <div class="d-flex flex-wrap gap-3">
+                                            <a href="#about" class="btn btn-primary btn-lg">Learn More</a>
+                                            <a href="#teams" class="btn btn-outline-light btn-lg">View Teams</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="/placeholder.svg?height=800&width=1920" 
+                             class="d-block w-100" alt="ULAF Teams">
+                        <div class="overlay"></div>
+                        <div class="carousel-caption content-overlay">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <h1 class="text-balance">Elite Teams, Elite Competition</h1>
+                                        <p class="lead mb-4">Watch Ukraine's best American football teams compete in thrilling matchups throughout the season.</p>
+                                        <div class="d-flex flex-wrap gap-3">
+                                            <a href="#statistics" class="btn btn-primary btn-lg">View Stats</a>
+                                            <a href="#news" class="btn btn-outline-light btn-lg">Latest News</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="/placeholder.svg?height=800&width=1920" 
+                             class="d-block w-100" alt="ULAF Training">
+                        <div class="overlay"></div>
+                        <div class="carousel-caption content-overlay">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <h1 class="text-balance">Building Champions</h1>
+                                        <p class="lead mb-4">From training camps to championship games, we're developing the next generation of Ukrainian football talent.</p>
+                                        <div class="d-flex flex-wrap gap-3">
+                                            <a href="#gallery" class="btn btn-primary btn-lg">View Gallery</a>
+                                            <a href="#newsletter" class="btn btn-outline-light btn-lg">Stay Updated</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 fade-in">
+                        <h2 class="section-title text-start">About ULAF</h2>
+                        <h3 class="text-primary mb-4">Building American Football Excellence in Ukraine</h3>
+                        <p class="lead mb-4">
+                            The Ukrainian League of American Football (ULAF) is the premier organization dedicated to developing and promoting American football throughout Ukraine. Since our establishment, we have been committed to fostering athletic excellence, teamwork, and sportsmanship.
+                        </p>
+                        <p class="mb-4">
+                            Our mission is to provide a competitive platform for Ukrainian athletes to showcase their talents while building character, discipline, and leadership skills. We believe in the power of sport to unite communities and inspire the next generation of champions.
+                        </p>
+                        <div class="row mb-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-trophy-fill text-primary fs-4 me-3"></i>
+                                    <div>
+                                        <h5 class="mb-1">Championship Excellence</h5>
+                                        <p class="mb-0 text-muted">Competitive league structure</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-people-fill text-primary fs-4 me-3"></i>
+                                    <div>
+                                        <h5 class="mb-1">Community Focus</h5>
+                                        <p class="mb-0 text-muted">Building stronger communities</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="#teams" class="btn btn-primary">View Our Teams</a>
+                            <a href="#contact" class="btn btn-outline-primary">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 fade-in">
+                        <div class="position-relative">
+                            <img src="/placeholder.svg?height=500&width=600" 
+                                 class="img-fluid rounded-3 shadow-lg" 
+                                 alt="ULAF team huddle showing unity and teamwork">
+                            <div class="position-absolute top-0 start-0 bg-primary text-white p-3 rounded-3 m-3">
+                                <h4 class="mb-1">2024</h4>
+                                <p class="mb-0 small">Season</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section id="news" class="py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="section-title">Latest News</h2>
+                        <p class="text-center text-muted mb-5">Stay updated with the latest happenings in Ukrainian American Football</p>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <!-- Featured News Article -->
+                    <div class="col-lg-8 fade-in">
+                        <article class="card h-100 border-0 shadow-sm">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="/placeholder.svg?height=300&width=400" 
+                                         class="img-fluid rounded-start h-100 object-fit-cover" 
+                                         alt="ULAF Championship Game">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body h-100 d-flex flex-column">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <span class="badge bg-primary me-2">Championship</span>
+                                            <small class="text-muted">December 15, 2024</small>
+                                        </div>
+                                        <h3 class="card-title h4">ULAF Championship Finals Set for This Weekend</h3>
+                                        <p class="card-text flex-grow-1">
+                                            The stage is set for an epic showdown as the top two teams prepare to battle for the ULAF championship title. After an intense season of competition, both teams have demonstrated exceptional skill and determination.
+                                        </p>
+                                        <div class="d-flex align-items-center justify-content-between mt-auto">
+                                            <a href="#" class="btn btn-primary">Read Full Article</a>
+                                            <div class="d-flex align-items-center text-muted">
+                                                <i class="bi bi-eye me-1"></i>
+                                                <small>1,247 views</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <!-- Side News Articles -->
+                    <div class="col-lg-4">
+                        <div class="row g-4">
+                            <div class="col-12 fade-in">
+                                <article class="card h-100 border-0 shadow-sm">
+                                    <img src="/placeholder.svg?height=200&width=350" 
+                                         class="card-img-top" 
+                                         alt="ULAF Training Camp">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <span class="badge bg-success me-2">Training</span>
+                                            <small class="text-muted">December 12, 2024</small>
+                                        </div>
+                                        <h4 class="card-title h5">New Training Facilities Open</h4>
+                                        <p class="card-text">ULAF unveils state-of-the-art training facilities to enhance player development and team preparation.</p>
+                                        <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                                    </div>
+                                </article>
+                            </div>
+                            
+                            <div class="col-12 fade-in">
+                                <article class="card h-100 border-0 shadow-sm">
+                                    <img src="/placeholder.svg?height=200&width=350" 
+                                         class="card-img-top" 
+                                         alt="ULAF Rookie Program">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <span class="badge bg-info me-2">Development</span>
+                                            <small class="text-muted">December 10, 2024</small>
+                                        </div>
+                                        <h4 class="card-title h5">Rookie Development Program</h4>
+                                        <p class="card-text">Introducing new players to the fundamentals of American football through our comprehensive rookie program.</p>
+                                        <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional News Grid -->
+                <div class="row g-4 mt-4">
+                    <div class="col-md-6 col-lg-3 fade-in">
+                        <article class="card h-100 border-0 shadow-sm">
+                            <img src="/placeholder.svg?height=200&width=300" 
+                                 class="card-img-top" 
+                                 alt="Season Statistics">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="badge bg-warning text-dark me-2">Stats</span>
+                                    <small class="text-muted">Dec 8, 2024</small>
+                                </div>
+                                <h5 class="card-title">Season Statistics Released</h5>
+                                <p class="card-text">Comprehensive analysis of player and team performance throughout the 2024 season.</p>
+                                <a href="#statistics" class="btn btn-outline-primary btn-sm">View Stats</a>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3 fade-in">
+                        <article class="card h-100 border-0 shadow-sm">
+                            <img src="/placeholder.svg?height=200&width=300" 
+                                 class="card-img-top" 
+                                 alt="New Partnership">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="badge bg-secondary me-2">Partnership</span>
+                                    <small class="text-muted">Dec 5, 2024</small>
+                                </div>
+                                <h5 class="card-title">New Sponsor Partnership</h5>
+                                <p class="card-text">ULAF announces strategic partnership to enhance league operations and player support.</p>
+                                <a href="#partners" class="btn btn-outline-primary btn-sm">Learn More</a>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3 fade-in">
+                        <article class="card h-100 border-0 shadow-sm">
+                            <img src="/placeholder.svg?height=200&width=300" 
+                                 class="card-img-top" 
+                                 alt="Youth Program">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="badge bg-success me-2">Youth</span>
+                                    <small class="text-muted">Dec 3, 2024</small>
+                                </div>
+                                <h5 class="card-title">Youth Program Launch</h5>
+                                <p class="card-text">Introducing American football to young athletes across Ukraine with our new youth development initiative.</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Join Program</a>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3 fade-in">
+                        <article class="card h-100 border-0 shadow-sm">
+                            <img src="/placeholder.svg?height=200&width=300" 
+                                 class="card-img-top" 
+                                 alt="Coaching Clinic">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-2">
+                                    <span class="badge bg-primary me-2">Education</span>
+                                    <small class="text-muted">Dec 1, 2024</small>
+                                </div>
+                                <h5 class="card-title">Coaching Clinic Success</h5>
+                                <p class="card-text">Professional development workshop for coaches concludes with outstanding participation and feedback.</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm">View Results</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                
+                <!-- Load More Button -->
+                <div class="row mt-5">
+                    <div class="col-12 text-center">
+                        <button class="btn btn-outline-primary btn-lg" onclick="loadMoreNews()">
+                            <i class="bi bi-arrow-down-circle me-2"></i>
+                            Load More Articles
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teams Section -->
+        <section id="teams" class="py-5">
+            <!-- Teams content will be added -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="section-title">Our Teams</h2>
+                        <p class="text-center text-muted mb-5">Meet the elite teams competing in the Ukrainian League of American Football</p>
+                    </div>
+                </div>
+                
+                <!-- Teams Carousel -->
+                <div class="row">
+                    <div class="col-12">
+                        <div id="teamsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row g-4 justify-content-center">
+                                        <div class="col-6 col-md-4 col-lg-2">
+                                            <div class="team-logo-card fade-in">
+                                                <div class="team-logo-wrapper">
+                                                    <img src="/placeholder.svg?height=120&width=120" 
+                                                         class="img-fluid team-logo" alt="Kyiv Warriors">
+                                                    <div class="team-overlay">
+                                                        <h5 class="team-name">Kyiv Warriors</h5>
+                                                        <p class="team-record">8-2</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2">
+                                            <div class="team-logo-card fade-in">
+                                                <div class="team-logo-wrapper">
+                                                    <img src="/placeholder.svg?height=120&width=120" 
+                                                         class="img-fluid team-logo" alt="Lviv Lions">
+                                                    <div class="team-overlay">
+                                                        <h5 class="team-name">Lviv Lions</h5>
+                                                        <p class="team-record">7-3</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2">
+                                            <div class="team-logo-card fade-in">
+                                                <div class="team-logo-wrapper">
+                                                    <img src="/placeholder.svg?height=120&width=120" 
+                                                         class="img-fluid team-logo" alt="Odesa Sharks">
+                                                    <div class="team-overlay">
+                                                        <h5 class="team-name">Odesa Sharks</h5>
+                                                        <p class="team-record">6-4</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2">
+                                            <div class="team-logo-card fade-in">
+                                                <div class="team-logo-wrapper">
+                                                    <img src="/placeholder.svg?height=120&width=120" 
+                                                         class="img-fluid team-logo" alt="Kharkiv Thunder">
+                                                    <div class="team-overlay">
+                                                        <h5 class="team-name">Kharkiv Thunder</h5>
+                                                        <p class="team-record">5-5</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2">
+                                            <div class="team-logo-card fade-in">
+                                                <div class="team-logo-wrapper">
+                                                    <img src="/placeholder.svg?height=120&width=120" 
+                                                         class="img-fluid team-logo" alt="Dnipro Eagles">
+                                                    <div class="team-overlay">
+                                                        <h5 class="team-name">Dnipro Eagles</h5>
+                                                        <p class="team-record">4-6</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="carousel-item">
+                                    <div class="row g-4 justify-content-center">
+                                        <div class="col-6 col-md-4 col-lg-2">
+                                            <div class="team-logo-card fade-in">
+                                                <div class="team-logo-wrapper">
+                                                    <img src="/placeholder.svg?height=120&width=120" 
+                                                         class="img-fluid team-logo" alt="Zaporizhzhia Titans">
+                                                    <div class="team-overlay">
+                                                        <h5 class="team-name">Zaporizhzhia Titans</h5>
+                                                        <p class="team-record">3-7</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2">
+                                            <div class="team-logo-card fade-in">
+                                                <div class="team-logo-wrapper">
+                                                    <img src="/placeholder.svg?height=120&width=120" 
+                                                         class="img-fluid team-logo" alt="Poltava Panthers">
+                                                    <div class="team-overlay">
+                                                        <h5 class="team-name">Poltava Panthers</h5>
+                                                        <p class="team-record">2-8</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2">
+                                            <div class="team-logo-card fade-in">
+                                                <div class="team-logo-wrapper">
+                                                    <img src="/placeholder.svg?height=120&width=120" 
+                                                         class="img-fluid team-logo" alt="Chernivtsi Wolves">
+                                                    <div class="team-overlay">
+                                                        <h5 class="team-name">Chernivtsi Wolves</h5>
+                                                        <p class="team-record">1-9</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button class="carousel-control-prev" type="button" data-bs-target="#teamsCarousel" data-bs-slide="prev">
+                                <i class="bi bi-chevron-left text-primary fs-1"></i>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#teamsCarousel" data-bs-slide="next">
+                                <i class="bi bi-chevron-right text-primary fs-1"></i>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Standings -->
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-header bg-primary text-white">
+                                <h4 class="mb-0">Current Standings</h4>
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="table-responsive">
+                                    <table class="table table-hover mb-0">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th>Rank</th>
+                                                <th>Team</th>
+                                                <th>W</th>
+                                                <th>L</th>
+                                                <th>Win %</th>
+                                                <th>PF</th>
+                                                <th>PA</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><span class="badge bg-success">1</span></td>
+                                                <td><strong>Kyiv Warriors</strong></td>
+                                                <td>8</td>
+                                                <td>2</td>
+                                                <td>.800</td>
+                                                <td>287</td>
+                                                <td>198</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="badge bg-success">2</span></td>
+                                                <td><strong>Lviv Lions</strong></td>
+                                                <td>7</td>
+                                                <td>3</td>
+                                                <td>.700</td>
+                                                <td>265</td>
+                                                <td>210</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="badge bg-warning text-dark">3</span></td>
+                                                <td><strong>Odesa Sharks</strong></td>
+                                                <td>6</td>
+                                                <td>4</td>
+                                                <td>.600</td>
+                                                <td>234</td>
+                                                <td>223</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="badge bg-secondary">4</span></td>
+                                                <td>Kharkiv Thunder</td>
+                                                <td>5</td>
+                                                <td>5</td>
+                                                <td>.500</td>
+                                                <td>201</td>
+                                                <td>201</td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="badge bg-secondary">5</span></td>
+                                                <td>Dnipro Eagles</td>
+                                                <td>4</td>
+                                                <td>6</td>
+                                                <td>.400</td>
+                                                <td>189</td>
+                                                <td>245</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section id="statistics" class="py-5 bg-light">
+            <!-- Statistics content will be added -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="section-title">Player Statistics</h2>
+                        <p class="text-center text-muted mb-5">Top performers in the Ukrainian League of American Football</p>
+                    </div>
+                </div>
+                
+                <!-- Statistics Filters -->
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="row g-3 align-items-end">
+                                    <div class="col-md-3">
+                                        <label for="teamFilter" class="form-label">Filter by Team</label>
+                                        <select class="form-select" id="teamFilter" onchange="filterStats()">
+                                            <option value="">All Teams</option>
+                                            <option value="kyiv-warriors">Kyiv Warriors</option>
+                                            <option value="lviv-lions">Lviv Lions</option>
+                                            <option value="odesa-sharks">Odesa Sharks</option>
+                                            <option value="kharkiv-thunder">Kharkiv Thunder</option>
+                                            <option value="dnipro-eagles">Dnipro Eagles</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="positionFilter" class="form-label">Filter by Position</label>
+                                        <select class="form-select" id="positionFilter" onchange="filterStats()">
+                                            <option value="">All Positions</option>
+                                            <option value="QB">Quarterback</option>
+                                            <option value="RB">Running Back</option>
+                                            <option value="WR">Wide Receiver</option>
+                                            <option value="LB">Linebacker</option>
+                                            <option value="DB">Defensive Back</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="statCategory" class="form-label">Statistics Category</label>
+                                        <select class="form-select" id="statCategory" onchange="changeStatCategory()">
+                                            <option value="offensive">Offensive Stats</option>
+                                            <option value="defensive">Defensive Stats</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <button class="btn btn-outline-primary w-100" onclick="resetFilters()">
+                                            <i class="bi bi-arrow-clockwise me-2"></i>Reset Filters
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Statistics Cards View -->
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h4>Top Performers</h4>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-outline-primary active" onclick="toggleView('cards')">
+                                    <i class="bi bi-grid-3x3-gap me-1"></i>Cards
+                                </button>
+                                <button type="button" class="btn btn-outline-primary" onclick="toggleView('table')">
+                                    <i class="bi bi-table me-1"></i>Table
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cards View -->
+                <div id="statsCards" class="row g-4">
+                    <div class="col-lg-4 col-md-6 fade-in" data-team="kyiv-warriors" data-position="QB">
+                        <div class="card h-100 border-0 shadow-sm stats-card">
+                            <div class="card-body text-center">
+                                <img src="/placeholder.svg?height=80&width=80" 
+                                     class="rounded-circle mb-3" alt="Player Avatar">
+                                <h5 class="card-title">Oleksandr Petrov</h5>
+                                <p class="text-muted mb-3">QB • Kyiv Warriors</p>
+                                <div class="row text-center">
+                                    <div class="col-4">
+                                        <h4 class="text-primary mb-0">2,847</h4>
+                                        <small class="text-muted">Passing Yards</small>
+                                    </div>
+                                    <div class="col-4">
+                                        <h4 class="text-primary mb-0">24</h4>
+                                        <small class="text-muted">Touchdowns</small>
+                                    </div>
+                                    <div class="col-4">
+                                        <h4 class="text-primary mb-0">8</h4>
+                                        <small class="text-muted">Interceptions</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 fade-in" data-team="lviv-lions" data-position="RB">
+                        <div class="card h-100 border-0 shadow-sm stats-card">
+                            <div class="card-body text-center">
+                                <img src="/placeholder.svg?height=80&width=80" 
+                                     class="rounded-circle mb-3" alt="Player Avatar">
+                                <h5 class="card-title">Maksym Kovalenko</h5>
+                                <p class="text-muted mb-3">RB • Lviv Lions</p>
+                                <div class="row text-center">
+                                    <div class="col-4">
+                                        <h4 class="text-primary mb-0">1,456</h4>
+                                        <small class="text-muted">Rushing Yards</small>
+                                    </div>
+                                    <div class="col-4">
+                                        <h4 class="text-primary mb-0">18</h4>
+                                        <small class="text-muted">Touchdowns</small>
+                                    </div>
+                                    <div class="col-4">
+                                        <h4 class="text-primary mb-0">4.8</h4>
+                                        <small class="text-muted">Avg YPC</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 fade-in" data-team="odesa-sharks" data-position="WR">
+                        <div class="card h-100 border-0 shadow-sm stats-card">
+                            <div class="card-body text-center">
+                                <img src="/placeholder.svg?height=80&width=80" 
+                                     class="rounded-circle mb-3" alt="Player Avatar">
+                                <h5 class="card-title">Dmytro Shevchenko</h5>
+                                <p class="text-muted mb-3">WR • Odesa Sharks</p>
+                                <div class="row text-center">
+                                    <div class="col-4">
+                                        <h4 class="text-primary mb-0">1,234</h4>
+                                        <small class="text-muted">Receiving Yards</small>
+                                    </div>
+                                    <div class="col-4">
+                                        <h4 class="text-primary mb-0">12</h4>
+                                        <small class="text-muted">Touchdowns</small>
+                                    </div>
+                                    <div class="col-4">
+                                        <h4 class="text-primary mb-0">67</h4>
+                                        <small class="text-muted">Receptions</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 fade-in" data-team="kharkiv-thunder" data-position="LB">
+                        <div class="card h-100 border-0 shadow-sm stats-card">
+                            <div class="card-body text-center">
+                                <img src="/placeholder.svg?height=80&width=80" 
+                                     class="rounded-circle mb-3" alt="Player Avatar">
+                                <h5 class="card-title">Andriy Bondarenko</h5>
+                                <p class="text-muted mb-3">LB • Kharkiv Thunder</p>
+                                <div class="row text-center">
+                                    <div class="col-4">
+                                        <h4 class="text-primary mb-0">89</h4>
+                                        <small class="text-muted">Tackles</small>
+                                    </div>
+                                    <div class="col-4">
+                                        <h4 class="text-primary mb-0">12</h4>
+                                        <small class="text-muted">Sacks</small>
+                                    </div>
+                                    <div class="col-4">
+                                        <h4 class="text-primary mb-0">3</h4>
+                                        <small class="text-muted">Interceptions</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 fade-in" data-team="dnipro-eagles" data-position="DB">
+                        <div class="card h-100 border-0 shadow-sm stats-card">
+                            <div class="card-body text-center">
+                                <img src="/placeholder.svg?height=80&width=80" 
+                                     class="rounded-circle mb-3" alt="Player Avatar">
+                                <h5 class="card-title">Viktor Melnyk</h5>
+                                <p class="text-muted mb-3">DB • Dnipro Eagles</p>
+                                <div class="row text-center">
+                                    <div class="col-4">
+                                        <h4 class="text-primary mb-0">6</h4>
+                                        <small class="text-muted">Interceptions</small>
+                                    </div>
+                                    <div class="col-4">
+                                        <h4 class="text-primary mb-0">45</h4>
+                                        <small class="text-muted">Tackles</small>
+                                    </div>
+                                    <div class="col-4">
+                                        <h4 class="text-primary mb-0">15</h4>
+                                        <small class="text-muted">Pass Breakups</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 fade-in" data-team="kyiv-warriors" data-position="WR">
+                        <div class="card h-100 border-0 shadow-sm stats-card">
+                            <div class="card-body text-center">
+                                <img src="/placeholder.svg?height=80&width=80" 
+                                     class="rounded-circle mb-3" alt="Player Avatar">
+                                <h5 class="card-title">Serhiy Tkachenko</h5>
+                                <p class="text-muted mb-3">WR • Kyiv Warriors</p>
+                                <div class="row text-center">
+                                    <div class="col-4">
+                                        <h4 class="text-primary mb-0">987</h4>
+                                        <small class="text-muted">Receiving Yards</small>
+                                    </div>
+                                    <div class="col-4">
+                                        <h4 class="text-primary mb-0">9</h4>
+                                        <small class="text-muted">Touchdowns</small>
+                                    </div>
+                                    <div class="col-4">
+                                        <h4 class="text-primary mb-0">54</h4>
+                                        <small class="text-muted">Receptions</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Table View (Initially Hidden) -->
+                <div id="statsTable" class="d-none">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table table-hover mb-0" id="playerStatsTable">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th onclick="sortTable(0)">Player <i class="bi bi-arrow-down-up"></i></th>
+                                            <th onclick="sortTable(1)">Team <i class="bi bi-arrow-down-up"></i></th>
+                                            <th onclick="sortTable(2)">Position <i class="bi bi-arrow-down-up"></i></th>
+                                            <th onclick="sortTable(3)">Stat 1 <i class="bi bi-arrow-down-up"></i></th>
+                                            <th onclick="sortTable(4)">Stat 2 <i class="bi bi-arrow-down-up"></i></th>
+                                            <th onclick="sortTable(5)">Stat 3 <i class="bi bi-arrow-down-up"></i></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr data-team="kyiv-warriors" data-position="QB">
+                                            <td><strong>Oleksandr Petrov</strong></td>
+                                            <td>Kyiv Warriors</td>
+                                            <td><span class="badge bg-primary">QB</span></td>
+                                            <td>2,847</td>
+                                            <td>24</td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr data-team="lviv-lions" data-position="RB">
+                                            <td><strong>Maksym Kovalenko</strong></td>
+                                            <td>Lviv Lions</td>
+                                            <td><span class="badge bg-success">RB</span></td>
+                                            <td>1,456</td>
+                                            <td>18</td>
+                                            <td>4.8</td>
+                                        </tr>
+                                        <tr data-team="odesa-sharks" data-position="WR">
+                                            <td><strong>Dmytro Shevchenko</strong></td>
+                                            <td>Odesa Sharks</td>
+                                            <td><span class="badge bg-info">WR</span></td>
+                                            <td>1,234</td>
+                                            <td>12</td>
+                                            <td>67</td>
+                                        </tr>
+                                        <tr data-team="kharkiv-thunder" data-position="LB">
+                                            <td><strong>Andriy Bondarenko</strong></td>
+                                            <td>Kharkiv Thunder</td>
+                                            <td><span class="badge bg-warning text-dark">LB</span></td>
+                                            <td>89</td>
+                                            <td>12</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr data-team="dnipro-eagles" data-position="DB">
+                                            <td><strong>Viktor Melnyk</strong></td>
+                                            <td>Dnipro Eagles</td>
+                                            <td><span class="badge bg-secondary">DB</span></td>
+                                            <td>6</td>
+                                            <td>45</td>
+                                            <td>15</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-5">
+            <!--  Adding responsive photo gallery with categories and lightbox -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="section-title">Photo Gallery</h2>
+                        <p class="text-center text-muted mb-5">Capturing the excitement and passion of Ukrainian American Football</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Categories -->
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center">
+                            <ul class="nav nav-pills gallery-tabs" id="galleryTabs" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="all-tab" data-bs-toggle="pill" data-bs-target="#all-gallery" 
+                                            type="button" role="tab" aria-controls="all-gallery" aria-selected="true">
+                                        All Photos
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="games-tab" data-bs-toggle="pill" data-bs-target="#games-gallery" 
+                                            type="button" role="tab" aria-controls="games-gallery" aria-selected="false">
+                                        Games
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="training-tab" data-bs-toggle="pill" data-bs-target="#training-gallery" 
+                                            type="button" role="tab" aria-controls="training-gallery" aria-selected="false">
+                                        Training
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="events-tab" data-bs-toggle="pill" data-bs-target="#events-gallery" 
+                                            type="button" role="tab" aria-controls="events-gallery" aria-selected="false">
+                                        Events
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Content -->
+                <div class="tab-content" id="galleryTabContent">
+                    <!-- All Photos Tab -->
+                    <div class="tab-pane fade show active" id="all-gallery" role="tabpanel" aria-labelledby="all-tab">
+                        <div class="row g-3">
+                            <div class="col-lg-4 col-md-6 fade-in">
+                                <div class="gallery-item" data-category="games">
+                                    <img src="/placeholder.svg?height=300&width=400" 
+                                         class="img-fluid rounded gallery-image" alt="Championship Game Action" 
+                                         data-bs-toggle="modal" data-bs-target="#galleryModal" 
+                                         data-bs-image="/placeholder.svg?height=600&width=800"
+                                         data-bs-title="Championship Game Action">
+                                    <div class="gallery-overlay">
+                                        <i class="bi bi-zoom-in fs-2"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 fade-in">
+                                <div class="gallery-item" data-category="training">
+                                    <img src="/placeholder.svg?height=300&width=400" 
+                                         class="img-fluid rounded gallery-image" alt="Training Session" 
+                                         data-bs-toggle="modal" data-bs-target="#galleryModal" 
+                                         data-bs-image="/placeholder.svg?height=600&width=800"
+                                         data-bs-title="Training Session">
+                                    <div class="gallery-overlay">
+                                        <i class="bi bi-zoom-in fs-2"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 fade-in">
+                                <div class="gallery-item" data-category="events">
+                                    <img src="/placeholder.svg?height=300&width=400" 
+                                         class="img-fluid rounded gallery-image" alt="Awards Ceremony" 
+                                         data-bs-toggle="modal" data-bs-target="#galleryModal" 
+                                         data-bs-image="/placeholder.svg?height=600&width=800"
+                                         data-bs-title="Awards Ceremony">
+                                    <div class="gallery-overlay">
+                                        <i class="bi bi-zoom-in fs-2"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 fade-in">
+                                <div class="gallery-item" data-category="games">
+                                    <img src="/placeholder.svg?height=300&width=400" 
+                                         class="img-fluid rounded gallery-image" alt="Touchdown Celebration" 
+                                         data-bs-toggle="modal" data-bs-target="#galleryModal" 
+                                         data-bs-image="/placeholder.svg?height=600&width=800"
+                                         data-bs-title="Touchdown Celebration">
+                                    <div class="gallery-overlay">
+                                        <i class="bi bi-zoom-in fs-2"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 fade-in">
+                                <div class="gallery-item" data-category="training">
+                                    <img src="/placeholder.svg?height=300&width=400" 
+                                         class="img-fluid rounded gallery-image" alt="Coaching Session" 
+                                         data-bs-toggle="modal" data-bs-target="#galleryModal" 
+                                         data-bs-image="/placeholder.svg?height=600&width=800"
+                                         data-bs-title="Coaching Session">
+                                    <div class="gallery-overlay">
+                                        <i class="bi bi-zoom-in fs-2"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 fade-in">
+                                <div class="gallery-item" data-category="events">
+                                    <img src="/placeholder.svg?height=300&width=400" 
+                                         class="img-fluid rounded gallery-image" alt="Team Photo" 
+                                         data-bs-toggle="modal" data-bs-target="#galleryModal" 
+                                         data-bs-image="/placeholder.svg?height=600&width=800"
+                                         data-bs-title="Team Photo">
+                                    <div class="gallery-overlay">
+                                        <i class="bi bi-zoom-in fs-2"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 fade-in">
+                                <div class="gallery-item" data-category="games">
+                                    <img src="/placeholder.svg?height=300&width=400" 
+                                         class="img-fluid rounded gallery-image" alt="Defensive Action" 
+                                         data-bs-toggle="modal" data-bs-target="#galleryModal" 
+                                         data-bs-image="/placeholder.svg?height=600&width=800"
+                                         data-bs-title="Defensive Action">
+                                    <div class="gallery-overlay">
+                                        <i class="bi bi-zoom-in fs-2"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 fade-in">
+                                <div class="gallery-item" data-category="training">
+                                    <img src="/placeholder.svg?height=300&width=400" 
+                                         class="img-fluid rounded gallery-image" alt="Equipment Setup" 
+                                         data-bs-toggle="modal" data-bs-target="#galleryModal" 
+                                         data-bs-image="/placeholder.svg?height=600&width=800"
+                                         data-bs-title="Equipment Setup">
+                                    <div class="gallery-overlay">
+                                        <i class="bi bi-zoom-in fs-2"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 fade-in">
+                                <div class="gallery-item" data-category="events">
+                                    <img src="/placeholder.svg?height=300&width=400" 
+                                         class="img-fluid rounded gallery-image" alt="Fan Support" 
+                                         data-bs-toggle="modal" data-bs-target="#galleryModal" 
+                                         data-bs-image="/placeholder.svg?height=600&width=800"
+                                         data-bs-title="Fan Support">
+                                    <div class="gallery-overlay">
+                                        <i class="bi bi-zoom-in fs-2"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Load More Button -->
+                <div class="row mt-5">
+                    <div class="col-12 text-center">
+                        <button class="btn btn-outline-primary btn-lg" onclick="loadMoreGallery()">
+                            <i class="bi bi-images me-2"></i>
+                            Load More Photos
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Gallery Modal -->
+            <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content bg-dark">
+                        <div class="modal-header border-0">
+                            <h5 class="modal-title text-white" id="galleryModalLabel">Photo</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body p-0">
+                            <img id="galleryModalImage" src="/placeholder.svg" class="img-fluid w-100" alt="">
+                        </div>
+                        <div class="modal-footer border-0 justify-content-between">
+                            <button type="button" class="btn btn-outline-light" onclick="previousImage()">
+                                <i class="bi bi-chevron-left me-1"></i>Previous
+                            </button>
+                            <button type="button" class="btn btn-outline-light" onclick="nextImage()">
+                                Next<i class="bi bi-chevron-right ms-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Next Game Section -->
+        <section id="next-game" class="py-5 bg-primary text-white">
+            <!--  Adding next game block with team matchup details -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="section-title text-white">Next Game</h2>
+                        <p class="text-center mb-5 opacity-75">Don't miss the upcoming championship showdown</p>
+                    </div>
+                </div>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card bg-white text-dark border-0 shadow-lg next-game-card">
+                            <div class="card-body p-5">
+                                <div class="row align-items-center">
+                                    <!-- Home Team -->
+                                    <div class="col-md-4 text-center mb-4 mb-md-0">
+                                        <div class="team-info">
+                                            <img src="/placeholder.svg?height=100&width=100" 
+                                                 class="img-fluid team-logo-large mb-3" alt="Kyiv Warriors">
+                                            <h4 class="team-name">Kyiv Warriors</h4>
+                                            <p class="team-record text-muted mb-0">8-2 • 1st Place</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- VS and Game Details -->
+                                    <div class="col-md-4 text-center mb-4 mb-md-0">
+                                        <div class="game-details">
+                                            <h2 class="vs-text text-primary mb-3">VS</h2>
+                                            <div class="game-info">
+                                                <div class="d-flex align-items-center justify-content-center mb-2">
+                                                    <i class="bi bi-calendar3 text-primary me-2"></i>
+                                                    <span class="fw-bold">December 22, 2024</span>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-center mb-2">
+                                                    <i class="bi bi-clock text-primary me-2"></i>
+                                                    <span>15:00 (3:00 PM)</span>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-center mb-3">
+                                                    <i class="bi bi-geo-alt text-primary me-2"></i>
+                                                    <span>Olympic Stadium, Kyiv</span>
+                                                </div>
+                                                <span class="badge bg-danger fs-6 px-3 py-2">CHAMPIONSHIP FINAL</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Away Team -->
+                                    <div class="col-md-4 text-center">
+                                        <div class="team-info">
+                                            <img src="/placeholder.svg?height=100&width=100" 
+                                                 class="img-fluid team-logo-large mb-3" alt="Lviv Lions">
+                                            <h4 class="team-name">Lviv Lions</h4>
+                                            <p class="team-record text-muted mb-0">7-3 • 2nd Place</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Game Preview -->
+                                <div class="row mt-4">
+                                    <div class="col-12">
+                                        <div class="game-preview bg-light p-4 rounded">
+                                            <h5 class="mb-3">Championship Preview</h5>
+                                            <p class="mb-3">
+                                                The stage is set for an epic showdown between the league's top two teams. The Kyiv Warriors, 
+                                                led by quarterback Oleksandr Petrov, will face the determined Lviv Lions in what promises to be 
+                                                the most exciting championship final in ULAF history.
+                                            </p>
+                                            <div class="row text-center">
+                                                <div class="col-md-3 col-6 mb-3">
+                                                    <div class="stat-item">
+                                                        <h6 class="text-primary mb-1">Last Meeting</h6>
+                                                        <small class="text-muted">Warriors 24-21</small>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6 mb-3">
+                                                    <div class="stat-item">
+                                                        <h6 class="text-primary mb-1">Season Series</h6>
+                                                        <small class="text-muted">Split 1-1</small>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6 mb-3">
+                                                    <div class="stat-item">
+                                                        <h6 class="text-primary mb-1">Tickets</h6>
+                                                        <small class="text-success">Available</small>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-6 mb-3">
+                                                    <div class="stat-item">
+                                                        <h6 class="text-primary mb-1">Weather</h6>
+                                                        <small class="text-muted">Clear, 2°C</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="text-center mt-4">
+                                                <a href="#" class="btn btn-primary btn-lg me-3">
+                                                    <i class="bi bi-ticket-perforated me-2"></i>Buy Tickets
+                                                </a>
+                                                <a href="#" class="btn btn-outline-primary btn-lg">
+                                                    <i class="bi bi-newspaper me-2"></i>Read Full Preview
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section id="newsletter" class="py-5">
+            <!--  Adding newsletter subscription form with validation -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="newsletter-wrapper bg-gradient-primary text-white rounded-4 p-5">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 mb-4 mb-lg-0">
+                                    <div class="newsletter-content">
+                                        <h2 class="h1 mb-3">Stay in the Game</h2>
+                                        <p class="lead mb-4">
+                                            Get the latest ULAF news, game schedules, player updates, and exclusive content delivered straight to your inbox. Never miss a touchdown!
+                                        </p>
+                                        <div class="newsletter-features">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="bi bi-check-circle-fill me-3 fs-5"></i>
+                                                <span>Weekly game highlights and analysis</span>
+                                            </div>
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="bi bi-check-circle-fill me-3 fs-5"></i>
+                                                <span>Exclusive player interviews and stories</span>
+                                            </div>
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="bi bi-check-circle-fill me-3 fs-5"></i>
+                                                <span>Early access to ticket sales</span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <i class="bi bi-check-circle-fill me-3 fs-5"></i>
+                                                <span>Behind-the-scenes content</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="newsletter-form">
+                                        <form id="newsletterForm" onsubmit="handleNewsletterSubmit(event)" novalidate>
+                                            <div class="row g-3">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control form-control-lg" id="firstName" 
+                                                               placeholder="First Name" required>
+                                                        <label for="firstName">First Name</label>
+                                                        <div class="invalid-feedback">
+                                                            Please provide your first name.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control form-control-lg" id="lastName" 
+                                                               placeholder="Last Name" required>
+                                                        <label for="lastName">Last Name</label>
+                                                        <div class="invalid-feedback">
+                                                            Please provide your last name.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-floating">
+                                                        <input type="email" class="form-control form-control-lg" id="emailAddress" 
+                                                               placeholder="name@example.com" required>
+                                                        <label for="emailAddress">Email Address</label>
+                                                        <div class="invalid-feedback">
+                                                            Please provide a valid email address.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                                                        <label class="form-check-label" for="agreeTerms">
+                                                            I agree to receive marketing emails and accept the 
+                                                            <a href="#" class="text-white text-decoration-underline">Privacy Policy</a>
+                                                        </label>
+                                                        <div class="invalid-feedback">
+                                                            You must agree to the terms to subscribe.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <button type="submit" class="btn btn-light btn-lg w-100 fw-bold">
+                                                        <i class="bi bi-envelope-plus me-2"></i>
+                                                        Subscribe to Newsletter
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <p class="small mt-3 opacity-75 text-center">
+                                            Join over 5,000 Ukrainian football fans already subscribed!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section id="partners" class="py-5 bg-light">
+            <!--  Adding partners/sponsors carousel with hover effects -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="section-title">Our Partners</h2>
+                        <p class="text-center text-muted mb-5">Proud to be supported by these amazing organizations</p>
+                    </div>
+                </div>
+                
+                <!-- Partners Grid -->
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-3 col-md-4 col-sm-6 fade-in">
+                        <div class="partner-card">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="/placeholder.svg?height=120&width=200" 
+                                     class="img-fluid partner-logo" alt="Ukrainian Sports Federation">
+                                <div class="partner-overlay">
+                                    <h6 class="partner-name">Ukrainian Sports Federation</h6>
+                                    <p class="partner-description">Official Sports Partner</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 fade-in">
+                        <div class="partner-card">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="/placeholder.svg?height=120&width=200" 
+                                     class="img-fluid partner-logo" alt="Kyiv Sports Complex">
+                                <div class="partner-overlay">
+                                    <h6 class="partner-name">Kyiv Sports Complex</h6>
+                                    <p class="partner-description">Venue Partner</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 fade-in">
+                        <div class="partner-card">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="/placeholder.svg?height=120&width=200" 
+                                     class="img-fluid partner-logo" alt="SportTech Ukraine">
+                                <div class="partner-overlay">
+                                    <h6 class="partner-name">SportTech Ukraine</h6>
+                                    <p class="partner-description">Technology Partner</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 fade-in">
+                        <div class="partner-card">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="/placeholder.svg?height=120&width=200" 
+                                     class="img-fluid partner-logo" alt="Ukrainian Broadcasting">
+                                <div class="partner-overlay">
+                                    <h6 class="partner-name">Ukrainian Broadcasting</h6>
+                                    <p class="partner-description">Media Partner</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 fade-in">
+                        <div class="partner-card">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="/placeholder.svg?height=120&width=200" 
+                                     class="img-fluid partner-logo" alt="Elite Sports Gear">
+                                <div class="partner-overlay">
+                                    <h6 class="partner-name">Elite Sports Gear</h6>
+                                    <p class="partner-description">Equipment Partner</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 fade-in">
+                        <div class="partner-card">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="/placeholder.svg?height=120&width=200" 
+                                     class="img-fluid partner-logo" alt="Fitness Pro Ukraine">
+                                <div class="partner-overlay">
+                                    <h6 class="partner-name">Fitness Pro Ukraine</h6>
+                                    <p class="partner-description">Training Partner</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 fade-in">
+                        <div class="partner-card">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="/placeholder.svg?height=120&width=200" 
+                                     class="img-fluid partner-logo" alt="Ukrainian Youth Sports">
+                                <div class="partner-overlay">
+                                    <h6 class="partner-name">Ukrainian Youth Sports</h6>
+                                    <p class="partner-description">Development Partner</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 fade-in">
+                        <div class="partner-card">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="/placeholder.svg?height=120&width=200" 
+                                     class="img-fluid partner-logo" alt="National Sports Council">
+                                <div class="partner-overlay">
+                                    <h6 class="partner-name">National Sports Council</h6>
+                                    <p class="partner-description">Governing Partner</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Partnership CTA -->
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="partnership-cta bg-white p-5 rounded-4 shadow-sm">
+                            <h3 class="mb-3">Become a Partner</h3>
+                            <p class="lead mb-4">
+                                Join our growing network of partners and help support the future of American football in Ukraine.
+                            </p>
+                            <a href="#contact" class="btn btn-primary btn-lg">
+                                <i class="bi bi-handshake me-2"></i>
+                                Partner With Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <!--  Adding comprehensive 4-column footer with contact info and links -->
+        <div class="container">
+            <div class="row g-4">
+                <!-- Site Description Column -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-section">
+                        <div class="footer-brand mb-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-shield-fill-check text-primary fs-2 me-3"></i>
+                                <h4 class="mb-0">ULAF</h4>
+                            </div>
+                            <p class="text-light">
+                                The Ukrainian League of American Football is dedicated to developing and promoting American football throughout Ukraine, fostering athletic excellence and community spirit.
+                            </p>
+                        </div>
+                        <div class="social-links">
+                            <h6 class="text-uppercase fw-bold mb-3">Follow Us</h6>
+                            <div class="d-flex gap-3">
+                                <a href="#" class="social-link" aria-label="Facebook">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Instagram">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Twitter">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="YouTube">
+                                    <i class="bi bi-youtube"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="LinkedIn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quick Navigation Column -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-section">
+                        <h6 class="text-uppercase fw-bold mb-4">Quick Links</h6>
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="#about">About ULAF</a></li>
+                            <li><a href="#teams">Our Teams</a></li>
+                            <li><a href="#news">Latest News</a></li>
+                            <li><a href="#statistics">Player Stats</a></li>
+                            <li><a href="#gallery">Photo Gallery</a></li>
+                            <li><a href="#partners">Partners</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Additional Links Column -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-section">
+                        <h6 class="text-uppercase fw-bold mb-4">Resources</h6>
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="#">Game Schedule</a></li>
+                            <li><a href="#">Ticket Information</a></li>
+                            <li><a href="#">Player Registration</a></li>
+                            <li><a href="#">Coaching Resources</a></li>
+                            <li><a href="#">Rules & Regulations</a></li>
+                            <li><a href="#">Media Kit</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Contact Information Column -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-section">
+                        <h6 class="text-uppercase fw-bold mb-4">Contact Info</h6>
+                        <div class="contact-info">
+                            <div class="contact-item mb-3">
+                                <i class="bi bi-geo-alt-fill text-primary me-3"></i>
+                                <div>
+                                    <strong>Headquarters</strong><br>
+                                    <span class="text-light">
+                                        123 Sports Boulevard<br>
+                                        Kyiv, Ukraine 01001
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="contact-item mb-3">
+                                <i class="bi bi-telephone-fill text-primary me-3"></i>
+                                <div>
+                                    <strong>Phone</strong><br>
+                                    <a href="tel:+380441234567" class="text-light text-decoration-none">
+                                        +38 (044) 123-45-67
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contact-item mb-3">
+                                <i class="bi bi-envelope-fill text-primary me-3"></i>
+                                <div>
+                                    <strong>Email</strong><br>
+                                    <a href="mailto:info@ulaf.ua" class="text-light text-decoration-none">
+                                        info@ulaf.ua
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Partner Logos Column -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-section">
+                        <h6 class="text-uppercase fw-bold mb-4">Key Partners</h6>
+                        <div class="footer-partners">
+                            <div class="footer-partner-logo mb-3">
+                                <img src="/placeholder.svg?height=60&width=120" 
+                                     class="img-fluid" alt="Ukrainian Sports Federation">
+                            </div>
+                            <div class="footer-partner-logo mb-3">
+                                <img src="/placeholder.svg?height=60&width=120" 
+                                     class="img-fluid" alt="Kyiv Sports Complex">
+                            </div>
+                            <div class="footer-partner-logo mb-3">
+                                <img src="/placeholder.svg?height=60&width=120" 
+                                     class="img-fluid" alt="SportTech Ukraine">
+                            </div>
+                            <div class="footer-partner-logo">
+                                <img src="/placeholder.svg?height=60&width=120" 
+                                     class="img-fluid" alt="Ukrainian Broadcasting">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <hr class="my-5 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-light">
+                        &copy; 2024 Ukrainian League of American Football (ULAF). All rights reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="footer-bottom-links">
+                        <a href="#" class="text-light text-decoration-none me-4">Privacy Policy</a>
+                        <a href="#" class="text-light text-decoration-none me-4">Terms of Service</a>
+                        <a href="#" class="text-light text-decoration-none">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
