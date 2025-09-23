@@ -1,39 +1,74 @@
-"use strict";
+'use strict';
 
-// # Gulp workflow for WordPress theme development
-// https://gist.github.com/tomazzaman/158c10361c19434b02ad
+/**
+ * Gulp workflow for WordPress theme development
+ * Includes SCSS, JS, image optimization, fonts, BrowserSync
+ */
 
-/* Set isHtmlDev to TRUE if work with html, else - FALSE */
-const isHtmlDev = false;
+// ===== Set isHtmlDev to TRUE if work with html, else - FALSE =====
+const isHtmlDev = true;
 
-/* Set environmentProd to TRUE if build for Production, or FALSE if this is development build*/
-const isProd = process.env.NODE_ENV === "production";
-const isTest = process.env.NODE_ENV === "test";
+// ===== Detect environment =====
+const isProd = process.env.NODE_ENV === 'production';
+const isTest = process.env.NODE_ENV === 'test';
 const isDev = !isProd && !isTest;
 
-/* Import Base dependencies */
 
 // ToDo: Cosmiconfig searches for and loads configuration for your program https://github.com/cosmiconfig/cosmiconfig
-const config = require("config");
-const gulp = require("gulp");
-const lazypipe = require("lazypipe");
-const replace = require("gulp-replace");
-const extReplace = require("gulp-ext-replace");
+// const lazypipe = require( 'lazypipe' );
+// const replace = require( 'gulp-replace' );
+// const extReplace = require( 'gulp-ext-replace' );
+// const bytediff = require( 'gulp-bytediff' );
 
-/* Gulp Plugins */
-const plugin = require("gulp-load-plugins")({
-  pattern: ["gulp-*", "gulp.*"],
-  replaceString: /\bgulp[\-.]/,
-});
+// ===== Imports =====
+import gulp from 'gulp';
+import config from 'config';
+import plumber from 'gulp-plumber';
+import notify from 'gulp-notify';
+import changed from 'gulp-changed'; // Only pass through changed files
+import newer from 'gulp-newer';
+import concat from 'gulp-concat';
+import sourcemaps from 'gulp-sourcemaps';
+import size from 'gulp-size';
 
-/* Import and config BrowserSync */
-const browserSync = require("browser-sync").create();
+// CSS/SCSS/PostCSS
+import dartSass from 'sass';
+import gulpSass from 'gulp-sass';
+import postcss from 'gulp-postcss';
+import autoprefixer from 'autoprefixer';
+import cleanCss from 'gulp-clean-css';
 
-// let browserSyncArgs;
+// JavaScript
+import babel from 'gulp-babel';
+import uglify from 'gulp-uglify';
+
+// Images
+import imagemin from 'gulp-imagemin';
+import svgmin from 'gulp-svgmin';
+import svgSprite from 'gulp-svg-sprite';
+import webp from 'gulp-webp';
+
+// BrowserSync
+import browserSyncLib from 'browser-sync';
+
+// Initialize
+const sass = gulpSass(dartSass);
+const browserSync = browserSyncLib.create();
+
+// ===== Paths =====
+const paths = {
+  styles: config.path.styles,
+  scripts: config.path.scripts,
+  images: config.path.images,
+  fonts: config.path.fonts,
+  base: config.path.base,
+};
+
+// ===== BrowserSync config =====
 const browserSyncArgs = {
-  port: 9091,
+  port: 9090,
   ui: false,
-  logLevel: "info",
+  logLevel: 'info',
   logConnections: true,
   logFileChanges: true,
   https: {
@@ -42,525 +77,203 @@ const browserSyncArgs = {
   },
 };
 
-if (isHtmlDev) {
+if ( isHtmlDev ) {
   browserSyncArgs.server = {
-    baseDir: config.path.base.dest,
+    baseDir: paths.base.dest,
   };
-  browserSyncArgs.logPrefix = "BS-HTML:";
+  browserSyncArgs.logPrefix = 'HTML';
 } else {
   browserSyncArgs.proxy = `https://${config.domain}`;
   // browserSyncArgs.host = config.domain;
-  browserSyncArgs.logPrefix = "BS-WP:";
+  browserSyncArgs.logPrefix = 'WP';
 }
 
-/* Stylesheet Dependencies */
-const sass = require("gulp-sass")(require("sass"));
-const autoprefixer = require("autoprefixer");
-
-/* Images Dependencies */
-// do not update gulp-imagemin
-// gulp-imagemin should be "7.1.0"
-const imagemin = require("gulp-imagemin");
-
-/* JS Dependencies */
-
-/* Other Dependencies */
-
 /* Pre-Config Path */
-if (!isHtmlDev) {
+if ( !isHtmlDev ) {
   config.path.base.wp = `./wp-content/themes/${config.theme}/`;
 
   // config.path.base.wp = './html/'; /* only for php files located in html */
-  ChangeBasePath(config);
+  changeBasePath( config );
   config.path.base.dest = config.path.base.wp;
 }
 
 /* Start Build */
-if (isProd) {
-  console.log("\x1b[32m", "-------------  PRODUCTION -------------");
-  console.log("\x1b[36m", "--------- Sourcemaps DISABLED ---------");
-} else if (isDev) {
-  console.log("\x1b[31m", "------------- DEVELOPMENT -------------");
-  console.log("\x1b[31m", "--------- Sourcemaps ENABLED ---------");
+if ( isProd ) {
+  console.log( '\x1b[32m', '-------------  PRODUCTION -------------' );
+  console.log( '\x1b[36m', '--------- Sourcemaps DISABLED ---------' );
+} else if ( isDev ) {
+  console.log( '\x1b[31m', '------------- DEVELOPMENT -------------' );
+  console.log( '\x1b[31m', '--------- Sourcemaps ENABLED ---------' );
 }
 
-/* Compile and automatically prefix stylesheets */
-// gulp.task( 'styles', () => {
-//   // For best performance, don't add Sass partials to `gulp.src`
-//   const srcPath = config.path.styles.srcFiles,
-//     destPath = config.path.styles.dest;
-//
-//   return gulp.src( srcPath, { base: config.path.styles.src } )
-//     .pipe( customErrorPlumber( 'Error Running Sass' ) )
-//     // .pipe(plugin.newer(destPath))
-//     .pipe( plugin.changed( destPath, { extension: '.css' } ) )
-//     .pipe( plugin.if( isDev, plugin.sourcemaps.init() ) )
-//     // .pipe(plugin.sourcemaps.init())
-//     // TODO: add minify css if PROD
-//     // TODO: add both version of css - minified and normal css and change loading at functions
-//     .pipe( sass( {
-//       // https://github.com/sass/node-sass#options
-//       outputStyle: 'expanded',
-//       precision: 5,
-//       onError: console.error.bind( console, 'Sass error:' )
-//     } ) )
-//     // .pipe(plugin.postcss(processors))
-//     .pipe( plugin.postcss( [ autoprefixer() ] ) )
-//     .pipe( plugin.cleanCss( {
-//       // https://github.com/clean-css/clean-css#how-to-use-clean-css-api
-//       compatibility: '*', // (default) - Internet Explorer 10+ compatibility mode
-//       level: 1 // Optimization levels. The level option can be either 0, 1 (default), or 2, e.g.
-//     } ) )
-//     .pipe( plugin.if( isDev, plugin.sourcemaps.write( 'maps', {
-//       includeContent: true
-//     } ) ) )
-//     // .pipe(plugin.sourcemaps.write('maps', {includeContent: true}))
-//     .pipe( gulp.dest( destPath ) )
-//     .pipe( plugin.filter( '**/*.css' ) )
-//     .pipe( plugin.size( {
-//       showFiles: true,
-//       title: 'task: SCSS && PostCSS'
-//     } ) )
-//     .pipe( browserSync.reload( { stream: true } ) );
-// } );
+// ===== Helper functions =====
+/**
+ * Custom plumber with notifications
+ * @param {string} errTitle - Title for error message
+ */
+function customErrorPlumber(errTitle) {
+  return plumber({
+    errorHandler: notify.onError({
+      title: errTitle || 'Gulp Error',
+      message: 'Error: <%= error.message %>',
+      sound: 'Bottle',
+    }),
+  });
+}
 
-// const gulp = require('gulp');
-// const sass = require('gulp-sass');
-// const autoprefixer = require('autoprefixer');
-// const postcss = require('gulp-postcss');
-// const cleanCss = require('gulp-clean-css');
-// const changed = require('gulp-changed');
-// const sourcemaps = require('gulp-sourcemaps');
-// const browserSync = require('browser-sync').create();
+/**
+ * Update config.path destinations to replace base.dest with base.wp
+ * @param {Object} config - Configuration object with path definitions
+ */
+function changeBasePath(config) {
+  const { base, images, fonts, styles, scripts } = config.path;
 
-// gulp.task("styles", () => {
-//   const srcPath = config.path.styles.srcFiles;
-//   const destPath = config.path.styles.dest;
-//
-//   return gulp
-//     .src(srcPath, { base: config.path.styles.src })
-//     .pipe(customErrorPlumber("Error Running Sass"))
-//     .pipe(plugin.changed(destPath, { extension: ".css" }))
-//     .pipe(plugin.sourcemaps.init())
-//     .pipe(
-//       sass({
-//         outputStyle: "expanded",
-//         precision: 5,
-//         onError: console.error.bind(console, "Sass error:"),
-//       }),
-//     )
-//     .pipe(plugin.postcss([autoprefixer()]))
-//     .pipe(
-//       plugin.cleanCss({
-//         compatibility: "*",
-//         level: 1,
-//       }),
-//     )
-//     .pipe(plugin.sourcemaps.write("maps", { includeContent: true }))
-//     .pipe(gulp.dest(destPath))
-//     .pipe(browserSync.reload({ stream: true }));
-// });
+  // List of keys in config.path that need replacement
+  const keysToUpdate = ["images", "fonts", "styles", "scripts"];
 
-const sorting = require('postcss-sorting');
-const atImport = require('postcss-import');
-const cssNano = require('cssnano');
-const mqpacker = require('@hail2u/css-mqpacker');
-// const autoprefixerCleanup = require('autoprefixer-cleanup');
-const perfectionist = require('perfectionist');
-// const uncss = require('postcss-uncss');
-const pxtorem = require('postcss-pxtorem');
-// const assets = require('postcss-assets');
+  // Replace base.dest with base.wp for all listed keys
+  for (const key of keysToUpdate) {
+    if (config.path[key] && config.path[key].dest) {
+      config.path[key].dest = config.path[key].dest.replace(base.dest, base.wp);
+    }
+  }
 
-// Таск для розробки
-// gulp.task("styles:dev", () => {
-gulp.task("styles", () => {
-  const srcPath = config.path.styles.srcFiles;
-  const destPath = config.path.styles.dest;
+  // Handle destHtml separately
+  if (base.destHtml) {
+    config.path.base.destHtml = base.destHtml.replace(base.dest, base.wp);
+  }
+}
 
+// ===== Styles =====
+export function styles() {
   return gulp
-    .src(srcPath, { base: config.path.styles.src })
-    .pipe(customErrorPlumber("Error Running Sass"))
-    .pipe(plugin.sourcemaps.init())
+    .src(paths.styles.srcFiles, { base: paths.styles.src })
+    .pipe(customErrorPlumber('Error Running Sass'))
+    .pipe(changed(paths.styles.dest, { extension: '.css' }))
+    .pipe(isDev ? sourcemaps.init() : gulp.noop())
     .pipe(
       sass({
-        outputStyle: "expanded",
+        outputStyle: 'expanded',
         precision: 5,
-      }).on('error', sass.logError)
+      })
     )
+    .pipe(postcss([autoprefixer()]))
     .pipe(
-      plugin.postcss([
-        atImport(), // Обробка @import
-        pxtorem({ // Конвертація px в rem
-          rootValue: 16,
-          propList: ['*'],
-          mediaQuery: false
-        }),
-        sorting({ // Сортування властивостей
-          "properties-order": "alphabetical",
-          "unspecified-properties-position": "bottom"
-        }),
-        // autoprefixerCleanup(), // Видалення застарілих префіксів
-        mqpacker({ // Групування медіа-запитів
-          sort: true
-        }),
-        perfectionist({ // Форматування CSS для читабельності
-          indentSize: 2
-        }),
-        cssNano({ // Мініфікація CSS
-          preset: ['advanced', {
-            discardComments: { removeAll: true },
-            mergeIdents: true,
-            reduceIdents: true,
-            zindex: false
-          }]
-        })
-      ])
+      cleanCss({
+        compatibility: '*',
+        level: 1,
+      })
     )
-    // .pipe(
-    //   plugin.cleanCss({
-    //     compatibility: "*",
-    //     level: {
-    //       1: {
-    //         specialComments: 0,
-    //         removeEmpty: true,
-    //         removeWhitespace: true
-    //       },
-    //       2: {
-    //         mergeMedia: true,
-    //         removeEmpty: true,
-    //         removeDuplicateFontRules: true,
-    //         removeDuplicateMediaBlocks: true,
-    //         removeDuplicateRules: true,
-    //         removeUnusedAtRules: true
-    //       }
-    //     }
-    //   })
-    // )
-    .pipe(plugin.sourcemaps.write("maps", { includeContent: true }))
-    .pipe(gulp.dest(destPath))
+    .pipe(isDev ? sourcemaps.write('maps') : gulp.noop())
+    .pipe(gulp.dest(paths.styles.dest))
     .pipe(browserSync.stream());
-});
+}
 
-// Таск для продакшену
-// gulp.task("styles:prod", () => {
-// gulp.task("styles", () => {
-//   const srcPath = config.path.styles.srcFiles;
-//   const destPath = config.path.styles.dest;
-//
-//   return gulp
-//     .src(srcPath, { base: config.path.styles.src })
-//     .pipe(customErrorPlumber("Error Running Sass"))
-//     .pipe(
-//       sass({
-//         outputStyle: "compressed",
-//         precision: 5,
-//       }).on('error', sass.logError)
-//     )
-//     .pipe(
-//       plugin.postcss([
-//         autoprefixer(),
-//         sorting({ // Сортування CSS властивостей
-//           "properties-order": "alphabetical"
-//         })
-//       ])
-//     )
-//     .pipe(
-//       plugin.cleanCss({
-//         compatibility: "*",
-//         level: 2, // Більш агресивна оптимізація
-//       })
-//     )
-//     .pipe(gulp.dest(destPath));
-// });
+// ===== JavaScript =====
+export function scripts() {
+  return gulp
+    .src(paths.scripts.src)
+    .pipe(customErrorPlumber('Error Running Scripts'))
+    .pipe(changed(paths.scripts.dest))
+    .pipe(isDev ? sourcemaps.init() : gulp.noop())
+    .pipe(
+      babel({
+        presets: ['@babel/preset-env'],
+      })
+    )
+    .pipe(uglify())
+    .pipe(isDev ? sourcemaps.write('maps') : gulp.noop())
+    .pipe(gulp.dest(paths.scripts.dest))
+    .pipe(browserSync.stream());
+}
 
-// // Загальний таск, який запускає потрібну версію в залежності від NODE_ENV
-// gulp.task("styles", () => {
-//   const isDev = process.env.NODE_ENV !== 'production';
-//   return gulp.series(isDev ? 'styles:dev' : 'styles:prod')();
-// });
-
-
-
-/* Optimize images */
-// https://github.com/sindresorhus/gulp-imagemin
-gulp.task("image:default", () =>
-  gulp
-    .src(config.path.images.srcImg)
-    .pipe(plugin.changed(config.path.images.dest))
-    .pipe(plugin.bytediff.start())
+// ===== Images =====
+export function imagesOptimize() {
+  return gulp
+    .src(paths.images.srcImg)
+    .pipe(changed(paths.images.dest))
     .pipe(
       imagemin(
-        {
-          interlaced: true,
-          progressive: true,
-          optimizationLevel: 5,
-        },
         [
           imagemin.gifsicle({ interlaced: true }),
           imagemin.mozjpeg({ quality: 82, progressive: true }),
           imagemin.optipng({ optimizationLevel: 5 }),
           imagemin.svgo({
             plugins: [
-              { removeUnknownsAndDefaults: false },
-              { removeViewBox: true },
+              { removeViewBox: false },
               { cleanupIDs: false },
               { removeDimensions: true },
             ],
           }),
         ],
-      ),
+        { verbose: true }
+      )
     )
-    .pipe(
-      plugin.bytediff.stop((data) => {
-        const difference = data.savings > 0 ? " smaller." : " larger.";
+    .pipe(size({ showFiles: true, title: 'Images optimized:' }))
+    .pipe(gulp.dest(paths.images.dest))
+    .pipe(browserSync.stream());
+}
 
-        return `${data.fileName} is ${data.percent}%${difference}`;
-      }),
-    )
-    .pipe(
-      plugin.size({
-        showFiles: true,
-        title: "task:image: ",
-      }),
-    )
-    .pipe(gulp.dest(config.path.images.dest))
-    .pipe(browserSync.reload({ stream: true })),
-);
-
-const spriteSvgConfig = {
-  dest: ".",
-  // 'log': 'verbose',
-  mode: {
-    css: {
-      dest: "assets",
-      sprite: "../img/sprite.svg",
-      render: {
-        scss: {
-          dest: "../scss/sprite.scss",
-        },
-      },
-    },
-  },
-};
-
-/* Make sprite from images */
-gulp.task("image:spriteSVG", () =>
-  gulp
-    .src(`${config.path.images.src}sprites/**/*.svg`)
-    .pipe(customErrorPlumber("Error Running spriteSVG"))
-    .pipe(plugin.svgmin())
-    .pipe(plugin.svgSprite(spriteSvgConfig))
-    .pipe(gulp.dest(config.path.base.src))
-    .pipe(
-      plugin.size({
-        showFiles: true,
-        title: "task: image_sprite: ",
-      }),
-    )
-    .pipe(browserSync.reload({ stream: true })),
-);
-
-/* Convert images to webp */
-gulp.task("image:image2webp", () =>
-  gulp
-    .src(`${config.path.images.dest}/**/*.+(png|jpg|jpeg)`)
-    .pipe(customErrorPlumber("Error Running Webp"))
-    .pipe(
-      plugin.changed(config.path.images.dest, {
-        extension: ".webp",
-      }),
-    )
-    .pipe(plugin.webp())
-    .pipe(gulp.dest(config.path.images.dest)),
-);
-
-/* Copy fonts from assets folder to destination */
-gulp.task("fonts", () =>
-  gulp
-    .src(config.path.fonts.src)
-    .pipe(customErrorPlumber("Error Running Fonts"))
-    .pipe(plugin.newer(config.path.fonts.dest))
-    .pipe(gulp.dest(config.path.fonts.dest))
-    .pipe(
-      plugin.size({
-        showFiles: true,
-        title: "task:fonts",
-      }),
-    )
-    .pipe(browserSync.reload({ stream: true })),
-);
-
-const jsConcat = lazypipe().pipe(plugin.concat, "scripts.js", {
-  newLine: "\n;",
-});
-
-/* Optimize JS scripts */
-
-// const lintBase = (files, options) => {
-//   return src(files)
-//     .pipe($.eslint(options))
-//     .pipe(server.reload({stream: true, once: true}))
-//     .pipe($.eslint.format())
-//     .pipe($.if(!server.active, $.eslint.failAfterError()));
-// }
-// function lint() {
-//   return lintBase('app/scripts/**/*.js', { fix: true })
-//     .pipe(dest('app/scripts'));
-// };
-// function lintTest() {
-//   return lintBase('test/spec/**/*.js');
-// };
-
-// gulp.task( 'scripts', () => gulp.src( config.path.scripts.src )
-//   .pipe( customErrorPlumber( 'Error Running Scripts' ) )
-//   .pipe( plugin.changed( config.path.scripts.dest ) )
-//   .pipe( customErrorPlumber( 'Error Compiling Scripts' ) )
-//   .pipe( plugin.if( isDev, plugin.sourcemaps.init() ) )
-//   .pipe( plugin.babel( {
-//     presets: [ '@babel/preset-env' ]
-//   } ) )
-//   .pipe( plugin.if( [ 'scripts.js' /*,'scripts2.js'*/], jsConcat() ) )
-//   .pipe( plugin.if( '*.js', plugin.uglify() ) )
-//   .pipe( plugin.if( isDev, plugin.sourcemaps.write(
-//     'maps',
-//     { includeContent: true }
-//   ) ) )
-//   .pipe( gulp.dest( config.path.scripts.dest ) )
-//   .pipe( plugin.filter( '**/*.js' ) )
-//   .pipe( plugin.size( {
-//     showFiles: true,
-//     title: 'task:scripts:'
-//   } ) )
-//   .pipe( browserSync.reload( { stream: true } ) )
-// );
-
-gulp.task("scripts", () => {
+// ===== SVG Sprite =====
+export function imagesSprite() {
   return gulp
-    .src(config.path.scripts.src)
-    .pipe(customErrorPlumber("Error Running Scripts"))
-    .pipe(plugin.changed(config.path.scripts.dest))
-    .pipe(customErrorPlumber("Error Compiling Scripts"))
-    .pipe(plugin.sourcemaps.init())
+    .src(`${paths.images.src}sprites/**/*.svg`)
+    .pipe(customErrorPlumber('Error in SVG sprite'))
+    .pipe(svgmin())
     .pipe(
-      plugin.babel({
-        presets: ["@babel/preset-env"],
-      }),
+      svgSprite({
+        mode: {
+          css: {
+            dest: 'assets',
+            sprite: '../img/sprite.svg',
+            render: {
+              scss: { dest: '../scss/sprite.scss' },
+            },
+          },
+        },
+      })
     )
-    .pipe(plugin.uglify())
-    .pipe(plugin.sourcemaps.write("maps", { includeContent: true }))
-    .pipe(gulp.dest(config.path.scripts.dest))
-    .pipe(browserSync.reload({ stream: true }));
-});
+    .pipe(gulp.dest(paths.base.src))
+    .pipe(browserSync.stream());
+}
 
-/* Base Gulp tasks */
-gulp.task(
-  "task:images",
-  gulp.series("image:default", "image:spriteSVG", "image:image2webp"),
-);
+// ===== WebP Conversion =====
+export function imagesWebp() {
+  return gulp
+    .src(`${paths.images.dest}/**/*.+(png|jpg|jpeg)`)
+    .pipe(customErrorPlumber('Error Running WebP'))
+    .pipe(changed(paths.images.dest, { extension: '.webp' }))
+    .pipe(webp())
+    .pipe(gulp.dest(paths.images.dest));
+}
 
-gulp.task("task:images-styles", gulp.series("task:images", "styles"));
+// ===== Fonts =====
+export function fonts() {
+  return gulp
+    .src(paths.fonts.src)
+    .pipe(customErrorPlumber('Error Copying Fonts'))
+    .pipe(newer(paths.fonts.dest))
+    .pipe(gulp.dest(paths.fonts.dest))
+    .pipe(size({ showFiles: true, title: 'Fonts copied:' }))
+    .pipe(browserSync.stream());
+}
 
-gulp.task(
-  "parallel-scripts-images-styles",
-  gulp.parallel("task:images-styles", "scripts", "fonts"),
-);
-
-gulp.task("default", gulp.parallel("task:images-styles", "scripts", "fonts"));
-
-gulp.task("build", gulp.parallel("task:images-styles", "scripts", "fonts"));
-
-/* Gulp watcher */
-gulp.task("watch", () => {
+// ===== Watcher =====
+export function watch() {
   browserSync.init(browserSyncArgs);
 
-  gulp.watch(config.path.base.destHtml).on("change", browserSync.reload);
-
-  gulp.watch(config.path.styles.srcFiles, gulp.series("styles"));
-
-  gulp.watch(config.path.images.srcImg, gulp.series("task:images"));
-
-  gulp.watch(config.path.fonts.src, gulp.series("fonts"));
-
-  gulp.watch(config.path.scripts.src, gulp.series("scripts"));
-});
-
-/* Consolidated development phase task */
-gulp.task("serve", gulp.series("parallel-scripts-images-styles", "watch"));
-
-/* Custom helper functions */
-/* Plumber function for catching errors */
-// https://github.com/mikaelbr/gulp-notify
-function customErrorPlumber(errTitle) {
-  return plugin.plumber({
-    errorHandler: plugin.notify.onError({
-      // Customizing error title
-      title: errTitle || "Error running Gulp",
-      message: "Error: <%= error.message %>",
-      templateOptions: {
-        date: new Date(),
-      },
-      sound: "Bottle",
-    }),
-  });
-}
-module.exports = customErrorPlumber;
-
-function ChangeBasePath(config) {
-  config.path.images.dest = config.path.images.dest.replace(
-    config.path.base.dest,
-    config.path.base.wp,
-  );
-  config.path.fonts.dest = config.path.fonts.dest.replace(
-    config.path.base.dest,
-    config.path.base.wp,
-  );
-  config.path.styles.dest = config.path.styles.dest.replace(
-    config.path.base.dest,
-    config.path.base.wp,
-  );
-  config.path.scripts.dest = config.path.scripts.dest.replace(
-    config.path.base.dest,
-    config.path.base.wp,
-  );
-  config.path.base.destHtml = config.path.base.destHtml.replace(
-    config.path.base.dest,
-    config.path.base.wp,
-  );
+  gulp.watch(paths.base.destHtml).on('change', browserSync.reload);
+  gulp.watch(paths.styles.srcFiles, styles);
+  gulp.watch(paths.images.srcImg, imagesOptimize);
+  gulp.watch(paths.fonts.src, fonts);
+  gulp.watch(paths.scripts.src, scripts);
 }
 
-// ToDo: check gulpfile from facebook https://github.com/facebook/relay
-// ToDo: check good framework https://github.com/wowthemesnet/Wow-Gulp-WP-Starter
-// ToDo: check good framework https://github.com/justcoded/web-starter-kit
+// ===== Combined tasks =====
+export const images = gulp.series(imagesOptimize, imagesSprite, imagesWebp);
+export const build = gulp.parallel(styles, scripts, images, fonts);
+export default gulp.series(build, watch);
 
-// https://www.npmjs.com/package/gulp-sourcemaps
-// https://www.npmjs.com/package/gulp-changed
-// https://www.npmjs.com/package/gulp-newer
-// https://www.npmjs.com/package/cross-env
 
-// https://www.npmjs.com/package/yargs
-// https://github.com/postcss/autoprefixer
-// https://github.com/topics/gulp4
-// https://github.com/topics/gulp
-// https://github.com/luangjokaj/wordpressify
-// https://github.com/topics/wordpress-theme
 
-// TODO:
-// https://www.npmjs.com/search?q=keywords:postcss
-// https://www.npmjs.com/package/dotenv
-// https://www.npmjs.com/search?q=config
-// https://www.npmjs.com/package/configstore
-// https://www.npmjs.com/package/cosmiconfig
-// https://www.npmjs.com/package/uglify-js
-// https://www.npmjs.com/package/terser
-// https://www.npmjs.com/package/svgo
-// https://www.npmjs.com/package/cssnano
-// https://www.npmjs.com/package/csso
-// https://github.com/ben-eb/gulp-csso
-// https://www.npmjs.com/package/stylelint-scss
-// https://www.npmjs.com/package/gulp-reporter
-// https://github.com/adametry/gulp-eslint
-// https://www.npmjs.com/package/chalk
-// https://www.npmjs.com/search?q=gulp%20webfont
 
-// .pipe(plugins.notify("Hello Gulp!"))
-// .pipe(plugins.notify("Found file: <%= file.relative %>!"))

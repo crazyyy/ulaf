@@ -1,6 +1,6 @@
 {
   "domain": "ulaf.ddev.site",
-  "theme": "wp-ulaf",
+  "theme": "ulaf",
   "ssl": {
     "key": ".ddev/traefik/certs/ulaf.key",
     "cert": ".ddev/traefik/certs/ulaf.crt"
