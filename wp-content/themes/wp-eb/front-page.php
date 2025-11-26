@@ -113,94 +113,78 @@
     <main>
         <!-- Hero Section -->
         <section id="home" class="hero-section p-0">
-            <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-                <!-- Carousel Indicators -->
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                
-                <!-- Carousel Items -->
-                <div class="carousel-inner">
-                    <!-- Slide 1 -->
-                    <div class="carousel-item active">
-                        <div class="hero-slide" style="background: linear-gradient(rgba(0, 86, 179, 0.7), rgba(0, 123, 255, 0.7)), url('assets/images/hero-1.jpg') center/cover;">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+            <?php if ( have_rows('slides') ) : $i = 0; ?>
+                <?php while ( have_rows('slides') ) : the_row(); ?>
+                    <button type="button" data-bs-target="#heroCarousel" 
+                        data-bs-slide-to="<?php echo esc_attr($i); ?>"
+                        class="<?php echo $i === 0 ? 'active' : ''; ?>"
+                        aria-label="Slide <?php echo esc_attr($i+1); ?>"
+                        <?php echo $i === 0 ? 'aria-current="true"' : ''; ?>>
+                    </button>
+                    <?php $i++; ?>
+                <?php endwhile; ?>
+            <?php endif; ?>
+        </div>
+
+        <!-- Carousel Items -->
+        <div class="carousel-inner">
+            <?php if ( have_rows('slides') ) : $j = 0; ?>
+                <?php while ( have_rows('slides') ) : the_row(); 
+                    $title     = get_sub_field('title');
+                    $subtitle  = get_sub_field('subtitle');
+                    $button    = get_sub_field('button');
+                    $hyperlink = get_sub_field('hyperlink');
+                    $background = get_sub_field('background');
+                ?>
+                    <div class="carousel-item <?php echo $j === 0 ? 'active' : ''; ?>">
+                        <div class="hero-slide" 
+                             style="background: linear-gradient(rgba(0, 86, 179, 0.7), rgba(0, 123, 255, 0.7)), 
+                                    url('<?php echo esc_url($background['url']); ?>') center/cover;">
                             <div class="container h-100">
                                 <div class="row h-100 align-items-center">
                                     <div class="col-lg-8 col-md-10 mx-auto text-center text-white">
-                                        <h1 class="display-3 fw-bold mb-4 fade-in">Ukrainian League of American Football</h1>
-                                        <p class="lead mb-5 fade-in">Experience the passion, power, and precision of American football in Ukraine. Join us as we build the future of the sport.</p>
-                                        <div class="fade-in">
-                                            <a href="#about" class="btn btn-light btn-lg me-3 mb-3">
-                                                <i class="fas fa-info-circle me-2"></i>Learn More
-                                            </a>
-                                            <a href="#teams" class="btn btn-outline-light btn-lg mb-3">
-                                                <i class="fas fa-users me-2"></i>View Teams
-                                            </a>
-                                        </div>
+                                        <?php if ( $title ) : ?>
+                                            <h1 class="display-3 fw-bold mb-4 fade-in"><?php echo esc_html($title); ?></h1>
+                                        <?php endif; ?>
+                                        
+                                        <?php if ( $subtitle ) : ?>
+                                            <p class="lead mb-5 fade-in"><?php echo esc_html($subtitle); ?></p>
+                                        <?php endif; ?>
+
+                                        <?php if ( $button && $hyperlink ) : ?>
+                                            <div class="fade-in">
+                                                <a href="<?php echo esc_url($hyperlink); ?>" 
+                                                   class="btn btn-light btn-lg me-3 mb-3">
+                                                    <?php echo esc_html($button); ?>
+                                                </a>
+                                            </div>
+                                        <?php endif; ?>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Slide 2 -->
-                    <div class="carousel-item">
-                        <div class="hero-slide" style="background: linear-gradient(rgba(0, 86, 179, 0.7), rgba(0, 123, 255, 0.7)), url('assets/images/hero-2.jpg') center/cover;">
-                            <div class="container h-100">
-                                <div class="row h-100 align-items-center">
-                                    <div class="col-lg-8 col-md-10 mx-auto text-center text-white">
-                                        <h1 class="display-3 fw-bold mb-4 fade-in">Championship Excellence</h1>
-                                        <p class="lead mb-5 fade-in">Watch elite teams compete for glory in Ukraine's premier American football championship.</p>
-                                        <div class="fade-in">
-                                            <a href="#statistics" class="btn btn-light btn-lg me-3 mb-3">
-                                                <i class="fas fa-chart-bar me-2"></i>View Stats
-                                            </a>
-                                            <a href="#news" class="btn btn-outline-light btn-lg mb-3">
-                                                <i class="fas fa-newspaper me-2"></i>Latest News
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Slide 3 -->
-                    <div class="carousel-item">
-                        <div class="hero-slide" style="background: linear-gradient(rgba(0, 86, 179, 0.7), rgba(0, 123, 255, 0.7)), url('assets/images/hero-3.jpg') center/cover;">
-                            <div class="container h-100">
-                                <div class="row h-100 align-items-center">
-                                    <div class="col-lg-8 col-md-10 mx-auto text-center text-white">
-                                        <h1 class="display-3 fw-bold mb-4 fade-in">Join the Action</h1>
-                                        <p class="lead mb-5 fade-in">Be part of Ukraine's growing American football community. Players, fans, and partners welcome.</p>
-                                        <div class="fade-in">
-                                            <a href="#contact" class="btn btn-light btn-lg me-3 mb-3">
-                                                <i class="fas fa-envelope me-2"></i>Get Involved
-                                            </a>
-                                            <a href="#gallery" class="btn btn-outline-light btn-lg mb-3">
-                                                <i class="fas fa-images me-2"></i>Photo Gallery
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Carousel Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </section>
+                <?php $j++; endwhile; ?>
+            <?php endif; ?>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+</section>
+
 
         <!-- About Section -->
         <section id="about" class="about-section section-padding">
