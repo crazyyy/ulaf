@@ -143,17 +143,7 @@ class acfe_module_form_front_render{
             
                 // assign new render
                 $form['render'] = $html;
-            
-            // function render
-            }elseif(is_callable($form['render'])){
-            
-                ob_start();
-                    call_user_func_array($form['render'], array($form));
-                $html = ob_get_clean();
-            
-                // assign new render
-                $form['render'] = $html;
-            
+                
             }
         
             // check render
@@ -182,6 +172,11 @@ class acfe_module_form_front_render{
                 $form['attributes']['submit'] = false;
             }
         
+        }
+        
+        // flexible content dynamic preview
+        if(acfe_is_dynamic_preview()){
+            $form['attributes']['form']['element'] = 'div';
         }
         
         return $form;
@@ -213,13 +208,6 @@ class acfe_module_form_front_render{
         // form id
         if($form['attributes']['form']['id']){
             $atts['id'] = $form['attributes']['form']['id'];
-        }
-        
-        /**
-         * form wrapper open
-         */
-        if(acfe_is_dynamic_preview()){
-            $form['attributes']['form']['element'] = 'div';
         }
         
         $element = $form['attributes']['form']['element'];
