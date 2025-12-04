@@ -22,7 +22,7 @@ if ( !function_exists('cmplz_get_cookiebanner')) {
 }
 if ( ! function_exists( 'cmplz_get_option' ) ) {
 	/**
-	 * Get a Really Simple SSL option by name
+	 * Get a Complianz option by name
 	 *
 	 * @param string $name
 	 * @param bool   $default
@@ -419,8 +419,8 @@ if ( ! function_exists( 'cmplz_get_stats_tool_nice' ) ) {
 				return "Google Tag Manager";
 			case 'matomo-tag-manager':
 				return "Matomo Tag Manager";
-				case 'clarity':
-					return "Clarity";
+			case 'clarity':
+				return "Clarity";
 			default:
 				return __("Not found","complianz-gdpr");
 		}
@@ -649,7 +649,7 @@ if ( ! function_exists( 'cmplz_has_region' ) ) {
 
 if ( ! function_exists( 'cmplz_has_state' ) ) {
 	/**
-	 * Check if this website targest a specific state
+	 * Check if this website targets a specific state
 	 *
 	 * @param string $code
 	 *
@@ -1990,8 +1990,12 @@ if ( ! function_exists( 'cmplz_used_cookies' ) ) {
 			     && !empty( $service->slug )
 			     && $service->slug !== 'unknown-service'
 			) {
-				$link_open = '<a target="_blank" rel="noopener noreferrer nofollow" href="https://cookiedatabase.org/service/' . $service->slug . '/">';
-				$purposeDescription .= ' ' . $link_open . __( 'Read more', "complianz-gdpr" ) . '</a>';
+				// Create descriptive link text that explains what the link is for
+				$link_text = cmplz_sprintf( __( 'Read more about %s', 'complianz-gdpr' ), $service_name );
+				$aria_label = cmplz_sprintf( __( 'Read more about %s service on Cookie Database', 'complianz-gdpr' ), $service_name );
+				
+				$link_open = '<a target="_blank" rel="noopener noreferrer nofollow" href="https://cookiedatabase.org/service/' . $service->slug . '/" aria-label="' . esc_attr( $aria_label ) . '">';
+				$purposeDescription .= ' ' . $link_open . $link_text . '</a>';
 			}
 			if ( count($allPurposes)>1 ){
 				$p_key = array_search(__( 'Purpose pending investigation', 'complianz-gdpr' ), $allPurposes);
@@ -2169,7 +2173,7 @@ if ( ! function_exists( 'cmplz_cdb_reference_in_policy' ) ) {
 }
 
 /**
- * Registrer a translation
+ * Register a translation
  *
  * @param $fieldname
  *

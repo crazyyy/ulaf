@@ -214,10 +214,22 @@ if (!class_exists("cmplz_wsc_onboarding")) {
 			$now             = time();
 			$staged_end      = strtotime( cmplz_wsc::WSC_ONBOARDING_STAGED_END );
 
-			// Set an onboarding date if it doesn't exist, between 120 seconds and 14 days from now.
+			// Set an onboarding date if it doesn't exist.
 			if ( ! $onboarding_date ) {
-				$new_date = $now + wp_rand( 120, 14 * DAY_IN_SECONDS );
-				$this->set_onboarding_date( $now - 10 );
+				// New installation: no signup_date, no dismissals.
+				$signup_date = get_option( 'cmplz_wsc_signup_date', false );
+				$onboarding_dismissed = get_option( 'cmplz_wsc_onboarding_dismissed', false );
+				$websitescan_dismissed = get_option( 'cmplz_wsc_websitescan_dismissed', false );
+				$is_new_installation = ! $signup_date && ! $onboarding_dismissed && ! $websitescan_dismissed;
+				
+				if ( $is_new_installation ) {
+					// New installation: force immediate onboarding.
+					$this->set_onboarding_date( $now - 10 );
+				} else {
+					// Dismissed scenario: use random delay between 120 seconds and 14 days
+					$new_date = $now + wp_rand( 120, 14 * DAY_IN_SECONDS );
+					$this->set_onboarding_date( $new_date );
+				}
 				return;
 			}
 

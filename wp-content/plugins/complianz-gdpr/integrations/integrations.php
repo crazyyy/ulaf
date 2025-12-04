@@ -115,13 +115,13 @@ $cmplz_integrations_list = apply_filters( 'cmplz_integrations', array(
 			'label'                => 'Variation Swatches for WooCommerce',
 			'firstparty_marketing' => false,
 	),
-
+	/*
 	'ultimate-addons-elementor' => array(
 			'constant_or_function' => 'UAEL_FILE',
 			'label'                => 'Ultimate Addons for Elementor - Google Maps',
 			'firstparty_marketing' => false,
 	),
-
+	*/
 	'invisible-recaptcha' => array(
 			'constant_or_function' => 'InvisibleReCaptcha',
 			'label'                => 'Google Invisible reCaptcha voor WordPress',
@@ -585,6 +585,11 @@ $cmplz_integrations_list = apply_filters( 'cmplz_integrations', array(
 	'greenshift' => array(
 		'constant_or_function' => 'GREENSHIFT_DIR_URL',
 		'label'                => 'Greenshift',
+		'firstparty_marketing' => false,
+	),
+	'funnelkit' => array(
+		'constant_or_function' => 'WFFN_VERSION',
+		'label'				   => 'FunnelKit',
 		'firstparty_marketing' => false,
 	),
 ) );

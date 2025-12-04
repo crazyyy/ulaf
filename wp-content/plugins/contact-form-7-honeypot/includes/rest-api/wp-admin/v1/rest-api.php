@@ -61,7 +61,7 @@ class CF7Apps_Rest_API_WP_Admin_V1 extends CF7Apps_Base_Rest_API {
 
 		register_rest_route(
 			'cf7apps/v1',
-			'get-cf7-entries',
+			'/get-cf7-entries',
 			array(
 				'methods'             => 'GET',
 				'callback'            => array( $this, 'get_cf7_entries' ),
@@ -70,8 +70,8 @@ class CF7Apps_Rest_API_WP_Admin_V1 extends CF7Apps_Base_Rest_API {
 		);
 
 		register_rest_route(
-			'cf7apps/v1/',
-			'delete-cf7-entries',
+			'cf7apps/v1',
+			'/delete-cf7-entries',
 			array(
 				'methods'             => 'GET',
 				'callback'            => array( $this, 'delete_cf7_entries' ),
@@ -80,14 +80,24 @@ class CF7Apps_Rest_API_WP_Admin_V1 extends CF7Apps_Base_Rest_API {
 		);
 
 		register_rest_route(
-			'cf7apps/v1/',
-			'get-all-cf7-forms',
+			'cf7apps/v1',
+			'/get-all-cf7-forms',
 			array(
 				'methods'             => 'GET',
 				'callback'            => array( $this, 'get_all_cf7_forms' ),
 				'permission_callback' => array( $this, 'authenticate' ),
 			)
 		);
+
+        register_rest_route(
+            'cf7apps/v1',
+            '/spam-count',
+            array(
+                'methods'             => 'GET',
+                'callback'            => array( $this, 'get_spam_count' ),
+                'permission_callback' => array( $this, 'authenticate' ),
+            )
+        );
     }
 
     /**
@@ -96,6 +106,7 @@ class CF7Apps_Rest_API_WP_Admin_V1 extends CF7Apps_Base_Rest_API {
      * @since 3.0.0
      */
     public function get_menu_items( $request ) {
+        $menu_for        = $request->get_param( 'menu-for' );
         $registered_apps = $this->get_registered_apps();
         $menu_items = array();
 
@@ -106,13 +117,24 @@ class CF7Apps_Rest_API_WP_Admin_V1 extends CF7Apps_Base_Rest_API {
             if( class_exists( $app ) ) {
                 $app_instance = new $app;
 
-                if( $app_instance->has_admin_settings ) {
-                    $apps_with_priority[] = array(
-                        'id' => $app_instance->id,
-                        'title' => $app_instance->title,
-                        'parent_menu' => $app_instance->parent_menu,
-                        'priority' => property_exists($app_instance, 'priority') ? $app_instance->priority : 999
-                    );
+                if ( 'internal-settings' === $menu_for ) {
+                    if ( $app_instance->has_internal_settings ) {
+                        $apps_with_priority[] = array(
+                            'id'          => $app_instance->id,
+                            'title'       => $app_instance->title,
+                            'parent_menu' => $app_instance->parent_menu,
+                            'priority'    => property_exists($app_instance, 'priority') ? $app_instance->priority : 999
+                        );
+                    }
+                } else {
+                    if ( $app_instance->has_admin_settings ) {
+                        $apps_with_priority[] = array(
+                            'id'          => $app_instance->id,
+                            'title'       => $app_instance->title,
+                            'parent_menu' => $app_instance->parent_menu,
+                            'priority'    => property_exists($app_instance, 'priority') ? $app_instance->priority : 999
+                        );
+                    }
                 }
             }
         }
@@ -136,10 +158,10 @@ class CF7Apps_Rest_API_WP_Admin_V1 extends CF7Apps_Base_Rest_API {
      * @since 3.0.0
      */
     public function get_apps( $request ) {
-        $id = $request->get_param( 'id' );
-
-        $registered_apps = $this->get_registered_apps();
-        $apps = array();
+        $id                 = $request->get_param( 'id' );
+        $settings_for       = $request->get_param( 'settings-for' );
+        $registered_apps    = $this->get_registered_apps();
+        $apps               = array();
         $apps_with_priority = array();
 
         // First, collect all apps with their priorities
@@ -148,12 +170,29 @@ class CF7Apps_Rest_API_WP_Admin_V1 extends CF7Apps_Base_Rest_API {
                 $app_instance = new $app;
                 $apps_with_priority[] = array(
                     'app_instance' => $app_instance,
-                    'priority' => property_exists($app_instance, 'priority') ? $app_instance->priority : 999
+                    'priority'     => property_exists($app_instance, 'priority') ? $app_instance->priority : 999
                 );
 
                 // If specific ID is requested, return immediately
                 if( ! empty( $id ) && $app_instance->id == $id ) {
-                    wp_send_json_success( $app_instance->get_settings() );
+                    if ( empty( $settings_for ) ) {
+                        wp_send_json_success( $app_instance->get_settings() );
+                    } else {
+                        if ( 'internal-settings' === $settings_for ) {
+                            if ( $app_instance instanceof CF7Apps_App ) {
+                                if ( $app_instance->has_internal_settings ) {
+                                    $form_id = $request->get_param( 'form-id' );
+                                    $internal_settings = $app_instance->get_internal_settings( $form_id );
+                                    
+                                    // Ensure is_enabled status is included for internal settings
+                                    $global_enabled = $app_instance->get_option( 'is_enabled' );
+                                    $internal_settings['is_enabled'] = $global_enabled;
+                                    
+                                    wp_send_json_success( $internal_settings );
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -191,7 +230,12 @@ class CF7Apps_Rest_API_WP_Admin_V1 extends CF7Apps_Base_Rest_API {
             $settings[$key] = sanitize_text_field( $value );
         }
 
-        $response = cf7apps_save_app_settings( $settings['id'], $settings['app_settings'] );
+        $settings_for = isset( $settings['settings-for'] ) ? $settings['settings-for'] : '';
+        if ( 'internal-settings' === $settings_for ) {
+            $response = cf7apps_save_internal_app_settings( $settings['id'], $settings['form_id'], $settings['app_settings'] );
+        } else {
+            $response = cf7apps_save_app_settings( $settings['id'], $settings['app_settings'] );
+        }
 
         if( $response ) {
             wp_send_json_success( 'Settings Saved' );
@@ -371,6 +415,38 @@ class CF7Apps_Rest_API_WP_Admin_V1 extends CF7Apps_Base_Rest_API {
 
 		wp_send_json_success( $cf7_forms );
 	}
+
+    /**
+     * Get Spam Count | Callback
+     *
+     * @since 3.1.0
+     * @return WP_REST_Response
+     */
+    public function get_spam_count() {
+        $cf7apps_settings = get_option( 'cf7apps_settings', array() );
+        $spam_count       = 0;
+        $install_date     = null;
+        if ( isset( $cf7apps_settings['honeypot']['honeypot_count'] ) ) {
+            $spam_count = intval( $cf7apps_settings['honeypot']['honeypot_count'] );
+        }
+
+        if ( isset( $cf7apps_settings['honeypot']['honeypot_install_date'] ) ) {
+            $install_date = gmdate(
+                get_option( 'date_format' ),
+                $cf7apps_settings['honeypot']['honeypot_install_date']
+            );
+        }
+
+        return rest_ensure_response(
+            array(
+                'success' => true,
+                'data'    => array(
+                    'count' => $spam_count,
+                    'since' => $install_date,
+                ),
+            )
+        );
+    }
 }
 
 new CF7Apps_Rest_API_WP_Admin_V1();

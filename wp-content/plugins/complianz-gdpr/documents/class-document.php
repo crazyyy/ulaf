@@ -1172,13 +1172,12 @@ if ( ! class_exists( "cmplz_document" ) ) {
 		 * @return string
 		 */
 
-		public function accept_link( $atts = array(), $content = null, $tag = ''
-		) {
+		public function accept_link( $atts = array(), $content = null, $tag = '' ) {
 			$atts = array_change_key_case( (array) $atts, CASE_LOWER );
 			ob_start();
 			$atts = shortcode_atts( array( 'text' => false ), $atts, $tag );
-			$accept_text = $atts['text'] ?: __("Click to accept marketing cookies", "complianz-gdpr");
-			$html = '<div class="cmplz-custom-accept-btn cmplz-accept"><a href="#">' . $accept_text . '</a></div>';
+			$accept_text = $atts['text'] ? sanitize_text_field( $atts['text'] ) : __("Click to accept marketing cookies", "complianz-gdpr");
+			$html = '<div class="cmplz-custom-accept-btn cmplz-accept"><a href="#">' . esc_html( $accept_text ) . '</a></div>';
 			echo $html;
 			return ob_get_clean();
 		}
@@ -1688,6 +1687,19 @@ if ( ! class_exists( "cmplz_document" ) ) {
 		 */
 
 		public function get_shortcode_page_id( $type, $region , $cache = true) {
+			/**
+			 * Filter to prevent get_shortcode_page_id function from executing.
+			 *
+			 * Don't use if you need Complianz to generate your privacy and policy documents.
+			 * Return true to stop execution.
+			 *
+			 * @since 7.5.5
+			 *
+			 * @param bool $prevent Whether to prevent function execution. Default false.
+			 */
+			if ( apply_filters( 'cmplz_prevent_get_shortcode_page_id', false ) ) {
+				return false;
+			}
 
 			global $wpdb;
 

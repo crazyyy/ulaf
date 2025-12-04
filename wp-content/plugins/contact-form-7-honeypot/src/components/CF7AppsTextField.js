@@ -1,7 +1,7 @@
 import { __ } from "@wordpress/i18n";
 import CF7AppsHelpText from "./CF7AppsHelpText";
 
-const CF7AppsTextField = ({ label, value, description, onChange, className, placeholder, name, required }) => {
+const CF7AppsTextField = ({ label, value, description, onChange, className, placeholder, name, required, disabled }) => {
     return (
         <div className="cf7apps-form-group cf7apps-settings">
             <div>
@@ -16,6 +16,7 @@ const CF7AppsTextField = ({ label, value, description, onChange, className, plac
                     className={`cf7apps-form-input ${className}`} 
                     placeholder={placeholder}
                     {...required ? { required: true } : {}}
+                    disabled={ disabled }
                 />
             </div>
             <CF7AppsHelpText description={description} />

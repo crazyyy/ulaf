@@ -1,14 +1,14 @@
 === CF7 Apps – [Honeypot and hCAPTCHA for Contact Form 7] ===
-Tags: contact form, anti-spam, spam protection, captcha, honeypot
+Tags: anti-spam, spam protection, captcha, honeypot, cf7 database
 Requires at least: 4.8
 Tested up to: 6.8
-Stable tag: 3.1.0
+Stable tag: 3.2.1
 Requires PHP: 5.6
 Contributors: wpexpertsio
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Add hCaptcha and Honeypot to Contact Form 7 with CF7 Apps. Improve form security, lightweight, and no unnecessary code.
+Add hCaptcha, Honeypot and Redirection to Contact Form 7 with CF7 Apps. Improve form security, lightweight, and no unnecessary code.
 
 == Description ==
 
@@ -26,6 +26,7 @@ Right out of the box, CF7 Apps includes:
 ✅ **Honeypot App**
 ✅ **hCaptcha App**
 ✅ **Database Entries App**
+✅ **Redirection App**
 💡 **[Suggest a Feature](https://cf7apps.com/submit-idea/?utm_source=wp_org&utm_medium=readme&utm_campaign=suggest_a_feature)**
 
 And that’s just the beginning.
@@ -62,7 +63,7 @@ With the CF7 Apps, you can do the following:
 We built CF7 Apps for users who want more power without abandoning the simplicity of Contact Form 7.
 
 ==Contribute or Report Issues==
-Do you have a feature request or bug to report? Contact us via the [official Support Channel.](https://wordpress.org/support/plugin/contact-form-7-honeypot) 
+Do you have a feature request or bug to report? Contact us via the [official Support Channel.](https://wordpress.org/support/plugin/contact-form-7-honeypot)
 
 
 == Installation ==
@@ -90,10 +91,10 @@ While the basic settings should keep most people happy, we've added several filt
 For examples of the above, please see this [recipe Gist](https://gist.github.com/nocean/953b1362b63bd3ecf68c).
 
 
-== Frequently Asked Questions == 
+== Frequently Asked Questions ==
 
 =How do I add hCaptcha to Contact Form 7?=
-Activate the hCaptcha App inside CF7 Apps, enter your site keys, error messages, and save settings. That’s it. Now, you’ll see the hCaptcha tag in your Contact Form 7 form settings. 
+Activate the hCaptcha App inside CF7 Apps, enter your site keys, error messages, and save settings. That’s it. Now, you’ll see the hCaptcha tag in your Contact Form 7 form settings.
 
 =What is Contact Form 7?=
 Contact Form 7 is a long-standing WordPress plugin that lets you build and manage contact forms on your site. It supports multiple forms, customization, and various integrations—all without writing any code.
@@ -142,11 +143,29 @@ CF7 Apps is a third-party plugin and is not officially associated with or endors
 
 == Changelog ==
 
+= 3.2.1 - November 06, 2025 =
+* NEW - Added Feedback SDK.
+* FIX - There was a prompt about saving changes when there were no changes made in the Contact Form. 
+
+= 3.2.0 – October 27, 2025 =
+* NEW: Introduced the Redirection App.
+* IMPROVEMENT: Added a highlighter for CF7 Apps tags within the Contact Form 7 editor.
+* IMPROVEMENT: Added an informational banner in the Entries App settings for better user guidance.
+* FIX: Resolved an issue where the entries’ form name always appeared as “untitled.”
+* FIX: Added spam count display in the Honeypot settings
+
+= 3.1.1 - September 29, 2025 =
+* IMPROVEMENT – Added Collapse Icon On CF7 Apps All Apps Menu
+* IMPROVEMENT - Added validation on CF7 Apps Installation before Contact Form 7
+* FIX – Database Entries Pagination was not working in some cases 
+* FIX - PHP error when upgrading from older versions
+* FIX - Database Entries tab was not visible in some cases
+
 = 3.1.0 - September 17, 2025 =
 * NEW - Introducing Database Entries.
 * IMPROVEMENT - Moved CF7 Apps under Contact Form 7.
 
-= 3.0.1 - Sep 02, 2025 =
+= 3.0.1 - September 02, 2025 =
 * Code Optimization
 
 = 3.0.0 - July 16, 2025 =

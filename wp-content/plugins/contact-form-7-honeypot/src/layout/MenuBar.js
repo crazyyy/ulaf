@@ -1,12 +1,16 @@
 import { useEffect, useState } from "@wordpress/element";
+import { Button, FlexItem } from "@wordpress/components";
 import CF7AppsSkeletonLoader from "../components/CF7AppsSkeletonLoader";
 import { getMenu } from "../api/api";
 import { Accordion, AccordionDetails, AccordionSummary, Typography } from "@mui/material";
+import { ExpandMore, DensityMedium, KeyboardArrowLeft } from "@mui/icons-material";
 import { NavLink } from "react-router";
 
 const MenuBar = (props) => {
     const [isLoading, setIsLoading] = useState(true);
     const [menuItems, setMenuItems] = useState([]);
+    const [ expanded, setExpanded ] = useState( true );
+    const [ menuStyle, setMenuStyle ] = useState( {} );
 
     useEffect( () => {
         async function fetchMenu() {
@@ -42,9 +46,37 @@ const MenuBar = (props) => {
         }
     }
 
+    const handleMenuClick = ( e ) => {
+        e.preventDefault();
+        setExpanded( ! expanded );
+
+        let style;
+        if ( expanded ) {
+            style = { width: '60px' };
+        } else {
+            style = {};
+        }
+
+        setMenuStyle( style );
+    }
+
     return (
         <>
-            <div className="cf7apps-menu-bar">
+            <div
+                className="cf7apps-menu-bar"
+                style={ menuStyle }
+            >
+
+                
+                <Button onClick={ handleMenuClick } className="cf7apps-btn tertiary-secondary cf7apps-expand-menu-btn">
+                    {
+                        expanded ? <KeyboardArrowLeft /> : <DensityMedium />
+                    }
+                </Button>
+
+                <div className="cf7apps-clearfix"></div>
+            
+
             {
                 isLoading
                 ?
@@ -60,14 +92,14 @@ const MenuBar = (props) => {
                     <CF7AppsSkeletonLoader count={1} height={20} />
                 </div>
                 :
-                <div>
+                <div style={ { display: expanded ? 'block' : 'none' } }>
                     <div className="cf7apps-menu-container">
                         {
                             Object.keys(menuItems).map((parentMenu, parentIndex) => {
                                 return (
-                                    <Accordion key={parentIndex} defaultExpanded expanded={true} className="cf7apps-menu-accordion">
+                                    <Accordion key={parentIndex} defaultExpanded className="cf7apps-menu-accordion">
                                         <AccordionSummary
-                                            expandIcon={false}
+                                            expandIcon={ <ExpandMore /> }
                                             >
                                                 <Typography component="span" className="cf7apps-menu-heading">
                                                     { getParentMenu(parentMenu) }

@@ -230,3 +230,20 @@ export async function getAllCF7Forms() {
 
     return json.data;
 }
+
+export async function fetchSpamCount() {
+    const response = await fetch(
+        `${CF7Apps.restURL}cf7apps/v1/spam-count`, {
+            headers: headers,
+            method: 'GET'
+        }
+    );
+
+    if ( ! response.ok ) {
+        return false;
+    }
+
+    const json = await response.json();
+
+    return json.data;
+}

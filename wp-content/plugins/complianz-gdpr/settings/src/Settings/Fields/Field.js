@@ -100,6 +100,12 @@ const COMPONENT_MAP = {
 	'cookiedatabase_sync': {
 		componentPath: 'Settings/Cookiedatabase/CookieDatabaseSyncControl',
 	},
+	'translation_management': {
+		componentPath: 'Settings/Translations/TranslationManagementControl',
+	},
+	'translation_automation': {
+		componentPath: 'Settings/Translations/TranslationAutomationControl',
+	},
 	'documents_menu': {
 		componentPath: 'Settings/DocumentsMenu/DocumentsMenuControl',
 	},

@@ -5,14 +5,58 @@
  * Description: Contact Form 7 Apps is a collection of useful modules and extensions for Contact Form 7.
  * Author: CF7Apps
  * Author URI: https://wpexperts.io/
- * Version: 3.1.0
+ * Version: 3.2.1
  * Text Domain: contact-form-7-honeypot
  * Domain Path: /languages/
+ * Requires Plugins: contact-form-7
  */
+
+
+/** 
+ * Freemius initialization
+ * 
+ * @since 3.2.1
+ */
+if ( ! function_exists( 'cf7h_fs' ) ) {
+    // Create a helper function for easy SDK access.
+    function cf7h_fs() {
+        global $cf7h_fs;
+
+        if ( ! isset( $cf7h_fs ) ) {
+            // Include Freemius SDK.
+            require_once dirname( __FILE__ ) . '/freemius/start.php';
+
+            $cf7h_fs = fs_dynamic_init( array(
+                'id'                  => '21471',
+                'slug'                => 'contact-form-7-honeypot',
+                'type'                => 'plugin',
+                'public_key'          => 'pk_ad07f3a314c2ac84f528f0a53268c',
+                'is_premium'          => false,
+                'has_addons'          => false,
+                'has_paid_plans'      => false,
+                'menu'                => array(
+                    'slug'           => 'cf7apps',
+                    'first-path'     => 'admin.php?page=cf7apps',
+                    'account'        => false,
+                    'contact'        => false,
+                    'support'        => false,
+                ),
+            ) );
+        }
+
+        return $cf7h_fs;
+    }
+
+    // Init Freemius.
+    cf7h_fs();
+    // Signal that SDK was initiated.
+    do_action( 'cf7h_fs_loaded' );
+}
+
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'CF7APPS_VERSION', '3.1.0' );
+define( 'CF7APPS_VERSION', '3.2.1' );
 define( 'CF7APPS_PLUGIN', __FILE__ );
 define( 'CF7APPS_PLUGIN_BASENAME', plugin_basename( CF7APPS_PLUGIN ) );
 define( 'CF7APPS_PLUGIN_NAME', trim( dirname( CF7APPS_PLUGIN_BASENAME ), '/' ) );

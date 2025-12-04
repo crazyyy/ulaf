@@ -32,24 +32,32 @@ const Cf7Entries = () => {
         key: 'selection',
     } );
 
-    useEffect(() => {
-        async function fetchEntries() {
+    const fetchEntries = async ( isInitial = false ) => {
+
+        if ( isInitial ) {
             setLoading(true);
-
-            const entries  = await getCF7Entries();
-            const cf7forms = await getAllCF7Forms();
-
-            setCf7entries( entries.entries );
-            setTotalEntries( entries.total );
-            setForms( cf7forms );
-
-            setLoading( false );
         }
 
-        fetchEntries();
+        const entries  = await getCF7Entries();
+        const cf7forms = await getAllCF7Forms();
+
+        setCf7entries( entries.entries );
+        setTotalEntries( entries.total );
+        setCurrentPage( 1 );
+        setForms( cf7forms );
+
+        if ( isInitial ) {
+            setLoading( false );
+        }
+    }
+
+    useEffect(() => {
+        
+
+        fetchEntries( true );
         const urlParams = new URLSearchParams(window.location.search);
 
-        if (urlParams.get('page') === 'cf7apps' && urlParams.get('tab').startsWith('entries') ) {
+        if ( urlParams.get('page') === 'cf7apps' && urlParams.get('tab') && urlParams.get('tab').startsWith('entries') ) {
             const submenuItems = document.querySelectorAll('#toplevel_page_wpcf7 .wp-submenu li');
             submenuItems.forEach(li => li.classList.remove('current'));
             const entriesMenu = Array.from(document.querySelectorAll('#toplevel_page_wpcf7 .wp-submenu a'))
@@ -72,18 +80,17 @@ const Cf7Entries = () => {
             return;
         }
 
-        setLoading( true );
-
         deleteCF7Entries( [ id ] )
             .then( ( response ) => {
                 if ( response ) {
                     toast.success( __( 'Entry deleted successfully', 'cf7apps' ) );
-                    // Refresh the entries list
-                    getCF7Entries( { page: currentPage, perPage: 10 } )
-                        .then( ( entries ) => {
-                            setCf7entries( entries.entries );
-                            setTotalEntries( entries.total );
-                        } )
+
+                    const newEntries = cf7entries.filter( entry => entry.id !== id );
+                    if ( ! newEntries.length ) {
+                        fetchEntries();
+                    } else {
+                        setCf7entries( newEntries );
+                    }
                 } else {
                     toast.error( __( 'Failed to delete entry', 'cf7apps' ) );
                 }
@@ -115,16 +122,14 @@ const Cf7Entries = () => {
                 .then( ( response ) => {
                     if ( response ) {
                         toast.success( __( 'Entries deleted successfully', 'cf7apps' ) );
-                        // Refresh the entries list
-                        getCF7Entries()
-                            .then( ( entries ) => {
-                                setCf7entries( entries.entries );
-                                setTotalEntries( entries.total );
-                                // Uncheck the select all checkbox
-                                document.querySelectorAll( 'input[type="checkbox"]' ).forEach( checkbox => {
-                                    checkbox.checked = false;
-                                } );
-                            } )
+
+                        const newEntries = cf7entries.filter( entry => ! entries.includes( entry.id ) );
+                        if ( ! newEntries.length ) {
+                            fetchEntries();
+                        } else {
+                            setCf7entries( newEntries );
+                        }
+
                     } else {
                         toast.error( __( 'Failed to delete entries', 'cf7apps' ) );
                     }

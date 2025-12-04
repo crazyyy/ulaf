@@ -4,6 +4,7 @@ import { getCF7Forms } from "../../api/api";
 import { EditOutlined } from "@mui/icons-material";
 import { Button } from "@wordpress/components";
 import CF7AppsSkeletonLoader from "../../components/CF7AppsSkeletonLoader";
+import CF7AppsSpamCount from '../../components/CF7AppsSpamCount';
 
 const CF7AppsHoneypotForms = () => {
     const [cf7forms, setCF7Forms] = useState(false);
@@ -56,6 +57,8 @@ const CF7AppsHoneypotForms = () => {
                         }
                     </tbody>
                 </table>
+
+                <CF7AppsSpamCount />
             </div>
         :
         <>

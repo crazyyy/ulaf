@@ -20,7 +20,7 @@ if ( ! class_exists( "cmplz_scan" ) ) {
 			add_action( 'admin_footer', array( $this, 'run_cookie_scan' ) );
 			add_filter( 'cmplz_do_action', array( $this, 'get_scan_progress' ), 10, 3 );
 			add_filter( 'cmplz_do_action', array( $this, 'reset_scan' ), 11, 3 );
-			add_filter( 'cmplz_every_five_minutes_hook', array( $this, 'background_remote_scan' ), 11, 3 );
+			add_filter( 'cmplz_every_day_hook', array( $this, 'background_remote_scan' ), 11, 3 );
 		}
 
 		static function this() {

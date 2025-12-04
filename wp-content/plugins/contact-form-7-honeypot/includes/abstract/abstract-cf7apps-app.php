@@ -45,6 +45,14 @@ abstract class CF7Apps_App {
     public $has_admin_settings = false;
 
     /**
+     * Has Internal Settings
+     *
+     * @since 3.2.0
+     * @var bool $has_internal_settings Has Internal Settings
+     */
+    public $has_internal_settings = false;
+
+    /**
      * Is Pro
      * 
      * @since 3.0.0
@@ -89,6 +97,16 @@ abstract class CF7Apps_App {
     }
 
     /**
+     * Internal Settings
+     *
+     * @since 3.2.0
+     * @return array
+     */
+    public function internal_settings() {
+        return array();
+    }
+
+    /**
      * Saved Settings
      * 
      * @since 3.0.0
@@ -120,6 +138,28 @@ abstract class CF7Apps_App {
         return false;
     }
 
+    public function get_individual_option( $id, $key = false ) {
+        $settings = get_post_meta( $id, 'cf7apps_settings', true );
+
+        if ( empty( $settings ) ) {
+            return array();
+        }
+
+        if ( isset( $settings[ $this->id ] ) ) {
+            if ( $key ) {
+                if ( isset( $settings[ $this->id ][ $key ] ) ) {
+                    return $settings[ $this->id ][ $key ];
+                } else {
+                    return false;
+                }
+            } else {
+                return $settings[ $this->id ];
+            }
+        }
+
+        return array();
+    }
+
     /**
      * Get Settings
      * 
@@ -147,7 +187,6 @@ abstract class CF7Apps_App {
 
         if( $this->has_admin_settings ) {
             $settings['admin_settings'] = $this->admin_settings();
-            
             if( isset( $this->options[$this->id] ) ) {
                 
                 if( empty( $this->setting_tabs ) ) {
@@ -165,8 +204,7 @@ abstract class CF7Apps_App {
                             else {
                                 $settings['admin_settings']['general']['fields'][$field_key]['value'] = $this->options[$this->id][$field_key];
                             }
-                        }
-                        else {
+                        } else {
                             // Set default value
                             $_field = $settings['admin_settings']['general']['fields'][$field_key];
 
@@ -179,6 +217,39 @@ abstract class CF7Apps_App {
                                 }
                                 else {
                                     $settings['admin_settings']['general']['fields'][$field_key]['value'] = ( isset( $_field['default'] ) ) ? $_field['default'] : '';
+                                }
+                            }
+                        }
+
+                        if ( isset( $field['sub_fields'] ) ) {
+                            foreach ( $field['sub_fields'] as $sub_field_key => $sub_field ) {
+                                if ( array_key_exists( $sub_field_key, $this->options[$this->id] ) ) {
+                                    // If data is saved, set the value
+                                    if ( ( $sub_field['type'] == 'checkbox' || $sub_field['type'] == 'radio' ) && $this->options[$this->id][$sub_field_key] == '1' ) {
+                                        $settings['admin_settings']['general']['fields'][$field_key]['sub_fields'][$sub_field_key]['checked'] = true;
+                                    }
+                                    elseif ( $sub_field['type'] == 'select' ) {
+                                        $settings['admin_settings']['general']['fields'][$field_key]['sub_fields'][$sub_field_key]['selected'] = $this->options[$this->id][$sub_field_key];
+                                    }
+                                    else {
+                                        $settings['admin_settings']['general']['fields'][$field_key]['sub_fields'][$sub_field_key]['value'] = $this->options[$this->id][$sub_field_key];
+                                    }
+                                }
+                                else {
+                                    // Set default value
+                                    $_sub_field = $settings['admin_settings']['general']['fields'][$field_key]['sub_fields'][$sub_field_key];
+
+                                    if( isset( $sub_field['type'] ) ) {
+                                        if ( $sub_field['type'] == 'checkbox' || 'radio' === $sub_field['type'] ) {
+                                            $settings['admin_settings']['general']['fields'][$field_key]['sub_fields'][$sub_field_key]['checked'] = ( isset( $_sub_field['default'] ) && $_sub_field['default'] ) ? true : false;
+                                        }
+                                        elseif ( $sub_field['type'] == 'select' ) {
+                                            $settings['admin_settings']['general']['fields'][$field_key]['sub_fields'][$sub_field_key]['selected'] = ( isset( $_sub_field['default'] ) ) ? $_sub_field['default'] : '';
+                                        }
+                                        else {
+                                            $settings['admin_settings']['general']['fields'][$field_key]['sub_fields'][$sub_field_key]['value'] = ( isset( $_sub_field['default'] ) ) ? $_sub_field['default'] : '';
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -211,7 +282,7 @@ abstract class CF7Apps_App {
                                 $_field = $settings['admin_settings']['general']['fields'][$tab_key][$field_key];
 
                                 if( isset( $field['type'] ) ) {
-                                    if ( $field['type'] == 'checkbox' ) {
+                                    if ( $field['type'] == 'checkbox' || 'radio' === $field['type'] ) {
                                         $settings['admin_settings']['general']['fields'][$tab_key][$field_key]['checked'] = ( isset( $_field['default'] ) && $_field['default'] ) ? true : false;
                                     }
                                     elseif ( $field['type'] == 'select' ) {
@@ -230,7 +301,104 @@ abstract class CF7Apps_App {
 
         $is_enabled = isset( $this->options[$this->id] ) ? array( 'is_enabled' => $this->options[$this->id]['is_enabled'] ) : $default_settings;
         $settings = array_merge( $settings, $is_enabled );
-        
+
+        return $settings;
+    }
+
+    /**
+     * Get Internal Settings
+     *
+     * @since 3.2.0
+     */
+    public function get_internal_settings( $form_id ) {
+        $default_settings = array();
+        $default_settings['is_enabled'] = $this->by_default_enabled;
+        $settings = get_post_meta( $form_id, 'cf7apps_settings', true );
+        if ( empty( $settings ) ) {
+            $settings = array();
+        }
+
+        $this->options = $settings;
+        // merge default settings to option
+        $this->options = array_merge( $this->options, $default_settings );
+
+        $settings = new StdClass;
+        $settings->id = $this->id;
+        $settings->priority = $this->priority;
+        $settings->title = $this->title;
+        $settings->description = $this->description;
+        $settings->icon = $this->icon;
+        $settings->has_internal_settings = $this->has_internal_settings;
+        $settings->is_pro = $this->is_pro;
+        $settings->by_default_enabled = $this->by_default_enabled;
+        $settings->documentation_url = $this->documentation_url;
+        $settings->parent_menu = $this->parent_menu;
+        $settings->setting_tabs = $this->setting_tabs;
+        $settings = (array)$settings;
+
+        if ( $this->has_internal_settings ) {
+            $settings['admin_settings'] = $this->internal_settings();
+            if ( isset( $this->options[ $this->id ] ) ) {
+                $setting_fields = $settings['admin_settings']['general']['fields'];
+
+                foreach ( $setting_fields as $field_key => $field ) {
+                    if ( array_key_exists( $field_key, $this->options[ $this->id ] ) ) {
+                        if ( ( $field['type'] == 'checkbox' ) && $this->options[ $this->id ][ $field_key ] == '1' ) {
+                            $settings['admin_settings']['general']['fields'][ $field_key ]['checked'] = true;
+                        } elseif ( $field['type'] == 'select' ) {
+                            $settings['admin_settings']['general']['fields'][ $field_key ]['selected'] = $this->options[ $this->id ][ $field_key ];
+                        } else {
+                            $settings['admin_settings']['general']['fields'][ $field_key ]['value'] = $this->options[ $this->id ][ $field_key ];
+                        }
+                    } else {
+                        $_field = $settings['admin_settings']['general']['fields'][ $field_key ];
+                        if( isset( $field['type'] ) ) {
+                            if ( $field['type'] == 'checkbox' ) {
+                                $settings['admin_settings']['general']['fields'][ $field_key ]['checked'] = ( isset( $_field['default'] ) && $_field['default'] ) ? true : false;
+                            } elseif ( $field['type'] == 'select' ) {
+                                $settings['admin_settings']['general']['fields'][ $field_key ]['selected'] = ( isset( $_field['default'] ) ) ? $_field['default'] : '';
+                            } else {
+                                $settings['admin_settings']['general']['fields'][ $field_key ]['value'] = ( isset( $_field['default'] ) ) ? $_field['default'] : '';
+                            }
+                        }
+                    }
+
+                    if ( isset( $field['sub_fields'] ) ) {
+                        foreach ( $field['sub_fields'] as $sub_field_key => $sub_field ) {
+                            if ( array_key_exists( $sub_field_key, $this->options[$this->id] ) ) {
+                                // If data is saved, set the value
+                                if ( ( $sub_field['type'] == 'checkbox' || $sub_field['type'] == 'radio' ) && $this->options[$this->id][$sub_field_key] == '1' ) {
+                                    $settings['admin_settings']['general']['fields'][$field_key]['sub_fields'][$sub_field_key]['checked'] = true;
+                                }
+                                elseif ( $sub_field['type'] == 'select' ) {
+                                    $settings['admin_settings']['general']['fields'][$field_key]['sub_fields'][$sub_field_key]['selected'] = $this->options[$this->id][$sub_field_key];
+                                }
+                                else {
+                                    $settings['admin_settings']['general']['fields'][$field_key]['sub_fields'][$sub_field_key]['value'] = $this->options[$this->id][$sub_field_key];
+                                }
+                            }
+                            else {
+                                // Set default value
+                                $_sub_field = $settings['admin_settings']['general']['fields'][$field_key]['sub_fields'][$sub_field_key];
+
+                                if( isset( $sub_field['type'] ) ) {
+                                    if ( $sub_field['type'] == 'checkbox' || 'radio' === $sub_field['type'] ) {
+                                        $settings['admin_settings']['general']['fields'][$field_key]['sub_fields'][$sub_field_key]['checked'] = ( isset( $_sub_field['default'] ) && $_sub_field['default'] ) ? true : false;
+                                    }
+                                    elseif ( $sub_field['type'] == 'select' ) {
+                                        $settings['admin_settings']['general']['fields'][$field_key]['sub_fields'][$sub_field_key]['selected'] = ( isset( $_sub_field['default'] ) ) ? $_sub_field['default'] : '';
+                                    }
+                                    else {
+                                        $settings['admin_settings']['general']['fields'][$field_key]['sub_fields'][$sub_field_key]['value'] = ( isset( $_sub_field['default'] ) ) ? $_sub_field['default'] : '';
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         return $settings;
     }
 }

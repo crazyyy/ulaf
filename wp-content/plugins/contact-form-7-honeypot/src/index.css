@@ -223,6 +223,8 @@ button:focus {
     float: left;
     width: 250px;
     padding-top: 18px;
+    position: relative;
+    transition: all 0.3s;
 }
 
 .cf7apps-right-bar {
@@ -343,7 +345,7 @@ button:focus {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-bottom: 30px;
 }
 
@@ -429,6 +431,24 @@ button:focus {
     display: none;
 }
 
+.cf7apps-settings-radio .cf7apps-app-switch label {
+    display: block;
+}
+
+.cf7apps__radio-container {
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.cf7apps__radio-container:first-child {
+    margin-left: 0;
+}
+
+.cf7apps-settings-radio .cf7apps-form-group {
+    margin-top: 0;
+}
+
 .cf7apps-app-switch .components-form-toggle.is-checked .components-form-toggle__track {
     background-color: #368DB2;
     border-color: #368DB2;
@@ -508,7 +528,8 @@ button:focus {
     width: max-content;
 }
 
-.cf7apps-settings-toggle label {
+.cf7apps-settings-toggle label,
+.cf7apps-settings-radio label {
     font-weight: bold;
 }
 
@@ -764,4 +785,42 @@ select.cf7apps-form-input {
 
 .cf7apps-entries-pagination button[ disabled ] {
     cursor: not-allowed;
+}
+
+.cf7apps-clearfix {
+    clear: both;
+}
+
+.cf7apps-expand-menu-btn {
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border: none !important;
+    color: rgba( 0, 0, 0, 0.54 ) !important;
+    background-color: transparent !important;
+    border-radius: 50px !important;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cf7apps-expand-menu-btn:hover {
+    background-color: #DAE5F1 !important;
+    color: #218BAC !important;
+}
+
+.cf7apps-spam-count {
+    margin-top: 25px;
+}
+
+.cf7apps-spam-count .cf7apps-notice-info {
+    border: none !important;
+    text-align: center;
+}
+
+select.cf7apps-form-input {
+    color: #2271b1 !important;
 }

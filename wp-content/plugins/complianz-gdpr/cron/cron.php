@@ -58,7 +58,7 @@ function cmplz_filter_cron_schedules( $schedules ) {
 	);
 
 	$schedules['cmplz_five_minutes']   = array(
-		'interval' => DAY_IN_SECONDS,
+		'interval' => 5 * MINUTE_IN_SECONDS,
 		'display'  => __( 'Once every five minutes' )
 	);
 
@@ -80,6 +80,8 @@ function cmplz_cron_clean_placeholders() {
 	$dirname = cmplz_upload_dir("placeholders");
 	array_map( 'unlink', glob( "$dirname/*.*" ) );
 }
+
+
 
 
 

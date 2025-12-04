@@ -18,7 +18,7 @@ if ( ! class_exists( "cmplz_sync" ) ) {
 			add_filter( 'cmplz_do_action', array( $this, 'get_sync_data' ), 10, 3 );
 			add_filter( 'cmplz_do_action', array( $this, 'update_cookies_services' ), 10, 3 );
 			add_action( 'plugins_loaded', array( $this, 'do_sync_batch_rest' ), 20 );
-			add_action( 'cmplz_every_five_minutes_hook', array( $this, 'do_sync_batch' ) );
+			add_action( 'cmplz_every_day_hook', array( $this, 'do_sync_batch' ) );
 		}
 
 		static function this() {
@@ -360,7 +360,7 @@ if ( ! class_exists( "cmplz_sync" ) ) {
 						}
 					}
 
-					//use as of 5.3. Each non own domain cookie is added to the "thirdparty" list, which is synced onlly with non own domain cookies.
+					//use as of 5.3. Each non own domain cookie is added to the "thirdparty" list, which is synced only with non own domain cookies.
 					if ( $hasOwnDomainCookies ) {
 						if ( !$c->isOwnDomainCookie ) {
 							if (! in_array( $cookie, $thirdparty_cookies, true ) ) $thirdparty_cookies[] = $cookie->name;

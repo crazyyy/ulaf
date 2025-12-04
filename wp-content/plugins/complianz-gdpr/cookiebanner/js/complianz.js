@@ -1674,7 +1674,6 @@ cmplz_add_event('click', '.cmplz-view-preferences', function(e){
 		
 		// Set focus to the first category when preferences are shown
 		const firstCategory = cmplz_banner.querySelector('.cmplz-categories .cmplz-category');
-		console.log(firstCategory);
 		if (firstCategory) {
 			firstCategory.setAttribute('tabindex', '-1');
 			firstCategory.focus();

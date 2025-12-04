@@ -117,10 +117,12 @@
 	</div>
 
 	<div class="cmplz-links cmplz-information">
-		<a class="cmplz-link cmplz-manage-options cookie-statement" href="#" data-relative_url="#cmplz-manage-consent-container"><?php esc_html_e(__("Manage options","complianz-gdpr"))?></a>
-		<a class="cmplz-link cmplz-manage-third-parties cookie-statement" href="#" data-relative_url="#cmplz-cookies-overview"><?php esc_html_e(__("Manage services","complianz-gdpr"))?></a>
-		<a class="cmplz-link cmplz-manage-vendors tcf cookie-statement" href="#" data-relative_url="#cmplz-tcf-wrapper"><?php esc_html_e(sprintf(__("Manage %s vendors","complianz-gdpr"),'{vendor_count}'))?></a>
-		<a class="cmplz-link cmplz-external cmplz-read-more-purposes tcf" target="_blank" rel="noopener noreferrer nofollow" href="https://cookiedatabase.org/tcf/purposes/"><?php esc_html_e(__("Read more about these purposes","complianz-gdpr"))?></a>
+		<ul>
+			<li><a class="cmplz-link cmplz-manage-options cookie-statement" href="#" data-relative_url="#cmplz-manage-consent-container"><?php esc_html_e(__("Manage options","complianz-gdpr"))?></a></li>
+			<li><a class="cmplz-link cmplz-manage-third-parties cookie-statement" href="#" data-relative_url="#cmplz-cookies-overview"><?php esc_html_e(__("Manage services","complianz-gdpr"))?></a></li>
+			<li><a class="cmplz-link cmplz-manage-vendors tcf cookie-statement" href="#" data-relative_url="#cmplz-tcf-wrapper"><?php esc_html_e(sprintf(__("Manage %s vendors","complianz-gdpr"),'{vendor_count}'))?></a></li>
+			<li><a class="cmplz-link cmplz-external cmplz-read-more-purposes tcf" target="_blank" rel="noopener noreferrer nofollow" href="https://cookiedatabase.org/tcf/purposes/" aria-label="<?php esc_attr_e(__("Read more about TCF purposes on Cookie Database","complianz-gdpr"))?>"><?php esc_html_e(__("Read more about these purposes","complianz-gdpr"))?></a></li>
+		</ul>
 		<?php do_action("cmplz_after_links")?>
 	</div>
 
@@ -135,11 +137,13 @@
 		<?php do_action("cmplz_after_buttons")?>
 	</div>
 
-	<div class="cmplz-links cmplz-documents">
-		<a class="cmplz-link cookie-statement" href="#" data-relative_url="">{title}</a>
-		<a class="cmplz-link privacy-statement" href="#" data-relative_url="">{title}</a>
-		<a class="cmplz-link impressum" href="#" data-relative_url="">{title}</a>
+	
+	<div class="cmplz-documents cmplz-links">
+		<ul>
+			<li><a class="cmplz-link cookie-statement" href="#" data-relative_url="">{title}</a></li>
+			<li><a class="cmplz-link privacy-statement" href="#" data-relative_url="">{title}</a></li>
+			<li><a class="cmplz-link impressum" href="#" data-relative_url="">{title}</a></li>
+		</ul>
 		<?php do_action("cmplz_after_documents")?>
 	</div>
-
 </div>

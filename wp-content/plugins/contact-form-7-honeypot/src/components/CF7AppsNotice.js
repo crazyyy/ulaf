@@ -18,7 +18,10 @@ const CF7AppsNotice = ({ type = 'success', text = '' }) => {
 
     return (
         <div className={`cf7apps-notice cf7apps-notice-${type}`}>
-            <p>{getIcon(type)} {text}</p>
+            <p>
+                {getIcon(type)}
+                <span dangerouslySetInnerHTML={ { __html: text } }></span>
+            </p>
         </div>
     );
 }

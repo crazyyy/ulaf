@@ -100,8 +100,6 @@ if ( ! class_exists( 'CF7Apps_Entries_App' ) && class_exists( 'CF7Apps_App' ) ) 
 				}
 			}
 
-			$data['ip'] = $_SERVER['REMOTE_ADDR'];
-
 			$entry = new CF7Apps_Form_Entries();
 
 			$entry->form_id   = $form->id();
@@ -138,6 +136,16 @@ if ( ! class_exists( 'CF7Apps_Entries_App' ) && class_exists( 'CF7Apps_App' ) ) 
 						'general' => array(
 							'title'       => __( 'Entries Settings', 'cf7apps' ),
 							'description' => __( 'Access and manage all Contact Form 7 submissions in a centralized database with filtering and export options.', 'cf7apps' ),
+
+                            'notice'           => array(
+                                'type'  => 'notice',
+                                'class' => 'info',
+                                'text'  => sprintf(
+                                    __( 'Stuck? Check our Documentation on %s', 'cf7apps' ),
+                                    '<a href="https://cf7apps.com/docs/general/entries"><u>' . __( 'Redirection', 'cf7apps' ) . '</u></a>'
+                                ),
+                            ),
+
 							'is_enabled'  => array(
 								'title' 	  => __( 'Show Entries', 'cf7apps' ),
 								'type'        => 'checkbox',

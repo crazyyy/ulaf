@@ -8,6 +8,7 @@ import { Box, Tab } from "@mui/material";
 import CF7AppsToggle from "../components/CF7AppsToggle";
 import CF7AppsTextField from "../components/CF7AppsTextField";
 import CF7AppsNumberField from "../components/CF7AppsNumberField";
+import CF7AppsRadioField from "../components/CF7AppsRadioField";
 import { Button } from "@wordpress/components";
 import CF7AppsTemplates from "../templates/CF7AppsTemplates";
 import { toast } from 'react-toastify';
@@ -52,7 +53,7 @@ const AppSettings = () => {
                     Object.keys(settingsTabs).map((tabKey, tabIndex) => {
                         Object.keys(settings['fields'][tabKey]).map((fieldKey, fieldIndex) => {
                             if(fieldKey !== 'template') {
-                                if(settings['fields'][tabKey][fieldKey].type === 'text' || settings['fields'][tabKey][fieldKey].type === 'number') {
+                                if( settings['fields'][tabKey][fieldKey].type === 'text' || settings['fields'][tabKey][fieldKey].type === 'number' || 'radio' === settings['fields'][tabKey][fieldKey].type ) {
                                     _formData[fieldKey] = settings['fields'][tabKey][fieldKey].value;
                                 }
                                 else if(settings['fields'][tabKey][fieldKey].type === 'checkbox') {
@@ -67,16 +68,49 @@ const AppSettings = () => {
 
                     Object.keys(settings['fields']).map((fieldKey, fieldIndex) => {
                         if(fieldKey !== 'template') {
-                            if(settings['fields'][fieldKey].type === 'text' || settings['fields'][fieldKey].type === 'number') {
-                                _formData[fieldKey] = settings['fields'][fieldKey].value;
+                            let field = settings['fields'][ fieldKey ];
+                            if( field.type === 'text' || field.type === 'number' || 'radio' === field.type ) {
+                                if ( field.value ) {
+                                    _formData[fieldKey] = field.value;
+                                } else {
+                                    _formData[fieldKey] = field.default;
+                                }
+                            } else if( field.type === 'checkbox' ) {
+                                if ( field.checked ) {
+                                    _formData[fieldKey] = field.checked;
+                                } else {
+                                    _formData[fieldKey] = field.default;
+                                }
                             }
-                            else if(settings['fields'][fieldKey].type === 'checkbox') {
-                                _formData[fieldKey] = settings['fields'][fieldKey].checked;
+
+                            if ( settings['fields'][ fieldKey ].sub_fields ) {
+                                Object.keys( settings['fields'][ fieldKey ].sub_fields ).map( ( subFieldKey ) => {
+                                    const subField = settings['fields'][ fieldKey ].sub_fields[ subFieldKey ];
+                                    if ( subField.type === 'text' || subField.type === 'number' ) {
+                                        if ( subField.value ) {
+                                            _formData[ subFieldKey ] = subField.value;
+                                        } else {
+                                            _formData[ subFieldKey ] = subField.default;
+                                        }
+                                    } else if ( subField.type === 'checkbox' ) {
+                                        if ( subField.checked ) {
+                                            _formData[ subFieldKey ] = subField.checked;
+                                        } else {
+                                            _formData[ subFieldKey ] = subField.default;
+                                        }
+                                    } else if ( 'select' === subField.type ) {
+                                        if ( subField.selected ) {
+                                            _formData[ subFieldKey ] = subField.selected;
+                                        } else {
+                                            _formData[ subFieldKey ] = subField.default;
+                                        }
+                                    }
+                                } );
                             }
                         }
                     });
                 }
-                
+
                 setFormData(_formData);
                 setAppSettings(appSettings);
                 setIsLoading(false);
@@ -145,6 +179,19 @@ const AppSettings = () => {
                         missingRequired = true;
                         requiredMessage = field.required_message || __( 'Please fill all required fields.', 'cf7apps' );
                         return true;
+                    } else {
+
+                        if (field && field.sub_fields) {
+
+
+                            if ( field.sub_fields[ formData[ fieldKey ] ] && field.sub_fields[ formData[ fieldKey ] ].required && (formData[ formData[ fieldKey ] ] === '' || formData[ formData[ fieldKey ] ] === undefined)) {
+                                missingRequired = true;
+                                requiredMessage = field.sub_fields[ formData[ fieldKey ] ].required_message || __( 'Please fill all required fields.', 'cf7apps' );
+                                return true;
+                            }
+
+                        }
+
                     }
                     return false;
                 });
@@ -273,6 +320,7 @@ const AppSettings = () => {
                                                             label={field.title}
                                                             className={className}
                                                             isSelected={formData[fieldKey]}
+                                                            description={ parse( String(field.description) ) }
                                                             onChange={(e) => {
                                                                 setFormData({
                                                                     ...formData,
@@ -360,6 +408,14 @@ const AppSettings = () => {
                                         <p className="cf7apps-help-text">{appSettings.admin_settings['general']['fields'].description}</p>
                                     )
                                 }
+                                if(field.type === 'notice') {
+                                    return (
+                                        <CF7AppsNotice
+                                            type={className}
+                                            text={field.text}
+                                        />
+                                    )
+                                }
                                 else if(field.type === 'text') {
                                     return (
                                         <CF7AppsTextField
@@ -434,6 +490,23 @@ const AppSettings = () => {
                                     return(
                                         <Template />
                                     )
+                                }
+                                else if ( 'radio' === field.type ) {
+                                    let subField = field.sub_fields && field.sub_fields[ formData[ fieldKey ] ];
+                                    subField['value'] = formData[ formData[ fieldKey ] ];
+                                    return (
+                                        <>
+                                            <CF7AppsRadioField
+                                                label={field.title}
+                                                className={className}
+                                                options={field.options}
+                                                name={fieldKey}
+                                                onChange={handleInputChange}
+                                                value={formData[fieldKey]}
+                                                subFields={ subField }
+                                            />
+                                        </>
+                                    );
                                 }
                                 else {
                                     console.log(field);

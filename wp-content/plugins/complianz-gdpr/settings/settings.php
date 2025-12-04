@@ -239,7 +239,7 @@ function cmplz_plugin_admin_scripts() {
 								),
 								admin_url( 'admin-ajax.php' ) ),
 						'dashboard_url'     => cmplz_admin_url(),
-						'upgrade_link'      => 'https://complianz.io/pricing',
+						'upgrade_link'      => cmplz_get_referral_url( 'menu', 'header'),
 						'plugin_url'        => CMPLZ_URL,
 						'license_url'      =>  is_multisite() ? cmplz_main_site_url('#settings/license') : '#settings/license',
 						'blocks'            => cmplz_blocks(),
@@ -368,7 +368,7 @@ function cmplz_add_option_menu() {
 			$submenu['complianz'][] = array(
 					__( 'Upgrade to premium', 'complianz-gdpr' ),
 					apply_filters('cmplz_capability','manage_privacy'),
-					'https://complianz.io/l/pricing'
+					cmplz_get_referral_url( 'menu', 'admin-submenu', 'https://complianz.io/l/pricing' )
 			);
 			if ( isset( $submenu['complianz'][$highest_index] ) ) {
 				if (! isset ($submenu['complianz'][$highest_index][4])) $submenu['complianz'][$highest_index][4] = '';
@@ -490,7 +490,7 @@ function cmplz_do_action($request){
 
 	$data = $request->get_param('data');
 	$nonce = $request->get_param('nonce');
-	if ( empty($nonce) && isset($data['nonce'])) {
+	if ( empty($nonce) && isset($data['nonce'])){
 		$nonce = $data['nonce'];
 	}
 
@@ -521,19 +521,21 @@ function cmplz_do_action($request){
 		default:
 			$data = apply_filters("cmplz_do_action", [], $action, $request);
 	}
-	$data['request_success'] = true;
+	
+	// Only add request_success if it's not already set by the handler
+	if ( ! isset( $data['request_success'] ) ) {
+		$data['request_success'] = true;
+	}
+	
 	if ( ob_get_length() ) {
 		ob_clean();
 	}
 	return $data;
 }
 
-
 /**
- * process the reset
- * @return array
+ * Reset all settings to default
  */
-
 function cmplz_reset_settings() {
 	if ( ! cmplz_user_can_manage() ) {
 		return [];
@@ -997,7 +999,7 @@ function cmplz_rest_api_fields_get(): array {
  *
  * @param mixed  $value
  * @param string $type
- * @oaram string $id
+ * @param string $id
  *
  * @return array|bool|int|string|void
  */

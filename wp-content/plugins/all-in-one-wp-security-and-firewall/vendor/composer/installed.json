@@ -2,17 +2,17 @@
     "packages": [
         {
             "name": "mlocati/ip-lib",
-            "version": "1.20.0",
-            "version_normalized": "1.20.0.0",
+            "version": "1.22.0",
+            "version_normalized": "1.22.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mlocati/ip-lib.git",
-                "reference": "fd45fc3bf08ed6c7e665e2e70562082ac954afd4"
+                "reference": "4e40ffd3bf9989db19403d89c4d8be44b87b8a91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mlocati/ip-lib/zipball/fd45fc3bf08ed6c7e665e2e70562082ac954afd4",
-                "reference": "fd45fc3bf08ed6c7e665e2e70562082ac954afd4",
+                "url": "https://api.github.com/repos/mlocati/ip-lib/zipball/4e40ffd3bf9989db19403d89c4d8be44b87b8a91",
+                "reference": "4e40ffd3bf9989db19403d89c4d8be44b87b8a91",
                 "shasum": ""
             },
             "require": {
@@ -22,7 +22,7 @@
                 "ext-pdo_sqlite": "*",
                 "phpunit/phpunit": "^4.8 || ^5.7 || ^6.5 || ^7.5 || ^8.5 || ^9.5"
             },
-            "time": "2025-02-04T17:30:58+00:00",
+            "time": "2025-10-15T12:35:09+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -60,7 +60,7 @@
             ],
             "support": {
                 "issues": "https://github.com/mlocati/ip-lib/issues",
-                "source": "https://github.com/mlocati/ip-lib/tree/1.20.0"
+                "source": "https://github.com/mlocati/ip-lib/tree/1.22.0"
             },
             "funding": [
                 {
@@ -76,17 +76,17 @@
         },
         {
             "name": "team-updraft/common-libs",
-            "version": "3.0.3",
-            "version_normalized": "3.0.3.0",
+            "version": "3.0.7",
+            "version_normalized": "3.0.7.0",
             "source": {
                 "type": "git",
                 "url": "ssh://git@source.updraftplus.com:20022/team-updraft/common-libs.git",
-                "reference": "cd30bf3b65e2cadcea1cca01deb32f5cd21a0b63"
+                "reference": "30a5b39a3043cc12a6e1358183682d24376b3fdd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://source.updraftplus.com/api/v4/projects/28/packages/composer/archives/team-updraft/common-libs.zip?sha=cd30bf3b65e2cadcea1cca01deb32f5cd21a0b63",
-                "reference": "cd30bf3b65e2cadcea1cca01deb32f5cd21a0b63",
+                "url": "https://source.updraftplus.com/api/v4/projects/28/packages/composer/archives/team-updraft/common-libs.zip?sha=30a5b39a3043cc12a6e1358183682d24376b3fdd",
+                "reference": "30a5b39a3043cc12a6e1358183682d24376b3fdd",
                 "shasum": ""
             },
             "require-dev": {
@@ -109,6 +109,25 @@
             ],
             "description": "These are the common libs used across all of our projects",
             "install-path": "../team-updraft/common-libs"
+        },
+        {
+            "name": "team-updraft/lib-central",
+            "version": "1.25.6",
+            "version_normalized": "1.25.6.0",
+            "source": {
+                "type": "git",
+                "url": "ssh://git@source.updraftplus.com:20022/team-updraft/lib-central.git",
+                "reference": "888161bd56e469a660c1c3607d9b16d82aead64d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://source.updraftplus.com/api/v4/projects/106/packages/composer/archives/team-updraft/lib-central.zip?sha=888161bd56e469a660c1c3607d9b16d82aead64d",
+                "reference": "888161bd56e469a660c1c3607d9b16d82aead64d",
+                "shasum": ""
+            },
+            "type": "library",
+            "installation-source": "dist",
+            "install-path": "../team-updraft/lib-central"
         }
     ],
     "dev": false,

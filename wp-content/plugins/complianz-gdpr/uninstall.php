@@ -142,7 +142,9 @@ if (isset($cmplz_settings['clear_data_on_uninstall']) && $cmplz_settings['clear_
 		'cmplz_wsc_checks_last_detections',
 		'cmplz_wsc_checks_last_mail_sent',
 		'cmplz_wsc_checks_last_mail_sent_error',
-	];
+        'cmplz_translation_cron_interval',
+        'cmplz_translation_errors'
+    ];
 
 
     foreach ($options as $option_name) {
@@ -183,6 +185,9 @@ if (isset($cmplz_settings['clear_data_on_uninstall']) && $cmplz_settings['clear_
         '_transient_timeout_complianz_%',
         '_transient_cmplz_dn_notifications_%',
         '_transient_timeout_cmplz_dn_notifications_%',
+        '_transient_cmplz_translation_fetched_%',
+        '_transient_cmplz_plugin_update_check_%',
+        '_transient_timeout_cmplz_plugin_update_check_%'
     ];
 
     foreach ($transients as $transient) {

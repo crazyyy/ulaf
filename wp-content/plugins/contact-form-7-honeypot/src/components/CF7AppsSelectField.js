@@ -1,7 +1,7 @@
 import { __ } from "@wordpress/i18n";
 import CF7AppsHelpText from "./CF7AppsHelpText";
 
-const CF7AppsSelectField = ({ label, selected, description, onChange, className, options, name }) => {
+const CF7AppsSelectField = ({ label, selected, description, onChange, className, options, name, disabled }) => {
     return (
         <div className="cf7apps-form-group cf7apps-settings">
             <div>
@@ -13,6 +13,7 @@ const CF7AppsSelectField = ({ label, selected, description, onChange, className,
                     name={name}
                     onChange={onChange}
                     defaultValue={selected}
+                    disabled={disabled}
                 >
                     {
                         Object.keys(options).map((key, index) => {
