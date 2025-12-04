@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-  <main class="main-content col-12" itemscope itemprop="mainContentOfPage">
+  <main class="main-content" itemscope itemprop="mainContentOfPage">
     <div class="row">
 
       <section class="section col-9">

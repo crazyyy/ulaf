@@ -1,0 +1,41 @@
+.news {
+    padding: 40px 0;
+
+    &__title {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .news-item {
+        margin-bottom: 40px;
+
+        &__img {
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        &__title {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        &__button {
+            text-decoration: none;
+            color: #0066cc;
+            border-bottom: 1px solid transparent;
+
+            &:hover {
+                border-color: #0066cc;
+            }
+        }
+    }
+
+    &__more {
+        text-align: center;
+
+        &-link {
+            color: #003366;
+            font-weight: 600;
+        }
+    }
+}

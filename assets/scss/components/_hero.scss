@@ -1,0 +1,25 @@
+.hero {
+    position: relative;
+
+    &__slide {
+        position: relative;
+
+        &-img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__content {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        background: rgba(0,0,0,0.5);
+        padding: 15px;
+        color: #fff;
+    }
+
+    &__title {
+        font-size: 28px;
+    }
+}

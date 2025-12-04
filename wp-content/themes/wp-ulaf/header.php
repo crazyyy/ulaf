@@ -43,7 +43,7 @@
 <body <?php body_class(); ?> itemscope itemtype="https://schema.org/WebPage">
   <?php wp_body_open(); ?>
 
-  <div class="container">
+  <div class="container-full">
     <div class="row">
 
       <header id="masthead" class="<?php echo esc_attr($wrapper_classes); ?>" role="banner" itemscope itemtype="https://schema.org/WPHeader">
