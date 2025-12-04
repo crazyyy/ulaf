@@ -1,7 +1,6 @@
 <?php get_header(); ?>
-  <main class="container" itemscope itemprop="mainContentOfPage">
-    <div class="row">
-    <section class="section col-9">
+  <main class="main-content" itemscope itemprop="mainContentOfPage">
+    <section class="section">
       <div class="content-container">
         <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
@@ -29,6 +28,6 @@
     </section>
 
     <?php get_sidebar(); ?>
-</div>
+    
   </main>
 <?php get_footer(); ?>
