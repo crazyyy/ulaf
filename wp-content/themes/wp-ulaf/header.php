@@ -5,7 +5,7 @@
    * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
    */
 
-  $wrapper_classes  = 'site-header';
+  $wrapper_classes  = 'site-header col-12';
   $wrapper_classes .= has_custom_logo() ? ' has-logo' : '';
 ?>
 <!doctype html>
@@ -36,29 +36,34 @@
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
-  
+
   <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?> itemscope itemtype="https://schema.org/WebPage">
   <?php wp_body_open(); ?>
 
-    <header id="masthead" class="<?php echo esc_attr($wrapper_classes); ?>" role="banner" itemscope itemtype="https://schema.org/WPHeader">  
-        <!-- Navigation -->
-        <div class="navbar" role="navigation">
-            <div class="nav-container">
-                <?php $logo_id = get_theme_mod( 'dark_logo_setting' );
-                  if ( $logo_id ) {
-                    $logo_url = wp_get_attachment_image_url( $logo_id, 'full' );
-                    echo '<img src="' . esc_url( $logo_url ) . '" alt="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '">';
-                  } elseif (function_exists('the_custom_logo')) {
-                    the_custom_logo();
-                  }
-                ?>
-                <nav class="header-nav" role="navigation">   
-                  <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
-                </nav>
-                <button class="mobile-menu-toggle">☰</button>
-            </div>
-        </div>
-    </header>
+  <div class="container">
+    <div class="row">
+
+      <header id="masthead" class="<?php echo esc_attr($wrapper_classes); ?>" role="banner" itemscope itemtype="https://schema.org/WPHeader">
+          <!-- Navigation -->
+          <div class="navbar" role="navigation">
+              <div class="nav-container">
+                  <?php $logo_id = get_theme_mod( 'dark_logo_setting' );
+                    if ( $logo_id ) {
+                      $logo_url = wp_get_attachment_image_url( $logo_id, 'full' );
+                      echo '<img src="' . esc_url( $logo_url ) . '" alt="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '">';
+                    } elseif (function_exists('the_custom_logo')) {
+                      the_custom_logo();
+                    }
+                  ?>
+                  <nav class="header-nav" role="navigation">
+                    <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
+                  </nav>
+                  <button class="mobile-menu-toggle">☰</button>
+              </div>
+          </div>
+      </header>
+
+

@@ -13,16 +13,8 @@
 @use "fonts/font_roboto";
 @use "print";
 
-// Import Bootstrap functions and variables first (required for grid)
-// @use "../../node_modules/bootstrap/scss/functions";
-// @use "../../node_modules/bootstrap/scss/variables";
-// @use "../../node_modules/bootstrap/scss/mixins";
-// Import only the grid system
-// @use "../../node_modules/bootstrap/scss/grid";
-@use "../../node_modules/bootstrap/dist/css/bootstrap-grid.css";
-
 // ** Rescale components with RFS | https://github.com/twbs/rfs | https://codepen.io/MartijnCuppens/pen/vqaEBG ** //
-@use "../../node_modules/rfs/scss" as rfs; // @include rfs.rfs(26px, font-size);
+// @use "../../node_modules/rfs/scss" as rfs; // @include rfs.rfs(26px, font-size);
 
 // ** Grid Debugger ** //
 //[class*=col-] {
@@ -65,20 +57,17 @@ h3,
 h4,
 h5,
 h6 {
-  //font-size: variables.$base-font-size;
-  @include rfs.rfs(variables.$base-font-size, font-size);
+  font-size: variables.$base-font-size;
   font-family: variables.$heading-font-family;
   line-height: variables.$heading-line-height;
-  //margin: 0 0 variables.$small-spacing;
-  @include rfs.rfs(0 0 variables.$small-spacing, margin);
+  margin: 0 0 variables.$small-spacing;
 }
 
 p,
 pre,
 img,
 picture {
-  //margin: 0 0 variables.$small-spacing;
-  @include rfs.rfs(0 0 variables.$small-spacing, margin);
+  margin: 0 0 variables.$small-spacing;
   max-width: 100%;
 }
 
@@ -99,8 +88,7 @@ a {
 }
 
 hr {
-  //margin: 0 0 variables.$small-spacing;
-  @include rfs.rfs(0 0 variables.$small-spacing, margin);
+  margin: 0 0 variables.$small-spacing;
   border-bottom: variables.$base-border;
 }
 
@@ -2557,3 +2545,6 @@ section {
   }
 }
 
+.sp-header-sponsors {
+  display: none !important;
+}

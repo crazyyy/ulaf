@@ -5,7 +5,7 @@
   *  Custom functions, support, custom post types and more.
 */
 
-const WPEB_VERSION = '2024.07.03';
+const WPEB_VERSION = '2025.12.04';
 define('WPEB_TEMPLATE_URL',   get_template_directory_uri() );
 define('WPEB_TEMPLATE_PATH',  get_template_directory() );
 
