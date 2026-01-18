@@ -31,6 +31,8 @@ pipeline {
 
                         ssh -o IdentitiesOnly=yes ${SSH_USER}@${SSH_HOST} -i ${KEYFILE} << EOF
                         set -e
+                        ssh-agent -s
+                        ssh-add ~/.ssh/id_ed25519
                         cd /srv/www/ulaf
                         git pull
                         rsync -av --delete ${REPO_PATH}/ ${DEPLOY_PATH}/
