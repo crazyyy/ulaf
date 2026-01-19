@@ -26,31 +26,31 @@ pipeline {
                     )
                 ]) {
                     sh '''
+                    set -e
+
+                    mkdir -p ~/.ssh
+                    chmod 700 ~/.ssh
+
+                    ssh-keyscan -H ${SSH_HOST} >> ~/.ssh/known_hosts
+
+                    ssh \
+                    -i "$SSH_KEY" \
+                    -o IdentitiesOnly=yes \
+                    -o StrictHostKeyChecking=accept-new \
+                    ${SSH_USER}@${SSH_HOST} << EOF
+
                         set -e
 
-                        mkdir -p ~/.ssh
-                        chmod 700 ~/.ssh
+                        cd ${GIT_DIR}
+                        git pull --ff-only
 
-                        ssh-keyscan -H ${SSH_HOST} >> ~/.ssh/known_hosts
+                        sudo rsync -av --delete \
+                            --exclude-from=.rsyncignore \
+                            ${GIT_DIR}/ \
+                            ${DEPLOY_DIR}
 
-                        ssh \
-                        -i "$SSH_KEY" \
-                        -o IdentitiesOnly=yes \
-                        -o StrictHostKeyChecking=accept-new \
-                        ${SSH_USER}@${SSH_HOST} << EOF
-
-                            set -e
-
-                            cd ${GIT_DIR}
-                            git pull --ff-only
-
-                            sudo rsync -av --delete \
-                                --exclude-from=.rsyncignore \
-                                ${GIT_DIR}/ \
-                                ${DEPLOY_DIR}
-
-                            sudo chown -R www:www ${DEPLOY_DIR}
-                        EOF
+                        sudo chown -R www:www ${DEPLOY_DIR}
+                    EOF
                     '''
                 }
             }
