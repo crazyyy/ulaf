@@ -2,11 +2,11 @@ pipeline {
     agent any
 
     environment {
-        SSH_HOST        = "159.89.7.216"
+        SSH_HOST        = "cpdb.pp.ua"
         SSH_USER        = "jenkins"
 
         GIT_DIR         = "/srv/www/ulaf"
-        DEPLOY_DIR      = "/srv/www/ulaf2"
+        DEPLOY_DIR      = "/www/wwwroot/ulaf.com.ua"
 
         SSH_CREDENTIAL  = "ulaf-cpdb"
     }
