@@ -41,14 +41,14 @@ pipeline {
 
                             set -e
 
-                            cd /srv/www/ulaf
+                            cd ${GIT_DIR}
                             git pull --ff-only
 
-                            rsync -av --delete \
-                                /srv/www/ulaf/ \
-                                /srv/www/ulaf2/
+                            sudo rsync -av --delete \
+                                ${GIT_DIR}/ \
+                                ${DEPLOY_DIR}
 
-                            chown -R www:www /srv/www/ulaf2
+                            sudo chown -R www:www ${DEPLOY_DIR}
                         EOF
                     '''
                 }
