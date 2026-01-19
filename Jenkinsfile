@@ -34,10 +34,10 @@ pipeline {
                         ssh-keyscan -H ${SSH_HOST} >> ~/.ssh/known_hosts
 
                         ssh \
-                          -i "$SSH_KEY" \
-                          -o IdentitiesOnly=yes \
-                          -o StrictHostKeyChecking=yes \
-                          ${SSH_USER}@${SSH_HOST} << 'EOF'
+                        -i "$SSH_KEY" \
+                        -o IdentitiesOnly=yes \
+                        -o StrictHostKeyChecking=accept-new \
+                        ${SSH_USER}@${SSH_HOST} << EOF
 
                             set -e
 
