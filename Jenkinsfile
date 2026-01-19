@@ -45,6 +45,7 @@ pipeline {
                             git pull --ff-only
 
                             sudo rsync -av --delete \
+                                --exclude-from=.rsyncignore \
                                 ${GIT_DIR}/ \
                                 ${DEPLOY_DIR}
 
