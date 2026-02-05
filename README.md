@@ -328,3 +328,14 @@ sudo chown -R www:www ./
 wp search-replace "vinwolves.ddev.site" "vinwolves.org" --all-tables
 
 wp db import ./DB/db.sql
+
+
+## Examples 
+
+https://www.oxfordsaints.com/
+
+https://www.themeboy.com/showcase/
+
+https://demo.themeboy.com/sportspress/rookie-plus/basketball
+
+https://demo.themeboy.com/sportspress/courtside/basketball

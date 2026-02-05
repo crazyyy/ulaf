@@ -1,0 +1,57 @@
+/* Widget - Divider */
+div.widget_boldthemes_divider_widget {
+	line-height: inherit;
+	margin: 0;
+	pointer-events: none;
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+
+	&:first-child span {
+		margin-left: 0 !important;
+	}
+	
+	> span {
+		display: block;
+		opacity: .3;
+		line-height: inherit;
+		height: 60px;
+
+		&:after {
+			content: "";
+			display: block;
+			width: 1px;
+			height: 100%;
+			background: currentColor;
+		}
+
+		/* Spacing around */
+		&.boldthemes_divider_widget_spacing_round_small {
+			margin-left: 0.5rem;
+			margin-right: 0.5rem;
+			.sidebar-position-right &, .btMenuVertical & {
+				margin: 0;
+				margin-top: 0.5rem;
+				margin-bottom: 0.5rem;
+			}
+		}
+		&.boldthemes_divider_widget_spacing_round_normal {
+			margin-left: 1rem;
+			margin-right: 1rem;
+		}
+		&.boldthemes_divider_widget_spacing_round_medium {
+			margin-left: 1.5rem;
+			margin-right: 1.5rem;
+		}
+		&.boldthemes_divider_widget_spacing_round_large {
+			margin-left: 3rem;
+			margin-right: 3rem;
+		}
+	}
+}
+
+.bt-header-responsive-inactive .site-header .site-header-top-bar {
+	.widget_boldthemes_divider_widget span {
+		max-height: calc(var(--topbar-height) - 0.125rem);
+	}
+}

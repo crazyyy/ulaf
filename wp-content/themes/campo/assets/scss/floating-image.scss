@@ -1,0 +1,96 @@
+/* Floating image 
+--------------------------------------------------- */
+.bt_bb_floating_image {
+	position: absolute;
+	user-select: none;
+
+	/* Position */
+	&.bt_bb_floating_image_vertical_position_top {
+		top: 0px;
+	}
+	&.bt_bb_floating_image_vertical_position_middle {
+		top: 50%;
+		bottom: auto;
+		transform: translateY(-50%);
+	}
+	&.bt_bb_floating_image_vertical_position_bottom {
+		bottom: 0px;
+	}
+	&.bt_bb_floating_image_horizontal_position_left {
+		left: 0px;
+	}
+	&.bt_bb_floating_image_horizontal_position_center {
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+	}
+	&.bt_bb_floating_image_horizontal_position_right {
+		right: 0px;
+	}
+	&.bt_bb_floating_image_animation_style_ease_out {
+		.bt_bb_floating_image_image {
+			transition: transform 1200ms ease-out;
+		}
+	}
+	&.bt_bb_floating_image_animation_style_ease_out_sine {
+		.bt_bb_floating_image_image {
+			transition: transform 1200ms ease-out-sine;
+		}
+	}
+	&.bt_bb_floating_image_animation_style_ease_in {
+		.bt_bb_floating_image_image {
+			transition: transform 1200ms ease-in;
+		}
+	}
+	&.bt_bb_floating_image_animation_style_ease_in_sine {
+		.bt_bb_floating_image_image {
+			transition: transform 1200ms ease-in-sine;
+		}
+	}
+	&.bt_bb_floating_image_animation_style_ease_in_out {
+		.bt_bb_floating_image_image {
+			transition: transform 1200ms ease-in-out;
+		}
+	}
+	&.bt_bb_floating_image_animation_style_ease_in_out_sine {
+		.bt_bb_floating_image_image {
+			transition: transform 1200ms ease-in-out-sine;
+		}
+	}
+	&.bt_bb_floating_image_animation_style_ease_in_out_back {
+		.bt_bb_floating_image_image {
+			transition: transform 1200ms ease-in-out-back;
+		}
+	}
+	.bt_bb_floating_image_image {
+		transform: translateY(0px);
+		transition: transform 1200ms ease-out;
+		&:nth-of-type(5n + 2) {
+			transition-duration: 1400ms;
+		}
+		&:nth-of-type(5n + 3) {
+			transition-duration: 1600ms;
+		}
+		&:nth-of-type(5n + 4) {
+			transition-duration: 1800ms;
+		}
+	}
+
+}
+
+/* Animation duration */
+$anim_durations: 0, 100, 200, 300, 400, 500, 600, 700, 800, 900, 100, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2500, 3000, 3500, 4000, 5000, 6000;
+@each $anim_duration in $anim_durations {
+	.bt_bb_floating_image_animation_duration_#{$anim_duration}.bt_bb_floating_image .bt_bb_floating_image_image {
+		transition-duration: #{$anim_duration}ms;
+	}
+}
+
+/* Animation delay */
+$anim_delays: 0, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000;
+@each $anim_delay in $anim_delays {
+	.bt_bb_floating_image_animation_delay_#{$anim_delay}.bt_bb_floating_image .bt_bb_floating_image_image {
+		transition-delay: #{$anim_delay}ms;
+	}
+}

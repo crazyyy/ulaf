@@ -1,0 +1,1828 @@
+/* Canvas Editor Premium Styles */
+/* Variables centralized in variables.css - DO NOT duplicate here */
+
+/* =========================================
+   FULL-WIDTH EDITOR MODE - Collapse WP Sidebar
+   Like Elementor/Slider Revolution
+   ========================================= */
+
+/* Hide WordPress Admin Menu (Sidebar) */
+#adminmenumain,
+#adminmenuback,
+#adminmenuwrap {
+  display: none !important;
+  width: 0 !important;
+}
+
+/* Expand content area to full width */
+#wpcontent,
+#wpbody,
+#wpbody-content {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+/* Hide WP Admin Bar for cleaner look (optional) */
+.mgwpp-canvas-editor-wrap ~ #wpadminbar,
+body.wp-admin #wpadminbar {
+  display: none !important;
+}
+
+html.wp-toolbar {
+  padding-top: 0 !important;
+}
+
+#wpfooter {
+  display: none !important;
+}
+
+/* Layout & Reset */
+.mgwpp-canvas-editor-wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-left: 0; /* No offset needed when sidebar hidden */
+  background: var(--mg-bg-dark);
+  color: var(--mg-text-main);
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+}
+
+.mgwpp-canvas-editor-wrap * {
+  box-sizing: border-box;
+}
+
+/* Header */
+.mgwpp-canvas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+  background: var(--mg-bg-panel);
+  border-bottom: 1px solid var(--mg-border);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.mgwpp-canvas-header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.mgwpp-back-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: 1px solid var(--mg-border);
+  border-radius: var(--mg-radius);
+  color: var(--mg-text-muted);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.mgwpp-back-btn:hover {
+  background: var(--mg-border);
+  color: var(--mg-text-main);
+}
+
+#mgwpp-canvas-title {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--mg-radius);
+  color: var(--mg-text-main);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 12px;
+  min-width: 250px;
+  transition: all 0.2s;
+}
+
+#mgwpp-canvas-title:hover,
+#mgwpp-canvas-title:focus {
+  background: var(--mg-bg-card);
+  border-color: var(--mg-border);
+  outline: none;
+}
+
+.mgwpp-canvas-header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Header Divider */
+.mgwpp-header-divider {
+  width: 1px;
+  height: 24px;
+  background: var(--mg-border);
+  margin: 0 4px;
+}
+
+/* Buttons */
+.mgwpp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border-radius: var(--mg-radius);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+  gap: 8px;
+}
+
+.mgwpp-btn-primary {
+  background: var(--mg-primary);
+  color: #fff;
+}
+
+.mgwpp-btn-primary:hover:not(:disabled) {
+  background: var(--mg-primary-hover);
+  transform: translateY(-1px);
+}
+
+.mgwpp-btn-secondary {
+  background: var(--mg-bg-card);
+  border: 1px solid var(--mg-border);
+  color: var(--mg-text-main);
+}
+
+.mgwpp-btn-secondary:hover:not(:disabled) {
+  background: var(--mg-border);
+}
+
+.mgwpp-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.mgwpp-btn-icon {
+  width: 36px;
+  padding: 0;
+}
+
+/* Main Editor Area */
+.mgwpp-canvas-main {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Panels */
+.mgwpp-canvas-panel {
+  width: 280px;
+  background: var(--mg-bg-panel);
+  border-right: 1px solid var(--mg-border);
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+  flex-shrink: 0; /* Prevent shrinking below 0 */
+}
+
+/* Right Panel specific */
+.mgwpp-panel-right {
+  border-right: none;
+  border-left: 1px solid var(--mg-border);
+}
+
+/* Collapsed State */
+.mgwpp-canvas-panel.collapsed {
+  width: 0;
+  border-width: 0; /* Hide border when collapsed */
+  padding: 0;
+  opacity: 0;
+}
+
+/* Icon Button Style (for Toggles) */
+.mgwpp-icon-btn {
+  width: 36px;
+  height: 36px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--mg-text-muted);
+  border-radius: var(--mg-radius);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.mgwpp-icon-btn:hover {
+  background: var(--mg-accent-light);
+  color: var(--mg-text-main);
+}
+.mgwpp-icon-btn:active {
+  background: var(--mg-accent-light);
+}
+
+/* Center Area */
+.mgwpp-canvas-center {
+  flex: 1;
+  background: var(--mg-bg-dark);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Light mode: Use a subtle grid pattern for canvas area */
+.light-theme .mgwpp-canvas-center {
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px), #f0f0f0;
+  background-size: 20px 20px;
+}
+.mgwpp-panel-header {
+  padding: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--mg-text-muted);
+  border-bottom: 1px solid var(--mg-border);
+}
+
+/* Left Panel Tabs/Sections */
+.mgwpp-panel-section {
+  padding: 10px;
+  border-bottom: 1px solid var(--mg-border);
+}
+
+.mgwpp-panel-section-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--mg-text-muted);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* Tools Grid - Enhanced Premium Styles */
+.mgwpp-tools-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.mgwpp-tools-grid-enhanced {
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.mgwpp-tool-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(0, 0, 0, 0.1)
+  );
+  border: 1px solid var(--mg-border);
+  border-radius: 12px;
+  padding: 16px 12px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.mgwpp-tool-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.03) 50%,
+    transparent 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.mgwpp-tool-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.mgwpp-tool-item:hover::before {
+  opacity: 1;
+}
+
+.mgwpp-tool-item:active {
+  transform: translateY(-1px);
+}
+
+/* Tool Icon Wrapper - Premium Circular Design */
+.mgwpp-tool-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  transition: all 0.3s;
+  position: relative;
+}
+
+/* Category-based Icon Colors */
+.mgwpp-tool-icon-media {
+  background: linear-gradient(135deg, #07babe 0%, #06a0a8 100%);
+  box-shadow: 0 4px 15px rgba(7, 186, 190, 0.4);
+}
+
+.mgwpp-tool-icon-content {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  box-shadow: 0 4px 15px rgba(245, 87, 108, 0.4);
+}
+
+.mgwpp-tool-icon-interactive {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  box-shadow: 0 4px 15px rgba(79, 172, 254, 0.4);
+}
+
+.mgwpp-tool-icon-design {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  box-shadow: 0 4px 15px rgba(67, 233, 123, 0.4);
+}
+
+.mgwpp-tool-icon-layout {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  box-shadow: 0 4px 15px rgba(250, 112, 154, 0.4);
+}
+
+.mgwpp-tool-icon-wrap .dashicons {
+  font-size: 22px;
+  width: 22px;
+  height: 22px;
+  color: #fff;
+  line-height: 1;
+}
+
+.mgwpp-tool-item:hover .mgwpp-tool-icon-wrap {
+  transform: scale(1.1) rotate(3deg);
+}
+
+/* Tool Label */
+.mgwpp-tool-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--mg-text-main);
+  margin-bottom: 2px;
+  letter-spacing: 0.3px;
+}
+
+/* Tool Hint Subtitle */
+.mgwpp-tool-hint {
+  font-size: 10px;
+  color: var(--mg-text-muted);
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Legacy support for non-enhanced items */
+.mgwpp-tool-item .dashicons:not(.mgwpp-tool-icon-wrap .dashicons) {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 8px;
+  color: var(--mg-primary);
+}
+
+.mgwpp-tool-item > span:not(.mgwpp-tool-label):not(.mgwpp-tool-hint) {
+  font-size: 12px;
+  color: var(--mg-text-main);
+}
+
+/* Specific Element Type Hover States */
+.mgwpp-tool-image:hover {
+  border-color: rgba(7, 186, 190, 0.5);
+  background: linear-gradient(
+    145deg,
+    rgba(7, 186, 190, 0.1),
+    rgba(0, 0, 0, 0.15)
+  );
+}
+
+.mgwpp-tool-video:hover {
+  border-color: rgba(7, 186, 190, 0.5);
+  background: linear-gradient(
+    145deg,
+    rgba(6, 160, 168, 0.1),
+    rgba(0, 0, 0, 0.15)
+  );
+}
+
+.mgwpp-tool-text:hover {
+  border-color: rgba(245, 87, 108, 0.5);
+  background: linear-gradient(
+    145deg,
+    rgba(245, 87, 108, 0.1),
+    rgba(0, 0, 0, 0.15)
+  );
+}
+
+.mgwpp-tool-button:hover {
+  border-color: rgba(79, 172, 254, 0.5);
+  background: linear-gradient(
+    145deg,
+    rgba(79, 172, 254, 0.1),
+    rgba(0, 0, 0, 0.15)
+  );
+}
+
+.mgwpp-tool-shape:hover {
+  border-color: rgba(67, 233, 123, 0.5);
+  background: linear-gradient(
+    145deg,
+    rgba(67, 233, 123, 0.1),
+    rgba(0, 0, 0, 0.15)
+  );
+}
+
+.mgwpp-tool-container:hover {
+  border-color: rgba(250, 112, 154, 0.5);
+  background: linear-gradient(
+    145deg,
+    rgba(250, 112, 154, 0.1),
+    rgba(0, 0, 0, 0.15)
+  );
+}
+
+/* Drag State for Tools */
+.mgwpp-tool-item.ui-draggable-dragging {
+  z-index: 10000;
+  opacity: 0.9;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+}
+
+/* Layers List - Extra Light Design */
+.mgwpp-layers-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px;
+  background: transparent;
+}
+
+.mgwpp-layer-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  background: transparent;
+  border-radius: 4px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+  font-size: 12px;
+}
+
+.mgwpp-layer-item:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.mgwpp-layer-item.active {
+  background: rgba(59, 130, 246, 0.12);
+  border-color: rgba(59, 130, 246, 0.4);
+}
+
+.mgwpp-layer-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--mg-text-muted);
+  font-size: 11px;
+}
+
+.mgwpp-layer-icon .dashicons {
+  font-size: 12px;
+  width: 12px;
+  height: 12px;
+}
+
+.mgwpp-layer-item.active .mgwpp-layer-icon {
+  background: rgba(59, 130, 246, 0.3);
+  color: #60a5fa;
+}
+
+.mgwpp-layer-name {
+  flex: 1;
+  font-size: 11px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--mg-text-secondary);
+}
+
+.mgwpp-layer-item.active .mgwpp-layer-name {
+  color: #07babe;
+}
+
+/* Center Area */
+.mgwpp-canvas-center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #151515;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Slides Strip (Bottom of Top Area, or Top of Canvas?) -> Let's put it at the bottom */
+.mgwpp-slides-strip {
+  height: 100px;
+  background: var(--mg-bg-panel);
+  border-top: 1px solid var(--mg-border);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 15px;
+  overflow-x: auto;
+  z-index: 10;
+}
+
+.mgwpp-slide-thumb {
+  width: 100px;
+  height: 60px;
+  background: #000;
+  border: 2px solid var(--mg-border);
+  border-radius: var(--mg-radius);
+  position: relative;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #444;
+  font-size: 10px;
+}
+
+.mgwpp-slide-thumb:hover {
+  border-color: var(--mg-text-muted);
+}
+
+.mgwpp-slide-thumb.active {
+  border-color: var(--mg-primary);
+  box-shadow: 0 0 0 2px rgba(108, 92, 231, 0.2);
+}
+
+.mgwpp-slide-thumb .slide-number {
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: 20px;
+  height: 20px;
+  background: var(--mg-bg-card);
+  border: 1px solid var(--mg-border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: var(--mg-text-main);
+}
+
+.mgwpp-slide-thumb .dashicons-trash {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 20px;
+  height: 20px;
+  background: var(--mg-danger);
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.mgwpp-slide-thumb:hover .dashicons-trash {
+  opacity: 1;
+}
+
+.mgwpp-add-slide-btn {
+  width: 60px;
+  height: 60px;
+  border: 1px dashed var(--mg-border);
+  border-radius: var(--mg-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--mg-text-muted);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.mgwpp-add-slide-btn:hover {
+  border-color: var(--mg-primary);
+  color: var(--mg-primary);
+}
+
+/* Device Switcher */
+.mgwpp-canvas-header-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.mgwpp-device-switcher {
+  display: flex;
+  background: var(--mg-bg-card);
+  border: 1px solid var(--mg-border);
+  border-radius: var(--mg-radius);
+  padding: 2px;
+}
+
+.mgwpp-device-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 32px;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--mg-text-muted);
+  transition: all 0.2s;
+}
+
+.mgwpp-device-btn:hover {
+  color: var(--mg-text-main);
+}
+
+.mgwpp-device-btn.active {
+  background: var(--mg-bg-panel);
+  color: var(--mg-primary);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Canvas Viewport */
+.mgwpp-canvas-viewport {
+  flex: 1;
+  overflow: auto;
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center vertically */
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIiBmaWxsPSJub25lIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMC41IiBzdHJva2Utb3BhY2l0eT0iMC4yIj48cGF0aCBkPSJNMCAwaDIwdjIwSDB6IiBmaWxsPSJub25lIi8+PGNpcGNsZSBjeD0iMSIgY3k9IjEiIHI9IjAuNSIgZmlsbD0iIzQ0NCIvPjwvc3ZnPg==");
+  transition: background-color 0.3s;
+}
+
+.mgwpp-canvas-viewport.tablet-view .mgwpp-canvas {
+  width: 768px !important; /* Force width for preview */
+  transform-origin: top center;
+  border: 10px solid #333; /* Tablet bezel simulation */
+  border-radius: 12px;
+}
+
+.mgwpp-canvas-viewport.mobile-view .mgwpp-canvas {
+  width: 360px !important; /* Force width for preview */
+  transform-origin: top center;
+  border: 10px solid #333; /* Phone bezel simulation */
+  border-radius: 12px;
+}
+
+.mgwpp-canvas {
+  position: relative;
+  background: #fff; /* Canvas itself is white/transparent for now */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  background-image:
+    linear-gradient(45deg, #eee 25%, transparent 25%),
+    linear-gradient(-45deg, #eee 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #eee 75%),
+    linear-gradient(-45deg, transparent 75%, #eee 75%);
+  background-size: 20px 20px;
+  background-position:
+    0 0,
+    0 10px,
+    10px -10px,
+    -10px 0px;
+}
+
+/* Canvas Items */
+.mgwpp-canvas-item {
+  position: absolute;
+  cursor: move;
+  box-sizing: border-box;
+  user-select: none;
+  /* Default state: Elementor uses a transparent border or just overlay */
+  border: 1px solid transparent;
+  transition:
+    opacity 0.2s,
+    transform 0.2s,
+    box-shadow 0.2s; /* Transitions for selection state */
+  will-change: transform, left, top; /* Optimize painting */
+}
+
+/* Container Specifics */
+.mgwpp-item-inner.mgwpp-empty-container {
+  border: 1px dashed var(--mg-text-muted) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--mg-text-muted);
+}
+
+/* PERFORMANCE: Disable transitions during drag/resize to prevent lag */
+.mgwpp-canvas-item.ui-draggable-dragging,
+.mgwpp-canvas-item.ui-resizable-resizing {
+  transition: none !important;
+}
+
+/* =========================================
+   PROFESSIONAL ELEMENT SELECTION UI
+   Inspired by Figma/Canva - Clean & Minimal
+   ========================================= */
+
+/* Base State: Completely clean */
+.mgwpp-canvas-item {
+  position: relative;
+  outline: none;
+}
+
+/* Hover State: Subtle blue border only */
+.mgwpp-canvas-item:hover {
+  outline: 1px solid rgba(59, 130, 246, 0.6);
+  outline-offset: -1px;
+}
+
+/* Dragging State: Lifted look with shadow */
+.mgwpp-canvas-item.dragging {
+  opacity: 0.9;
+  z-index: 9999 !important;
+  cursor: grabbing;
+  transform: scale(1.01);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  outline: 2px solid #3b82f6;
+}
+
+/* =========================================
+   SELECTED STATE - Clean Professional Look
+   ========================================= */
+
+.mgwpp-canvas-item.selected {
+  outline: 2px solid #3b82f6;
+  outline-offset: 0px;
+  z-index: 1000 !important;
+}
+
+/* Element Type Label - Top Left Badge */
+.mgwpp-canvas-item.selected::before {
+  content: attr(data-element-type);
+  position: absolute;
+  top: -24px;
+  left: 0;
+  background: #3b82f6;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 3px 8px;
+  border-radius: 3px 3px 0 0;
+  white-space: nowrap;
+  z-index: 102;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* =========================================
+   RESIZE HANDLES - Professional Circles
+   ========================================= */
+
+/* Hide resize handles by default */
+.mgwpp-canvas-item .ui-resizable-handle {
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.15s,
+    visibility 0.15s;
+  background: #fff;
+  border: 2px solid #3b82f6;
+  width: 8px;
+  height: 8px;
+  z-index: 1100;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Show resize handles only when selected */
+.mgwpp-canvas-item.selected .ui-resizable-handle {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Hover effect on handles */
+.mgwpp-canvas-item .ui-resizable-handle:hover {
+  background: #3b82f6;
+  transform: scale(1.2);
+}
+
+/* Corner Handles - Circles */
+.mgwpp-canvas-item .ui-resizable-nw {
+  top: -4px;
+  left: -4px;
+  cursor: nw-resize;
+}
+.mgwpp-canvas-item .ui-resizable-ne {
+  top: -4px;
+  right: -4px;
+  cursor: ne-resize;
+}
+.mgwpp-canvas-item .ui-resizable-sw {
+  bottom: -4px;
+  left: -4px;
+  cursor: sw-resize;
+}
+.mgwpp-canvas-item .ui-resizable-se {
+  bottom: -4px;
+  right: -4px;
+  cursor: se-resize;
+}
+
+/* Edge Handles - Hidden for cleaner look */
+.mgwpp-canvas-item .ui-resizable-n,
+.mgwpp-canvas-item .ui-resizable-s,
+.mgwpp-canvas-item .ui-resizable-e,
+.mgwpp-canvas-item .ui-resizable-w {
+  display: none;
+}
+
+/* =========================================
+   DRAG OVER STATE FOR CONTAINERS
+   ========================================= */
+
+.mgwpp-canvas-item.mgwpp-drag-over {
+  outline: 2px dashed #3b82f6 !important;
+  outline-offset: 2px;
+}
+
+.mgwpp-canvas-item.mgwpp-drag-over > .mgwpp-item-inner {
+  background: rgba(59, 130, 246, 0.08) !important;
+}
+
+/* Properties Panel */
+#mgwpp-properties-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.mgwpp-no-selection {
+  text-align: center;
+  color: var(--mg-text-muted);
+  padding: 40px 20px;
+}
+
+.mgwpp-no-selection .dashicons {
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 15px;
+  opacity: 0.5;
+}
+
+.mgwpp-property-group {
+  background: var(--mg-bg-card);
+  padding: 15px;
+  border-radius: var(--mg-radius);
+  margin-bottom: 15px;
+  border: 1px solid var(--mg-border);
+}
+
+.mgwpp-property-group h4 {
+  margin: 0 0 15px;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--mg-text-muted);
+  letter-spacing: 0.5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mgwpp-property-row {
+  margin-bottom: 12px;
+}
+
+.mgwpp-property-row:last-child {
+  margin-bottom: 0;
+}
+
+.mgwpp-property-row label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  color: var(--mg-text-muted);
+}
+
+.mgwpp-property-row input,
+.mgwpp-property-row select,
+.mgwpp-property-row textarea {
+  width: 100%;
+  background: var(--mg-bg-dark);
+  border: 1px solid var(--mg-border);
+  border-radius: 4px;
+  padding: 8px;
+  color: var(--mg-text-main);
+  font-size: 13px;
+  transition: all 0.2s;
+}
+
+.mgwpp-property-row input:focus,
+.mgwpp-property-row select:focus,
+.mgwpp-property-row textarea:focus {
+  border-color: var(--mg-primary);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(108, 92, 231, 0.2);
+}
+
+.mgwpp-property-row input[type="color"] {
+  padding: 2px;
+  height: 34px;
+  cursor: pointer;
+}
+
+/* Range slider styling */
+.mgwpp-property-row input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.mgwpp-property-row input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: var(--mg-primary);
+  cursor: pointer;
+  margin-top: -5px;
+}
+
+.mgwpp-property-row input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: var(--mg-border);
+  border-radius: 2px;
+}
+
+/* Elementor-like Properties Grid (X, Y, W, H) */
+.mgwpp-input-grid-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--mg-text-muted);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.mgwpp-input-grid {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.mgwpp-input-col {
+  position: relative;
+  flex: 1;
+}
+
+.mgwpp-input-col input {
+  width: 100%;
+  background: var(--mg-bg-dark);
+  border: 1px solid var(--mg-border);
+  border-radius: 4px;
+  padding: 6px 6px 6px 20px; /* Space for label */
+  color: var(--mg-text-main);
+  font-size: 11px;
+  height: 30px;
+}
+
+.mgwpp-input-col label {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+  font-size: 9px;
+  color: var(--mg-text-muted);
+  pointer-events: none;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.mgwpp-input-col input:focus {
+  border-color: var(--mg-primary);
+}
+
+/* Elementor-like Icon Groups */
+.mgwpp-property-row-stacked {
+  margin-bottom: 12px;
+}
+
+.mgwpp-property-row-stacked label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  color: var(--mg-text-muted);
+}
+
+.mgwpp-icon-group {
+  display: flex;
+  background: var(--mg-bg-dark);
+  border: 1px solid var(--mg-border);
+  border-radius: 4px;
+  padding: 2px;
+  gap: 2px;
+}
+
+.mgwpp-icon-option {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  cursor: pointer;
+  border-radius: 3px;
+  color: var(--mg-text-muted);
+  transition: all 0.2s;
+}
+
+.mgwpp-icon-option:hover {
+  color: var(--mg-text-main);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.mgwpp-icon-option.active {
+  background: var(--mg-bg-card);
+  color: var(--mg-primary);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.mgwpp-icon-option .dashicons {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+}
+
+/* Delete Button */
+.mgwpp-delete-item-btn {
+  width: 100%;
+  padding: 10px;
+  background: rgba(255, 71, 87, 0.1);
+  color: var(--mg-danger);
+  border: 1px solid rgba(255, 71, 87, 0.3);
+  border-radius: var(--mg-radius);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mgwpp-delete-item-btn:hover {
+  background: var(--mg-danger);
+  color: white;
+}
+
+/* =========================================
+   DASHBOARD & MODALS
+   ========================================= */
+
+.mgwpp-canvas-dashboard-wrap {
+  padding: 0;
+  min-height: 100vh;
+  background: var(--mg-bg-dark);
+}
+
+/* Enhanced Canvas List Header */
+.mgwpp-canvas-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: var(--mg-bg-panel);
+  border-bottom: 1px solid var(--mg-border);
+  position: sticky;
+  top: 32px; /* Account for WP admin bar */
+  z-index: 100;
+}
+
+.mgwpp-header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.mgwpp-back-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--mg-border);
+  border-radius: 10px;
+  color: var(--mg-text-muted);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.mgwpp-back-link:hover {
+  background: var(--mg-accent-light);
+  border-color: var(--mg-accent);
+  color: var(--mg-accent);
+  transform: translateX(-2px);
+}
+
+.mgwpp-back-link .dashicons {
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.mgwpp-logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mgwpp-logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--mg-accent-gradient);
+  border-radius: 10px;
+  color: #fff;
+}
+
+.mgwpp-logo-icon .dashicons {
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.mgwpp-canvas-list-header h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--mg-text-main);
+  margin: 0;
+}
+
+.mgwpp-header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Theme Toggle Button */
+.mgwpp-theme-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--mg-border);
+  border-radius: 10px;
+  color: var(--mg-text-muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mgwpp-theme-btn:hover {
+  background: var(--mg-accent-light);
+  border-color: var(--mg-accent);
+  color: var(--mg-accent);
+}
+
+.mgwpp-theme-btn .dashicons {
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+}
+
+/* Light mode active state */
+.mgwpp-canvas-dashboard-wrap.light-mode .mgwpp-theme-btn {
+  background: #fef3c7;
+  border-color: #f59e0b;
+  color: #f59e0b;
+}
+
+/* Canvas Grid with padding */
+.mgwpp-canvas-grid {
+  padding: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Light Mode for List Page */
+.mgwpp-canvas-dashboard-wrap.light-mode {
+  --mg-bg-dark: #f5f5f7;
+  --mg-bg-panel: #ffffff;
+  --mg-bg-card: #ffffff;
+  --mg-bg-input: #ffffff;
+  --mg-border: #e5e5e5;
+  --mg-border-light: #f0f0f0;
+  --mg-text-main: #1a1a1a;
+  --mg-text-secondary: #555555;
+  --mg-text-muted: #888888;
+}
+
+.mgwpp-canvas-dashboard-wrap.light-mode .mgwpp-canvas-list-header {
+  background: #ffffff;
+  border-bottom-color: #e5e5e5;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.mgwpp-canvas-dashboard-wrap.light-mode .mgwpp-canvas-card {
+  background: #ffffff;
+  border-color: #e5e5e5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.mgwpp-canvas-dashboard-wrap.light-mode .mgwpp-canvas-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.mgwpp-canvas-dashboard-wrap.light-mode .mgwpp-card-info {
+  background: #fafafa;
+}
+
+.mgwpp-canvas-dashboard-wrap.light-mode .mgwpp-shortcode-wrap {
+  background: #f0f0f0;
+  border-color: #e0e0e0;
+}
+
+/* Legacy dashboard header - keep for backward compatibility */
+.mgwpp-dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.mgwpp-dashboard-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--mg-text-main);
+  margin: 0;
+}
+
+.mgwpp-grid-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.mgwpp-canvas-card {
+  background: var(--mg-bg-card);
+  border: 1px solid var(--mg-border);
+  border-radius: 12px;
+  overflow: hidden;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.mgwpp-canvas-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-color: var(--mg-primary);
+}
+
+.mgwpp-card-preview {
+  height: 180px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff; /* Default if not set inline */
+  overflow: hidden;
+}
+
+.mgwpp-preview-placeholder {
+  color: #e0e0e0;
+}
+.mgwpp-preview-placeholder .dashicons {
+  font-size: 64px;
+  width: 64px;
+  height: 64px;
+}
+
+.mgwpp-card-actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.mgwpp-canvas-card:hover .mgwpp-card-actions {
+  opacity: 1;
+}
+
+.mgwpp-action-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.mgwpp-action-btn:hover {
+  background: #fff;
+  color: #121212;
+  transform: scale(1.1);
+}
+
+.mgwpp-action-btn.delete:hover {
+  background: var(--mg-danger);
+  color: #fff;
+}
+
+.mgwpp-card-info {
+  padding: 15px;
+  background: var(--mg-bg-panel);
+  border-top: 1px solid var(--mg-border);
+}
+
+.mgwpp-card-title {
+  margin: 0 0 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--mg-text-main);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mgwpp-card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mgwpp-shortcode-wrap {
+  background: var(--mg-bg-dark);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 11px;
+  color: var(--mg-text-muted);
+  border: 1px solid var(--mg-border);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 100%;
+}
+
+.mgwpp-copy-btn {
+  background: transparent;
+  border: none;
+  color: var(--mg-text-muted);
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.mgwpp-copy-btn:hover {
+  color: var(--mg-primary);
+}
+
+/* --- Modals --- */
+.mgwpp-modal-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: rgba(0, 0, 0, 0.9) !important; /* Solid dark overlay */
+  z-index: 999999 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: none !important; /* Remove blur as requested */
+}
+
+.mgwpp-modal {
+  background: #0f0f0f !important; /* Fixed dark background */
+  width: 400px;
+  max-width: 90%;
+  border-radius: 16px;
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  color: #ffffff !important; /* White text */
+  animation: mgwppSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mgwpp-modal.mgwpp-modal-lg {
+  width: 900px;
+  height: 80vh;
+}
+
+@keyframes mgwppSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mgwpp-modal-header {
+  padding: 20px;
+  border-bottom: 1px solid var(--mg-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mgwpp-modal-header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--mg-text-main);
+}
+
+.mgwpp-modal-close {
+  background: transparent;
+  border: none;
+  color: var(--mg-text-muted);
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+}
+.mgwpp-modal-close:hover {
+  color: var(--mg-text-main);
+}
+
+.mgwpp-modal-body {
+  padding: 20px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.mgwpp-modal-body.no-padding {
+  padding: 0;
+}
+
+.mgwpp-modal-footer {
+  padding: 20px;
+  border-top: 1px solid var(--mg-border);
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.mgwpp-form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #ffffff !important; /* Force white text */
+  font-size: 13px;
+}
+
+.mgwpp-input-full {
+  width: 100%;
+  background: #1a1a1a !important; /* Fixed dark bg */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 6px;
+  color: #ffffff !important; /* Force white text */
+  font-size: 14px;
+}
+
+.mgwpp-input-full:focus {
+  border-color: var(--mg-primary);
+  outline: none;
+}
+
+/* Preview Viewport */
+.mgwpp-preview-viewport {
+  width: 100%;
+  height: 100%;
+  background: #f0f0f0; /* Light background for contrast */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.mgwpp-loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top-color: var(--mg-primary);
+  animation: mgwppSpin 1s ease-in-out infinite;
+}
+
+@keyframes mgwppSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================================
+   VIDEO ELEMENT STYLES
+   ========================================= */
+
+.mgwpp-canvas-item-video .mgwpp-item-inner {
+  background: #000;
+  overflow: hidden;
+}
+
+.mgwpp-canvas-item-video video,
+.mgwpp-canvas-item-video iframe {
+  pointer-events: none;
+}
+
+.mgwpp-canvas-item-video.selected video,
+.mgwpp-canvas-item-video.selected iframe {
+  pointer-events: auto;
+}
+
+/* =========================================
+   CONTAINER BACKGROUND STYLES
+   ========================================= */
+
+.mgwpp-canvas-item-container .mgwpp-item-inner {
+  position: relative;
+}
+
+.mgwpp-container-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.mgwpp-container-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.mgwpp-container-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+/* =========================================
+   PLACEHOLDER STYLES
+   ========================================= */
+
+.mgwpp-placeholder {
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.mgwpp-placeholder:hover {
+  transform: scale(0.98);
+}
+
+.mgwpp-placeholder .dashicons {
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+
+.mgwpp-placeholder:hover .dashicons {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* =========================================
+   ENHANCED EMPTY CONTAINER
+   ========================================= */
+
+.mgwpp-empty-container {
+  border: 2px dashed rgba(59, 130, 246, 0.3) !important;
+  background: rgba(59, 130, 246, 0.02) !important;
+}
+
+.mgwpp-empty-container:hover {
+  border-color: rgba(59, 130, 246, 0.5) !important;
+  background: rgba(59, 130, 246, 0.05) !important;
+}
+
+/* =========================================
+   VIDEO & CONTAINER INNER SIZING 
+   ========================================= */
+
+/* Ensure inner content fills the canvas item */
+.mgwpp-canvas-item .mgwpp-item-inner {
+  width: 100%;
+  height: 100%;
+}
+
+/* Video elements - ensure iframe and video fill container */
+.mgwpp-canvas-item-video .mgwpp-item-inner iframe,
+.mgwpp-canvas-item-video .mgwpp-item-inner video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Container background video */
+.mgwpp-container-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* =========================================
+   PROPERTY PANEL CHECKBOX STYLES
+   ========================================= */
+
+.mgwpp-property-row input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+  accent-color: #3b82f6;
+}
+
+.mgwpp-property-row label:has(input[type="checkbox"]) {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* =========================================
+   DELETE BUTTON IN PROPERTIES
+   ========================================= */
+
+.mgwpp-delete-item-btn {
+  transition: all 0.2s;
+}
+
+.mgwpp-delete-item-btn:hover {
+  background: #ff6b7a !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 71, 87, 0.3);
+}
+
+/* =========================================
+   ITEM INNER - PROPER SIZING
+   ========================================= */
+
+.mgwpp-item-inner {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Image items */
+.mgwpp-canvas-item-image .mgwpp-item-inner img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* =========================================
+   DIMENSION INPUT WITH UNIT SELECTOR
+   ========================================= */
+
+.mgwpp-dimension-row {
+  margin-bottom: 12px;
+}
+
+.mgwpp-dimension-input {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  border: 1px solid var(--mg-border);
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--mg-bg-dark);
+}
+
+.mgwpp-dimension-input .mgwpp-dim-value {
+  flex: 1;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 8px 10px;
+  color: var(--mg-text-main);
+  font-size: 13px;
+  min-width: 0;
+}
+
+.mgwpp-dimension-input .mgwpp-dim-value:focus {
+  outline: none;
+  background: rgba(59, 130, 246, 0.05);
+}
+
+.mgwpp-unit-selector {
+  display: flex;
+  border-left: 1px solid var(--mg-border);
+  background: var(--mg-bg-card);
+}
+
+.mgwpp-unit-btn {
+  padding: 4px 6px;
+  background: transparent;
+  border: none;
+  color: var(--mg-text-muted);
+  font-size: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  min-width: 26px;
+}
+
+.mgwpp-unit-btn:hover {
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--mg-text-main);
+}
+
+.mgwpp-unit-btn.active {
+  background: #3b82f6;
+  color: #fff;
+}
+
+.mgwpp-unit-btn + .mgwpp-unit-btn {
+  border-left: 1px solid var(--mg-border);
+}

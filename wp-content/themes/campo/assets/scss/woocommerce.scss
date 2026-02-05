@@ -1,0 +1,222 @@
+/* WooCommerce
+--------------------------------------------------- */
+/* Products */
+.woocommerce-page, .woocommerce {
+	.products ul, ul.products {
+		li.product {
+			text-align: center;
+			&:before {
+				display: none;
+			}
+			.woocommerce-loop-product__link {
+				text-align: center;
+				padding: 0;
+				.star-rating {
+					margin-right: auto;
+					margin-left: auto;
+				}
+				.price {
+					font-size: 1.5em;
+					font-family: var(--heading-font);
+					font-weight: var(--heading-font-weight);
+					text-transform: var(--heading-text-transform);
+					font-style: var(--heading-font-style);
+				}
+			}
+			.button {
+				font-size: 1em;
+				padding: 1.15em 1.5em;
+				margin-bottom: 1.5em;
+				margin-right: auto;
+				margin-left: auto;
+				opacity: 0;
+				visibility: hidden;
+				transform: translateY(-3em);
+				transition: 300ms ease all;
+				width: 100%;
+				.touch & {
+					opacity: 1;
+				}
+			}
+			.added_to_cart {
+				font-size: 1em;
+				text-transform: var(--button-text-transform);
+				position: relative;
+				margin-top: 0;
+				opacity: 0;
+				visibility: hidden;
+				transform: translateY(-3em);
+				transition: 300ms ease all;
+			}
+			&:hover {
+				.button, .added_to_cart {
+					opacity: 1;
+					visibility: visible;
+					transform: translateY(0);
+				}
+			}
+		}
+	}
+}
+
+/* Buttons
+--------------------------------------------- */
+.woocommerce, .woocommerce-page {
+	#respond input#submit,
+	a.button,
+	a.button.alt,
+	button.button,
+	button.button.alt,
+	input.button,
+	input.button.alt {
+		text-transform: var(--button-text-transform);
+		padding: 1.15em 1.5em;
+		background: var(--shop-button-secondary-color, var(--accent-color));
+		box-shadow: 0 0 0 rgba(0,0,0,.1);
+		&:hover {
+			color: var(--shop-button-primary-color, var(--light-color));
+			background: var(--shop-button-secondary-color, var(--accent-color));
+			box-shadow: 0 5px 10px rgba(0,0,0,.1);
+		}
+	}
+}
+
+
+/* On Sale
+--------------------------------------------- */
+.woocommerce {
+	span.onsale {
+		font-size: 1rem;
+		color: var(--accent-color);
+		border-radius: var(--hard-rounded) !important;
+		font-family: var(--heading-font);
+		font-weight: var(--heading-font-weight);
+		text-transform: var(--heading-text-transform);
+	}
+}
+
+@media (max-width: 768px) {
+	.woocommerce ul.products li.product .onsale {
+		top: 1em;
+	}
+}
+
+/* Cart
+--------------------------------------------- */
+.woocommerce.widget_shopping_cart,
+.woocommerce-page .widget_shopping_cart,
+.woocommerce .widget_shopping_cart {
+	.cart_list {
+		li {
+			a {
+				&.remove {
+					&:after {
+						color: var(--dark-color);
+						background-color: transparent;
+						transition: 200ms ease all;
+					}
+					&:hover:after {
+						color: var(--accent-color);
+					}
+				}
+			}
+		}
+	}
+	.buttons {
+		font-size: .875em;
+	}
+}
+
+/* Info
+--------------------------------------------------- */
+.woocommerce-error, .woocommerce-info, .woocommerce-message {
+	background: var(--very-light-accent-color);
+}
+
+
+/* Product tabs
+--------------------------------------------- */
+.woocommerce {
+	div.product {
+		.woocommerce-tabs {
+			ul.tabs {
+				padding-bottom: 2em;
+				li {
+					margin: 0 0.125em;
+					border: none !important;
+					background-color: transparent !important;
+					padding: 0;
+					a {
+						font-size: 1.375em;
+						padding: 0.325em 0.75em !important;
+						transition: all 300ms ease;
+						color: var(--primary-color, var(--dark-color));
+					}
+					&.active, &:hover {
+						a {
+							color: var(--tabs-primary-color, var(--light-color));
+							background-color: var(--tabs-secondary-color, var(--accent-color)) !important;
+						}
+					}
+				}
+			}
+		}
+	}
+	&.button-shape-rounded,
+	.button-shape-rounded & {
+		div.product .woocommerce-tabs ul.tabs li a {
+			border-radius: var(--section-soft-rounded);
+		}
+	}
+	&.button-shape-round,
+	.button-shape-round & {
+		div.product .woocommerce-tabs ul.tabs li a {
+			border-radius: var(--section-hard-rounded);
+		}
+	}
+}
+
+
+.woocommerce #reviews #comments ol.commentlist li {
+
+}
+/* Comments
+--------------------------------------------- */
+.woocommerce {
+	#reviews {
+		#comments {
+			ol.commentlist {
+				border-bottom: 1px solid var(--gray-typo-color);
+				li {
+					border-top: 1px solid var(--gray-typo-color);
+				}
+			}
+		}
+	}
+}
+
+/* Select 2 dropdown
+--------------------------------------------- */
+.select2-container {
+	.select2-selection {
+		border: 1px solid var(--gray-typo-color) !important;
+		background-color: var(--very-light-color) !important;
+	}
+	.select2-dropdown {
+		.select2-search {
+			input {
+				border-bottom: 1px solid var(--gray-typo-color) !important;
+			}
+		}
+	}
+}
+
+/* Select Order */
+.woocommerce .woocommerce-ordering select {
+	height: 3.2em;
+}
+
+/* Filter widget */
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range {
+	background-color: transparent;
+}

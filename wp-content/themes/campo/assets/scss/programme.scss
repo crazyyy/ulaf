@@ -1,0 +1,110 @@
+/* Programme
+--------------------------------------------------- */
+.bt_bb_programme {
+	display: flex;
+	width: 100%;
+	.bt_bb_programme_icon {
+		display: inline-flex;
+		float: left;
+		.bt_bb_icon.bt_bb_style_borderless .bt_bb_icon_holder {
+			.rtl & {
+				padding-left: 1em;
+				padding-right: 0;
+			}
+			&:before {
+				color: var(--primary-color, inherit);
+			}
+		}
+	}
+
+	.bt_bb_programme_content {
+		display: block;
+		float: left;
+		.bt_bb_programme_location {
+			display: flex;
+			width: 100%;
+			.bt_bb_icon .bt_bb_icon_holder {
+				> span {
+					font-weight: 500;
+				}
+				&:before {
+					color: var(--primary-color, inherit);
+				}
+			}
+		}
+		.bt_bb_programme_content_inner {
+			display: flex;
+			.bt_bb_programme_time {
+				font-size: var(--extrasmall-title-size);
+				font-family: var(--heading-font);
+				font-weight: 600;
+				line-height: 1;
+				border-right: 1px solid currentColor;
+				padding-right: 0.5em;
+				text-transform: capitalize;
+				strong {
+					color: var(--accent-color);
+				}
+			}
+			.bt_bb_programme_title {
+				font-size: var(--extrasmall-title-size);
+				line-height: 1;
+				font-family: var(--heading-font);
+				font-weight: var(--heading-font-weight);
+				padding-left: 0.5em;
+				strong {
+					color: var(--accent-color);
+				}
+				.rtl & {
+					padding-right: 0.5em;
+					padding-left: 0;
+				}
+			}
+		}
+	}
+	/* Title size */
+	&.bt_bb_title_size_normal {
+		.bt_bb_programme_content_inner {
+			.bt_bb_programme_title, .bt_bb_programme_time {
+				font-size: var(--small-title-size);
+			}
+		}
+	}
+	&.bt_bb_title_size_large {
+		.bt_bb_programme_content_inner {
+			.bt_bb_programme_title, .bt_bb_programme_time {
+				font-size: var(--medium-title-size);
+			}
+		}
+	}
+}
+
+@media (max-width: 580px) {
+	.bt_bb_programme {
+		display: block;
+		.bt_bb_programme_icon {
+			padding-bottom: 1em;
+			float: none;
+			width: 100%;
+		}
+		.bt_bb_programme_content {
+			float: none;
+			width: 100%;
+			.bt_bb_programme_location {
+				padding-bottom: 1em;
+			}
+			.bt_bb_programme_content_inner {
+				display: block;
+				.bt_bb_programme_time {
+					padding-right: 0;
+					padding-bottom: 0.5em;
+					border: none;
+				}
+				.bt_bb_programme_title {
+					padding-left: 0;
+					line-height: 1.2;
+				}
+			}
+		}
+	}
+}

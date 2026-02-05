@@ -1,0 +1,163 @@
+/* 3D Horizontal Marquee Styles */
+
+.mgwpp-3d-h-marquee-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* 3D Perspective Setup */
+    perspective: var(--marquee-perspective, 1000px);
+    background: transparent;
+    padding: 40px 0;
+}
+
+.mgwpp-3d-h-marquee-content {
+    position: relative;
+    width: 100%;
+    /* The tilted plane */
+    transform: rotateX(var(--marquee-rotate-x, 20deg)) rotateY(var(--marquee-rotate-y, -20deg)) scale(var(--marquee-scale, 1.1));
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-out;
+}
+
+/* Hover Interaction: Flatten the view slightly or adjust tilt */
+.mgwpp-3d-h-marquee-content:hover {
+    /* Optional: reduce tilt on hover for better visibility */
+    /* transform: rotateX(0deg) rotateY(0deg) scale(1); */
+}
+
+.mgwpp-3d-h-track-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--marquee-gap, 20px);
+    width: 150%; /* Wider to cover rotation edges */
+    margin-left: -25%; /* Center it back */
+}
+
+.mgwpp-3d-h-row {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.mgwpp-3d-h-track {
+    display: flex;
+    gap: var(--marquee-gap, 20px);
+    width: max-content;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* Hardware acceleration */
+    will-change: transform;
+}
+
+/* Base Animation Keyframes */
+@keyframes mgwpp3dMarqueeLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-33.33%); } /* Assuming 3 sets of images */
+}
+
+@keyframes mgwpp3dMarqueeRight {
+    0% { transform: translateX(-33.33%); }
+    100% { transform: translateX(0); }
+}
+
+/* Row Specifics handled by JS injecting durations, but basic assignment here */
+.mgwpp-3d-h-row[data-direction="left"] .mgwpp-3d-h-track {
+    animation-name: mgwpp3dMarqueeLeft;
+    animation-duration: var(--row-duration, 20s);
+}
+
+.mgwpp-3d-h-row[data-direction="right"] .mgwpp-3d-h-track {
+    animation-name: mgwpp3dMarqueeRight;
+    animation-duration: var(--row-duration, 20s);
+}
+
+.mgwpp-3d-h-item {
+    flex-shrink: 0;
+    width: 250px; /* Default width */
+    position: relative;
+    border-radius: var(--marquee-radius, 12px);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    background: #1a1a1a;
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.3s ease;
+}
+
+.mgwpp-3d-h-item img {
+    width: 100%;
+    height: 160px; /* Fixed height for consistency */
+    object-fit: cover;
+    display: block;
+    border-radius: var(--marquee-radius, 12px);
+}
+
+/* Grayscale Mode */
+.mgwpp-3d-h-item.mgwpp-grayscale {
+    filter: grayscale(100%);
+}
+.mgwpp-3d-h-item.mgwpp-grayscale:hover {
+    filter: grayscale(0%);
+}
+
+/* Hover Effect on Item */
+.mgwpp-3d-h-item:hover {
+    transform: scale(1.05) translateZ(20px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    z-index: 10;
+    /* Brightness boost */
+    filter: brightness(1.1);
+}
+
+/* Pause on gallery hover */
+.mgwpp-3d-h-marquee-content[data-pause-hover="true"]:hover .mgwpp-3d-h-track {
+    animation-play-state: paused;
+}
+
+/* Gradient Edges (Outer wrapper level to sit on top of 3D content) */
+.mgwpp-3d-h-fade-left,
+.mgwpp-3d-h-fade-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 15%;
+    z-index: 20;
+    pointer-events: none;
+}
+
+.mgwpp-3d-h-fade-left {
+    left: 0;
+    background: linear-gradient(to right, var(--bg-color, #fff), transparent);
+}
+
+.mgwpp-3d-h-fade-right {
+    right: 0;
+    background: linear-gradient(to left, var(--bg-color, #fff), transparent);
+}
+
+/* Dark Mode Support handled via context or transparency */
+@media (prefers-color-scheme: dark) {
+   /* This depends on container bg, usually transparent relies on body bg */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .mgwpp-3d-h-marquee-content {
+        /* Reduce tilt on mobile for better view */
+        transform: rotateX(0deg) rotateY(0deg) scale(1);
+    }
+    
+    .mgwpp-3d-h-track-container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .mgwpp-3d-h-item {
+        width: 180px;
+    }
+    
+    .mgwpp-3d-h-item img {
+        height: 120px;
+    }
+}

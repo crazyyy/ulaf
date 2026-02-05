@@ -1,0 +1,22 @@
+/* Gutenberg 
+--------------------------------------------- */
+
+/* Quote */
+.wp-block-pullquote {
+	font-size: 1rem;
+	blockquote {
+		font-size: 1.25rem;
+	}
+	p {
+		font-size: var(--medium-title-size);
+	}
+	cite {
+		display: block;
+		padding-top: 1em;
+	}
+}
+
+/* Table */
+.wp-block-table td, .wp-block-table th {
+	border-color: var(--primary-07-color);
+}

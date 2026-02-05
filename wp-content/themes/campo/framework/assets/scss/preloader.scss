@@ -1,0 +1,589 @@
+
+
+/*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+/* Preloader
+--------------------------------------------- */
+#preloader {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000; 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease, opacity 0.3s ease;
+	text-align: center;
+	overflow: hidden;
+	user-select: none;
+	* {
+		pointer-events: none;
+	}
+	.preloader-content {
+		z-index: 1;
+	}
+	.preloader-background {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+	.preloader-logo-holder img {
+		max-width: var(--preloader-logo-max-width);
+	}
+	.remove-preloader & {
+		transition: transform ease 1s, opacity ease 1s, filter ease 1s;
+		opacity: 0;
+		transition-delay: 300ms;
+		pointer-events: none;
+	}
+	.remove-preloader.preloader-transition-fade-move-up & {
+		transform: translateY(-100%);
+	}
+	.remove-preloader.preloader-transition-fade-move-down & {
+		transform: translateY(100%);
+	}
+	.remove-preloader.preloader-transition-fade-move-left & {
+		transform: translateX(-100%);
+	}
+	.remove-preloader.preloader-transition-fade-move-right & {
+		transform: translateX(100%);
+	}
+	.remove-preloader.preloader-transition-fade-scale-up & {
+		transform: scale(1.5);
+	}
+	.remove-preloader.preloader-transition-fade-blur & {
+		filter: blur(10px);
+	}
+	/* Square preloader styling */
+	.preloader-animation-sqare & {
+		.preloader-animation {
+			box-sizing: border-box;
+			display: block;
+			color: currentColor;
+			.preloader-animation-element-1 {
+				width: 4em;
+				height: 4em;
+				box-sizing: border-box;
+				display: inline-block;
+				background: transparent;
+				border: 0 solid currentColor;
+				border-width: 3px;
+				animation: preloader-square 2s infinite ease;
+				&:after {
+					display: inline-block;
+					width: 100%;
+					vertical-align: top;
+					content: "";
+					background-color: currentColor;
+					animation: preloader-square-inner 2s infinite ease-in;
+				}
+			}
+			.preloader-animation-element-2,
+			.preloader-animation-element-3,
+			.preloader-animation-element-4,
+			.preloader-animation-element-5,
+			.preloader-animation-element-6,
+			.preloader-animation-element-7,
+			.preloader-animation-element-8,
+			.preloader-animation-element-9 {
+				display: none;
+			}
+		}
+	}
+	/* Dots preloader styling */
+	.preloader-animation-dots & {
+		.preloader-animation {
+			position: relative;
+			width: 5em;
+			height: 2em;
+			margin-left: auto;
+			margin-right: auto;
+			> div {
+				position: absolute;
+				width: 1em;
+				height: 1em;
+				top: .5em;
+				border-radius: 50%;
+				background: currentColor;
+				animation-timing-function: cubic-bezier(0, 1, 1, 0);
+			}
+			.preloader-animation-element-1 {
+				left: 0;
+				animation: preloader-dots-one 0.6s infinite;
+			}
+			.preloader-animation-element-2 {
+				left: 0;
+				animation: preloader-dots-two 0.6s infinite;
+			}
+			.preloader-animation-element-3 {
+				left: 2em;
+				animation: preloader-dots-two 0.6s infinite;
+			}
+			.preloader-animation-element-4 {
+				left: 4em;
+				animation: preloader-dots-three 0.6s infinite;
+			}
+			.preloader-animation-element-5,
+			.preloader-animation-element-6,
+			.preloader-animation-element-7,
+			.preloader-animation-element-8,
+			.preloader-animation-element-9 {
+				display: none;
+			}
+		}
+	}
+	/* Circle preloader styling */
+	.preloader-animation-circle & {
+		.preloader-animation {
+			width: 4em;
+			height: 4em;
+			position: relative;
+			margin-left: auto;
+			margin-right: auto;
+			> div {
+				box-sizing: border-box;
+				display: block;
+				position: absolute;
+				width: 4em;
+				height: 4em;
+				border: 8px solid currentColor;
+				border-radius: 50%;
+				animation: preloader-circle 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+				border-color: currentColor transparent transparent transparent;
+			}
+			.preloader-animation-element-1 {
+				animation-delay: -0.45s;
+			}
+			.preloader-animation-element-2 {
+				animation-delay: -0.3s;
+			}
+			.preloader-animation-element-3 {
+				animation-delay: -0.15s;
+			}
+			.preloader-animation-element-4,
+			.preloader-animation-element-5,
+			.preloader-animation-element-6,
+			.preloader-animation-element-7,
+			.preloader-animation-element-8,
+			.preloader-animation-element-9 {
+				display: none;
+			}
+		}
+	}
+	/* Dots square preloader styling */
+	.preloader-animation-dots-square & {
+		.preloader-animation {
+			width: 4em;
+			height: 4em;
+			position: relative;
+			margin-left: auto;
+			margin-right: auto;
+			> div {
+				position: absolute;
+				width: .7em;
+				height: .7em;
+				border-radius: 50%;
+				background: currentColor;
+				animation: preloader-dots-circle 1.2s linear infinite;
+			}
+			.preloader-animation-element-1 {
+				top: .125em;
+				left: .125em;
+				animation-delay: 0s;
+			}
+			.preloader-animation-element-2 {
+				top: .125em;
+				left: 1.625em;
+				animation-delay: -0.4s;
+			}
+			.preloader-animation-element-3 {
+				top: .125em;
+				left: 3.125em;
+				animation-delay: -0.8s;
+			}
+			.preloader-animation-element-4 {
+				top: 1.625em;
+				left: .125em;
+				animation-delay: -0.4s;
+			}
+			.preloader-animation-element-5 {
+				top: 1.625em;
+				left: 1.625em;
+				animation-delay: -0.8s;
+			}
+			.preloader-animation-element-6 {
+				top: 1.625em;
+				left: 3.125em;
+				animation-delay: -1.2s;
+			}
+			.preloader-animation-element-7 {
+				top: 3.125em;
+				left: .125em;
+				animation-delay: -0.8s;
+			}
+			.preloader-animation-element-8 {
+				top: 3.125em;
+				left: 1.625em;
+				animation-delay: -1.2s;
+			}
+			.preloader-animation-element-9 {
+				top: 3.125em;
+				left: 3.125em;
+				animation-delay: -1.6s;
+			}
+		}
+	}
+	/* Classic preloader styling */
+	.preloader-animation-classic & {
+		.preloader-animation {
+			width: 4em;
+			height: 4em;
+			position: relative;
+			margin-left: auto;
+			margin-right: auto;
+			> div {
+				transform-origin: 2em 2em;
+				animation: preloader-classic 1.2s linear infinite;
+				&:after {
+					content: " ";
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 1.8em;
+					width: .25em;
+					height: 1em;
+					border-radius: 10px;
+					background: currentColor;
+				}
+			}
+			.preloader-animation-element-1 {
+				transform: rotate(0deg);
+				animation-delay: -1.2s;
+			}
+			.preloader-animation-element-2 {
+				transform: rotate(45deg);
+				animation-delay: -1.05s;
+			}
+			.preloader-animation-element-3 {
+				transform: rotate(90deg);
+				animation-delay: -0.9s;
+			}
+			.preloader-animation-element-4 {
+				transform: rotate(135deg);
+				animation-delay: -0.75s;
+			}
+			.preloader-animation-element-5 {
+				transform: rotate(180deg);
+				animation-delay: -0.6s;
+			}
+			.preloader-animation-element-6 {
+				transform: rotate(225deg);
+				animation-delay: -0.45s;
+			}
+			.preloader-animation-element-7 {
+				transform: rotate(270deg);
+				animation-delay: -0.3s;
+			}
+			.preloader-animation-element-8 {
+				transform: rotate(315deg);
+				animation-delay: -0.15s;
+			}
+			.preloader-animation-element-9 {
+				display: none;
+			}
+		}
+	}
+	/* Line preloader styling */
+	.preloader-animation-line & {
+		display: flex;
+		flex-direction: column;
+		> div {
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			> div {
+				order: 1;
+			}
+			.preloader-animation {
+				position: absolute;
+				height: 1.5em;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				order: 2;
+				.preloader-animation-element-1,
+				.preloader-animation-element-2 {
+					position: absolute;
+					left: 0;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					background: currentColor;
+				}
+				.preloader-animation-element-1 {
+					opacity: .1;
+				}
+				.preloader-animation-element-2 {
+					opacity: 1;
+					animation: preloader-line 2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+				}
+				.preloader-animation-element-3,
+				.preloader-animation-element-4,
+				.preloader-animation-element-5,
+				.preloader-animation-element-6,
+				.preloader-animation-element-7,
+				.preloader-animation-element-8,
+				.preloader-animation-element-9 {
+					display: none;
+				}
+			}
+		}
+	}
+	/* Multiline preloader styling */
+	.preloader-animation-multiline & {
+		.preloader-animation {
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			z-index: -1;
+			display: flex;
+			flex-direction: column;
+			> div {
+				display: flex;
+				flex: 1;
+				position: relative;
+				width: 100%;
+				&:before {
+					animation: preloader-multiline ease 8s infinite;
+					animation-delay: 100ms;
+					background: currentColor;
+					background-size: 200% 200%;
+					content: "";
+					height:100%;
+					width: 0%;
+				}
+				&:after {
+					animation: loaderAlt ease 8s infinite;
+					animation-delay: 100ms;
+					background: #FFF;
+					background-size: 200% 200%;
+					content: "";
+					height: 100%;
+					width: 100%;
+				}
+			}
+			.preloader-animation-element-2:before, 
+			.preloader-animation-element-2:after {
+				animation-delay: 200ms;
+			}
+			.preloader-animation-element-3:before, 
+			.preloader-animation-element-3:after {
+				animation-delay: 300ms;
+			}
+			.preloader-animation-element-4:before, 
+			.preloader-animation-element-4:after {
+				animation-delay: 400ms;
+			}
+			.preloader-animation-element-5:before, 
+			.preloader-animation-element-5:after {
+				animation-delay: 500ms;
+			}
+			.preloader-animation-element-6:before, 
+			.preloader-animation-element-6:after {
+				animation-delay: 600ms;
+			}
+			.preloader-animation-element-7,
+			.preloader-animation-element-8,
+			.preloader-animation-element-9 {
+				display: none;
+			}
+		}
+	}
+}
+
+/* Square preloader animation 
+--------------------------------------------- */
+@keyframes preloader-square {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(180deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	75% {
+		transform: rotate(360deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes preloader-square-inner {
+	0% {
+		height: 0;
+	}
+	25% {
+		height: 0;
+	}
+	50% {
+		height: 100%;
+	}
+	75% {
+		height: 100%;
+	}
+	100% {
+		height: 0;
+	}
+}
+
+/* Dots preloader animation 
+--------------------------------------------- */
+@keyframes preloader-dots-one {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+@keyframes preloader-dots-two {
+	0% {
+		transform: translate(0, 0);
+	}
+	100% {
+		transform: translate(2em, 0);
+	}
+}
+@keyframes preloader-dots-three {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
+
+/* Circle preloader animation 
+--------------------------------------------- */
+@keyframes preloader-circle {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* Dotted square preloader animation 
+--------------------------------------------- */
+@keyframes preloader-dots-circle {
+	0%, 100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: .25;
+	}
+}
+
+/* Classic preloader animation 
+--------------------------------------------- */
+@keyframes preloader-classic {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+/* Multiline preloader animation 
+--------------------------------------------- */
+@keyframes preloader-multiline {
+	0%{
+		opacity: .15;
+		width:0%;
+	}
+	20%{
+		width:100%;
+	}
+	39%{
+		opacity: .15;
+	}
+	40%{
+		opacity: .05;
+		width: 0%
+	}
+	60%{
+		width: 100%;
+	}
+	80%{
+		width:0%;
+	}
+	100%{
+		opacity: .05;
+		width: 0%;
+	}
+}
+
+@keyframes loaderAlt {
+	0%{
+		opacity: .07;
+		width:100%;
+	}
+	19%{
+		opacity: .07;
+	}
+	20%{
+		opacity: .1;
+		width: 0%;
+	}
+	40%{
+		width: 100%;
+	}
+	59%{
+		opacity: .1;
+	}
+	60%{
+		opacity: .07;
+		width: 0;
+	}
+	80%{
+		width: 100%;
+	}
+	100%{
+		opacity: .07;
+		width: 100%
+	}
+}
+
+/* Line preloader animation 
+--------------------------------------------- */
+@keyframes preloader-line {
+	0% {
+		transform: translateX(-100%);
+	}
+	40% {
+		transform: translateX(0);
+	}
+	60% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(100%);
+	}
+}

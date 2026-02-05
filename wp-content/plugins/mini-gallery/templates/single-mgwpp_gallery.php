@@ -1,0 +1,31 @@
+<?php
+if (!defined('ABSPATH')) {
+    exit;
+}
+
+get_header();
+
+// Get current gallery ID
+$mgwpp_gallery_id = get_the_ID();
+
+// Enqueue lightbox assets
+
+echo '<div class="mgwpp-single-gallery-container">';
+
+// Gallery title
+echo '<h1 class="mgwpp-gallery-title">' . esc_html(get_the_title()) . '</h1>';
+
+// Render gallery using shortcode
+echo do_shortcode('[mgwpp_gallery id="' . $mgwpp_gallery_id . '"]');
+
+// Back to album link
+$mgwpp_album_id = get_post_meta($mgwpp_gallery_id, '_mgwpp_parent_album', true);
+if ($mgwpp_album_id) {
+    echo '<a href="' . esc_url(get_permalink($mgwpp_album_id)) . '" class="mgwpp-back-to-album">';
+    echo '&larr; ' . esc_html__('Back to Album', 'mini-gallery');
+    echo '</a>';
+}
+
+echo '</div>';
+
+get_footer();

@@ -1,0 +1,82 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "wpnw/sp-news",
+  "version": "1.0",
+  "title": "News Grid",
+  "category": "essp_guten_block",
+  "icon": "feedback",
+  "description": "Display news post in a grid view with various layouts.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "align": true,
+    "multiple": true
+  },
+  "textdomain": "sp-news-and-widget",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "keywords": [
+    "essential",
+    "sp news",
+    "sp-news"
+  ],
+  "attributes": {
+    "grid": {
+      "type": "string",
+      "default": "1"
+    },
+    "show_date": {
+      "type": "boolean",
+      "default": true
+    },
+    "show_category_name": {
+      "type": "boolean",
+      "default": true
+    },
+    "show_content": {
+      "type": "boolean",
+      "default": true
+    },
+    "show_full_content": {
+      "type": "boolean",
+      "default": false
+    },
+    "content_words_limit": {
+      "type": "number",
+      "default": 20
+    },
+    "limit": {
+      "type": "number",
+      "default": 10
+    },
+    "orderby": {
+      "type": "string",
+      "default": "date"
+    },
+    "order": {
+      "type": "string",
+      "default": "desc"
+    },
+    "category": {
+      "type": "string",
+      "default": ""
+    },
+    "pagination": {
+      "type": "string",
+      "default": "true"
+    },
+    "pagination_type": {
+      "type": "string",
+      "default": "numeric"
+    },
+    "align": {
+      "type": "string",
+      "default": ""
+    },
+    "className": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

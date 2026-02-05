@@ -1,0 +1,106 @@
+/* Table
+--------------------------------------------------- */
+.bt_bb_table {
+	overflow: hidden;
+	border: 1px solid var(--gray-02-color);
+
+	/* Shape */
+	&.bt_bb_shape_square { border-radius: 0; }
+	&.bt_bb_shape_soft_rounded { border-radius: var(--section-soft-rounded); }
+	&.bt_bb_shape_hard_rounded { border-radius: var(--section-hard-rounded); }
+
+	.bt_bb_table_title_content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0.8em 0.8em 0.8em 1.5em;
+		color: var(--table-primary-color, var(--light-color));
+		background: var(--table-secondary-color, var(--dark-color));
+		.bt_bb_table_button {
+			.bt_bb_button {
+				margin: 0 !important;
+				a {
+					padding: 0;
+					color: var(--light-color) !important;
+					.bt_bb_icon_holder {
+						margin-left: 0.1em;
+					}
+					&:hover {
+						color: var(--accent-color) !important;
+					}
+				}
+			}
+		}
+		.bt_bb_table_title {
+			font-size: 1.5em;
+			font-family: var(--heading-font);
+			font-weight: var(--heading-font-weight);
+			line-height: 1.1;
+		}
+	}
+	.bt_bb_table_table {
+		border: none;
+		margin-bottom: 0em;
+		tr.bt_bb_table_row {
+			background-color: var(--gray-table-color);
+			&:first-child {
+				td {
+					padding: 0.25em;
+					span {
+						color: #a5a5a5;
+						font-family: var(--body-font);
+						font-weight: inherit;
+					}
+				}
+			}
+			&:nth-child(even) {
+				background-color: var(--light-color);
+			}
+			span {
+				font-family: var(--heading-font);
+				font-weight: var(--heading-font-weight);
+			}
+			td {
+				padding: 0.75em;
+				border: none;
+				text-align: center;
+				border: 1px solid var(--gray-02-color);
+				&:first-child {
+					padding-left: 1.25em;
+					width: 2em;
+					text-align: left;
+					.rtl & {
+						padding-right: 1.25em;
+						text-align: right;
+					}
+				}
+				&:nth-child(2) {
+					text-align: left;
+					.rtl & {
+						text-align: right;
+					}
+				}
+
+				/* Logo */
+				&.bt_bb_table_value span:before { 
+					background-repeat: no-repeat;
+					background-size: contain;
+					display: inline-block;
+					width: 2em;
+					height: 2em;
+					margin: -0.5em 0.5em -0.5em 0;
+					.rtl & {
+						margin: -0.5em 0 -0.5em 0.5em;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 780px) {
+	.bt_bb_table .bt_bb_table_table tr.bt_bb_table_row td.bt_bb_table_value span:before {
+		display: block;
+		margin: 0 0 0.25em 0;
+	}
+}

@@ -1,0 +1,143 @@
+/* ---------------------------------
+Styles 
+--------------------------------- */
+
+
+/* Template color scheme
+------------------------------------------------------------------ */
+body {
+	color: var(--page-color, var(--page-primary-color));
+	background-color: var(--page-background-color, var(--page-secondary-color));
+	background-image: var(--page-background-image, none);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Top bar color scheme
+------------------------------------------------------------------ */
+.site-header-top-bar {
+	color: var(--top-bar-color, var(--primary-color));
+	background-color: var(--top-bar-background-color, var(--secondary-color));
+} 
+
+/* Site branding style
+------------------------------------------------------------------ */
+.site-branding {
+	color: var(--site-branding-bar-color, var(--primary-color));
+	background-color: var(--site-branding-bar-background-color, var(--secondary-color));
+}
+
+/* Site branding, sticky header active - Shrink style only to enable smooth colouring back
+------------------------------------------------------------------ */
+.bt-sticky-header-active.bt-sticky-header-active-closed.bt-sticky-header-active-open.sticky-style-shrink .site-branding {
+	color: var(--site-branding-bar-color, var(--primary-color));
+	background-color: var(--site-branding-bar-background-color, var(--secondary-color));
+}
+
+/* Site branding, sticky header active 
+------------------------------------------------------------------ */
+.bt-sticky-header-active .site-branding {
+	color: var(--sticky-site-branding-bar-color, var(--sticky-primary-color));
+	background-color: var(--sticky-site-branding-bar-background-color, var(--sticky-secondary-color));
+}
+
+/* Default headline 
+------------------------------------------------------------------ */
+.page-header {
+	color: var(--default-headline-color, var(--primary-color));
+	background-color: var(--default-headline-background-color, var(--secondary-color));
+} 
+
+/* Menu bar, responsive inactive, sticky header inactive 
+------------------------------------------------------------------ */
+.bt-header-responsive-inactive.bt-sticky-header-inactive .main-navigation:not(.main-navigation-logo-area) {
+	color: var(--menu-bar-color, var(--primary-color));
+	background-color: var(--menu-bar-background-color, var(--secondary-color));
+}
+
+/* Menu bar, sticky header active - Shrink style only to enable smooth colouring back
+------------------------------------------------------------------ */
+.bt-sticky-header-active.bt-sticky-header-active-closed.bt-sticky-header-active-open.sticky-style-shrink .main-navigation:not(.main-navigation-logo-area) {
+	color: var(--menu-bar-color, var(--primary-color));
+	background-color: var(--menu-bar-background-color, var(--secondary-color));
+}
+
+/* Menu bar, responsive inactive, sticky header active 
+------------------------------------------------------------------ */
+.bt-header-responsive-inactive.bt-sticky-header-active .main-navigation:not(.main-navigation-logo-area) {
+	color: var(--sticky-menu-bar-color, var(--sticky-primary-color));
+	background-color: var(--sticky-menu-bar-background-color, var(--sticky-secondary-color));
+}
+
+/* Preloader style 
+------------------------------------------------------------------ */
+#preloader {
+	color: var(--preloader-text-color, var(--primary-color));
+	.preloader-background {
+		background-color: var(--preloader-background-color, var(--secondary-color));
+		opacity: var(--preloader-background-opacity);
+	}
+}
+
+/* Responsive header style
+------------------------------------------------------------------ */
+.bt-header-responsive-active .site-header-responsive {
+	color: var(--responsive-header-color, var(--primary-color));
+	background-color: var(--responsive-header-background-color, var(--secondary-color));
+}
+
+/* Responsive header style, sticky header active - Shrink style only to enable smooth colouring back
+------------------------------------------------------------------ */
+.bt-header-responsive-active.bt-sticky-header-active.bt-sticky-header.bt-sticky-header-active-closed.sticky-style-shrink  .site-header-responsive {
+	color: var(--responsive-header-color, var(--primary-color));
+	background-color: var(--responsive-header-background-color, var(--secondary-color));
+}
+
+/* Responsive sticky header style
+------------------------------------------------------------------ */
+.bt-header-responsive-active.bt-sticky-header-active .site-header-responsive {
+	color: var(--responsive-sticky-header-color, var(--primary-sticky-color));
+	background-color: var(--responsive-sticky-header-background-color, var(--secondary-sticky-color));
+}
+
+/* Responsive menu 
+------------------------------------------------------------------ */
+.bt-header-responsive-active .site-header {
+	background-color: var(--responsive-menu-background-color, var(--responsive-menu-secondary-color));
+	color: var(--responsive-menu-color, var(--responsive-menu-primary-color));
+}
+
+/* Footer widget style 
+------------------------------------------------------------------ */
+.site-footer-widgets {
+	color: var(--footer-widgets-color, var(--primary-color));
+	background-color: var(--footer-widgets-background-color, var(--secondary-color));
+}
+
+/* 404 style 
+------------------------------------------------------------------ */
+body.error404 .error-404 {
+	color: var(--error-404-color, var(--primary-color));
+	background-color: var(--error-404-background-color, var(--secondary-color));
+	background-image: var(--error-404-background-image);
+}
+
+/* Dropdown styles 
+------------------------------------------------------------------ */
+
+.bt-header-responsive-inactive .main-navigation  ul.main-navigation-menu > li.on {
+	color:  var(--hover-primary-color);
+	> a:after {
+		background-color:  var(--hover-secondary-color);
+	}
+}
+
+.bt-header-responsive-inactive .main-navigation ul ul {
+	color: var(--dropdown-primary-color);
+	background-color: var(--dropdown-secondary-color);
+}
+
+.bt-header-responsive-inactive .main-navigation ul ul li.on {
+	color: var(--dropdown-hover-primary-color);
+	background-color: var(--dropdown-hover-secondary-color);
+}

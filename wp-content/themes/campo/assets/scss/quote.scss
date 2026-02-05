@@ -1,0 +1,120 @@
+@use '../../framework/assets/scss/global';
+
+/* Quote 
+--------------------------------------------------- */
+.bt_bb_quote {
+	position: relative;
+	.bt_bb_quote_icon {
+	    position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-left: 1.5rem;
+		padding-bottom: 0.5em;
+		span {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: flex-start;
+			align-items: center;
+			align-content: center;
+			line-height: inherit;
+			font-weight: normal;
+			&:before {
+				content: "\201D";
+				font-size: var(--large-title-size);
+				font-family: var(--heading-font);
+				font-weight: var(--heading-font-weight);
+				height: 0.35em;
+				line-height: 0.75;
+				color: currentColor;
+			}
+		}
+	}
+	.bt_bb_quote_text {
+		font-size: var(--medium-title-size);
+		font-family: var(--heading-font);
+		font-weight: var(--heading-font-weight);
+		line-height: 1.2;
+		padding-left: 1.5rem;
+	}
+
+	/* Text size */
+	&.bt_bb_size_small .bt_bb_quote_text {
+		font-size: var(--small-title-size);
+	}
+	&.bt_bb_size_large .bt_bb_quote_text {
+		font-size: var(--normal-title-size);
+	}
+
+	/* Line on side */
+	&:after {
+		content: "";
+		height: 100%;
+		width: 5px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: currentColor;
+	}
+
+	/* Hide line */
+	&.bt_bb_line_hide {
+		.bt_bb_quote_icon, .bt_bb_quote_text {
+			padding-right: 0;
+			padding-left: 0;
+		}
+		&:after {
+			display: none;
+		}
+	}
+
+	/* Line color */
+	&.bt_bb_line_color_accent:after {
+		background: var(--accent-color);
+	}
+	&.bt_bb_line_color_alternate:after {
+		background: var(--alternate-color);
+	}
+
+	#{global.$center-alignment} {
+		&:after {
+			height: 5px;
+			width: 100%;
+		}
+		.bt_bb_quote_icon {
+			justify-content: center;
+			padding-top: 1.5em;
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.bt_bb_quote_text {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	#{global.$right-alignment} {
+		.bt_bb_quote_icon {
+			flex-direction: row-reverse;
+			padding-left: 0;
+			padding-right: 1.5rem;
+			&:after {
+				margin-left: 0em;
+				margin-right: 1em;
+			}
+		}
+		&:after {
+			left: auto;
+			right: 0;
+		}
+		.bt_bb_quote_text {
+			padding-left: 0;
+			padding-right: 1.5rem;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.bt_bb_quote.bt_bb_size_large .bt_bb_quote_text {
+		font-size: 3rem !important;
+	}
+}

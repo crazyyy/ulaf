@@ -1,0 +1,324 @@
+.mgwpp-dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  gap: 1.5rem;
+  flex-wrap: nowrap; /* Add this */
+}
+.mgwpp-branding-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  min-width: 0; /* Allows text truncation */
+  flex: 1 1 auto;
+}
+
+.mgwpp-actions-group {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-shrink: 0; /* Prevent shrinking */
+  flex-wrap: nowrap; /* Add this */
+}
+
+.mgwpp-titles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.mgwpp-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.mgwpp-theme-toggle-button {
+  background: var(--mgwpp-button-bg-light);
+  border: 1px solid var(--mgwpp-card-border-light);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  backdrop-filter: var(--mgwpp-backdrop-blur-sm);
+  -webkit-backdrop-filter: var(--mgwpp-backdrop-blur-sm);
+  background: rgba(255, 255, 255, 0.1);
+  transition: all var(--mgwpp-transition-speed) ease;
+}
+
+.mgwpp-dark .mgwpp-theme-toggle-button {
+  background: var(--mgwpp-button-bg-dark);
+  border-color: var(--mgwpp-card-border-dark);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mgwpp-theme-toggle-button img {
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.3s ease;
+}
+
+.mgwpp-dark {
+  background: var(--mgwpp-background-dark);
+  color: var(--mgwpp-foreground-dark);
+}
+
+.mgwpp-glass-container {
+  padding: 1rem;
+  position: relative;
+  border-radius: var(--mgwpp-border-radius-lg);
+  border: 1px solid var(--mgwpp-card-border-light);
+  background: var(--mgwpp-card-bg-light);
+  box-shadow: var(--mgwpp-card-shadow-light);
+  margin: 2rem;
+  backdrop-filter: var(--mgwpp-backdrop-blur);
+  -webkit-backdrop-filter: var(--mgwpp-backdrop-blur);
+  z-index: 1;
+  transition: all var(--mgwpp-transition-speed) ease;
+}
+
+.mgwpp-dark .mgwpp-glass-container {
+  border-color: var(--mgwpp-card-border-dark);
+  background: var(--mgwpp-card-bg-dark);
+  box-shadow: var(--mgwpp-card-shadow-dark);
+}
+/* Admin Button - Matches Glass Card Aesthetic */
+.mgwpp-admin-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: var(--mgwpp-border-radius-lg);
+  font-weight: 500;
+  transition: all var(--mgwpp-transition-speed) ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  /* Light Theme */
+  background: var(--mgwpp-card-bg-light);
+  border: 1px solid var(--mgwpp-card-border-light);
+  color: var(--mgwpp-foreground-light);
+  box-shadow: var(--mgwpp-card-shadow-light);
+  backdrop-filter: var(--mgwpp-backdrop-blur-sm);
+  -webkit-backdrop-filter: var(--mgwpp-backdrop-blur-sm);
+
+  /* Hover Effects */
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.8);
+  }
+
+  /* Dark Theme */
+  .mgwpp-dark & {
+    background: var(--mgwpp-card-bg-dark);
+    border-color: var(--mgwpp-card-border-dark);
+    color: var(--mgwpp-foreground-dark);
+    box-shadow: var(--mgwpp-card-shadow-dark);
+
+    &:hover {
+      background: rgba(15, 23, 42, 0.8);
+    }
+  }
+
+  /* Active State */
+  &:active {
+    transform: scale(0.98);
+  }
+
+  /* Focus State */
+  &:focus {
+    outline: 2px solid var(--mgwpp-primary-color);
+    outline-offset: 2px;
+  }
+
+  /* Disabled State */
+  &[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+    filter: grayscale(0.3);
+  }
+}
+
+/* Primary Variant */
+.mgwpp-admin-button--primary {
+  background: var(--mgwpp-primary-color);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  &:hover {
+    background: rgba(29, 193, 220, 0.9);
+  }
+
+  .mgwpp-dark & {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Icon Support */
+.mgwpp-admin-button__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  transition: transform 0.2s ease;
+}
+
+.mgwpp-admin-button:hover .mgwpp-admin-button__icon {
+  transform: translateX(3px);
+}
+
+/* Link style matching the admin button */
+.mgwpp-admin-link {
+  color: var(--mgwpp-primary-color);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: var(--mgwpp-border-radius-lg);
+  transition: all var(--mgwpp-transition-speed) ease;
+
+  &:hover {
+    background: rgba(29, 193, 220, 0.1);
+    text-decoration: underline;
+  }
+
+  .mgwpp-dark & {
+    color: var(--mgwpp-icon-color-dark);
+    &:hover {
+      background: rgba(77, 242, 255, 0.1);
+    }
+  }
+}
+
+/* Loader Styles */
+.mgwpp-loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.mgwpp-loader {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.mgwpp-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  animation: mgwpp-spin 1s linear infinite;
+}
+
+.mgwpp-loader-text {
+  display: block;
+  font-size: 16px;
+  color: #555;
+  font-weight: 600;
+}
+
+@keyframes mgwpp-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Header Logo and Theme Icon */
+.mgwpp-header-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.mgwpp-header-logo:hover {
+  transform: scale(1.05);
+}
+
+.mgwpp-theme-icon {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+#mgwpp-theme-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+#mgwpp-theme-toggle:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.mgwpp-dark-mode #mgwpp-theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Branding Group */
+.mgwpp-branding-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 782px) {
+  .mgwpp-dashboard-header {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .mgwpp-branding-group {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mgwpp-header-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .mgwpp-theme-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .mgwpp-actions-group {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .mgwpp-title {
+    font-size: 1.25rem;
+  }
+
+  .mgwpp-subtitle {
+    font-size: 0.875rem;
+  }
+}

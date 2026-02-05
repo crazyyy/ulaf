@@ -1,0 +1,113 @@
+/* Album Grid Container */
+.mgwpp-album-container {
+  display: flex !important;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin: 2rem auto;
+  max-width: 1400px;
+  padding: 0 1rem;
+}
+
+/* Gallery List Container */
+.mgwpp-album-gallery-list {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: inherit; /* Inherit from parent */
+  width: 100%;
+}
+
+/* Individual Gallery Item */
+.mgwpp-album-gallery-item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.mgwpp-album-gallery-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Gallery Link */
+.mgwpp-album-gallery-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Thumbnail Image */
+.mgwpp-album-thumbnail {
+  width: 100%;
+  height: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Gallery Title */
+.mgwpp-album-gallery-title {
+  margin: 0;
+  padding: 1rem;
+  background: white;
+  font-size: 1.1rem;
+  text-align: center;
+  border-radius: 0 0 8px 8px;
+}
+
+/* Back to Album Link */
+.mgwpp-back-to-album {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--primary);
+  color: white !important;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.mgwpp-back-to-album:hover {
+  background: var(--primary-dark);
+}
+
+/* Gallery Grid */
+.mgwpp-gallery-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+
+/* No Galleries/Preview Message */
+.mgwpp-no-galleries,
+.mgwpp-no-preview {
+  padding: 2rem;
+  text-align: center;
+  background: #f8f9fa;
+  border-radius: 8px;
+  color: #6c757d;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .mgwpp-album-container {
+    grid-template-columns: 1fr;
+    padding: 0 0.5rem;
+  }
+  
+  .mgwpp-gallery-grid {
+    gap: 0.5rem;
+  }
+
+  .mgwpp-album-thumbnail {
+    height: 200px;
+  }
+}
+
+/* Lightbox Overrides */
+.mgwpp-lightbox {
+  /* Add your lightbox styles here */
+}
