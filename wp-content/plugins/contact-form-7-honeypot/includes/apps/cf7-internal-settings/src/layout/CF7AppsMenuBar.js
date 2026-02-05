@@ -25,6 +25,12 @@ const CF7AppsMenuBar = () => {
             case 'Spam Protection':
                 return (
                     <>
+                        <img src={ `${ CF7AppsInternalSettings.assetsURL }/images/spam-protection.png` } width={ '30px' } alt={ menu } /> { menu }
+                    </>
+                );
+            case 'Integration':
+                return (
+                    <>
                         <img src={ `${ CF7AppsInternalSettings.assetsURL }/images/spam-protection.png` } width={ '23px' } alt={ menu } /> { menu }
                     </>
                 );
@@ -75,7 +81,7 @@ const CF7AppsMenuBar = () => {
                                                         Object.entries( menuItems[ parentMenu ] ).map( ( [ route, submenu ], submenuIndex ) => {
                                                             return (
                                                                 <div key={ submenuIndex } className={ 'cf7apps-menu-route' }>
-                                                                    <NavLink to={ `/${ route }` }>{ submenu }</NavLink>
+                                                                   <NavLink to={ `/settings/${ route }` }>{ submenu }</NavLink>
                                                                 </div>
                                                             );
                                                         } )

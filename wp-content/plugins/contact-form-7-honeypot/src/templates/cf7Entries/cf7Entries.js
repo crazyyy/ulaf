@@ -361,7 +361,7 @@ const Cf7Entries = () => {
 
                             <CF7AppsTextField
                                 className={ 'cf7apps-filter-text-field' }
-                                placeholder={ __( 'Search Form', 'cf7apps' ) }
+                                placeholder={ __( 'Search', 'cf7apps' ) }
                                 onChange={ ( e ) => handleSearchFrom( 'text', e.target.value ) }
                             />
 

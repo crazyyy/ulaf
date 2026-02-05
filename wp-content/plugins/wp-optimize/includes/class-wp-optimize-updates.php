@@ -42,6 +42,9 @@ class WP_Optimize_Updates {
 			'update_431_update_browser_cache_htaccess_config',
 			'update_431_db_table_analysis_wipe_usage_data',
 		),
+		'4.4.0' => array(
+			'update_440_change_plugin_json_permissions',
+		),
 	);
 
 	/**
@@ -360,6 +363,15 @@ class WP_Optimize_Updates {
 		if (class_exists('WPO_DB_Table_Analysis')) {
 			WPO_DB_Table_Analysis::wipe_usage_data();
 		}
+	}
+	
+	/**
+	 * Change permission for wpo-plugins-tables-list.json file
+	 */
+	private static function update_440_change_plugin_json_permissions() {
+		if (self::is_new_install()) return;
+
+		WP_Optimize()->get_db_info()->change_plugin_json_permissions();
 	}
 }
 

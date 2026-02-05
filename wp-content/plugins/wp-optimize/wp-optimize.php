@@ -3,7 +3,7 @@
 Plugin Name: WP-Optimize - Clean, Compress, Cache
 Plugin URI: https://teamupdraft.com/wp-optimize
 Description: WP-Optimize makes your site fast and efficient. It cleans the database, compresses images and caches pages. Fast sites attract more traffic and users.
-Version: 4.3.1
+Version: 4.4.1
 Requires at least: 4.9
 Requires PHP: 7.2
 Update URI: https://wordpress.org/plugins/wp-optimize/
@@ -18,7 +18,7 @@ if (!defined('ABSPATH')) die('No direct access allowed');
 
 // Check to make sure if WP_Optimize is already call and returns.
 if (!class_exists('WP_Optimize')) :
-define('WPO_VERSION', '4.3.1');
+define('WPO_VERSION', '4.4.1');
 define('WPO_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('WPO_PLUGIN_MAIN_PATH', plugin_dir_path(__FILE__));
 define('WPO_PLUGIN_SLUG', plugin_basename(__FILE__));
@@ -115,6 +115,15 @@ class WP_Optimize {
 		}
 		add_action('wpo_update_record_count_event', array($this->get_db_info(), 'wpo_update_record_count'));
 
+	}
+
+	/**
+	 * Returns Onboarding class instance
+	 *
+	 * @return WPO_Onboarding
+	 */
+	public function get_onboarding() {
+		return WPO_Onboarding::instance();
 	}
 
 	/**
@@ -713,6 +722,8 @@ class WP_Optimize {
 		if (WPO_USE_WEBP_CONVERSION) {
 			$this->get_webp_instance();
 		}
+
+		$this->get_onboarding()->init();
 	}
 
 	/**

@@ -26,7 +26,7 @@
         `<div id="cf7apps-root" class="cf7apps-internal-settings"></div>`
     );
 
-    if ( '1' === cf7appsWrapperObjects.cf7appsRedirectionEnabled ) {
+    if ( '1' === cf7appsWrapperObjects.cf7appsRedirectionEnabled || '1' === cf7appsWrapperObjects.cf7appsWebhookEnabled ) {
         $( '#form-panel' ).css( 'position', 'relative' ).append(
             `<a  id="cf7apps-target-btn" style="position:absolute; top: 20px;right: 20px;padding: 0 20px;" href="#cf7apps-root" class="components-button cf7apps-btn tertiary-primary">CF7 Apps Settings</a>`
         );

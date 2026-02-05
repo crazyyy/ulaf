@@ -2,18 +2,18 @@ pipeline {
     agent any
 
     // ------------------------------
-    // Environment variables
+    // Global environment variables
     // ------------------------------
     environment {
-        SSH_HOST       = "cpdb.pp.ua"                        // Remote server IP or hostname
-        SSH_USER       = "jenkins"                            // Remote SSH user
-        GIT_DIR        = "/srv/www/ulaf"                     // Path to Git repository on remote
-        DEPLOY_DIR     = "/www/wwwroot/ulaf.com.ua"          // Deployment target directory
-        SSH_CREDENTIAL = "ulaf-cpdb"                         // Jenkins SSH credentials ID
+        SSH_HOST       = "cpdb.pp.ua"              // Remote server hostname
+        SSH_USER       = "jenkins"                 // SSH user on remote server
+        GIT_DIR        = "/srv/www/ulaf"            // Git repository path on remote host
+        DEPLOY_DIR     = "/www/wwwroot/ulaf.com.ua" // Web root / deploy target
+        SSH_CREDENTIAL = "ulaf-cpdb"                // Jenkins SSH credentials ID
     }
 
     // ------------------------------
-    // Trigger on GitHub push
+    // Trigger pipeline on GitHub push
     // ------------------------------
     triggers {
         githubPush()
@@ -22,40 +22,38 @@ pipeline {
     stages {
 
         // ------------------------------
-        // Deployment stage
+        // Main deployment stage
         // ------------------------------
         stage("Deploy") {
             steps {
 
-                // Use SSH credentials stored in Jenkins
+                // Inject SSH private key from Jenkins credentials
                 withCredentials([
                     sshUserPrivateKey(
-                        credentialsId: "${SSH_CREDENTIAL}",
+                        credentialsId: SSH_CREDENTIAL,
                         keyFileVariable: "SSH_KEY"
                     )
                 ]) {
 
-                    // ------------------------------
-                    // Execute deployment commands over SSH
-                    // ------------------------------
                     sh """
-                    set -e  # Stop on any error
+                    set -e  # Exit immediately if any command fails
 
-                    # Ensure known_hosts exists and has the server fingerprint
+                    # Prepare SSH known_hosts to avoid interactive prompt
                     mkdir -p ~/.ssh
                     chmod 700 ~/.ssh
                     ssh-keyscan -H ${SSH_HOST} >> ~/.ssh/known_hosts
 
-                    # Execute commands on remote server without heredoc
-                    ssh -i "$SSH_KEY" \
-                        -o IdentitiesOnly=yes \
-                        -o StrictHostKeyChecking=accept-new \
-                        ${SSH_USER}@${SSH_HOST} \
-                        "set -e && \
-                        cd ${GIT_DIR} && \
-                        git pull --ff-only && \
-                        sudo rsync -av --delete --exclude-from=.rsyncignore ${GIT_DIR}/ ${DEPLOY_DIR} && \
-                        sudo chown -R www:www ${DEPLOY_DIR}"
+                    # Run deployment commands on the remote server
+                    ssh -i "\$SSH_KEY" \\
+                        -o IdentitiesOnly=yes \\
+                        -o StrictHostKeyChecking=accept-new \\
+                        ${SSH_USER}@${SSH_HOST} \\
+                        "set -e && \\
+                        cd ${GIT_DIR} && \\
+                        git pull --ff-only && \\
+                        sudo rsync -av --delete --exclude-from=.rsyncignore ${GIT_DIR}/ ${DEPLOY_DIR} && \\
+                        sudo chown -R www:www ${DEPLOY_DIR} && \\
+                        echo 'WordPress stack deployed successfully'"
                     """
                 }
             }
@@ -63,14 +61,14 @@ pipeline {
     }
 
     // ------------------------------
-    // Post actions
+    // Post-build actions
     // ------------------------------
     post {
         success {
-            echo "Deployment successful"
+            echo "Pipeline completed successfully."
         }
         failure {
-            echo "Deployment failed"
+            echo "Deployment failed. Check Jenkins logs."
         }
     }
 }

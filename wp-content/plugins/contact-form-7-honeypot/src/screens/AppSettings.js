@@ -1,4 +1,4 @@
-import { useEffect, useState } from "@wordpress/element";
+import { useEffect, useState, useCallback } from "@wordpress/element";
 import { __, sprintf } from "@wordpress/i18n";
 import CF7AppsSkeletonLoader from "../components/CF7AppsSkeletonLoader";
 import { useParams } from "react-router";
@@ -9,12 +9,119 @@ import CF7AppsToggle from "../components/CF7AppsToggle";
 import CF7AppsTextField from "../components/CF7AppsTextField";
 import CF7AppsNumberField from "../components/CF7AppsNumberField";
 import CF7AppsRadioField from "../components/CF7AppsRadioField";
+import CF7AppsHelpText from "../components/CF7AppsHelpText";
 import { Button } from "@wordpress/components";
 import CF7AppsTemplates from "../templates/CF7AppsTemplates";
 import { toast } from 'react-toastify';
 import parse from 'html-react-parser';
 import CF7AppsSelectField from "../components/CF7AppsSelectField";
 import CF7AppsNotice from "../components/CF7AppsNotice";
+
+const TextareaField = ({ fieldKey, field, className, description, disabled, openMap, setOpenMap, formData, handleInputChange }) => {
+    const open = (openMap && openMap[ fieldKey ] !== undefined) ? openMap[ fieldKey ] : ! field.collapsible;
+
+    const toggleOpen = () => {
+        setOpenMap( prev => ( {
+            ...prev,
+            [ fieldKey ]: ! prev[ fieldKey ]
+        } ) );
+    };
+
+    // Chevron icon SVG
+    const ChevronIcon = ({ isOpen = false }) => (
+        <svg 
+            width="12" 
+            height="12" 
+            viewBox="0 0 12 12" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+            style={{ 
+                transition: 'transform 0.2s ease'
+            }}
+        >
+            <path 
+                d={isOpen ? "M3 7L6 4L9 7" : "M3 5L6 8L9 5"} 
+                stroke="#666" 
+                strokeWidth="1.5" 
+                strokeLinecap="round" 
+                strokeLinejoin="round"
+            />
+        </svg>
+    );
+
+    return (
+        <div className="cf7apps-form-group cf7apps-settings">
+            { field.collapsible ? (
+                <div 
+                    style={ { 
+                        display: 'flex', 
+                        alignItems: 'center', 
+                        justifyContent: 'space-between', 
+                        gap: '8px', 
+                        width: '500px',
+                        padding: '10px 12px',
+                        backgroundColor: field.collapsed_button_color ? `${field.collapsed_button_color}20` : '#e8f4f8',
+                        borderRadius: '4px',
+                        cursor: disabled ? 'not-allowed' : 'pointer',
+                        opacity: disabled ? 0.6 : 1,
+                        border: 'none',
+                        transition: 'background-color 0.2s ease'
+                    } }
+                    onClick={ toggleOpen }
+                    onMouseEnter={(e) => {
+                        if (!disabled) {
+                            e.currentTarget.style.backgroundColor = field.collapsed_button_color ? `${field.collapsed_button_color}30` : '#d4e8f0';
+                        }
+                    }}
+                    onMouseLeave={(e) => {
+                        e.currentTarget.style.backgroundColor = field.collapsed_button_color ? `${field.collapsed_button_color}20` : '#e8f4f8';
+                    }}
+                    role="button"
+                    tabIndex={0}
+                    onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            toggleOpen();
+                        }
+                    }}
+                    aria-expanded={ !! open }
+                >
+                    <div><label style={{ margin: 0, cursor: disabled ? 'not-allowed' : 'pointer', fontWeight: '500' }}>{ field.title }</label></div>
+                    <ChevronIcon isOpen={open} />
+                </div>
+            ) : (
+                <div><label><b>{ field.title }</b></label></div>
+            ) }
+
+            { open && (
+                <div style={ { marginTop: '10px' } }>
+                    { field.pre_text && (
+                        <div className="cf7apps-pre-text" style={ { marginBottom: '8px', color: '#444' } }>
+                            { parse( String( field.pre_text ) ) }
+                        </div>
+                    ) }
+                    <textarea
+                        className={ `cf7apps-form-input ${ className }` }
+                        name={ fieldKey }
+                        value={ formData[ fieldKey ] || '' }
+                        onChange={ handleInputChange }
+                        rows={ 3 }
+                        disabled={ disabled }
+                        style={ { width: '500px', minHeight: '120px', boxSizing: 'border-box', padding: '12px' } }
+                    ></textarea>
+
+                    { field.post_text && (
+                        <div className="cf7apps-post-text" style={ { width: '500px',marginTop: '8px', color: '#444' } }>
+                            { parse( String( field.post_text ) ) }
+                        </div>
+                    ) }
+
+                    <CF7AppsHelpText description={ description } />
+                </div>
+            ) }
+        </div>
+    );
+};
 
 const AppSettings = () => {
     let { app } = useParams();
@@ -23,9 +130,21 @@ const AppSettings = () => {
     const [isLoading, setIsLoading] = useState(false);
     const [tabValue, setTabValue] = useState('1');
     const [hasTabs, setHasTabs] = useState(false);
+    const [showAcfNotice, setShowAcfNotice] = useState(false);
     const [formData, setFormData] = useState(false);
     const [isSaving, setIsSaving] = useState(false);
     const [notice, setNotice] = useState({ show: false, text: '' });
+    const [ openMap, setOpenMap ] = useState( {} );
+
+    // Scroll to top when ACF notice is shown
+    useEffect(() => {
+        if (showAcfNotice && appSettings && appSettings.requires_acf && !appSettings.acf_available) {
+            // Use setTimeout to ensure DOM has updated
+            setTimeout(() => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }, 100);
+        }
+    }, [showAcfNotice]);
 
     useEffect(() => {
 
@@ -41,6 +160,12 @@ const AppSettings = () => {
                 setIsLoading(true);
                 
                 const appSettings = await getApps(app);
+                
+                if (!appSettings) {
+                    setIsLoading(false);
+                    return;
+                }
+                
                 let hasTabs = Object.keys(appSettings.setting_tabs).length > 0 ? true : false;
                 let _formData = {};
                 
@@ -54,10 +179,16 @@ const AppSettings = () => {
                         Object.keys(settings['fields'][tabKey]).map((fieldKey, fieldIndex) => {
                             if(fieldKey !== 'template') {
                                 if( settings['fields'][tabKey][fieldKey].type === 'text' || settings['fields'][tabKey][fieldKey].type === 'number' || 'radio' === settings['fields'][tabKey][fieldKey].type ) {
-                                    _formData[fieldKey] = settings['fields'][tabKey][fieldKey].value;
+                                    if ( settings['fields'][tabKey][fieldKey].value !== undefined ) {
+                                        _formData[fieldKey] = settings['fields'][tabKey][fieldKey].value;
+                                    } else {
+                                        _formData[fieldKey] = settings['fields'][tabKey][fieldKey].default;
+                                    }
                                 }
                                 else if(settings['fields'][tabKey][fieldKey].type === 'checkbox') {
                                     _formData[fieldKey] = settings['fields'][tabKey][fieldKey].checked;
+                                } else if ( settings['fields'][tabKey][fieldKey].type === 'textarea' ) {
+                                    _formData[fieldKey] = settings['fields'][tabKey][fieldKey].value !== undefined ? settings['fields'][tabKey][fieldKey].value : (settings['fields'][tabKey][fieldKey].default ? settings['fields'][tabKey][fieldKey].default : '');
                                 }
                             }
                         });
@@ -81,6 +212,8 @@ const AppSettings = () => {
                                 } else {
                                     _formData[fieldKey] = field.default;
                                 }
+                            } else if ( field.type === 'textarea' ) {
+                                _formData[fieldKey] = field.value !== undefined ? field.value : (field.default ? field.default : '');
                             }
 
                             if ( settings['fields'][ fieldKey ].sub_fields ) {
@@ -110,8 +243,29 @@ const AppSettings = () => {
                         }
                     });
                 }
-
                 setFormData(_formData);
+                // initialize openMap for textarea fields across tabs
+                let _openMap = {};
+                if ( hasTabs ) {
+                    Object.keys(appSettings.setting_tabs).map((tabKey) => {
+                        const tabSettings = appSettings.admin_settings['general']['fields'][tabKey];
+                        Object.keys(tabSettings).map((fieldKey) => {
+                            const field = tabSettings[fieldKey];
+                            if ( field && field.type === 'textarea' ) {
+                                _openMap[fieldKey] = ! field.collapsible;
+                            }
+                        });
+                    });
+                } else {
+                    const settings = appSettings.admin_settings['general']['fields'];
+                    Object.keys(settings).map((fieldKey) => {
+                        const field = settings[fieldKey];
+                        if ( field && field.type === 'textarea' ) {
+                            _openMap[fieldKey] = ! field.collapsible;
+                        }
+                    });
+                }
+                setOpenMap( _openMap );
                 setAppSettings(appSettings);
                 setIsLoading(false);
             }
@@ -153,8 +307,13 @@ const AppSettings = () => {
         let requiredMessage = '';
 
         // Check if the app is enabled (adjust the key if needed)
-        // If your toggle field is named 'is_enabled', this will work:
         const isEnabled = ( formData.is_enabled === undefined || formData.is_enabled === false ) ? false : true;
+
+        // Check if ACF is required but not available when trying to enable
+        if (isEnabled && appSettings.requires_acf && !appSettings.acf_available) {
+            toast.error( __( 'This integration requires the Advanced Custom Fields plugin to be installed and active.', 'cf7apps' ) );
+            return;
+        }
 
         // Only validate required fields if app is enabled
         if (isEnabled) {
@@ -205,6 +364,29 @@ const AppSettings = () => {
             }
         }
 
+        // Validate webhook URL format (only for webhook app)
+        if ( app === 'webhook' && isEnabled ) {
+            const webhookUrl = formData['webhook_url'] ? formData['webhook_url'].trim() : '';
+            
+            // Check if webhook URL is empty
+            if ( webhookUrl === '' ) {
+                const errorMessage = __( 'Webhook URL cannot be empty.', 'cf7apps' );
+                setNotice({ show: true, text: errorMessage });
+                toast.error( errorMessage );
+                setIsSaving(false);
+                return;
+            }
+            
+            // Check if webhook URL has correct format
+            if ( !webhookUrl.startsWith('http://') && !webhookUrl.startsWith('https://') ) {
+                const errorMessage = __( 'Webhook URL must start with http:// or https://', 'cf7apps' );
+                setNotice({ show: true, text: errorMessage });
+                toast.error( errorMessage );
+                setIsSaving(false);
+                return;
+            }
+        }
+
         setNotice({ show: false, text: '' });
         setIsSaving(true);
 
@@ -234,6 +416,7 @@ const AppSettings = () => {
      * 
      * @since 3.0.0
      */
+
     const Settings = () => {
         if(hasTabs) {
             // Tabs
@@ -246,7 +429,8 @@ const AppSettings = () => {
                                     Object.keys(appSettings.setting_tabs).map((tabKey, tabIndex) => {
                                         return (
                                             <Tab
-                                                label={appSettings.setting_tabs[tabKey]}
+                                                key={ tabKey }
+                                                label={ appSettings.setting_tabs[tabKey] }
                                                 value={`${tabIndex + 1}`}
                                                 className="cf7apps-settings-tab"
                                             />
@@ -258,9 +442,9 @@ const AppSettings = () => {
                         {
                             Object.keys(appSettings.setting_tabs).map((tabKey, tabIndex) => {
                                 const tabSettings = appSettings.admin_settings['general']['fields'][tabKey];
-                                
+
                                 return (
-                                    <TabPanel value={`${tabIndex + 1}`}>
+                                    <TabPanel key={ tabKey } value={`${tabIndex + 1}`}>
                                         {
                                             Object.keys(tabSettings).map((fieldKey, fieldIndex) => {
                                                 const field = tabSettings[fieldKey];
@@ -271,6 +455,7 @@ const AppSettings = () => {
                                                 if(field.type === 'notice') {
                                                     return (
                                                         <CF7AppsNotice
+                                                            key={ fieldKey }
                                                             type={className}
                                                             text={field.text}
                                                         />
@@ -278,17 +463,18 @@ const AppSettings = () => {
                                                 }
                                                 else if(fieldKey === 'title') {
                                                     return (
-                                                        <h3>{tabSettings.title}</h3>
+                                                        <h3 key={ fieldKey }>{tabSettings.title}</h3>
                                                     )
                                                 }
                                                 else if(fieldKey === 'description') {
                                                     return (
-                                                        <p className="cf7apps-help-text">{tabSettings.description}</p>
+                                                        <p key={ fieldKey } className="cf7apps-help-text">{tabSettings.description}</p>
                                                     )
                                                 }
                                                 else if(field.type === 'text') {
                                                     return (
                                                         <CF7AppsTextField
+                                                            key={ fieldKey }
                                                             label={field.title}
                                                             description={ parse( String(field.description) ) }
                                                             className={className}
@@ -303,6 +489,7 @@ const AppSettings = () => {
                                                 else if(field.type === 'number') {
                                                     return (
                                                         <CF7AppsNumberField
+                                                            key={ fieldKey }
                                                             label={field.title}
                                                             description={ parse( String(field.description) ) }
                                                             className={className}
@@ -310,18 +497,40 @@ const AppSettings = () => {
                                                             placeholder={palceholder}
                                                             value={formData[fieldKey]}
                                                             onChange={handleInputChange}
+                                                            min={field.min}
                                                         />
                                                     )
                                                 } 
                                                 else if(field.type === 'checkbox') {
                                                     return (
                                                         <CF7AppsToggle
+                                                            key={ fieldKey }
                                                             help={help} 
                                                             label={field.title}
                                                             className={className}
                                                             isSelected={formData[fieldKey]}
                                                             description={ parse( String(field.description) ) }
+                                                            disabled={field.disabled}
                                                             onChange={(e) => {
+                                                                // Show red warning notice if trying to enable without ACF
+                                                                if (fieldKey === 'is_enabled' && 
+                                                                    appSettings.requires_acf && 
+                                                                    !appSettings.acf_available && 
+                                                                    !formData[fieldKey]) {
+                                                                    // Reset notice state to ensure useEffect triggers
+                                                                    setShowAcfNotice(false);
+                                                                    // Use setTimeout to ensure state reset before setting to true
+                                                                    setTimeout(() => {
+                                                                        setShowAcfNotice(true);
+                                                                        // Scroll to top immediately
+                                                                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                                                                    }, 10);
+                                                                    // Hide notice after 5 seconds
+                                                                    setTimeout(() => setShowAcfNotice(false), 5000);
+                                                                    return;
+                                                                }
+                                                                // Hide notice if enabling successfully
+                                                                setShowAcfNotice(false);
                                                                 setFormData({
                                                                     ...formData,
                                                                     [fieldKey]: ! formData[fieldKey]
@@ -333,6 +542,7 @@ const AppSettings = () => {
                                                 else if(field.type === 'select') {
                                                     return (
                                                         <CF7AppsSelectField
+                                                            key={ fieldKey }
                                                             label={field.title}
                                                             className={className}
                                                             name={fieldKey}
@@ -342,9 +552,25 @@ const AppSettings = () => {
                                                         />
                                                     )
                                                 }
+                                                else if ( field.type === 'textarea' ) {
+                                                    return (
+                                                        <TextareaField
+                                                            key={ fieldKey }
+                                                            fieldKey={ fieldKey }
+                                                            field={ field }
+                                                            className={ className }
+                                                            description={ parse( String(field.description) ) }
+                                                            disabled={ field.disabled }
+                                                            openMap={ openMap }
+                                                            setOpenMap={ setOpenMap }
+                                                            formData={ formData }
+                                                            handleInputChange={ handleInputChange }
+                                                        />
+                                                    )
+                                                }
                                                 else if(field.type === 'save_button') {
                                                     return (
-                                                        <div className="cf7apps-form-group">
+                                                        <div key={ fieldKey } className="cf7apps-form-group">
                                                             <Button 
                                                                 className="cf7apps-btn tertiary-primary"
                                                                 onClick={saveAppSettings}
@@ -361,13 +587,14 @@ const AppSettings = () => {
                                                     // passing app settings to template for enable and disable the entries app.
                                                     return(
                                                         <Template
+                                                            key={ fieldKey }
                                                             appSettings={ appSettings }
                                                             formData={ formData }
                                                         />
                                                     )
                                                 }
                                                 else {
-                                                    console.log(fieldKey);
+                                                  //  console.log(fieldKey);
                                                 }
                                             })
                                         }
@@ -440,6 +667,7 @@ const AppSettings = () => {
                                             placeholder={palceholder}
                                             value={formData[fieldKey]}
                                             onChange={handleInputChange}
+                                            min={field.min}
                                         />
                                     )
                                 } 
@@ -450,12 +678,33 @@ const AppSettings = () => {
                                             label={field.title}
                                             className={className}
                                             isSelected={formData[fieldKey]}
-                                            onChange={(e) => {
-                                                setFormData({
-                                                    ...formData,
-                                                    [fieldKey]: ! formData[fieldKey]
-                                                });
-                                            }}
+                                            description={ parse( String(field.description) ) }
+                                            disabled={field.disabled}
+                                                            onChange={(e) => {
+                                                                // Show red warning notice if trying to enable without ACF
+                                                                if (fieldKey === 'is_enabled' && 
+                                                                    appSettings.requires_acf && 
+                                                                    !appSettings.acf_available && 
+                                                                    !formData[fieldKey]) {
+                                                                    // Reset notice state to ensure useEffect triggers
+                                                                    setShowAcfNotice(false);
+                                                                    // Use setTimeout to ensure state reset before setting to true
+                                                                    setTimeout(() => {
+                                                                        setShowAcfNotice(true);
+                                                                        // Scroll to top immediately
+                                                                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                                                                    }, 10);
+                                                                    // Hide notice after 5 seconds
+                                                                    setTimeout(() => setShowAcfNotice(false), 5000);
+                                                                    return;
+                                                                }
+                                                                // Hide notice if enabling successfully
+                                                                setShowAcfNotice(false);
+                                                                setFormData({
+                                                                    ...formData,
+                                                                    [fieldKey]: ! formData[fieldKey]
+                                                                });
+                                                            }}
                                         />
                                     )
                                 }
@@ -471,6 +720,21 @@ const AppSettings = () => {
                                             description={ parse( String(field.description) ) }
                                         />
                                     )
+                                    } else if ( field.type === 'textarea' ) {
+                                        return (
+                                            <TextareaField
+                                                key={ fieldKey }
+                                                fieldKey={ fieldKey }
+                                                field={ field }
+                                                className={ className }
+                                                description={ parse( String(field.description) ) }
+                                                disabled={ field.disabled }
+                                                openMap={ openMap }
+                                                setOpenMap={ setOpenMap }
+                                                formData={ formData }
+                                                handleInputChange={ handleInputChange }
+                                            />
+                                        )
                                 }
                                 else if(field.type === 'save_button') {
                                     return (
@@ -493,7 +757,19 @@ const AppSettings = () => {
                                 }
                                 else if ( 'radio' === field.type ) {
                                     let subField = field.sub_fields && field.sub_fields[ formData[ fieldKey ] ];
-                                    subField['value'] = formData[ formData[ fieldKey ] ];
+                                        if ( subField ) {
+                                            // Ensure radio sub-field reflects current saved value
+                                            const currentSubKey = formData[ fieldKey ];
+                                            const currentSubValue = formData[ currentSubKey ];
+
+                                            if ( subField.type === 'select' ) {
+                                                // Select inputs depend on 'selected' prop
+                                                subField['selected'] = currentSubValue;
+                                            } else {
+                                                // Text/number inputs depend on 'value' prop
+                                                subField['value'] = currentSubValue;
+                                            }
+                                        }
                                     return (
                                         <>
                                             <CF7AppsRadioField
@@ -509,7 +785,7 @@ const AppSettings = () => {
                                     );
                                 }
                                 else {
-                                    console.log(field);
+                                 //   console.log(field);
                                 }
                             })
                         }
@@ -525,9 +801,20 @@ const AppSettings = () => {
         <div className="cf7apps-body">
             <div className="cf7apps-app-setting-header">
                 <div className="cf7apps-container">
-                    <h1>{ sprintf( __( '%s Settings', 'cf7apps' ), appSettings.title ) }</h1>
+                    <h1>{ appSettings.id === 'acf-integration' ? appSettings.title : sprintf( __( '%s Settings', 'cf7apps' ), appSettings.title ) }</h1>
                 </div>
             </div>
+            {showAcfNotice && appSettings.requires_acf && !appSettings.acf_available && (
+                <div className="cf7apps-container" style={{ marginTop: '20px', marginBottom: '20px' }}>
+                    <CF7AppsNotice
+                        type="danger"
+                        text={sprintf(
+                            __( 'This integration requires the Advanced Custom Fields plugin to be installed and active. %s', 'cf7apps' ),
+                            '<a href="' + (window.location.origin + '/wp-admin/plugin-install.php?s=advanced-custom-fields&tab=search&type=term') + '" style="text-decoration: underline; font-weight: bold;">' + __( 'Install ACF Plugin', 'cf7apps' ) + '</a>'
+                        )}
+                    />
+                </div>
+            )}
             <div className="cf7apps-app-setting-section">
                 <div className="cf7apps-container">
                     { Settings() }

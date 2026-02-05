@@ -6,8 +6,9 @@ import { Link } from "react-router";
 import { saveSettings } from "../api/api";
 import { toast } from "react-toastify";
 
-const CF7AppsApp = ({ settings }) => {
+const CF7AppsApp = ({ settings, onShowAcfNotice }) => {
     const [isEnabled, setIsEnabled] = useState(false);
+    const [iconSrc, setIconSrc] = useState( settings.icon || ( CF7Apps && CF7Apps.assetsURL ? `${CF7Apps.assetsURL}/images/logo.png` : '' ) );
 
     useEffect(() => {
         setIsEnabled(settings.is_enabled);
@@ -21,6 +22,15 @@ const CF7AppsApp = ({ settings }) => {
      * @since 3.0.0
      */
     const switchApp = () => {
+        // Check if app requires ACF and if ACF is not available
+        if ( settings.requires_acf && ! settings.acf_available && !isEnabled ) {
+            // Show red warning notice at top of page
+            if (onShowAcfNotice) {
+                onShowAcfNotice();
+            }
+            return;
+        }
+
         let app_settings = {};
         app_settings.is_enabled = !isEnabled;
 
@@ -42,10 +52,16 @@ const CF7AppsApp = ({ settings }) => {
                 <div className="cf7apps-app-container">
                     <div className="cf7apps-app-header">
                         <div>
-                            <img 
-                                src={settings.icon} 
-                                alt={settings.title} 
-                                height={28} 
+                            <img
+                                src={ iconSrc }
+                                alt={ settings.title }
+                                height={ 28 }
+                                onError={ () => {
+                                    const fallback = ( CF7Apps && CF7Apps.assetsURL ) ? `${CF7Apps.assetsURL}/images/logo.png` : '';
+                                    if ( iconSrc !== fallback ) {
+                                        setIconSrc( fallback );
+                                    }
+                                } }
                                 style={ isEnabled ? { filter: 'none' } : { filter: 'grayscale(100%)' } }
                             />
                         </div>

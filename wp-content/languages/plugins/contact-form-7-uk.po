@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Contact Form 7 - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-11-17 22:10:22+0000\n"
+"PO-Revision-Date: 2025-12-27 13:54:22+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,20 @@ msgstr ""
 "X-Generator: GlotPress/4.0.3\n"
 "Language: uk_UA\n"
 "Project-Id-Version: Plugins - Contact Form 7 - Stable (latest release)\n"
+
+#. translators: %s: URL to the Really Simple CAPTCHA plugin page
+#: modules/really-simple-captcha.php:36
+msgid "<strong>Warning:</strong> The <a href=\"%s\">Really Simple CAPTCHA</a> plugin is not active."
+msgstr "<strong>Увага:</strong> Плагін <a href=\"%s\">Really Simple CAPTCHA</a> не активовано."
+
+#. translators: %s: URL to support page about integration with external APIs
+#: admin/admin.php:586
+msgid "You can expand the possibilities of your contact forms by integrating them with external services. For details, see <a href=\"%s\">Integration with external APIs</a>."
+msgstr "Ви можете розширити можливості своїх контактних форм, інтегрувавши їх із зовнішніми сервісами. Детальніше дивись <a href=\"%s\">Інтеграція з зовнішніми API</a>."
+
+#: admin/includes/editor.php:396
+msgid "Exclude a line from output if all of its mail-tags are blank"
+msgstr "Виключити рядок із виведення, якщо всі його поштові теги порожні"
 
 #. translators: 1: URL to support page about Cloudflare Turnstile, 2: Stripe
 #: admin/includes/welcome-panel.php:139
@@ -121,11 +135,11 @@ msgstr "Не вдалося надіслати повідомлення"
 msgid "https://contactform7.com/turnstile-integration/"
 msgstr "https://contactform7.com/turnstile-integration/"
 
-#: admin/admin.php:758
+#: admin/admin.php:755
 msgid "<strong>Attention reCAPTCHA users:</strong> Google attempts to make all reCAPTCHA users migrate to reCAPTCHA Enterprise, meaning Google charges you for API calls exceeding the free tier. Contact Form 7 supports <a href=\"https://contactform7.com/turnstile-integration/\">Cloudflare Turnstile</a>, and we recommend it unless you have reasons to use reCAPTCHA."
 msgstr "<strong>До уваги користувачів reCAPTCHA:</strong> Google намагається перевести всіх користувачів reCAPTCHA на reCAPTCHA Enterprise, що означає, що Google стягуватиме плату за виклики API, які перевищують безкоштовний ліміт. Contact Form 7 підтримує <a href=\"https://contactform7.com/turnstile-integration/\">Cloudflare Turnstile</a>, і ми рекомендуємо його, якщо у вас немає причин використовувати reCAPTCHA."
 
-#: admin/admin.php:744
+#: admin/admin.php:741
 msgid "Contact Form 7 has completed the <a href=\"https://contactform7.com/2025/01/08/complete-removal-of-constant-contact-integration/\">removal of the Constant Contact integration</a>. We recommend <a href=\"https://contactform7.com/sendinblue-integration/\">Brevo</a> as an alternative."
 msgstr "Contact Form 7 завершив <a href=\"https://contactform7.com/2025/01/08/complete-removal-of-constant-contact-integration/\">видалення інтеграції Constant Contact</a>. Як альтернативу ми рекомендуємо <a href=\"https://contactform7.com/sendinblue-integration/\">Brevo</a>."
 
@@ -696,18 +710,9 @@ msgstr "Ваші контактні форми стануть потужніши
 msgid "You have strong allies to back you up."
 msgstr "У вас є сильні союзники, які вас підтримують."
 
-#: admin/admin.php:589
-msgid "Integration with external APIs"
-msgstr "Інтеграція з зовнішніми API"
-
-#: admin/admin.php:588
+#: admin/admin.php:587
 msgid "https://contactform7.com/integration-with-external-apis/"
 msgstr "https://contactform7.com/integration-with-external-apis/"
-
-#. translators: %s: link labeled 'Integration with external APIs'
-#: admin/admin.php:586
-msgid "You can expand the possibilities of your contact forms by integrating them with external services. For details, see %s."
-msgstr "Ви можете розширити можливості ваших контактних форм, інтегрувавши їх із зовнішніми сервісами. Детальніше див. %s."
 
 #: admin/admin.php:65 admin/admin.php:576
 msgid "Integration with External API"
@@ -1002,11 +1007,6 @@ msgstr "Ця форма доступна тільки для зареєстро�
 msgid "Deprecated settings are used."
 msgstr "Використовуються застарілі налаштування."
 
-#. translators: %s: link labeled 'Really Simple CAPTCHA'
-#: modules/really-simple-captcha.php:36
-msgid "To use CAPTCHA, you need %s plugin installed."
-msgstr "Для використання CAPTCHA потрібно встановити плагін %s."
-
 #: includes/rest-api.php:323
 msgid "There was an error deleting the contact form."
 msgstr "Помилка при видаленні контактної форми."
@@ -1076,7 +1076,7 @@ msgstr[0] "Виявлена %s помилка конфігурації"
 msgstr[1] "Виявлені %s помилки конфігурації"
 msgstr[2] "Виявлено %s помилок конфігурації"
 
-#: admin/admin.php:646 includes/rest-api.php:209 includes/rest-api.php:278
+#: admin/admin.php:643 includes/rest-api.php:209 includes/rest-api.php:278
 msgid "There was an error saving the contact form."
 msgstr "Помилка при збереженні контактної форми."
 
@@ -1174,12 +1174,12 @@ msgstr "Перевірте конфігурацію Contact Form 7"
 msgid "https://contactform7.com/configuration-errors/"
 msgstr "https://contactform7.com/configuration-errors/"
 
-#: admin/admin.php:664
+#: admin/admin.php:661
 msgid "Configuration validation completed. No invalid contact form was found."
 msgstr "Перевірка конфігурації завершена. Проблеми в контактних формах не знайдені."
 
 #. translators: %s: number of contact forms
-#: admin/admin.php:656
+#: admin/admin.php:653
 msgid "Configuration validation completed. %s invalid contact form was found."
 msgid_plural "Configuration validation completed. %s invalid contact forms were found."
 msgstr[0] "Перевірка конфігурації завершена. Була виявлена %s невірна форма контактів."
@@ -1424,20 +1424,20 @@ msgstr "радіокнопки"
 msgid "checkboxes"
 msgstr "прапорці"
 
-#: modules/really-simple-captcha.php:295
+#: modules/really-simple-captcha.php:290
 msgid "This contact form contains CAPTCHA fields, but the necessary libraries (GD and FreeType) are not available on your server."
 msgstr "Ця форма використовує CAPTCHA, проте необхідні бібліотеки (GD і FreeType) недоступні на Вашому сервері."
 
 #. translators: %s: Path to the temporary folder
-#: modules/really-simple-captcha.php:283
+#: modules/really-simple-captcha.php:278
 msgid "This contact form contains CAPTCHA fields, but the temporary folder for the files (%s) does not exist or is not writable. You can create the folder or change its permission manually."
 msgstr "Ця форма містить поля CAPTCHA, проте тимчасовий каталог для файлів (%s) не існує або недоступний для запису. Ви можете створити цей каталог або встановити дозвіл на запис вручну."
 
-#: modules/really-simple-captcha.php:241
+#: modules/really-simple-captcha.php:236
 msgid "Your entered code is incorrect."
 msgstr "Введено невірний контрольний код."
 
-#: modules/really-simple-captcha.php:239
+#: modules/really-simple-captcha.php:234
 msgid "The code that sender entered does not match the CAPTCHA"
 msgstr "Невірний код CAPTCHA"
 
@@ -1784,7 +1784,7 @@ msgstr "Введіть назву тут"
 msgid "Save"
 msgstr "Зберегти"
 
-#: admin/admin.php:730
+#: admin/admin.php:727
 msgid "You are not allowed to edit this contact form."
 msgstr "Ви не можете редагувати цю контактну форму."
 
@@ -1813,23 +1813,23 @@ msgid "Dismiss"
 msgstr "Приховати"
 
 #. translators: 1: version of Contact Form 7, 2: version of WordPress, 3: URL
-#: admin/admin.php:708
+#: admin/admin.php:705
 msgid "<strong>Contact Form 7 %1$s requires WordPress %2$s or higher.</strong> Please <a href=\"%3$s\">update WordPress</a> first."
 msgstr "<strong>Contact Form 7 %1$s потребує версію WordPress %2$s або новішу.</strong> Будь ласка, <a href=\"%3$s\">оновіть WordPress</a>."
 
-#: admin/admin.php:690
+#: admin/admin.php:687
 msgid "Settings"
 msgstr "Налаштування"
 
-#: admin/admin.php:643
+#: admin/admin.php:640
 msgid "Contact form deleted."
 msgstr "Контактну форму видалено."
 
-#: admin/admin.php:641
+#: admin/admin.php:638
 msgid "Contact form saved."
 msgstr "Контактну форму збережено."
 
-#: admin/admin.php:639
+#: admin/admin.php:636
 msgid "Contact form created."
 msgstr "Контактну форму створено."
 

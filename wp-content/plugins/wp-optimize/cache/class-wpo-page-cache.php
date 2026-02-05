@@ -146,7 +146,8 @@ class WPO_Page_Cache {
 
 		$this->check_compatibility_issues();
 
-		add_action('init', array($this, 'register_cron_filter'));
+		$this->ensure_cron_schedules_filter_registered();
+
 		add_action('wpo_save_images_settings', array($this, 'update_webp_images_option'));
 
 		add_action('wpo_preload_url', array($this, 'maybe_preload_url'));
@@ -154,6 +155,22 @@ class WPO_Page_Cache {
 		// Setup filters for exceptions.
 		add_filter('wpo_restricted_cache_page_type', 'wpo_restricted_cache_page_type');
 		add_filter('wpo_url_in_conditional_tags_exceptions', 'wpo_url_in_conditional_tags_exceptions');
+	}
+
+	/**
+	 * Ensures that the cron-related filter is registered.
+	 *
+	 * If `init` has already run, the filter is registered immediately.
+	 * Otherwise, it schedules the registration to occur during `init`.
+	 *
+	 * @return void
+	 */
+	private function ensure_cron_schedules_filter_registered() {
+		if (did_action('init')) {
+			$this->register_cron_schedules_filter();
+		} else {
+			add_action('init', array($this, 'register_cron_schedules_filter'));
+		}
 	}
 
 	/**
@@ -167,7 +184,7 @@ class WPO_Page_Cache {
 	 *
 	 * @return void
 	 */
-	public function register_cron_filter() {
+	public function register_cron_schedules_filter() {
 		add_filter('cron_schedules', array($this, 'cron_schedules'));
 	}
 

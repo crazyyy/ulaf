@@ -5,7 +5,7 @@ Tags: cache, caching, image cache, minify, performance cache, page speed, image 
 Requires PHP: 7.2
 Requires at least: 4.9
 Tested up to: 6.9
-Stable tag: 4.3.1
+Stable tag: 4.4.1
 License: GPLv2+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -382,6 +382,19 @@ If none of the above works, disable processing of JavaScript files in the minify
 
 
 == Changelog ==
+
+= 4.4.1 - 08/Jan/2026 =
+
+* FIX: Onboarding wizard RTL issue
+* FIX: Prevented plugin table JSON data in the uploads directory from being updated on every WP-Optimize admin page load
+
+= 4.4.0 - 12/Dec/2025 =
+
+* FEATURE: Added Onboarding Wizard
+* FIX: Ensured old cache purging cron job is scheduled successfully
+* FIX: Fixed a potential fatal error in the WPO_Page_Optimizer class
+* TWEAK: Fixed the ability to disable caching menu in admin bar
+* TWEAK: Updated file permissions for wpo-plugins-tables-list.json
 
 = 4.3.1 - 14/Nov/2025 =
 
@@ -801,4 +814,4 @@ If none of the above works, disable processing of JavaScript files in the minify
 [See changelog for all versions](https://plugins.svn.wordpress.org/wp-optimize/trunk/changelog.txt).
 
 == Upgrade Notice ==
-* 4.3.1: Lot of bug fixes and tweaks - a recommended update for all
+* 4.4.1: Fix for RTL issue in onboarding wizard, and a performance improvement fix - a recommended update for all

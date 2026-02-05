@@ -99,6 +99,7 @@ class CF7Apps {
      */
     public function register_hooks() {
         register_activation_hook( CF7APPS_PLUGIN, array( $this, 'activate' ) );
+        register_deactivation_hook( CF7APPS_PLUGIN, array( $this, 'deactivate' ) );
     }
 
     /**
@@ -120,6 +121,17 @@ class CF7Apps {
 
             cf7apps_save_app_settings( 'honeypot', $default_settings );
         }
+        
+        flush_rewrite_rules( false );
+    }
+
+    /**
+     * Deactivation hook
+     * 
+     * @since 3.3.0
+     */
+    public function deactivate() {
+        flush_rewrite_rules( false );
     }
 
     /**
@@ -182,7 +194,8 @@ class CF7Apps {
                 'restURL'       => rest_url(),
                 'nonce'         => wp_create_nonce( 'wp_rest' ),
                 'assetsURL'     => CF7APPS_PLUGIN_DIR_URL . '/assets',
-                'appIndexURL'   =>  admin_url( 'admin.php?page=cf7apps' )
+                'appIndexURL'   =>  admin_url( 'admin.php?page=cf7apps' ),
+                'pluginVersion' => CF7APPS_VERSION,
             )
         );
 

@@ -23,7 +23,7 @@ class CF7Apps_hCaptcha_App extends CF7Apps_App {
      */
     public function __construct() {
         $this->languages = array(
-            ''          => __( 'Default', 'cf7apps' ),
+            'en'          => __( 'English', 'cf7apps' ),
             'af'        => __( 'Afrikaans', 'cf7apps' ),
             'sq'        => __( 'Albanian', 'cf7apps' ),
             'am'        => __( 'Amharic', 'cf7apps' ),
@@ -46,7 +46,6 @@ class CF7Apps_hCaptcha_App extends CF7Apps_App {
             'cs'        => __( 'Czech', 'cf7apps' ),
             'da'        => __( 'Danish', 'cf7apps' ),
             'nl'        => __( 'Dutch', 'cf7apps' ),
-            'en'        => __( 'English', 'cf7apps' ),
             'eo'        => __( 'Esperanto', 'cf7apps' ),
             'et'        => __( 'Estonian', 'cf7apps' ),
             'fa'        => __( 'Farsi/ Persian', 'cf7apps' ),
@@ -175,7 +174,7 @@ class CF7Apps_hCaptcha_App extends CF7Apps_App {
                         'type'              => 'text',
                         'required'          => true,
                         'required_message'  => __( 'Site key is required.', 'cf7apps' ),
-                        'description'       => __( 'Enter your site key. Don\'t have one? <a href="https://dashboard.hcaptcha.com/sites">Click here</a> to generate a new key.', 'cf7apps' ),
+                        'description'       => __( 'Enter your site key. Don\'t have one? <a href="https://dashboard.hcaptcha.com/sites" target="_blank">Click here</a> to generate a new key.', 'cf7apps' ),
                         'class'             => 'xl'
                     ),
                     'secret_key'  =>  array(
@@ -183,7 +182,7 @@ class CF7Apps_hCaptcha_App extends CF7Apps_App {
                         'type'              => 'text',
                         'required'          => true,
                         'required_message'  => __( 'Secret key is required.', 'cf7apps' ),
-                        'description'       => __( 'Enter your secret key. Don\'t have one? <a href="https://dashboard.hcaptcha.com/settings/secrets">Click here</a> to generate a new key.', 'cf7apps' ),
+                        'description'       => __( 'Enter your secret key. Don\'t have one? <a href="https://dashboard.hcaptcha.com/settings/secrets" target="_blank">Click here</a> to generate a new key.', 'cf7apps' ),
                         'class'             => 'xl'
                     ),
                     'invalid_message' =>  array(
@@ -196,7 +195,8 @@ class CF7Apps_hCaptcha_App extends CF7Apps_App {
                     'language' =>  array(
                         'title'             => __( 'Force hCaptcha to render in a specific language.', 'cf7apps' ),
                         'type'              => 'select',
-                        'default'           => '',
+                        // Set English as the default selected language.
+                        'default'           => 'en',
                         'description'       => __( 'Choose a language for your CAPTCHA display.', 'cf7apps' ),
                         'class'             => 'xs',
                         'options'           => $this->languages
@@ -238,6 +238,10 @@ class CF7Apps_hCaptcha_App extends CF7Apps_App {
 
         $site_key = $this->get_option( 'site_key' );
         $global_selected_language = $this->get_option( 'language' );
+        // Fall back to English when no global language has been saved.
+        if ( empty( $global_selected_language ) ) {
+            $global_selected_language = 'en';
+        }
         
         $this->selected_language = ! empty( $tag->get_option( 'language' )[0] ) ? $tag->get_option( 'language' )[0] : '';
         $this->selected_language = empty( $this->selected_language ) ? $global_selected_language : $this->selected_language;
@@ -388,12 +392,27 @@ class CF7Apps_hCaptcha_App extends CF7Apps_App {
         // Get current values if available
         $error_message = $this->get_option( 'invalid_message' );
         $language = $this->get_option( 'language' );
+        // Ensure English is used as the default selection in the tag generator as well.
+        // if ( empty( $language ) ) {
+        //     $language = 'en';
+        // }
         $size = isset( $args['size'] ) ? $args['size'] : 'normal';
         $custom_css = isset( $args['custom_css'] ) ? $args['custom_css'] : '';
 
         ?>
         <header class="description-box">
             <h3><?php echo $this->title; ?></h3>
+            <p>
+                <?php 
+                    printf(
+                        '%s <a href="%s" target="_blank">%s</a> %s.',
+                        esc_html__( 'Generate a form-tag for adding an hCaptcha verification widget to stop spam bots. Check out', 'cf7apps' ),
+                        esc_url( admin_url( 'admin.php?page=cf7apps#/settings/hcaptcha' ) ),
+                        esc_html__( 'hCaptcha Settings', 'cf7apps' ),
+                        esc_html__( 'for more settings/info', 'cf7apps' )
+                    );
+                ?>
+            </p>
             <div style="border-left: 4px solid #3399ff; background: #e6f4ff; padding: 1px 14px; margin-bottom: 10px; border-radius: 5px;">
                 <p style="margin: 7px auto;"><?php 
                     printf( 

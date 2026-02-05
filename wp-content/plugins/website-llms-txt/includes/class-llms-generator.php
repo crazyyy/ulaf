@@ -35,6 +35,7 @@ class LLMS_Generator
             'update_frequency' => 'immediate',
             'need_check_option' => true,
             'noindex_header' => false,
+            'gform_include' => false,
             'llms_allow_indexing' => false,
             'llms_local_log_enabled' => false,
             'llms_global_telemetry_optin' => false,
@@ -427,9 +428,17 @@ class LLMS_Generator
 
     private function remove_shortcodes($content)
     {
+        $settings = apply_filters('get_llms_generator_settings', []);
         $clean = preg_replace('/\[[^\]]+\]/', '', $content);
 
+        if(!isset($settings['gform_include']) || !$settings['gform_include']) {
+            $clean = preg_replace('/<form[^>]+id=("|\')gform_\d+("|\')[\s\S]*?<\/form>/i', '', $clean);
+
+            $clean = preg_replace('/<div[^>]+class=("|\')[^"\']*gform_wrapper[^"\']*("|\')[\s\S]*?<\/div>/i', '', $clean);
+        }
+
         $clean = preg_replace('/<style\b[^>]*>.*?<\/style>/is', '', $clean);
+        $clean = preg_replace('/<script\b[^>]*>.*?<\/script>/is', '', $clean);
 
         $clean = preg_replace('/[\x{00A0}\x{200B}\x{200C}\x{200D}\x{FEFF}\x{202A}-\x{202E}\x{2060}]/u', ' ', $clean);
 
@@ -867,7 +876,15 @@ class LLMS_Generator
         $price = '';
         $sku = '';
 
-        $permalink = get_permalink($post->ID);
+        if(defined('ICL_LANGUAGE_CODE')) {
+            $permalink = apply_filters(
+                'wpml_permalink',
+                get_permalink($post->ID),
+                ICL_LANGUAGE_CODE
+            );
+        } else {
+            $permalink = get_permalink($post->ID);
+        }
 
         $description = isset($this->settings['include_excerpts']) && $this->settings['include_excerpts'] ? $this->get_post_meta_description( $post ) : '';
         $markdown = '';

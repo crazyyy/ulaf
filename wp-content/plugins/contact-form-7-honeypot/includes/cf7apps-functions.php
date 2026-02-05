@@ -97,22 +97,35 @@ if ( ! function_exists( 'cf7apps_get_post_types_options' ) ) :
      * @return array
      */
     function cf7apps_get_post_types_options() {
-        $post_types       = get_post_types( array( 'public' => true ), 'objects' );
-        $post_search_args = array(
-            'post_type'      => 'any',
+        // Default: posts + pages (filterable).
+        $default_post_types = array( 'post', 'page' );
+
+        // Filterable list of post types for the dropdown.
+        $post_type_slugs = apply_filters( 'cf7apps_redirection_post_types', $default_post_types );
+
+        // Unique, non-empty slugs only.
+        $post_type_slugs = array_values( array_filter( array_unique( (array) $post_type_slugs ) ) );
+
+        $query_args = array(
+            'post_type'      => $post_type_slugs,
             'posts_per_page' => -1,
             'post_status'    => 'publish',
+            'fields'         => 'ids',
+            'no_found_rows'  => true,
         );
-        $options          = array();
 
-        foreach ( $post_types as $type ) {
-            $post_search_args['post_type'] = $type->name;
+        $options  = array();
+        $post_ids = get_posts( $query_args );
 
-            $posts = get_posts( $post_search_args );
+        foreach ( $post_ids as $post_id ) {
+            $title = get_post_field( 'post_title', $post_id );
 
-            foreach ( $posts as $post ) {
-                $options[ $post->ID ] = sprintf( '%s (ID: %d)', $post->post_title, $post->ID );
+            if ( '' === $title ) {
+                /* translators: %d: post ID. */
+                $title = sprintf( __( '(no title) (ID: %d)', 'cf7apps' ), $post_id );
             }
+
+            $options[ $post_id ] = sprintf( '%s (ID: %d)', $title, $post_id );
         }
 
         return $options;

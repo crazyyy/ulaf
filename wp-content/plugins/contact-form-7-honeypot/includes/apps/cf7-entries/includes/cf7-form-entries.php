@@ -81,6 +81,11 @@ if ( ! class_exists( 'CF7Apps_Form_Entries' ) ) :
 
 			$table_name = $wpdb->prefix . 'cf7apps_form_entries';
 
+			// If the table doesn't exist, avoid fatal errors.
+			if ( ! self::table_exists( $table_name ) ) {
+				return 0;
+			}
+
 			$data = array(
 				'form_id'    => $this->form_id,
 				'form_name'  => $this->form_name,
@@ -110,6 +115,11 @@ if ( ! class_exists( 'CF7Apps_Form_Entries' ) ) :
 			global $wpdb;
 
 			$table_name = $wpdb->prefix . 'cf7apps_form_entries';
+
+			// Bail out gracefully if the table is missing.
+			if ( ! self::table_exists( $table_name ) ) {
+				return array();
+			}
 			$orderby    = isset( $args['orderby'] ) ? $args['orderby'] : 'id';
 			$order      = isset( $args['order'] ) ? $args['order'] : 'DESC';
 			$limit      = absint( $limit );
@@ -163,6 +173,11 @@ if ( ! class_exists( 'CF7Apps_Form_Entries' ) ) :
 
 			$table_name = $wpdb->prefix . 'cf7apps_form_entries';
 
+			// If the table doesn't exist yet, report zero entries without erroring.
+			if ( ! self::table_exists( $table_name ) ) {
+				return 0;
+			}
+
 			$sql = "SELECT COUNT(*) FROM %i WHERE 1=1";
 			if ( ! empty( $form_id ) ) {
 				$sql .= $wpdb->prepare( ' AND form_id = %d', $form_id );
@@ -199,6 +214,10 @@ if ( ! class_exists( 'CF7Apps_Form_Entries' ) ) :
 			global $wpdb;
 
 			$table_name = $wpdb->prefix . 'cf7apps_form_entries';
+
+			if ( ! self::table_exists( $table_name ) ) {
+				return false;
+			}
 			$result     = $wpdb->get_row( $wpdb->prepare( 'SELECT * FROM %i WHERE id = %d', $table_name, $id ), ARRAY_A );
 
 			if ( ! empty( $result ) ) {
@@ -239,6 +258,10 @@ if ( ! class_exists( 'CF7Apps_Form_Entries' ) ) :
 
 			$table_name = $wpdb->prefix . 'cf7apps_form_entries';
 
+			if ( ! self::table_exists( $table_name ) ) {
+				return true;
+			}
+
 			if ( ! empty( $this->id ) ) {
 				$wpdb->delete( $table_name, array( 'id' => $this->id ) );
 			}
@@ -253,6 +276,14 @@ if ( ! class_exists( 'CF7Apps_Form_Entries' ) ) :
 			return true;
 		}
 
+		/**
+		 * Delete a single entry by ID.
+		 *
+		 * @since 3.1.0
+		 *
+		 * @param int $id Entry ID.
+		 * @return bool
+		 */
 		public static function delete_entry( $id ) {
 			$entry = self::get_entry_by_id( $id );
 
@@ -263,6 +294,14 @@ if ( ! class_exists( 'CF7Apps_Form_Entries' ) ) :
 			return false;
 		}
 
+		/**
+		 * Delete multiple entries by IDs.
+		 *
+		 * @since 3.1.0
+		 *
+		 * @param int|int[] $ids Entry ID or array of IDs.
+		 * @return bool
+		 */
 		public static function delete_entries( $ids ) {
 			if ( ! is_array( $ids ) ) {
 				$ids = array( $ids );
@@ -273,6 +312,56 @@ if ( ! class_exists( 'CF7Apps_Form_Entries' ) ) :
 			}
 
 			return true;
+		}
+
+		/**
+		 * Delete all entries for a specific Contact Form 7 form.
+		 *
+		 * @since 3.4.0
+		 *
+		 * @param int $form_id Contact Form 7 form ID.
+		 * @return void
+		 */
+		public static function delete_entries_by_form_id( $form_id ) {
+			global $wpdb;
+
+			$form_id = absint( $form_id );
+			if ( ! $form_id ) {
+				return;
+			}
+
+			$table_name = $wpdb->prefix . 'cf7apps_form_entries';
+
+			if ( ! self::table_exists( $table_name ) ) {
+				return;
+			}
+
+			$wpdb->delete(
+				$table_name,
+				array( 'form_id' => $form_id ),
+				array( '%d' )
+			);
+		}
+
+		/**
+		 * Helper: check whether the entries table exists.
+		 *
+		 * @since 3.4.0
+		 *
+		 * @param string $table_name Fully-qualified table name.
+		 * @return bool
+		 */
+		private static function table_exists( $table_name ) {
+			global $wpdb;
+
+			$exists = $wpdb->get_var(
+				$wpdb->prepare(
+					'SHOW TABLES LIKE %s',
+					$table_name
+				)
+			);
+
+			return $exists === $table_name;
 		}
 	}
 endif;

@@ -673,6 +673,9 @@ function webp_uploads_img_tag_update_mime_type( string $original_image, string $
  * @return string The updated HTML markup.
  */
 function webp_uploads_update_featured_image( string $html, int $post_id, int $attachment_id ): string {
+	if ( webp_uploads_is_picture_element_enabled() ) {
+		return webp_uploads_wrap_image_in_picture( $html, 'post_thumbnail_html', $attachment_id );
+	}
 	return webp_uploads_img_tag_update_mime_type( $html, 'post_thumbnail_html', $attachment_id );
 }
 add_filter( 'post_thumbnail_html', 'webp_uploads_update_featured_image', 10, 3 );
@@ -944,7 +947,9 @@ function webp_uploads_convert_palette_png_to_truecolor( $file ): array {
 
 	// Check if the image is already truecolor.
 	if ( imageistruecolor( $image ) ) {
-		imagedestroy( $image );
+		if ( PHP_VERSION_ID < 80000 ) {
+			imagedestroy( $image ); // phpcs:ignore Generic.PHP.DeprecatedFunctions.Deprecated -- imagedestroy() has no effect as of PHP 8.0.
+		}
 		return $file;
 	}
 
@@ -957,7 +962,9 @@ function webp_uploads_convert_palette_png_to_truecolor( $file ): array {
 		// Overwrite the upload with the new truecolor PNG.
 		imagepng( $image, $file['tmp_name'] );
 	}
-	imagedestroy( $image );
+	if ( PHP_VERSION_ID < 80000 ) {
+		imagedestroy( $image ); // phpcs:ignore Generic.PHP.DeprecatedFunctions.Deprecated -- imagedestroy() has no effect as of PHP 8.0.
+	}
 
 	return $file;
 }

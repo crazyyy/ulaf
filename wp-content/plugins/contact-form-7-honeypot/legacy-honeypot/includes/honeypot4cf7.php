@@ -270,7 +270,8 @@ function honeypot4cf7_form_tag_generator( $contact_form, $args = '' ) {
             <fieldset>
                 <legend>
                     <?php
-                    $honeypotcf7_config_url = esc_url( add_query_arg('page','honeypot4cf7',get_admin_url() . 'admin.php') );
+                    // Point to the CF7 Apps Honeypot settings screen instead of the legacy page.
+                    $honeypotcf7_config_url = esc_url( admin_url( 'admin.php?page=cf7apps#/settings/honeypot' ) );
                     $honeypotcf7_settings_link = "<a href='$honeypotcf7_config_url'>" . __( 'Honeypot Settings', 'contact-form-7-honeypot' ) . '</a>';
                     printf(
                         /* translators: %s: Link to Honeypot settings page */
@@ -393,7 +394,8 @@ function honeypot4cf7_form_tag_generator( $contact_form, $args = '' ) {
             <h3>Honeypot</h3>
             <p>
 	            <?php
-	            $honeypotcf7_config_url = esc_url( add_query_arg('page','honeypot4cf7',get_admin_url() . 'admin.php') );
+	            // Point to the CF7 Apps Honeypot settings screen instead of the legacy page.
+	            $honeypotcf7_config_url = esc_url( admin_url( 'admin.php?page=cf7apps#/settings/honeypot' ) );
 	            $honeypotcf7_settings_link = "<a href='$honeypotcf7_config_url'>" . __( 'Honeypot Settings', 'contact-form-7-honeypot' ) . '</a>';
 	            printf(
 	            /* translators: %s: Link to Honeypot settings page */
@@ -402,9 +404,23 @@ function honeypot4cf7_form_tag_generator( $contact_form, $args = '' ) {
 	            );
 	            ?>
             </p>
+
         </header>
 
         <div class="control-box">
+
+        <div style="border-left: 4px solid #3399ff; background: #e6f4ff; padding: 1px 14px; margin-bottom: 10px; border-radius: 5px;margin-top: 30px;">
+                <p style="margin: 7px auto;font-weight: 600;">
+	                <?php
+	                printf(
+		                '%s <a href="%s" target="_blank">%s</a>',
+		                esc_html__( 'Need help setting this up? Check out our', 'cf7apps' ),
+		                esc_url( 'https://cf7apps.com/docs/spam-protection/contact-form-7-honeypot/' ),
+		                esc_html__( 'Documentation', 'cf7apps' )
+	                );
+	                ?>
+                </p>
+            </div>
             <?php
             $tag->print(
                 'field_type',

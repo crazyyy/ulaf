@@ -343,8 +343,9 @@ abstract class CF7Apps_App {
 
                 foreach ( $setting_fields as $field_key => $field ) {
                     if ( array_key_exists( $field_key, $this->options[ $this->id ] ) ) {
-                        if ( ( $field['type'] == 'checkbox' ) && $this->options[ $this->id ][ $field_key ] == '1' ) {
-                            $settings['admin_settings']['general']['fields'][ $field_key ]['checked'] = true;
+                        if ( $field['type'] == 'checkbox' ) {
+                            // Explicitly set checked to true or false based on saved value
+                            $settings['admin_settings']['general']['fields'][ $field_key ]['checked'] = ( $this->options[ $this->id ][ $field_key ] == '1' || $this->options[ $this->id ][ $field_key ] === true || $this->options[ $this->id ][ $field_key ] === 1 );
                         } elseif ( $field['type'] == 'select' ) {
                             $settings['admin_settings']['general']['fields'][ $field_key ]['selected'] = $this->options[ $this->id ][ $field_key ];
                         } else {
@@ -367,8 +368,9 @@ abstract class CF7Apps_App {
                         foreach ( $field['sub_fields'] as $sub_field_key => $sub_field ) {
                             if ( array_key_exists( $sub_field_key, $this->options[$this->id] ) ) {
                                 // If data is saved, set the value
-                                if ( ( $sub_field['type'] == 'checkbox' || $sub_field['type'] == 'radio' ) && $this->options[$this->id][$sub_field_key] == '1' ) {
-                                    $settings['admin_settings']['general']['fields'][$field_key]['sub_fields'][$sub_field_key]['checked'] = true;
+                                if ( $sub_field['type'] == 'checkbox' || $sub_field['type'] == 'radio' ) {
+                                    // Explicitly set checked to true or false based on saved value
+                                    $settings['admin_settings']['general']['fields'][$field_key]['sub_fields'][$sub_field_key]['checked'] = ( $this->options[$this->id][$sub_field_key] == '1' || $this->options[$this->id][$sub_field_key] === true || $this->options[$this->id][$sub_field_key] === 1 );
                                 }
                                 elseif ( $sub_field['type'] == 'select' ) {
                                     $settings['admin_settings']['general']['fields'][$field_key]['sub_fields'][$sub_field_key]['selected'] = $this->options[$this->id][$sub_field_key];

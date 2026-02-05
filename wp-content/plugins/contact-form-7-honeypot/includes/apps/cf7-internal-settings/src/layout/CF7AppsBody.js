@@ -5,7 +5,7 @@ const CF7AppsBody = () => {
     return (
         <Routes>
             <Route path={ '/' } element={ <CF7AppsSettings /> } />
-            <Route path={ '/:app' } element={ <CF7AppsSettings /> } />
+            <Route path={ 'settings/:app' } element={ <CF7AppsSettings /> } />
         </Routes>
     );
 };

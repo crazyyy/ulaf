@@ -41,6 +41,14 @@ const MenuBar = (props) => {
                     </>
                 );
                 break;
+
+            case 'Integration':
+                return (
+                    <>
+                        <img style={ { marginTop: '-7px' } } src={`${ CF7Apps.assetsURL }/images/spam-protection.png`} width={'23px'} alt={ menu } /> { menu }
+                    </>
+                );
+                break;
             default:
                 return menu;
         }

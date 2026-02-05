@@ -1,5 +1,18 @@
 == Changelog ==
 
+= 4.4.1 - 08/Jan/2026 =
+
+* FIX: Onboarding wizard RTL issue
+* FIX: Prevented plugin table JSON data in the uploads directory from being updated on every WP-Optimize admin page load
+
+= 4.4.0 - 12/Dec/2025 =
+
+* FEATURE: Added Onboarding Wizard
+* FIX: Ensured old cache purging cron job is scheduled successfully
+* FIX: Fixed a potential fatal error in the WPO_Page_Optimizer class
+* TWEAK: Fixed the ability to disable caching menu in admin bar
+* TWEAK: Updated file permissions for wpo-plugins-tables-list.json
+
 = 4.3.1 - 14/Nov/2025 =
 
 * FIX: Prevent PHP fatal error occurring when cache is enabled and the "Aelia Currency Switcher for WooCommerce" plugin is active

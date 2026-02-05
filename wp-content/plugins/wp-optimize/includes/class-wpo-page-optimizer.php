@@ -13,6 +13,14 @@ class WPO_Page_Optimizer {
 	private static $instance = null;
 
 	/**
+	 * Constructor
+	 */
+	private function __construct() {
+		// Initialize WP_Optimize_Minify_Config to make available wp_optimize_minify_config()
+		WP_Optimize_Minify_Config::get_instance();
+	}
+
+	/**
 	 * Get the buffer and perform tasks related to page optimization
 	 *
 	 * @param  string $buffer Page HTML.

@@ -254,7 +254,7 @@ class WP_Optimize_Options {
 		// Save cache toolbar display setting
 		$saved_enable_cache_in_admin_bar = (bool) $this->get_option('enable_cache_in_admin_bar', true);
 		if ($saved_enable_cache_in_admin_bar !== (bool) $settings['enable_cache_in_admin_bar']) {
-			$this->update_option('enable_cache_in_admin_bar', (bool) $settings['enable_cache_in_admin_bar']);
+			$this->update_option('enable_cache_in_admin_bar', $settings['enable_cache_in_admin_bar']);
 			$output['refresh'] = true;
 		}
 
@@ -341,9 +341,9 @@ class WP_Optimize_Options {
 		// phpcs:disable
 		// WordPress.DB.PreparedSQL.InterpolatedNotPrepared -- Only hardcoded strings are used
 		if (is_multisite()) {
-			$result = $wpdb->query("DELETE FROM `{$wpdb->sitemeta}` WHERE `meta_key` LIKE 'wp-optimize-mu-%' OR `meta_key` IN ($keys)");
+			$result = $wpdb->query("DELETE FROM `{$wpdb->sitemeta}` WHERE `meta_key` LIKE 'wp-optimize-mu%' OR `meta_key` IN ($keys)");
 		} else {
-			$result = $wpdb->query("DELETE FROM `{$wpdb->options}` WHERE `option_name` LIKE 'wp-optimize-%' OR `option_name` IN ($keys)");
+			$result = $wpdb->query("DELETE FROM `{$wpdb->options}` WHERE `option_name` LIKE 'wp-optimize%' OR `option_name` IN ($keys)");
 		}
 		// phpcs:enable
 

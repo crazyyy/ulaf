@@ -6,14 +6,14 @@ Requires at least: 5.9
 License: GPL2
 Requires PHP: 7.4
 Tested up to: 6.9
-Stable tag: 7.4.4.1
+Stable tag: 7.4.4.2
 
 Configure your Cookie Banner, Cookie Consent and Cookie Policy with our Wizard and Cookies Scan.
 
 == Description ==
 Complianz is a GDPR/CCPA Cookie Banner plugin that supports GDPR, ePrivacy, DSGVO, TTDSG, LGPD, POPIA, APA, RGPD, CCPA/CPRA and PIPEDA with a conditional Cookie Consent Banner and customized Cookie Policy based on the results of the built-in Cookie Scan.
 
-https://www.youtube.com/watch?v=JJzOzNAd5Bw&ab_channel=ReallySimplePlugins
+https://vimeo.com/manage/videos/1138872149
 
 == Features ==
 
@@ -198,6 +198,10 @@ The Brazilian General Data Protection Law is similar to the GDPR, the UK-GDPR it
 With some custom CSS this is possible, but we do not consider a cookie wall to be GDPR compliant, so it's not actively supported. We do, however, have the option to create a Soft Cookie Wall. Which blocks interaction with the website, but dismissing remains a possibility.
 
 == Changelog ==
+= 7.4.4.2 =
+* December 16th, 2025
+* New: Complianz logo.
+
 = 7.4.4.1 =
 * December 3rd, 2025
 * Improvement: Tested up to WordPress 6.9.

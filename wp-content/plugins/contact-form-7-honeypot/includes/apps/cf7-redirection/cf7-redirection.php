@@ -60,7 +60,7 @@ if ( ! class_exists( 'CF7Apps_Redirection' ) && class_exists( 'CF7Apps_App' ) ) 
                             'class' => 'info',
                             'text'  => sprintf(
                                 __( 'Stuck? Check our Documentation on %s', 'cf7apps' ),
-                                '<a href="https://cf7apps.com/docs/general/redirection"><u>' . __( 'Redirection', 'cf7apps' ) . '</u></a>'
+                                '<a href="https://cf7apps.com/docs/general/redirection" target="_blank"><u>' . __( 'Redirection', 'cf7apps' ) . '</u></a>'
                             ),
                         ),
 
@@ -74,14 +74,14 @@ if ( ! class_exists( 'CF7Apps_Redirection' ) && class_exists( 'CF7Apps_App' ) ) 
                             'title'       => __( 'Global Settings', 'cf7apps' ),
                             'type'        => 'checkbox',
                             'default'     => false,
-                            'help' => __( 'Enable global redirection settings for all forms. Individual form settings will override global settings if both are enabled.', 'cf7apps' ),
+                            'help' => __( 'Enable global settings, so they apply across all forms. These global settings will automatically sync with each individual form, where they can still be modified if needed.', 'cf7apps' ),
                         ),
 
                         'redirection_type' => array(
                             'title'       => __( 'Redirection Type', 'cf7apps' ),
                             'type'        => 'radio',
                             'options'     => array(
-                                'post_type'    => __( 'Post Type', 'cf7apps' ),
+                                'post_type'    => __( 'Internal URL', 'cf7apps' ),
                                 'external_url' => __( 'External URL', 'cf7apps' ),
                             ),
                             'default'     => 'post_type',
@@ -131,9 +131,11 @@ if ( ! class_exists( 'CF7Apps_Redirection' ) && class_exists( 'CF7Apps_App' ) ) 
          */
         private function get_default_settings() {
             $posts = cf7apps_get_post_types_options();
+            $global_settings = $this->get_option( 'global_settings' );
             return array(
                 'is_enabled'       => false,
                 'global_settings'  => false,
+                'enable_redirection' => $global_settings ? true : false,
                 'redirection_type' => 'post_type',
                 'post_type'        => array_keys( $posts )[0],
                 'external_url'     => '',
@@ -162,25 +164,25 @@ if ( ! class_exists( 'CF7Apps_Redirection' ) && class_exists( 'CF7Apps_App' ) ) 
                 'class' => 'info',
                 'text'  => sprintf(
                     __( 'Stuck? Check our Documentation on %s', 'cf7apps' ),
-                    '<a href="https://cf7apps.com/docs/general/redirection/"><u>' . __( 'Redirection', 'cf7apps' ) . '</u></a>'
+                    '<a href="https://cf7apps.com/docs/general/redirection/" target="_blank"><u>' . __( 'Redirection', 'cf7apps' ) . '</u></a>'
                 ),
             );
 
-            if ( $global_settings ) {
-                $settings['general']['fields']['use_global_settings'] = array(
-                    'title'       => __('Use Global Settings', 'cf7apps'),
-                    'type'        => 'checkbox',
-                    'default'     => false,
-                    'help' => __('Enable to use the global redirection settings defined in the Redirection app settings. Disable to set custom redirection settings for this form.', 'cf7apps'),
-                    'disabled'    => ! $enabled,
-                );
-            }
+            // Default enable_redirection to true when global settings are enabled
+            $default_enable_redirection = $global_settings ? true : false;
+            
+            $settings['general']['fields']['enable_redirection'] = array(
+                'title'   => __( 'Enable Redirection', 'cf7apps' ),
+                'type'    => 'checkbox',
+                'default' => true,
+                'disabled' => ! $enabled,
+            );
 
             $settings['general']['fields']['redirection_type'] = array(
                 'title'       => __( 'Redirection Type', 'cf7apps' ),
                 'type'        => 'radio',
                 'options'     => array(
-                    'post_type'    => __( 'Post Type', 'cf7apps' ),
+                    'post_type'    => __( 'Internal URL', 'cf7apps' ),
                     'external_url' => __( 'External URL', 'cf7apps' ),
                 ),
                 'default'     => 'post_type',
@@ -225,6 +227,99 @@ if ( ! class_exists( 'CF7Apps_Redirection' ) && class_exists( 'CF7Apps_App' ) ) 
         }
 
         /**
+         * Get Internal Settings
+         * Override to populate global settings when form has no custom settings
+         *
+         * @since 3.3.0
+         * @param int $form_id The form ID
+         * @return array
+         */
+        public function get_internal_settings( $form_id ) {
+            // Call parent method first to get base structure
+            $settings = parent::get_internal_settings( $form_id );
+            
+            // Check if global settings are enabled
+            $global_settings_enabled = $this->get_option( 'global_settings' );
+            
+            if ( ! $global_settings_enabled ) {
+                return $settings;
+            }
+            
+            // Get form's individual settings from post meta
+            $form_settings = get_post_meta( $form_id, 'cf7apps_settings', true );
+            if ( empty( $form_settings ) ) {
+                $form_settings = array();
+            }
+            
+            // Set enable_redirection to default (true) when form has no saved enable_redirection value
+            if ( isset( $settings['admin_settings']['general']['fields']['enable_redirection'] ) ) {
+                if ( ! isset( $form_settings[ $this->id ]['enable_redirection'] ) ) {
+                    // Form has no saved enable_redirection value, use default (true)
+                    $settings['admin_settings']['general']['fields']['enable_redirection']['checked'] = true;
+                }
+            }
+            
+            // Check if form has custom settings (excluding enable_redirection toggle)
+            $has_custom_settings = ! empty( $form_settings ) && isset( $form_settings[ $this->id ] ) && (
+                isset( $form_settings[ $this->id ]['redirection_type'] ) ||
+                isset( $form_settings[ $this->id ]['post_type'] ) ||
+                isset( $form_settings[ $this->id ]['external_url'] ) ||
+                isset( $form_settings[ $this->id ]['new_tab'] )
+            );
+            
+            // If form has custom settings, don't populate global settings
+            if ( $has_custom_settings ) {
+                return $settings;
+            }
+            
+            // Form has no custom settings - populate with global settings for display
+            $global_settings = $this->get_option( null );
+            if ( empty( $global_settings ) || ! isset( $settings['admin_settings']['general']['fields'] ) ) {
+                return $settings;
+            }
+            
+            // Populate fields with global settings values
+            $setting_fields = $settings['admin_settings']['general']['fields'];
+            foreach ( $setting_fields as $field_key => $field ) {
+                // Skip notice, save_settings, and enable_redirection (already handled above)
+                if ( in_array( $field_key, array( 'notice', 'save_settings', 'enable_redirection' ) ) ) {
+                    continue;
+                }
+                
+                // Only populate if field doesn't have a saved value
+                if ( ! isset( $form_settings[ $this->id ][ $field_key ] ) && isset( $global_settings[ $field_key ] ) ) {
+                    if ( $field['type'] == 'checkbox' ) {
+                        $settings['admin_settings']['general']['fields'][ $field_key ]['checked'] = ( $global_settings[ $field_key ] == '1' || $global_settings[ $field_key ] === true || $global_settings[ $field_key ] === 1 );
+                    } elseif ( $field['type'] == 'radio' ) {
+                        // Radio buttons use 'value' property (like text fields)
+                        $settings['admin_settings']['general']['fields'][ $field_key ]['value'] = $global_settings[ $field_key ];
+                    } elseif ( $field['type'] == 'select' ) {
+                        $settings['admin_settings']['general']['fields'][ $field_key ]['selected'] = $global_settings[ $field_key ];
+                    } else {
+                        $settings['admin_settings']['general']['fields'][ $field_key ]['value'] = $global_settings[ $field_key ];
+                    }
+                }
+                
+                // Handle sub_fields if they exist (for redirection_type radio field)
+                if ( isset( $field['sub_fields'] ) ) {
+                    foreach ( $field['sub_fields'] as $sub_field_key => $sub_field ) {
+                        if ( ! isset( $form_settings[ $this->id ][ $sub_field_key ] ) && isset( $global_settings[ $sub_field_key ] ) ) {
+                            if ( $sub_field['type'] == 'checkbox' || $sub_field['type'] == 'radio' ) {
+                                $settings['admin_settings']['general']['fields'][ $field_key ]['sub_fields'][ $sub_field_key ]['checked'] = ( $global_settings[ $sub_field_key ] == '1' || $global_settings[ $sub_field_key ] === true || $global_settings[ $sub_field_key ] === 1 );
+                            } elseif ( $sub_field['type'] == 'select' ) {
+                                $settings['admin_settings']['general']['fields'][ $field_key ]['sub_fields'][ $sub_field_key ]['selected'] = $global_settings[ $sub_field_key ];
+                            } else {
+                                $settings['admin_settings']['general']['fields'][ $field_key ]['sub_fields'][ $sub_field_key ]['value'] = $global_settings[ $sub_field_key ];
+                            }
+                        }
+                    }
+                }
+            }
+            
+            return $settings;
+        }
+
+        /**
          * CF7Apps_Redirection constructor.
          *
          * @since 3.2.0
@@ -261,19 +356,82 @@ if ( ! class_exists( 'CF7Apps_Redirection' ) && class_exists( 'CF7Apps_App' ) ) 
                 if ( isset( $_POST['formId'] ) ) {
                     $form_id             = intval( wp_unslash( $_POST['formId'] ) );
                     $global_app_enabled  = $this->get_option( 'global_settings' ); // from global app settings.
-                    $use_global_settings = $this->get_individual_option( $form_id, 'use_global_settings' ); // from individual form settings.
-
+                    $form_settings      = $this->get_individual_option( $form_id );
+                    $default_settings   = $this->get_default_settings();
+                    
+                    // If global settings enabled: Individual settings override, otherwise global applies. If global disabled: Form uses Individual settings only.
                     if ( $global_app_enabled ) {
-                        if ( $use_global_settings ) {
-                            $settings = $this->get_option( null );
+                        // Check if form has custom redirection settings (excluding enable_redirection)
+                        $has_custom_settings = ! empty( $form_settings ) && (
+                            isset( $form_settings['redirection_type'] ) ||
+                            isset( $form_settings['post_type'] ) ||
+                            isset( $form_settings['external_url'] ) ||
+                            isset( $form_settings['new_tab'] )
+                        );
+                        
+                        if ( $has_custom_settings ) {
+                            // Form has custom settings, check if form explicitly disabled redirection
+                            if ( isset( $form_settings['enable_redirection'] ) && ! $form_settings['enable_redirection'] ) {
+                                // Form toggle is OFF, skip redirection
+                                wp_send_json_error(
+                                    array(
+                                        'message' => __( 'Redirection is not enabled for this form.', 'cf7apps' ),
+                                    ),
+                                    '403'
+                                );
+                            } else {
+                                // Use form's custom settings (Individual settings override)
+                                $settings = wp_parse_args( $form_settings, $default_settings );
+                            }
                         } else {
-                            $settings = $this->get_individual_option( $form_id );
+                            // Form has no custom settings - use global settings
+                            $global_settings = $this->get_option( null );
+                            
+                            if ( empty( $global_settings ) ) {
+                                wp_send_json_error(
+                                    array(
+                                        'message' => __( 'Redirection settings not found.', 'cf7apps' ),
+                                    ),
+                                    '404'
+                                );
+                            }
+                            
+                            // Use global settings
+                            $settings = wp_parse_args( $global_settings, $default_settings );
+                            
+                            // Check if form has explicitly disabled redirection (even without custom settings)
+                            if ( isset( $form_settings['enable_redirection'] ) && ! $form_settings['enable_redirection'] ) {
+                                // Form toggle is explicitly disabled - skip redirection
+                                wp_send_json_error(
+                                    array(
+                                        'message' => __( 'Redirection is not enabled for this form.', 'cf7apps' ),
+                                    ),
+                                    '403'
+                                );
+                            }
+                            
+                            // Default to enabled when using global settings
+                            $settings['enable_redirection'] = true;
                         }
                     } else {
-                        $settings = $this->get_individual_option( $form_id );
+                        // Global settings not enabled, check form's enable_redirection toggle
+                        $enable_redirection = isset( $form_settings['enable_redirection'] ) 
+                            ? $form_settings['enable_redirection'] 
+                            : $default_settings['enable_redirection'];
+                        
+                        // If redirection is not enabled for this form, return error
+                        if ( ! $enable_redirection ) {
+                            wp_send_json_error(
+                                array(
+                                    'message' => __( 'Redirection is not enabled for this form.', 'cf7apps' ),
+                                ),
+                                '403'
+                            );
+                        }
+                        
+                        // Use form settings only
+                        $settings = wp_parse_args( $form_settings, $default_settings );
                     }
-
-                    $settings = wp_parse_args( $settings, $this->get_default_settings() );
 
                     if ( $settings ) {
                         $redirect_type = $settings['redirection_type'];

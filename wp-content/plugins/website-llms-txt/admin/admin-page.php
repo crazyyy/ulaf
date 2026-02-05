@@ -183,9 +183,18 @@ if (isset($_GET['settings-updated']) &&
                             <?php esc_html_e('Include taxonomies (categories, tags, etc.)', 'website-llms-txt'); ?>
                         </label>
                     </p>
+                    <p>
+                        <label>
+                            <input type="checkbox"
+                                   name="llms_generator_settings[gform_include]"
+                                   value="1"
+                                <?php checked(!empty($settings['gform_include'])); ?>>
+                            <?php esc_html_e('Include Gravity Forms form fields in llms.txt', 'website-llms-txt'); ?>
+                        </label>
+                    </p>
                     <?php if(!empty($settings)): ?>
                         <?php foreach($settings as $key => $value): ?>
-                            <?php if(in_array($key, ['post_types', 'max_posts', 'max_words', 'include_meta', 'include_excerpts', 'detailed_content', 'include_taxonomies'])) continue ?>
+                            <?php if(in_array($key, ['post_types', 'max_posts', 'max_words', 'include_meta', 'include_excerpts', 'detailed_content', 'include_taxonomies', 'gform_include'])) continue ?>
                             <?php if(is_array($value)): ?>
                                 <?php foreach($value as $second_key => $second_value): ?>
                                     <input type="hidden" name="llms_generator_settings[<?= $key ?>][]" value="<?= $second_value ?>"/>

@@ -92,8 +92,9 @@ class CF7Apps_Honeypot_App extends CF7Apps_App {
                             'title'         => __( 'Time Check Value (Seconds)', 'cf7apps' ),
                             'description'   => __( 'If enabled, this will perform an additional check for spam bots using the time it takes to submit the form under the idea that bots submit forms faster than people. The value is set to 4 seconds by default, but adjust based on your needs. If you\'re not sure, leave this unchecked.', 'cf7apps' ),
                             'type'          => 'number',
-                            'default'       => 4,
-                            'class'         => 'xs'
+                            'default'       => 0,
+                            'class'         => 'xs',
+                            'min'           => 1,
                         ),
                         'save_settings'  => array(
                             'type'          => 'save_button',

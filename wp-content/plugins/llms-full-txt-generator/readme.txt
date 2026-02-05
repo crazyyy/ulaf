@@ -3,7 +3,7 @@ Contributors: rankth
 Tags: llms, txt generator, AI LLM, rankmath, seo, Yoast, SEOPress, AIOSEO
 Requires at least: 5.0
 Tested up to: 6.8
-Stable tag: 2.0.4
+Stable tag: 2.0.6
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -115,6 +115,18 @@ Description: Description or summary of the document
 textThis structured format helps AI systems better understand your media content.
 
 == Changelog ==
+
+= 2.0.6 =
+Fixed – Resolved PHP 8.1+ deprecation notice when trimming URL paths (now safely handles cases where parse_url returns null).
+Fixed – Company email field editing issue: the custom company email is now correctly saved and used instead of falling back to the default admin email.
+
+= 2.0.5 =
+* Updated – Admin interface fully converted to a modern React-based UI for faster performance and smoother interactions.
+* Improved – Enhanced UI/UX styling across all settings screens for a cleaner, more intuitive user experience.
+* Optimized – Significant code cleanup and performance improvements for faster load times and reduced script sizes.
+* Improved – Better component structure, reusability, and state management in the React admin panel.
+* Enhanced – Tooltip interactions, disabled state behavior, and Pro upgrade prompts for a more polished workflow.
+* Updated – General compatibility improvements and minor UI refinements throughout the admin area.
 
 = 2.0.4 =
 * Fixed – Files are now always generated in the correct public site root (home_url), even when WordPress is installed in a subdirectory (e.g. /wp/, /blog/, /wordpress/) – uses core get_home_path() function
