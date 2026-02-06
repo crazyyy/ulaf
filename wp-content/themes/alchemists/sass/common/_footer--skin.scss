@@ -1,0 +1,157 @@
+/*
+// #Footer
+// --------------------------------------------------
+*/
+
+.footer {
+	font-size: $footer-font-size;
+	line-height: $footer-line-height;
+	color: $footer-font-color;
+}
+
+/* Footer Widgets */
+.footer-widgets {
+	background: $footer-widgets-bg;
+
+	// Overlay Duotone
+	&.effect-duotone {
+
+		&::before {
+			background: $footer-widgets-bg;
+		}
+
+		// MS Edge fallback
+		@supports (position:-ms-page) {
+			&::after {
+				background-color: $card-bg;
+			}
+		}
+
+		// IE11 fallback
+		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			&::after {
+				background-color: $card-bg;
+			}
+		}
+	}
+}
+
+// Footer Widgets Overlay - Simple
+.footer-widgets--overlay {
+
+	&::before {
+		background-color: $footer-widgets-overlay;
+		opacity: $footer-widgets-overlay-opacity;
+	}
+}
+
+/* Footer Logo */
+.footer-logo--has-txt {
+
+	.footer-logo__txt {
+		color: #fff;
+	}
+	.footer-logo__tagline {
+		color: $body-font-color;
+
+		@if $template == football {
+			font-family: $font-family-accent;
+			color: $color-gray-3;
+		}
+	}
+}
+
+/* Footer Secondary */
+.footer-secondary {
+	background-color: $footer-secondary-bg;
+}
+
+.footer-secondary--has-decor {
+
+	@media (min-width: 768px) {
+		background-color: $footer-secondary-side-bg;
+	}
+
+	.footer-secondary__inner {
+		background-color: $footer-secondary-bg;
+
+		&::before,
+		&::after {
+			background-color: $footer-secondary-side-bg;
+		}
+	}
+}
+	.footer-secondary__inner {
+		background-color: $footer-secondary-bg;
+		border-top: $footer-copyright-border-size $footer-copyright-border-style $footer-copyright-border-color;
+		border-top-color: $footer-copyright-border-color;
+	}
+		.footer-nav {
+			font-family: $font-family-accent;
+			font-size: $footer-nav-font-size;
+
+			.menu-item {
+
+				> a {
+					color: $footer-nav-color;
+
+					&:hover {
+						color: $footer-nav-color-active;
+					}
+				}
+			}
+		}
+
+		// Footer Menu small
+		.footer-nav--sm {
+			font-size: $footer-nav-font-size-sm;
+		}
+
+
+/* Footer Sponsors */
+.sponsors {
+
+	.footer-widgets__inner + .sponsors-container &::before {
+		background-color: rgba(255,255,255,0.1);
+	}
+}
+	.sponsors-title {
+		color: #fff;
+	}
+
+
+/* Footer Info */
+.footer-info {
+	background-color: $footer-info-bg;
+}
+	.footer-info__inner {
+		border-bottom: $footer-copyright-border-size $footer-copyright-border-style $footer-copyright-border-color;
+	}
+
+/* Footer Copyright */
+.footer-copyright {
+	font-family: $font-family-accent;
+	color: $body-font-color;
+
+	a {
+		color: $footer-copyright-link-color;
+
+		&:hover {
+			color: $footer-copyright-link-color-active;
+		}
+	}
+}
+
+/* Footer Social */
+.footer-social {
+	background: $footer-secondary-bg;
+}
+	.footer-social__icon {
+
+		svg {
+			fill: $link-color;
+		}
+	}
+	.footer-social__txt {
+		font-family: $font-family-accent;
+	}

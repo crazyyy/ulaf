@@ -1,0 +1,89 @@
+/* Shop Table */
+.shop_table {
+
+	tbody > tr > td {
+
+		@if $template == 'football' {
+			border-bottom: 1px solid $card-border-color;
+		}
+	}
+
+	.product__price,
+	.product__availability,
+	.product__size {
+		color: $headings-color;
+	}
+
+	.product__info {
+
+		.product__cat {
+
+			> a {
+				color: $body-font-color;
+			}
+		}
+		.product__name {
+
+			> a {
+				color: $headings-color;
+
+				&:hover {
+					color: $color-primary-darken;
+				}
+			}
+		}
+
+		.product__ratings {
+
+			.fa-star {
+				color: $product-rating-color;
+
+				&.empty {
+					color: $product-rating-color-disabled;
+				}
+			}
+		}
+	}
+
+	td.product__price {
+
+		@if $template == 'football' {
+			color: $color-gray-3;
+		}
+	}
+
+	td.product__total {
+		color: $headings-color;
+	}
+		.product__remove-icon {
+			color: $headings-color;
+
+			@if $template == 'football' or $template == 'esports' {
+				color: $color-gray-3;
+			} @else {
+				color: $headings-color;
+			}
+		}
+
+	td.product__desc {
+		font-family: $font-family-base;
+
+		@media (min-width: 768px) {
+
+			@if $template == football {
+				color: $color-gray-3;
+			}
+		}
+	}
+
+	// Product Color
+	.product__color-item {
+		background-color: $headings-color;
+	}
+		.product__color-item--selected {
+
+			&::before {
+				border: 2px solid $headings-color;
+			}
+		}
+}

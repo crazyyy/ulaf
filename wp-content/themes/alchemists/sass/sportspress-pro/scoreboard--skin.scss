@@ -1,0 +1,63 @@
+/**
+ *
+ * Scoreboard
+ *
+ */
+
+		// Content
+		.alc-scoreboard-content {
+			background-color: $scoreboard-default-bg;
+			border-bottom: 1px solid $scoreboard-default-border-color;
+		}
+
+		// Event
+		.alc-scoreboard__event {
+			font-family: $font-family-accent;
+			border-#{$right}: 1px solid $scoreboard-default-border-color;
+		}
+
+			.alc-scoreboard__event-wrapper {
+				color: $scoreboard-default-text-color;
+
+				&:hover {
+					color: $scoreboard-default-text-color;
+					background-color: $scoreboard-default-bg-hover;
+				}
+			}
+
+		// Teams
+		.alc-scoreboard__team-name {
+			color: $scoreboard-default-team-color;
+		}
+		.alc-scoreboard__result {
+			color: $scoreboard-default-result-color;
+		}
+
+
+// Alternative color scheme
+.alc-scoreboard-content--alt-color {
+	background-color: $scoreboard-dark-bg;
+	border-bottom: 1px solid $scoreboard-dark-border-color;
+
+	// Event
+	.alc-scoreboard__event {
+		border-#{$right}: 1px solid $scoreboard-dark-border-color;
+	}
+
+		.alc-scoreboard__event-wrapper {
+			color: $scoreboard-dark-text-color;
+
+			&:hover {
+				color: $scoreboard-dark-text-color;
+				background-color: $scoreboard-dark-bg-hover;
+			}
+		}
+
+		.alc-scoreboard__team-name {
+			color: $scoreboard-dark-team-color;
+		}
+
+		.alc-scoreboard__result {
+			color: $body-font-color;
+		}
+}

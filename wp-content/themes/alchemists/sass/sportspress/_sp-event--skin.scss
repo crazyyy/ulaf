@@ -1,0 +1,29 @@
+/* Sportspress Event (Game) */
+
+.sp-section-content-content:not(:empty) {
+	border: 1px solid $card-border-color;
+	background-color: $card-bg;
+
+	.sp-post-caption {
+		border-bottom: 1px solid $card-border-color;
+		background-color: $card-header-bg;
+
+		&::before {
+			background-color: $color-primary;
+		}
+	}
+}
+
+/* Event Performance (Icons) */
+.sp-event-performance-teams {
+
+	.sp-template-event-performance-icons {
+
+		.sp-event-performance {
+
+			.data-number {
+				color: $body-font-color;
+			}
+		}
+	}
+}

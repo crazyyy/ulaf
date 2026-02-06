@@ -1,0 +1,10 @@
+/* Content Navigation
+/* ------------------------- */
+
+.btn-nav {
+	background-color: $color-gray;
+
+	&:hover {
+		background-color: $headings-color;
+	}
+}

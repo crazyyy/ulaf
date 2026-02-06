@@ -1,0 +1,42 @@
+/* Widget: Tag Cloud */
+.widget_tag_cloud,
+.widget_product_tag_cloud {
+
+	.tagcloud {
+
+		.btn {
+			margin: side-values(0 5px 9px 0);
+
+			&.btn-xs {
+				font-size: $btn-border-font-size-xs !important;
+			}
+		}
+	}
+
+	// In the Sidebar
+	&.widget--sidebar {
+
+		.widget__content {
+			padding-bottom: 18px;
+		}
+	}
+
+	// In the Footer
+	.footer-widgets & {
+
+		.tagcloud {
+
+			.btn {
+
+				&.btn-outline.btn-primary {
+
+					@if $template != 'football' {
+						color: #fff;
+						border-color: rgba(255,255,255,.2);
+					}
+				}
+			}
+		}
+
+	}
+}

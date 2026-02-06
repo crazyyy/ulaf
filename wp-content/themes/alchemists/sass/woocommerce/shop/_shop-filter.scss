@@ -1,0 +1,363 @@
+/* Shop Filter */
+.shop-filter {
+	padding-#{$left}: $card-horizontal-padding;
+	display: flex;
+	align-items: center;
+	flex-basis: 100%;
+
+	@media (max-width: 991px) {
+		flex-wrap: wrap;
+		padding-#{$left}: 0;
+	}
+}
+
+	// Title
+	.woocommerce-result-count {
+		margin-bottom: 0;
+		flex-grow: 1;
+		@include font-accent(11px);
+		font-style: normal;
+		color: $headings-color;
+
+		@media (max-width: 991px) {
+			padding: $card-vertical-padding $card-horizontal-padding calc($card-vertical-padding / 2) $card-horizontal-padding;
+		}
+	}
+
+	// Params
+	.shop-filter__params {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		@media (max-width: 991px) {
+			display: block;
+			width: 100%;
+			padding: side-values(0 0 10px 14px);
+			text-align: $left;
+		}
+	}
+		.shop-filter__control {
+			padding-#{$left}: 14px;
+			float: $left;
+
+			@media (min-width: 992px) and (max-width: 1199px) {
+				padding-#{$left}: 0;
+			}
+
+			&:first-child {
+				padding-#{$left}: 0;
+			}
+
+			@media (max-width: 479px) {
+				width: 50%;
+				padding: 5px 0;
+				padding-#{$right}: 10px;
+			}
+
+			select.form-control,
+			select {
+				border: none;
+				@include font-accent(9px);
+				height: 24px;
+				padding: side-values(4px 24px 4px 10px);
+				display: inline-block;
+				vertical-align: top;
+				background-color: transparent;
+				background-image: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 6 4'%3E%3Cpath transform='translate(-586.156 -1047.28)' fill='#{$select-caret-color}' d='M586.171,1048l0.708-.71,2.828,2.83-0.707.71Zm4.95-.71,0.707,0.71L589,1050.83l-0.707-.71Z'/%3E%3C/svg%3E"), "#", "%23");
+				background-size: 6px 4px;
+				color: $headings-color;
+			}
+		}
+
+
+	// Layout Switcher
+	.shop-filter__layout {
+		height: 72px;
+		overflow: hidden;
+		margin-#{$left}: 20px;
+
+		@media (max-width: 991px) {
+			display: block;
+			margin-#{$left}: 0;
+			flex-basis: 100%;
+
+			& a:first-child {
+				border-#{$left}: 0 !important;
+			}
+		}
+	}
+		.shop-filter__grid-layout,
+		.shop-filter__list-layout {
+			float: $left;
+			width: 72px;
+			height: 72px;
+			border-#{$left}: 1px solid $card-border-color;
+
+			@media (max-width: 992px) {
+				border-top: 1px solid $card-border-color;
+				width: 50%;
+			}
+		}
+
+		/* Icon Grid Layout */
+		.icon-grid-layout {
+			position: relative;
+			display: block;
+
+			// Active state
+			&.active {
+
+				.icon-grid-layout__item {
+					background-color: $shop-layout-filter-color-active;
+
+					&::before,
+					&::after {
+						background-color: $shop-layout-filter-color-active;
+					}
+				}
+			}
+		}
+			.icon-grid-layout__inner {
+				display: block;
+				width: 18px;
+				height: 18px;
+				display: block;
+				position: absolute;
+				#{$left}: 50%;
+				top: 50%;
+				transform: translate(if-ltr(-50%, 50%), -50%);
+				text-align: center;
+			}
+				.icon-grid-layout__item {
+					display: block;
+					position: relative;
+					width: 4px;
+					height: 4px;
+					font-size: 0;
+					line-height: 0;
+					background-color: $shop-layout-filter-color;
+					margin: 0 auto 3px auto;
+					transition: all 0.5s ease;
+
+					&::before,
+					&::after {
+						content:"";
+						display: block;
+						position: absolute;
+						width: 4px;
+						height: 4px;
+						background-color: $shop-layout-filter-color;
+						transition: all 0.5s ease;
+					}
+
+					&::before {
+						#{$left}: -7px;
+					}
+
+					&::after {
+						#{$left}: 7px;
+					}
+
+
+
+					// Hover state
+					.icon-grid-layout:hover &{
+						background-color: $shop-layout-filter-color-active;
+
+						&::before,
+						&::after {
+							background-color: $shop-layout-filter-color-active;
+						}
+
+						// 1st row
+						&:first-child {
+							animation: icon-grid-layout-1 .5s;
+
+							&::before {
+								animation: icon-grid-layout-1-before .5s;
+							}
+							&::after {
+								animation: icon-grid-layout-1-after .5s;
+							}
+						}
+
+						// 2nd row
+						&:nth-child(2) {
+
+							&::before {
+								animation: icon-grid-layout-2-before .5s;
+							}
+							&::after {
+								animation: icon-grid-layout-2-after .5s;
+							}
+						}
+
+						// 3rd row
+						&:nth-child(3) {
+							animation: icon-grid-layout-3 .5s;
+
+							&::before {
+								animation: icon-grid-layout-3-before .5s;
+							}
+							&::after {
+								animation: icon-grid-layout-3-after .5s;
+							}
+						}
+					}
+				}
+
+				// 1st row
+				@keyframes icon-grid-layout-1 {
+
+					50% {
+						transform: translateY(-2px);
+					}
+				}
+
+				@keyframes icon-grid-layout-1-before {
+
+					50% {
+						transform: translateX(if-ltr(-2px, 2px));
+					}
+				}
+
+				@keyframes icon-grid-layout-1-after {
+
+					50% {
+						transform: translateX(if-ltr(2px, -2px));
+					}
+				}
+
+				// 2nd row
+				@keyframes icon-grid-layout-2-before {
+
+					50% {
+						transform: translateX(if-ltr(-2px, 2px));
+					}
+				}
+
+				@keyframes icon-grid-layout-2-after {
+
+					50% {
+						transform: translateX(if-ltr(2px, -2px));
+					}
+				}
+
+				// 3rd row
+				@keyframes icon-grid-layout-3 {
+
+					50% {
+						transform: translateY(2px);
+					}
+				}
+
+				@keyframes icon-grid-layout-3-before {
+
+					50% {
+						transform: translateX(if-ltr(-2px, 2px));
+					}
+				}
+
+				@keyframes icon-grid-layout-3-after {
+
+					50% {
+						transform: translateX(if-ltr(2px, -2px));
+					}
+				}
+
+
+		/* Icon List Layout */
+		.icon-list-layout {
+			position: relative;
+
+			&.active {
+
+				// Active state
+				.icon-list-layout__item {
+					background-color: $shop-layout-filter-color-active;
+
+					&::before {
+						background-color: $shop-layout-filter-color-active;
+					}
+				}
+			}
+		}
+			.icon-list-layout__inner {
+				display: block;
+				width: 18px;
+				height: 18px;
+				display: block;
+				position: absolute;
+				#{$left}: 50%;
+				top: 50%;
+				transform: translate(if-ltr(-50%, 50%), -50%);
+				text-align: center;
+			}
+				.icon-list-layout__item {
+					display: block;
+					position: relative;
+					width: 4px;
+					height: 4px;
+					font-size: 0;
+					line-height: 0;
+					background-color: $shop-layout-filter-color;
+					margin: 0 0 3px 0;
+					transition: all 0.5s ease;
+
+					&::before {
+						content:"";
+						display: block;
+						position: absolute;
+						width: 11px;
+						height: 4px;
+						background-color: $shop-layout-filter-color;
+						#{$left}: 7px;
+						transition: all 0.5s ease-in-out;
+
+					}
+
+
+
+					// Hover state
+					.icon-list-layout:hover & {
+						animation: icon-list-layout 0.5s;
+						background-color: $shop-layout-filter-color-active;
+
+						&::before {
+							background-color: $shop-layout-filter-color-active;
+							animation: icon-list-layout-before 0.5s;
+						}
+
+						&:nth-child(2) {
+							animation-delay: 0.1s;
+
+							&::before {
+								animation-delay: 0.1s;
+							}
+						}
+
+						&:nth-child(3) {
+							animation-delay: 0.2s;
+
+							&::before {
+								animation-delay: 0.2s;
+							}
+						}
+					}
+				}
+
+
+		@keyframes icon-list-layout {
+
+			50% {
+				transform: translateX(if-ltr(-3px, 3px));
+			}
+		}
+
+		@keyframes icon-list-layout-before {
+
+			50% {
+				transform: translateX(if-ltr(6px, -6px));
+			}
+		}

@@ -1,0 +1,163 @@
+/* Shop Pagination
+/* ------------------------- */
+
+.woocommerce-pagination  {
+	text-align: $right;
+	overflow: hidden;
+	padding: 20px 0;
+
+	.page-numbers {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		display: inline-block;
+
+		> li {
+			display: inline;
+
+			> a,
+			> span {
+				display: inline-block;
+				float: $left;
+				margin: 0 4px;
+				padding: 0;
+				line-height: 36px;
+				width: 36px;
+				height: 36px;
+				text-align: center;
+				background-color: $pagination-bg;
+				border-radius: 3px;
+				border-color: $pagination-border;
+				color: $pagination-color;
+				font-size: 11px;
+				text-transform: uppercase;
+				font-family: $font-family-accent;
+				font-weight: bold;
+				transition: all 0.2s ease;
+				position: static;
+				border: 1px solid $card-border-color;
+			}
+
+			> a,
+			> span {
+
+				&:hover {
+					background-color: $pagination-bg-hover;
+					border-color: $pagination-border-hover;
+					color: $pagination-color-hover;
+				}
+
+				&.current {
+					background-color: $pagination-bg-active;
+					border-color: $pagination-border-active;
+					color: $pagination-color-active;
+				}
+			}
+		}
+	}
+}
+
+
+// Soccer
+@if $template == 'soccer' {
+	.woocommerce-pagination {
+
+		.page-numbers {
+
+			> li {
+
+				> a,
+				> span {
+					border-radius: 0;
+					margin: 0;
+					margin-#{$left}: -1px;
+					float: $left;
+				}
+
+				&:first-child,
+				&:last-child {
+
+					> a,
+					> span {
+						border-radius: 0;
+					}
+				}
+			}
+		}
+
+		.page-numbers {
+
+			> li {
+
+				> a,
+				> span {
+					width: 50px;
+					height: 50px;
+					line-height: 50px;
+				}
+			}
+		}
+	}
+}
+
+
+// American Football
+@if $template == 'football' {
+
+	.woocommerce-pagination {
+		text-align: center;
+
+		.page-numbers {
+
+			> li {
+
+				> a,
+				> span {
+					width: 50px;
+					height: 50px;
+					line-height: 50px;
+				}
+			}
+		}
+	}
+}
+
+
+// eSports Football
+@if $template == 'esports' {
+
+	.woocommerce-pagination {
+		text-align: center;
+
+		.page-numbers {
+
+			> li {
+
+				&:first-child,
+				&:last-child {
+
+					> a,
+					> span {
+						border-radius: 50%;
+					}
+				}
+
+				> a,
+				> span {
+					width: 32px;
+					height: 32px;
+					line-height: 30px;
+					border-radius: 50%;
+					margin: 0 2px;
+
+					@media (min-width: 992px) {
+						width: 46px;
+						height: 46px;
+						line-height: 44px;
+						margin: 0 5px;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,75 @@
+/* Shop Pagination
+/* ------------------------- */
+
+.woocommerce-pagination  {
+
+	.page-numbers {
+		> li {
+
+			> a,
+			> span {
+				background-color: $pagination-bg;
+				border-color: $pagination-border;
+				color: $pagination-color;
+				font-family: $font-family-accent;
+				border: 1px solid $card-border-color;
+			}
+
+			> a,
+			> span {
+
+				&:hover {
+					background-color: $pagination-bg-hover;
+					border-color: $pagination-border-hover;
+					color: $pagination-color-hover;
+				}
+
+				&.current {
+					background-color: $pagination-bg-active;
+					border-color: $pagination-border-active;
+					color: $pagination-color-active;
+				}
+			}
+		}
+	}
+}
+
+
+// eSports Football
+@if $template == 'esports' {
+
+	.woocommerce-pagination {
+		text-align: center;
+
+		.page-numbers {
+
+			> li {
+
+				&:first-child,
+				&:last-child {
+
+					> a,
+					> span {
+						border-radius: 50%;
+					}
+				}
+
+				> a,
+				> span {
+					width: 32px;
+					height: 32px;
+					line-height: 30px;
+					border-radius: 50%;
+					margin: 0 2px;
+
+					@media (min-width: 992px) {
+						width: 46px;
+						height: 46px;
+						line-height: 44px;
+						margin: 0 5px;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+/* Widget: Achievements */
+.alc-achievements {
+
+}
+
+	// Item
+	.alc-achievements__item {
+
+	}
+
+		// Content
+		.alc-achievements__content {
+
+		}
+			.alc-achievements__event-date {
+				font-family: $font-family-accent;
+			}
+
+		// Meta
+		.alc-achievements__meta {
+			border-top-color: $card-border-color;
+		}
+			.alc-achievements__meta-item {
+				border-#{$right}-color: $card-border-color;
+
+				&:last-child {
+					border-#{$right}: 0;
+				}
+			}

@@ -1,0 +1,22 @@
+
+/*=============================================
+=            eSports Posts            =
+=============================================*/
+
+// Category Labels
+.posts__cat-label {
+
+	&::before {
+		background-color: $post-category-1;
+	}
+}
+
+@each $color, $value in $post-category-colors {
+	.posts__cat-label--#{$color} {
+		&::before {
+			background-color: $value;
+		}
+	}
+}
+
+/*=====  End of eSports Posts  ======*/

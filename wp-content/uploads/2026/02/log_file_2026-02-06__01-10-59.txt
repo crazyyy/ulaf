@@ -1,0 +1,100 @@
+
+---Downloaded files---
+The import files for: Football were successfully downloaded!
+Initial max execution time = 600
+Files info:
+Site URL = https://ulaf.ddev.site
+Data file = /var/www/html/wp-content/themes/alchemists/inc/demo/football/content.xml
+Widget file = /var/www/html/wp-content/themes/alchemists/inc/demo/football/widgets.json
+Customizer file = not defined!
+Redux files:
+alchemists_data -> /var/www/html/wp-content/themes/alchemists/inc/demo/football/redux_options.json 
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+

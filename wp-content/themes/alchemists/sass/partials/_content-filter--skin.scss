@@ -1,0 +1,70 @@
+/* Team Filter */
+.content-filter {
+	background-color: $content-filter-bg;
+
+	@media (min-width: 992px) {
+		border-bottom-color: $content-filter-border;
+	}
+}
+
+	.content-filter__toggle {
+
+		&::before {
+			color: $content-filter-color-hover;
+		}
+	}
+
+	.content-filter__list {
+
+		@media (min-width: 992px) {
+			border-#{$left}-color: $content-filter-border;
+			border-#{$right}-color: $content-filter-border;
+		}
+	}
+		.content-filter__item {
+			border-bottom-color: $content-filter-border;
+
+			@media (min-width: 992px) {
+
+				& + & {
+					border-#{$left}-color: $content-filter-border;
+				}
+			}
+		}
+			.content-filter__link {
+				@include font-accent($content-filter-label-font-size);
+				color: $content-filter-color;
+
+				small {
+					color: $content-filter-color;
+				}
+
+				&:hover {
+					color: $content-filter-color-hover;
+				}
+
+				&::before {
+					background-color: $content-filter-active-highlight;
+				}
+			}
+			.content-filter__item--active,
+			.content-filter__item.is-active {
+				background-color: $content-filter-bg-active;
+
+				.content-filter__link {
+					color: $content-filter-color-active;
+				}
+			}
+
+
+// Boxed
+.content-filter--boxed {
+	background-color: transparent;
+	border-bottom: 0;
+
+	.content-filter__inner {
+		background-color: $content-filter-bg;
+		border-color: $content-filter-border;
+	}
+}
+

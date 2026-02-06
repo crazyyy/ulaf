@@ -1,0 +1,52 @@
+/* Widget: Results */
+.widget-results {
+
+}
+		.widget-results__item {
+			border-top: 1px solid $card-border-color;
+		}
+			.widget-results__title {
+				color: $body-font-color;
+				border-bottom: 1px solid $card-border-color;
+			}
+					.widget-results__team-details {
+
+					}
+						.widget-results__team-info {
+							font-family: $font-family-accent;
+						}
+
+				.widget-results__result {
+
+				}
+					.widget-results__score {
+						font-family: $font-family-accent;
+						color: $headings-color;
+					}
+						.widget-results__score-winner {
+
+							&:before {
+								border-#{$left}: 4px solid $color-primary;
+
+								@if $template == football {
+									border-#{$left}: 4px solid $color-4;
+								} @else {
+									border-#{$left}: 4px solid $color-primary;
+								}
+							}
+
+							.widget-results__score-loser ~ &::after {
+								border-#{$right}: 4px solid $color-primary;
+
+								@if $template == football {
+									border-#{$right}: 4px solid $color-4;
+								} @else {
+									border-#{$right}: 4px solid $color-primary;
+								}
+							}
+						}
+
+						.widget-results__status {
+							font-family: $font-family-accent;
+							color: $body-font-color;
+						}

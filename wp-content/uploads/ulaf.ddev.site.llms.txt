@@ -5,6 +5,10 @@
 
 ## Сторінки
 
+- [Shop](https://ulaf.ddev.site/shop)
+- [Cart](https://ulaf.ddev.site/cart)
+- [Checkout](https://ulaf.ddev.site/checkout)
+- [My account](https://ulaf.ddev.site/my-account)
 - [Шукаю команду](https://ulaf.ddev.site/shukaiu-komandu)
 - [Створити команду](https://ulaf.ddev.site/stvoryty-komandu)
 - [Terms of Service](https://ulaf.ddev.site/terms)

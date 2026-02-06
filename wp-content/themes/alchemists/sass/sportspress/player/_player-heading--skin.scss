@@ -1,0 +1,66 @@
+/* Player Heading */
+.player-heading {
+	background-color: $player-page-heading-bg-color;
+}
+
+	.player-info {
+		color: #fff;
+	}
+				.player-info__number {
+					font-family: $font-family-accent;
+					color: #fff;
+
+					@if $template == football {
+						color: $body-font-color;
+					}
+				}
+
+				.player-info__name {
+					color: #fff;
+				}
+
+					.player-info__last-name {
+						color: $player-page-heading-second-name;
+					}
+
+					.player-info-details__title {
+						color: $player-page-heading-title;
+					}
+					.player-info-details__value {
+						font-family: $font-family-accent;
+
+						> a {
+							color: #fff;
+						}
+					}
+
+				.player-info-stats__item {
+
+					.circular {
+
+						.circular__bar {
+
+							.circular__percents {
+								color: #fff;
+
+								small {
+									color: $player-page-heading-title;
+								}
+							}
+						}
+						.circular__label {
+							color: $player-page-heading-title;
+						}
+						.circular__label-first {
+							color: #fff;
+						}
+					}
+				}
+
+
+		.player-info__item--stats {
+
+			.progress__label {
+				color: #fff;
+			}
+		}

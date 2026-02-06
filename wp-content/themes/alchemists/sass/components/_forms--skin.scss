@@ -1,0 +1,207 @@
+/* Forms
+/* ------------------------- */
+
+label {
+	font-family: $font-family-accent;
+	color: $input-label-color;
+
+	.required {
+		color: $color-primary;
+
+		@if $template == football {
+			color: $color-4;
+		}
+	}
+}
+
+// Form Control
+.form-control,
+.input-text,
+select {
+	@include form-control();
+}
+
+
+// Feedback states
+.has-success {
+	@include form-control-validation($state-success-text, $state-success-text, $state-success-bg);
+}
+.has-warning {
+	@include form-control-validation($state-warning-text, $state-warning-text, $state-warning-bg);
+}
+.has-error {
+	@include form-control-validation($state-danger-text, $state-danger-text, $state-danger-bg);
+}
+
+// Contact Form 7 specifics
+.wpcf7-not-valid {
+	@include wpcf7-form-control-validation( $state-danger-text, $state-danger-text, $state-danger-bg );
+}
+
+
+// Select
+select.form-control,
+select {
+	background-color: $input-bg;
+	background-image: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 6 4'%3E%3Cpath transform='translate(-586.156 -1047.28)' fill='#{$headings-color}' d='M586.171,1048l0.708-.71,2.828,2.83-0.707.71Zm4.95-.71,0.707,0.71L589,1050.83l-0.707-.71Z'/%3E%3C/svg%3E"), "#", "%23");
+}
+
+select.form-control--clean {
+	color: $headings-color;
+	font-family: $font-family-accent;
+}
+
+// Sizes
+.input-sm {
+	height: $input-height-base-sm;
+	font-size: $input-font-size-sm;
+}
+
+
+// Form groups
+.form-group--password-forgot {
+
+	.password-reminder {
+		font-family: $font-family-accent;
+		color: $headings-color;
+	}
+}
+
+
+
+// Checkbox
+.wpcf7-checkbox .wpcf7-list-item label,
+.checkbox {
+
+	input[type="checkbox"] {
+
+		&:checked ~ .checkbox-indicator,
+		&:checked ~ .wpcf7-list-item-label::before {
+			background-color: $checkbox-bg-active;
+			border-color: $checkbox-border-active;
+			background-image: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='#{$checkbox-icon-active}' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E"), "#", "%23");
+		}
+	}
+
+	.checkbox-indicator,
+	.wpcf7-list-item-label::before {
+		background-color: $checkbox-bg;
+		border: 1px solid $checkbox-border;
+		border-radius: $checkbox-border-radius;
+	}
+
+	// Disabled
+	input[type="checkbox"]:disabled ~ .checkbox-indicator,
+	input[type="checkbox"]:disabled ~ .wpcf7-list-item-label::before {
+		background-color: $checkbox-bg-disabled;
+		border-color: $checkbox-border-disabled;
+	}
+}
+
+.checkbox--cell {
+
+	input[type="checkbox"] {
+
+		&:checked + .checkbox-indicator {
+			background-color: $color-primary-darken;
+			border-color: $checkbox-border;
+		}
+	}
+
+	.checkbox-indicator {
+		background-color: $input-bg;
+		border: 1px solid $checkbox-border;
+	}
+}
+
+
+// Radio
+.radio,
+.wpcf7-radio .wpcf7-list-item label {
+
+	input[type="radio"] {
+
+		&:checked ~ .radio-indicator,
+		&:checked ~ .wpcf7-list-item-label::before {
+			background-image: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='#{$color-primary}'/%3E%3C/svg%3E"), "#", "%23");
+		}
+	}
+
+	.radio-indicator,
+	.wpcf7-list-item-label::before  {
+		background-color: $radio-bg;
+		border: 1px solid $radio-border;
+	}
+
+	&.radio-inline {
+
+	}
+
+	// Disabled
+	input[type="radio"]:disabled ~ .radio-indicator,
+	input[type="radio"]:disabled ~ .wpcf7-list-item-label::before {
+		background-color: $radio-bg-disabled;
+		border-color: $radio-border-disabled;
+
+		@if $template == 'football' {
+			background-image: none;
+		} @else {
+			background-image: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='#{$color-gray}'/%3E%3C/svg%3E"), "#", "%23");
+		}
+	}
+}
+
+// Radio Only Word
+.radio--word {
+
+	input[type="radio"] {
+
+		&:checked + .radio-label {
+			color: $headings-color;
+		}
+	}
+}
+
+
+// Reguired Form Control Mark
+abbr.required {
+	color: $color-primary-darken;
+
+	@if $template == football {
+		color: $color-4;
+	}
+}
+
+
+
+// Switch Toggle
+.switch {
+
+}
+	.switch__label-txt {
+		font-family: $font-family-accent;
+		color: $headings-color;
+	}
+
+.alc-switch-toggle {
+
+	& + label {
+		background-color: darken($input-bg-disabled, 9%);
+		border-color: $card-border-color;
+	}
+
+	&:checked + label {
+		background-color: $color-success;
+	}
+
+}
+
+
+// Legend
+legend {
+	color: $headings-color;
+	font-family: $headings-font-family;
+	font-size: $font-size-h5;
+	text-transform: $text-transform-h5;
+	font-style: $font-style-h5;
+}

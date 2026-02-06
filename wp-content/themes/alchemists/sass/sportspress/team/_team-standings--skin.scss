@@ -1,0 +1,36 @@
+/* Team Standings */
+.table-standings {
+
+	td.data-name {
+		color: $table-highlight;
+
+		a {
+			color: $table-highlight;
+		}
+	}
+
+	.data-w,
+	.data-l,
+	.data-gb {
+		color: $table-highlight;
+	}
+
+	@if $template == soccer {
+		.data-d,
+		.data-pts {
+			color: $table-highlight;
+		}
+	}
+}
+
+
+@if $template == soccer {
+	/* Table Standings: Soccer */
+	.table-standings--full-soccer {
+
+		.team-standings__drawn,
+		.team-standings__total-points {
+			color: $table-highlight;
+		}
+	}
+}

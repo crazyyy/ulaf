@@ -1,0 +1,98 @@
+/* Widget: Calendar */
+.widget_calendar {
+
+}
+	.calendar_wrap,
+	.sp-calendar-wrapper {
+
+		> table {
+
+			> thead {
+
+				> tr {
+
+					> th {
+						font-family: $font-family-accent;
+						color: $headings-color;
+					}
+				}
+			}
+
+			> tbody {
+
+				> tr {
+
+					> td {
+						font-family: $font-family-accent;
+						color: $headings-color;
+
+						a {
+							background-color: $color-primary;
+							color: #fff;
+						}
+					}
+				}
+			}
+
+			#prev,
+			#next {
+
+				a {
+
+					@if $template == 'football' or $template == 'esports' {
+						background-color: $color-gray-2;
+					} @else {
+						background-color: $color-gray;
+					}
+
+					&::before {
+						color: #fff;
+					}
+
+					&:hover {
+						background-color: $color-primary;
+					}
+				}
+			}
+		}
+
+		caption {
+			font-family: $font-family-accent;
+			color: $headings-color;
+			border-bottom: 1px solid $card-border-color;
+
+			@if $template == 'football' or $template == 'esports' {
+				background-color: rgba($card-header-bg, 0.6);
+			} @else {
+				background-color: $card-header-bg;
+			}
+		}
+	}
+
+
+.footer-widgets .widget_calendar {
+
+	.calendar_wrap {
+
+		> table {
+
+			thead {
+
+				th {
+					color: $footer-widget-title;
+				}
+			}
+
+			tbody {
+
+				td {
+					color: $footer-widget-title;
+				}
+			}
+		}
+
+		caption {
+			color: $footer-widget-title;
+		}
+	}
+}

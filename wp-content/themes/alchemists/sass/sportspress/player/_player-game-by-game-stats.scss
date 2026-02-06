@@ -1,0 +1,38 @@
+.team-meta {
+	text-align: $left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+	.team-meta__logo {
+		width: 35px;
+		height: 30px;
+		text-align: center;
+		display: inline-block;
+		vertical-align: middle;
+		margin-#{$right}: 5px;
+
+		img {
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+	.team-meta__info {
+		display: inline-block;
+		vertical-align: middle;
+	}
+		.team-meta__name {
+			font-size: 12px;
+			line-height: 1.2em;
+			font-weight: 400;
+			margin-bottom: 0;
+			text-transform: none;
+		}
+		.team-meta__place {
+			display: block;
+			font-size: 9px;
+			line-height: 1.2em;
+			font-family: $font-family-accent;
+			color: $body-font-color;
+		}

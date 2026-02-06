@@ -1,0 +1,829 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Alchemists Advanced Posts\n"
+"POT-Creation-Date: 2025-12-12 13:25+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Dan Fisher <dan.fisher85@yahoo.com>\n"
+"Language-Team: Dan Fisher <dan.fisher85@yahoo.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: widgets/widget-recent-comments.php:101
+#: widgets/widget-recent-comments.php:118
+#, php-format
+msgctxt "%s = human-readable time difference"
+msgid "%s ago"
+msgstr ""
+
+#: widgets/widget-contact-info.php:343
+msgid "1st Custom Icon:"
+msgstr ""
+
+#: widgets/widget-contact-info.php:333
+msgid "1st Email, Link or Phone:"
+msgstr ""
+
+#: widgets/widget-contact-info.php:328
+msgid "1st Label:"
+msgstr ""
+
+#: widgets/widget-contact-info.php:364
+msgid "2nd Custom Icon:"
+msgstr ""
+
+#: widgets/widget-contact-info.php:354
+msgid "2nd Email, Link or Phone:"
+msgstr ""
+
+#: widgets/widget-contact-info.php:349
+msgid "2nd Label:"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-featured-player.php:34
+msgid "A featured player."
+msgstr ""
+
+#: sportspress/widgets/widget-alc-event-block.php:34
+msgid "A list of events."
+msgstr ""
+
+#: widgets/widget-recent-comments.php:34
+msgid "A widget to show the most recent comments."
+msgstr ""
+
+#: sportspress/widgets/widget-alc-featured-player.php:259
+msgid "Add Link to Player Page?"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-featured-player.php:148
+#: sportspress/widgets/widget-alc-featured-player.php:165
+#: sportspress/widgets/widget-alc-event-block.php:141
+#: sportspress/widgets/widget-alc-game-result.php:222
+#: sportspress/widgets/widget-alc-game-result.php:239
+msgid "Add New"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:22
+msgid "Add New Album"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:60
+#: custom-post-types/custom-post-types.php:131
+msgid "Add New Category"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:89
+msgid "Add New Video"
+msgstr ""
+
+#: widgets/widget-contact-info.php:345 widgets/widget-contact-info.php:366
+msgid ""
+"Add your custom icon, e.g. <code>&lt;i class=\"fa fa-user\"&gt;&lt;/i&gt;"
+"</code> or <code>&lt;img src=\"PATH_TO_IMAGE\" /&gt;</code>"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:21
+msgctxt "Album"
+msgid "Add New"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:30
+#: custom-post-types/admin-permalinks-settings.php:34
+msgid "Albums"
+msgstr ""
+
+#. Name of the plugin
+msgid "Alchemists Extensions"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:233 widgets/widget-recent-posts.php:285
+#: sportspress/widgets/widget-alc-featured-player.php:143
+#: sportspress/widgets/widget-alc-event-block.php:133
+#: sportspress/widgets/widget-alc-event-block.php:180
+#: sportspress/widgets/widget-alc-game-result.php:214
+#: sportspress/widgets/widget-alc-game-result.php:234
+#: sportspress/widgets/widget-alc-game-result.php:283
+msgid "All"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:55
+#: custom-post-types/custom-post-types.php:126
+msgid "All Categories"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-event-block.php:188
+#: sportspress/widgets/widget-alc-game-result.php:341
+msgid "Ascending"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-featured-player/default-player-featured.php:136
+msgid "AVG"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-event-block.php:129
+#: sportspress/widgets/widget-alc-game-result.php:210
+msgid "Calendar"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:52
+msgctxt "category general name"
+msgid "Albums Categories"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:123
+msgctxt "category general name"
+msgid "Videos Categories"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:283
+msgid "Category:"
+msgstr ""
+
+#: widgets/widget-recent-comments.php:187
+msgid "Comment size (number of words):"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-featured-player.php:181
+msgid "Compact"
+msgstr ""
+
+#. Author of the plugin
+msgid "Dan Fisher"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:257 widgets/widget-recent-videos.php:192
+msgid "Date"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:271 widgets/widget-top-posts.php:310
+#: sportspress/widgets/widget-alc-event-block.php:160
+#: sportspress/widgets/widget-alc-game-result.php:245
+msgid "Date:"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-game-result.php:270
+msgid "days"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:273 widgets/widget-recent-posts.php:326
+#: widgets/widget-recent-posts.php:340 widgets/widget-top-posts.php:312
+#: sportspress/widgets/widget-alc-event-block.php:149
+#: sportspress/widgets/widget-alc-event-block.php:163
+#: sportspress/widgets/widget-alc-event-block.php:187
+#: sportspress/widgets/widget-alc-game-result.php:248
+#: sportspress/widgets/widget-alc-game-result.php:340
+msgid "Default"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-event-block.php:189
+#: sportspress/widgets/widget-alc-game-result.php:342
+msgid "Descending"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:328 widgets/widget-recent-posts.php:341
+msgid "Disable"
+msgstr ""
+
+#: widgets/widget-contact-info.php:34
+msgid "Display Contact Info as a widget."
+msgstr ""
+
+#: sportspress/widgets/widget-alc-game-result.php:34
+msgid "Display event results."
+msgstr ""
+
+#: sportspress/widgets/widget-alc-event-block.php:193
+msgid "Display link to view all events"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:34
+msgid "Display your posts."
+msgstr ""
+
+#: widgets/widget-recent-videos.php:34
+msgid "Display your videos."
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:23
+msgid "Edit Album"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:58
+#: custom-post-types/custom-post-types.php:129
+msgid "Edit Category"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:90
+msgid "Edit Video"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:327
+msgid "Enable"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:333 widgets/widget-top-posts.php:340
+msgid "Excerpt size (number of words):"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:324
+msgid "Excerpt:"
+msgstr ""
+
+#: sportspress/game-result.php:125
+msgid "Expand Stats"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-featured-player.php:182
+msgid "Extended"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:319
+msgid "Extra Large - 400x400"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:317
+msgid "Extra Small - 50x50"
+msgstr ""
+
+#: widgets/widget-contact-info.php:186
+msgid "Facebook"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-featured-player/football-player-featured.php:96
+msgid "Featured Player"
+msgstr ""
+
+#: sportspress/game-result.php:319
+msgid "Final Score"
+msgstr ""
+
+#: sportspress/game-result.php:459 sportspress/game-result.php:640
+msgid "Game Statistics"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-event-block.php:126
+msgid "Heading:"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-game-result.php:298
+msgid "Horizontal"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://themeforest.net/user/dan_fisher"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://themeforest.net/user/dan_fisher/portfolio"
+msgstr ""
+
+#: sportspress/player-featured.php:72
+msgid "In career"
+msgstr ""
+
+#: sportspress/player-featured.php:78
+msgid "In current season"
+msgstr ""
+
+#: widgets/widget-contact-info.php:198
+msgid "Instagram"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:318
+msgid "Large - 380x270"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:278 widgets/widget-top-posts.php:317
+msgid "Last 12 months"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:275 widgets/widget-top-posts.php:314
+msgid "Last 30 days"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:277 widgets/widget-top-posts.php:316
+msgid "Last 6 months"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:274 widgets/widget-top-posts.php:313
+msgid "Last 7 days"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:276 widgets/widget-top-posts.php:315
+msgid "Last 90 days"
+msgstr ""
+
+#: widgets/widget-recent-comments.php:194
+msgid "Layout 1"
+msgstr ""
+
+#: widgets/widget-recent-comments.php:195
+msgid "Layout 2"
+msgstr ""
+
+#: widgets/widget-recent-comments.php:192
+#: sportspress/widgets/widget-alc-game-result.php:296
+msgid "Layout:"
+msgstr ""
+
+#: post-like-system/post-like.php:32 post-like-system/post-like.php:225
+msgid "Like"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:265 widgets/widget-recent-videos.php:200
+#: widgets/widget-top-posts.php:304
+msgid "Likes"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-event-block.php:179
+#: sportspress/widgets/widget-alc-game-result.php:282
+msgid "Match Day:"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:338
+msgid "Meta:"
+msgstr ""
+
+#: widgets/widget-top-posts.php:90
+msgid "Most Commented"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:24
+msgid "New Album"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:61
+#: custom-post-types/custom-post-types.php:132
+msgid "New Category Name"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:91
+msgid "New Video"
+msgstr ""
+
+#: widgets/widget-top-posts.php:87
+msgid "Newest"
+msgstr ""
+
+#: widgets/widget-top-posts.php:34
+msgid "Newest, Most Commented and Popular posts."
+msgstr ""
+
+#: sportspress/widgets/widget-alc-game-result.php:268
+msgid "Next"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:27
+msgid "No albums found"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:28
+msgid "No albums found in Trash"
+msgstr ""
+
+#: widgets/widget-recent-comments.php:132
+msgid "No comments."
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:94
+msgid "No videos found"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:95
+msgid "No videos found in Trash"
+msgstr ""
+
+#: post-like-system/post-like.php:47
+msgid "Not permitted"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-featured-player.php:207
+msgid "Note: Select no more than three items."
+msgstr ""
+
+#: sportspress/widgets/widget-alc-featured-player.php:233
+msgid "Note: Select only percent based stat, and no more than 2 or 3 items."
+msgstr ""
+
+#: sportspress/widgets/widget-alc-game-result.php:334
+msgid "Note: Uncheck all to display predefined set."
+msgstr ""
+
+#: widgets/widget-recent-comments.php:182
+msgid "Number of comments:"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-event-block.php:182
+#: sportspress/widgets/widget-alc-game-result.php:285
+msgid "Number of events to show:"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:250 widgets/widget-recent-videos.php:177
+msgid "Number of items to show:"
+msgstr ""
+
+#: widgets/widget-top-posts.php:292
+msgid "Number of most commented posts:"
+msgstr ""
+
+#: widgets/widget-top-posts.php:287
+msgid "Number of newest posts:"
+msgstr ""
+
+#: widgets/widget-top-posts.php:297
+msgid "Number of popular posts:"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:308
+msgid "Numbered List?"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:255 widgets/widget-recent-videos.php:190
+msgid "Order by:"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:56
+#: custom-post-types/custom-post-types.php:127
+msgid "Parent Category"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:57
+#: custom-post-types/custom-post-types.php:128
+msgid "Parent Category:"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-game-result.php:265
+msgid "Past"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-game-result.php:310
+msgid "Performance in Compact view with Expand button"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-featured-player.php:237
+msgid "Performance:"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-featured-player.php:153
+msgid "Player"
+msgstr ""
+
+#: widgets/widget-top-posts.php:93
+msgid "Popular"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:258 widgets/widget-recent-videos.php:193
+msgid "Popularity"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:263 widgets/widget-recent-videos.php:198
+#: widgets/widget-top-posts.php:302
+msgid "Popularity:"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:19
+msgctxt "post type general name"
+msgid "Albums"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:86
+msgctxt "post type general name"
+msgid "Videos"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:20
+msgctxt "post type singular name"
+msgid "Album"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:87
+msgctxt "post type singular name"
+msgid "Video"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-featured-player.php:211
+msgid "Progress Bars:"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:228
+msgid "Recent Posts"
+msgstr ""
+
+#: widgets/widget-recent-videos.php:162
+msgid "Recent Videos"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-game-result.php:276
+msgid "Relative"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:26
+msgid "Search Albums"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:54
+#: custom-post-types/custom-post-types.php:125
+msgid "Search Category"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:93
+msgid "Search Videos"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-featured-player.php:136
+#: sportspress/widgets/widget-alc-featured-player.php:153
+#: sportspress/widgets/widget-alc-event-block.php:129
+#: sportspress/widgets/widget-alc-game-result.php:210
+#: sportspress/widgets/widget-alc-game-result.php:227
+#, php-format
+msgid "Select %s:"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-game-result.php:314
+msgid "Select Performance:"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-featured-player.php:171
+msgid "Select Style:"
+msgstr ""
+
+#: alc-advanced-posts.php:295 alc-advanced-posts.php:379
+msgid "Share on Facebook"
+msgstr ""
+
+#: alc-advanced-posts.php:395
+msgid "Share on LinkedIn"
+msgstr ""
+
+#: alc-advanced-posts.php:307
+msgid "Share on Linkedin"
+msgstr ""
+
+#: alc-advanced-posts.php:319 alc-advanced-posts.php:411
+msgid "Share on OK"
+msgstr ""
+
+#: alc-advanced-posts.php:337 alc-advanced-posts.php:435
+msgid "Share on Telegram"
+msgstr ""
+
+#: alc-advanced-posts.php:301 alc-advanced-posts.php:387
+msgid "Share on Twitter"
+msgstr ""
+
+#: alc-advanced-posts.php:331 alc-advanced-posts.php:427
+msgid "Share on Viber"
+msgstr ""
+
+#: alc-advanced-posts.php:313 alc-advanced-posts.php:403
+msgid "Share on VK"
+msgstr ""
+
+#: alc-advanced-posts.php:325 alc-advanced-posts.php:419
+msgid "Share on WhatsApp"
+msgstr ""
+
+#: widgets/widget-contact-info.php:323
+msgid "Short Info:"
+msgstr ""
+
+#: widgets/widget-top-posts.php:336
+msgid "Show excerpt"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-game-result.php:305
+msgid "Show Performance"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:303 widgets/widget-top-posts.php:323
+msgid "Show thumbnail"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-game-result.php:291
+msgid "Show Timeline"
+msgstr ""
+
+#: sportspress/game-result.php:125
+msgid "Shrink Stats"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:316 widgets/widget-top-posts.php:330
+msgid "Small - 112x84"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:314 widgets/widget-top-posts.php:329
+msgid "Small - 80x80"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:315
+msgid "Small - 90x68"
+msgstr ""
+
+#: widgets/widget-contact-info.php:210
+msgid "Snapchat"
+msgstr ""
+
+#: widgets/widget-contact-info.php:415
+msgid "Social - Custom 1 Icon:"
+msgstr ""
+
+#: widgets/widget-contact-info.php:407
+msgid "Social - Custom 1 Title:"
+msgstr ""
+
+#: widgets/widget-contact-info.php:411
+msgid "Social - Custom 1 URL:"
+msgstr ""
+
+#: widgets/widget-contact-info.php:429
+msgid "Social - Custom 2 Icon:"
+msgstr ""
+
+#: widgets/widget-contact-info.php:421
+msgid "Social - Custom 2 Title:"
+msgstr ""
+
+#: widgets/widget-contact-info.php:425
+msgid "Social - Custom 2 URL:"
+msgstr ""
+
+#: widgets/widget-contact-info.php:370
+msgid "Social - Facebook:"
+msgstr ""
+
+#: widgets/widget-contact-info.php:380
+msgid "Social - Instagram:"
+msgstr ""
+
+#: widgets/widget-contact-info.php:390
+msgid "Social - Snapchat:"
+msgstr ""
+
+#: widgets/widget-contact-info.php:385
+msgid "Social - Telegram:"
+msgstr ""
+
+#: widgets/widget-contact-info.php:400
+msgid "Social - TikTok:"
+msgstr ""
+
+#: widgets/widget-contact-info.php:395
+msgid "Social - Twitch:"
+msgstr ""
+
+#: widgets/widget-contact-info.php:375
+msgid "Social - Twitter:"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-event-block.php:185
+#: sportspress/widgets/widget-alc-game-result.php:338
+msgid "Sort Order:"
+msgstr ""
+
+#: widgets/widget-recent-videos.php:182
+msgid "Source:"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-featured-player.php:179
+msgid "Statistics Type:"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-featured-player.php:187
+msgid "Statistics:"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-event-block.php:146
+msgid "Status:"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-featured-player.php:173
+msgid "Style 1"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-featured-player.php:174
+msgid "Style 2"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:53
+msgctxt "taxonomy singular name"
+msgid "Albums Category"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:124
+msgctxt "taxonomy singular name"
+msgid "Videos Category"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-featured-player.php:136
+#: sportspress/widgets/widget-alc-game-result.php:227
+msgid "Team"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-featured-player/default-player-featured.php:102
+msgid "Team Logo"
+msgstr ""
+
+#: widgets/widget-contact-info.php:204
+msgid "Telegram"
+msgstr ""
+
+#: widgets/widget-contact-info.php:338
+msgid "Text for the 1st Email, Link or Phone:"
+msgstr ""
+
+#: widgets/widget-contact-info.php:359
+msgid "Text for the 2nd Email, Link or Phone:"
+msgstr ""
+
+#: custom-post-types/admin-permalinks-settings.php:75
+msgid ""
+"These settings control the permalinks used for Alchemists custom post types. "
+"These settings only apply when <strong>not using \"plain\" permalinks "
+"above</strong>."
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"This plugin adds social sharing, post views, likes, custom post types to "
+"Alchemists WP Theme."
+msgstr ""
+
+#: widgets/widget-recent-posts.php:312 widgets/widget-top-posts.php:327
+msgid "Thumb size:"
+msgstr ""
+
+#: widgets/widget-contact-info.php:222
+msgid "TikTok"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:245 widgets/widget-recent-videos.php:172
+#: widgets/widget-recent-comments.php:177 widgets/widget-contact-info.php:318
+#: widgets/widget-top-posts.php:282
+#: sportspress/widgets/widget-alc-featured-player.php:133
+#: sportspress/widgets/widget-alc-event-block.php:123
+#: sportspress/widgets/widget-alc-game-result.php:207
+msgid "Title:"
+msgstr ""
+
+#: widgets/widget-contact-info.php:216
+msgid "Twitch"
+msgstr ""
+
+#: widgets/widget-contact-info.php:192
+msgid "Twitter"
+msgstr ""
+
+#: post-like-system/post-like.php:33 post-like-system/post-like.php:221
+msgid "Unlike"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:59
+#: custom-post-types/custom-post-types.php:130
+msgid "Update Category"
+msgstr ""
+
+#: sportspress/widgets/widget-alc-game-result.php:299
+msgid "Vertical"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:88
+msgctxt "Video"
+msgid "Add New"
+msgstr ""
+
+#: widgets/widget-recent-videos.php:185
+msgid "Video Custom Post Type"
+msgstr ""
+
+#: widgets/widget-recent-videos.php:184
+msgid "Video Post Format"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:97
+#: custom-post-types/admin-permalinks-settings.php:35
+msgid "Videos"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:25
+msgid "View Album"
+msgstr ""
+
+#: custom-post-types/custom-post-types.php:92
+msgid "View Video"
+msgstr ""
+
+#: widgets/widget-recent-posts.php:266 widgets/widget-recent-videos.php:201
+#: widgets/widget-top-posts.php:305
+msgid "Views"
+msgstr ""

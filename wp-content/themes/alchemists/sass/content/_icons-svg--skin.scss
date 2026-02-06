@@ -1,0 +1,73 @@
+//- Icons SVG
+//- ----------------------------------------------
+
+:root {
+	--icon-svg-color: $svg-stroke;
+}
+
+// Base style
+.df-icon {
+	stroke: $svg-stroke;
+}
+
+// Trophy
+.df-icon--trophy {
+	stroke: none;
+}
+
+// Trophy
+.df-icon--trophy {
+	fill: $tournament-winner-icon;
+}
+
+
+@if $template == 'esports' {
+	/* eSports Icons */
+
+	// Crosshair
+	.df-icon--coin {
+		stroke: none;
+	}
+
+	// Crosshair
+	.df-icon--crosshair {
+		stroke: none;
+	}
+
+	// Dead Face
+	.df-icon--dead-face {
+		stroke: none;
+	}
+
+	.df-icon--medic {
+		stroke-width: 0;
+	}
+
+	.df-icon--gamepad {
+		stroke-width: 0;
+	}
+
+	.df-icon--drop {
+		stroke: none;
+	}
+
+	.df-icon--stopwatch {
+		stroke: none;
+	}
+
+	.df-icon--skull {
+		stroke: none;
+	}
+
+	.df-icon--pliers {
+		stroke: none;
+	}
+
+	.df-icon--explosion {
+		stroke: none;
+	}
+
+	.df-icon--stopwatch2 {
+		stroke: none;
+	}
+}

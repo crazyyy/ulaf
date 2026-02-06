@@ -1,0 +1,43 @@
+/* Lightbox Holder
+/* ------------------------- */
+
+.lightbox-holder {
+
+}
+	// Centered Icon
+	.lightbox-holder__link--play {
+
+		&::before {
+			border: 2px solid $color-primary;
+			background-color: rgba($body-bg-color, 0.6);
+		}
+	}
+	.lightbox-holder__overlay {
+
+		time {
+			font-family: $font-family-accent;
+			color: $body-font-color;
+		}
+	}
+
+	.lightbox-holder__overlay--video {
+
+		&::before {
+			border: 2px solid $color-primary;
+		}
+	}
+
+
+// Post Category Styling
+.lightbox-holder {
+
+	@each $color, $value in $post-category-colors {
+		&.posts__item--#{$color} {
+
+			.lightbox-holder__link--play::before,
+			.lightbox-holder__overlay--video::before {
+				border-color: $value;
+			}
+		}
+	}
+}

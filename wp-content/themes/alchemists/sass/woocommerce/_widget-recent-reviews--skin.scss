@@ -1,0 +1,29 @@
+/**
+ * Woo Widget: Recent Reviews
+ */
+
+.widget_recent_reviews {
+
+	ul.product_list_widget {
+
+		> li {
+			font-family: $font-family-accent;
+
+			a {
+				color: $headings-color;
+
+				&:hover {
+					color: $link-color-hover;
+				}
+			}
+
+			img {
+				border-radius: $thumb-border-radius;
+			}
+
+			& + li {
+				border-top: 1px solid $card-border-color;
+			}
+		}
+	}
+}

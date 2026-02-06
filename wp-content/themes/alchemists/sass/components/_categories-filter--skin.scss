@@ -1,0 +1,22 @@
+/* Post Categories Filter
+/* ------------------------- */
+
+/* Post Filter */
+.category-filter {
+
+}
+	.category-filter__item {
+
+	}
+		.category-filter__link {
+			font-family: $font-family-accent;
+			color: rgba($headings-color, 0.4);
+
+			&:hover {
+				color: $headings-color;
+			}
+		}
+
+		.category-filter__link--active {
+			color: $headings-color;
+		}

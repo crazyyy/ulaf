@@ -1,0 +1,20 @@
+// Override default value for $dir in directional.scss
+$dir: rtl;
+
+@import "config/variables-esports";
+@import "style-skin";
+
+// Components
+@import "components/esports_forms--skin";
+
+// Main
+@import "common/esports_footer--skin";
+
+// Blog
+@import "blog/esports_posts--skin";
+
+// Widgets
+@import "widgets/esports_widget-lists--skin";
+
+// Event
+@import "sportspress/event/esports_event-result-box--skin";

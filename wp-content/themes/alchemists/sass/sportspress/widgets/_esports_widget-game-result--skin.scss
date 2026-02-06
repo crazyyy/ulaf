@@ -1,0 +1,82 @@
+@if $template == 'esports' {
+	/* Widget: Event Result */
+	.widget-game-result__title {
+
+	}
+	.widget-game-result__subtitle {
+		color: $body-font-color;
+	}
+
+	.widget-game-result__header--alt {
+
+		.widget-game-result__title {
+			color: $body-font-color;
+		}
+	}
+
+		.widget-game-result__score-sublabel {
+			font-family: $font-family-base;
+			color: $body-font-color;
+		}
+
+	.widget-game-result__team-desc {
+		font-family: $font-family-base;
+	}
+
+	/* Game Stats (additional) */
+	.widget-game-result__stats-circular-bars {
+
+				.widget-game-result__stats-value {
+					color: $headings-color;
+					font-family: $font-family-accent;
+				}
+	}
+
+	// Top Leaders
+	.widget-game-result__players {
+		margin: 0;
+	}
+		.widget-game-result__player {
+			padding: 14px $card-horizontal-padding;
+
+			& + & {
+				border-top-color: $card-border-color;
+			}
+		}
+				// Text
+				.widget-game-result__player-stats-txt {
+					font-family: $font-family-accent;
+					color: $headings-color;
+				}
+
+
+	// Round by Round
+	.widget-game-result__rounds-table {
+		margin-bottom: 0;
+
+		thead {
+
+			> tr {
+
+				> th {
+					text-align: center;
+					font-style: normal;
+				}
+			}
+		}
+
+		tbody {
+
+			> tr {
+
+				> td {
+					border-color: $table-border-color;
+
+					&.widget-game-result__rounds-team {
+						background-color: $color-dark-2;
+					}
+				}
+			}
+		}
+	}
+}

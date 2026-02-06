@@ -1,0 +1,16 @@
+/* Team Gallery */
+.sp-team-gallery-wrapper{
+
+		.gallery-caption {
+			font-family: $font-family-accent;
+			color: $headings-color;
+		}
+}
+
+	.sp-team-gallery-link {
+
+		> a {
+			@include button();
+			@include button-variant($btn-default-color, $btn-default-bg, $btn-default-hover, $btn-default-border);
+		}
+	}

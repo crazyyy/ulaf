@@ -1,0 +1,103 @@
+/* Team Gallery */
+.sp-template-team-gallery {
+	overflow: hidden;
+	margin-bottom: 0;
+}
+.sp-team-gallery-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+
+	.gallery-item {
+		text-align: center;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+
+		.gallery-icon {
+			width: 100%;
+
+			& + a {
+				width: 100%;
+			}
+		}
+
+			img {
+				padding: 0.5em;
+			}
+
+		@media (max-width: 479px) {
+			flex-basis: 50% !important;
+			max-width: 50% !important;
+		}
+	}
+		.gallery-caption {
+			@include font-accent(12px);
+			color: $headings-color;
+			text-align: center;
+		}
+
+	// Gallery 1 column
+	.gallery-columns-1 & {
+		flex-wrap: nowrap;
+
+		.gallery-item {
+			flex-basis: 100%;
+			max-width: 100%;
+		}
+	}
+
+	// Gallery 2 columns
+	.gallery-columns-2 & {
+
+		.gallery-item {
+			flex-basis: 50%;
+			max-width: 50%;
+		}
+	}
+
+	// Gallery 3 columns
+	.gallery-columns-3 & {
+
+		.gallery-item {
+			flex-basis: 33.3%;
+			max-width: 33.3%;
+		}
+	}
+
+	// Gallery 4 columns
+	.gallery-columns-4 & {
+
+		.gallery-item {
+			flex-basis: 25%;
+			max-width: 25%;
+		}
+	}
+
+	// Gallery 5 columns
+	.gallery-columns-5 & {
+
+		.gallery-item {
+			flex-basis: 20%;
+			max-width: 20%;
+		}
+	}
+
+	// Gallery 6 columns
+	.gallery-columns-6 & {
+
+		.gallery-item {
+			flex-basis: 16.66%;
+			max-width: 16.66%;
+		}
+	}
+}
+
+	.sp-team-gallery-link {
+		text-align: center;
+		padding-top: 1.5em;
+
+		> a {
+			@include button();
+			@include button-variant($btn-default-color, $btn-default-bg, $btn-default-hover, $btn-default-border);
+		}
+	}

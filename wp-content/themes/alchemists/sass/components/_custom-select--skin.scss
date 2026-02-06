@@ -1,0 +1,55 @@
+/* Custom Select
+/* ------------------------- */
+
+/* Default custom select styles */
+div.cs-select {
+
+}
+
+.cs-select {
+
+	> span::after {
+		color: $filter-caret-color;
+	}
+
+	/* Options */
+	.cs-options {
+		background: $filter-dropdown-bg;
+	}
+
+	ul li.cs-focus span {
+		background-color: #ddd;
+	}
+}
+
+/* Skin */
+div.cs-skin-border {
+	font-family: $font-family-accent;
+
+	> span {
+		border-#{$left}: 1px solid $filter-border;
+		border-#{$right}: 1px solid $filter-border;
+		color: $filter-color;
+	}
+
+	.cs-selected span::after {
+		color: #ddd9c9;
+	}
+
+	&.cs-active > span {
+		color: $filter-color;
+		background-color: $filter-active;
+	}
+
+	.cs-options {
+		border-#{$left}: 1px solid $filter-dropdown-border;
+		border-#{$right}: 1px solid $filter-dropdown-border;
+		border-bottom: 1px solid $filter-dropdown-border;
+		color: $filter-dropdown-color;
+	}
+
+	.cs-options li span:hover,
+	li.cs-focus span {
+		color: $filter-dropdown-color-hover;
+	}
+}

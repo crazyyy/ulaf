@@ -1,0 +1,32 @@
+// Comment Form
+// remove styling when Comment Form inside Comments (Reply link clicked)
+.comments {
+
+	.comment-respond {
+		padding: ( $card-vertical-padding * 2 ) 0;
+	}
+
+	.post-comment-form__content {
+		padding: 0;
+	}
+
+	.post-comment-form__header {
+		padding: 0;
+		border: none;
+		margin-bottom: $card-vertical-padding;
+
+		&::before {
+			display: none;
+		}
+	}
+}
+
+.form-submit {
+	margin-bottom: 0;
+}
+
+#cancel-comment-reply-link {
+	color: $color-danger;
+	display: inline-block;
+	padding: 0 0.5em;
+}

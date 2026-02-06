@@ -1,0 +1,1472 @@
+/* Products */
+.products {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+	.product__item {
+		overflow: hidden;
+	}
+		.product__content {
+			position: static;
+			flex-grow: 1;
+
+			@if $template == 'football' {
+				position: relative;
+			}
+
+			@media (min-width: 992px) {
+				padding: 35px 36px 30px 36px;
+			}
+		}
+		.product__header {
+
+		}
+
+
+			// Product Image
+			.product__img {
+				position: relative;
+
+				img {
+					position: relative;
+					z-index: 1;
+				}
+			}
+
+			// Category
+			.product__category {
+				display: block;
+				@include font-accent(10px);
+				line-height: 1.2em;
+				font-weight: 400;
+				margin-bottom: .75em;
+			}
+
+			// Title
+			.product__title {
+				margin-bottom: 0;
+				line-height: 1.2em;
+				font-size: 16px;
+
+				@media (min-width: 992px) {
+					font-size: 20px;
+				}
+
+				@media (min-width: 1200px) {
+					font-size: 22px;
+				}
+
+				> a {
+					color: $headings-color;
+					transition: color 0.3s ease;
+
+					&:hover {
+						color: $color-primary-darken;
+					}
+				}
+			}
+
+			// Ratings
+			.product__ratings {
+
+				.product__title + & {
+					margin-top: 10px;
+				}
+
+				.star-rating {
+					margin: 0 auto;
+				}
+			}
+
+			// Price
+			.product__price {
+
+				del {
+					opacity: 0.4;
+					font-size: 0.75em;
+				}
+
+				ins {
+					text-decoration: none;
+				}
+			}
+
+			// Excerpt
+			.product__excerpt {
+				margin-bottom: 20px;
+
+				@media (min-width: 992px) {
+					margin-bottom: 46px;
+				}
+			}
+			.product__excerpt--sm {
+				margin-bottom: 10px;
+
+				@media (min-width: 992px) {
+					margin-bottom: 26px;
+				}
+			}
+
+			// Footer
+			.product__footer {
+
+				.btn {
+					margin-#{$left}: 7px;
+
+					&:first-child {
+						margin-#{$left}: 0;
+					}
+				}
+			}
+				.product__add-to-cart {
+
+					.icon-bag {
+						font-size: 15px;
+						line-height: 1.2em;
+						vertical-align: middle;
+					}
+				}
+
+				.added_to_cart {
+					@include button();
+					@include button-variant($btn-default-color, $btn-default-bg, $btn-default-hover, $btn-default-border);
+				}
+
+
+			// Params
+			.product__params {
+				display: flex;
+				flex-wrap: wrap;
+
+				h6 {
+					font-size: 11px;
+					line-height: 1.2em;
+					margin-bottom: 1em;
+				}
+			}
+				.product__param-item {
+					padding-#{$right}: 1em;
+				}
+				.product__param-item--color {
+					width: 100%;
+					margin-bottom: 20px;
+
+					@media (min-width: 1200px) {
+						width: 40%;
+						margin-bottom: 0;
+					}
+				}
+				.product__param-item--color-lg {
+
+					@media (min-width: 1200px) {
+						width: 100%;
+					}
+				}
+				.product__param-item--size {
+
+					@media (min-width: 1200px) {
+						width: 25%;
+						padding-#{$right}: 7%;
+					}
+				}
+				.product__param-item--size-lg {
+
+					@media (min-width: 1200px) {
+						width: 75%;
+						padding-#{$right}: 7%;
+					}
+				}
+				.product__param-item--quantity {
+
+					@media (min-width: 1200px) {
+						width: 18%;
+					}
+				}
+
+
+			// Slider
+			.product__slider {
+
+			}
+
+			// Background Letters
+			.product__bg-letters {
+				display: block;
+				position: absolute;
+				#{$left}: -0.35em;
+				top: -0.2em;
+				font-family: $font-family-accent;
+				text-transform: uppercase;
+				font-weight: 700;
+				line-height: 1em;
+				letter-spacing: -0.03em;
+				color: #fff;
+				opacity: .1;
+				// mix-blend-mode: overlay;
+				font-size: 230px;
+				pointer-events: none;
+			}
+
+
+/* Product Slider */
+.product__slider {
+
+	&.slick-slider {
+		margin-bottom: 0;
+	}
+
+	.product__slide {
+		position: relative;
+		height: 330px;
+	}
+
+	.slick-dots {
+		bottom: 13px;
+
+		@if $template == 'esports' {
+			bottom: 35px;
+			float: left;
+			width: auto;
+			background-color: rgba(#2b2236, .8);
+			left: 50%;
+			transform: translateX(-50%);
+			border-radius: 12px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		li {
+			height: 6px;
+			width: 6px;
+			margin: 0 3px;
+			vertical-align: middle;
+
+			button {
+				height: 6px;
+				width: 6px;
+				line-height: 6px;
+				opacity: 0.4;
+				transition: opacity 0.2s ease;
+
+				@if $template == 'soccer' {
+					background-color: $headings-color;
+				} @else {
+					background-color: #fff;
+				}
+
+				&:hover, &:focus {
+					opacity: 1;
+				}
+
+				&:hover {
+					@if $template == 'soccer' {
+						background-color: $headings-color;
+					} @else {
+						background-color: #fff;
+					}
+				}
+			}
+
+			&.slick-active button {
+				@if $template == 'soccer' {
+					background-color: $headings-color;
+				} @else {
+					background-color: #fff;
+				}
+				opacity: 1;
+			}
+		}
+	}
+}
+.product__slide-img {
+	position: relative;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding-bottom: 10px;
+
+	img {
+		margin: 0 auto;
+	}
+
+	@if $template != 'soccer' {
+
+		&::after {
+			content:'';
+			display: block;
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			width: 150px;
+			height: 10px;
+			background: transparent;
+			border-radius: 100px/50px;
+			box-shadow: 0 40px 10px rgba(0,0,0,0.05);
+			transform: translateX(-50%);
+		}
+	}
+}
+
+@if $template == 'soccer' {
+	/* Product Slider - Soccer */
+	.product__slider-soccer-wrapper {
+		padding: side-values(60px 0 0 40px);
+		overflow: hidden;
+		margin-bottom: 20px;
+
+		@media (min-width: 992px) {
+			margin-bottom: 36px;
+		}
+	}
+
+	.product__slider-soccer {
+		text-align: center;
+		width: 250px;
+		margin: 0 auto;
+
+		@media (min-width: 992px) {
+			float: $left;
+		}
+
+		img {
+			display: inline-block;
+		}
+	}
+}
+
+/* Product Slider - Thumbs */
+.product__slider-thumbs {
+	margin-#{$right}: 20px;
+	width: 62px;
+	float: $left;
+	display: none;
+
+	@media (min-width: 992px) {
+		display: block;
+	}
+}
+	.product__slide-thumb {
+		width: 60px;
+		height: 60px;
+		margin-bottom: 2px;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		img {
+			vertical-align: top;
+			opacity: .4;
+			transition: opacity 0.3s ease;
+		}
+
+		&.slick-current {
+
+			img {
+				opacity: 1;
+			}
+		}
+	}
+		.product__slide-thumb-holder {
+			display: inline-block;
+			border: 1px solid $card-border-color;
+		}
+
+
+/* Products List */
+.products.list {
+	display: flex !important;
+	flex-wrap: wrap;
+
+	.product__item {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		width: 100%;
+		background-image: none !important; // needed for toggle button
+
+		@media (max-width: 991px) {
+			flex-wrap: wrap;
+		}
+
+		@if $template == 'soccer' {
+			position: relative;
+		}
+	}
+
+	.product__header {
+		margin-bottom: 18px;
+
+		@media (min-width: 992px) {
+			margin-bottom: 24px;
+		}
+
+		&:not(.product__header--block) {
+			display: flex;
+			align-items: center;
+		}
+	}
+		.product__category {
+
+			> a {
+				color: $body-font-color;
+
+				&:hover {
+					color: $link-color-hover;
+				}
+			}
+		}
+		.product__ratings {
+
+			.star-rating {
+				margin: 0;
+			}
+		}
+
+	.product__header--block {
+
+	}
+
+	.product__price {
+		margin-#{$left}: auto;
+		@include font-accent(14px);
+		color: $headings-color;
+		line-height: 1.2em;
+
+		@media (min-width: 992px) {
+			font-size: 22px;
+		}
+	}
+
+	.product__img {
+		text-align: center;
+		// background-image: $product-color-1; // default color
+		display: flex;
+		align-items: center;
+
+		@media (max-width: 991px) {
+			width: 100%;
+		}
+	}
+		.product__img-holder {
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+
+			@media (min-width: 992px) {
+				width: 250px;
+			}
+
+			@media (min-width: 1200px) {
+				width: 278px;
+			}
+		}
+
+			.product__slide-img {
+
+				img {
+					// max-width: 64%;
+				}
+			}
+
+	.add_to_cart_button,
+	.added_to_cart {
+
+		&::before {
+			content: "\e04f";
+			font-family: 'simple-line-icons';
+			font-weight: normal;
+			font-style: normal;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			margin-#{$right}: .75em;
+			display: inline-block;
+			font-size: 15px;
+			line-height: 1.2em;
+			vertical-align: middle;
+		}
+	}
+
+	.product__footer {
+
+		@media (max-width: 479px) {
+
+			.btn {
+				display: block;
+				width: 100%;
+				padding-#{$left}: 0;
+				padding-#{$right}: 0;
+				margin-#{$left}: 0;
+			}
+
+			.product__wish {
+				float: $left;
+				width: 48%;
+			}
+			.product__view {
+				width: 48%;
+				float: $right;
+			}
+
+			.btn + .btn {
+				margin-top: 7px;
+			}
+		}
+	}
+
+	.product__overlay {
+		display: none;
+	}
+
+	// Sale
+	.onsale {
+		top: 0;
+		#{$left}: auto;
+
+		@if $template == 'soccer' {
+			#{$right}: 0;
+		} @else {
+			#{$right}: $card-horizontal-padding;
+		}
+	}
+}
+
+
+@if $template == 'soccer' {
+
+	.products.list.product {
+
+		.product__img {
+			display: block;
+		}
+
+		.onsale {
+			#{$right}: auto;
+			#{$left}: 0;
+			display: block;
+			width: 76px;
+			height: 76px;
+			background-color: transparent;
+
+			&::before {
+				border-#{$left}: none;
+				border-#{$right}: 76px solid transparent;
+			}
+
+			.onsale__inner {
+				#{$right}: auto;
+				#{$left}: 10px;
+			}
+		}
+	}
+}
+
+/* Product List - Small */
+.list.products--list-sm {
+
+	.product__content {
+		display: flex;
+		padding: 20px;
+		align-items: center;
+		flex-wrap: wrap;
+
+		@media (min-width: 480px) {
+			flex-wrap: nowrap;
+		}
+	}
+
+		.product__slider {
+
+			.product__slide {
+				height: 240px;
+
+				@media (min-width: 768px) {
+					height: 138px;
+				}
+			}
+		}
+
+		.product__img-holder {
+
+			@media (min-width: 992px) {
+				width: 130px;
+			}
+
+			@media (min-width: 1200px) {
+				width: 140px;
+			}
+		}
+			.product__bg-letters {
+				font-size: 106px;
+			}
+
+		.product__header {
+			display: block;
+			margin-bottom: 0;
+			padding-#{$right}: 10px;
+
+			@media (min-width: 480px) {
+				min-width: 29%;
+			}
+		}
+			.product__header-inner {
+
+			}
+
+		.product__title {
+			font-size: 16px;
+			margin-bottom: .25em;
+		}
+
+		.product__ratings {
+			padding-top: 7px;
+			margin-bottom: 14px;
+		}
+
+		.product__price {
+			font-size: 16px;
+		}
+
+		.product__excerpt {
+			margin-bottom: 0;
+			font-size: 13px;
+			line-height: 22px;
+			padding: 20px 0;
+
+			@if $template == 'football' {
+				color: $color-gray-3;
+			}
+
+			@media (min-width: 480px) {
+				padding: 0;
+				min-width: 45%;
+			}
+		}
+
+		.product__footer {
+			width: 100%;
+
+			@media (min-width: 480px) {
+				min-width: 23%;
+				text-align: center;
+			}
+
+			.btn {
+				float: none;
+				width: 38px;
+				display: inline-block;
+				margin: 0 2px;
+
+				& + .btn {
+					margin: 0 2px;
+				}
+
+				@media (min-width: 480px) {
+					margin: 0 8px;
+
+					& + .btn {
+						margin: 0 8px;
+					}
+				}
+			}
+		}
+}
+
+/* Products List - Large */
+.list.products--list-lg {
+
+	.product__content {
+
+		@media (min-width: 992px) {
+			padding: 60px 50px 54px 50px;
+		}
+	}
+
+	// Header
+	.product__header {
+		margin-bottom: 30px;
+
+		@media (min-width: 992px) {
+			margin-bottom: 44px;
+		}
+	}
+
+	// Category
+	.product__category {
+		font-size: 11px;
+	}
+
+	// Title
+	.product__title {
+
+		@media (min-width: 992px) {
+			font-size: 24px;
+		}
+		@media (min-width: 1200px) {
+			font-size: 30px;
+		}
+	}
+
+	// Ratings
+	.product__ratings {
+		font-size: 13px;
+
+		.product__title + & {
+			margin-top: 10px;
+		}
+
+		.fa {
+			margin-#{$right}: 3px;
+		}
+	}
+
+	// Price
+	.product__price {
+
+		@media (min-width: 992px) {
+			font-size: 24px;
+		}
+		@media (min-width: 1200px) {
+			font-size: 30px;
+		}
+	}
+
+		.product__header--block {
+
+			.product__price {
+				margin-top: .5em;
+
+				@media (min-width: 1200px) {
+					font-size: 26px;
+				}
+			}
+		}
+
+	// Excerpt
+	.product__excerpt {
+
+		h6 {
+			font-size: 11px;
+			line-height: 1.2em;
+			margin-bottom: 1.75em;
+
+			@if $template == 'esports' {
+				font-size: 12px;
+				text-transform: uppercase;
+				font-style: italic;
+			}
+		}
+	}
+
+	.product__footer {
+
+		@media (max-width: 479px) {
+
+			.product__wish {
+				float: none;
+				width: 100%;
+			}
+		}
+	}
+		.product__wish-fab {
+			display: block;
+			position: absolute;
+			#{$right}: 30px;
+			top: 30px;
+			width: 38px !important;
+			height: 38px;
+			float: none;
+
+			@media (max-width: 479px) {
+				width: 38px;
+				height: 38px;
+				#{$right}: 10px;
+				top: 5px;
+			}
+		}
+
+	// Background Letters
+	.product__bg-letters {
+		font-size: 320px;
+	}
+
+	.product__img-holder {
+
+		@media (min-width: 992px) {
+			width: 420px;
+		}
+		@media (min-width: 1200px) {
+			width: 500px;
+		}
+	}
+
+	.product__slider {
+
+		.product__slide {
+			height: 360px;
+
+			@media (min-width: 992px) {
+				height: 578px;
+			}
+		}
+
+		.slick-dots {
+			bottom: 13px;
+
+			li {
+				height: 8px;
+				width: 8px;
+				margin: 0 6px;
+
+				button {
+					height: 8px;
+					width: 8px;
+					line-height: 8px;
+				}
+			}
+		}
+	}
+
+	.onsale {
+		@if $template == 'soccer' {
+			top: 0;
+		} @else {
+			top: $card-vertical-padding;
+		}
+	}
+}
+
+/* Products List - Condensed */
+.list.products--list-condensed {
+
+	.product__item {
+		margin-bottom: -1px;
+		border-radius: 0;
+	}
+}
+
+/* Products Grid */
+.products.grid,
+.woocommerce > .products[class*="columns-"] {
+	display: flex !important;
+	flex-wrap: wrap;
+	margin-#{$left}: -8px;
+	margin-#{$right}: -8px;
+	margin-top: -8px;
+
+	.product__item {
+		position: relative;
+		flex-basis: 100%;
+		margin: 8px !important;
+
+		@media (min-width: 480px) {
+			flex-basis: calc(50% - 16px);
+			max-width: calc(50% - 16px);
+		}
+
+		@media (min-width: 768px) {
+			flex-basis: calc(33.3% - 16px);
+			max-width: calc(33.3% - 16px);
+		}
+
+		// default color
+		// background-image: $product-color-1;
+	}
+
+		.product__img {
+			padding-top: $card-vertical-padding;
+			background-image: none !important; // needed for toggle button
+		}
+			.product__img-holder {
+				text-align: center;
+			}
+
+	// 2 columns
+	&.products--grid-2,
+	&.columns-2:not([class*="products--grid-"]) {
+
+		.product__item {
+			@media (min-width: 768px) {
+				flex-basis: calc(50% - 16px);
+				max-width: calc(50% - 16px);
+			}
+
+			@media (min-width: 992px) {
+				flex-basis: calc(50% - 16px);
+				max-width: calc(50% - 16px);
+			}
+		}
+	}
+
+	// 4 columns
+	&.products--grid-4,
+	&.columns-4:not([class*="products--grid-"]) {
+		.product__item {
+
+			@media (min-width: 768px) {
+				flex-basis: calc(50% - 16px);
+				max-width: calc(50% - 16px);
+			}
+
+			@media (min-width: 992px) {
+				flex-basis: calc(25% - 16px);
+				max-width: calc(25% - 16px);
+			}
+		}
+	}
+
+		.product__header {
+			text-align: center;
+			margin-bottom: 24px;
+
+			@media (min-width: 992px) {
+				margin-bottom: 36px;
+			}
+		}
+			.product__category {
+				color: #fff;
+
+				> a {
+					color: #fff;
+				}
+			}
+			.product__title {
+				color: #fff;
+				font-size: 14px;
+
+				> a {
+					color: #fff;
+				}
+			}
+			.product__ratings {
+
+				.star-rating::before {
+					color: #fff;
+					opacity: .3;
+				}
+			}
+
+			.product__price {
+				position: absolute;
+				#{$right}: 23px;
+				top: 20px;
+				font-family: $font-family-accent;
+				color: #fff;
+				font-size: 14px;
+				line-height: 1.2em;
+				font-weight: 700;
+				text-shadow: 0 0 3px rgba(0,0,0,.2);
+				z-index: 2;
+			}
+
+		.product__content {
+			padding: 0 $card-horizontal-padding $card-vertical-padding $card-horizontal-padding;
+		}
+
+		.product__excerpt {
+			display: none;
+		}
+
+		.product__footer {
+			display: flex;
+			justify-content: space-between;
+
+			@media (min-width: 768px) and (max-width: 1199px) {
+				flex-wrap: wrap;
+			}
+
+			.products--grid-overlay & {
+				justify-content: center;
+				background-color: $card-bg;
+				position: absolute;
+				bottom: 0;
+				top: 0;
+				#{$left}: 0;
+				#{$right}: 0;
+				padding: 30px 0;
+				transform: translateY(100%);
+				transition: transform 0.3s ease;
+			}
+
+			.add_to_cart_button,
+			.added_to_cart,
+			.product_type_variable {
+				flex-grow: 1;
+				padding-#{$left}: 10px;
+				padding-#{$right}: 10px;
+				text-align: center;
+
+				@media (min-width: 768px) and (max-width: 1199px) {
+					flex-basis: 100%;
+					margin-bottom: 7px;
+				}
+			}
+
+			.btn,
+			.button {
+				padding-#{$left}: 0;
+				padding-#{$right}: 0;
+				text-align: center;
+			}
+			.btn-single-icon {
+				flex-basis: 47px;
+
+				@media (min-width: 768px) and (max-width: 1199px) {
+					flex-basis: 48%;
+					margin: 0;
+				}
+
+				&.btn-circle {
+					flex-basis: 38px;
+					margin: 0 10px;
+
+					@media (min-width: 768px) and (max-width: 1199px) {
+						flex-basis: 38px;
+						margin: 0 11px;
+					}
+
+					@media (min-width: 1200px) {
+						flex-basis: 38px;
+						margin: 0 11px;
+					}
+				}
+			}
+
+			.product__view {
+				background: none;
+				border-color: $btn-o-inverse-border;
+				color: $btn-o-inverse-color;
+				border-width: 2px;
+
+				i {
+					color: $btn-o-inverse-color-hover;
+				}
+
+				&:hover {
+					background-color: $btn-o-inverse-bg-hover;
+					border-color: $btn-o-inverse-border-hover;
+					color: $btn-o-inverse-color-hover;
+
+					i {
+						color: $btn-o-inverse-color-hover;
+					}
+
+					&.btn-circle {
+						background-color: $btn-o-inverse-border-hover;
+					}
+				}
+			}
+		}
+
+
+		.product__slider {
+
+			.product__slide {
+				height: 283px;
+			}
+
+			.slick-dots {
+				text-align: $left;
+				bottom: auto;
+				top: 10px;
+				#{$left}: 23px;
+			}
+				.product__slide-img {
+					transform: translate(-50%, -40%);
+					padding-bottom: 0;
+				}
+		}
+
+
+	// Sale
+	.onsale {
+		left: auto;
+
+		@if $template == 'soccer' {
+			top: 0;
+			#{$right}: 0;
+		} @else if $template == 'football' {
+			top: $card-vertical-padding;
+			#{$right}: $card-horizontal-padding;
+		} @else {
+			top: $card-vertical-padding * 2;
+			#{$right}: $card-horizontal-padding;
+		}
+	}
+}
+
+
+/* Products - Grid (Football) */
+@if $template == 'football' {
+	.grid {
+
+		.product__item {
+
+			.product__content {
+				background-color: $card-bg;
+				margin-bottom: 0;
+				position: relative;
+				padding: 21px 0 17px 0;
+
+				.product__header {
+					margin-bottom: 0;
+
+					@media (min-width: 992px) {
+						margin-bottom: 0;
+					}
+				}
+
+				.product__price {
+					position: static;
+					display: inline-block;
+				}
+
+				.product__ratings {
+					display: inline-block;
+					margin-#{$right}: 0.5em;
+				}
+
+				.product__title {
+					margin-bottom: .2em;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					padding: 0 10px;
+				}
+
+				.product__category {
+					color: $body-font-color;
+					margin-bottom: .25em;
+				}
+
+				&:hover {
+
+					.product__footer {
+						transform: translateY(0%);
+					}
+				}
+			}
+
+			.product__footer {
+				justify-content: center;
+				background-color: $card-bg;
+				position: absolute;
+				bottom: 0;
+				top: 0;
+				#{$left}: 0;
+				#{$right}: 0;
+				padding: 30px;
+				transform: translateY(100%);
+				transition: transform 0.3s ease;
+				align-items: center;
+			}
+
+			.product__slider {
+
+				.product__slide {
+					height: 283px;
+				}
+
+				.slick-dots {
+					padding-bottom: 10px;
+					text-align: center;
+					position: static;
+				}
+			}
+
+			// Used in Wishlist
+			.product__btn-add-remove {
+				position: absolute;
+				#{$right}: 17px;
+				top: 17px;
+				z-index: 2;
+				box-shadow: 0 0 12px rgba(0, 0, 0, .3);
+				overflow: hidden;
+
+
+				&:hover {
+					background-color: $color-primary;
+
+					.product__close-icon {
+						opacity: 1;
+						transform: translate(-50%, -50%);
+					}
+
+					.icon-heart {
+						opacity: 0;
+						transform: translate(-50%, 100%);
+					}
+				}
+
+				i {
+					display: block;
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transition: all 0.3s ease;
+					transform: translate(-50%, -50%);
+				}
+
+				.icon-heart {
+					opacity: 1;
+				}
+
+				.product__close-icon {
+					width: 10px;
+					height: 10px;
+					display: block;
+					opacity: 0;
+					background-size: 10px 10px;
+					background-repeat: no-repeat;
+					transform: translate(-50%, -30px);
+					background-position: 0 0;
+					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath transform='translate(-701.062 -492.062)' fill='%23fff' d='M709.536,492.05l1.414,1.414-8.485,8.485-1.415-1.414Zm1.414,8.485-1.414,1.414-8.486-8.485,1.415-1.414Z'/%3E%3C/svg%3E");
+				}
+			}
+		}
+	}
+}
+
+
+/* Products Grid - Condensed */
+@if $template == 'soccer' {
+
+	// .products--grid-condensed {
+	.products.grid {
+		margin: 0;
+
+		.product__item {
+			position: relative;
+			flex-basis: 100%;
+			margin: 0 -1px -1px 0 !important;
+			border-radius: 0;
+
+			@media (min-width: 480px) {
+				flex-basis: 50%;
+				max-width: 50%;
+			}
+
+			@media (min-width: 768px) {
+				flex-basis: 33.3%;
+				max-width: 33.3%;
+			}
+		}
+			.product__img {
+				text-align: center;
+			}
+
+		// 4 columns
+		&.products--grid-4 .product__item {
+
+			@media (min-width: 768px) {
+				flex-basis: 50%;
+				max-width: 50%;
+			}
+
+			@media (min-width: 992px) {
+				flex-basis: 25%;
+				max-width: 25%;
+			}
+		}
+
+			.product__content {
+				padding: 24px;
+			}
+
+			.product__header {
+				text-align: $left;
+				margin-bottom: 10px;
+
+				@media (min-width: 992px) {
+					margin-bottom: 10px;
+				}
+			}
+				.product__header-inner {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+				}
+					.product__category,
+					.product__ratings {
+						flex-basis: 50%;
+						max-width: 50%;
+					}
+					.product__category {
+						order: 1;
+					}
+					.product__ratings {
+						text-align: $right;
+						order: 2;
+						margin: 0 0 .75em 0;
+						min-width: none;
+						flex-basis: auto;
+
+						.star-rating {
+							float: $right;
+						}
+					}
+					.product__title {
+						order: 3;
+						flex-basis: 100%;
+						min-width: 100%;
+						padding-#{$right}: 90px;
+					}
+					.product__price {
+						text-align: $right;
+						margin-top: -1.25em;
+					}
+
+			// hide buttons for grid
+			.product__footer {
+				display: none;
+			}
+	}
+}
+
+
+/* Products Grid - Light */
+@if $template == 'soccer' {
+
+	// .products--grid-light {
+	.products.grid {
+
+		.product__header {
+
+		}
+			.product__category {
+				&,
+				& > a {
+					color: $body-font-color;
+				}
+			}
+			.product__title {
+				color: $headings-color;
+				font-size: 12px;
+
+				> a {
+					color: $headings-color;
+
+					&:hover {
+						color: $color-primary;
+					}
+				}
+			}
+			.product__ratings {
+
+				.star-rating::before {
+					color: #dce0e7;
+					opacity: 1;
+				}
+			}
+
+			.product__price {
+				position: static;
+				font-family: $font-family-accent;
+				color: $headings-color;
+				font-size: 12px;
+			}
+	}
+}
+
+
+/* Products - Grid (eSports) */
+@if $template == 'esports' {
+
+	.products.grid {
+
+		.product__img {
+			position: relative;
+			border-radius: $card-border-radius;
+			overflow: hidden;
+			padding-top: 0;
+
+			&:hover {
+
+				.product__overlay {
+					visibility: visible;
+					opacity: 1;
+				}
+			}
+		}
+			.product__thumb {
+				text-align: center;
+
+				img {
+					border: 1px solid $card-border-color;
+					border-radius: $card-border-radius;
+				}
+			}
+			.product__price {
+				display: inline-block;
+				position: static;
+			}
+			.product__ratings {
+				display: inline-block;
+				margin: 0 10px 0 0;
+			}
+
+			.product__overlay {
+				display: flex;
+				align-items: center;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				opacity: 0;
+				visibility: hidden;
+				transition: opacity .3s ease;
+				z-index: 1;
+
+				@if $template == 'esports' {
+					background-color: rgba($body-bg-color, .8);
+				} @else {
+					background-color: rgba(0,0,0,.8);
+				}
+			}
+				.product__btns {
+					width: 100%;
+					padding: 0 14%;
+
+					.btn,
+					a {
+						margin: 16px 0;
+					}
+
+					.btn,
+					.added_to_cart {
+						display: block;
+						width: 100%;
+					}
+				}
+
+		.product__content {
+			padding: 30px 15px 14px 15px;
+
+			.product__footer {
+				display: none;
+			}
+		}
+			.product__header {
+				margin-bottom: 0;
+
+				@media (min-width: 992px) {
+					margin-bottom: 0;
+				}
+			}
+			.product__title {
+				font-size: 14px;
+				font-style: normal;
+				margin-bottom: .25em;
+
+				> a {
+
+					&:hover {
+						color: $link-color-hover;
+					}
+				}
+			}
+	}
+}

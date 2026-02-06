@@ -1,0 +1,205 @@
+/* Checkout Review Order */
+.woocommerce-checkout-review-order {
+
+	.woocommerce-checkout-review-order-table {
+
+		.card {
+			border-#{$left}: 0;
+			border-#{$right}: 0;
+			border-top: 0;
+			border-radius: 0;
+			margin: 0;
+		}
+		.card__header {
+			display: none;
+		}
+		.card__content {
+			padding-bottom: 0;
+		}
+	}
+}
+	.woocommerce-checkout-review-order-table,
+	.woocommerce-table--order-details {
+
+		.product-name {
+			padding-#{$left}: 15px;
+
+			@media (min-width: 1200px) {
+				padding-#{$left}: 23px;
+			}
+
+		}
+		.product-total {
+			width: 22%;
+			text-align: $right;
+
+			@media (min-width: 1200px) {
+				padding-#{$right}: 23px;
+			}
+		}
+
+		tbody {
+
+			.product-name {
+				text-transform: uppercase;
+				color: $headings-color;
+				font-weight: 700;
+			}
+
+			.wc-item-downloads {
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+			}
+		}
+
+		// Table Body
+		.cart_item {
+
+			&:first-child {
+
+				.product-name,
+				.product-total {
+					padding-top: 30px;
+				}
+			}
+
+			&:last-child {
+
+				.product-name,
+				.product-total {
+					padding-bottom: 30px;
+				}
+			}
+
+			.product-name,
+			.product-total {
+				border-top: none;
+				border-bottom: none;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+			.product-total {
+
+			}
+		}
+
+
+		// Table Footer
+		tfoot {
+
+			tr {
+
+				th {
+					text-transform: uppercase;
+					color: $headings-color;
+					font-weight: 700;
+					padding-#{$left}: 15px;
+
+					@media (min-width: 1200px) {
+						padding-#{$left}: 23px;
+					}
+				}
+
+
+
+				th,
+				td {
+					border-top: none;
+					padding-top: 10px;
+					padding-bottom: 10px;
+
+					@if $template == 'football' {
+						border-bottom: 1px solid $card-border-color;
+						padding-top: 17px;
+						padding-bottom: 17px;
+					} @else {
+						border-bottom: none;
+					}
+				}
+
+				td:last-child {
+					width: 22%;
+					text-align: $right;
+
+					@media (min-width: 1200px) {
+						padding-#{$right}: 23px;
+					}
+				}
+
+				&:first-child {
+
+					th,
+					td {
+
+						// @if $template != football {
+						//   padding-top: 30px;
+						// }
+					}
+				}
+
+				&:nth-last-child(2) {
+
+					th,
+					td {
+
+						// @if $template != football {
+						//   padding-bottom: 30px;
+						// }
+					}
+				}
+
+				&.order-total {
+
+					th,
+					td {
+						padding-top: 20px;
+						padding-bottom: 20px;
+						border-top: 1px solid $card-border-color;
+						border-bottom: 1px solid $card-border-color;
+						margin-top: 20px;
+					}
+
+					.amount {
+
+						@if $template == 'football' {
+							color: $color-4;
+						} @else {
+							color: $headings-color;
+						}
+					}
+				}
+			}
+		}
+
+		// add top border for tfoot th, td if tbody exists
+		tbody + tfoot {
+
+			tr {
+
+				&:first-child {
+
+					th,
+					td {
+						border-top: 1px solid $table-border-color;
+					}
+				}
+			}
+		}
+
+		.cart-subtotal {
+
+			@if $template == 'football' {
+				color: $headings-color;
+			}
+		}
+		.shipping {
+
+		}
+		.coupon {
+
+		}
+		.order-total {
+
+		}
+	}

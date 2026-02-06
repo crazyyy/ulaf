@@ -1,0 +1,49 @@
+/**
+ *
+ * Sponsors
+ *
+ */
+
+/* Sponsors Grid */
+.sponsors-grid {
+
+}
+	.sponsor-card {
+
+	}
+		.sponsor-card__header {
+
+			&::before {
+				display: none;
+			}
+		}
+			.sponsor-card__logo {
+
+			}
+
+		.sponsor-card__content {
+
+		}
+
+			.sponsor-card__social {
+
+				.social-links__item {
+
+				}
+					.social-links__link {
+						color: $body-font-color;
+
+						&:hover {
+							color: $link-color-hover;
+						}
+					}
+			}
+
+		.sponsor-card__footer {
+			border-top-color: $card-border-color;
+			background-color: $card-header-bg;
+		}
+			.sponsor-card__link {
+				font-family: $font-family-accent;
+				color: $headings-color;
+			}

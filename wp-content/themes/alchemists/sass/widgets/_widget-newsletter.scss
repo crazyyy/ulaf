@@ -1,0 +1,36 @@
+/* Widget: Newsletter */
+.widget-newsletter,
+.widget_mc4wp_form_widget {
+
+	.widget__content {
+
+	}
+
+	.widget-newsletter__subtitle {
+		font-size: 13px;
+		text-transform: uppercase;
+		margin-bottom: 1.4em;
+	}
+	.widget-newsletter__desc {
+		margin-bottom: 20px;
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.inline-form {
+		padding: 8px 0;
+	}
+}
+
+// .mc4wp-alert
+.mc4wp-error {
+	color: $color-danger;
+}
+.mc4wp-success {
+	color: $color-success;
+}
+.mc4wp-notice {
+	color: $color-info;
+}

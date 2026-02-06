@@ -1,0 +1,211 @@
+/* Arrows */
+
+.slick-prev,
+.slick-next {
+	background-color: $slick-arrow-bg-color;
+
+	&:hover, &:focus {
+		background-color: $slick-arrow-bg-color-hover;
+	}
+	&:before {
+		color: $slick-arrow-color;
+	}
+}
+
+/* Dots */
+
+.slick-dots {
+
+	li {
+
+		button {
+			background-color: $slick-dot-color;
+
+			&:hover {
+				background-color: $slick-dot-color-on-hover;
+			}
+		}
+
+		&.slick-active button {
+			background-color: $slick-dot-color-active;
+		}
+	}
+}
+
+
+/* Featured Carousel, Team Roster, Awards Slider (change prev/next button) */
+.featured-carousel,
+.team-roster--slider,
+.awards--slider {
+
+	.slick-prev,
+	.slick-next {
+		border: 2px solid #404650;
+
+		&:hover,
+		&:focus {
+			border-color: $color-primary-darken;
+		}
+	}
+}
+
+/* Featured Carousel */
+.featured-carousel,
+.player-info {
+
+	.slick-dots {
+
+		li {
+
+			button {
+				background-color: #fff;
+			}
+
+			&.slick-active {
+
+				button {
+					background-color: $color-primary-darken;
+				}
+			}
+		}
+	}
+}
+
+/* Awards Slider */
+.awards--slider {
+
+	.slick-prev,
+	.slick-next {
+		border-color: #aeb0b4;
+
+		&::before {
+			color: #aeb0b4;
+		}
+
+		&:hover,
+		&:focus {
+			border-color: #aeb0b4;
+		}
+	}
+
+	.slick-dots {
+
+		li {
+
+			@if $template == 'football' {
+
+				button {
+					background-color: #4e4d73;
+
+					&:hover {
+						background-color: #fff;
+					}
+				}
+
+				&.slick-active {
+
+					button {
+						background-color: $color-4;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/* Team Roster - Card Slider */
+.team-roster--card-slider,
+.js-team-roster--card-compact {
+
+	.slick-prev,
+	.slick-next {
+		border: 1px solid $card-border-color;
+		background-color: $card-bg;
+
+		&::before {
+			color: $headings-color;
+		}
+
+		&:hover:not(.slick-disabled) {
+			background-color: $color-primary;
+
+			&::before {
+				color: $card-bg;
+			}
+		}
+	}
+}
+
+
+/* Team Roster - with select Players */
+.team-roster--slider-with-nav {
+
+	.slick-prev,
+	.slick-next {
+		background-color: transparent;
+
+		&::before {
+			color: $headings-color;
+		}
+
+		&:hover:not(.slick-disabled) {
+			background-color: transparent;
+
+			&::before {
+				color: $color-primary;
+			}
+		}
+	}
+}
+
+
+
+
+/* Team Roster - case Slider */
+.team-roster--case-slider {
+
+	.slick-prev,
+	.slick-next {
+		border: 1px solid $card-border-color;
+		background-color: $card-bg;
+
+		&::before {
+			color: $headings-color;
+		}
+
+		&:hover {
+			background-color: $color-primary;
+
+			&::before {
+				color: #fff;
+			}
+		}
+	}
+}
+
+/* Hero Slider - Football */
+.posts--slider-top-news {
+
+	.slick-dots {
+
+		li {
+
+			button {
+				color: #fff;
+			}
+
+			&.slick-active {
+
+				button {
+
+					@if $template == 'football' {
+						color: $color-4;
+					} @else {
+						color: $color-primary;
+					}
+				}
+			}
+		}
+	}
+}

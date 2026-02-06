@@ -1,0 +1,108 @@
+/* Pagination
+/* ------------------------- */
+.pagination,
+.page-numbers {
+
+	> li {
+
+		> a,
+		> span {
+			background-color: $pagination-bg;
+			border-color: $pagination-border;
+			color: $pagination-color;
+			font-family: $font-family-accent;
+			border: 1px solid $card-border-color;
+		}
+
+		> a,
+		> span {
+
+			&:hover {
+				background-color: $pagination-bg-hover;
+				border-color: $pagination-border-hover;
+				color: $pagination-color-hover;
+			}
+
+			&:hover {
+				background-color: $pagination-bg-hover;
+				border-color: $pagination-border-hover;
+				color: $pagination-color-hover;
+			}
+
+			&.current {
+				background-color: $pagination-bg-active;
+				border-color: $pagination-border-active;
+				color: $pagination-color-active;
+			}
+		}
+	}
+
+	> .active > a,
+	> .active > span {
+		&,
+		&:hover,
+		&:focus {
+			background-color: $pagination-bg-active;
+			border-color: $pagination-border-active;
+			color: $pagination-color-active;
+		}
+	}
+}
+
+
+
+/* Comment Navigation
+/* ------------------------- */
+.comment-navigation {
+
+	> a,
+	> span {
+		background-color: $pagination-bg;
+		border-color: $pagination-border;
+		color: $pagination-color;
+		font-family: $font-family-accent;
+		border: 1px solid $card-border-color;
+	}
+
+	> a,
+	> span {
+
+		&:hover {
+			background-color: $pagination-bg-hover;
+			border-color: $pagination-border-hover;
+			color: $pagination-color-hover;
+		}
+	}
+
+	> a.current,
+	> span.current {
+		&,
+		&:hover,
+		&:focus {
+			background-color: $pagination-bg-active;
+			border-color: $pagination-border-active;
+			color: $pagination-color-active;
+		}
+	}
+}
+
+
+
+// Sportspress Pagination
+.paging_simple_numbers {
+	padding: 10px $card-horizontal-padding;
+
+	.paginate_button {
+		background-color: $pagination-bg;
+		border-color: $pagination-border;
+		color: $pagination-color;
+		font-family: $font-family-accent;
+		border: 1px solid $card-border-color;
+
+		&:not(.current):hover {
+			background-color: $pagination-bg-hover;
+			border-color: $pagination-border-hover;
+			color: $pagination-color-hover;
+		}
+	}
+}

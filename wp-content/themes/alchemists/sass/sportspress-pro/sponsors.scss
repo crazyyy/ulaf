@@ -1,0 +1,54 @@
+/**
+ *
+ * Sponsors
+ *
+ */
+
+.sp-header {
+
+	// hide sp-header on mobile and tablet devices
+	@media (max-width: 991px) {
+		display: none;
+	}
+}
+
+.sp-header-sponsors {
+	background-color: $header-secondary-bg;
+	margin: 0 !important;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	.sp-sponsors {
+
+		.sponsor {
+			vertical-align: middle;
+		}
+	}
+}
+
+.sp-footer-sponsors {
+
+	.sp-sponsors {
+		padding: 2em 0;
+
+		@media (min-width: 992px) {
+			padding: 4em 0;
+		}
+
+		.sponsor {
+			vertical-align: middle;
+		}
+	}
+}
+
+@media only screen and (min-width: 40.063em) {
+	.sp-header-sponsors {
+		float: none;
+	}
+
+	.sp-header-sponsors .sp-sponsors {
+		text-align: center;
+	}
+}
+
+

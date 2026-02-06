@@ -1,0 +1,18 @@
+/* Widget: Poll */
+.poll-form {
+
+}
+
+	.poll-form__question {
+		font-size: $base-font-size;
+		line-height: $base-line-height;
+	}
+
+	.poll-form__options {
+		line-height: $base-line-height;
+
+		.radio-progress-value {
+			font-family: $font-family-accent;
+			color: $headings-color;
+		}
+	}

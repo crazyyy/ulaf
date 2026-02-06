@@ -1,0 +1,377 @@
+/*
+// #Typography
+// --------------------------------------------------
+*/
+
+/* Headings */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	color: $headings-color;
+	margin: 0 0 .75em 0;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-family: $headings-font-family;
+	letter-spacing: -0.02em;
+}
+
+h1, .h1 {
+	font-size: $font-size-h1;
+	font-style: $font-style-h1;
+	text-transform: $text-transform-h1;
+	font-weight: $font-weight-h1;
+}
+
+h2, .h2 {
+	font-size: $font-size-h2;
+	font-style: $font-style-h2;
+	text-transform: $text-transform-h2;
+	font-weight: $font-weight-h2;
+}
+
+h3, .h3 {
+	font-size: $font-size-h3;
+	font-style: $font-style-h3;
+	text-transform: $text-transform-h3;
+	font-weight: $font-weight-h3;
+}
+
+h4, .h4 {
+	font-size: $font-size-h4;
+	text-transform: $text-transform-h4;
+	font-style: $font-style-h4;
+	font-weight: $font-weight-h4;
+}
+
+h5, .h5 {
+	font-size: $font-size-h5;
+	font-style: $font-style-h5;
+	text-transform: $text-transform-h5;
+	font-weight: $font-weight-h5;
+}
+
+h6, .h6 {
+	font-size: $font-size-h6;
+	font-style: $font-style-h6;
+	text-transform: $text-transform-h6;
+	margin-bottom: 2em;
+	line-height: $base-line-height;
+	font-weight: $font-weight-h6;
+}
+
+
+/* Paragraphs */
+p {
+	margin-bottom: 1.5em;
+}
+
+.lead {
+	font-size: 16px;
+	line-height: 2em;
+
+	@if $template == football {
+		color: #fff;
+	}
+}
+
+
+/* Links */
+a {
+	color: $link-color;
+	text-decoration: $link-decoration;
+
+	&:hover,
+	&:focus {
+		color: $link-color-hover;
+		text-decoration: $link-decoration-hover;
+		outline: none;
+	}
+}
+
+/* Lists */
+.widget_text,
+div.wpb_text_column,
+.list,
+.hentry {
+	ol:not([class]) {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		margin-bottom: 1.5em;
+		counter-reset: counter;
+
+		li {
+			position: relative;
+			padding: side-values(0 0 .5em 30px);
+		}
+
+		> li {
+			&::before {
+				display: inline-block; /* block would also work */
+				position: absolute; /* move this out of the way of the text */
+				#{$left}: 0; /* move the counter label into the space from the padding */
+				content: counter(counter) ". ";
+				counter-increment: counter;
+				font-weight: bold;
+				width: 20px;
+				color: $ol-number-color;
+				font-family: $font-family-accent;
+				font-size: 13px;
+			}
+		}
+
+		ol,
+		ul {
+			margin-bottom: 0;
+			margin-top: 1em;
+		}
+	}
+}
+
+.widget_text,
+div.wpb_text_column,
+.list,
+.hentry {
+	ul:not([class]) {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		margin-bottom: 1.5em;
+
+		li {
+			position: relative;
+			padding: side-values(0 0 .5em 30px);
+		}
+
+		> li {
+
+			&::before {
+				display: inline-block; /* block would also work */
+				position: absolute; /* move this out of the way of the text */
+				#{$left}: 0; /* move the counter label into the space from the padding */
+				width: 20px;
+				color: $color-primary;
+				font-size: 14px;
+				content: "\f00c";
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				font-family: "Font Awesome 5 Free";
+				font-weight: 700;
+
+				@if $template == 'esports' {
+					top: 2px;
+					width: 20px;
+					height: 20px;
+					border-radius: 50%;
+					border: 2px solid $color-primary;
+					text-align: center;
+					font-size: 10px;
+					line-height: 16px;
+					vertical-align: middle;
+					color: $headings-color;
+				}
+			}
+		}
+
+		ul,
+		ol {
+			margin-bottom: 0;
+			margin-top: 1em;
+		}
+	}
+}
+
+
+// Removes markers for widgets in Widgetized Sidebar (VC)
+.wpb_widgetised_column {
+
+	.widget_recent_entries {
+
+		ul:not([class]) {
+
+			> li {
+				padding: 0;
+
+				&::before {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+
+// Removes markers for widgets in Widgetized Sidebar (VC)
+.wpb_widgetised_column {
+
+	.widget_recent_entries {
+
+		ul:not([class]) {
+
+			> li {
+				padding: 0;
+
+				&::before {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+
+/* Content Title */
+.content-title {
+	text-align: center;
+	padding: 10px 0;
+	margin-bottom: 20px;
+
+	@media (min-width: 992px) {
+		padding: 25px 0;
+		margin-bottom: 35px;
+	}
+}
+	.content-title__h {
+		line-height: 1.2em;
+		margin-bottom: .75em;
+		font-size: 18px;
+
+		@media (min-width: 768px) {
+			font-size: 24px;
+		}
+
+		@media (min-width: 992px) {
+			font-size: 32px;
+		}
+	}
+
+	.content-title__subtitle {
+		font-style: normal;
+		font-size: 11px;
+		line-height: 1.2em;
+		color: $body-font-color;
+
+		.content-title__h + & {
+			margin-top: -1.75em;
+			margin-bottom: 3em;
+		}
+	}
+
+
+/* Blockquotes */
+.blockquote--default,
+blockquote {
+	text-align: center;
+	border: none;
+	padding: 20px;
+	position: relative;
+	margin-bottom: 2em;
+
+	@media (min-width: 992px) {
+		padding: 50px 20px 20px 20px;
+	}
+
+	&::before {
+		content:"\201C";
+		display: block;
+		position: absolute;
+		#{$left}: 50%;
+		top: -0.17em;
+		transform: translateX(if-ltr(-50%, 50%));
+		font-family: $font-family-accent;
+		color: $headings-color;
+		opacity: .05;
+		font-size: 300px;
+		line-height: 1em;
+		pointer-events: none;
+
+		@media (min-width: 992px) {
+			font-size: 600px;
+		}
+		@media (min-width: 1199px) {
+			font-size: 700px;
+		}
+	}
+
+	.blockquote__content,
+	> p {
+		@include font-accent(16px);
+		line-height: 1.2em;
+
+		@if $template == 'football' {
+			color: $headings-color;
+			font-style: italic;
+		} @else {
+			color: lighten($headings-color, 5%);
+		}
+		margin-bottom: .75em;
+
+		@media (min-width: 992px) {
+			font-size: 24px;
+		}
+	}
+
+	.blockquote__footer {
+
+		&::before {
+			display: none !important;
+		}
+	}
+
+	.blockquote__cite {
+		@include font-accent(12px);
+		line-height: 1.2em;
+		color: $body-font-color;
+		font-style: normal !important;
+
+		@media (min-width: 992px) {
+			font-size: 14px;
+		}
+	}
+
+	.blockquote__author-name {
+		display: block;
+	}
+
+	.blockquote__author-info {
+		font-size: 9px;
+		display: block;
+
+		@media (min-width: 992px) {
+			font-size: 10px;
+		}
+	}
+}
+
+.text-success {
+	color: $color-success !important;
+}
+.text-danger {
+	color: $color-danger !important;
+}
+.text-warning {
+	color: $color-warning !important;
+}
+.text-info {
+	color: $color-info !important;
+}
+
+// Address
+address {
+
+	strong {
+		color: $headings-color;
+		font-weight: 400;
+	}
+}
+
+// Definition List
+dl {
+
+}
+	dt {
+		@include font-accent(12px);
+		margin-bottom: .2em;
+	}
+	dd {
+		margin-bottom: 1.5em;
+	}

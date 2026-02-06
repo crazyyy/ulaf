@@ -1,0 +1,22 @@
+/* Checkout ThankYou */
+.woocommerce-bacs-bank-details {
+	@include card();
+	padding: $card-vertical-padding $card-horizontal-padding;
+}
+	.wc-bacs-bank-details-heading {
+		font-size: $font-size-h5;
+	}
+	.wc-bacs-bank-details-account-name {
+		font-size: $font-size-h6;
+	}
+
+	.woocommerce ul.bacs_details {
+
+		li {
+			font-size: 12px;
+
+			strong {
+				color: $headings-color;
+			}
+		}
+	}

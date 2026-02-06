@@ -1,0 +1,17 @@
+@import "config/variables-esports";
+@import "style-default";
+
+// Components
+@import "components/esports_forms";
+
+// Main
+@import "common/esports_footer";
+
+// Blog
+@import "blog/esports_posts";
+
+// Widgets
+@import "widgets/esports_widget-lists";
+
+// Event
+@import "sportspress/event/esports_event-result-box";

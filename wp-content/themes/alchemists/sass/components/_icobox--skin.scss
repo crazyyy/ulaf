@@ -1,0 +1,57 @@
+/* Icobox */
+.icobox {
+
+}
+	// Icon
+	.icobox__icon {
+		color: $icobox-icon-color-primary;
+	}
+
+	// Icon Border
+	.icobox__icon--border {
+		border: 2px solid $icobox-icon-border-color;
+
+		@if $template == football {
+			background-color: transparent;
+		} @else {
+			background-color: $card-bg;
+		}
+	}
+
+	// Icon Filled
+	.icobox__icon--filled {
+		background-color: $icobox-icon-color-primary;
+		color: #fff;
+	}
+
+	// Content
+	.icobox__content {
+
+	}
+		// Title
+		.icobox__title {
+			font-size: $icobox-title-font-size;
+
+			> a {
+				color: $headings-color;
+			}
+		}
+
+	// Color
+	.icobox__icon--color--primary {
+		color: $icobox-icon-color-primary;
+
+		&.icobox__icon--filled {
+			background-color: $icobox-icon-color-primary;
+			color: #fff;
+		}
+	}
+
+	.icobox__icon--color--secondary {
+		color: $icobox-icon-color-secondary;
+
+		&.icobox__icon--filled {
+			background-color: $icobox-icon-color-secondary;
+			color: #fff;
+		}
+	}

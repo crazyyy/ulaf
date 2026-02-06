@@ -1,0 +1,52 @@
+/**
+ *
+ * Results Matrix
+ *
+ */
+
+.sp-template-event-matrix {
+
+}
+	.sp-event-matrix {
+
+		thead,
+		tbody {
+
+			> tr {
+
+				> td:first-child,
+				> th:first-child {
+
+					@media (min-width: 992px) {
+						padding-#{$left}: $card-horizontal-padding;
+					}
+				}
+
+				> td:last-child,
+				> th:last-child {
+
+					@media (min-width: 992px) {
+						padding-#{$right}: $card-horizontal-padding;
+					}
+				}
+			}
+		}
+
+		// overwrites default SportsPress styles
+		tbody {
+
+			.sp-event-matrix-empty-cell {
+				background-color: $table-bg-accent;
+			}
+		}
+	}
+
+		.sp-event-matrix-cell {
+			text-align: center;
+		}
+
+			// Team name
+			.sp-event-matrix-home-label {
+				font-weight: bold;
+				color: $headings-color;
+			}

@@ -1,0 +1,14 @@
+/* Checkout ThankYou */
+.woocommerce-bacs-bank-details {
+	@include card();
+}
+
+	.woocommerce ul.bacs_details {
+
+		li {
+
+			strong {
+				color: $headings-color;
+			}
+		}
+	}

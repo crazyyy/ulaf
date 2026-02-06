@@ -1,0 +1,80 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	// Blog v5 - duotone image fallback (IE11)
+	.posts__thumb--duotone {
+
+		&:after {
+
+			@if $template == 'football' {
+				background-color: $color-dark-2;
+			}
+		}
+	}
+	// IE 11 duotone images fallback
+	.posts--duotone {
+
+		@each $color, $value in $post-category-colors {
+			.posts__item--#{$color} {
+
+				.posts__thumb {
+
+					&::before {
+						background-color: $value;
+					}
+				}
+			}
+		}
+	}
+
+	// Hero Slider Duotone Effect (IE11)
+	.hero-slider--overlay-duotone {
+
+		@each $color, $value in $post-category-colors {
+			.posts__item--#{$color} {
+
+				.hero-slider__item-image::before {
+					background-color: $value;
+				}
+			}
+		}
+	}
+}
+
+@supports ( -ms-ime-align: auto ) {
+	// Blog v5 - duotone image fallback
+	.posts__thumb--duotone {
+
+		&:after {
+
+			@if $template == 'football' {
+				background-color: $color-dark-2;
+			}
+		}
+	}
+	// Edge duotone images fallback
+	.posts--duotone {
+
+		@each $color, $value in $post-category-colors {
+			.posts__item--#{$color} {
+
+				.posts__thumb {
+
+					&::before {
+						background-color: $value;
+					}
+				}
+			}
+		}
+	}
+
+	// Hero Slider Duotone Effect (Edge)
+	.hero-slider--overlay-duotone {
+
+		@each $color, $value in $post-category-colors {
+			.posts__item--#{$color} {
+				.hero-slider__item-image::before {
+					background-color: $value;
+				}
+			}
+		}
+	}
+}

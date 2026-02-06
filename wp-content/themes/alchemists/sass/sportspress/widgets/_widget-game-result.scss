@@ -1,0 +1,565 @@
+/* Widget: Game Result */
+.widget-game-result {
+
+	.widget__content {
+		padding: 0;
+	}
+}
+	.widget-game-result__section {
+
+	}
+		.widget-game-result__section-inner {
+			padding: $card-vertical-padding $card-horizontal-padding;
+		}
+		.widget-game-result__section-inner-alt {
+			padding: 0;
+
+			.table-responsive {
+				margin-bottom: 0;
+			}
+		}
+		.widget-game-result__extra-stats {
+			max-height: 0;
+			overflow: hidden;
+			transition: all 0.3s ease;
+
+			&.active {
+				max-height: 400px;
+			}
+		}
+
+
+	.widget-game-result__item {
+		display: block;
+
+		& + & {
+			margin-top: $card-vertical-padding * 2;
+		}
+	}
+
+	.sp-row + .sp-row {
+
+		.widget-game-result__item {
+			margin-top: $card-vertical-padding * 2;
+		}
+	}
+
+	.widget-game-result__header {
+		text-align: center;
+		margin-bottom: 15px;
+
+		& + & {
+			margin-top: 1.5rem;
+		}
+	}
+		.widget-game-result__title {
+			font-size: 12px;
+			line-height: 1.2em;
+			margin-bottom: .25em;
+			text-transform: uppercase;
+
+			@media (min-width: 992px) {
+				font-size: 14px;
+			}
+		}
+		.widget-game-result__date {
+			display: block;
+			@include font-accent(9px);
+			line-height: 1.2em;
+			color: $body-font-color;
+
+			@media (min-width: 992px) {
+				font-size: 10px;
+			}
+		}
+
+
+	.widget-game-result__header--alt {
+		display: flex;
+		text-align: $left;
+		margin-#{$left}: -$card-horizontal-padding;
+		margin-#{$right}: -$card-horizontal-padding;
+		margin-top: -$card-vertical-padding;
+		margin-bottom: 0;
+		border-bottom: 1px solid $card-border-color;
+		padding: 10px $card-horizontal-padding;
+
+		.widget-game-result__title {
+			font-size: 9px;
+			font-style: normal;
+			margin-bottom: 0;
+			font-weight: 400;
+
+			@media (min-width: 992px) {
+				font-size: 9px;
+			}
+		}
+
+		.widget-game-result__date {
+			font-size: 9px;
+			flex-grow: 1;
+			text-align: $right;
+			font-weight: 400;
+
+			@media (min-width: 992px) {
+				font-size: 9px;
+			}
+		}
+	}
+
+	// Game Result Score
+	.widget-game-result__main {
+		margin-bottom: 6px;
+		display: flex;
+		align-items: center;
+	}
+		.widget-game-result__team {
+			text-align: center;
+			width: 26%;
+		}
+		.widget-game-result__team--odd {
+			order: 0;
+		}
+		.widget-game-result__team--even {
+			order: 2;
+		}
+			.widget-game-result__team-logo {
+				height: 70px;
+				display: block;
+				position: relative;
+
+				img {
+					display: block;
+					margin: 0 auto;
+				}
+			}
+			.widget-game-result__team-info {
+				padding: 6px 0 0 0;
+			}
+				.widget-game-result__team-name {
+					display: block;
+					font-size: 11px;
+					line-height: 1.2em;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					margin: 0 auto 0.1em auto;
+
+					@media (max-width: 479px) {
+						max-width: 80px;
+					}
+
+					@media (min-width: 992px) {
+						font-size: 13px;
+					}
+				}
+				.widget-game-result__team-desc {
+					color: $body-font-color;
+					display: block;
+					@include font-accent(7px);
+					line-height: 1.2em;
+				}
+
+		// Score Result
+		.widget-game-result__score-wrap {
+			width: 46%;
+			order: 1;
+			text-align: center;
+		}
+			.widget-game-result__score {
+				@include font-accent(18px);
+				color: $headings-color;
+				letter-spacing: -0.04em;
+				margin-bottom: 10px;
+
+				&:hover {
+					color: $headings-color;
+				}
+
+				@media (min-width: 768px) {
+					font-size: 20px;
+				}
+
+				@media (min-width: 992px) {
+					font-size: 22px;
+					line-height: 1.2em;
+					margin-bottom: 10px;
+				}
+				@media (min-width: 1199px) {
+					font-size: 26px;
+				}
+			}
+				.widget-game-result__score-result {
+					position: relative;
+				}
+				.widget-game-result__score-result--winner {
+
+					&::before {
+						content:"";
+						display: block;
+						position: absolute;
+						#{$left}: -15px;
+						top: 50%;
+						width: 0;
+						height: 0;
+						border-#{$left}: 8px solid $color-primary;
+						border-#{$right}: none;
+						border-top: 8px solid transparent;
+						border-bottom: 8px solid transparent;
+						transform: translateY(-50%);
+
+						@media (min-width: 992px) {
+							#{$left}: -10px;
+						}
+
+						@media (min-width: 1199px) {
+							#{$left}: -16px;
+						}
+					}
+
+					// Right team win
+					.widget-game-result__score-dash + & {
+
+						&::before {
+							transform: translateY(-50%) rotate(180deg);
+							#{$left}: auto;
+							#{$right}: -15px;
+
+							@media (min-width: 992px) {
+								#{$left}: auto;
+								#{$right}: -10px;
+							}
+
+							@media (min-width: 1199px) {
+								#{$left}: auto;
+								#{$right}: -16px;
+							}
+						}
+					}
+				}
+				.widget-game-result__score-result--loser {
+					color: $body-font-color;
+				}
+
+				.widget-game-result__score-dash {
+
+				}
+
+				.widget-game-result__score-label {
+					@include font-accent(9px);
+					color: $headings-color;
+					line-height: 1.2em;
+				}
+				.widget-game-result__venue {
+					@include font-accent(9px);
+				}
+				.widget-game-result__matchday {
+					@include font-accent(9px);
+					line-height: 1.2em;
+					padding-top: .2em;
+					padding-bottom: .2em;
+				}
+				.widget-game-result__tickets {
+					margin-top: .75em;
+				}
+
+	// Game Result -- Vertical
+	.widget-game-result__main--vertical {
+		flex-wrap: wrap;
+		margin-#{$left}: -$card-horizontal-padding;
+		margin-#{$right}: -$card-horizontal-padding;
+
+		.widget-game-result__team {
+			display: flex;
+			text-align: #{$left};
+			align-items: center;
+			flex-basis: 100%;
+			padding: 20px calc($card-horizontal-padding / 2);
+
+			& + .widget-game-result__team {
+				border-top: 1px solid $card-border-color;
+			}
+
+			&:last-child {
+				padding-bottom: 0;
+			}
+
+			.widget-game-result__team-score {
+				@include font-accent($font-size-h3);
+				font-style: $font-style-h1;
+				line-height: 1em;
+				position: relative;
+
+				@media (min-width: 1200px) {
+					font-size: $font-size-h1;
+				}
+			}
+
+			.widget-game-result__score-result--winner {
+				color: $headings-color;
+
+				&::before {
+					content:"";
+					display: inline-block;
+					position: relative;
+					width: 0;
+					height: 0;
+					top: 0.2em;
+					border-top: 8px solid transparent;
+					border-bottom: 8px solid transparent;
+
+					@if $template == football {
+						border-#{$left}: 8px solid $color-4;
+						border-#{$right}: none;
+					} @else {
+						border-#{$left}: 8px solid $color-primary;
+						border-#{$right}: none;
+					}
+
+					@media (min-width: 1200px) {
+						top: 0;
+					}
+				}
+			}
+
+			@media (min-width: 480px) {
+				padding: 20px $card-horizontal-padding;
+			}
+		}
+
+			.widget-game-result__team-logo {
+				width: 80px;
+				margin-#{$right}: 10px;
+			}
+
+			.widget-game-result__team-info {
+				flex-grow: 1;
+				padding-top: 0;
+			}
+
+				.widget-game-result__team-name {
+					font-size: 12px;
+					text-transform: uppercase;
+					margin-#{$left}: 0;
+					margin-#{$right}: 0;
+					max-width: none;
+
+					@media (min-width: 992px) {
+						font-size: 14px;
+						max-width: none;
+					}
+				}
+				.widget-game-result__team-desc {
+					font-size: 10px;
+					font-style: $font-style-h5;
+				}
+	}
+
+	.widget-game-result__table-stats {
+
+		.table {
+			margin-bottom: 0;
+
+			.widget-game-result__section-inner & {
+				border-#{$left}: none;
+				border-#{$right}: none;
+			}
+
+			> tbody > tr > td:first-child {
+
+				@media (min-width: 992px) {
+					font-size: 12px;
+
+					@if $template == football {
+						text-transform: none;
+					}
+				}
+			}
+
+			> thead > tr > th:first-child,
+			> tbody > tr > td:first-child,
+			> tbody > tr > th:first-child {
+				padding-#{$left}: 12px;
+
+				@media (min-width: 992px) {
+					padding-#{$left}: 24px;
+				}
+				@media (min-width: 1199px) {
+					padding-#{$left}: 40px;
+				}
+			}
+
+			.widget-game-result__section-inner-alt & {
+
+				> thead > tr > th:first-child,
+				> tbody > tr > td:first-child,
+				> tbody > tr > th:first-child {
+					padding-#{$left}: 5px;
+
+					@media (min-width: 992px) {
+						padding-#{$left}: 18px;
+					}
+					@media (min-width: 1199px) {
+						padding-#{$left}: 24px;
+					}
+				}
+
+				> thead > tr > th,
+				> tbody > tr > td,
+				> tbody > tr > th {
+
+					@media (min-width: 992px) and (max-width: 1199px) {
+						padding-#{$left}: 5px;
+						padding-#{$right}: 5px;
+					}
+				}
+			}
+
+			> thead > tr > th:last-child,
+			> tbody > tr > td:last-child,
+			> tbody > tr > th:last-child {
+				padding-#{$right}: 12px;
+				color: $headings-color;
+
+				@media (min-width: 992px) {
+					padding-#{$right}: 24px;
+				}
+				@media (min-width: 1199px) {
+					padding-#{$right}: 40px;
+				}
+			}
+
+			.widget-game-result__section-inner-alt & {
+				> thead > tr > th:last-child,
+				> tbody > tr > td:last-child,
+				> tbody > tr > th:last-child {
+					padding-#{$right}: 5px;
+					color: $headings-color;
+
+					@media (min-width: 992px) {
+						padding-#{$right}: 18px;
+					}
+					@media (min-width: 1199px) {
+						padding-#{$right}: 24px;
+					}
+				}
+			}
+		}
+	}
+
+	.widget-game-result__subheader {
+		margin-top: -1px;
+	}
+
+	.player-details {
+		display: table;
+		width: 100%;
+		height: 100%;
+	}
+		.player-details__info {
+			display: table-cell;
+			width: 50%;
+			vertical-align: middle;
+		}
+			.player-details__photo {
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				margin-#{$right}: 9px;
+				overflow: hidden;
+				border-radius: 50%;
+				vertical-align: middle;
+
+				@media (min-width: 375px) {
+					width: 40px;
+					height: 40px;
+				}
+			}
+			.player-details__info-holder {
+				display: inline-block;
+				vertical-align: middle;
+			}
+				.player-details__name {
+					font-size: 10px;
+					line-height: 1.2em;
+					text-transform: none;
+					margin-bottom: 0;
+					font-weight: 400;
+
+					@media (min-width: 992px) {
+						font-size: 12px;
+					}
+
+					> a {
+						color: $headings-color;
+						transition: color 0.2s ease;
+
+						&:hover {
+							color: $color-primary-darken;
+						}
+					}
+				}
+				.player-details__position {
+					font-family: $font-family-accent;
+					font-size: 8px;
+					display: block;
+					line-height: 1em;
+
+					@include fix_small_chars();
+
+					@media (min-width: 992px) {
+						font-size: 9px;
+					}
+				}
+		.player-details__stats {
+			display: table-cell;
+			width: 50%;
+		}
+			.player-details__circular {
+				float: $left;
+				width: 33.3%;
+				padding: 0 2px;
+				vertical-align: top;
+				margin: 0;
+
+				@media (min-width: 768px) {
+					padding: 0 6px;
+				}
+
+				@media (min-width: 992px) and (max-width: 1199px) {
+					padding: 0 1px;
+				}
+
+				.circular__bar {
+					width: 100%;
+					height: 100%;
+				}
+				.circular__percents {
+					line-height: 1em;
+					font-size: 12px;
+					font-weight: 400;
+
+					small {
+						display: block;
+						text-transform: none;
+						font-size: 8px;
+						line-height: 1em;
+						color: $body-font-color;
+
+						@include fix_small_chars();
+					}
+				}
+			}
+
+
+// Progress Bars
+.widget-game-result .progress-double-wrapper + .progress-double-wrapper {
+	margin-top: 24px;
+}
+
+.widget-game-result__extra-stats {
+
+	.progress-double-wrapper {
+		margin-top: 24px;
+	}
+}

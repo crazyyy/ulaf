@@ -1,0 +1,50 @@
+/*
+// #Widget - Instagram
+// --------------------------------------------------
+*/
+
+
+// Smash Balloon Photo Feed
+#sb_instagram {
+
+	#sbi_images {
+
+		.sbi_item {
+
+			.sbi_photo_wrap {
+
+				.sbi_photo {
+
+					&::before {
+						background-color: $color-primary-darken;
+					}
+				}
+			}
+		}
+	}
+
+	#sbi_load {
+		text-align: $left;
+
+		// Follow button
+		.sbi_follow_btn {
+
+			> a {
+				background-color: #1e78dd;
+				color: #fff;
+
+				&:hover,
+				&:active,
+				&:focus {
+					background-color: lighten(#1e78dd, 5%);
+				}
+			}
+		}
+
+		// Load button
+		.sbi_load_btn {
+			@include button-variant($btn-default-color, $btn-default-bg, $btn-default-hover, $btn-default-border);
+		}
+
+	}
+}

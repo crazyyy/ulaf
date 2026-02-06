@@ -1,0 +1,27 @@
+/* Alerts
+/* ------------------------- */
+
+.jumbotron {
+	background-color: $jumbotron-bg;
+	border-color: $jumbotron-border-color;
+}
+	.jumbotron--card {
+		border-color: $card-border-color;
+		border-radius: $card-border-radius;
+	}
+
+	// Jumbotron Style 1
+	.jumbotron--style1 {
+
+		.jumbotron__title {
+			color: $color-primary;
+
+			&:first-line,
+			.highlight {
+				color: $headings-color;
+			}
+		}
+		.jumbotron__subtitle {
+			color: $headings-color;
+		}
+	}

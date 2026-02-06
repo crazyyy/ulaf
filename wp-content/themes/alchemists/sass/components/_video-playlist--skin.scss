@@ -1,0 +1,21 @@
+/* Video Playlist */
+.alc-video-playlist-col {
+
+	@media (min-width: 992px) {
+		border-#{$left}-color: $card-border-color;
+	}
+}
+
+// Title
+.alc-video-player__header {
+	border-bottom-color: $card-border-color;
+
+	@media (max-width: 991px) {
+		border-top-color: $card-border-color;
+	}
+}
+
+// Embeded Player
+.alc-embeded-player {
+	border-color: $card-border-color;
+}

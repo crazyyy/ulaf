@@ -1,0 +1,13 @@
+.welcome-panel-column-container .welcome-panel-column:first-child {
+  display: none !important; }
+
+.alc-is-not-activated .wpb-content-layouts [data-element*="alc"] {
+  opacity: .5;
+  pointer-events: none; }
+
+.alc-is-not-activated .theme-browser .themes .theme[data-slug="alchemists"] .notice {
+  display: none !important; }
+
+.alc-is-not-activated .theme-overlay .theme-author + .notice {
+  display: none !important; }
+/*# sourceMappingURL=df-admin-not-registered.css.map */
