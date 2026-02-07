@@ -27,11 +27,11 @@ msgstr "Шукати"
 msgid "Hints"
 msgstr "Поради"
 
-#: lib/view/export/advanced-settings.php:75
+#: lib/view/export/advanced-settings.php:77
 msgid "Exclude spam comments"
 msgstr "Виключити коментарі зі спамом"
 
-#: lib/view/export/advanced-settings.php:81
+#: lib/view/export/advanced-settings.php:83
 msgid "Exclude post revisions"
 msgstr "Виключити редагування публікацій"
 
@@ -59,15 +59,15 @@ msgstr "Понад 2 ГБ"
 msgid "Describe your issue or feedback..."
 msgstr "Опишіть вашу проблему або залиште відгук..."
 
-#: lib/model/export/class-ai1wm-export-config-file.php:75
+#: lib/model/export/class-ai1wm-export-config-file.php:46
 msgid "Configuration archived."
 msgstr "Конфігурацію заархівовано."
 
-#: lib/model/export/class-ai1wm-export-config.php:189
+#: lib/model/export/class-ai1wm-export-config.php:199
 msgid "Configuration prepared."
 msgstr "Конфігурація готова."
 
-#: lib/controller/class-ai1wm-main-controller.php:892
+#: lib/controller/class-ai1wm-main-controller.php:893
 msgid "Could not read backup content"
 msgstr "Не вдалося прочитати вміст резервної копії"
 
@@ -75,11 +75,11 @@ msgstr "Не вдалося прочитати вміст резервної к�
 msgid "Please enter a valid email address."
 msgstr "Будь ласка, введіть правильний email."
 
-#: functions.php:2306
+#: functions.php:2322
 msgid "Could not encrypt data. The process cannot continue."
 msgstr "Не вдалося зашифрувати дані. Процес не може продовжуватися."
 
-#: functions.php:2344
+#: functions.php:2360
 msgid "Could not decrypt data. The process cannot continue."
 msgstr "Не вдалося зашифрувати дані. Процес не може продовжуватися."
 
@@ -90,7 +90,7 @@ msgstr "Помилка імпорту: %s"
 
 #: lib/controller/class-ai1wm-import-controller.php:109
 #: lib/controller/class-ai1wm-import-controller.php:110
-#: lib/controller/class-ai1wm-main-controller.php:834
+#: lib/controller/class-ai1wm-main-controller.php:835
 msgid "Import failed"
 msgstr "Помилка імпорту"
 
@@ -127,21 +127,22 @@ msgstr "Налаштування сповіщень"
 msgid "FTP Storage"
 msgstr "Сховище FTP"
 
-#: lib/controller/class-ai1wm-main-controller.php:737
 #: lib/controller/class-ai1wm-main-controller.php:738
+#: lib/controller/class-ai1wm-main-controller.php:739
 msgid "Schedules"
 msgstr "Розклади"
 
-#: lib/controller/class-ai1wm-main-controller.php:850
+#: lib/controller/class-ai1wm-main-controller.php:851
+#: lib/controller/class-ai1wm-main-controller.php:897
 msgid "Submit"
 msgstr "Відправити"
 
-#: lib/controller/class-ai1wm-main-controller.php:853
+#: lib/controller/class-ai1wm-main-controller.php:854
 #: lib/view/export/advanced-settings.php:58
 msgid "The passwords do not match"
 msgstr "Паролі не співпадають"
 
-#: lib/controller/class-ai1wm-main-controller.php:891
+#: lib/controller/class-ai1wm-main-controller.php:892
 msgid "Error"
 msgstr "Помилка"
 
@@ -149,7 +150,7 @@ msgstr "Помилка"
 msgid "List"
 msgstr "Список"
 
-#: lib/controller/class-ai1wm-main-controller.php:894
+#: lib/controller/class-ai1wm-main-controller.php:895
 msgid "Reading..."
 msgstr "Читати..."
 
@@ -170,7 +171,7 @@ msgstr "Зв'язатися з тех. підтримкою"
 msgid "Translate"
 msgstr "Перекласти"
 
-#: lib/controller/class-ai1wm-main-controller.php:845
+#: lib/controller/class-ai1wm-main-controller.php:846
 msgid "I have enough disk space"
 msgstr "Я маю достатньо місця на диску"
 
@@ -182,7 +183,7 @@ msgstr "Оновлення списку резервних копій..."
 msgid "To choose a file please go inside the link and click on the browse button."
 msgstr "Щоб обрати файл будь ласка перейдіть за посиланням та натисніть на кнопку Оглядати."
 
-#: lib/controller/class-ai1wm-main-controller.php:843
+#: lib/controller/class-ai1wm-main-controller.php:844
 msgid "Finish"
 msgstr "Закінчено"
 
@@ -190,11 +191,11 @@ msgstr "Закінчено"
 msgid "Drag & Drop a backup to import it"
 msgstr "Перетягніть файл бекапа щоб імпортувати його"
 
-#: lib/controller/class-ai1wm-main-controller.php:251
+#: lib/controller/class-ai1wm-main-controller.php:252
 msgid "All-in-One WP Migration Command"
 msgstr "Команда All-in-One WP Migration"
 
-#: lib/controller/class-ai1wm-main-controller.php:816
+#: lib/controller/class-ai1wm-main-controller.php:817
 #: lib/model/export/class-ai1wm-export-init.php:47
 msgid "Preparing to export..."
 msgstr "Підготовка до експорту…"
@@ -204,44 +205,39 @@ msgstr "Підготовка до експорту…"
 msgid "%s ago"
 msgstr "%s тому"
 
-#: lib/controller/class-ai1wm-main-controller.php:847
+#: lib/controller/class-ai1wm-main-controller.php:848
 msgid "Please do not close this browser window or your import will fail"
 msgstr "Будь ласка, не закривайте браузер, інакше імпорт перерветься"
 
-#: lib/controller/class-ai1wm-main-controller.php:846
+#: lib/controller/class-ai1wm-main-controller.php:847
 msgid "Continue"
 msgstr "Продовжити"
 
-#: lib/controller/class-ai1wm-main-controller.php:844
+#: lib/controller/class-ai1wm-main-controller.php:845
 msgid "Proceed"
 msgstr "Продовжити"
 
-#: lib/controller/class-ai1wm-main-controller.php:842
+#: lib/controller/class-ai1wm-main-controller.php:843
 msgid "Stop import"
 msgstr "Зупинити імпорт"
 
-#: lib/controller/class-ai1wm-main-controller.php:823
+#: lib/controller/class-ai1wm-main-controller.php:824
 msgid "Stop export"
 msgstr "Зупинити експорт"
 
-#: lib/controller/class-ai1wm-main-controller.php:822
-#: lib/controller/class-ai1wm-main-controller.php:841
+#: lib/controller/class-ai1wm-main-controller.php:823
+#: lib/controller/class-ai1wm-main-controller.php:842
+#: lib/controller/class-ai1wm-main-controller.php:896
 msgid "Close"
 msgstr "Закрити"
 
-#: lib/controller/class-ai1wm-main-controller.php:884
+#: lib/controller/class-ai1wm-main-controller.php:885
 msgid "Are you sure you want to delete this backup?"
 msgstr "Ви впевнені, що хочете видалити цю резервну копію?"
 
 #. translators: Progress.
-#: lib/model/import/class-ai1wm-import-validate.php:90
-#: lib/model/import/class-ai1wm-import-validate.php:162
-msgid "Unpacking archive...<br />%d%% complete"
-msgstr "Розпакування архіву…<br />%d%%завершено"
-
-#. translators: Progress.
-#: lib/model/export/class-ai1wm-export-database-file.php:69
-#: lib/model/export/class-ai1wm-export-database-file.php:105
+#: lib/model/export/class-ai1wm-export-database-file.php:88
+#: lib/model/export/class-ai1wm-export-database-file.php:127
 msgid "Archiving database...<br />%d%% complete"
 msgstr "Архівування бази даних… <br />%d%%завершено"
 
@@ -251,15 +247,15 @@ msgstr "Архівування бази даних… <br />%d%%завершен
 msgid "Restoring database...<br />%d%% complete"
 msgstr "Відновлення бази даних… <br />%d%%завершено"
 
-#: lib/controller/class-ai1wm-main-controller.php:833
+#: lib/controller/class-ai1wm-main-controller.php:834
 msgid "Preparing to import..."
 msgstr "Підготовка до імпорту…"
 
-#: lib/controller/class-ai1wm-main-controller.php:1346
+#: lib/controller/class-ai1wm-main-controller.php:1367
 msgid "Monthly"
 msgstr "Щомісяця"
 
-#: lib/controller/class-ai1wm-main-controller.php:1342
+#: lib/controller/class-ai1wm-main-controller.php:1363
 msgid "Weekly"
 msgstr "Щотижня"
 
@@ -271,7 +267,7 @@ msgstr "Активую mu-плагіни…"
 msgid "Preparing blogs..."
 msgstr "Підготовка блогів..."
 
-#: lib/controller/class-ai1wm-main-controller.php:811
+#: lib/controller/class-ai1wm-main-controller.php:812
 #: lib/view/updater/check.php:33
 msgid "Check for updates"
 msgstr "Перевірити оновлення"
@@ -389,13 +385,13 @@ msgstr "Відновити"
 msgid "Size"
 msgstr "Розмір"
 
-#: lib/controller/class-ai1wm-main-controller.php:709
 #: lib/controller/class-ai1wm-main-controller.php:710
+#: lib/controller/class-ai1wm-main-controller.php:711
 msgid "Import"
 msgstr "Імпорт"
 
-#: lib/controller/class-ai1wm-main-controller.php:700
 #: lib/controller/class-ai1wm-main-controller.php:701
+#: lib/controller/class-ai1wm-main-controller.php:702
 msgid "Export"
 msgstr "Експорт"
 
@@ -403,8 +399,8 @@ msgstr "Експорт"
 msgid "Get multisite"
 msgstr "Отримати мультисайт"
 
-#: lib/controller/class-ai1wm-main-controller.php:718
 #: lib/controller/class-ai1wm-main-controller.php:719
+#: lib/controller/class-ai1wm-main-controller.php:720
 #: lib/view/backups/index.php:39
 msgid "Backups"
 msgstr "Резервні копії"
@@ -415,7 +411,7 @@ msgstr "Резервні копії"
 msgid "Your site has been imported successfully!"
 msgstr "Ваш сайт успішно імпортовано!"
 
-#: lib/controller/class-ai1wm-main-controller.php:851
+#: lib/controller/class-ai1wm-main-controller.php:852
 #: lib/view/export/advanced-settings.php:51
 msgid "Enter a password"
 msgstr "Введіть пароль"

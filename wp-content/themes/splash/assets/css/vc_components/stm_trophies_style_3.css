@@ -1,0 +1,63 @@
+.stm-trophy-carousel.style_3 .stm-title-left {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.stm-trophy-carousel.style_3 .stm-thophies-controls {
+  display: none;
+}
+.stm-trophy-carousel.style_3 .stm-trophy-carousel__title {
+  text-align: center;
+}
+.stm-trophy-carousel.style_3 .stm-single-trophy {
+  background-color: #f7f7f7;
+  padding: 45px 50px 26px;
+}
+.stm-trophy-carousel.style_3 .stm-single-trophy .image {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  height: 170px;
+  min-height: initial !important;
+  width: auto;
+}
+.stm-trophy-carousel.style_3 .stm-single-trophy .image img {
+  position: static;
+  transform: none;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100% !important;
+}
+.stm-trophy-carousel.style_3 .stm-single-trophy .stm-title {
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  font-weight: 900;
+  position: relative;
+  padding-top: 15px;
+  transition: all 0.3s;
+}
+.stm-trophy-carousel.style_3 .stm-single-trophy .stm-title:before {
+  content: "";
+  width: 32px;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  top: -2px;
+  transform: translate(-50%, 0);
+  transition: all 0.3s;
+}
+.stm-trophy-carousel.style_3 .stm-single-trophy .stm-year, .stm-trophy-carousel.style_3 .stm-single-trophy .stm-border {
+  display: none;
+}
+.stm-trophy-carousel.style_3 .stm-single-trophy:hover .image img {
+  transform: scale(1.1);
+}
+.stm-trophy-carousel.style_3 .stm-single-trophy:hover .stm-title:before {
+  width: 70px;
+}

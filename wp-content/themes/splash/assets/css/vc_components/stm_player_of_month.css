@@ -1,0 +1,101 @@
+.stm_player_month {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.stm_player_month a {
+  display: block;
+}
+.stm_player_month .player-info {
+  display: block;
+  width: 50%;
+  float: right;
+  clear: both;
+  padding: 40px 0;
+}
+.stm_player_month .player-info .title {
+  display: inline-block;
+  padding: 0 7px 2px;
+}
+.stm_player_month .player-info .player-name {
+  font-size: 24px;
+  font-style: italic;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.stm_player_month .player-info .player-name .customs {
+  display: block;
+  font-weight: 600;
+}
+.stm_player_month .player-info .player-stat {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.stm_player_month .player-info .player-stat li {
+  margin: 0 20px 0 0;
+  padding: 0;
+}
+.stm_player_month .player-info .player-stat li:before {
+  display: none;
+}
+.stm_player_month .player-info .player-stat li .stat-label {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 600;
+}
+.stm_player_month .player-info .player-stat li .stat-data {
+  font-size: 12px;
+}
+
+@media (max-width: 900px) {
+  .stm_player_month .player-info {
+    width: 95%;
+    padding: 10px 0;
+  }
+  .stm_player_month .player-info .player-name {
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .stm_player_month .player-info {
+    width: 50%;
+    padding: 47px 0;
+  }
+
+  .vc_col-sm-4 .stm_player_month .player-info {
+    width: 95%;
+    padding: 10px 0;
+  }
+  .vc_col-sm-4 .stm_player_month .player-info .player-name {
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 700px) {
+  .stm_player_month {
+    max-width: 54%;
+    margin: 0 auto 20px;
+  }
+  .stm_player_month .player-info {
+    width: 50%;
+    padding: 10px 0;
+  }
+  .stm_player_month .player-info .player-name {
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+}

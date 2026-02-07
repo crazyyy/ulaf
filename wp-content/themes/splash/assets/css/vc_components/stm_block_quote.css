@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/*=====================================        STM BLOCKQUOTE         =======================================*/
+.stm-block-quote-wrapper {
+  display: block;
+  overflow: hidden;
+}
+.stm-block-quote-wrapper.style_1 {
+  padding: 32px 25px 25px;
+  margin: 10px 0 0 0;
+}
+.stm-block-quote-wrapper.style_1 .stm-block-quote-icon {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  margin-bottom: 7px;
+}
+.stm-block-quote-wrapper.style_1 .stm-block-quote-icon:before {
+  content: "";
+  display: block;
+  width: 38%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  top: 12px;
+}
+.stm-block-quote-wrapper.style_1 .stm-block-quote-icon:after {
+  content: "";
+  display: block;
+  width: 38%;
+  height: 1px;
+  position: absolute;
+  right: 0;
+  top: 12px;
+}
+.stm-block-quote-wrapper.style_1 .stm-block-quote-icon i:before {
+  display: block;
+  font-size: 25px;
+}
+.stm-block-quote-wrapper.style_1 .stm-block-quote {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+  line-height: 30px;
+  padding: 5px 0;
+  letter-spacing: 0;
+}
+.stm-block-quote-wrapper.style_2 .stm-block-quote-icon {
+  display: none;
+}
+.stm-block-quote-wrapper.style_2 .stm-block-quote {
+  padding: 5px 5px 5px 25px;
+  font-size: 14px;
+  font-style: italic;
+}
+.stm-block-quote-wrapper.style_3 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  width: 100%;
+  padding: 0 13%;
+}
+.stm-block-quote-wrapper.style_3 .stm-block-quote-icon i:before {
+  font-size: 34px;
+}
+.stm-block-quote-wrapper.style_3 .stm-block-quote {
+  font-size: 20px;
+  line-height: 30px;
+  font-style: italic;
+  padding-top: 10px;
+  padding-left: 25px;
+}
+.stm-block-quote-wrapper.style_3 .stm-block-quote .author {
+  padding-top: 8px;
+  font-size: 15px;
+  font-style: normal;
+}
+.stm-block-quote-wrapper.style_4 .stm-block-quote {
+  background-color: #f4f5f8;
+  padding: 60px 60px 30px;
+  font-style: italic;
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+}
+.stm-block-quote-wrapper.style_4 .stm-block-quote:before, .stm-block-quote-wrapper.style_4 .stm-block-quote:after {
+  content: "\e909";
+  display: block;
+  font-family: "stm-splash-icons";
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  position: absolute;
+  top: 40px;
+  left: 30px;
+}
+.stm-block-quote-wrapper.style_4 .stm-block-quote:after {
+  display: block;
+  position: absolute;
+  top: auto;
+  left: auto;
+  bottom: 70px;
+  right: 30px;
+  transform: rotate(180deg);
+}
+.stm-block-quote-wrapper.style_4 .stm-block-quote .author {
+  font-size: 16px;
+  line-height: 30px;
+  font-style: normal;
+}
+.stm-block-quote-wrapper.style_4 .stm-block-quote .author:before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100px;
+  margin: 20px auto;
+  background-color: #1f3b79;
+}
+
+/*=====================================        STM BLOCKQUOTE         =======================================*/

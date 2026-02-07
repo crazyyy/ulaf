@@ -1,0 +1,171 @@
+[
+  {
+    "default": [
+      "search-3",
+      "categories-4",
+      "archives-2",
+      "stm_recent_posts-2",
+      "tag_cloud-2",
+      "text-7",
+      "text-8",
+      "mc4wp_form_widget-2"
+    ],
+    "footer": [
+      "text-2",
+      "text-3",
+      "text-4",
+      "text-5",
+      "nav_menu-2"
+    ],
+    "sportspress": [
+      "sportspress-event-blocks-2",
+      "stm_recent_posts-5"
+    ],
+    "shop": [
+      "woocommerce_products-3",
+      "woocommerce_price_filter-3",
+      "woocommerce_top_rated_products-3"
+    ]
+  },
+  {
+    "search": {
+      "3": {
+        "title": ""
+      },
+      "_multiwidget": 1
+    },
+    "categories": {
+      "4": {
+        "title": "Categories",
+        "count": 1,
+        "hierarchical": 0,
+        "dropdown": 0
+      },
+      "_multiwidget": 1
+    },
+    "archives": {
+      "2": {
+        "title": "Archives",
+        "count": 0,
+        "dropdown": 1
+      },
+      "_multiwidget": 1
+    },
+    "stm_recent_posts": {
+      "2": {
+        "title": "Popular news",
+        "output": "4"
+      },
+      "5": {
+        "title": "Latest news",
+        "output": "4"
+      },
+      "_multiwidget": 1
+    },
+    "tag_cloud": {
+      "2": {
+        "title": "Tags",
+        "count": 0,
+        "taxonomy": "post_tag"
+      },
+      "_multiwidget": 1
+    },
+    "text": {
+      "7": {
+        "title": "Instagram",
+        "text": "[instagram feed=3004]",
+        "filter": true,
+        "visual": true
+      },
+      "8": {
+        "title": "Socials",
+        "text": "<ul class=\"player-socials\">\r\n<li class=\"facebook\"> <a href=\"https:\/\/www.facebook.com\/stylemixthemes\/\" target=\"_blank\"> <i class=\"fa fa-facebook\"><\/i> <\/a><\/li>\r\n<li class=\"twitter\"> <a href=\"https:\/\/twitter.com\/stylemix_themes\/\" target=\"_blank\"> <i class=\"fa fa-twitter\"><\/i> <\/a><\/li>\r\n<li class=\"instagram\"> <a href=\"https:\/\/www.instagram.com\/stylemixthemes\/\" target=\"_blank\"> <i class=\"fa fa-instagram\"><\/i> <\/a><\/li>\r\n<li class=\"dribbble\"> <a href=\"https:\/\/dribbble.com\/\" target=\"_blank\"> <i class=\"fa fa-dribbble\"><\/i> <\/a><\/li>\r\n<\/ul>",
+        "filter": true,
+        "visual": true
+      },
+      "2": {
+        "title": "",
+        "text": "<h4 class=\"vc_custom_heading\" style=\"font-size: 18px; color: #ffffff; line-height: 30px; text-align: right;\">ABOUT<\/h4>\r\n<p style=\"text-align: right; color: #777777;\">Bicycle rights heirloom poutine twee distillery kale chips. Thundercats pok pok seitan waistcoat whatever yr. Squid cornhole iPhone umami thundercats, shabby chic pinterest crucifix kogi irony. Chambray lyft flannel pok pok.<\/p>",
+        "filter": true,
+        "visual": true
+      },
+      "3": {
+        "title": "",
+        "text": "<img class=\"vc_single_image-img\" style=\"margin: 0 auto; display: block;\" title=\"logo\" src=\"https:\/\/splash.stylemixthemes.com\/wp-content\/uploads\/2016\/06\/placeholder.gif\" alt=\"logo\" width=\"200\" height=\"180\" \/>",
+        "filter": true,
+        "visual": true
+      },
+      "4": {
+        "title": "",
+        "text": "<h4 class=\"vc_custom_heading\" style=\"font-size: 18px; color: #ffffff; line-height: 30px; text-align: left;\">CONTACT INFO<\/h4>\r\n<p style=\"color: #777777; text-align: left;\">Call-center: <span style=\"color: #fff;\"> 1 (323) 938-5798<\/span>\r\nSales: <span style=\"color: #fff;\"> 1 (888) 637-7262<\/span>\r\nEmail: <span style=\"color: #fff;\"> info@styleixthemes.com<\/span><\/p>\r\n<p style=\"color: #777777; text-align: left;\">1840 E Garvey Avenue Street\r\nWest Covina, CA 91791, U.S.<\/p>",
+        "filter": true,
+        "visual": true
+      },
+      "5": {
+        "title": "",
+        "text": "<ul class=\"stm_socials\">\r\n \t<li><a href=\"#\" target=\"_blank\" rel=\"noopener\">\r\n<i class=\"fa fa-facebook\"><\/i>\r\n<\/a><\/li>\r\n \t<li><a href=\"#\" target=\"_blank\" rel=\"noopener\">\r\n<i class=\"fa fa-twitter\"><\/i>\r\n<\/a><\/li>\r\n \t<li><a href=\"#\" target=\"_blank\" rel=\"noopener\">\r\n<i class=\"fa fa-instagram\"><\/i>\r\n<\/a><\/li>\r\n \t<li><a href=\"#\" target=\"_blank\" rel=\"noopener\">\r\n<i class=\"fa fa-youtube-play\"><\/i>\r\n<\/a><\/li>\r\n<\/ul>",
+        "filter": true,
+        "visual": true
+      },
+      "_multiwidget": 1
+    },
+    "mc4wp_form_widget": {
+      "2": {
+        "title": "Newsletter subscribe"
+      },
+      "_multiwidget": 1
+    },
+    "nav_menu": {
+      "2": {
+        "nav_menu": 23
+      },
+      "_multiwidget": 1
+    },
+    "sportspress-event-blocks": {
+      "2": {
+        "title": "Next Match",
+        "id": 0,
+        "caption": "",
+        "status": "future",
+        "date": "0",
+        "date_from": "2019-07-29",
+        "date_to": "2019-07-29",
+        "date_past": "7",
+        "date_future": "7",
+        "date_relative": null,
+        "day": "",
+        "number": 1,
+        "order": "default",
+        "show_all_events_link": "1",
+        "align": "none",
+        "site_id": 11
+      },
+      "_multiwidget": 1
+    },
+    "woocommerce_products": {
+      "3": {
+        "title": "Products",
+        "number": 5,
+        "show": "",
+        "orderby": "date",
+        "order": "desc",
+        "hide_free": 0,
+        "show_hidden": 0
+      },
+      "_multiwidget": 1
+    },
+    "woocommerce_price_filter": {
+      "3": {
+        "title": "Filter by price"
+      },
+      "_multiwidget": 1
+    },
+    "woocommerce_top_rated_products": {
+      "3": {
+        "title": "Top Rated Products",
+        "number": 5
+      },
+      "_multiwidget": 1
+    }
+  }
+]

@@ -1,0 +1,222 @@
+[
+  {
+    "footer": [
+      "text-4",
+      "stm_recent_posts-7",
+      "nav_menu-4",
+      "contacts-4"
+    ],
+    "sportspress": [
+      "sportspress-event-calendar-2",
+      "sportspress-countdown-2",
+      "sportspress-event-blocks-2",
+      "sportspress-event-blocks-3",
+      "sportspress-league-table-2",
+      "sportspress-player-list-2"
+    ],
+    "shop": [
+      "woocommerce_products-3",
+      "woocommerce_price_filter-3",
+      "woocommerce_product_categories-3"
+    ]
+  },
+  {
+    "text": {
+      "4": {
+        "title": "",
+        "text": "<a href=\"\/about-club\"><img class=\"stm-small-logo\" src=\"http:\/\/splash.stylemixthemes.com\/wp-content\/themes\/splash\/assets\/images\/tmp\/magazine_one\/logo.svg\" alt=\"Footer logo\" \/><\/a>\r\n<div class=\"stm-text-lighten\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus nisl in lacus pulvinar, vitae varius nisi fermentum. In euismod ante odio, volutpat convallis odio fringilla ac. Praesent vehicula facilisis neque, a feugiat leo luctus elementum.<\/div>",
+        "filter": true,
+        "visual": true
+      },
+      "_multiwidget": 1
+    },
+    "stm_recent_posts": {
+      "7": {
+        "title": "Recent posts",
+        "output": "2"
+      },
+      "_multiwidget": 1
+    },
+    "nav_menu": {
+      "4": {
+        "title": "ADDITIONAL LINKS",
+        "nav_menu": 23
+      },
+      "_multiwidget": 1
+    },
+    "contacts": {
+      "4": {
+        "title": "CONTACT US",
+        "address": "1486 Commercity Isola Road, CA93104, United States",
+        "phone": "+1 234 567 8900",
+        "fax": "",
+        "skype": "",
+        "schedule": "",
+        "email": "info@splash.com"
+      },
+      "_multiwidget": 1
+    },
+    "sportspress-event-calendar": {
+      "2": {
+        "title": "Latest Events",
+        "id": 0,
+        "status": "publish",
+        "date": "default",
+        "date_from": "2018-05-12",
+        "date_to": "2018-05-12",
+        "date_past": "7",
+        "date_future": "7",
+        "date_relative": null,
+        "day": "",
+        "show_all_events_link": null,
+        "align": "none"
+      },
+      "_multiwidget": 1
+    },
+    "sportspress-countdown": {
+      "2": {
+        "title": "Countdown",
+        "calendar": 78,
+        "team": 0,
+        "caption": "",
+        "id": 0,
+        "show_venue": 1,
+        "show_league": 1,
+        "align": "none"
+      },
+      "_multiwidget": 1
+    },
+    "sportspress-event-blocks": {
+      "2": {
+        "title": "Upcoming events",
+        "id": 0,
+        "caption": "",
+        "status": "future",
+        "date": "default",
+        "date_from": "2018-05-12",
+        "date_to": "2018-05-12",
+        "date_past": "7",
+        "date_future": "7",
+        "date_relative": null,
+        "day": "",
+        "number": 5,
+        "order": "default",
+        "show_all_events_link": "1",
+        "align": "none"
+      },
+      "3": {
+        "title": "Latest Results",
+        "id": 0,
+        "caption": "",
+        "status": "publish",
+        "date": "default",
+        "date_from": "2018-05-14",
+        "date_to": "2018-05-14",
+        "date_past": "7",
+        "date_future": "7",
+        "date_relative": null,
+        "day": "",
+        "number": 3,
+        "order": "default",
+        "show_all_events_link": "1",
+        "align": "none"
+      },
+      "_multiwidget": 1
+    },
+    "sportspress-league-table": {
+      "2": {
+        "title": "League Table",
+        "id": 79,
+        "caption": "",
+        "number": 5,
+        "columns": [
+          "w",
+          "l",
+          "gb",
+          "pf",
+          "pct",
+          "pa",
+          "diff",
+          "lten",
+          "strk"
+        ],
+        "show_team_logo": null,
+        "show_full_table_link": "1",
+        "align": "none"
+      },
+      "_multiwidget": 1
+    },
+    "sportspress-player-list": {
+      "2": {
+        "title": "Player List",
+        "id": 1008,
+        "caption": "",
+        "number": 5,
+        "columns": [
+          "number",
+          "min",
+          "fgm",
+          "fga",
+          "ftm",
+          "fta",
+          "threepm",
+          "threepa",
+          "ast",
+          "to",
+          "blk",
+          "pts",
+          "height",
+          "weight",
+          "g",
+          "gs",
+          "mpg",
+          "fgpercent",
+          "ftpercent",
+          "threeppercent",
+          "rpg",
+          "apg",
+          "spg",
+          "bpg",
+          "ppg",
+          "eff"
+        ],
+        "orderby": "default",
+        "order": "",
+        "show_all_players_link": "1",
+        "align": "none"
+      },
+      "_multiwidget": 1
+    },
+    "woocommerce_products": {
+      "3": {
+        "title": "Products",
+        "number": 5,
+        "show": "",
+        "orderby": "date",
+        "order": "desc",
+        "hide_free": 0,
+        "show_hidden": 0
+      },
+      "_multiwidget": 1
+    },
+    "woocommerce_price_filter": {
+      "3": {
+        "title": "Filter by price"
+      },
+      "_multiwidget": 1
+    },
+    "woocommerce_product_categories": {
+      "3": {
+        "title": "Product categories",
+        "orderby": "name",
+        "dropdown": 0,
+        "count": 0,
+        "hierarchical": 1,
+        "show_children_only": 0,
+        "hide_empty": 0,
+        "max_depth": ""
+      },
+      "_multiwidget": 1
+    }
+  }
+]

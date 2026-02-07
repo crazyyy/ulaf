@@ -1,0 +1,81 @@
+.stm-products-carousel.style_3 .stm-products-carousel__title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.stm-products-carousel.style_3 .stm-products-carousel__product-image {
+  margin-bottom: 15px;
+}
+.stm-products-carousel.style_3 .stm-products-carousel__product-content {
+  margin-bottom: 10px;
+  height: 65px;
+}
+.stm-products-carousel.style_3 .stm-products-carousel__product-name {
+  text-transform: uppercase;
+  margin-bottom: 3px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  max-height: 42px;
+  overflow: hidden;
+  display: block;
+  color: #333333;
+}
+.stm-products-carousel.style_3 .stm-products-carousel__product-category {
+  color: #aaa;
+}
+.stm-products-carousel.style_3 .stm-products-carousel__product-footer {
+  display: -ms-flexbox;
+  display: flex;
+}
+.stm-products-carousel.style_3 .stm-products-carousel__product-price {
+  -ms-flex: 1;
+      flex: 1;
+  height: 35px;
+  margin-right: 7px;
+  background-color: #eeeeee;
+  padding: 8px 10px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+.stm-products-carousel.style_3 .stm-products-carousel__product-price del {
+  font-size: 14px;
+  margin-left: 8px;
+  font-weight: 400;
+}
+.stm-products-carousel.style_3 .stm-products-carousel__product-price ins {
+  text-decoration: none;
+  font-weight: 700;
+}
+.stm-products-carousel.style_3 .stm-products-carousel__product-actions a {
+  min-width: 124px;
+  height: 35px;
+  line-height: 35px;
+  color: #fff !important;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+.stm-products-carousel.style_3 .stm-products-carousel__product-actions a.added {
+  display: none;
+}
+.stm-products-carousel.style_3 .owl-controls .owl-dots {
+  margin-top: 40px;
+  text-align: center;
+}
+.stm-products-carousel.style_3 .owl-controls .owl-dots .owl-dot {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 0 5px;
+}

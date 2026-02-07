@@ -1,0 +1,10 @@
+<wpml-config>
+    <custom-types>
+        <custom-type translate="1">donation</custom-type>
+        <custom-type translate="1">vc_sidebar</custom-type>
+        <custom-type translate="1">testimonial</custom-type>
+        <custom-type translate="1">media_gallery</custom-type>
+        <custom-type translate="1">donor</custom-type>
+        <custom-type translate="1">product</custom-type>
+    </custom-types>
+</wpml-config>

@@ -1,0 +1,90 @@
+/*American football*/
+/*Soccer*/
+/*Baseball*/
+/*magazine*/
+/*Soccer News*/
+/*Basketball Two*/
+/*Hockey*/
+.stm-popular-videos--style_2 .stm-popular-videos__heading {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.stm-popular-videos--style_2 .stm-popular-videos__list {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -15px;
+}
+.stm-popular-videos--style_2 .stm-popular-videos__item {
+  margin: 0 15px;
+  -ms-flex: 1 1 33%;
+      flex: 1 1 33%;
+  color: #fff;
+}
+.stm-popular-videos--style_2 .stm-popular-videos__item:hover .stm-popular-videos__poster img {
+  transform: scale(1.1);
+}
+.stm-popular-videos--style_2 .stm-popular-videos__item:hover .stm-popular-videos__title {
+  color: #ff573b;
+}
+.stm-popular-videos--style_2 .stm-popular-videos__poster {
+  display: block;
+  position: relative;
+  height: 240px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.stm-popular-videos--style_2 .stm-popular-videos__poster img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transition: 0.3s;
+}
+.stm-popular-videos--style_2 .stm-popular-videos__play {
+  position: absolute;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+.stm-popular-videos--style_2 .stm-popular-videos__play:before {
+  display: block;
+  content: "";
+  border-width: 12px 0 12px 20px;
+  border-style: solid;
+  border-color: transparent #ff573b;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: 3px;
+}
+.stm-popular-videos--style_2 .stm-popular-videos__title {
+  font-size: 18px;
+  line-height: 26px;
+  color: #fff;
+  transition: 0.3s;
+  font-weight: 400;
+}
+@media (max-width: 1023px) {
+  .stm-popular-videos--style_2 .stm-popular-videos__list {
+    display: block;
+    margin: 0;
+  }
+  .stm-popular-videos--style_2 .stm-popular-videos__item {
+    margin: 0 auto 30px;
+    max-width: 400px;
+  }
+}

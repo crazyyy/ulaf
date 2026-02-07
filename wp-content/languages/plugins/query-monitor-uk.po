@@ -7,7 +7,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
-"X-Generator: GlotPress/4.0.1\n"
+"X-Generator: GlotPress/4.0.3\n"
 "Language: uk_UA\n"
 "Project-Id-Version: Plugins - Query Monitor &#8211; The developer tools panel for WordPress - Stable (latest release)\n"
 
@@ -37,12 +37,12 @@ msgstr "Підтвердження пройшло успішно"
 msgid "Assertion passed: %s"
 msgstr "Підтвердження пройшло: %s"
 
-#: classes/Collector.php:122 output/html/environment.php:240
+#: classes/Collector.php:124 output/html/environment.php:240
 msgid "empty string"
 msgstr "пустий рядок"
 
 #. translators: %s: Drop-in plugin file name
-#: classes/Util.php:332
+#: classes/Component_Dropin.php:12
 msgid "Drop-in: %s"
 msgstr "Заїзд: %s"
 
@@ -85,80 +85,80 @@ msgid "Doing it Wrong"
 msgstr "Робимо це неправильно"
 
 #. translators: %s: Name of WordPress filter
-#: dispatchers/Html.php:609
+#: dispatchers/Html.php:608
 msgid "The file link format for your editor is set by the %s filter."
 msgstr "Формат посилання на файл для вашого редактора задається фільтром %s."
 
 #. translators: 1: WordPress hook name, 2: Version number, 3: Optional message
 #. regarding the change.
-#: collectors/doing_it_wrong.php:397
+#: classes/Deprecated_Hook_Run.php:38
 msgid "Hook %1$s is deprecated since version %2$s with no alternative available. %3$s"
 msgstr "Хук %1$s застарів з версії %2$s і не має альтернативи. %3$s"
 
 #. translators: 1: WordPress hook name, 2: Version number, 3: Alternative hook
 #. name, 4: Optional message regarding the change.
-#: collectors/doing_it_wrong.php:388
+#: classes/Deprecated_Hook_Run.php:28
 msgid "Hook %1$s is deprecated since version %2$s! Use %3$s instead. %4$s"
 msgstr "Хук %1$s застарів з версії %2$s! Використовуйте %3$s замість. %4$s"
 
 #. translators: 1: PHP function name, 2: Version number.
-#: collectors/doing_it_wrong.php:349
+#: classes/Deprecated_Argument_Run.php:35
 msgid "Function %1$s was called with an argument that is deprecated since version %2$s with no alternative available."
 msgstr "Функцію %1$s було викликано з аргументом, який є застарілим з версії %2$s і не має альтернативи."
 
 #. translators: 1: PHP function name, 2: Version number, 3: Optional message
 #. regarding the change.
-#: collectors/doing_it_wrong.php:341
+#: classes/Deprecated_Argument_Run.php:26
 msgid "Function %1$s was called with an argument that is deprecated since version %2$s! %3$s"
 msgstr "Функція %1$s була викликана з аргументом, який є застарілим з версії %2$s! %3$s"
 
 #. translators: 1: PHP file name, 2: Version number, 3: Optional message
 #. regarding the change.
-#: collectors/doing_it_wrong.php:302
+#: classes/Deprecated_File_Included.php:38
 msgid "File %1$s is deprecated since version %2$s with no alternative available. %3$s"
 msgstr "Файл %1$s є застарілим з версії %2$s і не має альтернативи. %3$s"
 
 #. translators: 1: PHP file name, 2: Version number, 3: Alternative file name,
 #. 4: Optional message regarding the change.
-#: collectors/doing_it_wrong.php:293
+#: classes/Deprecated_File_Included.php:28
 msgid "File %1$s is deprecated since version %2$s! Use %3$s instead. %4$s"
 msgstr "Файл %1$s застарів з версії %2$s! Використовуйте %3$s замість. %4$s"
 
 #. translators: 1: PHP class name, 2: PHP parent class name, 3: Version number,
 #. 4: __construct() method.
-#: collectors/doing_it_wrong.php:252
+#: classes/Deprecated_Constructor_Run.php:26
 msgid "The called constructor method for %1$s class in %2$s is deprecated since version %3$s! Use %4$s instead."
 msgstr "Метод конструктора, який був викликаний для класу %1$s в %2$s, є застарілим починаючи з версії %3$s! Використовуйте замість цього %4$s."
 
 #. translators: 1: PHP class name, 2: Version number, 3: __construct() method.
-#: collectors/doing_it_wrong.php:243
+#: classes/Deprecated_Constructor_Run.php:36
 msgid "The called constructor method for %1$s class is deprecated since version %2$s! Use %3$s instead."
 msgstr "Викликаний метод конструктора для класу %1$s є застарілим починаючи з версії %2$s! Замість цього використовуйте %3$s."
 
 #. translators: 1: PHP function name, 2: Version number, 3: Alternative
 #. function name.
-#: collectors/doing_it_wrong.php:205
+#: classes/Deprecated_Function_Run.php:26
 msgid "Function %1$s is deprecated since version %2$s! Use %3$s instead."
 msgstr "Функція %1$s застаріла з версії %2$s! Використовуйте %3$s замість."
 
 #. translators: 1: PHP function name, 2: Version number.
-#: collectors/doing_it_wrong.php:197
+#: classes/Deprecated_Function_Run.php:35
 msgid "Function %1$s is deprecated since version %2$s with no alternative available."
 msgstr "Функція %1$s є застарілою з версії %2$s і не має альтернативи."
 
 #. translators: Developer debugging message. 1: PHP function name, 2:
 #. Explanatory message, 3: WordPress version number.
-#: collectors/doing_it_wrong.php:166
+#: classes/Doing_It_Wrong_Run.php:33
 msgid "Function %1$s was called incorrectly. %2$s %3$s"
 msgstr "Функцію %1$s було викликано неправильно. %2$s %3$s"
 
 #. translators: %s: Version number.
-#: collectors/doing_it_wrong.php:157
+#: classes/Doing_It_Wrong_Run.php:26
 msgid "(This message was added in version %s.)"
 msgstr "(Це повідомлення додане у версії %s.)"
 
 #. translators: %s: Number of PHP errors
-#: output/html/php_errors.php:185
+#: output/html/php_errors.php:201
 msgctxt "PHP error count"
 msgid "Total: %s"
 msgid_plural "Total: %s"
@@ -192,7 +192,7 @@ msgid "No data logged."
 msgstr "Немає зареєстрованих даних."
 
 #. translators: A closure is an anonymous PHP function
-#: classes/Util.php:401
+#: classes/Util.php:421
 msgid "Unknown closure"
 msgstr "Невідоме замикання"
 
@@ -201,26 +201,26 @@ msgstr "Невідоме замикання"
 msgid "%s Language"
 msgstr "%s Мова"
 
-#: dispatchers/Html.php:625
+#: dispatchers/Html.php:624
 msgctxt "colour scheme"
 msgid "Dark"
 msgstr "Темна"
 
-#: dispatchers/Html.php:624
+#: dispatchers/Html.php:623
 msgctxt "colour scheme"
 msgid "Light"
 msgstr "Свiтла"
 
-#: dispatchers/Html.php:623
+#: dispatchers/Html.php:622
 msgctxt "colour scheme"
 msgid "Auto"
 msgstr "Авто"
 
-#: dispatchers/Html.php:620
+#: dispatchers/Html.php:619
 msgid "Your browser color scheme is respected by default. You can override it here."
 msgstr "Колірна схема вашого браузера за замовчуванням поважається. Ви можете перевизначити її тут."
 
-#: dispatchers/Html.php:618
+#: dispatchers/Html.php:617
 msgid "Appearance"
 msgstr "Вигляд"
 
@@ -266,7 +266,7 @@ msgstr "%1$s байт (%2$s МБ)"
 
 #. translators: %s: A time in seconds with a decimal fraction. No space between
 #. value and unit symbol.
-#: output/html/db_queries.php:487 output/html/overview.php:105
+#: output/html/db_queries.php:489 output/html/overview.php:105
 #: output/html/overview.php:190 output/html/overview.php:238
 #: output/html/overview.php:387
 msgctxt "Time in seconds"
@@ -284,7 +284,7 @@ msgstr "Архітектура"
 
 #. translators: %s: Number of database queries. Note the space between value
 #. and unit symbol.
-#: output/html/db_queries.php:492 output/html/db_queries.php:506
+#: output/html/db_queries.php:494 output/html/db_queries.php:508
 msgid "%s Q"
 msgid_plural "%s Q"
 msgstr[0] "%s Q"
@@ -303,20 +303,20 @@ msgstr "Немає призначених файлів JavaScript."
 msgid "Non-WordPress Core"
 msgstr "Не ядро WordPress"
 
-#: dispatchers/Html.php:665
+#: dispatchers/Html.php:664
 msgid "Allow the wp-content/db.php file symlink to be put into place during activation. Set to false to prevent the symlink creation."
 msgstr "Дозволити створення символьного посилання на файл wp-content/db.php під час активації. Встановіть значення false, щоб запобігти створенню символьного посилання."
 
 #. translators: %s: Number of hooks
-#: dispatchers/Html.php:389
+#: dispatchers/Html.php:388
 msgid "Hooks in Use (%s)"
 msgstr "Хуки, використані (%s)"
 
-#: dispatchers/Html.php:294
+#: dispatchers/Html.php:293
 msgid "Data collection ceased"
 msgstr "Збір даних припинено"
 
-#: classes/Util.php:249 output/Html.php:319 output/html/hooks.php:95
+#: classes/Component_Core.php:10 output/Html.php:319 output/html/hooks.php:96
 msgid "WordPress Core"
 msgstr "Ядро WordPress"
 
@@ -335,7 +335,7 @@ msgstr "Контекст"
 msgid "%1$s%% of %2$s MB server limit"
 msgstr "%1$s%% of %2$s kB сервер ліміт"
 
-#: classes/QueryMonitor.php:81
+#: classes/QueryMonitor.php:84
 msgctxt "verb"
 msgid "Sponsor"
 msgstr "Спонсор"
@@ -356,7 +356,7 @@ msgid "Extended query information such as the component and affected rows is not
 msgstr "Додаткова інформація про запит, така як компонент та затронуті рядки, недоступна. Існує конфліктуючий файл %s."
 
 #. translators: %s: Dependency name
-#: classes/Util.php:185
+#: classes/Component_Altis_Vendor.php:12
 msgid "Dependency: %s"
 msgstr "Залежність: %s"
 
@@ -369,16 +369,16 @@ msgstr "Немає зареєстрованих даних. <a href=\"%s\">Ді�
 msgid "Environment Type"
 msgstr "Тип оточення"
 
-#: dispatchers/Html.php:653
+#: dispatchers/Html.php:652
 msgid "Hide Query Monitor itself from various panels. Set to false if you want to see how Query Monitor hooks into WordPress."
 msgstr "Сховати сам Query Monitor з різних панелей. Встановіть значення false, якщо ви хочете побачити, як Query Monitor вступає взаємодію з WordPress."
 
-#: dispatchers/Html.php:265
+#: dispatchers/Html.php:264
 msgid "PHP Fatal Error"
 msgstr "Фатальна помилка PHP"
 
 #. translators: 1: CLI command to run, 2: plugin directory name
-#: dispatchers/Html.php:212
+#: dispatchers/Html.php:211
 msgid "Asset files for Query Monitor need to be built. Run %1$s from the %2$s directory."
 msgstr "Файли активів для Query Monitor потрібно побудувати. Виконайте %1$s з каталогу %2$s."
 
@@ -387,24 +387,24 @@ msgstr "Файли активів для Query Monitor потрібно побу
 msgid "This message was triggered by %s."
 msgstr "Це повідомлення було викликано %s."
 
-#: dispatchers/Html.php:605
+#: dispatchers/Html.php:604
 msgid "Saved! Reload to apply changes."
 msgstr "Збережено! Перезавантажте для застосування змін."
 
-#: dispatchers/Html.php:601
+#: dispatchers/Html.php:600
 msgid "Set editor cookie"
 msgstr "Встановити cookie редактора"
 
-#: dispatchers/Html.php:577
+#: dispatchers/Html.php:576
 msgid "You can set your editor here, so that when you click on stack trace links the file opens in your editor."
 msgstr "Ви можете встановити свого редактора тут, щоб при натисканні на посилання стеку відкривався файл у вашому редакторі."
 
-#: dispatchers/Html.php:574
+#: dispatchers/Html.php:573
 msgid "Editor"
 msgstr "Редактор"
 
 #. translators: %s: Number of logs that are available
-#: output/html/logger.php:218
+#: output/html/logger.php:219
 msgid "Logs (%s)"
 msgstr "Журнали (%s)"
 
@@ -457,7 +457,7 @@ msgid "Started"
 msgstr "Розпочато"
 
 #. translators: %s: Number of database queries
-#: output/html/db_queries.php:288
+#: output/html/db_queries.php:290
 msgctxt "Query count"
 msgid "Total: %s"
 msgid_plural "Total: %s"
@@ -474,7 +474,7 @@ msgid "Request Data"
 msgstr "Запит даних"
 
 #. translators: %s: Default value for a PHP constant
-#: dispatchers/Html.php:708
+#: dispatchers/Html.php:707
 msgid "Default value: %s"
 msgstr "Значення за замовчуванням: %s"
 
@@ -521,7 +521,7 @@ msgstr "Колбек"
 msgid "%s: Related Hooks with Filters or Actions Attached"
 msgstr "%s: Споріднені хуки з прикріпленими фільтрами або діями"
 
-#: output/Html.php:147 output/html/hooks.php:62 output/html/hooks.php:159
+#: output/Html.php:147 output/html/hooks.php:62 output/html/hooks.php:160
 msgid "Filter"
 msgstr "Фільтр"
 
@@ -559,7 +559,7 @@ msgstr "Час рендерингу"
 msgid "Twig Template Files"
 msgstr "Файли шаблонів Twig"
 
-#: dispatchers/Html.php:492
+#: dispatchers/Html.php:491
 msgid "Toggle panel position"
 msgstr "Перемкнути позицію панелі"
 
@@ -596,7 +596,7 @@ msgstr "Обмеження пам'яті відсутнє. Директива к
 msgid "No execution time limit. The %1$s PHP configuration directive is set to %2$s."
 msgstr "Обмеження часу виконання відсутнє. Директива конфігурації PHP %1$s встановлена на %2$s."
 
-#: classes/Collector_Assets.php:469
+#: classes/Collector_Assets.php:467
 msgid "Insecure content"
 msgstr "Ненадійний зміст"
 
@@ -644,7 +644,7 @@ msgstr[2] "Включено %s разів"
 msgid "Blocks"
 msgstr "Блоки"
 
-#: classes/QueryMonitor.php:214
+#: classes/QueryMonitor.php:217
 msgctxt "Human readable label for the user capability required to view Query Monitor."
 msgid "View Query Monitor"
 msgstr "Переглянути Query Monitor"
@@ -657,16 +657,16 @@ msgstr "Тривалі дані не встановлені."
 msgid "PHP errors were triggered during an Ajax request. See your browser developer console for details."
 msgstr "Під час запиту Ajax спричинено помилки PHP. Перегляньте консоль розробника вашого браузера для деталей."
 
-#: output/html/logger.php:220 output/raw/logger.php:21
+#: output/html/logger.php:221 output/raw/logger.php:21
 msgid "Logs"
 msgstr "Журнали"
 
-#: output/html/http.php:342
+#: output/html/http.php:367
 msgid "No HTTP API calls."
 msgstr "Жодних викликів HTTP API."
 
 #. translators: %s: Number of HTTP API requests
-#: output/html/http.php:330
+#: output/html/http.php:355
 msgctxt "HTTP API calls"
 msgid "Total: %s"
 msgid_plural "Total: %s"
@@ -687,7 +687,7 @@ msgid "Server Version"
 msgstr "Версія СУБД"
 
 #. translators: %s: Number of user capability checks
-#: output/html/caps.php:197
+#: output/html/caps.php:198
 msgctxt "User capability checks"
 msgid "Total: %s"
 msgid_plural "Total: %s"
@@ -716,56 +716,56 @@ msgid "Sequence"
 msgstr "Послідовність"
 
 #. translators: %s: Current value for a PHP constant
-#: dispatchers/Html.php:722
+#: dispatchers/Html.php:721
 msgid "Current value: %s"
 msgstr "Поточне значення: %s"
 
 #. translators: %s: Name of the config file
-#: dispatchers/Html.php:688
+#: dispatchers/Html.php:687
 msgid "The following PHP constants can be defined in your %s file in order to control the behavior of Query Monitor:"
 msgstr "Наступні константи PHP можуть бути визначені у вашому файлі %s для контролю поведінки Query Monitor:"
 
-#: dispatchers/Html.php:684
+#: dispatchers/Html.php:683
 msgid "Configuration"
 msgstr "Конфігурація"
 
-#: dispatchers/Html.php:661
+#: dispatchers/Html.php:660
 msgid "In the Hooks & Actions panel, show every hook that has an action or filter attached (instead of every action hook that fired during the request)."
 msgstr "У панелі Хуки та Дії показати кожен хук, до якого приєднано дію або фільтр (замість кожного дійового хука, який запустився під час запиту)."
 
-#: dispatchers/Html.php:657
+#: dispatchers/Html.php:656
 msgid "Don't specify jQuery as a dependency of Query Monitor. If jQuery isn't enqueued then Query Monitor will still operate, but with some reduced functionality."
 msgstr "Не вказувати jQuery як залежність від Query Monitor. Якщо jQuery не є призначеною, то Query Monitor все одно буде працювати, але з деякою обмеженою функціональністю."
 
-#: dispatchers/Html.php:649
+#: dispatchers/Html.php:648
 msgid "Hide WordPress core on the Hooks & Actions panel."
 msgstr "Сховати ядро WordPress на панелі Хуки та Дії."
 
-#: dispatchers/Html.php:645
+#: dispatchers/Html.php:644
 msgid "Enable the Capability Checks panel."
 msgstr "Увімкнути панель Перевірок повноважень."
 
-#: dispatchers/Html.php:641
+#: dispatchers/Html.php:640
 msgid "Disable the handling of PHP errors."
 msgstr "Вимкнути обробку помилок PHP."
 
-#: dispatchers/Html.php:637
+#: dispatchers/Html.php:636
 msgid "Disable Query Monitor entirely."
 msgstr "Цілком вимкнути Query Monitor."
 
-#: dispatchers/Html.php:633
+#: dispatchers/Html.php:632
 msgid "If an individual database query takes longer than this time to execute, it's considered \"slow\" and triggers a warning."
 msgstr "Якщо окремий запит до бази даних виконується довше, ніж цей час, він вважається \"повільним\" і викликає попередження."
 
-#: dispatchers/Html.php:568
+#: dispatchers/Html.php:567
 msgid "Authentication cookie is set"
 msgstr "Куки аутентифікації встановлені"
 
-#: dispatchers/Html.php:561
+#: dispatchers/Html.php:560
 msgid "You can set an authentication cookie which allows you to view Query Monitor output when you&rsquo;re not logged in, or when you&rsquo;re logged in as a different user."
 msgstr "Ви можете встановити куки аутентифікації, які дозволять вам переглядати вивід Query Monitor, коли ви не увійшли в систему, або коли ви увійшли як інший користувач."
 
-#: dispatchers/Html.php:499
+#: dispatchers/Html.php:498
 msgid "Query Monitor Menu"
 msgstr "Меню Query Monitor"
 
@@ -805,18 +805,18 @@ msgid "Current User"
 msgstr "Поточний користувач"
 
 #. translators: used between list items, there is a space after the comma
-#: output/html/php_errors.php:280
+#: output/html/php_errors.php:296
 msgid ", "
 msgstr ", "
 
 #. translators: %s: List of PHP error types
 #. translators: %s: Number of errors
-#: output/html/php_errors.php:277 output/html/php_errors.php:327
+#: output/html/php_errors.php:293 output/html/php_errors.php:343
 msgid "PHP Errors (%s)"
 msgstr "PHP помилки (%s)"
 
 #. translators: %s: Number of PHP warnings
-#: output/html/php_errors.php:230
+#: output/html/php_errors.php:246
 msgctxt "PHP error level"
 msgid "%s Warning"
 msgid_plural "%s Warnings"
@@ -825,7 +825,7 @@ msgstr[1] "%s застереження"
 msgstr[2] "%s застережень"
 
 #. translators: %s: Number of PHP notices
-#: output/html/php_errors.php:228
+#: output/html/php_errors.php:244
 msgctxt "PHP error level"
 msgid "%s Notice"
 msgid_plural "%s Notices"
@@ -834,7 +834,7 @@ msgstr[1] "%s повідомлення"
 msgstr[2] "%s повідомлень"
 
 #. translators: %s: Number of strict PHP errors
-#: output/html/php_errors.php:226
+#: output/html/php_errors.php:242
 msgctxt "PHP error level"
 msgid "%s Strict"
 msgid_plural "%s Stricts"
@@ -843,7 +843,7 @@ msgstr[1] "%s Строгі"
 msgstr[2] "%s Строгих"
 
 #. translators: %s: Number of deprecated PHP errors
-#: output/html/php_errors.php:224
+#: output/html/php_errors.php:240
 msgctxt "PHP error level"
 msgid "%s Deprecated"
 msgid_plural "%s Deprecated"
@@ -852,11 +852,11 @@ msgstr[1] "%s  Застаріли"
 msgstr[2] "%s  Застаріли"
 
 #: output/html/doing_it_wrong.php:69 output/html/logger.php:85
-#: output/html/php_errors.php:64
+#: output/html/php_errors.php:79
 msgid "Message"
 msgstr "Повідомлення"
 
-#: output/html/logger.php:83 output/html/php_errors.php:62
+#: output/html/logger.php:83 output/html/php_errors.php:77
 msgid "Level"
 msgstr "Рівень"
 
@@ -868,27 +868,27 @@ msgstr "Проблема з JavaScript на сторінці не дозволя
 msgid "Size"
 msgstr "Розмір"
 
-#: output/html/environment.php:276 output/html/http.php:252
+#: output/html/environment.php:276 output/html/http.php:277
 msgid "IP Address"
 msgstr "IP адреса"
 
-#: output/html/http.php:251
+#: output/html/http.php:276
 msgid "Response Content Type"
 msgstr "Тип вмісту відповіді"
 
-#: output/html/http.php:78
+#: output/html/http.php:81
 msgid "Response Size"
 msgstr "Розмір відповіді"
 
-#: output/html/http.php:237
+#: output/html/http.php:262
 msgid "Transfer Start Time (TTFB)"
 msgstr "Час початку передачі (TTFB)"
 
-#: output/html/http.php:236
+#: output/html/http.php:261
 msgid "Connection Time"
 msgstr "Час з'єднання"
 
-#: output/html/http.php:235
+#: output/html/http.php:260
 msgid "DNS Resolution Time"
 msgstr "Час розбору DNS"
 
@@ -951,12 +951,12 @@ msgstr "Клас:"
 msgid "List Table"
 msgstr "Таблиця списку"
 
-#: dispatchers/Html.php:494
+#: dispatchers/Html.php:493
 msgid "Close Panel"
 msgstr "Закрити панель"
 
-#: classes/QueryMonitor.php:60 dispatchers/Html.php:479
-#: dispatchers/Html.php:490 dispatchers/Html.php:555
+#: classes/QueryMonitor.php:60 dispatchers/Html.php:478
+#: dispatchers/Html.php:489 dispatchers/Html.php:554
 msgid "Settings"
 msgstr "Налаштування"
 
@@ -973,39 +973,34 @@ msgid "Timing"
 msgstr "Вибір часу"
 
 #. translators: %d: Multisite network ID
-#: collectors/request.php:178
+#: collectors/request.php:179
 msgid "Current Network: #%d"
 msgstr "Поточна мережа: #%d"
 
-#: collectors/php_errors.php:381
+#: output/html/php_errors.php:63
 msgctxt "Silenced PHP error level"
 msgid "Deprecated (Silenced)"
 msgstr "Застарілі (Приглушені)"
 
-#: collectors/php_errors.php:380
+#: output/html/php_errors.php:62
 msgctxt "Silenced PHP error level"
 msgid "Strict (Silenced)"
 msgstr "Строгі (Приглушені)"
 
-#: collectors/php_errors.php:379
+#: output/html/php_errors.php:61
 msgctxt "Silenced PHP error level"
 msgid "Notice (Silenced)"
 msgstr "Повідомлення (Приглушені)"
 
-#: collectors/php_errors.php:378
+#: output/html/php_errors.php:60
 msgctxt "Silenced PHP error level"
 msgid "Warning (Silenced)"
 msgstr "Попередження (Приглушені)"
 
 #. translators: A non-blocking HTTP API request
-#: output/html/http.php:57 output/html/http.php:99
+#: output/html/http.php:57 output/html/http.php:119
 msgid "Non-blocking"
 msgstr "Неблокуючий"
-
-#. translators: %s: Plugin name
-#: classes/Util.php:220
-msgid "VIP Client MU Plugin: %s"
-msgstr "Плагін клієнта VIP MU: %s"
 
 #. translators: %s: Timing lap number
 #: classes/Timer.php:91
@@ -1013,13 +1008,13 @@ msgid "Lap %s"
 msgstr "Коло %s"
 
 #. translators: No user
-#: collectors/request.php:155
+#: collectors/request.php:156
 msgctxt "user"
 msgid "None"
 msgstr "Жоден"
 
 #. translators: %d: User ID
-#: collectors/request.php:150
+#: collectors/request.php:151
 msgid "Current User: #%d"
 msgstr "Поточний користувач: #%d"
 
@@ -1035,7 +1030,7 @@ msgstr "Повідомлення помилки"
 msgid "Error Code"
 msgstr "Код помилки"
 
-#: output/html/caps.php:208
+#: output/html/caps.php:209
 msgid "No capability checks were recorded."
 msgstr "Перевірки прав не були записані."
 
@@ -1084,7 +1079,7 @@ msgid "View Main Query"
 msgstr "Переглянути основний запит"
 
 #. translators: %s: Number of calls to the HTTP API
-#: output/html/http.php:381
+#: output/html/http.php:406
 msgid "HTTP API Calls (%s)"
 msgstr "Виклики HTTP API (%s)"
 
@@ -1092,7 +1087,7 @@ msgstr "Виклики HTTP API (%s)"
 msgid "Status"
 msgstr "Статус"
 
-#: output/html/http.php:31 output/html/http.php:379
+#: output/html/http.php:31 output/html/http.php:404
 #: output/html/overview.php:229 output/raw/http.php:21
 msgid "HTTP API Calls"
 msgstr "Виклики HTTP API"
@@ -1109,7 +1104,7 @@ msgstr "Звіт про помилки"
 msgid "Hooks & Actions"
 msgstr "Хуки та Дії"
 
-#: output/html/db_queries.php:237 output/html/db_queries.php:421
+#: output/html/db_queries.php:237 output/html/db_queries.php:423
 msgid "Main Query"
 msgstr "Головний запит"
 
@@ -1123,22 +1118,22 @@ msgstr "%1$s%% частка попадань (%2$s попадань, %3$s про
 msgid "Template Hierarchy"
 msgstr "Ієрархія шаблонів"
 
-#: collectors/php_errors.php:375
+#: output/html/php_errors.php:57
 msgctxt "Suppressed PHP error level"
 msgid "Deprecated (Suppressed)"
 msgstr "Застарілі (Приглушені)"
 
-#: collectors/php_errors.php:374
+#: output/html/php_errors.php:56
 msgctxt "Suppressed PHP error level"
 msgid "Strict (Suppressed)"
 msgstr "Строгі (Приглушені)"
 
-#: collectors/php_errors.php:373
+#: output/html/php_errors.php:55
 msgctxt "Suppressed PHP error level"
 msgid "Notice (Suppressed)"
 msgstr "Повідомлення (Приглушені)"
 
-#: collectors/php_errors.php:372
+#: output/html/php_errors.php:54
 msgctxt "Suppressed PHP error level"
 msgid "Warning (Suppressed)"
 msgstr "Попередження (Приглушені)"
@@ -1168,42 +1163,42 @@ msgid "Property"
 msgstr "Власність"
 
 #. translators: 1: Post type name, 2: Post ID
-#: collectors/request.php:250
+#: collectors/request.php:251
 msgid "Single %1$s: #%2$d"
 msgstr "Одиничний %1$s: #%2$d"
 
 #. translators: %d: Multisite site ID
-#: collectors/request.php:167
+#: collectors/request.php:168
 msgid "Current Site: #%d"
 msgstr "Поточний сайт: #%d"
 
-#: collectors/php_errors.php:369
+#: output/html/php_errors.php:51
 msgctxt "PHP error level"
 msgid "Deprecated"
 msgstr "Застаріло"
 
-#: collectors/php_errors.php:368
+#: output/html/php_errors.php:50
 msgctxt "PHP error level"
 msgid "Strict"
 msgstr "Строгі"
 
-#: collectors/php_errors.php:367
+#: output/html/php_errors.php:49
 msgctxt "PHP error level"
 msgid "Notice"
 msgstr "Примітка"
 
-#: collectors/php_errors.php:366
+#: output/html/php_errors.php:48
 msgctxt "PHP error level"
 msgid "Warning"
 msgstr "Увага"
 
-#. translators: %s: Hook name
-#: collectors/http.php:292
+#. translators: An HTTP API request was not executed. %s: Hook name
+#: output/html/http.php:103
 msgid "Request not executed due to a filter on %s"
 msgstr "Запит не був виконаний через фільтр на %s"
 
 #. translators: Undefined PHP constant
-#: classes/Collector.php:120
+#: classes/Collector.php:122
 msgid "undefined"
 msgstr "не визначено"
 
@@ -1217,7 +1212,7 @@ msgstr "Кеш об'єкта"
 
 #. translators: An HTTP API request has disabled certificate verification. 1:
 #. Relevant argument name
-#: output/html/http.php:125
+#: output/html/http.php:145
 msgid "Certificate verification disabled (%s)"
 msgstr "Перевірка сертифіката відключена (%s)"
 
@@ -1251,11 +1246,11 @@ msgid "Duplicate Queries"
 msgstr "Дубльовані запити"
 
 #. translators: %s: Plugin name
-#: classes/Util.php:200
+#: classes/Component_MU_Plugin.php:12 classes/Component_MU_Vendor.php:12
 msgid "MU Plugin: %s"
 msgstr "MU-плагін: %s"
 
-#: output/html/php_errors.php:144
+#: output/html/php_errors.php:160
 msgid "Unknown location"
 msgstr "Невідоме розташування"
 
@@ -1294,10 +1289,6 @@ msgstr "Запити до бази даних не були зареєстров
 msgid "Languages"
 msgstr "Мови"
 
-#: classes/Util.php:431
-msgid "Unable to determine source of lambda function"
-msgstr "Не вдалося визначити джерело лямбда-функції"
-
 #. Author of the plugin
 #: query-monitor.php
 msgid "John Blackbourn"
@@ -1310,7 +1301,7 @@ msgid "https://querymonitor.com/"
 msgstr "https://querymonitor.com/"
 
 #. translators: %s: Symlink file location
-#: classes/QueryMonitor.php:182
+#: classes/QueryMonitor.php:185
 msgid "The symlink at %s is no longer pointing to the correct location. Please remove the symlink, then deactivate and reactivate Query Monitor."
 msgstr "Символьне посилання за адресою %s більше не вказує на правильне місце розташування. Будь ласка, видаліть символьне посилання, потім деактивуйте та знову активуйте Query Monitor."
 
@@ -1364,16 +1355,16 @@ msgstr "Збіг запиту"
 msgid "Matched Rule"
 msgstr "Правило збігу"
 
-#: output/html/php_errors.php:65
+#: output/html/php_errors.php:80
 msgid "Location"
 msgstr "Розташування"
 
-#: output/html/db_dupes.php:51 output/html/php_errors.php:66
+#: output/html/db_dupes.php:51 output/html/php_errors.php:81
 msgid "Count"
 msgstr "Кількість"
 
 #. translators: %s: Memory used in kilobytes
-#: output/html/http.php:205 output/html/http.php:211
+#: output/html/http.php:226 output/html/http.php:232
 #: output/html/languages.php:145 output/html/languages.php:168
 msgid "%s kB"
 msgstr "%s кБ"
@@ -1391,7 +1382,7 @@ msgstr "Час генерації сторінки"
 msgid "%1$s%% of %2$ss limit"
 msgstr "%1$s%% з %2$ss обмеження"
 
-#: output/html/http.php:79
+#: output/html/http.php:82
 msgid "Timeout"
 msgstr "Час вийшов"
 
@@ -1400,17 +1391,17 @@ msgid "Response"
 msgstr "Відгук"
 
 #. translators: %s: Error message text
-#: output/html/block_editor.php:275 output/html/hooks.php:207
+#: output/html/block_editor.php:275 output/html/hooks.php:208
 msgid "Error: %s"
 msgstr "Помилка: %s"
 
 #. translators: %s: Action name
-#: output/html/hooks.php:151
+#: output/html/hooks.php:152
 msgid "Warning: The %s action is extremely resource intensive. Try to avoid using it."
 msgstr "Попередження: дія %s є надзвичайно витратною з точки зору ресурсів. Спробуйте уникати її використання."
 
 #: output/Html.php:143 output/html/hooks.php:55 output/html/hooks.php:61
-#: output/html/hooks.php:159
+#: output/html/hooks.php:160
 msgid "Action"
 msgstr "Дія"
 
@@ -1428,16 +1419,16 @@ msgid "Help"
 msgstr "Допомога"
 
 #. translators: %s: Number of slow database queries
-#: output/html/db_queries.php:577
+#: output/html/db_queries.php:579
 msgid "Slow Queries (%s)"
 msgstr "Повільні запити (%s)"
 
 #. translators: %s: Number of database errors
-#: output/html/db_queries.php:563
+#: output/html/db_queries.php:565
 msgid "Database Errors (%s)"
 msgstr "Помилки бази даних (%s)"
 
-#: output/html/db_queries.php:136 output/html/db_queries.php:263
+#: output/html/db_queries.php:136 output/html/db_queries.php:265
 msgid "Rows"
 msgstr "Рядки"
 
@@ -1455,11 +1446,11 @@ msgstr "Викликаючий"
 msgid "Slow Database Queries (above %ss)"
 msgstr "Повільні запити до бази даних (понад %ss)"
 
-#: output/Html.php:178 output/html/caps.php:95 output/html/db_components.php:51
+#: output/Html.php:178 output/html/caps.php:96 output/html/db_components.php:51
 #: output/html/db_queries.php:96 output/html/db_queries.php:132
-#: output/html/db_queries.php:252 output/html/doing_it_wrong.php:71
-#: output/html/hooks.php:75 output/html/http.php:76 output/html/logger.php:88
-#: output/html/multisite.php:56 output/html/php_errors.php:68
+#: output/html/db_queries.php:254 output/html/doing_it_wrong.php:71
+#: output/html/hooks.php:76 output/html/http.php:79 output/html/logger.php:89
+#: output/html/multisite.php:56 output/html/php_errors.php:84
 #: output/html/timing.php:64 output/html/transients.php:53
 msgid "Component"
 msgstr "Компонент"
@@ -1479,7 +1470,7 @@ msgstr "Помилки бази даних"
 
 #: output/html/db_callers.php:60 output/html/db_components.php:60
 #: output/html/db_dupes.php:52 output/html/db_queries.php:139
-#: output/html/db_queries.php:268 output/html/http.php:80
+#: output/html/db_queries.php:270 output/html/http.php:83
 #: output/html/timing.php:62
 msgid "Time"
 msgstr "Час"
@@ -1529,25 +1520,25 @@ msgctxt "\"All\" option for filters"
 msgid "All"
 msgstr "Всі"
 
-#: dispatchers/Html.php:550
+#: dispatchers/Html.php:549
 msgid "Clear authentication cookie"
 msgstr "Очистити куки аутентифікації"
 
-#: dispatchers/Html.php:551
+#: dispatchers/Html.php:550
 msgid "Set authentication cookie"
 msgstr "Встановити куки аутентифікації"
 
-#: dispatchers/Html.php:559
+#: dispatchers/Html.php:558
 msgid "Authentication"
 msgstr "Автентифікація"
 
-#: dispatchers/Html.php:258
+#: dispatchers/Html.php:257
 msgid "PHP Errors in Ajax Response"
 msgstr "Помилки PHP у відповіді Ajax"
 
 #. Plugin Name of the plugin
-#: query-monitor.php classes/QueryMonitor.php:196 classes/QueryMonitor.php:229
-#: dispatchers/Html.php:147 dispatchers/Html.php:449 dispatchers/Html.php:842
+#: query-monitor.php classes/QueryMonitor.php:199 classes/QueryMonitor.php:232
+#: dispatchers/Html.php:147 dispatchers/Html.php:448 dispatchers/Html.php:841
 #: dispatchers/WP_Die.php:132
 msgid "Query Monitor"
 msgstr "Query Monitor"
@@ -1556,22 +1547,22 @@ msgstr "Query Monitor"
 msgid "Transients"
 msgstr "Тимчасові дані"
 
-#: collectors/request.php:287
+#: collectors/request.php:288
 msgid "Unknown queried object"
 msgstr "Невідомий об'єкт запиту"
 
 #. translators: %s: Post type name
-#: collectors/request.php:280
+#: collectors/request.php:281
 msgid "Post type archive: %s"
 msgstr "Архів типу запису: %s"
 
 #. translators: %s: Taxonomy term name
-#: collectors/request.php:270
+#: collectors/request.php:271
 msgid "Term archive: %s"
 msgstr "Архів терміну: %s"
 
 #. translators: %s: Author name
-#: collectors/request.php:260
+#: collectors/request.php:261
 msgid "Author archive: %s"
 msgstr "Архів автора: %s"
 
@@ -1580,11 +1571,11 @@ msgstr "Архів автора: %s"
 msgid "Request"
 msgstr "Запит"
 
-#: output/html/php_errors.php:32 output/html/php_errors.php:288
+#: output/html/php_errors.php:32 output/html/php_errors.php:304
 msgid "PHP Errors"
 msgstr "PHP помилки"
 
-#: dispatchers/Html.php:456 dispatchers/Html.php:505
+#: dispatchers/Html.php:455 dispatchers/Html.php:504
 #: output/html/overview.php:30
 msgid "Overview"
 msgstr "Огляд"
@@ -1593,7 +1584,8 @@ msgstr "Огляд"
 msgid "Error"
 msgstr "Помилка"
 
-#: collectors/http.php:331
+#. translators: An HTTP API request timed out
+#: output/html/http.php:109
 msgid "Request timed out"
 msgstr "Час вийшов для запиту"
 
@@ -1601,12 +1593,12 @@ msgstr "Час вийшов для запиту"
 msgid "Environment"
 msgstr "Системне оточення"
 
-#: output/html/db_queries.php:38 output/html/db_queries.php:551
+#: output/html/db_queries.php:38 output/html/db_queries.php:553
 #: output/html/overview.php:183 output/raw/db_queries.php:26
 msgid "Database Queries"
 msgstr "Запити до бази даних"
 
-#: output/html/db_components.php:30 output/html/db_components.php:127
+#: output/html/db_components.php:30 output/html/db_components.php:128
 msgid "Queries by Component"
 msgstr "Запити за компонентами"
 
@@ -1623,46 +1615,41 @@ msgstr "Умови"
 msgid "Admin Screen"
 msgstr "Розділ адміністрування"
 
-#. translators: 1: Line number, 2: File name
-#: classes/Util.php:426
-msgid "Anonymous function on line %1$d of %2$s"
-msgstr "Анонімна функція на рядку %1$d файлу %2$s"
-
 #. translators: A closure is an anonymous PHP function. 1: Line number, 2: File
 #. name
-#: classes/Util.php:395
+#: classes/Util.php:414 output/Html.php:508
 msgid "Closure on line %1$d of %2$s"
 msgstr "Замикання на рядку %1$d файлу %2$s"
 
-#: classes/Backtrace.php:242 classes/Util.php:253
-#: collectors/environment.php:281 output/html/db_queries.php:344
-#: output/html/db_queries.php:440 output/html/environment.php:70
+#: classes/Component_Unknown.php:10 output/html/db_queries.php:346
+#: output/html/db_queries.php:442 output/html/environment.php:70
 #: output/html/environment.php:77 output/html/environment.php:85
 #: output/html/environment.php:171 output/html/environment.php:293
-#: output/html/overview.php:143 output/html/php_errors.php:170
+#: output/html/overview.php:143 output/html/php_errors.php:186
 #: output/html/request.php:153 output/html/theme.php:128
 #: output/html/theme.php:254
 msgid "Unknown"
 msgstr "Невідомо"
 
-#: classes/Util.php:236 output/html/theme.php:64
+#: classes/Component_Template.php:10 output/html/theme.php:64
 msgid "Parent Theme"
 msgstr "Батьківська тема"
 
-#: classes/Util.php:231 output/html/theme.php:31 output/html/theme.php:48
+#: classes/Component_Stylesheet.php:14 output/html/theme.php:31
+#: output/html/theme.php:48
 msgid "Theme"
 msgstr "Тема"
 
-#: classes/Util.php:229
+#: classes/Component_Stylesheet.php:11
 msgid "Child Theme"
 msgstr "Дочірня тема"
 
 #. translators: %s: Plugin name
-#: classes/Util.php:223
+#: classes/Component_VIP_Plugin.php:12
 msgid "VIP Plugin: %s"
 msgstr "VIP плагін: %s"
 
 #. translators: %s: Plugin name
-#: classes/Util.php:203
+#: classes/Component_Plugin.php:12
 msgid "Plugin: %s"
 msgstr "Плагін: %s"

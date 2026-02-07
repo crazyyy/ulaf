@@ -1,0 +1,1804 @@
+@charset "UTF-8";
+/*American football*/
+/*Soccer*/
+/*Baseball*/
+/*magazine*/
+/*Soccer News*/
+/*Basketball Two*/
+/*Hockey*/
+.stm-reviews-carousel.review_style_6 .stm-reviews-carousel__carousel .owl-controls .owl-dots .owl-dot.active,
+.stm-trophy-carousel.style_3 .stm-single-trophy .stm-title:before,
+.stm-latest-results-carousel--style_2 .stm-latest-results-carousel__team__result-label,
+.stm-latest-results-carousel--style_2 .owl-controls .owl-dots .owl-dot.active,
+.stm-products-carousel.style_3 .stm-products-carousel__product-actions a,
+.stm-products-carousel.style_3 .owl-controls .owl-dots .owl-dot.active,
+.stm-news-grid.style_5 .tab-content .tab-pane .stm-latest-news-wrapp .stm-latest-news-single .stm-news-data-wrapp .date,
+.stm-players-tabs.style_2 .stm-players-info .player-info__number,
+.stm-media-archive.style_5_3 .stm-media-single-unit .icon,
+.stm-media-tabs.style_5_3 .stm-media-single-unit .icon,
+.stm-media-tabs.style_5_3 .stm-media-single-unit .icon {
+  background-color: #d50029;
+}
+
+.stm-products-carousel.style_3 .stm-products-carousel__product-actions a:hover {
+  background-color: #24293e;
+}
+
+.stm-news-grid.style_5 .tab-content .tab-pane .stm-latest-news-wrapp .stm-latest-news-single .stm-news-data-wrapp .date:after {
+  border-color: #d50029 transparent transparent #d50029;
+}
+
+.stm-news-grid.style_5 #media_tabs_nav ul li.active span,
+.stm-media-tabs.style_5_3 .stm-media-tabs-nav ul li.active a {
+  border-color: #d50029;
+  color: #d50029;
+}
+
+a,
+.stm-next-match-carousel-wrap.style_4 .upcoming-match__vs,
+.stm-reviews-carousel.review_style_6 .stm-reviews-carousel__review-author-position,
+.stm-trophy-carousel.style_3 .stm-single-trophy:hover .stm-title,
+.stm-players-tabs.style_2 .player-carousel__item .player-name span,
+.stm-players-tabs.style_2 .stm-players-info .player-info__stats-title,
+.stm-products-carousel.style_3 .stm-products-carousel__product-name:hover,
+.stm-latest-results-carousel--style_2 .stm-latest-results-carousel__vs {
+  color: #d50029;
+}
+
+.stm-trophy-carousel.style_3 .stm-single-trophy .stm-title {
+  color: #24293e;
+}
+
+.stm-players-tabs.style_2 .player-carousel__item a.active {
+  border-color: #d50029;
+}
+
+h2, .h2 {
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+
+.btn_red .vc_btn3 {
+  height: 50px;
+  min-width: 140px;
+  padding: 16px 20px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  background-color: #d50029 !important;
+  color: #fff !important;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+}
+.btn_red .vc_btn3:hover {
+  background-color: #24293e !important;
+}
+
+.stm-header.stm-header-five .stm-header-inner {
+  background-color: #fff !important;
+  padding: 0 50px 0 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+.stm-header.stm-header-five .stm-header-inner .logo-main {
+  margin: 0;
+}
+.stm-header.stm-header-five .stm-header-inner .logo-main a {
+  background-color: #d50029;
+  display: block;
+  width: 200px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+}
+.stm-header.stm-header-five .stm-header-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.stm-header.stm-header-five .stm-header-mobile .help-bar-shop {
+  margin: 0;
+}
+.stm-header.stm-header-five .stm-header-mobile .help-bar-shop a {
+  color: #fff;
+}
+.stm-header.stm-header-five .stm-main-menu {
+  margin: 0 auto;
+}
+.stm-header.stm-header-five .stm-main-menu .stm-main-menu-unit {
+  background: none;
+}
+.stm-header.stm-header-five .stm-main-menu .stm-main-menu-unit .header-menu {
+  display: -ms-flexbox;
+  display: flex;
+}
+.stm-header.stm-header-five .stm-main-menu .stm-main-menu-unit .header-menu li {
+  margin: 0;
+}
+.stm-header.stm-header-five .stm-main-menu .stm-main-menu-unit .header-menu li.menu-item-has-children {
+  position: relative;
+}
+.stm-header.stm-header-five .stm-main-menu .stm-main-menu-unit .header-menu li.menu-item-has-children:hover > .sub-menu {
+  display: block;
+}
+.stm-header.stm-header-five .stm-main-menu .stm-main-menu-unit .header-menu li:hover > a {
+  color: #d50029;
+}
+.stm-header.stm-header-five .stm-main-menu .stm-main-menu-unit .header-menu > li a {
+  line-height: 32px;
+  font-size: 14px;
+  color: #707070;
+  padding: 0 15px;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+.stm-header.stm-header-five .stm-main-menu .stm-main-menu-unit .header-menu > li a:hover {
+  color: #d50029;
+}
+.stm-header.stm-header-five .stm-main-menu .stm-main-menu-unit .header-menu > li.current-menu-item > a {
+  color: #d50029;
+}
+.stm-header.stm-header-five .stm-main-menu .stm-main-menu-unit .header-menu > li > .sub-menu {
+  top: 100%;
+  left: 0;
+}
+.stm-header.stm-header-five .stm-main-menu .stm-main-menu-unit .header-menu > li > .sub-menu li.menu-item-has-children > a {
+  padding-right: 25px;
+}
+.stm-header.stm-header-five .stm-main-menu .stm-main-menu-unit .header-menu > li > .sub-menu li.menu-item-has-children > a:after {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.stm-header.stm-header-five .stm-main-menu .stm-main-menu-unit .header-menu > li > .sub-menu .sub-menu {
+  left: 100%;
+  top: 0;
+}
+.stm-header.stm-header-five .stm-main-menu .stm-main-menu-unit .header-menu .sub-menu {
+  background-color: #fff;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  display: none;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+}
+.stm-header.stm-header-five .stm-main-menu .stm-main-menu-unit .header-menu .sub-menu li > a:hover a,
+.stm-header.stm-header-five .stm-main-menu .stm-main-menu-unit .header-menu .sub-menu li.current-menu-item a {
+  background-color: transparent;
+}
+.stm-header.stm-header-five .stm-main-menu .stm-main-menu-unit .header-menu .sub-menu li > a:hover > a,
+.stm-header.stm-header-five .stm-main-menu .stm-main-menu-unit .header-menu .sub-menu li.current-menu-item > a {
+  background-color: #d50029;
+  color: #fff;
+}
+.stm-header.stm-header-five .stm-main-menu .stm-main-menu-unit .header-menu .sub-menu a {
+  display: block;
+}
+.stm-header.stm-header-five .stm-main-menu .stm-main-menu-unit:after {
+  content: none;
+}
+.stm-header.stm-header-five .help-bar-shop {
+  margin-right: 50px;
+}
+.stm-header.stm-header-five .help-bar-shop a {
+  color: #707070;
+  padding: 10px;
+}
+.stm-header.stm-header-five .help-bar-shop a .list-label, .stm-header.stm-header-five .help-bar-shop a .list-badge {
+  display: none;
+}
+.stm-header.stm-header-five .stm-top-socials-holder ul {
+  display: -ms-flexbox;
+  display: flex;
+}
+.stm-header.stm-header-five .stm-top-socials-holder ul li {
+  margin: 0 0 0 10px;
+}
+.stm-header.stm-header-five .stm-top-socials-holder ul li a {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid #707070;
+  color: #707070;
+  line-height: 45px;
+  text-align: center;
+  background-color: #fff;
+}
+.stm-header.stm-header-five .stm-top-socials-holder ul li a:hover {
+  background-color: #d50029;
+  border-color: #d50029;
+  color: #fff;
+}
+.stm-header.stm-header-five .stm-top-socials-holder ul li + li {
+  margin-left: 8px;
+}
+
+.stm-header-mobile {
+  padding: 15px;
+}
+.stm-header-mobile .stm-mobile-right {
+  margin-top: 0;
+}
+
+.splash_rugby {
+  padding-bottom: 0 !important;
+}
+.splash_rugby .stm-tweets-wrapp h2 {
+  text-align: left;
+  font-weight: 700;
+}
+.splash_rugby .stm-tweets-wrapp .stm-latest-tweets .latest-tweets ul li {
+  display: block;
+  width: auto;
+  margin: 0;
+  padding-left: 36px;
+}
+.splash_rugby .stm-tweets-wrapp .stm-latest-tweets .latest-tweets ul li + li {
+  margin-top: 30px;
+}
+.splash_rugby .stm-tweets-wrapp .stm-latest-tweets .latest-tweets ul li:before {
+  color: #3aaae3;
+  font-size: 20px;
+  top: 5px;
+}
+.splash_rugby .stm-tweets-wrapp .stm-latest-tweets .latest-tweets ul li .tweet-text {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+.splash_rugby .stm-tweets-wrapp .stm-latest-tweets .latest-tweets ul li .tweet-details {
+  font-size: 13px;
+  line-height: 16px;
+  margin: 0;
+}
+.splash_rugby .stm-tweets-wrapp .stm-latest-tweets .latest-tweets ul li .tweet-details a {
+  color: #aaa;
+  text-decoration: none;
+}
+.splash_rugby .stm-footer {
+  position: static;
+}
+.splash_rugby .stm-footer .footer-widgets-wrapper {
+  padding-top: 50px;
+}
+.splash_rugby .stm-footer .footer-widgets-wrapper .widget_nav_menu {
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+.splash_rugby .stm-footer .footer-widgets-wrapper .widget_nav_menu ul {
+  margin-bottom: 35px;
+}
+.splash_rugby .stm-footer .footer-widgets-wrapper .widget_nav_menu ul li {
+  padding: 0 10px;
+  border: 0;
+}
+.splash_rugby .stm-footer .footer-widgets-wrapper .widget_nav_menu ul li a:hover {
+  color: #d50029 !important;
+}
+.splash_rugby #stm-footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+.splash_rugby aside.widget {
+  margin-bottom: 30px;
+}
+.splash_rugby aside.widget .widget-title, .splash_rugby aside.widget .widget_title {
+  background: #d50029;
+  margin-bottom: 0;
+}
+.splash_rugby aside.widget .widget-title h6, .splash_rugby aside.widget .widget-title h4, .splash_rugby aside.widget .widget-title h3, .splash_rugby aside.widget .widget_title h6, .splash_rugby aside.widget .widget_title h4, .splash_rugby aside.widget .widget_title h3 {
+  font-weight: 400;
+  color: #fff;
+  font-size: 18px !important;
+  padding: 6px 0 4px 14px;
+  line-height: 30px !important;
+  margin-bottom: 0;
+}
+.splash_rugby aside.widget.widget_stm_recent_posts .widget-title, .splash_rugby aside.widget.widget_stm_recent_posts .widget_title {
+  margin-bottom: 20px;
+}
+.splash_rugby aside.widget a {
+  color: #000;
+}
+.splash_rugby aside.widget .stm-post-content .h5 {
+  text-transform: uppercase;
+}
+.splash_rugby aside.widget ul li {
+  padding: 10px 0 10px 40px;
+  border-bottom: solid 1px #d8d8d8;
+  margin-bottom: 0;
+}
+.splash_rugby aside.widget ul li:last-child {
+  border-bottom: 0;
+}
+.splash_rugby aside.widget ul li:before {
+  display: block;
+  overflow: hidden;
+  content: "\e90a";
+  font-family: "stm-splash-icons";
+  color: #d50029;
+  background: 0 0;
+  width: 12px;
+  height: 25px;
+  font-size: 12px;
+  top: 50%;
+  line-height: 25px;
+  left: 20px;
+  transform: translateY(-50%);
+}
+.splash_rugby aside.widget ul li a {
+  font-weight: 400;
+  font-size: 15px;
+  color: #24293e;
+}
+.splash_rugby .stm-sportspress-sidebar {
+  margin-top: 98px;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_sp_event_blocks .stm-single-block-event-list .stm-title-team {
+  min-width: auto;
+  width: calc(50% - 15px) !important;
+}
+.splash_rugby .stm-sportspress-sidebar h4.sp-table-caption {
+  font-size: 16px;
+  line-height: 16px;
+}
+.splash_rugby .stm-sportspress-sidebar .sp-stm-template-event-blocks-publish .stm-single-block-unit {
+  display: -ms-flexbox;
+  display: flex;
+}
+.splash_rugby .stm-sportspress-sidebar .sp-stm-template-event-blocks-future {
+  background: #24293e;
+}
+.splash_rugby .stm-sportspress-sidebar .sp-stm-template-event-blocks-future .stm-single-block-unit {
+  display: -ms-flexbox;
+  display: flex;
+}
+.splash_rugby .stm-sportspress-sidebar .sp-stm-template-event-blocks-future .stm-single-block-unit .stm-team-logo .stm-team-l-h-wrapp .stm-team-helm {
+  display: block;
+}
+.splash_rugby .stm-sportspress-sidebar .sp-stm-template-event-blocks-future .stm-single-block-unit .stm-teams-info .stm-title-team {
+  color: #fff !important;
+}
+.splash_rugby .stm-sportspress-sidebar .sp-stm-template-event-blocks-future .stm-single-block-unit .stm-teams-info .stm-title-team .stm-team-city {
+  display: none !important;
+}
+.splash_rugby .stm-sportspress-sidebar .sp-stm-template-event-blocks-future .stm-single-block-unit .stm-teams-info .stm-team-results-outer .stm-latest-result_result {
+  display: inline-block;
+  overflow: hidden;
+  background: #d50029;
+  margin: 0 auto !important;
+  max-width: 45px;
+  text-align: center;
+  padding: 5px 0;
+}
+.splash_rugby .stm-sportspress-sidebar .sp-stm-template-event-blocks-future .stm-single-block-event-list-top .stm-future-event-list-time {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  line-height: 22px !important;
+  margin: 0;
+}
+.splash_rugby .stm-sportspress-sidebar .sp-stm-template-event-blocks-future .stm-single-block-event-list-top .stm-future-event-list-time .time {
+  margin-left: 10px;
+}
+.splash_rugby .stm-sportspress-sidebar .sp-stm-template-event-blocks-future .stm-single-block-event-list-top .stm-future-event-list-time .time:after {
+  display: none;
+}
+.splash_rugby .stm-sportspress-sidebar .sp-stm-template-event-blocks-future .stm-single-block-event-list-top .stm-future-event-list-time time {
+  display: none;
+}
+.splash_rugby .stm-sportspress-sidebar .stm-single-block-event-list {
+  margin-bottom: 20px;
+}
+.splash_rugby .stm-sportspress-sidebar .stm-single-block-event-list .stm-single-block-event-list-top {
+  background: #43445c;
+  padding: 10px 0 10px 35px;
+}
+.splash_rugby .stm-sportspress-sidebar .stm-single-block-event-list .stm-single-block-event-list-top .time {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  opacity: 1;
+  text-transform: none;
+  margin-right: 5px;
+}
+.splash_rugby .stm-sportspress-sidebar .stm-single-block-event-list .stm-single-block-event-list-top .venue {
+  display: none;
+}
+.splash_rugby .stm-sportspress-sidebar .stm-single-block-event-list .stm-single-block-event-list-top .stm-link-wrapp {
+  display: none;
+}
+.splash_rugby .stm-sportspress-sidebar .stm-single-block-event-list .stm-single-block-unit {
+  position: relative;
+  margin-bottom: 0;
+  padding: 58px 15px 11px;
+}
+.splash_rugby .stm-sportspress-sidebar .stm-single-block-event-list .stm-single-block-unit .stm-team-logo {
+  display: inline-block;
+  width: 25%;
+  padding: 0;
+  position: relative;
+  vertical-align: top;
+  padding: 0;
+}
+.splash_rugby .stm-sportspress-sidebar .stm-single-block-event-list .stm-single-block-unit .stm-team-logo .stm-team-l-h-wrapp .stm-team-helm {
+  display: block;
+}
+.splash_rugby .stm-sportspress-sidebar .stm-single-block-event-list .stm-single-block-unit .stm-team-logo .stm-team-l-h-wrapp .stm-team-helm > img {
+  display: none;
+}
+.splash_rugby .stm-sportspress-sidebar .stm-single-block-event-list .stm-single-block-unit .stm-team-logo .stm-team-l-h-wrapp .stm-team-helm .team-logo img {
+  width: auto;
+  max-height: 50px;
+}
+.splash_rugby .stm-sportspress-sidebar .stm-single-block-event-list .stm-single-block-unit .stm-teams-info {
+  display: inline-block;
+  overflow: hidden;
+  width: 50%;
+  vertical-align: top;
+}
+.splash_rugby .stm-sportspress-sidebar .stm-single-block-event-list .stm-single-block-unit .stm-teams-info .stm-title-team {
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  text-align: left;
+  font-weight: 400;
+  font-size: 20px;
+  color: #24293e;
+  width: 50%;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.splash_rugby .stm-sportspress-sidebar .stm-single-block-event-list .stm-single-block-unit .stm-teams-info .stm-title-team .stm-team-city {
+  display: none;
+}
+.splash_rugby .stm-sportspress-sidebar .stm-single-block-event-list .stm-single-block-unit .stm-teams-info .stm-title-team.opponent {
+  left: inherit;
+  right: 15px;
+  text-align: right;
+}
+.splash_rugby .stm-sportspress-sidebar .stm-single-block-event-list .stm-single-block-unit .stm-teams-info .stm-team-results-outer {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+}
+.splash_rugby .stm-sportspress-sidebar .stm-single-block-event-list .stm-single-block-unit .stm-teams-info .stm-team-results-outer .stm-latest-result_result {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0 8px;
+  color: #fff;
+}
+.splash_rugby .stm-sportspress-sidebar .stm-single-block-event-list .stm-single-block-unit .stm-teams-info .stm-team-results-outer .stm-latest-result_result .stm-latest-result-win-label, .splash_rugby .stm-sportspress-sidebar .stm-single-block-event-list .stm-single-block-unit .stm-teams-info .stm-team-results-outer .stm-latest-result_result .stm-latest-result-lose-label {
+  width: auto;
+  min-width: inherit;
+  padding: 0;
+  font-weight: 300;
+  font-size: 11px;
+  background: transparent;
+}
+.splash_rugby .stm-sportspress-sidebar .stm-single-block-event-list .stm-single-block-unit .stm-teams-info .stm-team-results-outer .stm-latest-result_result .stm-latest-result-win-label {
+  color: #d50029;
+}
+.splash_rugby .stm-sportspress-sidebar .stm-single-block-event-list .stm-single-block-unit .stm-teams-info .stm-team-results-outer .stm-latest-result_result .stm-latest-result-lose-label {
+  color: #999999;
+}
+.splash_rugby .stm-sportspress-sidebar .stm-single-block-event-list .stm-single-block-unit .stm-teams-info .stm-team-results-outer .stm-latest-result_result .stm-win {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  background: #d50029;
+  text-align: center;
+  color: #fff;
+  padding: 6px 0;
+  margin-bottom: 2px;
+}
+.splash_rugby .stm-sportspress-sidebar .stm-single-block-event-list .stm-single-block-unit .stm-teams-info .stm-team-results-outer .stm-latest-result_result .stm-lose {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  background: #999999;
+  text-align: center;
+  color: #fff;
+  padding: 6px 0;
+  margin-bottom: 2px;
+}
+.splash_rugby .stm-sportspress-sidebar .stm-single-block-event-list .stm-single-block-unit .stm-teams-info .stm-team-results-outer .stm-latest-result_result .stm-res-left {
+  display: block;
+  width: 50%;
+  float: left;
+}
+.splash_rugby .stm-sportspress-sidebar .stm-single-block-event-list .stm-single-block-unit .stm-teams-info .stm-team-results-outer .stm-latest-result_result .stm-res-right {
+  display: block;
+  width: 50%;
+  float: right;
+}
+.splash_rugby .stm-sportspress-sidebar .stm-single-block-event-list .stm-single-block-event-list-top {
+  padding: 10px 0;
+  text-align: center !important;
+}
+.splash_rugby .stm-sportspress-sidebar .stm-single-block-event-list .stm-single-block-event-list-top div {
+  display: inline-block;
+  vertical-align: middle !important;
+  float: inherit;
+}
+.splash_rugby .stm-sportspress-sidebar .stm-single-block-event-list .stm-single-block-event-list-top div span.time {
+  margin-left: 0 !important;
+  line-height: 15px;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_sp_event_calendar .widget-title {
+  display: none;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_sp_event_calendar .sp-template-event-calendar .sp-calendar-wrapper .sp-event-calendar caption {
+  font-weight: 400;
+  color: #fff;
+  font-size: 18px;
+  padding: 6px 0 4px 14px;
+  line-height: 30px !important;
+  background: #24293e;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_sp_event_calendar .sp-template-event-calendar .sp-calendar-wrapper .sp-event-calendar thead {
+  background: #24293e;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_sp_event_calendar .sp-template-event-calendar .sp-calendar-wrapper .sp-event-calendar thead tr th {
+  font-weight: 700;
+  font-size: 13px;
+  color: #fff;
+  padding: 10px 0 9px 13px;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_sp_event_calendar .sp-template-event-calendar .sp-calendar-wrapper .sp-event-calendar tbody {
+  background: #f0f0f0;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_sp_event_calendar .sp-template-event-calendar .sp-calendar-wrapper .sp-event-calendar tbody tr:first-child td {
+  padding-top: 10px;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_sp_event_calendar .sp-template-event-calendar .sp-calendar-wrapper .sp-event-calendar tbody tr:last-child td {
+  padding-bottom: 10px;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_sp_event_calendar .sp-template-event-calendar .sp-calendar-wrapper .sp-event-calendar tbody tr td {
+  border-bottom: 0;
+  font-weight: 700;
+  font-size: 14px;
+  color: #24293e;
+  padding: 5px;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_sp_event_calendar .sp-template-event-calendar .sp-calendar-wrapper .sp-event-calendar tbody tr td a {
+  color: #24293e;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_sp_event_calendar .sp-template-event-calendar .sp-calendar-wrapper .sp-event-calendar tfoot {
+  background: #f0f0f0;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_sp_event_calendar .sp-template-event-calendar .sp-calendar-wrapper .sp-event-calendar tfoot tr td {
+  padding: 10px;
+  border-top: solid 1px #d8d8d8;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_sp_event_calendar .sp-template-event-calendar .sp-calendar-wrapper .sp-event-calendar tfoot tr td a {
+  font-weight: 700;
+  font-size: 13px;
+  color: #d50029;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_stm_event_list .stm-upcoming-events_list ul li {
+  padding: 0;
+  margin: 0 0 20px 0;
+  border-bottom: 0;
+  border-top: solid 2px #d50029;
+  min-height: inherit;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_stm_event_list .stm-upcoming-events_list ul li:before {
+  display: none;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_stm_event_list .stm-upcoming-events_list ul li a {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_stm_event_list .stm-upcoming-events_list ul li a:hover {
+  text-decoration: none;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_stm_event_list .stm-upcoming-events_list ul li a .commands {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  background: #24293e;
+  margin: 0;
+  float: inherit;
+  vertical-align: top;
+  padding: 15px 0 13px;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_stm_event_list .stm-upcoming-events_list ul li a .commands h3 {
+  text-align: center;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_stm_event_list .stm-upcoming-events_list ul li a .commands h3 span {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_stm_event_list .stm-upcoming-events_list ul li a .commands h3 .stm-red {
+  color: #d50029 !important;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_stm_event_list .stm-upcoming-events_list ul li a .stm-event_date {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background: #43445c;
+  text-align: center;
+  padding: 5px 0 8px;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_stm_event_list .stm-upcoming-events_list ul li a .stm-event_date .date .stm-middle {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 13px;
+  color: #fff;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_stm_event_list .stm-upcoming-events_list ul li a .stm-event_date .stm-el-venue .stadium {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 13px;
+  color: #d50029;
+  line-height: 14px;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_sp_countdown .sp-template-countdown .sp-countdown-wrapper .event-name {
+  background: #f0f0f0;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_sp_countdown .sp-template-countdown .sp-countdown-wrapper .event-name a {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 20px;
+  color: #24293e;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_sp_countdown .sp-template-countdown .sp-countdown-wrapper .sp-countdown {
+  background: #43445c;
+  color: #fff;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  padding: 7px 0;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_sp_player_gallery .sp-player-gallery-wrapper .gallery-item a {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  background: #24293e;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_sp_player_gallery .sp-player-gallery-wrapper .gallery-item a dd {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 13px;
+  color: #fff;
+  margin: 0;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_sp_player_list .stm-players-inline .stm-list-single-player .stm-list-single-player-info {
+  background: #24293e;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_sp_staff h4 {
+  font-size: 20px;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_sp_staff .sp-template-details .sp-list-wrapper .sp-staff-details .single-info {
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  clear: both;
+  width: 100%;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_sp_staff .sp-template-details .sp-list-wrapper .sp-staff-details .single-info .st-label {
+  display: block;
+  overflow: hidden;
+  font-family: "Roboto";
+  font-weight: 400;
+  color: #000000;
+}
+.splash_rugby .stm-sportspress-sidebar .widget_sp_staff .sp-template-details .sp-list-wrapper .sp-staff-details .single-info .st-value {
+  display: block;
+  overflow: hidden;
+  font-family: "Roboto";
+  font-weight: 400;
+  color: #999999;
+}
+.splash_rugby .woocommerce-cart-form__cart-item .product-thumbnail {
+  padding: 12px;
+}
+.splash_rugby .cart-collaterals {
+  margin: 0;
+  background-color: initial;
+}
+.splash_rugby .shop_table.cart td.actions .coupon #coupon_code {
+  height: 45px;
+  position: static;
+}
+@media (max-width: 576px) {
+  .splash_rugby .shop_table.cart td.actions .stm-actions-right {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .splash_rugby .shop_table.cart td.actions .stm-actions-right input.button {
+    margin-bottom: 15px;
+  }
+  .splash_rugby .shop_table.cart td.actions .stm-actions-right .wc-proceed-to-checkout {
+    margin-top: 0;
+  }
+}
+.splash_rugby .stm-single-block-event-list {
+  margin-bottom: 20px;
+}
+.splash_rugby .stm-single-block-event-list .stm-single-block-event-list-top {
+  background: #43445c;
+  padding: 10px 0 10px 35px;
+}
+.splash_rugby .stm-single-block-event-list .stm-single-block-event-list-top .time {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  opacity: 1;
+  text-transform: none;
+  margin-right: 5px;
+}
+.splash_rugby .stm-single-block-event-list .stm-single-block-event-list-top .venue {
+  display: none;
+}
+.splash_rugby .stm-single-block-event-list .stm-single-block-event-list-top .stm-link-wrapp {
+  display: none;
+}
+.splash_rugby .stm-single-block-event-list .stm-single-block-unit {
+  position: relative;
+  margin-bottom: 0;
+  padding: 58px 15px 11px;
+}
+.splash_rugby .stm-single-block-event-list .stm-single-block-unit .stm-team-logo {
+  display: inline-block;
+  width: 25%;
+  padding: 0;
+  position: relative;
+  vertical-align: top;
+  padding: 0;
+}
+.splash_rugby .stm-single-block-event-list .stm-single-block-unit .stm-team-logo .stm-team-l-h-wrapp .stm-team-helm {
+  display: block;
+}
+.splash_rugby .stm-single-block-event-list .stm-single-block-unit .stm-team-logo .stm-team-l-h-wrapp .stm-team-helm > img {
+  display: none;
+}
+.splash_rugby .stm-single-block-event-list .stm-single-block-unit .stm-team-logo .stm-team-l-h-wrapp .stm-team-helm .team-logo img {
+  width: auto;
+  max-height: 50px;
+}
+.splash_rugby .stm-single-block-event-list .stm-single-block-unit .stm-teams-info {
+  display: inline-block;
+  overflow: hidden;
+  width: 50%;
+  vertical-align: top;
+}
+.splash_rugby .stm-single-block-event-list .stm-single-block-unit .stm-teams-info .stm-title-team {
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  text-align: left;
+  font-weight: 400;
+  font-size: 20px;
+  color: #06083b;
+  width: 50%;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.splash_rugby .stm-single-block-event-list .stm-single-block-unit .stm-teams-info .stm-title-team .stm-team-city {
+  display: none;
+}
+.splash_rugby .stm-single-block-event-list .stm-single-block-unit .stm-teams-info .stm-title-team.opponent {
+  left: inherit;
+  right: 15px;
+  text-align: right;
+}
+.splash_rugby .stm-single-block-event-list .stm-single-block-unit .stm-teams-info .stm-team-results-outer {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+}
+.splash_rugby .stm-single-block-event-list .stm-single-block-unit .stm-teams-info .stm-team-results-outer .stm-latest-result_result {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0 8px;
+  color: #fff;
+}
+.splash_rugby .stm-single-block-event-list .stm-single-block-unit .stm-teams-info .stm-team-results-outer .stm-latest-result_result .stm-latest-result-win-label, .splash_rugby .stm-single-block-event-list .stm-single-block-unit .stm-teams-info .stm-team-results-outer .stm-latest-result_result .stm-latest-result-lose-label {
+  width: auto;
+  min-width: inherit;
+  padding: 0;
+  font-weight: 300;
+  font-size: 11px;
+  background: transparent;
+}
+.splash_rugby .stm-single-block-event-list .stm-single-block-unit .stm-teams-info .stm-team-results-outer .stm-latest-result_result .stm-latest-result-win-label {
+  color: #d50029;
+}
+.splash_rugby .stm-single-block-event-list .stm-single-block-unit .stm-teams-info .stm-team-results-outer .stm-latest-result_result .stm-latest-result-lose-label {
+  color: #999999;
+}
+.splash_rugby .stm-single-block-event-list .stm-single-block-unit .stm-teams-info .stm-team-results-outer .stm-latest-result_result .stm-win {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  background: #d50029;
+  text-align: center;
+  color: #fff;
+  padding: 6px 0;
+  margin-bottom: 2px;
+}
+.splash_rugby .stm-single-block-event-list .stm-single-block-unit .stm-teams-info .stm-team-results-outer .stm-latest-result_result .stm-lose {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  background: #999999;
+  text-align: center;
+  color: #fff;
+  padding: 6px 0;
+  margin-bottom: 2px;
+}
+.splash_rugby .stm-single-block-event-list .stm-single-block-unit .stm-teams-info .stm-team-results-outer .stm-latest-result_result .stm-res-left {
+  display: block;
+  width: 50%;
+  float: left;
+}
+.splash_rugby .stm-single-block-event-list .stm-single-block-unit .stm-teams-info .stm-team-results-outer .stm-latest-result_result .stm-res-right {
+  display: block;
+  width: 50%;
+  float: right;
+}
+.splash_rugby .stm-single-block-event-list .stm-single-block-event-list-top {
+  padding: 10px 0;
+  text-align: center !important;
+}
+.splash_rugby .stm-single-block-event-list .stm-single-block-event-list-top div {
+  display: inline-block;
+  vertical-align: middle !important;
+  float: inherit;
+}
+.splash_rugby .stm-single-block-event-list .stm-single-block-event-list-top div span.time {
+  margin-left: 0 !important;
+  line-height: 15px;
+}
+.splash_rugby .stm-single-block-event-list .stm-single-block-event-list-top .stm-future-event-list-time {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  line-height: 22px !important;
+  margin: 0;
+}
+.splash_rugby .stm-single-block-event-list .stm-single-block-event-list-top .stm-future-event-list-time .time {
+  margin-left: 10px;
+}
+.splash_rugby .stm-single-block-event-list .stm-single-block-event-list-top .stm-future-event-list-time .time:after {
+  display: none;
+}
+.splash_rugby .stm-single-block-event-list .stm-single-block-event-list-top .stm-future-event-list-time time {
+  display: none;
+}
+.splash_rugby .mc4wp-form .subscribe-wrapp {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.splash_rugby .mc4wp-form .subscribe-wrapp input[type=submit] {
+  max-width: 150px;
+  margin-left: 30px;
+}
+.splash_rugby .stm-products-row .stm-single-product-loop .woocommerce-loop-product__title {
+  font-size: 20px;
+  line-height: 25px;
+}
+.splash_rugby .stm-single-sp_player > .container {
+  padding: 0;
+}
+.splash_rugby .stm-single-sp_player .stm-title-box-unit {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.splash_rugby .stm-single-sp_player .stm-title-box-unit h2 {
+  line-height: 52px;
+}
+.splash_rugby .stm-single-sp_player .sp-template-player-photo {
+  display: block;
+  overflow: hidden;
+  float: left;
+  width: 54%;
+}
+.splash_rugby .stm-single-sp_player .sp-template-player-photo .sp-template-photo {
+  margin: 0;
+}
+.splash_rugby .stm-single-sp_player .sp-section-content-photo {
+  display: block;
+  overflow: hidden;
+  float: left;
+  width: 54%;
+}
+.splash_rugby .stm-single-sp_player .sp-section-content-photo .sp-template-player-photo {
+  width: 100% !important;
+}
+.splash_rugby .stm-single-sp_player .sp-section-content-photo .sp-template-player-photo .sp-template-photo {
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .splash_rugby .stm-single-sp_player .sp-section-content-photo {
+    float: none;
+    width: auto;
+  }
+}
+.splash_rugby .stm-single-sp_player .sp-template.sp-template-player-details.sp-template-details {
+  display: block;
+  overflow: hidden;
+  float: right;
+  width: 41%;
+  padding: 8px 0 0 5px;
+}
+.splash_rugby .stm-single-sp_player .sp-template.sp-template-player-details.sp-template-details .stm-player-position-number-wrapp {
+  display: block;
+  overflow: hidden;
+  border-top: solid 1px #d8d8d8;
+  padding: 13px 0;
+  margin-bottom: 14px;
+}
+.splash_rugby .stm-single-sp_player .sp-template.sp-template-player-details.sp-template-details .stm-player-position-number-wrapp .stm-player-number {
+  display: inline-block;
+  overflow: hidden;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #06083b;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.splash_rugby .stm-single-sp_player .sp-template.sp-template-player-details.sp-template-details .stm-player-position-number-wrapp .stm-player-position {
+  display: inline-block;
+  overflow: hidden;
+  font-weight: 300;
+  font-size: 16px;
+  color: #06083b;
+  vertical-align: middle;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 1;
+}
+@media (max-width: 767px) {
+  .splash_rugby .stm-single-sp_player .sp-template.sp-template-player-details.sp-template-details .sp-list-wrapper .sp-player-details {
+    max-width: 450px;
+  }
+}
+.splash_rugby .stm-single-sp_player .sp-template.sp-template-player-details.sp-template-details .sp-list-wrapper .sp-player-details .single-info {
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  padding: 8px 10px 2px;
+  line-height: 26px;
+}
+.splash_rugby .stm-single-sp_player .sp-template.sp-template-player-details.sp-template-details .sp-list-wrapper .sp-player-details .single-info:nth-child(odd) {
+  background: #f0f0f0;
+}
+.splash_rugby .stm-single-sp_player .sp-template.sp-template-player-details.sp-template-details .sp-list-wrapper .sp-player-details .single-info .st-label.normal_font {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 13px;
+  color: #404040;
+  text-transform: uppercase;
+  vertical-align: top;
+  line-height: 26px;
+  min-width: 150px;
+}
+.splash_rugby .stm-single-sp_player .sp-template.sp-template-player-details.sp-template-details .sp-list-wrapper .sp-player-details .single-info .st-value {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  color: #404040;
+  max-width: 64%;
+  vertical-align: top;
+}
+.splash_rugby .stm-single-sp_player .sp-template.sp-template-player-details.sp-template-details .sp-list-wrapper .sp-player-details .single-info .st-value img {
+  display: none;
+}
+.splash_rugby .stm-single-sp_player .sp-section-content-details {
+  display: block;
+  overflow: hidden;
+  width: 41%;
+  padding: 8px 0 0 5px;
+}
+.splash_rugby .stm-single-sp_player .sp-section-content-details .sp-template.sp-template-player-details.sp-template-details {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .splash_rugby .stm-single-sp_player .sp-section-content-details {
+    float: none;
+    width: auto;
+  }
+}
+.splash_rugby .stm-single-sp_player .sp-section-content-excerpt, .splash_rugby .stm-single-sp_player .sp-excerpt {
+  display: none;
+  clear: both;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  color: #404040;
+}
+.splash_rugby .stm-single-sp_player .sp-section-content-content {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  color: #404040;
+}
+.splash_rugby .stm-single-sp_player .sp-section-content-content h3 {
+  margin-bottom: 25px;
+}
+.splash_rugby .stm-single-sp_player .sp-template-player-statistics table th {
+  font-weight: 500;
+  font-size: 14px;
+}
+.splash_rugby .stm-single-sp_player .sp-template-player-statistics table th, .splash_rugby .stm-single-sp_player .sp-template-player-statistics table td {
+  padding-left: 10px;
+}
+.splash_rugby .stm-single-sp_player .stm-player-ids {
+  display: none;
+}
+.splash_rugby .stm-title-box-unit {
+  padding-bottom: 0;
+}
+.splash_rugby .stm-next-match-units .stm-next-match-unit .stm-next-match-opponents .stm-command .stm-command-logo {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.splash_rugby .faq-form .stm-form-bg {
+  background-color: transparent;
+}
+.splash_rugby .stm-price-plan header {
+  background-color: #ccc;
+}
+.splash_rugby .stm-price-plan header .title,
+.splash_rugby .stm-price-plan header .price-label {
+  color: #5f5f5f;
+}
+.splash_rugby .stm-price-plan:hover header {
+  background-color: #d50029;
+}
+.splash_rugby .stm-price-plan:hover header .title,
+.splash_rugby .stm-price-plan:hover header .price,
+.splash_rugby .stm-price-plan:hover header .price-label {
+  color: #fff;
+}
+.splash_rugby input[type=text].style-2, .splash_rugby input[type=number].style-2, .splash_rugby input[type=tel].style-2, .splash_rugby input[type=email].style-2, .splash_rugby input[type=search].style-2, .splash_rugby input[type=date].style-2, .splash_rugby input[type=password].style-2, .splash_rugby textarea.style-2 {
+  background-color: #fff;
+}
+.splash_rugby .stm-gmap-shadow {
+  display: none;
+}
+.splash_rugby .stm_gmap button,
+.splash_rugby .stm_gmap .button {
+  background-color: #fff !important;
+}
+.splash_rugby .stm_gmap button:before,
+.splash_rugby .stm_gmap .button:before {
+  background-color: #fff;
+}
+.splash_rugby .stm_gmap .dismissButton {
+  color: #fff !important;
+}
+.splash_rugby .stm_gmap .dismissButton:before {
+  background-color: #d50029;
+}
+.splash_rugby .stm_gmap .dismissButton:hover {
+  color: #24293e !important;
+}
+.splash_rugby.single-product .stm-page-title .stm-title-box-title-wrapper {
+  display: none !important;
+}
+.splash_rugby.single-product .woocommerce-message {
+  border-color: #d50029;
+}
+.splash_rugby.single-product .woocommerce-message .wc-forward {
+  margin: 0;
+  padding-right: 26px !important;
+  color: #06083b !important;
+}
+.splash_rugby.single-product .woocommerce-message .wc-forward:hover {
+  background: transparent !important;
+}
+.splash_rugby.single-product .woocommerce-message .dp-in {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.splash_rugby.single-product .woocommerce-message .dp-in a:after {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.splash_rugby.single-product .woocommerce-message .dp-in a:hover {
+  border-color: #151515;
+}
+.splash_rugby.single-product .af-single-product-title {
+  margin-bottom: 24px;
+}
+.splash_rugby.single-product .af-single-product-title h1 {
+  font-family: "Oswald";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 42px;
+  line-height: 50px;
+}
+.splash_rugby.single-product .stm-single-product-content-right {
+  padding-top: 0;
+  overflow: hidden;
+}
+.splash_rugby.single-product .stm-single-product-content-right .product_title {
+  display: none;
+}
+.splash_rugby.single-product .stm-single-product-content-right > div {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+.splash_rugby.single-product .stm-single-product-content-right .stm-stock-wrapper {
+  margin: 0 0 5px 0;
+}
+.splash_rugby.single-product .stm-single-product-content-right .stm-stock-wrapper .stm-stock {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  color: #009900;
+}
+.splash_rugby.single-product .stm-single-product-content-right .woocommerce-product-rating {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+.splash_rugby.single-product .stm-single-product-content-right .woocommerce-product-rating .star-rating {
+  float: left;
+}
+.splash_rugby.single-product .stm-single-product-content-right .price {
+  display: block;
+  font-family: "Oswald";
+  font-weight: 400;
+  margin: 0 0 16px;
+}
+.splash_rugby.single-product .stm-single-product-content-right .price del {
+  color: #808080 !important;
+}
+.splash_rugby.single-product .stm-single-product-content-right .price del .woocommerce-Price-amount {
+  color: #808080 !important;
+  font-weight: 400;
+  font-size: 14px;
+}
+.splash_rugby.single-product .stm-single-product-content-right .price del span {
+  color: #808080 !important;
+}
+.splash_rugby.single-product .stm-single-product-content-right .price ins {
+  display: block;
+  color: #d50029;
+  border-bottom: 0;
+  font-size: 24px;
+}
+.splash_rugby.single-product .stm-single-product-content-right .price .woocommerce-Price-amount {
+  margin-top: 0;
+  color: #d50029;
+}
+.splash_rugby.single-product .stm-single-product-content-right p {
+  font-size: 16px;
+  color: #404040;
+}
+.splash_rugby.single-product .stm-single-product-content-right div[itemprop=description] p {
+  line-height: 30px;
+}
+.splash_rugby.single-product .stm-single-product-content-right p.stock.in-stock {
+  display: none !important;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .variations {
+  margin-bottom: 10px;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .variations tr td.label {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 20px 0 0;
+  text-align: left;
+  width: 25%;
+  background: transparent !important;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .variations tr td.label label {
+  font-weight: 400;
+  font-size: 16px;
+  color: #404040;
+  text-transform: capitalize;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .variations tr td.value {
+  display: table-cell;
+  padding: 5px;
+  background: transparent !important;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .variations tr td.value ul {
+  display: block;
+  padding: 0;
+  margin: 0 0 0 -3px;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .variations tr td.value ul li {
+  display: inline-block;
+  padding-left: 5px;
+  margin: 0;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .variations tr td.value ul li:before {
+  display: none;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .variations tr td.value ul li label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 0;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .variations tr td.value ul li label input[type=radio] {
+  display: none;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .variations tr td.value ul li label input[type=radio]:checked + span {
+  border-color: #d50029;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .variations tr td.value ul li label span {
+  display: block;
+  border: solid 1px #d8d8d8;
+  padding: 5px 0;
+  width: 40px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #404040;
+  text-transform: uppercase;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .variations tr td.value .select2-container .selection .select2-selection {
+  border: 0;
+  border-radius: 0;
+  background: #f0f0f0;
+  height: 50px;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .variations tr td.value .select2-container .selection .select2-selection .select2-selection__rendered {
+  height: 50px;
+  line-height: 50px;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .variations tr td.value .select2-container .selection .select2-selection .select2-selection__arrow {
+  height: 50px;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .variations tr td.value .select2-container .selection .select2-selection .select2-selection__arrow b {
+  display: block;
+  font-family: "Font Awesome 5 Free";
+  background: transparent;
+  border: 0;
+  position: relative;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .variations tr td.value .select2-container .selection .select2-selection .select2-selection__arrow b:before {
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  font-size: 20px;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .single_variation_wrap .woocommerce-variation.single_variation {
+  display: none !important;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .single_variation_wrap .woocommerce-variation-add-to-cart {
+  margin-right: 7px;
+  width: 100%;
+  text-align: right;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .single_variation_wrap .woocommerce-variation-add-to-cart .stm-quantity-label {
+  display: block;
+  float: left;
+  margin-left: 7px;
+  margin-right: 38px;
+  padding-top: 11px;
+  color: #404040;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .single_variation_wrap .woocommerce-variation-add-to-cart .quantity {
+  display: inline-block;
+  overflow: hidden;
+  max-width: 85px;
+  margin-right: 0;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .single_variation_wrap .woocommerce-variation-add-to-cart .quantity input {
+  font-family: "Roboto";
+  padding: 10px 17px 11px 17px;
+  border: 0;
+  border-radius: 0;
+  background: #f0f0f0;
+  height: 50px;
+  text-align: left !important;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .single_variation_wrap .woocommerce-variation-add-to-cart .single_add_to_cart_button {
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+  border: solid 2px #d50029;
+  overflow: hidden;
+  border-radius: 0;
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  padding: 12px 35px;
+  background: #d50029 !important;
+  transition: all 0.5s cubic-bezier(0, 0, 0.58, 1) !important;
+  letter-spacing: 0.6px !important;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .single_variation_wrap .woocommerce-variation-add-to-cart .single_add_to_cart_button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #06083b !important;
+  transition: all 0.5s cubic-bezier(0, 0, 0.58, 1) !important;
+  opacity: 0;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .single_variation_wrap .woocommerce-variation-add-to-cart .single_add_to_cart_button:hover:active {
+  color: #d50029 !important;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .single_variation_wrap .woocommerce-variation-add-to-cart .single_add_to_cart_button:hover:active input[type=submit] {
+  color: #d50029 !important;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .single_variation_wrap .woocommerce-variation-add-to-cart .single_add_to_cart_button:hover {
+  border: solid 2px #06083b;
+  background: #06083b !important;
+  color: #fff !important;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .single_variation_wrap .woocommerce-variation-add-to-cart .single_add_to_cart_button:hover:before {
+  width: 100%;
+  left: 100%;
+  background: #06083b !important;
+  opacity: 1;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .single_variation_wrap .woocommerce-variation-add-to-cart .single_add_to_cart_button:hover span {
+  color: #fff;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .single_variation_wrap .woocommerce-variation-add-to-cart .single_add_to_cart_button:hover input[type=submit] {
+  color: #fff;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .single_variation_wrap .woocommerce-variation-add-to-cart .single_add_to_cart_button:hover input[type=submit]:disabled:hover:active {
+  color: #fff !important;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .woocommerce-variation.single_variation {
+  display: none !important;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .stm-quantity-label {
+  display: block;
+  float: left;
+  margin-left: 0;
+  margin-right: 15px;
+  padding-top: 11px;
+  color: #404040;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .quantity {
+  display: inline-block;
+  overflow: hidden;
+  max-width: 85px;
+  margin-right: 15px;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .quantity input {
+  font-family: "Roboto";
+  padding: 10px 17px 11px 17px;
+  border: 0;
+  border-radius: 0;
+  background: #f0f0f0;
+  height: 50px;
+  text-align: left !important;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .single_add_to_cart_button {
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+  border: solid 2px #d50029;
+  overflow: hidden;
+  border-radius: 0;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  padding: 12px 35px;
+  background: #d50029 !important;
+  transition: all 0.5s cubic-bezier(0, 0, 0.58, 1) !important;
+  letter-spacing: 0.6px !important;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .single_add_to_cart_button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #06083b !important;
+  transition: all 0.5s cubic-bezier(0, 0, 0.58, 1) !important;
+  opacity: 0;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .single_add_to_cart_button:hover:active {
+  color: #d50029 !important;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .single_add_to_cart_button:hover:active input[type=submit] {
+  color: #d50029 !important;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .single_add_to_cart_button:hover {
+  border: solid 2px #06083b;
+  background: #06083b !important;
+  color: #fff !important;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .single_add_to_cart_button:hover:before {
+  width: 100%;
+  left: 100%;
+  background: #06083b !important;
+  opacity: 1;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .single_add_to_cart_button:hover span {
+  color: #fff;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .single_add_to_cart_button:hover input[type=submit] {
+  color: #fff;
+}
+.splash_rugby.single-product .stm-single-product-content-right form .single_add_to_cart_button:hover input[type=submit]:disabled:hover:active {
+  color: #fff !important;
+}
+.splash_rugby.single-product .stm-single-product-content-right .product_meta {
+  display: none;
+}
+.splash_rugby.single-product .af-margin-88 {
+  margin-top: 0;
+}
+.splash_rugby.single-product .col-md-7 {
+  margin-right: 0;
+  padding-right: 35px;
+}
+.splash_rugby.single-product .col-md-5 {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: -8px;
+}
+.splash_rugby.single-product .stm-badge-wrapper {
+  display: block;
+  overflow: visible;
+  width: 100%;
+  padding: 3px 0 0 3px;
+}
+.splash_rugby.single-product .stm-badge-wrapper.stm-thumb-num-0 {
+  margin-left: 9px;
+  padding-left: 9px;
+}
+.splash_rugby.single-product .stm-badge-wrapper.stm-thumb-num-0 .onsale {
+  left: 0 !important;
+}
+.splash_rugby.single-product .stm-badge-wrapper .woocommerce-product-gallery {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.splash_rugby.single-product .stm-badge-wrapper .woocommerce-product-gallery ol {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-top: 5px;
+}
+.splash_rugby.single-product .stm-badge-wrapper .woocommerce-product-gallery ol li {
+  width: 100%;
+  max-width: 110px;
+  max-height: 110px;
+  border: 1px solid #dbdbd9;
+  padding: 1px;
+  overflow: hidden;
+  margin-rigth: 5px;
+}
+.splash_rugby.single-product .stm-badge-wrapper .woocommerce-product-gallery ol li:last-child {
+  margin-rigth: 0px;
+}
+.splash_rugby.single-product .stm-badge-wrapper .woocommerce-product-gallery ol li:before {
+  display: none;
+}
+.splash_rugby.single-product .stm-badge-wrapper .woocommerce-product-gallery ol li:hover {
+  border-color: #d50029;
+  box-shadow: 0 0 0 1px #d50029 inset;
+}
+.splash_rugby.single-product .stm-badge-wrapper .woocommerce-product-gallery ol li img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.splash_rugby.single-product .stm-badge-wrapper .onsale {
+  display: block;
+  position: absolute;
+  top: 9px;
+  left: -9px;
+  padding: 2px 10px;
+  width: 70px;
+  background-color: #e21e22;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  transform: none;
+  font-weight: 700;
+  z-index: 90;
+  letter-spacing: 0;
+  font-size: 14px;
+  font-family: "Oswald";
+}
+.splash_rugby.single-product .stm-badge-wrapper .onsale:before {
+  content: "";
+  display: block;
+  overflow: hidden;
+  width: 10px;
+  height: 10px;
+  border-right: solid 10px #800000;
+  border-top: solid 0 transparent;
+  border-bottom: solid 15px transparent;
+  position: absolute;
+  top: 28px;
+  left: 0px;
+  opacity: 1;
+  background-color: transparent !important;
+  transform: none;
+}
+.splash_rugby.single-product .stm-badge-wrapper .stm-single-product-images .stm-thumnails-single-product-wrapper {
+  width: 70px;
+}
+.splash_rugby.single-product .stm-badge-wrapper .stm-single-product-images .stm-thumnails-single-product-wrapper .stm-vertical-arrows {
+  display: none;
+}
+.splash_rugby.single-product .stm-badge-wrapper .stm-single-product-images .stm-thumnails-single-product-wrapper .stm-thumnails-single-product {
+  height: auto !important;
+}
+.splash_rugby.single-product .stm-badge-wrapper .stm-single-product-images .stm-thumnails-single-product-wrapper .stm-thumnails-single-product .thumbnails {
+  height: auto !important;
+}
+.splash_rugby.single-product .stm-badge-wrapper .stm-single-product-images .stm-thumnails-single-product-wrapper .stm-thumnails-single-product .thumbnails li {
+  max-height: 93px;
+  margin-bottom: 10px;
+  border: 1px solid #dbdbd9;
+  padding: 1px;
+}
+.splash_rugby.single-product .stm-badge-wrapper .stm-single-product-images .stm-thumnails-single-product-wrapper .stm-thumnails-single-product .thumbnails li:hover {
+  border-color: #d50029;
+  box-shadow: 0 0 0 1px #d50029 inset;
+}
+.splash_rugby.single-product .stm-badge-wrapper .stm-single-product-images .stm-thumnails-single-product-wrapper .stm-thumnails-single-product .thumbnails li a img {
+  max-width: 66px;
+}
+.splash_rugby.single-product .stm-badge-wrapper .stm-single-product-images .woocommerce-main-image img {
+  border: solid 1px #d8d8d8;
+}
+.splash_rugby.single-product .woocommerce-tabs {
+  background: transparent;
+  padding: 0;
+}
+.splash_rugby.single-product .woocommerce-tabs .container {
+  padding: 0;
+}
+.splash_rugby.single-product .woocommerce-tabs ul li.active a {
+  border-bottom-color: #d50029;
+}
+.splash_rugby.single-product .woocommerce-tabs ul li a {
+  font-weight: 400;
+  font-size: 16px;
+  color: #06083b;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content h2 {
+  font-weight: 400;
+  font-size: 30px;
+  color: #000000;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #404040;
+  opacity: 1 !important;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .shop_attributes th {
+  width: 10%;
+  font-family: "Oswald";
+  font-weight: 400;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .shop_attributes td {
+  background: transparent;
+  border-bottom: solid 1px #d8d8d8;
+  font-family: "Roboto";
+  font-weight: 600;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .shop_attributes td p {
+  margin: 0;
+  font-weight: 600;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .commentlist {
+  background: transparent;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .commentlist li {
+  padding-left: 0;
+  padding-right: 0;
+  border-bottom: 0;
+  margin-bottom: 0px;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .commentlist li .comment_container {
+  border-bottom: solid 1px #d8d8d8;
+  padding: 16px 0;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .commentlist li .comment_container:last-child {
+  border-bottom: solid 1px #d8d8d8;
+  padding: 16px 0;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .commentlist li .comment_container .avatar {
+  margin-right: 20px;
+  max-width: 90px;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .commentlist li .comment_container .comment-text {
+  position: relative;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .commentlist li .comment_container .comment-text .heading-font {
+  margin: 0;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .commentlist li .comment_container .comment-text .heading-font strong {
+  font-size: 18px;
+  letter-spacing: 0;
+  margin-right: 25px;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .commentlist li .comment_container .comment-text .heading-font time {
+  text-transform: none;
+  font-size: 13px;
+  font-weight: 400;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .commentlist li .comment_container .comment-text .reply {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .commentlist li .comment_container .comment-text .reply a:hover {
+  color: #d50029;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .commentlist li .comment_container .comment-text p {
+  margin-top: 14px;
+  line-height: 25px;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .commentlist li .comment_container .star-rating {
+  top: 5px;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .commentlist li .children {
+  margin-top: 10px;
+  padding-left: 110px;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .comment-respond {
+  background: transparent;
+  padding: 0;
+  margin-top: 13px;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .comment-respond h3 {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 30px;
+  color: #000000;
+  max-width: 75%;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .comment-respond form {
+  background: #f0f0f0;
+  padding: 40px;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .comment-respond form .comment-form-rating label {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .comment-respond form .comment-form-comment {
+  display: inline-block;
+  width: 47%;
+  margin-right: 40px;
+  vertical-align: top;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .comment-respond form .comment-form-comment label {
+  font-family: "Roboto";
+  font-weight: 400;
+  color: #06083b;
+  font-size: 14px;
+  text-transform: none;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .comment-respond form .comment-form-comment textarea {
+  height: 180px;
+  max-height: 180px;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .comment-respond form .row {
+  display: inline-block;
+  width: 47%;
+  vertical-align: top;
+  margin: 0;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .comment-respond form .row label {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  color: #06083b;
+  text-transform: none;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .comment-respond form .row > div {
+  width: 100% !important;
+  padding: 0;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .comment-respond form .row > div p {
+  margin-bottom: 20px;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .comment-respond form .row > div input {
+  height: 50px;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .comment-respond form .form-submit span {
+  margin-top: 0;
+  padding: 0 10px;
+}
+.splash_rugby.single-product .woocommerce-tabs .entry-content .comment-respond form .form-submit span input[type=submit] {
+  background: transparent !important;
+  border: 0;
+  /*&:hover {
+  	background: $theme-dark-blue !important;
+  	border-color: $theme-dark-blue;
+  	color: $white !important;
+  	&:active {
+  		color: $rugby_hc !important;
+  	}
+  }*/
+}
+.splash_rugby.single-product .stm-fullwidth-row-js .stm-carousel-controls-right {
+  display: none;
+}
+.splash_rugby.single-product .stm-fullwidth-row-js .stm-products-carousel-unit-wrapper .stm-products-carousel-unit .owl-controls {
+  display: none;
+}
+.splash_rugby.single-product .stm-footer-image {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .stm-header.stm-header-five .stm-header-inner {
+    padding-right: 15px;
+  }
+  .stm-header.stm-header-five .help-bar-shop {
+    margin-right: 0;
+  }
+  .stm-header.stm-header-five .stm-header-inner .logo-main a {
+    width: 150px;
+  }
+  .stm-header.stm-header-five .stm-main-menu .stm-main-menu-unit .header-menu > li a {
+    padding: 0 5px;
+  }
+}
+@media (max-width: 768px) {
+  .stm-header .logo-main {
+    line-height: 60px;
+    max-width: 120px !important;
+  }
+}

@@ -1,0 +1,236 @@
+[
+  {
+    "default": [
+      "search-2",
+      "categories-2",
+      "tag_cloud-2",
+      "archives-2",
+      "custom_html-2",
+      "text-6",
+      "media_image-2"
+    ],
+    "footer": [
+      "contacts-3",
+      "nav_menu-3",
+      "text-3",
+      "text-5"
+    ],
+    "sportspress": [
+      "sportspress-event-blocks-2",
+      "sportspress-event-blocks-3",
+      "sportspress-event-calendar-2",
+      "sportspress-league-table-2"
+    ],
+    "shop": [
+      "search-3",
+      "woocommerce_product_categories-2",
+      "woocommerce_price_filter-2",
+      "woocommerce_top_rated_products-2",
+      "woocommerce_widget_cart-2"
+    ]
+  },
+  {
+    "search": {
+      "2": {
+        "title": ""
+      },
+      "3": {
+        "title": ""
+      },
+      "_multiwidget": 1
+    },
+    "categories": {
+      "2": {
+        "title": "Categories",
+        "count": 0,
+        "hierarchical": 0,
+        "dropdown": 0
+      },
+      "_multiwidget": 1
+    },
+    "tag_cloud": {
+      "2": {
+        "title": "Tags",
+        "count": 0,
+        "taxonomy": "post_tag"
+      },
+      "_multiwidget": 1
+    },
+    "archives": {
+      "2": {
+        "title": "",
+        "count": 0,
+        "dropdown": 1
+      },
+      "_multiwidget": 1
+    },
+    "custom_html": {
+      "2": {
+        "title": "WE ARE ON INSTAGRAM",
+        "content": "[instagram feed=3004]"
+      },
+      "_multiwidget": 1
+    },
+    "text": {
+      "6": {
+        "title": "TEXT WIDGET",
+        "text": "<strong>The move followed a season in which the Splashes went 54\u2013100 and drew a crowd of only 3,174 to their season finale, an 11-inning loss to Chicago.<\/strong>\r\n\r\nThe California Splashes debut in the modern day game was not a stellar one, as they finished 54\u2013100 and 57 games back in the division.",
+        "filter": true,
+        "visual": true
+      },
+      "3": {
+        "title": "Gallery widget",
+        "text": "[instagram feed=3004]",
+        "filter": false
+      },
+      "5": {
+        "title": "Newsletter sign up",
+        "text": "[mc4wp_form id=\"352\"]",
+        "filter": false
+      },
+      "_multiwidget": 1
+    },
+    "media_image": {
+      "2": {
+        "attachment_id": 752,
+        "url": "http:\/\/splash.loc\/baseball\/wp-content\/uploads\/sites\/4\/2017\/10\/sidebar_banner.jpg",
+        "title": "",
+        "size": "full",
+        "width": 255,
+        "height": 494,
+        "caption": "",
+        "alt": "",
+        "link_type": "none",
+        "link_url": "",
+        "image_classes": "",
+        "link_classes": "",
+        "link_rel": "",
+        "image_title": "",
+        "link_target_blank": false
+      },
+      "_multiwidget": 1
+    },
+    "contacts": {
+      "3": {
+        "title": "Contact Information",
+        "address": "20 First Avenue, San Jose, CA 95101, United States",
+        "phone": "+1 376-226-3126",
+        "fax": "",
+        "skype": "",
+        "schedule": "Mon\u2013Sat: 9:00 AM\u20136:00 PM",
+        "email": "info@stylemixthemes.com"
+      },
+      "_multiwidget": 1
+    },
+    "nav_menu": {
+      "3": {
+        "title": "Quick Links",
+        "nav_menu": 15
+      },
+      "_multiwidget": 1
+    },
+    "sportspress-event-blocks": {
+      "2": {
+        "title": "Latest Results",
+        "id": 690,
+        "caption": "",
+        "status": "publish",
+        "date": "0",
+        "date_from": "2017-09-26",
+        "date_to": "2017-09-26",
+        "day": "",
+        "number": 1,
+        "order": "default",
+        "show_all_events_link": "1",
+        "align": "none"
+      },
+      "3": {
+        "title": "Next Match",
+        "id": 0,
+        "caption": "",
+        "status": "future",
+        "date": "default",
+        "date_from": "2017-09-26",
+        "date_to": "2017-09-26",
+        "day": "",
+        "number": 1,
+        "order": "default",
+        "show_all_events_link": "1",
+        "align": "none"
+      },
+      "_multiwidget": 1
+    },
+    "sportspress-event-calendar": {
+      "2": {
+        "title": "Event calendar",
+        "id": 0,
+        "status": "default",
+        "date": "default",
+        "date_from": "2017-09-26",
+        "date_to": "2017-09-26",
+        "day": "",
+        "show_all_events_link": null,
+        "align": "none"
+      },
+      "_multiwidget": 1
+    },
+    "sportspress-league-table": {
+      "2": {
+        "title": "2017 Standings",
+        "id": 113,
+        "caption": "",
+        "number": 5,
+        "columns": [
+          "w",
+          "l",
+          "pct",
+          "gb",
+          "rs",
+          "ra",
+          "diff",
+          "home",
+          "road",
+          "lten",
+          "strk"
+        ],
+        "show_team_logo": null,
+        "show_full_table_link": "1",
+        "align": "none"
+      },
+      "_multiwidget": 1
+    },
+    "woocommerce_product_categories": {
+      "2": {
+        "title": "Product categories",
+        "orderby": "name",
+        "dropdown": 0,
+        "count": 0,
+        "hierarchical": 1,
+        "show_children_only": 0,
+        "hide_empty": 0,
+        "max_depth": ""
+      },
+      "_multiwidget": 1
+    },
+    "woocommerce_price_filter": {
+      "2": {
+        "title": "Filter by price"
+      },
+      "_multiwidget": 1
+    },
+    "woocommerce_top_rated_products": {
+      "2": {
+        "title": "Top rated products",
+        "number": 5
+      },
+      "_multiwidget": 1
+    },
+    "woocommerce_widget_cart": {
+      "2": {
+        "title": "Cart",
+        "hide_if_empty": 0
+      },
+      "_multiwidget": 1
+    }
+  }
+]

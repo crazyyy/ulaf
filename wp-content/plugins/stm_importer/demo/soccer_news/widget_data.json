@@ -1,0 +1,136 @@
+[
+  {
+    "footer": [
+      "text-2",
+      "recent-posts-2",
+      "nav_menu-4",
+      "contacts-4"
+    ],
+    "sportspress": [
+      "sportspress-event-calendar-2",
+      "sportspress-countdown-2",
+      "sportspress-league-table-2"
+    ],
+    "shop": [
+      "woocommerce_products-3",
+      "woocommerce_price_filter-3",
+      "woocommerce_product_categories-3"
+    ]
+  },
+  {
+    "text": {
+      "2": {
+        "title": "",
+        "text": "\r\n<div class=\"stm-text-lighten\">In euismod ante odio, volutpat convallis odio fringilla ac. Praesent vehicula facilisis neque, a feugiat leo luctus elementum. Duis ut nunc orci. In ullamcorper nisl in ex ultricies, ut interdum mauris laoreet. Proin id dapibus risus. In non dolor elit.<\/div>",
+        "filter": true,
+        "visual": true
+      },
+      "_multiwidget": 1
+    },
+    "recent-posts": {
+      "2": {
+        "title": "Resent news",
+        "number": 2,
+        "show_date": true
+      },
+      "_multiwidget": 1
+    },
+    "nav_menu": {
+      "4": {
+        "title": "ADDITIONAL LINKS",
+        "nav_menu": 58
+      },
+      "_multiwidget": 1
+    },
+    "contacts": {
+      "4": {
+        "title": "CONTACT US",
+        "address": "1486 Commercity Isola Road, CA93104, United States",
+        "phone": "&lt;a href=&quot;tel:+1 234 567 8900&quot;&gt;+1 234 567 8900&lt;\/a&gt;",
+        "fax": "",
+        "skype": "",
+        "schedule": "",
+        "email": "info@splash.com"
+      },
+      "_multiwidget": 1
+    },
+    "sportspress-event-calendar": {
+      "2": {
+        "title": "Latest Events",
+        "id": 0,
+        "status": "publish",
+        "date": "default",
+        "date_from": "2018-05-12",
+        "date_to": "2018-05-12",
+        "date_past": "7",
+        "date_future": "7",
+        "date_relative": null,
+        "day": "",
+        "show_all_events_link": null,
+        "align": "none"
+      },
+      "_multiwidget": 1
+    },
+    "sportspress-countdown": {
+      "2": {
+        "title": "Countdown",
+        "calendar": 78,
+        "team": 0,
+        "caption": "",
+        "id": 0,
+        "show_venue": 1,
+        "show_league": 1,
+        "align": "none"
+      },
+      "_multiwidget": 1
+    },
+    "sportspress-league-table": {
+      "2": {
+        "title": "League Table",
+        "id": 79,
+        "caption": "",
+        "number": 3,
+        "columns": [
+          "w",
+          "l",
+          "pf"
+        ],
+        "show_team_logo": null,
+        "show_full_table_link": "1",
+        "align": "none"
+      },
+      "_multiwidget": 1
+    },
+    "woocommerce_products": {
+      "3": {
+        "title": "Products",
+        "number": 5,
+        "show": "",
+        "orderby": "date",
+        "order": "desc",
+        "hide_free": 0,
+        "show_hidden": 0
+      },
+      "_multiwidget": 1
+    },
+    "woocommerce_price_filter": {
+      "3": {
+        "title": "Filter by price"
+      },
+      "_multiwidget": 1
+    },
+    "woocommerce_product_categories": {
+      "3": {
+        "title": "Product categories",
+        "orderby": "name",
+        "dropdown": 0,
+        "count": 0,
+        "hierarchical": 1,
+        "show_children_only": 0,
+        "hide_empty": 0,
+        "max_depth": ""
+      },
+      "_multiwidget": 1
+    }
+  }
+]

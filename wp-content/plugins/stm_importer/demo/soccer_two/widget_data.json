@@ -1,0 +1,134 @@
+[
+	{
+		"default": [
+			"search-2",
+			"categories-2",
+			"archives-4",
+			"mc4wp_form_widget-2"
+		],
+		"footer": [
+			"text-3",
+			"follow_us-3",
+			"contacts-3"
+		],
+		"sportspress": [
+			"search-4",
+			"stm_recent_posts-2",
+			"mc4wp_form_widget-3"
+		],
+		"shop": [
+			"search-3",
+			"woocommerce_product_categories-2",
+			"woocommerce_price_filter-2",
+			"woocommerce_top_rated_products-2"
+		]
+	},
+	{
+		"search": {
+			"2": {
+				"title": ""
+			},
+			"3": {
+				"title": ""
+			},
+			"4": {
+				"title": ""
+			},
+			"_multiwidget": 1
+		},
+		"categories": {
+			"2": {
+				"title": "Categories",
+				"count": 0,
+				"hierarchical": 0,
+				"dropdown": 0
+			},
+			"_multiwidget": 1
+		},
+		"archives": {
+			"4": {
+				"title": "Archive",
+				"count": 0,
+				"dropdown": 1
+			},
+			"_multiwidget": 1
+		},
+		"mc4wp_form_widget": {
+			"2": {
+				"title": "Newsletter"
+			},
+			"3": {
+				"title": "Newsletter"
+			},
+			"_multiwidget": 1
+		},
+		"text": {
+			"3": {
+				"title": "About Our Team",
+				"text": "Splash FC is one of the most powerful and titled teams in the FIFA World Ranking. The team played on the world scene for the first time in Italy in 1934 and finished third. The team proved itself as a strong contestant, not willing to yield to opponents regardless of their status.",
+				"filter": false
+			},
+			"_multiwidget": 1
+		},
+		"follow_us": {
+			"3": {
+				"title": "Follow Us",
+				"facebook": "https://example.com",
+				"twitter": "https://example.com",
+				"linkedin": "https://example.com",
+				"instagram": "https://example.com",
+				"rss": "https://example.com",
+				"youtube": "https://example.com",
+				"pinterest": "https://example.com",
+				"dribbble": "https://example.com",
+				"google-plus": "https://example.com",
+				"skype": "https://example.com"
+			},
+			"_multiwidget": 1
+		},
+		"contacts": {
+			"3": {
+				"title": "Contact",
+				"address": "13 Vegas Drive, Las Vegas, 15348 Nevada, U.S.",
+				"phone": "+1 209 730 6130; +1 209 730 6140",
+				"fax": "",
+				"skype": "stylemix.themes",
+				"schedule": "",
+				"email": "info@stylemixthemes.com"
+			},
+			"_multiwidget": 1
+		},
+		"stm_recent_posts": {
+			"2": {
+				"title": "Latest News",
+				"output": "3"
+			},
+			"_multiwidget": 1
+		},
+		"woocommerce_product_categories": {
+			"2": {
+				"title": "Shop Categories",
+				"orderby": "name",
+				"dropdown": 0,
+				"count": 0,
+				"hierarchical": 1,
+				"show_children_only": 0,
+				"hide_empty": 0
+			},
+			"_multiwidget": 1
+		},
+		"woocommerce_price_filter": {
+			"2": {
+				"title": "Filter by price"
+			},
+			"_multiwidget": 1
+		},
+		"woocommerce_top_rated_products": {
+			"2": {
+				"title": "Popular Products",
+				"number": 4
+			},
+			"_multiwidget": 1
+		}
+	}
+]

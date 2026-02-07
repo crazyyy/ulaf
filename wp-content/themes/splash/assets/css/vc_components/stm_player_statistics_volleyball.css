@@ -1,0 +1,190 @@
+/*American football*/
+/*Soccer*/
+/*Baseball*/
+/*magazine*/
+/*Soccer News*/
+/*Basketball Two*/
+/*Hockey*/
+.stm-player-statistic-details.style_volleyball .stm-player-statistic__header {
+  padding-left: 520px;
+  padding-right: 152px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  position: relative;
+  z-index: 10;
+}
+.stm-player-statistic-details.style_volleyball .stm-player-statistic__header h2 {
+  color: #142978;
+  margin: 0;
+  position: static;
+}
+.stm-player-statistic-details.style_volleyball .stm-player-statistic__carousel-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.stm-player-statistic-details.style_volleyball .stm-player-statistic__carousel-nav div {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ff573b;
+  line-height: 28px;
+  font-size: 18px;
+  text-align: center;
+  color: #ff573b;
+  cursor: pointer;
+}
+.stm-player-statistic-details.style_volleyball .stm-player-statistic__carousel-nav div + div {
+  margin-left: -1px;
+}
+.stm-player-statistic-details.style_volleyball .stm-player-statistic__carousel-nav div:hover {
+  background-color: #ff573b;
+  color: #fff;
+}
+.stm-player-statistic-details.style_volleyball .stm-player-statistic__carousel {
+  margin-top: -40px;
+}
+.stm-player-statistic-details.style_volleyball .stm-player-statistic__player {
+  background-color: #142978;
+  padding: 40px 100px 73px 100px;
+  margin-top: 80px;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+}
+.stm-player-statistic-details.style_volleyball .stm-player-statistic__player-image {
+  width: 360px;
+  height: 404px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  background-color: #d8dced;
+  margin-right: 60px;
+  margin-top: -120px;
+  position: relative;
+}
+.stm-player-statistic-details.style_volleyball .stm-player-statistic__player-image img {
+  display: block;
+  max-width: 100%;
+}
+.stm-player-statistic-details.style_volleyball .stm-player-statistic__player-number {
+  width: 50px;
+  height: 50px;
+  background-color: #ff573b;
+  color: #fff;
+  font-size: 24px;
+  line-height: 50px;
+  font-weight: 900;
+  text-align: center;
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+}
+.stm-player-statistic-details.style_volleyball .stm-player-statistic__player-info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+}
+.stm-player-statistic-details.style_volleyball .stm-player-statistic__player-name {
+  margin-bottom: 26px;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.stm-player-statistic-details.style_volleyball .stm-player-statistic__player-name a {
+  color: #fff;
+}
+.stm-player-statistic-details.style_volleyball .stm-player-statistic__player-stats {
+  display: -ms-flexbox;
+  display: flex;
+}
+.stm-player-statistic-details.style_volleyball .stm-player-statistic__player-stats-col {
+  width: 220px;
+}
+@media (min-width: 576px) {
+  .stm-player-statistic-details.style_volleyball .stm-player-statistic__player-stats-col + .stm-player-statistic__player-stats-col {
+    margin-left: 30px;
+  }
+}
+.stm-player-statistic-details.style_volleyball .stm-player-statistic__player-stats-title {
+  margin-bottom: 26px;
+  font-size: 18px;
+  line-height: 25px;
+}
+.stm-player-statistic-details.style_volleyball .stm-player-statistic__player-stats-list {
+  margin: 0;
+  font-size: 14px;
+}
+.stm-player-statistic-details.style_volleyball .stm-player-statistic__player-stats-list li {
+  color: #fff;
+  padding: 5px 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 0;
+  line-height: 26px;
+}
+.stm-player-statistic-details.style_volleyball .stm-player-statistic__player-stats-list li:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.stm-player-statistic-details.style_volleyball .stm-player-statistic__player-stats-list li:before {
+  content: none;
+}
+@media (max-width: 1199px) {
+  .stm-player-statistic-details.style_volleyball .stm-player-statistic__header {
+    padding-left: 454px;
+  }
+  .stm-player-statistic-details.style_volleyball .stm-player-statistic__player {
+    padding: 40px;
+  }
+}
+@media (max-width: 1023px) {
+  .stm-player-statistic-details.style_volleyball .stm-player-statistic__header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .stm-player-statistic-details.style_volleyball .stm-player-statistic__player {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin-top: 120px;
+  }
+  .stm-player-statistic-details.style_volleyball .stm-player-statistic__player-image {
+    margin: -100px 0 30px;
+  }
+  .stm-player-statistic-details.style_volleyball .stm-player-statistic__player-info {
+    width: 100%;
+  }
+  .stm-player-statistic-details.style_volleyball .stm-player-statistic__player-name {
+    text-align: center;
+  }
+  .stm-player-statistic-details.style_volleyball .stm-player-statistic__player-stats {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .stm-player-statistic-details.style_volleyball .stm-player-statistic__player-stats-title {
+    text-align: center;
+  }
+}
+@media (max-width: 575px) {
+  .stm-player-statistic-details.style_volleyball .stm-player-statistic__player-stats {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .stm-player-statistic-details.style_volleyball .stm-player-statistic__player-stats-col {
+    margin-bottom: 30px;
+  }
+}

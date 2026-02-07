@@ -1,0 +1,54 @@
+/*American football*/
+/*Soccer*/
+/*Baseball*/
+/*magazine*/
+/*Soccer News*/
+/*Basketball Two*/
+/*Hockey*/
+.stm-trophy-carousel.style_2 .stm-trophy-carousel__title {
+  color: #142978;
+  text-align: center;
+}
+.stm-trophy-carousel.style_2 .stm-single-trophy .image {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: end;
+      align-items: flex-end;
+}
+.stm-trophy-carousel.style_2 .stm-single-trophy .image img {
+  position: static;
+  transform: none;
+}
+.stm-trophy-carousel.style_2 .stm-single-trophy .stm-title {
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #142978;
+  position: relative;
+  padding-top: 15px;
+  transition: all 0.3s;
+}
+.stm-trophy-carousel.style_2 .stm-single-trophy .stm-title:before {
+  content: "";
+  width: 32px;
+  height: 2px;
+  background-color: #142978;
+  position: absolute;
+  left: 50%;
+  top: -2px;
+  transform: translate(-50%, 0);
+  transition: all 0.3s;
+}
+.stm-trophy-carousel.style_2 .stm-single-trophy .stm-year, .stm-trophy-carousel.style_2 .stm-single-trophy .stm-border {
+  display: none;
+}
+.stm-trophy-carousel.style_2 .stm-single-trophy:hover .stm-title {
+  color: #ff573b;
+}
+.stm-trophy-carousel.style_2 .stm-single-trophy:hover .stm-title:before {
+  width: 70px;
+}

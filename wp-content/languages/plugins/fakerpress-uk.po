@@ -24,771 +24,771 @@ msgstr "Помилка"
 msgid "Invalid nonce verification"
 msgstr "Невірна спроба верифікації"
 
-#: src/FakerPress/Utils.php:1390
+#: src/FakerPress/Utils.php:1391
 msgid "Zimbabwe"
 msgstr "Зімбабве"
 
-#: src/FakerPress/Utils.php:1380
+#: src/FakerPress/Utils.php:1381
 msgid "Yemen"
 msgstr "Ємен"
 
-#: src/FakerPress/Utils.php:1385
+#: src/FakerPress/Utils.php:1386
 msgid "Zambia"
 msgstr "Замбія"
 
-#: src/FakerPress/Utils.php:1370
+#: src/FakerPress/Utils.php:1371
 msgid "Wallis and Futuna"
 msgstr "Уолліс та Футуна"
 
-#: src/FakerPress/Utils.php:1375
+#: src/FakerPress/Utils.php:1376
 msgid "Western Sahara"
 msgstr "Західна Сахара"
 
-#: src/FakerPress/Utils.php:1350
+#: src/FakerPress/Utils.php:1351
 msgid "Uzbekistan"
 msgstr "Узбекистан"
 
-#: src/FakerPress/Utils.php:1355
+#: src/FakerPress/Utils.php:1356
 msgid "Vanuatu"
 msgstr "Вануату"
 
-#: src/FakerPress/Utils.php:1360
+#: src/FakerPress/Utils.php:1361
 msgid "Venezuela"
 msgstr "Венесуела"
 
-#: src/FakerPress/Utils.php:1340
+#: src/FakerPress/Utils.php:1341
 msgid "United States"
 msgstr "США"
 
-#: src/FakerPress/Utils.php:1345
+#: src/FakerPress/Utils.php:1346
 msgid "Uruguay"
 msgstr "Уругвай"
 
-#: src/FakerPress/Utils.php:1325
+#: src/FakerPress/Utils.php:1326
 msgid "Ukraine"
 msgstr "Україна"
 
-#: src/FakerPress/Utils.php:1335
+#: src/FakerPress/Utils.php:1336
 msgid "United Kingdom"
 msgstr "Великобританія"
 
-#: src/FakerPress/Utils.php:1310
+#: src/FakerPress/Utils.php:1311
 msgid "Turks and Caicos Islands"
 msgstr "Теркс і Кайкос острова"
 
-#: src/FakerPress/Utils.php:1315
+#: src/FakerPress/Utils.php:1316
 msgid "Tuvalu"
 msgstr "Тувалу"
 
-#: src/FakerPress/Utils.php:1320
+#: src/FakerPress/Utils.php:1321
 msgid "Uganda"
 msgstr "Уганда"
 
-#: src/FakerPress/Utils.php:1295
+#: src/FakerPress/Utils.php:1296
 msgid "Tunisia"
 msgstr "Туніс"
 
-#: src/FakerPress/Utils.php:1300
+#: src/FakerPress/Utils.php:1301
 msgid "Turkey"
 msgstr "Туреччина"
 
-#: src/FakerPress/Utils.php:1280
+#: src/FakerPress/Utils.php:1281
 msgid "Tokelau"
 msgstr "Токелау"
 
-#: src/FakerPress/Utils.php:1285
+#: src/FakerPress/Utils.php:1286
 msgid "Tonga"
 msgstr "Тонга"
 
-#: src/FakerPress/Utils.php:1290
+#: src/FakerPress/Utils.php:1291
 msgid "Trinidad and Tobago"
 msgstr "Тринідад і Тобаго"
 
-#: src/FakerPress/Utils.php:1270
+#: src/FakerPress/Utils.php:1271
 msgid "East Timor"
 msgstr "Східний Тимор"
 
-#: src/FakerPress/Utils.php:1275
+#: src/FakerPress/Utils.php:1276
 msgid "Togo"
 msgstr "Того"
 
-#: src/FakerPress/Utils.php:1255
+#: src/FakerPress/Utils.php:1256
 msgid "Tajikistan"
 msgstr "Таджикистан"
 
-#: src/FakerPress/Utils.php:1260
+#: src/FakerPress/Utils.php:1261
 msgid "Tanzania"
 msgstr "Танзанія"
 
-#: src/FakerPress/Utils.php:1265
+#: src/FakerPress/Utils.php:1266
 msgid "Thailand"
 msgstr "Таїланд"
 
-#: src/FakerPress/Utils.php:1245
+#: src/FakerPress/Utils.php:1246
 msgid "Syria"
 msgstr "Сирія"
 
-#: src/FakerPress/Utils.php:1250
+#: src/FakerPress/Utils.php:1251
 msgid "Taiwan"
 msgstr "Тайвань"
 
-#: src/FakerPress/Utils.php:1230
+#: src/FakerPress/Utils.php:1231
 msgid "Swaziland"
 msgstr "Свазіленд"
 
-#: src/FakerPress/Utils.php:1235
+#: src/FakerPress/Utils.php:1236
 msgid "Sweden"
 msgstr "Швеція"
 
-#: src/FakerPress/Utils.php:1240
+#: src/FakerPress/Utils.php:1241
 msgid "Switzerland"
 msgstr "Швейцарія"
 
-#: src/FakerPress/Utils.php:1215
+#: src/FakerPress/Utils.php:1216
 msgid "Sudan"
 msgstr "Судан"
 
-#: src/FakerPress/Utils.php:1225
+#: src/FakerPress/Utils.php:1226
 msgid "Svalbard and Jan Mayen"
 msgstr "Шпіцберген і Ян-Маєн"
 
-#: src/FakerPress/Utils.php:1205
+#: src/FakerPress/Utils.php:1206
 msgid "Spain"
 msgstr "Іспанія"
 
-#: src/FakerPress/Utils.php:1190
+#: src/FakerPress/Utils.php:1191
 msgid "South Georgia"
 msgstr "Південна Джорджія"
 
-#: src/FakerPress/Utils.php:1195
+#: src/FakerPress/Utils.php:1196
 msgid "South Korea"
 msgstr "Південна Корея"
 
-#: src/FakerPress/Utils.php:1180
+#: src/FakerPress/Utils.php:1181
 msgid "Somalia"
 msgstr "Сомалі"
 
-#: src/FakerPress/Utils.php:1170
+#: src/FakerPress/Utils.php:1171
 msgid "Slovenia"
 msgstr "Словенія"
 
-#: src/FakerPress/Utils.php:1150
+#: src/FakerPress/Utils.php:1151
 msgid "Sierra Leone"
 msgstr "Сьєрра-Леоне"
 
-#: src/FakerPress/Utils.php:1155
+#: src/FakerPress/Utils.php:1156
 msgid "Singapore"
 msgstr "Сінгапур"
 
-#: src/FakerPress/Utils.php:1135
+#: src/FakerPress/Utils.php:1136
 msgid "Senegal"
 msgstr "Сенегал"
 
-#: src/FakerPress/Utils.php:1140
+#: src/FakerPress/Utils.php:1141
 msgid "Serbia"
 msgstr "Сербія"
 
-#: src/FakerPress/Utils.php:1125
+#: src/FakerPress/Utils.php:1126
 msgid "São Tomé and Príncipe"
 msgstr "Сан-Томе і Прінсіпі"
 
-#: src/FakerPress/Utils.php:1130
+#: src/FakerPress/Utils.php:1131
 msgid "Saudi Arabia"
 msgstr "Саудівська Аравія"
 
-#: src/FakerPress/Utils.php:1115
+#: src/FakerPress/Utils.php:1116
 msgid "Samoa"
 msgstr "Самоа"
 
-#: src/FakerPress/Utils.php:1095
+#: src/FakerPress/Utils.php:1096
 msgid "Saint Lucia"
 msgstr "Сент-Люсія"
 
-#: src/FakerPress/Utils.php:1105
+#: src/FakerPress/Utils.php:1106
 msgid "Saint Pierre and Miquelon"
 msgstr "Сен-П'єр і Мікелон"
 
-#: src/FakerPress/Utils.php:1075
+#: src/FakerPress/Utils.php:1076
 msgid "Rwanda"
 msgstr "Руанда"
 
-#: src/FakerPress/Utils.php:1090
+#: src/FakerPress/Utils.php:1091
 msgid "Saint Kitts and Nevis"
 msgstr "Сент-Кітс і Невіс"
 
-#: src/FakerPress/Utils.php:1065
+#: src/FakerPress/Utils.php:1066
 msgid "Romania"
 msgstr "Румунія"
 
-#: src/FakerPress/Utils.php:1070
+#: src/FakerPress/Utils.php:1071
 msgid "Russia"
 msgstr "Росія"
 
-#: src/FakerPress/Utils.php:1050
+#: src/FakerPress/Utils.php:1051
 msgid "Qatar"
 msgstr "Катар"
 
-#: src/FakerPress/Utils.php:1040
+#: src/FakerPress/Utils.php:1041
 msgid "Portugal"
 msgstr "Португалія"
 
-#: src/FakerPress/Utils.php:1020
+#: src/FakerPress/Utils.php:1021
 msgid "Peru"
 msgstr "Перу"
 
-#: src/FakerPress/Utils.php:1025
+#: src/FakerPress/Utils.php:1026
 msgid "Philippines"
 msgstr "Філіппіни"
 
-#: src/FakerPress/Utils.php:1035
+#: src/FakerPress/Utils.php:1036
 msgid "Poland"
 msgstr "Польща"
 
-#: src/FakerPress/Utils.php:1015
+#: src/FakerPress/Utils.php:1016
 msgid "Paraguay"
 msgstr "Парагвай"
 
-#: src/FakerPress/Utils.php:1005
+#: src/FakerPress/Utils.php:1006
 msgid "Panama"
 msgstr "Панама"
 
-#: src/FakerPress/Utils.php:985
+#: src/FakerPress/Utils.php:986
 msgid "Oman"
 msgstr "Оман"
 
-#: src/FakerPress/Utils.php:990
+#: src/FakerPress/Utils.php:991
 msgid "Pakistan"
 msgstr "Пакистан"
 
-#: src/FakerPress/Utils.php:995
+#: src/FakerPress/Utils.php:996
 msgid "Palau"
 msgstr "Палау"
 
-#: src/FakerPress/Utils.php:980
+#: src/FakerPress/Utils.php:981
 msgid "Norway"
 msgstr "Норвегія"
 
-#: src/FakerPress/Utils.php:960
+#: src/FakerPress/Utils.php:961
 msgid "Niue"
 msgstr "Ніуе"
 
-#: src/FakerPress/Utils.php:970
+#: src/FakerPress/Utils.php:971
 msgid "North Korea"
 msgstr "Північна Корея"
 
-#: src/FakerPress/Utils.php:950
+#: src/FakerPress/Utils.php:951
 msgid "Niger"
 msgstr "Нігер"
 
-#: src/FakerPress/Utils.php:955
+#: src/FakerPress/Utils.php:956
 msgid "Nigeria"
 msgstr "Нігерія"
 
-#: src/FakerPress/Utils.php:935
+#: src/FakerPress/Utils.php:936
 msgid "New Caledonia"
 msgstr "Нова Каледонія"
 
-#: src/FakerPress/Utils.php:940
+#: src/FakerPress/Utils.php:941
 msgid "New Zealand"
 msgstr "Нова Зеландія"
 
-#: src/FakerPress/Utils.php:945
+#: src/FakerPress/Utils.php:946
 msgid "Nicaragua"
 msgstr "Нікарагуа"
 
-#: src/FakerPress/Utils.php:925
+#: src/FakerPress/Utils.php:926
 msgid "Nepal"
 msgstr "Непал"
 
-#: src/FakerPress/Utils.php:930
+#: src/FakerPress/Utils.php:931
 msgid "Netherlands"
 msgstr "Нідерланди"
 
-#: src/FakerPress/Utils.php:910
+#: src/FakerPress/Utils.php:911
 msgid "Myanmar"
 msgstr "М'янма"
 
-#: src/FakerPress/Utils.php:915
+#: src/FakerPress/Utils.php:916
 msgid "Namibia"
 msgstr "Намібія"
 
-#: src/FakerPress/Utils.php:920
+#: src/FakerPress/Utils.php:921
 msgid "Nauru"
 msgstr "Науру"
 
-#: src/FakerPress/Utils.php:900
+#: src/FakerPress/Utils.php:901
 msgid "Morocco"
 msgstr "Марокко"
 
-#: src/FakerPress/Utils.php:905
+#: src/FakerPress/Utils.php:906
 msgid "Mozambique"
 msgstr "Мозамбік"
 
-#: src/FakerPress/Utils.php:885
+#: src/FakerPress/Utils.php:886
 msgid "Mongolia"
 msgstr "Монголія"
 
-#: src/FakerPress/Utils.php:890
+#: src/FakerPress/Utils.php:891
 msgid "Montenegro"
 msgstr "Чорногорія"
 
-#: src/FakerPress/Utils.php:895
+#: src/FakerPress/Utils.php:896
 msgid "Montserrat"
 msgstr "Монтсеррат"
 
-#: src/FakerPress/Utils.php:875
+#: src/FakerPress/Utils.php:876
 msgid "Moldova"
 msgstr "Молдова"
 
-#: src/FakerPress/Utils.php:880
+#: src/FakerPress/Utils.php:881
 msgid "Monaco"
 msgstr "Монако"
 
-#: src/FakerPress/Utils.php:860
+#: src/FakerPress/Utils.php:861
 msgid "Mayotte"
 msgstr "Майотта"
 
-#: src/FakerPress/Utils.php:865
+#: src/FakerPress/Utils.php:866
 msgid "Mexico"
 msgstr "Мексика"
 
-#: src/FakerPress/Utils.php:850
+#: src/FakerPress/Utils.php:851
 msgid "Mauritania"
 msgstr "Мавританія"
 
-#: src/FakerPress/Utils.php:855
+#: src/FakerPress/Utils.php:856
 msgid "Mauritius"
 msgstr "Маврикій"
 
-#: src/FakerPress/Utils.php:835
+#: src/FakerPress/Utils.php:836
 msgid "Malta"
 msgstr "Мальта"
 
-#: src/FakerPress/Utils.php:825
+#: src/FakerPress/Utils.php:826
 msgid "Maldives"
 msgstr "Мальдіви"
 
-#: src/FakerPress/Utils.php:830
+#: src/FakerPress/Utils.php:831
 msgid "Mali"
 msgstr "Малі"
 
-#: src/FakerPress/Utils.php:810
+#: src/FakerPress/Utils.php:811
 msgid "Madagascar"
 msgstr "Мадагаскар"
 
-#: src/FakerPress/Utils.php:815
+#: src/FakerPress/Utils.php:816
 msgid "Malawi"
 msgstr "Малаві"
 
-#: src/FakerPress/Utils.php:820
+#: src/FakerPress/Utils.php:821
 msgid "Malaysia"
 msgstr "Малайзія"
 
-#: src/FakerPress/Utils.php:800
+#: src/FakerPress/Utils.php:801
 msgid "Macau"
 msgstr "Макао О.А.Р. Китаю"
 
-#: src/FakerPress/Utils.php:785
+#: src/FakerPress/Utils.php:786
 msgid "Liechtenstein"
 msgstr "Ліхтенштейн"
 
-#: src/FakerPress/Utils.php:790
+#: src/FakerPress/Utils.php:791
 msgid "Lithuania"
 msgstr "Литва"
 
-#: src/FakerPress/Utils.php:795
+#: src/FakerPress/Utils.php:796
 msgid "Luxembourg"
 msgstr "Люксембург"
 
-#: src/FakerPress/Utils.php:775
+#: src/FakerPress/Utils.php:776
 msgid "Liberia"
 msgstr "Ліберія"
 
-#: src/FakerPress/Utils.php:780
+#: src/FakerPress/Utils.php:781
 msgid "Libya"
 msgstr "Лівія"
 
-#: src/FakerPress/Utils.php:760
+#: src/FakerPress/Utils.php:761
 msgid "Latvia"
 msgstr "Латвія"
 
-#: src/FakerPress/Utils.php:765
+#: src/FakerPress/Utils.php:766
 msgid "Lebanon"
 msgstr "Ліван"
 
-#: src/FakerPress/Utils.php:770
+#: src/FakerPress/Utils.php:771
 msgid "Lesotho"
 msgstr "Лесото"
 
-#: src/FakerPress/Utils.php:755
+#: src/FakerPress/Utils.php:756
 msgid "Laos"
 msgstr "Лаос"
 
-#: src/FakerPress/Utils.php:745
+#: src/FakerPress/Utils.php:746
 msgid "Kuwait"
 msgstr "Кувейт"
 
-#: src/FakerPress/Utils.php:725
+#: src/FakerPress/Utils.php:726
 msgid "Jordan"
 msgstr "Йорданія"
 
-#: src/FakerPress/Utils.php:730
+#: src/FakerPress/Utils.php:731
 msgid "Kazakhstan"
 msgstr "Казахстан"
 
-#: src/FakerPress/Utils.php:735
+#: src/FakerPress/Utils.php:736
 msgid "Kenya"
 msgstr "Кенія"
 
-#: src/FakerPress/Utils.php:715
+#: src/FakerPress/Utils.php:716
 msgid "Japan"
 msgstr "Японія"
 
-#: src/FakerPress/Utils.php:720
+#: src/FakerPress/Utils.php:721
 msgid "Jersey"
 msgstr "Джерсі"
 
-#: src/FakerPress/Utils.php:710
+#: src/FakerPress/Utils.php:711
 msgid "Jamaica"
 msgstr "Ямайка"
 
-#: src/FakerPress/Utils.php:700
+#: src/FakerPress/Utils.php:701
 msgid "Israel"
 msgstr "Ізраїль"
 
-#: src/FakerPress/Utils.php:705
+#: src/FakerPress/Utils.php:706
 msgid "Italy"
 msgstr "Італія"
 
-#: src/FakerPress/Utils.php:685
+#: src/FakerPress/Utils.php:686
 msgid "Iraq"
 msgstr "Ірак"
 
-#: src/FakerPress/Utils.php:690
+#: src/FakerPress/Utils.php:691
 msgid "Republic of Ireland"
 msgstr "Ірландія"
 
-#: src/FakerPress/Utils.php:695
+#: src/FakerPress/Utils.php:696
 msgid "Isle of Man"
 msgstr "Острів Мен"
 
-#: src/FakerPress/Utils.php:670
+#: src/FakerPress/Utils.php:671
 msgid "Indonesia"
 msgstr "Індонезія"
 
-#: src/FakerPress/Utils.php:680
+#: src/FakerPress/Utils.php:681
 msgid "Iran"
 msgstr "Іран"
 
-#: src/FakerPress/Utils.php:655
+#: src/FakerPress/Utils.php:656
 msgid "Hungary"
 msgstr "Угорщина"
 
-#: src/FakerPress/Utils.php:660
+#: src/FakerPress/Utils.php:661
 msgid "Iceland"
 msgstr "Ісландія"
 
-#: src/FakerPress/Utils.php:665
+#: src/FakerPress/Utils.php:666
 msgid "India"
 msgstr "Індія"
 
-#: src/FakerPress/Utils.php:645
+#: src/FakerPress/Utils.php:646
 msgid "Honduras"
 msgstr "Гондурас"
 
-#: src/FakerPress/Utils.php:635
+#: src/FakerPress/Utils.php:636
 msgid "Haiti"
 msgstr "Гаїті"
 
-#: src/FakerPress/Utils.php:640
+#: src/FakerPress/Utils.php:641
 msgid "Heard Island and McDonald Islands"
 msgstr "Острів Херд і острови Макдональд"
 
-#: src/FakerPress/Utils.php:620
+#: src/FakerPress/Utils.php:621
 msgid "Guinea"
 msgstr "Гвінея"
 
-#: src/FakerPress/Utils.php:610
+#: src/FakerPress/Utils.php:611
 msgid "Guatemala"
 msgstr "Гватемала"
 
-#: src/FakerPress/Utils.php:615
+#: src/FakerPress/Utils.php:616
 msgid "Guernsey"
 msgstr "Гернсі"
 
-#: src/FakerPress/Utils.php:605
+#: src/FakerPress/Utils.php:606
 msgid "Guam"
 msgstr "Гуам"
 
-#: src/FakerPress/Utils.php:595
+#: src/FakerPress/Utils.php:596
 msgid "Grenada"
 msgstr "Гренада"
 
-#: src/FakerPress/Utils.php:600
+#: src/FakerPress/Utils.php:601
 msgid "Guadeloupe"
 msgstr "Гваделупа"
 
-#: src/FakerPress/Utils.php:585
+#: src/FakerPress/Utils.php:586
 msgid "Greece"
 msgstr "Греція"
 
-#: src/FakerPress/Utils.php:570
+#: src/FakerPress/Utils.php:571
 msgid "Germany"
 msgstr "Німеччина"
 
-#: src/FakerPress/Utils.php:575
+#: src/FakerPress/Utils.php:576
 msgid "Ghana"
 msgstr "Гана"
 
-#: src/FakerPress/Utils.php:580
+#: src/FakerPress/Utils.php:581
 msgid "Gibraltar"
 msgstr "Гібралтар"
 
-#: src/FakerPress/Utils.php:555
+#: src/FakerPress/Utils.php:556
 msgid "Gabon"
 msgstr "Габон"
 
-#: src/FakerPress/Utils.php:565
+#: src/FakerPress/Utils.php:566
 msgid "Georgia"
 msgstr "Грузія"
 
-#: src/FakerPress/Utils.php:535
+#: src/FakerPress/Utils.php:536
 msgid "France"
 msgstr "Франція"
 
-#: src/FakerPress/Utils.php:540
+#: src/FakerPress/Utils.php:541
 msgid "French Guiana"
 msgstr "Французька Гвіана"
 
-#: src/FakerPress/Utils.php:545
+#: src/FakerPress/Utils.php:546
 msgid "French Polynesia"
 msgstr "Французька Полінезія"
 
-#: src/FakerPress/Utils.php:525
+#: src/FakerPress/Utils.php:526
 msgid "Fiji"
 msgstr "Фіджі"
 
-#: src/FakerPress/Utils.php:530
+#: src/FakerPress/Utils.php:531
 msgid "Finland"
 msgstr "Фінляндія"
 
-#: src/FakerPress/Utils.php:515
+#: src/FakerPress/Utils.php:516
 msgid "Falkland Islands"
 msgstr "Фолклендські острови"
 
-#: src/FakerPress/Utils.php:520
+#: src/FakerPress/Utils.php:521
 msgid "Faroe Islands"
 msgstr "Фарерські острови"
 
-#: src/FakerPress/Utils.php:500
+#: src/FakerPress/Utils.php:501
 msgid "Eritrea"
 msgstr "Еритрея"
 
-#: src/FakerPress/Utils.php:505
+#: src/FakerPress/Utils.php:506
 msgid "Estonia"
 msgstr "Естонія"
 
-#: src/FakerPress/Utils.php:510
+#: src/FakerPress/Utils.php:511
 msgid "Ethiopia"
 msgstr "Ефіопія"
 
-#: src/FakerPress/Utils.php:490
+#: src/FakerPress/Utils.php:491
 msgid "El Salvador"
 msgstr "Сальвадор"
 
-#: src/FakerPress/Utils.php:495
+#: src/FakerPress/Utils.php:496
 msgid "Equatorial Guinea"
 msgstr "Екваторіальна Гвінея"
 
-#: src/FakerPress/Utils.php:475
+#: src/FakerPress/Utils.php:476
 msgid "Dominican Republic"
 msgstr "Домініканська Республіка"
 
-#: src/FakerPress/Utils.php:480
+#: src/FakerPress/Utils.php:481
 msgid "Ecuador"
 msgstr "Еквадор"
 
-#: src/FakerPress/Utils.php:485
+#: src/FakerPress/Utils.php:486
 msgid "Egypt"
 msgstr "Єгипет"
 
-#: src/FakerPress/Utils.php:460
+#: src/FakerPress/Utils.php:461
 msgid "Denmark"
 msgstr "Данія"
 
-#: src/FakerPress/Utils.php:435
+#: src/FakerPress/Utils.php:436
 msgid "Croatia"
 msgstr "Хорватія"
 
-#: src/FakerPress/Utils.php:440
+#: src/FakerPress/Utils.php:441
 msgid "Cuba"
 msgstr "Куба"
 
-#: src/FakerPress/Utils.php:450
+#: src/FakerPress/Utils.php:451
 msgid "Cyprus"
 msgstr "Кіпр"
 
-#: src/FakerPress/Utils.php:415
+#: src/FakerPress/Utils.php:416
 msgid "Republic of the Congo"
 msgstr "Республіка Конго"
 
-#: src/FakerPress/Utils.php:420
+#: src/FakerPress/Utils.php:421
 msgid "Democratic Republic of the Congo"
 msgstr "Демократична Республіка Конго"
 
-#: src/FakerPress/Utils.php:425
+#: src/FakerPress/Utils.php:426
 msgid "Cook Islands"
 msgstr "Острови Кука"
 
-#: src/FakerPress/Utils.php:400
+#: src/FakerPress/Utils.php:401
 msgid "Cocos (Keeling) Islands"
 msgstr "Кокосові (Кілінг) острови"
 
-#: src/FakerPress/Utils.php:405
+#: src/FakerPress/Utils.php:406
 msgid "Colombia"
 msgstr "Колумбія"
 
-#: src/FakerPress/Utils.php:385
+#: src/FakerPress/Utils.php:386
 msgid "Chile"
 msgstr "Чилі"
 
-#: src/FakerPress/Utils.php:390
+#: src/FakerPress/Utils.php:391
 msgid "China"
 msgstr "Китай"
 
-#: src/FakerPress/Utils.php:370
+#: src/FakerPress/Utils.php:371
 msgid "Cayman Islands"
 msgstr "Кайманові острови"
 
-#: src/FakerPress/Utils.php:380
+#: src/FakerPress/Utils.php:381
 msgid "Chad"
 msgstr "Чад"
 
-#: src/FakerPress/Utils.php:365
+#: src/FakerPress/Utils.php:366
 msgid "Cape Verde"
 msgstr "Кабо-Верде"
 
-#: src/FakerPress/Utils.php:350
+#: src/FakerPress/Utils.php:351
 msgid "Cambodia"
 msgstr "Камбоджа"
 
-#: src/FakerPress/Utils.php:355
+#: src/FakerPress/Utils.php:356
 msgid "Cameroon"
 msgstr "Камерун"
 
-#: src/FakerPress/Utils.php:360
+#: src/FakerPress/Utils.php:361
 msgid "Canada"
 msgstr "Канада"
 
-#: src/FakerPress/Utils.php:335
+#: src/FakerPress/Utils.php:336
 msgid "Bulgaria"
 msgstr "Болгарія"
 
-#: src/FakerPress/Utils.php:340
+#: src/FakerPress/Utils.php:341
 msgid "Burkina Faso"
 msgstr "Буркіна-Фасо"
 
-#: src/FakerPress/Utils.php:345
+#: src/FakerPress/Utils.php:346
 msgid "Burundi"
 msgstr "Бурунді"
 
-#: src/FakerPress/Utils.php:325
+#: src/FakerPress/Utils.php:326
 msgid "British Virgin Islands"
 msgstr "Британські Віргінські острови"
 
-#: src/FakerPress/Utils.php:330
+#: src/FakerPress/Utils.php:331
 msgid "Brunei"
 msgstr "Бруней"
 
-#: src/FakerPress/Utils.php:300
+#: src/FakerPress/Utils.php:301
 msgid "Botswana"
 msgstr "Ботсвана"
 
-#: src/FakerPress/Utils.php:310
+#: src/FakerPress/Utils.php:311
 msgid "Brazil"
 msgstr "Бразилія"
 
-#: src/FakerPress/Utils.php:280
+#: src/FakerPress/Utils.php:281
 msgid "Bhutan"
 msgstr "Бутан"
 
-#: src/FakerPress/Utils.php:285
+#: src/FakerPress/Utils.php:286
 msgid "Bolivia"
 msgstr "Болівія"
 
-#: src/FakerPress/Utils.php:275
+#: src/FakerPress/Utils.php:276
 msgid "Bermuda"
 msgstr "Бермудські Острови"
 
-#: src/FakerPress/Utils.php:260
+#: src/FakerPress/Utils.php:261
 msgid "Belgium"
 msgstr "Бельгія"
 
-#: src/FakerPress/Utils.php:250
+#: src/FakerPress/Utils.php:251
 msgid "Barbados"
 msgstr "Барбадос"
 
-#: src/FakerPress/Utils.php:255
+#: src/FakerPress/Utils.php:256
 msgid "Belarus"
 msgstr "Білорусь"
 
-#: src/FakerPress/Utils.php:245
+#: src/FakerPress/Utils.php:246
 msgid "Bangladesh"
 msgstr "Бангладеш"
 
-#: src/FakerPress/Utils.php:230
+#: src/FakerPress/Utils.php:231
 msgid "Azerbaijan"
 msgstr "Азербайджан"
 
-#: src/FakerPress/Utils.php:240
+#: src/FakerPress/Utils.php:241
 msgid "Bahrain"
 msgstr "Бахрейн"
 
-#: src/FakerPress/Utils.php:225
+#: src/FakerPress/Utils.php:226
 msgid "Austria"
 msgstr "Австрія"
 
-#: src/FakerPress/Utils.php:215
+#: src/FakerPress/Utils.php:216
 msgid "Aruba"
 msgstr "Аруба"
 
-#: src/FakerPress/Utils.php:220
+#: src/FakerPress/Utils.php:221
 msgid "Australia"
 msgstr "Австралія"
 
-#: src/FakerPress/Utils.php:205
+#: src/FakerPress/Utils.php:206
 msgid "Argentina"
 msgstr "Аргентина"
 
-#: src/FakerPress/Utils.php:210
+#: src/FakerPress/Utils.php:211
 msgid "Armenia"
 msgstr "Вірменія"
 
-#: src/FakerPress/Utils.php:195
+#: src/FakerPress/Utils.php:196
 msgid "Anguilla"
 msgstr "Ангілья"
 
-#: src/FakerPress/Utils.php:200
+#: src/FakerPress/Utils.php:201
 msgid "Antigua and Barbuda"
 msgstr "Антигуа і Барбуда"
 
-#: src/FakerPress/Utils.php:190
+#: src/FakerPress/Utils.php:191
 msgid "Angola"
 msgstr "Ангола"
 
-#: src/FakerPress/Utils.php:185
+#: src/FakerPress/Utils.php:186
 msgid "Andorra"
 msgstr "Андорра"
 
-#: src/FakerPress/Utils.php:170
+#: src/FakerPress/Utils.php:171
 msgid "Albania"
 msgstr "Албанія"
 
-#: src/FakerPress/Utils.php:175
+#: src/FakerPress/Utils.php:176
 msgid "Algeria"
 msgstr "Алжир"
 
-#: src/FakerPress/Utils.php:160
+#: src/FakerPress/Utils.php:161
 msgid "Afghanistan"
 msgstr "Афганістан"
 
@@ -842,43 +842,43 @@ msgstr "Адреса (вулиця)"
 msgid "Today"
 msgstr "Сьогодні"
 
-#: src/FakerPress/Utils.php:805
+#: src/FakerPress/Utils.php:806
 msgid "Republic of Macedonia"
 msgstr "Північна Македонія"
 
-#: src/FakerPress/Utils.php:870
+#: src/FakerPress/Utils.php:871
 msgid "Federated States of Micronesia"
 msgstr "Федеративні Штати Мікронезії"
 
-#: src/FakerPress/Utils.php:975
+#: src/FakerPress/Utils.php:976
 msgid "Northern Mariana Islands"
 msgstr "Північні Маріанські острови"
 
-#: src/FakerPress/Utils.php:1000
+#: src/FakerPress/Utils.php:1001
 msgid "Palestine"
 msgstr "Палестина"
 
-#: src/FakerPress/Utils.php:1030
+#: src/FakerPress/Utils.php:1031
 msgid "Pitcairn Islands"
 msgstr "Острови Піткерн"
 
-#: src/FakerPress/Utils.php:1060
+#: src/FakerPress/Utils.php:1061
 msgid "Réunion"
 msgstr "Реюньйон"
 
-#: src/FakerPress/Utils.php:1055
+#: src/FakerPress/Utils.php:1056
 msgid "Republic of Kosovo"
 msgstr "Косово"
 
-#: src/FakerPress/Utils.php:1080
+#: src/FakerPress/Utils.php:1081
 msgid "Saint Barthélemy"
 msgstr "Сен-Бартельмі"
 
-#: src/FakerPress/Utils.php:1100
+#: src/FakerPress/Utils.php:1101
 msgid "Saint Martin"
 msgstr "Сен-Мартен"
 
-#: src/FakerPress/Utils.php:1160
+#: src/FakerPress/Utils.php:1161
 msgid "Sint Maarten"
 msgstr "Сен-Мартен"
 
@@ -987,147 +987,147 @@ msgstr "Неправильний MimeType зображення"
 msgid "Lorem Picsum"
 msgstr "Lorem Picsum"
 
-#: src/FakerPress/Utils.php:265
+#: src/FakerPress/Utils.php:266
 msgid "Belize"
 msgstr "Беліз"
 
-#: src/FakerPress/Utils.php:270
+#: src/FakerPress/Utils.php:271
 msgid "Benin"
 msgstr "Бенин"
 
-#: src/FakerPress/Utils.php:295
+#: src/FakerPress/Utils.php:296
 msgid "Bosnia and Herzegovina"
 msgstr "Боснія і Герцеговина"
 
-#: src/FakerPress/Utils.php:305
+#: src/FakerPress/Utils.php:306
 msgid "Bouvet Island"
 msgstr "Острів Буве́"
 
-#: src/FakerPress/Utils.php:315
+#: src/FakerPress/Utils.php:316
 msgid "British Indian Ocean Territory"
 msgstr "Британська територія в Індійському океані"
 
-#: src/FakerPress/Utils.php:375
+#: src/FakerPress/Utils.php:376
 msgid "Central African Republic"
 msgstr "Центральноафриканська Республіка"
 
-#: src/FakerPress/Utils.php:395
+#: src/FakerPress/Utils.php:396
 msgid "Christmas Island"
 msgstr "Острів Різдва"
 
-#: src/FakerPress/Utils.php:410
+#: src/FakerPress/Utils.php:411
 msgid "Comoros"
 msgstr "Коморські острови"
 
-#: src/FakerPress/Utils.php:430
+#: src/FakerPress/Utils.php:431
 msgid "Costa Rica"
 msgstr "Коста-Ріка"
 
-#: src/FakerPress/Utils.php:455
+#: src/FakerPress/Utils.php:456
 msgid "Czech Republic"
 msgstr "Чеська Республіка"
 
-#: src/FakerPress/Utils.php:465
+#: src/FakerPress/Utils.php:466
 msgid "Djibouti"
 msgstr "Джибуті"
 
-#: src/FakerPress/Utils.php:470
+#: src/FakerPress/Utils.php:471
 msgid "Dominica"
 msgstr "Домініка"
 
-#: src/FakerPress/Utils.php:590
+#: src/FakerPress/Utils.php:591
 msgid "Greenland"
 msgstr "Ґренландія"
 
-#: src/FakerPress/Utils.php:625
+#: src/FakerPress/Utils.php:626
 msgid "Guinea-Bissau"
 msgstr "Гвінея-Бісау"
 
-#: src/FakerPress/Utils.php:630
+#: src/FakerPress/Utils.php:631
 msgid "Guyana"
 msgstr "Гаяна"
 
-#: src/FakerPress/Utils.php:650
+#: src/FakerPress/Utils.php:651
 msgid "Hong Kong"
 msgstr "Гонконг"
 
-#: src/FakerPress/Utils.php:675
+#: src/FakerPress/Utils.php:676
 msgid "Ivory Coast"
 msgstr "Кот-д'Івуар"
 
-#: src/FakerPress/Utils.php:740
+#: src/FakerPress/Utils.php:741
 msgid "Kiribati"
 msgstr "Кірібаті"
 
-#: src/FakerPress/Utils.php:750
+#: src/FakerPress/Utils.php:751
 msgid "Kyrgyzstan"
 msgstr "Киргизія"
 
-#: src/FakerPress/Utils.php:840
+#: src/FakerPress/Utils.php:841
 msgid "Marshall Islands"
 msgstr "Маршаллові острови"
 
-#: src/FakerPress/Utils.php:845
+#: src/FakerPress/Utils.php:846
 msgid "Martinique"
 msgstr "Мартиніка"
 
-#: src/FakerPress/Utils.php:965
+#: src/FakerPress/Utils.php:966
 msgid "Norfolk Island"
 msgstr "Острів Норфолк"
 
-#: src/FakerPress/Utils.php:1010
+#: src/FakerPress/Utils.php:1011
 msgid "Papua New Guinea"
 msgstr "Папуа-Нова Гвінея"
 
-#: src/FakerPress/Utils.php:1085
+#: src/FakerPress/Utils.php:1086
 msgid "Saint Helena"
 msgstr "Острів Святої Єлени"
 
-#: src/FakerPress/Utils.php:1110
+#: src/FakerPress/Utils.php:1111
 msgid "Saint Vincent and the Grenadines"
 msgstr "Сент-Вінсент і Гренадіни"
 
-#: src/FakerPress/Utils.php:1120
+#: src/FakerPress/Utils.php:1121
 msgid "San Marino"
 msgstr "Сан-Маріно"
 
-#: src/FakerPress/Utils.php:1145
+#: src/FakerPress/Utils.php:1146
 msgid "Seychelles"
 msgstr "Сейшельські острови"
 
-#: src/FakerPress/Utils.php:1165
+#: src/FakerPress/Utils.php:1166
 msgid "Slovakia"
 msgstr "Словаччина"
 
-#: src/FakerPress/Utils.php:1175
+#: src/FakerPress/Utils.php:1176
 msgid "Solomon Islands"
 msgstr "Соломонові острови"
 
-#: src/FakerPress/Utils.php:1185
+#: src/FakerPress/Utils.php:1186
 msgid "South Africa"
 msgstr "Південна Африка"
 
-#: src/FakerPress/Utils.php:1200
+#: src/FakerPress/Utils.php:1201
 msgid "South Sudan"
 msgstr "Південний Судан"
 
-#: src/FakerPress/Utils.php:1210
+#: src/FakerPress/Utils.php:1211
 msgid "Sri Lanka"
 msgstr "Шрі Ланка"
 
-#: src/FakerPress/Utils.php:1220
+#: src/FakerPress/Utils.php:1221
 msgid "Suriname"
 msgstr "Сурінам"
 
-#: src/FakerPress/Utils.php:1305
+#: src/FakerPress/Utils.php:1306
 msgid "Turkmenistan"
 msgstr "Туркменістан"
 
-#: src/FakerPress/Utils.php:1330
+#: src/FakerPress/Utils.php:1331
 msgid "United Arab Emirates"
 msgstr "Об'єднані Арабські Емірати"
 
-#: src/FakerPress/Utils.php:1365
+#: src/FakerPress/Utils.php:1366
 msgid "Vietnam"
 msgstr "В'єтнам"
 
@@ -1143,11 +1143,11 @@ msgstr "Тип"
 msgid "Terms"
 msgstr "Значення"
 
-#: src/FakerPress/Utils.php:180
+#: src/FakerPress/Utils.php:181
 msgid "American Samoa"
 msgstr "Американське Самоа"
 
-#: src/FakerPress/Utils.php:1045
+#: src/FakerPress/Utils.php:1046
 msgid "Puerto Rico"
 msgstr "Пуерто-Рико"
 
@@ -1206,7 +1206,7 @@ msgstr "Поштовий індекс"
 msgid "Tomorrow"
 msgstr "Завтра"
 
-#: src/FakerPress/Utils.php:165
+#: src/FakerPress/Utils.php:166
 msgid "Åland Islands"
 msgstr "Аландські острови"
 
@@ -1371,7 +1371,7 @@ msgstr "Всі дані втрачені назавжди."
 msgid "Asciify"
 msgstr "Асцифікувати"
 
-#: src/FakerPress/Utils.php:290
+#: src/FakerPress/Utils.php:291
 msgid "Bonaire"
 msgstr "Бонайре"
 

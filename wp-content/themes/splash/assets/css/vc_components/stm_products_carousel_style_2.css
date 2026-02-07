@@ -1,0 +1,120 @@
+/*American football*/
+/*Soccer*/
+/*Baseball*/
+/*magazine*/
+/*Soccer News*/
+/*Basketball Two*/
+/*Hockey*/
+.stm-products-carousel.style_2 {
+  position: relative;
+  padding-top: 96px;
+  padding-bottom: 100px;
+}
+.stm-products-carousel.style_2:before {
+  content: "";
+  background-color: #e7e9f1;
+  position: absolute;
+  right: -196px;
+  left: -196px;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+}
+.stm-products-carousel.style_2 .stm-products-carousel__header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 30px;
+}
+.stm-products-carousel.style_2 .stm-products-carousel__title {
+  color: #142978;
+  margin: 0;
+}
+.stm-products-carousel.style_2 .stm-products-carousel__control {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.stm-products-carousel.style_2 .stm-products-carousel__control-btn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ff573b;
+  color: #ff573b;
+  text-align: center;
+  line-height: 28px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.stm-products-carousel.style_2 .stm-products-carousel__control-btn.next {
+  margin-left: -1px;
+}
+.stm-products-carousel.style_2 .stm-products-carousel__carousel .owl-stage-outer {
+  overflow: visible;
+}
+.stm-products-carousel.style_2 .stm-products-carousel__product {
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0px 5px 30px 0 rgba(0, 0, 0, 0.1);
+}
+.stm-products-carousel.style_2 .stm-products-carousel__product-image {
+  height: 300px;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-bottom: 15px;
+}
+.stm-products-carousel.style_2 .stm-products-carousel__product-image img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.stm-products-carousel.style_2 .stm-products-carousel__product-info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.stm-products-carousel.style_2 .stm-products-carousel__product-name {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 8px;
+  min-height: 52px;
+  width: 100%;
+}
+.stm-products-carousel.style_2 .stm-products-carousel__product-name > a {
+  color: inherit;
+  text-decoration: none;
+}
+.stm-products-carousel.style_2 .stm-products-carousel__product-price {
+  color: #333;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 900;
+}
+.stm-products-carousel.style_2 .stm-products-carousel__product-price ins {
+  color: #ff573b;
+}
+.stm-products-carousel.style_2 .stm-products-carousel__product-add {
+  color: #ff573b;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.stm-products-carousel.style_2 .stm-products-carousel__product-add:hover {
+  text-decoration: none;
+}
+.stm-products-carousel.style_2 .stm-products-carousel__product-add.added {
+  display: none;
+}

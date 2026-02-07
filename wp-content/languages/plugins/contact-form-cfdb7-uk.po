@@ -1,5 +1,5 @@
-# Translation of Plugins - Contact Form 7 Database Addon &#8211; CFDB7 - Stable (latest release) in Ukrainian
-# This file is distributed under the same license as the Plugins - Contact Form 7 Database Addon &#8211; CFDB7 - Stable (latest release) package.
+# Translation of Plugins - Database Addon for Contact Form 7 &#8211; CFDB7 - Stable (latest release) in Ukrainian
+# This file is distributed under the same license as the Plugins - Database Addon for Contact Form 7 &#8211; CFDB7 - Stable (latest release) package.
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2024-07-23 14:51:25+0000\n"
@@ -7,9 +7,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
-"X-Generator: GlotPress/4.0.1\n"
+"X-Generator: GlotPress/4.0.3\n"
 "Language: uk_UA\n"
-"Project-Id-Version: Plugins - Contact Form 7 Database Addon &#8211; CFDB7 - Stable (latest release)\n"
+"Project-Id-Version: Plugins - Database Addon for Contact Form 7 &#8211; CFDB7 - Stable (latest release)\n"
 
 #. Plugin URI of the plugin
 #: contact-form-cfdb-7.php
@@ -26,19 +26,19 @@ msgstr "Аршид"
 msgid "http://ciphercoin.com/"
 msgstr "http://ciphercoin.com/"
 
-#: inc/admin-subpage.php:466
+#: inc/admin-subpage.php:473
 msgid "Export CSV"
 msgstr "Експорт CSV"
 
-#: inc/admin-subpage.php:461
+#: inc/admin-subpage.php:468
 msgid "Apply"
 msgstr "Прийняти"
 
-#: inc/admin-subpage.php:451
+#: inc/admin-subpage.php:458
 msgid "Bulk Actions"
 msgstr "Групові дії"
 
-#: inc/admin-subpage.php:449
+#: inc/admin-subpage.php:456
 msgid "Select bulk action"
 msgstr "Вибрати декілька"
 
@@ -54,23 +54,23 @@ msgstr "Непрочитано"
 msgid "Read"
 msgstr "Прочитано"
 
-#: inc/admin-mainpage.php:126
+#: inc/admin-mainpage.php:123
 msgid "Count"
 msgstr "Кількість"
 
-#: inc/admin-mainpage.php:125
+#: inc/admin-mainpage.php:122
 msgid "Name"
 msgstr "Назва"
 
-#: inc/add-ons.php:45
+#: inc/add-ons.php:53
 msgid "There was an error retrieving the extensions list from the server. Please try again later."
 msgstr "Сталася помилка під час отримання розширення списку з сервера. Будь ласка, спробуйте ще раз."
 
-#: inc/add-ons.php:13
+#: inc/add-ons.php:21
 msgid "Browse All Extensions"
 msgstr "Переглянути всі розширення"
 
-#: inc/admin-mainpage.php:32
+#: inc/admin-mainpage.php:32 inc/admin-mainpage.php:69
 msgid "Contact Forms"
 msgstr "Контактні форми"
 
@@ -84,18 +84,10 @@ msgstr "Зберігайте та керуйте повідомлення Contac
 msgid "Contact Form CFDB7"
 msgstr "Contact Form CFDB7"
 
-#: inc/admin-mainpage.php:69
-msgid "Contact Forms List"
-msgstr "Список контактних форм"
-
-#: inc/add-ons.php:16
-msgid "These extensions <strong>add functionality</strong> to CFDB7"
-msgstr "Ці розширення <strong>додають функціонал</strong> до CFDB7"
-
-#: inc/add-ons.php:11
+#: inc/add-ons.php:19
 msgid "Extensions for CFDB7"
 msgstr "Розширення до CFDB7"
 
-#: contact-form-cfdb-7.php:255
+#: contact-form-cfdb-7.php:248
 msgid "Awesome, you've been using <a href=\"admin.php?page=cfdb7-list.php\">Contact Form CFDB7</a> for more than 1 week. May we ask you to give it a 5-star rating on WordPress? | <a href=\"%2$s\" target=\"_blank\">Ok, you deserved it</a> | <a href=\"%1$s\">I already did</a> | <a href=\"%1$s\">No, not good enough</a>"
 msgstr "Чудово! Ви використовуєте <a href=\"admin.php?page=cfdb7-list.php\">Contact Form CFDB7</a> більше ніж 1 тиждень. Чи можемо ми попросити вас дати йому 5-зірковий рейтинг на WordPress? | <a href=\"%2$s\" target=\"_blank\">Так, ви на це заслуговуєте</a> | <a href=\"%1$s\">Я вже це зробив</a> | <a href=\"%1$s\">Ні, недостатньо кльові</a>"

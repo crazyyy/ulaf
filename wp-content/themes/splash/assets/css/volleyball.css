@@ -1,0 +1,616 @@
+@charset "UTF-8";
+/*American football*/
+/*Soccer*/
+/*Baseball*/
+/*magazine*/
+/*Soccer News*/
+/*Basketball Two*/
+/*Hockey*/
+body {
+  padding-bottom: 0 !important;
+}
+
+.page-template-coming-soon #wrapper {
+  background-position: center;
+}
+
+h1, .h1 {
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+h2, .h2 {
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 900;
+}
+
+.stm-title-box-unit {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+input[type=submit].btn-lg, button.btn-lg, .button.btn-lg {
+  padding: 21px 66px 19px;
+}
+
+.comment-form input[type=submit].btn-md, .comment-form button.btn-md, .comment-form .button.btn-md {
+  padding: 0;
+}
+
+.home .h1, .home .h2, .home .h3, .home .h4, .home .h5, .home .h6,
+.home h1, .home h2, .home h3, .home h4, .home h5, .home h6 {
+  color: #142978;
+}
+
+.stm-header {
+  margin-bottom: 42px;
+}
+.home .stm-header {
+  margin: 0;
+}
+.stm-header .stm-header-inner {
+  background-color: #e7e9f1;
+  padding: 10px 0 40px;
+}
+.stm-header .stm-header-inner .stm-header-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: end;
+      align-items: flex-end;
+}
+.stm-header .stm-header-inner .stm-header-container:after, .stm-header .stm-header-inner .stm-header-container:before {
+  content: none;
+}
+.home .stm-header .stm-header-inner {
+  background-color: #fff;
+}
+.header_1 .stm-header .stm-main-menu {
+  margin-bottom: 9px;
+}
+.header_1 .stm-header .stm-main-menu .stm-main-menu-unit {
+  background: none;
+}
+.header_1 .stm-header .stm-main-menu .stm-main-menu-unit .header-menu > li a {
+  line-height: 32px;
+  font-size: 14px;
+  font-weight: 900;
+  color: #333;
+  padding: 0 15px;
+}
+.header_1 .stm-header .stm-main-menu .stm-main-menu-unit .header-menu > li a:before {
+  background-color: #ff573b;
+}
+.header_1 .stm-header .stm-main-menu .stm-main-menu-unit .header-menu > li a:hover {
+  color: #fff;
+}
+.header_1 .stm-header .stm-main-menu .stm-main-menu-unit .header-menu > li.current-menu-item > a {
+  background-color: #ff573b;
+  color: #fff;
+}
+.header_1 .stm-header .stm-main-menu .stm-main-menu-unit .header-menu .sub-menu {
+  background-color: #fff;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.header_1 .stm-header .stm-main-menu .stm-main-menu-unit .header-menu .sub-menu li > a:hover a,
+.header_1 .stm-header .stm-main-menu .stm-main-menu-unit .header-menu .sub-menu li.current-menu-item a {
+  background-color: transparent;
+}
+.header_1 .stm-header .stm-main-menu .stm-main-menu-unit .header-menu .sub-menu li > a:hover > a,
+.header_1 .stm-header .stm-main-menu .stm-main-menu-unit .header-menu .sub-menu li.current-menu-item > a {
+  background-color: #ff573b;
+  color: #fff;
+}
+.header_1 .stm-header .stm-main-menu .stm-main-menu-unit:after {
+  content: none;
+}
+
+.navxtBreads {
+  font-weight: 400;
+}
+
+.stm-sportspress-sidebar {
+  margin-top: 20px;
+}
+
+.stm_latest_tweets .stm-tweets-wrapp h2 {
+  color: #142978;
+  font-weight: 900;
+}
+.stm_latest_tweets .stm-tweets-wrapp .stm-latest-tweets {
+  overflow: initial;
+}
+.stm_latest_tweets .stm-tweets-wrapp .stm-latest-tweets .latest-tweets ul {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -15px;
+}
+.stm_latest_tweets .stm-tweets-wrapp .stm-latest-tweets .latest-tweets ul li {
+  margin: 0 15px 20px;
+  border: 10px solid #e7e9f1;
+  padding: 30px;
+  position: relative;
+  overflow: initial;
+}
+.stm_latest_tweets .stm-tweets-wrapp .stm-latest-tweets .latest-tweets ul li:before {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #fff;
+  position: absolute;
+  top: 25px;
+  left: -29px;
+  content: "\f099";
+  font-family: "FontAwesome";
+  font-size: 35px;
+}
+.stm_latest_tweets .stm-tweets-wrapp .stm-latest-tweets .latest-tweets ul li .tweet-text {
+  color: #333;
+  font-size: 16px;
+  line-height: 28px;
+}
+.stm_latest_tweets .stm-tweets-wrapp .stm-latest-tweets .latest-tweets ul li .tweet-text a {
+  color: #333;
+}
+.stm_latest_tweets .stm-tweets-wrapp .stm-latest-tweets .latest-tweets ul li .tweet-details {
+  margin: 0;
+}
+.stm_latest_tweets .stm-tweets-wrapp .stm-latest-tweets .latest-tweets ul li .tweet-details a {
+  color: #142978;
+}
+@media (max-width: 1023px) {
+  .stm_latest_tweets .stm-tweets-wrapp .stm-latest-tweets .latest-tweets ul li {
+    margin: 0 10px 20px;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .stm_latest_tweets .stm-tweets-wrapp .stm-latest-tweets .latest-tweets ul {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    margin: 0;
+    padding: 0 10px;
+  }
+  .stm_latest_tweets .stm-tweets-wrapp .stm-latest-tweets .latest-tweets ul li {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+}
+
+.stm-tweets-wrapp .stm-latest-tweets .latest-tweets ul li .tweet-text {
+  color: #333;
+}
+
+.vc_general.vc_btn3.vc_btn3-style-flat {
+  padding: 11px 35px;
+  font-size: 12px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.vc_general.vc_btn3.vc_btn3-style-flat:before {
+  content: none;
+}
+.vc_general.vc_btn3.vc_btn3-style-flat.vc_btn3-color-warning {
+  color: #fff;
+  background-color: #ff573b !important;
+}
+.vc_general.vc_btn3.vc_btn3-style-flat.vc_btn3-color-warning:hover {
+  background-color: #142978 !important;
+  color: #fff;
+}
+
+.stm-footer {
+  position: static;
+  border-top: 1px solid #ddd;
+}
+.stm-footer .footer-widgets-wrapper {
+  padding-top: 50px;
+}
+.stm-footer .widgets.stm-cols-3 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.stm-footer .widgets.stm-cols-3 > .widget {
+  width: 100%;
+  margin: 0;
+}
+.stm-footer .widgets.stm-cols-3 > .widget:first-child {
+  text-align: right;
+}
+.stm-footer .widgets.stm-cols-3 > .widget:first-child + .widget {
+  text-align: center;
+}
+@media (max-width: 1023px) {
+  .stm-footer .widgets.stm-cols-3 > .widget:first-child + .widget {
+    padding: 0 30px;
+  }
+}
+@media (min-width: 768px) {
+  .stm-footer .widgets.stm-cols-3 > .widget:nth-child(1), .stm-footer .widgets.stm-cols-3 > .widget:nth-child(2), .stm-footer .widgets.stm-cols-3 > .widget:nth-child(3) {
+    width: 33.3%;
+  }
+}
+@media (max-width: 767px) {
+  .stm-footer .widgets.stm-cols-3 > .widget:nth-child(1), .stm-footer .widgets.stm-cols-3 > .widget:nth-child(3) {
+    width: 50%;
+    padding: 0 15px;
+  }
+  .stm-footer .widgets.stm-cols-3 > .widget:nth-child(2) {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .stm-footer .widgets.stm-cols-3 > .widget:nth-child(1), .stm-footer .widgets.stm-cols-3 > .widget:nth-child(3) {
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+  }
+  .stm-footer .widgets.stm-cols-3 > .widget:nth-child(2) {
+    display: none;
+  }
+}
+.stm-footer .widgets.stm-cols-3 > .widget.widget_nav_menu {
+  width: 100%;
+}
+.stm-footer .widgets.stm-cols-3 > .widget.widget_nav_menu ul li {
+  padding: 0 10px;
+}
+.stm-footer .widgets .widget-title {
+  margin: 0;
+}
+.stm-footer .widgets .widget-title h6 {
+  margin: 0 0 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 30px;
+  color: #142978;
+}
+.stm-footer .widgets .widget_nav_menu ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-transform: uppercase;
+}
+.stm-footer .widgets .widget_nav_menu ul li::before {
+  content: none;
+}
+.stm-footer .widgets .widget_nav_menu ul ul {
+  display: none !important;
+}
+.stm-footer .widgets .stm-footer-socials {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+.stm-footer .widgets .stm-footer-socials ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 0;
+}
+.stm-footer .widgets .stm-footer-socials ul li {
+  padding: 0;
+  margin: 0;
+}
+.stm-footer .widgets .stm-footer-socials ul li:before {
+  content: none;
+}
+.stm-footer .widgets .stm-footer-socials ul li a {
+  font-size: 18px;
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-color: #e7e9f1;
+  color: #142978 !important;
+  line-height: 50px;
+  text-align: center;
+}
+.stm-footer .widgets .stm-footer-socials ul li a:hover {
+  background-color: #ff573b;
+  color: #fff !important;
+}
+.stm-footer .widgets .stm-footer-socials ul li + li {
+  margin-left: 20px;
+}
+.stm-footer #stm-footer-bottom {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  text-align: center;
+  padding: 26px 0;
+}
+.stm-footer #stm-footer-bottom .footer-bottom-left {
+  float: none;
+}
+.stm-footer #stm-footer-bottom .footer-bottom-left .footer-bottom-left-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.stm-single-post-loop a .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 380px;
+  height: 100%;
+  width: 100%;
+}
+
+.stm-products-row .stm-single-product-loop .stm-product-content-loop-inner .woocommerce-loop-product__title {
+  font-size: 18px;
+  line-height: 1.2;
+}
+.stm-products-row .stm-single-product-loop .stm-product-content-loop-inner .meta .star-rating {
+  display: none;
+}
+
+.stm_gmap button {
+  background-color: #fff !important;
+}
+.stm_gmap button:before {
+  content: none;
+}
+
+.stm-trophy-carousel .stm-trophy-carousel-title {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.stm-trophy-carousel .stm-trophy-carousel-title:before, .stm-trophy-carousel .stm-trophy-carousel-title:after {
+  content: none;
+}
+.stm-trophy-carousel .stm-trophy-carousel-title .stm-main-title-unit,
+.stm-trophy-carousel .stm-trophy-carousel-title .stm-carousel-controls-right {
+  margin: 0 !important;
+}
+
+.stm-media-tabs .stm-media-tabs-nav {
+  margin-top: 16px;
+}
+
+.vc_tta-container .vc_tta.vc_general .vc_tta-panels-container .vc_tta-panels .vc_tta-panel .vc_tta-panel-body {
+  padding-top: 0;
+}
+
+.stm-single-sp_table-league .sp-league-table th:last-child {
+  text-indent: 0;
+}
+.stm-single-sp_table-league .sp-league-table td {
+  padding: 10px;
+}
+
+.stm-player-ids .stm-title-left h2 {
+  color: #333;
+}
+@media (max-width: 767px) {
+  .stm-player-ids .stm-title-left {
+    margin-bottom: 50px;
+  }
+  .stm-player-ids .stm-title-left h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+@media (max-width: 439px) {
+  .stm-player-ids .stm-players .owl-item {
+    text-align: center;
+  }
+}
+
+.product-categories .children,
+.widget_categories .children {
+  padding: 0;
+}
+.product-categories .children > li > a,
+.widget_categories .children > li > a {
+  padding-left: 50px;
+}
+
+.post-type-archive-product .stm-woocommerce .products {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media (max-width: 480px) {
+  .post-type-archive-product .stm-woocommerce .products > .product {
+    width: 100%;
+  }
+}
+.post-type-archive-product .stm-woocommerce .woocommerce-pagination {
+  margin-bottom: 50px;
+  margin-top: -50px;
+}
+
+.widget_title .h3, .widget_title h3 {
+  line-height: 30px;
+}
+
+.stm-gmap-shadow {
+  box-shadow: none;
+}
+
+.stm-single-sp_table-league .sp-league-table th, .stm-single-sp_table-league .sp-league-table td {
+  font-size: 14px;
+}
+
+.stm-single-sp_table-league .sp-league-table th:last-child {
+  text-indent: 0;
+}
+
+body .sp-player-list .data-name .player-photo,
+body .sp-player-list .data-name .player-flag {
+  display: none;
+}
+
+.sp-staff-details .single-info,
+.sp-player-details .single-info {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.stm-price-plan header {
+  background-color: #142978;
+}
+.stm-price-plan header .price {
+  color: #fff;
+}
+
+.stm-dark-bg {
+  background-color: #142978;
+}
+
+.stm-team-history .stm-team-history-single {
+  margin-top: -3px;
+}
+.stm-team-history .stm-team-history-single .stm-team-history-linked span {
+  box-shadow: none;
+  background-color: transparent;
+}
+.stm-team-history .stm-team-history-single .stm-team-history-linked span:after {
+  top: 0;
+}
+.stm-team-history .stm-team-history-single .stm-team-history-linked:after {
+  background-color: #666;
+}
+
+#frontend_customizer_button {
+  background-color: #ff573b;
+}
+
+#sb_instagram.sbi_col_1 #sbi_images .sbi_item {
+  width: 12.5% !important;
+  height: 12.5% !important;
+}
+
+.product-categories li a, .widget_categories li a {
+  background-color: #172976;
+}
+
+@media (max-width: 787px) {
+  .stm-header-mobile {
+    background-color: #fff;
+  }
+  .stm-header-mobile .stm-mobile-right {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .stm-page-title .stm-main-title-unit {
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 30px !important;
+  }
+
+  .woocommerce-checkout-review-order-table th, .shop_table_responsive.cart th,
+.woocommerce-checkout-review-order-table td.product-price, .shop_table_responsive.cart td.product-price,
+.woocommerce-checkout-review-order-table td.product-subtotal, .shop_table_responsive.cart td.product-subtotal,
+.woocommerce-checkout-review-order-table td.product-name a, .shop_table_responsive.cart td.product-name a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 500px) {
+  .stm-demo-typography .wpb_content_element .wpb_wrapper {
+    padding-left: 70px;
+  }
+}
+body.volleyball .stm-latest-results--volleyball .stm-latest-results__title {
+  color: #142978;
+}
+body.volleyball .stm-latest-results--volleyball .stm-latest-results__team__result-label {
+  color: #fff;
+  background-color: #ff573b;
+}
+body.volleyball .stm-latest-results--volleyball .stm-latest-results__vs {
+  color: #ff573b;
+}
+body.volleyball .upcoming-matches--style_3 .upcoming-matches__header h2 {
+  color: #142978;
+}
+body.volleyball .upcoming-matches--style_3 .upcoming-matches__vs {
+  color: #ff573b;
+}
+body.volleyball .upcoming-matches--style_3 .upcoming-matches__button {
+  background-color: #ff573b;
+}
+body.volleyball .upcoming-matches--style_3 .upcoming-matches__button:hover {
+  background-color: #142978;
+}
+body.volleyball .stm-player-statistic-details.style_volleyball .stm-player-statistic__header h2 {
+  color: #142978;
+}
+body.volleyball .stm-player-statistic-details.style_volleyball .stm-player-statistic__carousel-nav div {
+  border: 1px solid #ff573b;
+  color: #ff573b;
+}
+body.volleyball .stm-player-statistic-details.style_volleyball .stm-player-statistic__carousel-nav div:hover {
+  background-color: #ff573b;
+  color: #fff;
+}
+body.volleyball .stm-player-statistic-details.style_volleyball .stm-player-statistic__player {
+  color: #fff;
+}
+body.volleyball .stm-player-statistic-details.style_volleyball .stm-player-statistic__player-number {
+  background-color: #ff573b;
+  color: #fff;
+}
+body.volleyball .stm-player-statistic-details.style_volleyball .stm-player-statistic__player-name a {
+  color: #fff;
+}
+body.volleyball .stm-player-statistic-details.style_volleyball .stm-player-statistic__player-stats-list li {
+  color: #fff;
+}
+body.volleyball .stm_latest_news_most_styles.masonry_2 h2 {
+  color: #142978;
+}
+body.volleyball .stm_latest_news_most_styles.masonry_2 .stm_latest_news_most_styles__post:hover .stm_latest_news_most_styles__post-title {
+  color: #ff573b;
+}
+@media (min-width: 1024px) {
+  body.volleyball .stm_latest_news_most_styles.masonry_2 .stm_latest_news_most_styles__post:first-child .stm_latest_news_most_styles__post-title {
+    color: #fff;
+  }
+  body.volleyball .stm_latest_news_most_styles.masonry_2 .stm_latest_news_most_styles__post:first-child:hover .stm_latest_news_most_styles__post-title {
+    color: #ff573b;
+  }
+}
+body.volleyball .stm_latest_news_most_styles.masonry_2 .stm_latest_news_most_styles__post-date {
+  background-color: #ff573b;
+}
+body.volleyball .stm_latest_news_most_styles.masonry_2 .stm_latest_news_most_styles__post-title {
+  color: #142978;
+}
+body.volleyball .stm-popular-videos--style_2 .stm-popular-videos__play:before {
+  border-color: transparent #ff573b;
+}
+body.volleyball .stm-products-carousel.style_2 .stm-products-carousel__product-price ins,
+body.volleyball .stm-products-carousel.style_2 .stm-products-carousel__product-add {
+  color: #ff573b;
+}
+body.volleyball .stm-products-carousel.style_2 .stm-products-carousel__title {
+  color: #142978;
+}
+body.volleyball .stm-reviews-carousel.review_style_5 .stm-reviews-carousel__title,
+body.volleyball .stm-reviews-carousel.review_style_5 .stm-reviews-carousel__review-author-name,
+body.volleyball .stm-trophy-carousel.style_2 .stm-trophy-carousel__title,
+body.volleyball .stm-trophy-carousel.style_2 .stm-single-trophy .stm-title {
+  color: #142978;
+}

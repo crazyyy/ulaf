@@ -1,0 +1,785 @@
+/*---------------------------------*/
+/*            Joomsport            */
+/*---------------------------------*/
+body #joomsport-container, body #joomsport-achv-container, #joomsport-container .seasonTable {
+  background-color: transparent;
+  font-family: "Roboto Condensed";
+  font-size: 15px; }
+
+body #joomsport-container a {
+  color: #009bdc; }
+
+body #joomsport-container a:hover, body #joomsport-container a:focus {
+  color: #009bdc; }
+
+#joomsport-container ul li {
+  padding-left: 0; }
+
+#joomsport-container ul li:before {
+  display: none; }
+
+/*Buttons*/
+#joomsport-container a.btn, #joomsport-container .navbar-nav a.btn, #joomsport-container button.btn, #joomsport-achv-container a.btn, #joomsport-achv-container .navbar-nav a.btn, #joomsport-achv-container button.btn, #joomsport-container.jsSliderContainer > .jsmainscroll > button {
+  display: inline-block;
+  max-width: 100%;
+  border: 2px solid;
+  border-color: #e21e22;
+  border-radius: 5px;
+  outline: none !important;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #e21e22;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  text-shadow: none;
+  letter-spacing: 1px;
+  z-index: 1; }
+
+#joomsport-container #jsFilterMatches button.btn {
+  background-color: #e21e22 !important; }
+
+#joomsport-container #jsFilterMatches button.btn:hover, #joomsport-container #jsFilterMatches button.btn:focus {
+  background-color: transparent !important; }
+
+#joomsport-container.jsSliderContainer > .jsmainscroll > button path {
+  fill: #fff; }
+
+#joomsport-container a.btn, #joomsport-container .navbar-nav a.btn, #joomsport-container button.btn, #joomsport-achv-container a.btn, #joomsport-achv-container .navbar-nav a.btn, #joomsport-achv-container button.btn {
+  position: relative;
+  padding: 10px 20px; }
+
+#joomsport-container a.btn > i, #joomsport-container .navbar-nav a.btn > i, #joomsport-achv-container a.btn > i, #joomsport-achv-container .navbar-nav a.btn > i {
+  margin-top: 1px; }
+
+#joomsport-container a.btn:before, #joomsport-container .navbar-nav a.btn:before, #joomsport-container button.btn:before, #joomsport-achv-container a.btn:before, #joomsport-achv-container .navbar-nav a.btn:before, #joomsport-achv-container button.btn:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #e21e22;
+  z-index: -1;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform .4s,opacity .4s;
+  -webkit-transition: opacity .4s,-webkit-transform .4s;
+  transition: opacity .4s,-webkit-transform .4s;
+  transition: transform .4s,opacity .4s;
+  transition: transform .4s,opacity .4s,-webkit-transform .4s;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1); }
+
+#joomsport-container a.btn:hover, #joomsport-container button.btn:hover, #joomsport-container a.btn:focus, #joomsport-container button.btn:focus, #joomsport-container a.btn:active, #joomsport-container button.btn:active, #joomsport-container a.btn:active:hover, #joomsport-container button.btn:active:hover, #joomsport-container .navbar-nav a.btn:hover, #joomsport-achv-container a.btn:hover, #joomsport-achv-container button.btn:hover, #joomsport-achv-container a.btn:focus, #joomsport-achv-container button.btn:focus, #joomsport-achv-container a.btn:active, #joomsport-achv-container button.btn:active, #joomsport-achv-container a.btn:active:hover, #joomsport-achv-container button.btn:active:hover, #joomsport-achv-container .navbar-nav a.btn:hover {
+  background-color: transparent;
+  color: #e21e22;
+  border-color: #e21e17; }
+
+#joomsport-container.jsSliderContainer > .jsmainscroll > button:hover path {
+  fill: #e21e22; }
+
+#joomsport-container a.btn:hover:before, #joomsport-container button.btn:hover:before, #joomsport-container a.btn:focus:before, #joomsport-container button.btn:focus:before, #joomsport-container a.btn:active:before, #joomsport-container button.btn:active:before, #joomsport-container a.btn:active:hover:before, #joomsport-container button.btn:active:hover:before, #joomsport-container .navbar-nav a.btn:hover:before, #joomsport-achv-container a.btn:hover:before, #joomsport-achv-container button.btn:hover:before, #joomsport-achv-container a.btn:focus:before, #joomsport-achv-container button.btn:focus:before, #joomsport-achv-container a.btn:active:before, #joomsport-achv-container button.btn:active:before, #joomsport-achv-container a.btn:active:hover:before, #joomsport-achv-container button.btn:active:hover:before, #joomsport-achv-container .navbar-nav a.btn:hover:before {
+  opacity: 0;
+  -webkit-transform: scale3d(0.7, 1, 1);
+  transform: scale3d(0.7, 1, 1); }
+
+#joomsport-container .btn:active, #joomsport-achv-container .btn:active {
+  box-shadow: none; }
+
+.jscaruselcont .jsview1 {
+  min-width: 250px; }
+
+/*Tabs*/
+#joomsport-container .tabs .nav-tabs {
+  display: table;
+  margin: 10px auto;
+  border-bottom: 0;
+  font-size: 18px; }
+
+#joomsport-container .tabs .nav-tabs > li {
+  margin-right: 10px; }
+
+#joomsport-container .tabs .nav-tabs > li i {
+  margin-top: 3px; }
+
+#joomsport-container .page-content-js .nav-tabs > li > a {
+  border: 0;
+  background-color: transparent; }
+
+#joomsport-container .tabs .nav-tabs > li > a {
+  padding: 5px 10px;
+  color: #404040;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+#joomsport-container .tabs .nav-tabs > li:first-child {
+  margin-left: 0; }
+
+#joomsport-container .page-content-js .nav-tabs > li > a:hover, #joomsport-container .page-content-js .nav-tabs > li.active > a, #joomsport-container .page-content-js .tabs .nav-tabs > li.active > a:hover, #joomsport-container .page-content-js .tabs .nav-tabs > li.active > a:focus {
+  color: #e21e22;
+  border: 0;
+  background-color: transparent; }
+
+#joomsport-container .page-content-js .nav-tabs > li.active > a, #joomsport-container .page-content-js .tabs .nav-tabs > li.active > a:hover, #joomsport-container .page-content-js .tabs .nav-tabs > li.active > a:focus {
+  border-bottom: 2px solid;
+  border-color: #e21e22; }
+
+#joomsport-container .tabs .nav-tabs + .tab-content, #joomsport-container #jsMatchViewID .tabs .nav-tabs + .tab-content {
+  margin-top: 30px; }
+
+#joomsport-container .tabs .tab-content #stab_overview {
+  padding: 0 15px; }
+
+#joomsport-container .seasonTable .tabs .tab-content #stab_main {
+  margin: 0; }
+
+#joomsport-container .page-content-js .tabs .tab-content, #joomsport-container #jsMatchViewID #stab_about {
+  padding: 15px 0; }
+
+#joomsport-container table.jstblevwid tr {
+  border-bottom: none; }
+
+/*Pagination*/
+#joomsport-container ul.paginationJS > li > a, #joomsport-container .paginationJS > li > span {
+  min-width: 45px;
+  min-height: 45px;
+  margin: 0 10px;
+  color: #bfbfbf;
+  border: 2px solid #bfbfbf;
+  margin-right: 5px;
+  padding: 0;
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 45px; }
+
+#joomsport-container ul.paginationJS > li.active > a, #joomsport-container .paginationJS > li.active > span, #joomsport-container ul.paginationJS > li > a:hover, #joomsport-container .paginationJS > li > span:hover, #joomsport-container .paginationJS > li.active > a:hover, #joomsport-container li.paginationJS > .active > span:hover {
+  color: #fff;
+  background-color: #e21e22;
+  border-color: #e21e22; }
+
+#joomsport-container ul.paginationJS > li > a[aria-label="Previous"], #joomsport-container ul.paginationJS > li > a[aria-label="Next"] {
+  border: none;
+  background-color: transparent;
+  font-size: 24px; }
+
+#joomsport-container ul.paginationJS > li > a[aria-label="Previous"]:hover, #joomsport-container ul.paginationJS > li > a[aria-label="Next"]:hover {
+  color: #e21e22; }
+
+#joomsport-container ul.paginationJS > li.disabled > a {
+  display: none; }
+
+#joomsport-container ul.paginationJS > li > a > span {
+  background-color: transparent; }
+
+/*Select box*/
+#joomsport-container select + .select2 {
+  width: auto !important;
+  min-width: 100px;
+  height: auto;
+  border: none;
+  background-color: transparent; }
+
+#joomsport-container select + .select2 > .selection > .select2-selection {
+  height: 55px;
+  border: 1px solid #d7d6d6;
+  outline: none !important; }
+
+#joomsport-container select + .select2 > .selection > .select2-selection > .select2-selection__rendered {
+  padding: 0 35px 0 20px;
+  line-height: 53px;
+  outline: none !important; }
+
+#joomsport-container select + .select2 > .selection > .select2-selection > .select2-selection__arrow {
+  width: 30px;
+  height: 53px; }
+
+#joomsport-container .searchBar .form-group > *:not(button) {
+  display: inline-block;
+  min-width: 170px; }
+
+/*Thumbnail*/
+#joomsport-container img.img-thumbnail, #joomsport-achv-container img.img-thumbnail {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  border-radius: 0; }
+
+#joomsport-container .cansorttbl.table img.img-thumbnail {
+  margin-right: 15px; }
+
+/*Info-block*/
+#joomsport-container .tabs .extrafldcn, #joomsport-achv-container .page-content-js .well.extrafldcn {
+  border-radius: 0;
+  border: 1px solid #e1e1e1;
+  background-color: #fff; }
+
+/*Table*/
+#joomsport-container table, #joomsport-achv-container table {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+#joomsport-container div.jsScoreDiv {
+  font-size: inherit; }
+
+#joomsport-container table tr > td, #joomsport-achv-container table tr > td {
+  color: #232628; }
+
+#joomsport-container .table-responsive .table > tbody > tr:nth-child(odd), #joomsport-container table.jstblevwid tbody > tr:nth-child(odd), #joomsport-container .table-responsive .jsBoxStatDIvFE tbody tr:nth-child(2n), #joomsport-achv-container .table-responsive .table > tbody > tr:nth-of-type(odd) {
+  background-color: #e8e8e8; }
+
+#joomsport-container .table-responsive .table > tbody > tr:nth-child(even), #joomsport-container table.jstblevwid tbody > tr:nth-child(even), #joomsport-container .table-responsive .jsBoxStatDIvFE tbody tr, #joomsport-achv-container .table-responsive .table > tbody > tr {
+  background-color: #f2f2f2; }
+
+#joomsport-container .jsOverXdiv .table > tbody > tr {
+  background-color: transparent; }
+
+#joomsport-container .table-responsive .table > thead > tr > th, #joomsport-container table.jstblevwid tbody > tr > th, #joomsport-container .jsBoxStatDIvFE > thead > tr > th, #joomsport-container #stab_overview table.tblPosition thead > tr > th, #joomsport-achv-container .table thead > tr > th, #joomsport-container table.table tbody > tr > th {
+  padding: 13px 7px;
+  border: 0;
+  background-color: #e21e22; }
+
+#joomsport-container .table-responsive .table > thead > tr > th, #joomsport-container .table-responsive .table > thead > tr > th > *, #joomsport-container table.jstblevwid tbody > tr > th, #joomsport-container .jsBoxStatDIvFE > thead > tr > th, #joomsport-container #stab_overview table.tblPosition thead > tr > th, #joomsport-achv-container .table thead > tr > th > *, #joomsport-container table.table tbody > tr > th {
+  color: #fff; }
+
+#joomsport-container .table-responsive .table > thead > tr > th > span {
+  padding-right: 0; }
+
+#joomsport-container .table-responsive .table td a, #joomsport-container table.jstblevwid td a, #joomsport-container .jsBoxStatDIvFE td a, #joomsport-container #stab_overview table.tblPosition td a, #joomsport-achv-container .table td a {
+  color: #595959; }
+
+#joomsport-container .table-responsive .table td a:hover, #joomsport-container table.jstblevwid td a:hover, #joomsport-container #stab_overview table.tblPosition td a:hover, #joomsport-achv-container .table td a:hover, #joomsport-container .jsBoxStatDIvFE td a:hover, #joomsport-container .table-responsive .table td a:focus, #joomsport-container table.jstblevwid td a:focus, #joomsport-container #stab_overview table.tblPosition td a:focus, #joomsport-achv-container .table td a:focus, #joomsport-container .jsBoxStatDIvFE td a:focus {
+  color: #009bdc;
+  text-decoration: none; }
+
+#joomsport-container .table-responsive .table > tbody > tr > td, #joomsport-container table.jstblevwid tbody > tr > td, #joomsport-container .jsBoxStatDIvFE tbody > tr > td, #joomsport-achv-container .table-responsive .table tbody > tr > td {
+  vertical-align: middle;
+  border-color: transparent; }
+
+#joomsport-container .table-responsive .table > tbody > tr > td:last-child, #joomsport-container .table-responsive .table > thead > tr > th:last-child, #joomsport-container table.jstblevwid tbody > tr > td:last-child, #joomsport-container table.jstblevwid tbody > tr > th:last-child, #joomsport-container .jsBoxStatDIvFE tbody > tr > td:last-child, #joomsport-container .jsBoxStatDIvFE thead > tr > th:last-child, #joomsport-container #stab_overview table.tblPosition tbody > tr > td:last-child, #joomsport-container #stab_overview table.tblPosition thead > tr > th:last-child, #joomsport-achv-container .table tbody > tr > td:last-child, #joomsport-achv-container .table thead > tr > th:last-child {
+  border-right: 0; }
+
+#joomsport-container table.jstblevwid tbody > tr > td:first-child {
+  padding: 10px;
+  text-align: center; }
+
+#joomsport-container table.jstblevwid tbody > tr > td .js_div_particName {
+  padding-left: 7px; }
+
+#joomsport-container .jsBoxStatDIvFE {
+  margin-top: 10px; }
+
+#joomsport-container #stab_statistic .jsBoxStatDIvFE {
+  margin-top: 0; }
+
+#joomsport-container .jsBoxStatDIvFE tr:first-child > th:first-child, #joomsport-container .jsBoxStatDIvFE thead tr:last-child {
+  border-bottom: 0; }
+
+#joomsport-container .jsBoxStatDIvFE > thead > tr > th {
+  vertical-align: middle;
+  font-size: inherit;
+  font-weight: inherit; }
+
+#joomsport-container .jsBoxStatDIvFE > thead > tr:last-child > th {
+  border-top: 1px solid;
+  border-color: #ffffff; }
+
+#joomsport-container .jsBoxStatDIvFE tfoot tr td {
+  border: 0;
+  background-color: #8d8d8d;
+  color: #fff; }
+
+#joomsport-container .jsBoxStatDIvFE tfoot tr td, #joomsport-container .jsBoxStatDIvFE tfoot tr {
+  border-color: #e1e1e1; }
+
+#joomsport-container .table th.jsTextAlignCenter > a > span {
+  padding: 0;
+  white-space: nowrap; }
+
+#joomsport-container .table th.jsTextAlignCenter > a > span > img.emblpadd3 {
+  display: block;
+  margin: 0 auto; }
+
+/*Tables of team tabs*/
+#joomsport-container .tab-content #stab_overview table, #joomsport-container .jsMatchDivMain.jstable {
+  border-collapse: separate;
+  border-spacing: 0 5px; }
+
+#joomsport-container .tab-content #stab_overview table tbody tr, #joomsport-container .jsMatchDivMain.jstable .jstable-row {
+  background-color: #ffffff; }
+
+#joomsport-container .tab-content #stab_overview table th, #joomsport-container .tab-content #stab_overview table td {
+  background-color: transparent;
+  border-left: none; }
+
+#joomsport-container .tab-content #stab_overview table td, #joomsport-container .jsMatchDivMain.jstable .jstable-row .jstable-cell {
+  border-bottom: 1px solid #d8d8d8; }
+
+/*Squad*/
+#joomsport-container #stab_squad .jsOverflowHidden .jstable {
+  border-collapse: separate;
+  border-spacing: 0 5px; }
+
+#joomsport-container #stab_squad .jsOverflowHidden .jstable:first-child {
+  padding-right: 5px; }
+
+#joomsport-container #stab_squad .jsOverflowHidden .jstable:last-child {
+  padding-left: 5px; }
+
+#joomsport-container #stab_squad .jsOverflowHidden .jstable .jstable-row {
+  background-color: #fff; }
+
+#joomsport-container #stab_squad .jsOverflowHidden .jstable .jstable-cell {
+  border-bottom: 1px solid #d8d8d8;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+#joomsport-container #stab_squad .jsOverflowHidden .jstable .jstable-cell:first-child {
+  text-align: center; }
+
+#joomsport-container #stab_squad .jsOverflowHidden .jstable .jstable-cell a {
+  color: #595959; }
+
+#joomsport-container #stab_squad .jsOverflowHidden .jstable .jstable-cell a:hover, #joomsport-container #stab_squad .jsOverflowHidden .jstable .jstable-cell a:focus {
+  color: #009bdc;
+  text-decoration: none; }
+
+/*Calendar*/
+#joomsport-container .jsMatchDivMain .jsMatchDivTime {
+  width: 15%; }
+
+#joomsport-container .jsMatchDivMain .jsMatchDivTime, #joomsport-container .jsMatchDivMain .jsMatchDivVenue, #joomsport-container .jsMatchDivMain .jsNoWrap {
+  font-style: italic;
+  text-align: center;
+  white-space: normal; }
+
+#joomsport-container .jsMatchDivMain .jsMatchDivTime > div {
+  margin: 0 auto; }
+
+#joomsport-container .jsMatchDivMain .jsMatchDivHome, #joomsport-container .jsMatchDivMain .jsMatchDivAway, #joomsport-container .jsMatchDivMain .jsMatchDivScore {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+#joomsport-container .jsMatchDivMain .jsMatchDivHome a, #joomsport-container .jsMatchDivMain .jsMatchDivAway a, #joomsport-container .jsMatchDivMain .jsMatchDivScore a {
+  color: #595959; }
+
+#joomsport-container .jsMatchDivMain .jsMatchDivHome a:hover, #joomsport-container .jsMatchDivMain .jsMatchDivHome a:focus, #joomsport-container .jsMatchDivMain .jsMatchDivAway a:hover, #joomsport-container .jsMatchDivMain .jsMatchDivAway a:focus, #joomsport-container .jsMatchDivMain .jsMatchDivScore a:hover, #joomsport-container .jsMatchDivMain .jsMatchDivScore a:focus {
+  color: #009bdc;
+  text-decoration: none; }
+
+#joomsport-container .jsMatchDivMain .jsMatchDivHome {
+  text-align: right; }
+
+#joomsport-container .overviewBlocks h3, #joomsport-container #jsMatchViewID h3, #joomsport-container .jsMatchDivMain .js-mdname .jsrow-matchday-name, #joomsport-container #stab_statistic h3.jsCreerMatchStath3, #joomsport-container #stab_statistic .jscenter > h3 {
+  margin: 45px 0 10px;
+  background-color: transparent;
+  color: #232628;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1; }
+
+#joomsport-container #jsMatchViewID .jsMarginBottom30 {
+  text-align: left;
+  margin-bottom: 0; }
+
+#joomsport-container #jsMatchViewID .jsMarginBottom30:first-child h3 {
+  margin-top: 0; }
+
+#joomsport-container .jsMatchDivMain.jstable .js-mdname {
+  height: 85px;
+  background-color: transparent; }
+
+#joomsport-container .jsMatchDivMain .js-mdname .jsrow-matchday-name {
+  width: auto;
+  border: 0;
+  padding: 5px 0; }
+
+#joomsport-container .jsMatchDivMain .js-mdname:first-child .jsrow-matchday-name, #joomsport-container .overviewBlocks:first-child h3, #joomsport-container #stab_statistic h3.jsCreerMatchStath3:first-child, #joomsport-container #stab_statistic .jscenter > h3 {
+  margin-top: 0; }
+
+#joomsport-container .jsMatchDivMain .js-mdname:first-child {
+  height: 40px; }
+
+/*Knockout*/
+#joomsport-container .drawBracketContainerBE .table tr:first-child td:last-child {
+  padding-right: 0 !important; }
+
+#joomsport-container .drawBracketContainerBE .table td.even .player {
+  color: #9e9e9e; }
+
+#joomsport-container .drawBracketContainerBE .jsborderI, #joomsport-container .drawBracketContainerBE .jsborderIFin {
+  width: 100%;
+  margin-top: 50px; }
+
+#joomsport-container .drawBracketContainerBE .table tr td:first-child > .player {
+  margin-left: 0; }
+
+#joomsport-container .drawBracketContainerBE .player div.knockscore {
+  border-radius: 0;
+  background-color: #bdbdbd; }
+
+#joomsport-container .drawBracketContainerBE .player div.knockscore > a {
+  background-color: #595959; }
+
+#joomsport-container .drawBracketContainerBE .player div.knockscore > a:hover {
+  background-color: #009bdc; }
+
+#joomsport-container .drawBracketContainerBE .player {
+  margin-bottom: 5px;
+  padding: 7px 10px;
+  border-radius: 0 !important;
+  background-color: #e8e8e8;
+  font-weight: bold; }
+
+#joomsport-container .drawBracketContainerBE .knockbot.player {
+  border: 1px solid #ccc !important; }
+
+#joomsport-container .drawBracketContainerBE .player .knockplName a {
+  color: #595959; }
+
+#joomsport-container .drawBracketContainerBE .player .knockplName a:hover, #joomsport-container .drawBracketContainerBE .player .knockplName a:focus {
+  text-decoration: none; }
+
+#joomsport-container .drawBracketContainerBE .knockscore a {
+  color: #fff; }
+
+#joomsport-container .drawBracketContainerBE .knIsHover {
+  background-color: rgba(189, 189, 189, 0.55); }
+
+#joomsport-container .drawBracketContainerBE .knIsHover .js_div_particName > a {
+  color: #009bdc; }
+
+/*Team Emblem(Team page)*/
+body.single div.joomsport_team .stm-small-title-box + .post-thumbnail {
+  display: none; }
+
+.js-title-page .stm-page-title > .container > * {
+  display: inline-block;
+  padding-right: 15px;
+  vertical-align: middle; }
+
+.js-title-page .stm-page-title h3 {
+  margin-bottom: 0;
+  margin-right: 40px; }
+
+.js-title-page .js-team-embl img {
+  max-width: 100px; }
+
+body[class*="tax-joomsport_"].archive div[class*="joomsport_"] > a {
+  text-align: center; }
+
+body[class*="tax-joomsport_"].archive div[class*="joomsport_"] > a img {
+  margin: 0 auto; }
+
+body[class*="tax-joomsport_"].archive div[class*="joomsport_"] .post-meta {
+  text-align: right; }
+
+/*Roster*/
+#joomsport-container .jsplayerCartInner .innerjsplayerCart {
+  margin: 0; }
+
+#joomsport-container .jsplayerCartInner .innerjsplayerCart img {
+  margin: 0;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+  transition: transform .4s,-webkit-transform .4s; }
+
+#joomsport-container .jsplayerCart a:hover .innerjsplayerCart img {
+  -webkit-transform: scale(1.08) translateZ(0);
+  transform: scale(1.08) translateZ(0); }
+
+#joomsport-container .jsplayerCartInner {
+  position: relative;
+  border-radius: 0; }
+
+#joomsport-container .namePlayerCart {
+  position: absolute;
+  height: 100%;
+  width: 40px;
+  bottom: 0;
+  left: 0;
+  margin-top: 0;
+  border: 0;
+  border-right: 2px solid #e21e22;
+  background-color: #151515; }
+
+#joomsport-container .namePlayerCart > div {
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transform-origin: left bottom 0;
+  transform-origin: left bottom 0;
+  white-space: nowrap;
+  color: #fff; }
+
+#joomsport-container .namePlayerCart .LeftnamePlayerCart {
+  padding-left: 10px; }
+
+#joomsport-container .namePlayerCart .LeftnamePlayerCart > * {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 10px; }
+
+#joomsport-container .namePlayerCart .PlayerCardPlNumber {
+  top: 0;
+  padding-right: 8px;
+  background-color: #e21e22;
+  -webkit-transform: rotate(0);
+  transform: rotate(0); }
+
+/*Match page*/
+#joomsport-container #jsMatchViewID .jstable-row, #joomsport-container #jsMatchViewID .jsOverflowHidden .jstable-cell {
+  background-color: transparent; }
+
+#joomsport-container #jsMatchViewID .jsMatchScore {
+  margin-bottom: 20px;
+  background-color: #000;
+  background-image: url(../images/arena.jpg);
+  background-size: cover;
+  background-position: 50% 100%; }
+
+#joomsport-container #jsMatchViewID .jsMatchScore [class$="MHead"] {
+  display: none; }
+
+#joomsport-container #jsMatchViewID .jsMatchScore > .heading {
+  padding: 15px 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 18px; }
+
+#joomsport-container #jsMatchViewID .jsMatchScore > .heading .matchdtime > img {
+  margin-top: -5px; }
+
+#joomsport-container #jsMatchViewID .jsMatchScore > .heading .matchvenue a {
+  color: #dc617b; }
+
+#joomsport-container #jsMatchViewID .jsMatchScore > .jsmatchHeader {
+  margin-top: 0;
+  padding: 70px 0;
+  background-color: rgba(187, 187, 187, 0.4); }
+
+#joomsport-container #jsMatchViewID .jsMatchScore > .jsmatchHeader .jsMatchPartName > a {
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-decoration: none; }
+
+#joomsport-container #jsMatchViewID .jsMatchScore > .jsmatchHeader .jsDivCenter {
+  color: #fff; }
+
+#joomsport-container #jsMatchViewID .jsMatchScore > .jsmatchHeader .jsScoreDivMap {
+  font-size: 18px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); }
+
+#joomsport-container #jsMatchViewID .jsmatchHeader .jsScoreDivM > .BigMScore1, #joomsport-container #jsMatchViewID .tabs .jsTeamStat .jstable > .jsColTeamEvents .teamEventGraph > div.jsGray {
+  background-color: #E74B4F; }
+
+#joomsport-container #jsMatchViewID .jsmatchHeader .jsScoreDivM > .BigMScore2, #joomsport-container #jsMatchViewID .tabs .jsTeamStat .jstable > .jsColTeamEvents .teamEventGraph > div.jsRed {
+  background-color: #595959; }
+
+#joomsport-container #jsMatchViewID .tabs .jsPaddingBottom30 {
+  padding: 0; }
+
+#joomsport-container #jsMatchViewID .tabs .jsPaddingBottom30 .jsInline, #joomsport-container #jsMatchViewID .tabs .tab-pane .jsDivLineEmbl {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+#joomsport-container #jsMatchViewID .tabs .tab-pane .jsDivLineEmbl {
+  margin-top: 30px; }
+
+#joomsport-container #jsMatchViewID .tabs .tab-pane .jsDivLineEmbl:first-child {
+  margin-top: 10px; }
+
+#joomsport-container #jsMatchViewID .tabs .jsTeamStat .jstable > .jsColTeamEvents .teamEventGraph, #joomsport-container #jsMatchViewID .tabs .jsTeamStat .jstable > .jsColTeamEvents .teamEventGraph > div {
+  height: 30px;
+  border: 0;
+  border-radius: 16px; }
+
+#joomsport-container #jsMatchViewID .tabs .jsTeamStat .jstable > .jsColTeamEvents .teamEventGraph {
+  background-color: #e0e0e0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset; }
+
+#joomsport-container #jsMatchViewID .tabs .jsTeamStat .jstable > .jsColTeamEvents .teamEventGraph > div {
+  padding: 0 10px;
+  line-height: 2; }
+
+/*JoomSport archivements*/
+#joomsport-achv-container.jsIclass .table-responsive {
+  border: 0; }
+
+#joomsport-achv-container.jsIclass .page-content-js h2 {
+  margin-top: 25px;
+  font-size: 20px; }
+
+#joomsport-achv-container.jsIclass .page-content-js h2:first-of-type {
+  margin-top: 0; }
+
+/*JoomSport prediction*/
+body[class*="single-jswprediction"] #joomsport-container .jstable {
+  border-collapse: separate;
+  border-spacing: 0 5px; }
+
+body[class*="single-jswprediction"] #joomsport-container .jstable .jstable-row {
+  background-color: #ffffff; }
+
+body[class*="single-jswprediction"] #joomsport-container .jstable .jstable-row .jstable-cell {
+  border-bottom: 1px solid #d8d8d8;
+  padding: 7px 13px; }
+
+body[class*="single-jswprediction"] #joomsport-container .jstable .jstable-row .jstable-cell a {
+  color: #595959;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+body[class*="single-jswprediction"] #joomsport-container .jstable .jstable-row .jstable-cell a:hover, body[class*="single-jswprediction"] #joomsport-container .jstable .jstable-row .jstable-cell a:focus {
+  color: #009bdc;
+  text-decoration: none; }
+
+body[class*="single-jswprediction"] #joomsport-container .jstable .jstable-row:first-child {
+  background-color: #e21e22;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+body[class*="single-jswprediction"] #joomsport-container .jstable .jstable-row:first-child .jstable-cell {
+  border: none; }
+
+body[class*="single-jswprediction"] #joomsport-container .jspred_filterround > span {
+  padding-left: 10px; }
+
+/*Widgets/shortcodes*/
+#joomsport-container .jsmainscroll table td a {
+  color: #595959;
+  text-decoration: none; }
+
+#joomsport-container .jsmainscroll table td a:hover, .widget #joomsport-container.jsDefaultContainer > .jsmainscroll table td a:focus {
+  color: #009bdc; }
+
+#joomsport-container .jsmainscroll .jsmatchdate {
+  color: #939393;
+  font-size: 14px;
+  font-weight: bold; }
+
+#joomsport-container > .jsmainscroll table.jsMNS .scoreScrMod {
+  border: 0;
+  border-radius: 0;
+  padding: 0; }
+
+#joomsport-container > .jsmainscroll table.jsMNS .scoreScrMod > a {
+  width: 100%;
+  padding: 5px;
+  background-color: #595959;
+  color: #fff; }
+
+#joomsport-container > .jsmainscroll table.jsMNS .scoreScrMod > a:hover {
+  background-color: #009bdc; }
+
+#joomsport-container.jsDefaultContainer > .jsmainscroll > div {
+  background-color: transparent; }
+
+#joomsport-container.jsDefaultContainer > .jsmainscroll .jsmatchdate, #joomsport-container.jsDefaultContainer > .jsmainscroll .jsmatchseason {
+  background-color: #e8e8e8; }
+
+#joomsport-container.jsDefaultContainer > .jsmainscroll .jsview2 table tr {
+  border-bottom: 1px solid #e1e1e1;
+  background-color: #f2f2f2; }
+
+#joomsport-container.jsDefaultContainer > .jsmainscroll .jsview2 table tr:last-child {
+  border-bottom: none; }
+
+#joomsport-container.jsDefaultContainer > .jsmainscroll table td.jsvalignmdl {
+  vertical-align: middle; }
+
+#joomsport-container.jsDefaultContainer > .jsmainscroll table td.tdminwdt {
+  padding: 7px 0; }
+
+#joomsport-container.jsSliderContainer > .jsmainscroll .jsview2 table td.tdminwdt {
+  padding-bottom: 10px; }
+
+#joomsport-container.jsSliderContainer > .jsmainscroll > div {
+  margin: 0 30px;
+  border: 1px solid #ccc;
+  background-color: #e8e8e8 !important; }
+
+#joomsport-container.jsSliderContainer > .jsmainscroll > button[class^="js"] {
+  top: 40%;
+  width: 35px;
+  height: 35px;
+  padding-top: 3px; }
+
+#joomsport-container.jsSliderContainer > .jsmainscroll .jsview2
+.widget_wpb_joomsport_standings #joomsport-container > .groups {
+  margin-top: 30px;
+  padding-left: 0;
+  font-size: 18px;
+  font-weight: bold; }
+
+.widget_wpb_joomsport_standings #joomsport-container > .groups:first-child {
+  margin-top: 0; }
+
+.widget #joomsport-container table {
+  margin-bottom: 0;
+  font-size: 15px; }
+
+.widget #joomsport-container .table-responsive .table > tbody > tr > td, .widget #joomsport-container table.jstblevwid tr > td {
+  border-bottom: 1px solid #d8d8d8; }
+
+.widget #joomsport-container .table-responsive .table > tbody > tr:last-child > td, .widget #joomsport-container table.jstblevwid tr:last-child > td {
+  border-bottom: none; }
+
+.widget #joomsport-container.jsSliderContainer > .jsmainscroll > div {
+  margin: 0;
+  margin-top: 40px !important; }
+
+.widget #joomsport-container.jsSliderContainer > .jsmainscroll, .widget #joomsport-container.jsDefaultContainer > .jsmainscroll, .widget #joomsport-container.jsDefaultContainer > .jsmainscroll > div {
+  padding: 0; }
+
+.widget #joomsport-container.jsSliderContainer > .jsmainscroll > button[class^="js"] {
+  top: 0;
+  width: 49%;
+  height: auto;
+  margin: 0 !important; }
+
+.widget #joomsport-container.jsSliderContainer > .jsmainscroll table.jsMNS {
+  width: 100%; }
+
+.widget #joomsport-container.jsDefaultContainer > .jsmainscroll table td.tdminwdt {
+  font-size: 14px; }
+
+/*Other*/
+#joomsport-container .page-content-js .navHeadFull, #joomsport-achv-container .page-content-js .navHeadFull {
+  padding-right: 0; }
+
+#joomsport-container .page-content-js > .heading {
+  padding: 0; }
+
+#joomsport-container .navbar-header .navbar-nav .btn, #joomsport-achv-container .navbar-header .navbar-nav .btn {
+  margin-top: 0; }
+
+#joomsport-container .page-content-js h2.groups, .widget #joomsport-container h2.groups {
+  margin-top: 20px;
+  font-size: 20px;
+  padding-left: 0;
+  font-weight: bold; }
+
+#joomsport-container .page-content-js h2.groups:first-child, .widget #joomsport-container h2.groups:first-child {
+  margin-top: 0; }
+
+#joomsport-container .jsmatchcont {
+  padding-bottom: 0; }

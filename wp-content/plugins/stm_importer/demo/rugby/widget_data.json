@@ -1,0 +1,130 @@
+[{
+	"wp_inactive_widgets": ["search-2", "categories-2", "nav_menu-2", "sportspress-event-blocks-2", "sportspress-league-table-2", "woocommerce_price_filter-2", "woocommerce_product_categories-2", "woocommerce_top_rated_products-2", "stm_recent_posts-2"],
+	"default": ["search-2", "categories-2", "stm_recent_posts-2", "text-3"],
+	"footer": ["nav_menu-2"],
+	"sportspress": ["sportspress-event-blocks-2", "sportspress-event-blocks-4", "sportspress-event-calendar-3", "sportspress-league-table-2"],
+	"shop": ["search-4", "woocommerce_product_categories-2", "woocommerce_price_filter-2", "woocommerce_top_rated_products-2"]
+}, {
+	"search": {
+		"2": {
+			"title": ""
+		},
+		"4": {
+			"title": ""
+		},
+		"_multiwidget": 1
+	},
+	"categories": {
+		"2": {
+			"title": "Categories",
+			"count": 0,
+			"hierarchical": 0,
+			"dropdown": 0
+		},
+		"_multiwidget": 1
+	},
+	"stm_recent_posts": {
+		"2": {
+			"title": "Latest news",
+			"output": "3"
+		},
+		"_multiwidget": 1
+	},
+	"text": {
+		"3": {
+			"title": "Instagram",
+			"text": "[3004=3004]",
+			"filter": false
+		},
+		"_multiwidget": 1
+	},
+	"nav_menu": {
+		"2": {
+			"nav_menu": 89
+		},
+		"_multiwidget": 1
+	},
+	"sportspress-event-blocks": {
+		"2": {
+			"title": "Latest Results",
+			"id": 0,
+			"caption": "",
+			"status": "publish",
+			"date": "default",
+			"date_from": "2016-11-10",
+			"date_to": "2016-11-10",
+			"day": "",
+			"number": 1,
+			"order": "default",
+			"show_all_events_link": "1",
+			"align": "none"
+		},
+		"4": {
+			"title": "Next Match",
+			"id": 0,
+			"caption": "",
+			"status": "future",
+			"date": "default",
+			"date_from": "2016-12-19",
+			"date_to": "2016-12-19",
+			"day": "",
+			"number": 1,
+			"order": "default",
+			"show_all_events_link": "1",
+			"align": "none"
+		},
+		"_multiwidget": 1
+	},
+	"sportspress-event-calendar": {
+		"3": {
+			"title": "Event calendar",
+			"id": 0,
+			"status": "default",
+			"date": "default",
+			"date_from": "2016-11-10",
+			"date_to": "2016-11-10",
+			"day": "",
+			"show_all_events_link": null,
+			"align": "none"
+		},
+		"_multiwidget": 1
+	},
+	"sportspress-league-table": {
+		"2": {
+			"title": "Leadgue table",
+			"id": -1,
+			"caption": "League table head",
+			"number": 5,
+			"columns": ["w", "l", "t", "pf", "pct", "pa", "netpts", "td", "streak"],
+			"show_team_logo": null,
+			"show_full_table_link": "1",
+			"align": "none"
+		},
+		"_multiwidget": 1
+	},
+	"woocommerce_product_categories": {
+		"2": {
+			"title": "Product Categories",
+			"orderby": "name",
+			"dropdown": 0,
+			"count": 0,
+			"hierarchical": 1,
+			"show_children_only": 0,
+			"hide_empty": 0
+		},
+		"_multiwidget": 1
+	},
+	"woocommerce_price_filter": {
+		"2": {
+			"title": "Filter by price"
+		},
+		"_multiwidget": 1
+	},
+	"woocommerce_top_rated_products": {
+		"2": {
+			"title": "Top Rated Products",
+			"number": 5
+		},
+		"_multiwidget": 1
+	}
+}]

@@ -1,0 +1,95 @@
+/*American football*/
+/*Soccer*/
+/*Baseball*/
+/*magazine*/
+/*Soccer News*/
+/*Basketball Two*/
+/*Hockey*/
+.upcoming-matches--style_3 {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
+.upcoming-matches--style_3 .upcoming-matches__header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.upcoming-matches--style_3 .upcoming-matches__header h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #142978;
+}
+.upcoming-matches--style_3 .upcoming-matches__list {
+  display: -ms-flexbox;
+  display: flex;
+}
+.upcoming-matches--style_3 .upcoming-matches__item {
+  -ms-flex: 1 1 100%;
+      flex: 1 1 100%;
+  border: solid 10px #e7e9f1;
+  padding: 18px 10px 40px;
+  margin: 0 15px 40px;
+  position: relative;
+}
+.upcoming-matches--style_3 .upcoming-matches__teams {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 25px;
+}
+.upcoming-matches--style_3 .upcoming-matches__team {
+  -ms-flex: 1 1 50%;
+      flex: 1 1 50%;
+}
+.upcoming-matches--style_3 .upcoming-matches__team__logo {
+  height: 38px;
+  text-align: center;
+  margin-bottom: 17px;
+}
+.upcoming-matches--style_3 .upcoming-matches__team__logo-img {
+  display: inline-block;
+  height: 100%;
+}
+.upcoming-matches--style_3 .upcoming-matches__team__name {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #333333;
+}
+.upcoming-matches--style_3 .upcoming-matches__vs {
+  padding: 5px;
+  font-weight: 900;
+  font-size: 22px;
+  color: #ff573b;
+}
+.upcoming-matches--style_3 .upcoming-matches__league {
+  text-transform: uppercase;
+  color: #aaaaaa;
+  margin-bottom: 4px;
+}
+.upcoming-matches--style_3 .upcoming-matches__button {
+  position: absolute;
+  transform: translate(-50%, 50%);
+  bottom: -5px;
+  left: 50%;
+  width: 184px;
+  height: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ff573b;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 46px;
+  border: 12px solid #fff;
+}
+.upcoming-matches--style_3 .upcoming-matches__button:hover {
+  text-decoration: none;
+  background-color: #142978;
+}
+@media (max-width: 1023px) {
+  .upcoming-matches--style_3 .upcoming-matches__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}

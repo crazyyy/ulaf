@@ -1,0 +1,103 @@
+/*American football*/
+/*Soccer*/
+/*Baseball*/
+/*magazine*/
+/*Soccer News*/
+/*Basketball Two*/
+/*Hockey*/
+.stm-latest-results--volleyball .stm-latest-results__title {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  color: #142978;
+}
+.stm-latest-results--volleyball .stm-latest-results__list {
+  margin: 0 -15px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.stm-latest-results--volleyball .stm-latest-results__item {
+  margin: 0 15px;
+  width: calc(33.3% - 30px);
+  border: solid 10px #e7e9f1;
+  padding: 20px 10px 25px;
+  background-color: #fff;
+  text-align: center;
+}
+.stm-latest-results--volleyball .stm-latest-results__info {
+  font-size: 14px;
+  line-height: 1;
+  margin-bottom: 25px;
+}
+.stm-latest-results--volleyball .stm-latest-results__teams {
+  display: -ms-flexbox;
+  display: flex;
+}
+.stm-latest-results--volleyball .stm-latest-results__team {
+  -ms-flex: 1 1 50%;
+      flex: 1 1 50%;
+}
+.stm-latest-results--volleyball .stm-latest-results__team__logo {
+  height: 40px;
+  text-align: center;
+  margin-bottom: 17px;
+}
+.stm-latest-results--volleyball .stm-latest-results__team__logo-img {
+  display: inline-block;
+  height: 100%;
+}
+.stm-latest-results--volleyball .stm-latest-results__team__name {
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #333333;
+}
+.stm-latest-results--volleyball .stm-latest-results__team__result {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  font-weight: 900;
+}
+.stm-latest-results--volleyball .stm-latest-results__team__points {
+  font-size: 24px;
+  line-height: 28px;
+  color: #333;
+}
+.stm-latest-results--volleyball .stm-latest-results__team__result-label {
+  padding: 0 8px;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ff573b;
+  margin-left: 5px;
+}
+.stm-latest-results--volleyball .stm-latest-results__vs {
+  padding: 0 5px;
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ff573b;
+}
+@media (max-width: 1023px) {
+  .stm-latest-results--volleyball .stm-latest-results__list {
+    display: block;
+    margin: 0;
+  }
+  .stm-latest-results--volleyball .stm-latest-results__item {
+    margin: 0 0 30px;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .stm-latest-results--volleyball .stm-latest-results__title {
+    text-align: center;
+  }
+}
