@@ -1,5 +1,7 @@
 ﻿# Українська Ліга американського футболу
 
+> Take a look at the brand new helmets for next season
+
 ---
 
 
@@ -33,6 +35,21 @@
 - [Партнерство](https://ulaf.ddev.site/partnership)
 - [Відкрити свій клуб](https://ulaf.ddev.site/open)
 - [Українська Ліга американського футболу](https://ulaf.ddev.site/)
+- [Sponsors](https://ulaf.ddev.site/sponsors)
+- [Home - Version 2](https://ulaf.ddev.site/home-version-2)
+- [Typography](https://ulaf.ddev.site/typography)
+- [Shortcodes](https://ulaf.ddev.site/shortcodes)
+- [Shortcodes - Player](https://ulaf.ddev.site/shortcodes/shortcodes-player)
+- [Shortcodes - Team](https://ulaf.ddev.site/shortcodes/shortcodes-team)
+- [Shortcodes - Game](https://ulaf.ddev.site/shortcodes/shortcodes-game)
+- [Contact Us](https://ulaf.ddev.site/contact-us)
+- [Shop](https://ulaf.ddev.site/shop-2)
+- [Terms and Conditions](https://ulaf.ddev.site/terms-and-conditions)
+- [Cart](https://ulaf.ddev.site/cart-2)
+- [Checkout](https://ulaf.ddev.site/checkout-2)
+- [My account](https://ulaf.ddev.site/my-account-2)
+- [Home - Version 1](https://ulaf.ddev.site/home)
+- [News](https://ulaf.ddev.site/news-2)
 
 ---
 
@@ -57,6 +74,22 @@
 - [У Вінниці пройшов другий тур чемпіонату України з флаг-футболу серед юнаків, кадетів та юніорів.](https://ulaf.ddev.site/u-vinnytsi-proyshov-druhyy-tur-chempionatu-ukrainy-z-flah-futbolu-sered-iunakiv-kadetiv-ta-iunioriv)
 - [Флаг-футбольна боротьба продовжується🏈](https://ulaf.ddev.site/flah-futbolna-borotba-prodovzhuietsia)
 - [Стартували!](https://ulaf.ddev.site/startuvaly)
+- [The Alchemists player Steven Masterson breaks a new world record](https://ulaf.ddev.site/the-alchemists-player-steven-masterson-breaks-a-new-world-record)
+- [Jennifer T. Danvers has a sprained wrist and will be out for eight games](https://ulaf.ddev.site/jennifer-t-danvers-has-a-sprained-wrist-and-will-be-out-for-eight-games)
+- [Alchemists Stadium will have a max capacity 500.000 fans](https://ulaf.ddev.site/alchemists-stadium-will-have-a-max-capacity-500-000-fans)
+- [Alchemists coach on Jake Summer's injury "It looks really bad"](https://ulaf.ddev.site/alchemists-coach-on-jake-summers-injury-it-looks-really-bad)
+- [The Alchemists will travel to Manhattan to play the Finals](https://ulaf.ddev.site/the-alchemists-will-travel-to-manhattan-to-play-the-finals)
+- [The LA Pirates won against The Red Wings and are now leadering the league](https://ulaf.ddev.site/the-la-pirates-won-against-the-red-wings-and-are-now-leadering-the-league)
+- [The Alchemists will travel to Washington DC for the game against the Kings](https://ulaf.ddev.site/the-alchemists-will-travel-to-washington-dc-for-the-game-against-the-kings)
+- [The Alchemists women division started training for next season](https://ulaf.ddev.site/the-alchemists-women-division-started-training-for-next-season)
+- [The Dragons will open their eco friendly stadium in June](https://ulaf.ddev.site/the-dragons-will-open-their-eco-friendly-stadium-in-june)
+- [Veteran player Xavier McCoy will coach the Sharks next league](https://ulaf.ddev.site/veteran-player-xavier-mccoy-will-coach-the-sharks-next-league)
+- [The perfect breakfast for the team's high intensity training](https://ulaf.ddev.site/the-perfect-breakfast-for-the-teams-high-intensity-training)
+- [Scott Murdoch has a tibia fracture and will be out for two months](https://ulaf.ddev.site/scott-murdoch-has-a-tibia-fracture-and-will-be-out-for-two-months-2)
+- [The Clovers defense must reinvent itselft without Adam Howlett](https://ulaf.ddev.site/the-clovers-defense-must-reinvent-itselft-without-adam-howlett)
+- [The team is gonna a trip to the beach for a samll vacation](https://ulaf.ddev.site/the-team-is-gonna-a-trip-to-the-beach-for-a-samll-vacation)
+- [The entire team went out to celebrate Jake Summer's 28th birthday](https://ulaf.ddev.site/the-entire-team-went-out-to-celebrate-jake-summers-28th-birthday)
+- [Scott Murdoch has a tibia fracture and will be out for two months](https://ulaf.ddev.site/scott-murdoch-has-a-tibia-fracture-and-will-be-out-for-two-months)
 
 ---
 
