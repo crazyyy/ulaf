@@ -1,0 +1,33 @@
+# Translation of Plugins - WC Nova Poshta Shipping &#8211; Integration of Nova Poshta delivery service for WooCommerce - Stable (latest release) in Ukrainian
+# This file is distributed under the same license as the Plugins - WC Nova Poshta Shipping &#8211; Integration of Nova Poshta delivery service for WooCommerce - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-02-28 13:08:45+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.0-beta.3\n"
+"Language: uk_UA\n"
+"Project-Id-Version: Plugins - WC Nova Poshta Shipping &#8211; Integration of Nova Poshta delivery service for WooCommerce - Stable (latest release)\n"
+
+#. Plugin Name of the plugin
+msgid "WC Nova Poshta Shipping"
+msgstr "WC Nova Poshta Shipping"
+
+#. Description of the plugin
+msgid "Integration of Nova Poshta delivery service for WooCommerce"
+msgstr "Інтеграція служби доставки Нова Пошта для WooCommerce"
+
+#. Plugin URI of the plugin
+msgid "https://kirillbdev.pro/plugins/wc-ukr-shipping/"
+msgstr "https://kirillbdev.pro/plugins/wc-ukr-shipping/"
+
+#: src/Http/Controllers/OptionsController.php:56
+#: src/Http/Controllers/OptionsController.php:60
+msgid "validation_required"
+msgstr "validation_required"
+
+#. Author of the plugin
+msgid "kirillbdev"
+msgstr "kirillbdev"

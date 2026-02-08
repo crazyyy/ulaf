@@ -1,0 +1,247 @@
+# Translation of Plugins - Better Search Replace - Stable (latest release) in Ukrainian
+# This file is distributed under the same license as the Plugins - Better Search Replace - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-02-08 08:11:49+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: uk_UA\n"
+"Project-Id-Version: Plugins - Better Search Replace - Stable (latest release)\n"
+
+#: includes/class-bsr-plugin-footer.php:89
+msgid "Feedback"
+msgstr "Зворотній зв'язок"
+
+#: includes/class-bsr-plugin-footer.php:82
+msgid "Support"
+msgstr "Підтримка"
+
+#: includes/class-bsr-plugin-footer.php:79
+msgid "Documentation"
+msgstr "Документація"
+
+#. translators: %1$s is a link to BSR's website, and %2$s is a link to WP
+#. Engine's website.
+#: includes/class-bsr-plugin-footer.php:51
+msgid "%1$s is developed and maintained by %2$s."
+msgstr "%1$s розроблено та підтримується %2$s."
+
+#. Author of the plugin
+#: better-search-replace.php
+msgid "WP Engine"
+msgstr "WP Engine"
+
+#: templates/sidebar.php:29
+msgid "Upgrade Now"
+msgstr "Оновити зараз"
+
+#: templates/sidebar.php:25
+msgid "Get up to <span>50% off</span> your first year!"
+msgstr "Отримайте знижку до <span>50%</span> на перший рік!"
+
+#: templates/sidebar.php:21
+msgid "Email support"
+msgstr "Підтримка електронною поштою"
+
+#: templates/sidebar.php:18
+msgid "Export and import WordPress databases"
+msgstr "Експорт та імпорт баз даних WordPress"
+
+#: templates/sidebar.php:15
+msgid "Migrate full sites including themes, plugins, media, and database"
+msgstr "Міграція сайтів повністю, включно з темами, плагінами, медіафайлами та базою даних"
+
+#: templates/sidebar.php:12
+msgid "Use regular expressions for complex string replacements"
+msgstr "Використання регулярних виразів для складних варіантів заміни рядків"
+
+#: templates/sidebar.php:9
+msgid "Preview database changes before they are saved"
+msgstr "Попередній перегляд змін бази даних перед їх збереженням"
+
+#: templates/sidebar.php:5
+msgid "Gain access to more database and migration features"
+msgstr "Отримайте доступ до більших можливостей щодо міграції та роботи з базами даних"
+
+#: templates/sidebar.php:4
+msgid "Upgrade"
+msgstr "Оновлення"
+
+#: templates/bsr-settings.php:43
+msgid "If you notice timeouts or are unable to backup/import the database, try decreasing this value."
+msgstr "Якщо відбуваються таймаути або неможливо зберегти чи імпортувати базу даних, спробуйте зменшити це значення."
+
+#: templates/bsr-settings.php:39
+msgid "Max Page Size"
+msgstr "Максимальний розмір сторінки"
+
+#: templates/bsr-search-replace.php:118
+msgid "Run Search/Replace"
+msgstr "Запустити Пошук/Заміну"
+
+#: templates/bsr-search-replace.php:107
+msgid "If checked, no changes will be made to the database, allowing you to check the results beforehand."
+msgstr "Якщо вибрано, ніяких змін в БД не буде зроблено, що дозволяє вам заздалегідь подивитися на результати."
+
+#: templates/bsr-search-replace.php:106
+msgid "Run as dry run"
+msgstr "Пробний запуск (без заміни)"
+
+#: templates/bsr-search-replace.php:96
+msgid "If left unchecked, all database columns titled 'guid' will be skipped."
+msgstr "Якщо не вибрано, всі колонки 'guid' будуть пропущені."
+
+#: templates/bsr-search-replace.php:95
+msgid "Replace GUIDs"
+msgstr "Заміна GUID"
+
+#: templates/bsr-search-replace.php:85
+msgid "Searches are case-sensitive by default."
+msgstr "За замовчуванням пошук виконується з урахуванням регістра."
+
+#: templates/bsr-search-replace.php:84
+msgid "Case-Insensitive"
+msgstr "Регістр не враховується"
+
+#: templates/bsr-search-replace.php:73
+msgid "Additional Settings"
+msgstr "Додаткові налаштування"
+
+#: templates/bsr-search-replace.php:61
+msgid "Select multiple tables with Ctrl-Click for Windows or Cmd-Click for Mac."
+msgstr "Виберіть кілька таблиць за допомогою Ctrl+Клік для Windows або Cmd+Клік для Mac."
+
+#: templates/bsr-search-replace.php:59
+msgid "Select tables"
+msgstr "Виберіть таблиці"
+
+#: templates/bsr-search-replace.php:51
+msgid "Replace with"
+msgstr "Замінити на"
+
+#: templates/bsr-search-replace.php:46
+msgid "Search for"
+msgstr "Шукати"
+
+#: templates/bsr-search-replace.php:37
+msgid "Search and replace text in the database, including serialized arrays and objects. Be sure to back up your database before running this process."
+msgstr "Пошук та заміна тексту в базі даних, включаючи серіалізовані масиви та об'єкти. Обов'язково створіть резервну копію бази даних перед запуском цього процесу."
+
+#: templates/bsr-help.php:61
+msgid "System Info"
+msgstr "Інформація про систему"
+
+#: templates/bsr-help.php:51
+msgid "Found a bug or have a feature request? Please submit an issue on <a href=\"%s\">GitHub</a>!"
+msgstr "Знайшли помилку або хочете запропонувати нову можливість? Надішліть на <a href=\"%s\">GitHub</a>!"
+
+#: templates/bsr-help.php:43
+msgid "<a href=\"%s\" style=\"font-weight:bold;\" target=\"_blank\">Upgrade</a> to gain access to premium features and priority email support."
+msgstr "<a href=\"%s\" style=\"font-weight:bold;\" target=\"_blank\">Оновіть</a>, щоб отримати доступ до преміум-функцій та пріоритетної підтримки електронною поштою."
+
+#: templates/bsr-help.php:35
+msgid "Free support is available on the <a href=\"%s\">plugin support forums</a>."
+msgstr "Безкоштовна підтримка доступна на <a href=\"%s\">форумі підтримки плагіна</a>."
+
+#: templates/bsr-help.php:26
+msgid "Help & Troubleshooting"
+msgstr "Допомога та усунення неполадок"
+
+#: templates/bsr-dashboard.php:67
+msgid "Help"
+msgstr "Допомога"
+
+#: templates/bsr-dashboard.php:66 templates/bsr-settings.php:30
+msgid "Settings"
+msgstr "Налаштування"
+
+#: templates/bsr-dashboard.php:65 templates/bsr-search-replace.php:32
+msgid "Search/Replace"
+msgstr "Пошук/Заміна"
+
+#: templates/bsr-dashboard.php:53
+msgid "Upgrade now and get 50% off"
+msgstr "Оновіть зараз та отримайте 50% знижки"
+
+#: includes/class-bsr-db.php:295
+msgid "Error updating row: %d."
+msgstr "Помилка оновлення рядка: %d."
+
+#: includes/class-bsr-db.php:85
+msgid "(%s MB)"
+msgstr "(%s MB)"
+
+#: includes/class-bsr-ajax.php:159
+msgid "Processing table %d of %d: %s"
+msgstr "Обробка таблиці %d з %d: %s"
+
+#: includes/class-bsr-admin.php:303
+msgid "Upgrade to Pro"
+msgstr "Оновити до Pro"
+
+#: includes/class-bsr-admin.php:256
+msgid " seconds"
+msgstr " секунди"
+
+#: includes/class-bsr-admin.php:245
+msgid "<a href=\"%s\" target=\"_blank\">UPGRADE</a> to view details on the exact changes that will be made."
+msgstr "<a href=\"%s\" target=\"_blank\">ОНОВІТЬ</a>щоб переглянути детальну інформацію про зміни, які будуть внесені."
+
+#: includes/class-bsr-admin.php:234
+msgid "Time"
+msgstr "Час"
+
+#: includes/class-bsr-admin.php:234
+msgid "Rows Updated"
+msgstr "Рядки оновлено"
+
+#: includes/class-bsr-admin.php:234
+msgid "Changes Found"
+msgstr "Знайдено зміни"
+
+#: includes/class-bsr-admin.php:234
+msgid "Table"
+msgstr "Таблиця"
+
+#: includes/class-bsr-admin.php:136
+msgid "<p>During the search/replace, <strong>%1$d</strong> tables were searched, with <strong>%2$d</strong> cells changed in <strong>%3$d</strong> updates.</p><p><a href=\"%4$s\" class=\"thickbox\" title=\"Search/Replace Details\">Click here</a> for more details.</p>"
+msgstr "<p>Під час пошуку/заміни було переглянуто <strong>%1$d</strong> таблиць, з <strong>%2$d</strong> комірками для змін, <strong>%3$d</strong> оновлень.</p><p><a href=\"%4$s\" class=\"thickbox\" title=\"Деталі пошуку/заміни\">Натисніть тут</a> для більш детальної інформації.</p>"
+
+#: includes/class-bsr-admin.php:125
+msgid "<p><strong>DRY RUN:</strong> <strong>%1$d</strong> tables were searched, <strong>%2$d</strong> cells were found that need to be updated, and <strong>%3$d</strong> changes were made.</p><p><a href=\"%4$s\" class=\"thickbox\" title=\"Dry Run Details\">Click here</a> for more details, or use the form below to run the search/replace.</p>"
+msgstr "<p><strong>ПРОБНИЙ ЗАПУСК:</strong> <strong>%1$d</strong> таблиць було переглянуто, <strong>%2$d</strong> комірок для оновлення знайдено, та <strong>%3$d</strong> змін зроблено.</p><p><a href=\"%4$s\" class=\"thickbox\" title=\"Деталі пробного запуску\">Натисніть тут</a> для більш детальної інформації або скористайтеся формою нижче, щоб запустити пошук/заміну.</p>"
+
+#: includes/class-bsr-admin.php:75
+msgid "Processing..."
+msgstr "Обробка..."
+
+#: includes/class-bsr-admin.php:74
+msgid "An error occurred processing your request. Try decreasing the \"Max Page Size\", or contact support."
+msgstr "Помилка обробки вашого запиту. Спробуйте зменшити \"Максимальний розмір сторінки\" або зверніться до служби підтримки."
+
+#: includes/class-bsr-admin.php:73
+msgid "Please select the tables that you want to update."
+msgstr "Будь ласка, виберіть таблиці, які ви хочете оновити."
+
+#: includes/class-bsr-admin.php:72
+msgid "No search string was defined, please enter a URL or string to search for."
+msgstr "Рядок пошуку не визначено, введіть URL-адресу або рядок для пошуку."
+
+#. Description of the plugin
+#: better-search-replace.php
+msgid "A small plugin for running a search/replace on your WordPress database."
+msgstr "Невеликий плагін для пошуку/заміни в базі даних WordPress."
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: better-search-replace.php
+msgid "https://bettersearchreplace.com"
+msgstr "https://bettersearchreplace.com"
+
+#. Plugin Name of the plugin
+#: better-search-replace.php includes/class-bsr-admin.php:87
+msgid "Better Search Replace"
+msgstr "Better Search Replace"

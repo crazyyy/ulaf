@@ -1,0 +1,315 @@
+# Translation of Plugins - Regenerate Thumbnails - Stable (latest release) in Ukrainian
+# This file is distributed under the same license as the Plugins - Regenerate Thumbnails - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-01-26 09:01:51+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: uk_UA\n"
+"Project-Id-Version: Plugins - Regenerate Thumbnails - Stable (latest release)\n"
+
+#. translators: Used for listing old sizes of currently registered thumbnails
+#: includes/class-regeneratethumbnails-regenerator.php:696
+msgid "%s (old)"
+msgstr "%s (старих)"
+
+#: includes/class-regeneratethumbnails-regenerator.php:622
+msgid "Attachment %d"
+msgstr "Вкладення %d"
+
+#: includes/class-regeneratethumbnails-regenerator.php:584
+msgid "Unable to load the metadata for this attachment."
+msgstr "Неможливо отримати мета-дані з цього вкладення."
+
+#: includes/class-regeneratethumbnails-regenerator.php:568
+msgid "The current image editor cannot process this file type."
+msgstr "Плагін не може створити мініатюру для цього типу зображень."
+
+#. translators: The relative upload path to the attachment.
+#: includes/class-regeneratethumbnails-regenerator.php:150
+msgid "The fullsize image file cannot be found in your uploads directory at <code>%s</code>. Without it, new thumbnail images can't be generated."
+msgstr "Неможливо знайти зображення в оригінальному розмірі в папці <code>%s</code>. Без нього не можливе створення мініатюри."
+
+#: includes/class-regeneratethumbnails-regenerator.php:93
+msgid "This attachment is a site icon and therefore the thumbnails shouldn't be touched."
+msgstr "Це зображення - іконка сайту і його розміри не можна змінювати."
+
+#: includes/class-regeneratethumbnails-regenerator.php:82
+msgid "This item is not an attachment."
+msgstr "Елемент не є вкладенням."
+
+#: includes/class-regeneratethumbnails-regenerator.php:71
+msgid "No attachment exists with that ID."
+msgstr "Вкладень з таким ID не існує."
+
+#: includes/class-regeneratethumbnails-rest-controller.php:262
+msgid "The page number requested is larger than the number of pages available."
+msgstr "Вказаний номер більше, ніж доступна кількість сторінок."
+
+#: includes/class-regeneratethumbnails-rest-controller.php:64
+msgid "Posts to process per loop. This is to control memory usage and you likely don't need to adjust this."
+msgstr "Кількість записів для обробки за раз. Контролює використання пам'яті і зазвичай це не треба змінювати."
+
+#: includes/class-regeneratethumbnails-rest-controller.php:58
+msgid "Specific post IDs to update rather than any posts that use this attachment."
+msgstr "Вказані ID записів замість регенерації любого запису з цим вкладенням."
+
+#: includes/class-regeneratethumbnails-rest-controller.php:52
+msgid "The types of posts to update. Defaults to all public post types."
+msgstr "Типи записів для оновлення. Зазвичай це всі публічні типи записів."
+
+#: includes/class-regeneratethumbnails-rest-controller.php:47
+msgid "Whether to update the image tags in any posts that make use of this attachment."
+msgstr "Оновити теги зображення в усіх записах, що використовують його."
+
+#: includes/class-regeneratethumbnails-rest-controller.php:42
+msgid "Whether to delete any old, now unregistered thumbnail files."
+msgstr "Видалити усі старі, тепер не зареєстровані розміри мініатюр."
+
+#: includes/class-regeneratethumbnails-rest-controller.php:37
+msgid "Whether to only regenerate missing thumbnails. It's faster with this enabled."
+msgstr "Лише створити відсутні мініатюри. Цей процес швидший."
+
+#: regenerate-thumbnails.php:495
+msgctxt "bulk actions dropdown"
+msgid "Regenerate Thumbnails"
+msgstr "Регенерація мініатюр"
+
+#: regenerate-thumbnails.php:433 regenerate-thumbnails.php:449
+#: regenerate-thumbnails.php:473
+msgid "Regenerate the thumbnails for this single image"
+msgstr "Створити нові мініатюри для цього зображення"
+
+#: regenerate-thumbnails.php:360
+msgid "This tool won't be able to do anything because your server doesn't support image editing which means that WordPress can't create thumbnail images. Please ask your host to install the Imagick or GD PHP extensions."
+msgstr "Цей інструмент нічого не зможе зробити, тому що ваш сервер не підтримує редагування зображень. Попросіть свого системного адміністратора чи власника хостингу встановити на сервері такі PHP додатки як Imagick або GD."
+
+#: regenerate-thumbnails.php:331
+msgid "This tool requires that JavaScript be enabled to work."
+msgstr "Цей інструмент потребує увімкнений JavaScript для своєї роботи."
+
+#: regenerate-thumbnails.php:321
+msgid "This plugin requires WordPress 4.7 or newer. You are on version %1$s. Please <a href=\"%2$s\">upgrade</a>."
+msgstr "Плагін потребує WordPress 4.7 або свіжіше. Ваша версія %1$s. Будь-ласка, <a href=\"%2$s\">оновіть систему</a>."
+
+#: regenerate-thumbnails.php:294
+msgid "Regenerate Thumbnails For The %d Selected Attachments"
+msgstr "Створити мініатюри для %d обраних зображень"
+
+#: regenerate-thumbnails.php:282
+msgid "Unable to fetch a list of attachment IDs to process from the WordPress REST API. You can check your browser's console for details."
+msgstr "Неможливо отримати список зображень через проблеми з WordPress REST API. Більш детальна інформація у консолі браузера."
+
+#: regenerate-thumbnails.php:281
+msgid "{count} seconds"
+msgstr "{count} секунд"
+
+#: regenerate-thumbnails.php:280
+msgid "{count} minutes"
+msgstr "{count} хвилин"
+
+#: regenerate-thumbnails.php:279
+msgid "{count} hours"
+msgstr "{count} годин"
+
+#: regenerate-thumbnails.php:278
+msgid "All done in {duration}."
+msgstr "Операцію виконано за {duration}."
+
+#: regenerate-thumbnails.php:277
+msgid "Skipped Attachment ID {id}: {reason}"
+msgstr "Пропущено вкладення {id}: {reason}"
+
+#: regenerate-thumbnails.php:276
+msgid "Skipped Attachment ID {id} ({name}): {reason}"
+msgstr "Пропущено вкладення {id} ({name}): {reason}"
+
+#: regenerate-thumbnails.php:275
+msgid "Regenerated {name}"
+msgstr "Створено {name}"
+
+#: regenerate-thumbnails.php:274
+msgid "Resume"
+msgstr "Продовжити"
+
+#: regenerate-thumbnails.php:273
+msgid "Pause"
+msgstr "Пауза"
+
+#: regenerate-thumbnails.php:272
+msgid "Regeneration Log"
+msgstr "Журнал регенерацій"
+
+#: regenerate-thumbnails.php:271
+msgid "Errors Encountered"
+msgstr "Виникли помилки"
+
+#: regenerate-thumbnails.php:268
+msgid "The attachment says it also has these thumbnail sizes but they are no longer in use by WordPress. You can probably safely have this plugin delete them, especially if you have this plugin update any posts that make use of this attachment."
+msgstr "Вкладення має незареєстровані розміри, які більше не використовуються у WordPress. Ви можете їх безпечно видалити за допомогою цього плагіну."
+
+#: regenerate-thumbnails.php:267
+msgid "These are the currently registered thumbnail sizes, whether they exist for this attachment, and their filenames:"
+msgstr "Зараз зареєстровані такі розміри мініатюр, навіть якщо вони не існують для цього зображення, ось їх імена:"
+
+#: regenerate-thumbnails.php:266
+msgid "There was an error regenerating this attachment. The error was: <em>{message}</em>"
+msgstr "Виникла помилка під час створення мініатюр. Текст помилки: <em>{message}</em>"
+
+#: regenerate-thumbnails.php:265
+msgid "Error Regenerating"
+msgstr "Помилка регенерації"
+
+#: regenerate-thumbnails.php:264
+msgid "Done! Click here to go back."
+msgstr "Готово! Натисніть тут для повернення."
+
+#: regenerate-thumbnails.php:263
+msgid "Regenerating…"
+msgstr "Регенерація..."
+
+#: regenerate-thumbnails.php:262
+msgid "Update the content of posts that use this attachment to use the new sizes."
+msgstr "Оновіть зміст записів, що використовують ці вкладення, щоб побачити нові розміри."
+
+#: regenerate-thumbnails.php:261
+msgid "Preview"
+msgstr "Перегляд"
+
+#: regenerate-thumbnails.php:260
+msgid "<code>{filename}</code> {width}×{height} pixels"
+msgstr "<code>{filename}</code> {width}×{height} пікселів"
+
+#: regenerate-thumbnails.php:259
+msgid "<strong>ERROR:</strong> {error}"
+msgstr "<strong>ПОМИЛКА:</strong> {error}"
+
+#. translators: single image sdmin page title
+#: regenerate-thumbnails.php:258
+msgid "Regenerate Thumbnails: {name} — WordPress"
+msgstr "Регенерація мініатюр: {name} — WordPress"
+
+#: regenerate-thumbnails.php:256 regenerate-thumbnails.php:433
+#: regenerate-thumbnails.php:449 regenerate-thumbnails.php:473
+msgctxt "action for a single image"
+msgid "Regenerate Thumbnails"
+msgstr "Регенерація мініатюр"
+
+#: regenerate-thumbnails.php:253
+msgid "Another alternative is to use the <a href=\"{url-photon}\">Photon</a> functionality that comes with the <a href=\"{url-jetpack}\">Jetpack</a> plugin. It generates thumbnails on-demand using WordPress.com's infrastructure. <em>Disclaimer: The author of this plugin, Regenerate Thumbnails, is an employee of the company behind WordPress.com and Jetpack but I would recommend it even if I wasn't.</em>"
+msgstr "Інша альтернатива - використовувати сервіс <a href=\"{url-photon}\">Photon</a>, який йде у комплекті з плагіном <a href=\"{url-jetpack}\">Jetpack</a>. Він створює мініатюри за потребою використовуючи WordPress.com. <em>Зверніть увагу: розробник цього плагіну є працівником WordPress.com та Jetpack, але він би радив цей плагін, навіть якщо б не працював там.</em>"
+
+#: regenerate-thumbnails.php:252
+msgid "If you have <a href=\"{url-cli}\">command-line</a> access to your site's server, consider using <a href=\"{url-wpcli}\">WP-CLI</a> instead of this tool. It has a built-in <a href=\"{url-wpcli-regenerate}\">regenerate command</a> that works similarly to this tool but should be significantly faster since it has the advantage of being a command-line tool."
+msgstr "Якщо ви маєте доступ до <a href=\"{url-cli}\">командного рядку</a> на вашому сервері, то можна використовувати <a href=\"{url-wpcli}\">WP-CLI</a>. Він має вбудовану функцію <a href=\"{url-wpcli-regenerate}\">регенерації мініатюр</a>, яка працює так само, але в рази швидше."
+
+#: regenerate-thumbnails.php:251
+msgid "Alternatives"
+msgstr "Альтернативні рішення"
+
+#: regenerate-thumbnails.php:250
+msgid "These are all of the thumbnail sizes that are currently registered:"
+msgstr "Ось список всіх зареєстрованих розмірів мініатюр:"
+
+#: regenerate-thumbnails.php:249
+msgid "Thumbnail Sizes"
+msgstr "Розміри мініатюр"
+
+#: regenerate-thumbnails.php:248
+msgid "Regenerate Thumbnails For The {attachmentCount} Featured Images Only"
+msgstr "Створити мініатюри лише для {attachmentCount} головних зображень"
+
+#: regenerate-thumbnails.php:247
+msgid "Regenerate Thumbnails For Featured Images Only"
+msgstr "Створити мініатюри лише для головних зображень"
+
+#: regenerate-thumbnails.php:246
+msgid "Regenerate Thumbnails For All {attachmentCount} Attachments"
+msgstr "Створити мініатюри для всіх {attachmentCount} зображень"
+
+#: regenerate-thumbnails.php:245
+msgid "Regenerate Thumbnails For All Attachments"
+msgstr "Створити мініатюри для всіх зображень"
+
+#: regenerate-thumbnails.php:244
+msgid "Update the content of posts to use the new sizes."
+msgstr "Оновіть зміст записів, щоб побачити нові розміри."
+
+#. translators: %s: Media library URL
+#: regenerate-thumbnails.php:241
+msgid "To process a specific image, visit your media library and click the &quot;Regenerate Thumbnails&quot; link or button. To process multiple specific images, make sure you're in the <a href=\"%s\">list view</a> and then use the Bulk Actions dropdown after selecting one or more images."
+msgstr "Для обробки конкретного зображення перейдіть у Медіафайли та натисніть кнопку «Регенерація мініатюр» в обраному фото. Для масової обробки кількох зображень оберіть режим відображення <a href=\"%s\">записів списком</a>, виділіть потрібні зображення та оберіть з випадаючого списку пункт «Регенерація мініатюр»."
+
+#. translators: %s: Media options URL
+#: regenerate-thumbnails.php:236
+msgid "When you change WordPress themes or change the sizes of your thumbnails at <a href=\"%s\">Settings → Media</a>, images that you have previously uploaded to you media library will be missing thumbnail files for those new image sizes. This tool will allow you to create those missing thumbnail files for all images."
+msgstr "Коли ви змінюєте WordPress тему або розміри мініатюр в меню <a href=\"%s\">Налаштування → Медіафайли</a>, старі зображення які були завантажені до цих змін залишаться без змін. Цей інструмент дозволяє створити мініатюри для всіх зображень, включаючи старі фотографії."
+
+#: regenerate-thumbnails.php:231
+msgid "proportionally resized to fit inside dimensions"
+msgstr "пропорційна обрізка до заданих розмірів"
+
+#: regenerate-thumbnails.php:230
+msgid "cropped to fit"
+msgstr "жорстка обрізка"
+
+#: regenerate-thumbnails.php:229
+msgid "<strong>{label}:</strong> {width}×{height} pixels (thumbnail would be larger than original)"
+msgstr "<strong>{label}:</strong> {width}×{height} пікселів (мініатюра буде більша за оригінал)"
+
+#: regenerate-thumbnails.php:228
+msgid "<strong>{label}:</strong> {width}×{height} pixels <code>{filename}</code>"
+msgstr "<strong>{label}:</strong> {width}×{height} пікселів <code>{filename}</code>"
+
+#: regenerate-thumbnails.php:227
+msgid "<strong>{label}:</strong> {width}×{height} pixels ({cropMethod}) <code>{filename}</code>"
+msgstr "<strong>{label}:</strong> {width}×{height} пікселів ({cropMethod}) <code>{filename}</code>"
+
+#: regenerate-thumbnails.php:226
+msgid "<strong>{label}:</strong> {width}×{height} pixels ({cropMethod})"
+msgstr "<strong>{label}:</strong> {width}×{height} пікселів ({cropMethod})"
+
+#: regenerate-thumbnails.php:225
+msgid "Delete thumbnail files for old unregistered sizes in order to free up server space. This may result in broken images in your posts and pages."
+msgstr "Видалити мініатюри для незареєстрованих розмірів, щоб звільнити більше місця. Це може нашкодити зображенням на сторінках та у записах."
+
+#: regenerate-thumbnails.php:224
+msgid "Skip regenerating existing correctly sized thumbnails (faster)."
+msgstr "Пропустити вже існуючі мініатюри правильного розміру (швидше)."
+
+#: regenerate-thumbnails.php:223 regenerate-thumbnails.php:334
+msgid "Loading…"
+msgstr "Завантаження..."
+
+#: regenerate-thumbnails.php:166
+msgctxt "admin menu entry title"
+msgid "Regenerate Thumbnails"
+msgstr "Регенерація мініатюр"
+
+#: regenerate-thumbnails.php:165 regenerate-thumbnails.php:317
+msgctxt "admin page title"
+msgid "Regenerate Thumbnails"
+msgstr "Регенерація мініатюр"
+
+#. Author URI of the plugin
+msgid "https://alex.blog/"
+msgstr "https://alex.blog/"
+
+#. Author of the plugin
+msgid "Alex Mills (Viper007Bond)"
+msgstr "Alex Mills (Viper007Bond)"
+
+#. Description of the plugin
+msgid "Regenerate the thumbnails for one or more of your image uploads. Useful when changing their sizes or your theme."
+msgstr "Створення нових мініатюр для одного чи кількох зображень з бібліотеки. Корисно, коли ви змінюєте розміри зображень або тему сайту."
+
+#. Plugin URI of the plugin
+msgid "https://alex.blog/wordpress-plugins/regenerate-thumbnails/"
+msgstr "https://alex.blog/wordpress-plugins/regenerate-thumbnails/"
+
+#. Plugin Name of the plugin
+msgid "Regenerate Thumbnails"
+msgstr "Regenerate Thumbnails"

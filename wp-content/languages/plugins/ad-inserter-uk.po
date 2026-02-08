@@ -1,0 +1,4439 @@
+# Translation of Plugins - Ad Inserter &#8211; Ad Manager &amp; AdSense Ads - Stable (latest release) in Ukrainian
+# This file is distributed under the same license as the Plugins - Ad Inserter &#8211; Ad Manager &amp; AdSense Ads - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-01-26 18:36:29+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.3\n"
+"Language: uk_UA\n"
+"Project-Id-Version: Plugins - Ad Inserter &#8211; Ad Manager &amp; AdSense Ads - Stable (latest release)\n"
+
+#: settings.php:1072
+msgid "Script"
+msgstr "Скрипт"
+
+#: settings.php:5974
+msgid "statistics cleared"
+msgstr "статистика очищена"
+
+#. translators: %s: NO CODE FOR INSERTION ON NORMAL/AMP PAGES
+#: class.php:4219
+msgid "NORMAL"
+msgstr "ЗВИЧАЙНИЙ"
+
+#: settings.php:193
+msgid "Information"
+msgstr "Інформація"
+
+#. translators: disable feature
+#: settings.php:193
+msgid "disable"
+msgstr "вимкнути"
+
+#: strings.php:38
+msgid "File"
+msgstr "Файл"
+
+#: settings.php:2612
+msgid "Administration"
+msgstr "Адміністрація"
+
+#: settings.php:2611
+msgid "Frontend"
+msgstr "Інтерфейс"
+
+#: strings.php:37
+msgid "Inline"
+msgstr "Лінійно"
+
+#: strings.php:208
+msgid "Top menu"
+msgstr "Верхнє меню"
+
+#: settings.php:2615
+msgid "Constants"
+msgstr "Константи"
+
+#: settings.php:2919
+msgid "Value"
+msgstr "Значення"
+
+#: strings.php:118
+msgid "all devices"
+msgstr "всі пристрої"
+
+#. translators: 1: Ad Inserter, 2, 3: HTML tags
+#: ad-inserter.php:3571
+msgid "Error: plugin settings corrupt"
+msgstr "Помилка: пошкоджено налаштування плагіна"
+
+#: settings.php:2074
+msgid "Cookies"
+msgstr "Cookies"
+
+#: settings.php:3424
+msgid "Use external scripts"
+msgstr "Використання зовнішніх скриптів"
+
+#: settings.php:3424
+msgid "Use external scripts for ad blocking detection. Disable when you need to obtain user consent before collecting personal information. In such case use shortcut to insert external scripts after the consent is given."
+msgstr "Використовувати зовнішні скрипти для визначення блокування реклами. Вимкніть, якщо вам потрібно отримати згоду користувача перед тим, як збирати особисту інформацію. У такому випадку використовуйте ярлик для вставки зовнішніх скриптів після отримання згоди."
+
+#: strings.php:238
+msgid "Delete all"
+msgstr "Видалити все"
+
+#: strings.php:247
+msgid "Delete website?"
+msgstr "Видалити сайт?"
+
+#: settings.php:1630
+msgid "Delay"
+msgstr "Затримка"
+
+#: settings.php:1034
+msgid "Alt text"
+msgstr "Альтернативний текст"
+
+#: settings.php:1042
+msgid "Lazy loading"
+msgstr "Відкладене завантаження"
+
+#: settings.php:1612
+msgid "Wait for"
+msgstr "Зачекай"
+
+#: settings.php:1624
+msgid "Wait for HTML element to be loaded"
+msgstr "Зачекайте, поки завантажиться HTML-елемент"
+
+#: settings.php:1631
+msgid "Time in ms to delay insertion"
+msgstr "Час у мс для затримки вставки"
+
+#. translators: %s: Ad Inserter
+#: settings.php:3626
+msgid "%s HTML CODE"
+msgstr "%s HTML-код"
+
+#. translators: %s HTML tags
+#: settings.php:6527
+msgid "%s Background ads %s with one or left and right background images"
+msgstr "%s фонових оголошень %s одним або лівим і правим фоновими зображеннями"
+
+#. translators: %s: HTML tags
+#: settings.php:6324
+msgid "%s New to %s AdSense? %s %s %s Connect your site %s - %s In-feed ads, %s %s Auto ads, %s %s AMP ads %s"
+msgstr "%s нове в %s AdSense? %s %s %s Підключайте свій сайт %s - %s в фідах оголошень, %s %s автоматичних оголошень, %s %s реклами AMP %s"
+
+#: settings.php:6387 settings.php:6402 settings.php:6494
+msgid "Ad blocking detection and content protection"
+msgstr "Виявлення блокування реклами та захист вмісту"
+
+#: settings.php:1774
+msgid "Check only tag attributes"
+msgstr "Перевіряти лише атрибути тегів"
+
+#: settings.php:2125
+msgid "Comma separated names (operating systems, browsers, devices). You can also list partial user agent strings with * (user-agent-start*. *user-agent-pattern*, *user-agent-end)"
+msgstr "Імена, розділені комами (операційні системи, браузери, пристрої). Ви також можете перелічити рядки агента часткового користувача з * (user-agent-start*. *user-agent-pattern*, *user-agent-end)"
+
+#. Translators: Do not insert for first X and last Y paragraphs
+#: settings.php:1787
+msgid "Do not insert for first"
+msgid_plural "Do not insert for first"
+msgstr[0] "Не вставляйте спочатку"
+msgstr[1] "Не вставляйте спочатку"
+msgstr[2] "Не вставляйте спочатку"
+
+#: settings.php:2369
+msgid "Embed JS code"
+msgstr "Вбудувати JS код"
+
+#: settings.php:1793
+msgid "Excludes first paragraphs from insertion, leave empty for no exclusion of first paragraphs"
+msgstr "Виключає перші абзаци зі вставки, залишає порожніми без виключення перших абзаців"
+
+#: settings.php:1802
+msgid "Excludes last paragraphs from insertion, leave empty for no exclusion of last paragraphs"
+msgstr "Виключає останні абзаци зі вставки, залишає порожніми без виключення останніх абзаців"
+
+#: settings.php:1773 settings.php:1774
+msgid "If checked it will search for the text only in tag attributes like [[id]], [[class]], [[style]], etc. Otherwise the whole tag including its content will be searched."
+msgstr "Якщо буде позначено цей пункт, текст шукатиметься лише у атрибутах теґів, зокрема [[id]], [[class]], [[style]] тощо. В іншому випадку буде шукатися весь тег, включаючи його вміст."
+
+#: settings.php:6410
+msgid "Insert ads on AMP pages"
+msgstr "Вставлення оголошень на сторінки AMP"
+
+#: settings.php:5164
+msgid "No active block"
+msgstr "Немає активного блоку"
+
+#: settings.php:5165
+msgid "No block matches search keywords"
+msgstr "Немає блоків, які віднімається від ключових слів пошуку"
+
+#: settings.php:5028
+msgid "Pause block"
+msgstr "Призупинити блок"
+
+#: settings.php:2849
+msgid "Tab setup delay"
+msgstr "Затримка настроювання вкладки"
+
+#: settings.php:2365
+msgid "When enabled, Javascript code (if needed for the blok) will be inserted next to the block HTML code. Otherwise, the Javascript code will be inserted in the page footer. Plugin Javascript functions will still be inserted in the footer."
+msgstr "При включенні, Javascript код (при необхідності для blok) буде вставлений поруч з блоком HTML код. В іншому випадку, Javascript код буде вставлений в нижній колонтитул сторінки. Плагін Javascript функції будуть як і раніше будуть вставлені в нижній колонтитул."
+
+#. Translators: Do not insert for first X and last Y paragraphs
+#: settings.php:1796
+msgid "and last"
+msgid_plural "and last"
+msgstr[0] "попередня сторінка"
+msgstr[1] "попередня сторінки"
+msgstr[2] "попередня сторінки"
+
+#: includes/preview.php:2568
+msgid "Color to be used for the background"
+msgstr "Колір, який буде використано для тла"
+
+#: strings.php:302
+msgctxt "Element"
+msgid "Parent"
+msgstr "Батьківський"
+
+#: strings.php:154
+msgid "Fill"
+msgstr "Заповнювач"
+
+#: strings.php:146
+msgid "Horizontally"
+msgstr "Горизонтально"
+
+#: strings.php:183
+msgctxt "Manual loading"
+msgid "Always"
+msgstr "Завжди"
+
+#: strings.php:182
+msgctxt "Manual loading"
+msgid "Auto"
+msgstr "Авто"
+
+#: includes/preview.php:2586
+msgid "Repeat image"
+msgstr "Повторіть зображення"
+
+#: strings.php:243
+msgid "Rotation code editor active. Click on the rotation button to generate code."
+msgstr "Активний редактор коду обертання. Натисніть кнопку обертання, щоб створити код."
+
+#: strings.php:149
+msgid "Round"
+msgstr "Круглий"
+
+#: strings.php:269
+msgid "Select or upload background image"
+msgstr "Виділення або завантаження зображення заголовка"
+
+#: strings.php:148
+msgid "Space"
+msgstr "Відступ"
+
+#: strings.php:147
+msgid "Vertically"
+msgstr "Вертикально"
+
+#: settings.php:200 settings.php:203
+msgid "Warning: only exceptions for %d posts cleared, %d posts still have exceptions"
+msgstr "Увага: лише винятки для %d повідомлень очищені, %d повідомлення все ще мають винятки"
+
+#: strings.php:143
+msgctxt "image repeat"
+msgid "Default"
+msgstr "За замовчуванням"
+
+#: strings.php:151
+msgctxt "image size"
+msgid "Default"
+msgstr "За замовчуванням"
+
+#: strings.php:153
+msgctxt "image size"
+msgid "Fit"
+msgstr "Відповідати"
+
+#: strings.php:69
+msgctxt "position"
+msgid "Center"
+msgstr "Центр"
+
+#: class.php:4615
+msgid "start='%s' end='%s' days='%s' type='%s'"
+msgstr "start='%s' end='%s' days='%s' type='%s'"
+
+#: includes/preview.php:2749 strings.php:211
+msgid "Background"
+msgstr "Фон"
+
+#: strings.php:241
+msgid "OK"
+msgstr "OK"
+
+#: strings.php:145
+msgid "Yes"
+msgstr "Так"
+
+#: strings.php:144
+msgid "No"
+msgstr "Ні"
+
+#: includes/preview.php:2573
+msgid "Image size"
+msgstr "Розмір зображення"
+
+#: strings.php:152
+msgid "Cover"
+msgstr "Обкладинка"
+
+#: ad-inserter.php:3511
+msgid "Maybe later"
+msgstr "Можливо пізніше"
+
+#: class.php:2968
+msgctxt "viewports"
+msgid "ALL"
+msgstr "Всі"
+
+#: ad-inserter.php:3615
+msgid "Safe mode"
+msgstr "Безпечний режим"
+
+#: settings.php:6236
+msgctxt "Rate Ad Inserter"
+msgid "Rate"
+msgstr "Ставка"
+
+#. translators: %s: HTML tags for text and link
+#: settings.php:2518
+msgid "%s WARNING: %s Settings Filter or Max insertions can't work with %s Client-side %s insertion. Use %s Server-side %s insertion."
+msgstr "%s УВАГА: %s параметри\" або \"Максимальна кількість вставок\" не %s із вставленням на %s боці клієнта. Використовуйте %s серверної %s вставки."
+
+#: strings.php:196
+msgctxt "AdSense Ad Type"
+msgid "AMP Only"
+msgstr "Лише AMP"
+
+#: settings.php:2754
+msgid "Block name class"
+msgstr "Клас іменування блоку"
+
+#: settings.php:1948 settings.php:1971 settings.php:1994 settings.php:2017
+#: settings.php:2040 settings.php:2063 settings.php:2086 settings.php:2108
+#: settings.php:2130
+msgid "Click to select black or white list"
+msgstr "Клацніть, щоб вибрати чорний або білий список"
+
+#: settings.php:1636
+msgid "Code position"
+msgstr "Положення коду"
+
+#: strings.php:277
+msgctxt "Friday"
+msgid "FR"
+msgstr "Пт"
+
+#. Translators: %s: Ad Inserter
+#: ad-inserter.php:3516
+msgid "Hey, you are using %s and I hope you're happy with it."
+msgstr "Ви використовуєте %s, і я сподіваюся, що ви щасливі з ним."
+
+#: settings.php:6236
+msgid "If you like Ad Inserter and have a moment, please help me spread the word by rating the plugin on WordPres"
+msgstr "Якщо вам подобається оголошення вставки і є момент, будь ласка, допоможіть мені поширити слово, переглянувши плагін на WordPres"
+
+#: settings.php:2754
+msgid "Include block name class"
+msgstr "Включити клас імен блоку"
+
+#: ad-inserter.php:3615
+msgid "Load settings page in safe mode to avoid collisions with other plugins or theme"
+msgstr "Завантажити сторінку налаштувань в безпечному режимі, щоб уникнути зіткнень з іншими плагінами або темою"
+
+#: ad-inserter.php:684
+msgctxt "Menu item"
+msgid "Show Log"
+msgstr "Показати журнал"
+
+#: strings.php:273
+msgctxt "Monday"
+msgid "MO"
+msgstr "ПН"
+
+#: ad-inserter.php:3519
+msgid "OK, but please help me with the settings first"
+msgstr "Добре, але, будь ласка, допоможіть мені з налаштуваннями в першу чергу"
+
+#. translators: %s: HTML tags
+#: settings.php:386
+msgid "Page is loaded in %s safe mode. %s Not all scripts are loaded."
+msgstr "Сторінка завантажується в %s безпечному режимі. %s завантажено не всі сценарії."
+
+#: settings.php:1637
+msgid "Page position where the code for client-side insertion will be inserted."
+msgstr "Розташування сторінки, на якій буде вставлено код клієнтської вставки."
+
+#: ad-inserter.php:3507
+msgid "Please help me to solve a problem first"
+msgstr "Будь ласка, допоможіть мені вирішити проблему в першу чергу"
+
+#: ad-inserter.php:3532
+msgid "Please take a moment to rate the plugin. When you rate it with 5 stars it's like saying 'Thank you'. Somebody will be happy."
+msgstr "Будь ласка, скористайтеся моментом, щоб оцінити плагін. Коли ви оціните його з 5 зірками, це як сказати \"Дякую\". Хтось буде щасливий."
+
+#: settings.php:384
+msgid "SAFE MODE"
+msgstr "БЕЗПЕЧНИЙ РЕЖИМ"
+
+#: strings.php:278
+msgctxt "Saturday"
+msgid "SA"
+msgstr "СБ"
+
+#: strings.php:279
+msgctxt "Sunday"
+msgid "SU"
+msgstr "Нд"
+
+#: ad-inserter.php:3540
+msgid "Sure"
+msgstr "Впевнений"
+
+#: strings.php:276
+msgctxt "Thursday"
+msgid "TH"
+msgstr "Чт"
+
+#: strings.php:274
+msgctxt "Tuesday"
+msgid "TU"
+msgstr "Вт"
+
+#. translators: disable feature
+#: settings.php:193 settings.php:2646
+msgid "Wait for jQuery"
+msgstr "Зачекайте на JQuery"
+
+#. translators: 1: Ad Inserter, 2, 3: HTML tags
+#: ad-inserter.php:3564
+msgid "Warning: %1$s requires PHP 5.6 or newer. %2$s Please update! %3$s"
+msgstr "Попередження: %1$s php 5.6 або новішої версії. %2$s Будь ласка, оновіть! %3$s"
+
+#: strings.php:275
+msgctxt "Wednesday"
+msgid "WE"
+msgstr "Ср"
+
+#: settings.php:2649
+msgid "When enabled, Ad Inserter will wait for jQuery library to be loaded before it will run the scripts that may need it"
+msgstr "Якщо увімкнено, Ad Inserter чекатиме, поки бібліотека JQuery буде завантажена, перш ніж вона запускатиме скрипти, які можуть знадобитися"
+
+#: class.php:4944 class.php:4947
+msgid "viewport='%s' type='%s'"
+msgstr "viewport='%s' type='%s'"
+
+#: strings.php:201
+msgctxt "AMP ad"
+msgid "Sticky"
+msgstr "Прикріплений"
+
+#. translators: %s HTML tags
+#: settings.php:6558
+msgid "%s Black/White-list %s categories, tags, taxonomies, users, post IDs, urls, referrers, operating systems, browsers"
+msgstr "%s категорії, теги, %s таксономії, користувачі, ідентифікатори дописів, URL-адреси, джерела посилань, операційні системи, браузери"
+
+#. translators: %s HTML tags
+#: settings.php:6540
+msgid "%s Public web reports %s for clients, export to PDF"
+msgstr "%s публічні веб-звіти %s для клієнтів, експорт у PDF"
+
+#. translators: %s: Ad Inserter
+#: settings.php:4548
+msgid "%s virtual ads.txt file"
+msgstr "%s віртуальних оголошень.txt файл"
+
+#: settings.php:4571
+msgid "Account ID"
+msgstr "ІДЕНТИФІКАТОР облікового запису"
+
+#: settings.php:4588
+msgid "Account ID found in block and present in ads.txt"
+msgstr "ІДЕНТИФІКАТОР облікового запису знайдено в блоці та присутній у оголошеннях. txt"
+
+#: settings.php:4592
+msgid "Account ID found in block but not present in ads.txt"
+msgstr "ІДЕНТИФІКАТОР облікового запису знайдено в блоці, але не присутній у оголошеннях. txt"
+
+#: settings.php:4542
+msgid "Account IDs found in blocks but not present in the ads.txt file"
+msgstr "Ідентифікатори облікових записів, знайдені в блоках, але не присутні у файлі ads. txt"
+
+#: settings.php:4570
+msgid "Advertising system"
+msgstr "Рекламна система"
+
+#: settings.php:5523
+msgid "All posts"
+msgstr "Усі повідомлення"
+
+#: settings.php:5524
+msgid "All static pages"
+msgstr "Статичні сторінки"
+
+#: settings.php:4086
+msgid "Available positions for current theme"
+msgstr "Доступні позиції поточної теми"
+
+#. translators: %s: HTML tags
+#: settings.php:6341
+msgid "Become an %s affiliate %s for Ad Inserter Pro and earn commission for each purchase you refer to us"
+msgstr "Стати %s Партнерська %s для оголошень ininter Pro і заробляти комісію за кожну покупку ви посилаєтеся до нас"
+
+#: settings.php:4090
+msgctxt "Button"
+msgid "Check"
+msgstr "Перевірити"
+
+#: settings.php:4573
+msgid "Certification authority ID"
+msgstr "ІДЕНТИФІКАТОР центру сертифікації"
+
+#: settings.php:339 settings.php:1348
+msgid "Check theme for available positions for automatic insertion"
+msgstr "Перевірка теми для доступних позицій для автоматичного вставлення"
+
+#. translators: %s HTML tags
+#: settings.php:6543
+msgid "Click fraud %s protection %s"
+msgstr "Натисніть на %s створити ОБЛІКОВІ дані %s"
+
+#: settings.php:2119
+msgid "Clients"
+msgstr "Клієнти"
+
+#: settings.php:3342
+msgid "Code for ad blocking detection inserted. Click for details."
+msgstr "Код для виявлення блокування оголошення вставлений. Натисніть для подробиць."
+
+#: settings.php:1734
+msgid "Comma separated HTML tag names of container elements"
+msgstr "Назви тегів контейнерів, розділених комами HTML"
+
+#. Translators: %s: HTML tags
+#: settings.php:1779
+msgid "Count inside %s elements"
+msgstr "Підрахунок всередині %s елементів"
+
+#. translators: %s HTML tags
+#: settings.php:6537
+msgid "Create, edit and check %s ads.txt %s file"
+msgstr "Створити, відредагувати та перевірити %s оголошення. txt файл %s"
+
+#: ad-inserter.php:3859
+msgid "Default insertion can be configured for each block on %1$s page - button next to %2$s checkbox."
+msgstr "Типову вставку можна налаштувати для кожного блоку на %1$s - кнопку поруч з %2$s прапорець."
+
+#: settings.php:5139
+msgid "Device detection"
+msgstr "Виявлення пристрою"
+
+#. Translators: %s: price of Ad Inserter Pro
+#: settings.php:6511
+msgid "Different license types starting from %s"
+msgstr "Різні типи ліцензій, починаючи з %s"
+
+#: settings.php:2867
+msgid "Disable caching for logged in administrators"
+msgstr "Вимкнути кешування для входу в адміністратори"
+
+#: settings.php:331 settings.php:336
+msgid "Edit ads.txt file"
+msgstr "Редагувати файл ads. txt"
+
+#: settings.php:2205
+msgid "Either show/hide or insert when the page is loaded on wanted viewports"
+msgstr "Або Показати/приховати або вставити, коли сторінка завантажується на розшукуваних viewports"
+
+#: settings.php:1381
+msgid "Enable individual post/page exceptions for insertion of this block. They can be configured on the individual post/page editor page (in the settings below the editor)."
+msgstr "Увімкнути окремі винятки для запису або сторінки для вставки цього блоку. Їх можна налаштувати на окремій сторінці редактора пост/сторінки (у налаштуваннях нижче редактора)."
+
+#: settings.php:1382
+msgid "Enable individual post/page exceptions for insertion of this block. When enabled they can be configured on the individual post/page editor page (in the settings below the editor)."
+msgstr "Увімкнути окремі винятки для запису або сторінки для вставки цього блоку. Якщо увімкнено, їх можна налаштувати на окремій сторінці редактора постів/сторінок (у налаштуваннях нижче редактора)."
+
+#: settings.php:2870
+msgid "Enabled means that logged in administrators will see non-cached (live) pages (applies to WP Super Cache, W3 Total Cache and WP Rocket plugins)"
+msgstr "Включений означає, що в журналі адміністратори будуть бачити, не кешованих (Live) сторінки (відноситься до WP Super Cache, w3 всього кеша і плагінів WP ракети)"
+
+#: settings.php:4087
+msgid "Error checking pages"
+msgstr "Помилка перевірки сторінок"
+
+#: settings.php:5138
+msgid "Exceptions"
+msgstr "Винятки"
+
+#: settings.php:3388
+msgid "Exceptions for global action when ad blocking is detected."
+msgstr "Винятки для глобальних дій після виявлення блокування оголошення."
+
+#. translators: %s HTML tags
+#: settings.php:6542
+msgid "Frequency capping - %s limit impressions or clicks %s"
+msgstr "Обмеження частоти - %s обмеження показів або кліків %s"
+
+#: settings.php:1196
+msgctxt "Full width"
+msgid "Disabled"
+msgstr "Вимкнено"
+
+#: settings.php:1195
+msgctxt "Full width"
+msgid "Enabled"
+msgstr "Увімкнути"
+
+#: settings.php:417
+msgid "Group name"
+msgstr "Ім'я групи"
+
+#: settings.php:4520
+msgid "IMPORTANT"
+msgstr "Важливо"
+
+#: settings.php:1507
+msgid "Insertion Filter Mirror Setting | Comment number or comma separated comment numbers, %N means every N comments, empty means all comments"
+msgstr "Налаштування фільтру \"Фільтр вставки\" | Номер коментаря або відокремлений комами номери коментарів,% N означає кожен N коментарів, порожні означає всі коментарі"
+
+#: settings.php:1505
+msgid "Insertion Filter Mirror Setting | Excerpt number or comma separated excerpt numbers, %N means every N excerpts, empty means all excerpts"
+msgstr "Налаштування фільтру \"Фільтр вставки\" | Витяги номер або розділених комами номери витяги,% N означає кожен N уривки, порожні означає всі уривки"
+
+#: settings.php:1506
+msgid "Insertion Filter Mirror Setting | Post number or comma separated post numbers, %N means every N posts, empty means all posts"
+msgstr "Налаштування фільтру \"Фільтр вставки\" | Поштові номери або коми, розділені комами,% N означає кожен N посад, порожні означає, що всі повідомлення"
+
+#. translators: %s HTML tags
+#: settings.php:6539
+msgid "Internal or external %s tracking %s (via Google Analytics or Matomo)"
+msgstr "Внутрішнє або зовнішнє %s стеження %s (через Google Analytics або Matomo)"
+
+#. translators: %s: Ad Inserter
+#: ad-inserter.php:8070 ad-inserter.php:8419
+msgid "Invalid data received - %s settings not saved."
+msgstr "Отримано неприпустимі дані – %s параметри не збережено."
+
+#: settings.php:5145
+msgid "Limits"
+msgstr "Обмеження"
+
+#: settings.php:343
+msgid "List all blocks"
+msgstr "Перелічити всі блоки"
+
+#: settings.php:1828
+msgid "Maximum number of paragraphs, leave empty for no limit"
+msgstr "Максимальна кількість абзаців, залишити порожнім без обмежень"
+
+#: settings.php:1819
+msgid "Minimum number of paragraphs, leave empty for no limit"
+msgstr "Мінімальна кількість слів абзацу, залиште порожнім без обмежень"
+
+#: settings.php:4525
+msgid "NOT WRITABLE"
+msgstr "НЕ МОЖНА ЗАПИСУВАТИ"
+
+#: settings.php:3387
+msgid "No action for"
+msgstr "Ніяких дій для"
+
+#. translators: No individual exceptions enabled for pages or posts
+#: ad-inserter.php:3852
+msgid "No block has individual exceptions enabled"
+msgstr "У жодному блоці не ввімкнуто окремі винятки"
+
+#: settings.php:1400
+msgid "No exception for post or static page defined. Block will not be inserted."
+msgstr "Не визначено винятків для посту або статичної сторінки. Блок не буде вставлено."
+
+#: ad-inserter.php:3822
+msgid "No individual exceptions"
+msgstr "Немає окремих винятків"
+
+#. translators: Not enabled for pages or posts
+#: ad-inserter.php:3824
+msgid "Not enabled for"
+msgstr "Не ввімкнуто для"
+
+#: settings.php:3526
+msgid "Not undismissible for"
+msgstr "Не неприпустимо для"
+
+#. translators: %s: ads.txt
+#: settings.php:4293
+msgid "Open %s"
+msgstr "Відкрити %s"
+
+#: settings.php:4161
+msgid "Position not available because output buffering (tab [*]) is not enabled"
+msgstr "Позиція недоступна, оскільки вихідна буферизація (вкладка [*]) не включена"
+
+#. translators: %s HTML tags
+#: settings.php:6570
+msgid "Premium support"
+msgstr "Преміальні підтримки"
+
+#: settings.php:4312
+msgid "Reload ads.txt file"
+msgstr "Перезавантажити файл ads. txt"
+
+#: settings.php:982
+msgid "Rotation groups"
+msgstr "Групи ротації"
+
+#: settings.php:1405
+msgid "Settings for individual exceptions have been updated. Please check all blocks that have exceptions and and then save settings."
+msgstr "Параметри для окремих винятків оновлено. Перевірте всі блоки, які мають винятки, а потім збережіть параметри."
+
+#: settings.php:4272
+msgid "Switch to physical ads.txt file"
+msgstr "Перехід до фізичних оголошень.txt файл"
+
+#: settings.php:4273
+msgid "Switch to virtual ads.txt file"
+msgstr "Перехід до віртуальних оголошень.txt файл"
+
+#: ad-inserter.php:3865
+msgid "This way you can individually enable or disable blocks on specific posts or pages."
+msgstr "Таким чином, ви можете окремо включити або вимкнути блоки на певних посадах або сторінках."
+
+#: settings.php:2122
+msgid "Toggle client editor"
+msgstr "Переключення редактора клієнта"
+
+#: settings.php:1536
+msgid "Toggle insertion and alignment icons"
+msgstr "Перемкнути піктограми вставки та вирівнювання"
+
+#: settings.php:1518
+msgid "Toggle insertion filter settings"
+msgstr "Увімкнення параметрів фільтрування вставлення"
+
+#: settings.php:1515
+msgid "Toggle paragraph clearance settings"
+msgstr "Переключення параметрів оформлення абзацу"
+
+#: settings.php:1514
+msgid "Toggle paragraph counting settings"
+msgstr "Переключення параметрів підрахунку абзаців"
+
+#: settings.php:1369
+msgid "Toggle settings for default insertion and list of individual exceptions"
+msgstr "Переключення параметрів вставлення за промовчанням і списку окремих винятків"
+
+#: settings.php:4090
+msgid "Toggle theme checker for available positions for automatic insertion"
+msgstr "Переключення засобу перевірки теми для доступних позицій для автоматичного вставлення"
+
+#: settings.php:1382
+msgid "Use exceptions for individual posts or pages to change insertion"
+msgstr "Використання винятків для окремих дописів або сторінок для змінення вставлення"
+
+#: settings.php:3527
+msgid "Users which can close the warning message."
+msgstr "Користувачі, які можуть закрити попереджувальний сигнал."
+
+#: ad-inserter.php:3864
+msgid "When individual exceptions for a block are enabled, a checkbox will be listed here to change default insertion for this post or page."
+msgstr "Якщо ввімкнено окремі винятки для блоку, тут буде показано прапорець, щоб змінити вставку за промовчанням для цього допису або сторінки."
+
+#. Translators: Disabled means...
+#: settings.php:1392
+msgid "When individual post/page exceptions are enabled they can be configured on the individual post/page editor page (in the settings below the editor)."
+msgstr "Коли окремі поштові / сторінки включені, вони можуть бути налаштовані на окремій сторінці редактора постів / сторінок (у налаштуваннях нижче редактора)."
+
+#: settings.php:3352
+msgctxt "ad blocking detection"
+msgid "NOT ENABLED"
+msgstr "НЕ ВВІМКНУТО"
+
+#: settings.php:4525
+msgid "ads.txt file"
+msgstr "оголошення.txt файл"
+
+#: settings.php:4520
+msgid "ads.txt file must be placed on the root domain"
+msgstr "файл ads. txt має розташовуватися в кореневому домені"
+
+#. translators: %s: Ad Inserter
+#: settings.php:4497
+msgid "ads.txt file: %s virtual ads.txt file"
+msgstr "оголошення.txt файл: %s віртуальні оголошення.txt файл"
+
+#. translators: %s: HTML tags
+#: settings.php:3293
+msgctxt "code in the footer"
+msgid "NOT ENABLED"
+msgstr "НЕ ВВІМКНУТО"
+
+#: settings.php:3224
+msgctxt "code in the header"
+msgid "NOT ENABLED"
+msgstr "НЕ ВВІМКНУТО"
+
+#. translators: inside [HTML tags] elements that contain
+#: settings.php:1743
+msgid "elements that"
+msgstr "сховати елементи"
+
+#: settings.php:4532
+msgid "file %s not found"
+msgstr "файл %s не знайдено"
+
+#. translators: inside [HTML tags] elements that contain
+#: settings.php:1728
+msgid "inside"
+msgstr "всередині"
+
+#. Translators: Disabled means...
+#: settings.php:1391
+msgid "means the insertion for this block is disabled by default and enabled for exceptions."
+msgstr "означає, що вставлення для цього блоку типово вимкнено і увімкнено для винятків."
+
+#. Translators: Enabled means...
+#: settings.php:1390
+msgid "means the insertion for this block is enabled by default and disabled for exceptions."
+msgstr "означає, що вставки для цього блоку увімкнено типово і вимкнено для винятків."
+
+#. Translators: Do not insert for first X and last Y paragraphs
+#. Translators: Post/Static page must have between X and Y paragraphs
+#: settings.php:1805 settings.php:1831
+msgid "paragraph"
+msgid_plural "paragraphs"
+msgstr[0] "параграф"
+msgstr[1] "параграфи"
+msgstr[2] "параграфи"
+
+#: settings.php:1193
+msgid "Full width"
+msgstr "На всю ширину"
+
+#: settings.php:5144
+msgid "Tracking"
+msgstr "Відстеження"
+
+#: settings.php:4097
+msgid "Position"
+msgstr "Розташування"
+
+#: settings.php:4102
+msgid "Archive pages"
+msgstr "Сторінки архіву"
+
+#: strings.php:239
+msgid "Switch"
+msgstr "Перемикач"
+
+#: strings.php:66
+msgctxt "alignment"
+msgid "Left"
+msgstr "Зліва"
+
+#. Translators: %s: Ad Inserter Pro
+#: strings.php:215
+msgid "%s Report"
+msgstr "%s звіт"
+
+#: strings.php:217
+msgid "Advanced WordPress Ad Management Plugin"
+msgstr "Розширений WordPress оголошень управління плагіном"
+
+#: strings.php:55
+msgid "Count only"
+msgstr "Кількість за промовчанням"
+
+#. Translators: %s: custom hook name
+#: class.php:2623
+msgid "Custom hook %s call"
+msgstr "Настроюваний виклик %s гачка"
+
+#: ad-inserter.php:3782 settings.php:1388
+msgid "Default insertion"
+msgstr "Вставлення за замовченням"
+
+#: strings.php:54
+msgid "Do not count"
+msgstr "Не рахуйте"
+
+#: strings.php:216
+msgid "Impressions and clicks"
+msgstr "Покази та кліки"
+
+#: strings.php:266
+msgid "Position available"
+msgstr "Позиція доступна"
+
+#: strings.php:264
+msgid "Position not available"
+msgstr "Позиція недоступна"
+
+#: settings.php:4164 strings.php:263
+msgid "Position not checked yet"
+msgstr "Позиція ще не перевіряла"
+
+#: strings.php:268
+msgid "Select or upload banner image"
+msgstr "Виділення або завантаження зображення-банера"
+
+#: strings.php:267
+msgid "Select or upload header image"
+msgstr "Виділення або завантаження зображення заголовка"
+
+#: strings.php:271
+msgid "Switching to physical ads.txt file will delete virtual ads.txt file."
+msgstr "Якщо перейти на фізичну .txt файл, віртуальні оголошення .txt файл."
+
+#: strings.php:265
+msgid "Theme check | Selected position for automatic insertion might not be not available on this page type"
+msgstr "Тема перевірити | Вибрана позиція для автоматичного вставлення може бути недоступною для цього типу сторінки"
+
+#: strings.php:270
+msgid "Use this image"
+msgstr "Використовувати це зображення"
+
+#. translators: 1: AMPforWP Plugin Manager, 2: Ad Inserter
+#. translators: 1: AMPforWP Plugin Manager, 2: Ad Inserter, 3, 4: HTML tags
+#: ad-inserter.php:3557 ad-inserter.php:3600
+msgid "Warning: %1$s %3$s disabled %4$s %2$s on AMP pages."
+msgstr "Увага: %1$s %3$s вимкнено %4$s %2$s на сторінках AMP."
+
+#: strings.php:68
+msgctxt "alignment"
+msgid "Center"
+msgstr "Центр"
+
+#: strings.php:70
+msgctxt "alignment"
+msgid "Float left"
+msgstr "Поплавковий лівий"
+
+#: strings.php:71
+msgctxt "alignment"
+msgid "Float right"
+msgstr "Випливання праворуч"
+
+#: strings.php:72
+msgctxt "alignment"
+msgid "No wrapping"
+msgstr "Упаковка DIV"
+
+#: strings.php:67
+msgctxt "alignment"
+msgid "Right"
+msgstr "Зправа"
+
+#. translators: %s: list parameters and type
+#: class.php:4629
+msgid "clients='%s' type='%s'"
+msgstr "клієнт='%s' type='%s'"
+
+#: class.php:5851
+msgid "for block"
+msgstr "для блоку"
+
+#. translators: %s HTML tags
+#: settings.php:6555
+msgid "Client-side %s mobile device detection %s (works with caching)"
+msgstr "Клієнтське %s виявлення мобільного пристрою %s (працює з кешуванням)"
+
+#: ad-inserter.php:4447
+msgid "NO JAVASCRIPT ERRORS"
+msgstr "НЕМАЄ ПОМИЛОК JAVASCRIPT"
+
+#: ad-inserter.php:4447
+msgid "JAVASCRIPT ERRORS"
+msgstr "ПОМИЛКИ JAVASCRIPT"
+
+#: class.php:2664
+msgid "Ajax request for block in iframe"
+msgstr "AJAX запит блоку в IFRAME"
+
+#: class.php:2705
+msgid "Ajax request url, click to open it in a new tab"
+msgstr "AJAX запит URL, натисніть, щоб відкрити його в новій вкладці"
+
+#: settings.php:1492
+msgid "Image number or comma separated image numbers: 1 to N means image number, %N means every N images, empty means all images, 0 means random image, value between 0 and 1 means relative position on the page (0.2 means paragraph at 20% of page images, 0.5 means middle image, 0.9 means paragraph at 90% of page images, etc.), negative number means counting from the opposite direction"
+msgstr "Цифри зображення або зображення з роздільниками-комами: 1 щоб N означає, що число зображення,% N означає кожен N зображень, порожні означає всі зображення, 0 означає випадкове зображення, значення від 0 до 1 означає відносне положення на сторінці (0,2 означає Абзац на 20% зображення сторінки, 0,5 означає середнє зображення , 0,9 означає Абзац на 90% зображення сторінки і т. д.), від'ємний номер означає підрахунок з протилежного напрямку"
+
+#: settings.php:2103
+msgid "Comma separated domains, use # for no referrer, you can also use partial domains with * (domain-start*. *domain-pattern*, *domain-end)"
+msgstr "Домени з роздільниками-комами, використовуйте # для реферер, ви також можете використовувати часткові Домени з * (домен-старт *. * домен-шаблон *, * домен-End)"
+
+#: settings.php:3166 settings.php:3169
+msgid "Enable hook"
+msgstr "Дозволити гачок"
+
+#: strings.php:34
+msgid "Before image"
+msgstr "Перед зображенням"
+
+#: strings.php:35
+msgid "After image"
+msgstr "Після зображення"
+
+#: strings.php:259
+msgctxt "Search field placeholder"
+msgid "Search..."
+msgstr "Пошук..."
+
+#: strings.php:261
+msgid "Use filter to limit names in the list"
+msgstr "Використання фільтра для обмеження імен у списку"
+
+#: strings.php:262
+msgctxt "Button"
+msgid "Filter"
+msgstr "Фільтр"
+
+#: strings.php:260
+msgctxt "Search field placeholder"
+msgid "Filter..."
+msgstr "Фільтрувати за…"
+
+#: strings.php:91
+msgctxt "using"
+msgid "images counter"
+msgstr "зображення лічильника"
+
+#: class.php:5848 includes/preview.php:2484 includes/preview.php:2521
+msgid "Code"
+msgstr "Код"
+
+#: settings.php:400
+msgid "Debugging functions enabled - some code is not inserted"
+msgstr "Увімкнуті функції відлагодження-деякий код не вставляється"
+
+#: settings.php:2391
+msgid "Filter multiple insertions by specifying wanted insertions for this block - single number, comma separated numbers or %N for every N insertions - empty means all insertions / no filter. Set Counter for filter to Auto if you are using only one insertion type."
+msgstr "Фільтрувати кілька вставками, вказавши потрібні вставки для цього блоку-однократне, розділених комами числами або% N для кожного N вставками-порожні означає всі вставки/без фільтра. Якщо використовується лише один тип вставки, установіть лічильник для фільтрування автоматично."
+
+#: settings.php:3564
+msgid "Force showing admin toolbar for administrators when viewing site. Enable this option when you are logged in as admin and you don't see admin toolbar."
+msgstr "Force показує адмін-панелі для адміністраторів при перегляді сайту. Увімкніть цей параметр, коли ви ввійшли до системи як адміністратор і ви не бачите панель інструментів адмін."
+
+#: settings.php:3572
+msgid "Disable header code (Header tab)"
+msgstr "Вимкнути код заголовка (вкладка «заголовок»)"
+
+#: settings.php:3576
+msgid "Disable footer code (Footer tab)"
+msgstr "Вимкнути код нижнього колонтитула (вкладка «нижній колонтитул»)"
+
+#. translators: %s: Ad Inserter
+#: settings.php:3580
+msgid "Disable %s JavaScript code"
+msgstr "Заборонити %s код JavaScript"
+
+#. translators: %s: Ad Inserter
+#: settings.php:3584
+msgid "Disable %s CSS code"
+msgstr "Вимкнути кодування %s CSS"
+
+#: settings.php:3592
+msgid "Disable PHP code processing (in all blocks including header and footer code)"
+msgstr "Відключити PHP обробки коду (у всіх блоків, включаючи верхній і нижній колонтитул код)"
+
+#: settings.php:3596
+msgid "Disable insertion of all blocks"
+msgstr "Вимкнути вставку всіх блоків"
+
+#: settings.php:3600
+msgid "Disable insertions"
+msgstr "Вимкнути вставки"
+
+#. translators: %s: Ad Inserter
+#: settings.php:3612
+msgid "%s CSS CODE"
+msgstr "%s CSS код"
+
+#. translators: %s: PHP tags
+#: settings.php:3621
+msgid "BLOCK PHP CODE"
+msgstr "БЛОК PHP КОД"
+
+#. translators: %s: Ad Inserter
+#: settings.php:3628
+msgid "%s JS CODE"
+msgstr "%s JS код"
+
+#: settings.php:3631
+msgid "FOOTER CODE"
+msgstr "Код для подвалу сайта"
+
+#: settings.php:3615
+msgid "HEADER CODE"
+msgstr "КОД ЗАГОЛОВКА"
+
+#: settings.php:398
+msgid "To disable debugging functions and to enable insertions go to tab [*] / tab Debugging"
+msgstr "Щоб відключити налагодження функцій і включити вставки перейдіть на вкладку [*] / вкладка Налагодження"
+
+#: includes/editor.php:71
+msgid "Visual Code Editor"
+msgstr "Редактор візуальних кодів"
+
+#: includes/editor.php:259 includes/preview-adb.php:301
+#: includes/preview.php:2415
+msgid "This page was not loaded properly. Please check browser, plugins and ad blockers."
+msgstr "Цю сторінку не завантажено належним чином. Будь ласка, перевірте браузер, плагіни та блокування реклами."
+
+#: includes/editor.php:261 includes/preview-adb.php:303
+#: includes/preview.php:2417
+msgid "PAGE BLOCKED"
+msgstr "СТОРІНКУ ЗАБЛОКОВАНО"
+
+#: includes/preview.php:2616
+msgid "Horizontal position"
+msgstr "Горизонтальне положення"
+
+#: includes/preview.php:2731
+msgid "Animation"
+msgstr "Анімація"
+
+#: includes/placeholders.php:101
+msgid "Placeholder Editor"
+msgstr "Шаблонний редактор"
+
+#: includes/placeholders.php:351
+msgid "Select placeholder"
+msgstr "Вибрати рамку"
+
+#: includes/placeholders.php:352
+msgid "Edit placeholder size, colors and text"
+msgstr "Редагування розміру покажчика місця заповнення, кольорів і тексту"
+
+#: includes/placeholders.php:353
+msgid "Close placeholder editor"
+msgstr "Закрити шаблонний редактор"
+
+#: includes/placeholders.php:357
+msgid "Placeholder"
+msgstr "Заповнювач"
+
+#: includes/placeholders.php:378 includes/preview.php:2565 settings.php:2457
+msgid "Background color"
+msgstr "Колір фону"
+
+#: includes/placeholders.php:402
+msgid "Text color"
+msgstr "Колір тексту"
+
+#: includes/placeholders.php:411
+msgid ""
+"Here you can create a universal placeholder image that can be used in place of ads when they are not available yet.\n"
+"Placeholder images created here will behave as any other image. You can also save them to local computer or server."
+msgstr ""
+"Тут ви можете створити універсальний шаблонний образ, який можна використовувати замість оголошень, коли вони ще недоступні.\n"
+"Створені шаблонні зображення будуть поводитись як будь-яке інше зображення. Також їх можна зберегти на локальному комп'ютері або сервері."
+
+#: includes/placeholders.php:416
+msgid ""
+"Choose between common ad sizes 300x250, 336x280, 728x90, 468x60, 250x250, 300x600 or define custom size.\n"
+"Default placeholders are gray with size as placeholder text but you can use any color or text you want. Click on <strong>Edit</strong> button to edit placeholder size, color or text.\n"
+"You can also create blank solid color rectangles by clearing placeholder text."
+msgstr ""
+"Вибирати між загальними розмірами оголошення 300x250, 376x280, 728x90, 468 х 60, 250x250, 300x250 або визначити нестандартний розмір.\n"
+"Покажчики місця заповнення сірого кольору мають розмір як шаблонний текст, але можна використовувати будь-який колір або текст. Натисніть на <strong> змінити </strong> кнопку, щоб змінити розмір покажчика місця заповнення, колір або текст.\n"
+"Ви також можете створити порожні суцільний колір прямокутників, очистивши текст покажчика місця заповнення."
+
+#: includes/preview-adb.php:4
+msgid "Add dummy paragraph"
+msgstr "Додавання фіктивних абзаців"
+
+#: includes/preview-adb.php:5
+msgid "Remove dummy paragraph"
+msgstr "Видалити пустий абзац"
+
+#: includes/preview-adb.php:6 includes/preview.php:2425
+msgid "Use current settings"
+msgstr "Використовувати поточні налаштування"
+
+#: includes/preview-adb.php:7
+msgid "Reset to the saved settings"
+msgstr "Скидання до збережених настройок"
+
+#: includes/preview-adb.php:7
+msgctxt "Button"
+msgid "Reset"
+msgstr "Скинути"
+
+#: includes/preview-adb.php:8
+msgid "Reset to the default settings"
+msgstr "Скинути параметри за замовчуванням"
+
+#: includes/placeholders.php:420
+msgid ""
+"<strong>Please note</strong>: if you have active rotation editor the code window shows only the code for the currently selected option.\n"
+"Therefore, code generator will in such case import or generate code for the currently selected option."
+msgstr ""
+"<strong> будь ласка, зауважте, </strong>: Якщо у вас є редактор активного повороту, у вікні коду відображається лише код вибраного параметра.\n"
+"Таким чином, генератор коду буде в такому випадку імпорт або генерувати код для поточного вибраний варіант."
+
+#: includes/placeholders.php:423
+msgid ""
+"Code generator for banners and AdSense generates the code only when you click on the button Generate code.\n"
+"It is a tool that can help you to create code for AdSense or banners with links. So if you are using rotation editor and switch between options, you need to (optionally) import and generate code for each rotation option."
+msgstr ""
+"Генератор коду для банерів і AdSense генерує код тільки при натисканні на кнопку генерувати код.\n"
+"Це інструмент, який може допомогти вам створити код для AdSense або банерів з посиланнями. Так що якщо ви використовуєте обертання редактора і перемикатися між параметрами, вам потрібно (опціонально) імпорт і генерувати код для кожного повороту опції."
+
+#: includes/placeholders.php:426
+msgid ""
+"Ad Inserter has a simple code generator for banners and placeholders.\n"
+"You can select banner image (or placeholder), optionally define link (web page address that will open when the banner will be clicked) and select whether to open link in a new tab."
+msgstr ""
+"Оголошення вставки має простий генератор коду для банерів і заповнювачів.\n"
+"Ви можете вибрати зображення банера (або покажчик місця заповнення), за бажанням визначити посилання (адреса веб-сторінки, яка відкриється, коли банер буде натиснута) і виберіть, чи потрібно відкривати посилання в новій вкладці."
+
+#: includes/preview-adb.php:8
+msgctxt "Button"
+msgid "Default"
+msgstr "За замовчуванням"
+
+#: includes/preview-adb.php:9 includes/preview.php:2428
+msgid "Close preview window"
+msgstr "Закрити вікно попереднього перегляду"
+
+#: includes/preview-adb.php:9
+msgctxt "Button "
+msgid "Cancel"
+msgstr "Закрити"
+
+#: includes/preview-adb.php:60
+msgid "Ad Blocking Detected Message Preview"
+msgstr "Оголошення блокування виявленого попереднього перегляду повідомлення"
+
+#: includes/preview.php:299
+msgid "Sticky Code Preview"
+msgstr "Важлива проба коду"
+
+#: includes/preview.php:299
+msgid "Code Preview"
+msgstr "Код попереднього перегляду"
+
+#: includes/preview.php:2423
+msgid "Highlight inserted code"
+msgstr "Світлий вставлений код"
+
+#: includes/preview.php:2426
+msgid "Reset to block settings"
+msgstr "Скинути для блокування настройок"
+
+#: includes/preview.php:2441
+msgid "AdSense ad unit"
+msgstr "Рекламна одиниця AdSense"
+
+#: includes/preview.php:2668
+msgid "Horizontal margin"
+msgstr "Горизонтальне поле"
+
+#: includes/preview.php:2720
+msgid "Vertical margin"
+msgstr "Вертикальне поле"
+
+#: includes/preview.php:2744
+msgid "Animate"
+msgstr "Анімація"
+
+#: includes/preview.php:2831
+msgid "This is a preview of the saved block between dummy paragraphs. It shows the code with the alignment and style as it is set for this block. Highlight button highlights background, wrapping div margin and code area."
+msgstr "Це попередній перегляд збереженого блока між фіктивними абзацами. Він показує код з вирівнюванням і стилем, як він встановлений для цього блока. Підсвічування кнопки підкреслюється фону, упаковка DIV поля і області коду."
+
+#: includes/preview.php:2828
+msgid ""
+"This is a preview of the code between dummy paragraphs. Here you can test various block alignments, visually edit margin and padding values of the wrapping div\n"
+"or write CSS code directly and watch live preview. Highlight button highlights background, wrapping div margin and code area, while Reset button restores all the values to those of the current block."
+msgstr ""
+"Це зразок коду між фіктивними абзацами. Тут ви можете перевірити різні вирівнювання блоків, візуально змінити поля і оббивка значень упаковки DIV\n"
+"або написати CSS-код безпосередньо і Дивитися Live Preview. Кнопка \"Виділити\" виділяє тло, обтіканням полів і області коду, а кнопка скидання відновлює всі значення поточного блока."
+
+#: includes/preview.php:2833
+msgid "This is a preview of AdSense ad block between dummy paragraphs. AdSense ad code was loaded from your AdSense account. The ad block is displayed on a dummy page so it may be blank (no ads). Click on the Highlight button to highlight ad block."
+msgstr "Це превью блоку оголошення AdSense між манекен абзаців. AdSense код оголошення був завантажений з вашого облікового запису AdSense. Блок оголошень відображається на підставній сторінці, тому вона може бути пустою (без реклами). Натисніть кнопку \"Виділити\", щоб виділити блок оголошень."
+
+#: includes/preview.php:2839
+msgid ""
+"You can resize the window (and refresh the page to reload ads) to check display with different screen widths.\n"
+"Once you are satisfied with alignment click on the Use button and the settings will be copied to the active block."
+msgstr ""
+"Ви можете змінити розмір вікна (і оновити сторінку, щоб перезавантажити оголошення), щоб перевірити дисплей з різною шириною екрану.\n"
+"Після того як ви задоволені вирівнювання натисніть на кнопку використовувати і настройки будуть скопійовані на активний блок."
+
+#: includes/preview.php:2841
+msgid ""
+"Please note that the code, block name, alignment and style are taken from the current block settings (may not be saved).\n"
+"<strong>No wrapping</strong> style inserts the code as it is so margin and padding can't be set. However, you can use own HTML code for the block."
+msgstr ""
+"Будь ласка, зверніть увагу, що код, ім'я блоку, вирівнювання і стиль взяті з поточних параметрів блоку (не може бути збережений).\n"
+"<strong> без обтікання </strong> стиль вставляє код, оскільки він є таким полем і оббивка не може бути встановлений. Однак, ви можете використовувати власний HTML-код для блоку."
+
+#: includes/preview.php:2846 includes/preview.php:2860
+#: includes/preview.php:2870 includes/preview.php:2880
+#: includes/preview.php:2890
+msgid ""
+"Ad Inserter can be configured to insert any code anywhere on the page. Each code with it's settings is called a block.\n"
+"Free Ad Inserter supports 16 blocks, Ad Inserter Pro supports up to 96 blocks (depending on the license type).\n"
+"The settings page is divided into tabs - 16 blocks and general plugin settings. Black number means inactive block (code is not inserted anywhere),\n"
+"red number means block is using automatic insertion, blue number means block is using manual insertion while violet number means block is using automatic and manual insertion."
+msgstr ""
+"Оголошення вставки можна налаштувати, щоб вставити будь-який код в будь-якому місці на сторінці. Кожен код з його параметрами називається блоком.\n"
+"Безкоштовні оголошення вставки підтримує 16 блоків, оголошення Incrypter Pro підтримує до 96 блоків (в залежності від типу ліцензії).\n"
+"Сторінка налаштувань розділена на вкладки-16 блоків і загальні налаштування плагінів. Чорний номер означає неактивний блок (код не вставляється в будь-якому місці),\n"
+"червоний номер означає блок використовується Автоматична вставка, синій номер означає блок за допомогою ручного вставки в той час як Фіолетове число означає блок використовує автоматичне і ручне вставки."
+
+#: includes/preview.php:2851 includes/preview.php:2865
+#: includes/preview.php:2875 includes/preview.php:2885
+#: includes/preview.php:2895
+msgid ""
+"Few very important things you need to know in order to insert code and display some ad:\n"
+"Enable and use at least one insertion option (Automatic insertion, Widget, Shortcode, PHP function call).\n"
+"Enable insertion on at least one WordPress page type (Posts, Static pages, Homepage, Category pages, Search pages, Archive pages).\n"
+"Single pages (posts and static pages) have also additional setting for individual exceptions. Use default blank value unless you are using individual post/page exceptions."
+msgstr ""
+"Кілька дуже важливих речей, які ви повинні знати для того, щоб вставити код і відображати деякі оголошення:\n"
+"Включити і використовувати принаймні один варіант вставки (Автоматична вставка, віджет, Shorecode, PHP виклику функції).\n"
+"Увімкнення вставки по крайней мере, один тип WordPress сторінки (повідомлення, статичні сторінки, домашня сторінка, Категорія сторінок, пошук сторінок, архівні сторінки).\n"
+"Окремі сторінки (повідомлення та статичні сторінки) також мають додаткові параметри для окремих винятків. Використовуйте пусте значення за промовчанням, якщо ви не використовуєте окремі винятки для Post/сторінок."
+
+#: includes/preview.php:2857
+msgid ""
+"This is a preview of the code for sticky ads. Here you can test various horizontal and vertical alignments, close button locations, visually edit margin values\n"
+"or write CSS code directly and watch live preview. Highlight button highlights background, margin and code area, while Reset button restores all the values to those of the current block."
+msgstr ""
+"Це зразок коду для важливо ads. Тут можна перевіряти різні горизонтальні та вертикальні вирівнювання, розташування кнопок, візуально змінювати значення полів\n"
+"або написати CSS-код безпосередньо і Дивитися Live Preview. Кнопка \"виділити світлі\" підкреслює тло, поле та область коду, а кнопка \"скидання\" відновлює всі значення поточного блока."
+
+#: settings.php:4532 strings.php:236
+msgid "Warning"
+msgstr "Увага"
+
+#: strings.php:4
+msgid "Advertisements"
+msgstr "Рекламу"
+
+#: strings.php:5
+msgid ""
+"<p><strong>Blocked because of Ad Blocker</strong></p>\n"
+"<p>It seems that you are using some ad blocking software which is preventing the page from fully loading. Please whitelist this website or disable ad blocking software.</p>"
+msgstr ""
+"<p> <strong> заблоковано через блокування оголошень </strong> </p>\n"
+"<p> здається, що ви використовуєте деякі оголошення блокування програмного забезпечення, яке заважає сторінці повністю навантаження. Будь ласка, білий список цього сайту або відключити блокування оголошення програмного забезпечення. </p>"
+
+#: strings.php:8
+msgctxt "Viewport name"
+msgid "Tablet"
+msgstr "Планшет"
+
+#: strings.php:9
+msgctxt "Viewport name"
+msgid "Phone"
+msgstr "Телефон"
+
+#: strings.php:11
+msgctxt "ad-inserter"
+msgid "Group"
+msgstr "Група"
+
+#: strings.php:13
+msgid "Insert"
+msgstr "Вставити"
+
+#: strings.php:21
+msgid "Before paragraph"
+msgstr "Перед абзацом"
+
+#: strings.php:22
+msgid "After paragraph"
+msgstr "Після абзацу"
+
+#: strings.php:23
+msgid "Before excerpt"
+msgstr "Перед витягами"
+
+#: strings.php:24
+msgid "After excerpt"
+msgstr "Після витримки"
+
+#: class.php:2603 strings.php:25
+msgid "Between posts"
+msgstr "Між постами"
+
+#: strings.php:26
+msgid "Before comments"
+msgstr "ПЕРЕД КОМЕНТАРЯМИ"
+
+#: strings.php:27
+msgid "Between comments"
+msgstr "МІЖ КОМЕНТАРЯМИ"
+
+#: strings.php:28
+msgid "After comments"
+msgstr "ПІСЛЯ КОМЕНТАРІВ"
+
+#: strings.php:31
+msgid "Before HTML element"
+msgstr "Перед елементом HTML"
+
+#: strings.php:32
+msgid "After HTML element"
+msgstr "Після HTML-елемента"
+
+#: strings.php:33
+msgid "Inside HTML element"
+msgstr "Всередині HTML-елемента"
+
+#: strings.php:40
+msgid "do not insert"
+msgstr "не вставляйте"
+
+#: strings.php:41
+msgid "try to shift position"
+msgstr "спробуйте перекласти положення"
+
+#: strings.php:43
+msgid "above"
+msgstr "над"
+
+#: strings.php:44
+msgid "below"
+msgstr "під"
+
+#: strings.php:45
+msgid "above and then below"
+msgstr "вище, а потім нижче"
+
+#: strings.php:46
+msgid "below and then above"
+msgstr "нижче, а потім вище"
+
+#: strings.php:48
+msgid "from top"
+msgstr "зверху"
+
+#: strings.php:49
+msgid "from bottom"
+msgstr "знизу"
+
+#: strings.php:51
+msgctxt "paragraphs"
+msgid "contain"
+msgstr "містить"
+
+#: strings.php:52
+msgctxt "paragraphs"
+msgid "do not contain"
+msgstr "не містять"
+
+#: strings.php:59
+msgctxt "insert for"
+msgid "not logged in users"
+msgstr "не ввійшли у користувачів"
+
+#: strings.php:62
+msgid "Black list"
+msgstr "Чорний список"
+
+#: strings.php:63
+msgid "White list"
+msgstr "Білий список"
+
+#: strings.php:65
+msgctxt "alignment"
+msgid "Default"
+msgstr "За замовчуванням"
+
+#: strings.php:74
+msgid "Sticky left"
+msgstr "Клейка ліва"
+
+#: strings.php:75
+msgid "Sticky right"
+msgstr "Липким правом"
+
+#: strings.php:76
+msgid "Sticky top"
+msgstr "Липким верхом"
+
+#: strings.php:77
+msgid "Sticky bottom"
+msgstr "Липким знизу"
+
+#: strings.php:78
+msgctxt "alignment"
+msgid "Sticky"
+msgstr "Липкий"
+
+#: strings.php:80
+msgctxt "using"
+msgid "auto counter"
+msgstr "автолічильник"
+
+#: strings.php:81
+msgctxt "using"
+msgid "PHP function calls counter"
+msgstr "PHP функція дзвінки лічильник"
+
+#: strings.php:83
+msgctxt "using"
+msgid "excerpt processing counter"
+msgstr "витяг з обробки лічильника"
+
+#: strings.php:84
+msgctxt "using"
+msgid "before post processing counter"
+msgstr "до пост-обробки лічильника"
+
+#: strings.php:85
+msgctxt "using"
+msgid "after post processing counter"
+msgstr "після обробки повідомлення лічильника"
+
+#: strings.php:87
+msgctxt "using"
+msgid "subpages counter"
+msgstr "вкладені сторінки лічильника"
+
+#: strings.php:88
+msgctxt "using"
+msgid "posts counter"
+msgstr "повідомлення лічильник"
+
+#: strings.php:89
+msgctxt "using"
+msgid "paragraphs counter"
+msgstr "пункти лічильника"
+
+#: strings.php:94
+msgctxt "posts"
+msgid "Individually disabled"
+msgstr "Індивідуально відключені"
+
+#: strings.php:95
+msgctxt "posts"
+msgid "Individually enabled"
+msgstr "Індивідуально включена"
+
+#: strings.php:97
+msgctxt "static pages"
+msgid "Individually disabled"
+msgstr "Індивідуально відключені"
+
+#: strings.php:98
+msgctxt "static pages"
+msgid "Individually enabled"
+msgstr "Індивідуально включена"
+
+#: strings.php:100
+msgid "Server-side"
+msgstr "Серверні"
+
+#: strings.php:101
+msgctxt "Insertion"
+msgid "Client-side"
+msgstr "Стороні клієнта"
+
+#: strings.php:102
+msgctxt "Dynamic blocks"
+msgid "Client-side show"
+msgstr "На стороні клієнта Show"
+
+#: strings.php:103
+msgctxt "Dynamic blocks"
+msgid "Client-side insert"
+msgstr "На стороні клієнта Вставка"
+
+#: strings.php:104
+msgctxt "Insertion"
+msgid "Server-side using W3 Total Cache"
+msgstr "На стороні сервера з використанням w3 Total кеш"
+
+#: strings.php:110
+msgid "Replace element"
+msgstr "ЗАМІНИТИ ЕЛЕМЕНТ"
+
+#: strings.php:115
+msgid "phone devices"
+msgstr "телефонні пристрої"
+
+#: strings.php:116
+msgid "desktop and tablet devices"
+msgstr "настільні та планшетні пристрої"
+
+#: strings.php:117
+msgid "desktop and phone devices"
+msgstr "настільні та телефонні пристрої"
+
+#: strings.php:120
+msgid "Stick to the left"
+msgstr "Дотримуватися лівої"
+
+#: strings.php:121
+msgid "Stick to the content left"
+msgstr "Дотримуватися змісту вліво"
+
+#: strings.php:122
+msgid "Stick to the content right"
+msgstr "Дотримуватися змісту права"
+
+#: strings.php:123
+msgid "Stick to the right"
+msgstr "Дотримуватися правої"
+
+#: strings.php:125
+msgid "Stick to the top"
+msgstr "Дотримуватися вершини"
+
+#: strings.php:126
+msgid "Scroll with the content"
+msgstr "Прокрутити вміст"
+
+#: strings.php:127
+msgid "Stick to the bottom"
+msgstr "Дотримуватися нижньої"
+
+#: strings.php:129
+msgid "Fade"
+msgstr "Зникання"
+
+#: strings.php:130
+msgid "Slide"
+msgstr "Слайд"
+
+#: strings.php:131
+msgid "Slide and Fade"
+msgstr "Посунути та зникати"
+
+#: strings.php:132
+msgid "Flip"
+msgstr "Перевернути"
+
+#: strings.php:133
+msgid "Zoom In"
+msgstr "Приближувати"
+
+#: strings.php:135
+msgid "Turn"
+msgstr "Свою чергу"
+
+#: strings.php:137
+msgid "Page loaded"
+msgstr "Завантаженої сторінки"
+
+#: strings.php:138
+msgid "Page scrolled (%)"
+msgstr "Прокручується сторінку (%)"
+
+#: strings.php:139
+msgid "Page scrolled (px)"
+msgstr "Сторінка з прокручується (пікс.)"
+
+#: strings.php:156
+msgid "Insert immediately"
+msgstr "Вставити негайно"
+
+#: strings.php:157
+msgid "Delay insertion"
+msgstr "Затримка вставлення"
+
+#: strings.php:158
+msgid "Insert between dates"
+msgstr "Вставлення між датами"
+
+#: strings.php:159
+msgid "Insert outside dates"
+msgstr "Вставлення за межами дат"
+
+#: strings.php:160
+msgid "Insert only"
+msgstr "Вставити лише"
+
+#: strings.php:161
+msgid "Insert for posts published between dates"
+msgstr "Вставка для повідомлень, опублікованих між датами"
+
+#: strings.php:162
+msgid "Insert for posts published outside dates"
+msgstr "Вставка для повідомлень, опублікованих за межами дат"
+
+#: strings.php:164
+msgctxt "functions"
+msgid "Standard"
+msgstr "Стандартний"
+
+#: strings.php:165
+msgctxt "detection"
+msgid "Standard"
+msgstr "Стандартний"
+
+#: strings.php:166
+msgctxt "functions"
+msgid "Multibyte"
+msgstr "Multibyte"
+
+#: strings.php:168
+msgctxt "action"
+msgid "None"
+msgstr "Нічого"
+
+#: strings.php:169
+msgctxt "button"
+msgid "None"
+msgstr "Нічого"
+
+#: strings.php:170
+msgid "Popup Message"
+msgstr "Спливаюче повідомлення"
+
+#: strings.php:171
+msgid "Redirection"
+msgstr "Переспрямування"
+
+#: strings.php:175
+msgctxt "Action when ad blocking detected"
+msgid "Show"
+msgstr "Показати"
+
+#: strings.php:176
+msgctxt "Action when ad blocking detected"
+msgid "Hide"
+msgstr "Сховати"
+
+#: strings.php:178
+msgctxt "tracking"
+msgid "Internal"
+msgstr "Внутрішні"
+
+#: strings.php:190
+msgctxt "AdSense Ad Type"
+msgid "Standard"
+msgstr "Стандартний"
+
+#: strings.php:191
+msgctxt "AdSense Ad Type"
+msgid "Link"
+msgstr "Посилання"
+
+#: strings.php:192
+msgctxt "AdSense Ad Type"
+msgid "In-article"
+msgstr "В статті"
+
+#: strings.php:193
+msgctxt "AdSense Ad Type"
+msgid "In-feed"
+msgstr "RSS стрічка"
+
+#: strings.php:194
+msgctxt "AdSense Ad Type"
+msgid "Matched content"
+msgstr "Відповідного вмісту"
+
+#: strings.php:195
+msgctxt "AdSense Ad Type"
+msgid "Auto Ads"
+msgstr "Автооголошення"
+
+#: strings.php:198
+msgctxt "AMP ad"
+msgid "Disabled"
+msgstr "Вимкнено"
+
+#: strings.php:199
+msgid "Above the fold"
+msgstr "Над згином"
+
+#: strings.php:200
+msgid "Below the fold"
+msgstr "Нижче рази"
+
+#: strings.php:205
+msgctxt "size"
+msgid "Fixed by viewport"
+msgstr "Виправлено шляхом проекції"
+
+#: strings.php:223
+msgctxt "Button"
+msgid "Hide"
+msgstr "Сховати"
+
+#: strings.php:225
+msgid "Insertion expired"
+msgstr "Термін дії вставки закінчився"
+
+#: strings.php:227
+msgid "Invalid end date - must be after start date"
+msgstr "Неприпустима Дата завершення-має бути після дати початку"
+
+#: strings.php:228
+msgid "Invalid start date - only data for 1 year back is available"
+msgstr "Неприпустима Дата початку-лише дані за 1 рік тому доступно"
+
+#: strings.php:229
+msgid "Invalid date range - only data for 1 year can be displayed"
+msgstr "Неприпустимий діапазон дат – дані для 1 року можуть бути відображені"
+
+#: strings.php:242
+msgid "Delete all statistics data?"
+msgstr "Видалити всі дані статистики?"
+
+#. translators: %s: dates
+#: strings.php:246
+msgid "Delete statistics data between %s and %s?"
+msgstr "Видалити дані статистики між %s і %s?"
+
+#: strings.php:249
+msgid "Cancel block order rearrangement"
+msgstr "Скасувати перегрупування порядку блокування"
+
+#: strings.php:254
+msgid "Updating..."
+msgstr "Оновлення..."
+
+#: strings.php:257
+msgid "Error reloading settings"
+msgstr "Параметри перевантаження помилок"
+
+#: strings.php:301
+msgid "Add"
+msgstr "Додати"
+
+#: strings.php:303
+msgid "Cancel element selection"
+msgstr "Скасувати виділення елемента"
+
+#: strings.php:304
+msgid "Select parent element"
+msgstr "Вибрати Батьківський елемент"
+
+#: strings.php:305
+msgid "CSS selector"
+msgstr "Селектор CSS"
+
+#: strings.php:306
+msgid "Use current selector"
+msgstr "Використовувати поточний селектор"
+
+#: strings.php:307
+msgid "ELEMENT"
+msgstr "Елемент"
+
+#: strings.php:308
+msgid "PATH"
+msgstr "Шлях"
+
+#: strings.php:309
+msgid "SELECTOR"
+msgstr "Селектор"
+
+#: includes/preview-adb.php:6
+msgctxt "Button"
+msgid "Use"
+msgstr "Використання"
+
+#: strings.php:29
+msgid "Above header"
+msgstr "Над верхнім колонтитулом"
+
+#: strings.php:20
+msgid "After content"
+msgstr "Після змісту"
+
+#: strings.php:19
+msgid "Before content"
+msgstr "Перед вмістом"
+
+#: includes/dst/dst.php:1221
+msgid "Before you deactivate the plugin, would you quickly give us your reason for doing so?"
+msgstr "Перш ніж деактивувати плагін, ви б швидко дали нам свою причину для цього?"
+
+#: class.php:3017 class.php:3058 class.php:4944 strings.php:294
+msgctxt "Block"
+msgid "HIDDEN"
+msgstr "Приховані"
+
+#: class.php:3065 class.php:4947 strings.php:293
+msgctxt "Block"
+msgid "VISIBLE"
+msgstr "Видимі"
+
+#: includes/dst/dst.php:1417
+msgctxt "Button"
+msgid "Cancel"
+msgstr "Закрити"
+
+#: includes/dst/dst.php:1417
+msgctxt "Button"
+msgid "Just Deactivate"
+msgstr "Просто деактивувати"
+
+#: includes/dst/dst.php:1417
+msgctxt "Button"
+msgid "Submit and Deactivate"
+msgstr "Надсилання й вимкнення"
+
+#: includes/dst/dst.php:1233
+msgid "Details (optional)"
+msgstr "Подробиці (необов'язково)"
+
+#: strings.php:173
+msgid "Do nothing"
+msgstr "Нічого не робити"
+
+#: includes/dst/dst.php:1226
+msgid "Doesn't work"
+msgstr "Не працює"
+
+#: includes/dst/dst.php:1231
+msgid "Don't show this form again"
+msgstr "Більше не показувати цю форму"
+
+#: strings.php:256
+msgid "ERROR"
+msgstr "ПОМИЛКА"
+
+#: includes/dst/dst.php:1227
+msgid "Found a better plugin"
+msgstr "Знайдено кращий плагін"
+
+#: includes/dst/dst.php:1235
+msgid "Goodbye!"
+msgstr "До побачення!"
+
+#: includes/dst/dst.php:1228
+msgid "Installed by mistake"
+msgstr "Інстальовано помилково"
+
+#: includes/dst/dst.php:1229
+msgid "Just testing"
+msgstr "Просто тестування"
+
+#: includes/dst/dst.php:1224
+msgid "Lack of documentation"
+msgstr "Документація розробника"
+
+#: includes/dst/dst.php:1225
+msgid "Not the features I wanted"
+msgstr "Не функції, які я хотів"
+
+#: includes/dst/dst.php:1230
+msgid "Only required temporarily"
+msgstr "Потрібно лише тимчасово"
+
+#: includes/dst/dst.php:1223
+msgid "Set up is too difficult"
+msgstr "Настроювання занадто складне"
+
+#: includes/dst/dst.php:1278
+msgid "Submitting form"
+msgstr "Надсилання форми"
+
+#: includes/dst/dst.php:1234
+msgid "This information will greatly help us to improve the plugin."
+msgstr "Ця інформація значно допоможе нам поліпшити плагін."
+
+#: includes/preview.php:2676
+msgid "Vertical position"
+msgstr "Вертикальне положення"
+
+#: strings.php:7
+msgctxt "Viewport name"
+msgid "Desktop"
+msgstr "Монітор"
+
+#: strings.php:134
+msgid "Zoom Out"
+msgstr "Зменшення"
+
+#: strings.php:230 strings.php:231 strings.php:232 strings.php:233
+#: strings.php:234 strings.php:235
+msgid "day"
+msgid_plural "days"
+msgstr[0] "день"
+msgstr[1] "днів"
+msgstr[2] "днів"
+
+#: strings.php:112
+msgid "desktop devices"
+msgstr "настільні пристрої"
+
+#: strings.php:179
+msgctxt "detection"
+msgid "Advanced"
+msgstr "Розширені"
+
+#: strings.php:252
+msgid "download error"
+msgstr "помилка завантаження"
+
+#: strings.php:251
+msgid "downloading..."
+msgstr "завантаження..."
+
+#: strings.php:60
+msgctxt "insert for"
+msgid "administrators"
+msgstr "адміністратори"
+
+#: strings.php:57
+msgctxt "insert for"
+msgid "all users"
+msgstr "усім користувачам"
+
+#: strings.php:58
+msgctxt "insert for"
+msgid "logged in users"
+msgstr "вхід у користувачів"
+
+#: strings.php:113
+msgid "mobile devices"
+msgstr "мобільними пристроями"
+
+#: strings.php:203
+msgctxt "size"
+msgid "Fixed"
+msgstr "Фіксований"
+
+#: strings.php:114
+msgid "tablet devices"
+msgstr "планшетні пристрої"
+
+#: strings.php:253
+msgid "update error"
+msgstr "помилка оновлення"
+
+#: strings.php:90
+msgctxt "using"
+msgid "comments counter"
+msgstr "коментарі лічильник"
+
+#: strings.php:82
+msgctxt "using"
+msgid "content processing counter"
+msgstr "лічильник обробки вмісту"
+
+#: strings.php:86
+msgctxt "using"
+msgid "widget drawing counter"
+msgstr "лічильник малювання віджетів"
+
+#: includes/preview.php:2510
+msgid "wrapping div"
+msgstr "упаковка DIV"
+
+#: includes/placeholders.php:383 settings.php:1289 settings.php:2452
+msgid "Height"
+msgstr "Висота"
+
+#: includes/placeholders.php:388 settings.php:1283 settings.php:2448
+msgid "Width"
+msgstr "Ширина"
+
+#: includes/editor.php:6 includes/placeholders.php:353
+#: includes/preview.php:2428 settings.php:4312 strings.php:240 strings.php:299
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: strings.php:73
+msgid "Custom CSS"
+msgstr "Користувацькі CSS"
+
+#: includes/placeholders.php:397
+msgid "Text"
+msgstr "Текст"
+
+#: strings.php:237
+msgid "Delete"
+msgstr "Видалити"
+
+#: strings.php:226
+msgid "Duration"
+msgstr "Тривалість"
+
+#. Translators: %d: constant number
+#: includes/editor.php:4 includes/placeholders.php:351
+#: includes/preview.php:2425 settings.php:2918 settings.php:2929
+#: strings.php:300
+msgid "Use"
+msgstr "Використати"
+
+#: includes/placeholders.php:18
+msgid "Custom"
+msgstr "Довільний"
+
+#: includes/editor.php:5 includes/preview.php:2426
+msgid "Reset"
+msgstr "Скинути"
+
+#: includes/preview.php:2423
+msgid "Highlight"
+msgstr "Виділення"
+
+#: strings.php:186
+msgid "Top left"
+msgstr "Вгорі ліворуч"
+
+#: strings.php:185
+msgid "Top right"
+msgstr "Вгорі праворуч"
+
+#: strings.php:188
+msgid "Bottom left"
+msgstr "Внизу ліворуч"
+
+#: strings.php:187
+msgid "Bottom right"
+msgstr "Внизу праворуч"
+
+#: includes/preview.php:2515 includes/preview.php:2522
+msgid "background"
+msgstr "фон"
+
+#: strings.php:204
+msgctxt "size"
+msgid "Responsive"
+msgstr "Адаптивний"
+
+#: ad-inserter.php:525
+msgctxt "Menu item"
+msgid "Debugging DEMO"
+msgstr "Відлагоджувальна ДЕМОНСТРАЦІЯ"
+
+#: ad-inserter.php:557
+msgctxt "Menu item"
+msgid "Show Positions"
+msgstr "Показати позиції"
+
+#: ad-inserter.php:643
+msgctxt "Menu item"
+msgid "Show HTML Tags"
+msgstr "Показати HTML-теги"
+
+#: ad-inserter.php:650
+msgctxt "Menu item"
+msgid "Disable Insertion"
+msgstr "Вимкнути вставлення"
+
+#: ad-inserter.php:659
+msgctxt "Menu item"
+msgid "Ad Blocking Status"
+msgstr "Стан блокування оголошення"
+
+#: ad-inserter.php:666
+msgctxt "Menu item"
+msgid "Simulate Ad Blocking"
+msgstr "Імітація блокування оголошення"
+
+#. translators: Debugging position name Before HTML element
+#: ad-inserter.php:1395
+msgid "Before"
+msgstr "До"
+
+#. translators: Debugging position name After HTML element
+#: ad-inserter.php:1400
+msgid "After"
+msgstr "Після"
+
+#. translators: Debugging position name Prepend content of HTML element (before
+#. the content of the HTML element)
+#: ad-inserter.php:1405 strings.php:107
+msgid "Prepend content"
+msgstr "Готовий вміст"
+
+#. translators: Debugging position name Append content of HTML element (after
+#. the content of the HTML element)
+#: ad-inserter.php:1410 strings.php:108
+msgid "Append content"
+msgstr "Додати вміст"
+
+#. translators: Debugging position name Replace content of HTML element
+#: ad-inserter.php:1415 strings.php:109
+msgid "Replace content"
+msgstr "Замінити вміст"
+
+#: ad-inserter.php:1420 strings.php:174
+msgid "Replace"
+msgstr "Замінити"
+
+#. translators: Debugging message when output buffering is enabled
+#: ad-inserter.php:1467
+msgid "OUTPUT BUFFERING"
+msgstr "БУФЕРИЗАЦІЇ ВИВОДУ"
+
+#. translators: Debugging position
+#: ad-inserter.php:1471
+msgid "Above Header"
+msgstr "Верхній колонтитул"
+
+#: ad-inserter.php:1805
+msgctxt "Menu item"
+msgid "Log In"
+msgstr "Увійти"
+
+#. translators: AD BLOCKING DETECTED, PAGE VIEWS: n - NO ACTION
+#: ad-inserter.php:3036
+msgid "AD BLOCKING DETECTED, PAGE VIEWS"
+msgstr "ВИЯВЛЕНО БЛОКУВАННЯ ОГОЛОШЕНЬ, ПОДАННЯ СТОРІНОК"
+
+#. translators: AD BLOCKING DETECTED, PAGE VIEWS: n - NO ACTION
+#: ad-inserter.php:3036
+msgid "NO ACTION"
+msgstr "НІЯКИХ ДІЙ"
+
+#: ad-inserter.php:3037
+msgid "AD BLOCKING DETECTED, COOKIE DETECTED - NO ACTION"
+msgstr "ВИЯВЛЕНО БЛОКУВАННЯ ОГОЛОШЕНЬ, ВИЯВЛЕНА COOKIE-НЕ ДІЯ"
+
+#: ad-inserter.php:3038
+msgid "AD BLOCKING DETECTED - ACTION"
+msgstr "ВИЯВЛЕНО БЛОКУВАННЯ ОГОЛОШЕННЯ"
+
+#: ad-inserter.php:3039
+msgid "AD BLOCKING NOT DETECTED"
+msgstr "БЛОКУВАННЯ ОГОЛОШЕННЯ НЕ ЗНАЙДЕНО"
+
+#: ad-inserter.php:3040
+msgid "AD BLOCKING DETECTION COOKIES DELETED"
+msgstr "ОГОЛОШЕННЯ БЛОКУВАННЯ ВИЯВЛЕННЯ COOKIES ВИДАЛЕНІ"
+
+#: ad-inserter.php:3041
+msgid "AD BLOCKING DETECTED - NO ACTION"
+msgstr "ВИЯВЛЕНА БЛОКУВАННЯ ОГОЛОШЕННЯ-БЕЗ ДІЙ"
+
+#: ad-inserter.php:3582
+msgctxt "Menu item"
+msgid "Settings"
+msgstr "Налаштування"
+
+#. translators: %s: Ad Inserter
+#: ad-inserter.php:3749
+msgctxt "Meta box name"
+msgid "%s Individual Exceptions"
+msgstr "%s окремих винятків"
+
+#: settings.php:5136
+msgid "Automatic insertion"
+msgstr "Автоматична вставка"
+
+#: ad-inserter.php:3785
+msgctxt "Page"
+msgid "For this"
+msgstr "Для цього"
+
+#: ad-inserter.php:3786
+msgctxt "Post"
+msgid "For this"
+msgstr "Для цього"
+
+#: ad-inserter.php:3801
+msgctxt "Enabled/disabled on all"
+msgid "posts"
+msgstr "записи"
+
+#. translators: Menu items
+#: ad-inserter.php:3820 ad-inserter.php:3832 strings.php:16
+msgid "Disabled"
+msgstr "Вимкнено"
+
+#: ad-inserter.php:3867
+msgid "For more information check page %s"
+msgstr "Для отримання додаткових відомостей перегляньте сторінку %s"
+
+#. translators: Ad Inserter Exceptions documentation page
+#: ad-inserter.php:3869
+msgid "Individual Exceptions"
+msgstr "Окремі винятки"
+
+#: ad-inserter.php:3915
+msgid "STATIC PAGE"
+msgstr "СТАТИЧНІ СТОРІНКИ"
+
+#: ad-inserter.php:3933
+msgid "ERROR 404 PAGE"
+msgstr "ПОМИЛКА 404 СТОРІНКУ"
+
+#: ad-inserter.php:3936
+msgid "AJAX CALL"
+msgstr "AJAX ВИКЛИКУ"
+
+#: ad-inserter.php:3942
+msgid "UNKNOWN PAGE TYPE"
+msgstr "НЕВІДОМИЙ ТИП СТОРІНКИ"
+
+#: ad-inserter.php:3959
+msgid "Click to delete ad blocking detection cokies"
+msgstr "Натисніть, щоб видалити оголошення блокування виявлення cokies"
+
+#: ad-inserter.php:3960
+msgid "AD BLOCKING STATUS UNKNOWN"
+msgstr "СТАН БЛОКУВАННЯ ОГОЛОШЕННЯ НЕВІДОМИЙ"
+
+#. translators: %s: AdSense Auto Ads
+#: ad-inserter.php:3989
+msgid "Code for %s detected - Code will automatically insert AdSense ads at optimal positions"
+msgstr "Код для %s виявлений-код буде автоматично вставляти оголошення AdSense на оптимальних позицій"
+
+#: ad-inserter.php:4141
+msgid "Code for insertion"
+msgstr "Код вставки"
+
+#: ad-inserter.php:4162
+msgctxt "Header code"
+msgid "DISABLED"
+msgstr "Вимкнено"
+
+#: strings.php:296
+msgid "Automatically placed by AdSense Auto ads code"
+msgstr "Автоматично розміщені на AdSense код авто оголошень"
+
+#: ad-inserter.php:4433
+msgid "Footer code"
+msgstr "Код для подвалу сайта"
+
+#: ad-inserter.php:4433
+msgctxt "Footer code"
+msgid "DISABLED"
+msgstr "Вимкнено"
+
+#: ad-inserter.php:4447
+msgid "JAVASCRIPT NOT WORKING"
+msgstr "JAVASCRIPT НЕ ПРАЦЮЄ"
+
+#. translators: %s: Ad Inserter
+#: ad-inserter.php:8386
+msgid "Error importing %s settings."
+msgstr "Сталася помилка під час імпортування параметрів %s."
+
+#: ad-inserter.php:8439
+msgid "Settings cleared."
+msgstr "Параметри очищено."
+
+#: ad-inserter.php:8903 ad-inserter.php:9030
+msgid "HTML TAGS REMOVED"
+msgstr "HTML-ТЕГИ ВИЛУЧЕНО"
+
+#: ad-inserter.php:9109
+msgid "BEFORE COMMENTS"
+msgstr "ПЕРЕД КОМЕНТАРЯМИ"
+
+#: ad-inserter.php:9238
+msgid "AFTER COMMENTS"
+msgstr "ПІСЛЯ КОМЕНТАРІВ"
+
+#: ad-inserter.php:9315
+msgid "BETWEEN COMMENTS"
+msgstr "МІЖ КОМЕНТАРЯМИ"
+
+#: ad-inserter.php:12563
+msgid "Please update!"
+msgstr "Будь ласка, оновіть!"
+
+#. translators: Opt-in message: Thank you for installing Ad Inserter (plugin
+#. name with HTML tags will be added)
+#: ad-inserter.php:12849
+msgid "Thank you for installing"
+msgstr "Дякуємо вам за установку"
+
+#. translators: Opt-in message: %s: HTML tags
+#: ad-inserter.php:12851
+msgid "We would like to %s track its usage %s on your site. This is completely optional and can be disabled at any time."
+msgstr "Ми хотіли б %s відстежувати його використання %s на вашому сайті. Це абсолютно необов'язково і може бути відключена в будь-який час."
+
+#: ad-inserter.php:12853
+msgid "We don't record any sensitive data, only information regarding the WordPress environment and plugin usage, which will help us to make improvements to the plugin."
+msgstr "Ми не записувати будь-які конфіденційні дані, тільки інформацію про навколишнє середовище WordPress і використання плагінів, які допоможуть нам зробити поліпшень в плагін."
+
+#. translators: Deactivation message: %s: HTML tags
+#: ad-inserter.php:12893
+msgid "Looking for %s Documentation, %s %s Common Settings, %s %s Quick Start %s or help for %s AdSense ads? %s The plugin doesn't work with your theme? %s Let us know %s and we'll try to help you."
+msgstr "Шукаєте %s документацію, %s %s Загальні настройки, %s %s швидкий запуск %s або довідку для %s оголошення AdSense?  %s плагін не працює з вашої теми?  %s дайте нам знати %s, і ми спробуємо допомогти вам."
+
+#. translators: %s: Ad Inserter
+#: ad-inserter.php:12941
+msgid "%s block."
+msgstr "блоку %s."
+
+#. translators: widget title
+#: ad-inserter.php:12957 ad-inserter.php:12993
+msgid "Processing log"
+msgstr "Журнал обробки"
+
+#. translators: widget title
+#: ad-inserter.php:12959 ad-inserter.php:12994
+msgid "Dummy widget"
+msgstr "Фіктивний віджет"
+
+#. translators: widget title
+#: ad-inserter.php:12961 ad-inserter.php:12992
+msgid "Debugging tools"
+msgstr "Засоби відладки"
+
+#: ad-inserter.php:12969
+msgid "WIDGET DISABLED"
+msgstr "ВІДЖЕТ ВИМКНЕНО"
+
+#: ad-inserter.php:12970
+msgid "Unknown block"
+msgstr "Невідомий блок"
+
+#: ad-inserter.php:13052
+msgid "Ad Inserter can't be used while Ad Inserter Pro is active! To activate Ad Inserter you need to first deactivate Ad Inserter Pro."
+msgstr "Оголошення вставки не можуть бути використані в той час як оголошення Inatter Pro є активним! Для активації оголошень вставки вам потрібно спочатку відключити оголошення Inatter Pro."
+
+#: ad-inserter.php:13053
+msgid "<strong>WARNING</strong>: Please note that saving settings in Ad Inserter will clear all settings that are available only in the Pro version (additional block and plugin settings)!"
+msgstr "<strong> попередження </strong>: будь ласка, зверніть увагу, що збереження параметрів в Inвставки оголошень призведе до очищення всіх параметрів, доступних тільки в Pro версії (додатковий блок і плагін налаштування)!"
+
+#. translators: %s: Ad Inserter
+#: class.php:647 class.php:656 class.php:659
+msgid "PHP error in %s block"
+msgstr "Помилка PHP у блоці %s"
+
+#: class.php:2579
+msgid "Counters"
+msgstr "Лічильники"
+
+#: class.php:2588
+msgid "Excerpt"
+msgstr "Уривок"
+
+#: class.php:2598 strings.php:18
+msgid "After post"
+msgstr "Після повідомлення"
+
+#: class.php:2608 settings.php:2152 settings.php:5151
+msgid "Widget"
+msgstr "Віджет"
+
+#: class.php:2613 settings.php:5149
+msgid "PHP function call"
+msgstr "Виклик PHP функції"
+
+#: class.php:2661
+msgid "AJAX REQUEST"
+msgstr "AJAX ЗАПИТ"
+
+#: class.php:2708
+msgid "IN THE LOOP"
+msgstr "В ЦИКЛІ"
+
+#: class.php:2743
+msgid "BLOCK"
+msgstr "Блок"
+
+#: class.php:2743
+msgctxt "block or widget"
+msgid "INSERTED BUT NOT VISIBLE"
+msgstr "ВСТАВЛЕНІ, АЛЕ НЕ ВИДИМІ"
+
+#. translators: %s: list parameters and type
+#: class.php:4627
+msgid "referers='%s' type='%s'"
+msgstr "посилання = \" %s\" типу = \" %s\""
+
+#. translators: %s: list parameters and type
+#: class.php:4826
+msgid "countries='%s' type='%s'"
+msgstr "країни = ' %s ' типу = ' %s '"
+
+#: class.php:5756 strings.php:289
+msgid "PREPEND CONTENT"
+msgstr "Готовий вміст"
+
+#: class.php:5760 strings.php:290
+msgid "APPEND CONTENT"
+msgstr "Додати вміст"
+
+#: class.php:5764 strings.php:291
+msgid "REPLACE CONTENT"
+msgstr "Замінити вміст"
+
+#: class.php:5768 strings.php:292
+msgid "REPLACE ELEMENT"
+msgstr "ЗАМІНИТИ ЕЛЕМЕНТ"
+
+#: class.php:5779 strings.php:288
+msgid "AFTER"
+msgstr "Після"
+
+#: ad-inserter.php:12118 ad-inserter.php:12219
+msgctxt "category name"
+msgid "Uncategorized"
+msgstr "Без категорії"
+
+#: class.php:10530
+msgid "ERROR: class DOMDocument not found. Your webhost needs to install the DOM extension for PHP."
+msgstr "Помилка: клас Dodocument не знайдено. Ваш хостингу необхідно встановити розширення DOM для PHP."
+
+#: includes/editor.php:261 settings.php:372
+msgid "Error loading page"
+msgstr "Помилка під час завантаження сторінки"
+
+#: settings.php:314
+msgid "Online documentation"
+msgstr "Онлайн-документація"
+
+#: settings.php:1575 settings.php:1615 settings.php:3418
+msgid "Open HTML element selector"
+msgstr "Відкрити селектор елементів HTML"
+
+#: settings.php:1323 settings.php:2546
+msgid "Save Settings"
+msgstr "Зберегти налаштування"
+
+#: settings.php:1685 settings.php:1700 settings.php:1822 settings.php:2421
+msgid "and"
+msgstr "та"
+
+#: settings.php:2603
+msgid "Ad Blocking"
+msgstr "Блокування оголошення"
+
+#: settings.php:3351
+msgid "Ad Blocking Detection"
+msgstr "Виявлення блокування оголошення"
+
+#: includes/preview-adb.php:360 settings.php:3504
+msgid "Message CSS"
+msgstr "Повідомлення CSS"
+
+#: includes/preview-adb.php:365 settings.php:3512
+msgid "Overlay CSS"
+msgstr "Накладення CSS"
+
+#: settings.php:350
+msgid "Loaded plugin JavaScript file version"
+msgstr "Завантажений версія файлу JavaScript"
+
+#. translators: %s: HTML tags
+#: settings.php:352
+msgid "Wrong or %s missing version parameter %s of the JavaScript file, probably due to inappropriate caching."
+msgstr "Неправильно або %s відсутній параметр версії %s файлу JavaScript, ймовірно, через невідповідний кешування."
+
+#. translators: %s: HTML tags
+#: settings.php:353
+msgid "Missing version parameter of the JavaScript file, probably due to inappropriate caching."
+msgstr "Відсутня параметр версії файлу JavaScript, ймовірно, через неприйнятне кешування."
+
+#: settings.php:354
+msgid "Incompatible (old) JavaScript file loaded, probably due to inappropriate caching."
+msgstr "Завантажити несумісний (Старий) файл JavaScript, ймовірно, через неприйнятне кешування."
+
+#: settings.php:355 settings.php:366
+msgid "Please delete browser's cache and all other caches used and then reload this page."
+msgstr "Будь ласка, видаліть кеш браузера і всі інші кеш-пам'яті, а потім перезавантажити цю сторінку."
+
+#: settings.php:361
+msgid "Loaded plugin CSS file version"
+msgstr "Завантажений плагін CSS файл версії"
+
+#. translators: %s: HTML tags
+#: settings.php:363
+msgid "Wrong or %s missing version parameter %s of the CSS file, probably due to inappropriate caching."
+msgstr "Неправильно або %s відсутній параметр версії %s файлу CSS, ймовірно, через невідповідний кешування."
+
+#. translators: %s: HTML tags
+#: settings.php:364
+msgid "Missing version parameter of the CSS file, probably due to inappropriate caching."
+msgstr "Відсутня параметр версії файлу CSS, ймовірно, через неприйнятне кешування."
+
+#: settings.php:365
+msgid "Incompatible (old) CSS file loaded, probably due to inappropriate caching."
+msgstr "Не сумісний (Старий) CSS файл завантажений, ймовірно, через невідповідний кешування."
+
+#. translators: %s: HTML tags
+#: settings.php:374
+msgid "Page may %s not be loaded properly. %s"
+msgstr "Сторінка може %s не завантажується належним чином.  %s"
+
+#. translators: %s: HTML tags
+#: settings.php:375
+msgid "Check ad blocking software that may block CSS, JavaScript or image files."
+msgstr "Перевірте оголошення блокування програмного забезпечення, яке може блокувати CSS, JavaScript або файли зображень."
+
+#: settings.php:427
+msgid "Option share in percents - 0 means option is disabled, if share for one option is not defined it will be calculated automatically. Leave all share fields empty for equal option shares."
+msgstr "Параметр Share у відсотках-0 означає параметр вимкнено, якщо спільний доступ для одного параметра не визначено, він буде автоматично обчислено. Залишити всі поля Share пустими для акцій «рівний»."
+
+#: settings.php:439
+msgid "Option time in seconds - 0 means option is disabled and will be skipped. Leave all time fields empty for no timed rotation."
+msgstr "Параметр часу в секундах-0 означає опцію вимкнено, і його буде пропущено. Залиште всі поля часу пустими для несвоєчасної ротації."
+
+#: settings.php:616
+msgid "General Settings"
+msgstr "Загальні налаштування"
+
+#: settings.php:881 settings.php:3200 settings.php:3269 settings.php:3482
+msgid "Toggle Syntax Highlighting / Simple editor for mobile devices"
+msgstr "Переключити підсвічування синтаксису/простий редактор для мобільних пристроїв"
+
+#: settings.php:888
+msgid "Toggle tools"
+msgstr "Переключити Знаряддя"
+
+#: settings.php:896
+msgid "Process PHP code in block"
+msgstr "Процес PHP-коду в блоці"
+
+#: settings.php:903
+msgid "Disable insertion of this block"
+msgstr "Вимкнути вставку цього блока"
+
+#: settings.php:915
+msgid "Toggle code generator"
+msgstr "Переключити генератор коду"
+
+#: settings.php:919
+msgid "Toggle rotation editor"
+msgstr "Переключити редактор повороту"
+
+#: settings.php:923
+msgid "Open visual HTML editor"
+msgstr "Відкриття візуального HTML-редактора"
+
+#: settings.php:322 settings.php:933 settings.php:2563
+msgid "Show AdSense ad units"
+msgstr "Показати рекламних блоків AdSense"
+
+#: settings.php:942
+msgid "Clear block"
+msgstr "Очистити блок"
+
+#: settings.php:947 settings.php:5024
+msgid "Copy block"
+msgstr "Копіювати блок"
+
+#: settings.php:951
+msgid "Paste name"
+msgstr "Вставити ім'я"
+
+#: settings.php:955
+msgid "Paste code"
+msgstr "Вставити код"
+
+#: settings.php:959
+msgid "Paste settings"
+msgstr "Параметри вставлення"
+
+#: settings.php:963
+msgid "Paste block (name, code and settings)"
+msgstr "Вставити блок (ім'я, код і параметри)"
+
+#: settings.php:986
+msgid "Remove option"
+msgstr "Параметр \"видалити\""
+
+#: settings.php:990
+msgid "Add option"
+msgstr "Додати варіант"
+
+#: settings.php:1005
+msgid "Import code"
+msgstr "Код імпорту"
+
+#: settings.php:1009
+msgid "Generate code"
+msgstr "Створити код"
+
+#: settings.php:1014
+msgid "Banner"
+msgstr "Банер"
+
+#: settings.php:1063
+msgid "Select Placeholder"
+msgstr "Вибрати рамку"
+
+#: settings.php:1089
+msgctxt "AdSense"
+msgid "Publisher ID"
+msgstr "ІДЕНТИФІКАТОР видавця"
+
+#: settings.php:1098
+msgctxt "AdSense"
+msgid "Ad Slot ID"
+msgstr "Ігровий ІДЕНТИФІКАТОР оголошення"
+
+#: settings.php:1107
+msgid "Ad Type"
+msgstr "Тип оголошення"
+
+#: settings.php:1132 settings.php:1274
+msgid "AMP Ad"
+msgstr "AMP оголошення"
+
+#: settings.php:1157
+msgid "Show ad units from your AdSense account"
+msgstr "Показувати рекламні блоки з вашого облікового запису AdSense"
+
+#: settings.php:1157
+msgid "AdSense ad units"
+msgstr "Рекламні блоки AdSense"
+
+#: settings.php:1183
+msgctxt "AdSense"
+msgid "Layout Key"
+msgstr "Клавіша розмітки"
+
+#: settings.php:1314
+msgid "White/Black-list Category, Tag, Taxonomy, Post ID, Url, Url parameter, Cookie or Referer (domain)"
+msgstr "Білий/чорний список категорії, теги, таксономія, поштові ID, URL, параметр URL, cookie або Reser (домен)"
+
+#: settings.php:1314
+msgid "Lists"
+msgstr "Списки"
+
+#: settings.php:1315
+msgid "Widget, Shortcode and PHP function call"
+msgstr "Віджет, Shorecode і PHP виклику функції"
+
+#: settings.php:1316
+msgid "Client/Server-side Device Detection (Desktop, Tablet, Phone,...)"
+msgstr "Клієнт/серверні пристрої виявлення (робочий стіл, планшет, телефон,...)"
+
+#: settings.php:1316
+msgid "Devices"
+msgstr "Пристрої"
+
+#: settings.php:1317
+msgid "Check for user status, Limit insertions (error 404 page, Ajax requests, RSS feeds), Filter, Scheduling, General tag"
+msgstr "Перевірте стан користувача, обмеження вставки (помилка 404 сторінку, AJAX запити, RSS-канали), фільтр, планування, Генеральний тег"
+
+#: settings.php:1317
+msgid "Misc"
+msgstr "Різне"
+
+#: settings.php:1318
+msgid "Preview code and alignment"
+msgstr "Перегляд коду та вирівнювання"
+
+#: settings.php:1321 settings.php:2544
+msgid "Rotation editor active - rotation code not generated! Make sure no rotation editor is active before saving settings."
+msgstr "Редактор ротації активний код повороту не генерується! Переконайтеся, що для збереження настройок не активовано редактор ротації."
+
+#: settings.php:1334 settings.php:1335
+msgid "Enable insertion on posts"
+msgstr "Увімкнути вставлення на повідомлення"
+
+#: settings.php:1339 settings.php:1340
+msgid "Enable insertion on homepage: latest posts (including on sub-pages), static page or theme homepage (available positions may depend on hooks used by the theme)"
+msgstr "Увімкнути вставку на головній сторінці: останні повідомлення (у тому числі на суб-сторінки), статичні сторінки або теми, домашня сторінка (доступні позиції можуть залежати від гачки використовуються теми)"
+
+#: settings.php:1344 settings.php:1345
+msgid "Enable insertion on category blog pages (including sub-pages)"
+msgstr "Увімкнути вставку на сторінках категорії блог (у тому числі суб-сторінок)"
+
+#: settings.php:1345 settings.php:4101
+msgid "Category pages"
+msgstr "Категорія сторінки"
+
+#: settings.php:1355 settings.php:1356
+msgid "Enable insertion on static pages"
+msgstr "Увімкнення вставки на статичні сторінки"
+
+#: settings.php:1356 settings.php:4099
+msgid "Static pages"
+msgstr "Статичні сторінки"
+
+#: settings.php:1360 settings.php:1361
+msgid "Enable insertion on search blog pages"
+msgstr "Увімкнути вставку на сторінках пошуку блоґів"
+
+#: settings.php:1365 settings.php:1366
+msgid "Enable insertion on tag or archive blog pages"
+msgstr "Увімкнути вставлення в тег або Архів сторінок блоґу"
+
+#: ad-inserter.php:3862 settings.php:1366
+msgid "Tag / Archive pages"
+msgstr "Тег/Архів сторінок"
+
+#: settings.php:1418
+msgctxt "post"
+msgid "Type"
+msgstr "Тип"
+
+#: settings.php:1453 settings.php:1601 settings.php:2282
+msgid "Insertion"
+msgstr "Вставки"
+
+#: settings.php:1491
+msgid "Paragraph number or comma separated paragraph numbers: 1 to N means paragraph number, %N means every N paragraphs, empty means all paragraphs, 0 means random paragraph, value between 0 and 1 means relative position on the page (0.2 means paragraph at 20% of page paragraphs, 0.5 means paragraph halfway down the page, 0.9 means paragraph at 90% of page paragraphs, etc.), negative number means counting from the opposite direction"
+msgstr "Номери абзаців або розділені комами абзаців: 1 щоб N означає номер абзацу,% N означає, що кожний N абзаців, пусті означає, що всі абзаци, 0 означає випадковий абзац, значення від 0 до 1 означає відносне розташування на сторінці (0,2 означає Абзац на 20% сторінки абзаци, 0,5 означає Абзац на півдорозі вниз по сторінці, 0,9 означає Абзац на 90% пунктів сторінки і т. д.), від'ємний число означає підрахунок з протилежного напрямку"
+
+#: settings.php:1550
+msgid "Custom CSS code for the wrapping div"
+msgstr "Користувальницькі CSS код для упаковки DIV"
+
+#: settings.php:1553 settings.php:1554 settings.php:1555 settings.php:1556
+#: settings.php:1557 settings.php:1558
+msgid "CSS code for the wrapping div, click to edit"
+msgstr "CSS код для упаковки DIV, натисніть, щоб змінити"
+
+#: settings.php:1584
+msgid "HTML element selector or comma separated list of selectors"
+msgstr "Селектор елементів HTML або Розділений комами список селекторів"
+
+#: settings.php:1602
+msgid "Client-side insertion uses JavaScript to insert block when the page loads. Server-side insertion inserts block when the page is generated but needs Output buffering enabled."
+msgstr "На стороні клієнта Вставка використовує JavaScript для вставки блоку, коли сторінка завантажується. Серверні вставки блоків, коли сторінка генерується, але потребує виходу буферизації включений."
+
+#: settings.php:1655
+msgid "Count"
+msgstr "Кількість"
+
+#: settings.php:1661
+msgid "paragraphs with tags"
+msgstr "абзаци з тегами"
+
+#: settings.php:1667
+msgid "Comma separated HTML tag names, usually only 'p' tags are used"
+msgstr "Імена тегів, розділених комами HTML, зазвичай використовуються лише Теги \"p\""
+
+#: settings.php:1676
+msgid "that have between"
+msgstr "які мають між"
+
+#: settings.php:1682
+msgid "Minimum number of paragraph words, leave empty for no limit"
+msgstr "Мінімальна кількість слів абзацу, залиште порожнім без обмежень"
+
+#: settings.php:1691
+msgid "Maximum number of paragraph words, leave empty for no limit"
+msgstr "Максимальна кількість слів абзацу, залиште порожнім без обмежень"
+
+#: settings.php:1709 settings.php:1756 settings.php:1870 settings.php:1896
+msgid "Comma separated texts"
+msgstr "Тексти з роздільниками-комами"
+
+#: settings.php:1766
+msgid "Count also paragraphs inside these elements - defined on general plugin settings page - tab [*] / tab General"
+msgstr "Підраховувати також абзаци всередині %s елементів, визначених за допомогою загальних параметрів плагіна сторінка-вкладка & #9881;/вкладка Загальні"
+
+#: settings.php:1839
+msgid "Minimum number of words in paragraphs above"
+msgstr "Мінімальна кількість слів у абзацах"
+
+#: settings.php:1845
+msgid "Used only with automatic insertion After paragraph and empty paragraph numbers"
+msgstr "Використовується лише з автоматичним включенням після абзаців і порожніх номерів абзаців"
+
+#: settings.php:1861
+msgid "Number of paragraphs above to check, leave empty to disable checking"
+msgstr "Кількість пунктів вище, щоб перевірити, залиште порожнім, щоб відключити перевірку"
+
+#: settings.php:1864
+msgid "paragraphs above avoid"
+msgstr "пунктів вище, уникнути"
+
+#: settings.php:1887
+msgid "Number of paragraphs below to check, leave empty to disable checking"
+msgstr "Кількість абзаців нижче, щоб перевірити, залишити порожнім, щоб відключити перевірку"
+
+#: settings.php:1890
+msgid "paragraphs below avoid"
+msgstr "пункти нижче уникнути"
+
+#: settings.php:1906
+msgid "If text is found"
+msgstr "Якщо текст знайдено"
+
+#: settings.php:1913
+msgid "check up to"
+msgstr "перевірити, щоб"
+
+#: settings.php:1940
+msgid "Toggle category editor"
+msgstr "Переключити редактор категорій"
+
+#: settings.php:1943
+msgid "Comma separated category slugs"
+msgstr "Розділи розділів, розділені комами"
+
+#: settings.php:1963
+msgid "Toggle tag editor"
+msgstr "Переключити Редактор теґів"
+
+#: settings.php:1966
+msgid "Comma separated tag slugs"
+msgstr "Тег із роздільниками-комами слимаки"
+
+#: settings.php:1986
+msgid "Toggle taxonomy editor"
+msgstr "Переключити редактор таксономії"
+
+#: settings.php:1989
+msgid "Comma separated slugs: taxonomy, term or taxonomy:term"
+msgstr "Розділені комами кулі: таксономія, термін або таксономія: термін"
+
+#: settings.php:2006
+msgid "Post IDs"
+msgstr "IDs Запису"
+
+#: settings.php:2009
+msgid "Toggle post/page ID editor"
+msgstr "Перемкнути редактор ІДЕНТИФІКАТОРІВ повідомлень/сторінок"
+
+#: settings.php:2012
+msgid "Comma separated post/page IDs"
+msgstr "Розділені комами пост/сторінки"
+
+#: settings.php:2029
+msgid "Urls"
+msgstr "Url"
+
+#: settings.php:2032
+msgid "Toggle url editor"
+msgstr "Переключити редактор URL-адрес"
+
+#: settings.php:2051
+msgid "Url parameters"
+msgstr "Параметри URL-адреси"
+
+#: settings.php:2055
+msgid "Toggle url parameter and cookie editor"
+msgstr "Перемкнути параметр URL-адреси та редактор файлів cookie"
+
+#: settings.php:2058
+msgid "Comma separated url query parameters or cookies with optional values (use 'parameter', 'parameter=value', 'cookie' or 'cookie=value')"
+msgstr "Параметри URL-адреси, розділені комами або файлами cookie з необов'язковими значеннями (використання ' prameter ', ' prameter = значення ', ' cookie ' або ' cookie = значення ')"
+
+#: settings.php:2035
+msgid "Comma separated urls (page addresses) starting with / after domain name (e.g. /permalink-url, use only when you need to taget a specific url not accessible by other means). You can also use partial urls with * (/url-start*. *url-pattern*, *url-end)"
+msgstr "URL-адреси з роздільниками-комами (адреси сторінок), починаючи з/після імені домену (наприклад,/Permalink-URL, використовується тільки тоді, коли вам потрібно taget конкретної URL не доступні іншими засобами). Ви також можете використовувати часткові URL-адреси з * (/URL-Start *. * URL-шаблон *, * URL-End)"
+
+#: settings.php:2097
+msgid "Referrers"
+msgstr "Посилаються"
+
+#: settings.php:2100
+msgid "Toggle referrer editor"
+msgstr "Перемкнути редактор реферера"
+
+#: settings.php:2151
+msgid "Enable widget for this block"
+msgstr "Увімкнути віджет для цього блока"
+
+#: settings.php:2163
+msgid "Enable shortcode for manual insertion of this block in posts and pages"
+msgstr "Увімкніть shoricode для ручного вставки цього блоку в повідомленнях і сторінках"
+
+#: settings.php:2179
+msgid "Enable PHP function call to insert this block at any position in theme file. If function is disabled for block it will return empty string."
+msgstr "Увімкніть PHP функцію виклику вставити цей блок в будь-якій позиції в темі файлу. Якщо функція вимкнута для блокування, вона поверне порожній рядок."
+
+#: settings.php:2180
+msgid "PHP function"
+msgstr "PHP функції"
+
+#: settings.php:2195
+msgid "Client-side device detection"
+msgstr "Виявлення клієнтського пристрою"
+
+#: settings.php:2196
+msgid "Server-side device detection"
+msgstr "Серверне виявлення пристроїв"
+
+#: settings.php:2203
+msgid "Use client-side detection to"
+msgstr "Використання на стороні клієнта виявлення"
+
+#. Translators: only on (the following devices): viewport names (devices)
+#. listed
+#: settings.php:2210
+msgid "only on"
+msgstr "тільки на"
+
+#: settings.php:2238
+msgid "Device min width %s px"
+msgstr "Мінімальна ширина пристрою %s PX"
+
+#: settings.php:2264
+msgid "Use server-side detection to insert block only for"
+msgstr "Використовувати для вставлення блоку лише на стороні сервера"
+
+#: settings.php:2284
+msgid "Word Count"
+msgstr "Кількість слів"
+
+#: settings.php:430 settings.php:2285 settings.php:5140
+msgid "Scheduling"
+msgstr "Планування"
+
+#: settings.php:2300
+msgid "Old settings for AMP pages detected"
+msgstr "Старі налаштування для сторінок ПІДСИЛЮВАЧА виявлені"
+
+#: settings.php:2300
+msgid "AMP pages"
+msgstr "ПІДСИЛЮВАЧ сторінок"
+
+#: settings.php:2305
+msgid "Enable insertion for Ajax requests"
+msgstr "Увімкнути вставлення для запитів AJAX"
+
+#: settings.php:2305
+msgid "Ajax requests"
+msgstr "AJAX просить"
+
+#: settings.php:2315
+msgid "Enable insertion in RSS feeds"
+msgstr "Увімкнути вставлення в RSS-каналах"
+
+#: settings.php:2320
+msgid "Enable insertion on page for Error 404: Page not found"
+msgstr "Увімкнути вставку на сторінці для помилки 404: сторінка не знайдена"
+
+#: settings.php:2332
+msgid "Maximum number of insertions of this block. Empty or 0 means no limit."
+msgstr "Максимальна кількість вставлення цього блока. Пусте або 0 означає без обмежень."
+
+#: settings.php:2338 settings.php:2728
+msgid "Max blocks per page"
+msgstr "Макс блоків на сторінку"
+
+#: settings.php:2350
+msgid "Insert for"
+msgstr "Вставити для"
+
+#: settings.php:2358
+msgid "Insert block only when WP function [[in_the_loop ()]] returns true (WP loop is currently active). Might speed up insertion on content pages when [[the_content]] filter hook is called multiple times."
+msgstr "Вставити блок тільки тоді, коли WP функція in_the_loop () Повертає true (WP петля в даний час активна). Може прискорити вставку на сторінках вмісту, коли the_content фільтр називається кілька разів."
+
+#: settings.php:2300
+msgid "To insert different codes on normal and AMP pages separate them with [ADINSERTER AMP] separator. Here you can enable insertion on AMP pages only when you need to insert THE SAME CODE also on AMP pages (no AMP separator)."
+msgstr "Для вставки різних кодів на нормальних і ПІДСИЛЮВАЧІВ сторінок відокремити їх [ADININTER AMP] роздільник. Тут ви можете включити вставки на сторінках ПІДСИЛЮВАЧА тільки тоді, коли вам потрібно вставити той же код і на сторінках ПІДСИЛЮВАЧА (не сепаратор AMP)."
+
+#: settings.php:2362
+msgid "Insert only in the loop"
+msgstr "Вставка лише в циклі"
+
+#: settings.php:2372
+msgid "Disable caching for WP Super Cache, W3 Total Cache and WP Rocket plugins"
+msgstr "Вимкнути кешування для WP Super Кеш, w3 Total кеш-пам'яті і WP ракета плагіни"
+
+#: settings.php:2376
+msgid "Disable caching"
+msgstr "Вимкнути кешування"
+
+#: settings.php:2388
+msgid "Filter insertions"
+msgstr "Фільтр вставки"
+
+#: settings.php:2413
+msgid "Checked means specified calls are unwanted"
+msgstr "Позначено означає, що вказані дзвінки непотрібні"
+
+#: settings.php:2413
+msgid "Invert filter"
+msgstr "Фільтр \"Інверсія\""
+
+#: settings.php:1813 settings.php:2419
+msgid "Post/Static page must have between"
+msgstr "Посада/статична сторінка повинна мати між"
+
+#: settings.php:2420
+msgid "Minimum number of post/static page words, leave empty for no limit"
+msgstr "Мінімальна кількість слів після/статичного сторінки, залиште порожнім без обмежень"
+
+#: settings.php:2422
+msgid "Maximum number of post/static page words, leave empty for no limit"
+msgstr "Максимальна кількість слів Post/статичних сторінок, залиште порожнім без обмежень"
+
+#: settings.php:2435
+msgid "days after publishing"
+msgstr "днів після публікації"
+
+#: settings.php:2468 settings.php:2720
+msgid "Ad label"
+msgstr "Мітка оголошення"
+
+#: settings.php:2491
+msgid "General tag"
+msgstr "Генеральний тег"
+
+#: settings.php:2495
+msgid "Used for [adinserter data=''] shortcodes when no data is found"
+msgstr "Використовується для [adininter даних = ' ' '] shoruкодами, коли немає даних не знайдено"
+
+#. translators: %s: HTML tags
+#: settings.php:2504
+msgid "%s WARNING: %s %s No Wrapping %s style has no wrapping code needed for client-side device detection!"
+msgstr "%s попередження: %s стиль обтікання %s не має код обтікання, необхідний для виявлення клієнтського пристрою!"
+
+#: settings.php:2537
+msgid "Settings timestamp"
+msgstr "Позначки часу"
+
+#: settings.php:2553
+msgid "Are you sure you want to reset all settings?"
+msgstr "Ви дійсно бажаєте скинути всі настройки?"
+
+#: settings.php:2597
+msgid "Viewports"
+msgstr "Viewports"
+
+#: settings.php:2598
+msgid "Hooks"
+msgstr "Хуки"
+
+#: settings.php:2599
+msgid "Header"
+msgstr "Заголовок"
+
+#: settings.php:2600 strings.php:30
+msgid "Footer"
+msgstr "Підвал"
+
+#: settings.php:2605
+msgid "Debugging"
+msgstr "Налагодження"
+
+#: settings.php:2627
+msgid "Plugin priority"
+msgstr "Пріоритет плагіна"
+
+#: settings.php:2638
+msgid "Needed for position Above header but may not work with all themes"
+msgstr "Потрібна для позиції над заголовком, але може не працювати з усіма темами"
+
+#: settings.php:2779
+msgid "Syntax highlighting theme"
+msgstr "Тема \"підсвічування синтаксису\""
+
+#: settings.php:2786
+msgctxt "no syntax highlighting themes"
+msgid "None"
+msgstr "Нічого"
+
+#: settings.php:2787
+msgid "No Syntax Highlighting"
+msgstr "Немає підсвічування синтаксису"
+
+#: settings.php:2789
+msgctxt "syntax highlighting themes"
+msgid "Light"
+msgstr "Світлий"
+
+#: settings.php:2804
+msgctxt "syntax highlighting themes"
+msgid "Dark"
+msgstr "Темний"
+
+#: settings.php:2668
+msgid "Sticky widget mode"
+msgstr "Режим липкого віджета"
+
+#: settings.php:2671
+msgid "CSS mode is the best approach but may not work with all themes. JavaScript mode works with most themes but may reload ads on page load."
+msgstr "CSS режим є найкращим підходом, але може не працювати з усіма темами. Режим JavaScript працює з більшістю тем, але може перезавантажити оголошення на сторінці завантаження."
+
+#: settings.php:2680
+msgid "Sticky widget top margin"
+msgstr "Клейка віджетів верхнього поля"
+
+#: settings.php:2688
+msgid "Dynamic blocks"
+msgstr "Динамічні блоки"
+
+#: settings.php:2701
+msgid "Functions for paragraph counting"
+msgstr "Функції підрахунку абзаців"
+
+#: settings.php:2704
+msgid "Standard PHP functions are faster and work in most cases, use Multibyte functions if paragraphs are not counted properly on non-english pages."
+msgstr "Стандартні функції PHP швидше і працюють в більшості випадків, використання multibyte функції, якщо абзаци не враховуються належним чином на Non-Англійська сторінок."
+
+#: settings.php:2712
+msgid "No paragraph counting inside"
+msgstr "Без підрахунку абзаців"
+
+#: settings.php:2723
+msgid "Label text or HTML code"
+msgstr "Текст етикетки або HTML-код"
+
+#: settings.php:2731
+msgid "Maximum number of inserted blocks per page. You need to enable Max page insertions (button Misc / tab Insertion) to count block for this limit."
+msgstr "Максимальна кількість вставлених блоків на сторінку. Ви повинні включити Max сторінка вставки (кнопка Різне/Tab вставки), щоб підрахувати блок для цього ліміту."
+
+#: settings.php:2887
+msgid "Plugin usage tracking"
+msgstr "Відстеження використання плагіна"
+
+#. translators: %s: Ad Inserter
+#: settings.php:2890
+msgid "Enable tracking of %s usage and help us to make improvements to the plugin. Only information regarding the WordPress environment and %s usage is recorded (once per month and on events like plugin activation/deactivation)."
+msgstr "Увімкніть відстеження %s використання і допомогти нам зробити удосконалення плагіна. Тільки інформація про навколишнє середовище WordPress і %s використання записується (один раз на місяць і на такі події, як активація/деактивація плагіна)."
+
+#: settings.php:2743
+msgid "CSS class name for the wrapping div"
+msgstr "CSS клас ім'я для упаковки DIV"
+
+#: settings.php:2743
+msgid "Block class name"
+msgstr "Назва блочного класу"
+
+#: settings.php:2749
+msgid "Include block number class"
+msgstr "Включити блочний номер класу"
+
+#: settings.php:2749
+msgid "Block number class"
+msgstr "Блочний номер класу"
+
+#: settings.php:2759
+msgid "Instead of alignment classes generate inline alignment styles for blocks"
+msgstr "Замість того, щоб вирівнювання класів генерувати вбудовані стилі вирівнювання для блоків"
+
+#: settings.php:2759
+msgid "Inline styles"
+msgstr "Вбудовані стилі"
+
+#: settings.php:2765
+msgid "Preview of the block wrapping code"
+msgstr "Попередній перегляд блоку обгорткового коду"
+
+#: settings.php:2766
+msgid "Wrapping div"
+msgstr "Упаковка DIV"
+
+#. translators: %s: PHP tags
+#: settings.php:2767 settings.php:3622
+msgid "BLOCK CODE"
+msgstr "БЛОЧНИЙ КОД"
+
+#: settings.php:3130
+msgid "Viewport Settings used for client-side device detection"
+msgstr "Параметри перегляду, які використовуються для клієнтського виявлення пристроїв"
+
+#. Translators: %d: viewport number
+#: settings.php:3138
+msgid "Viewport %d name"
+msgstr "Проекції%d ім'я"
+
+#: settings.php:3141
+msgid "min width"
+msgstr "мінімальна ширина"
+
+#: settings.php:3154
+msgid "Custom Hooks"
+msgstr "Користувальницькі гачки"
+
+#: settings.php:3172
+msgid "Hook name for automatic insertion selection"
+msgstr "Ім'я гачка для автоматичного вибору вставки"
+
+#: settings.php:3178
+msgid "Action name as used in the do_action () function"
+msgstr "Ім'я дії, яке використовується у функції do_action ()"
+
+#: settings.php:3184
+msgid "Priority for the hook (default is 10)"
+msgstr "Пріоритет для гачка (за умовчанням 10)"
+
+#: settings.php:3205
+msgid "Enable insertion of this code into HTML page header"
+msgstr "Увімкнути вставлення цього коду в заголовок сторінки HTML"
+
+#: settings.php:3210 settings.php:3279 settings.php:3488
+msgid "Process PHP code"
+msgstr "Процес PHP-коду"
+
+#: settings.php:3215
+msgid "HTML Page Header Code"
+msgstr "Код заголовка HTML-сторінки"
+
+#: settings.php:3223
+msgid "Code in the %s section of the HTML page"
+msgstr "Код в секції %s HTML-сторінки"
+
+#: settings.php:3241 settings.php:3311
+msgid "Use server-side detection to insert code only for"
+msgstr "Використання серверних виявлення для вставки коду тільки для"
+
+#: settings.php:3256
+msgid "Enable insertion of this code into HTML page header on page for Error 404: Page not found"
+msgstr "Увімкніть вставлення цього коду в HTML-сторінку заголовка сторінки для помилки 404: сторінка не знайдена"
+
+#: settings.php:3256 settings.php:3326
+msgid "Insert on Error 404 page"
+msgstr "Вставити на помилку 404 сторінку"
+
+#: settings.php:3274
+msgid "Enable insertion of this code into HTML page footer"
+msgstr "Увімкнути вставку цього коду в колонтитул HTML-сторінки"
+
+#: settings.php:3284
+msgid "HTML Page Footer Code"
+msgstr "Код нижнього колонтитула HTML-сторінки"
+
+#. translators: %s: HTML tags
+#: settings.php:3292
+msgid "Code before the %s tag of the HTML page"
+msgstr "Код перед %s тега сторінки HTML"
+
+#: settings.php:3326
+msgid "Enable insertion of this code into HTML page footer on page for Error 404: Page not found"
+msgstr "Увімкніть вставлення цього коду в колонтитул HTML-сторінки на сторінці для помилки 404: сторінка не знайдена"
+
+#: settings.php:3347
+msgid "Enable detection of ad blocking"
+msgstr "Увімкнути виявлення блокування оголошення"
+
+#: settings.php:3381
+msgid "Global action when ad blocking is detected"
+msgstr "Глобальна дія, коли блокування оголошення виявлено"
+
+#: settings.php:3398
+msgid "Delay Action"
+msgstr "Дія затримки"
+
+#: settings.php:3401
+msgid "Number of page views to delay action when ad blocking is detected. Leave empty for no delay (action fires on first page view). Sets cookie."
+msgstr "Кількість подань сторінок для відкладення дії під час виявлення блокування оголошення. Залиште порожнім без затримки (дії пожеж на першій сторінці перегляду). Установлює куки."
+
+#: settings.php:3401
+msgctxt "Delay Action for x "
+msgid "page views"
+msgstr "переглядів сторінок"
+
+#: settings.php:3406
+msgid "No Action Period"
+msgstr "Немає терміну дії"
+
+#: settings.php:3409
+msgid "Number of days to supress action when ad blocking is detected. Leave empty for no no-action period (action fires always after defined page view delay). Sets cookie."
+msgstr "Кількість днів, коли виконується блокування оголошення. Залиште порожній для No-Action період (дія пожежі завжди після визначення затримки перегляду сторінок). Установлює куки."
+
+#: settings.php:3409
+msgctxt "no action period"
+msgid "days"
+msgstr "дні"
+
+#: settings.php:3414
+msgid "Custom Selectors"
+msgstr "Настроювані селектори"
+
+#: settings.php:3438
+msgid "Redirection Page"
+msgstr "Сторінка переспрямування"
+
+#: settings.php:3455
+msgid "Static page for redirection when ad blocking is detected. For other pages select Custom url and set it below."
+msgstr "Статична сторінка для переспрямування, коли виявлено блокування оголошення. Для інших сторінок оберіть настроювану URL-адресу та встановіть його нижче."
+
+#: settings.php:3464
+msgid "Custom Redirection Url"
+msgstr "Настроювана URL-адреса переспрямування"
+
+#: settings.php:3476
+msgid "Message HTML code"
+msgstr "Повідомлення HTML-код"
+
+#: settings.php:3491
+msgid "Preview message when ad blocking is detected"
+msgstr "Попередній перегляд повідомлення, коли блокування оголошення виявлено"
+
+#: settings.php:3520
+msgid "Prevent visitors from closing the warning message"
+msgstr "Заборонити відвідувачам закрити попереджувальне повідомлення"
+
+#: settings.php:3520
+msgid "Undismissible Message"
+msgstr "Неdissmissible повідомлення"
+
+#: settings.php:3640
+msgid "Force showing admin toolbar when viewing site"
+msgstr "Примусово показувати панель інструментів адміністратора при перегляді сайту"
+
+#: settings.php:3647
+msgid "Enable debugging functions in admin toolbar"
+msgstr "Увімкнення функції налагодження на панелі інструментів адміністрування"
+
+#: settings.php:3649
+msgid "Debugging functions in admin toolbar"
+msgstr "Відлагоджувальні функції в адмін-панелі"
+
+#: settings.php:3656
+msgid "Enable debugging functions in admin toolbar on mobile screens"
+msgstr "Увімкніть налагодження функції в адмін-панелі на мобільних екранах"
+
+#: settings.php:3658
+msgid "Debugging functions on mobile screens"
+msgstr "Відлагоджувальні функції на мобільних екранах"
+
+#: settings.php:3669
+msgid "Remote debugging"
+msgstr "Віддалене зневадження"
+
+#: settings.php:3678
+msgid "Disable translation to see original texts for the settings and messages in English"
+msgstr "Вимкніть переклад, щоб переглянути оригінальні тексти для настройок і повідомлень англійською мовою"
+
+#: settings.php:3667
+msgid "Enable Debugger widget and code insertion debugging (blocks, positions, tags, processing) by url parameters for non-logged in users. Enable this option to allow other users to see Debugger widget, labeled blocks and positions in order to help you to diagnose problems. For logged in administrators debugging is always enabled."
+msgstr "Увімкніть відладчик віджет і налагодження коду вставки (блоки, позиції, Мітки, обробка) за URL параметрів для не увійшли в користувачів. Увімкніть цю опцію, щоб дозволити іншим користувачам бачити зневаджувач віджет, позначені блоки і позиції, з тим щоб допомогти вам діагностувати проблеми. Для входу в налагодження адміністратори завжди ввімкнуто."
+
+#: settings.php:3680
+msgid "Disable translation"
+msgstr "Вимкнути Переклад"
+
+#: settings.php:4200
+msgid "Toggle active/all blocks"
+msgstr "Переключити активний/всі блоки"
+
+#: settings.php:4205 strings.php:250
+msgid "Rearrange block order"
+msgstr "Перевпорядкування порядку блокування"
+
+#: settings.php:4211
+msgid "Save new block order"
+msgstr "Зберегти новий порядок блоків"
+
+#: settings.php:4237
+msgid "Toggle active/all ad units"
+msgstr "Переключити активні/всі рекламні блоки"
+
+#: settings.php:4241
+msgid "Reload AdSense ad units"
+msgstr "Перезавантажити AdSense рекламних блоків"
+
+#: settings.php:4245
+msgid "Clear authorization to access AdSense account"
+msgstr "Чітка авторизація доступу до облікового запису AdSense"
+
+#: settings.php:4249 settings.php:5314 settings.php:5361 strings.php:258
+msgid "Google AdSense Homepage"
+msgstr "Google AdSense Головна сторінка"
+
+#: settings.php:5021
+msgid "Preview block"
+msgstr "Блок попереднього перегляду"
+
+#: settings.php:5225
+msgid "Ad unit"
+msgstr "Рекламна одиниця"
+
+#: settings.php:5227
+msgid "Slot ID"
+msgstr "Ігровий код"
+
+#: settings.php:5253
+msgid "Copy AdSense code"
+msgstr "Копіювати код AdSense"
+
+#: settings.php:5256
+msgid "Preview AdSense ad"
+msgstr "Попередній перегляд оголошення AdSense"
+
+#: settings.php:5259
+msgid "Get AdSense code"
+msgstr "Отримати код AdSense"
+
+#. translators: %s: HTML tags
+#: settings.php:5291
+msgid "Please %s clear authorization %s with the button %s above and once again authorize access to your AdSense account."
+msgstr "Будь ласка, %s очистити авторизацію %s за допомогою кнопки %s вище і знову авторизувати доступ до вашого облікового запису AdSense."
+
+#: settings.php:5310
+msgid "AdSense Integration"
+msgstr "Інтеграція з AdSense"
+
+#: settings.php:5312
+msgid "AdSense Integration - Step 2"
+msgstr "Інтеграція з AdSense-крок 2"
+
+#. translators: %s: HTML tags
+#: settings.php:5319
+msgid "If you get error, can't access ad units or would like to use own Google API IDs click on the button %s Use own API IDs %s to enter Client ID and Client Secret."
+msgstr "Якщо ви отримуєте помилку, не можете отримати доступ до рекламних блоків або хотіли б використовувати власні ідентифікатори Google API натисніть на кнопку %s використовувати власні ідентифікатори API %s, щоб ввести клієнт ID і клієнт Secret."
+
+#. translators: %s: HTML tags
+#: settings.php:5322
+msgid "If you get error %s invalid client %s click on the button %s Clear and return to Step 1 %s to re-enter Client ID and Client Secret."
+msgstr "Якщо ви отримуєте помилку %s неприпустимий клієнт %s натисніть на кнопку %s очистити і повернутися до кроку 1 %s, щоб повторно ввести клієнт ID і клієнт Secret."
+
+#: settings.php:5338
+msgid "Use own API IDs"
+msgstr "Використовувати власні ідентифікатори API"
+
+#: settings.php:5340
+msgid "Clear and return to Step 1"
+msgstr "Очистити і повернутися до кроку 1"
+
+#: settings.php:5360
+msgid "AdSense Integration - Step 1"
+msgstr "AdSense інтеграції-крок 1"
+
+#. translators: %s: Ad Inserter
+#: settings.php:5364
+msgid "Here can %s list configured AdSense ad units and get code for AdSense ads. To do this you need to authorize %s to access your AdSense account. The first step is to create a Google API project in order to get Client ID and Client Secret."
+msgstr "Тут можна %s список настроєних рекламних блоків AdSense і отримати код для реклами AdSense. Для цього потрібно авторизувати %s для доступу до облікового запису AdSense. Першим кроком є створення проекту Google API для того, щоб отримати ID клієнта і клієнт Secret."
+
+#. translators: %s: HTML tags
+#: settings.php:5373
+msgid "Go to %s Google APIs and Services console %s"
+msgstr "Перейти до %s консолі API та служб Google %s"
+
+#. translators: %1: Ad Inserter, 2, 3: HTML tags
+#: settings.php:5374
+msgid "Create %1$s project - if the project and IDs are already created click on the %2$s Credentials %3$s in the sidebar and go to step 21"
+msgstr "Створити%1$s проект-якщо проект і ідентифікатори вже створені натисніть на%2$s повноваження%3$s на бічній панелі і перейти до кроку 16"
+
+#. translators: %s: HTML tags
+#: settings.php:5375
+msgid "Click on project selection and then click on the %s NEW PROJECT %s button to create a new project"
+msgstr "Натисніть на вибір проекту та натисніть кнопку \" %s нового проекту %s\", щоб створити новий проект"
+
+#. translators: 1: Ad Inserter, 2, 3: HTML tags
+#: settings.php:5376
+msgid "Enter %1$s for project name and click on the %2$s Create %3$s button"
+msgstr "Введіть%1$s для імені проекту та натисніть на%2$s створити%3$s кнопка"
+
+#. translators: %s: HTML tags
+#: settings.php:5377
+msgid "Click on project selection, wait for the project to be created and then and select %s as the current project"
+msgstr "Натисніть на вибір проекту, зачекайте, доки проект буде створено, а потім виберіть %s як поточний проект"
+
+#. translators: %s: HTML tags
+#: settings.php:5378
+msgid "Click on %s ENABLE APIS AND SERVICES %s"
+msgstr "Натисніть на %s увімкнути API та служби %s"
+
+#. translators: %s: HTML tags
+#: settings.php:5379
+msgid "Search for adsense and enable %s"
+msgstr "Пошук AdSense і Активація %s"
+
+#. translators: %s: HTML tags
+#: settings.php:5380
+msgid "Click on %s CREATE CREDENTIALS %s"
+msgstr "Натисніть на %s створити ОБЛІКОВІ дані %s"
+
+#. translators: %s: HTML tags
+#: settings.php:5382
+msgid "For %s Where will you be calling the API from? %s select %s Other UI %s"
+msgstr "Для %s, де ви будете називати API від?  %s виберіть %s інший інтерфейс %s"
+
+#. translators: %s: HTML tags
+#: settings.php:5383
+msgid "For %s What data will you be accessing? %s select %s User data %s"
+msgstr "Для %s які дані ви будете отримувати доступ?  %s виберіть %s даних користувача %s"
+
+#. translators: %s: HTML tags
+#: settings.php:5384
+msgid "Click on %s What credentials do I need? %s"
+msgstr "Натисніть на %s які облікові дані мені потрібні?  %s"
+
+#. translators: %s: HTML tags
+#: settings.php:5394
+msgid "Copy them to the appropriate fields below"
+msgstr "Скопіюйте їх у відповідні поля"
+
+#: settings.php:5403
+msgid "Enter Client ID"
+msgstr "Введіть код клієнта"
+
+#: settings.php:5408
+msgid "Client secret"
+msgstr "Клієнт секретно"
+
+#: settings.php:5411
+msgid "Enter Client secret"
+msgstr "Введіть клієнт Secret"
+
+#: settings.php:5421
+msgid "Use default API IDs"
+msgstr "Використовувати ідентифікатори API за промовчанням"
+
+#: settings.php:4318 settings.php:5426
+msgid "Save"
+msgstr "Зберегти"
+
+#: settings.php:6139 settings.php:6153
+msgid "Blank ad blocks? Looking for AdSense alternative?"
+msgstr "Порожні блоки оголошень? Шукаєте альтернативу AdSense?"
+
+#: settings.php:6144 settings.php:6158 settings.php:6381 settings.php:6383
+#: settings.php:6415 settings.php:6422 settings.php:6440 settings.php:6443
+#: settings.php:6444 settings.php:6453 settings.php:6461 settings.php:6484
+#: settings.php:6490 settings.php:6495 settings.php:6501
+msgid "Looking for AdSense alternative?"
+msgstr "Шукаєте альтернативу AdSense?"
+
+#: settings.php:6226 settings.php:6276
+msgid "Support plugin development"
+msgstr "Підтримка модулів розвитку"
+
+#: settings.php:6231 settings.php:6277
+msgid "If you like Ad Inserter and have a moment, please help me spread the word by reviewing the plugin on WordPres"
+msgstr "Якщо вам подобається оголошення вставки і є момент, будь ласка, допоможіть мені поширити слово, переглянувши плагін на WordPres"
+
+#: settings.php:6241
+msgid "Support free Ad Inserter development. If you are making money with Ad Inserter consider donating some small amount. Even 1 dollar counts. Thank you!"
+msgstr "Підтримка вільного Inatter розробки оголошень. Якщо ви робите гроші з оголошення вставки розглянути пожертвування невелика кількість. Навіть 1 долар розраховує. Дякую!"
+
+#: settings.php:6241
+msgid "Donate"
+msgstr "Пожертвувати"
+
+#: settings.php:6248 settings.php:6292
+msgid "Average rating of the plugin - Thank you!"
+msgstr "Середній рейтинг плагіна-спасибі!"
+
+#: settings.php:6281
+msgid "Ad Inserter on Twitter"
+msgstr "Оголошення вставки на щебет"
+
+#: settings.php:6282
+msgid "Ad Inserter on Facebook"
+msgstr "Оголошення вставки на Facebook"
+
+#: settings.php:6285
+msgid "Follow Ad Inserter"
+msgstr "Стежити за вставки оголошень"
+
+#. translators: %s: HTML tags
+#: settings.php:6312
+msgid "Need help with %s settings? %s Check %s Quick Start, %s %s Code Editing %s and %s Common Settings %s pages"
+msgstr "Потрібна допомога з настройками %s?  %s перевірка %s швидкого запуску, %s %s редагування коду %s і %s загальні параметри %s сторінок"
+
+#. translators: %s: HTML tags
+#: settings.php:6348
+msgid "Ads are not showing? Check %s troubleshooting guide %s to find out how to diagnose and fix the problem."
+msgstr "Оголошення не відображаються? Перевірте %s виправлення неполадок Путівника %s, щоб дізнатися, як діагностувати та усунути проблему."
+
+#. translators: %s: HTML tags
+#: settings.php:6352
+msgid "If you need any kind of help or support, please do not hesitate to open a thread on the %s support forum. %s"
+msgstr "Якщо вам потрібна будь-яка допомога або підтримка, будь ласка, не соромтеся відкрити потік на форумі підтримки %s.  %s"
+
+#: settings.php:6379 settings.php:6455 settings.php:6466 settings.php:6474
+msgid "A/B testing - Track ad impressions and clicks"
+msgstr "A/B випробовування оголошень про покази та кліки"
+
+#: settings.php:6380 settings.php:6385 settings.php:6391 settings.php:6456
+#: settings.php:6499
+msgid "Code preview with visual CSS editor"
+msgstr "Попередній перегляд коду за допомогою редактора Visual CSS"
+
+#: settings.php:6509
+msgid "Looking for Pro Ad Management plugin?"
+msgstr "Потрібні Pro оголошення управління плагінів?"
+
+#: settings.php:6510
+msgid "To Optimally Monetize your WordPress website?"
+msgstr "Оптимально монетизувати ваш веб-сайт WordPress?"
+
+#. translators: %s HTML tags
+#: settings.php:6514
+msgid "%s AdSense Integration %s"
+msgstr "%s AdSense інтеграція %s"
+
+#. translators: %s HTML tags
+#: settings.php:6515
+msgid "Syntax highlighting %s editor %s"
+msgstr "Підсвічування синтаксису %s редактора %s"
+
+#. translators: %s HTML tags
+#: settings.php:6516
+msgid "%s Code preview %s with visual CSS editor"
+msgstr "%s-перегляд коду %s за допомогою редактора Visual CSS"
+
+#. translators: %s HTML tags
+#: settings.php:6517
+msgid "Simple user interface - all settings on a single page"
+msgstr "Простий користувальницький інтерфейс-всі налаштування на одній сторінці"
+
+#. translators: %s HTML tags
+#: settings.php:6520
+msgid "%s Automatic insertion %s before, between and after comments"
+msgstr "%s Автоматична вставка %s до, між і після коментарів"
+
+#. translators: %s HTML tags
+#: settings.php:6522
+msgid "Automatic insertion at %s custom hook positions %s"
+msgstr "Автоматичне вставлення на %s настроюваних позицій гачків %s"
+
+#. translators: %s HTML tags
+#: settings.php:6523
+msgid "Insertion %s before or after any HTML element on the page %s (using CSS selectors)"
+msgstr "Вставлення %s до або після будь-якого елемента HTML на сторінці %s (за допомогою селекторів CSS)"
+
+#. translators: %s HTML tags
+#: settings.php:6524
+msgid "%s Insertion exceptions %s for individual posts and pages"
+msgstr "%s винятки вставлення %s для окремих постів і сторінок"
+
+#. translators: %s HTML tags
+#: settings.php:6525
+msgid "%s Manual insertion: %s widgets, shortcodes, PHP function call"
+msgstr "%s ручної вставки: %s віджетів, короткі коди, PHP виклику функції"
+
+#. translators: %s HTML tags
+#: settings.php:6526
+msgid "%s Sticky ads %s with optional close button (ads stay fixed when the page scrolls)"
+msgstr "%s наліпки %s з необов'язковою кнопкою \"закрити\" (оголошення залишаються нерухомою, коли сторінка прокручується)"
+
+#. translators: %s HTML tags
+#: settings.php:6528
+msgid "%s Sticky sidebar ads %s (stick to the screen or to the content)"
+msgstr "%s важлива бічна панель оголошень %s (дотримуйтеся на екрані або на вміст)"
+
+#. translators: %s HTML tags
+#: settings.php:6529
+msgid "%s Sticky ad animations %s (fade, slide, turn, flip, zoom)"
+msgstr "%s-анімацію з липкими оголошеннями %s (зникнення, ковзання, поворот, віддзеркалення, масштабування)"
+
+#. translators: %s HTML tags
+#: settings.php:6530
+msgid "%s Sticky ad trigger %s (page scroll in %% or px, HTML element becomes visible)"
+msgstr "%s-тригер із липким оголошенням %s (прокручування сторінки в%% або PX, елемент HTML стає видимим)"
+
+#. translators: %s HTML tags
+#: settings.php:6531
+msgid "%s Sticky (fixed) widgets %s (sidebar does not move when the page scrolls)"
+msgstr "%s липкі (виправлені) віджети %s (бічна панель не пересуватиметься, коли сторінка прокручується)"
+
+#. translators: %s HTML tags
+#: settings.php:6532
+msgid "Block %s alignment and style %s customizations"
+msgstr "Блокувати %s вирівнювання і стиль %s настроювання"
+
+#. translators: %s HTML tags
+#: settings.php:6533
+msgid "%s Clearance %s options to avoid insertion near images or headers (AdSense TOS)"
+msgstr "%s оформлення %s параметри, щоб уникнути вставки біля зображень або заголовків (AdSense TOS)"
+
+#. translators: %s HTML tags
+#: settings.php:6534
+msgid "Options to %s disable insertion %s on Ajax calls, 404 error pages or in RSS feeds"
+msgstr "Параметри для %s вимкнути вставку %s на AJAX дзвінки, 404 сторінок помилок або в RSS-канали"
+
+#. translators: %s HTML tags
+#: settings.php:6535
+msgid "%s Ad rotation %s (works also with caching)"
+msgstr "%s обертання оголошення %s (працює також з кешуванням)"
+
+#. translators: %s HTML tags
+#: settings.php:6538
+msgid "Ad impression and click %s tracking %s (works also with Javascript ads like AdSense)"
+msgstr "Оголошення враження і натисніть %s відстеження %s (працює також з JavaScript оголошень, як AdSense)"
+
+#. translators: %s HTML tags
+#: settings.php:6541
+msgid "Support for %s A/B testing %s"
+msgstr "Підтримка %s A/B тестування %s"
+
+#. translators: %s HTML tags
+#: settings.php:6546
+msgid "Support for %s lazy loading %s"
+msgstr "Підтримка %s ледачого завантаження %s"
+
+#. translators: %s HTML tags
+#: settings.php:6547
+msgid "Support for ads on %s AMP pages %s"
+msgstr "Підтримка оголошень на %s ПІДСИЛЮВАЧА сторінок %s"
+
+#. translators: %s HTML tags
+#: settings.php:6548
+msgid "Support for contextual %s Amazon Native Shopping Ads %s (responsive)"
+msgstr "Підтримка контекстуальної %s Amazon рідної реклами оголошень %s (реагувати)"
+
+#. translators: %s HTML tags
+#: settings.php:6549
+msgid "Custom CSS class name for wrapping divs to avoid ad blockers"
+msgstr "Користувальницькі CSS клас ім'я для упаковки Діви, щоб уникнути блокування реклами"
+
+#. translators: %s HTML tags
+#: settings.php:5137 settings.php:6550
+msgid "PHP code processing"
+msgstr "PHP обробки коду"
+
+#. translators: %s HTML tags
+#: settings.php:6551
+msgid "%s Banner %s code generator"
+msgstr "%s банер %s генератор коду"
+
+#. translators: %s HTML tags
+#: settings.php:6553
+msgid "Support for Google Analytics, Matomo or any other web analytics code"
+msgstr "Підтримка Google Analytics, Matomo або будь-який інший код веб-аналітики"
+
+#. translators: %s HTML tags
+#: settings.php:6556
+msgid "%s Ad blocking detection %s - popup message, ad replacement, content protection"
+msgstr "%s оголошення блокування виявлення %s-спливаюче повідомлення, заміна оголошення, захист вмісту"
+
+#. translators: %s HTML tags
+#: settings.php:6557
+msgid "%s Ad blocking statistics %s"
+msgstr "%s блокування оголошення статистика %s"
+
+#. translators: %s HTML tags
+#: settings.php:6559
+msgid "%s Black/White-list %s IP addresses or countries (works also with caching)"
+msgstr "%s чорний/білий список %s IP-адрес або країн (працює також з кешуванням)"
+
+#. translators: %s HTML tags
+#: settings.php:6560
+msgid "%s Multisite options %s to limit settings on the sites"
+msgstr "%s Багатосайтових параметрів %s для обмеження параметрів на сайтах"
+
+#. translators: %s HTML tags
+#: settings.php:6561
+msgid "%s Import/Export %s block or plugin settings"
+msgstr "%s імпортування та експортування блоків або параметрів модуля %s"
+
+#. translators: %s HTML tags
+#: settings.php:6562
+msgid "%s Insertion scheduling %s with fallback option"
+msgstr "%s планування вставки %s з параметром \"запасний\""
+
+#. translators: %s HTML tags
+#: settings.php:6563
+msgid "Country-level %s GEO targeting %s (works also with caching)"
+msgstr "На рівні країни %s гео орієнтація %s (працює також з кешуванням)"
+
+#. translators: %s HTML tags
+#: settings.php:6564
+msgid "Simple troubleshooting with many %s debugging functions %s"
+msgstr "Просте виправлення неполадок з багатьма %s налагоджувальної функції %s"
+
+#. translators: %s HTML tags
+#: settings.php:6565
+msgid "%s Visualization %s of inserted blocks or ads for easier placement"
+msgstr "%s-візуалізація %s вставлених блоків або оголошень для полегшення розміщення"
+
+#. translators: %s HTML tags
+#: settings.php:6566
+msgid "%s Visualization %s of available positions for automatic ad insertion"
+msgstr "%s-візуалізація %s доступних позицій для автоматичної вставки оголошень"
+
+#. translators: %s HTML tags
+#: settings.php:6567
+msgid "%s Visualization %s of HTML tags for easier ad placement between paragraphs"
+msgstr "%s візуалізація %s HTML-тегів для спрощення розміщення оголошень між абзацами"
+
+#. translators: %s HTML tags
+#: settings.php:6568
+msgid "%s Clipboard support %s to easily copy blocks or settings"
+msgstr "%s буфер обміну підтримка %s легко копіювати блоки або настройки"
+
+#. translators: %s HTML tags
+#: settings.php:6569
+msgid "No ads on the settings page"
+msgstr "Немає оголошень на сторінці налаштувань"
+
+#. translators: %s HTML tags
+#: settings.php:6573
+msgid "Ad Inserter Pro is a complete all-in-one ad management plugin for WordPress website with many advertising features to automatically insert adverts on posts and pages. With Ad Inserter Pro you also get <strong>one year of free updates and support via email</strong>. If you find Ad Inserter useful and need ad statistics for impressions and clicks, A/B testing, sticky ads, slider ads, pop-up ads, geotargeting or geolocation to serve country-specific ads, to protect content or to serve different ads for users using ad blockers, multisite options to limit settings for ads, to block some IP addresses, to schedule ads, then you can simply upgrade to %s Ad Inserter Pro %s (existing settings will be preserved)."
+msgstr "Оголошення вставки Pro є повне все-в-одному оголошення управління плагін для WordPress сайт з багатьма функціями реклами для автоматичного вставки реклами на посаді і сторінки. З оголошення вставки Pro ви також отримуєте <strong> один рік безкоштовних оновлень і підтримки по електронній пошті </strong>. Якщо ви знайшли оголошення вставки корисною і потрібна статистика об'яв для показів і кліків, A/B тестування, важливо ADS, повзунок оголошень, спливаючі оголошення, geogeargation або геопозиціювання для обслуговування конкретної країни оголошень, для захисту контенту або для обслуговування різних об'яв для користувачів, що використовують рекламні блокатори, багатосайтових параметрів для обмеження параметрів оголошень, для блокування деяких IP-адрес, для планування оголошень, то ви можете просто оновити до %s оголошення вставки Pro %s (існуючі настройки будуть збережені)."
+
+#. translators: %s HTML tags
+#: settings.php:6591
+msgid "Ads between posts"
+msgstr "Оголошення між постами"
+
+#. translators: %s HTML tags
+#: settings.php:6592
+msgid "Ads between comments"
+msgstr "Оголошення між коментарями"
+
+#. translators: %s HTML tags
+#: settings.php:6593
+msgid "Support via email"
+msgstr "Підтримка по електронній пошті"
+
+#. translators: %s HTML tags
+#: settings.php:6599
+msgid "%s Sticky positions %s"
+msgstr "%s липкі позиції %s"
+
+#. translators: %s HTML tags
+#: settings.php:6600
+msgid "%s Limit insertions %s"
+msgstr "%s обмеження на вставлення %s"
+
+#. translators: %s HTML tags
+#: settings.php:6601
+msgid "%s Clearance %s options"
+msgstr "параметри оформлення %s %s"
+
+#. translators: %s HTML tags
+#: settings.php:6607
+msgid "Ad rotation"
+msgstr "Обертання оголошення"
+
+#. translators: %s HTML tags
+#: settings.php:6608
+msgid "%s A/B testing %s"
+msgstr "%s A/B тестування %s"
+
+#. translators: %s HTML tags
+#: settings.php:6609
+msgid "%s Ad tracking %s"
+msgstr "%s відстеження оголошень %s"
+
+#. translators: %s HTML tags
+#: settings.php:6615
+msgid "Support for %s AMP pages %s"
+msgstr "Підтримка %s ПІДСИЛЮВАЧА сторінок %s"
+
+#. translators: %s HTML tags
+#: settings.php:6616
+msgid "%s Ad blocking detection %s"
+msgstr "%s виявлення блокування оголошення %s"
+
+#. translators: %s HTML tags
+#: settings.php:6617
+msgid "%s Mobile device detection %s"
+msgstr "%s виявлення мобільних пристроїв %s"
+
+#. translators: %s HTML tags
+#: settings.php:6624
+msgid "64 code blocks"
+msgstr "64 кодові блоки"
+
+#. translators: %s HTML tags
+#: settings.php:6625
+msgid "%s GEO targeting %s"
+msgstr "%s гео орієнтація %s"
+
+#. translators: %s HTML tags
+#: settings.php:6626
+msgid "%s Scheduling %s"
+msgstr "%s планування %s"
+
+#: strings.php:224
+msgctxt "Button"
+msgid "Show"
+msgstr "Показати"
+
+#. Description of the plugin
+#: ad-inserter.php
+msgid "Ad management with many advanced advertising features to insert ads at optimal positions"
+msgstr "Управління оголошеннями з безліччю передових рекламних функцій для вставки реклами на оптимальних позиціях"
+
+#. translators: %s: Ad Inserter
+#: ad-inserter.php:2225 ad-inserter.php:2228 ad-inserter.php:3861
+msgid "%s Settings"
+msgstr "%s Налаштування"
+
+#: settings.php:2435
+msgid "for"
+msgstr "для"
+
+#: settings.php:2333
+msgid "Max"
+msgstr "Макс."
+
+#: settings.php:1855 settings.php:1881
+msgid "In"
+msgstr "дюйм"
+
+#: includes/dst/dst.php:364
+msgid "Once Weekly"
+msgstr "Один раз на тиждень"
+
+#. translators: %s HTML tags
+#: settings.php:6518
+msgid "%s Automatic insertion %s before or after post / content / %s paragraph %s / image / excerpt"
+msgstr "%s автоматичне вставлення %s до або після повідомлення/вмісту/ %s абзацу %s/зображення/уривок"
+
+#: ad-inserter.php:3930
+msgid "ARCHIVE PAGE"
+msgstr "СТОРІНКА АРХІВУ"
+
+#: settings.php:1174
+msgctxt "AdSense"
+msgid "Layout"
+msgstr "Макет"
+
+#. translators: %d: block number
+#: settings.php:1423
+msgid "Are you sure you want to clear listed exceptions for block %d?"
+msgstr "Ви дійсно бажаєте видалити перелічені винятки для блок-%d?"
+
+#: class.php:5748 strings.php:287
+msgid "BEFORE"
+msgstr "ДО"
+
+#: includes/dst/dst.php:938
+msgctxt "Button"
+msgid "Allow"
+msgstr "Дозволено"
+
+#: includes/dst/dst.php:940
+msgctxt "Button"
+msgid "Do not allow"
+msgstr "Не дозволено"
+
+#: ad-inserter.php:3924
+msgid "CATEGORY PAGE"
+msgstr "СТОРІНКА «КАТЕГОРІЯ»"
+
+#. translators: %d: block number
+#: settings.php:1424
+msgid "Clear listed exceptions for block"
+msgstr "Очищення перелічених винятків для блоку"
+
+#: settings.php:5400
+msgid "Client ID"
+msgstr "ID Клієнта"
+
+#: settings.php:2335
+msgid "Count this block for Max blocks per page limit (defined on the tab [*] / tab General)"
+msgstr "Порахуйте цей блок для максимальної кількості блоків на сторінку (визначено на вкладці [*] / tab General)"
+
+#: settings.php:3450
+msgid "Custom Url"
+msgstr "Настроювана URL-адреса"
+
+#: ad-inserter.php:3820 ad-inserter.php:3832 settings.php:2983
+#: settings.php:3072 strings.php:180
+msgid "Enabled"
+msgstr "Увімкнути"
+
+#: ad-inserter.php:3798
+msgctxt "Enabled/disabled on all"
+msgid "pages"
+msgstr "сторінки"
+
+#: settings.php:2320
+msgid "Error 404 page"
+msgstr "Помилка 404 сторінки"
+
+#: ad-inserter.php:8387
+msgid "Error importing settings for block"
+msgid_plural "Error importing settings for blocks:"
+msgstr[0] "Помилка імпортування параметрів блоку"
+msgstr[1] "Помилка імпортування параметрів блоків:"
+msgstr[2] "Помилка імпортування параметрів блоків:"
+
+#: includes/dst/dst.php:359
+msgid "Every minute"
+msgstr "Кожну хвилину"
+
+#: ad-inserter.php:3921
+msgid "HOMEPAGE"
+msgstr "ГОЛОВНА СТОРІНКА"
+
+#: ad-inserter.php:677
+msgctxt "Menu item"
+msgid "Log Processing"
+msgstr "Журнал обробки"
+
+#: settings.php:2857
+msgid "Min. user role for ind. exceptions editing"
+msgstr "Min. роль користувача для редагування виключень IND"
+
+#: class.php:2708
+msgid "NO"
+msgstr "НІ"
+
+#: includes/dst/dst.php:566
+msgid "No plugin data."
+msgstr "Стерти дані плагінів."
+
+#: includes/dst/dst.php:368
+msgid "Once Monthly"
+msgstr "Один раз на місяць"
+
+#: settings.php:418
+msgid "Option name"
+msgstr "Назва властивості"
+
+#: settings.php:2635
+msgid "Output buffering"
+msgstr "Буферизація виводу"
+
+#: ad-inserter.php:3918
+msgid "POST"
+msgstr "Пост"
+
+#: ad-inserter.php:3534
+msgid "Positive reviews are a great incentive to fix bugs and to add new features for better monetization of your website."
+msgstr "Позитивні відгуки - це чудовий стимул виправити помилки та додати нові функції для кращої монетизації вашого веб-сайту."
+
+#: settings.php:6231
+msgctxt "Review Ad Inserter"
+msgid "Review"
+msgstr "Огляд"
+
+#: ad-inserter.php:3927
+msgid "SEARCH PAGE"
+msgstr "СТОРІНЦІ ПОШУКУ"
+
+#: settings.php:1062
+msgid "Select Image"
+msgstr "Вибрати зображення"
+
+#: settings.php:424
+msgid "Share"
+msgstr "Поділитися"
+
+#: includes/dst/dst.php:1220
+msgid "Sorry to see you go"
+msgstr "вибач!! Ви не можете редагувати цей альбом."
+
+#: includes/dst/dst.php:1181
+msgid "Thank you for installing our plugin. We would like to track its usage on your site. This is completely optional."
+msgstr "Дякуємо за установку нашого плагіна. Ми хотіли б відслідковувати його використання на вашому сайті. Це абсолютно необов'язково."
+
+#: includes/dst/dst.php:1168
+msgid "Thank you for installing our plugin. We'd like your permission to track its usage on your site and subscribe you to our newsletter. This is completely optional."
+msgstr "Дякуємо за установку нашого плагіна. Ми хотіли б, щоб ваш дозвіл відстежувати його використання на вашому сайті і підписатися на нашу розсилку. Це абсолютно необов'язково."
+
+#: includes/dst/dst.php:1185
+msgid "Thank you for installing our theme. We would like to track its usage on your site. This is completely optional."
+msgstr "Дякуємо за установку нашої теми. Ми хотіли б відслідковувати його використання на вашому сайті. Це абсолютно необов'язково."
+
+#: includes/dst/dst.php:1172
+msgid "Thank you for installing our theme. We'd like your permission to track its usage on your site and subscribe you to our newsletter. This is completely optional."
+msgstr "Дякуємо за установку нашої теми. Ми хотіли б, щоб ваш дозвіл відстежувати його використання на вашому сайті і підписатися на нашу розсилку. Це абсолютно необов'язково."
+
+#: includes/dst/dst.php:1196
+msgid "Thank you for opting in to tracking. Would you like to receive occasional news about this plugin, including details of new features and special offers?"
+msgstr "Дякуємо, що вирішили відстежити. Ви хотіли б отримувати випадкові новини про цей плагін, включаючи деталі нових функцій та спеціальних пропозицій?"
+
+#: includes/dst/dst.php:1198
+msgid "Thank you for opting in to tracking. Would you like to receive occasional news about this theme, including details of new features and special offers?"
+msgstr "Дякуємо, що вирішили відстежити. Ви хотіли б отримувати випадкові новини на цю тему, включаючи деталі нових функцій та спеціальних пропозицій?"
+
+#: includes/dst/dst.php:372
+msgid "Twice Monthly"
+msgstr "Двічі на місяць"
+
+#: settings.php:372 settings.php:398
+msgid "WARNING"
+msgstr "УВАГА"
+
+#: includes/dst/dst.php:1182
+msgid "We don't record any sensitive data, only information regarding the WordPress environment and plugin settings, which will help us to make improvements to the plugin."
+msgstr "Ми не записуватимемо жодних конфіденційних даних, лише інформацію про середовище WordPress та налаштування плагінів, що допоможе нам внести поліпшення до плагіна."
+
+#: includes/dst/dst.php:1186
+msgid "We don't record any sensitive data, only information regarding the WordPress environment and theme settings, which will help us to make improvements to the theme."
+msgstr "Ми не записуємо жодних конфіденційних даних, лише інформацію про середовище WordPress та налаштування теми, що допоможе нам внести поліпшення в тему."
+
+#: includes/dst/dst.php:1169
+msgid "We won't record any sensitive data, only information regarding the WordPress environment and plugin settings, which will help us to make improvements to the plugin."
+msgstr "Ми не будемо записувати будь-які конфіденційні дані, тільки інформація про середовище WordPress і налаштування плагінів, які допоможуть нам внести поліпшення в плагін."
+
+#: includes/dst/dst.php:1173
+msgid "We won't record any sensitive data, only information regarding the WordPress environment and theme settings, which will help us to make improvements to the theme."
+msgstr "Ми не будемо записувати будь-які конфіденційні дані, тільки інформація про середовище WordPress і налаштування теми, які допоможуть нам внести поліпшення в тему."
+
+#: ad-inserter.php:13001
+msgctxt "Widget"
+msgid "Sticky"
+msgstr "Липкий"
+
+#: class.php:2708
+msgid "YES"
+msgstr "ТАК"
+
+#. translators: %s: Ad Inserter, HTML tags
+#: settings.php:6259
+msgid "You've been using %s for a while now, and I hope you're happy with it. Positive %s reviews %s are a great way to show your appreciation for my work. Besides being an incredible boost to my morale, they are also a great incentive to fix bugs and to add new features for better monetization of your website. When you rate it with 5 stars it's like saying 'Thank you'."
+msgstr "Ви використовуєте його %s деякий час, і я сподіваюся, що ви задоволені ним. Позитивні %s відгуки %s це відмінний спосіб показати свою вдячність за мою роботу. Крім того, що це неймовірний поштовх для мого морального духу, вони також є чудовим стимулом для виправлення помилок та додавання нових функцій для кращої монетизації вашого веб-сайту. Коли ви оціните його з 5 зірками, це як сказати \"Дякую\"."
+
+#: settings.php:3175
+msgid "action"
+msgstr "дії"
+
+#. translators: block status (widget title)
+#: ad-inserter.php:12968
+msgctxt "block"
+msgid "PAUSED"
+msgstr "ПРИЗУПИНЕНО"
+
+#: ad-inserter.php:4141
+msgid "character"
+msgid_plural "characters"
+msgstr[0] "характер"
+msgstr[1] "характер"
+msgstr[2] "характер"
+
+#: ad-inserter.php:4162 ad-inserter.php:4433
+msgid "character inserted"
+msgid_plural "characters inserted"
+msgstr[0] "символ вставлено"
+msgstr[1] "символи вставлено"
+msgstr[2] "символи вставлено"
+
+#: settings.php:1921
+msgctxt "check up to"
+msgid "paragraphs"
+msgstr "абзаци"
+
+#: settings.php:2333
+msgid "insertions"
+msgstr "вставки"
+
+#. translators: %s: list parameters and type
+#: class.php:4828
+msgid "ip addresses='%s' type='%s'"
+msgstr "ip-адреси = \" %s\" типу = \" %s\""
+
+#: class.php:4623
+msgid "parameters='%s' type='%s'"
+msgstr "параметри = \" %s\" типу = \" %s\""
+
+#: settings.php:3181
+msgid "priority"
+msgstr "пріоритет"
+
+#: ad-inserter.php:12563
+msgid "requires WordPress 4.6 or newer"
+msgstr "потрібен WordPress 4.6 або новіший"
+
+#: settings.php:2394
+msgid "using"
+msgstr "використання"
+
+#. Translators: Post/Static page must have between X and Y words
+#: ad-inserter.php:8864 ad-inserter.php:8866 ad-inserter.php:8889
+#: settings.php:2423
+msgid "word"
+msgid_plural "words"
+msgstr[0] "слово"
+msgstr[1] "слова"
+msgstr[2] "слова"
+
+#: settings.php:1694
+msgid "words"
+msgstr "слів"
+
+#: settings.php:2534
+msgid "Settings"
+msgstr "Налаштування"
+
+#: settings.php:1340 settings.php:4100
+msgid "Homepage"
+msgstr "Домашня сторінка"
+
+#: settings.php:1937
+msgid "Categories"
+msgstr "Категорії"
+
+#: includes/placeholders.php:352 includes/preview.php:2819 settings.php:1561
+#: settings.php:4318
+msgid "Edit"
+msgstr "Редагувати"
+
+#: ad-inserter.php:12979 settings.php:1418
+msgid "Title"
+msgstr "Заголовок"
+
+#: settings.php:1026
+msgid "Image"
+msgstr "Зображення"
+
+#: settings.php:1048
+msgid "Link"
+msgstr "Посилання"
+
+#: settings.php:436
+msgid "Time"
+msgstr "Час"
+
+#: includes/preview.php:2549 includes/preview.php:2761 settings.php:1522
+msgid "Alignment"
+msgstr "Вирівнювання"
+
+#: settings.php:1590 settings.php:3378
+msgid "Action"
+msgstr "Дія"
+
+#: settings.php:1059
+msgid "Open link in a new tab"
+msgstr "Відкрити посилання у новій вкладці"
+
+#: ad-inserter.php:3779 settings.php:5134 settings.php:5226
+msgid "Name"
+msgstr "Ім'я"
+
+#: settings.php:1335 settings.php:4098
+msgid "Posts"
+msgstr "Записи"
+
+#: includes/placeholders.php:362 settings.php:1120 settings.php:5229
+msgid "Size"
+msgstr "Розмір"
+
+#: ad-inserter.php:3778 ad-inserter.php:12984 class.php:2629
+#: includes/preview.php:2439 includes/preview.php:2484
+#: includes/preview.php:2521 settings.php:5126 strings.php:3 strings.php:210
+msgid "Block"
+msgstr "Блок"
+
+#: settings.php:2315
+msgid "RSS Feed"
+msgstr "RSS-канал"
+
+#: settings.php:1960
+msgid "Tags"
+msgstr "Позначки"
+
+#: settings.php:1571
+msgid "HTML element"
+msgstr "Елемент HTML"
+
+#: settings.php:2164 settings.php:5150
+msgid "Shortcode"
+msgstr "Короткий код"
+
+#: settings.php:4572 settings.php:5228
+msgid "Type"
+msgstr "Тип"
+
+#: settings.php:1080
+msgid "Comment"
+msgstr "Коментар"
+
+#: settings.php:2283
+msgid "Filter"
+msgstr "Фільтр"
+
+#: settings.php:1983
+msgid "Taxonomies"
+msgstr "Таксономії"
+
+#: settings.php:1361 settings.php:4103
+msgid "Search pages"
+msgstr "Сторінки пошуку"
+
+#: settings.php:4219 settings.php:4255 settings.php:4329 strings.php:255
+msgid "Loading..."
+msgstr "Завантаження..."
+
+#: settings.php:2437
+msgid "Not available"
+msgstr "Недоступно"
+
+#: ad-inserter.php:8415
+msgid "Settings saved."
+msgstr "Налаштування збережені."
+
+#: settings.php:5344
+msgid "Authorize"
+msgstr "Авторизація"
+
+#: settings.php:1315
+msgid "Manual"
+msgstr "Вручну"
+
+#. Plugin Name of the plugin
+#: ad-inserter.php
+msgid "Ad Inserter"
+msgstr "Ad Inserter"
+
+#. Plugin URI of the plugin
+#: ad-inserter.php
+msgid "https://adinserter.pro/documentation"
+msgstr "https://adinserter.pro/documentation"
+
+#. Author of the plugin
+#: ad-inserter.php
+msgid "Igor Funa"
+msgstr "Igor Funa"
+
+#. Author URI of the plugin
+#: ad-inserter.php
+msgid "http://igorfuna.com/"
+msgstr "http://igorfuna.com/"
+
+#: ad-inserter.php:4162
+msgid "Header code"
+msgstr "Код заголовка"
+
+#. translators: %d: hook number
+#: settings.php:3169
+msgid "Hook %d name"
+msgstr "Гачок %d ім'я"
+
+#. translators: %s HTML tags
+#: settings.php:6519
+msgid "%s Automatic insertion %s between posts on blog pages"
+msgstr "%s Автоматична вставка %s між публікаціями на сторінках блогу"
+
+#. translators: %s HTML tags
+#: settings.php:6521
+msgid "%s Automatic insertion %s after %s or before %s tag"
+msgstr "%s Автоматична вставка %s після %s або перед тегом %s"
+
+#. translators: %s HTML tags
+#: settings.php:6552
+msgid "Support for %s header and footer %s code"
+msgstr "Підтримка %s коду верхнього та нижнього колонтитулів %s"
+
+#. translators: %s HTML tags
+#: settings.php:6586
+msgid "Looking for %s Pro Ad Management plugin? %s"
+msgstr "Шукаєте %s Pro оголошення управління плагінів? %s"
+
+#. translators: %s: HTML tags
+#: settings.php:5393
+msgid "Click on %s Ad Inserter client %s to get %s Client ID %s and %s Client secret %s"
+msgstr "Щоб отримати %s клієнта, %s і %s клієнта %s %s-не секрет, що клієнт з КОДОМ оголошення"
+
+#: includes/preview.php:2437 settings.php:1318 settings.php:3491
+msgid "Preview"
+msgstr "Переглянути"
+
+#: class.php:2583
+msgid "Content"
+msgstr "Вміст"
+
+#: settings.php:2288 settings.php:2596
+msgid "General"
+msgstr "Загальне"
+
+#: settings.php:2286
+msgid "Display"
+msgstr "Відображення"
+
+#. translators: %s HTML tags
+#: settings.php:6554
+msgid "Desktop, tablet and phone server-side %s device detection %s"
+msgstr "%sВиявлення пристроїв%s на стороні сервера (комп’ютерів, планшетів, і телефонів)"
+
+#: settings.php:317
+msgid "Support Forum"
+msgstr "Форум підтримки"
+
+#: settings.php:2553
+msgid "Reset All Settings"
+msgstr "Скинути всі налаштування"
+
+#: class.php:2593 strings.php:17
+msgid "Before post"
+msgstr "Перед записом"
+
+#: settings.php:6277
+msgid "Review"
+msgstr "Відгук"

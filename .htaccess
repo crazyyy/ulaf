@@ -1,9 +1,3 @@
-# SGS XMLRPC Disable Service
-<Files xmlrpc.php>
-	order deny,allow
-	deny from all
-</Files>
-# SGS XMLRPC Disable Service END
 # BEGIN LSCACHE
 ## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
 <IfModule LiteSpeed>
@@ -44,8 +38,6 @@ CacheKeyModify -qs:_ga
 ## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
 ## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
 # END NON_LSCACHE
-
-
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
@@ -58,49 +50,14 @@ RewriteRule . /index.php [L]
 # Директиви (рядки) між `BEGIN WordPress` і `END WordPress`
 # створені автоматично і підлягають змінам тільки через фільтри WordPress.
 # Зміни зроблені вручну між цими маркерами будуть перезаписані.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
 
 # END WordPress
-
-# BEGIN LiteSpeed
-# Директиви (рядки) між `BEGIN LiteSpeed` і `END LiteSpeed`
-# створені автоматично і підлягають змінам тільки через фільтри WordPress.
-# Зміни зроблені вручну між цими маркерами будуть перезаписані.
-<IfModule Litespeed>
-	SetEnv noabort 1
-</IfModule>
-# END LiteSpeed
-# BEGIN HttpHeaders
-# Директиви (рядки) між `BEGIN HttpHeaders` і `END HttpHeaders`
-# створені автоматично і підлягають змінам тільки через фільтри WordPress.
-# Зміни зроблені вручну між цими маркерами будуть перезаписані.
-# END HttpHeaders
-# BEGIN HttpHeadersAuth
-# Директиви (рядки) між `BEGIN HttpHeadersAuth` і `END HttpHeadersAuth`
-# створені автоматично і підлягають змінам тільки через фільтри WordPress.
-# Зміни зроблені вручну між цими маркерами будуть перезаписані.
-# END HttpHeadersAuth
-# BEGIN HttpHeadersCompression
-# Директиви (рядки) між `BEGIN HttpHeadersCompression` і `END HttpHeadersCompression`
-# створені автоматично і підлягають змінам тільки через фільтри WordPress.
-# Зміни зроблені вручну між цими маркерами будуть перезаписані.
-# END HttpHeadersCompression
-# BEGIN HttpHeadersContentType
-# Директиви (рядки) між `BEGIN HttpHeadersContentType` і `END HttpHeadersContentType`
-# створені автоматично і підлягають змінам тільки через фільтри WordPress.
-# Зміни зроблені вручну між цими маркерами будуть перезаписані.
-# END HttpHeadersContentType
-# BEGIN HttpHeadersExpires
-# Директиви (рядки) між `BEGIN HttpHeadersExpires` і `END HttpHeadersExpires`
-# створені автоматично і підлягають змінам тільки через фільтри WordPress.
-# Зміни зроблені вручну між цими маркерами будуть перезаписані.
-# END HttpHeadersExpires
-# BEGIN HttpHeadersCookieSecurity
-# Директиви (рядки) між `BEGIN HttpHeadersCookieSecurity` і `END HttpHeadersCookieSecurity`
-# створені автоматично і підлягають змінам тільки через фільтри WordPress.
-# Зміни зроблені вручну між цими маркерами будуть перезаписані.
-# END HttpHeadersCookieSecurity
-# BEGIN HttpHeadersTiming
-# Директиви (рядки) між `BEGIN HttpHeadersTiming` і `END HttpHeadersTiming`
-# створені автоматично і підлягають змінам тільки через фільтри WordPress.
-# Зміни зроблені вручну між цими маркерами будуть перезаписані.
-# END HttpHeadersTiming
