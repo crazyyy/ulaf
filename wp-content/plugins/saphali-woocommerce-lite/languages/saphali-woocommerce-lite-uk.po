@@ -1,0 +1,493 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Saphali Woocommerce Lite\n"
+"POT-Creation-Date: 2025-02-23 19:49+0000\n"
+"PO-Revision-Date: 2025-02-23 19:51+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: saphali-woocommerce-lite.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: address-block-editor.php:138
+msgid " (optional)"
+msgstr " (optional)"
+
+#: address-block-editor.php:417
+msgid "Please enter a valid date and time."
+msgstr "Будь ласка, введіть дійсну дату та час."
+
+#: admin/admin-page-block.php:8
+#, php-format
+msgid ""
+"Для работы плагина Saphali WooCommerce Lite в блоковом чекауте требуется "
+"WooCommerce 8.5.0 или выше. У Вас установлен WooCommerce %s"
+msgstr ""
+"Для роботи плагіна Saphali WooCommerce Lite у блоковому чекауті потрібно "
+"WooCommerce 8.5.0 або вище. У Вас встановлено WooCommerce %s"
+
+#: admin/admin-page-block.php:164 saphali-woocommerce-lite.php:137
+msgid "Неуспешная верификация."
+msgstr "Неуспішна верифікація."
+
+#: admin/admin-page-block.php:172
+msgid "Настройки Saphali WooCommerce Lite (блоки)"
+msgstr "Налаштування Saphali WooCommerce Lite (блоки)"
+
+#: admin/admin-page-block.php:173
+msgid "Здесь можно управлять полями чекаута."
+msgstr "Тут можна керувати полями чекауту."
+
+#: admin/admin-page-block.php:175 admin/admin-page.php:89
+msgid "Управление полями"
+msgstr "Управління полями"
+
+#: admin/admin-page-block.php:176 admin/admin-page.php:90
+msgid "Число колонок в каталоге"
+msgstr "Число колонок у каталозі"
+
+#: admin/admin-page-block.php:177 admin/admin-page-block.php:391
+#: admin/admin-page.php:91 admin/admin-page.php:594
+msgid "Дополнительная информация"
+msgstr "Додаткова інформація"
+
+#: admin/admin-page-block.php:187
+msgid "Поле (key)"
+msgstr "Поле (key)"
+
+#: admin/admin-page-block.php:188
+msgid "Заголовок (label)"
+msgstr "Заголовок (label)"
+
+#: admin/admin-page-block.php:189
+msgid "Плейсхолдер"
+msgstr "Плейсхолдер"
+
+#: admin/admin-page-block.php:190 admin/admin-page.php:43
+#: admin/admin-page.php:61 admin/admin-page.php:77
+msgid "Clear"
+msgstr "Clear"
+
+#: admin/admin-page-block.php:190 admin/admin-page.php:44
+#: admin/admin-page.php:62 admin/admin-page.php:77
+msgid ""
+"Указывает на то, что следующее поле за текущим, будет начинаться с новой "
+"строки."
+msgstr ""
+"Вказує на те, що наступне поле за поточним буде починатися з нового рядка."
+
+#: admin/admin-page-block.php:191 admin/admin-page.php:45
+#: admin/admin-page.php:63
+msgid "Класс поля"
+msgstr "Клас поля"
+
+#: admin/admin-page-block.php:192 admin/admin-page.php:46
+msgid "Задает стиль текущего поля"
+msgstr "Вказує стиль поточного поля"
+
+#: admin/admin-page-block.php:193 admin/admin-page.php:47
+msgid "первый в строке"
+msgstr "перший у рядку"
+
+#: admin/admin-page-block.php:194 admin/admin-page.php:48
+msgid "последний в строке"
+msgstr "останній у рядку"
+
+#: admin/admin-page-block.php:195 admin/admin-page.php:49
+msgid "ЕСЛИ ОСТАВИТЬ ПУСТЫМ"
+msgstr "ЯКЩО ЗАЛИШИТИ ПОРОЖНІМ"
+
+#: admin/admin-page-block.php:196 admin/admin-page.php:50
+msgid ""
+"то поле будет отображаться на всю ширину. Соответственно, в предыдущем поле "
+"(которое выше) нужно отметить &laquo;Clear&__(raquo;."
+msgstr ""
+"то поле відображатиметься на всю ширину. Відповідно, у попередньому полі "
+"(яке вище) слід зазначити «Clear&__(raquo;."
+
+#: admin/admin-page-block.php:197 admin/admin-page.php:51
+#: admin/admin-page.php:64 admin/admin-page.php:73
+msgid "Тип поля"
+msgstr "Тип поля"
+
+#: admin/admin-page-block.php:198
+msgid "Order (порядок)"
+msgstr "Order (порядок)"
+
+#: admin/admin-page-block.php:199
+msgid "Обза&shy;те&shy;ль&shy;ное?"
+msgstr "Обо&shy;в'яз&shy;кове?"
+
+#: admin/admin-page-block.php:200
+msgid "Опу&shy;бли&shy;ковать"
+msgstr "Опу&shy;блі&shy;кувати"
+
+#: admin/admin-page-block.php:201 admin/admin-page.php:54
+#: admin/admin-page.php:67 admin/admin-page.php:79
+msgid "Метод оплаты"
+msgstr "Метод оплати"
+
+#: admin/admin-page-block.php:202 admin/admin-page.php:55
+#: admin/admin-page.php:68 admin/admin-page.php:80
+msgid "Метод доставки"
+msgstr "Метод доставки"
+
+#: admin/admin-page-block.php:221
+msgid "Billing Fields"
+msgstr "Billing Fields"
+
+#: admin/admin-page-block.php:223
+msgid "Shipping Fields"
+msgstr "Shipping Fields"
+
+#: admin/admin-page-block.php:225
+msgid "Account Fields"
+msgstr "Account Fields"
+
+#: admin/admin-page-block.php:227 admin/admin-page-block.php:367
+#: admin/admin-page-block.php:369
+msgid "Order Fields"
+msgstr "Order Fields"
+
+#: admin/admin-page-block.php:273
+msgid "Options:"
+msgstr "Опції:"
+
+#: admin/admin-page-block.php:323 admin/admin-page-block.php:334
+#: admin/admin-page.php:481 admin/admin-page.php:491
+msgid "Все"
+msgstr "Всі"
+
+#: admin/admin-page-block.php:356
+msgid "+ Добавить поле"
+msgstr "+ Додати поле"
+
+#: admin/admin-page-block.php:369
+#, php-format
+msgid "Отображать поля \"%s\" в области \"Контактная информация\""
+msgstr "Відображати поля \"%s\" в області \"Контактна інформація\""
+
+#: admin/admin-page-block.php:375
+msgid "Only Date"
+msgstr "Тільки дата"
+
+#: admin/admin-page-block.php:377
+msgid ""
+"Для полей с типом \"Date&amp;time\" выводить только календарь без "
+"возможности выбора времени"
+msgstr ""
+"Для полів з типом \"Date&amp;time\" виводити лише календар без можливості "
+"вибору часу"
+
+#: admin/admin-page-block.php:384
+msgid "Сбросить поля"
+msgstr "Скинути поля"
+
+#: admin/admin-page-block.php:385
+msgid "Сохранить поля"
+msgstr "Зберегти поля"
+
+#: admin/admin-page-block.php:394 admin/admin-page.php:597
+msgid "Число колонок в каталоге товаров и в рубриках"
+msgstr "Число колонок у каталозі товарів та в рубриках"
+
+#: admin/admin-page.php:39 admin/admin-page.php:58
+msgid "Название"
+msgstr "Назва"
+
+#: admin/admin-page.php:40
+msgid ""
+"Название поля должно быть уни&shy;ка&shy;ль&shy;ным (не должно повторяться)."
+msgstr "Назва поля має бути унікальною (не повинно повторюватися)."
+
+#: admin/admin-page.php:41 admin/admin-page.php:59
+msgid "Заголовок"
+msgstr "Заголовок"
+
+#: admin/admin-page.php:42 admin/admin-page.php:60
+msgid "Текст в поле"
+msgstr "Текст у полі"
+
+#: admin/admin-page.php:52 admin/admin-page.php:65 admin/admin-page.php:78
+msgid "Обя&shy;за&shy;те&shy;ль&shy;ное"
+msgstr "Обо&shy;в'яз&shy;кове"
+
+#: admin/admin-page.php:53 admin/admin-page.php:66
+msgid "Опу&shy;бли&shy;ко&shy;вать"
+msgstr "Опу&shy;бліку&shy;вати"
+
+#: admin/admin-page.php:56 admin/admin-page.php:69
+msgid "Удалить/До&shy;ба&shy;вить"
+msgstr "Видалити/Додати"
+
+#: admin/admin-page.php:86
+msgid "Настройки Saphali WC"
+msgstr "Налаштування Saphali WC"
+
+#: admin/admin-page.php:266
+msgid "Управление полями на странице заказа и на странице профиля"
+msgstr "Керування полями на сторінці замовлення та на сторінці профілю"
+
+#: admin/admin-page.php:269
+msgid "Настройки не сохранены. Неуспешная верификация"
+msgstr "Установки не збережені. Неуспішна верифікація"
+
+#: admin/admin-page.php:271
+msgid "Настройки сохранены"
+msgstr "Установки збережені"
+
+#: admin/admin-page.php:274
+msgid "Реквизиты оплаты"
+msgstr "Реквізити оплати"
+
+#: admin/admin-page.php:399 admin/admin-page.php:501 admin/admin-page.php:555
+#: saphali-woocommerce-lite.php:854
+msgid "Удалить"
+msgstr "Видалити"
+
+#: admin/admin-page.php:415 admin/admin-page.php:522 admin/admin-page.php:576
+#: saphali-woocommerce-lite.php:855
+msgid "Добавить"
+msgstr "Додати"
+
+#: admin/admin-page.php:420
+msgid "Реквизиты доставки"
+msgstr "Реквізити доставки"
+
+#: admin/admin-page.php:528
+msgid "Дополнительные поля"
+msgstr "Додаткові поля"
+
+#: admin/admin-page.php:580
+msgid "Save"
+msgstr "Зберегти"
+
+#: admin/admin-page.php:585
+msgid "Восстановить поля по умолчанию"
+msgstr "Відновити поля за промовчанням"
+
+#: saphali-woocommerce-lite.php:187
+#, php-format
+msgid "%s is required"
+msgstr "%s потрібно"
+
+#: saphali-woocommerce-lite.php:356 saphali-woocommerce-lite.php:390
+#, php-format
+msgctxt "FIELDNAME is a required field."
+msgid "%s is a required field."
+msgstr "%s - обов'язкове поле."
+
+#: saphali-woocommerce-lite.php:358 saphali-woocommerce-lite.php:392
+msgid "is a required field."
+msgstr "є обов'язковим полем."
+
+#. translators: %s: field name
+#: saphali-woocommerce-lite.php:363 saphali-woocommerce-lite.php:397
+#, php-format
+msgctxt "checkout-validation"
+msgid "Shipping %s"
+msgstr "Shipping %s"
+
+#. translators: %s: field name
+#: saphali-woocommerce-lite.php:367 saphali-woocommerce-lite.php:401
+#, php-format
+msgctxt "checkout-validation"
+msgid "Billing %s"
+msgstr "Billing %s"
+
+#: saphali-woocommerce-lite.php:371 saphali-woocommerce-lite.php:373
+#: saphali-woocommerce-lite.php:405 saphali-woocommerce-lite.php:407
+#, php-format
+msgid "%s is a required field."
+msgstr "%s - обов'язкове поле."
+
+#: saphali-woocommerce-lite.php:752 saphali-woocommerce-lite.php:956
+#: saphali-woocommerce-lite.php:1127
+msgid "Customer Billing Address"
+msgstr "Платіжна адреса клієнта"
+
+#: saphali-woocommerce-lite.php:756 saphali-woocommerce-lite.php:1005
+#: saphali-woocommerce-lite.php:1131
+msgid "Customer Shipping Address"
+msgstr "Адреса доставки клієнта"
+
+#: saphali-woocommerce-lite.php:787
+msgid "Настройки Saphali WC Lite"
+msgstr "Налаштування Saphali WC Lite"
+
+#: saphali-woocommerce-lite.php:787
+msgid "Saphali WC Lite"
+msgstr "Saphali WC Lite"
+
+#: saphali-woocommerce-lite.php:790
+msgid "Ukrainian hryvnia"
+msgstr "Українська гривня"
+
+#: saphali-woocommerce-lite.php:791 saphali-woocommerce-lite.php:793
+msgid "Russian ruble"
+msgstr "Російський рубль"
+
+#: saphali-woocommerce-lite.php:794 saphali-woocommerce-lite.php:795
+#, php-format
+msgid "Belarusian ruble%s"
+msgstr "Білоруський рубль%s"
+
+#: saphali-woocommerce-lite.php:794
+msgid " (new)"
+msgstr " (нове)"
+
+#: saphali-woocommerce-lite.php:796
+msgid "Armenian dram  (Դրամ)"
+msgstr "Вірменський драм (Դրամ)"
+
+#: saphali-woocommerce-lite.php:797
+msgid "Киргизский сом"
+msgstr "Киргизький сом"
+
+#: saphali-woocommerce-lite.php:798
+msgid "Казахстанский тенге "
+msgstr "Казахстанський тенге "
+
+#: saphali-woocommerce-lite.php:799
+msgid "Узбекский сум"
+msgstr "Узбецький сум"
+
+#: saphali-woocommerce-lite.php:800
+msgid "Lithuanian Litas"
+msgstr "Литовська Litas"
+
+#: saphali-woocommerce-lite.php:856
+msgid "Добавить еще"
+msgstr "Додати ще"
+
+#: saphali-woocommerce-lite.php:959 saphali-woocommerce-lite.php:1008
+msgid "First name"
+msgstr "First name"
+
+#: saphali-woocommerce-lite.php:963 saphali-woocommerce-lite.php:1012
+msgid "Last name"
+msgstr "Last name"
+
+#: saphali-woocommerce-lite.php:967 saphali-woocommerce-lite.php:1016
+msgid "Company"
+msgstr "Company"
+
+#: saphali-woocommerce-lite.php:971 saphali-woocommerce-lite.php:1020
+msgid "Address 1"
+msgstr "Address 1"
+
+#: saphali-woocommerce-lite.php:975 saphali-woocommerce-lite.php:1024
+msgid "Address 2"
+msgstr "Address 2"
+
+#: saphali-woocommerce-lite.php:979
+msgid "Town / City"
+msgstr "Town / City"
+
+#: saphali-woocommerce-lite.php:983
+msgid "Postcode / ZIP"
+msgstr "Postcode / ZIP"
+
+#: saphali-woocommerce-lite.php:987
+msgid "State / County"
+msgstr "State / County"
+
+#: saphali-woocommerce-lite.php:988
+msgid "Country or state code"
+msgstr "Country or state code"
+
+#: saphali-woocommerce-lite.php:991 saphali-woocommerce-lite.php:1040
+msgid "Country"
+msgstr "Країна"
+
+#: saphali-woocommerce-lite.php:992 saphali-woocommerce-lite.php:1041
+msgid "2 letter Country code"
+msgstr "2 letter Country code"
+
+#: saphali-woocommerce-lite.php:995
+msgid "Telephone"
+msgstr "Telephone"
+
+#: saphali-woocommerce-lite.php:999
+msgid "Email"
+msgstr "Email"
+
+#: saphali-woocommerce-lite.php:1028
+msgid "City"
+msgstr "City"
+
+#: saphali-woocommerce-lite.php:1032
+msgid "Postcode"
+msgstr "Postcode"
+
+#: saphali-woocommerce-lite.php:1036
+msgid "State/County"
+msgstr "State/County"
+
+#: saphali-woocommerce-lite.php:1037
+msgid "State/County or state code"
+msgstr "State/County or state code"
+
+#: src/extraFunction.js:180
+#, javascript-format
+msgid "Please enter %s %s"
+msgstr "Введіть, будь ласка, %s %s"
+
+#: src/field-datepicker.js:44
+msgid "Done"
+msgstr "Готово"
+
+#: src/field-datepicker.js:45
+msgid "Now"
+msgstr "Зараз"
+
+#: src/field-datepicker.js:46
+msgid "Time"
+msgstr "Час"
+
+#: src/field-datepicker.js:47
+msgid "Hour"
+msgstr "Година"
+
+#: src/field-datepicker.js:48
+msgid "Minute"
+msgstr "Хвилина"
+
+#: src/field-datepicker.js:49
+msgid "Choose Time"
+msgstr "Обрати час"
+
+#. Plugin Name of the plugin/theme
+msgid "Saphali Woocommerce Lite"
+msgstr "Saphali Woocommerce Lite"
+
+#. Plugin URI of the plugin/theme
+msgid "http://saphali.com/saphali-woocommerce-plugin-wordpress"
+msgstr "http://saphali.com/saphali-woocommerce-plugin-wordpress"
+
+#. Description of the plugin/theme
+msgid ""
+"Saphali Woocommerce Lite - это бесплатный вордпресс плагин, который "
+"добавляет набор дополнений к интернет-магазину на Woocommerce."
+msgstr ""
+"Saphali Woocommerce Lite - це безкоштовний вордпрес плагін, який додає набір "
+"доповнень до інтернет-магазину Woocommerce."
+
+#. Author of the plugin/theme
+msgid "Saphali"
+msgstr "Saphali"
+
+#. Author URI of the plugin/theme
+msgid "http://saphali.com/"
+msgstr "http://saphali.com/"

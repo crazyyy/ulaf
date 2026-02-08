@@ -6,33 +6,51 @@
  */
 namespace TwitterFeed\Builder;
 
-
 use TwitterFeed\CTF_Feed_Locator;
 use TwitterFeed\CTF_Settings;
 use TwitterFeed\Builder\Tabs\CTF_Styling_Tab;
 use TwitterFeed\Builder\CTF_Feed_Saver;
+use TwitterFeed\Builder\CTF_Feed_Saver_Manager;
 use TwitterFeed\V2\CtfOauthConnect;
 use TwitterFeed\Integrations\Analytics\SB_Analytics;
 
 class CTF_Feed_Builder {
-	private static $instance;
-	public static function instance() {
-		if ( null === self::$instance) {
-			require CTF_PLUGIN_DIR . 'vendor/autoload.php';
+
+	/**
+	 * Singleton instance
+	 *
+	 * @var CTF_Feed_Builder|null
+	 */
+	private static ?CTF_Feed_Builder $instance = null;
+
+	/**
+	 * Analytics instance
+	 *
+	 * @var SB_Analytics|null
+	 */
+	private ?SB_Analytics $ctf_sb_analytics = null;
+
+	/**
+	 * Get singleton instance
+	 *
+	 * @return CTF_Feed_Builder
+	 */
+	public static function instance(): CTF_Feed_Builder {
+		if ( null === self::$instance ) {
+			require_once CTF_PLUGIN_DIR . 'vendor/autoload.php';
 			self::$instance = new self();
 			self::$instance->ctf_sb_analytics = new SB_Analytics();
-			return self::$instance;
-
 		}
-	}
 
+		return self::$instance;
+	}
 
 	/**
 	 * Constructor.
 	 *
 	 * @since 2.0
 	 */
-	function __construct(){
+	public function __construct() {
 		$this->init();
 	}
 
@@ -40,15 +58,14 @@ class CTF_Feed_Builder {
 	 * Init the Builder.
 	 *
 	 * @since 2.0
-	*/
-	function init(){
-		if( is_admin() ){
-			add_action('admin_menu', [$this, 'register_menu']);
+	 */
+	public function init(): void {
+		if ( is_admin() ) {
+			add_action( 'admin_menu', [ $this, 'register_menu' ] );
+
 			// add ajax listeners
 			CTF_Feed_Saver_Manager::hooks();
-			CTF_Feed_Builder::hooks();
-			#echo json_encode(CTF_Feed_Saver::settings_defaults());
-
+			self::hooks();
 		}
 	}
 
@@ -57,32 +74,42 @@ class CTF_Feed_Builder {
 	 *
 	 * @since 2.0
 	 */
-	public static function hooks() {
-		add_action( 'wp_ajax_ctf_dismiss_onboarding', array( 'TwitterFeed\Builder\CTF_Feed_Builder', 'after_dismiss_onboarding' ) );
-		add_action( 'wp_ajax_ctf_other_plugins_modal', array( 'TwitterFeed\Builder\CTF_Feed_Builder', 'sb_other_plugins_modal' ) );
+	public static function hooks(): void {
+		add_action(
+			'wp_ajax_ctf_dismiss_onboarding',
+			[ __CLASS__, 'after_dismiss_onboarding' ]
+		);
+
+		add_action(
+			'wp_ajax_ctf_other_plugins_modal',
+			[ __CLASS__, 'sb_other_plugins_modal' ]
+		);
 	}
 
 	/**
 	 * Check users capabilities and maybe nonce before AJAX actions
 	 *
-	 * @param $check_nonce
+	 * @param bool   $check_nonce
 	 * @param string $action
 	 *
 	 * @since 2.0.6
 	 */
-	public static function check_privilege( $check_nonce = false, $action = 'ctf-admin' ) {
-		$cap = current_user_can( 'manage_twitter_feed_options' ) ? 'manage_twitter_feed_options' : 'manage_options';
+	public static function check_privilege( bool $check_nonce = false, string $action = 'ctf-admin' ): void {
+		$cap = current_user_can( 'manage_twitter_feed_options' )
+			? 'manage_twitter_feed_options'
+			: 'manage_options';
+
 		$cap = apply_filters( 'ctf_settings_pages_capability', $cap );
 
 		if ( ! current_user_can( $cap ) ) {
-			wp_die ( 'You did not do this the right way!' );
+			wp_die( 'You did not do this the right way!' );
 		}
 
 		if ( $check_nonce ) {
-			$nonce = ! empty( $_POST[ $check_nonce ] ) ? $_POST[ $check_nonce ] : false;
+			$nonce = $_POST[ $check_nonce ] ?? false;
 
 			if ( ! wp_verify_nonce( $nonce, $action ) ) {
-				wp_die ( 'You did not do this the right way!' );
+				wp_die( 'You did not do this the right way!' );
 			}
 		}
 	}
@@ -92,20 +119,36 @@ class CTF_Feed_Builder {
 	 *
 	 * @since 2.0
 	 */
-	function register_menu(){
-	 	$cap = current_user_can( 'manage_twitter_feed_options' ) ? 'manage_twitter_feed_options' : 'manage_options';
-    	$cap = apply_filters( 'ctf_settings_pages_capability', $cap );
+	public function register_menu(): void {
+		$cap = current_user_can( 'manage_twitter_feed_options' )
+			? 'manage_twitter_feed_options'
+			: 'manage_options';
+
+		$cap = apply_filters( 'ctf_settings_pages_capability', $cap );
 
 		$feed_builder = add_submenu_page(
-	        'custom-twitter-feeds',
-	        __( 'All Feeds', 'custom-twitter-feeds' ),
-	        __( 'All Feeds', 'custom-twitter-feeds' ),
-	        $cap,
-	        'ctf-feed-builder',
-	        [$this, 'feed_builder'],
-	        0
-	    );
-	    add_action( 'load-' . $feed_builder, [$this,'builder_enqueue_admin_scripts']);
+			'custom-twitter-feeds',
+			__( 'All Feeds', 'custom-twitter-feeds' ),
+			__( 'All Feeds', 'custom-twitter-feeds' ),
+			$cap,
+			'ctf-feed-builder',
+			[ $this, 'feed_builder' ],
+			0
+		);
+
+		add_action(
+			'load-' . $feed_builder,
+			[ $this, 'builder_enqueue_admin_scripts' ]
+		);
+	}
+
+	/**
+	 * Optional getter for analytics (safe access)
+	 *
+	 * @return SB_Analytics|null
+	 */
+	public function get_analytics(): ?SB_Analytics {
+		return $this->ctf_sb_analytics;
 	}
 
 	/**

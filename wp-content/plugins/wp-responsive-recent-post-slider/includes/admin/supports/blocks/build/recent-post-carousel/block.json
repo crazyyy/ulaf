@@ -1,0 +1,122 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "wprps/recent-post-carousel",
+  "version": "1.0",
+  "title": "Recent Post Carousel",
+  "category": "essp_guten_block",
+  "icon": "slides",
+  "description": "Display recent post in a carousel slider view with various layouts.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "align": true,
+    "multiple": true
+  },
+  "textdomain": "wp-responsive-recent-post-slider",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "keywords": [
+    "essential",
+    "recent carousel slider",
+    "recent-post-carousel"
+  ],
+  "attributes": {
+    "limit": {
+      "type": "number",
+      "default": 10
+    },
+    "design": {
+      "type": "string",
+      "default": "design-1"
+    },
+    "category": {
+      "type": "string",
+      "default": ""
+    },
+    "show_date": {
+      "type": "boolean",
+      "default": true
+    },
+    "show_category_name": {
+      "type": "boolean",
+      "default": true
+    },
+    "show_content": {
+      "type": "boolean",
+      "default": true
+    },
+    "content_words_limit": {
+      "type": "number",
+      "default": 20
+    },
+    "slides_to_show": {
+      "type": "number",
+      "default": 3
+    },
+    "slides_to_scroll": {
+      "type": "number",
+      "default": 1
+    },
+    "dots": {
+      "type": "string",
+      "default": "true"
+    },
+    "arrows": {
+      "type": "string",
+      "default": "true"
+    },
+    "autoplay": {
+      "type": "string",
+      "default": "true"
+    },
+    "autoplay_interval": {
+      "type": "number",
+      "default": 3000
+    },
+    "speed": {
+      "type": "number",
+      "default": 500
+    },
+    "posts": {
+      "type": "string",
+      "default": ""
+    },
+    "hide_post": {
+      "type": "string",
+      "default": ""
+    },
+    "post_type": {
+      "type": "string",
+      "default": "post"
+    },
+    "taxonomy": {
+      "type": "string",
+      "default": "category"
+    },
+    "show_author": {
+      "type": "boolean",
+      "default": true
+    },
+    "show_read_more": {
+      "type": "string",
+      "default": "true"
+    },
+    "media_size": {
+      "type": "string",
+      "default": "full"
+    },
+    "lazyload": {
+      "type": "string",
+      "default": ""
+    },
+    "align": {
+      "type": "string",
+      "default": ""
+    },
+    "className": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

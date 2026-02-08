@@ -1,0 +1,617 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce theme v1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-23 19:51+0000\n"
+"PO-Revision-Date: 2025-02-23 19:55+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: address-block-editor.php:138
+msgid " (optional)"
+msgstr " (optional)"
+
+#: address-block-editor.php:417
+msgid "Please enter a valid date and time."
+msgstr "Пожалуйста введите корректную дату и время."
+
+#: admin/admin-page-block.php:8
+#, php-format
+msgid ""
+"Для работы плагина Saphali WooCommerce Lite в блоковом чекауте требуется "
+"WooCommerce 8.5.0 или выше. У Вас установлен WooCommerce %s"
+msgstr ""
+"Для работы плагина Saphali WooCommerce Lite в блоковом чекауте требуется "
+"WooCommerce 8.5.0 или выше. У Вас установлен WooCommerce %s"
+
+#: admin/admin-page-block.php:164 saphali-woocommerce-lite.php:137
+msgid "Неуспешная верификация."
+msgstr "Неуспешная верификация."
+
+#: admin/admin-page-block.php:172
+msgid "Настройки Saphali WooCommerce Lite (блоки)"
+msgstr "Настройки Saphali WooCommerce Lite (блоки)"
+
+#: admin/admin-page-block.php:173
+msgid "Здесь можно управлять полями чекаута."
+msgstr "Здесь можно управлять полями чекаута."
+
+#: admin/admin-page-block.php:175 admin/admin-page.php:89
+msgid "Управление полями"
+msgstr "Управление полями"
+
+#: admin/admin-page-block.php:176 admin/admin-page.php:90
+msgid "Число колонок в каталоге"
+msgstr "Число колонок в каталоге"
+
+#: admin/admin-page-block.php:177 admin/admin-page-block.php:391
+#: admin/admin-page.php:91 admin/admin-page.php:594
+msgid "Дополнительная информация"
+msgstr "Дополнительная информация"
+
+#: admin/admin-page-block.php:187
+msgid "Поле (key)"
+msgstr "Поле (key)"
+
+#: admin/admin-page-block.php:188
+msgid "Заголовок (label)"
+msgstr "Заголовок (label)"
+
+#: admin/admin-page-block.php:189
+msgid "Плейсхолдер"
+msgstr "Плейсхолдер"
+
+#: admin/admin-page-block.php:190 admin/admin-page.php:43
+#: admin/admin-page.php:61 admin/admin-page.php:77
+msgid "Clear"
+msgstr "Clear"
+
+#: admin/admin-page-block.php:190 admin/admin-page.php:44
+#: admin/admin-page.php:62 admin/admin-page.php:77
+msgid ""
+"Указывает на то, что следующее поле за текущим, будет начинаться с новой "
+"строки."
+msgstr ""
+"Указывает на то, что следующее поле за текущим, будет начинаться с новой "
+"строки."
+
+#: admin/admin-page-block.php:191 admin/admin-page.php:45
+#: admin/admin-page.php:63
+msgid "Класс поля"
+msgstr "Класс поля"
+
+#: admin/admin-page-block.php:192 admin/admin-page.php:46
+msgid "Задает стиль текущего поля"
+msgstr "Задает стиль текущего поля"
+
+#: admin/admin-page-block.php:193 admin/admin-page.php:47
+msgid "первый в строке"
+msgstr "первый в строке"
+
+#: admin/admin-page-block.php:194 admin/admin-page.php:48
+msgid "последний в строке"
+msgstr "последний в строке"
+
+#: admin/admin-page-block.php:195 admin/admin-page.php:49
+msgid "ЕСЛИ ОСТАВИТЬ ПУСТЫМ"
+msgstr "ЕСЛИ ОСТАВИТЬ ПУСТЫМ"
+
+#: admin/admin-page-block.php:196 admin/admin-page.php:50
+msgid ""
+"то поле будет отображаться на всю ширину. Соответственно, в предыдущем поле "
+"(которое выше) нужно отметить &laquo;Clear&__(raquo;."
+msgstr ""
+"то поле будет отображаться на всю ширину. Соответственно, в предыдущем поле "
+"(которое выше) нужно отметить &laquo;Clear&__(raquo;."
+
+#: admin/admin-page-block.php:197 admin/admin-page.php:51
+#: admin/admin-page.php:64 admin/admin-page.php:73
+msgid "Тип поля"
+msgstr "Тип поля"
+
+#: admin/admin-page-block.php:198
+msgid "Order (порядок)"
+msgstr "Order (порядок)"
+
+#: admin/admin-page-block.php:199
+msgid "Обза&shy;те&shy;ль&shy;ное?"
+msgstr "Обза&shy;те&shy;ль&shy;ное?"
+
+#: admin/admin-page-block.php:200
+msgid "Опу&shy;бли&shy;ковать"
+msgstr "Опу&shy;бли&shy;ковать"
+
+#: admin/admin-page-block.php:201 admin/admin-page.php:54
+#: admin/admin-page.php:67 admin/admin-page.php:79
+msgid "Метод оплаты"
+msgstr "Метод оплаты"
+
+#: admin/admin-page-block.php:202 admin/admin-page.php:55
+#: admin/admin-page.php:68 admin/admin-page.php:80
+msgid "Метод доставки"
+msgstr "Метод доставки"
+
+#: admin/admin-page-block.php:221
+msgid "Billing Fields"
+msgstr "Billing Fields"
+
+#: admin/admin-page-block.php:223
+msgid "Shipping Fields"
+msgstr "Shipping Fields"
+
+#: admin/admin-page-block.php:225
+msgid "Account Fields"
+msgstr "Account Fields"
+
+#: admin/admin-page-block.php:227 admin/admin-page-block.php:367
+#: admin/admin-page-block.php:369
+msgid "Order Fields"
+msgstr "Order Fields"
+
+#: admin/admin-page-block.php:273
+msgid "Options:"
+msgstr "Опции:"
+
+#: admin/admin-page-block.php:323 admin/admin-page-block.php:334
+#: admin/admin-page.php:481 admin/admin-page.php:491
+msgid "Все"
+msgstr "Все"
+
+#: admin/admin-page-block.php:356
+msgid "+ Добавить поле"
+msgstr "+ Добавить поле"
+
+#: admin/admin-page-block.php:369
+#, php-format
+msgid "Отображать поля \"%s\" в области \"Контактная информация\""
+msgstr "Отображать поля \"%s\" в области \"Контактная информация\""
+
+#: admin/admin-page-block.php:375
+msgid "Only Date"
+msgstr "Только дата"
+
+#: admin/admin-page-block.php:377
+msgid ""
+"Для полей с типом \"Date&amp;time\" выводить только календарь без "
+"возможности выбора времени"
+msgstr ""
+"Для полей с типом \"Date&amp;time\" выводить только календарь без "
+"возможности выбора времени"
+
+#: admin/admin-page-block.php:384
+msgid "Сбросить поля"
+msgstr "Сбросить поля"
+
+#: admin/admin-page-block.php:385
+msgid "Сохранить поля"
+msgstr "Сохранить поля"
+
+#: admin/admin-page-block.php:394 admin/admin-page.php:597
+msgid "Число колонок в каталоге товаров и в рубриках"
+msgstr "Число колонок в каталоге товаров и в рубриках"
+
+#: admin/admin-page.php:39 admin/admin-page.php:58
+msgid "Название"
+msgstr "Название"
+
+#: admin/admin-page.php:40
+msgid ""
+"Название поля должно быть уни&shy;ка&shy;ль&shy;ным (не должно повторяться)."
+msgstr ""
+"Название поля должно быть уни&shy;ка&shy;ль&shy;ным (не должно повторяться)."
+
+#: admin/admin-page.php:41 admin/admin-page.php:59
+msgid "Заголовок"
+msgstr "Заголовок"
+
+#: admin/admin-page.php:42 admin/admin-page.php:60
+msgid "Текст в поле"
+msgstr "Текст в поле"
+
+#: admin/admin-page.php:52 admin/admin-page.php:65 admin/admin-page.php:78
+msgid "Обя&shy;за&shy;те&shy;ль&shy;ное"
+msgstr "Обя&shy;за&shy;те&shy;ль&shy;ное"
+
+#: admin/admin-page.php:53 admin/admin-page.php:66
+msgid "Опу&shy;бли&shy;ко&shy;вать"
+msgstr "Опу&shy;бли&shy;ко&shy;вать"
+
+#: admin/admin-page.php:56 admin/admin-page.php:69
+msgid "Удалить/До&shy;ба&shy;вить"
+msgstr "Удалить/До&shy;ба&shy;вить"
+
+#: admin/admin-page.php:86
+msgid "Настройки Saphali WC"
+msgstr "Настройки Saphali WC"
+
+#: admin/admin-page.php:266
+msgid "Управление полями на странице заказа и на странице профиля"
+msgstr "Управление полями на странице заказа и на странице профиля"
+
+#: admin/admin-page.php:269
+msgid "Настройки не сохранены. Неуспешная верификация"
+msgstr "Настройки не сохранены. Неуспешная верификация"
+
+#: admin/admin-page.php:271
+msgid "Настройки сохранены"
+msgstr "Настройки сохранены"
+
+#: admin/admin-page.php:274
+msgid "Реквизиты оплаты"
+msgstr "Реквизиты оплаты"
+
+#: admin/admin-page.php:399 admin/admin-page.php:501 admin/admin-page.php:555
+#: saphali-woocommerce-lite.php:854
+msgid "Удалить"
+msgstr "Удалить"
+
+#: admin/admin-page.php:415 admin/admin-page.php:522 admin/admin-page.php:576
+#: saphali-woocommerce-lite.php:855
+msgid "Добавить"
+msgstr "Добавить"
+
+#: admin/admin-page.php:420
+msgid "Реквизиты доставки"
+msgstr "Реквизиты доставки"
+
+#: admin/admin-page.php:528
+msgid "Дополнительные поля"
+msgstr "Дополнительные поля"
+
+#: admin/admin-page.php:580
+msgid "Save"
+msgstr "Save"
+
+#: admin/admin-page.php:585
+msgid "Восстановить поля по умолчанию"
+msgstr "Восстановить поля по умолчанию"
+
+#: saphali-woocommerce-lite.php:187
+#, php-format
+msgid "%s is required"
+msgstr "%s обязательное"
+
+#: saphali-woocommerce-lite.php:356 saphali-woocommerce-lite.php:390
+#, php-format
+msgctxt "FIELDNAME is a required field."
+msgid "%s is a required field."
+msgstr "%s обязательное поле."
+
+#: saphali-woocommerce-lite.php:358 saphali-woocommerce-lite.php:392
+msgid "is a required field."
+msgstr "обязательное поле."
+
+#: saphali-woocommerce-lite.php:363 saphali-woocommerce-lite.php:397
+#, php-format
+msgctxt "checkout-validation"
+msgid "Shipping %s"
+msgstr "Shipping %s"
+
+#: saphali-woocommerce-lite.php:367 saphali-woocommerce-lite.php:401
+#, php-format
+msgctxt "checkout-validation"
+msgid "Billing %s"
+msgstr "Billing %s"
+
+#: saphali-woocommerce-lite.php:371 saphali-woocommerce-lite.php:373
+#: saphali-woocommerce-lite.php:405 saphali-woocommerce-lite.php:407
+#, php-format
+msgid "%s is a required field."
+msgstr "%s обязательное поле."
+
+#: saphali-woocommerce-lite.php:752 saphali-woocommerce-lite.php:956
+#: saphali-woocommerce-lite.php:1127
+msgid "Customer Billing Address"
+msgstr "Customer Billing Address"
+
+#: saphali-woocommerce-lite.php:756 saphali-woocommerce-lite.php:1005
+#: saphali-woocommerce-lite.php:1131
+msgid "Customer Shipping Address"
+msgstr "Customer Shipping Address"
+
+#: saphali-woocommerce-lite.php:787
+msgid "Настройки Saphali WC Lite"
+msgstr "Настройки Saphali WC Lite"
+
+#: saphali-woocommerce-lite.php:787
+msgid "Saphali WC Lite"
+msgstr "Saphali WC Lite"
+
+# @ woocommerce
+#: saphali-woocommerce-lite.php:790
+msgid "Ukrainian hryvnia"
+msgstr "Украинская гривна"
+
+# @ woocommerce
+#: saphali-woocommerce-lite.php:791 saphali-woocommerce-lite.php:793
+msgid "Russian ruble"
+msgstr "Российский рубль"
+
+# @ woocommerce
+#: saphali-woocommerce-lite.php:794 saphali-woocommerce-lite.php:795
+#, php-format
+msgid "Belarusian ruble%s"
+msgstr "Белорусский рубль%s"
+
+#: saphali-woocommerce-lite.php:794
+msgid " (new)"
+msgstr " (new)"
+
+#: saphali-woocommerce-lite.php:796
+msgid "Armenian dram  (Դրամ)"
+msgstr ""
+
+#: saphali-woocommerce-lite.php:797
+msgid "Киргизский сом"
+msgstr "Киргизский сом"
+
+#: saphali-woocommerce-lite.php:798
+msgid "Казахстанский тенге "
+msgstr "Казахстанский тенге "
+
+#: saphali-woocommerce-lite.php:799
+msgid "Узбекский сум"
+msgstr "Узбекский сум"
+
+#: saphali-woocommerce-lite.php:800
+msgid "Lithuanian Litas"
+msgstr ""
+
+#: saphali-woocommerce-lite.php:856
+msgid "Добавить еще"
+msgstr "Добавить еще"
+
+#: saphali-woocommerce-lite.php:959 saphali-woocommerce-lite.php:1008
+msgid "First name"
+msgstr "First name"
+
+#: saphali-woocommerce-lite.php:963 saphali-woocommerce-lite.php:1012
+msgid "Last name"
+msgstr "Last name"
+
+#: saphali-woocommerce-lite.php:967 saphali-woocommerce-lite.php:1016
+msgid "Company"
+msgstr "Company"
+
+#: saphali-woocommerce-lite.php:971 saphali-woocommerce-lite.php:1020
+msgid "Address 1"
+msgstr "Address 1"
+
+#: saphali-woocommerce-lite.php:975 saphali-woocommerce-lite.php:1024
+msgid "Address 2"
+msgstr "Address 2"
+
+#: saphali-woocommerce-lite.php:979
+msgid "Town / City"
+msgstr "Town / City"
+
+#: saphali-woocommerce-lite.php:983
+msgid "Postcode / ZIP"
+msgstr "Postcode / ZIP"
+
+#: saphali-woocommerce-lite.php:987
+msgid "State / County"
+msgstr "State / County"
+
+#: saphali-woocommerce-lite.php:988
+msgid "Country or state code"
+msgstr "Country or state code"
+
+#: saphali-woocommerce-lite.php:991 saphali-woocommerce-lite.php:1040
+msgid "Country"
+msgstr "Country"
+
+#: saphali-woocommerce-lite.php:992 saphali-woocommerce-lite.php:1041
+msgid "2 letter Country code"
+msgstr "2 letter Country code"
+
+#: saphali-woocommerce-lite.php:995
+msgid "Telephone"
+msgstr "Telephone"
+
+#: saphali-woocommerce-lite.php:999
+msgid "Email"
+msgstr "Email"
+
+#: saphali-woocommerce-lite.php:1028
+msgid "City"
+msgstr "City"
+
+#: saphali-woocommerce-lite.php:1032
+msgid "Postcode"
+msgstr "Postcode"
+
+#: saphali-woocommerce-lite.php:1036
+msgid "State/County"
+msgstr "State/County"
+
+#: saphali-woocommerce-lite.php:1037
+msgid "State/County or state code"
+msgstr "State/County or state code"
+
+#: src/extraFunction.js:180
+#, javascript-format
+msgid "Please enter %s %s"
+msgstr "Please enter %s %s"
+
+#: src/field-datepicker.js:44
+msgid "Done"
+msgstr "Готово"
+
+#: src/field-datepicker.js:45
+msgid "Now"
+msgstr "Сейчас"
+
+#: src/field-datepicker.js:46
+msgid "Time"
+msgstr "Время"
+
+#: src/field-datepicker.js:47
+msgid "Hour"
+msgstr "Час"
+
+#: src/field-datepicker.js:48
+msgid "Minute"
+msgstr "Мин"
+
+#: src/field-datepicker.js:49
+msgid "Choose Time"
+msgstr "Выбрать время"
+
+msgid "Product Custom Fild"
+msgstr "Произвольное поле товарной записи"
+
+msgid "WC Sku"
+msgstr "WC Артикул"
+
+msgid "Custom Fild"
+msgstr "Произвольное поле"
+
+# @ woocommerce
+msgid ""
+"Log Qiwi events, such as IPN requests, inside <code>woocommerce/logs/qiwi."
+"txt</code>"
+msgstr ""
+"Журнал событий, таких как запросы/ответы на/от сервера Qiwi, внутри "
+"документа <code>woocommerce/logs/qiwi.txt</code>"
+
+# @ woocommerce
+msgid ""
+"Log Yandex.Money events, such as IPN requests, inside <code>woocommerce/"
+"logs/yandexmoney.txt</code>"
+msgstr ""
+"Журнал событий, таких как запросы/ответы на/от сервера Яндекс, внутри "
+"документа <code>woocommerce/logs/yandexmoney.txt</code>"
+
+# @ woocommerce
+msgid ""
+"Log LiqPay events, such as IPN requests, inside <code>woocommerce/logs/"
+"liqpay.txt</code>"
+msgstr ""
+"Журнал событий, таких как запросы/ответы на/от сервера LiqPay, внутри "
+"документа <code>woocommerce/logs/liqpay.txt</code>"
+
+# @ woocommerce
+msgid ""
+"Log Privat24 events, such as IPN requests, inside <code>woocommerce/logs/"
+"privat24.txt</code>"
+msgstr ""
+"Журнал событий, таких как запросы/ответы на/от сервера Privat24, внутри "
+"документа <code>woocommerce/logs/privat24.txt</code>"
+
+# @ woocommerce
+msgid ""
+"Log WebMoney events, such as IPN requests, inside <code>woocommerce/logs/"
+"webmoney.txt</code>"
+msgstr ""
+"Журнал событий, таких как запросы/ответы на/от сервера WebMoney, внутри "
+"документа <code>woocommerce/logs/webmoney.txt</code>"
+
+msgid ""
+"Log Z-Payment events, such as IPN requests, inside <code>woocommerce/logs/"
+"zpayment.txt</code>"
+msgstr ""
+"Журнал событий, таких как запросы/ответы на/от сервера Z-Payment, внутри "
+"документа <code>woocommerce/logs/zpayment.txt</code>"
+
+msgid ""
+"Log Interkassa events, such as IPN requests, inside <code>woocommerce/logs/"
+"interkassa.txt</code>"
+msgstr ""
+"Журнал событий, таких как запросы/ответы на/от сервера Interkassa, внутри "
+"документа <code>woocommerce/logs/interkassa.txt</code>"
+
+# @ woocommerce
+msgid "Debug Log"
+msgstr "Журнал отладки"
+
+# @ woocommerce
+msgid "Enable logging"
+msgstr "Включить журналирование"
+
+# @ woocommerce
+msgid ""
+"Pay via Qiwi; you can pay with your credit card if you don't have a Qiwi "
+"account or terminal."
+msgstr ""
+"Оплатить через Qiwi. Вы также  можете заплатить пластиковой картой или "
+"через терминал."
+
+msgid ""
+"Pay via Interkassa; you can pay with your credit card if you don't have a "
+"Interkassa account or terminal."
+msgstr "Заплатить через Interkassa."
+
+# @ woocommerce
+msgid ""
+"Pay via LiqPay; you can pay with your credit card if you don't have a "
+"LiqPay account or terminal."
+msgstr ""
+"Оплатить через LiqPay. Вы можете заплатить пластиковой картой, если у вас "
+"нет LiqPay аккаунта или через терминал."
+
+msgid ""
+"Thank you for your order, please click the button below to pay with LiqPay."
+msgstr ""
+"Спасибо за заказ, пожалуйста, нажмите на кнопку внизу, чтобы оплатить при "
+"помощи LiqPay."
+
+msgid ""
+"Thank you for your order, please click the button below to pay with Qiwi."
+msgstr ""
+"Спасибо за заказ, пожалуйста, нажмите на кнопку внизу, чтобы оплатить при "
+"помощи Qiwi."
+
+msgid ""
+"Thank you for your order, please click the button below to pay with "
+"Privat24."
+msgstr ""
+"Спасибо за заказ, пожалуйста, нажмите на кнопку внизу, чтобы оплатить при "
+"помощи Privat24."
+
+msgid ""
+"Thank you for your order, please click the button below to pay with "
+"WebMoney."
+msgstr ""
+"Спасибо за заказ, пожалуйста, нажмите на кнопку внизу, чтобы оплатить при "
+"помощи WebMoney."
+
+msgid ""
+"Thank you for your order, please click the button below to pay with "
+"Robokassa."
+msgstr ""
+"Спасибо за заказ, пожалуйста, нажмите на кнопку внизу, чтобы оплатить при "
+"помощи Robokassa."
+
+msgid ""
+"Thank you for your order, please click the button below to pay with Z-"
+"Payment."
+msgstr ""
+"Спасибо за заказ, пожалуйста, нажмите на кнопку внизу, чтобы оплатить c "
+"помощью Z-Payment."
+
+msgid ""
+"Thank you for your order, please click the button below to pay with "
+"Chronopay."
+msgstr ""
+"Спасибо за заказ, пожалуйста, нажмите на кнопку внизу, чтобы оплатить при "
+"помощи Chronopay."
+
+msgid ""
+"Thank you for your order, please click the button below to pay with "
+"Interkassa."
+msgstr ""
+"Спасибо за заказ, пожалуйста, нажмите на кнопку внизу, чтобы оплатить при "
+"помощи Interkassa."

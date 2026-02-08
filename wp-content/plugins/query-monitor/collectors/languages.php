@@ -1,4 +1,4 @@
-<?php declare(strict_types = 1);
+<?php declare(strict_types=1);
 /**
  * Language and locale collector.
  *
@@ -20,39 +20,37 @@ class QM_Collector_Languages extends QM_DataCollector {
 		return new QM_Data_Languages();
 	}
 
-	/**
-	 * @return void
-	 */
-	public function set_up() {
+	public function set_up(): void {
 
 		parent::set_up();
 
-		add_filter( 'load_textdomain_mofile', array( $this, 'log_mo_file_load' ), 9999, 2 );
-		add_filter( 'load_translation_file', array( $this, 'log_translation_file_load' ), 9999, 3 );
-		add_filter( 'load_script_translation_file', array( $this, 'log_script_file_load' ), 9999, 3 );
-		add_action( 'init', array( $this, 'collect_locale_data' ), 9999 );
+		add_filter( 'load_textdomain_mofile', [ $this, 'log_mo_file_load' ], 9999, 2 );
+		add_filter( 'load_translation_file', [ $this, 'log_translation_file_load' ], 9999, 3 );
+		add_filter( 'load_script_translation_file', [ $this, 'log_script_file_load' ], 9999, 3 );
 
+		// Locale collection must never run before init
+		add_action( 'init', [ $this, 'collect_locale_data' ], 9999 );
 	}
 
-	/**
-	 * @return void
-	 */
-	public function tear_down() {
-		remove_filter( 'load_textdomain_mofile', array( $this, 'log_mo_file_load' ), 9999 );
-		remove_filter( 'load_translation_file', array( $this, 'log_translation_file_load' ), 9999 );
-		remove_filter( 'load_script_translation_file', array( $this, 'log_script_file_load' ), 9999 );
-		remove_action( 'init', array( $this, 'collect_locale_data' ), 9999 );
+	public function tear_down(): void {
+
+		remove_filter( 'load_textdomain_mofile', [ $this, 'log_mo_file_load' ], 9999 );
+		remove_filter( 'load_translation_file', [ $this, 'log_translation_file_load' ], 9999 );
+		remove_filter( 'load_script_translation_file', [ $this, 'log_script_file_load' ], 9999 );
+		remove_action( 'init', [ $this, 'collect_locale_data' ], 9999 );
 
 		parent::tear_down();
 	}
 
-	/**
-	 * @return void
-	 */
-	public function collect_locale_data() {
-		$this->data->locale = get_locale();
-		$this->data->user_locale = get_user_locale();
-		$this->data->determined_locale = determine_locale();
+	public function collect_locale_data(): void {
+
+		if ( ! did_action( 'init' ) ) {
+			return;
+		}
+
+		$this->data->locale              = get_locale();
+		$this->data->user_locale         = get_user_locale();
+		$this->data->determined_locale   = determine_locale();
 		$this->data->language_attributes = get_language_attributes();
 
 		if ( function_exists( '\Inpsyde\MultilingualPress\siteLanguageTag' ) ) {
@@ -64,21 +62,15 @@ class QM_Collector_Languages extends QM_DataCollector {
 		}
 	}
 
-	/**
-	 * @return array<int, string>
-	 */
-	public function get_concerned_actions() {
-		return array(
+	public function get_concerned_actions(): array {
+		return [
 			'load_textdomain',
 			'unload_textdomain',
-		);
+		];
 	}
 
-	/**
-	 * @return array<int, string>
-	 */
-	public function get_concerned_filters() {
-		return array(
+	public function get_concerned_filters(): array {
+		return [
 			'determine_locale',
 			'gettext',
 			'gettext_with_context',
@@ -101,31 +93,19 @@ class QM_Collector_Languages extends QM_DataCollector {
 			'pre_load_textdomain',
 			'theme_locale',
 			'translation_file_format',
-		);
+		];
 	}
 
-	/**
-	 * @return array<int, string>
-	 */
-	public function get_concerned_options() {
-		return array(
-			'WPLANG',
-		);
+	public function get_concerned_options(): array {
+		return [ 'WPLANG' ];
 	}
 
-	/**
-	 * @return array<int, string>
-	 */
-	public function get_concerned_constants() {
-		return array(
-			'WPLANG',
-		);
+	public function get_concerned_constants(): array {
+		return [ 'WPLANG' ];
 	}
 
-	/**
-	 * @return void
-	 */
-	public function process() {
+	public function process(): void {
+
 		if ( empty( $this->data->languages ) ) {
 			return;
 		}
@@ -134,28 +114,18 @@ class QM_Collector_Languages extends QM_DataCollector {
 
 		ksort( $this->data->languages );
 
-		foreach ( $this->data->languages as & $mofiles ) {
-			foreach ( $mofiles as & $mofile ) {
-				if ( $mofile['found'] ) {
-					$this->data->total_size += $mofile['found'];
+		foreach ( $this->data->languages as $mofiles ) {
+			foreach ( $mofiles as $mofile ) {
+				if ( ! empty( $mofile['found'] ) ) {
+					$this->data->total_size += (int) $mofile['found'];
 				}
 			}
 		}
 	}
 
-	/**
-	 * Store log data for MO translation files prior to 6.5.
-	 *
-	 * @phpstan-template T
-	 *
-	 * @param mixed  $file Should be a string path to the MO file, could be anything.
-	 * @param string $domain Text domain.
-	 * @return string The original file path.
-	 * @phpstan-param T $file
-	 * @phpstan-return T
-	 */
-	public function log_mo_file_load( $file, $domain ) {
-		if ( class_exists( 'WP_Translation_Controller' ) ) {
+	public function log_mo_file_load( $file, string $domain ) {
+
+		if ( class_exists( 'WP_Translation_Controller', false ) ) {
 			return $file;
 		}
 
@@ -164,46 +134,20 @@ class QM_Collector_Languages extends QM_DataCollector {
 		return $this->log_file_load( $file, $domain, $found );
 	}
 
-	/**
-	 * Store log data for MO and PHP translation files in 6.5 and later.
-	 *
-	 * @phpstan-template T
-	 *
-	 * @param mixed  $file   Should be a string path to the MO or PHP file, could be anything.
-	 * @param string $domain Text domain.
-	 * @param string $locale Locale. Only present in 6.6 and later.
-	 * @return string The original file path.
-	 * @phpstan-param T $file
-	 * @phpstan-return T
-	 */
-	public function log_translation_file_load( $file, $domain, ?string $locale = null ) {
-		if ( ! is_string( $file ) ) {
-			// ¯\_(ツ)_/¯
+	public function log_translation_file_load( $file, string $domain, ?string $locale = null ) {
+
+		if ( ! is_string( $file ) || ! class_exists( 'WP_Translation_Controller', false ) ) {
 			return $file;
 		}
 
-		// @phpstan-ignore WPCompat.methodNotAvailable
-		$i18n_controller = \WP_Translation_Controller::get_instance();
+		$controller = WP_Translation_Controller::get_instance();
+		$loaded     = $controller->load_file( $file, $domain, $locale ?? determine_locale() );
 
-		// @phpstan-ignore WPCompat.methodNotAvailable
-		$found = $i18n_controller->load_file( $file, $domain, $locale ?? determine_locale() );
-
-		return $this->log_file_load( $file, $domain, $found );
+		return $this->log_file_load( $file, $domain, $loaded );
 	}
 
-	/**
-	 * Store log data.
-	 *
-	 * @phpstan-template T
-	 *
-	 * @param mixed  $mofile Should be a string path to the MO or PHP file, could be anything.
-	 * @param string $domain Text domain.
-	 * @param bool   $loaded Whether the translation file was found and loaded.
-	 * @return string The original file path.
-	 * @phpstan-param T $mofile
-	 * @phpstan-return T
-	 */
-	public function log_file_load( $mofile, $domain, $loaded ) {
+	public function log_file_load( $mofile, string $domain, $loaded ) {
+
 		if ( 'query-monitor' === $domain && self::hide_qm() ) {
 			return $mofile;
 		}
@@ -212,89 +156,64 @@ class QM_Collector_Languages extends QM_DataCollector {
 			return $mofile;
 		}
 
-		$trace = new QM_Backtrace( array(
-			'ignore_hook' => array(
-				current_filter() => true,
-			),
-			'ignore_func' => array(
-				'load_textdomain' => ( 'default' !== $domain ),
-				'load_muplugin_textdomain' => true,
-				'load_plugin_textdomain' => true,
-				'load_theme_textdomain' => true,
-				'load_child_theme_textdomain' => true,
-				'load_default_textdomain' => true,
+		$trace = new QM_Backtrace( [
+			'ignore_hook' => [ current_filter() => true ],
+			'ignore_func' => [
 				'_load_textdomain_just_in_time' => true,
-				'get_translations_for_domain' => true,
+				'get_translations_for_domain'   => true,
 				'translate_with_gettext_context' => true,
-				'translate_settings_using_i18n_schema' => true,
-			),
-		) );
+			],
+		] );
 
-		$found = ( $loaded && is_string( $mofile ) ) ? filesize( $mofile ) : false;
-		$file = $mofile;
+		$found = ( $loaded && is_string( $mofile ) && file_exists( $mofile ) )
+			? filesize( $mofile )
+			: false;
 
-		if ( is_string( $file ) ) {
-			switch ( pathinfo( $file, PATHINFO_EXTENSION ) ) {
-				case 'mo':
-					$type = 'gettext';
-					break;
-				case 'php':
-					$type = 'php';
-					break;
-				default:
-					$type = 'unknown';
-					break;
-			}
-		} else {
-			$type = 'unknown';
-			$file = $type;
-		}
+		$type = is_string( $mofile )
+			? pathinfo( $mofile, PATHINFO_EXTENSION )
+			: 'unknown';
 
-		$this->data->languages[ $domain ][ $mofile ] = array(
+		$this->data->languages[ $domain ][ $mofile ] = [
 			'caller' => $trace->get_caller(),
 			'domain' => $domain,
-			'file' => $file,
-			'found' => $found,
+			'file'   => $mofile,
+			'found'  => $found,
 			'handle' => null,
-			'type' => $type,
-		);
+			'type'   => $type,
+		];
 
 		return $mofile;
-
 	}
 
-	/**
-	 * Filters the file path for loading script translations for the given script handle and textdomain.
-	 *
-	 * @param string|false $file   Path to the translation file to load. False if there isn't one.
-	 * @param string       $handle Name of the script to register a translation domain to.
-	 * @param string       $domain The textdomain.
-	 *
-	 * @return string|false Path to the translation file to load. False if there isn't one.
-	 */
-	public function log_script_file_load( $file, $handle, $domain ) {
-		$trace = new QM_Backtrace( array(
-			'ignore_hook' => array(
-				current_filter() => true,
-			),
-		) );
+	public function log_script_file_load( $file, string $handle, string $domain ) {
 
-		$found = ( $file && file_exists( $file ) ) ? filesize( $file ) : false;
-		$key = $file ?: uniqid();
+		$trace = new QM_Backtrace( [
+			'ignore_hook' => [ current_filter() => true ],
+		] );
 
-		$this->data->languages[ $domain ][ $key ] = array(
+		$found = ( is_string( $file ) && file_exists( $file ) )
+			? filesize( $file )
+			: false;
+
+		$key = $file ?: uniqid( 'qm-lang-', true );
+
+		$this->data->languages[ $domain ][ $key ] = [
 			'caller' => $trace->get_caller(),
 			'domain' => $domain,
-			'file' => $file,
-			'found' => $found,
+			'file'   => $file,
+			'found'  => $found,
 			'handle' => $handle,
-			'type' => 'jed',
-		);
+			'type'   => 'jed',
+		];
 
 		return $file;
 	}
-
 }
 
-# Load early to catch early errors
-QM_Collectors::add( new QM_Collector_Languages() );
+/**
+ * IMPORTANT:
+ * Register collector only after init to avoid WP 6.7+ notices
+ */
+add_action( 'init', static function () {
+	QM_Collectors::add( new QM_Collector_Languages() );
+}, 0 );
