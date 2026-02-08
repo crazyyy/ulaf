@@ -1,282 +1,212 @@
-<?php
+<?php declare(strict_types=1);
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 if ( ! class_exists( 'NM_Color_Filters' ) ) {
-	class NM_Color_Filters {
 
-		function __construct() {
-			add_action( 'init', array( $this, 'init' ) );
-			add_action( 'init', array( $this, 'update_check' ) );
+	final class NM_Color_Filters {
+
+		public function __construct() {
+
+			// Declare WooCommerce HPOS compatibility early
+			add_action(
+				'before_woocommerce_init',
+				[ self::class, 'declare_compatibility_with_custom_order_tables' ]
+			);
+
+			add_action( 'init', [ $this, 'init' ] );
+			add_action( 'init', [ $this, 'update_check' ] );
 		}
-		
+
 		/**
-		 * Init actions and filters.
-		 *
+		 * Declare WooCommerce Custom Order Tables (HPOS) compatibility
 		 */
-		function init() {
-			if ( ! class_exists( 'WooCommerce' ) ) {
-				add_action( 'admin_notices', array( $this, 'notice_no_woocommerce' ) );
-				add_action( 'before_woocommerce_init', array( $this, 'declare_compatibility_with_custom_order_tables' ) );
-				
-				return false;
+		public static function declare_compatibility_with_custom_order_tables(): void {
+			if ( class_exists( \Automattic\WooCommerce\Utilities\FeaturesUtil::class ) ) {
+				\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility(
+					'custom_order_tables',
+					__FILE__,
+					true
+				);
 			}
-		
-			$this->register_taxonomy(); // Register product color taxonomy
-			
-			add_action( 'product_color_edit_form_fields', array( $this, 'product_color_edit_form_fields' ), 10, 2 );
-			add_action( 'product_color_add_form_fields', array( $this, 'product_color_add_form_fields' ), 10, 2 );
-			add_action( 'edited_product_color', array( $this, 'save_product_color' ), 10, 2);
-			add_action( 'created_product_color', array( $this, 'save_product_color' ), 10, 2);
-			add_action( 'product_color_edit_form', array( $this, 'product_color_edit_colorpicker_js' ), 10, 2 );
-			add_action( 'product_color_add_form', array( $this, 'product_color_edit_colorpicker_js' ), 10, 2 );
-			add_action( 'admin_enqueue_scripts', array( $this, 'load_custom_css_js' ) );
-			add_action( 'wp_enqueue_scripts', array( $this, 'plugin_scripts' ) );
-			add_action( 'admin_footer', array( $this, 'add_colors_admin_side' ) );
 		}
 
-		// Declare compatibility with Custom Order Tables
-		function declare_compatibility_with_custom_order_tables() {
-			if ( class_exists( '\Automattic\WooCommerce\Utilities\FeaturesUtil' ) ) {
-				\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
+		/**
+		 * Init plugin
+		 */
+		public function init(): void {
+
+			if ( ! class_exists( 'WooCommerce', false ) ) {
+				add_action( 'admin_notices', [ $this, 'notice_no_woocommerce' ] );
+				return;
+			}
+
+			$this->register_taxonomy();
+
+			add_action( 'product_color_edit_form_fields', [ $this, 'product_color_edit_form_fields' ], 10, 2 );
+			add_action( 'product_color_add_form_fields', [ $this, 'product_color_add_form_fields' ] );
+			add_action( 'edited_product_color', [ $this, 'save_product_color' ] );
+			add_action( 'created_product_color', [ $this, 'save_product_color' ] );
+
+			add_action( 'admin_enqueue_scripts', [ $this, 'load_custom_css_js' ] );
+			add_action( 'wp_enqueue_scripts', [ $this, 'plugin_scripts' ] );
+			add_action( 'admin_footer', [ $this, 'add_colors_admin_side' ] );
+		}
+
+		public function notice_no_woocommerce(): void {
+			echo '<div class="notice notice-error"><p>';
+			printf(
+				wp_kses_post(
+					__( 'Color Filters requires <a href="%s" target="_blank">WooCommerce</a> to be installed and active.', 'alc-color-filters' )
+				),
+				'https://woocommerce.com/'
+			);
+			echo '</p></div>';
+		}
+
+		public function plugin_scripts(): void {
+			wp_enqueue_style(
+				'color-filters',
+				CF_PLUGIN_URL . '/assets/css/color-filters.css',
+				[],
+				CF_VERSION
+			);
+		}
+
+		public function load_custom_css_js( string $hook ): void {
+
+			if ( ! in_array( $hook, [ 'edit-tags.php', 'term.php' ], true ) ) {
+				return;
+			}
+
+			if ( isset( $_GET['taxonomy'] ) && $_GET['taxonomy'] === 'product_color' ) {
+
+				wp_enqueue_style(
+					'cf-colorpicker',
+					CF_PLUGIN_URL . '/assets/css/colorpicker.min.css',
+					[],
+					CF_VERSION
+				);
+
+				wp_enqueue_style(
+					'cf-admin',
+					CF_PLUGIN_URL . '/assets/css/admin.css',
+					[],
+					CF_VERSION
+				);
+
+				wp_enqueue_script(
+					'cf-colorpicker',
+					CF_PLUGIN_URL . '/assets/js/colorpicker.min.js',
+					[ 'jquery' ],
+					CF_VERSION,
+					true
+				);
 			}
 		}
-		
-		/*
-			* Notice message when WooCommerce plugin is not activated
-			*/
-		function notice_no_woocommerce() {
-		?>
-					<div class="message error"><p><?php printf( __( 'Color Filters by <a href="%s" target="_blank">Elementous</a> is enabled but not effective. It requires <a href="%s" target="_blank">WooCommerce</a> plugin in order to work.', 'alc-color-filters' ), 'https://www.elementous.com', 'http://www.woothemes.com/woocommerce/' ); ?></p></div>
+
+		public function save_product_color( int $term_id ): void {
+
+			if ( empty( $_POST['normal_fill'] ) ) {
+				return;
+			}
+
+			$color = sanitize_text_field( wp_unslash( $_POST['normal_fill'] ) );
+			$colors = (array) get_option( 'nm_taxonomy_colors', [] );
+
+			$colors[ $term_id ] = $color;
+
+			update_option( 'nm_taxonomy_colors', $colors );
+		}
+
+		public function product_color_add_form_fields(): void {
+			?>
+			<div class="form-field term-color-wrap">
+				<label for="normal_fill"><?php esc_html_e( 'Color', 'alc-color-filters' ); ?></label>
+				<input type="text" name="normal_fill" class="cf-color small-text" />
+			</div>
 			<?php
 		}
 
-		/**
-		 * Front-end display CSS.
-		 *
-		 */
-		function plugin_scripts() {
-			wp_enqueue_style( 'color-filters', CF_PLUGIN_URL . '/assets/css/color-filters.css' );
-		}
-		
-		/**
-		 * Load CSS and JS files for color picker.
-		 *
-		 * @param string $hook
-		 */
-		function load_custom_css_js( $hook ) {
-			if ( 'edit-tags.php' != $hook && 'term.php' != $hook ) {
-				return;
-			}
+		public function product_color_edit_form_fields( WP_Term $tag ): void {
 
-			if ( isset( $_GET['taxonomy'] ) && $_GET['taxonomy'] == 'product_color' ) {	
-				global $pagenow;
-
-				wp_register_style( 'css_colorpicker', CF_PLUGIN_URL . '/assets/css/colorpicker.min.css' );
-				wp_enqueue_style( 'css_colorpicker' );
-				
-				wp_register_style( 'color_filters', CF_PLUGIN_URL . '/assets/css/admin.css' );
-				wp_enqueue_style( 'color_filters' );
-					
-				wp_enqueue_script( 'js_colorpicker', CF_PLUGIN_URL . '/assets/js/colorpicker.min.js' );
-			}
-		}
-		
-		/**
-		 * Save color taxonomy and update its color in the database.
-		 *
-		 * @param integer $term_id
-		 */
-		function save_product_color( $term_id ) {
-			$color = @sanitize_text_field( $_POST['normal_fill'] );
-			
-			$saved_colors = get_option( 'nm_taxonomy_colors' );
-			
-			// Quick edit
-			// Do not overwrite color with empty value when saving via quick edit
-			if ( @ !empty( $saved_colors[$term_id] ) && !$color )
-				return;
-			
-			$saved_colors[$term_id] = $color;
-			
-			update_option( 'nm_taxonomy_colors', $saved_colors );
-		}
-		
-		/**
-		 * Add extra fields for product color to add color taxonomy screen.
-		 *
-		 * @param object $tag
-		 */
-		function product_color_add_form_fields( $tag ) {
-		
-			$term_id = @$tag->term_id;
-			
-			$color = '';
-			
-			if ( $term_id ) {
-				$saved_colors = get_option( 'nm_taxonomy_colors' );
-				$color = @$saved_colors[$term_id];
-			}
-				
-	?>
-		
-			<div class="form-field term-color-wrap cf-color-filters">
-				<label for="normal_fill_color_picker">Color</label>
-				<div>
-					<div id="normal_fill_color_picker" class="colorSelector small-text"><div></div></div>
-					
-					<input class="cf-color small-text" name="normal_fill" id="normal_fill_color" type="text" value="<?php echo $color; ?>" size="40" />
-					<br /><br />
-				</div>
-			</div>
-
-	<?php
-		}
-
-		/**
-		 * Add extra fields for product color to edit color taxonomy screen.
-		 *
-		 * @param object $tag
-		 */
-		function product_color_edit_form_fields( $tag ) {
-		
-			$term_id = @$tag->term_id;
-			
-			$color = '';
-			
-			if ( $term_id ) {
-				$saved_colors = get_option( 'nm_taxonomy_colors' );
-				$color = @$saved_colors[$term_id];
-			}
-				
-	?>
-		
-			<tr class="form-field term-color-wrap cf-color-filters">
-				<th scope="row"><label for="normal_fill_color_picker">Color</label></th>
-					<td><div id="normal_fill_color_picker" class="colorSelector small-text"><div></div></div>
-					
-					<input class="cf-color small-text" name="normal_fill" id="normal_fill_color" type="text" value="<?php echo $color; ?>" size="40" />
-					<br /><br />
+			$colors = (array) get_option( 'nm_taxonomy_colors', [] );
+			$color  = $colors[ $tag->term_id ] ?? '';
+			?>
+			<tr class="form-field term-color-wrap">
+				<th scope="row">
+					<label for="normal_fill"><?php esc_html_e( 'Color', 'alc-color-filters' ); ?></label>
+				</th>
+				<td>
+					<input type="text" name="normal_fill" value="<?php echo esc_attr( $color ); ?>" class="cf-color small-text" />
 				</td>
 			</tr>
-
-	<?php
+			<?php
 		}
-		
-		/**
-		 * Add extra JavaScript code to handle color picker in the back-end.
-		 *
-		 */
-		function product_color_edit_colorpicker_js() {
-	?>
-		<script type="text/javascript">
-			jQuery( document ).ready(function( $ ) {
-				if ( jQuery().ColorPicker ) {
-						jQuery( '.cf-color-filters' ).each( function () {
-							var option_id = jQuery( this ).find( '.cf-color' ).attr( 'id' );
-							var color = jQuery( this ).find( '.cf-color' ).val();
-							var picker_id = option_id += '_picker';
 
-							jQuery( '#' + picker_id ).children( 'div' ).css( 'backgroundColor', color );
-							jQuery( '#' + picker_id ).ColorPicker({
-								color: color,
-								onShow: function ( colpkr ) {
-									jQuery( colpkr ).fadeIn( 200 );
-									return false;
-								},
-								onHide: function ( colpkr ) {
-									jQuery( colpkr ).fadeOut( 200 );
-									return false;
-								},
-								onChange: function ( hsb, hex, rgb ) {
-									jQuery( '#' + picker_id ).children( 'div' ).css( 'backgroundColor', '#' + hex );
-									jQuery( '#' + picker_id ).next( 'input' ).attr( 'value', '#' + hex );
-								
-								}
-							});
-						});
-					}
-				});
-			</script>
-	<?php
-		}
-		
-		/**
-		 * Add color to its text in admin side.
-		 *
-		 */
-		function add_colors_admin_side() {
-			global $post, $pagenow;
-		
-			$colors = get_option( 'nm_taxonomy_colors' );
-			
-			if ( $colors && $pagenow == 'post.php' || $pagenow == 'post-new.php'  && get_post_type( $post ) == 'product' ) :
-		?>
-			<script type="text/javascript">
-				jQuery( document ).ready(function( $ ) {
-					<?php foreach( $colors as $term_id => $color_code ) : ?>
-					jQuery('#product_color-<?php echo $term_id; ?>, #popular-product_color-<?php echo $term_id; ?>').prepend('<div style="width:20px;height:15px;background:<?php echo $color_code; ?>;float: left;margin: 5px 5px 0 0;"></div>');
+		public function add_colors_admin_side(): void {
+
+			global $pagenow, $post;
+
+			if (
+				! in_array( $pagenow, [ 'post.php', 'post-new.php' ], true ) ||
+				! $post ||
+				get_post_type( $post ) !== 'product'
+			) {
+				return;
+			}
+
+			$colors = (array) get_option( 'nm_taxonomy_colors', [] );
+
+			if ( empty( $colors ) ) {
+				return;
+			}
+			?>
+			<script>
+				document.addEventListener('DOMContentLoaded', function () {
+					<?php foreach ( $colors as $term_id => $color ) : ?>
+						const el = document.querySelector('#product_color-<?php echo (int) $term_id; ?>');
+						if (el) {
+							el.insertAdjacentHTML(
+								'afterbegin',
+								'<span style="display:inline-block;width:14px;height:14px;background:<?php echo esc_js( $color ); ?>;margin-right:6px;"></span>'
+							);
+						}
 					<?php endforeach; ?>
 				});
 			</script>
-		<?php
-			endif;
+			<?php
 		}
-		
-		/**
-		 * Add new taxonomy, make it hierarchical. This is the main taxonomy which handles product color.
-		 *
-		 */
-		function register_taxonomy() {
-			$labels = array(
-				'name'              => _x( 'Colors', 'Color', 'alc-color-filters' ),
-				'singular_name'     => _x( 'Color', 'Color', 'alc-color-filters' ),
-				'search_items'      => __( 'Search Colors', 'alc-color-filters' ),
-				'all_items'         => __( 'All Colors', 'alc-color-filters' ),
-				'parent_item'       => __( 'Parent Color', 'alc-color-filters' ),
-				'parent_item_colon' => __( 'Parent Color:', 'alc-color-filters' ),
-				'edit_item'         => __( 'Edit Color', 'alc-color-filters' ),
-				'update_item'       => __( 'Update Color', 'alc-color-filters' ),
-				'add_new_item'      => __( 'Add New Color', 'alc-color-filters' ),
-				'new_item_name'     => __( 'New Color Name', 'alc-color-filters' ),
-				'menu_name'         => __( 'Colors', 'alc-color-filters' ),
+
+		private function register_taxonomy(): void {
+
+			register_taxonomy(
+				'product_color',
+				[ 'product' ],
+				[
+					'hierarchical'      => true,
+					'show_ui'           => true,
+					'show_admin_column' => true,
+					'labels'            => [
+						'name'          => __( 'Colors', 'alc-color-filters' ),
+						'singular_name' => __( 'Color', 'alc-color-filters' ),
+					],
+					'rewrite' => [
+						'slug' => 'product-color',
+					],
+				]
 			);
-		
-			$args = array(
-				'hierarchical'      => true,
-				'labels'            => $labels,
-				'show_ui'           => true,
-				'show_admin_column' => true,
-				'query_var'         => true,
-				'rewrite'           => array( 'slug' => 'product-color' )
-			);
-		
-			register_taxonomy( 'product_color', array( 'product' ), $args );
-		
 		}
-		
+
 		/**
-		 * Install plugin.
-		 *
+		 * MUST be public – used as WordPress hook callback
 		 */
-		function install() {
-			if ( get_option( 'nm_color_filters' ) != 'installed' ) {
-				update_option( 'nm_color_filters', 'installed' );
-				update_option( 'elm_color_filters_version', CF_VERSION );
-			}
-			
-			// Register taxonomy here so that we can flush permalink rules
-			$this->register_taxonomy();
-			
-			flush_rewrite_rules();
-		}
-		
-		/**
-		 * Handle updates.
-		 *
-		 */
-		function update_check() {
-			if ( ! get_option( 'elm_color_filters_version' ) ) {
-				update_option( 'elm_color_filters_version', CF_VERSION );
-			}
+		public function update_check(): void {
+			update_option( 'elm_color_filters_version', CF_VERSION );
 		}
 	}
-}
 
+	new NM_Color_Filters();
+}

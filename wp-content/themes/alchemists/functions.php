@@ -116,20 +116,14 @@ add_action( 'after_setup_theme', 'alchemists_setup' );
 
 /**
  * Load theme textdomain for translations.
- * This is hooked to 'init' to comply with WordPress 6.7.0+ requirements.
+ * Hooked to 'init' to comply with WordPress 6.7.0+ requirements.
  */
 if ( ! function_exists( 'alchemists_load_textdomain' ) ) {
-	function alchemists_load_textdomain() {
-		/*
-		* Make theme available for translation.
-		* Translations can be filed in the /languages/ directory.
-		* If you're building a theme based on alchemists, use a find and replace
-		* to change 'alchemists' to the name of your theme in all the template files.
-		*/
-		load_theme_textdomain( 'alchemists', get_template_directory() . '/languages' );
-	}
+    function alchemists_load_textdomain() {
+        load_theme_textdomain( 'alchemists', get_template_directory() . '/languages' );
+    }
 }
-add_action( 'init', 'alchemists_load_textdomain', 1 );
+add_action( 'init', 'alchemists_load_textdomain' );
 
 /**
  * Register navigation menus.

@@ -257,31 +257,39 @@ class WP_SCSS_Compiler {
 
 
 	/**
-	 * Compiles file and saves its data to cache
+	 * Compiles SCSS file and saves its data to cache
 	 *
-	 * @param $scss_path   string source path
-	 * @param $output_path string destination path
-	 * @param $scss        ScssPhp\ScssPhp\Compiler instance
+	 * @param string $scss_path Source path
+	 * @return string Compiled CSS
 	 */
-	private function compile_file( $scss_path, $output_path, &$scss ) {
-		$instance_dump = crc32( serialize( $scss ) );
+	public function compile_and_cache( $scss_path ) {
+		// Отримуємо шлях до кешу
+		$cache_dir  = WP_CONTENT_DIR . '/cache/scss/';
+		$cache_file = $cache_dir . md5( $scss_path ) . '.css';
 
-		$start   = microtime( true );
-		$css     = $scss->compile( file_get_contents( $scss_path ), $scss_path );
-		$elapsed = round( ( microtime( true ) - $start ), 4 );
+		// Якщо кеш існує і файл SCSS не змінювався — повертаємо кеш
+		if ( file_exists( $cache_file ) && filemtime( $cache_file ) >= filemtime( $scss_path ) ) {
+			return file_get_contents( $cache_file );
+		}
 
-		$v   = ScssPhp\ScssPhp\Version::VERSION;
-		$t   = date( 'r' );
-		$css = "/* compiled by wp scssphp $v on $t (${elapsed}s) */\n\n" . $css;
+		// Читаємо SCSS
+		$scss_code = file_get_contents( $scss_path );
 
-		file_put_contents( $output_path, $css );
-		$this->save_cache_data( $output_path,
-			array(
-				'creation_time' => time(),
-				'imports'       => $scss->getParsedFiles(),
-				'instance'      => $instance_dump
-			) );
+		// Використовуємо компілятор SCSSPHP
+		$compiler = new \Leafo\ScssPhp\Compiler();
+		$compiled_css = $compiler->compile( $scss_code );
+
+		// Створюємо директорію кешу, якщо її немає
+		if ( ! file_exists( $cache_dir ) ) {
+			wp_mkdir_p( $cache_dir );
+		}
+
+		// Зберігаємо результат у кеш
+		file_put_contents( $cache_file, $compiled_css );
+
+		return $compiled_css;
 	}
+
 
 
 	/**

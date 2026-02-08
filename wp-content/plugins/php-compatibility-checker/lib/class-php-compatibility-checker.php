@@ -10,7 +10,32 @@ namespace WPEngine_PHPCompat;
 /**
  * Main PHP Compat class.
  */
-class PHP_Compatibility_Checker {
+class PHP_Compatibility_Checker { 
+	
+	/** * Сторінка сканування в адмінці. * * @var string */ 
+	protected $page;
+
+	/** * Add the scan page to the wp-admin menu. 
+	 * *
+	 *  * @since 1.0.0 */ 
+	public function add_admin_menu() { 
+		$this->page = add_menu_page( 
+			__( 'PHP Compatibility',  'php-compatibility-checker' ), 
+			__( 'PHP Compatibility', 'php-compatibility-checker' ), 'manage_options', 
+			'php-compatibility-checke r', 
+			array( $this, 'render_scan_page' ),
+			'dashicons-shield',
+			80
+		); 
+	}
+
+	/** * Render the scan page content. */ 
+	public function render_scan_page() { 
+		echo '<div class="wrap">'; 
+		echo '<h1>' . esc_html__( 'PHP Compatibility Scan', 'php-compatibility-checker' ) . '</h1>'; 
+		// Тут можна вставити логіку відображення результатів сканування
+		echo '</div>'; 
+	}
 
 	/**
 	 * Contains singleton instance.
