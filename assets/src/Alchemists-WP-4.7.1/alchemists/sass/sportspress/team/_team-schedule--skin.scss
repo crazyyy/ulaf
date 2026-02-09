@@ -1,0 +1,19 @@
+/* Team Schedule & Tickets */
+.team-schedule {
+
+	.data-home,
+	.data-away {
+		color: $headings-color;
+	}
+
+	.data-date {
+
+		a {
+			color: $body-font-color;
+		}
+	}
+
+	a:not(.btn) {
+		color: $headings-color;
+	}
+}

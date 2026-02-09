@@ -1,0 +1,16 @@
+/* Countdown
+/* ------------------------- */
+.countdown {
+
+}
+	.countdown-counter {
+
+		> span {
+			color: $headings-color;
+			font-family: $font-family-accent;
+
+			> small {
+				color: $body-font-color;
+			}
+		}
+	}

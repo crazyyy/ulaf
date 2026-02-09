@@ -1,0 +1,58 @@
+/* Officials */
+
+.sp-template-event-officials {
+
+}
+
+// Officials - Table
+table.sp-event-officials {
+
+	> thead > tr > th,
+	> tbody > tr > td {
+
+		&:first-child {
+			@media (min-width: 1200px) {
+				padding-#{$left}: $card-horizontal-padding;
+			}
+		}
+	}
+}
+
+// Officials - List
+.officials-list {
+
+}
+	.officials-list__item {
+		display: flex;
+		flex-wrap: wrap;
+
+		@media (min-width: 992px) {
+			flex-wrap: nowrap;
+		}
+
+		& + & {
+			padding-top: 1em;
+		}
+	}
+		.officials-list__duty {
+			@include font-accent(10px);
+			color: $body-font-color;
+			font-weight: normal;
+			text-transform: uppercase;
+			line-height: 1.5em;
+			flex-basis: 40%;
+
+			@media (min-width: 992px) {
+				flex-basis: 20%;
+			}
+		}
+		.officials-list__holder {
+
+		}
+			.officials-list__name {
+				@include font-accent(10px);
+				color: $headings-color;
+				text-transform: none;
+				line-height: 1.5em;
+				margin-bottom: .2em;
+			}

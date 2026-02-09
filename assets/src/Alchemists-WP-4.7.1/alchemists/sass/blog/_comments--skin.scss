@@ -1,0 +1,79 @@
+/* Comments
+/* ------------------------- */
+.comment,
+.pingback {
+
+}
+	.comments__inner {
+		border-bottom: 1px solid $card-border-color;
+	}
+		.comment__author {
+
+		}
+			.comment__post-date {
+				font-family: $font-family-accent;
+
+				a {
+					color: $body-font-color;
+
+					&:hover {
+						color: $link-color-hover;
+					}
+
+					& + a {
+						color: $link-color;
+
+						&:hover {
+							color: $link-color-hover;
+						}
+					}
+				}
+			}
+
+
+
+/* Nested Comments */
+.comments .children {
+
+	@media ( min-width: 992px) {
+
+		// Default Paddings
+		.card & {
+
+			// 2nd Level
+			.comment {
+
+				.comments__inner {
+
+					&::before {
+						border-#{$left}: 1px solid $card-border-color;
+						border-bottom: 1px solid $card-border-color;
+					}
+				}
+			}
+
+			// Football Template
+			@if $template == football {
+
+				.comment {
+
+					.comments__inner {
+						background-color: $color-dark-lighten-2;
+					}
+				}
+			}
+		}
+
+		// Large Paddings
+		.card--lg & {
+
+			// Football Template
+			@if $template == football {
+
+				.comment {
+					background-color: $color-dark-lighten-2;
+				}
+			}
+		}
+	}
+}

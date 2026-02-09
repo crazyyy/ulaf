@@ -1,0 +1,217 @@
+/* Widget: Results */
+.widget-results {
+
+	.card__content {
+		padding: 0;
+	}
+}
+	.widget-results__list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+		.widget-results__item {
+			border-top: 1px solid $card-border-color;
+
+			&:first-child {
+				border-top: none;
+			}
+		}
+			.widget-results__title {
+				font-size: 9px;
+				line-height: 1.2em;
+				text-align: center;
+				font-weight: 400;
+				font-style: normal;
+				color: $body-font-color;
+				border-bottom: 1px solid $card-border-color;
+				padding: 10px;
+				margin-bottom: 0;
+
+				@if $template == football {
+					text-transform: uppercase;
+				}
+			}
+
+			.widget-results__content {
+				display: flex;
+				align-items: center;
+				padding: 12px calc($card-horizontal-padding / 2);
+
+				@media (min-width: 1200px) {
+					padding: 16px $card-horizontal-padding;
+				}
+			}
+				.widget-results__team {
+					flex-grow: 1;
+					order: 0;
+					flex-basis: 35%;
+					min-width: 35%;
+					display: flex;
+					align-items: center;
+
+					@media (min-width: 992px) and (max-width: 1199px) {
+						flex-basis: 25%;
+						min-width: 25%;
+					}
+				}
+					.widget-results__team-logo {
+						display: inline-block;
+						vertical-align: middle;
+						margin-#{$right}: 5px;
+						width: 20px;
+						min-width: 20px;
+						text-align: center;
+
+						@media (min-width: 992px) {
+							margin-#{$right}: 8px;
+							width: 26px;
+							min-width: 26px;
+						}
+
+						.widget-results__team--even & {
+							order: 2;
+							margin-#{$right}: 0;
+							margin-#{$left}: 5px;
+
+							@media (min-width: 992px) {
+								margin-#{$right}: 0;
+								margin-#{$left}: 8px;
+							}
+						}
+					}
+					.widget-results__team-details {
+						display: inline-block;
+						vertical-align: middle;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+					}
+						.widget-results__team-name {
+							text-transform: none;
+							font-size: 11px;
+							font-weight: 400;
+							line-height: 1.2em;
+							font-style: normal;
+							margin: 0;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							white-space: nowrap;
+
+							@media (min-width: 1200px) {
+								font-size: 12px;
+							}
+						}
+						.widget-results__team-info {
+							font-family: $font-family-accent;
+							font-size: 8px;
+							display: block;
+							line-height: 1.2em;
+
+							@include fix_small_chars();
+
+							@media (min-width: 992px) {
+								font-size: 9px;
+							}
+						}
+
+					.widget-results__team--even {
+						order: 2;
+						// text-align: right;
+
+						.widget-results__team-details {
+							flex: 1;
+							text-align: $right;
+						}
+					}
+
+				.widget-results__result {
+					order: 1;
+					flex-basis: 30%;
+					min-width: 30%;
+					text-align: center;
+				}
+					.widget-results__score {
+						font-family: $font-family-accent;
+						color: $headings-color;
+						font-size: 10px;
+						line-height: 1.2em;
+						margin-bottom: 0;
+
+						@media (min-width: 992px) {
+							font-size: 12px;
+						}
+
+					}
+						.widget-results__score-winner {
+
+							&:before {
+								content:"";
+								display: inline-block;
+								border-top: 4px solid transparent;
+								border-bottom: 4px solid transparent;
+								border-#{$left}: 4px solid $color-primary;
+
+								@if $template == football {
+									border-#{$left}: 4px solid $color-4;
+								} @else {
+									border-#{$left}: 4px solid $color-primary;
+								}
+
+								width: 0;
+								height: 0;
+								margin-#{$right}: .5em;
+							}
+
+							.widget-results__score-loser ~ &::before {
+								display: none;
+							}
+
+							.widget-results__score-loser ~ &::after {
+								content:"";
+								display: inline-block;
+								border-top: 4px solid transparent;
+								border-bottom: 4px solid transparent;
+								border-#{$right}: 4px solid $color-primary;
+
+								@if $template == football {
+									border-#{$right}: 4px solid $color-4;
+								} @else {
+									border-#{$right}: 4px solid $color-primary;
+								}
+
+								width: 0;
+								height: 0;
+								margin-#{$left}: .5em;
+							}
+						}
+						.widget-results__score-loser {
+
+						}
+
+						@if tempate == soccer {
+
+							.widget-results__score-draw {
+
+							}
+
+						}
+
+						.widget-results__status {
+							display: block;
+							font-size: 8px;
+							font-family: $font-family-accent;
+							line-height: 1.2em;
+							color: $body-font-color;
+							text-align: center;
+							padding-bottom: 16px;
+							margin: -10px auto 0 auto;
+
+							@include fix_small_chars();
+
+							@media (min-width: 992px) {
+								font-size: 9px;
+								width: 50%;
+								margin-top: -18px;
+							}
+						}

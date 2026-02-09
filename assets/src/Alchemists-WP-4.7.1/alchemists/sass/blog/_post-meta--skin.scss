@@ -1,0 +1,91 @@
+/* Post Meta */
+
+// Simple Meta
+.meta {
+
+}
+	.meta__item {
+		font-family: $font-family-accent;
+
+		a {
+			color: $body-font-color;
+
+			&:hover {
+				color: $headings-color;
+
+				@if $template == football {
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	// Likes
+	.meta__item--likes {
+
+		&.meta__item--likes--active {
+
+			.meta-like {
+				color: #f1365e;
+			}
+		}
+	}
+
+
+/* Side Meta Block */
+.post__meta-block {
+
+}
+
+
+	// Top Meta Block
+	.post__meta-block--top {
+
+		.posts__title {
+
+			.hero-slider & {
+
+				> a {
+					color: #fff;
+				}
+			}
+		}
+
+		.page-heading__title {
+
+			> a {
+				color: #fff;
+			}
+		}
+
+		.post__meta {
+			color: #fff;
+		}
+			.meta__item {
+
+				a {
+					color: #fff;
+				}
+			}
+
+			.posts__date {
+
+				@if $template == football {
+					color: #fff;
+				}
+			}
+
+			.post-author__name {
+				color: #fff;
+			}
+	}
+
+
+
+/* Side Meta Block - Wide */
+.post__meta-block--side-wide {
+
+	.post-author__name {
+		color: $body-font-color;
+	}
+}

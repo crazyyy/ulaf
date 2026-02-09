@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Alchemists\n"
 "POT-Creation-Date: 2025-12-24 14:44+0000\n"
-"PO-Revision-Date: 2026-02-08 09:10+0000\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2026-02-09 09:28+0000\n"
+"Last-Translator: Vitalii A\n"
 "Language-Team: Українська\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,6 @@ msgstr ""
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
-"\n"
 "Report-Msgid-Bugs-To: \n"
 "X-Loco-Version: 2.8.1; wp-6.9.1; php-8.3.30"
 
@@ -34,6 +33,7 @@ msgid "%1$s for %2$s item"
 msgid_plural "%1$s for %2$s items"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #. %1$s Action name, %2$s Order number.
 #: woocommerce/order/order-details.php:110 woocommerce/myaccount/orders.php:81
@@ -48,6 +48,7 @@ msgid "%1$s review for %2$s"
 msgid_plural "%1$s reviews for %2$s"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: search.php:121
 #, php-format
@@ -60,6 +61,7 @@ msgid "%s article"
 msgid_plural "%s articles"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: inc/wc-functions.php:180 template-parts/header/header-info-block.php:159
 #, php-format
@@ -67,6 +69,7 @@ msgid "%s item"
 msgid_plural "%s items"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: vc_templates/alc_twitch.php:64
 #, php-format
@@ -161,6 +164,8 @@ msgstr ""
 #: woocommerce/myaccount/form-login.php:124
 msgid "A link to set a new password will be sent to your email address."
 msgstr ""
+"Посилання для встановлення нового пароля буде надіслано на вашу електронну "
+"пошту."
 
 #: inc/wc-functions.php:556 inc/wc-functions.php:575
 msgid "Abbreviation"
@@ -224,7 +229,7 @@ msgstr ""
 
 #: inc/acf-fields.php:1286 inc/acf-fields.php:1703
 msgid "After Players"
-msgstr ""
+msgstr "Після гравців"
 
 #: sportspress/player-carousel-thumbs.php:38 sportspress/single-player.php:36
 #: sportspress/player-block-thumbnail.php:110
@@ -528,6 +533,7 @@ msgid "Comment"
 msgid_plural "Comments"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: comments.php:44
 msgid "Comments"
@@ -2411,6 +2417,7 @@ msgid "Tag:"
 msgid_plural "Tags:"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: vc_templates/alc_player_stats/alc_player_stats-football.php:83
 #: sportspress/single-team/featured-player/content-player-football.php:42
@@ -2768,6 +2775,7 @@ msgid "Year"
 msgid_plural "Years"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: vc_templates/alc_player_stats/alc_player_stats-soccer.php:113
 #: sportspress/single-team/featured-player/content-player-soccer.php:49

@@ -1,0 +1,65 @@
+/* Widget: Tabbed */
+.widget-tabbed {
+
+	.widget__content {
+
+	}
+
+	.nav.widget-tabbed__nav {
+		border-bottom-color: $card-border-color;
+
+		> li {
+
+			> a {
+				font-family: $font-family-accent;
+				color: $widget-tabbed-nav-font-color;
+
+				&:hover {
+					color: $widget-tabbed-nav-font-color-hover;
+				}
+
+				&.active {
+					color: $widget-tabbed-nav-font-color-active;
+				}
+			}
+		}
+	}
+}
+
+.footer-widgets {
+
+		.widget-tabbed {
+
+			.nav.widget-tabbed__nav {
+
+				> li {
+
+					> a {
+						@if $template == 'football' {
+							color: $color-gray-3;
+						} @else {
+							color: rgba($footer-widget-title, .4);
+						}
+
+						&:hover {
+							@if $template == 'football' {
+								color: #fff;
+							} @else {
+								color: $footer-widget-title;
+							}
+						}
+
+						&.active {
+							background-color: transparent;
+
+							@if $template == 'football' {
+								color: #fff;
+							} @else {
+								color: $footer-widget-title;
+							}
+						}
+					}
+				}
+			}
+		}
+	}

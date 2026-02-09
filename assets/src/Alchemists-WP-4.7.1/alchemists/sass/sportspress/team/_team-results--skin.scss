@@ -1,0 +1,48 @@
+/* Team Results */
+.team-result {
+
+	tbody {
+		.team-result__date,
+		.team-result__vs,
+		.team-result__score,
+		.team-result__status,
+		.team-result__points,
+		.team-result__rebounds,
+		.team-result__assists,
+		.team-result__steals {
+			color: $body-font-color;
+		}
+	}
+}
+	.team-result__game {
+		color: $headings-color;
+	}
+
+
+/* Team Result Filter */
+	.team-result-filter__item {
+
+		select.form-control {
+			font-family: $font-family-accent;
+			background-image: $team-select-arrow;
+			color: $team-select-color;
+		}
+	}
+
+@if $template == football {
+	.team-result {
+
+		td.team-result__score {
+			color: #fff;
+		}
+	}
+	.team-result__game {
+		color: #fff;
+	}
+	.team-result__game--win {
+		color: $color-success;
+	}
+	.team-result__game--lose {
+		color: $color-danger;
+	}
+}

@@ -1,0 +1,48 @@
+/* Sportspress Shortcodes */
+
+// Event Results
+.sp-event-results {
+
+	.data-name > a {
+		color: $headings-color;
+	}
+
+}
+
+// Event Performance (Box Score)
+.sp-event-performance {
+
+	> thead > tr > th,
+	> tbody > tr > td,
+	> tfoot > tr > td {
+
+		&.data-number {
+			color: $headings-color;
+		}
+
+		&.data-name {
+
+			> a {
+				color: $headings-color;
+			}
+		}
+	}
+}
+
+
+// Event Calendar
+.sp-template-event-calendar {
+	border: 1px solid $card-border-color;
+	background-color: $card-bg;
+}
+
+.sp-template-player-details {
+
+	.sp-player-details {
+
+		dt {
+			font-family: $font-family-accent;
+			color: $headings-color;
+		}
+	}
+}

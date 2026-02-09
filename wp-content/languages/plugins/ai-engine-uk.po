@@ -1,0 +1,121 @@
+# Translation of Plugins - AI Engine &#8211; The Chatbot and AI Framework for WordPress - Stable (latest release) in Ukrainian
+# This file is distributed under the same license as the Plugins - AI Engine &#8211; The Chatbot and AI Framework for WordPress - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-08-29 18:09:36+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.3\n"
+"Language: uk_UA\n"
+"Project-Id-Version: Plugins - AI Engine &#8211; The Chatbot and AI Framework for WordPress - Stable (latest release)\n"
+
+#: classes/admin.php:135 app/i18n.js:145
+msgid "Images"
+msgstr "Зображення"
+
+#: classes/admin.php:193 app/i18n.js:572
+msgid "Generate Excerpt"
+msgstr "Генерувати Уривок"
+
+#: classes/admin.php:127 app/i18n.js:144
+msgid "Content"
+msgstr "Вміст"
+
+#: classes/admin.php:68 classes/admin.php:162 app/i18n.js:116
+msgid "Playground"
+msgstr "Дитячий майданчик"
+
+#: common/news.php:101
+msgid "❌ Delete"
+msgstr "Видалити"
+
+#: common/news.php:92
+msgid "👉 AI Engine at WordPress.org"
+msgstr "AI Engine at WordPress.org"
+
+#: common/news.php:87
+msgid "<p style=\"font-size: 14px;\">Since the end of 2022, I worked a lot to craft <b>the perfect AI plugin for WordPress</b>. Since March 2023, it's perfectly stable and packed with features. You'll get chatbots, AI forms, easy model training, content and images generation, a template system that will allow you to create your personal assistants for various tasks and much more! Here it is: <a href=\"%s\" target=\"_blank\">AI Engine</a>. Believe me, you will enjoy this. Have fun, and let me know how it goes! 🥳</p>"
+msgstr "<p style=\"font-size: 14px;\">З кінця 2022 року я багато працював над створенням <b>ідеального плагіна штучного інтелекту для WordPress</b>. Станом на лютий 2023 року він є абсолютно стабільним і має безліч функцій. Ви отримаєте чат-ботів, AI-форми, просте навчання моделей, створення контенту та зображень, систему шаблонів, яка дозволить вам створювати своїх особистих помічників для різних завдань та багато іншого! Ось він: <a href=\"%s\" target=\"_blank\">AI Engine</a>. Повірте, це вам сподобається. Отримуйте задоволення і дайте мені знати, як це йде! 🥳</p>"
+
+#: common/news.php:84
+msgid "<h2 style=\"margin: 0 0 10px 0\" class=\"title\">AI Engine by Meow Apps: The Power of AI into WordPress 💫</h2>"
+msgstr "<h2 style=\"margin: 0 0 10px 0\" class=\"title\">AI Engine від Meow Apps: сила штучного інтелекту в WordPress 💫</h2>"
+
+#: common/ratings.php:120 app/i18n.js:142
+msgid "Hide"
+msgstr "Не відображати"
+
+#: common/ratings.php:106
+msgid "✌️ Done!"
+msgstr "Готово!"
+
+#: common/ratings.php:95
+msgid "<h2 style=\"margin: 0\" class=\"title\">You have been using <b>%1$s</b> for some time now. Thank you! 💕</h2><p>If you have a minute, can you write a <b><a target=\"_blank\" href=\""
+msgstr "<h2 style=\"margin: 0\" class=\"title\">Ви вже деякий час використовуєте <b>%1$s</b>. Дякую! 💕</h2><p>Якщо у вас є хвилинка, можете написати <b><a target=\"_blank\" href=\""
+
+#. Plugin Name of the plugin
+#: ai-engine.php classes/admin.php:118
+msgid "AI Engine"
+msgstr "AI Engine"
+
+#. Plugin URI of the plugin
+#: ai-engine.php
+msgid "https://wordpress.org/plugins/ai-engine/"
+msgstr "https://wordpress.org/plugins/ai-engine/"
+
+#: common/news.php:96 common/ratings.php:114
+msgid "⏰ Remind me later"
+msgstr "Нагадай мені пізніше"
+
+#. translators: %1$s is the version of the interface; %2$s is a file path.
+#: common/admin.php:503
+msgid "Thanks for using <a href=\"https://meowapps.com\">Meow Apps</a>! This is the Meow Admin %1$s <br /><i>Loaded from %2$s </i>"
+msgstr "Дякуємо за використання <a href=\"https://meowapps.com\">Meow Apps</a>! Це Meow Admin %1$s <br /><i>Завантажено з: %2$s </i>"
+
+#: common/admin.php:468
+msgid "<label>Hide <b>Meow Apps</b> Menu</label><br /><small>Hide Meow Apps menu and all its components, for a cleaner admin. This option will be reset if a new Meow Apps plugin is installed.<br /><b>Once activated, an option will be added in your General settings to display it again.</b></small>"
+msgstr "<label>Приховати <b>Meow Apps</b> Меню </label><br /><small>Приховати меню Meow Apps та всі його компоненти для більш чистої адмінки. Ця опція буде скинута, якщо буде встановлено нову плагін Meow Apps. <br /><b>Після активації опцію буде додано до загальних налаштувань, щоб знову відобразити її.</b></small>"
+
+#: common/admin.php:447 common/admin.php:448 app/i18n.js:213
+msgid "Dashboard"
+msgstr "Панель керування"
+
+#: common/admin.php:418
+msgid "Remove the license"
+msgstr "Вилучити WI.com Ліцензія"
+
+#: common/admin.php:411
+msgid "<p>It looks like you are using the free version of the plugin (<b>%s</b>) but a license for the Pro version was also found. The Pro version might have been replaced by the Free version during an update (might be caused by a temporarily issue). If it is the case, <b>please download it again</b> from the <a target=\"_blank\" href=\"https://meowapps.com\">Meow Store</a>. If you wish to continue using the free version and clear this message, click on this button."
+msgstr "<p>Схоже, ви використовуєте безкоштовну версію модуля (<b>%s</b>), але також була виявлена ліцензія на версію Pro. Версія Pro могла бути замінена безкоштовною версією під час оновлення (може бути викликана тимчасовою проблемою). Якщо це так, <b>завантажте його ще раз</b> з <a target=\"_blank\" href=\"https://meowapps.com\">Meow Store</a>. Якщо ви бажаєте продовжити використання безкоштовної версії та прибрати це повідомлення, натисніть цю кнопку."
+
+#: common/admin.php:231 common/admin.php:243
+msgid "<a target=\"_blank\" href=\"https://meowapps.com\">Get the <u>Pro Version</u></a>"
+msgstr "<a target=\"_blank\" href=\"https://meowapps.com\">Get the <u>Pro Version</u></a>"
+
+#: common/admin.php:243
+msgid "License Issue"
+msgstr "Проблема з ліцензією"
+
+#: common/admin.php:225 common/admin.php:242
+msgid "Pro Version"
+msgstr "Версія PRO"
+
+#: common/admin.php:239
+msgid "<a href=\"admin.php?page=%s_settings\">Settings</a>"
+msgstr "<a href=\"admin.php?page=%s_settings\">Налаштування</a>"
+
+#: classes/init.php:5
+msgid "Thanks for installing the Pro version of AI Engine :) However, the free version is still enabled. Please disable or uninstall it."
+msgstr "Дякуємо за встановлення Про -версії Media Cleaner :) Проте безкоштовна версія плагіну все ще увімкнена. Вимкніть або видаліть його."
+
+#. Author URI of the plugin
+#: ai-engine.php
+msgid "https://jordymeow.com"
+msgstr "https://jordymeow.com"
+
+#. Author of the plugin
+#: ai-engine.php
+msgid "Jordy Meow"
+msgstr "Олег Сирота"

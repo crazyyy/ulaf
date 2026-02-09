@@ -1,0 +1,24 @@
+/**
+ *
+ * Match Stats
+ *
+ */
+
+ .sp-template-event-statistics {
+
+	.sp-statistic-label {
+		font-family: $font-family-accent;
+	}
+
+	.sp-statistic-value {
+		color: $headings-color;
+	}
+
+	.sp-statistic-bar {
+		background-color: $progress-bg;
+	}
+
+	.sp-statistic-bar-fill {
+		background-color: $color-primary;
+	}
+}

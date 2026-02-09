@@ -1,0 +1,222 @@
+/* Pushy Panel */
+
+// Pushy Toggle Button
+.pushy-panel__toggle {
+	width: 62px;
+	min-width: 62px; // useful if button is in flexbox
+	height: $nav-height;
+	line-height: $nav-height;
+	background-color: $color-primary;
+	vertical-align: middle;
+	margin-#{$left}: 27px;
+	position: relative;
+
+	@media (min-width: 992px) {
+		display: inline-block;
+	}
+
+	@media (min-width: 992px) and (max-width: 1199px) {
+		margin-#{$left}: 18px;
+	}
+
+	&:hover {
+
+		.pushy-panel__line {
+			transform: rotate(if-ltr(180deg, -180deg));
+
+			&::before,
+			&::after {
+				width: 50%;
+			}
+
+			&::before {
+				top: 0;
+				transform: translateX(if-ltr(-3px, 3px)) translateY(1px) rotate(if-ltr(-45deg, 45deg));
+			}
+
+			&::after {
+				bottom: 0;
+				transform: translateX(if-ltr(-3px, 3px)) translateY(-1px) rotate(if-ltr(45deg, -45deg));
+			}
+		}
+	}
+}
+	.pushy-panel__line {
+		top: 50%;
+		#{$left}: 23px;
+		#{$right}: 24px;
+		width: 16px;
+		transition: transform 0.3s;
+
+		&,
+		&::before,
+		&::after {
+			display: block;
+			position: absolute;
+			height: 2px;
+			background-color: $pushy-toggle-icon-color;
+		}
+
+		&::before,
+		&::after {
+			content:"";
+			width: 100%;
+		}
+
+		&::before {
+			top: -5px;
+			transform-origin: if-ltr(top left, top right);
+			transition: transform 0.3s, width 0.3s, top 0.3s;
+		}
+
+		&::after {
+			bottom: -5px;
+			transform-origin: if-ltr(bottom left, bottom right);
+			transition: transform 0.3s, width 0.3s, bottom 0.3s;
+		}
+	}
+
+// Pushy Panel (Light by default)
+.pushy-panel {
+	position: fixed;
+	z-index: 1000;
+	inset-inline-end: 0;
+	transform: translateX(if-ltr(100%, -100%));
+	top: 0;
+	bottom: 0;
+	width: $pushy-panel-width;
+	max-width: 100%;
+	text-align: $left;
+	transition: all 0.4s ease-in-out;
+
+	// tweaks if admin bar displayed
+	body.admin-bar & {
+		top: 32px;
+
+		@media (max-width: 782px) {
+			top: 46px;
+		}
+	}
+
+	.site-wrapper--has-overlay-pushy & {
+		transform: translateX(0);
+	}
+
+	.posts--simple-list {
+
+		.posts__title + .posts__date {
+			margin-top: .4em;
+		}
+
+		.posts__item {
+			margin-bottom: 44px;
+		}
+
+		.posts__excerpt {
+			overflow: hidden;
+			clear: both;
+		}
+	}
+
+	.posts--simple-list--lg {
+
+		.posts__item {
+			margin-bottom: 44px !important;
+		}
+	}
+}
+	.pushy-panel--active {
+		#{$right}: 0;
+	}
+	.pushy-panel__inner {
+		width: 100%;
+		height: 100%;
+		background-color: $pushy-panel-bg;
+		position: relative;
+		overflow-y: scroll;
+		-ms-overflow-style: none;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	// Pushy Back Button
+	.pushy-panel__back-btn {
+		display: block;
+		width: 49px;
+		height: 44px;
+		position: absolute;
+		#{$right}: 32px;
+		top: 22px;
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 10'%3E%3Cpath fill='%2331404b' d='M14.000,6.000 L4.586,6.000 L6.414,7.828 L5.000,9.242 L0.757,5.000 L2.172,3.585 L2.172,3.586 L5.000,0.757 L6.414,2.171 L4.586,4.000 L14.000,4.000 L14.000,6.000 Z'/%3E%3C/svg%3E");
+
+		@include if-rtl {
+			transform: scaleX(-1);
+		}
+
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 13px 8px;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	// Pushy Header
+	.pushy-panel__header {
+		padding: 28px 30px 60px 30px;
+		text-align: center;
+	}
+
+	// Pushy Content
+	.pushy-panel__content {
+		padding: 0 20px;
+
+		@media (min-width: 992px) {
+			padding: 0 40px;
+		}
+	}
+
+		.pushy-panel__logo-img {
+			width: 94px;
+			height: auto;
+		}
+
+
+// Pushy Panel Dark
+.pushy-panel--dark {
+
+
+	.pushy-panel__inner {
+		background-color: $pushy-panel-bg-dark;
+	}
+
+	.widget--side-panel {
+
+		.widget__title {
+			color: #fff;
+		}
+	}
+
+	.btn.btn-outline {
+		border-color: #3f4653;
+		color: #fff;
+	}
+
+	.posts__title a {
+		color: #fff;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	// Pushy Back Button
+	.pushy-panel__back-btn {
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 10'%3E%3Cpath fill='%23ffffff' d='M14.000,6.000 L4.586,6.000 L6.414,7.828 L5.000,9.242 L0.757,5.000 L2.172,3.585 L2.172,3.586 L5.000,0.757 L6.414,2.171 L4.586,4.000 L14.000,4.000 L14.000,6.000 Z'/%3E%3C/svg%3E");
+	}
+}
+
+// Pushy Panel Alert
+.pushy-panel__alert {
+	margin: 6em 0 0 0;
+}

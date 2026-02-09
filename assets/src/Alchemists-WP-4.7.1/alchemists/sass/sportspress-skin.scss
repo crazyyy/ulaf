@@ -1,0 +1,59 @@
+/*
+File Name: 		sportspress-skin.css
+Written by: 	Dan Fisher - (http://themeforest.net/user/dan_fisher)
+Description:  Styles for color skin (sportspress), contain selectors with variables
+*/
+
+// Basic Imports
+@import "config/imports";
+
+// Shortcodes
+@import "sportspress/sp-shortcodes--skin";
+
+// Event
+@import "sportspress/sp-event--skin";
+
+// Partials
+@import "sportspress/partials/match-preview--skin";
+@import "sportspress/partials/game-result--skin";
+
+// Team
+@import "sportspress/team/team-gallery--skin";
+@import "sportspress/team/team-roster--skin";
+@import "sportspress/team/team-standings--skin";
+@import "sportspress/team/team-glossary--skin";
+@import "sportspress/team/team-results--skin";
+@import "sportspress/team/team-schedule--skin";
+
+// Player
+@import "sportspress/player/player-heading--skin";
+@import "sportspress/player/player-game-log--skin";
+@import "sportspress/player/player-league--skin";
+@import "sportspress/player/player-game-by-game-stats--skin";
+
+// Widgets
+@import "sportspress/sp-widgets--skin";
+@import "sportspress/widgets/widget-player--skin";
+@import "sportspress/widgets/widget-game-result--skin";
+@import "sportspress/widgets/widget-results--skin";
+@import "sportspress/widgets/widget-games-history--skin";
+@import "sportspress/widgets/widget-team-leaders--skin";
+@import "sportspress/widgets/widget-team-stats--skin";
+@import "sportspress/widgets/soccer_widget-commentary--skin";
+@import "sportspress/widgets/soccer_widget-lineup-table--skin";
+@import "sportspress/widgets/esports_widget-game-result--skin";
+
+// Staff
+@import "sportspress/staff/staff--skin";
+
+// Officials
+@import "sportspress/officials/officials--skin";
+
+// SportsPress Pro
+@import "sportspress-pro/sponsors--skin";
+@import "sportspress-pro/staff-directories--skin";
+@import "sportspress-pro/match-stats--skin";
+@import "sportspress-pro/user-scores--skin";
+@import "sportspress-pro/scoreboard--skin";
+@import "sportspress-pro/tournaments--skin";
+@import "sportspress-pro/results-matrix--skin";

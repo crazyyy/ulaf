@@ -1,0 +1,24 @@
+/**
+ *
+ * Staff Directories
+ *
+ */
+
+
+
+/* List */
+.sp-staff-directory {
+
+	.data-name,
+	.data-phone,
+	.data-email {
+
+		> a {
+			color: $headings-color;
+
+			&:hover {
+				color: $link-color-hover;
+			}
+		}
+	}
+}

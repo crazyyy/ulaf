@@ -1,0 +1,83 @@
+/* Card
+/* ------------------------- */
+
+.card {
+	@include card();
+
+	&.sticky {
+		background-color: $card-bg-sticky;
+	}
+}
+.card--clean {
+	background: none;
+	border: none;
+
+	.card__header {
+		background-color: $card-header-bg;
+		border: 1px solid $card-border-color;
+		border-radius: $card-border-radius;
+	}
+}
+
+	.card__header {
+		@include card-header();
+	}
+	.card__header--single {
+		border: 1px solid $card-border-color;
+		border-radius: $card-border-radius;
+	}
+
+	.card__subheader {
+		background: $card-subheader-bg;
+		border-top: 1px solid $card-border-color;
+		border-bottom: 1px solid $card-border-color;
+	}
+
+// Color
+.card--alt-color {
+
+	.card__header {
+
+		&::before {
+
+			@if $template == 'soccer' {
+				background-color: $color-4-darken;
+			} @else {
+				background-color: $color-4;
+			}
+
+		}
+	}
+}
+
+
+// Card Info
+.card--info {
+
+	.contact-info {
+		border-top-color: $card-border-color;
+	}
+		.contact-info__item {
+			border-#{$left}-color: $card-border-color;
+			border-top-color: $card-border-color;
+
+			&:first-child {
+				border-bottom-#{$left}-radius: $card-border-radius;
+			}
+		}
+			.contact-info__icon {
+				color: $color-primary;
+			}
+			.contact-info__label {
+				font-family: $font-family-accent;
+				color: $headings-color;
+
+				a {
+					color: $headings-color;
+
+					&:hover {
+						color: $link-color-hover;
+					}
+				}
+			}
+}

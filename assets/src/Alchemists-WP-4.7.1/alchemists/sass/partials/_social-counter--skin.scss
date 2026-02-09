@@ -1,0 +1,17 @@
+/* Social Counter
+/* ------------------------- */
+
+.btn-social-counter {
+	border: 1px solid $card-border-color;
+
+	.widget--footer & {
+		border-color: transparent;
+	}
+}
+	.btn-social-counter__count {
+		font-family: $font-family-accent;
+	}
+
+	.btn-social-counter__name {
+		font-family: $font-family-accent;
+	}

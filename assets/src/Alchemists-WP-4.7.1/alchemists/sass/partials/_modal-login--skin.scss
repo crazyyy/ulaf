@@ -1,0 +1,86 @@
+/*
+// #Modal Login
+// --------------------------------------------------
+*/
+
+.modal--login {
+
+	.modal-header {
+
+		.close {
+			background-color: $headings-color;
+			color: #fff;
+
+			&:hover {
+				background-color: $color-primary-darken;
+			}
+		}
+	}
+
+		.modal-account__item {
+
+			@media (min-width: 768px) {
+
+				&:nth-child(2) {
+					border-#{$left}: 1px solid #e4e7ed;
+				}
+			}
+		}
+		.modal-account__item--logo {
+			color: #fff;
+
+			a {
+				color: $color-4;
+
+				&:hover {
+					color: #fff;
+				}
+			}
+		}
+}
+	.nav-tabs--login {
+		border-top: 1px solid $card-border-color;
+
+		> li {
+
+			> a {
+				font-family: $font-family-accent;
+				color: rgba($color-2, 0.4);
+
+				&:hover {
+					color: $color-primary;
+				}
+			}
+
+			&.active {
+
+				> a {
+					color: $color-primary;
+
+					&:hover {
+						color: $color-primary;
+					}
+				}
+			}
+
+			& + li {
+				border-left: 1px solid $card-border-color;
+			}
+		}
+	}
+
+
+// Register Form
+.modal-form {
+
+	.form-group--pass-reminder {
+
+		a {
+			color: $body-font-color;
+
+			&:hover {
+				color: $color-primary-darken;
+			}
+		}
+	}
+}

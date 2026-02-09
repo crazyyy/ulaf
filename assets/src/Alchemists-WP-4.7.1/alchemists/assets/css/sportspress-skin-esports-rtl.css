@@ -1,0 +1,1211 @@
+/*
+File Name: 		sportspress-skin.css
+Written by: 	Dan Fisher - (http://themeforest.net/user/dan_fisher)
+Description:  Styles for color skin (sportspress), contain selectors with variables
+*/
+/* Sportspress Shortcodes */
+.sp-event-results .data-name > a {
+  color: #fff;
+}
+
+.sp-event-performance > thead > tr > th.data-number,
+.sp-event-performance > tbody > tr > td.data-number,
+.sp-event-performance > tfoot > tr > td.data-number {
+  color: #fff;
+}
+.sp-event-performance > thead > tr > th.data-name > a,
+.sp-event-performance > tbody > tr > td.data-name > a,
+.sp-event-performance > tfoot > tr > td.data-name > a {
+  color: #fff;
+}
+
+.sp-template-event-calendar {
+  border: 1px solid #4b3b60;
+  background-color: #392d49;
+}
+
+.sp-template-player-details .sp-player-details dt {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+
+/* Sportspress Event (Game) */
+.sp-section-content-content:not(:empty) {
+  border: 1px solid #4b3b60;
+  background-color: #392d49;
+}
+.sp-section-content-content:not(:empty) .sp-post-caption {
+  border-bottom: 1px solid #4b3b60;
+  background-color: #403351;
+}
+.sp-section-content-content:not(:empty) .sp-post-caption::before {
+  background-color: #00ff5b;
+}
+
+/* Event Performance (Icons) */
+.sp-event-performance-teams .sp-template-event-performance-icons .sp-event-performance .data-number {
+  color: #a59cae;
+}
+
+/* Match Preview */
+.match-preview__header--decor {
+  background-image: linear-gradient(to right, transparent, transparent 2px, #4b3b60 2px, #4b3b60 4px);
+}
+
+.match-preview__header-inner {
+  background-color: #392d49;
+}
+
+.match-preview__date {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.match-preview__info {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #a59cae;
+}
+
+.match-preview__team-info {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.match-preview__conj {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+
+.match-preview__match-info {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.match-preview__match-info--header {
+  border-bottom: 1px solid #4b3b60;
+}
+.match-preview__match-info--header .match-preview__match-place {
+  color: #fff;
+}
+
+.match-preview__action--ticket {
+  background-image: linear-gradient(to right, transparent 3px, #634f7f 3px);
+}
+.match-preview__action--ticket::before, .match-preview__action--ticket::after {
+  background-color: #2b2236;
+  border: 1px solid #4b3b60;
+}
+
+.match-preview__countdown .countdown__title {
+  background-color: #403351;
+  border-top: 1px solid #4b3b60;
+  border-bottom: 1px solid #4b3b60;
+}
+.match-preview--alt .match-preview__match-time {
+  color: #fff;
+}
+
+/* Game Results */
+.game-result__header--alt {
+  border-top: 1px solid #4b3b60;
+  border-bottom: 1px solid #4b3b60;
+}
+.game-result__header--alt .game-result__league {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #6a3bc0;
+}
+.game-result__header--alt .game-result__title .highlight {
+  color: #00ff5b;
+}
+.game-result__header--alt .game-result__date {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.game-result__header--alt .game-result__matchday {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.game-result__header--alt .game-result__goal {
+  color: #6a3bc0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.game-result__team-desc {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.game-result__score {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+
+.game-result__score-result--winner::before {
+  border-right: 8px solid #00ff5b;
+}
+.game-result__score-result--loser ~ .game-result__score-result--winner::after {
+  border-left: 8px solid #00ff5b;
+}
+
+.game-result__score-result--loser {
+  color: #a59cae;
+}
+
+.game-result__score-label {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+
+.game-result__table-stats--soccer tbody > tr > td:first-child,
+.game-result__table-stats--soccer tbody > tr > td:last-child {
+  color: #6a3bc0;
+}
+
+.game-timeline::before {
+  background-color: #4b3b60;
+}
+@media (max-width: 991px) {
+  .game-timeline::after {
+    background-color: #4b3b60;
+  }
+}
+
+.game-timeline__time {
+  border: 1px solid #4b3b60;
+  background-color: #392d49;
+  color: #6a3bc0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.game-timeline__event-name {
+  color: #6a3bc0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.game-timeline__event-desc {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* Vertical Timeline */
+.game-timeline-wrapper--vertical .game-timeline::after {
+  background-color: #4b3b60;
+}
+
+/* Team Gallery */
+.sp-team-gallery-wrapper .gallery-caption {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+
+.sp-team-gallery-link > a {
+  border: 1px solid transparent;
+  font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  vertical-align: middle;
+  padding: 12px 42px;
+  font-size: 12px;
+  line-height: 1.5em;
+  border-radius: 22px;
+  color: #fff;
+  background-color: #8c8297;
+  border-color: transparent;
+}
+.sp-team-gallery-link > a:hover, .sp-team-gallery-link > a:focus, .sp-team-gallery-link > a.focus {
+  color: #fff;
+}
+.sp-team-gallery-link > a:active, .sp-team-gallery-link > a.active {
+  box-shadow: none;
+}
+.sp-team-gallery-link > a:focus, .sp-team-gallery-link > a.focus {
+  color: #fff;
+  background-color: #1bd75e;
+  border-color: rgba(0, 0, 0, 0);
+}
+.sp-team-gallery-link > a:hover {
+  color: #fff;
+  background-color: #1bd75e;
+  border-color: rgba(0, 0, 0, 0);
+}
+.sp-team-gallery-link > a:active, .sp-team-gallery-link > a.active, .open > .sp-team-gallery-link > a.dropdown-toggle {
+  color: #fff;
+  background-color: #1bd75e;
+  border-color: rgba(0, 0, 0, 0);
+}
+.sp-team-gallery-link > a:active:hover, .sp-team-gallery-link > a:active:focus, .sp-team-gallery-link > a:active.focus, .sp-team-gallery-link > a.active:hover, .sp-team-gallery-link > a.active:focus, .sp-team-gallery-link > a.active.focus, .open > .sp-team-gallery-link > a.dropdown-toggle:hover, .open > .sp-team-gallery-link > a.dropdown-toggle:focus, .open > .sp-team-gallery-link > a.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #61586a;
+  border-color: rgba(0, 0, 0, 0);
+}
+.sp-team-gallery-link > a:active, .sp-team-gallery-link > a.active, .open > .sp-team-gallery-link > a.dropdown-toggle {
+  background-image: none;
+}
+.sp-team-gallery-link > a.disabled:hover, .sp-team-gallery-link > a.disabled:focus, .sp-team-gallery-link > a.disabled.focus, .sp-team-gallery-link > a[disabled]:hover, .sp-team-gallery-link > a[disabled]:focus, .sp-team-gallery-link > a[disabled].focus, fieldset[disabled] .sp-team-gallery-link > a:hover, fieldset[disabled] .sp-team-gallery-link > a:focus, fieldset[disabled] .sp-team-gallery-link > a.focus {
+  background-color: #595162;
+  border-color: rgba(0, 0, 0, 0);
+}
+.sp-team-gallery-link > a:not(:disabled):not(.disabled):active, .sp-team-gallery-link > a:not(:disabled):not(.disabled).active, .show > .sp-team-gallery-link > a.dropdown-toggle {
+  color: #fff;
+  background-color: #1bd75e;
+  border-color: transparent;
+}
+.sp-team-gallery-link > a .badge {
+  color: #8c8297;
+  background-color: #fff;
+}
+
+/* Team Roster */
+/* Team Roster - Grid */
+.team-roster--grid .team-roster__holder:hover .team-roster__member-number {
+  background-color: #00ff5b;
+}
+.team-roster--grid .team-roster__img {
+  border-color: #4b3b60;
+}
+.team-roster--grid .team-roster__member-number {
+  background-color: #bfc2c4;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+.team-roster--grid .team-roster__member-name {
+  color: #fff;
+}
+.team-roster--grid .team-roster__member-name > a {
+  color: #fff;
+}
+.team-roster--grid .team-roster__member-last-name {
+  color: #00ff5b;
+}
+.team-roster--grid .team-roster__member-position {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* Team Roster: Grid Small */
+.team-roster--grid-sm .team-roster__holder {
+  border-color: #4b3b60;
+  background-color: #392d49;
+}
+.team-roster--grid-sm .team-roster__img > a::before {
+  background-color: #171d21;
+}
+.team-roster--grid-sm .team-roster__member-number {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #00ff5b;
+}
+.team-roster--grid-sm .team-roster__member-details-item {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+.team-roster--grid-sm .team-roster__member-details-item .item-title {
+  color: #a59cae;
+}
+
+/* Team Roster: Table */
+.team-roster-table .data-name {
+  color: #fff;
+}
+.team-roster-table .data-name a {
+  color: #fff;
+}
+.team-roster-table .data-position {
+  color: #fff;
+}
+
+.team-roster-table__header {
+  background-color: #403351;
+}
+
+/* Team Roster: Slider */
+.team-roster--slider {
+  border-color: #4b3b60;
+}
+.team-roster--slider .team-roster__img-ring-top::before,
+.team-roster--slider .team-roster__img-ring-bottom::before {
+  border-color: #00ff5b;
+}
+.team-roster--slider .team-roster__player-number {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+.team-roster--slider .team-roster__player-name {
+  color: #fff;
+}
+.team-roster--slider .team-roster__player-name > a {
+  color: #fff;
+}
+.team-roster--slider .team-roster__player-last-name {
+  color: #00ff5b;
+}
+.team-roster--slider .team-roster__player-position {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.team-roster--slider .team-roster__player-fab-txt {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+.team-roster--slider .team-roster__player-fab-txt::first-line {
+  color: #a59cae;
+}
+
+/* Team Roster: Card */
+.team-roster--card .team-roster__player-shape {
+  background-color: #33ff7c;
+}
+.team-roster--card .team-roster__player-number {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.team-roster--card .team-roster__player-last-name {
+  color: #00ff5b;
+}
+.team-roster--card .team-roster__player-last-name > a {
+  color: #fff;
+}
+.team-roster--card .team-roster__meta {
+  border-right-color: #4b3b60;
+}
+.team-roster--card .team-roster__meta-value {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #6a3bc0;
+}
+
+/* Team Roster: Case */
+.team-roster--case .team-roster__meta-item {
+  border-right-color: #4b3b60;
+}
+.team-roster--case .team-roster__meta-value {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+.team-roster--case .team-roster__meta-value--accent {
+  color: #ffb400;
+}
+.team-roster--case .team-roster__meta-label {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.team-roster--case .team-roster__player-position {
+  color: #a59cae;
+}
+
+/* Team Roster: Card */
+.team-roster--boxed .team-roster__player-realname {
+  color: #a59cae;
+}
+.team-roster--boxed .team-roster__player-nickname .highlight {
+  color: #00ff5b;
+}
+.team-roster--boxed .team-roster__meta-icon {
+  border-color: #6a3bc0;
+  background-color: #2b2236;
+}
+.team-roster--boxed .team-roster__meta-icon--more {
+  background-color: #8c8297;
+}
+.team-roster--boxed .team-roster__meta-icon--more .fa {
+  color: #fff;
+}
+.team-roster--boxed .team-roster__meta-icon--more:hover {
+  background-color: #1bd75e;
+}
+.team-roster--boxed .team-roster__meta-label {
+  color: #fff;
+}
+.team-roster--boxed .team-roster__player-shape::after {
+  border-bottom-color: #392d49;
+}
+
+.team-roster-nav__item:hover, .team-roster-nav__item.slick-current {
+  cursor: pointer;
+}
+.team-roster-nav__item:hover .team-roster-nav__hexagon, .team-roster-nav__item.slick-current .team-roster-nav__hexagon {
+  border-right-color: #6a3bc0;
+  border-left-color: #6a3bc0;
+}
+.team-roster-nav__item:hover .team-roster-nav__hexagon::before, .team-roster-nav__item.slick-current .team-roster-nav__hexagon::before {
+  border-top-color: #6a3bc0;
+  border-left-color: #6a3bc0;
+}
+.team-roster-nav__item:hover .team-roster-nav__hexagon::after, .team-roster-nav__item.slick-current .team-roster-nav__hexagon::after {
+  border-bottom-color: #6a3bc0;
+  border-right-color: #6a3bc0;
+}
+.team-roster-nav__item:hover .team-roster-nav__triangle::before, .team-roster-nav__item:hover .team-roster-nav__triangle::after, .team-roster-nav__item.slick-current .team-roster-nav__triangle::before, .team-roster-nav__item.slick-current .team-roster-nav__triangle::after {
+  border-bottom-color: #6a3bc0;
+}
+.team-roster-nav__item:hover .team-roster-nav__icon, .team-roster-nav__item.slick-current .team-roster-nav__icon {
+  border-color: #6a3bc0;
+}
+.team-roster-nav__item:hover .team-roster-nav__firstname, .team-roster-nav__item.slick-current .team-roster-nav__firstname {
+  color: #fff;
+}
+.team-roster-nav__item:hover .team-roster-nav__nickname, .team-roster-nav__item.slick-current .team-roster-nav__nickname {
+  color: #00ff5b;
+}
+
+.team-roster-nav__firstname {
+  color: #a59cae;
+}
+
+.team-roster-nav__hexagon {
+  border-right-color: #4b3b60;
+  border-left-color: #4b3b60;
+}
+.team-roster-nav__hexagon::before {
+  border-top-color: #4b3b60;
+  border-left-color: #4b3b60;
+}
+.team-roster-nav__hexagon::after {
+  border-bottom-color: #4b3b60;
+  border-right-color: #4b3b60;
+}
+
+.team-roster-nav__triangle::before, .team-roster-nav__triangle::after {
+  border-bottom-color: #4b3b60;
+}
+.team-roster-nav__triangle::before {
+  border-left-color: transparent;
+}
+.team-roster-nav__triangle::after {
+  border-right-color: transparent;
+}
+
+.team-roster-nav__triangle-border::before, .team-roster-nav__triangle-border::after {
+  border-bottom-color: #2b2236;
+}
+.team-roster-nav__triangle-border::before {
+  border-left-color: transparent;
+}
+.team-roster-nav__triangle-border::after {
+  border-right-color: transparent;
+}
+
+.team-roster-nav__icon {
+  border-color: #4b3b60;
+  background-color: #2b2236;
+}
+
+/* Team Standings */
+.table-standings td.data-name {
+  color: #fff;
+}
+.table-standings td.data-name a {
+  color: #fff;
+}
+.table-standings .data-w,
+.table-standings .data-l,
+.table-standings .data-gb {
+  color: #fff;
+}
+
+/* Team Glossary */
+.glossary__item {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.glossary__abbr {
+  color: #fff;
+}
+
+/* Team Results */
+.team-result tbody .team-result__date,
+.team-result tbody .team-result__vs,
+.team-result tbody .team-result__score,
+.team-result tbody .team-result__status,
+.team-result tbody .team-result__points,
+.team-result tbody .team-result__rebounds,
+.team-result tbody .team-result__assists,
+.team-result tbody .team-result__steals {
+  color: #a59cae;
+}
+
+.team-result__game {
+  color: #6a3bc0;
+}
+
+/* Team Result Filter */
+.team-result-filter__item select.form-control {
+  font-family: "Roboto Condensed", sans-serif;
+  background-image: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 6 4'%3E%3Cpath transform='translate(-586.156 -1047.28)' fill='#fff' d='M586.171,1048l0.708-.71,2.828,2.83-0.707.71Zm4.95-.71,0.707,0.71L589,1050.83l-0.707-.71Z'/%3E%3C/svg%3E"), "#", "%23");
+  color: #fff;
+}
+
+/* Team Schedule & Tickets */
+.team-schedule .data-home,
+.team-schedule .data-away {
+  color: #fff;
+}
+.team-schedule .data-date a {
+  color: #a59cae;
+}
+.team-schedule a:not(.btn) {
+  color: #fff;
+}
+
+/* Player Heading */
+.player-heading {
+  background-color: #362b45;
+}
+
+.player-info {
+  color: #fff;
+}
+
+.player-info__number {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+
+.player-info__name {
+  color: #fff;
+}
+
+.player-info__last-name {
+  color: #00ff5b;
+}
+
+.player-info-details__title {
+  color: #a59cae;
+}
+
+.player-info-details__value {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.player-info-details__value > a {
+  color: #fff;
+}
+
+.player-info-stats__item .circular .circular__bar .circular__percents {
+  color: #fff;
+}
+.player-info-stats__item .circular .circular__bar .circular__percents small {
+  color: #a59cae;
+}
+.player-info-stats__item .circular .circular__label {
+  color: #a59cae;
+}
+.player-info-stats__item .circular .circular__label-first {
+  color: #fff;
+}
+
+.player-info__item--stats .progress__label {
+  color: #fff;
+}
+
+/* Player Game Log */
+.game-player-result .game-player-result__game {
+  color: #fff;
+}
+.game-player-result .game-player-result__game--win {
+  color: #00ff5b;
+}
+.game-player-result .game-player-result__game--lose {
+  color: #f92552;
+}
+.game-player-result .game-player-result__score a {
+  color: #a59cae;
+}
+
+/* Player League Stats */
+.player-league .data-team {
+  color: #fff;
+}
+.player-league .player-league__game {
+  color: #fff;
+}
+.player-league .sp-highlight {
+  color: #fff;
+}
+
+.team-meta__place {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #a59cae;
+}
+
+/* Sportspress Widgets */
+.alc-birthdays .alc-birthdays__item-name > a {
+  color: #fff;
+}
+.alc-birthdays .alc-birthdays__item-position {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.widget_staff .sp-staff-details dt {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+
+/* Widget: Featured Player */
+.widget-player .widget-player__inner {
+  background-color: #27313b;
+  color: #fff;
+}
+
+.widget-player__name {
+  color: #fff;
+}
+
+.widget-player__last-name {
+  color: #00ff5b;
+}
+
+.widget-player__stat-label {
+  color: #fff;
+}
+
+.widget-player__stat-legend {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #a59cae;
+}
+
+.widget-player__footer {
+  background-color: #00ff5b;
+}
+
+.widget-player__footer-txt {
+  background-color: #182027;
+  color: #fff;
+}
+.widget-player__footer-txt .fa {
+  color: #00ff5b;
+}
+.widget-player__footer-txt::before {
+  background-color: #00ff5b;
+}
+
+.widget-player__details {
+  border-color: #4b3b60;
+}
+
+.widget-player__details__item {
+  border-color: #4b3b60;
+}
+
+.widget-player__details-label {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+
+.widget-player__details-desc {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.widget-player__details-value {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+
+/* Widget: Featured Player Alternative Styling */
+.template-basketball .widget-player--alt .widget-player__inner {
+  background-color: #00ff5b;
+  background-image: linear-gradient(to bottom, #00ff5b, #f29400);
+}
+.template-basketball .widget-player--alt .widget-player__last-name {
+  color: #6a3bc0;
+}
+.template-basketball .widget-player--alt .widget-player__content {
+  background-color: #27313b;
+}
+.template-basketball .widget-player--alt .widget-player__stat-number {
+  color: #00ff5b;
+}
+.template-basketball .widget-player--alt .widget-player__stat-legend {
+  color: #fff;
+}
+.template-basketball .widget-player--alt .widget-player__footer-txt {
+  background-color: #27313b;
+}
+
+.widget-player__stat--value {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+
+.widget-player__stat--value-primary {
+  color: #00ff5b;
+}
+
+.widget-player__stat--label {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+
+/* Widget: Game Result */
+.widget-game-result__date {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #a59cae;
+}
+
+.widget-game-result__header--alt {
+  border-bottom: 1px solid #4b3b60;
+}
+
+.widget-game-result__team-desc {
+  color: #a59cae;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.widget-game-result__score {
+  display: block;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+.widget-game-result__score:hover {
+  color: #fff;
+}
+
+.widget-game-result__score-result--winner::before {
+  border-right: 8px solid #00ff5b;
+  border-left: none;
+}
+
+.widget-game-result__score-result--loser {
+  color: #a59cae;
+}
+
+.widget-game-result__score-label {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+
+.widget-game-result__main--vertical .widget-game-result__team + .widget-game-result__team {
+  border-top: 1px solid #4b3b60;
+}
+.widget-game-result__main--vertical .widget-game-result__team .widget-game-result__team-score {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: italic;
+}
+@media (min-width: 1200px) {
+  .widget-game-result__main--vertical .widget-game-result__team .widget-game-result__team-score {
+    font-size: 42px;
+  }
+}
+.widget-game-result__main--vertical .widget-game-result__team .widget-game-result__team-score--winner {
+  color: #fff;
+}
+.widget-game-result__main--vertical .widget-game-result__team .widget-game-result__team-score--winner::before {
+  border-right: 8px solid #00ff5b;
+  border-left: none;
+}
+.widget-game-result__main--vertical .widget-game-result__team-desc {
+  font-style: italic;
+}
+
+.widget-game-result__table-stats .table > thead > tr > th:last-child,
+.widget-game-result__table-stats .table > tbody > tr > td:last-child,
+.widget-game-result__table-stats .table > tbody > tr > th:last-child {
+  color: #fff;
+}
+.widget-game-result__section-inner-alt .widget-game-result__table-stats .table > thead > tr > th:last-child,
+.widget-game-result__section-inner-alt .widget-game-result__table-stats .table > tbody > tr > td:last-child,
+.widget-game-result__section-inner-alt .widget-game-result__table-stats .table > tbody > tr > th:last-child {
+  color: #fff;
+}
+
+.player-details__name > a {
+  color: #fff;
+}
+.player-details__name > a:hover {
+  color: #1bd75e;
+}
+
+.player-details__position {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.player-details__circular .circular__percents small {
+  color: #a59cae;
+}
+
+/* Widget: Results */
+.widget-results__item {
+  border-top: 1px solid #4b3b60;
+}
+
+.widget-results__title {
+  color: #a59cae;
+  border-bottom: 1px solid #4b3b60;
+}
+
+.widget-results__team-info {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.widget-results__score {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+
+.widget-results__score-winner:before {
+  border-right: 4px solid #00ff5b;
+  border-right: 4px solid #00ff5b;
+}
+.widget-results__score-loser ~ .widget-results__score-winner::after {
+  border-left: 4px solid #00ff5b;
+  border-left: 4px solid #00ff5b;
+}
+
+.widget-results__status {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #a59cae;
+}
+
+/* Widget: Games History */
+.chart-legend ul {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+
+/* Widget: Newslog */
+.newslog__item {
+  border-bottom: 1px solid #4b3b60;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.newslog__item strong {
+  color: #fff;
+}
+
+.newslog__item {
+  font-family: "Open Sans", sans-serif;
+}
+
+.newslog__date {
+  color: rgba(165, 156, 174, 0.4);
+}
+
+/* Widget: Team Leaders */
+.team-leader {
+  border-top: 1px solid #4b3b60;
+}
+
+.team-leader__player-name > a {
+  color: #fff;
+}
+
+.team-leader__player-position {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.nav-tabs--clean > li > a {
+  font-family: "Roboto Condensed", sans-serif;
+  color: rgba(106, 59, 192, 0.4);
+}
+.nav-tabs--clean > li > a:hover {
+  color: #6a3bc0;
+}
+.nav-tabs--clean > li.active > a {
+  color: #6a3bc0;
+}
+/* Widget: Team Stats */
+.team-stats-box {
+  border-color: #4b3b60;
+}
+
+.team-stats__item {
+  border-color: #4b3b60;
+}
+
+.team-stats__icon--icon-font {
+  color: #00ff5b;
+}
+
+.team-stats__icon--circle-outline {
+  border-color: #00ff5b;
+}
+
+.team-stats__icon--centered i {
+  color: #fff;
+}
+
+.team-stats__icon--circle {
+  background-color: #00ff5b;
+}
+
+.team-stats__indicator {
+  border-color: #00ff5b;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #392d49;
+}
+
+.team-stats__icon--shots-ot {
+  background-color: #a4ec32;
+}
+
+.team-stats__icon--shots {
+  background-color: #f5d109;
+}
+
+.team-stats__icon--assists {
+  background-color: #3adfc2;
+}
+.team-stats__icon--assists .team-stats__icon-secondary {
+  background-color: #6a3bc0;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+
+.team-stats__value {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+
+.team-stats__label {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+
+.team-stats__circular--minus {
+  color: #f92552;
+}
+.team-stats__circular--minus .circular__percents {
+  color: #f92552;
+}
+
+.team-stats__circular--plus {
+  color: #00ff5b;
+}
+.team-stats__circular--plus .circular__percents {
+  color: #00ff5b;
+}
+
+/* Widget: Commentary */
+.commentary__item {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.commentary__item + .commentary__item {
+  border-top: 1px solid #4b3b60;
+}
+.commentary__item > strong {
+  color: #6a3bc0;
+}
+
+.commentry__time {
+  color: #6a3bc0;
+}
+
+/* Widget: Lineup Table */
+.lineup-table .lineup__name {
+  width: 57%;
+  color: #6a3bc0;
+}
+
+/* Widget: Event Result */
+.widget-game-result__subtitle {
+  color: #a59cae;
+}
+
+.widget-game-result__header--alt .widget-game-result__title {
+  color: #a59cae;
+}
+
+.widget-game-result__score-sublabel {
+  font-family: "Open Sans", sans-serif;
+  color: #a59cae;
+}
+
+.widget-game-result__team-desc {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Game Stats (additional) */
+.widget-game-result__stats-circular-bars .widget-game-result__stats-value {
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.widget-game-result__players {
+  margin: 0;
+}
+
+.widget-game-result__player {
+  padding: 14px 24px;
+}
+.widget-game-result__player + .widget-game-result__player {
+  border-top-color: #4b3b60;
+}
+
+.widget-game-result__player-stats-txt {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+
+.widget-game-result__rounds-table {
+  margin-bottom: 0;
+}
+.widget-game-result__rounds-table thead > tr > th {
+  text-align: center;
+  font-style: normal;
+}
+.widget-game-result__rounds-table tbody > tr > td {
+  border-color: #4b3b60;
+}
+.widget-game-result__rounds-table tbody > tr > td.widget-game-result__rounds-team {
+  background-color: #403351;
+}
+
+/* Staff */
+.alc-staff__header-last-name {
+  color: #00ff5b;
+}
+
+.alc-staff__header-role {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.alc-staff-details {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.alc-staff-details__value {
+  color: #fff;
+}
+
+/* Officials */
+.officials-list__duty {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #a59cae;
+}
+
+.officials-list__name {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+
+/**
+ *
+ * Sponsors
+ *
+ */
+.sp-header-sponsors {
+  background-color: #403351;
+}
+
+/**
+ *
+ * Staff Directories
+ *
+ */
+/* List */
+.sp-staff-directory .data-name > a,
+.sp-staff-directory .data-phone > a,
+.sp-staff-directory .data-email > a {
+  color: #fff;
+}
+.sp-staff-directory .data-name > a:hover,
+.sp-staff-directory .data-phone > a:hover,
+.sp-staff-directory .data-email > a:hover {
+  color: #1bd75e;
+}
+
+/**
+ *
+ * Match Stats
+ *
+ */
+.sp-template-event-statistics .sp-statistic-label {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.sp-template-event-statistics .sp-statistic-value {
+  color: #fff;
+}
+.sp-template-event-statistics .sp-statistic-bar {
+  background-color: #4b3b60;
+}
+.sp-template-event-statistics .sp-statistic-bar-fill {
+  background-color: #00ff5b;
+}
+
+/**
+ *
+ * User Scores
+ *
+ */
+.sp-event-user-results tbody > tr > td.data-name,
+.sp-event-user-scores tbody > tr > td.data-name {
+  color: #fff;
+}
+
+/**
+ *
+ * Scoreboard
+ *
+ */
+.alc-scoreboard-content {
+  background-color: #392d49;
+  border-bottom: 1px solid #4b3b60;
+}
+
+.alc-scoreboard__event {
+  font-family: "Roboto Condensed", sans-serif;
+  border-left: 1px solid #4b3b60;
+}
+
+.alc-scoreboard__event-wrapper {
+  color: #a59cae;
+}
+.alc-scoreboard__event-wrapper:hover {
+  color: #a59cae;
+  background-color: #322740;
+}
+
+.alc-scoreboard__team-name {
+  color: #fff;
+}
+
+.alc-scoreboard__result {
+  color: #a59cae;
+}
+
+.alc-scoreboard-content--alt-color {
+  background-color: #403351;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.alc-scoreboard-content--alt-color .alc-scoreboard__event {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+.alc-scoreboard-content--alt-color .alc-scoreboard__event-wrapper {
+  color: #a59cae;
+}
+.alc-scoreboard-content--alt-color .alc-scoreboard__event-wrapper:hover {
+  color: #a59cae;
+  background-color: #4c3d61;
+}
+.alc-scoreboard-content--alt-color .alc-scoreboard__team-name {
+  color: #fff;
+}
+.alc-scoreboard-content--alt-color .alc-scoreboard__result {
+  color: #a59cae;
+}
+
+/**
+ *
+ * Tournaments
+ *
+ */
+.sp-tournament-bracket .sp-team-name {
+  background-color: #403351;
+  color: #fff;
+}
+.sp-tournament-bracket .sp-event {
+  border-left-color: #403351 !important;
+}
+.sp-tournament-bracket .sp-event .sp-event-main {
+  color: #fff !important;
+}
+.sp-tournament-bracket .sp-event-title {
+  color: #a59cae;
+}
+.sp-tournament-bracket .sp-event-flip {
+  border-right-color: #403351 !important;
+}
+.sp-tournament-bracket .sp-team .sp-team-name::before {
+  border-right-color: #403351;
+}
+.sp-tournament-bracket .sp-team-flip .sp-team-name::before {
+  border-left-color: #403351;
+}
+
+/**
+ *
+ * Results Matrix
+ *
+ */
+.sp-event-matrix-home-label {
+  color: #fff;
+}
+
+/*# sourceMappingURL=sportspress-skin-esports-rtl.css.map */

@@ -1,0 +1,104 @@
+/*
+File Name:    style-skin.css
+Written by:   Dan Fisher - (https://themeforest.net/user/dan_fisher)
+Description:  Styles for color skin, contain selectors with variables
+*/
+
+
+// Basic Imports
+@import "mixins/directional";
+@import "config/imports";
+
+// Preloader
+@import "preloader--skin";
+
+// Content
+@import "content/images--skin";
+@import "content/typography--skin";
+@import "content/icons-svg--skin";
+@import "content/tables--skin";
+@import "content/error-404--skin";
+@import "content/duotone--skin";
+@import "content/misc--skin";
+
+// Components
+@import "components/accordion--skin";
+@import "components/alerts--skin";
+@import "components/buttons--skin";
+@import "components/card--skin";
+@import "components/jumbotron--skin";
+@import "components/labels--skin";
+@import "components/forms--skin";
+@import "components/tooltip--skin";
+@import "components/countdown--skin";
+@import "components/breadcrumbs--skin";
+@import "components/content-nav--skin";
+@import "components/pagination--skin";
+@import "components/progress-bars--skin";
+@import "components/circular-bars--skin";
+@import "components/lightbox-holder--skin";
+@import "components/custom-select--skin";
+@import "components/slick-theme--skin";
+@import "components/categories-filter--skin";
+@import "components/modals--skin";
+@import "components/icobox--skin";
+@import "components/icons--skin";
+@import "components/ratings--skin";
+@import "components/timeline--skin";
+@import "components/marquee--skin";
+@import "components/video-playlist--skin";
+
+// Main
+@import "common/base--skin";
+@import "common/content--skin";
+@import "common/header--skin";
+@import "common/header-nav--skin";
+@import "common/header-tertiary--skin";
+@import "common/hero-unit--skin";
+@import "common/hero-slider--skin";
+@import "common/pushy-panel--skin";
+@import "common/page-header--skin";
+@import "common/footer--skin";
+
+// Blog
+@import "blog/posts--skin";
+@import "blog/post-author--skin";
+@import "blog/post-meta--skin";
+@import "blog/post-related--skin";
+@import "blog/single-post--skin";
+@import "blog/comments--skin";
+@import "blog/comment-form--skin";
+@import "blog/blog-filter--skin";
+
+// Widgets
+@import "widgets/widgets--skin";
+@import "widgets/widget-achievements--skin";
+@import "widgets/widget-lists--skin";
+@import "widgets/widget-instagram--skin";
+@import "widgets/widget-contact--skin";
+@import "widgets/widget-tabbed--skin";
+@import "widgets/widget-newsletter--skin";
+@import "widgets/widget-newslog--skin";
+@import "widgets/widget-comments--skin";
+@import "widgets/widget-team-info--skin";
+@import "widgets/widget-twitter--skin";
+@import "widgets/widget-twitch--skin";
+@import "widgets/widget-featured--skin";
+@import "widgets/widget-poll--skin";
+@import "widgets/widget-awards--skin";
+@import "widgets/widget-calendar--skin";
+
+// Partials
+@import "partials/info-block--skin";
+@import "partials/social-counter--skin";
+@import "partials/social-links--skin";
+@import "partials/main-news-banner--skin";
+@import "partials/featured-carousel--skin";
+@import "partials/content-filter--skin";
+@import "partials/gallery--skin";
+@import "partials/album--skin";
+@import "partials/modal-login--skin";
+@import "partials/sponsors--skin";
+
+// Helpers
+@import "common/helpers--skin";

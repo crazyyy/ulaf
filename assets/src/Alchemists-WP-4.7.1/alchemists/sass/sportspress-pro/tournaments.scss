@@ -1,0 +1,50 @@
+/**
+ *
+ * Tournaments
+ *
+ */
+
+.sp-tournament-bracket {
+
+	.sp-team-name {
+		background-color: $tournament-item-highlight-bg;
+		color: $tournament-item-highlight-color;
+	}
+
+	.sp-event {
+		border-#{$right}-color: $tournament-item-highlight-bg !important;
+
+		.sp-event-main {
+			color: $tournament-item-highlight-color !important; // needed to overwrite SportsPress styles
+		}
+	}
+		.sp-result-wrapper {
+			display: inline-block;
+
+			@media (max-width: 479px) {
+				display: block;
+			}
+		}
+		.sp-result {
+			display: inline-block;
+			padding: 0.5em 1em;
+		}
+		.sp-event-title {
+			color: $body-font-color;
+		}
+			.sp-event-date {
+				font-weight: normal;
+			}
+
+	.sp-event-flip {
+		border-#{$left}-color: $tournament-item-highlight-bg !important;
+	}
+
+	.sp-team .sp-team-name::before {
+		border-#{$left}-color: $tournament-item-highlight-bg;
+	}
+
+	.sp-team-flip .sp-team-name::before {
+		border-#{$right}-color: $tournament-item-highlight-bg;
+	}
+}

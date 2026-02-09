@@ -1,0 +1,164 @@
+/**
+ * Woo Widgets: Products, Recently Viewed, Top Rated Products, Shopping Cart
+ */
+ul.cart_list,
+ul.product_list_widget {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	.card & {
+		margin-top: -$card-vertical-padding;
+		margin-#{$left}: -$card-horizontal-padding;
+		margin-#{$right}: -$card-horizontal-padding;
+
+		&:last-child {
+			margin-bottom: -$card-vertical-padding;
+		}
+	}
+}
+
+	// li item
+	.products-list__item {
+		position: relative;
+		overflow: hidden;
+		padding: 20px $card-horizontal-padding 20px $card-horizontal-padding;
+
+		& + & {
+			border-top: 1px solid $card-border-color;
+		}
+
+		.products-list__product-thumb {
+			width: 70px;
+			height: 70px;
+			position: relative;
+		}
+
+		img {
+			width: 70px;
+			height: auto;
+			transform: translateY(-50%);
+			top: 50%;
+			position: relative;
+		}
+
+		dl {
+			margin: 0;
+			padding-#{$left}: 1em;
+			border-#{$left}: 2px solid rgba(0, 0, 0, 0.1);
+			@include clearfix();
+
+			dt,
+			dd {
+				display: inline-block;
+				float: $left;
+				margin-bottom: 1em;
+			}
+
+			dt {
+				font-weight: 700;
+				padding: 0 0 0.25em;
+				margin: side-values(0 4px 0 0);
+				clear: $left;
+			}
+
+			dd {
+				padding: 0 0 0.25em;
+
+				p:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.star-rating {
+			float: none;
+		}
+	}
+
+		// li inner
+		.products-list__inner {
+			overflow: hidden;
+			padding: 5px 0 0 0;
+		}
+			// thumb
+			.products-list__product-thumb {
+				float: $left;
+				margin: side-values(0 12px 0 0);
+				overflow: hidden;
+				border-radius: $thumb-border-radius;
+
+				img {
+					max-width: 100%;
+					height: auto;
+					transition: opacity 0.2s ease;
+
+					&:hover {
+						opacity: 0.7;
+					}
+				}
+			}
+
+			// categories
+			.products-list__product-cat {
+				display: block;
+				font-size: 8px;
+				line-height: 1.2em;
+				font-weight: 700;
+				text-transform: uppercase;
+				font-family: $font-family-accent;
+				margin-bottom: .2em;
+
+				@include fix_small_chars();
+
+				> a {
+					color: $body-font-color;
+
+					&:hover {
+						color: $link-color-hover;
+					}
+				}
+			}
+
+			// title
+			.products-list__product-title {
+				font-size: 12px;
+				line-height: 1.2em;
+				margin-bottom: .5em;
+				font-family: $font-family-accent;
+				text-transform: uppercase;
+				font-style: normal;
+
+				> a {
+					color: $headings-color;
+					transition: color 0.3s ease;
+
+					&:hover {
+						color: $color-primary-darken;
+					}
+				}
+			}
+			.products-list__product-ratings {
+				margin: 2px 0;
+			}
+			.products-list__product-amount {
+				font-size: 12px;
+				font-weight: 700;
+				font-family: $font-family-accent;
+				color: $headings-color;
+
+
+
+				.widget_shopping_cart & {
+
+					@if $template == 'football' {
+						font-style: italic;
+					}
+				}
+			}
+				.products-list__product-price {
+
+				}
+				.products-list__product-count {
+
+				}

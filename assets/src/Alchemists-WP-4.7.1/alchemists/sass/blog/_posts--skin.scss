@@ -1,0 +1,632 @@
+/*
+// #Posts
+// --------------------------------------------------
+*/
+
+.posts {
+
+}
+	.posts__item {
+
+	}
+		// Category Label
+		.posts__cat {
+
+		}
+		.posts__cat-label {
+			background-color: $color-primary-darken;
+		}
+
+			// Label colors and CTA circle links changes depends on category class (.posts__item--XX)
+
+			@each $color, $value in $post-category-colors {
+
+				.posts__item--#{$color} {
+
+					.posts__cta {
+						background-color: $value;
+					}
+
+					.posts__title--color-hover > a:hover {
+						color: $value;
+					}
+
+					@if $template == 'football' {
+						.posts__title > a:hover {
+							color: $value;
+						}
+					}
+
+					.posts__thumb--hover {
+						&::before {
+							background-color: $value;
+						}
+					}
+				}
+			}
+
+			@each $color, $value in $post-category-colors {
+				.posts__cat-label--#{$color} {
+					background-color: $value;
+				}
+			}
+
+		// Post Thumb
+		.posts__thumb {
+
+		}
+		.posts__thumb--hover {
+
+			&::before {
+				background-color: $color-primary;
+				color: #fff;
+			}
+
+			> a {
+
+				&::before,
+				&::after {
+					background-color: #fff;
+				}
+			}
+		}
+
+		// Post Title
+		.posts__title {
+			font-style: $post-title-font-style;
+
+			a {
+				color: $post-title-color;
+
+				&:hover {
+					color: $post-title-color-hover;
+				}
+			}
+		}
+
+		// Post date
+		.posts__date {
+			font-family: $font-family-accent;
+		}
+
+
+	/* Simple Posts List */
+	.posts--simple-list {
+
+		.posts__item {
+
+			.card & {
+				border-bottom: 1px solid $card-border-color;
+			}
+		}
+
+		.posts__item--card {
+
+			.posts__excerpt {
+				font-size: $base-font-size;
+				line-height: $base-line-height;
+			}
+		}
+
+			// Post Title
+			.posts__title {
+
+				// Post Title in the Footer Widgets Area
+				.widget--footer & {
+					line-height: $footer-widget-post-title-line-height;
+					font-style: $footer-widget-post-title-font-style;
+
+					> a {
+
+						&:not(:hover) {
+							color: #fff;
+						}
+					}
+
+					&:not(.posts__title--color-hover) {
+
+						> a {
+
+							&:hover {
+								color: $link-color-hover;
+							}
+						}
+					}
+				}
+
+				// Post Title smaller in the Megamenu
+				.has-mega-menu & {
+
+					@if $template == football {
+
+						@media (max-width: 991px) {
+
+							> a {
+								color: #fff;
+							}
+						}
+					} @else {
+
+						@media (max-width: 991px) {
+
+							> a {
+								color: #fff;
+							}
+						}
+					}
+
+					@media (min-width: 992px) {
+
+						> a {
+							color: $nav-sub-megamenu-post-title-color;
+						}
+					}
+				}
+			}
+
+			// Post Thumb
+			.posts__thumb {
+				border-radius: $footer-widget-post-thumb-border-radius;
+
+				&::before {
+					border-radius: $footer-widget-post-thumb-border-radius;
+				}
+
+				img {
+					border-radius: $footer-widget-post-thumb-border-radius;
+				}
+			}
+
+			// Post Footer
+			.posts__footer {
+
+				.card & {
+					border-top: 1px solid $card-border-color;
+				}
+			}
+				.post-author__name {
+					color: $body-font-color;
+				}
+	}
+
+	/* Simple Posts List - Large */
+	.posts--simple-list--lg {
+
+		.posts__excerpt {
+			font-size: $base-font-size;
+			line-height: $base-line-height;
+		}
+
+		&.posts--simple-list--lg--clean {
+
+			.posts__item {
+				border-bottom: none;
+			}
+
+			.posts__footer {
+				border-top: none;
+			}
+		}
+	}
+
+	/* Simple Posts List - XLarge */
+	.posts--simple-list--xlg {
+
+		.posts__excerpt {
+			font-size: $base-font-size;
+			line-height: $base-line-height;
+		}
+	}
+
+	/* Posts List - Horizontal */
+	.posts-layout-horizontal,
+	.megamenu-row.col-12 .posts--simple-list {
+
+		@media (min-width: 992px) {
+
+			.megamenu-item & {
+				border-bottom-color: $nav-sub-border-color;
+			}
+		}
+	}
+
+
+/* Post: Cards */
+.posts--cards {
+
+}
+	.posts__item--card {
+
+		.posts__thumb {
+
+			&:first-child {
+				border-radius: corner-values($card-border-radius $card-border-radius 0 0);
+			}
+
+			&:last-child {
+				border-radius: corner-values(0 0 $card-border-radius $card-border-radius);
+			}
+		}
+
+		.posts__date {
+			font-style: $post-title-font-style;
+
+			> a {
+				color: $body-font-color;
+			}
+		}
+
+		.posts__footer {
+			border-top: 1px solid $card-border-color;
+		}
+			.post-author__name {
+				color: $body-font-color;
+			}
+	}
+
+
+/* Post: Tile */
+.posts--tile {
+
+	.posts__title {
+		color: #fff;
+
+		> a {
+			color: #fff;
+		}
+	}
+		.post-author__info {
+			.posts__date {
+				color: #fff;
+			}
+		}
+}
+	.posts__item--tile {
+
+		.posts__thumb {
+
+			img {
+				border-radius: $card-border-radius;
+			}
+		}
+
+			.posts__cta {
+
+				&::before,
+				&::after {
+					background-color: #fff;
+				}
+			}
+
+			.posts__title {
+
+				> a {
+					@if $template != 'football' {
+						color: #fff;
+
+						&:hover {
+							color: #fff;
+						}
+					}
+				}
+			}
+
+			.posts__date {
+				color: #fff;
+			}
+
+			.posts__footer {
+				border-top: 1px solid $card-border-color;
+			}
+				.post-author__name {
+					color: $color-gray;
+				}
+
+				.meta__item a:hover {
+					@if $template != 'football' {
+						color: #fff;
+					}
+				}
+	}
+
+// Post Tile Alt
+.posts--tile-alt {
+
+	.posts__item-link-overlay {
+
+		&:hover {
+			background-color: $post-card-overlay-color;
+		}
+	}
+}
+
+/* Post: Cards Thumb Left */
+.posts--cards-thumb-left {
+
+	.posts__thumb {
+
+		@media (min-width: 768px) {
+
+			&:first-child {
+				border-radius: corner-values($card-border-radius 0 0 $card-border-radius);
+			}
+		}
+	}
+}
+
+/* Post: Blockquote */
+.posts__item--quote {
+	background-color: $post-quote-bg;
+	border-radius: $card-border-radius;
+
+
+	&::before {
+		font-family: $font-family-accent;
+		color: #fff;
+	}
+}
+.blockquote {
+
+}
+	.blockquote--card {
+
+		.blockquote__content {
+			font-family: $font-family-accent;
+			color: #fff;
+			font-style: $post-quote-font-style;
+		}
+			.blockquote-stress {
+				color: $post-quote-highlight;
+			}
+
+		.blockquote__footer {
+			font-family: $font-family-accent;
+			color: #fff;
+		}
+	}
+
+
+/* Posts: Featured Slider */
+.posts--slider-featured {
+
+	.posts__title-higlight {
+
+		@if $template == 'basketball' {
+			color: $color-primary;
+		} @else {
+			color: $color-4-darken;
+		}
+	}
+
+		.post-author {
+			color: #fff;
+		}
+			.post-author__name,
+			.posts__date {
+				color: #fff;
+			}
+}
+
+/* Featured Slider - Center */
+.posts--slider {
+
+}
+	.posts-slider--center {
+
+		.posts__thumb {
+
+			&::before {
+				background-color: #000;
+				opacity: 0.6;
+			}
+		}
+	}
+
+
+/* Featured Carousel */
+.posts--carousel-featured {
+
+		.posts__title {
+			color: #fff;
+
+			> a {
+				color: #fff;
+			}
+		}
+
+		.posts__date {
+			color: $body-font-color;
+		}
+
+			.meta__item {
+				color: #fff;
+
+				> a {
+					color: #fff;
+
+					&:hover {
+						color: #fff;
+					}
+				}
+			}
+}
+
+/* Posts - Horizontal */
+.posts--horizontal {
+
+	.posts__item,
+	.card & .posts__item {
+
+		@media (min-width: 768px) {
+			border-#{$left}: 1px solid $card-border-color;
+		}
+
+	}
+}
+
+/* Posts - Carousel Video Slideshow */
+.posts--carousel {
+
+		.posts__link-wrapper {
+
+			&::before {
+				border: 4px solid $color-primary;
+				color: #fff;
+			}
+		}
+			.posts__title {
+				color: #fff;
+			}
+
+			.posts__thumb {
+				background-color: #171d21;
+			}
+
+			.posts__date {
+				color: $body-font-color;
+			}
+
+
+	// Slick Carousel Navigation
+	.slick-prev,
+	.slick-next {
+
+		&:hover {
+			background-color: $headings-color;
+		}
+	}
+}
+
+/* Featured News - Football */
+.posts--slider-var-width {
+
+}
+
+	.posts__item--desc-center {
+
+		.posts__thumb {
+			border-radius: $card-border-radius;
+			border: 1px solid $card-border-color;
+		}
+
+		.posts__date {
+			color: $headings-color;
+		}
+
+		.posts__title-higlight {
+
+			@if $template == 'football' {
+				color: $color-4;
+			} @else {
+				color: $color-primary;
+			}
+		}
+	}
+
+
+	.posts__item--desc-center {
+
+		.posts__title {
+			color: #fff;
+		}
+
+		.posts__date {
+			color: #fff;
+		}
+	}
+
+	.posts__item--desc-left {
+
+		.posts__inner {
+			bottom: $card-vertical-padding;
+			#{$left}: $card-horizontal-padding;
+		}
+
+		.posts__thumb {
+			border-radius: $card-border-radius;
+			border: 1px solid $card-border-color;
+		}
+
+		.posts__title {
+			@if $template != 'football' {
+				color: #fff;
+			}
+		}
+
+		.posts__date {
+			color: #fff;
+		}
+
+		.posts__title-higlight {
+
+			@if $template == 'football' {
+				color: $color-4;
+			} @else {
+				color: $color-primary;
+			}
+		}
+
+	}
+
+
+
+/* Slider Featured */
+.posts--slider-top-news {
+
+	.posts__title-higlight {
+		@if $template == 'basketball' {
+			color: $color-primary;
+		} @else {
+			color: $color-4-darken;
+		}
+	}
+	.posts__date {
+		color: #fff;
+	}
+
+	.post__meta {
+		color: #fff;
+	}
+		.meta__item {
+
+			a {
+				color: #fff;
+			}
+		}
+}
+
+
+
+/* Posts - Video Grid */
+.posts--video-grid {
+
+	.posts__item {
+		border: 1px solid $card-border-color;
+		border-radius: $card-border-radius;
+
+		@each $color, $value in $post-category-colors {
+			&.posts__item--#{$color} .posts__link-wrapper::before {
+				border-color: $value;
+			}
+		}
+	}
+
+		.posts__link-wrapper {
+
+			&::before {
+				border: 4px solid $color-primary;
+				color: #fff;
+			}
+		}
+			.posts__title {
+				color: #fff;
+			}
+
+			.posts__thumb {
+				background-color: #171d21;
+			}
+
+			.posts__date {
+				color: $body-font-color;
+			}
+}

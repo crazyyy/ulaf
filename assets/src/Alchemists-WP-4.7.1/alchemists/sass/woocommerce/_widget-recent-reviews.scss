@@ -1,0 +1,57 @@
+/**
+ * Woo Widget: Recent Reviews
+ */
+
+.widget_recent_reviews {
+
+	ul.product_list_widget {
+
+		> li {
+			padding: 20px $card-horizontal-padding 20px $card-horizontal-padding;
+			font-size: 10px;
+			line-height: 1.2em;
+			font-weight: 700;
+			text-transform: uppercase;
+			font-family: $font-family-accent;
+			overflow: hidden;
+
+			a {
+				color: $headings-color;
+				transition: opacity 0.2s ease;
+
+				&:hover {
+					color: $link-color-hover;
+				}
+			}
+
+			img {
+				width: 70px;
+				height: auto;
+				float: $left;
+				margin: side-values(0 12px 0 0);
+				overflow: hidden;
+				border-radius: $thumb-border-radius;
+				transition: opacity 0.2s ease;
+
+				&:hover {
+					opacity: 0.7;
+				}
+			}
+
+			.star-rating {
+				font-weight: 700;
+				float: none;
+				margin: 5px 0 8px 0;
+			}
+
+			& + li {
+				border-top: 1px solid $card-border-color;
+			}
+
+			.reviewer {
+				font-weight: 700;
+				font-size: 9px;
+			}
+		}
+	}
+}

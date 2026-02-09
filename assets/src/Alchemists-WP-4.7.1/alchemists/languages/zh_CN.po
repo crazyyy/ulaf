@@ -1,0 +1,2848 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Alchemists\n"
+"POT-Creation-Date: 2025-07-23 18:08+0200\n"
+"PO-Revision-Date: 2025-12-24 14:44+0000\n"
+"Last-Translator: Dan Fisher <dan.fisher85@yahoo.com>\n"
+"Language-Team: Chinese (China)\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: inc/template-tags.php:322 inc/template-tags.php:385
+#, php-format
+msgid "%1$s"
+msgstr "%1$s"
+
+#. 1: formatted order total 2: total order items
+#: woocommerce/myaccount/orders.php:69
+#, php-format
+msgid "%1$s for %2$s item"
+msgid_plural "%1$s for %2$s items"
+msgstr[0] ""
+
+#. %1$s Action name, %2$s Order number.
+#: woocommerce/order/order-details.php:110 woocommerce/myaccount/orders.php:81
+#, fuzzy, php-format
+#| msgid "Order number:"
+msgid "%1$s order number %2$s"
+msgstr "订单号："
+
+#. 1: reviews count 2: product name
+#: woocommerce/single-product-reviews.php:49
+#, php-format
+msgid "%1$s review for %2$s"
+msgid_plural "%1$s reviews for %2$s"
+msgstr[0] ""
+
+#: search.php:121
+#, php-format
+msgid "%1$s were found for your \"%2$s\" search."
+msgstr ""
+
+#: search.php:123
+#, php-format
+msgid "%s article"
+msgid_plural "%s articles"
+msgstr[0] ""
+
+#: inc/wc-functions.php:180 template-parts/header/header-info-block.php:159
+#, php-format
+msgid "%s item"
+msgid_plural "%s items"
+msgstr[0] "%s 项目"
+
+#: vc_templates/alc_twitch.php:64
+#, php-format
+msgid "%s plugin is not installed"
+msgstr ""
+
+#: woocommerce/order/order-downloads.php:54
+msgid "&infin;"
+msgstr ""
+
+#. %s is the product name
+#: woocommerce/cart/mini-cart.php:72
+#, php-format
+msgid "&ldquo;%s&rdquo; has been removed from your cart"
+msgstr ""
+
+#: inc/template-tags.php:324 inc/template-tags.php:387
+msgid "(Edit)"
+msgstr "（编辑）"
+
+#: woocommerce/cart/cart-totals.php:108
+#, php-format
+msgid "(estimated for %s)"
+msgstr "(估计为 %s)"
+
+#: woocommerce/single-product-reviews.php:159
+msgid "1 Star - Very poor"
+msgstr "1星 - 非常差"
+
+#: functions.php:285
+msgid "1st Footer Widget Area."
+msgstr "第一页脚小部件区域。"
+
+#: vc_templates/alc_team_points_history/alc_team_points_history-soccer.php:50
+msgid "1st Half"
+msgstr "上半场"
+
+#: woocommerce/single-product-reviews.php:158
+msgid "2 Stars - Not that bad"
+msgstr "2星 - 不是那么糟糕"
+
+#: functions.php:294
+msgid "2nd Footer Widget Area"
+msgstr "第二页脚小部件区域"
+
+#: vc_templates/alc_team_points_history/alc_team_points_history-soccer.php:69
+msgid "2nd Half"
+msgstr "下半场"
+
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:96
+#: sportspress/single-team/featured-player/content-player-default.php:58
+msgid "3 Points"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:116
+#: sportspress/single-team/featured-player/content-player-default.php:34
+msgid "3 Points Accuracy"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:157
+msgid "3 Stars - Average"
+msgstr "3星 - 一般"
+
+#: vc_templates/alc_player_stats_grid.php:131
+msgid "3-pointer %"
+msgstr ""
+
+#: functions.php:303
+msgid "3rd Footer Widget Area"
+msgstr "第三页脚小部件区域"
+
+#: woocommerce/single-product-reviews.php:156
+msgid "4 Stars - Good"
+msgstr "4星 - 好"
+
+#: 404.php:82 404.php:107
+msgid "404 Error"
+msgstr "404错误"
+
+#: 404.php:144
+msgid "404 Error Image"
+msgstr ""
+
+#: functions.php:312
+msgid "4th Footer Widget Area"
+msgstr "第四页脚小部件区域"
+
+#: woocommerce/single-product-reviews.php:155
+msgid "5 Stars - Perfect"
+msgstr "5颗星 - 完美"
+
+#: woocommerce/myaccount/form-login.php:124
+msgid "A link to set a new password will be sent to your email address."
+msgstr ""
+
+#: inc/wc-functions.php:556 inc/wc-functions.php:575
+msgid "Abbreviation"
+msgstr "缩写"
+
+#: inc/wc-functions.php:205 inc/wc-functions.php:214
+msgid "Account Details"
+msgstr "帐户详细资料"
+
+#: woocommerce/myaccount/navigation.php:30
+#: woocommerce/myaccount/navigation.php:54
+#, fuzzy
+#| msgid "Account Details"
+msgid "Account pages"
+msgstr "帐户详细资料"
+
+#: woocommerce/order/order-details.php:102
+#, fuzzy
+#| msgid "Options"
+msgid "Actions"
+msgstr "选项"
+
+#. %s is product title
+#: woocommerce/single-product-reviews.php:94
+msgid "Add a review"
+msgstr "添加评论"
+
+#: inc/acf-fields.php:608
+msgid "Add Event"
+msgstr "添加事件"
+
+#: inc/acf-fields.php:2288 inc/acf-fields.php:2352
+msgid "Add full links to social networks or services."
+msgstr ""
+
+#: inc/acf-fields.php:2300 inc/acf-fields.php:2364
+msgid "Add Link"
+msgstr ""
+
+#: inc/acf-fields.php:185 inc/acf-fields.php:2142
+msgid "Add Overlay?"
+msgstr "添加叠加？"
+
+#: functions.php:195 functions.php:204 functions.php:213 functions.php:222
+#: functions.php:231 functions.php:240 functions.php:249 functions.php:258
+#: functions.php:276
+msgid "Add widgets here."
+msgstr "在这里添加小部件。"
+
+#: woocommerce/checkout/form-shipping.php:77
+#: woocommerce/single-product/tabs/additional-information.php:25
+msgid "Additional information"
+msgstr "附加信息"
+
+#: vc_templates/alc_event_scoreboard/esports-alc_event_scoreboard.php:305
+#: vc_templates/alc_event_scoreboard/football-alc_event_scoreboard.php:380
+#: sportspress/event/event-logos/esports-event-logos-block.php:341
+#: sportspress/event/event-logos/football-event-logos-block.php:410
+msgid "Additional Stats"
+msgstr "其他统计"
+
+#: inc/wc-functions.php:208
+msgid "Addresses"
+msgstr "地址"
+
+#: inc/acf-fields.php:1286 inc/acf-fields.php:1703
+msgid "After Players"
+msgstr ""
+
+#: sportspress/player-carousel-thumbs.php:38 sportspress/single-player.php:36
+#: sportspress/player-block-thumbnail.php:110
+msgid "Age"
+msgstr "年龄"
+
+#: inc/acf-fields.php:28
+msgid "Album Photos"
+msgstr "相册照片"
+
+#: inc/acf-fields.php:884
+msgid "Albums"
+msgstr "相册"
+
+#: inc/acf-fields.php:24
+msgid "Albums Photos"
+msgstr "相册照片"
+
+#. Name of the theme
+msgid "Alchemists"
+msgstr ""
+
+#: inc/vc-templates.php:29
+msgid "Alchemists Theme"
+msgstr "Alchemists 主题"
+
+#: vc_templates/alc_post_slider.php:130
+msgid "All"
+msgstr "全部"
+
+#: template-parts/post-filter.php:55
+msgid "All Articles"
+msgstr "所有文章"
+
+#: template-parts/post-filter.php:117
+msgid "All Authors"
+msgstr "所有作者"
+
+#: inc/acf-fields.php:704
+msgid "Alternative Photo"
+msgstr "替代照片"
+
+#: woocommerce/cart/cart.php:181
+msgid "Apply"
+msgstr "应用"
+
+#: woocommerce/checkout/form-coupon.php:48
+msgid "Apply coupon"
+msgstr ""
+
+#: sportspress/event-list.php:222 sportspress/event-list.php:504
+msgid "Article"
+msgstr "文章"
+
+#: template-parts/post-filter.php:77
+msgid "Article Date"
+msgstr "文章日期"
+
+#: template-parts/post-filter.php:79
+msgid "Article ID"
+msgstr "文章ID"
+
+#: template-parts/post-filter.php:78
+msgid "Article Title"
+msgstr "文章标题"
+
+#: template-parts/post-filter.php:101
+msgid "Ascending"
+msgstr "升序"
+
+#: sportspress/player-slider-card__slide.php:160
+#: sportspress/player-cards__card.php:139
+#: sportspress/player-event-graph-log.php:113
+#: sportspress/player-event-graph-log.php:124
+#: sportspress/player-event-graph-log.php:158
+#: vc_templates/alc_player_stats_chart.php:115
+#: vc_templates/alc_player_stats_chart.php:120
+#: vc_templates/alc_player_stats_chart.php:133
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:68
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:98
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:65
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:104
+#: sportspress/single-team/featured-player/content-player-soccer.php:20
+#: sportspress/single-team/featured-player/content-player-default.php:20
+#: sportspress/single-team/featured-player/content-player-default.php:60
+msgid "Assists"
+msgstr "助攻"
+
+#: sportspress/player-statistics-avg.php:93
+#: sportspress/player-statistics-avg.php:103
+#: sportspress/player-statistics-circular-boxed.php:80
+#: sportspress/player-statistics-circular-boxed.php:90
+msgid "Assists per game"
+msgstr "场均助攻"
+
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:107
+#: sportspress/single-team/featured-player/content-player-football.php:61
+msgid "Attempts"
+msgstr "进攻"
+
+#: template-parts/post-filter.php:115
+msgid "Author"
+msgstr "作者"
+
+#: woocommerce/cart/cart.php:106
+msgid "Available on backorder"
+msgstr "缺货可用"
+
+#: vc_templates/alc_team_leaders.php:53
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:196
+#: sportspress/single-team/featured-player/content-player-default.php:106
+msgid "AVG"
+msgstr "平均"
+
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:70
+#: sportspress/single-team/featured-player/content-player-football.php:20
+msgid "Avg"
+msgstr "平均"
+
+#: inc/sp-functions.php:394
+msgid "avg"
+msgstr "平均"
+
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:56
+msgid "Avg. Assists"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:55
+msgid "Avg. Deaths"
+msgstr ""
+
+#: vc_templates/alc_player_stats_grid.php:205
+msgid "Avg. Gold per Min"
+msgstr ""
+
+#: sportspress/player-statistics-avg.php:117
+#: vc_templates/alc_player_stats_grid.php:200
+msgid "Avg. KDA Ratio"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:54
+msgid "Avg. Kills"
+msgstr ""
+
+#: woocommerce/single-product/product-image.php:63
+msgid "Awaiting product image"
+msgstr "等待产品形象"
+
+#: inc/acf-fields.php:626
+msgid "Award"
+msgstr "荣誉"
+
+#: sportspress/event-list.php:172 sportspress/event-list.php:358
+#: sportspress/event-matrix.php:142
+msgid "Away"
+msgstr "客"
+
+#: vc_templates/alc_event_scoreboard/soccer-alc_event_scoreboard.php:444
+#: vc_templates/alc_event_scoreboard/football-alc_event_scoreboard.php:348
+#: sportspress/event/event-logos/soccer-event-logos-block.php:497
+#: sportspress/event/event-logos/football-event-logos-block.php:379
+msgid "Ball Possession"
+msgstr "控球"
+
+#: woocommerce/single-product-reviews.php:94
+#, php-format
+msgid "Be the first to review &ldquo;%s&rdquo;"
+msgstr "成为第一个评论 &ldquo;%s&rdquo;"
+
+#: inc/acf-fields.php:1285 inc/acf-fields.php:1702
+msgid "Before Players"
+msgstr ""
+
+#: woocommerce/checkout/form-billing.php:31
+msgid "Billing &amp; Shipping"
+msgstr "帐单＆amp; 运输"
+
+#: woocommerce/order/order-details-customer.php:34
+#: woocommerce/myaccount/form-edit-address.php:20
+msgid "Billing address"
+msgstr "帐单地址"
+
+#: woocommerce/checkout/form-billing.php:35
+msgid "Billing details"
+msgstr "结算明细"
+
+#: sportspress/single-player.php:66 sportspress/single-player.php:70
+#: inc/sp-functions.php:140
+msgid "Biography"
+msgstr "传记"
+
+#: sportspress/single-player.php:37 sportspress/player-block-thumbnail.php:107
+msgid "Birthday"
+msgstr "生日"
+
+#: sportspress/player-event-graph-log.php:109 inc/acf-fields.php:1006
+#: inc/acf-fields.php:1251 inc/acf-fields.php:1425 inc/acf-fields.php:1668
+#: vc_templates/alc_player_stats_chart.php:114
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:100
+#: sportspress/single-team/featured-player/content-player-default.php:61
+msgid "Blocks"
+msgstr "块"
+
+#: index.php:24
+msgid "Blog"
+msgstr "博客"
+
+#: woocommerce/myaccount/downloads.php:42 woocommerce/myaccount/orders.php:121
+msgid "Browse products"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:24
+msgid "Calculate shipping"
+msgstr ""
+
+#: comments.php:114 template-parts/post/comments/comments-alt.php:104
+#: template-parts/post/comments/comments-alt-card.php:105
+msgid "Cancel Reply"
+msgstr "取消回复"
+
+#. Name of the template
+#: template-canvas.php:2
+msgid "Canvas"
+msgstr ""
+
+#: inc/acf-fields.php:844
+msgid "Card Accent"
+msgstr ""
+
+#: inc/acf-fields.php:1009
+msgid "Cards"
+msgstr "卡"
+
+#: inc/acf-fields.php:1010 inc/acf-fields.php:1427
+msgid "Carousel + Thumbs"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:59
+msgid "Cart totals"
+msgstr "购物车总数"
+
+#: template-parts/post-filter.php:53
+msgid "Category"
+msgstr "类别"
+
+#: woocommerce/cart/cart-shipping.php:59
+msgid "Change address"
+msgstr ""
+
+#: inc/acf-fields.php:2410
+msgid "Character Options"
+msgstr ""
+
+#: sportspress/player-slider-thumbnail.php:64
+msgid "Check the<br>Player Profile"
+msgstr "查看<BR>球员简介"
+
+#: inc/wc-functions.php:138 woocommerce/checkout/form-checkout.php:32
+msgid "Checkout"
+msgstr "结帐"
+
+#: woocommerce/cart/shipping-calculator.php:82
+msgid "City"
+msgstr "市"
+
+#: woocommerce/cart/shipping-calculator.php:81
+#, fuzzy
+#| msgid "City"
+msgid "City:"
+msgstr "市"
+
+#: woocommerce/single-product/add-to-cart/variable.php:55
+msgid "Clear"
+msgstr "明确"
+
+#: woocommerce/single-product/add-to-cart/variable.php:55
+#, fuzzy
+#| msgid "Completions"
+msgid "Clear options"
+msgstr "完成"
+
+#: woocommerce/myaccount/form-login.php:67 woocommerce/global/form-login.php:58
+msgid "Click Here"
+msgstr "点击这里"
+
+#: woocommerce/checkout/form-coupon.php:35
+msgid "Click here to enter your code"
+msgstr "点击此处输入您的代码"
+
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:82
+msgid "CMP %"
+msgstr ""
+
+#: sportspress/single-team/featured-player/content-player-football.php:41
+msgid "CMP%"
+msgstr ""
+
+#: inc/acf-fields.php:2687
+msgid "Code"
+msgstr ""
+
+#: template-parts/post/comments/comments-alt.php:36
+#: template-parts/post/comments/comments-alt-card.php:37
+msgid "Comment"
+msgid_plural "Comments"
+msgstr[0] ""
+
+#: comments.php:44
+msgid "Comments"
+msgstr "评论"
+
+#: comments.php:75 template-parts/post/comments/comments-alt.php:71
+#: template-parts/post/comments/comments-alt-card.php:68
+msgid "Comments are closed."
+msgstr "评论被关闭。"
+
+#: template-parts/post-filter.php:80
+msgid "Comments Count"
+msgstr "评论数"
+
+#: sportspress/player/heading/player-heading-fullwidth.php:187
+msgid "Competitions"
+msgstr "比赛"
+
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:106
+#: sportspress/single-team/featured-player/content-player-football.php:60
+msgid "Completions"
+msgstr "完成"
+
+#: vc_templates/alc_event_scoreboard.php:207
+msgid "Configure the element by selecting a Team or Event."
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:77
+msgid "Confirm new password"
+msgstr "确认新密码"
+
+#: inc/acf-fields.php:642
+msgid "Content"
+msgstr "内容"
+
+#: inc/acf-fields.php:450
+msgid "Content Bottom Padding"
+msgstr "内容底部填充"
+
+#: inc/acf-fields.php:423
+msgid "Content Top Padding"
+msgstr "内容顶部填充"
+
+#: sportspress/player-event-graph-log.php:128
+#: vc_templates/alc_player_stats_chart.php:121
+msgid "Corner Kicks"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:30
+msgid "Country / region"
+msgstr ""
+
+#: woocommerce/checkout/form-coupon.php:46 woocommerce/cart/cart.php:179
+msgid "Coupon code"
+msgstr "优惠券代码"
+
+#: woocommerce/checkout/form-coupon.php:45
+msgid "Coupon:"
+msgstr "优惠券："
+
+#: woocommerce/checkout/form-billing.php:63
+msgid "Create an account?"
+msgstr "创建一个帐户？"
+
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:41
+msgid "Creep Score"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:69
+msgid "Current password (leave blank to leave unchanged)"
+msgstr "当前密码（留空不变）"
+
+#: sportspress/single-player.php:38 sportspress/player-details.php:89
+#: vc_templates/alc_staff_bio_card.php:100
+msgid "Current Team"
+msgstr "现役球队"
+
+#: inc/acf-fields.php:162 inc/acf-fields.php:2119
+msgid "Custom Background Color"
+msgstr "自定义背景颜色"
+
+#: inc/acf-fields.php:130 inc/acf-fields.php:2087
+msgid "Custom Background Image"
+msgstr "自定义背景图像"
+
+#: inc/acf-fields.php:244 inc/acf-fields.php:2201
+msgid "Custom Overlay Color"
+msgstr "自定义叠加颜色"
+
+#: inc/acf-fields.php:272 inc/acf-fields.php:2229
+msgid "Custom Overlay Opacity"
+msgstr "自定义叠加不透明度"
+
+#: inc/acf-fields.php:103 inc/acf-fields.php:2068
+msgid "Customize Page Heading?"
+msgstr "自定义页面标题？"
+
+#: sportspress/player-event-game-by-game.php:276
+msgid "D"
+msgstr ""
+
+#. Author of the theme
+msgid "Dan Fisher"
+msgstr ""
+
+#: sportspress/player-event-game-by-game.php:155 sportspress/event-list.php:156
+#: sportspress/event-list.php:312 sportspress/event-details.php:22
+#: inc/acf-fields.php:661
+msgid "Date"
+msgstr "日期"
+
+#: woocommerce/checkout/thankyou.php:57
+msgid "Date:"
+msgstr "日期："
+
+#: sportspress/countdown.php:271
+msgid "days"
+msgstr "天"
+
+#: sportspress/player-event-graph-log.php:154
+#: vc_templates/alc_player_stats_chart.php:132
+msgid "Deaths"
+msgstr ""
+
+#: inc/acf-fields.php:435 inc/acf-fields.php:462 inc/sp-functions.php:100
+msgid "Default"
+msgstr "默认"
+
+#: template-parts/post-filter.php:100
+msgid "Descending"
+msgstr "降序"
+
+#: woocommerce/single-product/short-description.php:33
+#: woocommerce/single-product/tabs/description.php:25
+msgid "Description"
+msgstr "描述"
+
+#: sportspress/event-details.php:62
+msgid "Details"
+msgstr "详细信息"
+
+#: woocommerce/myaccount/form-edit-account.php:44
+msgid "Display name"
+msgstr ""
+
+#: inc/wc-functions.php:199
+msgid "Downloads"
+msgstr "下载"
+
+#: vc_templates/alc_player_stats_grid.php:149
+msgid "Draw Ratio"
+msgstr ""
+
+#: sportspress/player-slider-card__slide.php:165
+#: sportspress/player-cards__card.php:144
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:109
+#: sportspress/single-team/featured-player/content-player-soccer.php:54
+msgid "Dribbles"
+msgstr ""
+
+#: vc_templates/alc_player_stats_grid.php:136
+msgid "Efficiency rating"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:118
+#: vc_templates/alc_staff_bio_card.php:130
+msgid "Email"
+msgstr "电子邮箱"
+
+#: comments.php:135 template-parts/post/comments/comments-alt.php:125
+#: template-parts/post/comments/comments-alt-card.php:126
+msgid "Email Address"
+msgstr "电子邮件地址"
+
+#: woocommerce/myaccount/form-edit-account.php:50
+#: woocommerce/myaccount/form-login.php:111
+msgid "Email address"
+msgstr "电子邮件地址"
+
+#: sportspress/staff-gallery-thumbnail.php:49
+#: woocommerce/checkout/thankyou.php:63
+#: sportspress/single-team/staff/alc-team-roster-staff-blocks.php:89
+msgid "Email:"
+msgstr "电子邮件："
+
+#: inc/acf-fields.php:106
+msgid "Enables customization options."
+msgstr "启用自定义选项。"
+
+#: woocommerce/cart/cart-shipping.php:92
+msgid "Enter a different address"
+msgstr ""
+
+#: inc/acf-fields.php:2337 inc/acf-fields.php:2401
+msgid "Enter links to Social Networks"
+msgstr ""
+
+#: inc/acf-fields.php:1984
+msgid "Enter number of displayed Posts."
+msgstr "输入显示的帖子数量。"
+
+#: woocommerce/cart/cart-shipping.php:71
+msgid "Enter your address to view shipping options."
+msgstr ""
+
+#: woocommerce/checkout/form-coupon.php:35
+#, fuzzy
+#| msgid "Enter your price."
+msgid "Enter your coupon code"
+msgstr "输入您的价格。"
+
+#: template-parts/header/header-search-form.php:15
+msgid "Enter your search here..."
+msgstr "在此输入您的搜索..."
+
+#: sportspress/event-list.php:184 sportspress/event-list.php:382
+#: sportspress/tournament-bracket-table.php:126
+msgid "Event"
+msgstr "事件"
+
+#: sportspress/countdown.php:256 sportspress/countdown.php:286
+msgctxt "event countdown"
+msgid "Read More"
+msgstr ""
+
+#: inc/acf-fields.php:627
+msgid "Exit"
+msgstr "退出"
+
+#: inc/template-functions.php:113 inc/template-functions.php:125
+msgctxt "Exo 2: on or off"
+msgid "on"
+msgstr "开"
+
+#: inc/sp-functions.php:101
+msgid "Extended"
+msgstr "扩展"
+
+#: template-parts/social-counters/social-fb.php:18
+msgid "Facebook"
+msgstr "Facebook"
+
+#: inc/acf-fields.php:935 inc/acf-fields.php:1354
+msgid "Featured Gallery Roster"
+msgstr "精选画廊名册"
+
+#: inc/acf-fields.php:1133 inc/acf-fields.php:1550
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:136
+#: sportspress/single-team/featured-player/content-player-soccer.php:63
+#: sportspress/single-team/featured-player/content-player-default.php:71
+#: sportspress/single-team/featured-player/content-player-football.php:76
+#: sportspress/single-team/featured-player/content-player-football.php:83
+msgid "Featured Player"
+msgstr "精选的球员"
+
+#: inc/acf-fields.php:1183 inc/acf-fields.php:1600
+msgid "Featured Player Shortcode"
+msgstr ""
+
+#: vc_templates/alc_player_stats_grid.php:121
+#: vc_templates/alc_player_stats_grid.php:182
+msgid "Field Goal %"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:114
+msgid "Field Goal Accuracy"
+msgstr "命中精度"
+
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:95
+#: sportspress/single-team/featured-player/content-player-default.php:57
+msgid "Field Goals"
+msgstr ""
+
+#: template-parts/post-filter.php:150
+msgid "Filter News"
+msgstr "过滤新闻"
+
+#: sportspress/tournament-bracket.php:49
+msgid "Final Bracket"
+msgstr ""
+
+#: sportspress/event-blocks.php:350
+#: vc_templates/alc_event_scoreboard/soccer-alc_event_scoreboard.php:171
+#: vc_templates/alc_event_scoreboard/basketball-alc_event_scoreboard.php:150
+#: vc_templates/alc_event_scoreboard/football-alc_event_scoreboard.php:132
+#: sportspress/event/event-logos/soccer-event-logos-inline.php:132
+#: sportspress/event/event-logos/football-event-logos-inline.php:135
+#: sportspress/event/event-logos/soccer-event-logos-block.php:148
+#: sportspress/event/event-logos/basketball-event-logos-block.php:135
+#: sportspress/event/event-logos/esports-event-logos-block.php:182
+#: sportspress/event/event-logos/basketball-event-logos-inline.php:135
+#: sportspress/event/event-logos/football-event-logos-block.php:139
+#: sportspress/event/event-logos/esports-event-logos-inline.php:182
+msgid "Final Score"
+msgstr "最终得分"
+
+#: woocommerce/myaccount/form-edit-account.php:34
+msgid "First name"
+msgstr "名"
+
+#: template-parts/social-counters/social-instagram.php:20
+msgid "Follow Us on Instagram"
+msgstr ""
+
+#: template-parts/social-counters/social-twitch.php:20
+msgid "Follow Us on Twitch"
+msgstr ""
+
+#: template-parts/social-counters/social-twitter.php:20
+msgid "Follow Us on Twitter"
+msgstr ""
+
+#: template-parts/social-counters/social-youtube.php:20
+msgid "Follow Us on YouTube"
+msgstr ""
+
+#: functions.php:90 inc/template-functions.php:467
+msgid "Footer Menu"
+msgstr "页脚菜单"
+
+#: functions.php:283
+msgid "Footer Widget Area 1"
+msgstr "页脚小部件区域1"
+
+#: functions.php:292
+msgid "Footer Widget Area 2"
+msgstr "页脚小部件区域2"
+
+#: functions.php:301
+msgid "Footer Widget Area 3"
+msgstr "页脚小部件区域3"
+
+#: functions.php:310
+msgid "Footer Widget Area 4"
+msgstr "页脚小部件区域4"
+
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:101
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:110
+#: sportspress/single-team/featured-player/content-player-soccer.php:55
+#: sportspress/single-team/featured-player/content-player-default.php:62
+msgid "Fouls"
+msgstr ""
+
+#: vc_templates/alc_player_stats_grid.php:126
+msgid "Free throw %"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:115
+#: sportspress/single-team/featured-player/content-player-default.php:33
+msgid "Free Throw Accuracy"
+msgstr "罚球准确性"
+
+#: sportspress/event/alc-event-timeline-horizontal.php:82
+#: sportspress/event/alc-event-timeline-vertical.php:64
+msgid "FT"
+msgstr ""
+
+#: sportspress/single-player.php:69
+msgid "Full Statistics"
+msgstr "完整统计"
+
+#: sportspress/event-details.php:53
+#: sportspress/event/alc-event-timeline-horizontal.php:81
+#: sportspress/event/alc-event-timeline-vertical.php:63
+msgid "Full Time"
+msgstr "全职"
+
+#. Name of the template
+#: template-full-width.php:2
+msgid "Full Width"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:115
+#: sportspress/single-team/featured-player/content-player-football.php:69
+msgid "Fumbles lost"
+msgstr ""
+
+#: sportspress/single-player.php:66 sportspress/single-player.php:72
+#: sportspress/single-team.php:36 sportspress/single-team.php:43
+#: inc/sp-functions.php:140 inc/sp-functions.php:198
+msgid "Gallery"
+msgstr "画廊"
+
+#: inc/acf-fields.php:985 inc/acf-fields.php:1404
+msgid "Gallery Roster Type"
+msgstr "画廊花名册类型"
+
+#: sportspress/countdown.php:264
+msgid "Game Countdown"
+msgstr "比赛倒计时"
+
+#: vc_templates/alc_event_scoreboard/esports-alc_event_scoreboard.php:369
+#: sportspress/event/event-logos/esports-event-logos-block.php:405
+msgid "Game Duration"
+msgstr ""
+
+#: sportspress/event-logos-block.php:43
+#: vc_templates/alc_event_scoreboard.php:58
+#: vc_templates/alc_event_scoreboard/basketball-alc_event_scoreboard.php:314
+msgid "Game Statistics"
+msgstr "比赛统计"
+
+#: sportspress/event-timeline.php:36 sportspress/event-timeline-vertical.php:37
+#: vc_templates/alc_event_scoreboard/soccer-alc_event_scoreboard.php:496
+#: sportspress/event/event-logos/soccer-event-logos-block.php:549
+msgid "Game Timeline"
+msgstr "比赛时间轴"
+
+#: sportspress/player-slider-card__slide.php:155
+#: sportspress/player-cards__card.php:134
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:69
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:66
+#: sportspress/single-team/featured-player/content-player-soccer.php:21
+#: sportspress/single-team/featured-player/content-player-football.php:19
+msgid "Games"
+msgstr "比赛"
+
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:102
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:112
+#: sportspress/single-team/featured-player/content-player-default.php:63
+msgid "Games Played"
+msgstr ""
+
+#: single-albums.php:148
+msgid "Go Back to the Albums"
+msgstr "回到相册"
+
+#: sportspress/player-slider-card__slide.php:150
+#: sportspress/player-cards__card.php:129
+#: sportspress/player-event-graph-log.php:120
+#: vc_templates/alc_player_stats_chart.php:119
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:63
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:103
+#: sportspress/single-team/featured-player/content-player-soccer.php:18
+msgid "Goals"
+msgstr "进球"
+
+#: vc_templates/alc_player_stats_grid.php:159
+msgid "Goals per Game"
+msgstr ""
+
+#: sportspress/player-statistics-avg.php:89
+#: sportspress/player-statistics-circular-boxed.php:76
+msgid "Goals per game"
+msgstr "场均进球"
+
+#: sportspress/player-statistics-circular-boxed.php:100
+msgid "Gold/min"
+msgstr ""
+
+#: vc_templates/alc_team_leaders.php:52
+msgid "GP"
+msgstr "场次"
+
+#: inc/acf-fields.php:1005 inc/acf-fields.php:1250 inc/acf-fields.php:1424
+#: inc/acf-fields.php:1667
+msgid "Grid"
+msgstr "网格"
+
+#: woocommerce/myaccount/orders.php:57
+msgctxt "hash before order number"
+msgid "#"
+msgstr ""
+
+#: woocommerce/checkout/form-coupon.php:35
+msgid "Have a coupon?"
+msgstr "有优惠券吗？"
+
+#: template-parts/header/header-secondary.php:15
+msgid "Header Banner"
+msgstr "标题横幅"
+
+#: sportspress/player-block-thumbnail.php:70
+msgid "Height"
+msgstr ""
+
+#: template-parts/page-hero-unit.php:84 template-parts/page-hero-unit.php:86
+#: template-parts/content-hero-slider-numbers.php:53
+#: template-parts/content-hero-slider-numbers.php:55
+msgid "Hero Image"
+msgstr "英雄形象"
+
+#: inc/acf-fields.php:91
+msgid "Hero Unit - Posts Slider"
+msgstr "英雄单位 - 职位滑块"
+
+#: inc/acf-fields.php:90
+msgid "Hero Unit - Static"
+msgstr "英雄单位 - 静态"
+
+#: sportspress/event-list.php:161 sportspress/event-list.php:323
+#: sportspress/event-matrix.php:142
+msgid "Home"
+msgstr "首页"
+
+#: functions.php:202
+msgid "Home - Sidebar 1"
+msgstr "主页 - 侧边栏1"
+
+#: functions.php:211
+msgid "Home - Sidebar 2"
+msgstr "主页 - 侧边栏2"
+
+#: functions.php:220
+msgid "Home - Sidebar 3"
+msgstr "主页 - 边栏3"
+
+#: sportspress/countdown.php:272
+msgid "hrs"
+msgstr "小时"
+
+#. URI of the theme
+msgid "http://bit.ly/alch-wp"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://bit.ly/dan_fisher"
+msgstr ""
+
+#: inc/acf-fields.php:2438 inc/acf-fields.php:2501
+msgid "Icon"
+msgstr "图标"
+
+#: inc/acf-fields.php:2414 inc/acf-fields.php:2477
+msgid "Image"
+msgstr "图片"
+
+#: vc_templates/alc_images_carousel.php:102
+msgid "Image Caption"
+msgstr "图片说明"
+
+#: vc_templates/alc_images_carousel.php:101
+msgid "Image Title"
+msgstr "图像标题"
+
+#: inc/acf-fields.php:1910
+msgid "Images"
+msgstr "图像"
+
+#: sportspress/player-statistics-cards-boxed.php:24
+#: vc_templates/alc_player_stats_grid.php:71
+msgid "in all time"
+msgstr ""
+
+#: vc_templates/alc_player_stats.php:133
+#: sportspress/single-team/content-roster.php:196
+msgid "In career"
+msgstr ""
+
+#: vc_templates/alc_player_stats.php:138
+#: sportspress/single-team/content-roster.php:210
+msgid "In current season"
+msgstr ""
+
+#: sportspress/player-statistics-cards-boxed.php:30
+#: vc_templates/alc_player_stats_grid.php:75
+msgid "in current season"
+msgstr ""
+
+#: inc/acf-fields.php:624
+msgid "Injury"
+msgstr "伤病"
+
+#: template-parts/social-counters/social-instagram.php:18
+msgid "Instagram"
+msgstr "Instagram"
+
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:112
+#: sportspress/single-team/featured-player/content-player-football.php:66
+msgid "Interceptions thrown"
+msgstr ""
+
+#: template-parts/content-none.php:30
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for."
+msgstr "看来我们无法找到您所需要的东西。"
+
+#: inc/acf-fields.php:625
+msgid "Join"
+msgstr "加入"
+
+#: inc/template-functions.php:901
+msgid "K"
+msgstr ""
+
+#: sportspress/player-statistics-circular-boxed.php:96
+msgid "KDA Ratio"
+msgstr ""
+
+#: 404.php:188
+msgid "Keep Browsing"
+msgstr "继续浏览"
+
+#: sportspress/event/alc-event-timeline-horizontal.php:28
+#: sportspress/event/alc-event-timeline-vertical.php:28
+msgid "Kick Off"
+msgstr "开球"
+
+#: sportspress/player-event-graph-log.php:150
+#: vc_templates/alc_player_stats_chart.php:131
+msgid "Kills"
+msgstr ""
+
+#: sportspress/player-statistics-avg.php:121
+msgid "Kills P."
+msgstr ""
+
+#: vc_templates/alc_player_stats_grid.php:195
+msgid "Kills Participation"
+msgstr ""
+
+#: sportspress/event/alc-event-timeline-horizontal.php:37
+#: sportspress/event/alc-event-timeline-vertical.php:37
+msgid "KO"
+msgstr ""
+
+#: vc_templates/alc_event_scoreboard/esports-alc_event_scoreboard.php:28
+#: sportspress/event/event-logos/esports-event-logos-block.php:28
+msgid "L"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:38
+msgid "Last name"
+msgstr "姓"
+
+#: sportspress/single-team.php:36 sportspress/single-team.php:41
+#: inc/sp-functions.php:198 sportspress/single-team/content-results.php:33
+msgid "Latest Results"
+msgstr "最新结果"
+
+#: sportspress/event-list.php:210 sportspress/event-list.php:465
+msgid "League"
+msgstr "联赛"
+
+#: sportspress/player-details.php:115
+msgid "Leagues"
+msgstr ""
+
+#: comments.php:112 template-parts/post/comments/comments-alt.php:102
+#: template-parts/post/comments/comments-alt-card.php:103
+msgid "Leave a Reply"
+msgstr "发表评论"
+
+#. %s is product title
+#: comments.php:113 woocommerce/single-product-reviews.php:96
+#: template-parts/post/comments/comments-alt.php:103
+#: template-parts/post/comments/comments-alt-card.php:104
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "留下回复给 %s"
+
+#. Name of the template
+#: template-left-sidebar.php:2
+msgid "Left Sidebar"
+msgstr "左侧边栏"
+
+#: template-parts/social-counters/social-fb.php:20
+msgid "Like Our Facebook Page"
+msgstr "就像我们的Facebook页面"
+
+#: inc/acf-fields.php:2304 inc/acf-fields.php:2368 inc/acf-fields.php:2663
+msgid "Link"
+msgstr ""
+
+#: inc/acf-fields.php:2282 inc/acf-fields.php:2346
+msgid "Links"
+msgstr ""
+
+#: inc/acf-fields.php:1249 inc/acf-fields.php:1666
+msgid "List"
+msgstr ""
+
+#: inc/acf-fields.php:1083 inc/acf-fields.php:1500
+msgid "List Roster(s)"
+msgstr ""
+
+#: template-parts/widget-twitch.php:74 template-parts/widget-twitch.php:151
+msgid "Live"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:75
+msgid "Log in"
+msgstr ""
+
+#: woocommerce/global/form-login.php:65
+msgid "Login"
+msgstr "登录"
+
+#: woocommerce/myaccount/form-login.php:39
+msgid "Login to your account"
+msgstr "登录到您的帐户"
+
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:113
+#: sportspress/single-team/featured-player/content-player-football.php:67
+msgid "Longest"
+msgstr ""
+
+#: sportspress/tournament-bracket.php:48
+msgid "Loser Bracket"
+msgstr ""
+
+#: vc_templates/alc_player_stats_grid.php:154
+msgid "Loss Ratio"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:67 woocommerce/global/form-login.php:58
+msgid "Lost your password?"
+msgstr "忘记密码？"
+
+#: sportspress/event-list.php:225 sportspress/event-list.php:530
+#: sportspress/event-details.php:44
+msgid "Match Day"
+msgstr "比赛日"
+
+#: sportspress/event-statistics.php:107
+msgid "Match Stats"
+msgstr "比赛统计"
+
+#: sportspress/event-logos-block.php:41
+#: vc_templates/alc_event_scoreboard.php:56
+msgid "Matchup"
+msgstr "对决"
+
+#: admin/menu-item-custom-fields/fields.php:45
+msgid "Mega Menu Widget Area"
+msgstr "超级菜单小工具区域"
+
+#: admin/menu-item-custom-fields/fields.php:39
+msgid "Mega Menu?"
+msgstr "超级菜单？"
+
+#: functions.php:229
+msgid "Megamenu Widget Area 1"
+msgstr "Megamenu Widget 区域1"
+
+#: functions.php:238
+msgid "Megamenu Widget Area 2"
+msgstr "Megamenu Widget 区域2"
+
+#: functions.php:247
+msgid "Megamenu Widget Area 3"
+msgstr ""
+
+#: functions.php:256
+msgid "Megamenu Widget Area 4"
+msgstr ""
+
+#: sportspress/countdown.php:273
+msgid "mins"
+msgstr "分钟"
+
+#: inc/template-functions.php:137
+msgctxt "Montserrat: on or off"
+msgid "on"
+msgstr "开"
+
+#: sportspress/player-carousel-thumbs__slide-item.php:291
+msgid "More Info"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:38
+msgid "My account"
+msgstr ""
+
+#: sportspress/event-list.php:498
+#: woocommerce/order/order-details-customer.php:38
+#: woocommerce/order/order-details-customer.php:74
+#: woocommerce/single-product/meta.php:32
+msgid "N/A"
+msgstr "N/A"
+
+#: sportspress/player-slider-carousel__item.php:63
+#: sportspress/player-slider-carousel__item.php:64
+#: sportspress/player-statistics-avg.php:273
+#: sportspress/player-statistics-avg.php:317
+#: sportspress/player-statistics-circular-boxed.php:205
+#: sportspress/player-statistics-circular-boxed.php:250
+#: sportspress/player-statistics-bars.php:166
+#: sportspress/player-slider-card__slide.php:77
+#: sportspress/player-slider-card__slide.php:78
+#: sportspress/player-slider-card__slide.php:79
+#: sportspress/player-slider-card__slide.php:80
+#: sportspress/player-block-thumbnail.php:126
+#: sportspress/player-cards__card.php:75 sportspress/player-cards__card.php:76
+#: sportspress/player-cards__card.php:77 sportspress/player-cards__card.php:78
+#: sportspress/player-carousel-thumbs__slide-item.php:152
+#: sportspress/player-carousel-thumbs__slide-item.php:153
+#: sportspress/player-carousel-thumbs__slide-item.php:154
+#: sportspress/player-carousel-thumbs__slide-item.php:155
+#: sportspress/player-carousel-thumbs__slide-item.php:211
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:27
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:28
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:29
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:30
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:31
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:32
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:64
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:65
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:66
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:92
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:93
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:94
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:95
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:96
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:97
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:98
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:99
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:100
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:101
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:62
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:63
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:64
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:77
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:78
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:79
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:80
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:81
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:82
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:83
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:84
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:85
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:90
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:57
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:58
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:59
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:60
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:87
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:88
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:89
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:90
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:91
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:92
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:93
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:94
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:95
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:96
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:97
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:98
+#: sportspress/single-team/featured-player/content-player-soccer.php:12
+#: sportspress/single-team/featured-player/content-player-soccer.php:13
+#: sportspress/single-team/featured-player/content-player-soccer.php:14
+#: sportspress/single-team/featured-player/content-player-soccer.php:15
+#: sportspress/single-team/featured-player/content-player-soccer.php:38
+#: sportspress/single-team/featured-player/content-player-soccer.php:39
+#: sportspress/single-team/featured-player/content-player-soccer.php:40
+#: sportspress/single-team/featured-player/content-player-soccer.php:41
+#: sportspress/single-team/featured-player/content-player-soccer.php:42
+#: sportspress/single-team/featured-player/content-player-soccer.php:43
+#: sportspress/single-team/featured-player/content-player-soccer.php:44
+#: sportspress/single-team/featured-player/content-player-soccer.php:45
+#: sportspress/single-team/featured-player/content-player-default.php:14
+#: sportspress/single-team/featured-player/content-player-default.php:15
+#: sportspress/single-team/featured-player/content-player-default.php:16
+#: sportspress/single-team/featured-player/content-player-default.php:39
+#: sportspress/single-team/featured-player/content-player-default.php:40
+#: sportspress/single-team/featured-player/content-player-default.php:41
+#: sportspress/single-team/featured-player/content-player-default.php:42
+#: sportspress/single-team/featured-player/content-player-default.php:43
+#: sportspress/single-team/featured-player/content-player-default.php:44
+#: sportspress/single-team/featured-player/content-player-default.php:45
+#: sportspress/single-team/featured-player/content-player-default.php:46
+#: sportspress/single-team/featured-player/content-player-default.php:47
+#: sportspress/single-team/featured-player/content-player-default.php:52
+#: sportspress/single-team/featured-player/content-player-football.php:14
+#: sportspress/single-team/featured-player/content-player-football.php:15
+#: sportspress/single-team/featured-player/content-player-football.php:16
+#: sportspress/single-team/featured-player/content-player-football.php:47
+#: sportspress/single-team/featured-player/content-player-football.php:48
+#: sportspress/single-team/featured-player/content-player-football.php:49
+#: sportspress/single-team/featured-player/content-player-football.php:50
+#: sportspress/single-team/featured-player/content-player-football.php:51
+#: sportspress/single-team/featured-player/content-player-football.php:52
+#: sportspress/single-team/featured-player/content-player-football.php:53
+#: sportspress/single-team/featured-player/content-player-football.php:54
+#: sportspress/single-team/featured-player/content-player-football.php:55
+#: sportspress/single-team/featured-player/content-player-football.php:56
+#: sportspress/player/heading/player-heading-boxed.php:173
+#: sportspress/player/heading/player-heading-fullwidth.php:229
+#: sportspress/player/heading/player-heading-fullwidth.php:247
+msgid "n/a"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:109 sportspress/player-details.php:50
+#: sportspress/player/heading/player-heading-boxed.php:77
+msgid "Name"
+msgstr "姓名"
+
+#: sportspress/player-carousel-thumbs.php:39 sportspress/single-player.php:41
+#: sportspress/player-block-thumbnail.php:114 sportspress/player-details.php:61
+#: vc_templates/alc_staff_bio_card.php:89
+#: sportspress/single-team/staff/alc-team-roster-staff-blocks.php:106
+msgid "Nationality"
+msgstr "国籍"
+
+#: woocommerce/order/order-downloads.php:60
+msgid "Never"
+msgstr "从未"
+
+#: woocommerce/myaccount/form-edit-account.php:73
+msgid "New password (leave blank to leave unchanged)"
+msgstr "新密码（留空不变）"
+
+#: woocommerce/myaccount/orders.php:114
+msgid "Next"
+msgstr "下一个"
+
+#: woocommerce/myaccount/downloads.php:42
+msgid "No downloads available yet."
+msgstr "没有可用的下载。"
+
+#: vc_templates/alc_event_scoreboard.php:286
+msgid "No Event found."
+msgstr ""
+
+#: woocommerce/myaccount/orders.php:121
+msgid "No order has been made yet."
+msgstr "尚未订购。"
+
+#: vc_templates/alc_player_stats_grid.php:56
+#: vc_templates/alc_player_stats_graph_log.php:42
+#: vc_templates/alc_player_stats.php:83
+#: vc_templates/alc_player_stats_chart.php:66
+#: vc_templates/alc_player_gbg_stats.php:45
+#, php-format
+msgid "No Player found with Player ID %s"
+msgstr ""
+
+#: sportspress/player-slider.php:87 sportspress/player-blocks.php:63
+#: sportspress/player-blocks-carousel.php:69 sportspress/player-cards.php:62
+#: vc_templates/alc_team_leaders.php:71
+#, php-format
+msgid "No Player List found with Player List ID %s"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:125
+msgid "No products in the cart."
+msgstr "没有产品在购物车中。"
+
+#. $s shipping destination.
+#: woocommerce/cart/cart-shipping.php:88
+#, php-format
+msgid "No shipping options were found for %s."
+msgstr ""
+
+#: template-parts/widget-twitch.php:63 template-parts/widget-twitch.php:140
+msgid "No Streams Found"
+msgstr ""
+
+#: vc_templates/alc_team_stats.php:85 vc_templates/alc_games_history.php:75
+#, php-format
+msgid "No Team found with Team ID %s"
+msgstr ""
+
+#: inc/acf-fields.php:92 inc/acf-fields.php:436 inc/acf-fields.php:463
+msgid "None"
+msgstr "没有"
+
+#: woocommerce/order/order-details.php:135
+msgid "Note:"
+msgstr "注意："
+
+#: template-parts/content-none.php:24
+msgid "Nothing Found!"
+msgstr "什么都没找到！"
+
+#: sportspress/single-player/content-bio.php:52
+msgid "Nothing Found. Please check Player Bio section."
+msgstr "什么都没找到。 请查看球员生涯部分。"
+
+#: inc/acf-fields.php:1981
+msgid "Number of Posts"
+msgstr "帖子数量"
+
+#: inc/acf-fields.php:1225 inc/acf-fields.php:1642
+msgid "Off"
+msgstr "关"
+
+#: sportspress/event-officials-list.php:16
+#: sportspress/event-officials-table.php:16
+msgid "Officials"
+msgstr "官员"
+
+#: template-parts/widget-twitch.php:76 template-parts/widget-twitch.php:153
+msgid "Offline"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:111
+#: sportspress/single-team/featured-player/content-player-soccer.php:56
+msgid "Offsides"
+msgstr "越位"
+
+#: inc/acf-fields.php:1224 inc/acf-fields.php:1641
+msgid "On"
+msgstr "开"
+
+#: woocommerce/single-product-reviews.php:171
+msgid ""
+"Only logged in customers who have purchased this product may leave a review."
+msgstr "只有购买了此产品的登录客户可以留下评论。"
+
+#: 404.php:152
+msgid "OOOOPS! Page not Found"
+msgstr "OOOOPS！ 找不到网页"
+
+#. If there are characters in your language that are not
+#. supported by Roboto Condensed, translate this to 'off'. Do not translate
+#. into your own language.
+#: inc/template-functions.php:122
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr ""
+
+#: template-parts/post-filter.php:96
+msgid "Order"
+msgstr "秩序"
+
+#: woocommerce/order/order-again.php:22
+msgid "Order again"
+msgstr "再次订购"
+
+#: template-parts/post-filter.php:73
+msgid "Order By"
+msgstr "排序依据"
+
+#: woocommerce/order/order-details.php:61
+msgid "Order details"
+msgstr "订单详细信息"
+
+#: woocommerce/checkout/thankyou.php:52
+msgid "Order number:"
+msgstr "订单号："
+
+#: inc/wc-functions.php:202
+msgid "Orders"
+msgstr "订单"
+
+#: template-parts/post/post-navigation-2.php:26
+#: template-parts/post/post-navigation-4.php:25
+msgid "Other Articles"
+msgstr "其他文章"
+
+#: inc/acf-fields.php:629
+msgid "Other Negative"
+msgstr ""
+
+#: inc/acf-fields.php:628
+msgid "Other Positive"
+msgstr ""
+
+#: sportspress/single-player.php:68 sportspress/single-team.php:38
+#: inc/sp-functions.php:140 inc/sp-functions.php:198
+msgid "Overview"
+msgstr "概述"
+
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:107
+#: sportspress/single-team/featured-player/content-player-soccer.php:52
+msgid "P.Kick Attempts"
+msgstr "P.Kick 进攻"
+
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:108
+#: sportspress/single-team/featured-player/content-player-soccer.php:53
+msgid "P.Kick Goals"
+msgstr "P.Kick 进球"
+
+#: inc/acf-fields.php:77
+msgid "Page Heading"
+msgstr "页面标题"
+
+#: inc/acf-fields.php:73
+msgid "Page Options"
+msgstr "页面选项"
+
+#: inc/template-tags.php:550 template-parts/content-blog-3.php:57
+#: template-parts/content.php:78 template-parts/content-blog-1.php:66
+#: template-parts/content-blog-1-3cols.php:54
+msgid "Pages:"
+msgstr "页数："
+
+#: sportspress/player-cards__card.php:112
+msgid "Pass %"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:78
+#: sportspress/single-team/featured-player/content-player-soccer.php:32
+msgid "PASS ACC"
+msgstr "传球精度"
+
+#: sportspress/player-slider-card__slide.php:121
+msgid "Pass Accuracy"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:51
+#: woocommerce/myaccount/form-login.php:118
+#: woocommerce/global/form-login.php:44
+msgid "Password"
+msgstr "密码"
+
+#: woocommerce/myaccount/form-edit-account.php:66
+msgid "Password change"
+msgstr "密码更改"
+
+#: inc/template-functions.php:340
+msgid "Password:"
+msgstr "密码："
+
+#: sportspress/single-player.php:39 sportspress/player-details.php:104
+#: vc_templates/alc_staff_bio_card.php:112
+msgid "Past Teams"
+msgstr "历史球队"
+
+#: woocommerce/checkout/thankyou.php:36
+msgid "Pay"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:75
+msgid "Payment method:"
+msgstr "付款方法："
+
+#: inc/wc-functions.php:211
+msgid "Payment Methods"
+msgstr "支付方式"
+
+#: sportspress/player-statistics-avg.php:278
+#: sportspress/player-statistics-avg.php:322
+#: sportspress/player-statistics-circular-boxed.php:210
+#: sportspress/player-statistics-circular-boxed.php:255
+msgid "per carry"
+msgstr ""
+
+#: sportspress/player-statistics-avg.php:280
+#: sportspress/player-statistics-avg.php:324
+#: sportspress/player-statistics-circular-boxed.php:212
+#: sportspress/player-statistics-circular-boxed.php:257
+msgid "per reception"
+msgstr ""
+
+#: sportspress/player-slider-card__slide.php:131
+msgid "Performance"
+msgstr ""
+
+#: vc_templates/alc_staff_bio_card.php:124
+msgid "Phone"
+msgstr "相册"
+
+#: sportspress/staff-gallery-thumbnail.php:44
+#: sportspress/single-team/staff/alc-team-roster-staff-blocks.php:84
+msgid "Phone:"
+msgstr "电话："
+
+#: woocommerce/cart/cart.php:33
+msgid "Photo"
+msgstr "照片"
+
+#: inc/wc-functions.php:101
+msgid "Place order"
+msgstr "订购"
+
+#: vc_templates/alc_player_stats_grid.php:177
+msgid "Played %"
+msgstr ""
+
+#: sportspress/event-user-scores.php:138
+#: sportspress/event-performance-table.php:79
+#: sportspress/event-performance-table.php:246 sportspress/single-player.php:56
+#: sportspress/event/alc-event-timeline-horizontal.php:56
+#: sportspress/event/alc-event-timeline-vertical.php:41
+msgid "Player"
+msgstr "球员"
+
+#: inc/acf-fields.php:546
+msgid "Player Bio"
+msgstr "球员生涯"
+
+#: inc/acf-fields.php:574
+msgid "Player Bio Content"
+msgstr "球员的生涯内容"
+
+#: inc/acf-fields.php:593
+msgid "Player Bio Events"
+msgstr "球员的生涯事件"
+
+#: inc/acf-fields.php:1906
+msgid "Player Gallery"
+msgstr "球员画廊"
+
+#: inc/acf-fields.php:2022
+msgid "Player Header"
+msgstr "球员标题"
+
+#: inc/acf-fields.php:700
+msgid "Player Heading Photo"
+msgstr "球员页面半身像"
+
+#: inc/acf-fields.php:550
+msgid "Player Image"
+msgstr "球员形象"
+
+#: inc/acf-fields.php:2026
+msgid "Player List"
+msgstr "球员名单"
+
+#: sportspress/single-player/content-bio.php:66
+msgid "Player Newslog"
+msgstr "球员新闻日志"
+
+#: sportspress/event-performance-table.php:140
+msgid "Player of the Match"
+msgstr "参赛球员"
+
+#: inc/acf-fields.php:1955
+msgid "Player Related News"
+msgstr "球员相关新闻"
+
+#: vc_templates/alc_team_points_history/alc_team_points_history-default.php:37
+#: vc_templates/alc_team_points_history/alc_team_points_history-football.php:37
+msgid "POINTS"
+msgstr "积分"
+
+#: sportspress/player-event-graph-log.php:105
+#: vc_templates/alc_player_stats_chart.php:113
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:67
+#: sportspress/single-team/featured-player/content-player-default.php:19
+msgid "Points"
+msgstr ""
+
+#: sportspress/player-statistics-avg.php:99
+#: sportspress/player-statistics-circular-boxed.php:86
+msgid "Points per game"
+msgstr "每场比分"
+
+#: sportspress/league-table.php:118
+msgid "Pos"
+msgstr ""
+
+#: sportspress/single-player.php:40 sportspress/player-details.php:72
+msgid "Position"
+msgstr "位置"
+
+#: inc/acf-fields.php:2473
+msgid "Position Options"
+msgstr ""
+
+#: inc/template-tags.php:36
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr "由 %s"
+
+#: inc/template-tags.php:31
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "发布在 %s"
+
+#: inc/acf-fields.php:2541
+msgid "Post Layout"
+msgstr "文章布局"
+
+#: inc/acf-fields.php:2553
+msgid "Post Layout 1"
+msgstr "文章布局 1"
+
+#: inc/acf-fields.php:2554
+msgid "Post Layout 2"
+msgstr "文章布局 2"
+
+#: inc/acf-fields.php:2555
+msgid "Post Layout 3"
+msgstr "文章布局 3"
+
+#: inc/acf-fields.php:2556
+msgid "Post Layout 4"
+msgstr "文章布局 4"
+
+#: inc/acf-fields.php:2557
+msgid "Post Layout 5"
+msgstr ""
+
+#: inc/acf-fields.php:2558
+msgid "Post Layout 6"
+msgstr ""
+
+#: inc/acf-fields.php:2559
+msgid "Post Layout 7"
+msgstr ""
+
+#: inc/acf-fields.php:2537
+msgid "Post Options"
+msgstr "后期选项"
+
+#: inc/acf-fields.php:1959
+msgid "Post Tags"
+msgstr "文章标签"
+
+#: comments.php:115 template-parts/post/comments/comments-alt.php:105
+#: template-parts/post/comments/comments-alt-card.php:106
+msgid "Post Your Comment"
+msgstr "发表您的评论"
+
+#: woocommerce/cart/shipping-calculator.php:91
+msgid "Postcode / ZIP"
+msgstr "邮政编码/ ZIP"
+
+#: woocommerce/cart/shipping-calculator.php:90
+#, fuzzy
+#| msgid "Postcode / ZIP"
+msgid "Postcode / ZIP:"
+msgstr "邮政编码/ ZIP"
+
+#: sportspress/event-list.php:519 sportspress/event-logos-inline.php:13
+#: sportspress/tournament-bracket-table.php:117
+#: sportspress/event-logos-block.php:67
+#: vc_templates/alc_event_scoreboard/football-alc_event_scoreboard.php:128
+#: sportspress/event/event-logos/soccer-event-logos-inline.php:128
+#: sportspress/event/event-logos/football-event-logos-inline.php:131
+#: sportspress/event/event-logos/soccer-event-logos-block.php:144
+#: sportspress/event/event-logos/basketball-event-logos-block.php:131
+#: sportspress/event/event-logos/esports-event-logos-block.php:178
+#: sportspress/event/event-logos/basketball-event-logos-inline.php:131
+#: sportspress/event/event-logos/football-event-logos-block.php:135
+#: sportspress/event/event-logos/esports-event-logos-inline.php:178
+msgid "Preview"
+msgstr "预览"
+
+#: woocommerce/myaccount/orders.php:110
+msgid "Previous"
+msgstr "以前的"
+
+#: woocommerce/cart/cart.php:35 woocommerce/cart/cart.php:111
+msgid "Price"
+msgstr "价格"
+
+#: inc/acf-fields.php:814
+msgid "Primary"
+msgstr "主要"
+
+#: functions.php:87 inc/template-functions.php:465
+msgid "Primary Menu"
+msgstr "主菜单"
+
+#: woocommerce/cart/proceed-to-checkout-button.php:39
+msgid "Proceed to checkout"
+msgstr "进行结算"
+
+#: woocommerce/order/order-details.php:68
+#: woocommerce/checkout/review-order.php:27 woocommerce/cart/cart.php:34
+#: woocommerce/cart/cart.php:83
+msgid "Product"
+msgstr "产品"
+
+#: inc/acf-fields.php:757
+msgid "Product Gradient Color 1"
+msgstr "产品渐变色1"
+
+#: inc/acf-fields.php:772
+msgid "Product Gradient Color 2"
+msgstr "产品渐变色2"
+
+#: inc/acf-fields.php:753
+msgid "Product Options"
+msgstr "产品选项"
+
+#: inc/acf-fields.php:2052
+msgid "Progress bars, radar charts etc."
+msgstr "进度条，雷达图等。"
+
+#: functions.php:265
+msgid "Pushy Panel"
+msgstr "固定面板"
+
+#: woocommerce/cart/cart.php:36 woocommerce/cart/cart.php:117
+msgid "Quantity"
+msgstr "数量"
+
+#: template-parts/post-filter.php:81
+msgid "Random"
+msgstr "随机"
+
+#: sportspress/player-list.php:167
+msgid "Rank"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:154
+msgid "Rate&hellip;"
+msgstr "价格&hellip;"
+
+#: sportspress/player-slider-card__slide.php:142
+msgid "Read Full Bio"
+msgstr ""
+
+#: sportspress/player-cards__card.php:121
+#: vc_templates/alc_featured_post.php:218
+msgid "Read More"
+msgstr "阅读更多"
+
+#: template-parts/content-none.php:18
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "准备发布你的第一篇文章？ <a href=\"%1$s\">从这里开始</a>。"
+
+#: sportspress/single-team/featured-player/content-player-default.php:21
+msgid "Reb"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:97
+#: sportspress/single-team/featured-player/content-player-default.php:59
+msgid "Rebounds"
+msgstr "篮板"
+
+#: sportspress/player-statistics-avg.php:107
+msgid "Rebounds per game"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:69
+msgid "Rebs"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:71
+#: sportspress/single-team/featured-player/content-player-football.php:21
+msgid "Rec Avg"
+msgstr "平均记录"
+
+#: sportspress/event-list.php:517 sportspress/event-logos-inline.php:11
+#: sportspress/tournament-bracket-table.php:115
+#: sportspress/event-logos-block.php:65
+msgid "Recap"
+msgstr "概述"
+
+#: sportspress/player-event-graph-log.php:143
+#: vc_templates/alc_player_stats_chart.php:127
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:110
+#: sportspress/single-team/featured-player/content-player-football.php:64
+msgid "Receiving yards"
+msgstr ""
+
+#: single-videos.php:67 template-parts/post/video/post-video.php:98
+msgid "Recent Videos"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:114
+#: sportspress/single-team/featured-player/content-player-soccer.php:50
+msgid "Red Cards"
+msgstr "红牌"
+
+#: woocommerce/myaccount/form-login.php:132
+msgid "Register"
+msgstr "注册"
+
+#: woocommerce/myaccount/form-login.php:94
+msgid "Register Now"
+msgstr "现在注册"
+
+#: sportspress/single-player.php:66 sportspress/single-player.php:71
+#: inc/sp-functions.php:140
+msgid "Related News"
+msgstr "相关新闻"
+
+#: woocommerce/single-product/related.php:41
+msgid "Related products"
+msgstr "相关产品"
+
+#: woocommerce/myaccount/form-login.php:61 woocommerce/global/form-login.php:54
+msgid "Remember me"
+msgstr "记住我"
+
+#: woocommerce/cart/cart.php:38
+msgid "Remove"
+msgstr "删除"
+
+#. %s is the product name
+#: woocommerce/cart/cart.php:157 woocommerce/cart/mini-cart.php:67
+#, php-format
+msgid "Remove %s from cart"
+msgstr ""
+
+#: inc/acf-fields.php:212 inc/acf-fields.php:2169
+msgid "Remove Overlay Pattern?"
+msgstr "删除重叠图案？"
+
+#: inc/template-tags.php:332 inc/template-tags.php:397
+msgid "Reply"
+msgstr "回复"
+
+#: woocommerce/myaccount/form-login.php:47
+#: woocommerce/myaccount/form-login.php:51
+#: woocommerce/myaccount/form-login.php:104
+#: woocommerce/myaccount/form-login.php:111
+#: woocommerce/myaccount/form-login.php:118
+#: woocommerce/global/form-login.php:38 woocommerce/global/form-login.php:44
+msgid "Required"
+msgstr "需要"
+
+#: sportspress/player-event-game-by-game.php:157 sportspress/event-list.php:168
+#: sportspress/event-list.php:193 sportspress/event-list.php:201
+#: sportspress/event-list.php:341 sportspress/event-list.php:400
+#: sportspress/event-list.php:430 sportspress/event-results.php:21
+msgid "Results"
+msgstr "赛果"
+
+#: 404.php:178
+msgid "Return to Home"
+msgstr "返回首页"
+
+#: woocommerce/single-product-reviews.php:52
+msgid "Reviews"
+msgstr "评测"
+
+#. If there are characters in your language that are not
+#. supported by Exo 2, translate this to 'off'. Do not translate
+#. into your own language.
+#: inc/template-functions.php:110
+msgctxt "Roboto font: on or off"
+msgid "on"
+msgstr "开"
+
+#: sportspress/single-team.php:36 sportspress/single-team.php:39
+#: inc/sp-functions.php:198
+msgid "Roster"
+msgstr "名单"
+
+#: sportspress/tournament-bracket-table.php:37
+#, php-format
+msgid "Round %s"
+msgstr ""
+
+#: sportspress/player-event-graph-log.php:135
+#: vc_templates/alc_player_stats_chart.php:125
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:108
+#: sportspress/single-team/featured-player/content-player-football.php:62
+msgid "Rushing yards"
+msgstr ""
+
+#: inc/wc-functions.php:696
+msgid "Sale!"
+msgstr "销售！"
+
+#: woocommerce/myaccount/form-edit-address.php:46
+msgid "Save address"
+msgstr "保存地址"
+
+#: woocommerce/myaccount/form-edit-account.php:94
+msgid "Save changes"
+msgstr "保存更改"
+
+#: comments.php:144 template-parts/post/comments/comments-alt.php:134
+#: template-parts/post/comments/comments-alt-card.php:135
+msgid "Save my name and email in this browser for the next time I comment."
+msgstr ""
+
+#: sportspress/single-team.php:36 sportspress/single-team.php:42
+#: inc/sp-functions.php:198 sportspress/single-team/content-schedule.php:33
+msgid "Schedule"
+msgstr "时间表"
+
+#: inc/template-functions.php:1033
+msgid "Search"
+msgstr "搜索"
+
+#: woocommerce/product-searchform.php:24
+msgid "Search for:"
+msgstr "搜索："
+
+#: woocommerce/product-searchform.php:26
+msgid "Search products&hellip;"
+msgstr "搜索产品&hellip;"
+
+#: search.php:65 search.php:83
+msgid "Search Results"
+msgstr "搜索结果"
+
+#: inc/template-functions.php:1031
+msgid "Search text..."
+msgstr "搜索文字..."
+
+#: sportspress/event-list.php:213 sportspress/event-list.php:474
+msgid "Season"
+msgstr "赛季"
+
+#: sportspress/player-details.php:126
+#: sportspress/player/heading/player-heading-fullwidth.php:202
+msgid "Seasons"
+msgstr "赛季"
+
+#: inc/acf-fields.php:829
+msgid "Secondary"
+msgstr "次要"
+
+#: functions.php:88
+msgid "Secondary Menu"
+msgstr ""
+
+#: sportspress/countdown.php:274
+msgid "secs"
+msgstr "秒"
+
+#: 404.php:159
+msgid "Seems that we have a problem!"
+msgstr "似乎我们有一个问题！"
+
+#: woocommerce/cart/shipping-calculator.php:32
+msgid "Select a country / region&hellip;"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:58
+msgid "Select an option&hellip;"
+msgstr ""
+
+#: inc/acf-fields.php:1817 inc/acf-fields.php:1864
+msgid "Select Calendars"
+msgstr ""
+
+#: inc/acf-fields.php:1820
+msgid "Select Calendars you want to display on Team Results page."
+msgstr ""
+
+#: inc/acf-fields.php:1867
+msgid "Select Calendars you want to display on Team Schedule page."
+msgstr ""
+
+#: inc/acf-fields.php:1152 inc/acf-fields.php:1569
+msgid "Select Featured Player"
+msgstr "选择精选球员"
+
+#: inc/acf-fields.php:954 inc/acf-fields.php:1373
+msgid "Select Gallery Roster"
+msgstr "选择画廊名单"
+
+#: inc/acf-fields.php:1772
+msgid "Select Leagues you want to display on Team Standings page."
+msgstr "选择你想在球队成员页面上显示的联赛。"
+
+#: inc/acf-fields.php:1102 inc/acf-fields.php:1519
+msgid "Select List Roster(s)"
+msgstr ""
+
+#: inc/acf-fields.php:80
+msgid "Select Page Heading Type"
+msgstr "选择页面标题类型"
+
+#: inc/acf-fields.php:2029
+msgid "Select Player List for statistics comparing."
+msgstr "选择球员名单进行统计比较。"
+
+#: admin/menu-item-custom-fields/fields.php:168
+msgid "Select Widget Area"
+msgstr "巨型菜单小工具区"
+
+#: inc/acf-fields.php:2441
+msgid "Selected icon used to represent type of character in various parts."
+msgstr ""
+
+#: inc/acf-fields.php:2504
+msgid "Selected icon used to represent type of position in various parts."
+msgstr ""
+
+#: inc/acf-fields.php:1962
+msgid "Selected Posts tag that are related to the Player."
+msgstr "与球员相关的选定帖子标签。"
+
+#: inc/acf-fields.php:2599
+msgid "Separate video from the main content?"
+msgstr ""
+
+#: woocommerce/checkout/form-shipping.php:37
+msgid "Ship to a different address?"
+msgstr "运送到不同的地址？"
+
+#: woocommerce/cart/cart-shipping.php:29 woocommerce/cart/cart-totals.php:44
+#: woocommerce/cart/cart-totals.php:81 woocommerce/cart/cart-totals.php:82
+msgid "Shipping"
+msgstr "运输"
+
+#: woocommerce/order/order-details-customer.php:70
+#: woocommerce/myaccount/form-edit-address.php:20
+msgid "Shipping address"
+msgstr "送货地址"
+
+#: woocommerce/cart/cart-shipping.php:69
+msgid "Shipping costs are calculated during checkout."
+msgstr ""
+
+#: woocommerce/checkout/form-shipping.php:32
+msgid "Shipping Details"
+msgstr "运输细节"
+
+#: woocommerce/cart/cart-shipping.php:61
+msgid "Shipping options will be updated during checkout."
+msgstr ""
+
+#. $s shipping destination.
+#: woocommerce/cart/cart-shipping.php:58
+#, php-format
+msgid "Shipping to %s."
+msgstr ""
+
+#: functions.php:325
+msgid "Shop Sidebar"
+msgstr "店的侧边栏"
+
+#: functions.php:327
+msgid "Shop Sidebar that appears on Shop pages."
+msgstr "商店页面上出现的商店边栏。"
+
+#: sportspress/player-cards__card.php:102
+msgid "Shot %"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:77
+#: sportspress/single-team/featured-player/content-player-soccer.php:31
+msgid "SHOT ACC"
+msgstr "射门精度"
+
+#: sportspress/player-slider-card__slide.php:111
+#: sportspress/single-team/featured-player/content-player-default.php:32
+msgid "Shot Accuracy"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:64
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:105
+#: sportspress/single-team/featured-player/content-player-soccer.php:19
+msgid "Shots"
+msgstr "射门"
+
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:106
+#: sportspress/single-team/featured-player/content-player-soccer.php:51
+msgid "Shots on Target"
+msgstr "射正"
+
+#: inc/wc-functions.php:362
+#, php-format
+msgid "Show %s per page"
+msgstr ""
+
+#: inc/acf-fields.php:2049
+msgid "Show Advanced Stats?"
+msgstr "显示高级属性？"
+
+#: functions.php:193
+msgid "Sidebar"
+msgstr "侧边栏"
+
+#: woocommerce/single-product/tabs/tabs.php:49
+#: woocommerce/single-product/tabs/tabs.php:111
+msgctxt "single product: subtitle"
+msgid "Product"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:32
+msgid "SKU:"
+msgstr "库存单位："
+
+#: inc/acf-fields.php:1426
+msgid "Slider"
+msgstr "滑块"
+
+#: inc/acf-fields.php:1056 inc/acf-fields.php:1441
+msgid "Slider Autoplay"
+msgstr "滑块自动播放"
+
+#: inc/acf-fields.php:1024 inc/acf-fields.php:1468
+msgid "Slider Custom Background Image"
+msgstr "滑块自定义背景图像"
+
+#: inc/acf-fields.php:1008
+msgid "Slider Default"
+msgstr "滑块默认"
+
+#: inc/template-functions.php:603
+msgid "Slider processed"
+msgstr ""
+
+#: inc/acf-fields.php:1007
+msgid "Slider Soccer"
+msgstr "滑块足球"
+
+#: template-parts/content-none.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr "对不起，但没有与您的搜索字词匹配。 请使用一些不同的关键字再试一次。"
+
+#. If there are characters in your language that are not
+#. supported by Roboto, translate this to 'off'. Do not translate
+#. into your own language.
+#: inc/template-functions.php:134
+#, fuzzy
+#| msgctxt "Roboto font: on or off"
+#| msgid "on"
+msgctxt "Source Sans 3 font: on or off"
+msgid "on"
+msgstr "开"
+
+#. Description of the theme
+msgid "Sports Club and News WordPress Theme"
+msgstr ""
+
+#: sportspress/event-staff.php:26 sportspress/event-staff.php:50
+#: inc/acf-fields.php:1210 inc/acf-fields.php:1627
+#: sportspress/single-team/staff/alc-team-roster-staff-blocks.php:38
+#: sportspress/single-team/staff/alc-team-roster-staff-blocks.php:127
+#: sportspress/single-team/staff/alc-team-roster-staff-gallery.php:29
+#: sportspress/single-team/staff/alc-team-roster-staff-gallery.php:77
+msgid "Staff"
+msgstr "工作人员"
+
+#: inc/acf-fields.php:1229 inc/acf-fields.php:1646
+msgid "Staff Display Type"
+msgstr ""
+
+#: inc/acf-fields.php:1265 inc/acf-fields.php:1682
+msgid "Staff Position"
+msgstr ""
+
+#: sportspress/single-team.php:36 sportspress/single-team.php:40
+#: inc/sp-functions.php:198
+msgid "Standings"
+msgstr "积分榜"
+
+#: sportspress/event-performance-table.php:143
+#: sportspress/event-performance-table.php:146
+msgid "Stars"
+msgstr "最佳球员"
+
+#: woocommerce/cart/shipping-calculator.php:56
+#: woocommerce/cart/shipping-calculator.php:57
+#: woocommerce/cart/shipping-calculator.php:69
+#: woocommerce/cart/shipping-calculator.php:70
+msgid "State / County"
+msgstr "州/县"
+
+#: sportspress/single-player.php:66 inc/sp-functions.php:140
+msgid "Statistics"
+msgstr "统计"
+
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:99
+#: sportspress/single-team/featured-player/content-player-default.php:64
+msgid "Steals"
+msgstr "抢断"
+
+#: woocommerce/single-product-reviews.php:101
+#: sportspress/event-user-results.php:110 sportspress/event-user-scores.php:129
+#: inc/template-functions.php:340
+msgid "Submit"
+msgstr "提交"
+
+#: woocommerce/product-searchform.php:28
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: sportspress/event-user-results.php:109
+msgid "Submit Your Results"
+msgstr "提交结果"
+
+#: sportspress/event-user-scores.php:128
+msgid "Submit Your Scores"
+msgstr "提交你的分数"
+
+#: woocommerce/checkout/review-order.php:28
+#: woocommerce/checkout/review-order.php:60 woocommerce/cart/cart.php:143
+#: woocommerce/cart/cart-totals.php:69 woocommerce/cart/cart-totals.php:70
+#: woocommerce/cart/mini-cart.php:134
+msgid "Subtotal"
+msgstr "小计"
+
+#: sportspress/player/heading/player-heading-boxed.php:78
+msgid "Surname"
+msgstr ""
+
+#: vc_templates/alc_team_leaders.php:51
+msgid "T"
+msgstr ""
+
+#: sportspress/player-statistics-avg.php:130
+msgid "T.Assists"
+msgstr "T.助攻"
+
+#: sportspress/player-statistics-avg.php:131
+msgid "T.Games"
+msgstr "T.比赛"
+
+#: sportspress/player-statistics-avg.php:129
+msgid "T.Goals"
+msgstr "T.进球"
+
+#: woocommerce/single-product/meta.php:36
+msgid "Tag:"
+msgid_plural "Tags:"
+msgstr[0] "标签："
+
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:83
+#: sportspress/single-team/featured-player/content-player-football.php:42
+msgid "TD%"
+msgstr ""
+
+#: sportspress/event-user-results.php:120 sportspress/event-results.php:111
+#: inc/sp-functions.php:853
+#: sportspress/event/alc-event-timeline-horizontal.php:26
+#: sportspress/event/alc-event-timeline-vertical.php:26
+msgid "Team"
+msgstr "球队"
+
+#: inc/acf-fields.php:810
+msgid "Team Colors"
+msgstr ""
+
+#: inc/acf-fields.php:880
+msgid "Team Gallery"
+msgstr "球队图库"
+
+#: inc/acf-fields.php:1813
+msgid "Team Latest Results"
+msgstr ""
+
+#: inc/acf-fields.php:1769
+msgid "Team Leagues"
+msgstr "球队联赛"
+
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:140
+#: sportspress/single-team/featured-player/content-player-default.php:81
+msgid "Team Logo"
+msgstr "队徽"
+
+#: inc/acf-fields.php:931 inc/acf-fields.php:1350
+msgid "Team Roster"
+msgstr "球队名单"
+
+#: inc/acf-fields.php:1860
+msgid "Team Schedule"
+msgstr ""
+
+#: inc/acf-fields.php:1765
+msgid "Team Standings"
+msgstr "球队排名"
+
+#: sportspress/event-list.php:182 sportspress/event-list.php:376
+msgid "Teams"
+msgstr "球队"
+
+#: sportspress/event-user-results.php:94 sportspress/event-user-scores.php:110
+msgid "Thank you!"
+msgstr "谢谢！"
+
+#: 404.php:167
+msgid ""
+"The page you are looking for has been moved or doesn't exist anymore, if you "
+"like you can return to our homepage. If the problem persists, please send us "
+"an email to <a href=\"mailto:info@alchemists.com\">info@alchemists.com</a>"
+msgstr ""
+"您正在寻找的页面已被移动或不再存在，如果您喜欢，您可以返回到我们的主页。 如果问题仍然存在，请发送电子邮件至<a href=\"mailto:"
+"admin@fifapro.cn\"> admin@fifapro.cn </a>"
+
+#: sportspress/single-team.php:28
+msgid "The Team"
+msgstr "球队"
+
+#: woocommerce/single-product-reviews.php:82
+msgid "There are no reviews yet."
+msgstr "目前还没有评论。"
+
+#: woocommerce/cart/cart-shipping.php:74
+msgid ""
+"There are no shipping options available. Please ensure that your address has "
+"been entered correctly, or contact us if you need any help."
+msgstr ""
+
+#: inc/acf-fields.php:2544
+msgid "This option overrides the general post layout."
+msgstr "该选项将覆盖常规帖子布局。"
+
+#: functions.php:267
+msgid "This panel slides from right side and works only on desktop."
+msgstr "该面板从右侧滑动并仅在桌面上工作。"
+
+#: inc/acf-fields.php:707
+msgid "This photo displayed in the Page Header and Featured Player widgets."
+msgstr "此照片显示在页眉和特色播放器窗口小部件中。"
+
+#: woocommerce/single-product/add-to-cart/variable.php:32
+msgid "This product is currently out of stock and unavailable."
+msgstr "此产品目前缺货且无法使用。"
+
+#: woocommerce/myaccount/form-edit-account.php:45
+msgid ""
+"This will be how your name will be displayed in the account section and in "
+"reviews"
+msgstr ""
+
+#: sportspress/event-list.php:176 sportspress/event-list.php:191
+#: sportspress/event-list.php:197 sportspress/event-list.php:362
+#: sportspress/event-list.php:389 sportspress/event-list.php:417
+#: sportspress/event-details.php:27
+msgid "Time"
+msgstr "时间"
+
+#: sportspress/event-list.php:165 sportspress/event-list.php:166
+#: sportspress/event-list.php:205 sportspress/event-list.php:327
+#: sportspress/event-list.php:447
+msgid "Time/Results"
+msgstr "时间/结果"
+
+#: inc/acf-fields.php:89
+msgid "Title"
+msgstr "标题"
+
+#: inc/template-functions.php:339
+msgid "To view this protected post, enter the password below:"
+msgstr "要查看此受保护的帖子，请在下面输入密码："
+
+#: functions.php:89 inc/template-functions.php:466
+msgid "Top Menu"
+msgstr "顶部菜单"
+
+#: inc/sp-functions.php:396
+msgid "tot"
+msgstr ""
+
+#: sportspress/event-performance-table.php:285
+#: woocommerce/order/order-details.php:69
+#: woocommerce/checkout/review-order.php:107 woocommerce/cart/cart.php:37
+#: woocommerce/cart/cart-totals.php:130 woocommerce/cart/cart-totals.php:131
+msgid "Total"
+msgstr "总计"
+
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:38
+msgid "Total Assists"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:40
+msgid "Total Damage"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:37
+msgid "Total Deaths"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:114
+#: sportspress/single-team/featured-player/content-player-football.php:68
+msgid "Total fumbles"
+msgstr "总失球"
+
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:39
+msgid "Total Gold"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:36
+msgid "Total Kills"
+msgstr ""
+
+#: sportspress/player-event-graph-log.php:139
+#: vc_templates/alc_player_stats_chart.php:126
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:109
+#: sportspress/single-team/featured-player/content-player-football.php:63
+msgid "Total receptions"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:69
+msgid "Total:"
+msgstr "总计："
+
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:111
+#: sportspress/single-team/featured-player/content-player-football.php:65
+msgid "Touchdowns"
+msgstr ""
+
+#: sportspress/player-statistics-avg.php:83
+msgid "Touchdowns per game"
+msgstr ""
+
+#: template-parts/social-counters/social-twitch.php:18
+msgid "Twitch"
+msgstr ""
+
+#: template-parts/social-counters/social-twitter.php:18
+msgid "Twitter"
+msgstr "Twitter"
+
+#: inc/acf-fields.php:612 inc/acf-fields.php:2641
+msgid "Type"
+msgstr "类型"
+
+#: woocommerce/checkout/thankyou.php:33
+msgid ""
+"Unfortunately your order cannot be processed as the originating "
+"bank/merchant has declined your transaction. Please attempt your purchase "
+"again."
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:97
+msgid "Update"
+msgstr "更新"
+
+#: woocommerce/cart/cart.php:188
+msgid "Update cart"
+msgstr "更新购物车"
+
+#: sportspress/event-user-results.php:109
+msgid "Update Your Results"
+msgstr "更新您的结果"
+
+#: sportspress/event-user-scores.php:128
+msgid "Update Your Scores"
+msgstr "更新你的分数"
+
+#: inc/acf-fields.php:2417
+msgid "Upload image for the character."
+msgstr ""
+
+#: inc/acf-fields.php:2480
+msgid "Upload image for the position."
+msgstr ""
+
+#: inc/acf-fields.php:1186 inc/acf-fields.php:1603
+msgid ""
+"Use this option if you want to customize the Featured Player statistics. "
+"Insert shortcode of ALC: Player Stats element generated with WPBakery Page "
+"Builder. Note, this option overwrites the Select Featured Player option."
+msgstr ""
+
+#: inc/wc-functions.php:558 inc/wc-functions.php:578
+msgid "Used on the Shop Grid layout behind the Product Image"
+msgstr "用于商店网格布局背后的产品形象"
+
+#: woocommerce/myaccount/form-login.php:104
+msgid "Username"
+msgstr "用户名"
+
+#: woocommerce/global/form-login.php:38
+msgid "Username or email"
+msgstr "用户名或电子邮件"
+
+#: woocommerce/myaccount/form-login.php:47
+msgid "Username or email address"
+msgstr "用户名或邮箱地址"
+
+#: sportspress/event-list.php:216 sportspress/event-list.php:218
+#: sportspress/event-list.php:483 sportspress/event-list.php:496
+#: sportspress/event-venue.php:46
+msgid "Venue"
+msgstr "地点"
+
+#: woocommerce/single-product/review-meta.php:37
+msgid "verified owner"
+msgstr ""
+
+#: sportspress/player-event-game-by-game.php:156
+msgid "Versus"
+msgstr "对阵"
+
+#: sportspress/event-video.php:20
+msgid "Video"
+msgstr "比赛视频"
+
+#: inc/acf-fields.php:2595
+msgid "Video Options"
+msgstr ""
+
+#: functions.php:274
+msgid "Video Sidebar"
+msgstr ""
+
+#: sportspress/event-blocks.php:158
+#: sportspress/player-event-game-by-game.php:144 sportspress/event-list.php:146
+#: sportspress/event-matrix.php:216 sportspress/event-scoreboard.php:188
+#: sportspress/event-blocks-custom.php:102
+msgid "View all events"
+msgstr "查看所有赛事"
+
+#: sportspress/player-list.php:142 sportspress/player-slider-card.php:196
+#: sportspress/player-slider.php:228 sportspress/player-blocks.php:183
+#: sportspress/player-gallery.php:188
+msgid "View all players"
+msgstr "查看所有球员"
+
+#: sportspress/staff-list.php:62 sportspress/staff-gallery.php:77
+msgid "View all staff"
+msgstr "查看所有员工"
+
+#: inc/wc-functions.php:129
+msgid "View cart"
+msgstr "查看购物车"
+
+#: sportspress/league-table.php:88
+msgid "View full table"
+msgstr "查看完整统计"
+
+#. %s: the order number, usually accompanied by a leading #
+#: woocommerce/myaccount/orders.php:56
+#, fuzzy, php-format
+#| msgid "Order number:"
+msgid "View order number %s"
+msgstr "订单号："
+
+#: inc/wc-functions.php:511
+msgid "View Product"
+msgstr ""
+
+#: inc/wc-functions.php:161 template-parts/header/header-info-block.php:138
+msgid "View your shopping cart"
+msgstr "查看您的购物车"
+
+#: sportspress/countdown.php:203
+msgid "VS"
+msgstr "VS"
+
+#: vc_templates/alc_event_scoreboard/esports-alc_event_scoreboard.php:27
+#: sportspress/event/event-logos/esports-event-logos-block.php:27
+msgid "W"
+msgstr ""
+
+#: sportspress/player-block-thumbnail.php:71
+msgid "Weight"
+msgstr ""
+
+#: woocommerce/myaccount/navigation.php:51
+msgid "Welcome Back!"
+msgstr "欢迎回来！"
+
+#: sportspress/player-statistics-avg.php:113
+#: vc_templates/alc_player_stats_grid.php:190
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:60
+msgid "Win Rate"
+msgstr ""
+
+#: vc_templates/alc_player_stats_grid.php:144
+msgid "Win Ratio"
+msgstr ""
+
+#: sportspress/tournament-bracket.php:47
+msgid "Winner Bracket"
+msgstr ""
+
+#: sportspress/player-statistics-avg.php:75
+#: sportspress/player-statistics-circular-boxed.php:66
+#: vc_templates/alc_player_stats_grid.php:167
+msgid "Yards per carry"
+msgstr ""
+
+#: sportspress/player-statistics-avg.php:79
+#: sportspress/player-statistics-circular-boxed.php:70
+#: vc_templates/alc_player_stats_grid.php:172
+msgid "Yards per reception"
+msgstr ""
+
+#: inc/sp-functions.php:123
+msgid "Year"
+msgid_plural "Years"
+msgstr[0] ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:113
+#: sportspress/single-team/featured-player/content-player-soccer.php:49
+msgid "Yellow Cards"
+msgstr "黄牌"
+
+#. %s opening and closing link tags respectively
+#: woocommerce/single-product-reviews.php:149
+#, php-format
+msgid "You must be %1$slogged in%2$s to post a review."
+msgstr ""
+
+#: comments.php:119 template-parts/post/comments/comments-alt.php:109
+#: template-parts/post/comments/comments-alt-card.php:110
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "您必须<a href=\"%s\">登录</a>才能发表评论。"
+
+#: woocommerce/checkout/form-checkout.php:26
+msgid "You must be logged in to checkout."
+msgstr "您必须登录才能结帐。"
+
+#: woocommerce/myaccount/navigation.php:37
+msgid "Your Account"
+msgstr ""
+
+#: inc/wc-functions.php:180 template-parts/header/header-info-block.php:159
+msgid "Your Bag"
+msgstr "你的包"
+
+#: comments.php:151 template-parts/post/comments/comments-alt.php:141
+#: template-parts/post/comments/comments-alt-card.php:142
+msgid "Your Comment"
+msgstr "你的评论"
+
+#: inc/template-tags.php:343 inc/template-tags.php:402
+msgid "Your comment is awaiting moderation."
+msgstr "您的评论正在等待审核。"
+
+#: comments.php:127 template-parts/post/comments/comments-alt.php:117
+#: template-parts/post/comments/comments-alt-card.php:118
+msgid "Your Name"
+msgstr "你的名字"
+
+#: woocommerce/checkout/form-checkout.php:50
+msgid "Your order"
+msgstr "你的订单"
+
+#: woocommerce/single-product-reviews.php:153
+msgid "Your rating"
+msgstr "你的等级"
+
+#: woocommerce/single-product-reviews.php:163
+msgid "Your review"
+msgstr "你的评论"
+
+#: woocommerce/single-product/review-meta.php:27
+msgid "Your review is awaiting approval"
+msgstr "您的评论正在等待批准"
+
+#: woocommerce/cart/cart.php:27
+msgid "Your Shopping Cart"
+msgstr "你的购物车"
+
+#: template-parts/social-counters/social-youtube.php:18
+msgid "YouTube"
+msgstr ""

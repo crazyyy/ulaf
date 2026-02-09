@@ -1,0 +1,34 @@
+/**
+ * Woo Widget: Color Filter
+ */
+
+.color-filters-wrap {
+
+	.color-item {
+		font-family: $font-family-accent;
+
+		// color circle
+		.color-wrap {
+
+			.rcorners {
+				border-color: $card-border-color;
+
+				a {
+					border: 3px solid $card-bg;
+				}
+			}
+		}
+
+		// color link
+		.color-link {
+
+			a {
+				color: $headings-color;
+
+				&:hover {
+					color: $link-color-hover;
+				}
+			}
+		}
+	}
+}

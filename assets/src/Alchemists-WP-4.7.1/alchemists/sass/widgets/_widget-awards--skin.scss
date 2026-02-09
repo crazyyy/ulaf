@@ -1,0 +1,33 @@
+/* Widget: Awards */
+.widget-awards {
+
+}
+	.awards {
+
+	}
+	.awards--slider {
+
+	}
+				.awards__date {
+					font-family: $font-family-accent;
+				}
+
+
+		// Filter
+		.awards-filter {
+			border-bottom: 1px solid $card-border-color;
+		}
+			.awards-filter__item {
+
+			}
+				.awards-filter__link {
+					font-family: $font-family-accent;
+					color: $body-font-color;
+
+					&:hover {
+						color: $headings-color;
+					}
+				}
+				.awards-filter__link--active {
+					color: $headings-color;
+				}

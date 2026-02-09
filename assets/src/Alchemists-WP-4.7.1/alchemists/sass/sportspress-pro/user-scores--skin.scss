@@ -1,0 +1,16 @@
+/**
+ *
+ * User Scores
+ *
+ */
+
+.sp-event-user-results,
+.sp-event-user-scores {
+
+	tbody > tr > td {
+
+		&.data-name {
+			color: $headings-color;
+		}
+	}
+}

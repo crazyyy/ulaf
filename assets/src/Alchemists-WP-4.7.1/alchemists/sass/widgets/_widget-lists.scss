@@ -1,0 +1,275 @@
+/* Widget: Lists */
+.widget_archive,
+.widget_nav_menu,
+.widget_meta,
+.widget_pages,
+.widget_recent_comments,
+.widget_recent_entries,
+.widget_categories,
+.widget_rss,
+.widget_product_categories {
+
+	ul:first-child,
+	.widget__title + ul,
+	.megamenu-widgets-container & ul {
+		list-style: none;
+		padding: 0;
+		margin-#{$left}: -$card-horizontal-padding;
+		margin-#{$right}: -$card-horizontal-padding;
+		margin-top: -$card-vertical-padding;
+		margin-bottom: -$card-vertical-padding;
+		@include font-accent(11px);
+		line-height: 1.2em;
+
+		> li {
+			position: relative;
+			padding: 0;
+
+			&::before {
+				display: none;
+			}
+
+			& + li {
+				border-top: 1px solid $card-border-color;
+			}
+
+			> a {
+				display: block;
+				padding: 22px $card-horizontal-padding;
+				color: $headings-color;
+				transition: color 0.3s ease;
+
+				&:hover {
+					color: $color-primary-darken;
+				}
+			}
+
+			// no items
+			&.cat-item-none {
+				padding: $card-vertical-padding $card-horizontal-padding;
+			}
+		}
+
+		ul {
+			border-top: 1px solid $card-border-color;
+			list-style: none;
+			margin: 0;
+			padding: ($card-vertical-padding - 6) $card-horizontal-padding ($card-vertical-padding - 6) ( $card-horizontal-padding + 15 );
+
+			@if $template == 'football' {
+				background-color: $color-dark-2;
+				font-size: 10px;
+			}
+
+			li {
+				padding: 10px $card-horizontal-padding 10px 0;
+				position: relative;
+
+				a {
+					color: $body-font-color;
+					transition: color 0.3s ease;
+
+					&:hover {
+						color: $headings-color;
+					}
+				}
+
+				.count {
+					top: 10px;
+					#{$right}: 0;
+				}
+			}
+
+			ul {
+				border-top: none;
+				padding-#{$left}: 15px;
+				padding-bottom: 0;
+			}
+		}
+
+		// Item Count
+		.count {
+			display: block;
+			position: absolute;
+			#{$right}: $card-horizontal-padding;
+			top: $card-vertical-padding - 2;
+		}
+	}
+
+	// Widgets in the Footer
+	&.widget--footer {
+
+		ul:first-child,
+		.widget__title + & {
+			margin: 0;
+			padding: 0;
+
+			> li {
+
+				& + li {
+					border-top: none;
+				}
+
+				> a {
+					padding: 10px 0;
+					color: $footer-widget-link-color;
+
+					&:hover {
+						color: $footer-widget-link-color-hover;
+					}
+				}
+			}
+
+			ul {
+				border-top: none;
+				padding: side-values(0 0 0 15px);
+
+				li {
+
+					a {
+						color: $footer-widget-link-color;
+
+						&:hover {
+							color: $footer-widget-link-color-hover;
+						}
+					}
+				}
+
+
+			}
+		}
+	}
+}
+
+// Widget Nav Menu
+.widget_nav_menu {
+
+	&.widget--sidebar,
+	&.widget--footer,
+	&.widget--side-panel {
+
+		.sub-menu {
+
+			li {
+				width: 100% !important;
+				float: none;
+			}
+		}
+	}
+}
+
+// Widget Recent Entries
+.widget_recent_entries {
+
+	.post-date {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	&:not(.widget--footer) .post-date {
+		padding: 0 $card-horizontal-padding 22px;
+		margin-top: -12px;
+		margin-bottom: 0;
+	}
+}
+
+// Widget Recent Comments specifics
+.widget_recent_comments {
+
+	ul:first-child {
+
+		> li {
+			padding: 22px $card-horizontal-padding;
+
+			> a {
+				display: inline;
+				padding: 0;
+			}
+		}
+	}
+
+	&.widget--footer {
+
+		ul {
+			padding: 0;
+
+			> li {
+				font-family: $font-family-base;
+				text-transform: none;
+				font-weight: 400;
+				font-size: $footer-font-size;
+				line-height: $footer-line-height;
+
+				& + li {
+					margin-top: 1em;
+				}
+			}
+		}
+	}
+}
+
+// Widget RSS
+.widget_rss {
+
+	ul:first-child,
+	.widget__title + ul {
+
+		> li {
+			padding: 22px $card-horizontal-padding;
+
+			&::before {
+				display: none !important;
+			}
+
+			> a {
+				padding: 0;
+			}
+
+			.rss-date {
+				display: block;
+				margin-top: .5em;
+				font-size: 9px;
+				font-weight: 400;
+			}
+
+			.rssSummary {
+				margin-top: .75em;
+				font-family: $font-family-base;
+				text-transform: none;
+				font-weight: 400;
+				font-size: $sidebar-content-font-size;
+				line-height: $sidebar-content-line-height;
+			}
+
+			cite {
+				display: block;
+				font-family: $font-family-base;
+				margin-top: .75em;
+				text-transform: none;
+			}
+		}
+	}
+
+	&.widget--footer {
+
+		ul {
+
+			> li {
+				padding: 0;
+
+				& + li {
+					margin-top: 2em;
+				}
+
+				> a {
+					color: #fff;
+				}
+
+				.rssSummary {
+					font-size: $footer-font-size;
+					line-height: $footer-line-height;
+				}
+			}
+		}
+	}
+}

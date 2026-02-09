@@ -1,0 +1,22 @@
+/* Related Posts */
+.post-related {
+
+}
+
+
+// Football Version
+
+@if $template == football {
+
+	.post-related--condensed {
+
+		.btn-nav--condensed {
+			background-color: $color-dark-lighten;
+
+			&:hover {
+				background-color: $color-primary;
+			}
+		}
+	}
+
+}

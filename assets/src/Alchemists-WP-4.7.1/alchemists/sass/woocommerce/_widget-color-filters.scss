@@ -1,0 +1,87 @@
+/**
+ * Woo Widget: Color Filter
+ */
+
+.color-filters-wrap {
+	overflow: hidden;
+	padding-bottom: 5px;
+	margin-bottom: -12px;
+
+	.color-item {
+		width: 100%;
+		float: $left;
+		margin: 0 0 12px 0;
+		@include font-accent(11px);
+		line-height: 1.2em;
+
+		&[style*="width"] {
+			width: 16.6% !important;
+		}
+
+		// color circle
+		.color-wrap {
+			display: inline-block;
+			width: 28px;
+			height: 28px;
+			overflow: hidden;
+			position: relative;
+			vertical-align: middle;
+
+			.rcorners {
+				width: 28px;
+				height: 28px;
+				background-color: transparent;
+				border-color: $card-border-color;
+				border-radius: 50%;
+				display: block;
+				position: absolute;
+				#{$left}: 0;
+				top: 0;
+				margin-top: 0;
+
+				a {
+					display: block;
+					position: absolute;
+					#{$left}: -1px;
+					top: -1px;
+					#{$right}: -1px;
+					bottom: -1px;
+					border: 3px solid $card-bg;
+					border-radius: 50%;
+					transition: all 0.2s ease;
+
+					&:hover {
+						// border-color: transparent;
+						transform: scale(0.8);
+					}
+				}
+			}
+		}
+
+		// color link
+		.color-link {
+			display: inline-block;
+			padding: 4px 8px;
+			vertical-align: middle;
+			position: relative;
+			text-align: $left;
+
+			// for color and text option
+			&.color_and_text_link {
+
+				a {
+					margin: 3px 0 0 0;
+				}
+			}
+
+			a {
+				color: $headings-color;
+				transition: color 0.3s ease;
+
+				&:hover {
+					color: $link-color-hover;
+				}
+			}
+		}
+	}
+}

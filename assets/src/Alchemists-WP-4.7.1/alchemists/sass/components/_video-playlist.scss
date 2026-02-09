@@ -1,0 +1,157 @@
+/* Video Playlist */
+.alc-video-player-col {
+	padding-#{$right}: 0;
+}
+.alc-video-playlist-col {
+
+	@media (min-width: 992px) {
+		border-#{$left}: 1px solid $card-border-color;
+		padding-#{$left}: 0;
+	}
+}
+
+// Title
+.alc-video-player__header {
+	border-bottom: 1px solid $card-border-color;
+	padding-#{$left}: $card-horizontal-padding;
+	padding-#{$right}: $card-horizontal-padding;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: relative;
+
+	@media (max-width: 991px) {
+		border-top: 1px solid $card-border-color;
+	}
+
+	.slick-prev,
+	.slick-next {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+	.alc-video-player__title {
+		font-size: 11px;
+		line-height: 1.2em;
+		margin-bottom: 0;
+	}
+
+// Video Player
+.alc-video-player {
+
+	.posts__thumb--video {
+		float: none;
+		margin: 0;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.wp-block-embed:last-child {
+		margin-bottom: 0;
+	}
+}
+
+// Playlist
+.alc-video-player__video-list {
+	position: relative;
+
+	.slick-track {
+		display: block;
+	}
+
+	.posts__item {
+		margin-#{$left}: 0 !important;
+		margin-#{$right}: 0 !important;
+		margin-bottom: 0 !important;
+		padding-top: 26px;
+		padding-bottom: 26px;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		.posts__title {
+
+			@media (min-width: 992px) and (max-width: 1199px) {
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+// Embeded Player
+.alc-embeded-player {
+	position: relative;
+	overflow: hidden;
+	background-color: #000;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	border: 1px solid $card-border-color;
+
+	.card--no-paddings & {
+		border-bottom-#{$left}-radius: $card-border-radius;
+		border-bottom-#{$right}-radius: $card-border-radius;
+		border: none;
+	}
+}
+
+// Player responsive container
+.alc-embeded-player--container {
+	margin: 0;
+	padding: 0 0 56.25% 0;
+	position: relative;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+
+	iframe,
+	object,
+	embed {
+		position: absolute;
+		top: 0;
+		#{$left}: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	p {
+		margin: 0;
+		padding: 0;
+	}
+
+	// fixes issue with nested video wrappaer
+	// needed here because of different ways to insert video (Classic Editor, WPBakery Page Builder, Gutenberg, etc.)
+	.wp-embed-aspect-16-9 .wp-block-embed__wrapper,
+	.jetpack-video-wrapper {
+		position: static;
+		display: inline;
+	}
+}
+	.alc-embeded-player__overlay {
+		display: flex;
+		position: absolute;
+		#{$left}: 0;
+		top: 0;
+		#{$right}: 0;
+		bottom: 0;
+		background-color: rgba(0,0,0,.8);
+		justify-content: center;
+		align-items: center;
+
+		&:hover {
+			cursor: pointer;
+
+			.alc-embeded-player__icon {
+				opacity: .5;
+			}
+		}
+	}
+		.alc-embeded-player__icon {
+			display: block;
+			color: $color-white;
+			font-size: 30px;
+			line-height: 1em;
+			transition: opacity .3s ease;
+		}

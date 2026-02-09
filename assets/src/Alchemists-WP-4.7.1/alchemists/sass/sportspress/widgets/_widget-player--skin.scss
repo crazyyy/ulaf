@@ -1,0 +1,212 @@
+/* Widget: Featured Player */
+.widget-player {
+
+	.widget-player__inner {
+		background-color: #27313b;
+		color: #fff;
+	}
+}
+
+		.widget-player__name {
+			color: #fff;
+		}
+			.widget-player__last-name {
+				color: $color-primary;
+			}
+
+			.widget-player__stat-label {
+				color: #fff;
+			}
+			.widget-player__stat-legend {
+				font-family: $font-family-accent;
+				color: $body-font-color;
+			}
+
+	.widget-player__footer {
+		background-color: $color-primary;
+	}
+		.widget-player__footer-txt {
+			background-color: #182027;
+			color: #fff;
+
+			.fa {
+				color: $color-primary;
+			}
+
+			&::before {
+				background-color: $color-primary;
+			}
+		}
+
+		// Details
+		.widget-player__details {
+			border-color: $card-border-color;
+		}
+			.widget-player__details-row {
+
+			}
+				.widget-player__details__item {
+					border-color: $card-border-color;
+				}
+						.widget-player__details-label {
+							font-family: $font-family-accent;
+							color: $headings-color;
+						}
+						.widget-player__details-desc {
+							font-family: $font-family-accent;
+						}
+					.widget-player__details-value {
+						font-family: $font-family-accent;
+						color: $headings-color;
+					}
+
+
+/* Widget: Featured Player Alternative Styling */
+.widget-player--alt {
+
+	.template-basketball & {
+
+		.widget-player__inner {
+			background-color: $color-primary;
+			background-image: linear-gradient(to bottom, $color-primary, #f29400);
+		}
+
+		.widget-player__last-name {
+			color: $headings-color;
+		}
+
+		.widget-player__content {
+			background-color: #27313b;
+		}
+			.widget-player__stat-number {
+				color: $color-primary;
+			}
+			.widget-player__stat-legend {
+				color: #fff;
+			}
+
+		.widget-player__footer-txt {
+			background-color: #27313b;
+		}
+	}
+}
+
+
+@if $template == 'soccer' {
+
+	/* Widget: Featured Player - Soccer */
+	.widget-player--soccer {
+		position: relative;
+
+		.widget-player__ribbon {
+			background-color: #ffcf11;
+
+			&::before {
+				border-top: 6px solid #ffcf11;
+			}
+			&::after {
+				border-top: 6px solid #ffcf11;
+			}
+		}
+
+		.widget-player__inner {
+			background-color: $card-bg;
+			color: $body-font-color;
+		}
+			.widget-player__number {
+				background-color: $color-primary;
+				color: rgba(255,255,255,.1);
+
+				&::before {
+					border-bottom-color: $card-bg;
+				}
+			}
+			.widget-player__name {
+				color: $headings-color;
+			}
+				.widget-player__stat-number {
+					color: $headings-color;
+				}
+				.widget-player__stat-label {
+					color: $body-font-color;
+				}
+
+			.widget-player__content-alt {
+
+				.progress__label {
+					color: $body-font-color;
+				}
+				.progress__number {
+					color: $headings-color;
+				}
+			}
+	}
+}
+
+
+
+
+@if $template == 'football' {
+
+	/* Widget: Featured Player - Football */
+	.widget-player--football {
+
+		.widget-player__ribbon {
+			background-color: #fcb800;
+			color: #fff;
+			font-family: $font-family-accent;
+		}
+
+		.widget-player__inner {
+			background-color: $card-bg;
+			color: $body-font-color;
+
+			&::before {
+				background-color: $color-primary;
+			}
+
+			&::after {
+				border-top: 240px solid $card-bg;
+			}
+		}
+			.widget-player__number {
+				color: $body-font-color;
+			}
+			.widget-player__name {
+				color: $headings-color;
+			}
+			.widget-player__last-name {
+				color: $color-4;
+			}
+				.widget-player__stat-number {
+					color: $headings-color;
+				}
+				.widget-player__stat-label {
+					color: $body-font-color;
+				}
+
+			.widget-player__content-alt {
+
+				.progress__label {
+					color: $body-font-color;
+
+					.progress__number {
+						color: $headings-color;
+					}
+				}
+			}
+	}
+}
+
+
+	.widget-player__stat--value {
+		font-family: $font-family-accent;
+		color: $widget-player-stats-value-color;
+	}
+	.widget-player__stat--value-primary {
+		color: $color-primary;
+	}
+	.widget-player__stat--label {
+		font-family: $font-family-accent;
+		color: $headings-color;
+	}

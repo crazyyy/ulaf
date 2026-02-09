@@ -1,0 +1,23 @@
+/**
+ *
+ * League Menu
+ *
+ */
+
+.sp-league-menu {
+
+	.sp-inner {
+
+		@media (min-width: 992px) {
+			max-width: 962px;
+		}
+
+		@media (min-width: 1199px) {
+			max-width: 1170px;
+		}
+	}
+
+	.sp-league-menu-title {
+		@include font-accent(10px);
+	}
+}

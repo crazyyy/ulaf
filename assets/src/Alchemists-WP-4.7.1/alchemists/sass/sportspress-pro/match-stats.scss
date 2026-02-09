@@ -1,0 +1,56 @@
+/**
+ *
+ * Match Stats
+ *
+ */
+
+.sp-template-event-statistics {
+
+	.sp-event-statistics {
+
+		tbody > tr > td {
+			border: none;
+		}
+
+		& + .sp-statistic-label {
+			margin-top: 1.5em;
+		}
+	}
+
+	.sp-statistic-label {
+		@include font-accent(12px);
+
+	}
+
+	.sp-statistic-value {
+		padding-top: 0;
+		padding-bottom: 0;
+		color: $headings-color;
+	}
+
+	.sp-statistic-bar {
+		height: 9px;
+		background-color: $progress-bg;
+		border-radius: $progress-border-radius * 1.5;
+	}
+
+	.sp-statistic-bar-fill {
+		border-top-left-radius: $progress-border-radius * 1.5;
+		border-bottom-left-radius: $progress-border-radius * 1.5;
+		background-color: $color-primary;
+	}
+}
+
+@media screen and (min-width: 801px) {
+	.sp-inline-statistics.sp-performance-sections--1 .sp-event-performance-tables .sp-template-event-performance {
+		width: 100%;
+	}
+
+	.sp-inline-statistics.sp-performance-sections--1 .sp-event-performance-tables .sp-template-event-performance-combined {
+		width: 100%;
+	}
+
+	.sp-inline-statistics.sp-performance-sections--1 .sp-event-performance-tables .sp-template-event-statistics {
+		width: 100%;
+	}
+}

@@ -1,0 +1,124 @@
+/*
+// #Social Links
+// --------------------------------------------------
+*/
+
+	.social-links__item {
+		font-family: $font-family-accent;
+
+		.fa,
+		.fab {
+			color: $color-primary;
+
+			.header & {
+				color: $header-social-link-color;
+			}
+
+			.footer & {
+				color: $footer-contact-info-social-icon-color;
+			}
+		}
+
+		svg {
+			fill: $color-primary;
+
+			.header & {
+				fill: $header-social-link-color;
+			}
+
+			.footer & {
+				fill: $footer-contact-info-social-icon-color;
+			}
+		}
+	}
+		.social-links__link {
+			color: $footer-contact-info-social-link-color;
+
+			.header &:hover {
+
+				.fa,
+				.fab {
+					color: $header-social-link-color-hover;
+				}
+			}
+
+			.footer &:hover {
+				color: $footer-contact-info-social-link-color-hover;
+
+				.fa,
+				.fab {
+					color: $footer-contact-info-social-icon-color-hover;
+				}
+			}
+		}
+
+// Social Links Buttons
+.social-links--btn {
+
+		// Email, Site
+		.social-links__link--mail,
+		.social-links__link--site {
+			background-color: $color-gray;
+		}
+}
+
+// Social Links Circle
+.social-links--circle {
+
+		.social-links__link {
+			border: 2px solid rgba($body-font-color, 0.4);
+
+			&:hover {
+				border-color: $color-4;
+
+				.fa,
+				.fab {
+					color: #fff;
+				}
+			}
+		}
+}
+
+
+// Social Links in the Top Bar
+.social-links--top-bar {
+
+	.social-links__item {
+
+		.fa,
+		.fab,
+		svg {
+			opacity: $top-bar-social-icon-opacity / 100;
+		}
+	}
+
+		.social-links__link {
+
+			.fa,
+			.fab {
+				color: $top-bar-social-icon-color;
+			}
+
+			&:hover {
+
+				.fa,
+				.fab {
+					color: $top-bar-social-icon-color-hover;
+				}
+			}
+		}
+
+		.social-links__link--svg {
+
+			svg {
+				fill: $top-bar-social-icon-color;
+			}
+
+			&:hover {
+
+				svg {
+					fill: $top-bar-social-icon-color-hover;
+				}
+			}
+		}
+}

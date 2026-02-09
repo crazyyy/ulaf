@@ -1,0 +1,439 @@
+/* Team Roster */
+.team-roster {
+
+}
+
+	/* Team Roster - Grid */
+	.team-roster--grid {
+
+
+			.team-roster__holder {
+
+				&:hover {
+
+					.team-roster__member-number {
+						background-color: $color-primary;
+					}
+				}
+			}
+				.team-roster__img {
+					border-color: $card-border-color;
+				}
+
+					// Number
+					.team-roster__member-number {
+						background-color: #bfc2c4;
+						font-family: $font-family-accent;
+						color: #fff;
+					}
+						.team-roster__member-name {
+							color: #fff;
+
+							> a {
+								color: #fff;
+							}
+						}
+							.team-roster__member-last-name {
+								color: $color-primary;
+							}
+						.team-roster__member-position {
+							font-family: $font-family-accent;
+						}
+	}
+
+
+		/* Team Roster: Grid Small */
+		.team-roster--grid-sm {
+				// holder
+				.team-roster__holder {
+					border-color: $card-border-color;
+					background-color: $card-bg;
+				}
+					// Photo
+					.team-roster__img {
+
+						> a {
+
+							// overlay
+							&::before {
+
+								@if $template == football {
+									background-color: $color-dark-2;
+								} @else {
+									background-color: #171d21;
+								}
+							}
+						}
+					}
+							// squad number
+							.team-roster__member-number {
+								font-family: $font-family-accent;
+								color: $color-primary;
+							}
+							.team-roster__member-details-item {
+								font-family: $font-family-accent;
+								color: $headings-color;
+
+								.item-title {
+									color: $body-font-color;
+								}
+							}
+		}
+
+
+	/* Team Roster: Table */
+	.team-roster-table {
+
+		.data-number {
+
+		}
+		.data-name {
+			color: $headings-color;
+
+			a {
+				color: $headings-color;
+			}
+		}
+		.data-position {
+			color: $headings-color;
+		}
+	}
+
+		.team-roster-table__header {
+			background-color: $card-subheader-bg;
+		}
+
+
+	/* Team Roster: Slider */
+	.team-roster--slider {
+		border-color: $card-border-color;
+
+				.team-roster__img-ring-top,
+				.team-roster__img-ring-bottom {
+
+					&::before {
+						border-color: $color-primary;
+					}
+				}
+
+				.team-roster__player-number {
+					font-family: $font-family-accent;
+					color: #fff;
+				}
+					.team-roster__player-name {
+						color: #fff;
+
+						> a {
+							color: #fff;
+						}
+					}
+						.team-roster__player-first-name {
+
+						}
+						.team-roster__player-last-name {
+							color: $color-primary;
+						}
+					.team-roster__player-position {
+						font-family: $font-family-accent;
+					}
+
+
+		// Player FAB
+			.team-roster__player-fab-txt {
+				font-family: $font-family-accent;
+				color: #fff;
+
+				&::first-line {
+					color: $body-font-color;
+				}
+			}
+	}
+
+
+	/* Team Roster: Card */
+	.team-roster--card {
+
+		.team-roster__item {
+
+		}
+			.team-roster__player-shape {
+				background-color: lighten($color-primary, 10%);
+
+				&::after {
+					border-bottom-color: $card-bg;
+				}
+			}
+				.team-roster__player-info {
+
+				}
+						.team-roster__player-number {
+							font-family: $font-family-accent;
+						}
+							.team-roster__player-last-name {
+								color: $color-primary;
+
+								> a {
+									color: $headings-color;
+								}
+							}
+
+
+			.team-roster__meta {
+				border-#{$left}-color: $card-border-color;
+			}
+					.team-roster__meta-value {
+						font-family: $font-family-accent;
+						color: $headings-color;
+					}
+	}
+
+
+	@if $template == soccer {
+		/* Team Roster: Card Compact */
+		.team-roster--card-compact {
+
+			.team-roster__item-holder {
+
+				.card__content {
+
+					// hide bottom part only
+					&::before {
+						background-color: $card-bg;
+					}
+				}
+
+					.team-roster__content-wrapper {
+
+						&::before {
+							background-image:
+							linear-gradient( 135deg, transparent, transparent 57%, lighten(adjust-hue($color-4, -8), 3.14) 57%, lighten(adjust-hue($color-4, -8), 3.14) 78%, transparent 78%, transparent),
+							linear-gradient( 135deg, transparent, transparent 33%, rgba(255,255,255,.15) 33%, rgba(255,255,255,.15) 57%, transparent 57%, transparent),
+							linear-gradient( 135deg, rgba( $color-primary-darken, .82), rgba( $color-primary-darken, .82) 47%, $color-4 47%, $color-4);
+						}
+					}
+
+						// Player Info
+						.team-roster__player-info {
+							background-color: $card-bg;
+
+							&::before {
+								border-#{$left}-color: $card-bg;
+							}
+						}
+								.team-roster__player-last-name {
+									color: $color-primary;
+								}
+
+						// Player Number
+						.team-roster__player-number {
+							color: rgba($body-font-color, .4);
+
+							&::before {
+								border-#{$right}-color: $card-bg;
+							}
+						}
+
+						// Player Details
+								.progress-stats {
+
+									.progress__label {
+										color: $body-font-color;
+									}
+									.progress__number {
+										color: $headings-color;
+									}
+								}
+									.team-roster__meta-value {
+										color: $headings-color;
+									}
+			}
+		}
+	}
+
+
+	/* Team Roster: Case */
+	.team-roster--case {
+
+			.team-roster__meta-item {
+				border-#{$left}-color: $card-border-color;
+			}
+				.team-roster__meta-value {
+					font-family: $font-family-accent;
+					color: #fff;
+				}
+				.team-roster__meta-value--accent {
+					color: $color-4;
+				}
+				.team-roster__meta-label {
+					font-family: $font-family-accent;
+				}
+				.team-roster__player-position {
+					color: $body-font-color;
+				}
+	}
+
+
+
+/* Team Roster: Card */
+.team-roster--boxed {
+
+	// Real Name
+	.team-roster__player-realname {
+		color: $body-font-color;
+	}
+
+	// Nickname
+	.team-roster__player-nickname {
+
+		.highlight {
+			color: $color-primary;
+		}
+	}
+			.team-roster__meta-icon {
+				border-color: $team-roster-boxed-highlight;
+				background-color: $body-bg-color;
+			}
+			.team-roster__meta-icon--more {
+				background-color: $btn-default-bg;
+
+				.fa {
+					color: $color-white;
+				}
+
+				&:hover {
+					background-color: $btn-default-hover;
+				}
+			}
+
+			.team-roster__meta-label {
+				color: $headings-color;
+			}
+
+	// Player Image
+	.team-roster__player-img {
+
+	}
+
+	.team-roster__player-shape {
+
+		&::after {
+			border-bottom-color: $card-bg
+		}
+	}
+}
+
+
+
+// Team Roster Navigation
+.team-roster-nav {
+
+}
+	.team-roster-nav__item {
+
+		// Active item
+		&:hover,
+		&.slick-current {
+			cursor: pointer;
+
+			.team-roster-nav__hexagon {
+				border-#{$left}-color: $team-roster-boxed-highlight;
+				border-#{$right}-color: $team-roster-boxed-highlight;
+
+				&::before {
+					border-top-color: $team-roster-boxed-highlight;
+					border-#{$right}-color: $team-roster-boxed-highlight;
+				}
+
+				&::after {
+					border-bottom-color: $team-roster-boxed-highlight;
+					border-#{$left}-color: $team-roster-boxed-highlight;
+				}
+			}
+
+			.team-roster-nav__triangle {
+
+				&::before,
+				&::after {
+					border-bottom-color: $team-roster-boxed-highlight;
+				}
+			}
+
+			.team-roster-nav__icon {
+				border-color: $team-roster-boxed-highlight;
+			}
+
+			.team-roster-nav__firstname {
+				color: $headings-color;
+			}
+
+			.team-roster-nav__nickname {
+				color: $color-primary;
+			}
+		}
+	}
+
+		.team-roster-nav__meta {
+
+		}
+			.team-roster-nav__firstname {
+				color: $body-font-color;
+			}
+
+		.team-roster-nav__hexagon {
+			border-#{$left}-color: $card-border-color;
+			border-#{$right}-color: $card-border-color;
+			background-color: $card-bg;
+
+			&::before {
+				border-top-color: $card-border-color;
+				border-#{$right}-color: $card-border-color;
+			}
+
+			&::after {
+				border-bottom-color: $card-border-color;
+				border-#{$left}-color: $card-border-color;
+			}
+		}
+
+			.team-roster-nav__triangle {
+
+				&::before,
+				&::after {
+					border-bottom-color: $card-border-color;
+				}
+
+				&::before {
+					border-#{$right}-color: transparent;
+				}
+
+				&::after {
+					border-#{$left}-color: transparent;
+				}
+			}
+
+			.team-roster-nav__triangle-border {
+
+				&::before,
+				&::after {
+					border-bottom-color: $body-bg-color;
+				}
+
+				&::before {
+					border-#{$right}-color: transparent;
+				}
+
+				&::after {
+					border-#{$left}-color: transparent;
+				}
+			}
+
+			// Player Type - Icon
+			.team-roster-nav__icon {
+				border-color: $card-border-color;
+				background-color: $body-bg-color;
+
+				.df-icon {
+					stroke: $svg-stroke;
+					fill: $svg-stroke;
+				}
+			}

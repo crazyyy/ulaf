@@ -1,0 +1,85 @@
+/* Widget: Team Stats */
+.widget-team-stats {
+
+
+}
+	.team-stats-box {
+		border-color: $card-border-color;
+	}
+		.team-stats__item {
+			border-color: $card-border-color;
+			background-image: linear-gradient(to right, $widget-decor-color-1 4px, transparent 4px), linear-gradient(to right, $widget-decor-color-1 4px, transparent 4px), linear-gradient(to right, $widget-decor-color-1 4px, transparent 4px), linear-gradient(to right, $widget-decor-color-1 4px, transparent 4px), linear-gradient(to right, $widget-decor-color-1 4px, transparent 4px), linear-gradient(to right, $widget-decor-color-1 4px, transparent 4px), linear-gradient(to right, $widget-decor-color-2 4px, transparent 4px), linear-gradient(to right, $widget-decor-color-3 4px, transparent 4px);
+		}
+		.team-stats__item--clean {
+			background: none;
+		}
+			.team-stats__icon {
+
+			}
+			.team-stats__icon--icon-font {
+				@if $template == 'football' {
+					color: $color-4;
+				} @else {
+					color: $color-primary;
+				}
+			}
+			.team-stats__icon--circle-outline {
+				border-color: $color-primary;
+			}
+
+			.team-stats__icon--centered {
+				i {
+					color: $headings-color;
+				}
+			}
+			.team-stats__icon--circle {
+				background-color: $color-primary;
+			}
+			.team-stats__indicator {
+				border-color: $color-primary;
+				font-family: $font-family-accent;
+				background-color: $card-bg;
+			}
+			.team-stats__icon--shots-ot {
+				background-color: #a4ec32;
+			}
+			.team-stats__icon--shots {
+				background-color: #f5d109;
+			}
+			.team-stats__icon--assists {
+				background-color: #3adfc2;
+
+				.team-stats__icon-secondary {
+					background-color: $headings-color;
+					font-family: $font-family-accent;
+					color: #fff;
+				}
+			}
+
+
+			.team-stats__value {
+				font-family: $font-family-accent;
+				color: $headings-color;
+			}
+			.team-stats__label {
+				font-family: $font-family-accent;
+
+				@if $template == 'esports' {
+					color: $headings-color;
+				}
+			}
+				.team-stats__circular--minus {
+					color: $color-danger;
+
+					.circular__percents {
+						color: $color-danger;
+					}
+				}
+
+				.team-stats__circular--plus {
+					color: $color-success;
+
+					.circular__percents {
+						color: $color-success;
+					}
+				}

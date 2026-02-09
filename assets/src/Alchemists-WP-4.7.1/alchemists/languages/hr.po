@@ -1,0 +1,2872 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Alchemists\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-23 18:08+0200\n"
+"PO-Revision-Date: 2025-12-24 14:45+0000\n"
+"Last-Translator: Dan Fisher <dan.fisher85@yahoo.com>\n"
+"Language-Team: Croatian\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2;\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: inc/template-tags.php:322 inc/template-tags.php:385
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#. 1: formatted order total 2: total order items
+#: woocommerce/myaccount/orders.php:69
+#, php-format
+msgid "%1$s for %2$s item"
+msgid_plural "%1$s for %2$s items"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. %1$s Action name, %2$s Order number.
+#: woocommerce/order/order-details.php:110 woocommerce/myaccount/orders.php:81
+#, fuzzy, php-format
+#| msgid "Order number:"
+msgid "%1$s order number %2$s"
+msgstr "Broj narudžbe:"
+
+#. 1: reviews count 2: product name
+#: woocommerce/single-product-reviews.php:49
+#, php-format
+msgid "%1$s review for %2$s"
+msgid_plural "%1$s reviews for %2$s"
+msgstr[0] "%1$s recenzija za %2$s"
+msgstr[1] "%1$s recenzija za %2$s"
+msgstr[2] "%1$s recenzija za %2$s"
+
+#: search.php:121
+#, php-format
+msgid "%1$s were found for your \"%2$s\" search."
+msgstr ""
+
+#: search.php:123
+#, php-format
+msgid "%s article"
+msgid_plural "%s articles"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: inc/wc-functions.php:180 template-parts/header/header-info-block.php:159
+#, php-format
+msgid "%s item"
+msgid_plural "%s items"
+msgstr[0] "%s stavka"
+msgstr[1] "%s stavke"
+msgstr[2] "%s stavki"
+
+#: vc_templates/alc_twitch.php:64
+#, php-format
+msgid "%s plugin is not installed"
+msgstr ""
+
+#: woocommerce/order/order-downloads.php:54
+msgid "&infin;"
+msgstr ""
+
+#. %s is the product name
+#: woocommerce/cart/mini-cart.php:72
+#, php-format
+msgid "&ldquo;%s&rdquo; has been removed from your cart"
+msgstr ""
+
+#: inc/template-tags.php:324 inc/template-tags.php:387
+msgid "(Edit)"
+msgstr "(Uređivanje)"
+
+#: woocommerce/cart/cart-totals.php:108
+#, php-format
+msgid "(estimated for %s)"
+msgstr "(procjenjeno za %s)"
+
+#: woocommerce/single-product-reviews.php:159
+msgid "1 Star - Very poor"
+msgstr "1 zvjezdica - Loše"
+
+#: functions.php:285
+msgid "1st Footer Widget Area."
+msgstr ""
+
+#: vc_templates/alc_team_points_history/alc_team_points_history-soccer.php:50
+msgid "1st Half"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:158
+msgid "2 Stars - Not that bad"
+msgstr "2 zvjezdice - Nije loše"
+
+#: functions.php:294
+msgid "2nd Footer Widget Area"
+msgstr ""
+
+#: vc_templates/alc_team_points_history/alc_team_points_history-soccer.php:69
+msgid "2nd Half"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:96
+#: sportspress/single-team/featured-player/content-player-default.php:58
+msgid "3 Points"
+msgstr "3 poena"
+
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:116
+#: sportspress/single-team/featured-player/content-player-default.php:34
+msgid "3 Points Accuracy"
+msgstr "Preciznost u tricama"
+
+#: woocommerce/single-product-reviews.php:157
+msgid "3 Stars - Average"
+msgstr "3 zvjezdice - Prosječno"
+
+#: vc_templates/alc_player_stats_grid.php:131
+msgid "3-pointer %"
+msgstr ""
+
+#: functions.php:303
+msgid "3rd Footer Widget Area"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:156
+msgid "4 Stars - Good"
+msgstr "4 zvjezdice - Dobro"
+
+#: 404.php:82 404.php:107
+msgid "404 Error"
+msgstr ""
+
+#: 404.php:144
+msgid "404 Error Image"
+msgstr ""
+
+#: functions.php:312
+msgid "4th Footer Widget Area"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:155
+msgid "5 Stars - Perfect"
+msgstr "5 zvjezdica - Savršeno"
+
+#: woocommerce/myaccount/form-login.php:124
+msgid "A link to set a new password will be sent to your email address."
+msgstr ""
+
+#: inc/wc-functions.php:556 inc/wc-functions.php:575
+msgid "Abbreviation"
+msgstr "Kratice"
+
+#: inc/wc-functions.php:205 inc/wc-functions.php:214
+msgid "Account Details"
+msgstr "Detalji o računu"
+
+#: woocommerce/myaccount/navigation.php:30
+#: woocommerce/myaccount/navigation.php:54
+#, fuzzy
+#| msgid "Account Details"
+msgid "Account pages"
+msgstr "Detalji o računu"
+
+#: woocommerce/order/order-details.php:102
+#, fuzzy
+#| msgid "Options"
+msgid "Actions"
+msgstr "Opcije"
+
+#. %s is product title
+#: woocommerce/single-product-reviews.php:94
+msgid "Add a review"
+msgstr "Dodajte recenziju"
+
+#: inc/acf-fields.php:608
+msgid "Add Event"
+msgstr "Dodavanje događaja"
+
+#: inc/acf-fields.php:2288 inc/acf-fields.php:2352
+msgid "Add full links to social networks or services."
+msgstr ""
+
+#: inc/acf-fields.php:2300 inc/acf-fields.php:2364
+msgid "Add Link"
+msgstr ""
+
+#: inc/acf-fields.php:185 inc/acf-fields.php:2142
+msgid "Add Overlay?"
+msgstr ""
+
+#: functions.php:195 functions.php:204 functions.php:213 functions.php:222
+#: functions.php:231 functions.php:240 functions.php:249 functions.php:258
+#: functions.php:276
+msgid "Add widgets here."
+msgstr ""
+
+#: woocommerce/checkout/form-shipping.php:77
+#: woocommerce/single-product/tabs/additional-information.php:25
+msgid "Additional information"
+msgstr "Dodatne informacije"
+
+#: vc_templates/alc_event_scoreboard/esports-alc_event_scoreboard.php:305
+#: vc_templates/alc_event_scoreboard/football-alc_event_scoreboard.php:380
+#: sportspress/event/event-logos/esports-event-logos-block.php:341
+#: sportspress/event/event-logos/football-event-logos-block.php:410
+msgid "Additional Stats"
+msgstr ""
+
+#: inc/wc-functions.php:208
+msgid "Addresses"
+msgstr "Adrese"
+
+#: inc/acf-fields.php:1286 inc/acf-fields.php:1703
+msgid "After Players"
+msgstr ""
+
+#: sportspress/player-carousel-thumbs.php:38 sportspress/single-player.php:36
+#: sportspress/player-block-thumbnail.php:110
+msgid "Age"
+msgstr "Dob"
+
+#: inc/acf-fields.php:28
+msgid "Album Photos"
+msgstr "Fotografije albuma"
+
+#: inc/acf-fields.php:884
+msgid "Albums"
+msgstr "Albumi"
+
+#: inc/acf-fields.php:24
+msgid "Albums Photos"
+msgstr "Fotografije albuma"
+
+#. Name of the theme
+msgid "Alchemists"
+msgstr ""
+
+#: inc/vc-templates.php:29
+msgid "Alchemists Theme"
+msgstr ""
+
+#: vc_templates/alc_post_slider.php:130
+msgid "All"
+msgstr "Sve"
+
+#: template-parts/post-filter.php:55
+msgid "All Articles"
+msgstr "Sve objave"
+
+#: template-parts/post-filter.php:117
+msgid "All Authors"
+msgstr "Svi autori"
+
+#: inc/acf-fields.php:704
+msgid "Alternative Photo"
+msgstr "Druga fotografija"
+
+#: woocommerce/cart/cart.php:181
+msgid "Apply"
+msgstr "Primjena"
+
+#: woocommerce/checkout/form-coupon.php:48
+msgid "Apply coupon"
+msgstr ""
+
+#: sportspress/event-list.php:222 sportspress/event-list.php:504
+msgid "Article"
+msgstr "O utakmici"
+
+#: template-parts/post-filter.php:77
+msgid "Article Date"
+msgstr "Datum objave"
+
+#: template-parts/post-filter.php:79
+msgid "Article ID"
+msgstr "ID objave"
+
+#: template-parts/post-filter.php:78
+msgid "Article Title"
+msgstr "Naslov objave"
+
+#: template-parts/post-filter.php:101
+msgid "Ascending"
+msgstr "Uzlazno"
+
+#: sportspress/player-slider-card__slide.php:160
+#: sportspress/player-cards__card.php:139
+#: sportspress/player-event-graph-log.php:113
+#: sportspress/player-event-graph-log.php:124
+#: sportspress/player-event-graph-log.php:158
+#: vc_templates/alc_player_stats_chart.php:115
+#: vc_templates/alc_player_stats_chart.php:120
+#: vc_templates/alc_player_stats_chart.php:133
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:68
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:98
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:65
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:104
+#: sportspress/single-team/featured-player/content-player-soccer.php:20
+#: sportspress/single-team/featured-player/content-player-default.php:20
+#: sportspress/single-team/featured-player/content-player-default.php:60
+msgid "Assists"
+msgstr "Asistencija"
+
+#: sportspress/player-statistics-avg.php:93
+#: sportspress/player-statistics-avg.php:103
+#: sportspress/player-statistics-circular-boxed.php:80
+#: sportspress/player-statistics-circular-boxed.php:90
+msgid "Assists per game"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:107
+#: sportspress/single-team/featured-player/content-player-football.php:61
+msgid "Attempts"
+msgstr ""
+
+#: template-parts/post-filter.php:115
+msgid "Author"
+msgstr "Autor"
+
+#: woocommerce/cart/cart.php:106
+msgid "Available on backorder"
+msgstr "Dostupno za narudžbu."
+
+#: vc_templates/alc_team_leaders.php:53
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:196
+#: sportspress/single-team/featured-player/content-player-default.php:106
+msgid "AVG"
+msgstr "PROSJEČNO"
+
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:70
+#: sportspress/single-team/featured-player/content-player-football.php:20
+msgid "Avg"
+msgstr ""
+
+#: inc/sp-functions.php:394
+msgid "avg"
+msgstr "avg"
+
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:56
+msgid "Avg. Assists"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:55
+msgid "Avg. Deaths"
+msgstr ""
+
+#: vc_templates/alc_player_stats_grid.php:205
+msgid "Avg. Gold per Min"
+msgstr ""
+
+#: sportspress/player-statistics-avg.php:117
+#: vc_templates/alc_player_stats_grid.php:200
+msgid "Avg. KDA Ratio"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:54
+msgid "Avg. Kills"
+msgstr ""
+
+#: woocommerce/single-product/product-image.php:63
+msgid "Awaiting product image"
+msgstr "Čeka se na sliku proizvoda"
+
+#: inc/acf-fields.php:626
+msgid "Award"
+msgstr "Nagrada"
+
+#: sportspress/event-list.php:172 sportspress/event-list.php:358
+#: sportspress/event-matrix.php:142
+msgid "Away"
+msgstr "Gosti"
+
+#: vc_templates/alc_event_scoreboard/soccer-alc_event_scoreboard.php:444
+#: vc_templates/alc_event_scoreboard/football-alc_event_scoreboard.php:348
+#: sportspress/event/event-logos/soccer-event-logos-block.php:497
+#: sportspress/event/event-logos/football-event-logos-block.php:379
+msgid "Ball Possession"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:94
+#, php-format
+msgid "Be the first to review &ldquo;%s&rdquo;"
+msgstr "Prvi napravite recenziju &ldquo;%s&rdquo;"
+
+#: inc/acf-fields.php:1285 inc/acf-fields.php:1702
+msgid "Before Players"
+msgstr ""
+
+#: woocommerce/checkout/form-billing.php:31
+msgid "Billing &amp; Shipping"
+msgstr "Plaćanje &amp; dostava"
+
+#: woocommerce/order/order-details-customer.php:34
+#: woocommerce/myaccount/form-edit-address.php:20
+msgid "Billing address"
+msgstr "Adresa za plaćanje"
+
+#: woocommerce/checkout/form-billing.php:35
+msgid "Billing details"
+msgstr "Detalji plaćanja"
+
+#: sportspress/single-player.php:66 sportspress/single-player.php:70
+#: inc/sp-functions.php:140
+msgid "Biography"
+msgstr "Biografija"
+
+#: sportspress/single-player.php:37 sportspress/player-block-thumbnail.php:107
+msgid "Birthday"
+msgstr ""
+
+#: sportspress/player-event-graph-log.php:109 inc/acf-fields.php:1006
+#: inc/acf-fields.php:1251 inc/acf-fields.php:1425 inc/acf-fields.php:1668
+#: vc_templates/alc_player_stats_chart.php:114
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:100
+#: sportspress/single-team/featured-player/content-player-default.php:61
+msgid "Blocks"
+msgstr "Blokovi"
+
+#: index.php:24
+msgid "Blog"
+msgstr ""
+
+#: woocommerce/myaccount/downloads.php:42 woocommerce/myaccount/orders.php:121
+msgid "Browse products"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:24
+msgid "Calculate shipping"
+msgstr "Izračun troškova dostave"
+
+#: comments.php:114 template-parts/post/comments/comments-alt.php:104
+#: template-parts/post/comments/comments-alt-card.php:105
+msgid "Cancel Reply"
+msgstr "Poništite odgovor"
+
+#. Name of the template
+#: template-canvas.php:2
+msgid "Canvas"
+msgstr ""
+
+#: inc/acf-fields.php:844
+msgid "Card Accent"
+msgstr ""
+
+#: inc/acf-fields.php:1009
+msgid "Cards"
+msgstr ""
+
+#: inc/acf-fields.php:1010 inc/acf-fields.php:1427
+msgid "Carousel + Thumbs"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:59
+msgid "Cart totals"
+msgstr "Ukupno u košarici"
+
+#: template-parts/post-filter.php:53
+msgid "Category"
+msgstr "Kategorija"
+
+#: woocommerce/cart/cart-shipping.php:59
+msgid "Change address"
+msgstr ""
+
+#: inc/acf-fields.php:2410
+msgid "Character Options"
+msgstr ""
+
+#: sportspress/player-slider-thumbnail.php:64
+msgid "Check the<br>Player Profile"
+msgstr ""
+
+#: inc/wc-functions.php:138 woocommerce/checkout/form-checkout.php:32
+msgid "Checkout"
+msgstr "Završetak kupnje"
+
+#: woocommerce/cart/shipping-calculator.php:82
+msgid "City"
+msgstr "Grad"
+
+#: woocommerce/cart/shipping-calculator.php:81
+#, fuzzy
+#| msgid "City"
+msgid "City:"
+msgstr "Grad"
+
+#: woocommerce/single-product/add-to-cart/variable.php:55
+msgid "Clear"
+msgstr "Obriši"
+
+#: woocommerce/single-product/add-to-cart/variable.php:55
+#, fuzzy
+#| msgid "Page Options"
+msgid "Clear options"
+msgstr "Podešenja stranice"
+
+#: woocommerce/myaccount/form-login.php:67 woocommerce/global/form-login.php:58
+msgid "Click Here"
+msgstr "Kliknite ovdje"
+
+#: woocommerce/checkout/form-coupon.php:35
+msgid "Click here to enter your code"
+msgstr "Kliknite ovdje za unos koda"
+
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:82
+msgid "CMP %"
+msgstr ""
+
+#: sportspress/single-team/featured-player/content-player-football.php:41
+msgid "CMP%"
+msgstr ""
+
+#: inc/acf-fields.php:2687
+msgid "Code"
+msgstr ""
+
+#: template-parts/post/comments/comments-alt.php:36
+#: template-parts/post/comments/comments-alt-card.php:37
+msgid "Comment"
+msgid_plural "Comments"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: comments.php:44
+msgid "Comments"
+msgstr ""
+
+#: comments.php:75 template-parts/post/comments/comments-alt.php:71
+#: template-parts/post/comments/comments-alt-card.php:68
+msgid "Comments are closed."
+msgstr "Komentiranje je zatvoreno."
+
+#: template-parts/post-filter.php:80
+msgid "Comments Count"
+msgstr "Broj komentara"
+
+#: sportspress/player/heading/player-heading-fullwidth.php:187
+msgid "Competitions"
+msgstr "Natjecanja"
+
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:106
+#: sportspress/single-team/featured-player/content-player-football.php:60
+msgid "Completions"
+msgstr ""
+
+#: vc_templates/alc_event_scoreboard.php:207
+msgid "Configure the element by selecting a Team or Event."
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:77
+msgid "Confirm new password"
+msgstr "Potvrda nove lozinke"
+
+#: inc/acf-fields.php:642
+msgid "Content"
+msgstr "Sadržaj"
+
+#: inc/acf-fields.php:450
+msgid "Content Bottom Padding"
+msgstr "Razmak od dna sadržaja."
+
+#: inc/acf-fields.php:423
+msgid "Content Top Padding"
+msgstr "Razmak od vrha sadržaja."
+
+#: sportspress/player-event-graph-log.php:128
+#: vc_templates/alc_player_stats_chart.php:121
+msgid "Corner Kicks"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:30
+msgid "Country / region"
+msgstr ""
+
+#: woocommerce/checkout/form-coupon.php:46 woocommerce/cart/cart.php:179
+msgid "Coupon code"
+msgstr "Kod kupna"
+
+#: woocommerce/checkout/form-coupon.php:45
+msgid "Coupon:"
+msgstr "Kupon:"
+
+#: woocommerce/checkout/form-billing.php:63
+msgid "Create an account?"
+msgstr "Izraditi korisnički račun?"
+
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:41
+msgid "Creep Score"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:69
+msgid "Current password (leave blank to leave unchanged)"
+msgstr "Tekuća lozinka (ostavite prazno da ostane ista)"
+
+#: sportspress/single-player.php:38 sportspress/player-details.php:89
+#: vc_templates/alc_staff_bio_card.php:100
+msgid "Current Team"
+msgstr "Ekipa"
+
+#: inc/acf-fields.php:162 inc/acf-fields.php:2119
+msgid "Custom Background Color"
+msgstr ""
+
+#: inc/acf-fields.php:130 inc/acf-fields.php:2087
+msgid "Custom Background Image"
+msgstr ""
+
+#: inc/acf-fields.php:244 inc/acf-fields.php:2201
+msgid "Custom Overlay Color"
+msgstr ""
+
+#: inc/acf-fields.php:272 inc/acf-fields.php:2229
+msgid "Custom Overlay Opacity"
+msgstr ""
+
+#: inc/acf-fields.php:103 inc/acf-fields.php:2068
+msgid "Customize Page Heading?"
+msgstr ""
+
+#: sportspress/player-event-game-by-game.php:276
+msgid "D"
+msgstr ""
+
+#. Author of the theme
+msgid "Dan Fisher"
+msgstr ""
+
+#: sportspress/player-event-game-by-game.php:155 sportspress/event-list.php:156
+#: sportspress/event-list.php:312 sportspress/event-details.php:22
+#: inc/acf-fields.php:661
+msgid "Date"
+msgstr "Datum"
+
+#: woocommerce/checkout/thankyou.php:57
+msgid "Date:"
+msgstr "Datum:"
+
+#: sportspress/countdown.php:271
+msgid "days"
+msgstr "dana"
+
+#: sportspress/player-event-graph-log.php:154
+#: vc_templates/alc_player_stats_chart.php:132
+msgid "Deaths"
+msgstr ""
+
+#: inc/acf-fields.php:435 inc/acf-fields.php:462 inc/sp-functions.php:100
+msgid "Default"
+msgstr "Zadano"
+
+#: template-parts/post-filter.php:100
+msgid "Descending"
+msgstr "Silazno"
+
+#: woocommerce/single-product/short-description.php:33
+#: woocommerce/single-product/tabs/description.php:25
+msgid "Description"
+msgstr "Opis"
+
+#: sportspress/event-details.php:62
+msgid "Details"
+msgstr "Vrijeme i lokacija"
+
+#: woocommerce/myaccount/form-edit-account.php:44
+msgid "Display name"
+msgstr ""
+
+#: inc/wc-functions.php:199
+msgid "Downloads"
+msgstr "Preuzimanja"
+
+#: vc_templates/alc_player_stats_grid.php:149
+msgid "Draw Ratio"
+msgstr ""
+
+#: sportspress/player-slider-card__slide.php:165
+#: sportspress/player-cards__card.php:144
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:109
+#: sportspress/single-team/featured-player/content-player-soccer.php:54
+msgid "Dribbles"
+msgstr ""
+
+#: vc_templates/alc_player_stats_grid.php:136
+msgid "Efficiency rating"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:118
+#: vc_templates/alc_staff_bio_card.php:130
+msgid "Email"
+msgstr "Mail"
+
+#: comments.php:135 template-parts/post/comments/comments-alt.php:125
+#: template-parts/post/comments/comments-alt-card.php:126
+msgid "Email Address"
+msgstr "Mail adresa"
+
+#: woocommerce/myaccount/form-edit-account.php:50
+#: woocommerce/myaccount/form-login.php:111
+msgid "Email address"
+msgstr "Mail adresa"
+
+#: sportspress/staff-gallery-thumbnail.php:49
+#: woocommerce/checkout/thankyou.php:63
+#: sportspress/single-team/staff/alc-team-roster-staff-blocks.php:89
+msgid "Email:"
+msgstr "Mail:"
+
+#: inc/acf-fields.php:106
+msgid "Enables customization options."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:92
+msgid "Enter a different address"
+msgstr ""
+
+#: inc/acf-fields.php:2337 inc/acf-fields.php:2401
+msgid "Enter links to Social Networks"
+msgstr ""
+
+#: inc/acf-fields.php:1984
+msgid "Enter number of displayed Posts."
+msgstr "Unesite broj objava koji će se prikazivati."
+
+#: woocommerce/cart/cart-shipping.php:71
+msgid "Enter your address to view shipping options."
+msgstr ""
+
+#: woocommerce/checkout/form-coupon.php:35
+#, fuzzy
+#| msgid "Enter your price."
+msgid "Enter your coupon code"
+msgstr "Unesite svoju cijenu."
+
+#: template-parts/header/header-search-form.php:15
+msgid "Enter your search here..."
+msgstr ""
+
+#: sportspress/event-list.php:184 sportspress/event-list.php:382
+#: sportspress/tournament-bracket-table.php:126
+msgid "Event"
+msgstr "Događaj"
+
+#: sportspress/countdown.php:256 sportspress/countdown.php:286
+msgctxt "event countdown"
+msgid "Read More"
+msgstr ""
+
+#: inc/acf-fields.php:627
+msgid "Exit"
+msgstr "Izlazak"
+
+#: inc/template-functions.php:113 inc/template-functions.php:125
+msgctxt "Exo 2: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/sp-functions.php:101
+msgid "Extended"
+msgstr "Prošireno"
+
+#: template-parts/social-counters/social-fb.php:18
+msgid "Facebook"
+msgstr ""
+
+#: inc/acf-fields.php:935 inc/acf-fields.php:1354
+msgid "Featured Gallery Roster"
+msgstr "Istaknuti igrači"
+
+#: inc/acf-fields.php:1133 inc/acf-fields.php:1550
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:136
+#: sportspress/single-team/featured-player/content-player-soccer.php:63
+#: sportspress/single-team/featured-player/content-player-default.php:71
+#: sportspress/single-team/featured-player/content-player-football.php:76
+#: sportspress/single-team/featured-player/content-player-football.php:83
+msgid "Featured Player"
+msgstr "Istaknuti igrač"
+
+#: inc/acf-fields.php:1183 inc/acf-fields.php:1600
+msgid "Featured Player Shortcode"
+msgstr ""
+
+#: vc_templates/alc_player_stats_grid.php:121
+#: vc_templates/alc_player_stats_grid.php:182
+msgid "Field Goal %"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:114
+msgid "Field Goal Accuracy"
+msgstr "Preciznost u dvicama"
+
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:95
+#: sportspress/single-team/featured-player/content-player-default.php:57
+msgid "Field Goals"
+msgstr ""
+
+#: template-parts/post-filter.php:150
+msgid "Filter News"
+msgstr "Filtriranje objava"
+
+#: sportspress/tournament-bracket.php:49
+msgid "Final Bracket"
+msgstr ""
+
+#: sportspress/event-blocks.php:350
+#: vc_templates/alc_event_scoreboard/soccer-alc_event_scoreboard.php:171
+#: vc_templates/alc_event_scoreboard/basketball-alc_event_scoreboard.php:150
+#: vc_templates/alc_event_scoreboard/football-alc_event_scoreboard.php:132
+#: sportspress/event/event-logos/soccer-event-logos-inline.php:132
+#: sportspress/event/event-logos/football-event-logos-inline.php:135
+#: sportspress/event/event-logos/soccer-event-logos-block.php:148
+#: sportspress/event/event-logos/basketball-event-logos-block.php:135
+#: sportspress/event/event-logos/esports-event-logos-block.php:182
+#: sportspress/event/event-logos/basketball-event-logos-inline.php:135
+#: sportspress/event/event-logos/football-event-logos-block.php:139
+#: sportspress/event/event-logos/esports-event-logos-inline.php:182
+msgid "Final Score"
+msgstr "Konačni rezultat"
+
+#: woocommerce/myaccount/form-edit-account.php:34
+msgid "First name"
+msgstr "Ime"
+
+#: template-parts/social-counters/social-instagram.php:20
+msgid "Follow Us on Instagram"
+msgstr "Pratite nas na Instagramu"
+
+#: template-parts/social-counters/social-twitch.php:20
+msgid "Follow Us on Twitch"
+msgstr ""
+
+#: template-parts/social-counters/social-twitter.php:20
+msgid "Follow Us on Twitter"
+msgstr "Predbilježi se na naš Twitter"
+
+#: template-parts/social-counters/social-youtube.php:20
+msgid "Follow Us on YouTube"
+msgstr ""
+
+#: functions.php:90 inc/template-functions.php:467
+msgid "Footer Menu"
+msgstr "Meni u podnožju"
+
+#: functions.php:283
+msgid "Footer Widget Area 1"
+msgstr ""
+
+#: functions.php:292
+msgid "Footer Widget Area 2"
+msgstr ""
+
+#: functions.php:301
+msgid "Footer Widget Area 3"
+msgstr ""
+
+#: functions.php:310
+msgid "Footer Widget Area 4"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:101
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:110
+#: sportspress/single-team/featured-player/content-player-soccer.php:55
+#: sportspress/single-team/featured-player/content-player-default.php:62
+msgid "Fouls"
+msgstr "Osobne pogreške"
+
+#: vc_templates/alc_player_stats_grid.php:126
+msgid "Free throw %"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:115
+#: sportspress/single-team/featured-player/content-player-default.php:33
+msgid "Free Throw Accuracy"
+msgstr "Preciznost u slobodnim bacanjima"
+
+#: sportspress/event/alc-event-timeline-horizontal.php:82
+#: sportspress/event/alc-event-timeline-vertical.php:64
+msgid "FT"
+msgstr ""
+
+#: sportspress/single-player.php:69
+msgid "Full Statistics"
+msgstr "Puna statistika"
+
+#: sportspress/event-details.php:53
+#: sportspress/event/alc-event-timeline-horizontal.php:81
+#: sportspress/event/alc-event-timeline-vertical.php:63
+msgid "Full Time"
+msgstr "Svršetak utakmice"
+
+#. Name of the template
+#: template-full-width.php:2
+msgid "Full Width"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:115
+#: sportspress/single-team/featured-player/content-player-football.php:69
+msgid "Fumbles lost"
+msgstr ""
+
+#: sportspress/single-player.php:66 sportspress/single-player.php:72
+#: sportspress/single-team.php:36 sportspress/single-team.php:43
+#: inc/sp-functions.php:140 inc/sp-functions.php:198
+msgid "Gallery"
+msgstr "Galerija"
+
+#: inc/acf-fields.php:985 inc/acf-fields.php:1404
+msgid "Gallery Roster Type"
+msgstr ""
+
+#: sportspress/countdown.php:264
+msgid "Game Countdown"
+msgstr "Odbrojavanje"
+
+#: vc_templates/alc_event_scoreboard/esports-alc_event_scoreboard.php:369
+#: sportspress/event/event-logos/esports-event-logos-block.php:405
+msgid "Game Duration"
+msgstr ""
+
+#: sportspress/event-logos-block.php:43
+#: vc_templates/alc_event_scoreboard.php:58
+#: vc_templates/alc_event_scoreboard/basketball-alc_event_scoreboard.php:314
+msgid "Game Statistics"
+msgstr "Statistike"
+
+#: sportspress/event-timeline.php:36 sportspress/event-timeline-vertical.php:37
+#: vc_templates/alc_event_scoreboard/soccer-alc_event_scoreboard.php:496
+#: sportspress/event/event-logos/soccer-event-logos-block.php:549
+msgid "Game Timeline"
+msgstr ""
+
+#: sportspress/player-slider-card__slide.php:155
+#: sportspress/player-cards__card.php:134
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:69
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:66
+#: sportspress/single-team/featured-player/content-player-soccer.php:21
+#: sportspress/single-team/featured-player/content-player-football.php:19
+msgid "Games"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:102
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:112
+#: sportspress/single-team/featured-player/content-player-default.php:63
+msgid "Games Played"
+msgstr "Odigrano"
+
+#: single-albums.php:148
+msgid "Go Back to the Albums"
+msgstr "Natrag na albume"
+
+#: sportspress/player-slider-card__slide.php:150
+#: sportspress/player-cards__card.php:129
+#: sportspress/player-event-graph-log.php:120
+#: vc_templates/alc_player_stats_chart.php:119
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:63
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:103
+#: sportspress/single-team/featured-player/content-player-soccer.php:18
+msgid "Goals"
+msgstr ""
+
+#: vc_templates/alc_player_stats_grid.php:159
+msgid "Goals per Game"
+msgstr ""
+
+#: sportspress/player-statistics-avg.php:89
+#: sportspress/player-statistics-circular-boxed.php:76
+msgid "Goals per game"
+msgstr ""
+
+#: sportspress/player-statistics-circular-boxed.php:100
+msgid "Gold/min"
+msgstr ""
+
+#: vc_templates/alc_team_leaders.php:52
+msgid "GP"
+msgstr ""
+
+#: inc/acf-fields.php:1005 inc/acf-fields.php:1250 inc/acf-fields.php:1424
+#: inc/acf-fields.php:1667
+msgid "Grid"
+msgstr ""
+
+#: woocommerce/myaccount/orders.php:57
+msgctxt "hash before order number"
+msgid "#"
+msgstr ""
+
+#: woocommerce/checkout/form-coupon.php:35
+msgid "Have a coupon?"
+msgstr "Imate kupon?"
+
+#: template-parts/header/header-secondary.php:15
+msgid "Header Banner"
+msgstr ""
+
+#: sportspress/player-block-thumbnail.php:70
+msgid "Height"
+msgstr "Visina"
+
+#: template-parts/page-hero-unit.php:84 template-parts/page-hero-unit.php:86
+#: template-parts/content-hero-slider-numbers.php:53
+#: template-parts/content-hero-slider-numbers.php:55
+msgid "Hero Image"
+msgstr "Hero slika"
+
+#: inc/acf-fields.php:91
+msgid "Hero Unit - Posts Slider"
+msgstr ""
+
+#: inc/acf-fields.php:90
+msgid "Hero Unit - Static"
+msgstr ""
+
+#: sportspress/event-list.php:161 sportspress/event-list.php:323
+#: sportspress/event-matrix.php:142
+msgid "Home"
+msgstr "Domaći"
+
+#: functions.php:202
+msgid "Home - Sidebar 1"
+msgstr "Početna stranica - bočna traka 1"
+
+#: functions.php:211
+msgid "Home - Sidebar 2"
+msgstr "Početna stranica - bočna traka 2"
+
+#: functions.php:220
+msgid "Home - Sidebar 3"
+msgstr "Početna stranica - bočna traka 3"
+
+#: sportspress/countdown.php:272
+msgid "hrs"
+msgstr "sati"
+
+#. URI of the theme
+msgid "http://bit.ly/alch-wp"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://bit.ly/dan_fisher"
+msgstr ""
+
+#: inc/acf-fields.php:2438 inc/acf-fields.php:2501
+msgid "Icon"
+msgstr "Ikona"
+
+#: inc/acf-fields.php:2414 inc/acf-fields.php:2477
+msgid "Image"
+msgstr "Slika"
+
+#: vc_templates/alc_images_carousel.php:102
+msgid "Image Caption"
+msgstr "Opis slike"
+
+#: vc_templates/alc_images_carousel.php:101
+msgid "Image Title"
+msgstr "Naslov slike"
+
+#: inc/acf-fields.php:1910
+msgid "Images"
+msgstr "Slike"
+
+#: sportspress/player-statistics-cards-boxed.php:24
+#: vc_templates/alc_player_stats_grid.php:71
+msgid "in all time"
+msgstr ""
+
+#: vc_templates/alc_player_stats.php:133
+#: sportspress/single-team/content-roster.php:196
+msgid "In career"
+msgstr ""
+
+#: vc_templates/alc_player_stats.php:138
+#: sportspress/single-team/content-roster.php:210
+msgid "In current season"
+msgstr ""
+
+#: sportspress/player-statistics-cards-boxed.php:30
+#: vc_templates/alc_player_stats_grid.php:75
+msgid "in current season"
+msgstr ""
+
+#: inc/acf-fields.php:624
+msgid "Injury"
+msgstr "Ozljeda"
+
+#: template-parts/social-counters/social-instagram.php:18
+msgid "Instagram"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:112
+#: sportspress/single-team/featured-player/content-player-football.php:66
+msgid "Interceptions thrown"
+msgstr ""
+
+#: template-parts/content-none.php:30
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for."
+msgstr "Čini se da ne možemo naći ono što tražite."
+
+#: inc/acf-fields.php:625
+msgid "Join"
+msgstr "Pridružite se"
+
+#: inc/template-functions.php:901
+msgid "K"
+msgstr ""
+
+#: sportspress/player-statistics-circular-boxed.php:96
+msgid "KDA Ratio"
+msgstr ""
+
+#: 404.php:188
+msgid "Keep Browsing"
+msgstr "Nastavak pregleda"
+
+#: sportspress/event/alc-event-timeline-horizontal.php:28
+#: sportspress/event/alc-event-timeline-vertical.php:28
+msgid "Kick Off"
+msgstr ""
+
+#: sportspress/player-event-graph-log.php:150
+#: vc_templates/alc_player_stats_chart.php:131
+msgid "Kills"
+msgstr ""
+
+#: sportspress/player-statistics-avg.php:121
+msgid "Kills P."
+msgstr ""
+
+#: vc_templates/alc_player_stats_grid.php:195
+msgid "Kills Participation"
+msgstr ""
+
+#: sportspress/event/alc-event-timeline-horizontal.php:37
+#: sportspress/event/alc-event-timeline-vertical.php:37
+msgid "KO"
+msgstr ""
+
+#: vc_templates/alc_event_scoreboard/esports-alc_event_scoreboard.php:28
+#: sportspress/event/event-logos/esports-event-logos-block.php:28
+msgid "L"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:38
+msgid "Last name"
+msgstr "Prezime"
+
+#: sportspress/single-team.php:36 sportspress/single-team.php:41
+#: inc/sp-functions.php:198 sportspress/single-team/content-results.php:33
+msgid "Latest Results"
+msgstr "Zadnji rezultati"
+
+#: sportspress/event-list.php:210 sportspress/event-list.php:465
+msgid "League"
+msgstr ""
+
+#: sportspress/player-details.php:115
+msgid "Leagues"
+msgstr ""
+
+#: comments.php:112 template-parts/post/comments/comments-alt.php:102
+#: template-parts/post/comments/comments-alt-card.php:103
+msgid "Leave a Reply"
+msgstr "Napišite komentar"
+
+#. %s is product title
+#: comments.php:113 woocommerce/single-product-reviews.php:96
+#: template-parts/post/comments/comments-alt.php:103
+#: template-parts/post/comments/comments-alt-card.php:104
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "Odgovorite %s"
+
+#. Name of the template
+#: template-left-sidebar.php:2
+msgid "Left Sidebar"
+msgstr "Lijeva bočna traka"
+
+#: template-parts/social-counters/social-fb.php:20
+msgid "Like Our Facebook Page"
+msgstr "Lajkaj našu Facebook stranicu"
+
+#: inc/acf-fields.php:2304 inc/acf-fields.php:2368 inc/acf-fields.php:2663
+msgid "Link"
+msgstr ""
+
+#: inc/acf-fields.php:2282 inc/acf-fields.php:2346
+msgid "Links"
+msgstr ""
+
+#: inc/acf-fields.php:1249 inc/acf-fields.php:1666
+msgid "List"
+msgstr ""
+
+#: inc/acf-fields.php:1083 inc/acf-fields.php:1500
+msgid "List Roster(s)"
+msgstr ""
+
+#: template-parts/widget-twitch.php:74 template-parts/widget-twitch.php:151
+msgid "Live"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:75
+msgid "Log in"
+msgstr ""
+
+#: woocommerce/global/form-login.php:65
+msgid "Login"
+msgstr "Prijava"
+
+#: woocommerce/myaccount/form-login.php:39
+msgid "Login to your account"
+msgstr "Prijava na vaš korisnički račun"
+
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:113
+#: sportspress/single-team/featured-player/content-player-football.php:67
+msgid "Longest"
+msgstr ""
+
+#: sportspress/tournament-bracket.php:48
+msgid "Loser Bracket"
+msgstr ""
+
+#: vc_templates/alc_player_stats_grid.php:154
+msgid "Loss Ratio"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:67 woocommerce/global/form-login.php:58
+msgid "Lost your password?"
+msgstr "Izgubili ste lozinku?"
+
+#: sportspress/event-list.php:225 sportspress/event-list.php:530
+#: sportspress/event-details.php:44
+msgid "Match Day"
+msgstr "Kolo"
+
+#: sportspress/event-statistics.php:107
+msgid "Match Stats"
+msgstr ""
+
+#: sportspress/event-logos-block.php:41
+#: vc_templates/alc_event_scoreboard.php:56
+msgid "Matchup"
+msgstr ""
+
+#: admin/menu-item-custom-fields/fields.php:45
+msgid "Mega Menu Widget Area"
+msgstr ""
+
+#: admin/menu-item-custom-fields/fields.php:39
+msgid "Mega Menu?"
+msgstr ""
+
+#: functions.php:229
+msgid "Megamenu Widget Area 1"
+msgstr ""
+
+#: functions.php:238
+msgid "Megamenu Widget Area 2"
+msgstr ""
+
+#: functions.php:247
+msgid "Megamenu Widget Area 3"
+msgstr ""
+
+#: functions.php:256
+msgid "Megamenu Widget Area 4"
+msgstr ""
+
+#: sportspress/countdown.php:273
+msgid "mins"
+msgstr "minuta"
+
+#: inc/template-functions.php:137
+msgctxt "Montserrat: on or off"
+msgid "on"
+msgstr ""
+
+#: sportspress/player-carousel-thumbs__slide-item.php:291
+msgid "More Info"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:38
+msgid "My account"
+msgstr ""
+
+#: sportspress/event-list.php:498
+#: woocommerce/order/order-details-customer.php:38
+#: woocommerce/order/order-details-customer.php:74
+#: woocommerce/single-product/meta.php:32
+msgid "N/A"
+msgstr "NEDOSTUPNO"
+
+#: sportspress/player-slider-carousel__item.php:63
+#: sportspress/player-slider-carousel__item.php:64
+#: sportspress/player-statistics-avg.php:273
+#: sportspress/player-statistics-avg.php:317
+#: sportspress/player-statistics-circular-boxed.php:205
+#: sportspress/player-statistics-circular-boxed.php:250
+#: sportspress/player-statistics-bars.php:166
+#: sportspress/player-slider-card__slide.php:77
+#: sportspress/player-slider-card__slide.php:78
+#: sportspress/player-slider-card__slide.php:79
+#: sportspress/player-slider-card__slide.php:80
+#: sportspress/player-block-thumbnail.php:126
+#: sportspress/player-cards__card.php:75 sportspress/player-cards__card.php:76
+#: sportspress/player-cards__card.php:77 sportspress/player-cards__card.php:78
+#: sportspress/player-carousel-thumbs__slide-item.php:152
+#: sportspress/player-carousel-thumbs__slide-item.php:153
+#: sportspress/player-carousel-thumbs__slide-item.php:154
+#: sportspress/player-carousel-thumbs__slide-item.php:155
+#: sportspress/player-carousel-thumbs__slide-item.php:211
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:27
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:28
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:29
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:30
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:31
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:32
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:64
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:65
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:66
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:92
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:93
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:94
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:95
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:96
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:97
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:98
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:99
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:100
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:101
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:62
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:63
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:64
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:77
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:78
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:79
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:80
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:81
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:82
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:83
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:84
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:85
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:90
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:57
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:58
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:59
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:60
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:87
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:88
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:89
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:90
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:91
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:92
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:93
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:94
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:95
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:96
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:97
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:98
+#: sportspress/single-team/featured-player/content-player-soccer.php:12
+#: sportspress/single-team/featured-player/content-player-soccer.php:13
+#: sportspress/single-team/featured-player/content-player-soccer.php:14
+#: sportspress/single-team/featured-player/content-player-soccer.php:15
+#: sportspress/single-team/featured-player/content-player-soccer.php:38
+#: sportspress/single-team/featured-player/content-player-soccer.php:39
+#: sportspress/single-team/featured-player/content-player-soccer.php:40
+#: sportspress/single-team/featured-player/content-player-soccer.php:41
+#: sportspress/single-team/featured-player/content-player-soccer.php:42
+#: sportspress/single-team/featured-player/content-player-soccer.php:43
+#: sportspress/single-team/featured-player/content-player-soccer.php:44
+#: sportspress/single-team/featured-player/content-player-soccer.php:45
+#: sportspress/single-team/featured-player/content-player-default.php:14
+#: sportspress/single-team/featured-player/content-player-default.php:15
+#: sportspress/single-team/featured-player/content-player-default.php:16
+#: sportspress/single-team/featured-player/content-player-default.php:39
+#: sportspress/single-team/featured-player/content-player-default.php:40
+#: sportspress/single-team/featured-player/content-player-default.php:41
+#: sportspress/single-team/featured-player/content-player-default.php:42
+#: sportspress/single-team/featured-player/content-player-default.php:43
+#: sportspress/single-team/featured-player/content-player-default.php:44
+#: sportspress/single-team/featured-player/content-player-default.php:45
+#: sportspress/single-team/featured-player/content-player-default.php:46
+#: sportspress/single-team/featured-player/content-player-default.php:47
+#: sportspress/single-team/featured-player/content-player-default.php:52
+#: sportspress/single-team/featured-player/content-player-football.php:14
+#: sportspress/single-team/featured-player/content-player-football.php:15
+#: sportspress/single-team/featured-player/content-player-football.php:16
+#: sportspress/single-team/featured-player/content-player-football.php:47
+#: sportspress/single-team/featured-player/content-player-football.php:48
+#: sportspress/single-team/featured-player/content-player-football.php:49
+#: sportspress/single-team/featured-player/content-player-football.php:50
+#: sportspress/single-team/featured-player/content-player-football.php:51
+#: sportspress/single-team/featured-player/content-player-football.php:52
+#: sportspress/single-team/featured-player/content-player-football.php:53
+#: sportspress/single-team/featured-player/content-player-football.php:54
+#: sportspress/single-team/featured-player/content-player-football.php:55
+#: sportspress/single-team/featured-player/content-player-football.php:56
+#: sportspress/player/heading/player-heading-boxed.php:173
+#: sportspress/player/heading/player-heading-fullwidth.php:229
+#: sportspress/player/heading/player-heading-fullwidth.php:247
+msgid "n/a"
+msgstr "n/a"
+
+#: woocommerce/single-product-reviews.php:109 sportspress/player-details.php:50
+#: sportspress/player/heading/player-heading-boxed.php:77
+msgid "Name"
+msgstr "Ime"
+
+#: sportspress/player-carousel-thumbs.php:39 sportspress/single-player.php:41
+#: sportspress/player-block-thumbnail.php:114 sportspress/player-details.php:61
+#: vc_templates/alc_staff_bio_card.php:89
+#: sportspress/single-team/staff/alc-team-roster-staff-blocks.php:106
+msgid "Nationality"
+msgstr "Nacionalnost"
+
+#: woocommerce/order/order-downloads.php:60
+msgid "Never"
+msgstr "Nikad"
+
+#: woocommerce/myaccount/form-edit-account.php:73
+msgid "New password (leave blank to leave unchanged)"
+msgstr "Nova lozinka (ostavite prazno da ostane ista)"
+
+#: woocommerce/myaccount/orders.php:114
+msgid "Next"
+msgstr "Slijedeća"
+
+#: woocommerce/myaccount/downloads.php:42
+msgid "No downloads available yet."
+msgstr "Još uvijek nema preuzimanja."
+
+#: vc_templates/alc_event_scoreboard.php:286
+msgid "No Event found."
+msgstr ""
+
+#: woocommerce/myaccount/orders.php:121
+msgid "No order has been made yet."
+msgstr "Još nema narudžbi."
+
+#: vc_templates/alc_player_stats_grid.php:56
+#: vc_templates/alc_player_stats_graph_log.php:42
+#: vc_templates/alc_player_stats.php:83
+#: vc_templates/alc_player_stats_chart.php:66
+#: vc_templates/alc_player_gbg_stats.php:45
+#, php-format
+msgid "No Player found with Player ID %s"
+msgstr ""
+
+#: sportspress/player-slider.php:87 sportspress/player-blocks.php:63
+#: sportspress/player-blocks-carousel.php:69 sportspress/player-cards.php:62
+#: vc_templates/alc_team_leaders.php:71
+#, php-format
+msgid "No Player List found with Player List ID %s"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:125
+msgid "No products in the cart."
+msgstr "Nema ničega u košarici."
+
+#. $s shipping destination.
+#: woocommerce/cart/cart-shipping.php:88
+#, php-format
+msgid "No shipping options were found for %s."
+msgstr ""
+
+#: template-parts/widget-twitch.php:63 template-parts/widget-twitch.php:140
+msgid "No Streams Found"
+msgstr ""
+
+#: vc_templates/alc_team_stats.php:85 vc_templates/alc_games_history.php:75
+#, php-format
+msgid "No Team found with Team ID %s"
+msgstr ""
+
+#: inc/acf-fields.php:92 inc/acf-fields.php:436 inc/acf-fields.php:463
+msgid "None"
+msgstr "Ništa"
+
+#: woocommerce/order/order-details.php:135
+msgid "Note:"
+msgstr "Bilješka:"
+
+#: template-parts/content-none.php:24
+msgid "Nothing Found!"
+msgstr "Nema ničega!"
+
+#: sportspress/single-player/content-bio.php:52
+msgid "Nothing Found. Please check Player Bio section."
+msgstr "Nema sadržaja."
+
+#: inc/acf-fields.php:1981
+msgid "Number of Posts"
+msgstr "Broj objava"
+
+#: inc/acf-fields.php:1225 inc/acf-fields.php:1642
+msgid "Off"
+msgstr ""
+
+#: sportspress/event-officials-list.php:16
+#: sportspress/event-officials-table.php:16
+msgid "Officials"
+msgstr ""
+
+#: template-parts/widget-twitch.php:76 template-parts/widget-twitch.php:153
+msgid "Offline"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:111
+#: sportspress/single-team/featured-player/content-player-soccer.php:56
+msgid "Offsides"
+msgstr ""
+
+#: inc/acf-fields.php:1224 inc/acf-fields.php:1641
+msgid "On"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:171
+msgid ""
+"Only logged in customers who have purchased this product may leave a review."
+msgstr ""
+"Samo prijavljeni kupci koji su kupili ovaj proizvod smiju napraviti "
+"recenziju."
+
+#: 404.php:152
+msgid "OOOOPS! Page not Found"
+msgstr "OOOOPS! Stranicu nije moguće naći!"
+
+#. If there are characters in your language that are not
+#. supported by Roboto Condensed, translate this to 'off'. Do not translate
+#. into your own language.
+#: inc/template-functions.php:122
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr ""
+
+#: template-parts/post-filter.php:96
+msgid "Order"
+msgstr "Redosljed"
+
+#: woocommerce/order/order-again.php:22
+msgid "Order again"
+msgstr "Ponovna narudžba"
+
+#: template-parts/post-filter.php:73
+msgid "Order By"
+msgstr "Poredati po"
+
+#: woocommerce/order/order-details.php:61
+msgid "Order details"
+msgstr "Detalji narudžbe"
+
+#: woocommerce/checkout/thankyou.php:52
+msgid "Order number:"
+msgstr "Broj narudžbe:"
+
+#: inc/wc-functions.php:202
+msgid "Orders"
+msgstr "Nalozi"
+
+#: template-parts/post/post-navigation-2.php:26
+#: template-parts/post/post-navigation-4.php:25
+msgid "Other Articles"
+msgstr "Ostale objave"
+
+#: inc/acf-fields.php:629
+msgid "Other Negative"
+msgstr ""
+
+#: inc/acf-fields.php:628
+msgid "Other Positive"
+msgstr ""
+
+#: sportspress/single-player.php:68 sportspress/single-team.php:38
+#: inc/sp-functions.php:140 inc/sp-functions.php:198
+msgid "Overview"
+msgstr "Pregled"
+
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:107
+#: sportspress/single-team/featured-player/content-player-soccer.php:52
+msgid "P.Kick Attempts"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:108
+#: sportspress/single-team/featured-player/content-player-soccer.php:53
+msgid "P.Kick Goals"
+msgstr ""
+
+#: inc/acf-fields.php:77
+msgid "Page Heading"
+msgstr "Zaglavlje stranice"
+
+#: inc/acf-fields.php:73
+msgid "Page Options"
+msgstr "Podešenja stranice"
+
+#: inc/template-tags.php:550 template-parts/content-blog-3.php:57
+#: template-parts/content.php:78 template-parts/content-blog-1.php:66
+#: template-parts/content-blog-1-3cols.php:54
+msgid "Pages:"
+msgstr "Stranice:"
+
+#: sportspress/player-cards__card.php:112
+msgid "Pass %"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:78
+#: sportspress/single-team/featured-player/content-player-soccer.php:32
+msgid "PASS ACC"
+msgstr ""
+
+#: sportspress/player-slider-card__slide.php:121
+msgid "Pass Accuracy"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:51
+#: woocommerce/myaccount/form-login.php:118
+#: woocommerce/global/form-login.php:44
+msgid "Password"
+msgstr "Lozinka"
+
+#: woocommerce/myaccount/form-edit-account.php:66
+msgid "Password change"
+msgstr "Izmjena lozinke"
+
+#: inc/template-functions.php:340
+msgid "Password:"
+msgstr "Lozinka:"
+
+#: sportspress/single-player.php:39 sportspress/player-details.php:104
+#: vc_templates/alc_staff_bio_card.php:112
+msgid "Past Teams"
+msgstr "Prijašnje ekipe"
+
+#: woocommerce/checkout/thankyou.php:36
+msgid "Pay"
+msgstr "Plaćanje"
+
+#: woocommerce/checkout/thankyou.php:75
+msgid "Payment method:"
+msgstr "Način plaćanja:"
+
+#: inc/wc-functions.php:211
+msgid "Payment Methods"
+msgstr "Načini plaćanja"
+
+#: sportspress/player-statistics-avg.php:278
+#: sportspress/player-statistics-avg.php:322
+#: sportspress/player-statistics-circular-boxed.php:210
+#: sportspress/player-statistics-circular-boxed.php:255
+msgid "per carry"
+msgstr ""
+
+#: sportspress/player-statistics-avg.php:280
+#: sportspress/player-statistics-avg.php:324
+#: sportspress/player-statistics-circular-boxed.php:212
+#: sportspress/player-statistics-circular-boxed.php:257
+msgid "per reception"
+msgstr ""
+
+#: sportspress/player-slider-card__slide.php:131
+msgid "Performance"
+msgstr ""
+
+#: vc_templates/alc_staff_bio_card.php:124
+msgid "Phone"
+msgstr ""
+
+#: sportspress/staff-gallery-thumbnail.php:44
+#: sportspress/single-team/staff/alc-team-roster-staff-blocks.php:84
+msgid "Phone:"
+msgstr "Telefon:"
+
+#: woocommerce/cart/cart.php:33
+msgid "Photo"
+msgstr "Fotografija"
+
+#: inc/wc-functions.php:101
+msgid "Place order"
+msgstr "Napravi narudžbu"
+
+#: vc_templates/alc_player_stats_grid.php:177
+msgid "Played %"
+msgstr ""
+
+#: sportspress/event-user-scores.php:138
+#: sportspress/event-performance-table.php:79
+#: sportspress/event-performance-table.php:246 sportspress/single-player.php:56
+#: sportspress/event/alc-event-timeline-horizontal.php:56
+#: sportspress/event/alc-event-timeline-vertical.php:41
+msgid "Player"
+msgstr "Igrač"
+
+#: inc/acf-fields.php:546
+msgid "Player Bio"
+msgstr ""
+
+#: inc/acf-fields.php:574
+msgid "Player Bio Content"
+msgstr "Sadržaj biografije igrača"
+
+#: inc/acf-fields.php:593
+msgid "Player Bio Events"
+msgstr "Događaji u biografiji igrača"
+
+#: inc/acf-fields.php:1906
+msgid "Player Gallery"
+msgstr "Galerija igrača"
+
+#: inc/acf-fields.php:2022
+msgid "Player Header"
+msgstr ""
+
+#: inc/acf-fields.php:700
+msgid "Player Heading Photo"
+msgstr "Fotografija igrača za zaglavlje"
+
+#: inc/acf-fields.php:550
+msgid "Player Image"
+msgstr "Fotografija igrača"
+
+#: inc/acf-fields.php:2026
+msgid "Player List"
+msgstr ""
+
+#: sportspress/single-player/content-bio.php:66
+msgid "Player Newslog"
+msgstr "Igrač u objavama"
+
+#: sportspress/event-performance-table.php:140
+msgid "Player of the Match"
+msgstr ""
+
+#: inc/acf-fields.php:1955
+msgid "Player Related News"
+msgstr "Objave vezane uz igrača"
+
+#: vc_templates/alc_team_points_history/alc_team_points_history-default.php:37
+#: vc_templates/alc_team_points_history/alc_team_points_history-football.php:37
+msgid "POINTS"
+msgstr "KOŠEVA"
+
+#: sportspress/player-event-graph-log.php:105
+#: vc_templates/alc_player_stats_chart.php:113
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:67
+#: sportspress/single-team/featured-player/content-player-default.php:19
+msgid "Points"
+msgstr "Koševa"
+
+#: sportspress/player-statistics-avg.php:99
+#: sportspress/player-statistics-circular-boxed.php:86
+msgid "Points per game"
+msgstr ""
+
+#: sportspress/league-table.php:118
+msgid "Pos"
+msgstr "Poz"
+
+#: sportspress/single-player.php:40 sportspress/player-details.php:72
+msgid "Position"
+msgstr "Pozicija"
+
+#: inc/acf-fields.php:2473
+msgid "Position Options"
+msgstr ""
+
+#: inc/template-tags.php:36
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr "Objavio %s"
+
+#: inc/template-tags.php:31
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Objavljeno %s"
+
+#: inc/acf-fields.php:2541
+msgid "Post Layout"
+msgstr ""
+
+#: inc/acf-fields.php:2553
+msgid "Post Layout 1"
+msgstr ""
+
+#: inc/acf-fields.php:2554
+msgid "Post Layout 2"
+msgstr ""
+
+#: inc/acf-fields.php:2555
+msgid "Post Layout 3"
+msgstr ""
+
+#: inc/acf-fields.php:2556
+msgid "Post Layout 4"
+msgstr ""
+
+#: inc/acf-fields.php:2557
+msgid "Post Layout 5"
+msgstr ""
+
+#: inc/acf-fields.php:2558
+msgid "Post Layout 6"
+msgstr ""
+
+#: inc/acf-fields.php:2559
+msgid "Post Layout 7"
+msgstr ""
+
+#: inc/acf-fields.php:2537
+msgid "Post Options"
+msgstr ""
+
+#: inc/acf-fields.php:1959
+msgid "Post Tags"
+msgstr "Oznake objava"
+
+#: comments.php:115 template-parts/post/comments/comments-alt.php:105
+#: template-parts/post/comments/comments-alt-card.php:106
+msgid "Post Your Comment"
+msgstr "Pošaljite komentar"
+
+#: woocommerce/cart/shipping-calculator.php:91
+msgid "Postcode / ZIP"
+msgstr "Poštanski broj"
+
+#: woocommerce/cart/shipping-calculator.php:90
+#, fuzzy
+#| msgid "Postcode / ZIP"
+msgid "Postcode / ZIP:"
+msgstr "Poštanski broj"
+
+#: sportspress/event-list.php:519 sportspress/event-logos-inline.php:13
+#: sportspress/tournament-bracket-table.php:117
+#: sportspress/event-logos-block.php:67
+#: vc_templates/alc_event_scoreboard/football-alc_event_scoreboard.php:128
+#: sportspress/event/event-logos/soccer-event-logos-inline.php:128
+#: sportspress/event/event-logos/football-event-logos-inline.php:131
+#: sportspress/event/event-logos/soccer-event-logos-block.php:144
+#: sportspress/event/event-logos/basketball-event-logos-block.php:131
+#: sportspress/event/event-logos/esports-event-logos-block.php:178
+#: sportspress/event/event-logos/basketball-event-logos-inline.php:131
+#: sportspress/event/event-logos/football-event-logos-block.php:135
+#: sportspress/event/event-logos/esports-event-logos-inline.php:178
+msgid "Preview"
+msgstr "Najava"
+
+#: woocommerce/myaccount/orders.php:110
+msgid "Previous"
+msgstr "Prethodna"
+
+#: woocommerce/cart/cart.php:35 woocommerce/cart/cart.php:111
+msgid "Price"
+msgstr "Cijena"
+
+#: inc/acf-fields.php:814
+msgid "Primary"
+msgstr ""
+
+#: functions.php:87 inc/template-functions.php:465
+msgid "Primary Menu"
+msgstr "Glavni meni"
+
+#: woocommerce/cart/proceed-to-checkout-button.php:39
+msgid "Proceed to checkout"
+msgstr "Nastavak na završetak kupnje"
+
+#: woocommerce/order/order-details.php:68
+#: woocommerce/checkout/review-order.php:27 woocommerce/cart/cart.php:34
+#: woocommerce/cart/cart.php:83
+msgid "Product"
+msgstr "Proizvod"
+
+#: inc/acf-fields.php:757
+msgid "Product Gradient Color 1"
+msgstr "Stupnjevanje boje proizvoda 1"
+
+#: inc/acf-fields.php:772
+msgid "Product Gradient Color 2"
+msgstr "Stupnjevanje boje proizvoda 2"
+
+#: inc/acf-fields.php:753
+msgid "Product Options"
+msgstr "Opcije proizvoda"
+
+#: inc/acf-fields.php:2052
+msgid "Progress bars, radar charts etc."
+msgstr ""
+
+#: functions.php:265
+msgid "Pushy Panel"
+msgstr ""
+
+#: woocommerce/cart/cart.php:36 woocommerce/cart/cart.php:117
+msgid "Quantity"
+msgstr "Količina"
+
+#: template-parts/post-filter.php:81
+msgid "Random"
+msgstr "Slučajni redosljed"
+
+#: sportspress/player-list.php:167
+msgid "Rank"
+msgstr "Rang"
+
+#: woocommerce/single-product-reviews.php:154
+msgid "Rate&hellip;"
+msgstr "Ocjena&hellip;"
+
+#: sportspress/player-slider-card__slide.php:142
+msgid "Read Full Bio"
+msgstr ""
+
+#: sportspress/player-cards__card.php:121
+#: vc_templates/alc_featured_post.php:218
+msgid "Read More"
+msgstr "Detaljnije"
+
+#: template-parts/content-none.php:18
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Spremni za slanje svoje prve objave? <a href=\"%1$s\">Počnite ovdje</a>."
+
+#: sportspress/single-team/featured-player/content-player-default.php:21
+msgid "Reb"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:97
+#: sportspress/single-team/featured-player/content-player-default.php:59
+msgid "Rebounds"
+msgstr "Skokovi"
+
+#: sportspress/player-statistics-avg.php:107
+msgid "Rebounds per game"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:69
+msgid "Rebs"
+msgstr "Skokovi"
+
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:71
+#: sportspress/single-team/featured-player/content-player-football.php:21
+msgid "Rec Avg"
+msgstr ""
+
+#: sportspress/event-list.php:517 sportspress/event-logos-inline.php:11
+#: sportspress/tournament-bracket-table.php:115
+#: sportspress/event-logos-block.php:65
+msgid "Recap"
+msgstr "Osvrt na utakmicu"
+
+#: sportspress/player-event-graph-log.php:143
+#: vc_templates/alc_player_stats_chart.php:127
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:110
+#: sportspress/single-team/featured-player/content-player-football.php:64
+msgid "Receiving yards"
+msgstr ""
+
+#: single-videos.php:67 template-parts/post/video/post-video.php:98
+msgid "Recent Videos"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:114
+#: sportspress/single-team/featured-player/content-player-soccer.php:50
+msgid "Red Cards"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:132
+msgid "Register"
+msgstr "Registracija"
+
+#: woocommerce/myaccount/form-login.php:94
+msgid "Register Now"
+msgstr "Registrirajte se sada"
+
+#: sportspress/single-player.php:66 sportspress/single-player.php:71
+#: inc/sp-functions.php:140
+msgid "Related News"
+msgstr "Vezane objave"
+
+#: woocommerce/single-product/related.php:41
+msgid "Related products"
+msgstr "Povezani proizvodi"
+
+#: woocommerce/myaccount/form-login.php:61 woocommerce/global/form-login.php:54
+msgid "Remember me"
+msgstr "Zapamti me"
+
+#: woocommerce/cart/cart.php:38
+msgid "Remove"
+msgstr "Uklanjanje"
+
+#. %s is the product name
+#: woocommerce/cart/cart.php:157 woocommerce/cart/mini-cart.php:67
+#, php-format
+msgid "Remove %s from cart"
+msgstr ""
+
+#: inc/acf-fields.php:212 inc/acf-fields.php:2169
+msgid "Remove Overlay Pattern?"
+msgstr ""
+
+#: inc/template-tags.php:332 inc/template-tags.php:397
+msgid "Reply"
+msgstr "Odgovor"
+
+#: woocommerce/myaccount/form-login.php:47
+#: woocommerce/myaccount/form-login.php:51
+#: woocommerce/myaccount/form-login.php:104
+#: woocommerce/myaccount/form-login.php:111
+#: woocommerce/myaccount/form-login.php:118
+#: woocommerce/global/form-login.php:38 woocommerce/global/form-login.php:44
+msgid "Required"
+msgstr ""
+
+#: sportspress/player-event-game-by-game.php:157 sportspress/event-list.php:168
+#: sportspress/event-list.php:193 sportspress/event-list.php:201
+#: sportspress/event-list.php:341 sportspress/event-list.php:400
+#: sportspress/event-list.php:430 sportspress/event-results.php:21
+msgid "Results"
+msgstr "Ekipne statistike"
+
+#: 404.php:178
+msgid "Return to Home"
+msgstr "Povratak na početnu stranicu."
+
+#: woocommerce/single-product-reviews.php:52
+msgid "Reviews"
+msgstr "Recenzije"
+
+#. If there are characters in your language that are not
+#. supported by Exo 2, translate this to 'off'. Do not translate
+#. into your own language.
+#: inc/template-functions.php:110
+msgctxt "Roboto font: on or off"
+msgid "on"
+msgstr ""
+
+#: sportspress/single-team.php:36 sportspress/single-team.php:39
+#: inc/sp-functions.php:198
+msgid "Roster"
+msgstr "Igrači"
+
+#: sportspress/tournament-bracket-table.php:37
+#, php-format
+msgid "Round %s"
+msgstr ""
+
+#: sportspress/player-event-graph-log.php:135
+#: vc_templates/alc_player_stats_chart.php:125
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:108
+#: sportspress/single-team/featured-player/content-player-football.php:62
+msgid "Rushing yards"
+msgstr ""
+
+#: inc/wc-functions.php:696
+msgid "Sale!"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-address.php:46
+msgid "Save address"
+msgstr "Spremite adresu"
+
+#: woocommerce/myaccount/form-edit-account.php:94
+msgid "Save changes"
+msgstr "Spremanje izmjena"
+
+#: comments.php:144 template-parts/post/comments/comments-alt.php:134
+#: template-parts/post/comments/comments-alt-card.php:135
+msgid "Save my name and email in this browser for the next time I comment."
+msgstr ""
+
+#: sportspress/single-team.php:36 sportspress/single-team.php:42
+#: inc/sp-functions.php:198 sportspress/single-team/content-schedule.php:33
+msgid "Schedule"
+msgstr "Raspored utakmica"
+
+#: inc/template-functions.php:1033
+msgid "Search"
+msgstr "Pretraga"
+
+#: woocommerce/product-searchform.php:24
+msgid "Search for:"
+msgstr "Traži:"
+
+#: woocommerce/product-searchform.php:26
+msgid "Search products&hellip;"
+msgstr "Pretraga proizvoda&hellip;"
+
+#: search.php:65 search.php:83
+msgid "Search Results"
+msgstr "Pretraga rezultata"
+
+#: inc/template-functions.php:1031
+msgid "Search text..."
+msgstr "Pretraga teksta..."
+
+#: sportspress/event-list.php:213 sportspress/event-list.php:474
+msgid "Season"
+msgstr "Sezona"
+
+#: sportspress/player-details.php:126
+#: sportspress/player/heading/player-heading-fullwidth.php:202
+msgid "Seasons"
+msgstr "Sezone"
+
+#: inc/acf-fields.php:829
+msgid "Secondary"
+msgstr ""
+
+#: functions.php:88
+msgid "Secondary Menu"
+msgstr ""
+
+#: sportspress/countdown.php:274
+msgid "secs"
+msgstr "sekundi"
+
+#: 404.php:159
+msgid "Seems that we have a problem!"
+msgstr "Čini se da ima nekih poteškoća!"
+
+#: woocommerce/cart/shipping-calculator.php:32
+msgid "Select a country / region&hellip;"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:58
+msgid "Select an option&hellip;"
+msgstr ""
+
+#: inc/acf-fields.php:1817 inc/acf-fields.php:1864
+msgid "Select Calendars"
+msgstr ""
+
+#: inc/acf-fields.php:1820
+msgid "Select Calendars you want to display on Team Results page."
+msgstr ""
+
+#: inc/acf-fields.php:1867
+msgid "Select Calendars you want to display on Team Schedule page."
+msgstr ""
+
+#: inc/acf-fields.php:1152 inc/acf-fields.php:1569
+msgid "Select Featured Player"
+msgstr "Odaberite istaknutog igrača"
+
+#: inc/acf-fields.php:954 inc/acf-fields.php:1373
+msgid "Select Gallery Roster"
+msgstr ""
+
+#: inc/acf-fields.php:1772
+msgid "Select Leagues you want to display on Team Standings page."
+msgstr "Odaberite takmičenje koje želite prikazati na stranici Tablica."
+
+#: inc/acf-fields.php:1102 inc/acf-fields.php:1519
+msgid "Select List Roster(s)"
+msgstr ""
+
+#: inc/acf-fields.php:80
+msgid "Select Page Heading Type"
+msgstr "Odaberite tip zaglavlja stranice"
+
+#: inc/acf-fields.php:2029
+msgid "Select Player List for statistics comparing."
+msgstr ""
+
+#: admin/menu-item-custom-fields/fields.php:168
+msgid "Select Widget Area"
+msgstr ""
+
+#: inc/acf-fields.php:2441
+msgid "Selected icon used to represent type of character in various parts."
+msgstr ""
+
+#: inc/acf-fields.php:2504
+msgid "Selected icon used to represent type of position in various parts."
+msgstr ""
+
+#: inc/acf-fields.php:1962
+msgid "Selected Posts tag that are related to the Player."
+msgstr "Odaberite oznaku objave povezanu s igračem."
+
+#: inc/acf-fields.php:2599
+msgid "Separate video from the main content?"
+msgstr ""
+
+#: woocommerce/checkout/form-shipping.php:37
+msgid "Ship to a different address?"
+msgstr "Dostava na drugu adresu?"
+
+#: woocommerce/cart/cart-shipping.php:29 woocommerce/cart/cart-totals.php:44
+#: woocommerce/cart/cart-totals.php:81 woocommerce/cart/cart-totals.php:82
+msgid "Shipping"
+msgstr "Dostava"
+
+#: woocommerce/order/order-details-customer.php:70
+#: woocommerce/myaccount/form-edit-address.php:20
+msgid "Shipping address"
+msgstr "Adresa za dostavu"
+
+#: woocommerce/cart/cart-shipping.php:69
+#, fuzzy
+#| msgid ""
+#| "Shipping costs will be calculated once you have provided your address."
+msgid "Shipping costs are calculated during checkout."
+msgstr "Troškovi dostave će se izračunati kada unesete svoju adresu."
+
+#: woocommerce/checkout/form-shipping.php:32
+msgid "Shipping Details"
+msgstr "Detalji dostave"
+
+#: woocommerce/cart/cart-shipping.php:61
+msgid "Shipping options will be updated during checkout."
+msgstr ""
+
+#. $s shipping destination.
+#: woocommerce/cart/cart-shipping.php:58
+#, php-format
+msgid "Shipping to %s."
+msgstr ""
+
+#: functions.php:325
+msgid "Shop Sidebar"
+msgstr "Bočna traka kod dućana"
+
+#: functions.php:327
+msgid "Shop Sidebar that appears on Shop pages."
+msgstr "Bočna traka dućana koja se pokazuje na stranicama dućana."
+
+#: sportspress/player-cards__card.php:102
+msgid "Shot %"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:77
+#: sportspress/single-team/featured-player/content-player-soccer.php:31
+msgid "SHOT ACC"
+msgstr ""
+
+#: sportspress/player-slider-card__slide.php:111
+#: sportspress/single-team/featured-player/content-player-default.php:32
+msgid "Shot Accuracy"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:64
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:105
+#: sportspress/single-team/featured-player/content-player-soccer.php:19
+msgid "Shots"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:106
+#: sportspress/single-team/featured-player/content-player-soccer.php:51
+msgid "Shots on Target"
+msgstr ""
+
+#: inc/wc-functions.php:362
+#, php-format
+msgid "Show %s per page"
+msgstr ""
+
+#: inc/acf-fields.php:2049
+msgid "Show Advanced Stats?"
+msgstr ""
+
+#: functions.php:193
+msgid "Sidebar"
+msgstr "Bočna traka"
+
+#: woocommerce/single-product/tabs/tabs.php:49
+#: woocommerce/single-product/tabs/tabs.php:111
+msgctxt "single product: subtitle"
+msgid "Product"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:32
+msgid "SKU:"
+msgstr ""
+
+#: inc/acf-fields.php:1426
+msgid "Slider"
+msgstr "Klizna prezentacija"
+
+#: inc/acf-fields.php:1056 inc/acf-fields.php:1441
+msgid "Slider Autoplay"
+msgstr "Automatsko pokretanje prezentacije"
+
+#: inc/acf-fields.php:1024 inc/acf-fields.php:1468
+msgid "Slider Custom Background Image"
+msgstr "Prilagođena slika pozadine klizne prezentacije."
+
+#: inc/acf-fields.php:1008
+msgid "Slider Default"
+msgstr ""
+
+#: inc/template-functions.php:603
+msgid "Slider processed"
+msgstr ""
+
+#: inc/acf-fields.php:1007
+msgid "Slider Soccer"
+msgstr ""
+
+#: template-parts/content-none.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Žao nam je  ali nije nađeno ništa što bi odgovaralo pojmovima koje ste "
+"tražili. Pokušajte ponovno s drugim pojmovima."
+
+#. If there are characters in your language that are not
+#. supported by Roboto, translate this to 'off'. Do not translate
+#. into your own language.
+#: inc/template-functions.php:134
+#, fuzzy
+#| msgid "None"
+msgctxt "Source Sans 3 font: on or off"
+msgid "on"
+msgstr "Ništa"
+
+#. Description of the theme
+msgid "Sports Club and News WordPress Theme"
+msgstr ""
+
+#: sportspress/event-staff.php:26 sportspress/event-staff.php:50
+#: inc/acf-fields.php:1210 inc/acf-fields.php:1627
+#: sportspress/single-team/staff/alc-team-roster-staff-blocks.php:38
+#: sportspress/single-team/staff/alc-team-roster-staff-blocks.php:127
+#: sportspress/single-team/staff/alc-team-roster-staff-gallery.php:29
+#: sportspress/single-team/staff/alc-team-roster-staff-gallery.php:77
+msgid "Staff"
+msgstr ""
+
+#: inc/acf-fields.php:1229 inc/acf-fields.php:1646
+msgid "Staff Display Type"
+msgstr ""
+
+#: inc/acf-fields.php:1265 inc/acf-fields.php:1682
+msgid "Staff Position"
+msgstr ""
+
+#: sportspress/single-team.php:36 sportspress/single-team.php:40
+#: inc/sp-functions.php:198
+msgid "Standings"
+msgstr "Tablice"
+
+#: sportspress/event-performance-table.php:143
+#: sportspress/event-performance-table.php:146
+msgid "Stars"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:56
+#: woocommerce/cart/shipping-calculator.php:57
+#: woocommerce/cart/shipping-calculator.php:69
+#: woocommerce/cart/shipping-calculator.php:70
+msgid "State / County"
+msgstr "Država / zemlja"
+
+#: sportspress/single-player.php:66 inc/sp-functions.php:140
+msgid "Statistics"
+msgstr "Statistika"
+
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:99
+#: sportspress/single-team/featured-player/content-player-default.php:64
+msgid "Steals"
+msgstr "Ukradene lopte"
+
+#: woocommerce/single-product-reviews.php:101
+#: sportspress/event-user-results.php:110 sportspress/event-user-scores.php:129
+#: inc/template-functions.php:340
+msgid "Submit"
+msgstr "Podnesi"
+
+#: woocommerce/product-searchform.php:28
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: sportspress/event-user-results.php:109
+msgid "Submit Your Results"
+msgstr ""
+
+#: sportspress/event-user-scores.php:128
+msgid "Submit Your Scores"
+msgstr ""
+
+#: woocommerce/checkout/review-order.php:28
+#: woocommerce/checkout/review-order.php:60 woocommerce/cart/cart.php:143
+#: woocommerce/cart/cart-totals.php:69 woocommerce/cart/cart-totals.php:70
+#: woocommerce/cart/mini-cart.php:134
+msgid "Subtotal"
+msgstr "Međuzbroj"
+
+#: sportspress/player/heading/player-heading-boxed.php:78
+msgid "Surname"
+msgstr ""
+
+#: vc_templates/alc_team_leaders.php:51
+msgid "T"
+msgstr ""
+
+#: sportspress/player-statistics-avg.php:130
+msgid "T.Assists"
+msgstr ""
+
+#: sportspress/player-statistics-avg.php:131
+msgid "T.Games"
+msgstr ""
+
+#: sportspress/player-statistics-avg.php:129
+msgid "T.Goals"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:36
+msgid "Tag:"
+msgid_plural "Tags:"
+msgstr[0] "Oznaka:"
+msgstr[1] ""
+msgstr[2] "Oznake;"
+
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:83
+#: sportspress/single-team/featured-player/content-player-football.php:42
+msgid "TD%"
+msgstr ""
+
+#: sportspress/event-user-results.php:120 sportspress/event-results.php:111
+#: inc/sp-functions.php:853
+#: sportspress/event/alc-event-timeline-horizontal.php:26
+#: sportspress/event/alc-event-timeline-vertical.php:26
+msgid "Team"
+msgstr "Ekipa"
+
+#: inc/acf-fields.php:810
+msgid "Team Colors"
+msgstr ""
+
+#: inc/acf-fields.php:880
+msgid "Team Gallery"
+msgstr "Galerija ekipa"
+
+#: inc/acf-fields.php:1813
+msgid "Team Latest Results"
+msgstr ""
+
+#: inc/acf-fields.php:1769
+msgid "Team Leagues"
+msgstr "Natjecanja"
+
+#: vc_templates/alc_player_stats/alc_player_stats-basketball.php:140
+#: sportspress/single-team/featured-player/content-player-default.php:81
+msgid "Team Logo"
+msgstr "Logo ekipe"
+
+#: inc/acf-fields.php:931 inc/acf-fields.php:1350
+msgid "Team Roster"
+msgstr "Igrači"
+
+#: inc/acf-fields.php:1860
+msgid "Team Schedule"
+msgstr ""
+
+#: inc/acf-fields.php:1765
+msgid "Team Standings"
+msgstr "Tablice"
+
+#: sportspress/event-list.php:182 sportspress/event-list.php:376
+msgid "Teams"
+msgstr "Ekipe"
+
+#: sportspress/event-user-results.php:94 sportspress/event-user-scores.php:110
+msgid "Thank you!"
+msgstr ""
+
+#: 404.php:167
+msgid ""
+"The page you are looking for has been moved or doesn't exist anymore, if you "
+"like you can return to our homepage. If the problem persists, please send us "
+"an email to <a href=\"mailto:info@alchemists.com\">info@alchemists.com</a>"
+msgstr ""
+"Stranica koju tražite je preseljena ili više ne postoji. Ako želite možete "
+"se vratiti na početnu stranicu. Ako imate pitanja, pošaljite mail na adresu "
+"<a href=\"mailto:zdenko.skiljan@kksamobor.hr\">zdenko.skiljan@kksamobor."
+"hr</a>"
+
+#: sportspress/single-team.php:28
+msgid "The Team"
+msgstr "Ekipa"
+
+#: woocommerce/single-product-reviews.php:82
+msgid "There are no reviews yet."
+msgstr "Još nema recenzija."
+
+#: woocommerce/cart/cart-shipping.php:74
+msgid ""
+"There are no shipping options available. Please ensure that your address has "
+"been entered correctly, or contact us if you need any help."
+msgstr ""
+
+#: inc/acf-fields.php:2544
+msgid "This option overrides the general post layout."
+msgstr ""
+
+#: functions.php:267
+msgid "This panel slides from right side and works only on desktop."
+msgstr ""
+
+#: inc/acf-fields.php:707
+msgid "This photo displayed in the Page Header and Featured Player widgets."
+msgstr ""
+"Ova se fotografija prikazuje u Page Header i i Widgetu Featured Player."
+
+#: woocommerce/single-product/add-to-cart/variable.php:32
+msgid "This product is currently out of stock and unavailable."
+msgstr "Ovaj proizvod je trenutno neraspoloživ i nedostupan."
+
+#: woocommerce/myaccount/form-edit-account.php:45
+msgid ""
+"This will be how your name will be displayed in the account section and in "
+"reviews"
+msgstr ""
+
+#: sportspress/event-list.php:176 sportspress/event-list.php:191
+#: sportspress/event-list.php:197 sportspress/event-list.php:362
+#: sportspress/event-list.php:389 sportspress/event-list.php:417
+#: sportspress/event-details.php:27
+msgid "Time"
+msgstr "Vrijeme"
+
+#: sportspress/event-list.php:165 sportspress/event-list.php:166
+#: sportspress/event-list.php:205 sportspress/event-list.php:327
+#: sportspress/event-list.php:447
+msgid "Time/Results"
+msgstr "Vr./Rez"
+
+#: inc/acf-fields.php:89
+msgid "Title"
+msgstr "Naslov"
+
+#: inc/template-functions.php:339
+msgid "To view this protected post, enter the password below:"
+msgstr "Unesite lozinku ispod ako želite vidjeti zaštićenu objavu:"
+
+#: functions.php:89 inc/template-functions.php:466
+msgid "Top Menu"
+msgstr ""
+
+#: inc/sp-functions.php:396
+msgid "tot"
+msgstr ""
+
+#: sportspress/event-performance-table.php:285
+#: woocommerce/order/order-details.php:69
+#: woocommerce/checkout/review-order.php:107 woocommerce/cart/cart.php:37
+#: woocommerce/cart/cart-totals.php:130 woocommerce/cart/cart-totals.php:131
+msgid "Total"
+msgstr "Ukupno"
+
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:38
+msgid "Total Assists"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:40
+msgid "Total Damage"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:37
+msgid "Total Deaths"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:114
+#: sportspress/single-team/featured-player/content-player-football.php:68
+msgid "Total fumbles"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:39
+msgid "Total Gold"
+msgstr ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:36
+msgid "Total Kills"
+msgstr ""
+
+#: sportspress/player-event-graph-log.php:139
+#: vc_templates/alc_player_stats_chart.php:126
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:109
+#: sportspress/single-team/featured-player/content-player-football.php:63
+msgid "Total receptions"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:69
+msgid "Total:"
+msgstr "Ukupno:"
+
+#: vc_templates/alc_player_stats/alc_player_stats-football.php:111
+#: sportspress/single-team/featured-player/content-player-football.php:65
+msgid "Touchdowns"
+msgstr ""
+
+#: sportspress/player-statistics-avg.php:83
+msgid "Touchdowns per game"
+msgstr ""
+
+#: template-parts/social-counters/social-twitch.php:18
+msgid "Twitch"
+msgstr ""
+
+#: template-parts/social-counters/social-twitter.php:18
+msgid "Twitter"
+msgstr ""
+
+#: inc/acf-fields.php:612 inc/acf-fields.php:2641
+msgid "Type"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:33
+msgid ""
+"Unfortunately your order cannot be processed as the originating "
+"bank/merchant has declined your transaction. Please attempt your purchase "
+"again."
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:97
+msgid "Update"
+msgstr "Nadogradnja"
+
+#: woocommerce/cart/cart.php:188
+msgid "Update cart"
+msgstr "Ažuriranje košarice"
+
+#: sportspress/event-user-results.php:109
+msgid "Update Your Results"
+msgstr ""
+
+#: sportspress/event-user-scores.php:128
+msgid "Update Your Scores"
+msgstr ""
+
+#: inc/acf-fields.php:2417
+msgid "Upload image for the character."
+msgstr ""
+
+#: inc/acf-fields.php:2480
+msgid "Upload image for the position."
+msgstr ""
+
+#: inc/acf-fields.php:1186 inc/acf-fields.php:1603
+msgid ""
+"Use this option if you want to customize the Featured Player statistics. "
+"Insert shortcode of ALC: Player Stats element generated with WPBakery Page "
+"Builder. Note, this option overwrites the Select Featured Player option."
+msgstr ""
+
+#: inc/wc-functions.php:558 inc/wc-functions.php:578
+msgid "Used on the Shop Grid layout behind the Product Image"
+msgstr "Koristi se na prikazu Shop Grid iza slike proizvoda"
+
+#: woocommerce/myaccount/form-login.php:104
+msgid "Username"
+msgstr "Korisničko ime"
+
+#: woocommerce/global/form-login.php:38
+msgid "Username or email"
+msgstr "Korisničko ime ili mail adresa"
+
+#: woocommerce/myaccount/form-login.php:47
+msgid "Username or email address"
+msgstr "Korisničko ime ili mail adresa"
+
+#: sportspress/event-list.php:216 sportspress/event-list.php:218
+#: sportspress/event-list.php:483 sportspress/event-list.php:496
+#: sportspress/event-venue.php:46
+msgid "Venue"
+msgstr "Dvorana"
+
+#: woocommerce/single-product/review-meta.php:37
+msgid "verified owner"
+msgstr ""
+
+#: sportspress/player-event-game-by-game.php:156
+msgid "Versus"
+msgstr "Protiv"
+
+#: sportspress/event-video.php:20
+msgid "Video"
+msgstr "Video snimka"
+
+#: inc/acf-fields.php:2595
+msgid "Video Options"
+msgstr ""
+
+#: functions.php:274
+msgid "Video Sidebar"
+msgstr ""
+
+#: sportspress/event-blocks.php:158
+#: sportspress/player-event-game-by-game.php:144 sportspress/event-list.php:146
+#: sportspress/event-matrix.php:216 sportspress/event-scoreboard.php:188
+#: sportspress/event-blocks-custom.php:102
+msgid "View all events"
+msgstr "Prikaz svih utakmica"
+
+#: sportspress/player-list.php:142 sportspress/player-slider-card.php:196
+#: sportspress/player-slider.php:228 sportspress/player-blocks.php:183
+#: sportspress/player-gallery.php:188
+msgid "View all players"
+msgstr "Prikaz svih igrača"
+
+#: sportspress/staff-list.php:62 sportspress/staff-gallery.php:77
+msgid "View all staff"
+msgstr ""
+
+#: inc/wc-functions.php:129
+msgid "View cart"
+msgstr "Prikaz košarice"
+
+#: sportspress/league-table.php:88
+msgid "View full table"
+msgstr "Prikaz cijele tablice"
+
+#. %s: the order number, usually accompanied by a leading #
+#: woocommerce/myaccount/orders.php:56
+#, fuzzy, php-format
+#| msgid "Order number:"
+msgid "View order number %s"
+msgstr "Broj narudžbe:"
+
+#: inc/wc-functions.php:511
+msgid "View Product"
+msgstr ""
+
+#: inc/wc-functions.php:161 template-parts/header/header-info-block.php:138
+msgid "View your shopping cart"
+msgstr "Prikaz vaše košarice"
+
+#: sportspress/countdown.php:203
+msgid "VS"
+msgstr "Protiv"
+
+#: vc_templates/alc_event_scoreboard/esports-alc_event_scoreboard.php:27
+#: sportspress/event/event-logos/esports-event-logos-block.php:27
+msgid "W"
+msgstr ""
+
+#: sportspress/player-block-thumbnail.php:71
+msgid "Weight"
+msgstr "Težina"
+
+#: woocommerce/myaccount/navigation.php:51
+msgid "Welcome Back!"
+msgstr "Dobro došli natrag!"
+
+#: sportspress/player-statistics-avg.php:113
+#: vc_templates/alc_player_stats_grid.php:190
+#: vc_templates/alc_player_stats/alc_player_stats-esports.php:60
+msgid "Win Rate"
+msgstr ""
+
+#: vc_templates/alc_player_stats_grid.php:144
+msgid "Win Ratio"
+msgstr ""
+
+#: sportspress/tournament-bracket.php:47
+msgid "Winner Bracket"
+msgstr ""
+
+#: sportspress/player-statistics-avg.php:75
+#: sportspress/player-statistics-circular-boxed.php:66
+#: vc_templates/alc_player_stats_grid.php:167
+msgid "Yards per carry"
+msgstr ""
+
+#: sportspress/player-statistics-avg.php:79
+#: sportspress/player-statistics-circular-boxed.php:70
+#: vc_templates/alc_player_stats_grid.php:172
+msgid "Yards per reception"
+msgstr ""
+
+#: inc/sp-functions.php:123
+msgid "Year"
+msgid_plural "Years"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: vc_templates/alc_player_stats/alc_player_stats-soccer.php:113
+#: sportspress/single-team/featured-player/content-player-soccer.php:49
+msgid "Yellow Cards"
+msgstr ""
+
+#. %s opening and closing link tags respectively
+#: woocommerce/single-product-reviews.php:149
+#, php-format
+msgid "You must be %1$slogged in%2$s to post a review."
+msgstr ""
+
+#: comments.php:119 template-parts/post/comments/comments-alt.php:109
+#: template-parts/post/comments/comments-alt-card.php:110
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+"Morate biti <a href=\"%s\">prijavljeni in</a> da bi mogli slati komentare"
+
+#: woocommerce/checkout/form-checkout.php:26
+msgid "You must be logged in to checkout."
+msgstr "Morate biti prijavljeni da bi završili kupnju."
+
+#: woocommerce/myaccount/navigation.php:37
+msgid "Your Account"
+msgstr ""
+
+#: inc/wc-functions.php:180 template-parts/header/header-info-block.php:159
+msgid "Your Bag"
+msgstr "Vaša vrećica"
+
+#: comments.php:151 template-parts/post/comments/comments-alt.php:141
+#: template-parts/post/comments/comments-alt-card.php:142
+msgid "Your Comment"
+msgstr "Vaš komentar"
+
+#: inc/template-tags.php:343 inc/template-tags.php:402
+msgid "Your comment is awaiting moderation."
+msgstr "Vaš komentar čeka provjeru."
+
+#: comments.php:127 template-parts/post/comments/comments-alt.php:117
+#: template-parts/post/comments/comments-alt-card.php:118
+msgid "Your Name"
+msgstr "Vaše ime"
+
+#: woocommerce/checkout/form-checkout.php:50
+msgid "Your order"
+msgstr "Vaša narudžba"
+
+#: woocommerce/single-product-reviews.php:153
+msgid "Your rating"
+msgstr "Vaša ocjena"
+
+#: woocommerce/single-product-reviews.php:163
+msgid "Your review"
+msgstr "Vaša recenzija"
+
+#: woocommerce/single-product/review-meta.php:27
+msgid "Your review is awaiting approval"
+msgstr "Vaša recenzija čeka na provjeru"
+
+#: woocommerce/cart/cart.php:27
+msgid "Your Shopping Cart"
+msgstr "Vaša košarica"
+
+#: template-parts/social-counters/social-youtube.php:18
+msgid "YouTube"
+msgstr ""

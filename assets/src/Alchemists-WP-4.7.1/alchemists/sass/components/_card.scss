@@ -1,0 +1,293 @@
+/* Card
+/* ------------------------- */
+
+.card {
+	@include card();
+
+	&.sticky {
+		background-color: $card-bg-sticky;
+	}
+
+	.wpb_text_column &:last-child {
+		margin-bottom: 15px !important;
+	}
+}
+.card--row {
+	flex-direction: row;
+}
+.card--block {
+	display: block;
+}
+.card--clean {
+	background: none;
+	border: none;
+
+	.card__header {
+		background-color: $card-header-bg;
+		border: 1px solid $card-border-color;
+		border-radius: $card-border-radius;
+	}
+
+	> .card__content {
+		padding: 0; // remove padding
+	}
+
+	> .card__header + .card__content {
+		padding: 15px 0 0 0; // add top padding
+	}
+}
+.card--has-table {
+
+	> .card__content {
+		padding: 0;
+		margin: 0 !important;
+
+		.table {
+			margin-bottom: 0;
+		}
+	}
+}
+.card--no-paddings {
+
+	> .card__content {
+		padding: 0;
+	}
+}
+.card--squared-top {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+	.card__header {
+		@include card-header();
+
+		& ~ & {
+			border-radius: 0;
+
+			&::before {
+				border-radius: 0;
+			}
+		}
+
+		> h4 {
+			font-size: 16px;
+			line-height: 1.2em;
+			letter-spacing: -0.02em;
+			margin-bottom: 0;
+			text-transform: uppercase;
+			font-style: normal;
+			padding-#{$right}: 1em;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			vertical-align: middle;
+			font-style: $font-style-h4;
+			flex-grow: 1;
+		}
+
+		.card-header__button {
+
+		}
+	}
+	.card__header--single {
+		border: 1px solid $card-border-color;
+		border-radius: $card-border-radius;
+		margin-bottom: 15px;
+	}
+	.card__header--has-btn {
+
+	}
+	.card__header--has-filter {
+
+	}
+	.card__header--has-legend {
+
+		.chart-legend {
+
+		}
+	}
+	.card__header--has-checkbox {
+
+		.checkbox {
+
+			@media (min-width: 480px) {
+				padding-top: 0;
+				font-size: 10px;
+				font-weight: bold;
+			}
+		}
+	}
+
+	.card__header--has-toggle {
+
+		.switch {
+
+		}
+	}
+	.card__header--has-arrows {
+
+		.slick-prev,
+		.slick-next {
+			top: 25px;
+		}
+	}
+	.card__header--no-bottom-border {
+		border-bottom: none;
+	}
+	.card__header--no-highlight {
+
+		&::before {
+			display: none !important;
+		}
+	}
+
+	.card__content {
+		padding: $card-vertical-padding $card-horizontal-padding;
+		position: relative;
+	}
+	.card__content-inner {
+		padding: 20px;
+	}
+
+	.card__subheader {
+		background: $card-subheader-bg;
+		border-top: 1px solid $card-border-color;
+		border-bottom: 1px solid $card-border-color;
+		text-align: center;
+		padding: 8px 0;
+		margin-left: -$card-horizontal-padding;
+		margin-right: -$card-horizontal-padding;
+		margin-bottom: 20px;
+
+		@media (min-width: 992px) {
+			padding: 11px 0;
+			margin-bottom: 30px;
+		}
+
+		h5 {
+			margin-bottom: 0;
+			font-style: normal;
+			text-transform: uppercase;
+		}
+	}
+		.card__subheader--nomargins {
+			margin: 0;
+		}
+
+		.card__subheader--sm {
+
+			h5 {
+				font-size: 11px;
+				line-height: 1.2em;
+			}
+		}
+
+
+// Sizes
+.card--lg {
+
+	.card__content {
+
+		@media (min-width: 992px) {
+			padding: $card-vertical-padding-lg $card-horizontal-padding-lg;
+		}
+	}
+}
+
+.card--xlg {
+
+	.card__content {
+
+		@media (min-width: 992px) {
+			padding: $card-vertical-padding-xlg $card-horizontal-padding-xlg;
+		}
+	}
+}
+
+// Color
+.card--alt-color {
+
+	.card__header {
+
+		&::before {
+
+			@if $template == soccer {
+				background-color: $color-4-darken;
+			} @else {
+				background-color: $color-4;
+			}
+
+		}
+	}
+}
+
+// Shop
+.card__header {
+
+	&.card__header--shop-filter {
+		padding: 0;
+	}
+}
+
+
+// Full Width
+.card--section {
+	border-radius: 0;
+	border-left: none;
+	border-right: none;
+}
+
+
+// Card Info
+.card--info {
+
+	.card__content {
+
+		p {
+			font-size: .86em;
+			line-height: 1.83em;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.contact-info {
+		display: flex;
+		flex-wrap: wrap;
+		border-top: 1px solid $card-border-color;
+	}
+		.contact-info__item {
+			flex-grow: 1;
+			max-width: 100%;
+			flex-basis: 0;
+			margin: side-values(-1px 0 0 -1px);
+			text-align: center;
+			padding: 25px 10px;
+			border-#{$left}: 1px solid $card-border-color;
+			border-top: 1px solid $card-border-color;
+
+			&:first-child {
+				border-bottom-#{$left}-radius: $card-border-radius;
+			}
+		}
+			.contact-info__icon {
+				color: $color-primary;
+				font-size: 18px;
+				margin-bottom: 20px;
+			}
+			.contact-info__label {
+				font-size: .86em;
+				font-family: $font-family-accent;
+				font-weight: 700;
+				color: $headings-color;
+
+				a {
+					color: $headings-color;
+
+					&:hover {
+						color: $link-color-hover;
+					}
+				}
+			}
+}

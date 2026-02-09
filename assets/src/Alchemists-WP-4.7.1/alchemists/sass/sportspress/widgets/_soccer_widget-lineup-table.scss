@@ -1,0 +1,51 @@
+/* Widget: Lineup Table */
+.widget-lineup-table {
+
+}
+
+	.lineup-table {
+		table-layout: fixed;
+
+		> thead > tr > th,
+		> tbody > tr > td {
+			padding-top: 16px;
+			padding-bottom: 16px;
+
+			&:first-child {
+
+				@media (min-width: 1200px) {
+					padding-#{$left}: 23px;
+				}
+			}
+
+			&:last-child {
+
+				@media (min-width: 1200px) {
+					padding-#{$right}: 23px;
+				}
+			}
+		}
+
+		.lineup__num {
+			width: 15%;
+		}
+		.lineup__pos {
+			width: 13%;
+		}
+		.lineup__name {
+			width: 57%;
+			color: $headings-color;
+		}
+		.lineup__info {
+			text-align: $right;
+		}
+
+		.lineup__subheader {
+			text-transform: uppercase;
+			font-weight: bold;
+
+			@media (min-width: 1200px) {
+				padding-#{$left}: 23px;
+			}
+		}
+	}

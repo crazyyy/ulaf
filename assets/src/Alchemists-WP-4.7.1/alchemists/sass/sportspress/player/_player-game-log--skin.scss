@@ -1,0 +1,57 @@
+/* Player Game Log */
+.game-player-result {
+
+	.game-player-result__game {
+		color: $headings-color;
+	}
+	.game-player-result__game--win {
+		color: $color-success;
+	}
+	.game-player-result__game--lose {
+		color: $color-danger;
+	}
+
+	.game-player-result__score {
+
+		@if $template == football {
+			color: $headings-color;
+
+			.game-player-result__score-win {
+				color: $color-success;
+			}
+			.game-player-result__score-lose {
+				color: $color-danger;
+			}
+		}
+
+		a {
+			color: $body-font-color;
+
+			@if $template == football {
+				color: $headings-color;
+
+				.game-player-result__score-win {
+					color: $color-success;
+				}
+				.game-player-result__score-lose {
+					color: $color-danger;
+				}
+			}
+		}
+	}
+
+	@if $template == football {
+		.game-player-result__th {
+			text-align: center;
+		}
+		.game-player-result__th--game {
+			background-color: rgba($color-dark-lighten, 0.6);
+		}
+		.game-player-result__th--passing {
+			background-color: rgba($color-danger, 0.2);
+		}
+		.game-player-result__th--rushing {
+			background-color: rgba($color-4-darken, 0.2);
+		}
+	}
+}

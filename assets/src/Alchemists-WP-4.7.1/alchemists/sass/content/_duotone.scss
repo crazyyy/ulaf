@@ -1,0 +1,289 @@
+/* Duotone Effect
+/* ------------------------- */
+
+.effect-duotone {
+	position: relative;
+}
+	.effect-duotone__layer {
+
+		&::before,
+		&::after {
+			content: "";
+		}
+
+		&,
+		&::before,
+		&::after {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+		}
+
+		&::before {
+			// makes images black & white
+			background-color: #000;
+			mix-blend-mode: color;
+			z-index: 1;
+		}
+
+		&::after {
+			mix-blend-mode: lighten;
+			z-index: 3;
+			background-color: $duotone-layer-dark;
+		}
+	}
+		.effect-duotone__layer-inner {
+			display: block;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			z-index: 2;
+			mix-blend-mode: multiply;
+		}
+
+// MS Edge fallback
+@supports (position:-ms-page) {
+	// base
+	.effect-duotone {
+
+		.effect-duotone__layer {
+
+			&::before {
+				opacity: .3;
+			}
+
+			&::after {
+				opacity: .3;
+			}
+		}
+			.effect-duotone__layer-inner {
+				opacity: .45;
+			}
+	}
+}
+
+// IE11 fallback
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	// base
+	.effect-duotone {
+
+		.effect-duotone__layer {
+
+			&::before {
+				opacity: .3 !important;
+			}
+
+			&::after {
+				opacity: .3 !important;
+			}
+		}
+			.effect-duotone__layer-inner {
+				opacity: .5 !important;
+			}
+	}
+}
+
+// Duetone Base
+.effect-duotone--base {
+
+	.effect-duotone__layer {
+
+		&::after {
+			background-color: $duotone-base-color-1 !important;
+			mix-blend-mode: screen;
+
+			@if $template == 'football' {
+				opacity: .6;
+			}
+		}
+	}
+		.effect-duotone__layer-inner {
+			background-color: $duotone-base-color-2 !important;
+		}
+}
+
+
+/**
+ *
+ * Duotone dynamic colors
+ * can be applied for non-categories based elements
+ *
+ */
+
+// Color Primary
+.effect-duotone--primary {
+
+	.effect-duotone__layer {
+
+		&::after {
+			background-color: $duotone-layer-dark;
+		}
+	}
+		.effect-duotone__layer-inner {
+			background-color: $color-primary;
+		}
+}
+
+// Color Secondary
+.effect-duotone--secondary {
+
+	.effect-duotone__layer {
+
+		&::after {
+			background-color: $duotone-layer-dark;
+		}
+	}
+		.effect-duotone__layer-inner {
+			background-color: $headings-color;
+		}
+}
+
+// Color Tertiary
+.effect-duotone--tertiary {
+
+	.effect-duotone__layer {
+
+		&::after {
+			background-color: $duotone-layer-dark;
+		}
+	}
+		.effect-duotone__layer-inner {
+			background-color: $color-3;
+		}
+}
+
+// Color Quaternary
+.effect-duotone--quaternary {
+
+	.effect-duotone__layer {
+
+		&::after {
+			background-color: $duotone-layer-dark;
+		}
+	}
+		.effect-duotone__layer-inner {
+			background-color: $color-4-darken;
+		}
+}
+
+// Color Info
+.effect-duotone--info {
+
+	.effect-duotone__layer {
+
+		&::after {
+			background-color: $duotone-layer-dark;
+		}
+	}
+		.effect-duotone__layer-inner {
+			background-color: $color-info;
+		}
+}
+
+
+// Posts Duotone
+@each $color, $value in $post-category-colors {
+
+	.posts__item--#{$color} {
+
+		.effect-duotone {
+
+			.effect-duotone__layer-inner {
+				background-color: #{$value};
+			}
+		}
+	}
+}
+
+// Hero Slider Duotone Effect
+.hero-slider--overlay-duotone {
+
+	@each $color, $value in $post-category-colors {
+		.posts__item--#{$color} {
+
+			.effect-duotone__layer-inner {
+				background-color: #{$value};
+			}
+		}
+	}
+}
+
+// Single Post Duotone Effect
+.page-heading--duotone {
+
+	@each $color, $value in $post-category-colors {
+		&.posts__item--#{$color} {
+
+			.effect-duotone__layer-inner {
+				background-color: #{$value};
+			}
+		}
+	}
+}
+
+
+/**
+ *
+ * Duotone Static colors
+ *
+ */
+
+// Color Blue
+.effect-duotone--blue {
+
+	.effect-duotone__layer {
+
+		&::after {
+			background-color: $duotone-layer-dark;
+		}
+	}
+		.effect-duotone__layer-inner {
+			background-color: #4439e4;
+		}
+}
+
+// Color 3
+.effect-duotone--red {
+
+	.effect-duotone__layer {
+
+		&::after {
+			background-color: $duotone-layer-dark;
+		}
+	}
+		.effect-duotone__layer-inner {
+			background-color: #ff1c5c;
+		}
+}
+
+// Color Grey
+.effect-duotone--grey {
+
+	.effect-duotone__layer {
+
+		&::after {
+			background-color: $duotone-layer-dark;
+		}
+	}
+		.effect-duotone__layer-inner {
+			background-color: #dadada;
+		}
+}
+
+// Color Yellow
+.effect-duotone--yellow {
+
+	.effect-duotone__layer {
+
+		&::after {
+			background-color: $duotone-layer-dark;
+		}
+	}
+		.effect-duotone__layer-inner {
+			background-color: #ffcc00;
+		}
+}

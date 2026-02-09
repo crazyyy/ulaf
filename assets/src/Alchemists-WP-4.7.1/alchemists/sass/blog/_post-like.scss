@@ -1,0 +1,65 @@
+/* Wrapper */
+.sl-wrapper a {
+	// border-bottom: 0 !important;
+	// text-decoration: none !important;
+}
+.sl-button {
+	// padding: 0.375em 0.625em;
+	// font-size: 1em;
+	// line-height: 1;
+	// font-weight: normal;
+}
+
+/* Icon */
+.sl-icon {
+	// margin-right: 0.3125em;
+	// font-family: 'Arial Unicode MS', Arial, sans-serif;
+	// vertical-align: middle;
+}
+
+/* Loader */
+.like-loader,
+.like-loader:before,
+.like-loader:after {
+	background: rgba(0, 0, 0, 0.2);
+	animation: load1 1s infinite ease-in-out;
+	width: .2em;
+	height: .6em;
+}
+.like-loader:before,
+.like-loader:after {
+	position: absolute;
+	top: 0;
+	content: '';
+}
+.like-loader:before {
+	#{$left}: -.375em;
+	animation-delay: -0.32s;
+}
+.like-loader {
+	text-indent: -9999em;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	font-size: 1em;
+	transform: translateZ(0);
+	animation-delay: -0.16s;
+	margin-#{$left}: .75em;
+
+	&::after {
+		#{$left}: .375em;
+	}
+}
+
+@keyframes load1 {
+	0%,
+	80%,
+	100% {
+		box-shadow: 0 0 rgba(0, 0, 0, 0.2);
+		height: .6em;
+	}
+	40% {
+		box-shadow: 0 -.3em rgba(0, 0, 0, 0.2);
+		height: 1em;
+	}
+}

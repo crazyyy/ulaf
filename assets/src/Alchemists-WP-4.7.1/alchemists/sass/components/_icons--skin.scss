@@ -1,0 +1,16 @@
+/* Icon */
+.alc-icon {
+	color: $headings-color;
+	background-color: $card-bg;
+}
+
+// Border Style
+.alc-icon--outline {
+	background-color: transparent;
+	border-color: $color-primary;
+}
+// Colors
+.alc-icon--disabled {
+	border-color: #fff;
+	color: #fff;
+}

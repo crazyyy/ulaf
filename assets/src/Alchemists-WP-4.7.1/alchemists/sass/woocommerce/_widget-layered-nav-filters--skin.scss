@@ -1,0 +1,26 @@
+/**
+ * Woo Widget: Layered Nav Filters
+ */
+
+.widget_layered_nav_filters {
+
+	ul {
+		font-family: $font-family-accent;
+
+		li {
+
+			a {
+				color: $headings-color;
+
+				&:hover {
+					color: $color-primary-darken;
+				}
+
+				&::before {
+					background-color: $checkbox-bg-active;
+					border: 1px solid $checkbox-border-active;
+				}
+			}
+		}
+	}
+}

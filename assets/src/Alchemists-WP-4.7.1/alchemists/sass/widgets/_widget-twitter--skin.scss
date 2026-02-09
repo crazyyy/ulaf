@@ -1,0 +1,69 @@
+/* Widget: Twitter Feed */
+.widget-twitter {
+
+}
+	.twitter-feed {
+
+	}
+		.twitter-feed__item {
+
+			.card & {
+				border-bottom: 1px solid $card-border-color;
+			}
+		}
+			.twitter-feed__username {
+				color: $body-font-color;
+
+				> a {
+					color: $body-font-color;
+
+					&:hover {
+						color: $headings-color;
+					}
+				}
+			}
+		.twitter-feed__timestamp {
+			font-family: $font-family-accent;
+
+			&::before {
+				color: #3fcef2;
+			}
+
+			> a {
+				color: $body-font-color;
+
+				&:hover {
+					color: $headings-color;
+				}
+			}
+		}
+
+
+/* Widget Twitter - Footer */
+.widget--footer {
+
+	.twitter-feed__name {
+		color: $footer-widget-title;
+	}
+
+	.twitter-feed__username {
+
+		> a {
+
+			&:hover {
+				color: $link-color-hover;
+			}
+		}
+	}
+
+	.twitter-feed__body {
+
+		a {
+			color: #4cd3ff;
+
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+}
