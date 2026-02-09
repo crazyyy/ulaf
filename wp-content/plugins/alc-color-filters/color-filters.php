@@ -30,6 +30,13 @@ if ( ! class_exists( 'NM_Color_Filters' ) ) {
 					__FILE__,
 					true
 				);
+				
+				// Додаємо сумісність з новими features WooCommerce
+				\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility(
+					'cart_checkout_blocks',
+					__FILE__,
+					true
+				);
 			}
 		}
 
@@ -81,7 +88,15 @@ if ( ! class_exists( 'NM_Color_Filters' ) ) {
 				return;
 			}
 
-			if ( isset( $_GET['taxonomy'] ) && $_GET['taxonomy'] === 'product_color' ) {
+			// Безпечна перевірка $_GET параметра
+			if ( ! isset( $_GET['taxonomy'] ) ) {
+				return;
+			}
+
+			// Додаємо nonce перевірку для безпеки
+			$taxonomy = sanitize_key( $_GET['taxonomy'] );
+
+			if ( $taxonomy === 'product_color' ) {
 
 				wp_enqueue_style(
 					'cf-colorpicker',
@@ -109,11 +124,29 @@ if ( ! class_exists( 'NM_Color_Filters' ) ) {
 
 		public function save_product_color( int $term_id ): void {
 
-			if ( empty( $_POST['normal_fill'] ) ) {
+			// Додаємо nonce перевірку для безпеки
+			if ( ! isset( $_POST['normal_fill'] ) ) {
 				return;
 			}
 
-			$color = sanitize_text_field( wp_unslash( $_POST['normal_fill'] ) );
+			// Перевірка nonce (якщо WordPress його додає)
+			if ( isset( $_POST['_wpnonce'] ) && ! wp_verify_nonce( $_POST['_wpnonce'], 'update-tag_' . $term_id ) ) {
+				if ( ! wp_verify_nonce( $_POST['_wpnonce'], 'add-tag' ) ) {
+					return;
+				}
+			}
+
+			$color = sanitize_hex_color( wp_unslash( $_POST['normal_fill'] ) );
+			
+			// Якщо не hex колір, спробуємо sanitize_text_field
+			if ( ! $color ) {
+				$color = sanitize_text_field( wp_unslash( $_POST['normal_fill'] ) );
+			}
+
+			if ( empty( $color ) ) {
+				return;
+			}
+
 			$colors = (array) get_option( 'nm_taxonomy_colors', [] );
 
 			$colors[ $term_id ] = $color;
@@ -125,7 +158,8 @@ if ( ! class_exists( 'NM_Color_Filters' ) ) {
 			?>
 			<div class="form-field term-color-wrap">
 				<label for="normal_fill"><?php esc_html_e( 'Color', 'alc-color-filters' ); ?></label>
-				<input type="text" name="normal_fill" class="cf-color small-text" />
+				<input type="text" name="normal_fill" id="normal_fill" class="cf-color small-text" />
+				<p class="description"><?php esc_html_e( 'Enter a hex color code (e.g., #ff0000) or use the color picker.', 'alc-color-filters' ); ?></p>
 			</div>
 			<?php
 		}
@@ -140,7 +174,8 @@ if ( ! class_exists( 'NM_Color_Filters' ) ) {
 					<label for="normal_fill"><?php esc_html_e( 'Color', 'alc-color-filters' ); ?></label>
 				</th>
 				<td>
-					<input type="text" name="normal_fill" value="<?php echo esc_attr( $color ); ?>" class="cf-color small-text" />
+					<input type="text" name="normal_fill" id="normal_fill" value="<?php echo esc_attr( $color ); ?>" class="cf-color small-text" />
+					<p class="description"><?php esc_html_e( 'Enter a hex color code (e.g., #ff0000) or use the color picker.', 'alc-color-filters' ); ?></p>
 				</td>
 			</tr>
 			<?php
@@ -167,12 +202,11 @@ if ( ! class_exists( 'NM_Color_Filters' ) ) {
 			<script>
 				document.addEventListener('DOMContentLoaded', function () {
 					<?php foreach ( $colors as $term_id => $color ) : ?>
-						const el = document.querySelector('#product_color-<?php echo (int) $term_id; ?>');
-						if (el) {
-							el.insertAdjacentHTML(
-								'afterbegin',
-								'<span style="display:inline-block;width:14px;height:14px;background:<?php echo esc_js( $color ); ?>;margin-right:6px;"></span>'
-							);
+						const el<?php echo (int) $term_id; ?> = document.querySelector('#product_color-<?php echo (int) $term_id; ?>');
+						if (el<?php echo (int) $term_id; ?>) {
+							const colorSpan = document.createElement('span');
+							colorSpan.style.cssText = 'display:inline-block;width:14px;height:14px;background:<?php echo esc_js( $color ); ?>;margin-right:6px;border:1px solid #ccc;border-radius:2px;';
+							el<?php echo (int) $term_id; ?>.insertBefore(colorSpan, el<?php echo (int) $term_id; ?>.firstChild);
 						}
 					<?php endforeach; ?>
 				});
@@ -182,6 +216,23 @@ if ( ! class_exists( 'NM_Color_Filters' ) ) {
 
 		private function register_taxonomy(): void {
 
+			$labels = [
+				'name'                       => __( 'Colors', 'alc-color-filters' ),
+				'singular_name'              => __( 'Color', 'alc-color-filters' ),
+				'search_items'               => __( 'Search Colors', 'alc-color-filters' ),
+				'popular_items'              => __( 'Popular Colors', 'alc-color-filters' ),
+				'all_items'                  => __( 'All Colors', 'alc-color-filters' ),
+				'edit_item'                  => __( 'Edit Color', 'alc-color-filters' ),
+				'update_item'                => __( 'Update Color', 'alc-color-filters' ),
+				'add_new_item'               => __( 'Add New Color', 'alc-color-filters' ),
+				'new_item_name'              => __( 'New Color Name', 'alc-color-filters' ),
+				'separate_items_with_commas' => __( 'Separate colors with commas', 'alc-color-filters' ),
+				'add_or_remove_items'        => __( 'Add or remove colors', 'alc-color-filters' ),
+				'choose_from_most_used'      => __( 'Choose from most used colors', 'alc-color-filters' ),
+				'not_found'                  => __( 'No colors found', 'alc-color-filters' ),
+				'menu_name'                  => __( 'Colors', 'alc-color-filters' ),
+			];
+
 			register_taxonomy(
 				'product_color',
 				[ 'product' ],
@@ -189,12 +240,19 @@ if ( ! class_exists( 'NM_Color_Filters' ) ) {
 					'hierarchical'      => true,
 					'show_ui'           => true,
 					'show_admin_column' => true,
-					'labels'            => [
-						'name'          => __( 'Colors', 'alc-color-filters' ),
-						'singular_name' => __( 'Color', 'alc-color-filters' ),
+					'query_var'         => true,
+					'show_in_rest'      => true, // Підтримка Gutenberg/REST API
+					'labels'            => $labels,
+					'rewrite'           => [
+						'slug'         => 'product-color',
+						'with_front'   => false,
+						'hierarchical' => true,
 					],
-					'rewrite' => [
-						'slug' => 'product-color',
+					'capabilities'      => [
+						'manage_terms' => 'manage_product_terms',
+						'edit_terms'   => 'edit_product_terms',
+						'delete_terms' => 'delete_product_terms',
+						'assign_terms' => 'assign_product_terms',
 					],
 				]
 			);

@@ -4,7 +4,7 @@
  *
  * @see https://woocommerce.com/document/template-structure/
  * @package WooCommerce\Templates
- * @version 10.2.0
+ * @version 10.5.0
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -25,19 +25,20 @@ global $product;
 		)
 	);
 
-		do_action( 'woocommerce_after_add_to_cart_quantity' );
+	do_action( 'woocommerce_after_add_to_cart_quantity' );
 	?>
 
 	<?php
-
 	// Button Classes
 	$btn_classes_array = array(
 		'single_add_to_cart_button',
+		'button',
+		'alt',
 		'btn',
 		'btn-lg',
 	);
 
-	if ( alchemists_sp_preset( 'football') ) {
+	if ( alchemists_sp_preset( 'football' ) ) {
 		$btn_classes_array[] = 'btn-primary-inverse';
 	} else {
 		$btn_classes_array[] = 'btn-primary';
@@ -45,8 +46,11 @@ global $product;
 
 	$btn_classes = implode( ' ', $btn_classes_array );
 
+	// Додаємо theme element class якщо є
+	$theme_class = wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '';
 	?>
-	<button type="submit" class="<?php echo esc_attr( $btn_classes ); ?><?php echo esc_html( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?>"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+	<button type="submit" class="<?php echo esc_attr( $btn_classes . $theme_class ); ?>" disabled><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+
 	<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
 
 	<input type="hidden" name="add-to-cart" value="<?php echo absint( $product->get_id() ); ?>" />
