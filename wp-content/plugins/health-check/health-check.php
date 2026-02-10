@@ -59,7 +59,7 @@ if ( ! class_exists( 'WP_Debug_Data' ) ) {
 }
 
 add_action(
-	'plugins_loaded',
+	'init',
 	function() {
 		// Include class-files used by our plugin.
 		require_once( dirname( __FILE__ ) . '/HealthCheck/class-health-check.php' );
