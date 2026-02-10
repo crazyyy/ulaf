@@ -17,12 +17,14 @@ class Wp_Plugin_Packer_Admin {
 	private $wp_plugin_packer;
 	private $version;
 	private $options;
+	private $default_pack; // Add this
+	private $default_pack_slug; // Add this
 
 	public function __construct( $wp_plugin_packer, $version ) {
 
 		$this->wp_plugin_packer = $wp_plugin_packer;
 		$this->version = $version;
-		$this->default_pack = 'Default Pack'; //Name of the Default Pack.
+		$this->default_pack = 'Default Pack'; // Name of the Default Pack
 		$this->default_pack_slug = sanitize_title( $this->default_pack );
 
 		add_action( 'admin_menu', array( $this, 'plugin_packer_menu' ) );
@@ -170,21 +172,39 @@ class Wp_Plugin_Packer_Admin {
 
 	public function init_plugin_packs() {
 		$plugins_array = get_plugins();
-		$plugins = new stdClass();
-		$plugins_update_urls = get_site_option( '_site_transient_update_plugins' );
-		$plugins_update_urls = (array)$plugins_update_urls->response + (array)$plugins_update_urls->checked + (array)$plugins_update_urls->no_update;
-		//preparing default plugins structure
+		$plugins = array();
+		
+		// Check if transient exists before accessing properties
+		$plugins_update_transient = get_site_option( '_site_transient_update_plugins' );
+		
+		// Initialize empty array to avoid errors
+		$plugins_update_urls = array();
+		
+		if ( $plugins_update_transient && is_object( $plugins_update_transient ) ) {
+			$response = isset( $plugins_update_transient->response ) ? (array)$plugins_update_transient->response : array();
+			$checked = isset( $plugins_update_transient->checked ) ? (array)$plugins_update_transient->checked : array();
+			$no_update = isset( $plugins_update_transient->no_update ) ? (array)$plugins_update_transient->no_update : array();
+			
+			$plugins_update_urls = $response + $checked + $no_update;
+		}
+		
+		// Preparing default plugins structure
 		foreach( $plugins_array as $key => $plugin ) {
-			$plugins->$key->name = $plugin[ 'Name' ];
-			$plugins->$key->version = $plugin[ 'Version' ];
-			$plugins->$key->file = $key;
-			$plugins->$key->wp_api_slug = isset( $plugins_update_urls[ $key ] ) ? $plugins_update_urls[ $key ]->slug : null;
+			$plugins[ $key ] = array(
+				'name' => $plugin[ 'Name' ],
+				'version' => $plugin[ 'Version' ],
+				'file' => $key,
+				'wp_api_slug' => isset( $plugins_update_urls[ $key ] ) && is_object( $plugins_update_urls[ $key ] ) ? $plugins_update_urls[ $key ]->slug : null
+			);
 		}
 
-		//packing all plugins in Default Pack (initial state)
-
-		$plugin_packs->{ $this->default_pack_slug }->name = $this->default_pack;
-		$plugin_packs->{ $this->default_pack_slug }->plugins = $plugins;
+		// Packing all plugins in Default Pack (initial state)
+		$plugin_packs = array(
+			$this->default_pack_slug => array(
+				'name' => $this->default_pack,
+				'plugins' => $plugins
+			)
+		);
 
 		$this->set_plugin_packs( $plugin_packs );
 		

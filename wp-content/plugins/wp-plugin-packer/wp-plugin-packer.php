@@ -7,10 +7,10 @@
  * @package           Wp_Plugin_Packer
  *
  * @wordpress-plugin
- * Plugin Name:       WP Plugin Packer
+ * Plugin Name:       WP Plugin Packer (MOD)
  * Plugin URI:        https://github.com/AZdv/wp-plugin-packer
  * Description:       Lets you create plugin packs (=groups) to export and import to various WordPress websites
- * Version:           1.0.0
+ * Version:           2026.02.10 (1.0.0)
  * Author:            Asaf Zamir
  * Author URI:        http://www.kidsil.net
  * License:           GPL-2.0+
