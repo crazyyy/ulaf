@@ -1,0 +1,976 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Plugin Manager\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-07 06:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.0; wp-6.8.2; php-8.2.26\n"
+"X-Domain: wp-plugin-manager"
+
+#: includes/api/admin-settings.php:427
+msgid ""
+"<strong>⚠️ Important Notice:</strong> Please carefully consider before "
+"disabling plugins in the backend. If you disable a plugin that other plugins "
+"depend on, it may cause errors or functionality issues in your WordPress "
+"admin area. Review plugin dependencies thoroughly to avoid unexpected issues."
+msgstr ""
+
+#: includes/api/admin-settings.php:309
+msgid "Action:"
+msgstr ""
+
+#: includes/api/admin-settings.php:90
+msgid "Action: "
+msgstr ""
+
+#: includes/helper_functions.php:26
+msgid "Activate"
+msgstr ""
+
+#: includes/helper_functions.php:37
+msgid "Activated"
+msgstr ""
+
+#: plugin-main.php:196
+msgid "Activating.."
+msgstr ""
+
+#: plugin-main.php:197
+msgid "Active"
+msgstr ""
+
+#: includes/api/admin-settings.php:407
+msgid "Add Condition:"
+msgstr ""
+
+#: includes/api/admin-settings.php:171
+msgid "Add Media File"
+msgstr ""
+
+#: includes/api/admin-settings.php:231
+msgid "Add Page"
+msgstr ""
+
+#: includes/api/admin-settings.php:201
+msgid "Add Post"
+msgstr ""
+
+#: includes/api/admin-settings.php:420
+msgid "Add post type..."
+msgstr ""
+
+#: includes/api/admin-settings.php:547
+msgid "Additional features for Contact Form 7"
+msgstr ""
+
+#: includes/api/admin-settings.php:108
+msgid "Admin Area Scope: "
+msgstr ""
+
+#: includes/api/admin-settings.php:131
+msgid "Admin Page Contains"
+msgstr ""
+
+#: includes/api/admin-settings.php:129
+msgid "Admin Page Equals"
+msgstr ""
+
+#: includes/api/admin-settings.php:132
+msgid "Admin Page Not Contains"
+msgstr ""
+
+#: includes/api/admin-settings.php:130
+msgid "Admin Page Not Equals"
+msgstr ""
+
+#: includes/api/admin-settings.php:111
+msgid "All Admin Pages"
+msgstr ""
+
+#: includes/api/admin-settings.php:177 includes/api/admin-settings.php:181
+msgid "All Comments"
+msgstr ""
+
+#: includes/api/admin-settings.php:299
+msgid "All Devices"
+msgstr ""
+
+#: plugin-main.php:185
+msgid "All Items have been Loaded"
+msgstr ""
+
+#: includes/api/admin-settings.php:386
+msgid "All Optimized"
+msgstr ""
+
+#: includes/api/admin-settings.php:217 includes/api/admin-settings.php:221
+msgid "All Pages"
+msgstr ""
+
+#: includes/api/admin-settings.php:385
+msgid "All Plugins"
+msgstr ""
+
+#: includes/api/admin-settings.php:191
+msgid "All Posts"
+msgstr ""
+
+#: includes/api/admin-dashboard-api.php:236
+msgid "An error occurred while updating settings"
+msgstr ""
+
+#: includes/templates/sidebar-banner.php:23
+msgid "And So Much More!"
+msgstr ""
+
+#: includes/api/admin-settings.php:116
+msgid "Appearance"
+msgstr ""
+
+#: includes/class.notices.php:81
+msgid "Are you cheating?"
+msgstr ""
+
+#. %1$s: project name
+#. %2$s: strong start tag
+#. %3$s: strong end tag
+#. %4$s: anchor start tag with privacy policy url
+#. %5$s: anchor end tag
+#: includes/class-diagnostic-data.php:567
+#, php-format
+msgid ""
+"At %2$s%1$s%3$s, we prioritize continuous improvement and compatibility. To "
+"achieve this, we gather non-sensitive diagnostic information and details "
+"about plugin usage. This includes your site's URL, the versions of WordPress "
+"and PHP you're using, and a list of your installed plugins and themes. We "
+"also require your email address to provide you with exclusive discount "
+"coupons and updates. This data collection is crucial for ensuring that "
+"%2$s%1$s%3$s remains up-to-date and compatible with the most widely-used "
+"plugins and themes. Rest assured, your privacy is our priority – no spam, "
+"guaranteed. %4$sPrivacy Policy%5$s"
+msgstr ""
+
+#: includes/api/admin-settings.php:426
+msgid "Backend Conditions:"
+msgstr ""
+
+#: includes/api/admin-settings.php:388
+msgid "Backend Optimized (Pro)"
+msgstr ""
+
+#: includes/api/admin-settings.php:436
+msgid "Backend: Optimized"
+msgstr ""
+
+#: plugin-main.php:192
+msgid "Buy Now"
+msgstr ""
+
+#: plugin-main.php:200
+msgid "BUY PRO"
+msgstr ""
+
+#: includes/api/admin-settings.php:410
+msgid "Cancel"
+msgstr ""
+
+#: includes/api/admin-settings.php:206
+msgid "Categories"
+msgstr ""
+
+#: includes/api/admin-settings.php:446
+msgid "Changes"
+msgstr ""
+
+#: includes/api/admin-settings.php:320
+msgid ""
+"Choose the types of pages. \"Custom\" allows you to specify pages matching a "
+"particular URI pattern."
+msgstr ""
+
+#: includes/api/admin-settings.php:109
+msgid "Choose which section of WordPress admin this rule should apply to."
+msgstr ""
+
+#: includes/api/admin-settings.php:102
+msgid ""
+"Choose which sections of WordPress admin this rule should apply to. You can "
+"select multiple areas."
+msgstr ""
+
+#: includes/api/admin-settings.php:115
+msgid "Comments"
+msgstr ""
+
+#: includes/api/admin-settings.php:127
+msgid ""
+"Configure conditions for WordPress admin area. E.g., use 'edit.php' for "
+"Posts page, 'post.php' for Edit Post page."
+msgstr ""
+
+#: includes/templates/sidebar-banner.php:21
+msgid "Control Plugins Based on Mobile, Tablet, or Desktop Devices"
+msgstr ""
+
+#: includes/templates/sidebar-banner.php:20
+msgid "Control Plugins Based on URL or Path"
+msgstr ""
+
+#: includes/class-diagnostic-data.php:575
+msgid "Count Me In"
+msgstr ""
+
+#: includes/api/admin-settings.php:643
+msgid "Create beautiful sliders for your website using Elementor"
+msgstr ""
+
+#: includes/api/admin-settings.php:520
+msgid "Create notification bars to notify your customers"
+msgstr ""
+
+#: includes/api/admin-settings.php:327
+msgid "Custom"
+msgstr ""
+
+#: includes/api/admin-settings.php:126
+msgid "Custom Page Conditions: "
+msgstr ""
+
+#: includes/api/admin-settings.php:147
+msgid "Dashboard"
+msgstr ""
+
+#: includes/api/admin-settings.php:112
+msgid "Dashboard Only"
+msgstr ""
+
+#: includes/api/admin-settings.php:372
+msgid "Default: 10 items per page. Adjust if you have more posts to manage."
+msgstr ""
+
+#: includes/api/admin-settings.php:353 includes/api/admin-settings.php:422
+msgid "Default: 150 posts. Adjust if you have more posts to manage."
+msgstr ""
+
+#: includes/api/admin-settings.php:364
+msgid "Default: True. Adjust if you have more posts to manage."
+msgstr ""
+
+#: includes/api/admin-settings.php:300
+msgid "Desktop"
+msgstr ""
+
+#: includes/api/admin-settings.php:303
+msgid "Desktop + Tablet"
+msgstr ""
+
+#: includes/api/admin-settings.php:94 includes/api/admin-settings.php:313
+msgid "Disable on Selected Pages"
+msgstr ""
+
+#: includes/api/admin-settings.php:91 includes/api/admin-settings.php:310
+msgid ""
+"Disable on Selected Pages refers to the pages where the plugin will be "
+"disabled and enabled elsewhere."
+msgstr ""
+
+#: includes/api/admin-settings.php:295
+msgid "Disable Plugin on: "
+msgstr ""
+
+#: includes/api/admin-settings.php:86 includes/api/admin-settings.php:291
+msgid "Disabled"
+msgstr ""
+
+#: includes/class.notices.php:273
+msgid "Dismiss this notice."
+msgstr ""
+
+#: includes/api/admin-settings.php:654
+msgid "Display Google Reviews on your site."
+msgstr ""
+
+#: includes/api/admin-settings.php:412
+msgid "Display Settings"
+msgstr ""
+
+#: plugin-main.php:208 includes/api/admin-settings.php:48
+msgid "Documentation"
+msgstr ""
+
+#: includes/api/admin-settings.php:408
+msgid ""
+"E.g. You can use 'contact-us' on URLs like https://example.com/contact-us or "
+"leave it blank for the homepage."
+msgstr ""
+
+#: includes/api/admin-settings.php:529 includes/api/admin-settings.php:625
+msgid "Easy connection of Facebook pixel to your online store."
+msgstr ""
+
+#: includes/api/admin-settings.php:226
+msgid "Edit Single Page"
+msgstr ""
+
+#: includes/api/admin-settings.php:196
+msgid "Edit Single Post"
+msgstr ""
+
+#: includes/api/admin-settings.php:439
+msgid "Enable Anyway"
+msgstr ""
+
+#: includes/api/admin-settings.php:95 includes/api/admin-settings.php:314
+msgid "Enable on Selected Pages"
+msgstr ""
+
+#: includes/templates/sidebar-banner.php:22
+msgid "Enable or Disable Plugins for Backend"
+msgstr ""
+
+#: includes/templates/sidebar-banner.php:19
+msgid ""
+"Enable or disable plugins for individual pages, posts, or custom post types"
+msgstr ""
+
+#: includes/api/admin-settings.php:82 includes/api/admin-settings.php:287
+msgid ""
+"Enable or disable this configuration. When disabled, settings are saved but "
+"not applied."
+msgstr ""
+
+#: includes/api/admin-settings.php:414
+msgid ""
+"Enable this option to display plugin thumbnails in the plugin list. (After "
+"enabling, you need to refresh the page to see the changes.)"
+msgstr ""
+
+#: includes/api/admin-settings.php:85 includes/api/admin-settings.php:290
+msgid "Enabled"
+msgstr ""
+
+#: includes/api/admin-settings.php:434
+msgid "Error Fetching Plugins. Please try again"
+msgstr ""
+
+#: includes/api/admin-settings.php:546
+msgid "Extensions For CF7"
+msgstr ""
+
+#: includes/api/admin-dashboard-api.php:224
+msgid "Failed to update settings in database"
+msgstr ""
+
+#: includes/api/admin-settings.php:383
+msgid "Filter Plugins"
+msgstr ""
+
+#: includes/api/admin-settings.php:387
+msgid "Frontend Optimized"
+msgstr ""
+
+#: includes/api/admin-settings.php:435
+msgid "Frontend: Optimized"
+msgstr ""
+
+#: includes/plugin-options-page.php:48 includes/api/admin-settings.php:32
+msgid "General"
+msgstr ""
+
+#: includes/templates/sidebar-banner.php:14
+msgid ""
+"Get more powerful plugin management features to elevate your WordPress "
+"website"
+msgstr ""
+
+#: includes/templates/sidebar-banner.php:13
+msgid "Get WP Plugin Manager"
+msgstr ""
+
+#: includes/api/admin-settings.php:651
+msgid "Google Place Review"
+msgstr ""
+
+#: includes/api/admin-settings.php:519
+msgid "HashBar"
+msgstr ""
+
+#. Author of the plugin
+msgid "HasThemes"
+msgstr ""
+
+#: includes/templates/sidebar-banner.php:38
+msgid "Have We Fully Met Your Expectations?"
+msgstr ""
+
+#: includes/api/admin-settings.php:151
+msgid "Home"
+msgstr ""
+
+#: includes/api/admin-settings.php:134
+msgid "Hook Name Equals"
+msgstr ""
+
+#: includes/api/admin-settings.php:537 includes/api/admin-settings.php:538
+msgid ""
+"HT Contact Form Widget For Elementor Page Builder & Gutenberg Blocks & Form "
+"Builder."
+msgstr ""
+
+#: includes/api/admin-settings.php:490 includes/api/admin-settings.php:615
+msgid "HT Mega"
+msgstr ""
+
+#: includes/api/admin-settings.php:642
+msgid "HT Slider For Elementor"
+msgstr ""
+
+#: includes/api/admin-settings.php:491 includes/api/admin-settings.php:616
+msgid "HTMega is an absolute addon for elementor that includes 80+ elements"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://hasthemes.com/"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://hasthemes.com/plugins/"
+msgstr ""
+
+#: plugin-main.php:347
+msgid "I already did"
+msgstr ""
+
+#: includes/api/admin-settings.php:480
+msgid ""
+"If you own a WooCommerce website, you ll almost certainly want to use these "
+"capabilities: Woo Builder (Elementor WooCommerce Builder), WooCommerce "
+"Templates, WooCommerce Widgets,..."
+msgstr ""
+
+#: includes/api/admin-settings.php:573
+msgid ""
+"If you own a WooCommerce website, you’ll almost certainly want to use these "
+"capabilities: Woo Builder (Elementor WooCommerce Builder), WooCommerce "
+"Templates, WooCommerce Widgets,..."
+msgstr ""
+
+#: includes/api/admin-settings.php:331
+msgid ""
+"If you wish to select custom posts, please choose the custom post types below"
+msgstr ""
+
+#: plugin-main.php:191
+msgid "Import"
+msgstr ""
+
+#: plugin-main.php:189
+msgid "Import to Library"
+msgstr ""
+
+#: plugin-main.php:190
+msgid "Import to Page"
+msgstr ""
+
+#: plugin-main.php:184
+msgid "in this package"
+msgstr ""
+
+#: includes/api/admin-settings.php:634
+msgid ""
+"Insert Headers and Footers Code allows you to insert Google Analytics, "
+"Facebook Pixel, custom CSS, custom HTML, JavaScript code to your website "
+"header and footer without modifying your theme code"
+msgstr ""
+
+#: includes/api/admin-settings.php:633
+msgid "Insert Headers and Footers Code – HT Script"
+msgstr ""
+
+#: includes/helper_functions.php:31
+msgid "Install Now"
+msgstr ""
+
+#: plugin-main.php:195
+msgid "Installing.."
+msgstr ""
+
+#: includes/api/admin-dashboard-api.php:614
+msgid "Invalid post type"
+msgstr ""
+
+#: includes/api/admin-settings.php:417
+msgid "items"
+msgstr ""
+
+#: includes/api/admin-settings.php:370
+msgid "Items per Page"
+msgstr ""
+
+#: includes/api/admin-settings.php:415
+msgid "Items Per Page in Plugin List"
+msgstr ""
+
+#: includes/api/admin-settings.php:591
+msgid ""
+"JustTables is an incredible WordPress plugin that lets you showcase all your "
+"WooCommerce products in a sortable and filterable table view. It allows your "
+"customers to easily navigate through different attributes of the products "
+"and compare them on a single page..."
+msgstr ""
+
+#: includes/api/admin-settings.php:590
+msgid "JustTables – WooCommerce Product Table"
+msgstr ""
+
+#: includes/api/admin-settings.php:162 includes/api/admin-settings.php:166
+msgid "Library"
+msgstr ""
+
+#: includes/api/admin-settings.php:351
+msgid "Load Posts"
+msgstr ""
+
+#: includes/api/admin-settings.php:429
+msgid "Manage Plugins"
+msgstr ""
+
+#: includes/api/changelog-api.php:130
+msgid "Marked as read successfully"
+msgstr ""
+
+#: plugin-main.php:346
+msgid "Maybe Later"
+msgstr ""
+
+#: includes/api/admin-settings.php:114
+msgid "Media Library"
+msgstr ""
+
+#: includes/api/admin-settings.php:302
+msgid "Mobile"
+msgstr ""
+
+#: includes/plugin-options-page.php:102
+msgid "More details"
+msgstr ""
+
+#: plugin-main.php:206
+msgid "Need Help with Plugin Manager?"
+msgstr ""
+
+#: includes/api/admin-settings.php:447
+msgid "No Changelog Available"
+msgstr ""
+
+#: includes/api/admin-settings.php:432
+msgid "No plugins are available at the moment"
+msgstr ""
+
+#: includes/api/admin-settings.php:431
+msgid "No Plugins Found"
+msgstr ""
+
+#: includes/class-diagnostic-data.php:578
+msgid "No, Thanks"
+msgstr ""
+
+#: includes/api/admin-settings.php:389 includes/api/admin-settings.php:437
+msgid "Not Optimized Yet"
+msgstr ""
+
+#: includes/api/admin-settings.php:347
+msgid ""
+"Note: Make sure to save settings to see options for each plugin for the "
+"selected post types."
+msgstr ""
+
+#: plugin-main.php:186
+msgid "Nothing Found"
+msgstr ""
+
+#: includes/api/admin-settings.php:421
+msgid "Number of Posts to Load"
+msgstr ""
+
+#: plugin-main.php:345
+msgid "Ok, you deserve it!"
+msgstr ""
+
+#: includes/api/admin-settings.php:601
+msgid "Others"
+msgstr ""
+
+#: plugin-main.php:207
+msgid ""
+"Our comprehensive documentation provides detailed information on how to use "
+"Plugin Manager effectively to improve your websites performance."
+msgstr ""
+
+#: plugin-main.php:201 includes/plugin-options-page.php:97
+msgid ""
+"Our free version is great, but it doesn't have all our advanced features. "
+"The best way to unlock all of the features in our plugin is by purchasing "
+"the pro version."
+msgstr ""
+
+#: includes/api/admin-settings.php:404
+msgid "Page Type"
+msgstr ""
+
+#: includes/api/admin-settings.php:319
+msgid "Page Type:"
+msgstr ""
+
+#: includes/api/admin-settings.php:324
+msgid "Pages"
+msgstr ""
+
+#: includes/api/admin-settings.php:325
+msgid "Pages & Posts"
+msgstr ""
+
+#: includes/api/admin-settings.php:528 includes/api/admin-settings.php:624
+msgid "Pixelavo – Facebook Pixel Conversion API"
+msgstr ""
+
+#: includes/api/recommended-plugins-api.php:251
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: includes/api/recommended-plugins-api.php:217
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: includes/plugin-options-page.php:36 includes/plugin-options-page.php:37
+msgid "Plugin Manager"
+msgstr ""
+
+#: plugin-main.php:257
+msgid "Plugin Not Found"
+msgstr ""
+
+#: includes/api/admin-dashboard-api.php:330
+#: includes/api/admin-dashboard-api.php:416
+msgid "Plugin not found"
+msgstr ""
+
+#: includes/api/recommended-plugins-api.php:240
+msgid "Plugin not found."
+msgstr ""
+
+#: includes/api/recommended-plugins-api.php:192
+#: includes/api/recommended-plugins-api.php:232
+msgid "Plugin slug is required."
+msgstr ""
+
+#: plugin-main.php:277
+msgid "Plugin Successfully Activated"
+msgstr ""
+
+#: includes/api/admin-settings.php:117
+msgid "Plugins"
+msgstr ""
+
+#: includes/api/admin-settings.php:411
+msgid "Post Types Settings"
+msgstr ""
+
+#: includes/api/admin-settings.php:187 includes/api/admin-settings.php:323
+msgid "Posts"
+msgstr ""
+
+#: includes/api/admin-settings.php:113
+msgid "Posts & Pages"
+msgstr ""
+
+#: includes/api/admin-settings.php:326
+msgid "Posts, Pages & Custom Post Types"
+msgstr ""
+
+#: plugin-main.php:194
+msgid "Preview"
+msgstr ""
+
+#: includes/templates/sidebar-banner.php:13
+msgid "PRO"
+msgstr ""
+
+#: plugin-main.php:198
+msgid "Pro"
+msgstr ""
+
+#: includes/templates/sidebar-banner.php:41
+msgid "Provide Your Feedback"
+msgstr ""
+
+#: includes/templates/sidebar-banner.php:35
+msgid "Rating icon"
+msgstr ""
+
+#: includes/plugin-options-page.php:65 includes/plugin-options-page.php:66
+#: includes/api/admin-settings.php:473
+msgid "Recommended"
+msgstr ""
+
+#: includes/api/admin-settings.php:64
+msgid "Recommended Plugins"
+msgstr ""
+
+#: includes/api/admin-settings.php:445
+msgid "Release Date"
+msgstr ""
+
+#: includes/api/admin-settings.php:440
+msgid "Review Settings"
+msgstr ""
+
+#: includes/api/admin-settings.php:409
+msgid "Save & Enable"
+msgstr ""
+
+#: includes/api/admin-settings.php:418
+msgid "Save Settings"
+msgstr ""
+
+#: includes/api/admin-settings.php:133
+msgid "Screen ID Equals"
+msgstr ""
+
+#: includes/api/admin-settings.php:430
+msgid "Search plugins..."
+msgstr ""
+
+#: includes/helper_functions.php:119 includes/api/admin-settings.php:405
+msgid "Select"
+msgstr ""
+
+#: includes/api/admin-settings.php:425
+msgid "Select Admin Pages:"
+msgstr ""
+
+#: includes/api/admin-settings.php:100
+msgid "Select Admin Pages: "
+msgstr ""
+
+#: includes/api/admin-settings.php:416
+msgid "Select how many plugins to display per page in the manage plugin list."
+msgstr ""
+
+#: includes/api/admin-settings.php:402
+msgid "Select Pages:"
+msgstr ""
+
+#: includes/api/admin-settings.php:342
+msgid "Select Post Types"
+msgstr ""
+
+#: includes/api/admin-settings.php:403
+msgid "Select Posts:"
+msgstr ""
+
+#: includes/api/admin-settings.php:346 includes/api/admin-settings.php:419
+msgid "Select the custom post types where you want to disable plugins."
+msgstr ""
+
+#: includes/api/admin-settings.php:296
+msgid "Select the device(s) where this plugin should be disabled."
+msgstr ""
+
+#. %1$s: anchor start tag with privacy policy url
+#. %2$s: anchor end tag
+#: includes/class-diagnostic-data.php:573
+#, php-format
+msgid ""
+"Server information (Web server, PHP version, MySQL version), WordPress "
+"information, site name, site URL, number of plugins, number of users, your "
+"name, and email address. You can rest assured that no sensitive data will be "
+"collected or tracked. %1$sLearn more%2$s."
+msgstr ""
+
+#: includes/plugin-options-page.php:56 includes/plugin-options-page.php:57
+#: includes/api/admin-settings.php:40 includes/api/admin-settings.php:120
+msgid "Settings"
+msgstr ""
+
+#: includes/api/admin-settings.php:413
+msgid "Show Plugin Thumbnails"
+msgstr ""
+
+#: includes/api/admin-settings.php:362
+msgid "Show Thumbnails"
+msgstr ""
+
+#: includes/api/admin-dashboard-api.php:649
+msgid "Sidebar template file not found."
+msgstr ""
+
+#: includes/api/recommended-plugins-api.php:226
+msgid "Sorry, you are not allowed to activate plugins."
+msgstr ""
+
+#: includes/api/recommended-plugins-api.php:187
+msgid "Sorry, you are not allowed to install plugins."
+msgstr ""
+
+#: includes/api/admin-settings.php:80 includes/api/admin-settings.php:285
+msgid "Status: "
+msgstr ""
+
+#: plugin-main.php:210 includes/api/admin-settings.php:56
+msgid "Support"
+msgstr ""
+
+#: includes/api/admin-settings.php:501 includes/api/admin-settings.php:607
+msgid "Support Genix is a support ticket system for WordPress and WooCommerce."
+msgstr ""
+
+#: includes/api/admin-settings.php:500 includes/api/admin-settings.php:606
+msgid "Support Genix Lite – Support Tickets Managing System"
+msgstr ""
+
+#: includes/api/admin-settings.php:581
+msgid "Swatchly"
+msgstr ""
+
+#: includes/api/admin-settings.php:582
+msgid ""
+"Swatchly – WooCommerce Variation Swatches for Products (product attributes: "
+"Image swatch, Color swatches, Label swatches...)"
+msgstr ""
+
+#: includes/api/admin-settings.php:301
+msgid "Tablet"
+msgstr ""
+
+#: includes/api/admin-settings.php:304
+msgid "Tablet + Mobile"
+msgstr ""
+
+#: includes/api/admin-settings.php:211
+msgid "Tags"
+msgstr ""
+
+#: includes/templates/sidebar-banner.php:40
+msgid ""
+"Thank you for choosing our plugin! If it makes your work easier, please "
+"share your happiness with a 5-star rating on WordPress. It’ll take just 2 "
+"minutes & means a lot to us!"
+msgstr ""
+
+#: plugin-main.php:342
+msgid "Thank you for choosing WP Plugin Manager to manage you plugins!"
+msgstr ""
+
+#. %1$s: project name
+#. %2$s: strong start tag
+#. %3$s: strong end tag
+#: includes/class-diagnostic-data.php:607
+#, php-format
+msgid "Thank you very much for supporting %2$s%1$s%3$s."
+msgstr ""
+
+#: includes/api/admin-settings.php:438
+msgid ""
+"This plugin was optimized with specific settings. Review them before "
+"enabling to avoid potential issues"
+msgstr ""
+
+#: includes/api/admin-settings.php:119
+msgid "Tools"
+msgstr ""
+
+#: includes/api/admin-settings.php:433
+msgid "Try adjusting your search or filter criteria"
+msgstr ""
+
+#: includes/api/admin-settings.php:156
+msgid "Updates"
+msgstr ""
+
+#: includes/templates/sidebar-banner.php:28
+msgid "Upgrade To PRO"
+msgstr ""
+
+#: plugin-main.php:240 plugin-main.php:241 includes/api/admin-settings.php:401
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: includes/api/admin-settings.php:406
+msgid "URI Conditions:"
+msgstr ""
+
+#: includes/api/admin-settings.php:118
+msgid "Users"
+msgstr ""
+
+#: includes/api/admin-settings.php:444
+msgid "Version"
+msgstr ""
+
+#: plugin-main.php:209
+msgid "Video Tutorial"
+msgstr ""
+
+#: includes/templates/sidebar-banner.php:17
+msgid "What You Get"
+msgstr ""
+
+#: includes/api/admin-settings.php:443
+msgid "What's New in Plugin Manager"
+msgstr ""
+
+#: includes/api/admin-settings.php:509 includes/api/admin-settings.php:563
+msgid "Whols – Wholesale Prices and B2B Store"
+msgstr ""
+
+#: includes/api/admin-settings.php:558
+msgid "WooCommerce"
+msgstr ""
+
+#: includes/api/admin-settings.php:510 includes/api/admin-settings.php:564
+msgid "WooCommerce Wholesale plugin for B2B store management."
+msgstr ""
+
+#: includes/api/admin-settings.php:479 includes/api/admin-settings.php:572
+msgid "WooLentor"
+msgstr ""
+
+#: plugin-main.php:343
+msgid ""
+"Would you mind doing us a huge favor by providing your feedback on WordPress?"
+" Your support helps us spread the word and greatly boosts our motivation."
+msgstr ""
+
+#. Name of the plugin
+msgid "WP Plugin Manager"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"WP Plugin Manager is a WordPress plugin that allows you to disable plugins "
+"for certain pages, posts or URI conditions."
+msgstr ""
+
+#: includes/class.notices.php:73
+msgid "You are not authorized."
+msgstr ""
+
+#: includes/api/changelog-api.php:89
+msgid "You do not have permissions to manage this resource."
+msgstr ""
+
+#. %1$s: project name
+#: includes/class-diagnostic-data.php:586
+#, php-format
+msgid "🌟 Enhance Your %1$s Experience as a Valued Contributor!"
+msgstr ""

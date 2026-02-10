@@ -1,0 +1,31 @@
+.d4p-panel-metadata {
+    .sweeppress-table-preview {
+        tr {
+            th {
+                &.column-meta_id {
+                    width: 180px;
+                }
+
+                &.column-meta_size,
+                &.column-reference_id {
+                    width: 100px;
+                }
+            }
+
+            td {
+                &.column-meta_id {
+                    .row-actions {
+                        float: right;
+                        padding: 0;
+                    }
+                }
+
+                &.column-meta_value {
+                    .kint-rich {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

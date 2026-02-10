@@ -1,0 +1,220 @@
+{
+	"info": {
+		"_postman_id": "e7be3a9b-a662-450d-bdcd-d51cecc38ae3",
+		"name": "upkepr",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14250061"
+	},
+	"item": [
+		{
+			"name": "{domainname}/wp-json/upkepr-isKeyValid/key",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Upkeprvalidationkey",
+						"value": "{vaidation_key}",
+						"type": "text"
+					},
+					{
+						"key": "Upkeprvalidationdomain",
+						"value": "{base_domainname}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"{username_or_email}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{domainname}/wp-json/upkepr-isKeyValid/key",
+					"host": [
+						"{domainname}"
+					],
+					"path": [
+						"wp-json",
+						"upkepr-isKeyValid",
+						"key"
+					]
+				},
+				"description": "The api to check if validation key is valid or not."
+			},
+			"response": []
+		},
+		{
+			"name": "{domainname}/wp-json/upkepr-is_keydomainusername_valid/data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Upkeprvalidationkey",
+						"value": "{vaidation_key}",
+						"type": "text"
+					},
+					{
+						"key": "Upkeprvalidationdomain",
+						"value": "{base_domainname}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"{username_or_email}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{domainname}/wp-json/upkepr-is_keydomainusername_valid/data",
+					"host": [
+						"{domainname}"
+					],
+					"path": [
+						"wp-json",
+						"upkepr-is_keydomainusername_valid",
+						"data"
+					]
+				},
+				"description": "The api to check if both validation key and domain are valid."
+			},
+			"response": []
+		},
+		{
+			"name": "{domainname}/wp-json/upkepr-wpinfo/wpinfo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Upkeprvalidationkey",
+						"value": "{vaidation_key}",
+						"type": "text"
+					},
+					{
+						"key": "Upkeprvalidationdomain",
+						"value": "{base_domainname}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"{username_or_email}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{domainname}/wp-json/upkepr-wpinfo/wpinfo",
+					"host": [
+						"{domainname}"
+					],
+					"path": [
+						"wp-json",
+						"upkepr-wpinfo",
+						"wpinfo"
+					]
+				},
+				"description": "Api to get information about wordpress plugins, themes and memory usage."
+			},
+			"response": []
+		},
+		{
+			"name": "{domainname}/wp-json/upkepr-gettoken/byusername",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Upkeprvalidationkey",
+						"value": "{vaidation_key}",
+						"type": "text"
+					},
+					{
+						"key": "Upkeprvalidationdomain",
+						"value": "{base_domainname}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"{username_or_email}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{domainname}/wp-json/upkepr-gettoken/byusername",
+					"host": [
+						"{domainname}"
+					],
+					"path": [
+						"wp-json",
+						"upkepr-gettoken",
+						"byusername"
+					]
+				},
+				"description": "The api to get the login token"
+			},
+			"response": []
+		},
+		{
+			"name": "{domainname}/wp-json/upkepr-getloginurl/byusername",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "dfg4353453q4f3452345v2345234v52345v245245345",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Upkeprvalidationkey",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "Upkeprvalidationdomain",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"{username_or_email}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{domainname}/wp-json/upkepr-getloginurl/byusername",
+					"host": [
+						"{domainname}"
+					],
+					"path": [
+						"wp-json",
+						"upkepr-getloginurl",
+						"byusername"
+					]
+				},
+				"description": "This api to get login url by sending Upkeprvalidationkey, Upkeprvalidationdomain in header and Authorization bearer token. And username in body parameter."
+			},
+			"response": []
+		}
+	]
+}

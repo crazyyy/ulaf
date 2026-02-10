@@ -1,0 +1,1 @@
+jQuery(document).ready(function(e){e(".show-remaining").click(function(){e(".hidden",e(this).closest("ul")).removeClass("hidden")})});

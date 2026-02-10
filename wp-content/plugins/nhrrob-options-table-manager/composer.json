@@ -1,0 +1,33 @@
+{
+    "name": "nhrotm/options-table-manager",
+    "description": "Clean DataTable view of wp-options table to make decisions and boost your site performance!",
+    "type": "wordpress-plugin",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Nhrrob",
+            "email": "admin@admin.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Nhrotm\\OptionsTableManager\\": "includes/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nhrotm\\OptionsTableManager\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6",
+        "10up/wp_mock": "dev-trunk"
+    },
+    "scripts": {
+        "deploy": "composer install --no-dev && wp dist-archive . && composer install",
+        "dev": "composer install",
+        "build": "composer install --no-dev",
+        "test": "./vendor/bin/phpunit"
+    }
+}

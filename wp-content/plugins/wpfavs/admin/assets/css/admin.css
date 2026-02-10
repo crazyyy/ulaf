@@ -1,0 +1,47 @@
+/* This stylesheet is used to style the admin option form of the plugin. */
+.wrap h2 {
+	border-bottom: 1px solid #ccc;
+}
+#wpfavs-form {
+	margin: 30px 0;
+}
+#wpfavs-form h4 {
+	margin-bottom: 5px;
+}
+
+#wplists {
+	border-top: 1px solid #ccc;
+	padding-top: 20px;
+	font-size: 14px;
+}
+#wplists .loading{
+	display: none;
+}
+#wplists .spin {
+	margin-left: 4px;
+	margin-bottom: -4px;
+}
+#wpfav-response .tablenav,
+#wpfav-response .widefat{
+	clear: left;
+}
+
+.wpfav-box .title h3 .button-primary{
+	font-size: 11px;
+	line-height: 22px;
+	height: 22px;
+}
+.wpfav-box .title h3{
+	font-size: 14px;
+	padding: 8px 12px;
+	margin: 0;
+	line-height: 1.4;
+	border-bottom: 1px solid #eee;
+}
+span.plugin-name {
+	background: #eee;
+	margin-right: 10px;
+	padding: 3px 6px;
+	border-radius: 9px;
+	line-height: 2;
+}

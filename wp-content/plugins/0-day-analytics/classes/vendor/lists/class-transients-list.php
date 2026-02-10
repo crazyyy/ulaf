@@ -1,0 +1,954 @@
+<?php
+/**
+ * Responsible for the Showing the list of the transients.
+ *
+ * @package    advanced-analytics
+ * @subpackage helpers
+ *
+ * @since 1.7.0
+ *
+ * @license    https://www.apache.org/licenses/LICENSE-2.0 Apache License 2.0
+ */
+
+declare(strict_types=1);
+
+namespace ADVAN\Lists;
+
+use ADVAN\Lists\Logs_List;
+use ADVAN\Helpers\Settings;
+use ADVAN\Helpers\WP_Helper;
+use ADVAN\Lists\Abstract_List;
+use ADVAN\Helpers\Crons_Helper;
+use ADVAN\Helpers\Miscellaneous;
+use ADVAN\Lists\Traits\List_Trait;
+use ADVAN\Helpers\Transients_Helper;
+use ADVAN\Lists\Views\Transients_View;
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+/*
+ * Base list table class
+ */
+if ( ! class_exists( '\ADVAN\Lists\Transients_List' ) ) {
+	/**
+	 * Responsible for rendering base table for manipulation.
+	 *
+	 * @since 1.7.0
+	 */
+	class Transients_List extends Abstract_List {
+
+		use List_Trait;
+
+		public const SCREEN_OPTIONS_SLUG = 'advanced_analytics_transients_list';
+
+		public const PAGE_SLUG = ADVAN_INNER_SLUG . '_page_advan_transients';
+
+		public const UPDATE_ACTION = 'advan_transients_update';
+
+		public const NEW_ACTION = 'advan_transients_new';
+
+		public const NONCE_NAME = 'advana_transients_manager';
+
+		public const SEARCH_INPUT = 'sgp';
+
+		public const TRANSIENTS_MENU_SLUG = 'advan_transients';
+
+		/**
+		 * Format for the file link.
+		 *
+		 * @var string|false|null
+		 *
+		 * @since 1.4.0
+		 */
+		private static $file_link_format = null;
+
+		/**
+		 * Name of the table to show.
+		 *
+		 * @var string
+		 *
+		 * @since 1.7.0
+		 */
+		protected static $table_name;
+
+		/**
+		 * How many.
+		 *
+		 * @var int
+		 *
+		 * @since 1.7.0
+		 */
+		protected $count;
+
+		/**
+		 * How many log records to read from the log page - that is a fall back option, it will try to extract that first from the stored user data, then from the settings and from here as a last resort.
+		 *
+		 * @var int
+		 *
+		 * @since 1.7.0
+		 */
+		protected static $rows_per_page = 10;
+
+		/**
+		 * Events Query Arguments.
+		 *
+		 * @since 1.7.0 Transformed to array
+		 *
+		 * @var array
+		 */
+		private static $query_args;
+
+		/**
+		 * Holds the current query arguments.
+		 *
+		 * @var array
+		 *
+		 * @since 1.7.0
+		 */
+		private static $query_occ = array();
+
+		/**
+		 * Holds the current query order.
+		 *
+		 * @var array
+		 *
+		 * @since 1.7.0
+		 */
+		private static $query_order = array();
+
+		/**
+		 * Default class constructor.
+		 *
+		 * @param stdClass $query_args Events query arguments.
+		 *
+		 * @since 1.7.0
+		 */
+		public function __construct( $query_args ) {
+			self::$query_args = $query_args;
+
+			parent::__construct(
+				array(
+					'singular' => 'generated-transient',
+					'plural'   => 'generated-transients',
+					'ajax'     => true,
+					'screen'   => WP_Helper::get_wp_screen(),
+				)
+			);
+
+			self::$columns = self::manage_columns( array() );
+
+			self::$table_name = 'advanced_transients';
+		}
+
+		/**
+		 * Inits the module hook.
+		 *
+		 * @return void
+		 *
+		 * @since 2.8.1
+		 */
+		public static function hooks_init() {
+			\add_action( 'admin_print_styles-' . self::PAGE_SLUG, array( Settings::class, 'print_styles' ) );
+
+			\add_action( 'admin_post_' . self::UPDATE_ACTION, array( Transients_View::class, 'update_transient' ) );
+			\add_action( 'admin_post_' . self::NEW_ACTION, array( Transients_View::class, 'new_transient' ) );
+			\add_action( 'load-' . self::PAGE_SLUG, array( Transients_View::class, 'page_load' ) );
+		}
+
+		/**
+		 * Adds the module to the main plugin menu
+		 *
+		 * @return void
+		 *
+		 * @since 2.8.1
+		 */
+		public static function menu_add() {
+
+			$transients_hook = \add_submenu_page(
+				Logs_List::MENU_SLUG,
+				ADVAN_INNER_NAME,
+				\esc_html__( 'Transients viewer', '0-day-analytics' ),
+				( ( Settings::get_option( 'menu_admins_only' ) ) ? 'manage_options' : 'read' ), // No capability requirement.
+				self::TRANSIENTS_MENU_SLUG,
+				array( Transients_View::class, 'analytics_transients_page' ),
+				3
+			);
+
+			self::add_screen_options( $transients_hook );
+
+			\add_filter( 'manage_' . $transients_hook . '_columns', array( self::class, 'manage_columns' ) );
+
+					\add_action( 'load-' . $transients_hook, array( Settings::class, 'aadvana_common_help' ) );
+					// Process bulk/table actions early before any output.
+					\add_action( 'load-' . $transients_hook, array( self::class, 'process_actions_load' ) );
+		}
+
+		/**
+		 * Handle any table actions during the early page load hook to allow safe redirects.
+		 *
+		 * @return void
+		 *
+		 * @since 4.2.0
+		 */
+		public static function process_actions_load() {
+			if ( ! \current_user_can( 'manage_options' ) ) {
+				return;
+			}
+			$table = new self( array() );
+			$table->handle_table_actions();
+		}
+
+		/**
+		 * Displays the search box.
+		 *
+		 * @since 1.7.0
+		 *
+		 * @param string $text     The 'submit' button label.
+		 * @param string $input_id ID attribute value for the search input field.
+		 */
+		public function search_box( $text, $input_id ) {
+
+			// Use sanitized accessor instead of direct superglobal.
+			if ( '' === self::escaped_search_input() && ! $this->has_items() ) {
+				return;
+			}
+
+			$input_id = $input_id . '-search-input';
+			?>
+			<p class="search-box" style="position:relative">
+				<label class="screen-reader-text" for="<?php echo esc_attr( $input_id ); ?>"><?php echo \esc_html( $text ); ?>:</label>
+
+				<input type="search" id="<?php echo esc_attr( $input_id ); ?>" class="<?php echo \esc_attr( ADVAN_PREFIX ); ?>search_input" name="<?php echo \esc_attr( self::SEARCH_INPUT ); ?>" value="<?php echo \esc_attr( self::escaped_search_input() ); ?>" />
+
+				<?php submit_button( $text, '', '', false, array( 'id' => 'search-submit' ) ); ?>
+			</p>
+
+			<?php
+		}
+
+		/**
+		 * Adds columns to the screen options screed.
+		 *
+		 * @param array $columns - Array of column names.
+		 *
+		 * @since 1.7.0
+		 */
+		public static function manage_columns( $columns ): array {
+			$admin_fields = array(
+				'cb'             => '<input type="checkbox" />', // to display the checkbox.
+				'transient_name' => __( 'Name', '0-day-analytics' ),
+				'schedule'       => esc_html(
+					sprintf(
+						/* translators: %s: UTC offset */
+						__( 'Expiration (%s)', '0-day-analytics' ),
+						WP_Helper::get_timezone_location()
+					),
+				),
+				'value'          => __( 'Value', '0-day-analytics' ),
+			);
+
+			$screen_options = $admin_fields;
+
+			return \array_merge( $screen_options, $columns );
+		}
+
+		/**
+		 * Returns the table name.
+		 *
+		 * @since 1.7.0
+		 */
+		public static function get_table_name(): string {
+			return self::$table_name;
+		}
+
+		/**
+		 * Prepares the list of items for displaying.
+		 *
+		 * Query, filter data, handle sorting, and pagination, and any other data-manipulation required prior to rendering
+		 *
+		 * @since 1.7.0
+		 */
+		public function prepare_items() {
+
+			$this->handle_table_actions();
+
+			$columns               = $this->get_columns();
+			$hidden                = array();
+			$sortable              = $this->get_sortable_columns();
+			$this->_column_headers = array( $columns, $hidden, $sortable );
+
+			// Vars.
+			// phpcs:disable Generic.Formatting.MultipleStatementAlignment
+			$search = self::escaped_search_input();
+			/* phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only query param for view state. */
+			$per_page = isset( $_GET['per_page'] ) ? max( 1, absint( $_GET['per_page'] ) ) : self::get_screen_option_per_page();
+			/* phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only query param for view state. */
+			$orderby = isset( $_GET['orderby'] ) ? sanitize_key( \wp_unslash( $_GET['orderby'] ) ) : '';
+			$allowed_orderby = array( 'transient_name', 'schedule', 'value' );
+			if ( ! in_array( $orderby, $allowed_orderby, true ) ) {
+				$orderby = '';
+			}
+			/* phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only query param for view state. */
+			$order = isset( $_GET['order'] ) ? strtoupper( sanitize_key( \wp_unslash( $_GET['order'] ) ) ) : 'DESC';
+			if ( ! in_array( $order, array( 'ASC', 'DESC' ), true ) ) {
+				$order = 'DESC';
+			}
+			$page = $this->get_pagenum();
+			$offset = $per_page * ( $page - 1 );
+			// phpcs:enable Generic.Formatting.MultipleStatementAlignment
+
+			/* phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only query param for view state. */
+			$type        = isset( $_GET['event_type'] ) ? \sanitize_text_field( \wp_unslash( $_GET['event_type'] ) ) : '';
+			$this->count = self::get_total_transients( $type, $search );
+
+			$this->fetch_table_data(
+				array(
+					'search'   => $search,
+					'offset'   => $offset,
+					'per_page' => $per_page,
+					'orderby'  => $orderby,
+					'order'    => $order,
+					'type'     => $type,
+				)
+			);
+			$hidden = \get_user_option( 'manage' . WP_Helper::get_wp_screen()->id . 'columnshidden', false );
+			if ( ! $hidden ) {
+				$hidden = array();
+			}
+
+			$this->_column_headers = array( self::$columns, $hidden, $sortable );
+
+			// Set the pagination.
+			$this->set_pagination_args(
+				array(
+					'total_items' => $this->count,
+					'per_page'    => $per_page,
+					'total_pages' => ceil( $this->count / $per_page ),
+				)
+			);
+		}
+
+		/**
+		 * Returns the currently hidden column headers for the current user
+		 *
+		 * @return array
+		 *
+		 * @since 1.7.0
+		 */
+		public static function get_hidden_columns() {
+			return array_filter(
+				(array) \get_user_option( 'manage' . Settings::get_main_menu_page_hook() . 'columnshidden', false )
+			);
+		}
+
+		/**
+		 * Get a list of sortable columns. The format is:
+		 * 'internal-name' => 'orderby'
+		 * or
+		 * 'internal-name' => array( 'orderby', true ).
+		 *
+		 * The second format will make the initial sorting order be descending
+		 *
+		 * @since 1.7.0
+		 *
+		 * @return array
+		 */
+		public function get_sortable_columns() {
+			// Sorting disabled due to storage format constraints.
+			return array();
+		}
+
+		/**
+		 * Text displayed when no user data is available.
+		 *
+		 * @since 1.7.0
+		 *
+		 * @return void
+		 */
+		public function no_items() {
+			\esc_html_e( 'No transients found', '0-day-analytics' );
+		}
+
+		/**
+		 * Fetch table data from the WordPress database.
+		 *
+		 * @param array $args - The arguments collected / passed.
+		 *
+		 * @since 1.7.0
+		 *
+		 * @return array
+		 */
+		public function fetch_table_data( array $args = array() ) {
+
+			$this->items = Transients_Helper::get_transient_items( $args );
+
+			return $this->items;
+		}
+
+		/**
+		 * Parse the query arguments
+		 *
+		 * @param  array $args - Array to parse.
+		 *
+		 * @return array
+		 *
+		 * @since 1.7.0
+		 */
+		public static function parse_args( $args = array() ) {
+
+			// Parse.
+			$parsed_args = \wp_parse_args(
+				$args,
+				array(
+					'offset'   => 0,
+					'per_page' => self::get_screen_option_per_page(),
+					'search'   => '',
+					'count'    => false,
+				)
+			);
+
+			// Return.
+			return $parsed_args;
+		}
+
+		/**
+		 * Retrieve the total number transients in the database
+		 *
+		 * If a search is performed, it returns the number of found results
+		 *
+		 * @param string $type - The type of the transients to collect data for.
+		 * @param  string $search - Search string.
+		 *
+		 * @return int
+		 *
+		 * @since 1.7.0
+		 */
+		private static function get_total_transients( string $type, $search = '' ) {
+
+			// Query.
+			$count = Transients_Helper::get_transient_items(
+				array(
+					'count'  => true,
+					'search' => $search,
+					'type'   => $type,
+				)
+			);
+
+			// Return int.
+			return absint( $count );
+		}
+
+		/**
+		 * Render a column when no column specific method exists.
+		 *
+		 * Use that method for common rendering and separate columns logic in different methods. See below.
+		 *
+		 * @param array  $item        - Array with the current row values.
+		 * @param string $column_name - The name of the currently processed column.
+		 *
+		 * @return mixed
+		 *
+		 * @since 1.7.0
+		 */
+		public function column_default( $item, $column_name ) {
+			return self::format_column_value( $item, $column_name );
+		}
+
+		/**
+		 * Render a column when no column specific method exists.
+		 *
+		 * Use that method for common rendering and separate columns logic in different methods. See below.
+		 *
+		 * @param array  $item        - Array with the current row values.
+		 * @param string $column_name - The name of the currently processed column.
+		 *
+		 * @return mixed
+		 *
+		 * @since 1.7.0
+		 */
+		public static function format_column_value( $item, $column_name ) {
+			switch ( $column_name ) {
+				case 'transient_name':
+					$query_args_view_data             = array();
+					$query_args_view_data['hash']     = $item['id'];
+					$query_args_view_data['_wpnonce'] = \wp_create_nonce( 'bulk-custom-delete' );
+
+					$actions['delete'] = '<a class="aadvana-transient-delete" href="#" data-nonce="' . \esc_attr( $query_args_view_data['_wpnonce'] ) . '" data-id="' . \esc_attr( (string) $query_args_view_data['hash'] ) . '">' . \esc_html__( 'Delete', '0-day-analytics' ) . '</a>';
+
+					$actions['view'] = '<a class="aadvana-tablerow-view" href="#" data-details-id="' . \esc_attr( (string) $query_args_view_data['hash'] ) . '">' . \esc_html__( 'View', '0-day-analytics' ) . '</a>';
+
+					$edit_url = \remove_query_arg(
+						array( 'updated', 'deleted' ),
+						\add_query_arg(
+							array(
+								'action'           => 'edit_transient',
+								'trans_id'         => $item['id'],
+								self::SEARCH_INPUT => self::escaped_search_input(),
+								'_wpnonce'         => $query_args_view_data['_wpnonce'],
+							)
+						)
+					);
+
+					$actions['edit'] = '<a class="aadvana-transient-run" href="' . \esc_url( $edit_url ) . '">' . \esc_html__( 'Edit', '0-day-analytics' ) . '</a>';
+
+					$core_trans = '';
+
+					if ( in_array( $item['transient_name'], Transients_Helper::WP_CORE_TRANSIENTS, true ) ) {
+						$core_trans = '<span class="dashicons dashicons-wordpress" aria-hidden="true"></span> ';
+					} else {
+						foreach ( Transients_Helper::WP_CORE_TRANSIENTS as $trans_name ) {
+							if ( \str_starts_with( $item['transient_name'], $trans_name ) ) {
+								$core_trans = '<span class="dashicons dashicons-wordpress" aria-hidden="true"></span> ';
+
+								break;
+							}
+						}
+					}
+
+					// translators: %s is the transient.
+					return '<span>' . $core_trans . '<b title="' . sprintf( \esc_attr__( 'Option ID: %d', '0-day-analytics' ), (int) $item['id'] ) . '">' . \esc_html( (string) $item['transient_name'] ) . '</b></span>' . self::single_row_actions( $actions );
+				case 'schedule':
+					if ( 0 === $item['schedule'] ) {
+						return '&mdash;<br><span class="badge">' . \esc_html__( 'Persistent', '0-day-analytics' ) . '</span>';
+					}
+
+					return WP_Helper::time_formatter( $item, \esc_html__( 'Expired', '0-day-analytics' ) );
+				case 'value':
+					return $item['value'];
+				default:
+					return isset( $item[ $column_name ] )
+						? \esc_html( $item[ $column_name ] )
+						: __( 'Column "', '0-day-analytics' ) . \esc_html( $column_name ) . __( '" not found', '0-day-analytics' );
+			}
+		}
+
+		/**
+		 * Get value for checkbox column.
+		 *
+		 * The special 'cb' column
+		 *
+		 * @param object $item - A row's data.
+		 *
+		 * @return string Text to be placed inside the column < td > .
+		 *
+		 * @since 1.7.0
+		 */
+		protected function column_cb( $item ) {
+			return sprintf(
+				'<label class="screen-reader-text" for="' . \esc_attr( (string) $item['id'] ) . '">' . sprintf(
+					// translators: The column name.
+					__( 'Select %s', '0-day-analytics' ),
+					'id'
+				) . '</label>'
+				. '<input type="checkbox" name="' . \esc_attr( self::$table_name ) . '[]" id="' . \esc_attr( (string) $item['id'] ) . '" value="' . \esc_attr( (string) $item['id'] ) . '" />'
+			);
+		}
+
+		/**
+		 * Returns an associative array containing the bulk actions.
+		 *
+		 * @since 1.7.0
+		 *
+		 * @return array
+		 */
+		public function get_bulk_actions() {
+			/**
+			 * On hitting apply in bulk actions the url params are set as
+			 * ?action=bulk-download&paged=1&action2=-1.
+			 *
+			 * Action and action2 are set based on the triggers above or below the table
+			 */
+			$actions = array(
+				'delete' => __( 'Delete', '0-day-analytics' ),
+			);
+
+			return $actions;
+		}
+
+		/**
+		 * Process actions triggered by the user.
+		 *
+		 * @since 1.7.0
+		 */
+		public function handle_table_actions() {
+			if ( \is_user_logged_in() && \current_user_can( 'manage_options' ) ) {
+			/* phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Checking request presence; nonces verified before acting. */
+				if ( ! isset( $_REQUEST[ self::$table_name ] ) ) {
+					return;
+				}
+				/**
+				 * Note: Table bulk_actions can be identified by checking $_REQUEST['action'] and $_REQUEST['action2'].
+				 *
+				 * Action - is set if checkbox from top-most select-all is set, otherwise returns -1
+				 * Action2 - is set if checkbox the bottom-most select-all checkbox is set, otherwise returns -1
+				 */
+
+				// check for table bulk actions.
+			/* phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only checks; state change gated by nonce verification below. */
+				if ( ( ( isset( $_REQUEST['action'] ) && 'delete' === $_REQUEST['action'] ) || ( isset( $_REQUEST['action2'] ) && 'delete' === $_REQUEST['action2'] ) ) ) {
+					/**
+					 * Note: the nonce field is set by the parent class
+					 * wp_nonce_field( 'bulk-' . $this->_args['plural'] );.
+					 */
+					WP_Helper::verify_admin_nonce( 'bulk-' . $this->_args['plural'] );
+
+					/* phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Nonce was just verified. */
+					if ( isset( $_REQUEST[ self::$table_name ] ) && \is_array( $_REQUEST[ self::$table_name ] ) ) {
+						foreach ( \wp_unslash( $_REQUEST[ self::$table_name ] ) as $id ) { // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized, WordPress.Security.NonceVerification.Recommended
+							$id = \sanitize_text_field( $id );
+							if ( ! empty( $id ) ) {
+								// Delete the transient.
+								Transients_Helper::delete_transient( (int) $id );
+							}
+						}
+					}
+
+					$redirect =
+					\remove_query_arg(
+						array( 'delete', '_wpnonce', 'bulk_action', 'advanced_transients' ),
+						\add_query_arg(
+							array(
+								self::SEARCH_INPUT => self::escaped_search_input(),
+								'paged'            => isset( $_REQUEST['paged'] ) ? max( 1, absint( \wp_unslash( $_REQUEST['paged'] ) ) ) : 1,
+								'page'             => self::TRANSIENTS_MENU_SLUG,
+							),
+							\admin_url( 'admin.php' )
+						)
+					);
+
+					\wp_safe_redirect( $redirect );
+					exit;
+				}
+			}
+		}
+
+		/**
+		 * Returns translated text for per page option
+		 *
+		 * @return string
+		 *
+		 * @since 2.3.0
+		 */
+		private static function get_screen_per_page_title(): string {
+			return __( 'Number of transients to show', '0-day-analytics' );
+		}
+
+		/**
+		 * Generates content for a single row of the table.
+		 *
+		 * @param array $item - The current item.
+		 *
+		 * @since 1.7.0
+		 */
+		public function single_row( $item ) {
+			if ( 0 === $item['schedule'] ) {
+				$classes = ' persistent';
+			} else {
+				$late = Crons_Helper::is_late( $item );
+
+				if ( $late ) {
+					$classes = ' late';
+				} else {
+					$classes = ' on-time';
+				}
+			}
+
+			echo '<tr class="' . \esc_attr( $classes ) . '">'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+			$this->single_row_columns( $item );
+			echo '</tr>';
+		}
+
+		/**
+		 * Generates the table navigation above or below the table
+		 *
+		 * @param string $which - Holds info about the top and bottom navigation.
+		 *
+		 * @since 1.7.0
+		 */
+		public function display_tablenav( $which ) {
+			if ( 'top' === $which ) {
+				\wp_nonce_field( 'bulk-' . $this->_args['plural'] );
+
+				?>
+				<script>
+					jQuery(document).ready(function(){
+						jQuery('.aadvana-transient-delete').on('click', function(e){
+
+							e.preventDefault();
+							if ( confirm( '<?php echo \esc_html__( 'You sure you want to delete this transient?', '0-day-analytics' ); ?>' ) ) {
+								let that = this;
+
+								jQuery(that).css({
+									"pointer-events": "none",
+									"cursor": "default"
+								});
+
+								var data = {
+									'action': '<?php echo esc_js( ADVAN_PREFIX ); ?>delete_transient',
+									'post_type': 'GET',
+									'_wpnonce': jQuery(this).data('nonce'),
+									'id': jQuery(this).data('id'),
+								};
+
+								jQuery.get(ajaxurl, data, function(response) {
+									if ( 2 === response['data'] || 0 === response['data'] ) {
+										jQuery(that).closest("tr").animate({
+											opacity: 0
+										}, 1000, function() {
+											jQuery(that).closest("tr").remove();
+										});
+									} else {
+										jQuery(that).closest("tr").after('<tr><td style="overflow:hidden;" colspan="'+(jQuery(that).closest("tr").find("td").length+1)+'"><div class="error" style="background:#fff; color:#000;"> ' + response['data'] + '</div></td></tr>');
+									}
+								}, 'json').always(function() {
+
+									jQuery(that).css({
+										"pointer-events": "",
+										"cursor": ""
+									})
+								});
+							}
+
+						});
+					});
+				</script>
+				<style>
+					<?php echo Miscellaneous::get_flex_style(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+					.generated-transients .persistent th:nth-child(1) {
+						border-left: 7px solid #d2ab0e !important;
+					}
+					.generated-transients .late th:nth-child(1) {
+						border-left: 7px solid #dd9192 !important;
+					}
+					.generated-transients .on-time th:nth-child(1) {
+						border-left: 7px solid rgb(49, 179, 45) !important;
+					}
+				</style>
+				<?php
+			}
+			?>
+			<div class="tablenav <?php echo esc_attr( $which ); ?>">
+
+			<?php if ( $this->has_items() ) { ?>
+				<div class="alignleft actions bulkactions">
+					<?php $this->bulk_actions( $which ); ?>
+				</div>
+				<?php
+			}
+			$this->extra_tablenav( $which );
+			if ( 'top' === $which && $this->count > 0 ) {
+				/* phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only param used to seed export UI state. */
+				$export_event_type = isset( $_GET['event_type'] ) ? \sanitize_text_field( \wp_unslash( $_GET['event_type'] ) ) : 'all';
+				?>
+				<div id="export-form">
+					<div>
+							<button id="start-export" class="button" data-type-export="transients" data-transient-type="<?php echo \esc_attr( $export_event_type ); ?>" data-search="<?php echo \esc_attr( self::escaped_search_input() ); ?>">
+							<?php echo \esc_html__( 'CSV Export', '0-day-analytics' ); ?>
+						</button>
+						<button id="cancel-export" class="button cancel-btn" style="display:none;">
+							<?php echo \esc_html__( 'Cancel', '0-day-analytics' ); ?>
+						</button>
+					</div>
+
+					<div id="progress-container" class="progress-wrap" style="display:none;">
+						<div id="progress-bar"></div>
+					</div>
+
+					<p id="progress-text" style="display:none;"><?php echo esc_html__( 'Waiting to start...', '0-day-analytics' ); ?></p>
+				</div>
+
+				<?php
+			}
+
+			$this->pagination( $which );
+
+			?>
+
+				<br class="clear" />
+			</div>
+			<?php
+				$this->extra_tablenav( $which );
+		}
+
+		/**
+		 * Generates the required HTML for a list of row action links.
+		 *
+		 * @since 1.3.0
+		 *
+		 * @param string[] $actions        An array of action links.
+		 * @param bool     $always_visible Whether the actions should be always visible.
+		 * @return string The HTML for the row actions.
+		 */
+		protected static function single_row_actions( $actions, $always_visible = false ) {
+			$action_count = count( $actions );
+
+			if ( ! $action_count ) {
+				return '';
+			}
+
+			$mode = \get_user_setting( 'posts_list_mode', 'list' );
+
+			if ( 'excerpt' === $mode ) {
+				$always_visible = true;
+			}
+
+			$output = '<div class="' . ( $always_visible ? 'row-actions visible' : 'row-actions' ) . '">';
+
+			$i = 0;
+
+			foreach ( $actions as $action => $link ) {
+				++$i;
+
+				$separator = ( $i < $action_count ) ? ' | ' : '';
+
+				$output .= "<span class='$action'>{$link}{$separator}</span>";
+			}
+
+			$output .= '</div>';
+
+			$output .= '<button type="button" class="toggle-row"><span class="screen-reader-text">' .
+			/* translators: Hidden accessibility text. */
+			__( 'Show more details', '0-day-analytics' ) .
+			'</span></button>';
+
+			return $output;
+		}
+
+		/**
+		 * Display the list of hook types.
+		 *
+		 * @return array<string,string>
+		 *
+		 * @since 3.3.1
+		 */
+		public function get_views() {
+
+			$views = array();
+			/* phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only filter param. */
+			$hooks_type = isset( $_REQUEST['event_type'] ) ? \sanitize_text_field( \wp_unslash( $_REQUEST['event_type'] ) ) : '';
+
+			$types = array(
+				'expired'         => __( 'Expired transients', '0-day-analytics' ),
+				'persistent'      => __( 'Persistent transients', '0-day-analytics' ),
+				'with_expiration' => __( 'Transients with expiration', '0-day-analytics' ),
+				'core'            => __( 'Core transients', '0-day-analytics' ),
+			);
+
+			$url = \add_query_arg(
+				array(
+					'page'       => self::TRANSIENTS_MENU_SLUG,
+					'event_type' => 'all',
+				),
+				\admin_url( 'admin.php' )
+			);
+
+			$all_transients = Transients_Helper::get_transient_items( array( 'all' => true ) );
+
+			$views['all'] = sprintf(
+				'<a href="%1$s"%2$s>%3$s <span class="count">(%4$s)</span></a>',
+				\esc_url( $url ),
+				'all' === $hooks_type ? ' class="current"' : '',
+				\esc_html__( 'All transients (no filters)', '0-day-analytics' ),
+				\esc_html( \number_format_i18n( count( $all_transients ) ) )
+			);
+
+			$filtered = self::get_filtered_transients( $all_transients );
+
+			/**
+			 * Iterate filter types to build view links.
+			 *
+			 * @var array<string,string> $types
+			 */
+			foreach ( $types as $key => $type ) {
+				if ( ! isset( $filtered[ $key ] ) ) {
+					continue;
+				}
+
+				$count = count( $filtered[ $key ] );
+
+				if ( ! $count ) {
+					continue;
+				}
+
+				$url = \add_query_arg(
+					array(
+						'page'             => self::TRANSIENTS_MENU_SLUG,
+						self::SEARCH_INPUT => self::escaped_search_input(),
+						'event_type'       => $key,
+					),
+					\admin_url( 'admin.php' )
+				);
+
+					$views[ $key ] = sprintf(
+						'<a href="%1$s"%2$s>%3$s <span class="count">(%4$s)</span></a>',
+						\esc_url( $url ),
+						$key === $hooks_type ? ' class="current"' : '',
+						\esc_html( $type ),
+						\esc_html( \number_format_i18n( $count ) )
+					);
+			}
+
+			return $views;
+		}
+
+		/**
+		 * Returns events filtered by various parameters
+		 *
+		 * @param array<string,stdClass> $events The list of all events.
+		 * @return array<string,array<string,stdClass>> Array of filtered events keyed by filter name.
+		 *
+		 * @since 3.3.1
+		 */
+		public static function get_filtered_transients( array $events ) {
+
+			$filtered = array();
+
+			$filtered['persistent'] = array_filter(
+				$events,
+				function ( $event ) {
+					return ( 0 === $event['schedule'] );
+				}
+			);
+
+			$filtered['core'] = array_filter(
+				$events,
+				function ( $event ) {
+					if ( in_array( $event['transient_name'], Transients_Helper::WP_CORE_TRANSIENTS, true ) ) {
+						return true;
+					}
+					foreach ( Transients_Helper::WP_CORE_TRANSIENTS as $trans_name ) {
+						if ( \str_starts_with( $event['transient_name'], $trans_name ) ) {
+							return true;
+						}
+					}
+					return false;
+				}
+			);
+
+			$filtered['expired'] = array_filter(
+				$events,
+				function ( $event ) {
+					if ( isset( $event['schedule'] ) && $event['schedule'] ) {
+						$late = Crons_Helper::is_late( (array) $event );
+
+						if ( $late ) {
+							return true;
+						}
+					}
+					return false;
+				}
+			);
+
+			$filtered['with_expiration'] = array_filter(
+				$events,
+				function ( $event ) {
+					return ( 0 !== $event['schedule'] );
+				}
+			);
+
+			return $filtered;
+		}
+	}
+}

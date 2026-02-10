@@ -1,0 +1,5027 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2025-12-28 12:18+0530\n"
+"PO-Revision-Date: 2025-12-28 12:18+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: _e;__;esc_html__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/admin/class-admin-assets.php:261
+msgid "Are you sure you want to delete this template?"
+msgstr "Êtes-vous sûr de vouloir supprimer ce modèle ?"
+
+#: includes/admin/class-admin-assets.php:397
+msgid "Copy to Clipboard"
+msgstr "Copier dans le presse-papiers"
+
+#: includes/admin/class-admin-assets.php:398
+msgid "Copied!"
+msgstr "Copié !"
+
+#: includes/admin/class-admin-assets.php:399
+msgid "Failed to copy. Please copy manually."
+msgstr "Échec de la copie. Veuillez copier manuellement."
+
+#: includes/class-conflict-detector.php:278
+msgid "PHP Version"
+msgstr "Version PHP"
+
+#: includes/class-conflict-detector.php:285
+#, php-format
+msgid "PHP version %s is compatible."
+msgstr "La version PHP %s est compatible."
+
+#: includes/class-conflict-detector.php:290
+#, php-format
+msgid "PHP version %1$s is below the required %2$s. Please upgrade PHP."
+msgstr ""
+"La version PHP %1$s est inférieure à la version requise %2$s. Veuillez "
+"mettre à jour PHP."
+
+#: includes/class-conflict-detector.php:294
+msgid "Contact your hosting provider to upgrade PHP."
+msgstr "Contactez votre hébergeur pour mettre à jour PHP."
+
+#: includes/class-conflict-detector.php:300
+msgid "WordPress Version"
+msgstr "Version WordPress"
+
+#: includes/class-conflict-detector.php:307
+#, php-format
+msgid "WordPress version %s is compatible."
+msgstr "La version WordPress %s est compatible."
+
+#: includes/class-conflict-detector.php:312
+#, php-format
+msgid ""
+"WordPress version %1$s is below the required %2$s. Please update WordPress."
+msgstr ""
+"La version WordPress %1$s est inférieure à la version requise %2$s. Veuillez "
+"mettre à jour WordPress."
+
+#: includes/class-conflict-detector.php:323
+msgid "WP-Cron"
+msgstr "WP-Cron"
+
+#: includes/class-conflict-detector.php:325
+#: includes/class-conflict-detector.php:345
+msgid "Disabled"
+msgstr "Désactivé"
+
+#: includes/class-conflict-detector.php:325
+msgid "Enabled"
+msgstr "Activé"
+
+#: includes/class-conflict-detector.php:326
+msgid "Enabled (recommended)"
+msgstr "Activé (recommandé)"
+
+#: includes/class-conflict-detector.php:328
+msgid ""
+"WP-Cron is disabled. Email queue processing and scheduled tasks may not work "
+"properly unless you have a real cron job configured."
+msgstr ""
+"WP-Cron est désactivé. Le traitement de la file d'attente des e-mails et les "
+"tâches planifiées peuvent ne pas fonctionner correctement à moins d'avoir "
+"configuré une tâche cron réelle."
+
+#: includes/class-conflict-detector.php:329
+msgid "WP-Cron is enabled and working."
+msgstr "WP-Cron est activé et fonctionne."
+
+#: includes/class-conflict-detector.php:330
+msgid "Set up a real cron job or enable WP-Cron in wp-config.php"
+msgstr "Configurez une tâche cron réelle ou activez WP-Cron dans wp-config.php"
+
+#: includes/class-conflict-detector.php:343
+msgid "PHP mail() Function"
+msgstr "Fonction PHP mail()"
+
+#: includes/class-conflict-detector.php:345
+msgid "Available"
+msgstr "Disponible"
+
+#: includes/class-conflict-detector.php:346
+msgid "Available (for fallback)"
+msgstr "Disponible (en secours)"
+
+#: includes/class-conflict-detector.php:348
+msgid ""
+"PHP mail() is disabled. This is fine if using SMTP, but there is no fallback "
+"option."
+msgstr ""
+"PHP mail() est désactivé. C'est acceptable si vous utilisez SMTP, mais il "
+"n'y a pas d'option de secours."
+
+#: includes/class-conflict-detector.php:349
+msgid "PHP mail() is available as a fallback option."
+msgstr "PHP mail() est disponible comme option de secours."
+
+#: includes/class-conflict-detector.php:357
+msgid "OpenSSL Extension"
+msgstr "Extension OpenSSL"
+
+#: includes/class-conflict-detector.php:359
+#: includes/class-conflict-detector.php:374
+#: includes/class-conflict-detector.php:388
+msgid "Not loaded"
+msgstr "Non chargé"
+
+#: includes/class-conflict-detector.php:360
+#: includes/class-conflict-detector.php:375
+#: includes/class-conflict-detector.php:389
+#: includes/class-conflict-detector.php:440
+msgid "Required"
+msgstr "Requis"
+
+#: includes/class-conflict-detector.php:362
+msgid "OpenSSL is available for secure SMTP connections."
+msgstr "OpenSSL est disponible pour les connexions SMTP sécurisées."
+
+#: includes/class-conflict-detector.php:363
+msgid "OpenSSL is required for TLS/SSL encrypted SMTP connections."
+msgstr "OpenSSL est requis pour les connexions SMTP chiffrées TLS/SSL."
+
+#: includes/class-conflict-detector.php:364
+msgid "Contact your hosting provider to enable OpenSSL."
+msgstr "Contactez votre hébergeur pour activer OpenSSL."
+
+#: includes/class-conflict-detector.php:372
+msgid "cURL Extension"
+msgstr "Extension cURL"
+
+#: includes/class-conflict-detector.php:374
+#: includes/class-conflict-detector.php:388
+msgid "Loaded"
+msgstr "Chargé"
+
+#: includes/class-conflict-detector.php:377
+msgid "cURL is available for API-based email providers."
+msgstr "cURL est disponible pour les fournisseurs d'e-mails basés sur API."
+
+#: includes/class-conflict-detector.php:378
+msgid ""
+"cURL is required for API-based email providers (SendGrid, Mailgun, etc.)."
+msgstr ""
+"cURL est requis pour les fournisseurs d'e-mails basés sur API (SendGrid, "
+"Mailgun, etc.)."
+
+#: includes/class-conflict-detector.php:379
+msgid "Contact your hosting provider to enable cURL."
+msgstr "Contactez votre hébergeur pour activer cURL."
+
+#: includes/class-conflict-detector.php:386
+msgid "JSON Extension"
+msgstr "Extension JSON"
+
+#: includes/class-conflict-detector.php:391
+msgid "JSON extension is available."
+msgstr "L'extension JSON est disponible."
+
+#: includes/class-conflict-detector.php:392
+msgid "JSON extension is required for processing API responses."
+msgstr "L'extension JSON est requise pour traiter les réponses API."
+
+#: includes/class-conflict-detector.php:393
+msgid "Contact your hosting provider to enable JSON."
+msgstr "Contactez votre hébergeur pour activer JSON."
+
+#: includes/class-conflict-detector.php:401
+msgid "PHP Memory Limit"
+msgstr "Limite de mémoire PHP"
+
+#: includes/class-conflict-detector.php:408
+#, php-format
+msgid "Memory limit of %s is sufficient."
+msgstr "La limite de mémoire de %s est suffisante."
+
+#: includes/class-conflict-detector.php:413
+#, php-format
+msgid "Memory limit of %s may be too low for processing large email queues."
+msgstr ""
+"La limite de mémoire de %s peut être trop faible pour traiter de grandes "
+"files d'attente d'e-mails."
+
+#: includes/class-conflict-detector.php:416
+msgid "Increase memory_limit in php.ini or contact your hosting provider."
+msgstr "Augmentez memory_limit dans php.ini ou contactez votre hébergeur."
+
+#: includes/class-conflict-detector.php:423
+msgid "Max Execution Time"
+msgstr "Temps d'exécution maximum"
+
+#: includes/class-conflict-detector.php:425 includes/strings.php:956
+msgid "Unlimited"
+msgstr "Illimité"
+
+#: includes/class-conflict-detector.php:428
+msgid "Max execution time is sufficient for email processing."
+msgstr ""
+"Le temps d'exécution maximum est suffisant pour le traitement des e-mails."
+
+#: includes/class-conflict-detector.php:429
+msgid "Max execution time may be too short for large email batches."
+msgstr ""
+"Le temps d'exécution maximum peut être trop court pour de gros volumes d'e-"
+"mails."
+
+#: includes/class-conflict-detector.php:430
+msgid "Increase max_execution_time in php.ini."
+msgstr "Augmentez max_execution_time dans php.ini."
+
+#: includes/class-conflict-detector.php:437
+msgid "Outbound Connections"
+msgstr "Connexions sortantes"
+
+#: includes/class-conflict-detector.php:439
+msgid "Working"
+msgstr "Fonctionnel"
+
+#: includes/class-conflict-detector.php:439
+msgid "May be blocked"
+msgstr "Peut être bloqué"
+
+#: includes/class-conflict-detector.php:442
+msgid "Server can make outbound connections for SMTP and API calls."
+msgstr ""
+"Le serveur peut établir des connexions sortantes pour SMTP et les appels API."
+
+#: includes/class-conflict-detector.php:443
+msgid ""
+"Outbound connections may be blocked. SMTP port access could be restricted."
+msgstr ""
+"Les connexions sortantes peuvent être bloquées. L'accès aux ports SMTP peut "
+"être restreint."
+
+#: includes/class-conflict-detector.php:444
+msgid ""
+"Contact your hosting provider to ensure SMTP ports (25, 465, 587) are not "
+"blocked."
+msgstr ""
+"Contactez votre hébergeur pour vous assurer que les ports SMTP (25, 465, "
+"587) ne sont pas bloqués."
+
+#: includes/class-conflict-detector.php:452
+msgid "Temp Directory"
+msgstr "Répertoire temporaire"
+
+#: includes/class-conflict-detector.php:454
+#: includes/class-conflict-detector.php:455
+msgid "Writable"
+msgstr "Accessible en écriture"
+
+#: includes/class-conflict-detector.php:454
+msgid "Not writable"
+msgstr "Non accessible en écriture"
+
+#: includes/class-conflict-detector.php:457
+msgid "Temp directory is writable for attachment processing."
+msgstr ""
+"Le répertoire temporaire est accessible en écriture pour le traitement des "
+"pièces jointes."
+
+#: includes/class-conflict-detector.php:458
+msgid ""
+"Temp directory is not writable. Email attachments may not work properly."
+msgstr ""
+"Le répertoire temporaire n'est pas accessible en écriture. Les pièces "
+"jointes peuvent ne pas fonctionner correctement."
+
+#: includes/class-conflict-detector.php:459
+msgid "Ensure the temp directory has write permissions."
+msgstr ""
+"Assurez-vous que le répertoire temporaire dispose des permissions d'écriture."
+
+#: includes/class-conflict-detector.php:473
+msgid "Plugin Conflicts"
+msgstr "Conflits de plugins"
+
+#: includes/class-conflict-detector.php:475
+msgid "None detected"
+msgstr "Aucun détecté"
+
+#: includes/class-conflict-detector.php:476
+msgid "No conflicts"
+msgstr "Aucun conflit"
+
+#: includes/class-conflict-detector.php:480
+#, php-format
+msgid ""
+"Conflicting SMTP plugins detected: %s. This may cause email delivery issues."
+msgstr ""
+"Plugins SMTP en conflit détectés : %s. Cela peut causer des problèmes de "
+"livraison des e-mails."
+
+#: includes/class-conflict-detector.php:483
+msgid "No conflicting SMTP plugins detected."
+msgstr "Aucun plugin SMTP en conflit détecté."
+
+#: includes/class-conflict-detector.php:484
+msgid "Deactivate conflicting plugins to ensure reliable email delivery."
+msgstr ""
+"Désactivez les plugins en conflit pour garantir une livraison fiable des e-"
+"mails."
+
+#: includes/class-conflict-detector.php:587
+#, php-format
+msgid "Deactivate %s"
+msgstr "Désactiver %s"
+
+#: includes/class-conflict-detector.php:598
+#, php-format
+msgid ""
+"The following SMTP plugin(s) are active and may conflict with Authority "
+"Mailer: %s"
+msgstr ""
+"Les plugins SMTP suivants sont actifs et peuvent entrer en conflit avec "
+"Authority Mailer : %s"
+
+#: includes/class-conflict-detector.php:668
+msgid "Permission denied."
+msgstr "Permission refusée."
+
+#: includes/class-conflict-detector.php:674
+msgid "Invalid notice ID."
+msgstr "ID de notification invalide."
+
+#: includes/class-conflict-detector.php:689
+msgid "Notice dismissed."
+msgstr "Notification ignorée."
+
+#: includes/strings.php:19
+msgid "Authority Mailer"
+msgstr "Authority Mailer"
+
+#: includes/strings.php:20
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: includes/strings.php:21 includes/strings.php:747 includes/strings.php:954
+msgid "Email Logs"
+msgstr "Journaux des e-mails"
+
+#: includes/strings.php:22
+msgid "Domain Health Check"
+msgstr "Vérification de santé du domaine"
+
+#: includes/strings.php:23
+msgid "Setup Assistant"
+msgstr "Assistant de configuration"
+
+#: includes/strings.php:24 includes/strings.php:741
+msgid "Upgrade to Pro"
+msgstr "Passer à la version Pro"
+
+#: includes/strings.php:27
+msgid "Welcome to Authority Mailer SMTP"
+msgstr "Bienvenue dans Authority Mailer SMTP"
+
+#: includes/strings.php:28
+msgid ""
+"Let's get your WordPress emails sending reliably. Follow the simple steps."
+msgstr ""
+"Configurons ensemble l'envoi fiable de vos e-mails WordPress. Suivez ces "
+"quelques étapes."
+
+#: includes/strings.php:32
+msgid "Welcome"
+msgstr "Bienvenue"
+
+#: includes/strings.php:33
+msgid "Choose mailer"
+msgstr "Choisir un service"
+
+#: includes/strings.php:34
+msgid "Configure Settings"
+msgstr "Configurer les paramètres"
+
+#: includes/strings.php:35
+msgid "Test & Finish"
+msgstr "Tester et terminer"
+
+#: includes/strings.php:38
+#, php-format
+msgid "Step %1$d of %2$d"
+msgstr "Étape %1$d sur %2$d"
+
+#: includes/strings.php:39
+msgid "Follow the instructions to complete setup."
+msgstr "Suivez les instructions pour terminer la configuration."
+
+#: includes/strings.php:42 includes/strings.php:48
+msgid "Get started"
+msgstr "Commencer"
+
+#: includes/strings.php:43 includes/strings.php:49
+msgid "Follow these steps to configure outgoing email for your site."
+msgstr "Suivez ces étapes pour configurer l'envoi d'e-mails pour votre site."
+
+#: includes/strings.php:44 includes/strings.php:141
+msgid "Let's Get Started →"
+msgstr "Commençons →"
+
+#: includes/strings.php:47
+msgid "STEP 1 OF 4"
+msgstr "ÉTAPE 1 SUR 4"
+
+#: includes/strings.php:50
+msgid ""
+"Authority Mailer helps you send WordPress emails reliably through "
+"professional SMTP providers. No more emails landing in spam! This quick "
+"setup wizard will guide you through connecting your preferred email service "
+"in just a few minutes."
+msgstr ""
+"Authority Mailer vous aide à envoyer vos e-mails WordPress de manière fiable "
+"grâce à des fournisseurs SMTP professionnels. Fini les e-mails qui arrivent "
+"dans les spams ! Cet assistant vous guidera en quelques minutes pour "
+"connecter votre service d'e-mail préféré."
+
+#: includes/strings.php:51
+msgid "✨ What happens next?"
+msgstr "✨ Et maintenant ?"
+
+#: includes/strings.php:52
+msgid ""
+"<strong>Choose your email provider</strong> from our list of 17+ supported "
+"services"
+msgstr ""
+"<strong>Choisissez votre fournisseur d'e-mail</strong> parmi notre liste de "
+"plus de 17 services pris en charge"
+
+#: includes/strings.php:53
+msgid "<strong>Enter your credentials</strong> (usually just an API key)"
+msgstr ""
+"<strong>Saisissez vos identifiants</strong> (généralement une simple clé API)"
+
+#: includes/strings.php:54
+msgid "<strong>Send a test email</strong> to verify everything works"
+msgstr ""
+"<strong>Envoyez un e-mail de test</strong> pour vérifier que tout fonctionne"
+
+#: includes/strings.php:55
+msgid ""
+"<strong>You're done!</strong> All WordPress emails will now be sent reliably"
+msgstr ""
+"<strong>C'est terminé !</strong> Tous vos e-mails WordPress seront désormais "
+"envoyés de manière fiable"
+
+#: includes/strings.php:58
+msgid "Choose a mailer"
+msgstr "Choisissez votre service de messagerie"
+
+#: includes/strings.php:59
+msgid "Pick the provider you want to use to send email."
+msgstr ""
+"Sélectionnez le fournisseur que vous souhaitez utiliser pour envoyer vos e-"
+"mails."
+
+#: includes/strings.php:60
+msgid "SMTP & Transactional Providers"
+msgstr "Fournisseurs SMTP et transactionnels"
+
+#: includes/strings.php:63
+msgid "Configure provider settings"
+msgstr "Configurer les paramètres du fournisseur"
+
+#: includes/strings.php:64
+msgid ""
+"Add the credentials and options required by your provider. Send a test to "
+"confirm delivery."
+msgstr ""
+"Ajoutez les identifiants et options requis par votre fournisseur. Envoyez un "
+"test pour confirmer la livraison."
+
+#: includes/strings.php:65
+msgid "Select a provider to configure."
+msgstr "Sélectionnez un fournisseur à configurer."
+
+#: includes/strings.php:68 includes/strings.php:142
+msgid "Previous"
+msgstr "Précédent"
+
+#: includes/strings.php:69 includes/strings.php:143
+msgid "Save and Continue"
+msgstr "Enregistrer et continuer"
+
+#: includes/strings.php:70
+msgid "Connect to Google"
+msgstr "Se connecter à Google"
+
+#: includes/strings.php:71
+msgid "Copy"
+msgstr "Copier"
+
+#: includes/strings.php:74 includes/strings.php:739 includes/strings.php:843
+msgid "Send Test Email"
+msgstr "Envoyer un e-mail de test"
+
+#: includes/strings.php:77
+msgid "API Key"
+msgstr "Clé API"
+
+#: includes/strings.php:78
+msgid "Client ID"
+msgstr "ID client"
+
+#: includes/strings.php:79
+msgid "Client Secret"
+msgstr "Secret client"
+
+#: includes/strings.php:80
+msgid "Authorized Redirect URI"
+msgstr "URI de redirection autorisée"
+
+#: includes/strings.php:81
+msgid "From Name"
+msgstr "Nom de l'expéditeur"
+
+#: includes/strings.php:82
+msgid "From Email"
+msgstr "E-mail de l'expéditeur"
+
+#: includes/strings.php:83
+msgid "Sending Domain"
+msgstr "Domaine d'envoi"
+
+#: includes/strings.php:84
+msgid "Force From Name"
+msgstr "Forcer le nom de l'expéditeur"
+
+#: includes/strings.php:85
+msgid "Force From Email"
+msgstr "Forcer l'e-mail de l'expéditeur"
+
+#: includes/strings.php:86
+msgid "Region"
+msgstr "Région"
+
+#: includes/strings.php:87
+msgid "SMTP Port"
+msgstr "Port SMTP"
+
+#: includes/strings.php:88
+msgid "SMTP Username"
+msgstr "Nom d'utilisateur SMTP"
+
+#: includes/strings.php:89
+msgid "SMTP Password"
+msgstr "Mot de passe SMTP"
+
+#: includes/strings.php:90
+msgid "SMTP Host"
+msgstr "Hôte SMTP"
+
+#: includes/strings.php:91
+msgid "Encryption"
+msgstr "Chiffrement"
+
+#: includes/strings.php:92
+msgid "Enable Authentication"
+msgstr "Activer l'authentification"
+
+#: includes/strings.php:93
+msgid "Secret Key"
+msgstr "Clé secrète"
+
+#: includes/strings.php:94
+msgid "Use SMTP for Authentication"
+msgstr "Utiliser SMTP pour l'authentification"
+
+#: includes/strings.php:97
+msgid "Send Test Email To:"
+msgstr "Envoyer un e-mail de test à :"
+
+#: includes/strings.php:100
+msgid "All providers"
+msgstr "Tous les fournisseurs"
+
+#: includes/strings.php:101
+msgid "All statuses"
+msgstr "Tous les statuts"
+
+#: includes/strings.php:102
+msgid "Attempt"
+msgstr "Tentative"
+
+#: includes/strings.php:103 includes/strings.php:732
+msgid "Success"
+msgstr "Succès"
+
+#: includes/strings.php:104
+msgid "Error"
+msgstr "Erreur"
+
+#: includes/strings.php:105
+msgid "Filter"
+msgstr "Filtrer"
+
+#: includes/strings.php:106
+msgid "Reset"
+msgstr "Réinitialiser"
+
+#: includes/strings.php:107
+msgid "Apply"
+msgstr "Appliquer"
+
+#: includes/strings.php:108
+msgid "Bulk actions"
+msgstr "Actions groupées"
+
+#: includes/strings.php:109
+msgid "Delete selected"
+msgstr "Supprimer la sélection"
+
+#: includes/strings.php:111 includes/strings.php:696
+msgid "View"
+msgstr "Voir"
+
+#: includes/strings.php:112
+msgid "Resend"
+msgstr "Renvoyer"
+
+#: includes/strings.php:113
+msgid "Delete"
+msgstr "Supprimer"
+
+#: includes/strings.php:115
+msgid "No log entries found."
+msgstr "Aucune entrée de journal trouvée."
+
+#: includes/strings.php:117
+#, php-format
+msgid "Showing %1$d to %2$d of %3$d results"
+msgstr "Affichage de %1$d à %2$d sur %3$d résultats"
+
+#: includes/strings.php:119 includes/strings.php:692
+msgid "Date"
+msgstr "Date"
+
+#: includes/strings.php:120
+msgid "Provider"
+msgstr "Fournisseur"
+
+#: includes/strings.php:121 includes/strings.php:689
+msgid "To"
+msgstr "À"
+
+#: includes/strings.php:122
+msgid "From"
+msgstr "De"
+
+#: includes/strings.php:123 includes/strings.php:690
+msgid "Subject"
+msgstr "Objet"
+
+#: includes/strings.php:124 includes/strings.php:691
+msgid "Status"
+msgstr "Statut"
+
+#: includes/strings.php:125
+msgid "Actions"
+msgstr "Actions"
+
+#: includes/strings.php:127
+msgid "Email Body"
+msgstr "Corps de l'e-mail"
+
+#: includes/strings.php:128
+msgid "Resend this email via the same provider?"
+msgstr "Renvoyer cet e-mail via le même fournisseur ?"
+
+#: includes/strings.php:129
+msgid "Resend attempted. New log entry created if successful."
+msgstr "Renvoi tenté. Nouvelle entrée de journal créée en cas de succès."
+
+#: includes/strings.php:130 includes/strings.php:149
+msgid "Resend failed"
+msgstr "Échec du renvoi"
+
+#: includes/strings.php:131
+msgid "Delete this log entry? This action cannot be undone."
+msgstr ""
+"Supprimer cette entrée du journal ? Cette action ne peut pas être annulée."
+
+#: includes/strings.php:132
+msgid "No rows selected"
+msgstr "Aucune ligne sélectionnée"
+
+#: includes/strings.php:133
+msgid "Select a bulk action first"
+msgstr "Sélectionnez d'abord une action groupée"
+
+#: includes/strings.php:134
+msgid "Delete selected log entries? This action cannot be undone."
+msgstr ""
+"Supprimer les entrées de journal sélectionnées ? Cette action ne peut pas "
+"être annulée."
+
+#: includes/strings.php:135
+msgid "Bulk delete failed"
+msgstr "Échec de la suppression groupée"
+
+#: includes/strings.php:136
+msgid "Collapse"
+msgstr "Réduire"
+
+#: includes/strings.php:137
+msgid "Expand"
+msgstr "Développer"
+
+#: includes/strings.php:138
+msgid "Unknown bulk action"
+msgstr "Action groupée inconnue"
+
+#: includes/strings.php:146
+msgid "Invalid table"
+msgstr "Table invalide"
+
+#: includes/strings.php:147
+msgid "No valid ids"
+msgstr "Aucun ID valide"
+
+#: includes/strings.php:148
+msgid "Provider not recorded for this log entry."
+msgstr "Fournisseur non enregistré pour cette entrée de journal."
+
+#: includes/strings.php:150
+msgid "Enter the API key for this provider."
+msgstr "Saisissez la clé API pour ce fournisseur."
+
+#: includes/strings.php:151
+msgid "Find your Mailgun API key in the Mailgun dashboard."
+msgstr "Trouvez votre clé API Mailgun dans le tableau de bord Mailgun."
+
+#: includes/strings.php:152
+msgid "Enter the Mailgun domain you configured for sending."
+msgstr "Saisissez le domaine Mailgun que vous avez configuré pour l'envoi."
+
+#: includes/strings.php:153
+msgid "Follow instructions to get a MailerSend API key."
+msgstr "Suivez les instructions pour obtenir une clé API MailerSend."
+
+#: includes/strings.php:154
+msgid ""
+"When enabled, Brevo will send via SMTP. When disabled, Brevo API will be "
+"used (recommended)."
+msgstr ""
+"Lorsqu'elle est activée, Brevo enverra via SMTP. Lorsqu'elle est désactivée, "
+"l'API Brevo sera utilisée (recommandé)."
+
+#: includes/strings.php:155
+msgid "Your Brevo SMTP username from your Brevo account SMTP settings."
+msgstr ""
+"Votre nom d'utilisateur SMTP Brevo depuis les paramètres SMTP de votre "
+"compte Brevo."
+
+#: includes/strings.php:156
+msgid "Your Brevo SMTP password from your Brevo account SMTP settings."
+msgstr ""
+"Votre mot de passe SMTP Brevo depuis les paramètres SMTP de votre compte "
+"Brevo."
+
+#: includes/strings.php:157
+msgid "Name shown in the From field for outgoing messages."
+msgstr "Nom affiché dans le champ De pour les messages sortants."
+
+#: includes/strings.php:158
+msgid "Address used as the From email."
+msgstr "Adresse utilisée comme e-mail d'expéditeur."
+
+#: includes/strings.php:159
+msgid "When enabled, the site will force this From name for outgoing mail."
+msgstr ""
+"Lorsqu'elle est activée, cette option force ce nom d'expéditeur pour le "
+"courrier sortant."
+
+#: includes/strings.php:160
+msgid "When enabled, the site will force this From email for outgoing mail."
+msgstr ""
+"Lorsqu'elle est activée, cette option force cet e-mail d'expéditeur pour le "
+"courrier sortant."
+
+#: includes/strings.php:161
+msgid ""
+"When enabled, the site will force this to use SMTP Username and Password."
+msgstr ""
+"Lorsqu'elle est activée, cette option force l'utilisation du nom "
+"d'utilisateur et du mot de passe SMTP."
+
+#: includes/strings.php:162
+msgid ""
+"Use this Redirect URI when creating a Google OAuth client. Copy it into your "
+"Google Console Authorized redirect URIs."
+msgstr ""
+"Utilisez cette URI de redirection lors de la création d'un client OAuth "
+"Google. Copiez-la dans les URI de redirection autorisées de votre console "
+"Google."
+
+#: includes/strings.php:163 includes/strings.php:621
+msgid "Select your SparkPost account region (US or EU)."
+msgstr "Sélectionnez la région de votre compte SparkPost (États-Unis ou UE)."
+
+#: includes/strings.php:166
+msgid ""
+"The name that will appear in the \"From\" field of emails sent through "
+"SparkPost."
+msgstr ""
+"Le nom qui apparaîtra dans le champ \"De\" des e-mails envoyés via SparkPost."
+
+#: includes/strings.php:167
+msgid "The email address that will be used as the sender for SparkPost emails."
+msgstr ""
+"L'adresse e-mail qui sera utilisée comme expéditeur pour les e-mails "
+"SparkPost."
+
+#: includes/strings.php:168
+msgid ""
+"The name that will appear in the \"From\" field of emails sent through "
+"SMTP2GO."
+msgstr ""
+"Le nom qui apparaîtra dans le champ \"De\" des e-mails envoyés via SMTP2GO."
+
+#: includes/strings.php:169
+msgid "The email address that will be used as the sender for SMTP2GO emails."
+msgstr ""
+"L'adresse e-mail qui sera utilisée comme expéditeur pour les e-mails SMTP2GO."
+
+#: includes/strings.php:170
+msgid ""
+"The name that will appear in the \"From\" field of emails sent through "
+"SendGrid."
+msgstr ""
+"Le nom qui apparaîtra dans le champ \"De\" des e-mails envoyés via SendGrid."
+
+#: includes/strings.php:171
+msgid "The email address that will be used as the sender for SendGrid emails."
+msgstr ""
+"L'adresse e-mail qui sera utilisée comme expéditeur pour les e-mails "
+"SendGrid."
+
+#: includes/strings.php:172
+msgid ""
+"The name that will appear in the \"From\" field of emails sent through "
+"Postmark."
+msgstr ""
+"Le nom qui apparaîtra dans le champ \"De\" des e-mails envoyés via Postmark."
+
+#: includes/strings.php:173
+msgid "The email address that will be used as the sender for Postmark emails."
+msgstr ""
+"L'adresse e-mail qui sera utilisée comme expéditeur pour les e-mails "
+"Postmark."
+
+#: includes/strings.php:174
+msgid ""
+"The name that will appear in the \"From\" field of emails sent through "
+"Mandrill."
+msgstr ""
+"Le nom qui apparaîtra dans le champ \"De\" des e-mails envoyés via Mandrill."
+
+#: includes/strings.php:175
+msgid "The email address that will be used as the sender for Mandrill emails."
+msgstr ""
+"L'adresse e-mail qui sera utilisée comme expéditeur pour les e-mails "
+"Mandrill."
+
+#: includes/strings.php:178
+msgid ""
+"You may use the following field if you do not wish to use default settings."
+msgstr ""
+"Vous pouvez utiliser le champ suivant si vous ne souhaitez pas utiliser les "
+"paramètres par défaut."
+
+#: includes/strings.php:179
+msgid ""
+"Use the Gmail API for OAuth-based sending. You can connect via One-Click "
+"Setup or paste Client ID/Secret for a manual setup."
+msgstr ""
+"Utilisez l'API Gmail pour l'envoi basé sur OAuth. Vous pouvez vous connecter "
+"via la configuration en un clic ou coller l'ID client/Secret pour une "
+"configuration manuelle."
+
+#: includes/strings.php:180
+msgid ""
+"Enable an easy setup to connect with Google without creating an app manually."
+msgstr ""
+"Activez une configuration facile pour vous connecter à Google sans créer "
+"manuellement une application."
+
+#: includes/strings.php:181
+msgid "Connected to Google"
+msgstr "Connecté à Google"
+
+#: includes/strings.php:182
+msgid ""
+"Provide OAuth Client ID and Client Secret for Google/Gmail (fields: "
+"client_id, client_secret)."
+msgstr ""
+"Fournissez l'ID client OAuth et le secret client pour Google/Gmail (champs : "
+"client_id, client_secret)."
+
+#: includes/strings.php:183
+msgid ""
+"The OAuth Client ID from your Google Cloud Console. Paste it here so "
+"Authority Mailer can request authorization."
+msgstr ""
+"L'ID client OAuth de votre console Google Cloud. Collez-le ici pour "
+"qu'Authority Mailer puisse demander l'autorisation."
+
+#: includes/strings.php:184
+msgid ""
+"The OAuth Client Secret is used to exchange the authorization code for "
+"tokens. Keep it private."
+msgstr ""
+"Le secret client OAuth est utilisé pour échanger le code d'autorisation "
+"contre des jetons. Gardez-le confidentiel."
+
+#: includes/strings.php:186
+msgid "Get Started with SendLayer"
+msgstr "Commencer avec SendLayer"
+
+#: includes/strings.php:187
+msgid "Get Started with SMTP.com"
+msgstr "Commencer avec SMTP.com"
+
+#: includes/strings.php:188
+msgid "Get Started with Brevo"
+msgstr "Commencer avec Brevo"
+
+#: includes/strings.php:189
+msgid "Get Started with Elastic Email"
+msgstr "Commencer avec Elastic Email"
+
+#: includes/strings.php:190
+msgid "Get Started with MailerSend"
+msgstr "Commencer avec MailerSend"
+
+#: includes/strings.php:191
+msgid "Get Started with Mailgun"
+msgstr "Commencer avec Mailgun"
+
+#: includes/strings.php:192
+msgid "Get Started with Mailjet"
+msgstr "Commencer avec Mailjet"
+
+#: includes/strings.php:193
+msgid "Get Started with Mandrill"
+msgstr "Commencer avec Mandrill"
+
+#: includes/strings.php:194
+msgid "Get Started with Postmark"
+msgstr "Commencer avec Postmark"
+
+#: includes/strings.php:195
+msgid "Get Started with SendGrid"
+msgstr "Commencer avec SendGrid"
+
+#: includes/strings.php:196
+msgid "Get Started with SMTP2GO"
+msgstr "Commencer avec SMTP2GO"
+
+#: includes/strings.php:197
+msgid "Get Started with SparkPost"
+msgstr "Commencer avec SparkPost"
+
+#: includes/strings.php:198
+msgid "Get Started with Zoho"
+msgstr "Commencer avec Zoho"
+
+#: includes/strings.php:199
+msgid "Get Started with AWS SES"
+msgstr "Commencer avec AWS SES"
+
+#: includes/strings.php:200
+msgid "Get Started with Office 365"
+msgstr "Commencer avec Office 365"
+
+#: includes/strings.php:201
+msgid "Open SMTP Docs"
+msgstr "Ouvrir la documentation SMTP"
+
+#: includes/strings.php:205
+msgid ""
+"SendLayer is a simple and affordable SMTP provider focused on making "
+"transactional email delivery straightforward for WordPress sites."
+msgstr ""
+"SendLayer est un fournisseur SMTP simple et abordable axé sur la livraison "
+"d'e-mails transactionnels simple pour les sites WordPress."
+
+#: includes/strings.php:206
+msgid ""
+"SMTP.com offers enterprise-grade SMTP relay, deliverability analytics and "
+"scaling for transactional email."
+msgstr ""
+"SMTP.com offre un relais SMTP de niveau entreprise, des analyses de "
+"délivrabilité et une évolutivité pour les e-mails transactionnels."
+
+#: includes/strings.php:207
+msgid ""
+"Brevo (formerly Sendinblue) provides email and SMS services for "
+"transactional and marketing messages with an easy-to-use dashboard."
+msgstr ""
+"Brevo (anciennement Sendinblue) fournit des services d'e-mail et de SMS pour "
+"les messages transactionnels et marketing avec un tableau de bord facile à "
+"utiliser."
+
+#: includes/strings.php:208
+msgid ""
+"Elastic Email provides an API and SMTP relay suited for both transactional "
+"and bulk messaging, with analytics and domain management."
+msgstr ""
+"Elastic Email fournit une API et un relais SMTP adaptés aux messages "
+"transactionnels et en masse, avec analyses et gestion de domaine."
+
+#: includes/strings.php:209
+msgid ""
+"MailerSend is a developer-friendly transactional email API and SMTP relay — "
+"great for notifications, receipts and transactional workflows."
+msgstr ""
+"MailerSend est une API d'e-mail transactionnel et un relais SMTP conviviaux "
+"pour les développeurs — idéal pour les notifications, les reçus et les flux "
+"de travail transactionnels."
+
+#: includes/strings.php:210
+msgid ""
+"Mailgun is an email API built for developers and teams. Use a verified "
+"sending domain for best deliverability and analytics."
+msgstr ""
+"Mailgun est une API d'e-mail conçue pour les développeurs et les équipes. "
+"Utilisez un domaine d'envoi vérifié pour une meilleure délivrabilité et des "
+"analyses."
+
+#: includes/strings.php:211
+msgid ""
+"Mailjet is an email API and SMTP relay platform that supports transactional "
+"and marketing emails with templates and analytics."
+msgstr ""
+"Mailjet est une plateforme d'API d'e-mail et de relais SMTP qui prend en "
+"charge les e-mails transactionnels et marketing avec modèles et analyses."
+
+#: includes/strings.php:212
+msgid ""
+"Mandrill (Mailchimp Transactional) is a reliable transactional email API "
+"designed for developers sending notifications and receipts."
+msgstr ""
+"Mandrill (Mailchimp Transactionnel) est une API d'e-mail transactionnel "
+"fiable conçue pour les développeurs envoyant des notifications et des reçus."
+
+#: includes/strings.php:213
+msgid ""
+"Postmark focuses on fast, reliable transactional email delivery and provides "
+"a simple API and message streams for transactional use."
+msgstr ""
+"Postmark se concentre sur la livraison rapide et fiable d'e-mails "
+"transactionnels et fournit une API simple et des flux de messages pour une "
+"utilisation transactionnelle."
+
+#: includes/strings.php:214
+msgid ""
+"SMTP2GO provides a simple REST API for sending transactional email and an "
+"SMTP relay with global infrastructure for reliability."
+msgstr ""
+"SMTP2GO fournit une API REST simple pour envoyer des e-mails transactionnels "
+"et un relais SMTP avec une infrastructure mondiale pour la fiabilité."
+
+#: includes/strings.php:215
+msgid ""
+"SparkPost provides a powerful email API and SMTP relay with features for "
+"deliverability and analytics."
+msgstr ""
+"SparkPost fournit une API d'e-mail puissante et un relais SMTP avec des "
+"fonctionnalités de délivrabilité et d'analyse."
+
+#: includes/strings.php:216
+msgid ""
+"Zoho Mail is a secure email hosting service with SMTP support, ideal for "
+"businesses using Zoho Suite or requiring reliable email delivery."
+msgstr ""
+"Zoho Mail est un service d'hébergement de messagerie sécurisé avec support "
+"SMTP, idéal pour les entreprises utilisant Zoho Suite ou nécessitant une "
+"livraison d'e-mails fiable."
+
+#: includes/strings.php:217
+msgid ""
+"Send emails using your Gmail account with OAuth authentication for enhanced "
+"security."
+msgstr ""
+"Envoyez des e-mails en utilisant votre compte Gmail avec l'authentification "
+"OAuth pour une sécurité renforcée."
+
+#: includes/strings.php:218
+msgid ""
+"Leading email API platform with powerful features for transactional and "
+"marketing emails."
+msgstr ""
+"Plateforme d'API d'e-mail leader avec des fonctionnalités puissantes pour "
+"les e-mails transactionnels et marketing."
+
+#: includes/strings.php:219
+msgid ""
+"Amazon SES is a scalable cloud-based email service by AWS. Use SMTP "
+"credentials for reliable transactional email delivery with pay-as-you-go "
+"pricing."
+msgstr ""
+"Amazon SES est un service de messagerie cloud évolutif d'AWS. Utilisez les "
+"identifiants SMTP pour une livraison fiable des e-mails transactionnels avec "
+"tarification à l'utilisation."
+
+#: includes/strings.php:220
+msgid ""
+"Office 365 provides enterprise email services through Microsoft Exchange "
+"Online with SMTP relay support for WordPress integration."
+msgstr ""
+"Office 365 fournit des services de messagerie d'entreprise via Microsoft "
+"Exchange Online avec support de relais SMTP pour l'intégration WordPress."
+
+#: includes/strings.php:221
+msgid ""
+"Use a custom SMTP service by providing host, port and credentials. This "
+"option works with most email providers and self-hosted SMTP servers."
+msgstr ""
+"Utilisez un service SMTP personnalisé en fournissant l'hôte, le port et les "
+"identifiants. Cette option fonctionne avec la plupart des fournisseurs d'e-"
+"mails et serveurs SMTP auto-hébergés."
+
+#: includes/strings.php:224 includes/strings.php:242
+msgid "Sender"
+msgstr "Expéditeur"
+
+#: includes/strings.php:225
+msgid "Options"
+msgstr "Options"
+
+#: includes/strings.php:227
+#, php-format
+msgid "%s settings"
+msgstr "Paramètres %s"
+
+#: includes/strings.php:229
+msgid "Read how to set up Brevo"
+msgstr "Lire comment configurer Brevo"
+
+#: includes/strings.php:230
+msgid "Read how to set up MailerSend"
+msgstr "Lire comment configurer MailerSend"
+
+#: includes/strings.php:231
+msgid "Read how to set up Mailgun"
+msgstr "Lire comment configurer Mailgun"
+
+#: includes/strings.php:232
+msgid "Read how to set up SendGrid"
+msgstr "Lire comment configurer SendGrid"
+
+#: includes/strings.php:233
+msgid "Read how to set up Mailjet"
+msgstr "Lire comment configurer Mailjet"
+
+#: includes/strings.php:234
+msgid "Read how to set up SendLayer"
+msgstr "Lire comment configurer SendLayer"
+
+#: includes/strings.php:235
+msgid "Read how to set up SMTP2GO"
+msgstr "Lire comment configurer SMTP2GO"
+
+#: includes/strings.php:236
+msgid "Read how to set up SMTP.com"
+msgstr "Lire comment configurer SMTP.com"
+
+#: includes/strings.php:237
+msgid "Read how to set up Mandrill"
+msgstr "Lire comment configurer Mandrill"
+
+#: includes/strings.php:238
+msgid "Read how to set up Zoho Mail"
+msgstr "Lire comment configurer Zoho Mail"
+
+#: includes/strings.php:239
+msgid "Read how to set up AWS SES"
+msgstr "Lire comment configurer AWS SES"
+
+#: includes/strings.php:240
+msgid "Read how to set up Office 365"
+msgstr "Lire comment configurer Office 365"
+
+#: includes/strings.php:241
+msgid "Read general SMTP setup documentation"
+msgstr "Lire la documentation générale de configuration SMTP"
+
+#: includes/strings.php:245
+msgid "Please choose a mailer to continue."
+msgstr "Veuillez choisir un service de messagerie pour continuer."
+
+#: includes/strings.php:246
+msgid "Unable to save selection."
+msgstr "Impossible d'enregistrer la sélection."
+
+#: includes/strings.php:247
+msgid "Request failed"
+msgstr "Échec de la requête"
+
+#: includes/strings.php:248
+msgid "Please enter your API Key."
+msgstr "Veuillez saisir votre clé API."
+
+#: includes/strings.php:249
+msgid "Please enter a name."
+msgstr "Veuillez saisir un nom."
+
+#: includes/strings.php:250
+msgid "Please enter a sender name."
+msgstr "Veuillez saisir un nom d'expéditeur."
+
+#: includes/strings.php:251
+msgid "Please enter a valid email address."
+msgstr "Veuillez saisir une adresse e-mail valide."
+
+#: includes/strings.php:252
+msgid "Saving settings..."
+msgstr "Enregistrement des paramètres..."
+
+#: includes/strings.php:253
+msgid "Settings saved."
+msgstr "Paramètres enregistrés."
+
+#: includes/strings.php:254
+msgid "Please enter a Client ID."
+msgstr "Veuillez saisir un ID client."
+
+#: includes/strings.php:255
+msgid "Please enter a Client Secret."
+msgstr "Veuillez saisir un secret client."
+
+#: includes/strings.php:256
+msgid "Please input the sending domain/subdomain you configured."
+msgstr ""
+"Veuillez saisir le domaine/sous-domaine d'envoi que vous avez configuré."
+
+#: includes/strings.php:257
+msgid "Please enter a valid sending domain (e.g. mail.example.com)."
+msgstr "Veuillez saisir un domaine d'envoi valide (par ex. mail.example.com)."
+
+#: includes/strings.php:260
+msgid "Saving settings and starting test..."
+msgstr "Enregistrement des paramètres et démarrage du test..."
+
+#: includes/strings.php:261
+msgid "Test finished."
+msgstr "Test terminé."
+
+#: includes/strings.php:263
+msgid "Running test"
+msgstr "Exécution du test"
+
+#: includes/strings.php:264
+msgid "Re-running test"
+msgstr "Nouvelle exécution du test"
+
+#: includes/strings.php:265
+msgid "Test finished with issues"
+msgstr "Test terminé avec des problèmes"
+
+#: includes/strings.php:266
+msgid "Test finished successfully"
+msgstr "Test terminé avec succès"
+
+#: includes/strings.php:267
+msgid "Test finished"
+msgstr "Test terminé"
+
+#: includes/strings.php:268
+msgid "No provider"
+msgstr "Aucun fournisseur"
+
+#: includes/strings.php:269
+msgid "Provider not found. Unable to retry."
+msgstr "Fournisseur introuvable. Impossible de réessayer."
+
+#: includes/strings.php:270
+msgid "Test failed"
+msgstr "Échec du test"
+
+#: includes/strings.php:273
+msgid "Please enter your Postmark Server Token."
+msgstr "Veuillez saisir votre jeton serveur Postmark."
+
+#: includes/strings.php:274
+msgid "Please enter the SMTP host."
+msgstr "Veuillez saisir l'hôte SMTP."
+
+#: includes/strings.php:275
+msgid "Please enter the SMTP port."
+msgstr "Veuillez saisir le port SMTP."
+
+#: includes/strings.php:276
+msgid "Please enter a valid port (1-65535)."
+msgstr "Veuillez saisir un port valide (1-65535)."
+
+#: includes/strings.php:277
+msgid "Please enter the SMTP username."
+msgstr "Veuillez saisir le nom d'utilisateur SMTP."
+
+#: includes/strings.php:278
+msgid "Please enter the SMTP password."
+msgstr "Veuillez saisir le mot de passe SMTP."
+
+#: includes/strings.php:281
+msgid "Onboarding actions"
+msgstr "Actions d'intégration"
+
+#: includes/strings.php:288
+msgid "Starting Mailgun diagnostics"
+msgstr "Démarrage des diagnostics Mailgun"
+
+#: includes/strings.php:289 includes/strings.php:328 includes/strings.php:391
+#: includes/strings.php:426 includes/strings.php:465 includes/strings.php:495
+#: includes/strings.php:525 includes/strings.php:559 includes/strings.php:590
+#: includes/strings.php:625 includes/strings.php:661
+msgid "Onboarding-provided settings summary"
+msgstr "Résumé des paramètres fournis lors de l'intégration"
+
+#: includes/strings.php:290 includes/strings.php:329 includes/strings.php:392
+#: includes/strings.php:427 includes/strings.php:466 includes/strings.php:496
+#: includes/strings.php:526 includes/strings.php:560 includes/strings.php:591
+#: includes/strings.php:626 includes/strings.php:662
+msgid "Stored authority_mailer_options inspected (summary)"
+msgstr "Inspection des options authority_mailer_options stockées (résumé)"
+
+#: includes/strings.php:291 includes/strings.php:330 includes/strings.php:393
+#: includes/strings.php:428 includes/strings.php:467 includes/strings.php:497
+#: includes/strings.php:527 includes/strings.php:561 includes/strings.php:592
+#: includes/strings.php:627 includes/strings.php:663
+msgid "Final settings used after merge (summary)"
+msgstr "Paramètres finaux utilisés après fusion (résumé)"
+
+#: includes/strings.php:294 includes/strings.php:498 includes/strings.php:562
+#: includes/strings.php:593 includes/strings.php:630 includes/strings.php:664
+msgid "API key not found in onboarding settings or stored options"
+msgstr ""
+"Clé API introuvable dans les paramètres d'intégration ou les options "
+"enregistrées"
+
+#: includes/strings.php:295
+msgid ""
+"Ensure the Mailgun API key is entered in the onboarding form (field: "
+"mailgun_api_key) or stored under authority_mailer_options['mailgun']."
+msgstr ""
+"Assurez-vous que la clé API Mailgun est saisie dans le formulaire "
+"d'intégration (champ : mailgun_api_key) ou stockée sous "
+"authority_mailer_options['mailgun']."
+
+#: includes/strings.php:296 includes/strings.php:333 includes/strings.php:396
+#: includes/strings.php:431 includes/strings.php:470 includes/strings.php:564
+#: includes/strings.php:595 includes/strings.php:632 includes/strings.php:666
+msgid "API key detected"
+msgstr "Clé API détectée"
+
+#: includes/strings.php:298
+msgid "Mailgun sending domain not found in settings"
+msgstr "Domaine d'envoi Mailgun introuvable dans les paramètres"
+
+#: includes/strings.php:299
+msgid ""
+"Enter the Mailgun sending domain (e.g. mg.example.com) in the onboarding "
+"form (field: mailgun_domain) or under authority_mailer_options['mailgun']."
+msgstr ""
+"Saisissez le domaine d'envoi Mailgun (par ex. mg.example.com) dans le "
+"formulaire d'intégration (champ : mailgun_domain) ou sous "
+"authority_mailer_options['mailgun']."
+
+#: includes/strings.php:303 includes/strings.php:335 includes/strings.php:398
+#: includes/strings.php:433 includes/strings.php:472 includes/strings.php:502
+#: includes/strings.php:532 includes/strings.php:566 includes/strings.php:597
+#: includes/strings.php:636
+#, php-format
+msgid "Resolving DNS for %s"
+msgstr "Résolution DNS pour %s"
+
+#: includes/strings.php:305 includes/strings.php:337 includes/strings.php:361
+#: includes/strings.php:400 includes/strings.php:435 includes/strings.php:474
+#: includes/strings.php:504 includes/strings.php:534 includes/strings.php:568
+#: includes/strings.php:599 includes/strings.php:638 includes/strings.php:668
+#, php-format
+msgid "Resolved %1$s -> %2$s"
+msgstr "Résolu %1$s -> %2$s"
+
+#: includes/strings.php:307 includes/strings.php:339 includes/strings.php:402
+#: includes/strings.php:437 includes/strings.php:476 includes/strings.php:506
+#: includes/strings.php:536 includes/strings.php:570 includes/strings.php:601
+#: includes/strings.php:640 includes/strings.php:670
+#, php-format
+msgid "Could not resolve %s"
+msgstr "Impossible de résoudre %s"
+
+#: includes/strings.php:309 includes/strings.php:341 includes/strings.php:380
+#: includes/strings.php:404 includes/strings.php:439 includes/strings.php:478
+#: includes/strings.php:508 includes/strings.php:538 includes/strings.php:572
+#: includes/strings.php:603 includes/strings.php:642 includes/strings.php:672
+#, php-format
+msgid "Using endpoint_ip override: %s"
+msgstr "Utilisation du remplacement endpoint_ip : %s"
+
+#: includes/strings.php:310
+msgid "DNS resolution failed for Mailgun hosts"
+msgstr "Échec de la résolution DNS pour les hôtes Mailgun"
+
+#: includes/strings.php:311 includes/strings.php:343 includes/strings.php:406
+#: includes/strings.php:441 includes/strings.php:480 includes/strings.php:510
+#: includes/strings.php:540 includes/strings.php:574 includes/strings.php:605
+msgid "Check server DNS / firewall / outbound network (attempted hosts above)."
+msgstr ""
+"Vérifiez le DNS du serveur / pare-feu / réseau sortant (hôtes tentés ci-"
+"dessus)."
+
+#: includes/strings.php:314 includes/strings.php:344 includes/strings.php:407
+#: includes/strings.php:442 includes/strings.php:481 includes/strings.php:511
+#: includes/strings.php:541 includes/strings.php:606 includes/strings.php:647
+msgid "No from address in settings; falling back to admin_email"
+msgstr ""
+"Aucune adresse d'expéditeur dans les paramètres ; recours à admin_email"
+
+#: includes/strings.php:315 includes/strings.php:345 includes/strings.php:412
+#: includes/strings.php:443 includes/strings.php:482 includes/strings.php:512
+#: includes/strings.php:542 includes/strings.php:575 includes/strings.php:607
+#: includes/strings.php:648 includes/strings.php:674
+msgid "Using test_recipient from settings"
+msgstr "Utilisation de test_recipient depuis les paramètres"
+
+#: includes/strings.php:316 includes/strings.php:346 includes/strings.php:413
+#: includes/strings.php:444 includes/strings.php:483 includes/strings.php:513
+#: includes/strings.php:543 includes/strings.php:576 includes/strings.php:608
+#: includes/strings.php:649 includes/strings.php:675
+msgid "Using admin_email as test recipient"
+msgstr "Utilisation d'admin_email comme destinataire de test"
+
+#: includes/strings.php:317
+msgid "No recipient available to send test email (admin email not set)."
+msgstr ""
+"Aucun destinataire disponible pour envoyer l'e-mail de test (e-mail "
+"administrateur non défini)."
+
+#: includes/strings.php:321 includes/strings.php:323
+msgid "Authority Mailer Mailgun test"
+msgstr "Test Mailgun Authority Mailer"
+
+#: includes/strings.php:324 includes/strings.php:349 includes/strings.php:419
+#: includes/strings.php:447 includes/strings.php:492 includes/strings.php:552
+#: includes/strings.php:586 includes/strings.php:617 includes/strings.php:657
+msgid "allow_insecure is enabled — SSL verification disabled (debug only)"
+msgstr ""
+"allow_insecure est activé — vérification SSL désactivée (débogage uniquement)"
+
+#: includes/strings.php:327
+msgid "Starting SendLayer diagnostics"
+msgstr "Démarrage des diagnostics SendLayer"
+
+#: includes/strings.php:331 includes/strings.php:394 includes/strings.php:429
+#: includes/strings.php:468
+msgid "API key / token not found in onboarding settings or stored options"
+msgstr ""
+"Clé API / jeton introuvable dans les paramètres d'intégration ou les options "
+"enregistrées"
+
+#: includes/strings.php:332
+msgid ""
+"Ensure the SendLayer API key is entered in the onboarding form (field: "
+"sendlayer_api_key)."
+msgstr ""
+"Assurez-vous que la clé API SendLayer est saisie dans le formulaire "
+"d'intégration (champ : sendlayer_api_key)."
+
+#: includes/strings.php:342
+msgid "DNS resolution failed for SendLayer hosts"
+msgstr "Échec de la résolution DNS pour les hôtes SendLayer"
+
+#: includes/strings.php:347 includes/strings.php:414 includes/strings.php:445
+#: includes/strings.php:484 includes/strings.php:514 includes/strings.php:544
+#: includes/strings.php:577 includes/strings.php:609 includes/strings.php:650
+#: includes/strings.php:676
+msgid "No recipient available to send test email to (admin email not set)."
+msgstr ""
+"Aucun destinataire disponible pour envoyer l'e-mail de test (e-mail "
+"administrateur non défini)."
+
+#: includes/strings.php:351 includes/strings.php:416 includes/strings.php:449
+#: includes/strings.php:486 includes/strings.php:516 includes/strings.php:546
+#: includes/strings.php:579 includes/strings.php:611
+#, php-format
+msgid "Attempting POST %s"
+msgstr "Tentative de POST %s"
+
+#: includes/strings.php:353 includes/strings.php:418 includes/strings.php:451
+#: includes/strings.php:488 includes/strings.php:518 includes/strings.php:548
+#: includes/strings.php:582 includes/strings.php:613
+msgid "Payload keys sent (preview)"
+msgstr "Clés de charge utile envoyées (aperçu)"
+
+#: includes/strings.php:355
+msgid "Starting generic SMTP diagnostics"
+msgstr "Démarrage des diagnostics SMTP génériques"
+
+#: includes/strings.php:356
+msgid "SMTP host is not configured."
+msgstr "L'hôte SMTP n'est pas configuré."
+
+#: includes/strings.php:357
+msgid "SMTP port is not configured."
+msgstr "Le port SMTP n'est pas configuré."
+
+#: includes/strings.php:359
+#, php-format
+msgid "Resolving host: %s"
+msgstr "Résolution de l'hôte : %s"
+
+#: includes/strings.php:360
+msgid "Could not resolve SMTP host"
+msgstr "Impossible de résoudre l'hôte SMTP"
+
+#: includes/strings.php:363
+#, php-format
+msgid "Connecting to %1$s on port %2$s (%3$s)"
+msgstr "Connexion à %1$s sur le port %2$s (%3$s)"
+
+#: includes/strings.php:364
+msgid "Failed to connect to SMTP host"
+msgstr "Échec de la connexion à l'hôte SMTP"
+
+#: includes/strings.php:365
+msgid "SMTP greeting received"
+msgstr "Salutation SMTP reçue"
+
+#: includes/strings.php:366
+msgid "Sent EHLO/HELO"
+msgstr "Envoi de EHLO/HELO"
+
+#: includes/strings.php:367
+msgid "EHLO/HELO failed"
+msgstr "Échec de EHLO/HELO"
+
+#: includes/strings.php:368
+msgid "Attempting STARTTLS"
+msgstr "Tentative de STARTTLS"
+
+#: includes/strings.php:369
+msgid "STARTTLS negotiation failed"
+msgstr "Échec de la négociation STARTTLS"
+
+#: includes/strings.php:370
+msgid "EHLO after STARTTLS"
+msgstr "EHLO après STARTTLS"
+
+#: includes/strings.php:371
+msgid "Starting SMTP AUTH"
+msgstr "Démarrage de l'authentification SMTP"
+
+#: includes/strings.php:372
+msgid "Sent SMTP auth username"
+msgstr "Envoi du nom d'utilisateur d'authentification SMTP"
+
+#: includes/strings.php:373
+msgid "Sent SMTP auth password"
+msgstr "Envoi du mot de passe d'authentification SMTP"
+
+#: includes/strings.php:374
+msgid "SMTP authentication failed"
+msgstr "Échec de l'authentification SMTP"
+
+#: includes/strings.php:375
+msgid "MAIL FROM response"
+msgstr "Réponse MAIL FROM"
+
+#: includes/strings.php:376
+msgid "MAIL FROM rejected by server"
+msgstr "MAIL FROM rejeté par le serveur"
+
+#: includes/strings.php:377
+msgid "RCPT TO response"
+msgstr "Réponse RCPT TO"
+
+#: includes/strings.php:378
+msgid "RCPT TO rejected by server"
+msgstr "RCPT TO rejeté par le serveur"
+
+#: includes/strings.php:379
+msgid "No recipient available for test email (admin email not set)."
+msgstr ""
+"Aucun destinataire disponible pour l'e-mail de test (e-mail administrateur "
+"non défini)."
+
+#: includes/strings.php:381
+msgid "Encryption selected"
+msgstr "Chiffrement sélectionné"
+
+#: includes/strings.php:382
+msgid "Forcing from email using provider key"
+msgstr "Forçage de l'e-mail d'expéditeur en utilisant la clé du fournisseur"
+
+#: includes/strings.php:383
+msgid ""
+"Force from email enabled but no provider address found — falling back to "
+"admin_email"
+msgstr ""
+"Forcer l'e-mail d'expéditeur activé mais aucune adresse de fournisseur "
+"trouvée — recours à admin_email"
+
+#: includes/strings.php:384
+msgid "Forcing from name using provider key"
+msgstr "Forçage du nom d'expéditeur en utilisant la clé du fournisseur"
+
+#: includes/strings.php:385
+msgid ""
+"Force from name enabled but no provider name found — falling back to site "
+"name"
+msgstr ""
+"Forcer le nom d'expéditeur activé mais aucun nom de fournisseur trouvé — "
+"recours au nom du site"
+
+#: includes/strings.php:386
+msgid ""
+"No SMTP username provided — attempting unauthenticated send if server permits"
+msgstr ""
+"Aucun nom d'utilisateur SMTP fourni — tentative d'envoi non authentifié si "
+"le serveur le permet"
+
+#: includes/strings.php:390
+msgid "Starting Mandrill diagnostics"
+msgstr "Démarrage des diagnostics Mandrill"
+
+#: includes/strings.php:395
+msgid ""
+"Ensure the Mandrill API key is entered in the onboarding form (field: "
+"mandrill_api_key)."
+msgstr ""
+"Assurez-vous que la clé API Mandrill est saisie dans le formulaire "
+"d'intégration (champ : mandrill_api_key)."
+
+#: includes/strings.php:405
+msgid "DNS resolution failed for Mandrill hosts"
+msgstr "Échec de la résolution DNS pour les hôtes Mandrill"
+
+#: includes/strings.php:408
+msgid "Force-from-email enabled; using mandrill_from_email"
+msgstr ""
+"Forcer l'e-mail d'expéditeur activé ; utilisation de mandrill_from_email"
+
+#: includes/strings.php:409
+msgid "Force-from-email enabled but mandrill_from_email is empty"
+msgstr "Forcer l'e-mail d'expéditeur activé mais mandrill_from_email est vide"
+
+#: includes/strings.php:410
+msgid "Force-from-name enabled; using mandrill_from_name"
+msgstr "Forcer le nom d'expéditeur activé ; utilisation de mandrill_from_name"
+
+#: includes/strings.php:411
+msgid "Force-from-name enabled but mandrill_force_from_name is empty"
+msgstr ""
+"Forcer le nom d'expéditeur activé mais mandrill_force_from_name est vide"
+
+#: includes/strings.php:420 includes/strings.php:422 includes/strings.php:452
+#: includes/strings.php:454 includes/strings.php:489 includes/strings.php:491
+#: includes/strings.php:519 includes/strings.php:521 includes/strings.php:549
+#: includes/strings.php:551
+msgid "Authority Mailer test"
+msgstr "Test Authority Mailer"
+
+#: includes/strings.php:425
+msgid "Starting MailerSend diagnostics"
+msgstr "Démarrage des diagnostics MailerSend"
+
+#: includes/strings.php:430
+msgid ""
+"Ensure the MailerSend API key is entered in the onboarding form (field: "
+"mailersend_api_key)."
+msgstr ""
+"Assurez-vous que la clé API MailerSend est saisie dans le formulaire "
+"d'intégration (champ : mailersend_api_key)."
+
+#: includes/strings.php:440
+msgid "DNS resolution failed for MailerSend hosts"
+msgstr "Échec de la résolution DNS pour les hôtes MailerSend"
+
+#: includes/strings.php:455 includes/strings.php:461
+msgid "Final transmission addresses"
+msgstr "Adresses de transmission finales"
+
+#: includes/strings.php:459
+msgid ""
+"Provider defines a From Email but \"Force From Email\" is disabled — using "
+"site admin_email instead."
+msgstr ""
+"Le fournisseur définit un e-mail d'expéditeur mais \"Forcer l'e-mail "
+"d'expéditeur\" est désactivé — utilisation d'admin_email du site à la place."
+
+#: includes/strings.php:460
+msgid ""
+"Provider defines a From Name but \"Force From Name\" is disabled — using "
+"site name instead."
+msgstr ""
+"Le fournisseur définit un nom d'expéditeur mais \"Forcer le nom "
+"d'expéditeur\" est désactivé — utilisation du nom du site à la place."
+
+#: includes/strings.php:464
+msgid "Starting Elastic Email diagnostics"
+msgstr "Démarrage des diagnostics Elastic Email"
+
+#: includes/strings.php:469
+msgid ""
+"Ensure the Elastic Email API key is entered in the onboarding form (field: "
+"elasticmail_api_key)."
+msgstr ""
+"Assurez-vous que la clé API Elastic Email est saisie dans le formulaire "
+"d'intégration (champ : elasticmail_api_key)."
+
+#: includes/strings.php:479
+msgid "DNS resolution failed for Elastic Email hosts"
+msgstr "Échec de la résolution DNS pour les hôtes Elastic Email"
+
+#: includes/strings.php:493
+msgid "Read how to set up Elastic Email"
+msgstr "Lire comment configurer Elastic Email"
+
+#: includes/strings.php:494
+msgid "Starting Mailjet diagnostics"
+msgstr "Démarrage des diagnostics Mailjet"
+
+#: includes/strings.php:499
+msgid ""
+"Ensure the Mailjet API key is entered in the onboarding form (field: "
+"mailjet_api_key)."
+msgstr ""
+"Assurez-vous que la clé API Mailjet est saisie dans le formulaire "
+"d'intégration (champ : mailjet_api_key)."
+
+#: includes/strings.php:500
+msgid "API credentials detected"
+msgstr "Identifiants API détectés"
+
+#: includes/strings.php:509
+msgid "DNS resolution failed for Mailjet hosts"
+msgstr "Échec de la résolution DNS pour les hôtes Mailjet"
+
+#: includes/strings.php:524
+msgid "Starting Postmark diagnostics"
+msgstr "Démarrage des diagnostics Postmark"
+
+#: includes/strings.php:528
+msgid ""
+"Postmark Server Token not found in onboarding settings or stored options"
+msgstr ""
+"Jeton serveur Postmark introuvable dans les paramètres d'intégration ou les "
+"options stockées"
+
+#: includes/strings.php:529
+msgid ""
+"Ensure the Postmark Server Token is entered in the onboarding form (field: "
+"postmark_server_token) or stored under authority_mailer_options['postmark']"
+msgstr ""
+"Assurez-vous que le jeton serveur Postmark est saisi dans le formulaire "
+"d'intégration (champ : postmark_server_token) ou stocké sous "
+"authority_mailer_options['postmark']"
+
+#: includes/strings.php:530
+msgid "Server token detected"
+msgstr "Jeton serveur détecté"
+
+#: includes/strings.php:539
+msgid "DNS resolution failed for Postmark hosts"
+msgstr "Échec de la résolution DNS pour les hôtes Postmark"
+
+#: includes/strings.php:553
+msgid "Read how to set up Postmark"
+msgstr "Lire comment configurer Postmark"
+
+#: includes/strings.php:554
+msgid "Server Token"
+msgstr "Jeton serveur"
+
+#: includes/strings.php:555
+msgid "Message Stream ID"
+msgstr "ID du flux de messages"
+
+#: includes/strings.php:558
+msgid "Starting SMTP2GO diagnostics"
+msgstr "Démarrage des diagnostics SMTP2GO"
+
+#: includes/strings.php:563
+msgid ""
+"Ensure the SMTP2GO API key is entered in the onboarding form (field: "
+"smtp2go_api_key)."
+msgstr ""
+"Assurez-vous que la clé API SMTP2GO est saisie dans le formulaire "
+"d'intégration (champ : smtp2go_api_key)."
+
+#: includes/strings.php:573
+msgid "DNS resolution failed for SMTP2GO hosts"
+msgstr "Échec de la résolution DNS pour les hôtes SMTP2GO"
+
+#: includes/strings.php:581
+#, php-format
+msgid "POST request returned an error: %s"
+msgstr "La requête POST a renvoyé une erreur : %s"
+
+#: includes/strings.php:583 includes/strings.php:585
+msgid "Authority Mailer SMTP2GO test"
+msgstr "Test SMTP2GO Authority Mailer"
+
+#: includes/strings.php:589
+msgid "Starting SparkPost diagnostics"
+msgstr "Démarrage des diagnostics SparkPost"
+
+#: includes/strings.php:594
+msgid ""
+"Ensure the SparkPost API key is entered in the onboarding form (field: "
+"sparkpost_api_key)."
+msgstr ""
+"Assurez-vous que la clé API SparkPost est saisie dans le formulaire "
+"d'intégration (champ : sparkpost_api_key)."
+
+#: includes/strings.php:604
+msgid "DNS resolution failed for SparkPost hosts"
+msgstr "Échec de la résolution DNS pour les hôtes SparkPost"
+
+#: includes/strings.php:614 includes/strings.php:616
+msgid "Authority Mailer SparkPost test"
+msgstr "Test SparkPost Authority Mailer"
+
+#: includes/strings.php:620
+msgid "Read how to set up SparkPost"
+msgstr "Lire comment configurer SparkPost"
+
+#: includes/strings.php:624
+msgid "Starting SendGrid diagnostics"
+msgstr "Démarrage des diagnostics SendGrid"
+
+#: includes/strings.php:631
+msgid ""
+"Ensure the SendGrid API key is entered in the onboarding form (field: "
+"sendgrid_api_key) or stored under authority_mailer_options['sendgrid'] or a "
+"top-level sendgrid_api_key option."
+msgstr ""
+"Assurez-vous que la clé API SendGrid est saisie dans le formulaire "
+"d'intégration (champ : sendgrid_api_key) ou stockée sous "
+"authority_mailer_options['sendgrid'] ou une option sendgrid_api_key de "
+"niveau supérieur."
+
+#: includes/strings.php:643
+msgid "DNS resolution failed for SendGrid hosts"
+msgstr "Échec de la résolution DNS pour les hôtes SendGrid"
+
+#: includes/strings.php:644
+msgid ""
+"Check server DNS, firewall, and outbound network. Ensure your host can reach "
+"api.sendgrid.com or the configured endpoint_host."
+msgstr ""
+"Vérifiez le DNS du serveur, le pare-feu et le réseau sortant. Assurez-vous "
+"que votre hôte peut accéder à api.sendgrid.com ou au endpoint_host configuré."
+
+#: includes/strings.php:654 includes/strings.php:656
+msgid "Authority Mailer SendGrid test"
+msgstr "Test SendGrid Authority Mailer"
+
+#: includes/strings.php:660
+msgid "Starting Brevo diagnostics"
+msgstr "Démarrage des diagnostics Brevo"
+
+#: includes/strings.php:665
+msgid ""
+"Ensure the Brevo (Sendinblue) API key is entered in the onboarding form "
+"(field: brevo_api_key or sendinblue_api_key)."
+msgstr ""
+"Assurez-vous que la clé API Brevo (Sendinblue) est saisie dans le formulaire "
+"d'intégration (champ : brevo_api_key ou sendinblue_api_key)."
+
+#: includes/strings.php:673
+msgid "DNS resolution failed for Brevo hosts"
+msgstr "Échec de la résolution DNS pour les hôtes Brevo"
+
+#: includes/strings.php:677
+msgid "Sending test email through wp_mail() pipeline..."
+msgstr "Envoi d'e-mail de test via le pipeline wp_mail()..."
+
+#: includes/strings.php:679 includes/strings.php:681
+msgid "Authority Mailer Brevo test"
+msgstr "Test Brevo Authority Mailer"
+
+#: includes/strings.php:682
+msgid "Authority Mailer Email Log"
+msgstr "Journal des e-mails Authority Mailer"
+
+#: includes/strings.php:683
+msgid ""
+"The Email Log admin page is not available. Please ensure the file includes/"
+"admin/email-log.php is present and loaded by the plugin."
+msgstr ""
+"La page d'administration du journal des e-mails n'est pas disponible. "
+"Veuillez vous assurer que le fichier includes/admin/email-log.php est "
+"présent et chargé par le plugin."
+
+#: includes/strings.php:684
+msgid "Failed"
+msgstr "Échoué"
+
+#: includes/strings.php:685
+msgid "Delivered"
+msgstr "Livré"
+
+#: includes/strings.php:686
+msgid "Last 7 days"
+msgstr "7 derniers jours"
+
+#: includes/strings.php:687
+msgid "Recent Emails"
+msgstr "E-mails récents"
+
+#: includes/strings.php:688
+msgid "View All"
+msgstr "Voir tout"
+
+#: includes/strings.php:693
+msgid "ago"
+msgstr "il y a"
+
+#: includes/strings.php:694
+msgid "Configure Provider"
+msgstr "Configurer le fournisseur"
+
+#: includes/strings.php:695
+msgid "Total Sent"
+msgstr "Total envoyé"
+
+#: includes/strings.php:697
+msgid "Delivery Health"
+msgstr "Santé de livraison"
+
+#: includes/strings.php:698
+msgid "Delivery Rate"
+msgstr "Taux de livraison"
+
+#: includes/strings.php:699
+msgid "Excellent"
+msgstr "Excellent"
+
+#: includes/strings.php:700
+msgid "Good"
+msgstr "Bon"
+
+#: includes/strings.php:701
+msgid "Needs Attention"
+msgstr "Nécessite une attention"
+
+#: includes/strings.php:702
+msgid "No Email Provider Configured"
+msgstr "Aucun fournisseur d'e-mail configuré"
+
+#: includes/strings.php:703
+msgid ""
+"To start sending emails, you need to configure an email service provider. "
+"Click below to get started with the setup wizard."
+msgstr ""
+"Pour commencer à envoyer des e-mails, vous devez configurer un fournisseur "
+"de services d'e-mail. Cliquez ci-dessous pour commencer avec l'assistant de "
+"configuration."
+
+#: includes/strings.php:704
+msgid "Email Provider Active"
+msgstr "Fournisseur d'e-mail actif"
+
+#: includes/strings.php:706
+#, php-format
+msgid "Your site is configured to send emails using %s"
+msgstr "Votre site est configuré pour envoyer des e-mails via %s"
+
+#: includes/strings.php:708
+#, php-format
+msgid "Your site is using %1$s. Last email sent %2$s."
+msgstr "Votre site utilise %1$s. Dernier e-mail envoyé %2$s."
+
+#: includes/strings.php:709
+msgid "All systems operational"
+msgstr "Tous les systèmes sont opérationnels"
+
+#: includes/strings.php:710
+msgid "Manage Settings"
+msgstr "Gérer les paramètres"
+
+#: includes/strings.php:711
+msgid "No delivery issues detected"
+msgstr "Aucun problème de livraison détecté"
+
+#: includes/strings.php:712
+msgid "No failures in selected period"
+msgstr "Aucun échec durant la période sélectionnée"
+
+#: includes/strings.php:713
+msgid "Pro feature"
+msgstr "Fonctionnalité Pro"
+
+#: includes/strings.php:714
+msgid "Not enough data yet"
+msgstr "Données insuffisantes pour le moment"
+
+#: includes/strings.php:715
+msgid "Send a test email or wait for site activity to see analytics here."
+msgstr ""
+"Envoyez un e-mail de test ou attendez l'activité du site pour voir les "
+"analyses ici."
+
+#: includes/strings.php:716
+msgid "View Email Logs"
+msgstr "Voir les journaux d'e-mails"
+
+#: includes/strings.php:717
+msgid "Unlock Detailed Email Analytics!"
+msgstr "Débloquez les analyses d'e-mails détaillées !"
+
+#: includes/strings.php:718
+msgid "Engagement Tracking"
+msgstr "Suivi de l'engagement"
+
+#: includes/strings.php:719
+msgid "(Opens & Clicks analytics)"
+msgstr "(Analyses des ouvertures et clics)"
+
+#: includes/strings.php:720
+msgid "Advanced Email Testing"
+msgstr "Tests d'e-mails avancés"
+
+#: includes/strings.php:721
+msgid "(Real-time delivery tests)"
+msgstr "(Tests de livraison en temps réel)"
+
+#: includes/strings.php:722
+msgid "Compliance Tools"
+msgstr "Outils de conformité"
+
+#: includes/strings.php:723
+msgid "(Spam score check)"
+msgstr "(Vérification du score de spam)"
+
+#: includes/strings.php:724
+msgid "Unlock Pro Analytics →"
+msgstr "Débloquer les analyses Pro →"
+
+#: includes/strings.php:725
+msgid "Bounce Rate"
+msgstr "Taux de rebond"
+
+#: includes/strings.php:726
+msgid "Bounce Rate Tracking"
+msgstr "Suivi du taux de rebond"
+
+#: includes/strings.php:727
+msgid "Available in Pro"
+msgstr "Disponible en version Pro"
+
+#: includes/strings.php:728
+msgid "Upgrade to Premium"
+msgstr "Passer à Premium"
+
+#: includes/strings.php:729
+msgid "Daily"
+msgstr "Quotidien"
+
+#: includes/strings.php:730
+msgid "Weekly"
+msgstr "Hebdomadaire"
+
+#: includes/strings.php:731
+msgid "Monthly"
+msgstr "Mensuel"
+
+#: includes/strings.php:733
+msgid "Pending"
+msgstr "En attente"
+
+#: includes/strings.php:734
+msgid "Emails Sent"
+msgstr "E-mails envoyés"
+
+#: includes/strings.php:735
+msgid "Email Analytics"
+msgstr "Analyses des e-mails"
+
+#: includes/strings.php:736
+msgid "Total"
+msgstr "Total"
+
+#: includes/strings.php:737
+msgid "No Email Data Yet"
+msgstr "Aucune donnée d'e-mail pour le moment"
+
+#: includes/strings.php:738
+msgid ""
+"Start sending emails through Authority Mailer to see detailed analytics and "
+"trends here."
+msgstr ""
+"Commencez à envoyer des e-mails via Authority Mailer pour voir les analyses "
+"et tendances détaillées ici."
+
+#: includes/strings.php:740
+msgid "Bounce Tracking (Pro)"
+msgstr "Suivi des rebonds (Pro)"
+
+#: includes/strings.php:742
+msgid "Total emails processed in the last 7 days"
+msgstr "Total des e-mails traités au cours des 7 derniers jours"
+
+#: includes/strings.php:743
+msgid "Successfully delivered emails (success + accepted status)"
+msgstr "E-mails livrés avec succès (statut succès + accepté)"
+
+#: includes/strings.php:744
+msgid "Emails that failed to send due to errors"
+msgstr "E-mails dont l'envoi a échoué en raison d'erreurs"
+
+#: includes/strings.php:745
+msgid "Chart Period Selector"
+msgstr "Sélecteur de période du graphique"
+
+#: includes/strings.php:746
+msgid "Skip to main content"
+msgstr "Passer au contenu principal"
+
+#: includes/strings.php:748
+msgid "Search emails..."
+msgstr "Rechercher des e-mails..."
+
+#: includes/strings.php:749
+msgid "From date"
+msgstr "À partir du"
+
+#: includes/strings.php:750
+msgid "To date"
+msgstr "Jusqu'au"
+
+#: includes/strings.php:751
+msgid "per page"
+msgstr "par page"
+
+#: includes/strings.php:752
+msgid "Emails will appear here once your site starts sending them."
+msgstr ""
+"Les e-mails apparaîtront ici une fois que votre site commencera à les "
+"envoyer."
+
+#: includes/strings.php:753
+msgid "Email not found"
+msgstr "E-mail introuvable"
+
+#: includes/strings.php:754
+msgid "← Back to Email Log"
+msgstr "← Retour au journal des e-mails"
+
+#: includes/strings.php:755
+msgid "Back to Email Log"
+msgstr "Retour au journal des e-mails"
+
+#: includes/strings.php:756
+msgid "Email Details"
+msgstr "Détails de l'e-mail"
+
+#: includes/strings.php:757
+msgid "Response Code"
+msgstr "Code de réponse"
+
+#: includes/strings.php:758
+msgid "Error Message"
+msgstr "Message d'erreur"
+
+#: includes/strings.php:761
+msgid "Email log entry not found."
+msgstr "Entrée du journal des e-mails introuvable."
+
+#: includes/strings.php:762
+msgid "Go Pro Today"
+msgstr "Passez à Pro aujourd'hui"
+
+#: includes/strings.php:763
+msgid "Everything you need for reliable email delivery"
+msgstr "Tout ce dont vous avez besoin pour une livraison d'e-mails fiable"
+
+#: includes/strings.php:764
+msgid "View raw payload (debug)"
+msgstr "Voir la charge utile brute (débogage)"
+
+#: includes/strings.php:765
+msgid "View raw body"
+msgstr "Voir le corps brut"
+
+#: includes/strings.php:766
+msgid "View raw headers"
+msgstr "Voir les en-têtes bruts"
+
+#: includes/strings.php:769
+msgid "None"
+msgstr "Aucun"
+
+#: includes/strings.php:770
+msgid "SSL"
+msgstr "SSL"
+
+#: includes/strings.php:771
+msgid "TLS (STARTTLS)"
+msgstr "TLS (STARTTLS)"
+
+#: includes/strings.php:772
+msgid ""
+"The name that will appear in the \"From\" field of emails sent from your "
+"site."
+msgstr ""
+"Le nom qui apparaîtra dans le champ \"De\" des e-mails envoyés depuis votre "
+"site."
+
+#: includes/strings.php:773
+msgid ""
+"The email address that will be used as the sender for all outgoing emails."
+msgstr ""
+"L'adresse e-mail qui sera utilisée comme expéditeur pour tous les e-mails "
+"sortants."
+
+#: includes/strings.php:774
+msgid ""
+"Your Brevo API key for authenticating and sending emails through their "
+"service."
+msgstr ""
+"Votre clé API Brevo pour l'authentification et l'envoi d'e-mails via leur "
+"service."
+
+#: includes/strings.php:775
+msgid "Your Elastic Email API key for authentication and sending emails."
+msgstr ""
+"Votre clé API Elastic Email pour l'authentification et l'envoi d'e-mails."
+
+#: includes/strings.php:776
+msgid "US"
+msgstr "États-Unis"
+
+#: includes/strings.php:777
+msgid "EU"
+msgstr "UE"
+
+#: includes/strings.php:780
+msgid ""
+"Your SendLayer API key for authenticating and sending emails through their "
+"service."
+msgstr ""
+"Votre clé API SendLayer pour l'authentification et l'envoi d'e-mails via "
+"leur service."
+
+#: includes/strings.php:781
+msgid ""
+"Your SMTP.com API key for authenticating and sending emails through their "
+"service."
+msgstr ""
+"Votre clé API SMTP.com pour l'authentification et l'envoi d'e-mails via leur "
+"service."
+
+#: includes/strings.php:782
+msgid ""
+"The sender name configured in your SMTP.com account (required by SMTP.com)."
+msgstr ""
+"Le nom d'expéditeur configuré dans votre compte SMTP.com (requis par "
+"SMTP.com)."
+
+#: includes/strings.php:783
+msgid ""
+"Find your SendGrid API key in the SendGrid dashboard under Settings &gt; API "
+"Keys."
+msgstr ""
+"Trouvez votre clé API SendGrid dans le tableau de bord SendGrid sous "
+"Paramètres > Clés API."
+
+#: includes/strings.php:784
+msgid ""
+"Enter the domain you've verified in SendGrid for sending (e.g., "
+"yourdomain.com)."
+msgstr ""
+"Saisissez le domaine que vous avez vérifié dans SendGrid pour l'envoi (par "
+"ex., votredomaine.com)."
+
+#: includes/strings.php:785
+msgid ""
+"Find your SMTP2GO API key in the SMTP2GO dashboard under Settings &gt; API "
+"Keys."
+msgstr ""
+"Trouvez votre clé API SMTP2GO dans le tableau de bord SMTP2GO sous "
+"Paramètres > Clés API."
+
+#: includes/strings.php:786
+msgid ""
+"Find your SparkPost API key in the SparkPost dashboard under Account &gt; "
+"API Keys."
+msgstr ""
+"Trouvez votre clé API SparkPost dans le tableau de bord SparkPost sous "
+"Compte > Clés API."
+
+#: includes/strings.php:787
+msgid ""
+"Find your Postmark Server API Token in the Postmark dashboard under Servers "
+"&gt; API Tokens."
+msgstr ""
+"Trouvez votre jeton API de serveur Postmark dans le tableau de bord Postmark "
+"sous Serveurs > Jetons API."
+
+#: includes/strings.php:788
+msgid ""
+"Enter your Message Stream ID from Postmark (e.g., outbound). Find this in "
+"Settings &gt; Message Streams."
+msgstr ""
+"Saisissez votre ID de flux de messages de Postmark (par ex., outbound). "
+"Trouvez ceci dans Paramètres > Flux de messages."
+
+#: includes/strings.php:789
+msgid ""
+"Find your Mandrill API key in the Mailchimp dashboard under Transactional "
+"&gt; Settings &gt; SMTP &amp; API Info."
+msgstr ""
+"Trouvez votre clé API Mandrill dans le tableau de bord Mailchimp sous "
+"Transactionnel > Paramètres > Infos SMTP et API."
+
+#: includes/strings.php:792
+msgid ""
+"Find your Mailjet API key in the Mailjet dashboard under Account Settings "
+"&gt; REST API &gt; API Key Management."
+msgstr ""
+"Trouvez votre clé API Mailjet dans le tableau de bord Mailjet sous "
+"Paramètres du compte > API REST > Gestion des clés API."
+
+#: includes/strings.php:793
+msgid ""
+"Find your Mailjet Secret Key (API Secret) in the Mailjet dashboard under "
+"Account Settings &gt; REST API &gt; API Key Management."
+msgstr ""
+"Trouvez votre clé secrète Mailjet (Secret API) dans le tableau de bord "
+"Mailjet sous Paramètres du compte > API REST > Gestion des clés API."
+
+#: includes/strings.php:796
+msgid ""
+"The hostname or IP address of your SMTP server (e.g., smtp.example.com)."
+msgstr ""
+"Le nom d'hôte ou l'adresse IP de votre serveur SMTP (par ex., "
+"smtp.exemple.com)."
+
+#: includes/strings.php:797
+msgid ""
+"The port number your SMTP server uses. Common ports: 25 (unencrypted), 465 "
+"(SSL), 587 (TLS), 2525 (alternate)."
+msgstr ""
+"Le numéro de port utilisé par votre serveur SMTP. Ports courants : 25 (non "
+"chiffré), 465 (SSL), 587 (TLS), 2525 (alternatif)."
+
+#: includes/strings.php:798
+msgid ""
+"Your SMTP authentication username, typically your email address or account "
+"username."
+msgstr ""
+"Votre nom d'utilisateur d'authentification SMTP, généralement votre adresse "
+"e-mail ou nom d'utilisateur du compte."
+
+#: includes/strings.php:799
+msgid "Your SMTP authentication password or app-specific password."
+msgstr ""
+"Votre mot de passe d'authentification SMTP ou mot de passe d'application "
+"spécifique."
+
+#: includes/strings.php:800
+msgid ""
+"Choose the encryption method required by your SMTP server. SSL/TLS (port "
+"465) or STARTTLS (port 587) recommended."
+msgstr ""
+"Choisissez la méthode de chiffrement requise par votre serveur SMTP. SSL/TLS "
+"(port 465) ou STARTTLS (port 587) recommandé."
+
+#: includes/strings.php:803
+msgid "Email Headers"
+msgstr "En-têtes de l'e-mail"
+
+#: includes/strings.php:804
+msgid "Response Body"
+msgstr "Corps de réponse"
+
+#: includes/strings.php:805
+msgid "Log entry deleted successfully."
+msgstr "Entrée du journal supprimée avec succès."
+
+#: includes/strings.php:806
+msgid "Failed to delete log entry."
+msgstr "Échec de la suppression de l'entrée du journal."
+
+#: includes/strings.php:807
+msgid "You do not have permission to access this page."
+msgstr "Vous n'avez pas la permission d'accéder à cette page."
+
+#: includes/strings.php:810
+msgid ""
+"The name that will appear in the \"From\" field of emails sent through Zoho "
+"Mail."
+msgstr ""
+"Le nom qui apparaîtra dans le champ \"De\" des e-mails envoyés via Zoho Mail."
+
+#: includes/strings.php:811
+msgid ""
+"The email address from your Zoho Mail account that will be used as the "
+"sender."
+msgstr ""
+"L'adresse e-mail de votre compte Zoho Mail qui sera utilisée comme "
+"expéditeur."
+
+#: includes/strings.php:812
+msgid ""
+"The Zoho SMTP server hostname (default: smtp.zoho.com for standard accounts, "
+"smtp.zoho.in for India, smtp.zoho.eu for Europe, smtp.zoho.com.cn for China)."
+msgstr ""
+"Le nom d'hôte du serveur SMTP Zoho (par défaut : smtp.zoho.com pour les "
+"comptes standard, smtp.zoho.in pour l'Inde, smtp.zoho.eu pour l'Europe, "
+"smtp.zoho.com.cn pour la Chine)."
+
+#: includes/strings.php:813
+msgid ""
+"The port number for Zoho SMTP. Use 587 for TLS (recommended) or 465 for SSL."
+msgstr ""
+"Le numéro de port pour SMTP Zoho. Utilisez 587 pour TLS (recommandé) ou 465 "
+"pour SSL."
+
+#: includes/strings.php:814
+msgid ""
+"Choose the encryption method. TLS (port 587) is recommended for Zoho Mail."
+msgstr ""
+"Choisissez la méthode de chiffrement. TLS (port 587) est recommandé pour "
+"Zoho Mail."
+
+#: includes/strings.php:815
+msgid "Your full Zoho Mail email address (e.g., you@yourdomain.com)."
+msgstr ""
+"Votre adresse e-mail Zoho Mail complète (par ex., vous@votredomaine.com)."
+
+#: includes/strings.php:816
+msgid ""
+"Your Zoho Mail password or app-specific password. We recommend using an app-"
+"specific password for security."
+msgstr ""
+"Votre mot de passe Zoho Mail ou mot de passe d'application spécifique. Nous "
+"recommandons d'utiliser un mot de passe d'application spécifique pour la "
+"sécurité."
+
+#: includes/strings.php:819
+msgid ""
+"The name that will appear in the \"From\" field of emails sent through "
+"Office 365."
+msgstr ""
+"Le nom qui apparaîtra dans le champ \"De\" des e-mails envoyés via Office "
+"365."
+
+#: includes/strings.php:820
+msgid ""
+"The email address from your Office 365 account that will be used as the "
+"sender."
+msgstr ""
+"L'adresse e-mail de votre compte Office 365 qui sera utilisée comme "
+"expéditeur."
+
+#: includes/strings.php:821
+msgid "The Office 365 SMTP server hostname (default: smtp.office365.com)."
+msgstr ""
+"Le nom d'hôte du serveur SMTP Office 365 (par défaut : smtp.office365.com)."
+
+#: includes/strings.php:822
+msgid "The port number for Office 365 SMTP. Use 587 for TLS (recommended)."
+msgstr ""
+"Le numéro de port pour SMTP Office 365. Utilisez 587 pour TLS (recommandé)."
+
+#: includes/strings.php:823
+msgid ""
+"Choose the encryption method. TLS (port 587) is required for Office 365."
+msgstr ""
+"Choisissez la méthode de chiffrement. TLS (port 587) est requis pour Office "
+"365."
+
+#: includes/strings.php:824
+msgid "Your full Office 365 email address (e.g., you@yourdomain.com)."
+msgstr ""
+"Votre adresse e-mail Office 365 complète (par ex., vous@votredomaine.com)."
+
+#: includes/strings.php:825
+msgid ""
+"Your Office 365 password or app password. For accounts with MFA enabled, you "
+"must use an app password."
+msgstr ""
+"Votre mot de passe Office 365 ou mot de passe d'application. Pour les "
+"comptes avec MFA activé, vous devez utiliser un mot de passe d'application."
+
+#: includes/strings.php:828
+msgid ""
+"The name that will appear in the \"From\" field of emails sent through AWS "
+"SES."
+msgstr ""
+"Le nom qui apparaîtra dans le champ \"De\" des e-mails envoyés via AWS SES."
+
+#: includes/strings.php:829
+msgid ""
+"The verified email address or domain in AWS SES that will be used as the "
+"sender."
+msgstr ""
+"L'adresse e-mail ou le domaine vérifié dans AWS SES qui sera utilisé comme "
+"expéditeur."
+
+#: includes/strings.php:830
+msgid ""
+"Select the AWS region where your SES service is configured. This determines "
+"the SMTP endpoint."
+msgstr ""
+"Sélectionnez la région AWS où votre service SES est configuré. Cela "
+"détermine le point de terminaison SMTP."
+
+#: includes/strings.php:831
+msgid ""
+"The AWS SES SMTP endpoint for your region (e.g., email-smtp.us-"
+"east-1.amazonaws.com). This is automatically determined by your selected "
+"region."
+msgstr ""
+"Le point de terminaison SMTP AWS SES pour votre région (par ex., email-"
+"smtp.us-east-1.amazonaws.com). Ceci est automatiquement déterminé par votre "
+"région sélectionnée."
+
+#: includes/strings.php:832
+msgid ""
+"The port number for AWS SES SMTP. Use 587 for TLS (recommended) or 465 for "
+"SSL."
+msgstr ""
+"Le numéro de port pour SMTP AWS SES. Utilisez 587 pour TLS (recommandé) ou "
+"465 pour SSL."
+
+#: includes/strings.php:833
+msgid ""
+"Choose the encryption method. TLS (port 587) is recommended for AWS SES."
+msgstr ""
+"Choisissez la méthode de chiffrement. TLS (port 587) est recommandé pour AWS "
+"SES."
+
+#: includes/strings.php:834
+msgid ""
+"Your AWS SES SMTP username. Generate this in the AWS SES console under SMTP "
+"Settings."
+msgstr ""
+"Votre nom d'utilisateur SMTP AWS SES. Générez-le dans la console AWS SES "
+"sous Paramètres SMTP."
+
+#: includes/strings.php:835
+msgid ""
+"Your AWS SES SMTP password. Generate this in the AWS SES console under SMTP "
+"Settings. Note: This is different from your AWS IAM password."
+msgstr ""
+"Votre mot de passe SMTP AWS SES. Générez-le dans la console AWS SES sous "
+"Paramètres SMTP. Remarque : Ce n'est pas votre mot de passe AWS IAM."
+
+#: includes/strings.php:840 includes/strings.php:944
+msgid "Free"
+msgstr "Gratuit"
+
+#: includes/strings.php:841
+msgid "by"
+msgstr "par"
+
+#: includes/strings.php:842
+msgid "Professional Email Delivery"
+msgstr "Livraison d'e-mails professionnelle"
+
+#: includes/strings.php:844
+msgid "Upgrade Now"
+msgstr "Mettre à niveau maintenant"
+
+#: includes/strings.php:845
+msgid "Additional Features Available in Authority Mailer SMTP Pro"
+msgstr ""
+"Fonctionnalités supplémentaires disponibles dans Authority Mailer SMTP Pro"
+
+#: includes/strings.php:846
+msgid ""
+"The free version includes core SMTP functionality with support for 14 email "
+"providers. Pro version helps to track opens, clicks, delivery trends over "
+"time and AI Insights."
+msgstr ""
+"La version gratuite inclut les fonctionnalités SMTP de base avec support "
+"pour 14 fournisseurs d'e-mails. La version Pro permet de suivre les "
+"ouvertures, les clics, les tendances de livraison au fil du temps et les "
+"informations IA."
+
+#: includes/strings.php:847
+msgid "17 Email Providers"
+msgstr "17 fournisseurs d'e-mails"
+
+#: includes/strings.php:848
+msgid "Unlimited Email Logs"
+msgstr "Journaux d'e-mails illimités"
+
+#: includes/strings.php:849 includes/strings.php:958
+msgid "Open & Click Tracking"
+msgstr "Suivi des ouvertures et clics"
+
+#: includes/strings.php:850 includes/strings.php:966
+msgid "GDPR Compliance Tools"
+msgstr "Outils de conformité RGPD"
+
+#: includes/strings.php:851 includes/strings.php:962
+msgid "AI-Powered Insights"
+msgstr "Informations basées sur l'IA"
+
+#: includes/strings.php:852 includes/strings.php:964
+msgid "Smart Failover Routing"
+msgstr "Routage de basculement intelligent"
+
+#: includes/strings.php:853 includes/strings.php:965
+msgid "Email Templates Library"
+msgstr "Bibliothèque de modèles d'e-mail"
+
+#: includes/strings.php:854 includes/strings.php:968
+msgid "Priority Support"
+msgstr "Assistance prioritaire"
+
+#: includes/strings.php:855
+msgid "See what’s included in Pro →"
+msgstr "Voir ce qui est inclus dans Pro →"
+
+#: includes/strings.php:856
+msgid "🕐 Limited: 40% OFF"
+msgstr "🕐 Limité : 40% de réduction"
+
+#: includes/strings.php:859
+msgid "Bounce & Complaint Handling"
+msgstr "Gestion des rebonds et des plaintes"
+
+#: includes/strings.php:860
+msgid "Advanced Analytics Dashboard"
+msgstr "Tableau de bord analytique avancé"
+
+#: includes/strings.php:861
+msgid "Spam Score Checker"
+msgstr "Vérificateur de score de spam"
+
+#: includes/strings.php:862
+msgid "Geographic & Device Tracking"
+msgstr "Suivi géographique et d'appareil"
+
+#: includes/strings.php:863
+msgid "Email Health Monitoring"
+msgstr "Surveillance de la santé des e-mails"
+
+#: includes/strings.php:864
+msgid "Real-time Notifications"
+msgstr "Notifications en temps réel"
+
+#: includes/strings.php:867
+msgid "Upgrade to Premium to unlock this provider"
+msgstr "Passez à Premium pour débloquer ce fournisseur"
+
+#: includes/strings.php:868
+msgid "Optional Service"
+msgstr "Service optionnel"
+
+#: includes/strings.php:869
+msgid "Fix Deliverability Issues Without Technical Hassle"
+msgstr "Résolvez les problèmes de délivrabilité sans tracas techniques"
+
+#: includes/strings.php:870
+msgid "Let our team configure everything for you"
+msgstr "Laissez notre équipe tout configurer pour vous"
+
+#: includes/strings.php:872
+msgid "24-hour setup guarantee"
+msgstr "Configuration garantie sous 24h"
+
+#: includes/strings.php:873
+msgid "All email providers configured"
+msgstr "Tous les fournisseurs d'e-mails configurés"
+
+#: includes/strings.php:874
+msgid "SPF/DKIM optimization"
+msgstr "Optimisation SPF/DKIM"
+
+#: includes/strings.php:875
+msgid "Testing & verification"
+msgstr "Tests et vérification"
+
+#: includes/strings.php:876
+msgid "Zero technical knowledge needed"
+msgstr "Aucune connaissance technique nécessaire"
+
+#: includes/strings.php:878
+msgid "$39"
+msgstr "39 $"
+
+#: includes/strings.php:879
+msgid "$69"
+msgstr "69 $"
+
+#: includes/strings.php:880
+msgid "One-time setup fee"
+msgstr "Frais de configuration uniques"
+
+#: includes/strings.php:881
+msgid "SAVE $30"
+msgstr "ÉCONOMISEZ 30$"
+
+#: includes/strings.php:883
+msgid "4.9/5"
+msgstr "4,9/5"
+
+#: includes/strings.php:884
+msgid "287+ successful setups"
+msgstr "Plus de 287 configurations réussies"
+
+#: includes/strings.php:885
+msgid "Money-back guarantee"
+msgstr "Garantie de remboursement"
+
+#: includes/strings.php:886
+msgid "Average setup: 37 minutes"
+msgstr "Configuration moyenne : 37 minutes"
+
+#: includes/strings.php:888
+msgid "Get Expert Setup →"
+msgstr "Obtenir une configuration par expert →"
+
+#: includes/strings.php:889
+msgid "or continue with DIY setup"
+msgstr "ou continuer avec la configuration DIY"
+
+#: includes/strings.php:891
+msgid ""
+"Starting from scratch? Let our experts handle the technical setup while you "
+"focus on your business."
+msgstr ""
+"Vous partez de zéro ? Laissez nos experts gérer la configuration technique "
+"pendant que vous vous concentrez sur votre entreprise."
+
+#: includes/strings.php:892
+msgid ""
+"Not sure which provider to choose? Our team will help you select and "
+"configure the best one for your needs."
+msgstr ""
+"Vous ne savez pas quel fournisseur choisir ? Notre équipe vous aidera à "
+"sélectionner et configurer le meilleur pour vos besoins."
+
+#: includes/strings.php:893
+msgid ""
+"Configuration can be tricky. Skip the headache—let our experts do it for you "
+"with zero errors."
+msgstr ""
+"La configuration peut être délicate. Évitez les maux de tête — laissez nos "
+"experts le faire pour vous sans erreurs."
+
+#: includes/strings.php:894
+msgid ""
+"Want guaranteed success? Our team will set up, test, and verify everything "
+"works perfectly."
+msgstr ""
+"Vous voulez un succès garanti ? Notre équipe configurera, testera et "
+"vérifiera que tout fonctionne parfaitement."
+
+#: includes/strings.php:896
+msgid ""
+"This is an optional professional service. Authority Mailer SMTP is fully "
+"functional without this service."
+msgstr ""
+"Ceci est un service professionnel optionnel. Authority Mailer SMTP est "
+"entièrement fonctionnel sans ce service."
+
+#: includes/strings.php:898
+msgid "Onboarding wizard sidebar"
+msgstr "Barre latérale de l'assistant d'intégration"
+
+#: includes/strings.php:899
+msgid "Tools Sidebar"
+msgstr "Barre latérale des outils"
+
+#: includes/strings.php:900
+msgid "Wizard navigation actions"
+msgstr "Actions de navigation de l'assistant"
+
+#: includes/strings.php:905
+#, php-format
+msgid "Awesome! You've successfully sent %d emails with Authority Mailer SMTP."
+msgstr ""
+"Excellent ! Vous avez envoyé %d e-mails avec succès via Authority Mailer "
+"SMTP."
+
+#: includes/strings.php:906
+msgid ""
+"Could you take 2 minutes to leave us a 5-star review? It helps others "
+"discover Authority Mailer!"
+msgstr ""
+"Pourriez-vous prendre 2 minutes pour nous laisser un avis 5 étoiles ? Cela "
+"aide les autres à découvrir Authority Mailer !"
+
+#: includes/strings.php:907
+msgid "⭐ Sure, I'll Leave a Review"
+msgstr "⭐ Bien sûr, je laisserai un avis"
+
+#: includes/strings.php:908
+msgid "Maybe Later"
+msgstr "Peut-être plus tard"
+
+#: includes/strings.php:909
+msgid "I Already Did"
+msgstr "Je l'ai déjà fait"
+
+#: includes/strings.php:912
+msgid "Loving Authority Mailer SMTP?"
+msgstr "Vous aimez Authority Mailer SMTP ?"
+
+#: includes/strings.php:913
+msgid "Leave us a review!"
+msgstr "Laissez-nous un avis !"
+
+#: includes/strings.php:916
+msgid "Email sent successfully!"
+msgstr "E-mail envoyé avec succès !"
+
+#: includes/strings.php:917
+msgid "Enjoying Authority Mailer?"
+msgstr "Vous appréciez Authority Mailer ?"
+
+#: includes/strings.php:918
+msgid "Leave a review"
+msgstr "Laisser un avis"
+
+#: includes/strings.php:921
+msgid "Authority Mailer SMTP – Free vs Pro"
+msgstr "Authority Mailer SMTP – Gratuit vs Pro"
+
+#: includes/strings.php:924
+msgid "Choose the Right Plan for Your Needs"
+msgstr "Choisissez le forfait adapté à vos besoins"
+
+#: includes/strings.php:925
+msgid ""
+"Authority Mailer SMTP Free provides everything most WordPress sites need for "
+"reliable email delivery. The free version includes professional SMTP support "
+"for 14 email providers, email logging, and delivery tracking—perfect for "
+"most websites."
+msgstr ""
+"Authority Mailer SMTP Gratuit fournit tout ce dont la plupart des sites "
+"WordPress ont besoin pour une livraison d'e-mails fiable. La version "
+"gratuite inclut un support SMTP professionnel pour 14 fournisseurs d'e-mail, "
+"la journalisation des e-mails et le suivi de livraison — parfait pour la "
+"plupart des sites web."
+
+#: includes/strings.php:926
+msgid ""
+"If you need advanced analytics, engagement tracking, or compliance tools, "
+"the Pro version adds powerful features for businesses with demanding email "
+"requirements."
+msgstr ""
+"Si vous avez besoin d'analyses avancées, de suivi de l'engagement ou "
+"d'outils de conformité, la version Pro ajoute des fonctionnalités puissantes "
+"pour les entreprises ayant des exigences e-mail rigoureuses."
+
+#: includes/strings.php:929
+msgid "Recommended"
+msgstr "Recommandé"
+
+#: includes/strings.php:930
+msgid "Upgrade to Pro Today"
+msgstr "Passez à Pro aujourd'hui"
+
+#: includes/strings.php:933
+msgid "Email Delivery"
+msgstr "Livraison des e-mails"
+
+#: includes/strings.php:934
+msgid "Analytics & Tracking"
+msgstr "Analyses et suivi"
+
+#: includes/strings.php:935
+msgid "Reliability & Compliance"
+msgstr "Fiabilité et conformité"
+
+#: includes/strings.php:936
+msgid "Support & Services"
+msgstr "Support et services"
+
+#: includes/strings.php:939
+msgid ""
+"The free version provides reliable SMTP email delivery for WordPress. The "
+"Pro version adds advanced monitoring, analytics, and workflow tools for "
+"sites that require deeper visibility and control."
+msgstr ""
+"La version gratuite fournit une livraison d'e-mails SMTP fiable pour "
+"WordPress. La version Pro ajoute des outils avancés de surveillance, "
+"d'analyse et de flux de travail pour les sites nécessitant une visibilité et "
+"un contrôle plus approfondis."
+
+#: includes/strings.php:940
+msgid "Learn more about Pro features"
+msgstr "En savoir plus sur les fonctionnalités Pro"
+
+#: includes/strings.php:943
+msgid "Feature"
+msgstr "Fonctionnalité"
+
+#: includes/strings.php:945
+msgid "Pro"
+msgstr "Pro"
+
+#: includes/strings.php:948
+msgid "Core SMTP Email Sending"
+msgstr "Envoi d'e-mails SMTP de base"
+
+#: includes/strings.php:949
+msgid "Email Provider Support"
+msgstr "Support des fournisseurs d'e-mail"
+
+#: includes/strings.php:950
+msgid "14 Providers"
+msgstr "14 fournisseurs"
+
+#: includes/strings.php:951
+msgid "17 Providers"
+msgstr "17 fournisseurs"
+
+#: includes/strings.php:952
+msgid "Gmail / Outlook SMTP"
+msgstr "Gmail / Outlook SMTP"
+
+#: includes/strings.php:953
+msgid "Custom SMTP (Other SMTP)"
+msgstr "SMTP personnalisé (Autre SMTP)"
+
+#: includes/strings.php:955
+msgid "Basic"
+msgstr "Basique"
+
+#: includes/strings.php:957
+msgid "Email Delivery Status"
+msgstr "Statut de livraison des e-mails"
+
+#: includes/strings.php:959
+msgid "Bounce & Spam Handling"
+msgstr "Gestion des rebonds et du spam"
+
+#: includes/strings.php:960
+msgid "Email Analytics Dashboard"
+msgstr "Tableau de bord d'analyse des e-mails"
+
+#: includes/strings.php:961
+msgid "Delivery Trends Over Time"
+msgstr "Tendances de livraison au fil du temps"
+
+#: includes/strings.php:963
+msgid "Webhook Receiver"
+msgstr "Récepteur de webhook"
+
+#: includes/strings.php:967
+msgid "Geographic Analytics"
+msgstr "Analyses géographiques"
+
+#: includes/strings.php:971
+msgid "Track email opens and link clicks for engagement insights"
+msgstr ""
+"Suivez les ouvertures d'e-mails et les clics sur les liens pour obtenir des "
+"informations sur l'engagement"
+
+#: includes/strings.php:972
+msgid ""
+"Automatically handle bounces and spam complaints to maintain sender "
+"reputation"
+msgstr ""
+"Gérez automatiquement les rebonds et les plaintes pour spam afin de "
+"maintenir la réputation de l'expéditeur"
+
+#: includes/strings.php:973
+msgid "Visual dashboard with delivery rates, trends, and engagement metrics"
+msgstr ""
+"Tableau de bord visuel avec taux de livraison, tendances et métriques "
+"d'engagement"
+
+#: includes/strings.php:974
+msgid "Track email performance over time with detailed trend analysis"
+msgstr ""
+"Suivez les performances des e-mails au fil du temps avec une analyse "
+"détaillée des tendances"
+
+#: includes/strings.php:975
+msgid "AI-powered recommendations to improve email deliverability"
+msgstr ""
+"Recommandations basées sur l'IA pour améliorer la délivrabilité des e-mails"
+
+#: includes/strings.php:976
+msgid "Receive real-time delivery events from email providers"
+msgstr ""
+"Recevez des événements de livraison en temps réel des fournisseurs d'e-mails"
+
+#: includes/strings.php:977
+msgid "Automatically switch to backup providers if primary fails"
+msgstr ""
+"Basculez automatiquement vers les fournisseurs de secours en cas d'échec du "
+"principal"
+
+#: includes/strings.php:978
+msgid "Professional email templates for common WordPress notifications"
+msgstr ""
+"Modèles d'e-mail professionnels pour les notifications WordPress courantes"
+
+#: includes/strings.php:979
+msgid "Tools to help you comply with GDPR email tracking requirements"
+msgstr ""
+"Outils pour vous aider à respecter les exigences de suivi des e-mails RGPD"
+
+#: includes/strings.php:980
+msgid "See where your emails are being opened geographically"
+msgstr "Voyez où vos e-mails sont ouverts géographiquement"
+
+#: includes/strings.php:981
+msgid "Get priority email and chat support from our expert team"
+msgstr ""
+"Obtenez un support par e-mail et chat prioritaire de notre équipe d'experts"
+
+#: includes/strings.php:984
+msgid "Email Deliverability Checker"
+msgstr "Vérificateur de délivrabilité des e-mails"
+
+#: includes/strings.php:985
+msgid "Check your domain's email configuration and deliverability score"
+msgstr ""
+"Vérifiez la configuration e-mail de votre domaine et le score de "
+"délivrabilité"
+
+#: includes/strings.php:986
+msgid "Domain Name"
+msgstr "Nom de domaine"
+
+#: includes/strings.php:987
+msgid "Run Check"
+msgstr "Lancer la vérification"
+
+#: includes/strings.php:988
+msgid "Run Again"
+msgstr "Relancer"
+
+#: includes/strings.php:989
+msgid "Checking..."
+msgstr "Vérification en cours..."
+
+#: includes/strings.php:990
+msgid "Results for"
+msgstr "Résultats pour"
+
+#: includes/strings.php:991
+msgid "SPF Record"
+msgstr "Enregistrement SPF"
+
+#: includes/strings.php:992
+msgid ""
+"SPF (Sender Policy Framework) helps prevent email spoofing by specifying "
+"which mail servers are authorized to send email on behalf of your domain."
+msgstr ""
+"SPF (Sender Policy Framework) aide à prévenir l'usurpation d'e-mails en "
+"spécifiant quels serveurs de messagerie sont autorisés à envoyer des e-mails "
+"au nom de votre domaine."
+
+#: includes/strings.php:993
+msgid "DKIM Signature"
+msgstr "Signature DKIM"
+
+#: includes/strings.php:994
+msgid ""
+"DKIM (DomainKeys Identified Mail) adds a digital signature to your emails to "
+"verify they haven't been altered in transit."
+msgstr ""
+"DKIM (DomainKeys Identified Mail) ajoute une signature numérique à vos e-"
+"mails pour vérifier qu'ils n'ont pas été modifiés en transit."
+
+#: includes/strings.php:995
+msgid "DMARC Policy"
+msgstr "Politique DMARC"
+
+#: includes/strings.php:996
+msgid ""
+"DMARC (Domain-based Message Authentication) tells receiving servers how to "
+"handle emails that fail SPF or DKIM checks."
+msgstr ""
+"DMARC (Domain-based Message Authentication) indique aux serveurs récepteurs "
+"comment gérer les e-mails qui échouent aux vérifications SPF ou DKIM."
+
+#: includes/strings.php:997
+msgid "MX Records"
+msgstr "Enregistrements MX"
+
+#: includes/strings.php:998
+msgid ""
+"MX (Mail Exchange) records specify which mail servers accept emails for your "
+"domain."
+msgstr ""
+"Les enregistrements MX (Mail Exchange) spécifient quels serveurs de "
+"messagerie acceptent les e-mails pour votre domaine."
+
+#: includes/strings.php:999
+msgid "Reputation Score"
+msgstr "Score de réputation"
+
+#: includes/strings.php:1000
+msgid ""
+"Your domain's sender reputation score (100 = excellent, 0 = poor). This "
+"affects email deliverability."
+msgstr ""
+"Le score de réputation d'expéditeur de votre domaine (100 = excellent, 0 = "
+"faible). Cela affecte la délivrabilité des e-mails."
+
+#: includes/strings.php:1001
+msgid "Blacklist Status"
+msgstr "Statut de liste noire"
+
+#: includes/strings.php:1002
+msgid ""
+"Checks if your domain is listed on common email blacklists that could affect "
+"email delivery."
+msgstr ""
+"Vérifie si votre domaine est listé sur les listes noires d'e-mails courantes "
+"qui pourraient affecter la livraison des e-mails."
+
+#: includes/strings.php:1003
+msgid "Please enter a domain name"
+msgstr "Veuillez saisir un nom de domaine"
+
+#: includes/strings.php:1004
+msgid "Please enter a valid domain name"
+msgstr "Veuillez saisir un nom de domaine valide"
+
+#: includes/strings.php:1005
+msgid "Failed to check domain. Please try again."
+msgstr "Échec de la vérification du domaine. Veuillez réessayer."
+
+#: includes/strings.php:1006
+msgid "An error occurred. Please check your connection and try again."
+msgstr ""
+"Une erreur s'est produite. Veuillez vérifier votre connexion et réessayer."
+
+#: includes/strings.php:1007
+#, php-format
+msgid ""
+"Excellent reputation score: %d/100. Your domain is well-configured for email "
+"delivery."
+msgstr ""
+"Excellent score de réputation : %d/100. Votre domaine est bien configuré "
+"pour la livraison des e-mails."
+
+#: includes/strings.php:1008
+#, php-format
+msgid ""
+"Good reputation score: %d/100. Consider improving SPF, DKIM, and DMARC "
+"records."
+msgstr ""
+"Bon score de réputation : %d/100. Envisagez d'améliorer les enregistrements "
+"SPF, DKIM et DMARC."
+
+#: includes/strings.php:1009
+#, php-format
+msgid ""
+"Fair reputation score: %d/100. Action recommended to improve email "
+"deliverability."
+msgstr ""
+"Score de réputation correct : %d/100. Action recommandée pour améliorer la "
+"délivrabilité des e-mails."
+
+#: includes/strings.php:1010
+#, php-format
+msgid ""
+"Poor reputation score: %d/100. Immediate action required to fix email "
+"configuration."
+msgstr ""
+"Mauvais score de réputation : %d/100. Action immédiate requise pour corriger "
+"la configuration des e-mails."
+
+#: includes/strings.php:1014
+msgid "Your Domain Is Well Configured"
+msgstr "Votre domaine est bien configuré"
+
+#: includes/strings.php:1015
+msgid ""
+"All critical email authentication checks have passed. Your domain is "
+"properly configured for reliable email delivery."
+msgstr ""
+"Toutes les vérifications d'authentification e-mail critiques ont réussi. "
+"Votre domaine est correctement configuré pour une livraison d'e-mails fiable."
+
+#: includes/strings.php:1016
+msgid "Deliverability Needs Attention"
+msgstr "La délivrabilité nécessite une attention"
+
+#: includes/strings.php:1017
+msgid ""
+"Some email authentication checks have failed. Review the recommendations "
+"below to improve your email deliverability."
+msgstr ""
+"Certaines vérifications d'authentification e-mail ont échoué. Examinez les "
+"recommandations ci-dessous pour améliorer votre délivrabilité des e-mails."
+
+#: includes/strings.php:1020
+msgid "View Setup Guide"
+msgstr "Voir le guide de configuration"
+
+#: includes/strings.php:1021
+msgid "Fix It for Me"
+msgstr "Corriger pour moi"
+
+#: includes/strings.php:1024
+msgid "Want continuous monitoring & alerts? Unlock Pro"
+msgstr ""
+"Vous voulez une surveillance continue et des alertes ? Débloquez la version "
+"Pro"
+
+#: includes/strings.php:1027
+msgid "⭐ Trusted by 287+ successful email setups"
+msgstr "⭐ Approuvé par plus de 287 configurations d'e-mails réussies"
+
+#: includes/strings.php:1030
+msgid "Fix it yourself"
+msgstr "Corrigez-le vous-même"
+
+#: includes/strings.php:1031
+msgid "Complete Email Deliverability Guide"
+msgstr "Guide complet de délivrabilité des e-mails"
+
+#: includes/strings.php:1032
+msgid "DNS Records Setup Tutorial"
+msgstr "Tutoriel de configuration des enregistrements DNS"
+
+#: includes/strings.php:1033
+msgid "Troubleshooting Common Issues"
+msgstr "Dépannage des problèmes courants"
+
+#: includes/strings.php:1034
+msgid "🔄 You can re-run this check anytime to verify your changes"
+msgstr ""
+"🔄 Vous pouvez relancer cette vérification à tout moment pour vérifier vos "
+"modifications"
+
+#~ msgid "Email Log"
+#~ msgstr "Journal des e-mails"
+
+#~ msgid "Setup Wizard"
+#~ msgstr "Assistant de configuration"
+
+#~ msgid ""
+#~ "Authority Mailer SMTP includes core SMTP email delivery features for "
+#~ "WordPress. This page outlines additional capabilities available in the "
+#~ "Pro version."
+#~ msgstr ""
+#~ "Authority Mailer SMTP inclut les fonctionnalités de base de livraison d'e-"
+#~ "mails SMTP pour WordPress. Cette page décrit les capacités "
+#~ "supplémentaires disponibles dans la version Pro."
+
+#~ msgid "Support"
+#~ msgstr "Support"
+
+#~ msgid "Sign up for a SendLayer account at sendlayer.com"
+#~ msgstr "Inscrivez-vous pour un compte SendLayer sur sendlayer.com"
+
+#~ msgid "Navigate to your API settings in the SendLayer dashboard"
+#~ msgstr "Accédez à vos paramètres API dans le tableau de bord SendLayer"
+
+#~ msgid "Generate a new API key with sending permissions"
+#~ msgstr "Générez une nouvelle clé API avec des permissions d'envoi"
+
+#~ msgid "Copy your API key and paste it in the Authority Mailer Setup Wizard"
+#~ msgstr ""
+#~ "Copiez votre clé API et collez-la dans l'assistant de configuration "
+#~ "d'Authority Mailer"
+
+#~ msgid "Configure your from email and name"
+#~ msgstr "Configurez votre e-mail et nom d'expéditeur"
+
+#~ msgid "Send a test email to verify the configuration"
+#~ msgstr "Envoyez un e-mail de test pour vérifier la configuration"
+
+#~ msgid "Create an account at smtp.com"
+#~ msgstr "Créez un compte sur smtp.com"
+
+#~ msgid "Verify your sending domain or email address"
+#~ msgstr "Vérifiez votre domaine d'envoi ou votre adresse e-mail"
+
+#~ msgid "Navigate to Settings → API Keys"
+#~ msgstr "Accédez à Paramètres → Clés API"
+
+#~ msgid "Generate a new API key for your WordPress site"
+#~ msgstr "Générez une nouvelle clé API pour votre site WordPress"
+
+#~ msgid "Enter your sender name (required by SMTP.com)"
+#~ msgstr "Saisissez votre nom d'expéditeur (requis par SMTP.com)"
+
+#~ msgid "Complete the configuration in the Setup Wizard"
+#~ msgstr "Complétez la configuration dans l'assistant de configuration"
+
+#~ msgid "Sign up for Brevo (formerly Sendinblue) at brevo.com"
+#~ msgstr "Inscrivez-vous pour Brevo (anciennement Sendinblue) sur brevo.com"
+
+#~ msgid "Verify your email address and complete account setup"
+#~ msgstr ""
+#~ "Vérifiez votre adresse e-mail et complétez la configuration du compte"
+
+#~ msgid "Go to Settings → SMTP & API"
+#~ msgstr "Accédez à Paramètres → SMTP & API"
+
+#~ msgid "Generate a new API v3 key"
+#~ msgstr "Générez une nouvelle clé API v3"
+
+#~ msgid "Verify your sending domain (optional but recommended)"
+#~ msgstr "Vérifiez votre domaine d'envoi (optionnel mais recommandé)"
+
+#~ msgid "Configure Authority Mailer with your API key"
+#~ msgstr "Configurez Authority Mailer avec votre clé API"
+
+#~ msgid ""
+#~ "Brevo offers 300 free emails per day - perfect for small to medium "
+#~ "websites!"
+#~ msgstr ""
+#~ "Brevo offre 300 e-mails gratuits par jour - parfait pour les sites web de "
+#~ "petite et moyenne taille !"
+
+#~ msgid "Create a Google Cloud Project at console.cloud.google.com"
+#~ msgstr "Créez un projet Google Cloud sur console.cloud.google.com"
+
+#~ msgid "Enable the Gmail API for your project"
+#~ msgstr "Activez l'API Gmail pour votre projet"
+
+#~ msgid "Create OAuth 2.0 credentials (Web application)"
+#~ msgstr "Créez des identifiants OAuth 2.0 (Application web)"
+
+#~ msgid "Add the authorized redirect URI provided by Authority Mailer"
+#~ msgstr "Ajoutez l'URI de redirection autorisée fournie par Authority Mailer"
+
+#~ msgid "Enter your Client ID and Client Secret in the Setup Wizard"
+#~ msgstr ""
+#~ "Saisissez votre ID client et secret client dans l'assistant de "
+#~ "configuration"
+
+#~ msgid "Authorize Authority Mailer to send emails on your behalf"
+#~ msgstr "Autorisez Authority Mailer à envoyer des e-mails en votre nom"
+
+#~ msgid ""
+#~ "Gmail has a daily sending limit of 500 emails (2,000 for Google Workspace "
+#~ "accounts)."
+#~ msgstr ""
+#~ "Gmail a une limite d'envoi quotidienne de 500 e-mails (2 000 pour les "
+#~ "comptes Google Workspace)."
+
+#~ msgid "Create an AWS account at aws.amazon.com"
+#~ msgstr "Créez un compte AWS sur aws.amazon.com"
+
+#~ msgid "Navigate to the Amazon SES console"
+#~ msgstr "Accédez à la console Amazon SES"
+
+#~ msgid ""
+#~ "Verify your email address or domain in the Verified identities section"
+#~ msgstr ""
+#~ "Vérifiez votre adresse e-mail ou domaine dans la section Identités "
+#~ "vérifiées"
+
+#~ msgid "Go to SMTP Settings and create SMTP credentials"
+#~ msgstr "Accédez aux paramètres SMTP et créez des identifiants SMTP"
+
+#~ msgid "Note your SMTP username and password (not your AWS credentials)"
+#~ msgstr ""
+#~ "Notez votre nom d'utilisateur et mot de passe SMTP (pas vos identifiants "
+#~ "AWS)"
+
+#~ msgid "Request production access to send to any email address"
+#~ msgstr ""
+#~ "Demandez l'accès production pour envoyer à n'importe quelle adresse e-mail"
+
+#~ msgid "Configure Authority Mailer with your region and SMTP credentials"
+#~ msgstr ""
+#~ "Configurez Authority Mailer avec votre région et vos identifiants SMTP"
+
+#~ msgid "Important:"
+#~ msgstr "Important :"
+
+#~ msgid ""
+#~ "New accounts start in sandbox mode with limited sending. Request "
+#~ "production access through the AWS console."
+#~ msgstr ""
+#~ "Les nouveaux comptes démarrent en mode sandbox avec un envoi limité. "
+#~ "Demandez l'accès production via la console AWS."
+
+#~ msgid "Ensure you have an active Office 365 or Microsoft 365 subscription"
+#~ msgstr ""
+#~ "Assurez-vous d'avoir un abonnement Office 365 ou Microsoft 365 actif"
+
+#~ msgid "Verify SMTP AUTH is enabled in your Microsoft 365 admin center"
+#~ msgstr ""
+#~ "Vérifiez que SMTP AUTH est activé dans votre centre d'administration "
+#~ "Microsoft 365"
+
+#~ msgid "If using MFA, create an app password at account.microsoft.com"
+#~ msgstr ""
+#~ "Si vous utilisez MFA, créez un mot de passe d'application sur "
+#~ "account.microsoft.com"
+
+#~ msgid "Use smtp.office365.com as the SMTP host"
+#~ msgstr "Utilisez smtp.office365.com comme hôte SMTP"
+
+#~ msgid "Configure port 587 with TLS encryption"
+#~ msgstr "Configurez le port 587 avec chiffrement TLS"
+
+#~ msgid "Enter your full email address as username"
+#~ msgstr "Saisissez votre adresse e-mail complète comme nom d'utilisateur"
+
+#~ msgid "Use your account password or app password"
+#~ msgstr "Utilisez votre mot de passe de compte ou mot de passe d'application"
+
+#~ msgid "Sign up for Zoho Mail at zoho.com/mail"
+#~ msgstr "Inscrivez-vous pour Zoho Mail sur zoho.com/mail"
+
+#~ msgid "Go to Settings → Security → App Passwords"
+#~ msgstr "Accédez à Paramètres → Sécurité → Mots de passe d'application"
+
+#~ msgid "Generate a new app password for Authority Mailer"
+#~ msgstr "Générez un nouveau mot de passe d'application pour Authority Mailer"
+
+#~ msgid "Choose the correct SMTP host for your region:"
+#~ msgstr "Choisissez l'hôte SMTP correct pour votre région :"
+
+#~ msgid "Global: smtp.zoho.com"
+#~ msgstr "Global : smtp.zoho.com"
+
+#~ msgid "India: smtp.zoho.in"
+#~ msgstr "Inde : smtp.zoho.in"
+
+#~ msgid "Europe: smtp.zoho.eu"
+#~ msgstr "Europe : smtp.zoho.eu"
+
+#~ msgid "China: smtp.zoho.com.cn"
+#~ msgstr "Chine : smtp.zoho.com.cn"
+
+#~ msgid "Create an account with your chosen email provider"
+#~ msgstr "Créez un compte avec votre fournisseur d'e-mail choisi"
+
+#~ msgid "Verify your email address or sending domain"
+#~ msgstr "Vérifiez votre adresse e-mail ou domaine d'envoi"
+
+#~ msgid "Locate your API credentials or SMTP settings"
+#~ msgstr "Localisez vos identifiants API ou paramètres SMTP"
+
+#~ msgid "Copy the required credentials"
+#~ msgstr "Copiez les identifiants requis"
+
+#~ msgid "Enter the credentials in the Authority Mailer Setup Wizard"
+#~ msgstr ""
+#~ "Saisissez les identifiants dans l'assistant de configuration d'Authority "
+#~ "Mailer"
+
+#~ msgid "Send a test email to verify configuration"
+#~ msgstr "Envoyez un e-mail de test pour vérifier la configuration"
+
+#~ msgid ""
+#~ "This provider requires Authority Mailer Pro. Upgrade to unlock access to "
+#~ "all 17 providers, unlimited email logs, and advanced features."
+#~ msgstr ""
+#~ "Ce fournisseur nécessite Authority Mailer Pro. Mettez à niveau pour "
+#~ "débloquer l'accès aux 17 fournisseurs, aux journaux d'e-mails illimités "
+#~ "et aux fonctionnalités avancées."
+
+#~ msgid "Need Help?"
+#~ msgstr "Besoin d'aide ?"
+
+#, php-format
+#~ msgid ""
+#~ "For detailed instructions and troubleshooting, visit the %1$s%2$s "
+#~ "documentation%3$s."
+#~ msgstr ""
+#~ "Pour des instructions détaillées et le dépannage, visitez la "
+#~ "%1$s%2$sdocumentation%3$s."
+
+#~ msgid "Search providers, guides, or troubleshooting..."
+#~ msgstr "Rechercher des fournisseurs, des guides ou des solutions..."
+
+#~ msgid "Search support content"
+#~ msgstr "Rechercher du contenu d'assistance"
+
+#~ msgid "Clear search"
+#~ msgstr "Effacer la recherche"
+
+#~ msgid "Filter providers by type"
+#~ msgstr "Filtrer les fournisseurs par type"
+
+#~ msgid "Email providers"
+#~ msgstr "Fournisseurs d'e-mail"
+
+#~ msgid "Close modal"
+#~ msgstr "Fermer la fenêtre"
+
+#~ msgid ""
+#~ "Use Google/Gmail OAuth to send email from your site via the Gmail API. "
+#~ "Create OAuth credentials in Google Cloud Console and paste them below."
+#~ msgstr ""
+#~ "Utilisez Google/Gmail OAuth pour envoyer des e-mails depuis votre site "
+#~ "via l'API Gmail. Créez des identifiants OAuth dans Google Cloud Console "
+#~ "et collez-les ci-dessous."
+
+#~ msgid "Get Started with Google"
+#~ msgstr "Commencer avec Google"
+
+#~ msgid "Authority Mailer Support Center"
+#~ msgstr "Centre d'assistance Authority Mailer"
+
+#~ msgid ""
+#~ "Everything you need to set up reliable email delivery for your WordPress "
+#~ "site. Browse providers, get setup guides, and find troubleshooting "
+#~ "solutions."
+#~ msgstr ""
+#~ "Tout ce dont vous avez besoin pour configurer une livraison d'e-mails "
+#~ "fiable pour votre site WordPress. Parcourez les fournisseurs, obtenez des "
+#~ "guides de configuration et trouvez des solutions de dépannage."
+
+#~ msgid "All Providers"
+#~ msgstr "Tous les fournisseurs"
+
+#~ msgid "API-Based"
+#~ msgstr "Basé sur API"
+
+#~ msgid "SMTP"
+#~ msgstr "SMTP"
+
+#~ msgid "Free Tier"
+#~ msgstr "Plan gratuit"
+
+#~ msgid "Docs"
+#~ msgstr "Documentation"
+
+#~ msgid "No providers found"
+#~ msgstr "Aucun fournisseur trouvé"
+
+#~ msgid "Try adjusting your search or filter selection"
+#~ msgstr "Essayez d'ajuster votre recherche ou votre sélection de filtre"
+
+#~ msgid "Emails are not being sent"
+#~ msgstr "Les e-mails ne sont pas envoyés"
+
+#~ msgid "Verify your SMTP credentials are correct"
+#~ msgstr "Vérifiez que vos identifiants SMTP sont corrects"
+
+#~ msgid "Check that the from email is verified with your provider"
+#~ msgstr ""
+#~ "Vérifiez que l'e-mail d'expéditeur est vérifié auprès de votre fournisseur"
+
+#~ msgid "Ensure your server can make outbound connections on the SMTP port"
+#~ msgstr ""
+#~ "Assurez-vous que votre serveur peut établir des connexions sortantes sur "
+#~ "le port SMTP"
+
+#~ msgid "Check the Email Log for specific error messages"
+#~ msgstr ""
+#~ "Consultez le journal des e-mails pour voir les messages d'erreur "
+#~ "spécifiques"
+
+#~ msgid "Authentication failures"
+#~ msgstr "Échecs d'authentification"
+
+#~ msgid ""
+#~ "For accounts with two-factor authentication, use app-specific passwords"
+#~ msgstr ""
+#~ "Pour les comptes avec authentification à deux facteurs, utilisez des mots "
+#~ "de passe d'application spécifiques"
+
+#~ msgid "Verify username is your full email address (not just the name part)"
+#~ msgstr ""
+#~ "Vérifiez que le nom d'utilisateur est votre adresse e-mail complète (pas "
+#~ "seulement la partie nom)"
+
+#~ msgid "Check that SMTP authentication is enabled for your account"
+#~ msgstr "Vérifiez que l'authentification SMTP est activée pour votre compte"
+
+#~ msgid "Ensure there are no spaces before or after credentials"
+#~ msgstr ""
+#~ "Assurez-vous qu'il n'y a pas d'espaces avant ou après les identifiants"
+
+#~ msgid "Connection timeouts"
+#~ msgstr "Délais de connexion expirés"
+
+#~ msgid "Check if your hosting provider blocks outbound SMTP connections"
+#~ msgstr "Vérifiez si votre hébergeur bloque les connexions SMTP sortantes"
+
+#~ msgid "Try alternative ports (587 for TLS, 465 for SSL, 25 for unencrypted)"
+#~ msgstr ""
+#~ "Essayez des ports alternatifs (587 pour TLS, 465 pour SSL, 25 pour non "
+#~ "chiffré)"
+
+#~ msgid "Contact your hosting provider to whitelist SMTP servers"
+#~ msgstr "Contactez votre hébergeur pour autoriser les serveurs SMTP"
+
+#~ msgid "Verify your server's firewall allows outbound connections"
+#~ msgstr ""
+#~ "Vérifiez que le pare-feu de votre serveur autorise les connexions "
+#~ "sortantes"
+
+#~ msgid "Emails going to spam"
+#~ msgstr "Les e-mails vont dans les spams"
+
+#~ msgid "Configure SPF, DKIM, and DMARC records for your domain"
+#~ msgstr ""
+#~ "Configurez les enregistrements SPF, DKIM et DMARC pour votre domaine"
+
+#~ msgid "Use a verified from address that matches your domain"
+#~ msgstr ""
+#~ "Utilisez une adresse d'expéditeur vérifiée qui correspond à votre domaine"
+
+#~ msgid "Avoid spam trigger words in subject lines"
+#~ msgstr "Évitez les mots déclencheurs de spam dans les lignes d'objet"
+
+#~ msgid "Ensure your IP address is not blacklisted"
+#~ msgstr "Assurez-vous que votre adresse IP n'est pas sur liste noire"
+
+#~ msgid "Frequently Asked Questions"
+#~ msgstr "Foire aux questions"
+
+#~ msgid "Which email provider should I choose?"
+#~ msgstr "Quel fournisseur d'e-mail dois-je choisir ?"
+
+#~ msgid "The best provider depends on your needs:"
+#~ msgstr "Le meilleur fournisseur dépend de vos besoins :"
+
+#~ msgid "For beginners:"
+#~ msgstr "Pour les débutants :"
+
+#~ msgid ""
+#~ "Brevo, SendLayer, or SMTP.com offer simple setup with generous free tiers"
+#~ msgstr ""
+#~ "Brevo, SendLayer ou SMTP.com offrent une configuration simple avec des "
+#~ "plans gratuits généreux"
+
+#~ msgid "For high volume:"
+#~ msgstr "Pour gros volume :"
+
+#~ msgid "AWS SES, SendGrid, or Mailgun provide scalable solutions"
+#~ msgstr "AWS SES, SendGrid ou Mailgun offrent des solutions évolutives"
+
+#~ msgid "For existing tools:"
+#~ msgstr "Pour les outils existants :"
+
+#~ msgid ""
+#~ "Use Gmail if you have Google Workspace, Office 365 if you use Microsoft "
+#~ "365"
+#~ msgstr ""
+#~ "Utilisez Gmail si vous avez Google Workspace, Office 365 si vous utilisez "
+#~ "Microsoft 365"
+
+#~ msgid "For custom setups:"
+#~ msgstr "Pour les configurations personnalisées :"
+
+#~ msgid "Use \"Other SMTP\" for self-hosted or custom SMTP servers"
+#~ msgstr ""
+#~ "Utilisez \"Autre SMTP\" pour les serveurs SMTP auto-hébergés ou "
+#~ "personnalisés"
+
+#~ msgid "Do I need to verify my email address or domain?"
+#~ msgstr "Dois-je vérifier mon adresse e-mail ou mon domaine ?"
+
+#~ msgid ""
+#~ "Most providers require verification to prevent spam. This typically "
+#~ "involves:"
+#~ msgstr ""
+#~ "La plupart des fournisseurs exigent une vérification pour éviter le spam. "
+#~ "Cela implique généralement :"
+
+#~ msgid "Clicking a verification link sent to your email address, or"
+#~ msgstr ""
+#~ "En cliquant sur un lien de vérification envoyé à votre adresse e-mail, ou"
+
+#~ msgid "Adding DNS records (SPF, DKIM) to prove you own the domain"
+#~ msgstr ""
+#~ "Ajout d'enregistrements DNS (SPF, DKIM) pour prouver que vous êtes "
+#~ "propriétaire du domaine"
+
+#~ msgid ""
+#~ "Verification ensures better email deliverability and protects against "
+#~ "spam abuse."
+#~ msgstr ""
+#~ "La vérification garantit une meilleure délivrabilité des e-mails et "
+#~ "protège contre les abus de spam."
+
+#~ msgid "What are sending limits?"
+#~ msgstr "Quelles sont les limites d'envoi ?"
+
+#~ msgid "Each provider has different limits. Free tiers typically include:"
+#~ msgstr ""
+#~ "Chaque fournisseur a des limites différentes. Les plans gratuits incluent "
+#~ "généralement :"
+
+#~ msgid "Brevo:"
+#~ msgstr "Brevo :"
+
+#~ msgid "300 emails per day"
+#~ msgstr "300 e-mails par jour"
+
+#~ msgid "SendLayer:"
+#~ msgstr "SendLayer :"
+
+#~ msgid "1,000 emails per month"
+#~ msgstr "1 000 e-mails par mois"
+
+#~ msgid "SMTP.com:"
+#~ msgstr "SMTP.com :"
+
+#~ msgid "6,000 emails per month"
+#~ msgstr "6 000 e-mails par mois"
+
+#~ msgid ""
+#~ "Pro providers (AWS SES, SendGrid, etc.) offer higher limits or pay-as-you-"
+#~ "go pricing for unlimited sending."
+#~ msgstr ""
+#~ "Les fournisseurs Pro (AWS SES, SendGrid, etc.) offrent des limites plus "
+#~ "élevées ou une tarification à l'utilisation pour un envoi illimité."
+
+#~ msgid "Is it safe to store SMTP credentials?"
+#~ msgstr "Est-il sûr de stocker les identifiants SMTP ?"
+
+#~ msgid ""
+#~ "Authority Mailer stores credentials in your WordPress database with the "
+#~ "same security as other WordPress passwords. For additional security:"
+#~ msgstr ""
+#~ "Authority Mailer stocke les identifiants dans votre base de données "
+#~ "WordPress avec la même sécurité que les autres mots de passe WordPress. "
+#~ "Pour plus de sécurité :"
+
+#~ msgid "Use app-specific passwords instead of your main account password"
+#~ msgstr ""
+#~ "Utilisez des mots de passe d'application spécifiques au lieu de votre mot "
+#~ "de passe de compte principal"
+
+#~ msgid "Keep your WordPress installation and plugins updated"
+#~ msgstr "Maintenez votre installation WordPress et vos plugins à jour"
+
+#~ msgid "Use strong passwords and two-factor authentication"
+#~ msgstr ""
+#~ "Utilisez des mots de passe forts et l'authentification à deux facteurs"
+
+#~ msgid "Consider using WordPress security plugins"
+#~ msgstr "Envisagez d'utiliser des plugins de sécurité WordPress"
+
+#~ msgid "Regularly review access logs and email activity"
+#~ msgstr ""
+#~ "Examinez régulièrement les journaux d'accès et l'activité des e-mails"
+
+#~ msgid "Redirect URI is missing. Please refresh the page."
+#~ msgstr "L'URI de redirection est manquante. Veuillez actualiser la page."
+
+#~ msgid "Saving credentials..."
+#~ msgstr "Enregistrement des identifiants..."
+
+#~ msgid "Redirecting to Google..."
+#~ msgstr "Redirection vers Google..."
+
+#~ msgid "Failed to save credentials: "
+#~ msgstr "Échec de l'enregistrement des identifiants : "
+
+#~ msgid "Network error. Could not save credentials. Please try again."
+#~ msgstr ""
+#~ "Erreur réseau. Impossible d'enregistrer les identifiants. Veuillez "
+#~ "réessayer."
+
+#~ msgid "Loading..."
+#~ msgstr "Chargement..."
+
+#~ msgid "Failed to load configuration step."
+#~ msgstr "Échec du chargement de l'étape de configuration."
+
+#~ msgid "Request failed while loading the configuration step."
+#~ msgstr "La requête a échoué lors du chargement de l'étape de configuration."
+
+#~ msgid ""
+#~ "Some diagnostic steps failed. Review the log above and follow the "
+#~ "suggestions."
+#~ msgstr ""
+#~ "Certaines étapes de diagnostic ont échoué. Examinez le journal ci-dessus "
+#~ "et suivez les suggestions."
+
+#~ msgid ""
+#~ "The saved test completed without errors. If you received the test email, "
+#~ "your setup is OK."
+#~ msgstr ""
+#~ "Le test enregistré s'est terminé sans erreurs. Si vous avez reçu l'e-mail "
+#~ "de test, votre configuration est correcte."
+
+#~ msgid "No clear success or error was detected. Review the log for details."
+#~ msgstr ""
+#~ "Aucun succès ou erreur clair n'a été détecté. Examinez le journal pour "
+#~ "plus de détails."
+
+#~ msgid "Unknown error"
+#~ msgstr "Erreur inconnue"
+
+#~ msgid "Invalid log ID."
+#~ msgstr "ID de journal invalide."
+
+#~ msgid "Log entry deleted."
+#~ msgstr "Entrée du journal supprimée."
+
+#~ msgid "Failed to delete log entries."
+#~ msgstr "Échec de la suppression des entrées du journal."
+
+#~ msgid "Test runner not available."
+#~ msgstr "Exécuteur de test non disponible."
+
+#~ msgid "Test runner function not found."
+#~ msgstr "Fonction d'exécution de test introuvable."
+
+#~ msgid "Resend returned invalid data."
+#~ msgstr "La tentative de renvoi a renvoyé des données invalides."
+
+#~ msgid "Email resent successfully."
+#~ msgstr "E-mail renvoyé avec succès."
+
+#~ msgid "Prev"
+#~ msgstr "Précédent"
+
+#~ msgid "Next"
+#~ msgstr "Suivant"
+
+#, php-format
+#~ msgid "View setup guide for %s"
+#~ msgstr "Voir le guide de configuration pour %s"
+
+#, php-format
+#~ msgid "View %s documentation"
+#~ msgstr "Voir la documentation de %s"
+
+#, php-format
+#~ msgid "%s Setup Guide"
+#~ msgstr "Guide de configuration %s"
+
+#~ msgid "No email provider configured. Please configure a provider first."
+#~ msgstr ""
+#~ "Aucun fournisseur d'e-mail configuré. Veuillez d'abord configurer un "
+#~ "fournisseur."
+
+#~ msgid "Authority Mailer Test Email"
+#~ msgstr "E-mail de test Authority Mailer"
+
+#~ msgid ""
+#~ "This is a test email from Authority Mailer SMTP. If you received this, "
+#~ "your email configuration is working correctly!"
+#~ msgstr ""
+#~ "Ceci est un e-mail de test d'Authority Mailer SMTP. Si vous avez reçu "
+#~ "ceci, votre configuration d'e-mail fonctionne correctement !"
+
+#, php-format
+#~ msgid "Test email sent successfully to %s!"
+#~ msgstr "E-mail de test envoyé avec succès à %s !"
+
+#~ msgid "Failed to send test email. Please check your email log for details."
+#~ msgstr ""
+#~ "Échec de l'envoi de l'e-mail de test. Veuillez consulter votre journal "
+#~ "des e-mails pour plus de détails."
+
+#~ msgid ""
+#~ "Follow these steps to configure your email provider. You can complete the "
+#~ "setup in the Setup Wizard."
+#~ msgstr ""
+#~ "Suivez ces étapes pour configurer votre fournisseur d'e-mail. Vous pouvez "
+#~ "terminer la configuration dans l'assistant de configuration."
+
+#~ msgid "Overview"
+#~ msgstr "Aperçu"
+
+#~ msgid "Key Features"
+#~ msgstr "Fonctionnalités clés"
+
+#~ msgid "Setup Steps"
+#~ msgstr "Étapes de configuration"
+
+#~ msgid "Configure in Setup Wizard"
+#~ msgstr "Configurer dans l'assistant de configuration"
+
+#~ msgid "View Documentation"
+#~ msgstr "Voir la documentation"
+
+#~ msgid "Can I use multiple providers?"
+#~ msgstr "Puis-je utiliser plusieurs fournisseurs ?"
+
+#~ msgid ""
+#~ "Currently, Authority Mailer uses one provider at a time. You can switch "
+#~ "providers anytime through the Setup Wizard."
+#~ msgstr ""
+#~ "Actuellement, Authority Mailer utilise un fournisseur à la fois. Vous "
+#~ "pouvez changer de fournisseur à tout moment via l'assistant de "
+#~ "configuration."
+
+#~ msgid "How do I test if emails are working?"
+#~ msgstr "Comment tester si les e-mails fonctionnent ?"
+
+#~ msgid "You can test your email configuration in several ways:"
+#~ msgstr ""
+#~ "Vous pouvez tester votre configuration d'e-mail de plusieurs façons :"
+
+#~ msgid "Use the \"Send Test Email\" button on the Dashboard"
+#~ msgstr ""
+#~ "Utilisez le bouton \"Envoyer un e-mail de test\" sur le tableau de bord"
+
+#~ msgid "Send a test from the Setup Wizard after configuration"
+#~ msgstr ""
+#~ "Envoyez un test depuis l'assistant de configuration après la configuration"
+
+#~ msgid "Check the Email Log to see delivery status and error messages"
+#~ msgstr ""
+#~ "Consultez le journal des e-mails pour voir le statut de livraison et les "
+#~ "messages d'erreur"
+
+#~ msgid ""
+#~ "Trigger an actual WordPress email (password reset, comment notification, "
+#~ "etc.)"
+#~ msgstr ""
+#~ "Déclenchez un véritable e-mail WordPress (réinitialisation de mot de "
+#~ "passe, notification de commentaire, etc.)"
+
+#~ msgid "What's the difference between API and SMTP providers?"
+#~ msgstr "Quelle est la différence entre les fournisseurs API et SMTP ?"
+
+#~ msgid "API-Based Providers:"
+#~ msgstr "Fournisseurs basés sur API :"
+
+#~ msgid "Send emails via HTTP API calls"
+#~ msgstr "Envoyer des e-mails via des appels API HTTP"
+
+#~ msgid "Generally faster and more reliable"
+#~ msgstr "Généralement plus rapide et plus fiable"
+
+#~ msgid "Better analytics and tracking capabilities"
+#~ msgstr "Meilleures capacités d'analyse et de suivi"
+
+#~ msgid "Examples: SendGrid, Mailgun, Brevo, SendLayer"
+#~ msgstr "Exemples : SendGrid, Mailgun, Brevo, SendLayer"
+
+#~ msgid "SMTP Providers:"
+#~ msgstr "Fournisseurs SMTP :"
+
+#~ msgid "Use traditional SMTP protocol"
+#~ msgstr "Utiliser le protocole SMTP traditionnel"
+
+#~ msgid "Works with any SMTP server"
+#~ msgstr "Fonctionne avec n'importe quel serveur SMTP"
+
+#~ msgid "Good for legacy systems and custom setups"
+#~ msgstr "Bon pour les systèmes hérités et les configurations personnalisées"
+
+#~ msgid ""
+#~ "Examples: Office 365, Zoho Mail, AWS SES (also offers API), custom SMTP"
+#~ msgstr ""
+#~ "Exemples : Office 365, Zoho Mail, AWS SES (offre également l'API), SMTP "
+#~ "personnalisé"
+
+#, php-format
+#~ msgid "Found %d providers"
+#~ msgstr "%d fournisseurs trouvés"
+
+#, php-format
+#~ msgid "Found %1$d providers matching \"%2$s\""
+#~ msgstr "%1$d fournisseurs trouvés correspondant à \"%2$s\""
+
+#, php-format
+#~ msgid "Showing %d providers"
+#~ msgstr "Affichage de %d fournisseurs"
+
+#~ msgid "Setup guide opened"
+#~ msgstr "Guide de configuration ouvert"
+
+#~ msgid "Modal closed"
+#~ msgstr "Modal fermé"
+
+#~ msgid "FAQ answer expanded"
+#~ msgstr "Réponse FAQ développée"
+
+#~ msgid "FAQ answer collapsed"
+#~ msgstr "Réponse FAQ réduite"
+
+#~ msgid "Keyboard Shortcuts"
+#~ msgstr "Raccourcis clavier"
+
+#~ msgid "Focus search"
+#~ msgstr "Focuser la recherche"
+
+#~ msgid "Toggle dark mode"
+#~ msgstr "Basculer le mode sombre"
+
+#~ msgid "Close modal/Clear search"
+#~ msgstr "Fermer le modal/Effacer la recherche"
+
+#~ msgid "Show this help"
+#~ msgstr "Afficher cette aide"
+
+#~ msgid "Dark mode enabled"
+#~ msgstr "Mode sombre activé"
+
+#~ msgid "Dark mode disabled"
+#~ msgstr "Mode sombre désactivé"
+
+#~ msgid "Support page loaded. Press Cmd+K to search providers."
+#~ msgstr ""
+#~ "Page d'assistance chargée. Appuyez sur Cmd+K pour rechercher des "
+#~ "fournisseurs."
+
+#~ msgid "All 17 Email Providers"
+#~ msgstr "Les 17 fournisseurs d'e-mails"
+
+#~ msgid "Need Expert Help?"
+#~ msgstr "Besoin d'aide d'expert ?"
+
+#~ msgid "Save and Continue →"
+#~ msgstr "Enregistrer et continuer →"
+
+#~ msgid "Sender Name"
+#~ msgstr "Nom de l'expéditeur"
+
+#~ msgid "API Secret"
+#~ msgstr "Secret API"
+
+#~ msgid ""
+#~ "A record of recent outbound transmissions performed by Authority Mailer. "
+#~ "Use filters to narrow results."
+#~ msgstr ""
+#~ "Un enregistrement des transmissions sortantes récentes effectuées par "
+#~ "Authority Mailer. Utilisez les filtres pour affiner les résultats."
+
+#~ msgid "Search subject, to, from..."
+#~ msgstr "Rechercher l'objet, le destinataire, l'expéditeur..."
+
+#~ msgid "Per page"
+#~ msgstr "Par page"
+
+#~ msgid "Back"
+#~ msgstr "Retour"
+
+#, php-format
+#~ msgid "Sent by %1$s · To %2$s"
+#~ msgstr "Envoyé par %1$s · À %2$s"
+
+#~ msgid "Email details"
+#~ msgstr "Détails de l'e-mail"
+
+#~ msgid "Summary"
+#~ msgstr "Résumé"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#, php-format
+#~ msgid "Code: %s"
+#~ msgstr "Code : %s"
+
+#~ msgid "Server Response"
+#~ msgstr "Réponse du serveur"
+
+#~ msgid "No email body captured in payload."
+#~ msgstr "Aucun corps d'e-mail capturé dans la charge utile."
+
+#~ msgid "No server response recorded."
+#~ msgstr "Aucune réponse du serveur enregistrée."
+
+#~ msgid "No headers recorded."
+#~ msgstr "Aucun en-tête enregistré."
+
+#~ msgid "Unauthorized"
+#~ msgstr "Non autorisé"
+
+#~ msgid "Invalid id"
+#~ msgstr "ID invalide"
+
+#~ msgid "DB delete failed"
+#~ msgstr "Échec de la suppression de la base de données"
+
+#~ msgid "No ids provided"
+#~ msgstr "Aucun ID fourni"
+
+#~ msgid "Not found"
+#~ msgstr "Introuvable"
+
+#~ msgid "Resent"
+#~ msgstr "Renvoyé"
+
+#~ msgid "Log entry not found."
+#~ msgstr "Entrée de journal introuvable."
+
+#~ msgid "Select the Mailgun region for your domain."
+#~ msgstr "Sélectionnez la région Mailgun pour votre domaine."
+
+#~ msgid "Find your Brevo API key in the Brevo dashboard."
+#~ msgstr "Trouvez votre clé API Brevo dans le tableau de bord Brevo."
+
+#~ msgid "Enter the sending domain/subdomain you configured in Brevo."
+#~ msgstr ""
+#~ "Saisissez le domaine/sous-domaine d'envoi que vous avez configuré dans "
+#~ "Brevo."
+
+#~ msgid "Enable this to use SMTP username/password instead of API key."
+#~ msgstr ""
+#~ "Activez cette option pour utiliser le nom d'utilisateur/mot de passe SMTP "
+#~ "au lieu de la clé API."
+
+#~ msgid "Gmail API"
+#~ msgstr "API Gmail"
+
+#~ msgid "One-Click Setup"
+#~ msgstr "Configuration en un clic"
+
+#~ msgid "Authorization (required)"
+#~ msgstr "Autorisation (requise)"
+
+#~ msgid "Endpoint Host"
+#~ msgstr "Hôte du point de terminaison"
+
+#~ msgid "Read setup documentation"
+#~ msgstr "Lire la documentation de configuration"
+
+#~ msgid "Please enter your Message Stream ID."
+#~ msgstr "Veuillez saisir votre ID de flux de messages."
+
+#~ msgid "Close"
+#~ msgstr "Fermer"
+
+#~ msgid "Force-from-email enabled; using mailgun_from_email"
+#~ msgstr ""
+#~ "Forcer l'e-mail d'expéditeur activé ; utilisation de mailgun_from_email"
+
+#~ msgid "Force-from-email enabled but mailgun_from_email is empty"
+#~ msgstr ""
+#~ "Forcer l'e-mail d'expéditeur activé mais mailgun_from_email est vide"
+
+#~ msgid "Force-from-name enabled; using mailgun_from_name"
+#~ msgstr ""
+#~ "Forcer le nom d'expéditeur activé ; utilisation de mailgun_from_name"
+
+#~ msgid "Force-from-name enabled but mailgun_from_name is empty"
+#~ msgstr "Forcer le nom d'expéditeur activé mais mailgun_from_name est vide"
+
+#, php-format
+#~ msgid "POST HTTP status: %s"
+#~ msgstr "Statut HTTP POST : %s"
+
+#~ msgid "Response was not valid JSON"
+#~ msgstr "La réponse n'était pas un JSON valide"
+
+#~ msgid "Response body empty"
+#~ msgstr "Corps de réponse vide"
+
+#, php-format
+#~ msgid "Non-OK response from Mailgun transmission endpoint (HTTP %s)."
+#~ msgstr ""
+#~ "Réponse non-OK du point de terminaison de transmission Mailgun (HTTP %s)."
+
+#, php-format
+#~ msgid ""
+#~ "Test transmission accepted (HTTP %1$s). Test email attempted to: %2$s"
+#~ msgstr ""
+#~ "Transmission de test acceptée (HTTP %1$s). E-mail de test tenté vers : "
+#~ "%2$s"
+
+#, php-format
+#~ msgid "Authorization failed (HTTP %s). The API key was rejected by Mailgun."
+#~ msgstr ""
+#~ "Échec de l'autorisation (HTTP %s). La clé API a été rejetée par Mailgun."
+
+#~ msgid "Force-from-email enabled; using sendlayer_from_email"
+#~ msgstr ""
+#~ "Forcer l'e-mail d'expéditeur activé ; utilisation de sendlayer_from_email"
+
+#~ msgid "Force-from-email enabled but sendlayer_from_email is empty"
+#~ msgstr ""
+#~ "Forcer l'e-mail d'expéditeur activé mais sendlayer_from_email est vide"
+
+#~ msgid "Force-from-name enabled; using sendlayer_from_name"
+#~ msgstr ""
+#~ "Forcer le nom d'expéditeur activé ; utilisation de sendlayer_from_name"
+
+#~ msgid "Force-from-name enabled but sendlayer_from_name is empty"
+#~ msgstr "Forcer le nom d'expéditeur activé mais sendlayer_from_name est vide"
+
+#, php-format
+#~ msgid "Probing API endpoint GET %1$s (Host header: %2$s)"
+#~ msgstr "Sondage du point de terminaison API GET %1$s (En-tête Host : %2$s)"
+
+#, php-format
+#~ msgid "Probe HTTP status: %s"
+#~ msgstr "Statut HTTP du sondage : %s"
+
+#~ msgid "Probe suggests GET is not the correct method; will attempt POST"
+#~ msgstr ""
+#~ "Le sondage suggère que GET n'est pas la bonne méthode ; tentative de POST"
+
+#~ msgid ""
+#~ "Probe returned 2xx and does not explicitly require POST; transmission may "
+#~ "still require POST depending on provider API."
+#~ msgstr ""
+#~ "Le sondage a renvoyé 2xx et n'exige pas explicitement POST ; la "
+#~ "transmission peut toujours nécessiter POST selon l'API du fournisseur."
+
+#, php-format
+#~ msgid "Probe returned non-2xx: %s"
+#~ msgstr "Le sondage a renvoyé non-2xx : %s"
+
+#~ msgid ""
+#~ "force_transmission_test enabled; will attempt POST despite probe error"
+#~ msgstr ""
+#~ "force_transmission_test activé ; tentative de POST malgré l'erreur de "
+#~ "sondage"
+
+#~ msgid "Attempting POST to actually send a test message"
+#~ msgstr "Tentative de POST pour envoyer réellement un message de test"
+
+#, php-format
+#~ msgid ""
+#~ "Authorization failed (HTTP %s). The API key was rejected by SendLayer."
+#~ msgstr ""
+#~ "Échec de l'autorisation (HTTP %s). La clé API a été rejetée par SendLayer."
+
+#, php-format
+#~ msgid ""
+#~ "Suppression / block (HTTP %s). SendLayer reported suppression for "
+#~ "recipient or sender."
+#~ msgstr ""
+#~ "Suppression / blocage (HTTP %s). SendLayer a signalé une suppression pour "
+#~ "le destinataire ou l'expéditeur."
+
+#, php-format
+#~ msgid "Non-OK response from transmission endpoint (HTTP %s)."
+#~ msgstr "Réponse non-OK du point de terminaison de transmission (HTTP %s)."
+
+#~ msgid "No POST attempt was performed; diagnostics completed."
+#~ msgstr "Aucune tentative POST n'a été effectuée ; diagnostics terminés."
+
+#, php-format
+#~ msgid "Probe HTTP request returned an error: %s"
+#~ msgstr "La requête HTTP de sondage a renvoyé une erreur : %s"
+
+#~ msgid "Check DNS, firewall and server networking."
+#~ msgstr "Vérifiez le DNS, le pare-feu et la configuration réseau du serveur."
+
+#~ msgid "SMTP greeting indicates failure"
+#~ msgstr "La salutation SMTP indique un échec"
+
+#~ msgid "Sent HELO fallback"
+#~ msgstr "Envoi de HELO de secours"
+
+#~ msgid "DATA command response"
+#~ msgstr "Réponse à la commande DATA"
+
+#~ msgid "Message DATA response"
+#~ msgstr "Réponse DATA du message"
+
+#~ msgid "Message transmission failed"
+#~ msgstr "Échec de la transmission du message"
+
+#, php-format
+#~ msgid "SMTP transmission accepted. Test email attempted to: %s"
+#~ msgstr "Transmission SMTP acceptée. E-mail de test tenté vers : %s"
+
+#, php-format
+#~ msgid ""
+#~ "Authorization failed (HTTP %s). The API key was rejected by Mandrill."
+#~ msgstr ""
+#~ "Échec de l'autorisation (HTTP %s). La clé API a été rejetée par Mandrill."
+
+#~ msgid "Non-OK response from Mandrill transmission endpoint."
+#~ msgstr "Réponse non-OK du point de terminaison de transmission Mandrill."
+
+#~ msgid "Force-from-email enabled; using mailersend_from_email"
+#~ msgstr ""
+#~ "Forcer l'e-mail d'expéditeur activé ; utilisation de mailersend_from_email"
+
+#~ msgid "Force-from-email enabled but mailersend_from_email is empty"
+#~ msgstr ""
+#~ "Forcer l'e-mail d'expéditeur activé mais mailersend_from_email est vide"
+
+#~ msgid "Force-from-name enabled; using mailersend_from_name"
+#~ msgstr ""
+#~ "Forcer le nom d'expéditeur activé ; utilisation de mailersend_from_name"
+
+#~ msgid "Force-from-name enabled but mailersend_force_from_name is empty"
+#~ msgstr ""
+#~ "Forcer le nom d'expéditeur activé mais mailersend_force_from_name est vide"
+
+#, php-format
+#~ msgid ""
+#~ "Authorization failed (HTTP %s). The API key was rejected by MailerSend."
+#~ msgstr ""
+#~ "Échec de l'autorisation (HTTP %s). La clé API a été rejetée par "
+#~ "MailerSend."
+
+#~ msgid ""
+#~ "MailerSend returned a trial-account restriction: trial accounts can only "
+#~ "send to the MailerSend account administrator email. Update the test "
+#~ "recipient to the MailerSend account owner email or upgrade the MailerSend "
+#~ "account to allow sending to other recipients."
+#~ msgstr ""
+#~ "MailerSend a renvoyé une restriction de compte d'essai : les comptes "
+#~ "d'essai ne peuvent envoyer qu'à l'e-mail de l'administrateur du compte "
+#~ "MailerSend. Mettez à jour le destinataire de test avec l'e-mail du "
+#~ "propriétaire du compte MailerSend ou mettez à niveau le compte MailerSend "
+#~ "pour autoriser l'envoi à d'autres destinataires."
+
+#~ msgid "Force-from-email enabled; using elasticmail_from_email"
+#~ msgstr ""
+#~ "Forcer l'e-mail d'expéditeur activé ; utilisation d'elasticmail_from_email"
+
+#~ msgid "Force-from-email enabled but elasticmail_from_email is empty"
+#~ msgstr ""
+#~ "Forcer l'e-mail d'expéditeur activé mais elasticmail_from_email est vide"
+
+#~ msgid "Force-from-name enabled; using elasticmail_from_name"
+#~ msgstr ""
+#~ "Forcer le nom d'expéditeur activé ; utilisation d'elasticmail_from_name"
+
+#~ msgid "Force-from-name enabled but elasticmail_force_from_name is empty"
+#~ msgstr ""
+#~ "Forcer le nom d'expéditeur activé mais elasticmail_force_from_name est "
+#~ "vide"
+
+#, php-format
+#~ msgid ""
+#~ "Authorization failed (HTTP %s). The API key was rejected by Elastic Email."
+#~ msgstr ""
+#~ "Échec de l'autorisation (HTTP %s). La clé API a été rejetée par Elastic "
+#~ "Email."
+
+#, php-format
+#~ msgid "Non-OK response from Elastic Email transmission endpoint (HTTP %s)."
+#~ msgstr ""
+#~ "Réponse non-OK du point de terminaison de transmission Elastic Email "
+#~ "(HTTP %s)."
+
+#~ msgid ""
+#~ "Elastic Email returned an account trial restriction: trial accounts may "
+#~ "be limited in recipients. Use the account administrator email as test "
+#~ "recipient or upgrade the account."
+#~ msgstr ""
+#~ "Elastic Email a renvoyé une restriction de compte d'essai : les comptes "
+#~ "d'essai peuvent être limités dans les destinataires. Utilisez l'e-mail de "
+#~ "l'administrateur du compte comme destinataire de test ou mettez à niveau "
+#~ "le compte."
+
+#~ msgid ""
+#~ "Elastic Email rejected sending: domain verification (SPF/DKIM) or account "
+#~ "verification may be required. Verify your sending domain in the Elastic "
+#~ "Email control panel."
+#~ msgstr ""
+#~ "Elastic Email a rejeté l'envoi : la vérification du domaine (SPF/DKIM) ou "
+#~ "du compte peut être requise. Vérifiez votre domaine d'envoi dans le "
+#~ "panneau de contrôle Elastic Email."
+
+#~ msgid ""
+#~ "Find your Elastic Email API key in the Elastic Email dashboard Settings > "
+#~ "API."
+#~ msgstr ""
+#~ "Trouvez votre clé API Elastic Email dans le tableau de bord Elastic Email "
+#~ "Paramètres > API."
+
+#~ msgid "API secret not found in onboarding settings or stored options"
+#~ msgstr ""
+#~ "Secret API introuvable dans les paramètres d'intégration ou les options "
+#~ "enregistrées"
+
+#~ msgid ""
+#~ "Ensure the Mailjet API secret is entered in the onboarding form (field: "
+#~ "mailjet_api_secret). The tester also looked in common provider groups and "
+#~ "environment/constants."
+#~ msgstr ""
+#~ "Assurez-vous que le secret API Mailjet est saisi dans le formulaire "
+#~ "d'intégration (champ : mailjet_api_secret). Le testeur a également "
+#~ "cherché dans les groupes de fournisseurs communs et les constantes "
+#~ "d'environnement."
+
+#~ msgid "Force-from-email enabled; using mailjet_from_email"
+#~ msgstr ""
+#~ "Forcer l'e-mail d'expéditeur activé ; utilisation de mailjet_from_email"
+
+#~ msgid "Force-from-email enabled but mailjet_from_email is empty"
+#~ msgstr ""
+#~ "Forcer l'e-mail d'expéditeur activé mais mailjet_from_email est vide"
+
+#~ msgid "Force-from-name enabled; using mailjet_from_name"
+#~ msgstr ""
+#~ "Forcer le nom d'expéditeur activé ; utilisation de mailjet_from_name"
+
+#~ msgid "Force-from-name enabled but mailjet_force_from_name is empty"
+#~ msgstr ""
+#~ "Forcer le nom d'expéditeur activé mais mailjet_force_from_name est vide"
+
+#, php-format
+#~ msgid ""
+#~ "Authorization failed (HTTP %s). The API credentials were rejected by "
+#~ "Mailjet."
+#~ msgstr ""
+#~ "Échec de l'autorisation (HTTP %s). Les identifiants API ont été rejetés "
+#~ "par Mailjet."
+
+#, php-format
+#~ msgid "Non-OK response from Mailjet transmission endpoint (HTTP %s)."
+#~ msgstr ""
+#~ "Réponse non-OK du point de terminaison de transmission Mailjet (HTTP %s)."
+
+#~ msgid "Force-from-email enabled; using postmark_from_email"
+#~ msgstr ""
+#~ "Forcer l'e-mail d'expéditeur activé ; utilisation de postmark_from_email"
+
+#~ msgid "Force-from-email enabled but postmark_from_email is empty"
+#~ msgstr ""
+#~ "Forcer l'e-mail d'expéditeur activé mais postmark_from_email est vide"
+
+#~ msgid "Force-from-name enabled; using postmark_from_name"
+#~ msgstr ""
+#~ "Forcer le nom d'expéditeur activé ; utilisation de postmark_from_name"
+
+#~ msgid "Force-from-name enabled but postmark_force_from_name is empty"
+#~ msgstr ""
+#~ "Forcer le nom d'expéditeur activé mais postmark_force_from_name est vide"
+
+#, php-format
+#~ msgid ""
+#~ "Authorization failed (HTTP %s). The Postmark Server Token was rejected."
+#~ msgstr ""
+#~ "Échec de l'autorisation (HTTP %s). Le jeton serveur Postmark a été rejeté."
+
+#, php-format
+#~ msgid "Non-OK response from Postmark transmission endpoint (HTTP %s)."
+#~ msgstr ""
+#~ "Réponse non-OK du point de terminaison de transmission Postmark (HTTP %s)."
+
+#~ msgid "Force-from-email enabled; using smtp2go_from_email"
+#~ msgstr ""
+#~ "Forcer l'e-mail d'expéditeur activé ; utilisation de smtp2go_from_email"
+
+#~ msgid "Force-from-email enabled but smtp2go_from_email is empty"
+#~ msgstr ""
+#~ "Forcer l'e-mail d'expéditeur activé mais smtp2go_from_email est vide"
+
+#~ msgid "Force-from-name enabled; using smtp2go_from_name"
+#~ msgstr ""
+#~ "Forcer le nom d'expéditeur activé ; utilisation de smtp2go_from_name"
+
+#~ msgid "Force-from-name enabled but smtp2go_force_from_name is empty"
+#~ msgstr "Forcer le nom d'expéditeur activé mais smtp2go_from_name est vide"
+
+#, php-format
+#~ msgid "Authorization failed (HTTP %s). The API key was rejected by SMTP2GO."
+#~ msgstr ""
+#~ "Échec de l'autorisation (HTTP %s). La clé API a été rejetée par SMTP2GO."
+
+#, php-format
+#~ msgid "Non-OK response from SMTP2GO transmission endpoint (HTTP %s)."
+#~ msgstr ""
+#~ "Réponse non-OK du point de terminaison de transmission SMTP2GO (HTTP %s)."
+
+#~ msgid "SMTP2GO rejected the payload: model validation failed (see details)."
+#~ msgstr ""
+#~ "SMTP2GO a rejeté la charge utile : échec de la validation du modèle (voir "
+#~ "les détails)."
+
+#~ msgid ""
+#~ "Ensure you provide html_body or text_body (or template_id). The test will "
+#~ "include a default body if none provided."
+#~ msgstr ""
+#~ "Assurez-vous de fournir html_body ou text_body (ou template_id). Le test "
+#~ "inclura un corps par défaut si aucun n'est fourni."
+
+#~ msgid "Force-from-email enabled; using sparkpost_from_email"
+#~ msgstr ""
+#~ "Forcer l'e-mail d'expéditeur activé ; utilisation de sparkpost_from_email"
+
+#~ msgid "Force-from-email enabled but sparkpost_from_email is empty"
+#~ msgstr ""
+#~ "Forcer l'e-mail d'expéditeur activé mais sparkpost_from_email est vide"
+
+#~ msgid "Force-from-name enabled; using sparkpost_from_name"
+#~ msgstr ""
+#~ "Forcer le nom d'expéditeur activé ; utilisation de sparkpost_from_name"
+
+#~ msgid "Force-from-name enabled but sparkpost_force_from_name is empty"
+#~ msgstr ""
+#~ "Forcer le nom d'expéditeur activé mais sparkpost_force_from_name est vide"
+
+#, php-format
+#~ msgid ""
+#~ "Authorization failed (HTTP %s). The API key was rejected by SparkPost."
+#~ msgstr ""
+#~ "Échec de l'autorisation (HTTP %s). La clé API a été rejetée par SparkPost."
+
+#, php-format
+#~ msgid "Non-OK response from SparkPost transmission endpoint (HTTP %s)."
+#~ msgstr ""
+#~ "Réponse non-OK du point de terminaison de transmission SparkPost (HTTP "
+#~ "%s)."
+
+#~ msgid "SparkPost rejected the payload: validation failed (see details)."
+#~ msgstr ""
+#~ "SparkPost a rejeté la charge utile : échec de la validation (voir les "
+#~ "détails)."
+
+#~ msgid ""
+#~ "Ensure your payload includes valid content (html and/or text) and "
+#~ "correctly-structured recipients. The tester includes a minimal valid "
+#~ "payload when possible."
+#~ msgstr ""
+#~ "Assurez-vous que votre charge utile inclut un contenu valide (html et/ou "
+#~ "texte) et des destinataires correctement structurés. Le testeur inclut "
+#~ "une charge utile minimale valide lorsque cela est possible."
+
+#~ msgid "Force-from-email enabled; using sendgrid_from_email"
+#~ msgstr ""
+#~ "Forcer l'e-mail d'expéditeur activé ; utilisation de sendgrid_from_email"
+
+#~ msgid "Force-from-email enabled but sendgrid_from_email is empty"
+#~ msgstr ""
+#~ "Forcer l'e-mail d'expéditeur activé mais sendgrid_from_email est vide"
+
+#~ msgid "Force-from-name enabled; using sendgrid_from_name"
+#~ msgstr ""
+#~ "Forcer le nom d'expéditeur activé ; utilisation de sendgrid_from_name"
+
+#~ msgid "Force-from-name enabled but sendgrid_force_from_name is empty"
+#~ msgstr ""
+#~ "Forcer le nom d'expéditeur activé mais sendgrid_force_from_name est vide"
+
+#, php-format
+#~ msgid "Non-OK response from SendGrid transmission endpoint (HTTP %s)."
+#~ msgstr ""
+#~ "Réponse non-OK du point de terminaison de transmission SendGrid (HTTP %s)."
+
+#, php-format
+#~ msgid ""
+#~ "Authorization failed (HTTP %s). The API key was rejected by SendGrid."
+#~ msgstr ""
+#~ "Échec de l'autorisation (HTTP %s). La clé API a été rejetée par SendGrid."
+
+#~ msgid ""
+#~ "SendGrid returned authorization error. Verify the API key is the full "
+#~ "key, has \"Mail Send\" permission, and is copied exactly (no extra prefix "
+#~ "or trimming). If using a restricted key, ensure the key has access to "
+#~ "SendGrid Mail Send API and the correct IP/URL permissions."
+#~ msgstr ""
+#~ "SendGrid a renvoyé une erreur d'autorisation. Vérifiez que la clé API est "
+#~ "la clé complète, dispose de la permission \"Envoi de courrier\" et est "
+#~ "copiée exactement (sans préfixe supplémentaire ou coupure). Si vous "
+#~ "utilisez une clé restreinte, assurez-vous que la clé a accès à l'API "
+#~ "d'envoi de courrier SendGrid et les autorisations IP/URL correctes."
+
+#~ msgid "SendGrid rejected the payload: validation failed (see details)."
+#~ msgstr ""
+#~ "SendGrid a rejeté la charge utile : échec de la validation (voir les "
+#~ "détails)."
+
+#~ msgid ""
+#~ "Ensure the payload contains required fields (from, personalizations.to, "
+#~ "content). The tester includes a minimal valid payload when possible. If "
+#~ "your account is restricted (e.g., trial), SendGrid may reject recipients "
+#~ "that are not verified."
+#~ msgstr ""
+#~ "Assurez-vous que la charge utile contient les champs requis (from, "
+#~ "personalizations.to, content). Le testeur inclut une charge utile "
+#~ "minimale valide lorsque cela est possible. Si votre compte est restreint "
+#~ "(par ex., essai), SendGrid peut rejeter les destinataires qui ne sont pas "
+#~ "vérifiés."
+
+#~ msgid "Force-from-email enabled; using brevo_from_email"
+#~ msgstr ""
+#~ "Forcer l'e-mail d'expéditeur activé ; utilisation de brevo_from_email"
+
+#~ msgid "Force-from-email enabled but brevo_from_email is empty"
+#~ msgstr "Forcer l'e-mail d'expéditeur activé mais brevo_from_email est vide"
+
+#~ msgid "Force-from-name enabled; using brevo_from_name"
+#~ msgstr "Forcer le nom d'expéditeur activé ; utilisation de brevo_from_name"
+
+#~ msgid "Force-from-name enabled but brevo_force_from_name is empty"
+#~ msgstr ""
+#~ "Forcer le nom d'expéditeur activé mais brevo_force_from_name est vide"
+
+#, php-format
+#~ msgid "Authorization failed (HTTP %s). The API key was rejected by Brevo."
+#~ msgstr ""
+#~ "Échec de l'autorisation (HTTP %s). La clé API a été rejetée par Brevo."
+
+#, php-format
+#~ msgid "Non-OK response from Brevo transmission endpoint (HTTP %s)."
+#~ msgstr ""
+#~ "Réponse non-OK du point de terminaison de transmission Brevo (HTTP %s)."
+
+#~ msgid "Brevo rejected the payload: validation failed (see details)."
+#~ msgstr ""
+#~ "Brevo a rejeté la charge utile : échec de la validation (voir les "
+#~ "détails)."
+
+#~ msgid ""
+#~ "Ensure payload contains required fields (sender, to, subject and "
+#~ "htmlContent and/or textContent). The tester includes a minimal valid "
+#~ "payload when possible."
+#~ msgstr ""
+#~ "Assurez-vous que la charge utile contient les champs requis (sender, to, "
+#~ "subject et htmlContent et/ou textContent). Le testeur inclut une charge "
+#~ "utile minimale valide lorsque cela est possible."
+
+#~ msgid ""
+#~ "Brevo returned authorization error. Verify the API key is the full key, "
+#~ "has proper permissions, and is copied exactly (no extra prefix)."
+#~ msgstr ""
+#~ "Brevo a renvoyé une erreur d'autorisation. Vérifiez que la clé API est la "
+#~ "clé complète, dispose des autorisations appropriées et est copiée "
+#~ "exactement (sans préfixe supplémentaire)."
+
+#~ msgid "Troubleshooting:"
+#~ msgstr "Dépannage :"
+
+#~ msgid "Verify includes/admin/email-log.php exists in the plugin folder."
+#~ msgstr ""
+#~ "Vérifiez que includes/admin/email-log.php existe dans le dossier du "
+#~ "plugin."
+
+#~ msgid ""
+#~ "Confirm the plugin is not loading a WP Page with the same title/slug."
+#~ msgstr ""
+#~ "Confirmez que le plugin ne charge pas une page WP avec le même titre/slug."
+
+#~ msgid ""
+#~ "If you recently added the file, clear any opcode cache and reload this "
+#~ "page."
+#~ msgstr ""
+#~ "Si vous avez récemment ajouté le fichier, videz le cache opcode et "
+#~ "rechargez cette page."
+
+#~ msgid "Authority Mailer Support"
+#~ msgstr "Support Authority Mailer"
+
+#~ msgid "Support information not available."
+#~ msgstr "Informations de support non disponibles."
+
+#~ msgid "Authority Mailer Dashboard"
+#~ msgstr "Tableau de bord Authority Mailer"
+
+#~ msgid "Connected"
+#~ msgstr "Connecté"
+
+#~ msgid "Not Connected"
+#~ msgstr "Non connecté"
+
+#~ msgid "Connect Now"
+#~ msgstr "Connecter maintenant"
+
+#~ msgid "View Settings"
+#~ msgstr "Voir les paramètres"
+
+#~ msgid "Total Emails"
+#~ msgstr "Total des e-mails"
+
+#~ msgid "Success Rate"
+#~ msgstr "Taux de réussite"
+
+#~ msgid "Need attention"
+#~ msgstr "Nécessite une attention"
+
+#~ msgid "No emails sent yet. Send a test email to get started!"
+#~ msgstr ""
+#~ "Aucun e-mail envoyé pour le moment. Envoyez un e-mail de test pour "
+#~ "commencer !"
+
+#~ msgid "Quick Actions"
+#~ msgstr "Actions rapides"
+
+#~ msgid "Get Support"
+#~ msgstr "Obtenir de l'aide"
+
+#~ msgid "Successfully sent"
+#~ msgstr "Envoyé avec succès"
+
+#~ msgid "Time"
+#~ msgstr "Heure"
+
+#~ msgid "Unlock Pro"
+#~ msgstr "Débloquer Pro"
+
+#~ msgid "Top Recipients"
+#~ msgstr "Principaux destinataires"
+
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#~ msgid "Opens"
+#~ msgstr "Ouvertures"
+
+#~ msgid "Clicks"
+#~ msgstr "Clics"
+
+#~ msgid "No recipient data available yet."
+#~ msgstr "Aucune donnée de destinataire disponible pour le moment."
+
+#~ msgid "Email Health Monitor"
+#~ msgstr "Moniteur de santé des e-mails"
+
+#~ msgid "No data available"
+#~ msgstr "Aucune donnée disponible"
+
+#~ msgid "Critical"
+#~ msgstr "Critique"
+
+#~ msgid "You do not have permission to view this page."
+#~ msgstr "Vous n'avez pas la permission de voir cette page."
+
+#~ msgid "Invalid table."
+#~ msgstr "Table invalide."
+
+#~ msgid "No valid IDs provided."
+#~ msgstr "Aucun ID valide fourni."
+
+#~ msgid "Resend attempted."
+#~ msgstr "Nouvelle tentative d'envoi."
+
+#~ msgid "Resend failed."
+#~ msgstr "Échec du renvoi."
+
+#~ msgid "Smart Failover"
+#~ msgstr "Basculement intelligent"
+
+#~ msgid ""
+#~ "Authority Mailer Pro saved us hours of debugging. The failover system "
+#~ "alone is worth it!"
+#~ msgstr ""
+#~ "Authority Mailer Pro nous a fait gagner des heures de débogage. Le "
+#~ "système de basculement à lui seul en vaut la peine !"
+
+#~ msgid "Agency Owner"
+#~ msgstr "Propriétaire d'agence"
+
+#~ msgid "Free Plan Limits"
+#~ msgstr "Limites du plan gratuit"
+
+#~ msgid "Email Log History"
+#~ msgstr "Historique du journal des e-mails"
+
+#~ msgid "emails"
+#~ msgstr "e-mails"
+
+#~ msgid "Failover System"
+#~ msgstr "Système de basculement"
+
+#~ msgid "Remove all limits →"
+#~ msgstr "Supprimer toutes les limites →"
+
+#~ msgid "30-day money-back guarantee"
+#~ msgstr "Garantie satisfait ou remboursé 30 jours"
+
+#~ msgid "Other SMTP settings"
+#~ msgstr "Autres paramètres SMTP"
+
+#~ msgid "Common ports: 25, 465, 587, 2525"
+#~ msgstr "Ports courants : 25, 465, 587, 2525"
+
+#~ msgid "Test your connection"
+#~ msgstr "Tester votre connexion"
+
+#~ msgid "The Brevo API endpoint hostname (default: api.brevo.com)."
+#~ msgstr ""
+#~ "Le nom d'hôte du point de terminaison API Brevo (par défaut : "
+#~ "api.brevo.com)."
+
+#~ msgid ""
+#~ "The port number for connecting to the Brevo API (default: 443 for HTTPS)."
+#~ msgstr ""
+#~ "Le numéro de port pour la connexion à l'API Brevo (par défaut : 443 pour "
+#~ "HTTPS)."
+
+#~ msgid ""
+#~ "The Elastic Email API endpoint hostname (default: api.elasticemail.com)."
+#~ msgstr ""
+#~ "Le nom d'hôte du point de terminaison API Elastic Email (par défaut : "
+#~ "api.elasticemail.com)."
+
+#~ msgid ""
+#~ "The port number for connecting to the Elastic Email API (default: 443 for "
+#~ "HTTPS)."
+#~ msgstr ""
+#~ "Le numéro de port pour la connexion à l'API Elastic Email (par défaut : "
+#~ "443 pour HTTPS)."
+
+#~ msgid "Payload"
+#~ msgstr "Charge utile"
+
+#~ msgid "Diagnostics"
+#~ msgstr "Diagnostics"
+
+#~ msgid "No payload data recorded."
+#~ msgstr "Aucune donnée de charge utile enregistrée."
+
+#~ msgid "No response body recorded."
+#~ msgstr "Aucun corps de réponse enregistré."
+
+#~ msgid "Get Help"
+#~ msgstr "Obtenir de l'aide"
+
+#~ msgid "Documentation"
+#~ msgstr "Documentation"
+
+#~ msgid "Read the Docs"
+#~ msgstr "Lire la documentation"
+
+#~ msgid "Support Forum"
+#~ msgstr "Forum d'assistance"
+
+#~ msgid "Visit Forum"
+#~ msgstr "Visiter le forum"
+
+#~ msgid "Email Support"
+#~ msgstr "Assistance par e-mail"
+
+#~ msgid "Contact Us"
+#~ msgstr "Nous contacter"
+
+#~ msgid "Resources"
+#~ msgstr "Ressources"
+
+#~ msgid "Blog & Tutorials"
+#~ msgstr "Blog et tutoriels"
+
+#~ msgid "Changelog"
+#~ msgstr "Journal des modifications"
+
+#~ msgid "Failed to copy"
+#~ msgstr "Échec de la copie"
+
+#~ msgid "Please enter an email address"
+#~ msgstr "Veuillez saisir une adresse e-mail"
+
+#~ msgid "Test email sent successfully!"
+#~ msgstr "E-mail de test envoyé avec succès !"
+
+#~ msgid "Failed to send test email"
+#~ msgstr "Échec de l'envoi de l'e-mail de test"
+
+#~ msgid "Form not found."
+#~ msgstr "Formulaire introuvable."
+
+#~ msgid "Email Defaults"
+#~ msgstr "Paramètres d'e-mail par défaut"
+
+#~ msgid ""
+#~ "Configure default headers that will be automatically applied to all "
+#~ "outgoing emails. These defaults will not override explicitly set headers."
+#~ msgstr ""
+#~ "Configurez les en-têtes par défaut qui seront automatiquement appliqués à "
+#~ "tous les e-mails sortants. Ces valeurs par défaut ne remplaceront pas les "
+#~ "en-têtes explicitement définis."
+
+#~ msgid "Reply-To Email"
+#~ msgstr "E-mail de réponse"
+
+#~ msgid "support@yourdomain.com"
+#~ msgstr "support@votredomaine.com"
+
+#~ msgid ""
+#~ "Email address for recipients to reply to. Useful for directing replies to "
+#~ "a support inbox."
+#~ msgstr ""
+#~ "Adresse e-mail pour que les destinataires répondent. Utile pour diriger "
+#~ "les réponses vers une boîte de réception d'assistance."
+
+#~ msgid "Return-Path (Bounce Address)"
+#~ msgstr "Chemin de retour (adresse de rebond)"
+
+#~ msgid "bounces@yourdomain.com"
+#~ msgstr "rebonds@votredomaine.com"
+
+#~ msgid ""
+#~ "Email address to receive bounce notifications. Must be a valid mailbox to "
+#~ "track delivery failures."
+#~ msgstr ""
+#~ "Adresse e-mail pour recevoir les notifications de rebond. Doit être une "
+#~ "boîte aux lettres valide pour suivre les échecs de livraison."
+
+#~ msgid "Default CC"
+#~ msgstr "CC par défaut"
+
+#~ msgid "admin@yourdomain.com, team@yourdomain.com"
+#~ msgstr "admin@votredomaine.com, equipe@votredomaine.com"
+
+#~ msgid ""
+#~ "Comma-separated email addresses to carbon copy on all outgoing emails."
+#~ msgstr ""
+#~ "Adresses e-mail séparées par des virgules à copier sur tous les e-mails "
+#~ "sortants."
+
+#~ msgid "Default BCC"
+#~ msgstr "CCI par défaut"
+
+#~ msgid "archive@yourdomain.com"
+#~ msgstr "archive@votredomaine.com"
+
+#~ msgid ""
+#~ "Comma-separated email addresses to blind carbon copy on all outgoing "
+#~ "emails (hidden from recipients)."
+#~ msgstr ""
+#~ "Adresses e-mail séparées par des virgules à copier en copie cachée sur "
+#~ "tous les e-mails sortants (cachées aux destinataires)."
+
+#~ msgid "Email Priority"
+#~ msgstr "Priorité de l'e-mail"
+
+#~ msgid "Normal"
+#~ msgstr "Normal"
+
+#~ msgid "High"
+#~ msgstr "Élevée"
+
+#~ msgid "Low"
+#~ msgstr "Basse"
+
+#~ msgid ""
+#~ "Default priority level for all outgoing emails. High priority may display "
+#~ "differently in email clients."
+#~ msgstr ""
+#~ "Niveau de priorité par défaut pour tous les e-mails sortants. La haute "
+#~ "priorité peut s'afficher différemment dans les clients de messagerie."
+
+#~ msgid "Save Email Defaults"
+#~ msgstr "Enregistrer les paramètres par défaut"
+
+#~ msgid "Email defaults saved successfully."
+#~ msgstr "Paramètres d'e-mail par défaut enregistrés avec succès."
+
+#~ msgid "Email defaults feature not available."
+#~ msgstr "Fonctionnalité de paramètres d'e-mail par défaut non disponible."
+
+#~ msgid "Advanced"
+#~ msgstr "Avancé"
+
+#~ msgid "Settings"
+#~ msgstr "Paramètres"
+
+#~ msgid "Connect Provider"
+#~ msgstr "Connecter le fournisseur"
+
+#~ msgid "Limited: 40% OFF"
+#~ msgstr "Limité : 40% de réduction"
+
+#~ msgid "Uninstall Settings"
+#~ msgstr "Paramètres de désinstallation"
+
+#~ msgid "Remove All Data on Uninstall"
+#~ msgstr "Supprimer toutes les données lors de la désinstallation"
+
+#~ msgid ""
+#~ "When enabled, all plugin data including settings, logs, and database "
+#~ "tables will be permanently deleted when the plugin is uninstalled. "
+#~ "Disable this if you want to preserve your data."
+#~ msgstr ""
+#~ "Lorsque activé, toutes les données du plugin incluant les paramètres, les "
+#~ "journaux et les tables de base de données seront définitivement "
+#~ "supprimées lors de la désinstallation du plugin. Désactivez ceci si vous "
+#~ "souhaitez conserver vos données."
+
+#~ msgid "Uninstall settings saved."
+#~ msgstr "Paramètres de désinstallation enregistrés."
+
+#~ msgid "Unlock the Full Power of MailMate SMTP"
+#~ msgstr "Débloquez toute la puissance de MailMate SMTP"
+
+#~ msgid ""
+#~ "You're using 13 of 17 email providers. Upgrade to Pro to unlock all 17 "
+#~ "providers, unlimited logs & premium features."
+#~ msgstr ""
+#~ "Vous utilisez 13 des 17 fournisseurs d'e-mail. Passez à Pro pour "
+#~ "débloquer les 17 fournisseurs, les journaux illimités et les "
+#~ "fonctionnalités premium."
+
+#~ msgid "Upgrade Now →"
+#~ msgstr "Mettre à niveau maintenant →"
+
+#~ msgid "14 / 17"
+#~ msgstr "14 / 17"
+
+#~ msgid "100 emails"
+#~ msgstr "100 e-mails"
+
+#~ msgid "✗"
+#~ msgstr "✗"
+
+#~ msgid ""
+#~ "\"MailMate Pro saved us hours of debugging. The failover system alone is "
+#~ "worth it!\""
+#~ msgstr ""
+#~ "\"MailMate Pro nous a fait gagner des heures de débogage. Le système de "
+#~ "basculement à lui seul en vaut la peine !\""
+
+#~ msgid "Sarah M., Agency Owner"
+#~ msgstr "Sarah M., Propriétaire d'agence"
+
+#~ msgid "PRO"
+#~ msgstr "PRO"
+
+#~ msgid "This provider requires Premium"
+#~ msgstr "Ce fournisseur nécessite Premium"
+
+#~ msgid "30-day money back guarantee"
+#~ msgstr "Garantie satisfait ou remboursé 30 jours"

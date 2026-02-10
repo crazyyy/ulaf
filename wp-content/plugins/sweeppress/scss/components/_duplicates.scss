@@ -1,0 +1,20 @@
+.d4p-panel-metadata {
+    .sweeppress-table-duplicates {
+        tr {
+            th {
+                &.column-meta_count,
+                &.column-reference_id {
+                    width: 100px;
+                }
+            }
+
+            td {
+                &.column-meta_value {
+                    .kint-rich {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

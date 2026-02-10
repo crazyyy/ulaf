@@ -1,0 +1,30 @@
+/* CSS per helper */
+
+.field_wrapper {
+	padding-bottom : 5px;
+	padding-top : 5px;
+}
+
+.field_wrapper .label {
+        font-weight: bolder;
+}
+
+.field_caption {
+    	font-style: italic;
+    	padding-left : 5px;
+}
+
+.field_wrapper p {
+    	font-style: italic;
+    	padding-left : 5px;
+	
+}
+
+.readonly {
+    color:darkgray; 
+    font-family: Consolas,Monaco,monospace; 
+    font-style: italic;
+    border: solid 1px; 
+    background: none repeat scroll 0 0 #EAEAEA;
+    min-width:50px;
+}

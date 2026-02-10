@@ -1,0 +1,315 @@
+/**
+ * White-Glove Installation Service Sidebar Styles
+ *
+ * Professional, trustworthy sidebar design for the onboarding wizard
+ * offering optional white-glove installation service.
+ *
+ * @package Authority_Mailer
+ * @since   1.0.0
+ */
+
+/* ========== Sidebar Container - NO STICKY, NO SCROLLBAR ========== */
+
+.am-onboarding-sidebar {
+
+	max-height: none !important;
+	height: auto !important;
+	position: static !important;
+	width: 240px;
+	flex-shrink: 0;
+}
+
+@media (max-width: 1023px) {
+	.am-onboarding-sidebar {
+		width: 100%;
+	}
+}
+
+/* ========== White-Glove Sidebar Card ========== */
+
+.am-white-glove-card,
+.am-white-glove-sidebar {
+	position: relative;
+	background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
+	border: 1px solid #e5e7eb;
+	border-radius: 12px;
+	padding: 24px;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	max-width: 240px;
+	margin: 0 auto 16px auto;
+	z-index: 1;
+	display: block !important;
+}
+
+@media (min-width: 1024px) {
+	.am-white-glove-card,
+	.am-white-glove-sidebar {
+		position: static !important;
+		margin: 0 0 16px 0;
+	}
+}
+
+/* ========== Pro Banner Card ========== */
+
+.am-pro-sidebar-card {
+	display: block !important;
+	z-index: 1;
+	margin-top: 0;
+	position: relative;
+	margin-bottom: 16px;
+}
+
+/* ========== Header Section ========== */
+
+.am-white-glove-header {
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+.am-white-glove-badge {
+	display: inline-block;
+	background: #f3f4f6;
+	color: #6b7280;
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	padding: 4px 10px;
+	border-radius: 4px;
+	margin-bottom: 12px;
+
+	/* CRITICAL: No animations, no position changes */
+	position: static !important;
+	transform: none !important;
+	transition: none !important;
+	animation: none !important;
+}
+
+.am-white-glove-icon {
+	font-size: 36px;
+	margin-bottom: 12px;
+	line-height: 1;
+}
+
+.am-white-glove-headline {
+	font-size: 20px;
+	font-weight: 700;
+	color: #111827;
+	margin: 0 0 8px;
+	line-height: 1.2;
+}
+
+.am-white-glove-subheadline {
+	font-size: 14px;
+	font-weight: 400;
+	color: #6b7280;
+	margin: 0;
+	line-height: 1.5;
+}
+
+/* ========== Step-Specific Message ========== */
+
+.am-white-glove-step-message {
+	font-size: 14px;
+	color: #374151;
+	line-height: 1.6;
+	margin: 16px 0;
+	padding: 12px;
+	background: #f9fafb;
+	border-left: 3px solid #6366f1;
+	border-radius: 4px;
+}
+
+/* ========== Benefits List ========== */
+
+.am-white-glove-benefits {
+	margin: 16px 0;
+}
+
+.am-white-glove-benefit {
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #374151;
+	line-height: 1.5;
+}
+
+.am-white-glove-benefit:last-child {
+	margin-bottom: 0;
+}
+
+.am-white-glove-check {
+	flex-shrink: 0;
+	color: #10b981;
+	margin-top: 1px;
+}
+
+/* ========== Pricing Section ========== */
+
+.am-white-glove-pricing {
+	text-align: center;
+	margin: 20px 0;
+	padding: 16px;
+	background: #ffffff;
+	border-radius: 8px;
+	border: 1px solid #e5e7eb;
+}
+
+.am-white-glove-price-row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	margin-bottom: 8px;
+}
+
+.am-white-glove-original-price {
+	font-size: 16px;
+	color: #9ca3af;
+	text-decoration: line-through;
+	font-weight: 500;
+}
+
+.am-white-glove-save-badge {
+	display: inline-block;
+	background: #10b981;
+	color: #ffffff;
+	font-size: 11px;
+	font-weight: 600;
+	padding: 3px 8px;
+	border-radius: 4px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.am-white-glove-current-price {
+	font-size: 32px;
+	font-weight: 700;
+	color: #111827;
+	line-height: 1;
+	margin-bottom: 4px;
+}
+
+.am-white-glove-price-label {
+	font-size: 13px;
+	color: #6b7280;
+	font-weight: 400;
+}
+
+/* ========== Trust Signals ========== */
+
+.am-white-glove-trust-signals {
+	margin: 16px 0;
+	padding: 16px;
+	background: #f9fafb;
+	border-radius: 8px;
+	border: 1px solid #e5e7eb;
+}
+
+.am-white-glove-trust-signal {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 13px;
+	color: #4b5563;
+	margin-bottom: 8px;
+}
+
+.am-white-glove-trust-signal:last-child {
+	margin-bottom: 0;
+}
+
+.am-white-glove-trust-icon {
+	font-size: 14px;
+	line-height: 1;
+}
+
+/* ========== CTA Section ========== */
+
+.am-white-glove-cta {
+	margin: 20px 0 16px;
+	text-align: center;
+}
+
+.am-white-glove-cta-button {
+	display: inline-block;
+	background: #6366f1;
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: 600;
+	padding: 12px 24px;
+	border-radius: 8px;
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
+	transition: all 0.2s ease;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.am-white-glove-cta-button:hover {
+	background: #4f46e5;
+	transform: scale(1.02);
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.am-white-glove-cta-button:focus {
+	outline: 2px solid #6366f1;
+	outline-offset: 2px;
+}
+
+.am-white-glove-cta-secondary {
+	font-size: 12px;
+	color: #9ca3af;
+	margin: 8px 0 0;
+	font-style: italic;
+}
+
+/* ========== Disclaimer ========== */
+
+.am-white-glove-disclaimer {
+	font-size: 11px;
+	color: #9ca3af;
+	line-height: 1.5;
+	margin: 16px 0 0;
+	padding-top: 16px;
+	border-top: 1px solid #e5e7eb;
+	text-align: center;
+}
+
+/* ========== Responsive Design ========== */
+
+/* Spacing for pro banner when shown below white-glove sidebar */
+.authority-mailer-pro-banner-spacing {
+	margin-top: 24px;
+}
+
+@media (max-width: 1023px) {
+	.am-white-glove-sidebar {
+		max-width: 100%;
+		margin-top: 32px;
+	}
+}
+
+@media (max-width: 640px) {
+	.am-white-glove-sidebar {
+		padding: 20px;
+	}
+
+	.am-white-glove-headline {
+		font-size: 18px;
+	}
+
+	.am-white-glove-current-price {
+		font-size: 28px;
+	}
+
+	.am-white-glove-benefit {
+		font-size: 13px;
+	}
+}

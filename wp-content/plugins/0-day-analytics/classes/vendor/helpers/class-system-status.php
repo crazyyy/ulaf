@@ -1,0 +1,1000 @@
+<?php
+/**
+ * Class: System status info collector.
+ *
+ * Helper class to determine the proper status of the request.
+ *
+ * @package advanced-analytics
+ *
+ * @since 1.1.0
+ */
+
+declare(strict_types=1);
+
+namespace ADVAN\Helpers;
+
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+if ( ! class_exists( '\ADVAN\Helpers\System_Status' ) ) {
+	/**
+	 * Responsible for proper context determination.
+	 *
+	 * @since 1.1.0
+	 */
+	class System_Status {
+
+		/**
+		 * _curl_version
+		 *
+		 * Figure out cURL version, if installed
+		 *
+		 * @since 1.1.0
+		 */
+		private static function _curl_version() {
+
+			$curl_version = '';
+			if ( function_exists( 'curl_version' ) ) {
+				$curl_version = curl_version();
+				$curl_version = $curl_version['version'] . ', ' . $curl_version['ssl_version'];
+			}
+
+			return $curl_version;
+		}
+
+		/**
+		 * _memory_limit
+		 *
+		 * Get the wp memory limit
+		 *
+		 * @since 1.1.0
+		 */
+		private static function _memory_limit() {
+
+			$wp_memory_limit = self::_let_to_num( WP_MEMORY_LIMIT );
+			if ( function_exists( 'memory_get_usage' ) ) {
+				$wp_memory_limit = max( $wp_memory_limit, self::_let_to_num( @ini_get( 'memory_limit' ) ) );
+			}
+
+			return $wp_memory_limit;
+		}
+
+		/**
+		 * Makes Post Request check
+		 *
+		 * Test POST requests
+		 *
+		 * @since 1.1.0
+		 *
+		 * @return bool|\WP_Error
+		 */
+		private static function post_request() {
+
+			$post_response = wp_safe_remote_post(
+				'https://www.paypal.com/cgi-bin/webscr',
+				array(
+					'timeout'     => 60,
+					'user-agent'  => 'woocommerce/',
+					'httpversion' => '1.1',
+					'body'        => array(
+						'cmd' => '_notify-validate',
+					),
+				)
+			);
+
+			$post_response_successful = false;
+			if ( ! is_wp_error( $post_response ) && $post_response['response']['code'] >= 200 && $post_response['response']['code'] < 300 ) {
+				$post_response_successful = true;
+			}
+
+			return $post_response_successful;
+		}
+
+		/**
+		 * Get_request
+		 *
+		 * Test GET requests
+		 *
+		 * @return bool|\WP_Error
+		 *
+		 * @since 1.1.0
+		 */
+		private static function get_request() {
+
+			$get_response = wp_safe_remote_get( 'https://woocommerce.com/wc-api/product-key-api?request=ping&network=' . ( is_multisite() ? '1' : '0' ) );
+
+			$get_response_successful = false;
+			if ( ! is_wp_error( $get_response ) && $get_response['response']['code'] >= 200 && $get_response['response']['code'] < 300 ) {
+				$get_response_successful = true;
+			}
+
+			return $get_response_successful;
+		}
+
+		/**
+		 * Environment_info collector
+		 *
+		 * All environment info
+		 *
+		 * @since 1.1.0
+		 */
+		public static function environment_info() {
+
+			static $environment_info = null;
+
+			if ( null !== $environment_info ) {
+				return $environment_info;
+			}
+
+			global $wpdb;
+
+			// $get_response_msg = '';
+
+			// // Remote Post.
+			// $post_response     = self::post_request();
+			// $post_response_msg = '';
+
+			// if ( is_wp_error( $post_response ) ) {
+			// $post_response_msg = $post_response->get_error_message();
+			// } elseif ( ! empty( $post_response['response']['code'] ) ) {
+			// $post_response_msg = $post_response['response']['code'];
+			// }
+
+			// // Remote Get.
+			// $get_response     = self::get_request();
+			// $get_response_msg = '';
+
+			// if ( is_wp_error( $get_response ) ) {
+			// $get_response_msg = $get_response->get_error_message();
+			// } elseif ( ! empty( $get_response['response']['code'] ) ) {
+			// $get_response_msg = $get_response['response']['code'];
+			// }
+
+			return $environment_info = array(
+				'home_url'                  => home_url( '/' ),
+				'site_url'                  => site_url( '/' ),
+				'wp_version'                => get_bloginfo( 'version' ),
+				'wp_multisite'              => is_multisite(),
+				'wp_memory_limit'           => self::_memory_limit(),
+				'wp_debug_mode'             => ( defined( 'WP_DEBUG' ) && \WP_DEBUG ),
+				'wp_debug_display'          => ( defined( 'WP_DEBUG_DISPLAY' ) && \WP_DEBUG_DISPLAY ),
+				'wp_debug_log'              => ( defined( 'WP_DEBUG_LOG' ) && \WP_DEBUG_LOG ),
+				'wp_cron_disable'           => ( defined( 'DISABLE_WP_CRON' ) && \DISABLE_WP_CRON ),
+				'script_debug'              => ( defined( 'SCRIPT_DEBUG' ) && \SCRIPT_DEBUG ),
+				'save_queries'              => ( defined( 'SAVEQUERIES' ) && \SAVEQUERIES ),
+				'wp_environment_type'       => ( defined( 'WP_ENVIRONMENT_TYPE' ) && \WP_ENVIRONMENT_TYPE ) ? \WP_ENVIRONMENT_TYPE : 'production',
+				'block_external_requests'       => ( defined( 'WP_HTTP_BLOCK_EXTERNAL' ) && \WP_HTTP_BLOCK_EXTERNAL ) ? \WP_HTTP_BLOCK_EXTERNAL : false,
+				'wp_development_mode'       => ( defined( 'WP_DEVELOPMENT_MODE' ) && \WP_DEVELOPMENT_MODE ) ? \WP_DEVELOPMENT_MODE : '',
+				'language'                  => get_locale(),
+				'server_info'               => $_SERVER['SERVER_SOFTWARE'] ?? '', // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.MissingUnslash, WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
+				'php_version'               => phpversion(),
+				'php_post_max_size'         => self::_let_to_num( ini_get( 'post_max_size' ) ),
+				'php_max_execution_time'    => ini_get( 'max_execution_time' ),
+				'php_max_input_vars'        => ini_get( 'max_input_vars' ),
+				'curl_version'              => self::_curl_version(),
+				'suhosin_installed'         => extension_loaded( 'suhosin' ),
+				'max_upload_size'           => wp_max_upload_size(),
+				'mysql_version'             => ( ! empty( $wpdb->is_mysql ) ? $wpdb->db_version() : '' ),
+				'fsockopen_or_curl_enabled' => ( function_exists( 'fsockopen' ) || function_exists( 'curl_init' ) ),
+				'mbstring_enabled'          => extension_loaded( 'mbstring' ),
+				'xmlreader_enabled'         => extension_loaded( 'xmlreader' ),
+				// 'remote_post_successful'    => $post_response,
+				// 'remote_post_response'      => $post_response_msg,
+				// 'remote_get_successful'     => $get_response,
+				// 'remote_get_response'       => $get_response_msg,
+				'secure_connection'         => 'https' === substr( get_home_url(), 0, 5 ),
+				'hide_errors'               => ! ( defined( 'WP_DEBUG' ) && defined( 'WP_DEBUG_DISPLAY' ) && WP_DEBUG && WP_DEBUG_DISPLAY ) || 0 === intval( ini_get( 'display_errors' ) ),
+			);
+		}
+
+		/**
+		 * _theme_info
+		 *
+		 * Get the theme info
+		 *
+		 * @since 1.1.0
+		 */
+		private static function _theme_info() {
+
+			$active_theme = \wp_get_theme();
+
+			if ( \is_child_theme() ) {
+				$parent_theme      = \wp_get_theme( $active_theme->template );
+				$parent_theme_info = array(
+					'is_child_theme'    => true,
+					'parent_name'       => $parent_theme->name,
+					'parent_version'    => $parent_theme->version,
+					'parent_author_url' => $parent_theme->{'Author URI'},
+					'version_latest'    => $parent_theme->version,
+				);
+
+				// $api = themes_api(
+				// 'theme_information',
+				// array(
+				// 'slug'   => $parent_theme->stylesheet,
+				// 'fields' => array(
+				// 'sections' => false,
+				// 'tags'     => false,
+				// ),
+				// )
+				// );
+
+				// if ( is_object( $api ) && ! is_wp_error( $api ) && ! empty( $api->version ) ) {
+				// $version_latest                      = $api->version;
+				// $parent_theme_info['version_latest'] = $version_latest;
+				// }
+			} else {
+				$parent_theme_info = array(
+					'is_child_theme'    => false,
+					'parent_name'       => $active_theme->name,
+					'parent_version'    => $active_theme->version,
+					'parent_author_url' => $active_theme->{'Author URI'},
+					'version_latest'    => $active_theme->version,
+				);
+
+				// $api = themes_api(
+				// 'theme_information',
+				// array(
+				// 'slug'   => $active_theme->stylesheet,
+				// 'fields' => array(
+				// 'sections' => false,
+				// 'tags'     => false,
+				// ),
+				// )
+				// );
+
+				// if ( is_object( $api ) && ! is_wp_error( $api ) && ! empty( $api->version ) ) {
+				// $version_latest                      = $api->version;
+				// $parent_theme_info['version_latest'] = $version_latest;
+				// }
+			}
+
+			return $parent_theme_info;
+		}
+
+		/**
+		 * _get_active_plugins
+		 *
+		 * Get all active plugins info
+		 *
+		 * @since 1.1.0
+		 */
+		private static function _get_active_plugins() {
+
+			// This Plugin causes an Fatal error.
+			if ( class_exists( 'Envira_Gallery' ) ) {
+				return;
+			}
+
+			include_once ABSPATH . 'wp-admin/includes/plugin-install.php';
+
+			// Get both site plugins and network plugins.
+			$active_plugins = (array) \get_option( 'active_plugins', array() );
+
+			if ( \is_multisite() ) {
+				$network_activated_plugins = array_keys( get_site_option( 'active_sitewide_plugins', array() ) );
+				$active_plugins            = array_merge( $active_plugins, $network_activated_plugins );
+			}
+
+			$active_plugins_data = array();
+
+			foreach ( $active_plugins as $plugin ) {
+				$data           = get_plugin_data( WP_PLUGIN_DIR . '/' . $plugin );
+				$dirname        = dirname( $plugin );
+				$version_latest = '';
+				$slug           = explode( '/', $plugin );
+				$slug           = explode( '.', end( $slug ) );
+				$slug           = $slug[0];
+
+				// $api = plugins_api(
+				// 'plugin_information',
+				// array(
+				// 'slug'   => $slug,
+				// 'fields' => array(
+				// 'sections' => false,
+				// 'tags'     => false,
+				// ),
+				// )
+				// );
+
+				// if ( is_object( $api ) && ! is_wp_error( $api ) && ! empty( $api->version ) ) {
+				// $version_latest = $api->version;
+				// }
+
+				// convert plugin data to json response format.
+				$active_plugins_data[] = array(
+					'plugin'            => $plugin,
+					'name'              => wp_strip_all_tags( $data['Name'] ),
+					'version'           => wp_strip_all_tags( $data['Version'] ),
+					'version_latest'    => $version_latest,
+					'url'               => wp_strip_all_tags( $data['PluginURI'] ),
+					'author_name'       => wp_strip_all_tags( str_replace( ',', ' | ', $data['AuthorName'] ), true ),
+					'author_url'        => esc_url_raw( $data['AuthorURI'] ),
+					'network_activated' => $data['Network'],
+				);
+			}
+
+			return $active_plugins_data;
+		}
+
+		/**
+		 * _let_to_num
+		 *
+		 * Transform the php.ini notation for numbers (like '2M') to an integer.
+		 *
+		 * @since 1.1.0
+		 */
+		public static function _let_to_num( $size ) {
+			$l   = substr( $size, -1 );
+			$ret = substr( $size, 0, -1 );
+			switch ( strtoupper( $l ) ) {
+				case 'P':
+					$ret *= 1024;
+					// no break.
+				case 'T':
+					$ret *= 1024;
+					// no break.
+				case 'G':
+					$ret *= 1024;
+					// no break.
+				case 'M':
+					$ret *= 1024;
+					// no break.
+				case 'K':
+					$ret *= 1024;
+			}
+
+			return $ret;
+		}
+
+		/**
+		 * _print_environment_info
+		 *
+		 * @since 1.1.0
+		 */
+		public static function print_environment_info() {
+			// Capability gate: only admins (or users with manage_options) can view detailed environment info.
+			if ( ! \current_user_can( 'manage_options' ) ) {
+				return;
+			}
+			global $wpdb;
+			$environment = self::environment_info(); ?>
+
+			<table class="aadvana-status-table status-report widefat" cellspacing="0">
+				<thead>
+					<tr>
+						<th colspan="2" data-export-label="WordPress Environment"><?php esc_html_e( 'WordPress environment', '0-day-analytics' ); ?></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td data-export-label="Home URL"><?php esc_html_e( 'Home URL', '0-day-analytics' ); ?>:</td>
+						<td><?php echo esc_url( $environment['home_url'] ); ?></td>
+					</tr>
+					<tr>
+						<td data-export-label="Site URL"><?php esc_html_e( 'Site URL', '0-day-analytics' ); ?>:</td>
+						<td><?php echo esc_url( $environment['site_url'] ); ?></td>
+					</tr>
+					<tr>
+						<td data-export-label="WP Version"><?php esc_html_e( 'WP version', '0-day-analytics' ); ?>:</td>
+						<td><?php echo esc_html( $environment['wp_version'] ); ?></td>
+					</tr>
+					<tr>
+						<td data-export-label="WP Multisite"><?php esc_html_e( 'WP multisite', '0-day-analytics' ); ?>:</td>
+						<td><?php echo ( $environment['wp_multisite'] ) ? '<span class="dashicons dashicons-yes"></span>' : '&ndash;'; ?></td>
+					</tr>
+					<tr>
+						<td data-export-label="WP Memory Limit"><?php esc_html_e( 'WP memory limit', '0-day-analytics' ); ?>:</td>
+						<td>
+						<?php
+						if ( $environment['wp_memory_limit'] < 134217728 ) {
+							/* translators: 1: current memory limit, 2: recommended minimum, 3: recommended for demo import, 4: documentation link (HTML). */
+							$memory_msg = sprintf(
+								esc_html__( '%1$s - We recommend setting memory to at least %2$s. To import the demo data %3$s of memory limit is required. See: %4$s', '0-day-analytics' ),
+								esc_html( size_format( (int) $environment['wp_memory_limit'] ) ),
+								esc_html( '128MB' ),
+								esc_html( '256MB' ),
+								// Safe link markup restricted.
+								'<a href="https://codex.wordpress.org/Editing_wp-config.php#Increasing_memory_allocated_to_PHP" target="_blank" rel="noopener">' . esc_html__( 'Increasing memory allocated to PHP', '0-day-analytics' ) . '</a>'
+							);
+							echo wp_kses( '<mark class="error"><span class="dashicons dashicons-warning"></span> ' . $memory_msg . '</mark>', array( 'mark' => array( 'class' => array() ), 'span' => array( 'class' => array() ), 'a' => array( 'href' => array(), 'target' => array(), 'rel' => array() ) ) );
+						} else {
+							echo wp_kses( '<mark class="yes">' . esc_html( size_format( (int) $environment['wp_memory_limit'] ) ) . '</mark>', array( 'mark' => array( 'class' => array() ) ) );
+						}
+						?>
+						</td>
+					</tr>
+					<tr>
+						<td data-export-label="WP Debug Mode"><?php esc_html_e( 'WP debug mode', '0-day-analytics' ); ?>:</td>
+						<td>
+							<?php if ( $environment['wp_debug_mode'] ) : ?>
+								<mark class="yes"><span class="dashicons dashicons-yes"></span></mark>
+							<?php else : ?>
+								<mark class="no">&ndash;</mark>
+							<?php endif; ?>
+						</td>
+					</tr>
+					<tr>
+						<td data-export-label="WP Debug Display"><?php esc_html_e( 'WP debug display errors in HTML', '0-day-analytics' ); ?>:</td>
+						<td>
+							<?php if ( $environment['wp_debug_display'] ) : ?>
+								<mark class="yes"><span class="dashicons dashicons-yes"></span></mark>
+							<?php else : ?>
+								<mark class="no">&ndash;</mark>
+							<?php endif; ?>
+						</td>
+					</tr>
+					<tr>
+						<td data-export-label="WP Debug Log"><?php esc_html_e( 'WP debug log errors', '0-day-analytics' ); ?>:</td>
+						<td>
+							<?php if ( $environment['wp_debug_log'] ) : ?>
+								<mark class="yes"><span class="dashicons dashicons-yes"></span></mark>
+							<?php else : ?>
+								<mark class="no">&ndash;</mark>
+							<?php endif; ?>
+						</td>
+					</tr>
+					<tr>
+						<td data-export-label="Language"><?php esc_html_e( 'Language', '0-day-analytics' ); ?>:</td>
+						<td><?php echo esc_html( $environment['language'] ); ?></td>
+					</tr>
+					<tr>
+						<td data-export-label="Hide errors from visitors"><?php esc_html_e( 'Hide errors from visitors', '0-day-analytics' ); ?></td>
+						<td>
+							<?php if ( $environment['hide_errors'] ) : ?>
+								<mark class="yes"><span class="dashicons dashicons-yes"></span></mark>
+							<?php else : ?>
+								<mark class="error"><span class="dashicons dashicons-warning"></span> <?php esc_html_e( 'Error messages can contain sensitive information about your website environment. These should be hidden from untrusted visitors.', '0-day-analytics' ); ?></mark>
+							<?php endif; ?>
+						</td>
+					</tr>
+
+				</tbody>
+			</table>
+
+			<table class="aadvana-status-table status-report widefat" cellspacing="0">
+				<thead>
+					<tr>
+						<th colspan="2" data-export-label="Server Environment"><?php esc_html_e( 'Server environment', '0-day-analytics' ); ?></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td data-export-label="Server Info"><?php esc_html_e( 'Server info', '0-day-analytics' ); ?>:</td>
+						<td><?php echo esc_html( $environment['server_info'] ); ?></td>
+					</tr>
+					<tr>
+						<td data-export-label="PHP Version"><?php esc_html_e( 'PHP version', '0-day-analytics' ); ?>:</td>
+						<td>
+						<?php
+							$php_version_requirements = '5.3';
+
+						if ( version_compare( $environment['php_version'], $php_version_requirements, '<' ) ) {
+							/* translators: 1: current PHP version, 2: recommended minimum PHP version. */
+							$php_msg = sprintf( esc_html__( '%1$s - We recommend a minimum PHP version of %2$s.', '0-day-analytics' ), esc_html( $environment['php_version'] ), esc_html( $php_version_requirements ) );
+							echo wp_kses( '<mark class="error"><span class="dashicons dashicons-warning"></span> ' . $php_msg . '</mark>', array( 'mark' => array( 'class' => array() ), 'span' => array( 'class' => array() ) ) );
+						} else {
+							echo wp_kses( '<mark class="yes">' . esc_html( $environment['php_version'] ) . '</mark>', array( 'mark' => array( 'class' => array() ) ) );
+						}
+						?>
+						</td>
+					</tr>
+					<?php if ( function_exists( 'ini_get' ) ) : ?>
+						<tr>
+							<td data-export-label="PHP Post Max Size"><?php esc_html_e( 'PHP post max size', '0-day-analytics' ); ?>:</td>
+							<td><?php echo esc_html( size_format( $environment['php_post_max_size'] ) ); ?></td>
+						</tr>
+						<tr>
+							<td data-export-label="PHP Execution Time Limit"><?php esc_html_e( 'PHP time limit', '0-day-analytics' ); ?>:</td>
+							<td>
+								<?php
+
+								if ( 120 > $environment['php_max_execution_time'] && 0 !== $environment['php_max_execution_time'] ) {
+									/* translators: 1: current max execution time, 2: recommended execution time. */
+									$time_msg = sprintf( esc_html__( '%1$s - We recommend setting max execution time to at least %2$s.', '0-day-analytics' ), esc_html( (string) $environment['php_max_execution_time'] ), esc_html( '120' ) );
+									echo wp_kses( '<mark class="error"><span class="dashicons dashicons-warning"></span> ' . $time_msg . '</mark>', array( 'mark' => array( 'class' => array() ), 'span' => array( 'class' => array() ) ) );
+								} else {
+									echo esc_html( (string) $environment['php_max_execution_time'] );
+								}
+								?>
+							</td>
+						</tr>
+						<tr>
+							<td data-export-label="PHP Max Input Vars"><?php esc_html_e( 'PHP max input vars', '0-day-analytics' ); ?>:</td>
+							<td>
+								<?php
+								if ( $environment['php_max_input_vars'] < 3000 ) {
+									/* translators: 1: current max input vars value, 2: recommended value. */
+									$input_msg = sprintf( esc_html__( '%1$s - Recommended Value: %2$s. Max input vars limitation will truncate POST data such as menus.', '0-day-analytics' ), esc_html( (string) $environment['php_max_input_vars'] ), esc_html( '3000' ) );
+									echo wp_kses( '<mark class="error"><span class="dashicons dashicons-warning"></span> ' . $input_msg . '</mark>', array( 'mark' => array( 'class' => array() ), 'span' => array( 'class' => array() ) ) );
+								} else {
+									echo wp_kses( '<mark class="yes">' . esc_html( (string) $environment['php_max_input_vars'] ) . '</mark>', array( 'mark' => array( 'class' => array() ) ) );
+								}
+								?>
+							</td>
+						</tr>
+						<tr>
+							<td data-export-label="cURL Version"><?php esc_html_e( 'cURL version', '0-day-analytics' ); ?>:</td>
+							<td><?php echo esc_html( $environment['curl_version'] ); ?></td>
+						</tr>
+						<tr>
+							<td data-export-label="SUHOSIN Installed"><?php esc_html_e( 'SUHOSIN installed', '0-day-analytics' ); ?>:</td>
+							<td><?php echo ( $environment['suhosin_installed'] ) ? '<span class="dashicons dashicons-yes"></span> ' . esc_html__( 'You have to increase the suhosin.post.max_vars and suhosin.request.max_vars parameters to 2000 or more.', '0-day-analytics' ) : '&ndash;'; ?></td>
+						</tr>
+						<?php
+					endif;
+
+					if ( $wpdb->use_mysqli && \function_exists( 'mysqli_get_server_info' ) ) {
+
+						if ( empty( $wpdb->is_mysql ) || ! $wpdb->use_mysqli ) {
+							$ver = array(
+								'string' => '',
+								'number' => '',
+							);
+						}
+
+						$server_info = \mysqli_get_server_info( $wpdb->dbh ); // phpcs:ignore WordPress.DB.RestrictedFunctions.mysql_mysqli_get_server_info
+
+						$ver = array(
+							'string' => $server_info,
+							'number' => preg_replace( '/([^\d.]+).*/', '', $server_info ),
+						);
+
+						$ver = $ver['number'];
+					} else {
+						$ver = 0;
+					}
+					if ( ! empty( $wpdb->is_mysql ) && ! stristr( $ver, 'MariaDB' ) ) :
+						?>
+						<tr>
+							<td data-export-label="MySQL Version"><?php esc_html_e( 'MySQL version', '0-day-analytics' ); ?>:</td>
+							<td>
+								<?php
+								$mysql_version_requirements = '5.0';
+
+								if ( version_compare( $environment['mysql_version'], $mysql_version_requirements, '<' ) ) {
+									/* translators: 1: current MySQL version, 2: recommended minimum MySQL version. */
+									$mysql_msg = sprintf( esc_html__( '%1$s - WordPress recommends a minimum MySQL version of %2$s. See: WordPress requirements', '0-day-analytics' ), esc_html( $environment['mysql_version'] ), esc_html( $mysql_version_requirements ) );
+									$mysql_link = '<a href="https://wordpress.org/about/requirements/" target="_blank" rel="noopener">' . esc_html__( 'Learn more', '0-day-analytics' ) . '</a>';
+									echo wp_kses( '<mark class="error"><span class="dashicons dashicons-warning"></span> ' . $mysql_msg . ' ' . $mysql_link . '</mark>', array( 'mark' => array( 'class' => array() ), 'span' => array( 'class' => array() ), 'a' => array( 'href' => array(), 'target' => array(), 'rel' => array() ) ) );
+								} else {
+									echo wp_kses( '<mark class="yes">' . esc_html( $environment['mysql_version'] ) . '</mark>', array( 'mark' => array( 'class' => array() ) ) );
+								}
+								?>
+							</td>
+						</tr>
+					<?php endif; ?>
+					<tr>
+						<td data-export-label="Max Upload Size"><?php esc_html_e( 'Max upload size', '0-day-analytics' ); ?>:</td>
+						<td><?php echo esc_html( size_format( (int) $environment['max_upload_size'] ) ); ?></td>
+					</tr>
+					<tr>
+						<td data-export-label="fsockopen/cURL"><?php esc_html_e( 'fsockopen/cURL', '0-day-analytics' ); ?>:</td>
+						<td>
+						<?php
+						if ( $environment['fsockopen_or_curl_enabled'] ) {
+							echo '<mark class="yes"><span class="dashicons dashicons-yes"></span></mark>';
+						} else {
+							echo '<mark class="error"><span class="dashicons dashicons-warning"></span> ' . esc_html__( 'Your server does not have fsockopen or cURL enabled. Contact your hosting provider.', '0-day-analytics' ) . '</mark>';
+						}
+						?>
+						</td>
+					</tr>
+					<tr>
+						<td data-export-label="Multibyte String"><?php esc_html_e( 'Multibyte string', '0-day-analytics' ); ?>:</td>
+						<td>
+						<?php
+						if ( $environment['mbstring_enabled'] ) {
+							echo '<mark class="yes"><span class="dashicons dashicons-yes"></span></mark>';
+						} else {
+							echo '<mark class="error"><span class="dashicons dashicons-warning"></span> ' . esc_html__( 'Your server does not support the mbstring functions - this is required for better character encoding. Some fallbacks will be used instead for it.', '0-day-analytics' ) . '</mark>';
+						}
+						?>
+						</td>
+					</tr>
+					<tr>
+						<td data-export-label="XMLReader"><?php esc_html_e( 'XMLReader', '0-day-analytics' ); ?>:</td>
+						<td>
+						<?php
+						if ( $environment['xmlreader_enabled'] ) {
+							echo '<mark class="yes"><span class="dashicons dashicons-yes"></span></mark>';
+						} else {
+							echo '<mark class="error"><span class="dashicons dashicons-warning"></span> ' . esc_html__( 'The XMLReader PHP module/extension is missing. Please contact your hosting company and ask them to install that for you.', '0-day-analytics' ) . '</mark>';
+						}
+						?>
+						</td>
+					</tr>
+					<tr>
+						<td data-export-label="DefinedConstants"><?php esc_html_e( 'Defined Constants', '0-day-analytics' ); ?>:</td>
+						<td>
+							<details>
+								<summary><?php echo esc_html__( 'Click here to expand the whole info.', '0-day-analytics' ); ?></summary>
+								<pre>
+								<?php
+								// Only show a filtered subset of constants to avoid leaking sensitive data like keys/salts.
+								if ( \current_user_can( 'manage_options' ) ) {
+									$all_constants = \get_defined_constants( true );
+									// Whitelist some non-sensitive groups if they exist.
+									$allowed_groups = array( 'Core', 'standard' );
+									$filtered = array();
+									foreach ( $allowed_groups as $group ) {
+										if ( isset( $all_constants[ $group ] ) ) {
+											$filtered[ $group ] = $all_constants[ $group ];
+										}
+									}
+									// Encode for safe output.
+									echo esc_html( wp_json_encode( $filtered, JSON_PRETTY_PRINT ) );
+								} else {
+									echo esc_html__( 'Constant list hidden for security. (Requires manage_options)', '0-day-analytics' );
+								}
+								?>
+								</pre>
+							</details>
+						</td>
+					</tr>
+					<?php
+					/*
+					<tr>
+						<td data-export-label="Remote Post"><?php esc_html_e( 'Remote post', '0-day-analytics' ); ?>:</td>
+						<td>
+						<?php
+						if ( $environment['remote_post_successful'] ) {
+							echo '<mark class="yes"><span class="dashicons dashicons-yes"></span></mark>';
+						} else {
+							echo '<mark class="error"><span class="dashicons dashicons-warning"></span> ' . esc_html__( 'wp_remote_post() failed. Contact your hosting provider.', '0-day-analytics' ) . ' ' . esc_html( $environment['remote_post_response'] ) . '</mark>';
+						}
+						?>
+						</td>
+					</tr>
+					<tr>
+						<td data-export-label="Remote Get"><?php esc_html_e( 'Remote get', '0-day-analytics' ); ?>:</td>
+						<td>
+						<?php
+						if ( $environment['remote_get_successful'] ) {
+							echo '<mark class="yes"><span class="dashicons dashicons-yes"></span></mark>';
+						} else {
+							echo '<mark class="error"><span class="dashicons dashicons-warning"></span> ' . esc_html__( 'wp_remote_get() failed. Contact your hosting provider.', '0-day-analytics' ) . ' ' . esc_html( $environment['remote_get_response'] ) . '</mark>';
+						}
+						?>
+						</td>
+					</tr>
+					*/
+					?>
+				</tbody>
+			</table>
+			<?php
+		}
+
+		/**
+		 * _print_theme_info
+		 *
+		 * @since 1.1.0
+		 */
+		public static function print_theme_info() {
+			// Capability gate: only admins (or users with manage_options) can view detailed theme info.
+			if ( ! \current_user_can( 'manage_options' ) ) {
+				return;
+			}
+			$theme = self::_theme_info();
+			?>
+
+			<table class="aadvana-status-table status-report widefat" cellspacing="0">
+				<thead>
+					<tr>
+						<th colspan="2" data-export-label="Theme"><?php esc_html_e( 'Theme', '0-day-analytics' ); ?></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td data-export-label="Name"><?php esc_html_e( 'Name', '0-day-analytics' ); ?>:</td>
+						<td><?php echo esc_html( $theme['parent_name'] ); ?></td>
+					</tr>
+					<tr>
+						<td data-export-label="Version"><?php esc_html_e( 'Version', '0-day-analytics' ); ?>:</td>
+						<td>
+						<?php
+							echo esc_html( (string) $theme['parent_version'] );
+
+							// translators: %s is the latest available version for the theme.
+							if ( ! $theme['is_child_theme'] && version_compare( (string) $theme['parent_version'], (string) $theme['version_latest'], '<' ) ) {
+								$latest = esc_html( (string) $theme['version_latest'] );
+								$notice = '<strong style="color:red;">' . sprintf( esc_html__( '%s is available', '0-day-analytics' ), $latest ) . '</strong>';
+								echo wp_kses( ' &ndash; ' . $notice, array( 'strong' => array( 'style' => array() ) ) );
+							}
+						?>
+						</td>
+					</tr>
+					<tr>
+						<td data-export-label="Author URL"><?php esc_html_e( 'Author URL', '0-day-analytics' ); ?>:</td>
+						<td><?php echo esc_html( $theme['parent_author_url'] ); ?></td>
+					</tr>
+					<tr>
+						<td data-export-label="Child Theme"><?php esc_html_e( 'Child theme', '0-day-analytics' ); ?>:</td>
+						<td>
+						<?php
+							echo ( $theme['is_child_theme'] ) ? '<mark class="yes"><span class="dashicons dashicons-yes"></span></mark>' : '&ndash;';
+						?>
+						</td>
+					</tr>
+					<?php
+					if ( $theme['is_child_theme'] ) :
+						?>
+					<tr>
+						<td data-export-label="Parent Theme Name"><?php esc_html_e( 'Parent theme name', '0-day-analytics' ); ?>:</td>
+						<td><?php echo esc_html( $theme['parent_name'] ); ?></td>
+					</tr>
+					<tr>
+						<td data-export-label="Parent Theme Version"><?php esc_html_e( 'Parent theme version', '0-day-analytics' ); ?>:</td>
+						<td>
+						<?php
+							echo esc_html( (string) $theme['parent_version'] );
+							// translators: %s is the latest available version for the parent theme.
+							if ( version_compare( (string) $theme['parent_version'], (string) $theme['version_latest'], '<' ) ) {
+								$latest = esc_html( (string) $theme['version_latest'] );
+								$notice = '<strong style="color:red;">' . sprintf( esc_html__( '%s is available', '0-day-analytics' ), $latest ) . '</strong>';
+								echo wp_kses( ' &ndash; ' . $notice, array( 'strong' => array( 'style' => array() ) ) );
+							}
+						?>
+						</td>
+					</tr>
+					<tr>
+						<td data-export-label="Parent Theme Author URL"><?php esc_html_e( 'Parent theme author URL', '0-day-analytics' ); ?>:</td>
+						<td><?php echo esc_html( $theme['parent_author_url'] ); ?></td>
+					</tr>
+					<?php endif ?>
+				</tbody>
+			</table>
+
+			<?php
+		}
+
+		/**
+		 * _custom_post_types_info
+		 *
+		 * @since 1.1.0
+		 */
+		private static function _custom_post_types_info() {
+
+			$post_types = get_post_types(
+				array(
+					'public'   => true,
+					'_builtin' => false,
+				),
+				'objects'
+			);
+
+			if ( empty( $post_types ) ) {
+				return;
+			}
+
+			?>
+
+			<table class="aadvana-status-table status-report widefat" cellspacing="0">
+				<thead>
+					<tr>
+						<th colspan="2" data-export-label="Custom Post Types"><?php esc_html_e( 'Custom Post Types', '0-day-analytics' ); ?></th>
+					</tr>
+				</thead>
+				<tbody>
+
+				<?php	foreach ( $post_types as $data ) { ?>
+					<tr id="<?php echo $data->name; ?>">
+						<td><?php echo $data->label; ?></td>
+						<td><?php echo $data->exclude_from_search ? '<span style="padding: 3px 8px; background: red; color: #fff;">' . esc_html__( 'Private', '0-day-analytics' ) . '</span>' : esc_html__( 'Public', '0-day-analytics' ); ?></td>
+					</tr>
+				<?php } ?>
+
+				</tbody>
+			</table>
+
+			<?php
+		}
+
+		/**
+		 * _print_plugins_info
+		 *
+		 * @since 1.1.0
+		 */
+		public static function print_plugins_info() {
+			// Capability gate: only admins (or users with manage_options) can view plugin details.
+			if ( ! \current_user_can( 'manage_options' ) ) {
+				return;
+			}
+			$active_plugins = self::_get_active_plugins();
+
+			if ( empty( $active_plugins ) ) {
+				return;
+			}
+
+			?>
+
+			<table class="aadvana-status-table status-report widefat" cellspacing="0">
+				<thead>
+					<tr>
+						<th colspan="2" data-export-label="Active Plugins (<?php echo count( $active_plugins ); ?>)"><?php esc_html_e( 'Active plugins', '0-day-analytics' ); ?> (<?php echo count( $active_plugins ); ?>)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<?php
+					foreach ( $active_plugins as $plugin ) {
+						if ( ! empty( $plugin['name'] ) ) {
+
+							$plugin_name_text = esc_html( $plugin['name'] );
+
+							// Link the plugin name to the plugin url if available.
+							$plugin_name_html = $plugin_name_text;
+							if ( ! empty( $plugin['url'] ) ) {
+								$plugin_name_html = '<a href="' . esc_url( $plugin['url'] ) . '" target="_blank" rel="noopener">' . $plugin_name_text . '</a>';
+							}
+
+							$version_string = '';
+							$network_string = '';
+
+							if ( ! empty( $plugin['version_latest'] ) && version_compare( $plugin['version_latest'], $plugin['version'], '>' ) ) {
+								/* translators: %s is the latest available version for the plugin. */
+								$latest_version  = esc_html( (string) $plugin['version_latest'] );
+								$version_string  = ' &ndash; <strong style="color:red;">' . sprintf( esc_html__( '%s is available', '0-day-analytics' ), $latest_version ) . '</strong>';
+							}
+
+							if ( true === $plugin['network_activated'] ) {
+								$network_string = ' &ndash; <strong>' . esc_html__( '(Network enabled in plugin\'s meta)', '0-day-analytics' ) . '</strong>';
+							}
+
+							?>
+							<tr>
+								<td><?php echo wp_kses( $plugin_name_html, array( 'a' => array( 'href' => array(), 'target' => array(), 'rel' => array() ) ) ); ?></td>
+								<td>
+								<?php
+									/* translators: %s is the plugin author. */
+									printf( esc_html__( 'by %s', '0-day-analytics' ), esc_html( $plugin['author_name'] ) );
+									echo ' &ndash; ' . esc_html( (string) $plugin['version'] ) . wp_kses_post( $version_string ) . wp_kses_post( $network_string );
+								?>
+								</td>
+							</tr>
+							<?php
+						}
+					}
+					?>
+				</tbody>
+			</table>
+
+			<?php
+		}
+
+		/**
+		 * _print_report
+		 *
+		 * @since 1.1.0
+		 */
+		public static function print_report() {
+
+			?>
+
+			<table class="aadvana-status-table widefat" cellspacing="0">
+				<tbody>
+				<tr>
+					<td>
+						<p><?php esc_html_e( 'Please copy and paste this information in your ticket when contacting support:', '0-day-analytics' ); ?> </p>
+						<a id="get-debug-report" href="#" class="button-primary"><?php esc_html_e( 'Get system report', '0-day-analytics' ); ?></a>
+						<div id="aadvana-debug-report">
+							<textarea readonly="readonly"></textarea>
+						</div>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+
+			<script type="text/javascript">
+				jQuery( '#get-debug-report' ).click(
+					function() {
+						var report = '';
+
+						jQuery( '.status-report thead, .status-report tbody' ).each(
+							function() {
+								if ( jQuery( this ).is( 'thead' ) ) {
+									var label = jQuery( this ).find( 'th:eq(0)' ).data( 'export-label' ) || jQuery( this ).text();
+									report = report + '\n### ' + jQuery.trim( label ) + ' ###\n\n';
+								} else {
+									jQuery( 'tr', jQuery( this ) ).each( function() {
+										var label       = jQuery( this ).find( 'td:eq(0)' ).data( 'export-label' ) || jQuery( this ).find( 'td:eq(0)' ).text();
+										var the_name    = jQuery.trim( label ).replace( /(<([^>]+)>)/ig, '' ); // Remove HTML.
+
+										// Find value
+										var $value_html = jQuery( this ).find( 'td:eq(1)' ).clone();
+										$value_html.find( '.private' ).remove();
+										$value_html.find( '.dashicons-yes' ).replaceWith( '&#10004;' );
+										$value_html.find( '.dashicons-no-alt, .dashicons-warning' ).replaceWith( '&#10060;' );
+
+										// Format value
+										var the_value   = jQuery.trim( $value_html.text() );
+										var value_array = the_value.split( ', ' );
+
+										if ( value_array.length > 1 ) {
+											// If value have a list of plugins ','.
+											// Split to add new line.
+											var temp_line ='';
+											jQuery.each( value_array, function( key, line ) {
+												temp_line = temp_line + line + '\n';
+											});
+
+											the_value = temp_line;
+										}
+
+										report = report + '' + the_name + ': ' + the_value + '\n';
+									});
+								}
+							}
+						);
+
+						try {
+							jQuery( this ).hide();
+							jQuery( "#aadvana-debug-report" ).slideDown();
+							jQuery( "#aadvana-debug-report textarea" ).val( report ).focus().select();
+
+							return false;
+						} catch ( e ) {
+							console.log( e );
+						}
+
+						return false;
+					}
+				);
+			</script>
+			<?php
+		}
+
+		/**
+		 * Scan the template files
+		 *
+		 * @since 1.1.0
+		 */
+		public static function scan_template_files( $template_path ) {
+			$files  = scandir( $template_path );
+			$result = array();
+			if ( $files ) {
+				foreach ( $files as $key => $value ) {
+					if ( ! in_array( $value, array( '.', '..' ) ) ) {
+						if ( is_dir( $template_path . DIRECTORY_SEPARATOR . $value ) ) {
+							$sub_files = self::scan_template_files( $template_path . DIRECTORY_SEPARATOR . $value );
+							foreach ( $sub_files as $sub_file ) {
+								$result[] = $value . DIRECTORY_SEPARATOR . $sub_file;
+							}
+						} else {
+							$result[] = $value;
+						}
+					}
+				}
+			}
+
+			return $result;
+		}
+
+		/**
+		 * Retrieve metadata from a file. Based on WP Core's get_file_data function
+		 *
+		 * @since 1.1.0
+		 */
+		public static function get_template_version( $file ) {
+			// We don't need to write to the file, so just open for reading.
+			$fp = fopen( $file, 'r' );
+
+			// Pull only the first 8kiB of the file in.
+			$file_data = fread( $fp, 8192 );
+
+			// PHP will close file handle, but we are good citizens.
+			fclose( $fp );
+
+			// Make sure we catch CR-only line endings.
+			$file_data = str_replace( "\r", "\n", $file_data );
+			$version   = '';
+
+			if ( preg_match( '/^[ \t\/*#@]*' . preg_quote( '@version', '/' ) . '(.*)$/mi', $file_data, $match ) && $match[1] ) {
+				$version = _cleanup_header_comment( $match[1] );
+			}
+
+			return $version;
+		}
+	}
+}

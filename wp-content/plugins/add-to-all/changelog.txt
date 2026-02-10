@@ -1,0 +1,163 @@
+== Changelog archive ==
+
+This is an archive of older changelog entries. Most recent entries are maintained in readme.txt
+
+= 2.0.1 =
+
+Release post: [https://webberzone.com/announcements/snippetz-v2-0-0/](https://webberzone.com/announcements/snippetz-v2-0-0/)
+
+* Bug fixes:
+	* Fixed "Exclude display on these post IDs"
+	* Fixed link to Settings page
+	* Fixed Content addition on Post and Pages only
+	* Admin scripts were incorrectly added on all "Add New" post screens
+
+= 2.0.0 =
+
+*Add to All* plugin has now been rebranded to *WebberZone Snippetz*. The plugin code has also been rewritten to use OOP.
+
+* New feature:
+	* Add Meta verification. Read how to verify your domain in the [Meta Business Help Centre](https://www.facebook.com/business/help/321167023127050)
+	* Snippet priority: New global option to set the priority of when snippets are added to the content. Additionally, the snippet screen allows settings a priority amongst other snippets that add to the content
+	* Snippet Type: New dropdown to select if the snippet is a CSS, JS or HTML snippet. If you select JS or CSS, then the `script` and `style` tags are automatically added
+	* New option to add content to the `wp_body_open()` tag
+
+* Enhancements:
+	* Google Analytics code has been updated to GA4. Please update your [Google Tag ID](https://support.google.com/analytics/answer/9539598?hl=en)
+	* *uninstall.php* now uses `get_sites()` function
+	* Settings menu link is under Snippetz menu if enabled and under Settings menu when disabled
+
+* Deprecated:
+	* Support for Tynt has been removed. If you are using Tynt, you will need to directly use the full code in the *Footer* tab.
+
+= 1.8.0 =
+
+Release post: [https://webberzone.com/announcements/add-to-all-v1-8-0/](https://webberzone.com/announcements/add-to-all-v1-8-0/)
+
+* New feature:
+	* New constant `ATA_DISABLE_SNIPPETS` can be added to your wp-config.php to disable snippets. Perfect for WordPress multisite
+	* New placeholder `%updated_time%` to display the updated date
+	* New feature to display the estimated reading time. You can use `%reading_time%` in the Settings page. Alternatively use the shortcode `[ata_reading_time]` to display the reading time
+
+* Enhancements/modifications:
+	* Upgraded Settings_API to v2
+
+= 1.7.3 =
+
+Release post: [https://webberzone.com/announcements/add-to-all-v1-7-0/](https://webberzone.com/announcements/add-to-all-v1-7-0/)
+
+* Bug fixes:
+	* Feed copyright placeholders were not processed
+
+= 1.7.2 =
+
+* Bug fixes:
+	* Fixes PHP error introduced in v1.7.1
+
+= 1.7.1 =
+
+Release post: [https://webberzone.com/announcements/add-to-all-v1-7-0/](https://webberzone.com/announcements/add-to-all-v1-7-0/)
+
+* Bug fixes:
+	* Process shortcodes didn't work
+	* Snippets HTML was added into content were added even when no snippet was found
+
+= 1.7.0 =
+
+Release post: [https://webberzone.com/announcements/add-to-all-v1-7-0/](https://webberzone.com/announcements/add-to-all-v1-7-0/)
+
+* Features:
+	* New Settings API class to control the plugins settings
+	* New Snippets Manager - create custom snippets that can be added to Header, Footer and Content based on inclusion criteria= 1.6.0 =
+
+Release post: [https://webberzone.com/announcements/add-to-all-v1-6-0/](https://webberzone.com/announcements/add-to-all-v1-6-0/)
+
+* Features:
+	* Added CodeMirror highlighting for the HTML and CSS fields in the settings page
+
+= 1.5.0 =
+
+Release post: [https://ajaydsouza.com/add-to-all-v1-5-0/](https://ajaydsouza.com/add-to-all-v1-5-0/)
+
+* Features:
+	* New options for displaying content before and after on posts and pages only
+
+* Bug fixes:
+	* Delete first year transient on uninstall
+
+= 1.4.0 =
+
+Release post: [https://ajaydsouza.com/add-to-all-v1-4-0/](https://ajaydsouza.com/add-to-all-v1-4-0/)
+
+* Features:
+	* Deleting the plugin on WordPress Multisite will remove the settings from all blogs
+	* Use `%home_url%`, `%year%`, `%month%`, `%date%` and `%first_year%` to display the URL for a given site, current year, current month (text), current date and year of first blog post respectively. You can add more replacement terms by creating a function filtering `ata_placeholders`
+
+* Modifications:
+	* Deprecated `ald_ata_header()`, `ald_ata_footer()`, `ald_ata_rss()`
+
+* Bug fixes:
+	* Fixed bug with displaying the credit line in feed
+
+= 1.3.0 =
+
+Release post: [https://ajaydsouza.com/add-to-all-v1-3-0/](https://ajaydsouza.com/add-to-all-v1-3-0/)
+
+* Features:
+	* New option to enable processing of shortcode in content, footer or feed HTML fields
+	* New option to exclude display of content HTML fields on certain posts
+
+* Enhancements:
+	* New functions and filters for content, feed, header and footer
+	* Admin interface: switch between tabs without reloading
+	* Google Analytics now use gtag.js implementation instead of analytics.js
+	* Google Analytics: new option to anonymize IPs
+
+= 1.2.2 =
+* Bug fix:
+	* Disable aggressive textarea filter in Settings page
+
+= 1.2.1 =
+* Enhancements:
+	* Admin settings page will allow more attributes and tags for `script`, `style` and `link` allowing you to use favicons, async, etc.
+
+= 1.2.0 =
+* Features:
+	* Settings now uses the WordPress Settings API. Verify your site options by visiting the WebberZone Snippetz settings page
+	* Site verification for Google, Bing and Pinterest
+
+* Enhancements:
+	* Google Analytics code now supports cross domain tracking using the Linker Plugin
+	* Updated code for Statcounter and Tynt
+
+* Deprecated:
+	* Removed support for Kontera. If you'd like to continue using Kontera, please get the code from [the Kontera setup page](https://publishers.kontera.com/main/tag) and then add this under <strong>Footer settings</strong>
+
+= 1.1 =
+* New: Support for Google's Universal Analytics code
+* New: Customize the text used when linking to the title in the blog feed. You can use `%title%` to add a link to the post, `%date%` and `%time%` to display the date and time of the post respectively
+* Modified: Plugin code has been completely reformatted for WordPress PHP standards
+* Modified: Localization name from `ata` and `add-to-all`
+
+= 1.0.4 =
+* Added: Support for Tynt
+* Modified: Removed Wibiya
+* New: Admin interface has been totally revamped to fit the look and feel of your WordPress Dashboard. Check out the <a href="http://wordpress.org/plugins/add-to-all/screenshots/">new screenshots</a>
+* Fixed: Potential cross site request forgery in plugin settings page
+
+= 1.0.3 =
+* Added: new section for adding text / HTML to content of a post
+* Added: Enhanced link tracking for Google Analytics. <a href="https://support.google.com/analytics/bin/answer.py?hl=en-GB&utm_id=ad&answer=2558867">View explanation</a>
+* Fixed: After content settings in feeds were not working
+* Modified: Feed settings now work correctly in feed excerpts
+
+= 1.0.2 =
+* Added: support for Wibiya
+* Modified: Code changes to fix some language and PHP warning issues
+
+= 1.0.1 =
+* Fixed: Bug that stopped displaying content when plugin was activated
+
+= 1.0 =
+* Release
+

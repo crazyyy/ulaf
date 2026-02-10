@@ -1,0 +1,1605 @@
+# Copyright (C) 2025 Rodolfo Buaiz
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Admin Tweaks 3.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/trunk\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-01-30T21:45:03+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: mtt\n"
+
+#. Plugin Name of the plugin
+#: many-tips-together.php
+msgid "Admin Tweaks"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: many-tips-together.php
+msgid "https://wordpress.org/plugins/many-tips-together"
+msgstr ""
+
+#. Description of the plugin
+#: many-tips-together.php
+msgid "Tweak, style, remove and modify several aspects of your WordPress administrative interface."
+msgstr ""
+
+#. Author of the plugin
+#: many-tips-together.php
+msgid "Rodolfo Buaiz"
+msgstr ""
+
+#. Author URI of the plugin
+#: many-tips-together.php
+msgid "https://brasofilo.com/"
+msgstr ""
+
+#: inc/AdminTweaks.php:595
+msgid "Twitter"
+msgstr ""
+
+#: inc/AdminTweaks.php:596
+msgid "Linkedin"
+msgstr ""
+
+#: inc/AdminTweaks.php:597
+msgid "TikTok"
+msgstr ""
+
+#: inc/AdminTweaks.php:598
+msgid "YouTube"
+msgstr ""
+
+#: inc/AdminTweaks.php:599
+msgid "Facebook"
+msgstr ""
+
+#: inc/AdminTweaks.php:600
+msgid "Instagram"
+msgstr ""
+
+#: inc/AdminTweaks.php:601
+msgid "WhatsApp"
+msgstr ""
+
+#: inc/AdminTweaks.php:602
+msgid "Telegram"
+msgstr ""
+
+#: inc/AdminTweaks.php:603
+msgid "Github"
+msgstr ""
+
+#: inc/AdminTweaks.php:604
+msgid "Stack Exchange"
+msgstr ""
+
+#: inc/config.php:79
+msgid "Save Changes"
+msgstr ""
+
+#: inc/config.php:80
+msgid "Reset Section"
+msgstr ""
+
+#: inc/config.php:81
+msgid "Reset All"
+msgstr ""
+
+#: inc/HooksDashboardWidgets.php:57
+msgid "Root directories"
+msgstr ""
+
+#: inc/HooksDashboardWidgets.php:58
+msgid "Wp-content directories"
+msgstr ""
+
+#: inc/HooksDashboardWidgets.php:157
+msgid "Clears both widgets caches"
+msgstr ""
+
+#: inc/HooksDashboardWidgets.php:157
+msgid "Clear widget cache"
+msgstr ""
+
+#: inc/HooksDashboardWidgets.php:193
+msgid "Total"
+msgstr ""
+
+#: inc/HooksListingDupesAndRevs.php:182
+#: inc/HooksListingDupesAndRevs.php:183
+msgid "Duplicate"
+msgstr ""
+
+#: inc/HooksListingDupesAndRevs.php:187
+msgid "Are you sure you want to delete the REVISIONS of the post %s?"
+msgstr ""
+
+#: inc/HooksListingDupesAndRevs.php:193
+msgid "Confirm delete of revisions?"
+msgstr ""
+
+#: inc/HooksListingDupesAndRevs.php:195
+#: inc/HooksListingDupesAndRevs.php:196
+msgid "Delete Revisions"
+msgstr ""
+
+#: inc/HooksListings.php:304
+msgid "Thumbnail"
+msgstr ""
+
+#: inc/HooksListings.php:340
+msgid "Featured"
+msgstr ""
+
+#: inc/HooksListings.php:350
+msgid "Attached"
+msgstr ""
+
+#: inc/HooksMaintenance.php:59
+msgid " | Maintenance Mode"
+msgstr ""
+
+#: inc/HooksMaintenance.php:79
+#: inc/sections/maintenance.php:61
+msgid "Site in maintenance"
+msgstr ""
+
+#: inc/HooksMediaColumns.php:99
+msgid "Dimensions"
+msgstr ""
+
+#: inc/HooksPlugins.php:136
+#: inc/HooksPluginsExtras.php:202
+msgid "Show descriptions"
+msgstr ""
+
+#: inc/HooksPlugins.php:137
+#: inc/HooksPluginsExtras.php:201
+msgid "Hide descriptions"
+msgstr ""
+
+#: inc/HooksPlugins.php:138
+#: inc/HooksPluginsExtras.php:203
+msgid "Description"
+msgstr ""
+
+#: inc/HooksPlugins.php:139
+#: inc/HooksPluginsExtras.php:204
+msgid "Show all"
+msgstr ""
+
+#: inc/HooksPlugins.php:140
+#: inc/HooksPluginsExtras.php:205
+msgid "Show active"
+msgstr ""
+
+#: inc/HooksPlugins.php:141
+#: inc/HooksPluginsExtras.php:206
+msgid "Active"
+msgstr ""
+
+#: inc/HooksPlugins.php:142
+#: inc/HooksPluginsExtras.php:207
+msgid "Show inactive"
+msgstr ""
+
+#: inc/HooksPlugins.php:143
+#: inc/HooksPluginsExtras.php:208
+msgid "Inactive"
+msgstr ""
+
+#: inc/HooksPlugins.php:144
+#: inc/HooksPluginsExtras.php:209
+msgid "filter by keyword"
+msgstr ""
+
+#: inc/HooksPlugins.php:145
+#: inc/HooksPluginsExtras.php:210
+#: inc/HooksUsers.php:97
+msgid "enter a string to filter the list"
+msgstr ""
+
+#: inc/HooksPlugins.php:153
+msgid "settings"
+msgstr ""
+
+#: inc/HooksPlugins.php:157
+msgid "UPDATES NOT SHOWING for disabled plugins"
+msgstr ""
+
+#: inc/HooksPlugins.php:160
+msgid "UPDATES NOT SHOWING for all plugins"
+msgstr ""
+
+#: inc/HooksPlugins.php:217
+msgid "Last Updated"
+msgstr ""
+
+#: inc/HooksPlugins.php:259
+msgid "by selected author(s)"
+msgstr ""
+
+#: inc/HooksPluginsExtras.php:418
+msgid "All Snippets"
+msgstr ""
+
+#: inc/HooksPluginsExtras.php:422
+msgid "Settings"
+msgstr ""
+
+#: inc/HooksUsers.php:96
+msgid "filter by user, email, role..."
+msgstr ""
+
+#: inc/sections/adminbar.php:14
+msgid "Admin Bar"
+msgstr ""
+
+#: inc/sections/adminbar.php:21
+msgid "Remove default items"
+msgstr ""
+
+#: inc/sections/adminbar.php:32
+msgid "Add Site Name with Icon"
+msgstr ""
+
+#: inc/sections/adminbar.php:33
+msgid "Add a custom link with title and icon"
+msgstr ""
+
+#: inc/sections/adminbar.php:35
+#: inc/sections/adminbar.php:67
+#: inc/sections/adminbar.php:75
+#: inc/sections/adminbar.php:102
+#: inc/sections/adminbar.php:141
+#: inc/sections/adminbar.php:149
+#: inc/sections/adminmenu.php:49
+#: inc/sections/adminmenu.php:61
+#: inc/sections/adminmenu.php:95
+#: inc/sections/adminmenu.php:127
+#: inc/sections/adminmenu.php:136
+#: inc/sections/appearance.php:34
+#: inc/sections/appearance.php:43
+#: inc/sections/appearance.php:55
+#: inc/sections/appearance.php:83
+#: inc/sections/appearance.php:98
+#: inc/sections/appearance.php:120
+#: inc/sections/appearance.php:129
+#: inc/sections/dashboard.php:83
+#: inc/sections/dashboard.php:125
+#: inc/sections/general.php:36
+#: inc/sections/general.php:48
+#: inc/sections/general.php:61
+#: inc/sections/general.php:70
+#: inc/sections/general.php:79
+#: inc/sections/general.php:93
+#: inc/sections/general.php:130
+#: inc/sections/general.php:138
+#: inc/sections/general.php:147
+#: inc/sections/general.php:163
+#: inc/sections/general.php:178
+#: inc/sections/general.php:200
+#: inc/sections/general.php:244
+#: inc/sections/general.php:301
+#: inc/sections/listings.php:31
+#: inc/sections/listings.php:43
+#: inc/sections/listings.php:62
+#: inc/sections/listings.php:82
+#: inc/sections/listings.php:113
+#: inc/sections/listings.php:121
+#: inc/sections/listings.php:139
+#: inc/sections/listings.php:168
+#: inc/sections/login.php:17
+#: inc/sections/login.php:41
+#: inc/sections/login.php:57
+#: inc/sections/login.php:81
+#: inc/sections/login.php:90
+#: inc/sections/login.php:98
+#: inc/sections/login.php:106
+#: inc/sections/login.php:175
+#: inc/sections/login.php:263
+#: inc/sections/login.php:278
+#: inc/sections/login.php:297
+#: inc/sections/maintenance.php:24
+#: inc/sections/maintenance.php:37
+#: inc/sections/media.php:30
+#: inc/sections/media.php:46
+#: inc/sections/media.php:61
+#: inc/sections/media.php:76
+#: inc/sections/media.php:104
+#: inc/sections/media.php:112
+#: inc/sections/media.php:122
+#: inc/sections/media.php:132
+#: inc/sections/media.php:144
+#: inc/sections/plugins.php:26
+#: inc/sections/plugins.php:52
+#: inc/sections/plugins.php:61
+#: inc/sections/plugins.php:94
+#: inc/sections/plugins.php:110
+#: inc/sections/plugins.php:118
+#: inc/sections/plugins.php:147
+#: inc/sections/plugins.php:160
+#: inc/sections/plugins.php:169
+#: inc/sections/plugins.php:178
+#: inc/sections/plugins.php:203
+#: inc/sections/plugins.php:225
+#: inc/sections/profile.php:32
+#: inc/sections/profile.php:40
+#: inc/sections/profile.php:56
+#: inc/sections/profile.php:122
+msgid "On"
+msgstr ""
+
+#: inc/sections/adminbar.php:36
+#: inc/sections/adminbar.php:68
+#: inc/sections/adminbar.php:76
+#: inc/sections/adminbar.php:103
+#: inc/sections/adminbar.php:142
+#: inc/sections/adminbar.php:150
+#: inc/sections/adminmenu.php:50
+#: inc/sections/adminmenu.php:62
+#: inc/sections/adminmenu.php:96
+#: inc/sections/adminmenu.php:128
+#: inc/sections/adminmenu.php:137
+#: inc/sections/appearance.php:35
+#: inc/sections/appearance.php:44
+#: inc/sections/appearance.php:56
+#: inc/sections/appearance.php:84
+#: inc/sections/appearance.php:99
+#: inc/sections/appearance.php:121
+#: inc/sections/appearance.php:130
+#: inc/sections/dashboard.php:84
+#: inc/sections/dashboard.php:126
+#: inc/sections/general.php:37
+#: inc/sections/general.php:49
+#: inc/sections/general.php:62
+#: inc/sections/general.php:71
+#: inc/sections/general.php:80
+#: inc/sections/general.php:94
+#: inc/sections/general.php:131
+#: inc/sections/general.php:139
+#: inc/sections/general.php:148
+#: inc/sections/general.php:164
+#: inc/sections/general.php:179
+#: inc/sections/general.php:201
+#: inc/sections/general.php:245
+#: inc/sections/general.php:302
+#: inc/sections/listings.php:32
+#: inc/sections/listings.php:44
+#: inc/sections/listings.php:63
+#: inc/sections/listings.php:83
+#: inc/sections/listings.php:114
+#: inc/sections/listings.php:122
+#: inc/sections/listings.php:140
+#: inc/sections/listings.php:169
+#: inc/sections/login.php:18
+#: inc/sections/login.php:42
+#: inc/sections/login.php:58
+#: inc/sections/login.php:82
+#: inc/sections/login.php:91
+#: inc/sections/login.php:99
+#: inc/sections/login.php:107
+#: inc/sections/login.php:176
+#: inc/sections/login.php:264
+#: inc/sections/login.php:279
+#: inc/sections/login.php:298
+#: inc/sections/maintenance.php:25
+#: inc/sections/maintenance.php:38
+#: inc/sections/media.php:31
+#: inc/sections/media.php:47
+#: inc/sections/media.php:62
+#: inc/sections/media.php:77
+#: inc/sections/media.php:105
+#: inc/sections/media.php:113
+#: inc/sections/media.php:123
+#: inc/sections/media.php:133
+#: inc/sections/media.php:145
+#: inc/sections/plugins.php:27
+#: inc/sections/plugins.php:53
+#: inc/sections/plugins.php:62
+#: inc/sections/plugins.php:95
+#: inc/sections/plugins.php:111
+#: inc/sections/plugins.php:119
+#: inc/sections/plugins.php:148
+#: inc/sections/plugins.php:161
+#: inc/sections/plugins.php:170
+#: inc/sections/plugins.php:179
+#: inc/sections/plugins.php:204
+#: inc/sections/plugins.php:226
+#: inc/sections/profile.php:33
+#: inc/sections/profile.php:41
+#: inc/sections/profile.php:57
+#: inc/sections/profile.php:123
+msgid "Off"
+msgstr ""
+
+#: inc/sections/adminbar.php:41
+#: inc/sections/dashboard.php:105
+#: inc/sections/general.php:254
+msgid "Title"
+msgstr ""
+
+#: inc/sections/adminbar.php:47
+msgid "Icon"
+msgstr ""
+
+#: inc/sections/adminbar.php:55
+msgid "URL"
+msgstr ""
+
+#: inc/sections/adminbar.php:57
+msgid "full URL with http://, leave empty for default (swap back and frontend)"
+msgstr ""
+
+#: inc/sections/adminbar.php:64
+msgid "Add Admin Tweaks shortcut"
+msgstr ""
+
+#: inc/sections/adminbar.php:65
+msgid "Useful when configuring this plugin"
+msgstr ""
+
+#: inc/sections/adminbar.php:73
+msgid "Remove or change \"Howdy\""
+msgstr ""
+
+#: inc/sections/adminbar.php:81
+msgid "Replace with"
+msgstr ""
+
+#: inc/sections/adminbar.php:82
+msgid "Leave empty for complete removal"
+msgstr ""
+
+#: inc/sections/adminbar.php:88
+msgid "Howdy in your language"
+msgstr ""
+
+#: inc/sections/adminbar.php:89
+msgid "Leave empty if WP is in English"
+msgstr ""
+
+#: inc/sections/adminbar.php:99
+msgid "Enable Custom Menu"
+msgstr ""
+
+#: inc/sections/adminbar.php:100
+msgid "Save options to configure the menu"
+msgstr ""
+
+#: inc/sections/adminbar.php:121
+msgid "Menu name"
+msgstr ""
+
+#: inc/sections/adminbar.php:126
+msgid "Menu link"
+msgstr ""
+
+#: inc/sections/adminbar.php:134
+msgid "Completely remove the Admin Bar"
+msgstr ""
+
+#: inc/sections/adminbar.php:136
+msgid "Remove from back and front end. Creates a \"Visit Site\" link in the Dashboard menu item.%s Tip via: %s"
+msgstr ""
+
+#: inc/sections/adminbar.php:147
+msgid "Disable Admin Bar for all users in Frontend"
+msgstr ""
+
+#: inc/sections/adminmenu.php:16
+msgid "Admin Menu"
+msgstr ""
+
+#: inc/sections/adminmenu.php:23
+msgid "Remove Menu Items"
+msgstr ""
+
+#: inc/sections/adminmenu.php:24
+msgid "Select items to remove."
+msgstr ""
+
+#: inc/sections/adminmenu.php:26
+msgid "This removes the menus for all users.%1$s It doesn't prevent access to the actual url address of the item.%1$s For a better fine tuning use %2$s. To really block the access use a plugin like %3$s or check this %4$s."
+msgstr ""
+
+#: inc/sections/adminmenu.php:38
+msgid "Remove Submenu Items"
+msgstr ""
+
+#: inc/sections/adminmenu.php:46
+msgid "Re-add the Customize submenu"
+msgstr ""
+
+#: inc/sections/adminmenu.php:47
+msgid "Some themes remove it and don't have some of its options"
+msgstr ""
+
+#: inc/sections/adminmenu.php:55
+msgid "Rename Posts"
+msgstr ""
+
+#: inc/sections/adminmenu.php:56
+msgid "Change the label of the default Post type instead of creating a new custom post type  called News or Blog."
+msgstr ""
+
+#: inc/sections/adminmenu.php:58
+#: inc/sections/general.php:87
+#: inc/sections/general.php:124
+#: inc/sections/media.php:119
+msgid "Tip via:"
+msgstr ""
+
+#: inc/sections/adminmenu.php:68
+msgid "Rename \"Post\" to:"
+msgstr ""
+
+#: inc/sections/adminmenu.php:69
+msgid "Enter new name"
+msgstr ""
+
+#: inc/sections/adminmenu.php:85
+msgid "Post Status Bubbles"
+msgstr ""
+
+#: inc/sections/adminmenu.php:87
+msgid "Tip via: %s"
+msgstr ""
+
+#: inc/sections/adminmenu.php:120
+msgid "Sort Settings"
+msgstr ""
+
+#: inc/sections/adminmenu.php:121
+msgid "sort items in Settings menu [A-Z]"
+msgstr ""
+
+#: inc/sections/adminmenu.php:133
+msgid "Sort Settings by Plugins"
+msgstr ""
+
+#: inc/sections/adminmenu.php:134
+msgid "Plugins submenu items and WordPress submenu items are shown separated, see screenshot above"
+msgstr ""
+
+#: inc/sections/appearance.php:14
+msgid "Appearance"
+msgstr ""
+
+#: inc/sections/appearance.php:30
+msgid "Hide Help tabs"
+msgstr ""
+
+#: inc/sections/appearance.php:32
+#: inc/sections/appearance.php:41
+msgid "Located at top right of the screen."
+msgstr ""
+
+#: inc/sections/appearance.php:40
+msgid "Hide Screen Options tabs"
+msgstr ""
+
+#: inc/sections/appearance.php:49
+msgid "Expert Mode: Disable WordPress help texts"
+msgstr ""
+
+#: inc/sections/appearance.php:51
+msgid "No explanations about custom fields, categories description, etc. CSS file copied from %s, by Scott Reilly. There this is set in a user basis, here in a role basis."
+msgstr ""
+
+#: inc/sections/appearance.php:63
+msgid "Hide the help texts from this roles."
+msgstr ""
+
+#: inc/sections/appearance.php:70
+msgid "HEADER AND FOOTER"
+msgstr ""
+
+#: inc/sections/appearance.php:76
+msgid "Header: notice in the Settings sections"
+msgstr ""
+
+#: inc/sections/appearance.php:79
+msgid "Useful for displaying a notice for clients, like:"
+msgstr ""
+
+#: inc/sections/appearance.php:80
+msgid "Change this settings at your own risk..."
+msgstr ""
+
+#: inc/sections/appearance.php:89
+#: inc/sections/appearance.php:104
+msgid "Message to display"
+msgstr ""
+
+#: inc/sections/appearance.php:95
+msgid "Header: notice in all admin pages"
+msgstr ""
+
+#: inc/sections/appearance.php:96
+msgid "Useful for displaying a message to all users of the site."
+msgstr ""
+
+#: inc/sections/appearance.php:112
+msgid "Select roles to display the notice, leave empty to show to all roles."
+msgstr ""
+
+#: inc/sections/appearance.php:118
+msgid "Footer: hide"
+msgstr ""
+
+#: inc/sections/appearance.php:126
+msgid "Footer: show only your message"
+msgstr ""
+
+#: inc/sections/appearance.php:127
+msgid "Remove all WordPress and other plugins messages, so your message is the only one there..."
+msgstr ""
+
+#: inc/sections/appearance.php:136
+msgid "Text to display on the left (html enabled)"
+msgstr ""
+
+#: inc/sections/appearance.php:142
+msgid "Text to display on the right (html enabled)"
+msgstr ""
+
+#: inc/sections/appearance.php:149
+msgid "CSS"
+msgstr ""
+
+#: inc/sections/appearance.php:155
+#: inc/sections/login.php:303
+#: inc/sections/maintenance.php:107
+#: inc/sections/profile.php:128
+msgid "Extra CSS"
+msgstr ""
+
+#: inc/sections/appearance.php:156
+msgid "Styles applied in all Admin pages."
+msgstr ""
+
+#: inc/sections/appearance.php:158
+msgid "Style tag not needed "
+msgstr ""
+
+#: inc/sections/backup.php:15
+msgid "Backups"
+msgstr ""
+
+#: inc/sections/backup.php:16
+msgid "Import and Export the plugin options settings from file, text or URL."
+msgstr ""
+
+#: inc/sections/backup.php:22
+msgid "Save and restore Admin Tweaks options"
+msgstr ""
+
+#: inc/sections/credits.php:70
+msgid "Credits"
+msgstr ""
+
+#: inc/sections/dashboard.php:19
+msgid "EXTRA WIDGETS"
+msgstr ""
+
+#: inc/sections/dashboard.php:25
+msgid "List of directories and their sizes"
+msgstr ""
+
+#: inc/sections/dashboard.php:26
+msgid "only for admins"
+msgstr ""
+
+#: inc/sections/dashboard.php:29
+msgid "Root folder"
+msgstr ""
+
+#: inc/sections/dashboard.php:30
+msgid "Folder wp-content"
+msgstr ""
+
+#: inc/sections/dashboard.php:41
+msgid "Dashboard"
+msgstr ""
+
+#: inc/sections/dashboard.php:55
+msgid "Remove widgets"
+msgstr ""
+
+#: inc/sections/dashboard.php:58
+msgid "QuickPress"
+msgstr ""
+
+#: inc/sections/dashboard.php:59
+msgid "Activity"
+msgstr ""
+
+#: inc/sections/dashboard.php:60
+msgid "At a Glance"
+msgstr ""
+
+#: inc/sections/dashboard.php:61
+msgid "WordPress Blog"
+msgstr ""
+
+#: inc/sections/dashboard.php:62
+msgid "Welcome Panel"
+msgstr ""
+
+#: inc/sections/dashboard.php:63
+msgid "Site Health"
+msgstr ""
+
+#: inc/sections/dashboard.php:75
+msgid "CUSTOM WIDGETS"
+msgstr ""
+
+#: inc/sections/dashboard.php:81
+msgid "Enable to create your widgets"
+msgstr ""
+
+#: inc/sections/dashboard.php:92
+msgid "Please save changes"
+msgstr ""
+
+#: inc/sections/dashboard.php:93
+msgid "after turning this option on"
+msgstr ""
+
+#: inc/sections/dashboard.php:110
+#: inc/sections/general.php:256
+#: inc/sections/general.php:281
+msgid "Content"
+msgstr ""
+
+#: inc/sections/dashboard.php:118
+msgid "Leave empty to show to all."
+msgstr ""
+
+#: inc/sections/dashboard.php:123
+msgid "Enable this widget"
+msgstr ""
+
+#: inc/sections/general.php:14
+msgid "General Settings"
+msgstr ""
+
+#: inc/sections/general.php:28
+msgid "Enable Link Manager"
+msgstr ""
+
+#: inc/sections/general.php:29
+msgid "The link manager was disabled by default in WordPress 3.5, this will bring it back."
+msgstr ""
+
+#: inc/sections/general.php:32
+msgid "Read_about()"
+msgstr ""
+
+#: inc/sections/general.php:46
+msgid "Disable the admin email verification"
+msgstr ""
+
+#: inc/sections/general.php:58
+msgid "Warn about Blocked Blog"
+msgstr ""
+
+#: inc/sections/general.php:59
+msgid "Add admin notice alerting that Settings &gt;&gt; Reading &gt;&gt; Search Engine Visibility is disabled. Shown on Settings/Tools/Plugins."
+msgstr ""
+
+#: inc/sections/general.php:67
+msgid "Eliminate WP version in &lt;head&gt;"
+msgstr ""
+
+#: inc/sections/general.php:76
+msgid "Eliminate only WP version in &lt;head&gt;"
+msgstr ""
+
+#: inc/sections/general.php:85
+msgid "Remove versioning from scripts and styles"
+msgstr ""
+
+#: inc/sections/general.php:86
+msgid "Disables the suffix ?ver=NUMBER that WP appends to enqueued styles and scripts."
+msgstr ""
+
+#: inc/sections/general.php:99
+msgid "Disable Gutenberg editor for"
+msgstr ""
+
+#: inc/sections/general.php:107
+msgid "Disable fullscreen as default for"
+msgstr ""
+
+#: inc/sections/general.php:116
+msgid "UPDATES"
+msgstr ""
+
+#: inc/sections/general.php:122
+msgid "Block WordPress upgrade notice for non-admins"
+msgstr ""
+
+#: inc/sections/general.php:123
+msgid "Do not bug non-admins, please!"
+msgstr ""
+
+#: inc/sections/general.php:136
+msgid "Block WordPress upgrade notice for everyone"
+msgstr ""
+
+#: inc/sections/general.php:144
+msgid "Redirect About page after upgrading."
+msgstr ""
+
+#: inc/sections/general.php:145
+msgid "After upgrading WordPress, the default behavior is redirecting to the About page. This option changes that to going back to the very Upgrade screen."
+msgstr ""
+
+#: inc/sections/general.php:154
+msgid "PRIVACY and RESTRICTIONS"
+msgstr ""
+
+#: inc/sections/general.php:160
+msgid "Disable Self Ping"
+msgstr ""
+
+#: inc/sections/general.php:161
+msgid "Prevents WordPress from sending pings/trackbacks to your own site."
+msgstr ""
+
+#: inc/sections/general.php:169
+msgid "Redirect unauthorized attempts."
+msgstr ""
+
+#: inc/sections/general.php:171
+msgid "If the user tries to access an admin page directly via URL, e.g.: /wp-admin/plugins.php, instead of showing \"you do not have persmissions\", the browser is redirected to the frontend. Tip via: %s"
+msgstr ""
+
+#: inc/sections/general.php:185
+msgid "RSS"
+msgstr ""
+
+#: inc/sections/general.php:191
+msgid "Delay RSS feed update"
+msgstr ""
+
+#: inc/sections/general.php:193
+msgid "This can give you time to make corrections after publishing a post, delaying the update in your RSS feed. Or you can make your content web exclusive for a larger period. Tip via: %s"
+msgstr ""
+
+#: inc/sections/general.php:206
+msgid "Number of delay"
+msgstr ""
+
+#: inc/sections/general.php:215
+msgid "MINUTE"
+msgstr ""
+
+#: inc/sections/general.php:216
+msgid "HOUR"
+msgstr ""
+
+#: inc/sections/general.php:217
+msgid "DAY"
+msgstr ""
+
+#: inc/sections/general.php:218
+msgid "WEEK"
+msgstr ""
+
+#: inc/sections/general.php:219
+msgid "MONTH"
+msgstr ""
+
+#: inc/sections/general.php:220
+msgid "YEAR"
+msgstr ""
+
+#: inc/sections/general.php:223
+msgid "Period of delay"
+msgstr ""
+
+#: inc/sections/general.php:230
+msgid "AUTOCORRECTS"
+msgstr ""
+
+#: inc/sections/general.php:236
+msgid "Disable WP Texturize everywhere"
+msgstr ""
+
+#: inc/sections/general.php:237
+msgid "[Texturize is the] transformations of quotes into smart quotes, apostrophes, dashes, ellipses, the trademark symbol, and the multiplication symbol."
+msgstr ""
+
+#: inc/sections/general.php:240
+msgid "See"
+msgstr ""
+
+#: inc/sections/general.php:241
+msgid "documentation"
+msgstr ""
+
+#: inc/sections/general.php:250
+msgid "Disable WP Texturize selectively"
+msgstr ""
+
+#: inc/sections/general.php:255
+#: inc/sections/general.php:282
+msgid "Excerpt"
+msgstr ""
+
+#: inc/sections/general.php:257
+#: inc/sections/general.php:283
+msgid "Comment"
+msgstr ""
+
+#: inc/sections/general.php:258
+msgid "Blog Info"
+msgstr ""
+
+#: inc/sections/general.php:259
+msgid "Document Title"
+msgstr ""
+
+#: inc/sections/general.php:260
+msgid "Link Description"
+msgstr ""
+
+#: inc/sections/general.php:261
+msgid "Link Name"
+msgstr ""
+
+#: inc/sections/general.php:262
+msgid "Link Notes"
+msgstr ""
+
+#: inc/sections/general.php:263
+msgid "Menu Description"
+msgstr ""
+
+#: inc/sections/general.php:264
+#: inc/sections/general.php:284
+msgid "Term Description"
+msgstr ""
+
+#: inc/sections/general.php:265
+msgid "Term Name"
+msgstr ""
+
+#: inc/sections/general.php:266
+#: inc/sections/general.php:286
+msgid "Excerpt Embed"
+msgstr ""
+
+#: inc/sections/general.php:267
+msgid "Post Thumbnail Caption"
+msgstr ""
+
+#: inc/sections/general.php:268
+#: inc/sections/general.php:285
+msgid "Widget Text Content"
+msgstr ""
+
+#: inc/sections/general.php:269
+msgid "Widget Title"
+msgstr ""
+
+#: inc/sections/general.php:270
+msgid "WP Title"
+msgstr ""
+
+#: inc/sections/general.php:277
+msgid "Disable Auto P"
+msgstr ""
+
+#: inc/sections/general.php:278
+msgid "Prevents WordPress from replacing double line breaks with paragraph elements &lt;p&gt;"
+msgstr ""
+
+#: inc/sections/general.php:292
+msgid "Remove WordPress from admin page titles"
+msgstr ""
+
+#: inc/sections/general.php:294
+msgid "The browser title has \"- WordPress\" appended to it. This will remove it. Tip via: %s"
+msgstr ""
+
+#: inc/sections/listings.php:14
+msgid "Listings"
+msgstr ""
+
+#: inc/sections/listings.php:28
+msgid "ALL TYPES: Empty Trash button"
+msgstr ""
+
+#: inc/sections/listings.php:29
+msgid "nowadays, we need 3 clicks to empty the trash,<br>this button will do it with 1 click"
+msgstr ""
+
+#: inc/sections/listings.php:41
+msgid "ALL TYPES: Duplicate Post and Delete Revisions"
+msgstr ""
+
+#: inc/sections/listings.php:53
+msgid "POSTS: Category count"
+msgstr ""
+
+#: inc/sections/listings.php:55
+msgid "Inspired by: %s"
+msgstr ""
+
+#: inc/sections/listings.php:73
+msgid "ROW ACTIONS IN POSTS, PAGES, MEDIA, PLUGINS, USERS"
+msgstr ""
+
+#: inc/sections/listings.php:79
+msgid "EVERYWHERE: option to hide row actions"
+msgstr ""
+
+#: inc/sections/listings.php:80
+msgid "Available on Screen Options of each page"
+msgstr ""
+
+#: inc/sections/listings.php:98
+msgid "CUSTOM COLUMNS"
+msgstr ""
+
+#: inc/sections/listings.php:104
+msgid "TAXONOMIES: ID column"
+msgstr ""
+
+#: inc/sections/listings.php:106
+msgid "Show column ID in taxonomies screens. Tip via: %s"
+msgstr ""
+
+#: inc/sections/listings.php:119
+msgid "ALL TYPES: ID column"
+msgstr ""
+
+#: inc/sections/listings.php:130
+msgid "ALL TYPES: width of the Title column"
+msgstr ""
+
+#: inc/sections/listings.php:131
+msgid "Sometimes the Title column gets shrinked by other columns, you may change this here."
+msgstr ""
+
+#: inc/sections/listings.php:136
+msgid "ALL TYPES: Thumbnail column"
+msgstr ""
+
+#: inc/sections/listings.php:137
+msgid "Shows the featured image or, if not set, the first attached."
+msgstr ""
+
+#: inc/sections/listings.php:148
+msgid "Proportion of the thumbnails"
+msgstr ""
+
+#: inc/sections/listings.php:149
+msgid "Used for width and height. The scale is proportional, this value is used for the bigger side."
+msgstr ""
+
+#: inc/sections/listings.php:158
+msgid "Width of the column"
+msgstr ""
+
+#: inc/sections/listings.php:159
+msgid "Depending on the proportion you may need this. Use px, em or %, i.e. 200px, 50%"
+msgstr ""
+
+#: inc/sections/listings.php:165
+msgid "Show total number of attachments"
+msgstr ""
+
+#: inc/sections/listings.php:166
+msgid "If greater than 1."
+msgstr ""
+
+#: inc/sections/listings.php:180
+msgid "COLORS FOR TYPES OF CONTENT"
+msgstr ""
+
+#: inc/sections/listings.php:186
+msgid "Draft color"
+msgstr ""
+
+#: inc/sections/listings.php:193
+msgid "Pending color"
+msgstr ""
+
+#: inc/sections/listings.php:200
+msgid "Future color"
+msgstr ""
+
+#: inc/sections/listings.php:207
+msgid "Private color"
+msgstr ""
+
+#: inc/sections/listings.php:214
+msgid "Password Protected color"
+msgstr ""
+
+#: inc/sections/listings.php:221
+msgid "Other Author's color"
+msgstr ""
+
+#: inc/sections/login.php:15
+msgid "Hide Languages dropdown"
+msgstr ""
+
+#: inc/sections/login.php:24
+msgid "Login"
+msgstr ""
+
+#: inc/sections/login.php:38
+msgid "Redirect login"
+msgstr ""
+
+#: inc/sections/login.php:39
+msgid "The default behavior is being redirected to the Dashboard (index.php)."
+msgstr ""
+
+#: inc/sections/login.php:47
+#: inc/sections/login.php:63
+msgid "URL to redirect to"
+msgstr ""
+
+#: inc/sections/login.php:54
+msgid "Redirect logout"
+msgstr ""
+
+#: inc/sections/login.php:55
+msgid "The default behavior is being redirected to the login page..."
+msgstr ""
+
+#: inc/sections/login.php:71
+msgid "LABELS"
+msgstr ""
+
+#: inc/sections/login.php:78
+#: inc/sections/login.php:87
+msgid "Hide link \"Back to %s\""
+msgstr ""
+
+#: inc/sections/login.php:79
+#: inc/sections/login.php:88
+msgid "You can use the logo for that."
+msgstr ""
+
+#: inc/sections/login.php:96
+msgid "Hide name and password labels"
+msgstr ""
+
+#: inc/sections/login.php:104
+msgid "Hide Lost Password link"
+msgstr ""
+
+#: inc/sections/login.php:113
+msgid "LOGO"
+msgstr ""
+
+#: inc/sections/login.php:119
+msgid "Link for the logo (full URL)"
+msgstr ""
+
+#: inc/sections/login.php:120
+msgid "Link for the logo, default: https://wordpress.org"
+msgstr ""
+
+#: inc/sections/login.php:125
+msgid "Logo image"
+msgstr ""
+
+#: inc/sections/login.php:126
+msgid "Select an image from your library or upload a new one"
+msgstr ""
+
+#: inc/sections/login.php:134
+msgid "Logo height"
+msgstr ""
+
+#: inc/sections/login.php:135
+msgid "Default: 84 - maximum value recomended:  300px"
+msgstr ""
+
+#: inc/sections/login.php:142
+msgid "BOX"
+msgstr ""
+
+#: inc/sections/login.php:150
+msgid "Width"
+msgstr ""
+
+#: inc/sections/login.php:151
+msgid "The logo width is limited by this one"
+msgstr ""
+
+#: inc/sections/login.php:158
+msgid "Margin Top"
+msgstr ""
+
+#: inc/sections/login.php:166
+msgid "Rounded corners"
+msgstr ""
+
+#: inc/sections/login.php:173
+msgid "Remove border"
+msgstr ""
+
+#: inc/sections/login.php:181
+#: inc/sections/login.php:209
+#: inc/sections/maintenance.php:81
+msgid "Background color"
+msgstr ""
+
+#: inc/sections/login.php:188
+#: inc/sections/login.php:202
+msgid "Background image"
+msgstr ""
+
+#: inc/sections/login.php:196
+msgid "BACKGROUND"
+msgstr ""
+
+#: inc/sections/login.php:216
+msgid "Background position"
+msgstr ""
+
+#: inc/sections/login.php:233
+msgid "Background repeat"
+msgstr ""
+
+#: inc/sections/login.php:243
+msgid "Background scroll"
+msgstr ""
+
+#: inc/sections/login.php:254
+msgid "ERRORS"
+msgstr ""
+
+#: inc/sections/login.php:260
+msgid "Remove error message"
+msgstr ""
+
+#: inc/sections/login.php:261
+msgid "Don't reveal what's the mistake, user or password"
+msgstr ""
+
+#: inc/sections/login.php:269
+msgid "Leave empty for no message"
+msgstr ""
+
+#: inc/sections/login.php:270
+msgid "Custom error message. Don't use html code."
+msgstr ""
+
+#: inc/sections/login.php:276
+msgid "Disable the login box shaking for the errors and other notices."
+msgstr ""
+
+#: inc/sections/login.php:285
+msgid "CSS and JS"
+msgstr ""
+
+#: inc/sections/login.php:291
+msgid "Completely remove WordPress styles in Login page."
+msgstr ""
+
+#: inc/sections/login.php:293
+msgid "You can look for inspiration at "
+msgstr ""
+
+#: inc/sections/login.php:295
+msgid "Paste your full CSS bellow."
+msgstr ""
+
+#: inc/sections/login.php:305
+#: inc/sections/maintenance.php:109
+#: inc/sections/profile.php:130
+msgid "Style tag not needed %s"
+msgstr ""
+
+#: inc/sections/login.php:319
+msgid "Extra JS"
+msgstr ""
+
+#: inc/sections/login.php:321
+msgid "Script tag not needed %s"
+msgstr ""
+
+#: inc/sections/login.php:335
+msgid "Extra HTML"
+msgstr ""
+
+#: inc/sections/login.php:336
+msgid "Injected inside the &lt;body&gt; tag"
+msgstr ""
+
+#: inc/sections/maintenance.php:14
+msgid "Maintenance Mode"
+msgstr ""
+
+#: inc/sections/maintenance.php:21
+msgid "Enable maintenance mode"
+msgstr ""
+
+#: inc/sections/maintenance.php:22
+msgid "Block the site to visitors and the dashboard to non administrators."
+msgstr ""
+
+#: inc/sections/maintenance.php:34
+msgid "Only block backend access"
+msgstr ""
+
+#: inc/sections/maintenance.php:35
+msgid "Frontend will be visible to everyone"
+msgstr ""
+
+#: inc/sections/maintenance.php:45
+msgid "Minimum level for access"
+msgstr ""
+
+#: inc/sections/maintenance.php:46
+msgid "Select who can see the backend; leave empty to block everybody "
+msgstr ""
+
+#: inc/sections/maintenance.php:52
+msgid "Browser Title &lt;title&gt;"
+msgstr ""
+
+#: inc/sections/maintenance.php:59
+msgid "Text for the first line"
+msgstr ""
+
+#: inc/sections/maintenance.php:66
+msgid "Text for the second line"
+msgstr ""
+
+#: inc/sections/maintenance.php:73
+msgid "Link for the third line"
+msgstr ""
+
+#: inc/sections/maintenance.php:89
+msgid "Page background image"
+msgstr ""
+
+#: inc/sections/maintenance.php:90
+#: inc/sections/maintenance.php:99
+msgid "Use a pattern or a big image"
+msgstr ""
+
+#: inc/sections/maintenance.php:98
+msgid "Box background image"
+msgstr ""
+
+#: inc/sections/media.php:14
+msgid "Media"
+msgstr ""
+
+#: inc/sections/media.php:27
+msgid "Disable attachment pages"
+msgstr ""
+
+#: inc/sections/media.php:28
+msgid "Prevents the creation of automatic pages for each uploaded file"
+msgstr ""
+
+#: inc/sections/media.php:36
+msgid "Sanitize filename"
+msgstr ""
+
+#: inc/sections/media.php:38
+msgid "Removes symbols, spaces, latin and other languages characters from uploaded files and gives them \"permalink\" structure (clean characters, only lowercase and dahes).%s Code by: %s"
+msgstr ""
+
+#: inc/sections/media.php:52
+msgid "Allow SVG file type"
+msgstr ""
+
+#: inc/sections/media.php:54
+msgid "For a complete solution that scans the files for vulnerabilities, I highly recommend the plugin %s"
+msgstr ""
+
+#: inc/sections/media.php:67
+msgid "Disable big image threshold"
+msgstr ""
+
+#: inc/sections/media.php:69
+msgid "If an image height or width is above the default threshold of 2560px, it will be scaled down, with the threshold being used as max-height and max-width value. The scaled-down image will be used as the largest available size. See %s"
+msgstr ""
+
+#: inc/sections/media.php:82
+msgid "Change the default threshold for big images"
+msgstr ""
+
+#: inc/sections/media.php:96
+msgid "This options only work when viewing the library on List Mode"
+msgstr ""
+
+#: inc/sections/media.php:102
+msgid "Bigger thumbnails in the default column"
+msgstr ""
+
+#: inc/sections/media.php:110
+msgid "ID column"
+msgstr ""
+
+#: inc/sections/media.php:118
+msgid "Image size column"
+msgstr ""
+
+#: inc/sections/media.php:128
+msgid "Column listing all thumbnails"
+msgstr ""
+
+#: inc/sections/media.php:129
+msgid "Tip via: "
+msgstr ""
+
+#: inc/sections/media.php:138
+msgid "Show media metadata (audio/image/video)"
+msgstr ""
+
+#: inc/sections/media.php:140
+msgid "Camera exif info, MP3 ID3 and video metadata are stored as post metadata, accessible via %s."
+msgstr ""
+
+#: inc/sections/plugins.php:17
+msgid "Add information about last update"
+msgstr ""
+
+#: inc/sections/plugins.php:19
+msgid "Incorporation of the plugin: %s. After enabling this, the first load of the plugins page may take a while for the information be retrieved. After the first load, the information is cached for 24 hours."
+msgstr ""
+
+#: inc/sections/plugins.php:49
+#: inc/sections/plugins.php:58
+msgid "NOTIFICATION CENTER"
+msgstr ""
+
+#: inc/sections/plugins.php:50
+#: inc/sections/plugins.php:117
+msgid "move to the Tools menu"
+msgstr ""
+
+#: inc/sections/plugins.php:59
+msgid "Rename \"Notifications\" on the admin bar"
+msgstr ""
+
+#: inc/sections/plugins.php:67
+msgid "New name for Notifications"
+msgstr ""
+
+#: inc/sections/plugins.php:92
+msgid "THE SEO FRAMEWORK"
+msgstr ""
+
+#: inc/sections/plugins.php:93
+msgid "move to the Themes menu"
+msgstr ""
+
+#: inc/sections/plugins.php:104
+#: inc/sections/plugins.php:116
+msgid "CODE SNIPPETS"
+msgstr ""
+
+#: inc/sections/plugins.php:105
+msgid "add filter by active/inactive and also by fragments"
+msgstr ""
+
+#: inc/sections/plugins.php:127
+msgid "3RD PARTY PLUGINS"
+msgstr ""
+
+#: inc/sections/plugins.php:136
+msgid "Plugins"
+msgstr ""
+
+#: inc/sections/plugins.php:144
+msgid "Live filter by active/inactive"
+msgstr ""
+
+#: inc/sections/plugins.php:145
+msgid "also by fragments of name/description/author"
+msgstr ""
+
+#: inc/sections/plugins.php:158
+msgid "Block plugins upgrade check"
+msgstr ""
+
+#: inc/sections/plugins.php:167
+msgid "Block inactive plugins upgrade check"
+msgstr ""
+
+#: inc/sections/plugins.php:175
+msgid "Disable auto-update email notifications"
+msgstr ""
+
+#: inc/sections/plugins.php:176
+msgid "Whether to send an email following an automatic background plugin update"
+msgstr ""
+
+#: inc/sections/plugins.php:193
+msgid "Inactive Plugins background color"
+msgstr ""
+
+#: inc/sections/plugins.php:200
+msgid "Colorize specific plugins."
+msgstr ""
+
+#: inc/sections/plugins.php:201
+msgid "Use to display some plugins (yours!) with other color."
+msgstr ""
+
+#: inc/sections/plugins.php:209
+msgid "Enter a list of keywords separated by comma, no spaces. Normally, you'll use the plugin authors."
+msgstr ""
+
+#: inc/sections/plugins.php:215
+msgid "Your Plugins background color ;o)"
+msgstr ""
+
+#: inc/sections/plugins.php:223
+msgid "Show how many plugins"
+msgstr ""
+
+#: inc/sections/profile.php:16
+msgid "Users"
+msgstr ""
+
+#: inc/sections/profile.php:30
+msgid "Filter users by keyword"
+msgstr ""
+
+#: inc/sections/profile.php:38
+msgid "Add ID column"
+msgstr ""
+
+#: inc/sections/profile.php:47
+msgid "PROFILE"
+msgstr ""
+
+#: inc/sections/profile.php:53
+msgid "Hide Titles"
+msgstr ""
+
+#: inc/sections/profile.php:54
+msgid "Hides the titles: \"Personal Options\", \"Name\", \"Contact Info\" and \"About Yourself\""
+msgstr ""
+
+#: inc/sections/profile.php:62
+msgid "Hide from Personal Options"
+msgstr ""
+
+#: inc/sections/profile.php:77
+msgid "Hide from Name"
+msgstr ""
+
+#: inc/sections/profile.php:91
+msgid "Hide from Contact Info"
+msgstr ""
+
+#: inc/sections/profile.php:102
+msgid "Add social profile fields to users"
+msgstr ""
+
+#: inc/sections/profile.php:109
+msgid "Hide from About Yourself"
+msgstr ""
+
+#: inc/sections/profile.php:120
+msgid "Hide Application Password"
+msgstr ""
+
+#: inc/sections/utilities.php:60
+msgid "Utilities"
+msgstr ""

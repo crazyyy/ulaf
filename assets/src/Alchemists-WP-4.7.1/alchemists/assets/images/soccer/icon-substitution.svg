@@ -1,9 +1,0 @@
-<svg id="Substitution_Icon" data-name="Substitution Icon" xmlns="http://www.w3.org/2000/svg" width="17.66" height="16.66" viewBox="0 0 17.66 16.66">
-    <defs>
-        <style>
-            .cls-1,.cls-2{fill:#14d6c6;fill-rule:evenodd}.cls-2{fill:#ee5353}
-        </style>
-    </defs>
-    <path id="In_Icon_" data-name="In Icon" class="cls-1" d="M1017 1756.66l-2.12-2.13 3.53-3.53-3.53-3.54 2.12-2.12 5.66 5.66z" transform="translate(-1005 -1745.34)"/>
-    <path id="Out_Icon" data-name="Out Icon" class="cls-2" d="M1013 1759.94l-2.19 2.06-5.81-5.5 5.81-5.5 2.19 2.06-3.64 3.44z" transform="translate(-1005 -1745.34)"/>
-</svg>

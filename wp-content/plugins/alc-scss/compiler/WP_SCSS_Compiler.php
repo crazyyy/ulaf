@@ -1,342 +1,249 @@
-<?php ! defined( 'ABSPATH' ) AND exit;
-
+<?php
 /**
- * WP_SCSS_Compiler
+ * WP SCSS Compiler
  *
- * Class providing integration between WordPress and PHP SCSS Compiler by @ScssPhp
- *
- * @author Roman Nazarkin <roman@nazarkin.su>
- * @uses ScssPhp\ScssPhp
- * @license GNU GPLv3
+ * @package ALC_SCSS
  */
 
-// load required class
-require_once DFSCSS_PLUGIN_DIR . '/scssphp/scss.inc.php';
+// Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
-// add on init to support theme customizer in v3.4
-add_action( 'init', array( 'WP_SCSS_Compiler', 'instance' ) );
-
+use ScssPhp\ScssPhp\Compiler;
 use ScssPhp\ScssPhp\OutputStyle;
 
+/**
+ * WP SCSS Compiler Class
+ */
 class WP_SCSS_Compiler {
 
 	/**
-	 * @static
-	 * @var    \WP_SCSS_Compiler Reusable object instance.
+	 * SCSS Compiler instance
+	 *
+	 * @var Compiler
 	 */
-	protected static $instance = null;
+	private $compiler;
 
+	/**
+	 * Cache directory
+	 *
+	 * @var string
+	 */
+	private $cache_dir;
+
+	/**
+	 * Source directory
+	 *
+	 * @var string
+	 */
+	private $source_dir;
 
 	/**
 	 * Constructor
 	 */
 	public function __construct() {
-		// every CSS file URL gets passed through this filter
-		add_filter( 'style_loader_src', array( $this, 'parse_stylesheet' ), 100000, 2 );
+		// Initialize compiler
+		$this->compiler = new Compiler();
 
-		// editor stylesheet URLs are concatenated and run through this filter
-		add_filter( 'mce_css', array( $this, 'parse_editor_stylesheets' ), 100000 );
-	}
+		// Set output style
+		$this->compiler->setOutputStyle( OutputStyle::COMPRESSED );
 
+		// Set cache directory
+		$upload_dir      = wp_upload_dir();
+		$this->cache_dir = $upload_dir['basedir'] . '/scss-cache/';
 
-	/**
-	 * Creates a new instance. Called on 'after_setup_theme'.
-	 * May be used to access class methods from outside.
-	 *
-	 * @see    __construct()
-	 * @static
-	 * @return \WP_SCSS_Compiler
-	 */
-	public static function instance() {
-		null === self:: $instance AND self:: $instance = new self;
-
-		return self:: $instance;
-	}
-
-
-	/**
-	 * Compile editor stylesheets registered via add_editor_style()
-	 *
-	 * @param  string $mce_css Comma separated list of CSS file URLs
-	 *
-	 * @return string $mce_css New comma separated list of CSS file URLs
-	 */
-	public function parse_editor_stylesheets( $mce_css ) {
-
-		// extract CSS file URLs
-		$style_sheets = explode( ',', $mce_css );
-
-		if ( count( $style_sheets ) ) {
-			$compiled_css = array();
-
-			// loop through editor styles, any .less files will be compiled and the compiled URL returned
-			foreach ( $style_sheets as $style_sheet ) {
-				$compiled_css[] = $this->parse_stylesheet( $style_sheet, $this->url_to_handle( $style_sheet ) );
-			}
-
-			$mce_css = implode( ',', $compiled_css );
+		// Create cache directory if it doesn't exist
+		if ( ! file_exists( $this->cache_dir ) ) {
+			wp_mkdir_p( $this->cache_dir );
 		}
 
-		// return new URLs
-		return $mce_css;
+		// Add filter to compile SCSS files
+		add_filter( 'style_loader_src', array( $this, 'parse_stylesheet' ), 10, 2 );
 	}
 
-
 	/**
-	 * Compile the SCSS stylesheet and return the href of the compiled file
+	 * Parse stylesheet and compile if SCSS
 	 *
-	 * @param  string $src    Source URL of the file to be parsed
-	 * @param  string $handle An identifier for the file used to create the file name in the cache
-	 *
-	 * @return string         URL of the compiled stylesheet
+	 * @param string $src    Stylesheet URL.
+	 * @param string $handle Stylesheet handle.
+	 * @return string
 	 */
 	public function parse_stylesheet( $src, $handle ) {
+		// Skip if not a local file
+		if ( false === strpos( $src, home_url() ) ) {
+			return $src;
+		}
 
-			// skip non-scss files
-			if ( ! preg_match( '/\.scss(\.php)?$/', preg_replace( '/\?.*$/', '', $src ) ) ) {
-				return $src;
-			}
+		// Get file path
+		$file_path = $this->get_file_path_from_url( $src );
 
-			// skip compilation if special header are sent
-			if (!function_exists('getallheaders')) 
-			{ 
-					function getallheaders() 
-					{ 
-								$headers = []; 
-						foreach ($_SERVER as $name => $value) 
-						{ 
-								if (substr($name, 0, 5) == 'HTTP_') 
-								{ 
-										$headers[str_replace(' ', '-', ucwords(strtolower(str_replace('_', ' ', substr($name, 5)))))] = $value; 
-								} 
-						} 
-						return $headers; 
-					} 
-			} else {
-				$headers = getallheaders();
-			}
+		// Check if file exists and is SCSS
+		if ( ! $file_path || ! file_exists( $file_path ) ) {
+			return $src;
+		}
 
-			if ( defined( 'WPH_DEV_ENV' ) && isset( $headers['X-Skip-SCSS-Recompilation'] ) ) {
-				return $src;
-			}
+		// Only process SCSS files
+		if ( ! preg_match( '/\.scss$/i', $file_path ) ) {
+			return $src;
+		}
 
-			// match the URL schemes between WP_CONTENT_URL and $src,
-			// so the str_replace further down will work
-			$src_scheme            = parse_url( $src, PHP_URL_SCHEME );
-			$wp_content_url_scheme = parse_url( WP_CONTENT_URL, PHP_URL_SCHEME );
-			if ( $src_scheme != $wp_content_url_scheme ) {
-				$src = set_url_scheme( $src, $wp_content_url_scheme );
-			}
+		// Compile SCSS file
+		$compiled_url = $this->compile_scss_file( $file_path, $src );
 
-			// get file path from $src
-			// prevent non-existent index warning when using list() & explode()
-			if ( ! strstr( $src, '?' ) ) {
-				$scss_path    = str_replace( WP_CONTENT_URL, WP_CONTENT_DIR, $src );
-				$query_string = '';
-			} else {
-				list( $scss_path, $query_string ) = explode( '?', str_replace( WP_CONTENT_URL, WP_CONTENT_DIR, $src ) );
-				$query_string = '?' . $query_string;
-			}
+		return $compiled_url ? $compiled_url : $src;
+	}
 
-			// start working
-			try {
-				$output_path = $this->get_output_path( $handle );
-				$scss        = new ScssPhp\ScssPhp\Compiler();
+	/**
+	 * Compile SCSS file
+	 *
+	 * @param string $file_path Source SCSS file path.
+	 * @param string $src       Original URL.
+	 * @return string|false Compiled CSS URL or false on failure.
+	 */
+	private function compile_scss_file( $file_path, $src ) {
+		try {
+			// Generate cache filename
+			$cache_filename = md5( $file_path ) . '.css';
+			$cache_file     = $this->cache_dir . $cache_filename;
+			$upload_dir     = wp_upload_dir();
+			$cache_url      = $upload_dir['baseurl'] . '/scss-cache/' . $cache_filename;
 
-				// Convert custom variables to ScssPhp\ScssPhp\Value objects
-        $custom_variables = apply_filters('wp_scss_variables', array(), $handle);
-        $parsed_variables = [];
-        foreach ($custom_variables as $name => $value) {
-					$parsed_value = ScssPhp\ScssPhp\ValueConverter::parseValue($value);
-					$parsed_variables[$name] = $parsed_value;
-        }
+			// Check if we need to recompile
+			if ( file_exists( $cache_file ) ) {
+				$scss_mtime = filemtime( $file_path );
+				$css_mtime  = filemtime( $cache_file );
 
-        $scss->addVariables($parsed_variables);
-
-				$scss->setImportPaths( apply_filters( 'wp_scss_import_dirs', array( dirname( $scss_path ) ), $handle ) );
-				$scss->setOutputStyle( OutputStyle::COMPRESSED, $handle );
-
-				// allow devs to mess around with the scss object configuration
-				do_action_ref_array( 'wp_scss_instance', array( &$scss, $handle ) );
-
-				// check if file should be compiled again
-				if ( $this->should_be_recompiled( $output_path, $scss, $last_change ) ) {
-					$this->compile_file( $scss_path, $output_path, $scss );
-					$last_change = time();
+				// Return cached version if source hasn't changed
+				if ( $css_mtime >= $scss_mtime ) {
+					return $cache_url;
 				}
-
-			} catch ( Exception $e ) {
-				wp_die( $e->getMessage() );
 			}
 
-			// build final url and restore original url scheme
-			$output_url = set_url_scheme( $this->get_output_url( $handle ), $src_scheme ) . $query_string;
+			// Set import paths
+			$source_dir = dirname( $file_path );
+			$this->compiler->setImportPaths( $source_dir );
 
-			// finally add query arg with time of latest change of file
-			return add_query_arg( 'ver', $last_change, $output_url );
-		}
+			// Read SCSS content
+			$scss_content = file_get_contents( $file_path );
 
-
-	/**
-	 * Creates cache directory(if non-exists) and provides path for specified handle
-	 *
-	 * @param $handle
-	 *
-	 * @return string
-	 */
-	private function get_output_path( $handle ) {
-		$upload_dir = wp_upload_dir();
-		$dir        = apply_filters( 'wp_scss_cache_path', path_join( $upload_dir['basedir'], 'wp-scss-cache' ) );
-
-		if ( ! is_dir( $dir ) ) {
-			@mkdir( $dir );
-		}
-
-		if ( ! is_readable( $dir ) || ! is_writable( $dir ) ) {
-			@chmod( $dir, 0755 );
-		}
-
-		$handle_filename = sanitize_key( basename( $handle ) ) . '.css';
-
-		return path_join( $dir, $handle_filename );
-	}
-
-
-	/**
-	 * Returns URL of an cached file of a specified handle
-	 *
-	 * @param $handle
-	 *
-	 * @return string
-	 */
-	private function get_output_url( $handle ) {
-		$upload_dir      = wp_upload_dir();
-		$dir             = apply_filters( 'wp_scss_cache_url', path_join( $upload_dir['baseurl'], 'wp-scss-cache' ) );
-		$handle_filename = sanitize_key( basename( $handle ) ) . '.css';
-
-		return path_join( $dir, $handle_filename );
-	}
-
-
-	/**
-	 * Check whether provided file should be recompiled
-	 *
-	 * @param $output_path string destination file
-	 * @param $scss        ScssPhp\ScssPhp\Compiler the instance of an compiler
-	 *
-	 * @return bool
-	 */
-	private function should_be_recompiled( $output_path, &$scss, &$last_change ) {
-
-		$cache_data = $this->get_cache_data( $output_path );
-
-		// should be compiled if no data exists for this file
-		if ( ! is_file( $output_path ) || $cache_data === false ) {
-			return true;
-		}
-
-		// should be recompiled if some of processed files are changed
-		$mtime = filemtime( $output_path );
-		foreach ( $cache_data['imports'] as $import => $originalMtime ) {
-			$currentMtime = filemtime( $import );
-			if ( $currentMtime !== $originalMtime || $currentMtime > $mtime ) {
-				return true;
+			if ( false === $scss_content ) {
+				return false;
 			}
+
+			// Compile SCSS
+			$compiled_css = $this->compiler->compileString( $scss_content )->getCss();
+
+			// Save compiled CSS
+			$result = file_put_contents( $cache_file, $compiled_css );
+
+			if ( false === $result ) {
+				error_log( 'WP_SCSS: Failed to write compiled CSS to ' . $cache_file );
+				return false;
+			}
+
+			return $cache_url;
+
+		} catch ( Exception $e ) {
+			error_log( 'WP_SCSS Compilation Error: ' . $e->getMessage() );
+			return false;
+		}
+	}
+
+	/**
+	 * Get file path from URL
+	 *
+	 * @param string $url File URL.
+	 * @return string|false File path or false.
+	 */
+	private function get_file_path_from_url( $url ) {
+		// Remove query string
+		$url = strtok( $url, '?' );
+
+		// Get WordPress paths
+		$content_url = content_url();
+		$content_dir = WP_CONTENT_DIR;
+
+		// Check if URL is in content directory
+		if ( false !== strpos( $url, $content_url ) ) {
+			$file_path = str_replace( $content_url, $content_dir, $url );
+			return $file_path;
 		}
 
-		// should be recompiled if instance was changed (for example, variables was updated)
-		$instance_crc = crc32( serialize( $scss ) );
-		if ( $instance_crc !== $cache_data['instance'] ) {
-			return true;
+		// Check if URL is in plugins directory
+		$plugins_url = plugins_url();
+		$plugins_dir = WP_PLUGIN_DIR;
+
+		if ( false !== strpos( $url, $plugins_url ) ) {
+			$file_path = str_replace( $plugins_url, $plugins_dir, $url );
+			return $file_path;
 		}
 
-		$last_change = $cache_data['creation_time'];
+		// Check if URL is in theme directory
+		$theme_url = get_stylesheet_directory_uri();
+		$theme_dir = get_stylesheet_directory();
+
+		if ( false !== strpos( $url, $theme_url ) ) {
+			$file_path = str_replace( $theme_url, $theme_dir, $url );
+			return $file_path;
+		}
 
 		return false;
 	}
 
-
 	/**
-	 * Compiles SCSS file and saves its data to cache
+	 * Clear cache
 	 *
-	 * @param string $scss_path Source path
-	 * @return string Compiled CSS
+	 * @return bool True on success, false on failure.
 	 */
-	public function compile_and_cache( $scss_path ) {
-		// Отримуємо шлях до кешу
-		$cache_dir  = WP_CONTENT_DIR . '/cache/scss/';
-		$cache_file = $cache_dir . md5( $scss_path ) . '.css';
-
-		// Якщо кеш існує і файл SCSS не змінювався — повертаємо кеш
-		if ( file_exists( $cache_file ) && filemtime( $cache_file ) >= filemtime( $scss_path ) ) {
-			return file_get_contents( $cache_file );
+	public function clear_cache() {
+		if ( ! file_exists( $this->cache_dir ) ) {
+			return true;
 		}
 
-		// Читаємо SCSS
-		$scss_code = file_get_contents( $scss_path );
+		$files = glob( $this->cache_dir . '*.css' );
 
-		// Використовуємо компілятор SCSSPHP
-		$compiler = new \Leafo\ScssPhp\Compiler();
-		$compiled_css = $compiler->compile( $scss_code );
-
-		// Створюємо директорію кешу, якщо її немає
-		if ( ! file_exists( $cache_dir ) ) {
-			wp_mkdir_p( $cache_dir );
+		if ( false === $files ) {
+			return false;
 		}
 
-		// Зберігаємо результат у кеш
-		file_put_contents( $cache_file, $compiled_css );
+		foreach ( $files as $file ) {
+			if ( file_exists( $file ) ) {
+				unlink( $file );
+			}
+		}
 
-		return $compiled_css;
+		return true;
 	}
 
-
-
 	/**
-	 * Retrieves parsed cache data for specified file
+	 * Set output style
 	 *
-	 * @param $path
-	 *
-	 * @return bool|mixed
+	 * @param string $style Output style (compressed, expanded, nested, compact).
 	 */
-	private function get_cache_data( $path ) {
-		$caches = get_option( 'wp_scss_cached_files', array() );
-		$key    = crc32( $path );
+	public function set_output_style( $style ) {
+		$valid_styles = array(
+			'compressed' => OutputStyle::COMPRESSED,
+			'expanded'   => OutputStyle::EXPANDED,
+			'nested'     => OutputStyle::NESTED,
+			'compact'    => OutputStyle::COMPACT,
+		);
 
-		return ( isset( $caches[ $key ] ) ) ? $caches[ $key ] : false;
+		if ( isset( $valid_styles[ $style ] ) ) {
+			$this->compiler->setOutputStyle( $valid_styles[ $style ] );
+		}
 	}
 
-
 	/**
-	 * Update parsed cache data for specified file
+	 * Add import path
 	 *
-	 * @param $path
-	 * @param $data
-	 *
-	 * @return bool
+	 * @param string $path Import path.
 	 */
-	private function save_cache_data( $path, $data ) {
-		$caches         = get_option( 'wp_scss_cached_files', array() );
-		$key            = crc32( $path );
-		$caches[ $key ] = $data;
-
-		return update_option( 'wp_scss_cached_files', $caches );
-	}
-
-
-	/**
-	 * Get a nice handle to use for the compiled CSS file name
-	 *
-	 * @param  string $url File URL to generate a handle from
-	 *
-	 * @return string $url Sanitized string to use for handle
-	 */
-	private function url_to_handle( $url ) {
-
-		$url = parse_url( $url );
-		$url = str_replace( '.scss', '', basename( $url['path'] ) );
-		$url = str_replace( '/', '-', $url );
-
-		return sanitize_key( $url );
+	public function add_import_path( $path ) {
+		if ( is_dir( $path ) ) {
+			$current_paths = $this->compiler->getImportPaths();
+			$current_paths[] = $path;
+			$this->compiler->setImportPaths( $current_paths );
+		}
 	}
 }

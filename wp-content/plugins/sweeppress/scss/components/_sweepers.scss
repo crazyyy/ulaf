@@ -1,0 +1,51 @@
+.d4p-panel-sweepers {
+    .tablenav.top {
+        display: none;
+    }
+
+    .sweeppress-table-sweepers {
+        margin: 0;
+
+        .flat-system {
+            float: right;
+            color: #A00;
+            font-size: 1.1em;
+        }
+
+        .column-auto,
+        .column-backup,
+        .column-quick,
+        .column-monitor,
+        .column-cron {
+            width: 11%;
+
+            .d4p-icon {
+                font-size: 1.2em;
+
+                &.d4p-ui-box {
+                    color: red;
+                }
+
+                &.d4p-ui-check-square {
+                    color: green;
+                }
+            }
+        }
+
+        .column-category,
+        .column-backup,
+        .column-scope {
+            width: 8%;
+        }
+
+        tbody {
+            .column-id {
+                font-family: monospace;
+            }
+
+            .column-sweeper {
+                font-weight: bold;
+            }
+        }
+    }
+}

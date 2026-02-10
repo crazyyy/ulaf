@@ -1,0 +1,60 @@
+.log-info-trigger {
+    cursor: pointer;
+    color: #0dcaf0;
+    transition: color 0.2s ease;
+    margin-right: 8px;
+
+    &:hover {
+        color: #0aa2c0;
+    }
+
+}
+
+.log-warning-trigger {
+    cursor: pointer;
+    transition: color 0.2s ease;
+
+    // Severity-based colors
+    &.severity-danger {
+        color: #dc3545;
+
+        &:hover {
+            color: #c82333;
+        }
+    }
+
+    &.severity-warning {
+        color: #fd7e14;
+
+        &:hover {
+            color: #e8681a;
+        }
+    }
+}
+
+.log-path-icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.popover {
+    .popover-header {
+        font-size: 14px;
+    }
+    .popover-body {
+        user-select: text;
+
+        #dbg_lv_dismiss_alert {
+            position: absolute;
+            right: 0;
+            width: 30px;
+        }
+
+        span {
+            cursor: text;
+            line-height: 1.4;
+            word-break: break-word;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.adminoptim-pro-options .form-table, .adminoptim-pro-options .bordered {
+  border: 3px dashed #aaa;
+  padding: 1rem;
+  color: #aaa;
+}
+.adminoptim-pro-options .form-table th, .adminoptim-pro-options .bordered th {
+  color: #666;
+}
+.adminoptim-pro-options .form-table label, .adminoptim-pro-options .bordered label {
+  color: #aaa;
+}

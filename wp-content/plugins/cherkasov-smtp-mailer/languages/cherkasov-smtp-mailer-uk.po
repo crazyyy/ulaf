@@ -1,0 +1,484 @@
+# Copyright (C) 2025 Denys Cherkasov
+# This file is distributed under the same license as the Cherkasov SMTP Mailer plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Cherkasov SMTP Mailer 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cherkasov-smtp-mailer\n"
+"POT-Creation-Date: 2025-08-07 13:35:00+03:00\n"
+"PO-Revision-Date: 2025-08-07 13:40:15+03:00\n"
+"Last-Translator: Denys Cherkasov <denys@cherkasov.dev>\n"
+"Language-Team: Ukrainian <uk@li.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Gemini (Google)\n"
+"X-Textdomain-Support: yes\n"
+
+#: cherkasov-smtp-mailer.php:143
+msgid "Settings"
+msgstr "Налаштування"
+
+#: cherkasov-smtp-mailer.php:148 cherkasov-smtp-mailer.php:149 smtp-setting.php:11
+msgid "Cherkasov SMTP Mailer"
+msgstr "Cherkasov SMTP Mailer"
+
+#: cherkasov-smtp-mailer.php:249
+msgid "Permission denied."
+msgstr "Доступ заборонено."
+
+#: cherkasov-smtp-mailer.php:285
+msgid "No Results Found"
+msgstr "Нічого не знайдено"
+
+#: cherkasov-smtp-mailer.php:285
+msgid "No Emails Logged Yet"
+msgstr "Ще немає зареєстрованих листів"
+
+#: cherkasov-smtp-mailer.php:285
+msgid "Try a different search term."
+msgstr "Спробуйте інший пошуковий запит."
+
+#: cherkasov-smtp-mailer.php:285
+msgid "When your site sends an email, it will appear here."
+msgstr "Коли ваш сайт надішле лист, він з'явиться тут."
+
+#: cherkasov-smtp-mailer.php:291
+msgid "To:"
+msgstr "Кому:"
+
+#: cherkasov-smtp-mailer.php:291
+msgid "Resend Email"
+msgstr "Надіслати повторно"
+
+#: cherkasov-smtp-mailer.php:291
+msgid "Delete Log"
+msgstr "Видалити запис"
+
+#: cherkasov-smtp-mailer.php:291 smtp-setting.php:286
+msgid "View"
+msgstr "Переглянути"
+
+#: cherkasov-smtp-mailer.php:304
+msgid "Log not found."
+msgstr "Запис не знайдено."
+
+#: cherkasov-smtp-mailer.php:314
+msgid "Recipient email is invalid."
+msgstr "Неправильна електронна адреса одержувача."
+
+#: cherkasov-smtp-mailer.php:326
+msgid "Test email sent successfully!"
+msgstr "Тестовий лист успішно надіслано!"
+
+#: cherkasov-smtp-mailer.php:329 cherkasov-smtp-mailer.php:380
+msgid "Unknown error."
+msgstr "Невідома помилка."
+
+#: cherkasov-smtp-mailer.php:330
+msgid "Test email failed to send: "
+msgstr "Не вдалося надіслати тестовий лист: "
+
+#: cherkasov-smtp-mailer.php:338
+msgid "Failed to clear logs."
+msgstr "Не вдалося очистити записи."
+
+#: cherkasov-smtp-mailer.php:340
+msgid "Email logs cleared successfully."
+msgstr "Записи листів успішно очищено."
+
+#: cherkasov-smtp-mailer.php:348 cherkasov-smtp-mailer.php:366
+msgid "Invalid Log ID."
+msgstr "Неправильний ID запису."
+
+#: cherkasov-smtp-mailer.php:354
+msgid "Failed to delete log entry."
+msgstr "Не вдалося видалити запис."
+
+#: cherkasov-smtp-mailer.php:356
+msgid "Log entry deleted successfully."
+msgstr "Запис успішно видалено."
+
+#: cherkasov-smtp-mailer.php:370
+msgid "Log entry not found."
+msgstr "Запис журналу не знайдено."
+
+#: cherkasov-smtp-mailer.php:378
+msgid "Email resent successfully!"
+msgstr "Лист успішно надіслано повторно!"
+
+#: cherkasov-smtp-mailer.php:381
+msgid "Failed to resend the email: "
+msgstr "Не вдалося повторно надіслати лист: "
+
+#: cherkasov-smtp-mailer.php:389
+msgid "No failed emails to resend."
+msgstr "Немає невдалих листів для повторного надсилання."
+
+#: cherkasov-smtp-mailer.php:403
+msgid "Resend process completed. Successfully resent: %1$d. Failed: %2$d."
+msgstr "Процес повторного надсилання завершено. Успішно надіслано: %1$d. Невдало: %2$d."
+
+#: cherkasov-smtp-mailer.php:430
+msgid "Settings saved successfully!"
+msgstr "Налаштування успішно збережено!"
+
+#: cherkasov-smtp-mailer.php:438
+msgid "Invalid log retention period specified."
+msgstr "Вказано недійсний період зберігання записів."
+
+#: cherkasov-smtp-mailer.php:442
+msgid "Log retention settings saved."
+msgstr "Налаштування зберігання записів збережено."
+
+#: cherkasov-smtp-mailer.php:462
+msgid "Telegram settings saved successfully!"
+msgstr "Налаштування Telegram успішно збережено!"
+
+#: cherkasov-smtp-mailer.php:472
+msgid "Test message sent successfully to Telegram!"
+msgstr "Тестове повідомлення успішно надіслано в Telegram!"
+
+#: cherkasov-smtp-mailer.php:474
+msgid "Failed to send test message:"
+msgstr "Не вдалося надіслати тестове повідомлення:"
+
+#: cherkasov-smtp-mailer.php:81
+msgid "A network error occurred. Please check your connection and server configuration."
+msgstr "Виникла помилка мережі. Будь ласка, перевірте ваше з'єднання та конфігурацію сервера."
+
+#: cherkasov-smtp-mailer.php:82
+msgid "Success!"
+msgstr "Успіх!"
+
+#: cherkasov-smtp-mailer.php:83
+msgid "Error!"
+msgstr "Помилка!"
+
+#: cherkasov-smtp-mailer.php:84
+msgid "Confirm Deletion"
+msgstr "Підтвердити видалення"
+
+#: cherkasov-smtp-mailer.php:85
+msgid "Are you sure you want to delete this log entry? This action cannot be undone."
+msgstr "Ви впевнені, що хочете видалити цей запис? Цю дію неможливо скасувати."
+
+#: cherkasov-smtp-mailer.php:86
+msgid "Are you sure you want to delete all email logs? This action cannot be undone."
+msgstr "Ви впевнені, що хочете видалити всі записи листів? Цю дію неможливо скасувати."
+
+#: cherkasov-smtp-mailer.php:87
+msgid "An error occurred."
+msgstr "Виникла помилка."
+
+#: cherkasov-smtp-mailer.php:88
+msgid "An unknown error occurred."
+msgstr "Виникла невідома помилка."
+
+#: cherkasov-smtp-mailer.php:89
+msgid "SMTP Debug Log"
+msgstr "Журнал налагодження SMTP"
+
+#: smtp-setting.php:12
+msgid "A modern way to handle WordPress emails."
+msgstr "Сучасний спосіб обробки електронних листів WordPress."
+
+#: smtp-setting.php:15 smtp-setting.php:143
+msgid "Telegram Notifications"
+msgstr "Сповіщення в Telegram"
+
+#: smtp-setting.php:19 smtp-setting.php:154
+msgid "Email Logs"
+msgstr "Журнал листів"
+
+#: smtp-setting.php:23 smtp-setting.php:132
+msgid "Send Test Email"
+msgstr "Надіслати тестовий лист"
+
+#: smtp-setting.php:35
+msgid "Mailer"
+msgstr "Поштовий сервіс"
+
+#: smtp-setting.php:39
+msgid "Default WP Mailer"
+msgstr "Стандартний WP Mailer"
+
+#: smtp-setting.php:44
+msgid "Default Mailer is Active"
+msgstr "Активний стандартний поштовий сервіс"
+
+#: smtp-setting.php:45
+msgid "Emails are being sent via your web host. For better reliability and deliverability, we recommend switching to SMTP."
+msgstr "Листи надсилаються через ваш веб-хостинг. Для кращої надійності та доставки ми рекомендуємо перейти на SMTP."
+
+#: smtp-setting.php:51
+msgid "Common Providers"
+msgstr "Популярні провайдери"
+
+#: smtp-setting.php:57
+msgid "Other"
+msgstr "Інший"
+
+#: smtp-setting.php:60
+msgid "Mail Server"
+msgstr "Поштовий сервер"
+
+#: smtp-setting.php:61
+msgid "Specify your outgoing mail server (SMTP) details."
+msgstr "Вкажіть дані вашого вихідного поштового сервера (SMTP)."
+
+#: smtp-setting.php:65
+msgid "SMTP Host"
+msgstr "Хост SMTP"
+
+#: smtp-setting.php:69
+msgid "SMTP Port"
+msgstr "Порт SMTP"
+
+#: smtp-setting.php:79
+msgid "Encryption"
+msgstr "Шифрування"
+
+#: smtp-setting.php:84
+msgid "None"
+msgstr "Без шифрування"
+
+#: smtp-setting.php:88
+msgid "Authentication"
+msgstr "Автентифікація"
+
+#: smtp-setting.php:97
+msgid "SMTP Credentials"
+msgstr "Облікові дані SMTP"
+
+#: smtp-setting.php:100
+msgid "SMTP Username"
+msgstr "Ім'я користувача SMTP"
+
+#: smtp-setting.php:104
+msgid "SMTP Password"
+msgstr "Пароль SMTP"
+
+#: smtp-setting.php:106
+msgid "Enter SMTP Password"
+msgstr "Введіть пароль SMTP"
+
+#: smtp-setting.php:112
+msgid "Leave empty to keep the current password."
+msgstr "Залиште порожнім, щоб зберегти поточний пароль."
+
+#: smtp-setting.php:116
+msgid "Sender Details"
+msgstr "Дані відправника"
+
+#: smtp-setting.php:119
+msgid "From Name"
+msgstr "Ім'я відправника"
+
+#: smtp-setting.php:123
+msgid "From Email"
+msgstr "Email відправника"
+
+#: smtp-setting.php:127
+msgid "Force Sender"
+msgstr "Примусово вказати відправника"
+
+#: smtp-setting.php:128
+msgid "Override From Name & Email."
+msgstr "Перезаписати ім'я та Email відправника."
+
+#: smtp-setting.php:137
+msgid "Disable SSL Verification"
+msgstr "Вимкнути перевірку SSL"
+
+#: smtp-setting.php:138
+msgid "Not recommended. Use only for local dev."
+msgstr "Не рекомендовано. Використовуйте лише для локальної розробки."
+
+#: smtp-setting.php:148
+msgid "Save Changes"
+msgstr "Зберегти зміни"
+
+#: smtp-setting.php:165
+msgid "Search by email or subject..."
+msgstr "Пошук за email або темою..."
+
+#: smtp-setting.php:169
+msgid "Log Settings"
+msgstr "Налаштування журналу"
+
+#: smtp-setting.php:172
+msgid "Resend Failed Emails"
+msgstr "Повторно надіслати невдалі"
+
+#: smtp-setting.php:176
+msgid "Clear All Logs"
+msgstr "Очистити всі записи"
+
+#: smtp-setting.php:189
+msgid "Log Management"
+msgstr "Керування журналом"
+
+#: smtp-setting.php:190
+msgid "Automatically delete logs older than:"
+msgstr "Автоматично видаляти записи, старші за:"
+
+#: smtp-setting.php:194
+msgid "Never"
+msgstr "Ніколи"
+
+#: smtp-setting.php:195
+msgid "1 Day"
+msgstr "1 день"
+
+#: smtp-setting.php:196
+msgid "1 Week"
+msgstr "1 тиждень"
+
+#: smtp-setting.php:197
+msgid "1 Month"
+msgstr "1 місяць"
+
+#: smtp-setting.php:198
+msgid "1 Year"
+msgstr "1 рік"
+
+#: smtp-setting.php:202
+msgid "Save Log Settings"
+msgstr "Зберегти налаштування журналу"
+
+#: smtp-setting.php:215 smtp-setting.php:280
+msgid "Email Details"
+msgstr "Деталі листа"
+
+#: smtp-setting.php:222 smtp-setting.php:336
+msgid "To"
+msgstr "Кому"
+
+#: smtp-setting.php:226
+msgid "Date"
+msgstr "Дата"
+
+#: smtp-setting.php:230
+msgid "Mailer"
+msgstr "Поштовий сервіс"
+
+#: smtp-setting.php:234
+msgid "Status"
+msgstr "Статус"
+
+#: smtp-setting.php:238
+msgid "Technical Details"
+msgstr "Технічні деталі"
+
+#: smtp-setting.php:241
+msgid "Headers"
+msgstr "Заголовки"
+
+#: smtp-setting.php:245
+msgid "Error Message"
+msgstr "Повідомлення про помилку"
+
+#: smtp-setting.php:260
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: smtp-setting.php:261
+msgid "Confirm"
+msgstr "Підтвердити"
+
+#: smtp-setting.php:271
+msgid "Enable Telegram Notifications"
+msgstr "Увімкнути сповіщення в Telegram"
+
+#: smtp-setting.php:278
+msgid "Bot Token"
+msgstr "Токен бота"
+
+#: smtp-setting.php:280
+msgid "Enter your Telegram Bot Token"
+msgstr "Введіть токен вашого Telegram-бота"
+
+#: smtp-setting.php:285
+msgid "Talk to <a href=\"%s\" target=\"_blank\" class=\"text-indigo-600 hover:underline font-medium\">@BotFather</a> to create a new bot and get your token."
+msgstr "Зверніться до <a href=\"%s\" target=\"_blank\" class=\"text-indigo-600 hover:underline font-medium\">@BotFather</a>, щоб створити нового бота та отримати токен."
+
+#: smtp-setting.php:288
+msgid "Chat ID"
+msgstr "ID чату"
+
+#: smtp-setting.php:289
+msgid "Enter your Telegram Chat ID"
+msgstr "Введіть ваш ID чату в Telegram"
+
+#: smtp-setting.php:290
+msgid "Get your Chat ID by talking to <a href=\"%s\" target=\"_blank\" class=\"text-indigo-600 hover:underline font-medium\">@userinfobot</a>."
+msgstr "Отримайте ID чату, звернувшись до <a href=\"%s\" target=\"_blank\" class=\"text-indigo-600 hover:underline font-medium\">@userinfobot</a>."
+
+#: smtp-setting.php:293
+msgid "Notification Events"
+msgstr "Події для сповіщень"
+
+#: smtp-setting.php:296
+msgid "Failed Emails"
+msgstr "Невдалі листи"
+
+#: smtp-setting.php:297
+msgid "Send a notification when an email fails to send."
+msgstr "Надсилати сповіщення, коли лист не вдалося надіслати."
+
+#: smtp-setting.php:304
+msgid "Successful Emails"
+msgstr "Успішні листи"
+
+#: smtp-setting.php:305
+msgid "Send a notification on success. (Can be noisy)"
+msgstr "Надсилати сповіщення про успіх. (Може бути багато повідомлень)"
+
+#: smtp-setting.php:315
+msgid "Send Test"
+msgstr "Надіслати тест"
+
+#: smtp-setting.php:319
+msgid "Save"
+msgstr "Зберегти"
+
+#: smtp-setting.php:337
+msgid "Subject"
+msgstr "Тема"
+
+#: smtp-setting.php:338
+msgid "Test Email from Cherkasov SMTP Mailer"
+msgstr "Тестовий лист від Cherkasov SMTP Mailer"
+
+#: smtp-setting.php:341
+msgid "Message"
+msgstr "Повідомлення"
+
+#: smtp-setting.php:343
+msgid "Write"
+msgstr "Написати"
+
+#: smtp-setting.php:344
+msgid "Preview"
+msgstr "Попередній перегляд"
+
+#: smtp-setting.php:349
+msgid "Test Email"
+msgstr "Тестовий лист"
+
+#: smtp-setting.php:350
+msgid "This is a test"
+msgstr "Це тестовий"
+
+#: smtp-setting.php:351
+msgid "sent from"
+msgstr "надісланий з"
+
+#: smtp-setting.php:353
+msgid "at"
+msgstr "на"
+
+#: smtp-setting.php:367
+msgid "Send Email"
+msgstr "Надіслати лист"

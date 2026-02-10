@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Alchemists\n"
 "POT-Creation-Date: 2025-12-24 14:44+0000\n"
-"PO-Revision-Date: 2026-02-09 09:28+0000\n"
+"PO-Revision-Date: 2026-02-09 12:50+0000\n"
 "Last-Translator: Vitalii A\n"
 "Language-Team: Українська\n"
 "Language: uk\n"
@@ -214,7 +214,7 @@ msgstr ""
 #: woocommerce/checkout/form-shipping.php:77
 #: woocommerce/single-product/tabs/additional-information.php:25
 msgid "Additional information"
-msgstr ""
+msgstr "Додаткова інформація"
 
 #: vc_templates/alc_event_scoreboard/esports-alc_event_scoreboard.php:305
 #: vc_templates/alc_event_scoreboard/football-alc_event_scoreboard.php:380
@@ -229,7 +229,7 @@ msgstr ""
 
 #: inc/acf-fields.php:1286 inc/acf-fields.php:1703
 msgid "After Players"
-msgstr "Після гравців"
+msgstr ""
 
 #: sportspress/player-carousel-thumbs.php:38 sportspress/single-player.php:36
 #: sportspress/player-block-thumbnail.php:110

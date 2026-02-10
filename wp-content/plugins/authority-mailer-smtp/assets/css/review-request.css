@@ -1,0 +1,271 @@
+/**
+ * Authority Mailer Review Request Styles
+ *
+ * Styles for the 3-tier review request system:
+ * - Admin notice (Tier 1)
+ * - Footer review link (Tier 2)
+ * - Success toast (Tier 3)
+ *
+ * @package Authority_Mailer
+ * @since   1.0.0
+ */
+
+/* ============================================
+   TIER 1: Admin Notice
+   ============================================ */
+
+.authority-mailer-review-notice {
+	padding: 20px !important;
+	border-left: 4px solid #0073aa !important;
+	background: #fff !important;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+	transition: opacity 0.3s ease, transform 0.3s ease !important;
+}
+
+.authority-mailer-review-notice.fade-out {
+	opacity: 0 !important;
+	transform: translateY(-10px) !important;
+}
+
+.authority-mailer-review-notice-content {
+	max-width: 800px;
+}
+
+.authority-mailer-review-notice-title {
+	font-size: 16px !important;
+	font-weight: 600 !important;
+	margin: 0 0 10px 0 !important;
+	color: #23282d !important;
+}
+
+.authority-mailer-review-notice-body {
+	font-size: 14px !important;
+	margin: 0 0 15px 0 !important;
+	color: #555 !important;
+	line-height: 1.6 !important;
+}
+
+.authority-mailer-review-notice-buttons {
+	margin: 0 !important;
+	display: flex !important;
+	gap: 10px !important;
+	flex-wrap: wrap !important;
+}
+
+.authority-mailer-review-btn {
+	margin: 0 !important;
+	cursor: pointer !important;
+	transition: all 0.2s ease !important;
+}
+
+.authority-mailer-review-btn:hover {
+	transform: translateY(-1px) !important;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.authority-mailer-review-btn:active {
+	transform: translateY(0) !important;
+}
+
+/* ============================================
+   TIER 2: Footer Review Link
+   ============================================ */
+
+.authority-mailer-review-footer {
+	position: fixed;
+	bottom: 0;
+	left: 160px; /* WordPress admin menu width */
+	right: 0;
+	background: #f9f9f9;
+	border-top: 1px solid #ddd;
+	padding: 12px 20px;
+	z-index: 999;
+	text-align: center;
+	box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.authority-mailer-review-footer p {
+	margin: 0;
+	font-size: 14px;
+	color: #555;
+}
+
+.authority-mailer-review-footer a {
+	color: #0073aa;
+	text-decoration: none;
+	font-weight: 600;
+	transition: color 0.2s ease;
+}
+
+.authority-mailer-review-footer a:hover {
+	color: #005177;
+	text-decoration: underline;
+}
+
+/* Adjust for folded admin menu */
+@media screen and (max-width: 960px) {
+	.authority-mailer-review-footer {
+		left: 36px;
+	}
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 782px) {
+	.authority-mailer-review-footer {
+		left: 0;
+		padding: 10px;
+	}
+	
+	.authority-mailer-review-notice-buttons {
+		flex-direction: column !important;
+	}
+	
+	.authority-mailer-review-btn {
+		width: 100% !important;
+	}
+}
+
+/* ============================================
+   TIER 3: Success Toast Notification
+   ============================================ */
+
+.authority-mailer-review-toast {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	background: #fff;
+	border-left: 4px solid #46b450;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	padding: 16px 20px;
+	border-radius: 4px;
+	z-index: 9999;
+	max-width: 400px;
+	opacity: 0;
+	transform: translateY(20px);
+	transition: all 0.3s ease;
+	pointer-events: none;
+}
+
+.authority-mailer-review-toast.show {
+	opacity: 1;
+	transform: translateY(0);
+	pointer-events: auto;
+}
+
+.authority-mailer-review-toast.fade-out {
+	opacity: 0;
+	transform: translateY(20px);
+}
+
+.authority-mailer-review-toast-content {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.authority-mailer-review-toast-success {
+	font-weight: 600;
+	color: #46b450;
+	font-size: 14px;
+	margin: 0;
+}
+
+.authority-mailer-review-toast-prompt {
+	font-size: 13px;
+	color: #555;
+	margin: 0;
+}
+
+.authority-mailer-review-toast-link {
+	color: #0073aa;
+	text-decoration: none;
+	font-weight: 600;
+	transition: color 0.2s ease;
+	font-size: 13px;
+	margin-left: 5px;
+}
+
+.authority-mailer-review-toast-link:hover {
+	color: #005177;
+	text-decoration: underline;
+}
+
+/* Close button for toast */
+.authority-mailer-review-toast-close {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	background: none;
+	border: none;
+	font-size: 18px;
+	color: #999;
+	cursor: pointer;
+	padding: 0;
+	width: 20px;
+	height: 20px;
+	line-height: 1;
+	transition: color 0.2s ease;
+}
+
+.authority-mailer-review-toast-close:hover {
+	color: #555;
+}
+
+/* Toast mobile responsive */
+@media screen and (max-width: 782px) {
+	.authority-mailer-review-toast {
+		bottom: 20px;
+		right: 20px;
+		left: 20px;
+		max-width: none;
+	}
+}
+
+/* ============================================
+   Accessibility & Focus States
+   ============================================ */
+
+.authority-mailer-review-btn:focus,
+.authority-mailer-review-footer a:focus,
+.authority-mailer-review-toast-link:focus,
+.authority-mailer-review-toast-close:focus {
+	outline: 2px solid #0073aa;
+	outline-offset: 2px;
+}
+
+/* ============================================
+   Dark Mode Support (if needed)
+   ============================================ */
+
+@media (prefers-color-scheme: dark) {
+	.authority-mailer-review-notice {
+		background: #1e1e1e !important;
+		border-left-color: #2271b1 !important;
+	}
+	
+	.authority-mailer-review-notice-title {
+		color: #e0e0e0 !important;
+	}
+	
+	.authority-mailer-review-notice-body {
+		color: #ccc !important;
+	}
+	
+	.authority-mailer-review-footer {
+		background: #1e1e1e;
+		border-top-color: #333;
+	}
+	
+	.authority-mailer-review-footer p {
+		color: #ccc;
+	}
+	
+	.authority-mailer-review-toast {
+		background: #1e1e1e;
+		color: #e0e0e0;
+	}
+	
+	.authority-mailer-review-toast-prompt {
+		color: #ccc;
+	}
+}

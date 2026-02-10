@@ -1,0 +1,195 @@
+.sweeper-dashboard-overview {
+    > h3 {
+        input[type=checkbox] {
+            float: right;
+            margin: 1px 0 0 0;
+            width: 22px;
+            height: 22px;
+            display: none;
+
+            &:before {
+                margin: -2px -3px;
+                height: 24px;
+                width: 24px;
+            }
+        }
+    }
+
+    .sweeppress-quick-info {
+        background: #EEE;
+        padding: 0.5em 1em;
+        margin: 0 0 1em;
+        border-radius: 5px;
+    }
+}
+
+.sweeppress-sweeper-wrapper {
+    display: flex;
+    margin: 1em 0 0;
+    padding: 1em 0 0;
+    border-top: 1px solid #DDD;
+
+    .sweeppress-sweeper-counters {
+        flex-grow: 1;
+    }
+}
+
+.sweeper-dashboard-database {
+    .d4p-group-inner {
+        .sweeppress-data-block {
+            dl {
+                margin: 0;
+                line-height: 2.2;
+
+                dd {
+                    strong {
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+    }
+
+    &.d4p-card-double {
+        .d4p-group-inner {
+            .sweeppress-data-block {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2em;
+
+                > div {
+                    flex: 0 0 calc(50% - 2em);
+
+                    dl {
+                        padding: 0;
+                        margin: 0;
+                        border-bottom: 0;
+                    }
+                }
+
+                @media screen and (max-width: 767px) {
+                    flex-direction: column;
+
+                    > div {
+                        flex: 0 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#sweeppress-information-auto {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    flex-wrap: nowrap;
+    gap: 2em;
+
+    .sweeppress-info-block {
+        flex: 50%;
+
+        p {
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .sweeppress-request-block {
+        flex: 50%;
+
+        dl {
+            margin: 0 0 1em;
+            padding: 0 0 1em;
+            border-bottom: 1px dashed #DDD;
+            line-height: 2;
+
+            dd {
+                strong {
+                    font-weight: normal;
+                }
+            }
+        }
+
+        button.button-primary {
+            width: 100%;
+            font-size: 1.4em;
+            line-height: 2.5;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        button.button-secondary {
+            width: 100%;
+            margin: .5em 0 0;
+            font-size: 1.1em;
+            line-height: 2;
+        }
+    }
+
+    @media screen and (max-width: 1080px) {
+        flex-direction: column-reverse;
+
+        .sweeppress-info-block,
+        .sweeppress-request-block {
+            flex-basis: 100%;
+        }
+    }
+}
+
+#sweeppress-form-quick {
+    .sweeppress-quick-list-sweepers {
+        display: flex;
+        gap: 1em;
+        flex-wrap: wrap;
+
+        .sweeppress-item-wrapper {
+            flex: 1 0 calc((100% - 1em) / 2);
+            min-width: 400px;
+
+            @media screen and (max-width: 640px) {
+                min-width: 100%;
+            }
+        }
+    }
+}
+
+.sweeppress-backups-wrapper {
+    display: flex;
+    gap: 2em;
+    flex-wrap: nowrap;
+    align-items: flex-start !important;
+
+    .sweeppress-data-block {
+        flex: 0 0 40%;
+
+        h4 {
+            border-bottom: 1px solid #DDD;
+        }
+    }
+
+    .sweeppress-info-block {
+        flex: 1 1 60%;
+
+        p {
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.d4p-badge-pro {
+    padding: 1px 8px 2px !important;
+    background: #F00 !important;
+    font-weight: bold !important;
+}
