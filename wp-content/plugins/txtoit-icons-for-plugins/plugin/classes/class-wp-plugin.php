@@ -62,8 +62,9 @@ if ( ! class_exists( 'TxToIT\IFP\WP_Plugin' ) ) {
 			$this->dir        = untrailingslashit( plugin_dir_path( $plugin_file_path ) ) . DIRECTORY_SEPARATOR;
 
 			add_filter( 'plugin_action_links_' . $this->basename, array( $this, 'action_links' ) );
+			
+			// Load translations at the correct time
 			add_action( 'init', array( $this, 'handle_localization' ) );
-
 		}
 
 		/**
@@ -104,8 +105,19 @@ if ( ! class_exists( 'TxToIT\IFP\WP_Plugin' ) ) {
 			$args        = $this->args;
 			$text_domain = sanitize_text_field( $args['translation']['text_domain'] );
 			$locale      = apply_filters( 'plugin_locale', get_locale(), $text_domain );
-			load_textdomain( $text_domain, WP_LANG_DIR . dirname( $this->basename ) . $text_domain . '-' . $locale . '.mo' );
-			load_plugin_textdomain( $text_domain, false, dirname( $this->basename ) . '/' . $args['translation']['folder'] . '/' );
+			
+			// Fixed: Added missing slash before dirname
+			load_textdomain( 
+				$text_domain, 
+				WP_LANG_DIR . '/' . dirname( $this->basename ) . '/' . $text_domain . '-' . $locale . '.mo' 
+			);
+			
+			// Load plugin textdomain from plugin's languages folder
+			load_plugin_textdomain( 
+				$text_domain, 
+				false, 
+				dirname( $this->basename ) . '/' . $args['translation']['folder'] . '/' 
+			);
 		}
 
 		/**
