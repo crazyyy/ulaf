@@ -101,7 +101,7 @@ if ( $type == 'slugs') {
 		<tr>
 			<td><h4><?php echo $section_list[ $section ] ?></h4>
 				<p>
-					<?php esc_html_e('That section shows all HTTP connections originating from your WordPress website (WordPress core, its plugins and the theme).', 'code-profiler-pro') ?>
+					<?php esc_html_e('That section shows all HTTP connections originating from your WordPress website (plugins and theme).', 'code-profiler-pro') ?>
 					<br />
 					<?php esc_html_e('The "Code" column shows the HTTP response status code and, if you move your mouse over a value, it will display the response message.', 'code-profiler-pro') ?>
 					<br />

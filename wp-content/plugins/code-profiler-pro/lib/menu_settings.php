@@ -282,50 +282,9 @@ $cp_options = get_option('code-profiler-pro');
 				<p><label><?php esc_html_e('Select the accuracy and precision level of the profiler:', 'code-profiler-pro') ?> &nbsp;<select name="cp_options[accuracy]">
 				<?php
 				foreach( CODE_PROFILER_PRO_ACCURACY as $key => $value ) {
-					echo '<option value="'. esc_attr( $key ) .'"'. selected( $cp_options['accuracy'], $key, false ) .'>'. esc_html( $value ) .'</option>';
+					echo '<option value="'. esc_attr( $key ) .'"'. selected( $cp_options['accuracy'], $key ) .'>'. esc_html( $value ) .'</option>';
 				}
 				?></select></label></p>
-			</td>
-		</tr>
-		<?php
-		$recommended = code_profiler_pro_suggested_memory();
-		// Buffer size
-		if ( empty( $cp_options['buffer'] ) ) {
-			$cp_options['buffer'] = 0;
-		} elseif (! preg_match('/^(?:[1-9]|10)$/', $cp_options['buffer'] ) ) {
-			$cp_options['buffer'] = (int) $recommended;
-		}
-		?>
-		<tr>
-			<th scope="row"><?php esc_html_e('Buffer size', 'code-profiler-pro') ?> <span class="code-profiler-pro-tip" data-tip="<?php
-				esc_attr_e('When running, the profiler collects data and saves it to a memory buffer. When the buffer is full, the data is written to disk. If your site uses too much memory and throws a PHP memory error, you can try to lower that value.', 'code-profiler-pro');
-				?>"></span></th>
-			<td>
-				<p>
-					<label>
-						<select name="cp_options[buffer]">
-						<?php
-						echo '<option value="0"'. selected( $cp_options['buffer'], 0, false ) .'>'.
-							esc_html__('Automatic', 'code-profiler-pro') .
-						'</option>';
-						for ( $i = 1; $i <= 10; $i++ ) {
-							echo '<option value="'. $i .'"'. selected( $cp_options['buffer'], $i, false ) .'>'.
-							sprintf(
-								/* Translators: 'MB' for MegaBytes */
-								esc_html__('%s MB', 'code-profiler-pro')
-							, $i ) .
-							'</option>';
-						}
-						?>
-						</select>
-					</label>
-				</p>
-				<p class="description"><?php
-					printf(
-						esc_html__('Recommended value based on your system configuration: %s MB', 'code-profiler-pro'),
-						(int) $recommended
-					);
-				?></p>
 			</td>
 		</tr>
 	</table>
@@ -343,63 +302,49 @@ function code_profiler_pro_save_settings() {
 	$cp_options = get_option('code-profiler-pro');
 
 	// Paths
-	if ( empty( $_POST['cp_options']['show_paths'] ) ||
-		! in_array( $_POST['cp_options']['show_paths'], ['absolute', 'relative'] ) ) {
-
+	if ( empty( $_POST['cp_options']['show_paths'] ) || ! in_array( $_POST['cp_options']['show_paths'], ['absolute', 'relative'] ) ) {
 		$cp_options['show_paths'] = 'relative';
 	} else {
 		$cp_options['show_paths'] = $_POST['cp_options']['show_paths'];
 	}
 
 	// Name vs slug
-	if ( empty( $_POST['cp_options']['display_name'] ) ||
-		! in_array( $_POST['cp_options']['display_name'], ['full', 'slug'] ) ) {
-
+	if ( empty( $_POST['cp_options']['display_name'] ) || ! in_array( $_POST['cp_options']['display_name'], ['full', 'slug'] ) ) {
 		$cp_options['display_name'] = 'full';
 	} else {
 		$cp_options['display_name'] = $_POST['cp_options']['display_name'];
 	}
 
 	// Truncate names
-	if ( empty( $_POST['cp_options']['truncate_name'] ) ||
-		! preg_match('/^\d+$/', ( $_POST['cp_options']['truncate_name'] ) ) ) {
-
+	if ( empty( $_POST['cp_options']['truncate_name'] ) || ! preg_match('/^\d+$/', ( $_POST['cp_options']['truncate_name'] ) ) ) {
 		$cp_options['truncate_name'] = 30;
 	} else {
 		$cp_options['truncate_name'] = (int) $_POST['cp_options']['truncate_name'];
 	}
 
 	// chart type
-	if ( empty( $_POST['cp_options']['chart_type'] ) ||
-		! in_array( $_POST['cp_options']['chart_type'], ['x', 'y'] ) ) {
-
+	if ( empty( $_POST['cp_options']['chart_type'] ) || ! in_array( $_POST['cp_options']['chart_type'], ['x', 'y'] ) ) {
 		$cp_options['chart_type'] = 'x';
 	} else {
 		$cp_options['chart_type'] = $_POST['cp_options']['chart_type'];
 	}
 
 	// Max plugins to display
-	if ( empty( $_POST['cp_options']['chart_max_plugins'] ) ||
-		! preg_match('/^\d+$/', ( $_POST['cp_options']['chart_max_plugins'] ) ) ) {
-
+	if ( empty( $_POST['cp_options']['chart_max_plugins'] ) || ! preg_match('/^\d+$/', ( $_POST['cp_options']['chart_max_plugins'] ) ) ) {
 		$cp_options['chart_max_plugins'] = 25;
 	} else {
 		$cp_options['chart_max_plugins'] = $_POST['cp_options']['chart_max_plugins'];
 	}
 
 	// Max row to display in a table
-	if ( empty( $_POST['cp_options']['table_max_rows'] ) ||
-		! preg_match('/^\d+$/', ( $_POST['cp_options']['table_max_rows'] ) ) ) {
-
+	if ( empty( $_POST['cp_options']['table_max_rows'] ) || ! preg_match('/^\d+$/', ( $_POST['cp_options']['table_max_rows'] ) ) ) {
 		$cp_options['table_max_rows'] = 30;
 	} else {
 		$cp_options['table_max_rows'] = $_POST['cp_options']['table_max_rows'];
 	}
 
 	// Truncate database queries
-	if ( empty( $_POST['cp_options']['truncate_queries'] ) ||
-		! preg_match('/^\d+$/', ( $_POST['cp_options']['truncate_queries'] ) ) ) {
-
+	if ( empty( $_POST['cp_options']['truncate_queries'] ) || ! preg_match('/^\d+$/', ( $_POST['cp_options']['truncate_queries'] ) ) ) {
 		$cp_options['truncate_queries'] = 500;
 	} else {
 		$cp_options['truncate_queries'] = (int) $_POST['cp_options']['truncate_queries'];
@@ -458,9 +403,7 @@ function code_profiler_pro_save_settings() {
 	}
 
 	// Accuracy
-	if ( empty( $_POST['cp_options']['accuracy'] ) ||
-		! preg_match('/^(?:1|5|10|15|20)$/D', $_POST['cp_options']['accuracy'] ) ) {
-
+	if ( empty( $_POST['cp_options']['accuracy'] ) || ! preg_match('/^(?:1|5|10|15|20)$/D', $_POST['cp_options']['accuracy'] ) ) {
 		$cp_options['accuracy'] = 1;
 	} else {
 		$cp_options['accuracy'] = (int) $_POST['cp_options']['accuracy'];
@@ -468,21 +411,10 @@ function code_profiler_pro_save_settings() {
 
 	// Backtrace
 	// Default is 2 (must show the function + its caller(s) at least)
-	if ( empty( $_POST['backtrace_limit_active'] ) ||
-		! preg_match('/^\d+$/', $_POST['cp_options']['backtrace_limit'] ) ) {
-
+	if ( empty( $_POST['backtrace_limit_active'] ) || ! preg_match('/^\d+$/', $_POST['cp_options']['backtrace_limit'] ) ) {
 		$cp_options['backtrace_limit'] = 2;
 	} else {
 		$cp_options['backtrace_limit'] = (int) $_POST['cp_options']['backtrace_limit'] + 2;
-	}
-
-	// Buffer size
-	if ( empty( $_POST['cp_options']['buffer'] ) ) {
-		$cp_options['buffer'] = 0;
-	} elseif (! preg_match('/^(?:[1-9]|10)$/D', $_POST['cp_options']['buffer'] ) ) {
-		$cp_options['buffer'] = 10;
-	} else {
-		$cp_options['buffer'] = (int) $_POST['cp_options']['buffer'];
 	}
 
 	return update_option('code-profiler-pro', $cp_options );

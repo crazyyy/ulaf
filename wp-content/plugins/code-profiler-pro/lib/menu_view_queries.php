@@ -23,15 +23,6 @@ if (! class_exists( 'WP_List_Table' ) ) {
 require 'class-table-queries.php';
 $CPTableQueries = new CodeProfilerPro_Table_Queries( $section, $id, $profile_path );
 
-// Fetch options
-$cp_options = get_option('code-profiler-pro');
-
-if ( file_exists( WP_CONTENT_DIR .'/db.php') && empty( $cp_options['disable_db-php'] ) ) {
-	printf( CODE_PROFILER_PRO_ERROR_NOTICE, sprintf(
-		/* Translators: Found wp-content/db.php */
-		esc_html__('Found %s. If some errors occurred with DB queries, consider deactivating it from the Settings page.', 'code-profiler-pro'), WP_CONTENT_DIR .'/db.php' )
-	);
-}
 ?>
 <div class="colspan-test" id="colspan-test"></div>
 <form class="queries" id="profile-form" method="post"<?php echo $q ?> onsubmit="return cpjspro_search_query();">

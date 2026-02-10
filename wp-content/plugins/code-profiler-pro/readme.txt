@@ -3,7 +3,7 @@ Contributors: bruandet, nintechnet
 Tags: profile, debug, optimize, performance, seo, benchmark, statistics, debugging, speed, profiling
 Requires at least: 5.0
 Tested up to: 7.0
-Stable tag: 1.6.5
+Stable tag: 1.6.2
 License: GPLv3 or later
 Requires PHP: 7.1
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -16,7 +16,7 @@ A profiler to measure the performance of your WordPress plugins and themes.
 
 Code Profiler helps you to measure the performance of your plugins and themes at the PHP level and to quickly find any potential problem in your WordPress installation.
 
-You can profile the frontend and backend of WordPress, a custom URL, or even send a POST payload, custom cookies and HTTP headers to profile a contact form, a checkout process or an AJAX action among many other possibilities.
+You can profile the frontend and backend of WordPress, a custom URL, or even send a POST payload and custom cookies to profile a contact form, a checkout process or an AJAX action among many other possibilities.
 
 It generates an extremely detailed and easy to read analysis in the form of charts and tables that shows not only which plugin or theme, but also which PHP script, class, method and function is slowing down your website. It displays many useful additional information such as database queries, file I/O operations and disk I/O usage as well.
 
@@ -35,7 +35,7 @@ Install, activate it and you can start profiling your site right away.
 * Disk I/O monitoring.
 * WP-CLI integration
 * Export charts in PNG image format.
-* GET/POST methods, custom cookies and HTTP headers.
+* GET/POST methods, custom cookies.
 * [Pro] Export all tables and charts in CSV file format.
 * [Pro] Filtering options.
 
@@ -47,13 +47,31 @@ Learn more about [Code Profiler Pro](https://code-profiler.com/).
 
 They are completely different: Code Profiler analyzes the code performance of your plugins and themes on your server, at the PHP level. Google PageSpeed and GTmetrix, instead, analyze the content of a web page from a browser's perspective.
 
+= Will Code Profiler work if I have a caching plugin or a PHP opcode cache, or if my website is using a CDN service? =
+
+In most cases, Code Profiler will be able to bypass caching from plugins and CDN services, as well as your PHP opcode cache. If there were a problem, it would warn you about it.
+
+= Why do I see numbers such as "3E-06" or "1.2E-05" after opening the CSV file with my spreadsheet editor? =
+
+Spreadsheet editors such as LibreOffice Calc and Microsoft Excel can use scientific exponential notation to display very small numbers, for instance, 0.000025 will become 2.5e-5. Select the whole column of numbers and, in the toolbar of your spreadsheet editor, click the button to increase the number of decimals to 6.
+
+= Why do some scripts show an execution time of 0 second? =
+
+That can happen if your PHP version is 7.1 or 7.2. With those versions, Code Profiler can only use microseconds for its metrics, while with versions 7.3 and above it can use the system's high resolution time in nanoseconds. It can also happen if a PHP script has only a couple of lines of code, its execution time is too quick to be measured, hence it will show 0.
+
 = Do I need to deactivate Code Profiler when I'm not using it ? =
 
 There's no need to deactivate Code Profiler when you don't use it, it has no performance impact on your site.
-Because an update can affect the performance of your site, you should consider running it after every plugin or theme update.
+
+= Why does Code Profiler warn me that I have multiple plugins using Composer? =
+
+Composer, a tool for dependency management in PHP, is included in many popular plugins and themes. It is used to autoload PHP classes.
+Code Profiler will inform you if two or more activated plugins use it because you will need to take it into consideration when reading and interpreting the results. Let's take an example:
+Assuming you have four plugins, #1, #2, #3 and #4. Both plugins #1 and #4 include and require Composer. WordPress will start and load plugin #1, which will run an instance of Composer to load its classes. Immediately after, WordPress will load plugins #2 and #3. Then, it will load plugin #4, which too will need to load its classes. However, plugin #4 will not start a new instance of Composer but, instead, will rely on the one from plugin #1 to load its own classes.
+As a result, the execution time of plugin #1 will increase (its instance of Composer is used to load classes for plugin #4 too), while the execution time of plugin #4 will decrease (it doesn't need to start a new instance of Composer). Therefore, if you have a dozen or more plugins using Composer, it is important to take into consideration that the execution time of plugin #1 may be much higher than other plugins.
+Also, assuming you are a developer and just want to profile a plugin that you wrote and that includes Composer, you will need to disable any other plugin using Composer in order to get the most accurate results for your plugin only.
 
 = Is Code Profiler multisite compatible? =
-
 Code Profiler is multisite compatible. Note however that for security reasons, only the superadmin can run it.
 
 = What are the requirements for running Code Profiler? =
@@ -88,24 +106,6 @@ Code Profiler does not collect any private data from you or your visitors. It do
 12. [Pro version]: Remote connections monitoring.
 
 == Changelog ==
-
-= 1.6.5 (October 5, 2023) =
-
-* Updated Charts.js libraries.
-* Fixed potential PHP error when calling number_format function.
-* Small fixes and adjustments.
-
-= 1.6.4 (August 3, 2023) =
-
-* Added the possibility to send custom HTTP headers when profiling a site. See "Advanced Options > HTTP headers" in the profiler's main page.
-* Several small fixes and adjustments.
-* Updated Charts.js libraries.
-
-= 1.6.3 (June 18, 2023) =
-
-* A new option was added to tweak the size of the memory buffer used by the profiler. It can be found in "Settings > Buffer size".
-* The profiler will disable the PHP display_errors directive so that potential notice, warning and error messages won't mess up with the AJAX response.
-* Small fixes and adjustments.
 
 = 1.6.2 (May 20, 2023) =
 

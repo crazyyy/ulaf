@@ -1,0 +1,5 @@
+<?php
+
+namespace org\wplake\acf_views\vendors;
+
+return array('root' => array('name' => '__root__', 'pretty_version' => 'dev-main', 'version' => 'dev-main', 'reference' => 'ebdb5ea850dfa72880e1f564e30fa5ed5ed9b9a6', 'type' => 'library', 'install_path' => __DIR__ . '/../../', 'aliases' => array(), 'dev' => \true), 'versions' => array('__root__' => array('pretty_version' => 'dev-main', 'version' => 'dev-main', 'reference' => 'ebdb5ea850dfa72880e1f564e30fa5ed5ed9b9a6', 'type' => 'library', 'install_path' => __DIR__ . '/../../', 'aliases' => array(), 'dev_requirement' => \false), 'lightsource/acf-groups' => array('pretty_version' => '12.0.5', 'version' => '12.0.5.0', 'reference' => 'a1606e820bc3ddde76b07decde6360ac266db405', 'type' => 'library', 'install_path' => __DIR__ . '/../lightsource/acf-groups', 'aliases' => array(), 'dev_requirement' => \false), 'yahnis-elsts/plugin-update-checker' => array('pretty_version' => 'v4.13', 'version' => '4.13.0.0', 'reference' => '6eb27a6911e0e0880d09e5b11f577d3f688f7da7', 'type' => 'library', 'install_path' => __DIR__ . '/../yahnis-elsts/plugin-update-checker', 'aliases' => array(), 'dev_requirement' => \false)));

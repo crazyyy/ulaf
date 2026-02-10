@@ -5,15 +5,16 @@ Plugin URI: https://code-profiler.com/
 Description: A profiler to measure the performance of your WordPress plugins and themes.
 Author: Jerome Bruandet ~ NinTechNet Ltd.
 Author URI: https://code-profiler.com/
-Version: 1.6.5
+Version: 1.6.2
 Network: true
 License: GPLv3 or later
 Text Domain: code-profiler-pro
 Domain Path: /languages
+Network: true
 Update URI: https://code-profiler.com/
 */
 
-define('CODE_PROFILER_PRO_VERSION', '1.6.5');
+define('CODE_PROFILER_PRO_VERSION', '1.6.2');
 /*
  +=====================================================================+
  |    ____          _        ____             __ _ _                   |
@@ -37,31 +38,28 @@ require __DIR__ .'/lib/menu.php';
 require_once __DIR__ .'/lib/helper.php';
 // AJAX calls
 require __DIR__ .'/lib/ajax.php';
-// ===================================================================== 2023-06-17
+// =====================================================================
 // Activation: make sure the blog meets the requirements.
 
 function code_profiler_pro_activate() {
 
 	if (! defined('WP_CLI') && ! current_user_can('activate_plugins') ) {
-		exit( esc_html__('Your are not allowed to activate plugins.',
-			'code-profiler-pro')
-		);
+		exit( esc_html__('Your are not allowed to activate plugins.', 'code-profiler-pro') );
 	}
 
 	global $wp_version;
-	if ( version_compare( $wp_version, '5.0', '<') ) {
+	if ( version_compare( $wp_version, '4.7.0', '<') ) {
 		exit( sprintf(
-			esc_html__('Code Profiler requires WordPress %s or greater but '.
-			'your current version is %s.', 'code-profiler-pro'),
-			'5.0',
+			esc_html__('Code Profiler requires WordPress %s or greater but your current version is %s.', 'code-profiler-pro'),
+			'4.7.0',
 			esc_html( $wp_version )
 		) );
 	}
 
 	if ( version_compare( PHP_VERSION, '7.1', '<') ) {
 		exit( sprintf(
-			esc_html__('Code Profiler requires PHP 7.1 or greater but your '.
-			'current version is %s.', 'code-profiler-pro'),
+			esc_html__('Code Profiler requires PHP 7.1 or greater but your current version is %s.',
+			'code-profiler-pro'),
 			esc_html( PHP_VERSION )
 		) );
 	}
@@ -83,15 +81,13 @@ function code_profiler_pro_activate() {
 
 register_activation_hook( __FILE__, 'code_profiler_pro_activate');
 
-// ===================================================================== 2023-06-17
+// =====================================================================
 // Deactivation.
 
 function code_profiler_pro_deactivate() {
 
 	if (! defined('WP_CLI') && ! current_user_can('activate_plugins') ) {
-		exit( esc_html__('Your are not allowed to deactivate plugins.',
-			'code-profiler-pro')
-		);
+		exit( esc_html__('Your are not allowed to deactivate plugins.', 'code-profiler-pro') );
 	}
 
 	// Remove the MU plugin
@@ -102,7 +98,7 @@ function code_profiler_pro_deactivate() {
 
 register_deactivation_hook( __FILE__, 'code_profiler_pro_deactivate');
 
-// ===================================================================== 2023-06-14
+// =====================================================================
 // Create Profiler's menu.
 
 function code_profiler_pro_admin_menu() {
@@ -124,49 +120,43 @@ function code_profiler_pro_admin_menu() {
 
 add_action('admin_menu', 'code_profiler_pro_admin_menu');
 
-// ===================================================================== 2023-06-17
+// =====================================================================
 // Register scripts and styles.
 
 function code_profiler_pro_enqueue( $hook ) {
 
-	if (! is_super_admin() ) {
-		return;
-	}
+	if (! is_super_admin() ) { return; }
 
 	// Load files only if we're in Code Profiler's main page
-	if ( $hook != 'toplevel_page_code-profiler-pro') {
-		return;
-	}
+	if ( $hook != 'toplevel_page_code-profiler-pro') { return; }
 
 	wp_enqueue_script(
 		'code_profiler_pro_javascript',
-		plugin_dir_url( __FILE__ ) .'static/code-profiler-pro.js',
-		['jquery'],
+		plugin_dir_url( __FILE__ ) . 'static/code-profiler-pro.js',
+		array('jquery'),
 		CODE_PROFILER_PRO_VERSION
 	);
 
 	wp_enqueue_script(
 		'code-profiler_pro_tiptip',
 		plugin_dir_url( __FILE__ ) .'static/vendor/jquery.tipTip.js',
-		['jquery'],
+		array('jquery'),
 		CODE_PROFILER_PRO_VERSION
 	);
 
 	wp_enqueue_style(
 		'code-profiler_pro_style',
-		plugin_dir_url( __FILE__ ) .'static/code-profiler-pro.css',
+		plugin_dir_url( __FILE__ ) . 'static/code-profiler-pro.css',
 		[],
 		CODE_PROFILER_PRO_VERSION
 	);
 
 	// Enqueue Chart.js if we're viewing a profile
-	if ( isset( $_REQUEST['action'] ) &&
-		$_REQUEST['action'] == 'view_profile') {
-
+	if ( isset( $_REQUEST['action'] ) && $_REQUEST['action'] == 'view_profile') {
 		wp_enqueue_script(
 			'code_profiler_pro_charts',
-			plugin_dir_url( __FILE__ ) .'static/vendor/chart.min.js',
-			['jquery'],
+			plugin_dir_url( __FILE__ ) . 'static/vendor/chart.min.js',
+			array('jquery'),
 			CODE_PROFILER_PRO_VERSION,
 			// We load it in the footer, because some plugins loads it too
 			// on every pages and that could mess with our pages
@@ -175,56 +165,39 @@ function code_profiler_pro_enqueue( $hook ) {
 	}
 
 	// JS i18n
-	$code_profiler_pro_i18n = [
+	$code_profiler_pro_i18n = array(
 		'missing_nonce' =>
-			esc_attr__('Security nonce is missing, try to reload the page.',
-			'code-profiler-pro'),
+			esc_attr__('Security nonce is missing, try to reload the page.', 'code-profiler-pro'),
 		'missing_frontbackend' =>
-			esc_attr__('Please select either the fontend or backend option.',
-			'code-profiler-pro'),
+			esc_attr__('Please select either the fontend or backend option.', 'code-profiler-pro'),
 			'missing_profileid' =>
 			esc_attr__('Missing profile identifier.', 'code-profiler-pro'),
 		'missing_profilename' =>
-			esc_attr__('Please enter a name for this profile.',
-			'code-profiler-pro'),
+			esc_attr__('Please enter a name for this profile.', 'code-profiler-pro'),
 		'missing_userauth' =>
-			esc_attr__('Please select whether the profiler should run as '.
-			'an authenticated user or not.', 'code-profiler-pro'),
+			esc_attr__('Please select whether the profiler should run as an authenticated user or not.', 'code-profiler-pro'),
 		'missing_username' =>
-			esc_attr__('Please enter the name of the user.',
-			'code-profiler-pro'),
+			esc_attr__('Please enter the name of the user.', 'code-profiler-pro'),
 		'missing_post' =>
-			esc_attr__('Please select a page to profile.',
-			'code-profiler-pro'),
+			esc_attr__('Please select a page to profile.', 'code-profiler-pro'),
 		'unknown_error' =>
-			esc_attr__('Unknown error returned by AJAX',
-			'code-profiler-pro'),
+			esc_attr__('Unknown error returned by AJAX', 'code-profiler-pro'),
 		'http_error' =>
-			esc_attr__('The HTTP server returned the following error:',
-			'code-profiler-pro'),
+			esc_attr__('The HTTP server returned the following error:', 'code-profiler-pro'),
 		'timeout_error' =>
-			esc_attr__('You can try to select a lower Accuracy and '.
-			'Precision level in the Settings page', 'code-profiler-pro'),
+			esc_attr__('You can try to select a lower Accuracy and Precision level in the Settings page', 'code-profiler-pro'),
 		'notfound_error' =>
-			esc_attr__('The requested page does not seem to exist. '.
-			'Please check the syntax of the URL you want to profile',
-			'code-profiler-pro'),
+			esc_attr__('The requested page does not seem to exist. Please check the syntax of the URL you want to profile', 'code-profiler-pro'),
 		'forbidden_error' =>
-			esc_attr__('The server rejected and blocked the requested page. '.
-			'Make sure you are allowed to access that page or that there '.
-			'is no security plugin or application blocking it',
-			'code-profiler-pro'),
+			esc_attr__('The server rejected and blocked the requested page. Make sure you are allowed to access that page or that there is no security plugin or application blocking it', 'code-profiler-pro'),
 		'internal_error' =>
-			esc_attr__('This is an internal server error. Please check your'.
-			' server, PHP and Code Profiler logs as they may contain more '.
-			'details about the error', 'code-profiler-pro'),
+			esc_attr__('This is an internal server error. Please check your server, PHP and Code Profiler logs as they may contain more details about the error', 'code-profiler-pro'),
 		'unknown_error' =>
 			esc_attr__('An unknown error occurred:', 'code-profiler-pro'),
 		'preparing_report' =>
 			esc_attr__('Preparing the report', 'code-profiler-pro') .'...',
 		'empty_log' =>
-			esc_attr__('No records were found that match the specified '.
-			'search criteria.', 'code-profiler-pro'),
+			esc_attr__('No records were found that match the specified search criteria.', 'code-profiler-pro'),
 		'delete_log' =>
 			esc_attr__('Delete log?', 'code-profiler-pro'),
 		'delete_profile' =>
@@ -236,8 +209,7 @@ function code_profiler_pro_enqueue( $hook ) {
 			/* Translators: xx% of all plugins and the theme */
 			esc_attr__('% of all plugins and the theme', 'code-profiler-pro'),
 		'exec_tot_plugins_1' =>
-			esc_attr__('Plugins and theme execution time, in seconds',
-			'code-profiler-pro'),
+			esc_attr__('Plugins and theme execution time, in seconds', 'code-profiler-pro'),
 		'chart_total' =>
 			esc_attr__('total:', 'code-profiler-pro'),
 		'iolist_total_calls' =>
@@ -247,18 +219,12 @@ function code_profiler_pro_enqueue( $hook ) {
 		'disk_io_bytes' =>
 			esc_attr__('Total bytes', 'code-profiler-pro'),
 		'disk_io_title' =>
-			esc_attr__('Total Disk I/O read and write, in bytes',
-			'code-profiler-pro'),
+			esc_attr__('Total Disk I/O read and write, in bytes', 'code-profiler-pro'),
 		'text_copied' =>
-			esc_attr__('The text was successfully copied to the clipboard.',
-			'code-profiler-pro')
+			esc_attr__('The text was successfully copied to the clipboard.', 'code-profiler-pro')
 
-	];
-	wp_localize_script(
-		'code_profiler_pro_javascript',
-		'cpi18n',
-		$code_profiler_pro_i18n
 	);
+	wp_localize_script('code_profiler_pro_javascript', 'cpi18n', $code_profiler_pro_i18n );
 }
 
 add_action('admin_enqueue_scripts', 'code_profiler_pro_enqueue');

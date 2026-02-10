@@ -38,7 +38,7 @@ $summary_stats = code_profiler_pro_getsummarystats( $profile_path );
 		} elseif ( $num == 6 ) {
 			$location .= '&orderby=order&order=asc';
 		}
-		echo '<option value="'. $num . $location .'"'. selected( $num, $section, false ) .'>'. $page .'</option>';
+		echo '<option value="'. $num . $location .'"'. selected( $num, $section ) .'>'. $page .'</option>';
 	}
 	?>
 	</select>

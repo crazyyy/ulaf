@@ -145,10 +145,6 @@ function code_profiler_pro_check_uploadsdir() {
 	if (! file_exists( CODE_PROFILER_PRO_UPLOAD_DIR ) ) {
 		mkdir( CODE_PROFILER_PRO_UPLOAD_DIR, 0755 );
 	}
-	if (! is_writable( CODE_PROFILER_PRO_UPLOAD_DIR ) ) {
-		// PHP running as an Apache module?
-		chmod( CODE_PROFILER_PRO_UPLOAD_DIR, 0777 );
-	}
 	if (! file_exists( CODE_PROFILER_PRO_UPLOAD_DIR .'/index.html') ) {
 		touch( CODE_PROFILER_PRO_UPLOAD_DIR .'/index.html');
 	}
@@ -205,56 +201,9 @@ function code_profiler_pro_check_uploadsdir() {
 }
 
 // =====================================================================
-// Check the PHP memory limit and return a suggested size for the
-// profiler's buffer.
-
-function code_profiler_pro_suggested_memory() {
-
-	$memory_limit = ini_get('memory_limit');
-
-	if ('-1' == $memory_limit ) {
-		// Return max size
-		return 10;
-	}
-
-	if ( preg_match('/^(\d+)([PTGMK])$/i', $memory_limit, $match ) ) {
-		$bytes = (int) $match[1];
-		switch ( strtoupper( $match[2] ) ) {
-			case 'P':
-				$bytes *= 1024;
-			case 'T':
-				$bytes *= 1024;
-			case 'G':
-				$bytes *= 1024;
-			case 'M':
-				$bytes *= 1024;
-			case 'K':
-				$bytes *= 1024;
-		}
-		// 256 MB
-		if ( $bytes >= 268435456 ) {
-			return 10;
-		// 128 MB
-		} elseif ( $bytes >= 134217728 ) {
-			return 7;
-		// 64 MB
-		} elseif ( $bytes >= 67108864 ) {
-			return 4;
-		// <64 MB
-		} else {
-			return 1;
-		}
-	}
-	// Don't know :/
-	return 5;
-}
-
-// =====================================================================
 // Create the default options.
 
 function code_profiler_pro_default_options() {
-
-	$buffer = code_profiler_pro_suggested_memory();
 
 	$cp_options = [
 		'show_paths' 			=> 'relative',
@@ -270,8 +219,7 @@ function code_profiler_pro_default_options() {
 		'disable_db-php'		=> 1,
 		'http_response'		=> '^(?:3|4|5)\d{2}$',
 		'accuracy'				=> 1,
-		'backtrace_limit'		=> 2,
-		'buffer'					=> (int) $buffer
+		'backtrace_limit'		=> 2
 
 	];
 
@@ -279,21 +227,13 @@ function code_profiler_pro_default_options() {
 
 }
 
-// ===================================================================== 2023-06-14
+// =====================================================================
 // Create a profile name.
 
 function code_profiler_pro_profile_name() {
 
 	return date('Y-m-d_') . substr( time(), 4 );
-}
 
-// ===================================================================== 2023-06-14
-// Disable PHP display_errors so that notice, warning and error messages
-// don't show up in the AJAX response.
-
-function code_profiler_pro_hide_errors() {
-
-	ini_set('display_errors', 0 );
 }
 
 // =====================================================================
@@ -519,7 +459,7 @@ function code_profiler_pro_getsummarystats( $profile_path, $type = 'html') {
 	if ( empty( $decode->io ) ) {
 		$tmp = 'N/A';
 	} else {
-		$tmp = number_format( (int) $decode->io );
+		$tmp = number_format( $decode->io );
 	}
 	$string .= sprintf(
 		__('File I/O operations: %s', 'code-profiler-pro'),
@@ -531,7 +471,7 @@ function code_profiler_pro_getsummarystats( $profile_path, $type = 'html') {
 	if ( empty( $decode->queries ) ) {
 		$tmp = 'N/A';
 	} else {
-		$tmp = number_format( (int) $decode->queries );
+		$tmp = number_format( $decode->queries );
 	}
 	$string .= sprintf(
 		__('SQL queries: %s', 'code-profiler-pro'),
@@ -589,7 +529,7 @@ function code_profiler_pro_clearlog() {
 	}
 }
 
-// ===================================================================== 2023-06-15
+// =====================================================================
 // We don't want to be bothered by other themes/plugins' admin notices.
 
 add_action('admin_head', 'code_profiler_pro_hide_admin_notices', 999);
@@ -598,26 +538,11 @@ function code_profiler_pro_hide_admin_notices() {
 	if ( isset( $_GET['page'] ) && $_GET['page'] == 'code-profiler-pro') {
 		remove_all_actions('admin_notices');
 		remove_all_actions('all_admin_notices');
-		add_filter('admin_footer_text', 'code_profiler_pro_admin_footer');
 	}
 
 	if ( is_main_site() && is_super_admin() ) {
 		add_action('all_admin_notices', 'code_profiler_pro_admin_notice');
 	}
-}
-
-function code_profiler_pro_admin_footer () {
-    echo '<span id="footer-thankyou">'.
-		sprintf(
-			/* Translators: %s are the '<a href="">' and '</a>' anchors */
-			esc_html(
-				'Thank you for using %sCode Profiler%s.',
-				'code-profiler-pro'
-			),
-			'<a href="https://code-profiler.com" target="_blank">',
-			'</a>'
-		).
-		'</span>';
 }
 
 // =====================================================================
@@ -640,7 +565,7 @@ function code_profiler_pro_admin_notice() {
 	if ( $res == 0 ) {
 		echo '<div class="notice-warning notice is-dismissible"><p>'.
 		sprintf(
-			/* Translators: %s are the '<a href="">' and '</a>' anchors */
+			/* Translators: the two %s are the '<a href="....">' and '</a>' anchors */
 			esc_html__('Please %sclick here%s to enter your Code Profiler Pro license.', 'code-profiler-pro'),
 			$license_link, '</a>'
 		) . '</p></div>';

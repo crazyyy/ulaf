@@ -20,6 +20,7 @@ class CodeProfilerPro_Report {
 	private $last_script;
 	private $last_type;
 	private $last_function;
+	private $functions_stack= [];
 	private $last_time		= 0;
 	private $scripts			= [];
 	private $themes			= [];
@@ -76,11 +77,7 @@ class CodeProfilerPro_Report {
 		}
 		if (! empty( $cp_error ) ) {
 			$error = sprintf(
-				esc_html__('Cannot create the report: the profiler did not '.
-				'generate a data file (#%s). Make sure the following directory '.
-				'is writable: %s. If you are using a caching plugin or an '.
-				'opcode cache, try to disable it. You may also find more '.
-				'details about the error in the "Log" tab.', 'code-profiler-pro'),
+				esc_html__('Cannot create the report: the profiler did not generate a data file (#%s). Make sure the following directory is writable: %s. If you are using a caching plugin or an opcode cache, try to disable it. You may also find more details about the error in the "Log" tab.', 'code-profiler-pro'),
 				$cp_error,
 				CODE_PROFILER_PRO_UPLOAD_DIR .'/'
 				);
@@ -124,8 +121,7 @@ class CodeProfilerPro_Report {
 		$this->save_queries();
 
 		code_profiler_pro_log_info( sprintf(
-			__('Volume of code and data analyzed: %1$sMB (%2$s plugins and '.
-			'1 theme) in %4$ss - Memory used: %3$sMB', 'code-profiler-pro'),
+			__('Volume of code and data analyzed: %1$sMB (%2$s plugins and 1 theme) in %4$ss - Memory used: %3$sMB', 'code-profiler-pro'),
 			number_format( $this->parsed_data / 1024 / 1024, 2 ),
 			(int) $this->total_plugins,
 			number_format( memory_get_peak_usage( false ) / 1024 / 1024, 2 ),
@@ -330,12 +326,12 @@ class CodeProfilerPro_Report {
 		$s = json_decode( file_get_contents( $this->tmp_summary ), true );
 		unlink( $this->tmp_summary );
 		if ( empty( $s['memory'] ) ) {
-			$this->summary_list['memory'] = 0;
+			$this->summary_list['memory'] = '-';
 		} else {
 			$this->summary_list['memory'] = $s['memory'] / 1024 / 1024;
 		}
 		if ( empty( $s['queries'] ) ) {
-			$this->summary_list['queries']= 0;
+			$this->summary_list['queries']= '-';
 		} else {
 			$this->summary_list['queries']= $s['queries'];
 		}
@@ -345,7 +341,7 @@ class CodeProfilerPro_Report {
 			$this->summary_list['connections'] = (int) $s['connections'];
 		}
 		if ( empty( $this->total_io ) ) {
-			$this->summary_list['io']	= 0;
+			$this->summary_list['io']	= '-';
 		} else {
 			$this->summary_list['io']	= $this->total_io;
 		}
@@ -737,7 +733,7 @@ class CodeProfilerPro_Report {
 
 		foreach( $queries as $index => $query ) {
 
-			$stack	= explode(', ', $query[2] );
+			$stack	= explode( ', ', $query[2] );
 			$buffer	= [];
 			unset( $queries[ $index ][3] );
 			unset( $queries[ $index ][4] );
@@ -755,21 +751,13 @@ class CodeProfilerPro_Report {
 				if ( preg_match('/^(?:require|include)(?:_once)?\(\'([^\']+)\'\)$/', $value, $match ) ) {
 					if ( $match[1][0] == '/') {
 						if ( file_exists( WP_CONTENT_DIR . $match[1] ) ) {
-							$buffer[]['n'] = [
-								'n' => WP_CONTENT_DIR . $match[1],
-								'f' => WP_CONTENT_DIR . $match[1],
-								'l' => 1
-							];
+							$buffer[]['n'] = ['n' => WP_CONTENT_DIR . $match[1], 'f' => WP_CONTENT_DIR . $match[1], 'l' => 1 ];
 							continue;
 						}
 					// If the value doesn't start with a /, we only need
 					// to prepend the ABSPATH
 					} elseif ( file_exists( ABSPATH . $match[1] ) ) {
-						$buffer[]['n'] = [
-							'n' => ABSPATH . $match[1],
-							'f' => ABSPATH . $match[1],
-							'l' => 1
-						];
+						$buffer[]['n'] = ['n' => ABSPATH . $match[1], 'f' => ABSPATH . $match[1], 'l' => 1 ];
 						continue;
 					}
 					$buffer[]['n'] = $value;
@@ -840,11 +828,7 @@ class CodeProfilerPro_Report {
 					}
 				}
 
-				$buffer[]['n'] = [
-					'n' => $value,
-					'f' => $file,
-					'l' => $line
-				];
+				$buffer[]['n'] = ['n' => $value, 'f' => $file, 'l' => $line ];
 			}
 
 			if ( empty( $queries[ $index ][3] ) ) {
@@ -902,44 +886,43 @@ class CodeProfilerPro_Report {
 			$line = fgets( $fh );
 			if ( preg_match( '`^\[(.+?)\]\[(.+?)\]$`', $line, $match ) ) {
 
-				/* Text/plain CSV strings shouldn't be escaped */
 				if ( $match[2] == 'unlink') {
-					$mode = __('Delete file', 'code-profiler-pro');
+					$mode = /* Text/plain CSV strings shouldn't be escaped */__('Delete file', 'code-profiler-pro');
 
 				} elseif ( $match[2] == 'rename') {
-					$mode = __('Rename file', 'code-profiler-pro');
+					$mode =  /* Text/plain CSV strings shouldn't be escaped */__('Rename file', 'code-profiler-pro');
 
 				} elseif ( $match[2] == 'rmdir') {
-					$mode = __('Remove directory', 'code-profiler-pro');
+					$mode =  /* Text/plain CSV strings shouldn't be escaped */__('Remove directory', 'code-profiler-pro');
 
 				} elseif ( $match[2] == 'opendir') {
-					$mode = __('Open directory', 'code-profiler-pro');
+					$mode =  /* Text/plain CSV strings shouldn't be escaped */__('Open directory', 'code-profiler-pro');
 
 				} elseif ( preg_match('`^(?:chmod|chgrp|chown|touch|mkdir)`', $match[2] ) ) {
 					$metadata = explode(':', $match[2], 2 );
 
 					if ( $metadata[0] == 'chmod') {
 						$mode = sprintf(
-							__('Change mode [chmod %s]', 'code-profiler-pro'),
+							 /* Text/plain CSV strings shouldn't be escaped */__('Change mode [chmod %s]', 'code-profiler-pro'),
 							sprintf ("%04o", $metadata[1] & 0777)
 						);
 					} elseif ( $metadata[0] == 'mkdir') {
 						$mode = sprintf(
-							__('Make directory [%s]', 'code-profiler-pro'),
+							 /* Text/plain CSV strings shouldn't be escaped */__('Make directory [%s]', 'code-profiler-pro'),
 							sprintf ("%04o", $metadata[1] & 0777)
 						);
 					} elseif ( $metadata[0] == 'chgrp') {
 						$mode = sprintf(
-							__('Change group [chgrp %s]', 'code-profiler-pro'),
+							 /* Text/plain CSV strings shouldn't be escaped */__('Change group [chgrp %s]', 'code-profiler-pro'),
 							$metadata[1]
 						);
 					} elseif ( $metadata[0] == 'chown') {
 						$mode = sprintf(
-							__('Change owner [chown %s]', 'code-profiler-pro'),
+							 /* Text/plain CSV strings shouldn't be escaped */__('Change owner [chown %s]', 'code-profiler-pro'),
 							$metadata[1]
 						);
 					} else { // touch
-						$mode = __('Change timestamps', 'code-profiler-pro');
+						$mode =  /* Text/plain CSV strings shouldn't be escaped */__('Change timestamps', 'code-profiler-pro');
 						if (! empty( $metadata[1] ) ) {
 							$mode .= "[ {$metadata[1]} ]";
 						}
@@ -950,13 +933,13 @@ class CodeProfilerPro_Report {
 					$match[2] = str_replace( ['t', 'b' ], '', $match[2] );
 					if ( isset( $rw[ $match[2] ] ) ) {
 						$mode = sprintf(
-							__('Open file: %s [%s]', 'code-profiler-pro'),
+							/* Text/plain CSV strings shouldn't be escaped */__('Open file: %s [%s]', 'code-profiler-pro'),
 							$rw[ $match[2] ],
 							$match[2]
 						);
 					} else {
 						$mode = sprintf(
-							__('Open file [%s]', 'code-profiler-pro'),
+							/* Text/plain CSV strings shouldn't be escaped */__('Open file [%s]', 'code-profiler-pro'),
 							$match[2]
 						);
 					}
@@ -971,10 +954,7 @@ class CodeProfilerPro_Report {
 
 		// Save content
 		if ( empty( $buffer ) ){
-			$error = sprintf(
-				esc_html__('Buffer is empty, no data to save (%s)', 'code-profiler-pro'),
-				'CODE_PROFILER_PRO_TMP_IOLIST_LOG'
-			);
+			$error = sprintf( esc_html__('Buffer is empty, no data to save (%s)', 'code-profiler-pro'), 'CODE_PROFILER_PRO_TMP_IOLIST_LOG');
 			$this->return_error( $error );
 		}
 		$res = file_put_contents(
@@ -982,10 +962,7 @@ class CodeProfilerPro_Report {
 			$buffer
 		);
 		if ( $res === false ) {
-			$error = sprintf(
-				esc_html__('Cannot open file for writting: %s', 'code-profiler-pro'),
-				$this->tmp_iolist
-			);
+			$error = sprintf( esc_html__('Cannot open file for writting: %s', 'code-profiler-pro'), $this->tmp_iolist );
 			$this->return_error( $error );
 		}
 		unlink( $this->tmp_iolist );
@@ -1000,10 +977,7 @@ class CodeProfilerPro_Report {
 		$buffer = json_decode( file_get_contents( $this->tmp_iostats ), true );
 
 		if ( empty( $buffer ) ) {
-			$error = sprintf(
-				esc_html__('Cannot decode JSON-encode file (%s)', 'code-profiler-pro'),
-				'CODE_PROFILER_PRO_TMP_IOSTATS_LOG'
-			);
+			$error = sprintf( esc_html__('Cannot decode JSON-encode file (%s)', 'code-profiler-pro'), 'CODE_PROFILER_PRO_TMP_IOSTATS_LOG');
 			$this->return_error( $error );
 		}
 
@@ -1065,10 +1039,7 @@ class CodeProfilerPro_Report {
 		unlink( $this->tmp_connections );
 
 		if ( empty( $connections ) ) {
-			$error = sprintf(
-				esc_html__('Cannot decode JSON-encode file (%s)', 'code-profiler-pro'),
-				'CODE_PROFILER_PRO_TMP_CONNECTIONS_LOG'
-			);
+			$error = sprintf( esc_html__('Cannot decode JSON-encode file (%s)', 'code-profiler-pro'), 'CODE_PROFILER_PRO_TMP_CONNECTIONS_LOG');
 			$this->return_error( $error );
 		}
 

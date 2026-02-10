@@ -70,17 +70,13 @@ if ( empty( $cp_options['mem_method'] ) ) {
 if ( empty( $cp_options['ua'] ) ) {
 	$cp_options['ua'] = 'Firefox';
 }
-$cookies				= '';
-$payload				= '';
-$custom_headers	= '';
+$cookies = '';
+$payload = '';
 if ( isset( $cp_options['cookies'] ) ) {
 	$cookies = trim( json_decode( $cp_options['cookies'] ) );
 }
 if ( isset( $cp_options['payload'] ) ) {
 	$payload	= trim( json_decode( $cp_options['payload'] ) );
-}
-if ( isset( $cp_options['custom_headers'] ) ) {
-	$custom_headers = trim( json_decode( $cp_options['custom_headers'] ) );
 }
 ?>
 <table class="form-table">
@@ -141,7 +137,7 @@ if ( isset( $cp_options['custom_headers'] ) ) {
 		</td>
 	</tr>
 	<tr>
-		<th scope="row"><?php esc_html_e('Run profiler as', 'code-profiler-pro') ?> <span class="code-profiler-pro-tip" data-tip="<?php esc_attr_e('The profiler can access the requested page as an unauthenticated user (frontend only) or as an authenticated user (frontend and backend). You can enter the login name of any registered user, but make sure that the user has the required capability to access the page you are going to profile, otherwise Code Profiler will return an error if the user isn\'t allowed to access it.', 'code-profiler-pro') ?>"></span></th>
+		<th scope="row"><?php esc_html_e('Run profiler as', 'code-profiler-pro') ?> <span class="code-profiler-pro-tip" data-tip="<?php esc_attr_e('The profiler can access the requested page as an unauthenticated user (frontend only) or as an authenticated user (frontend and backend). You can enter the login name of any registered user, but make sure that the user has the required capability to access the page you are going to profile (e.g. an admin page in the backend), otherwise Code Profiler will return an error if the user isn\'t allowed to access it.', 'code-profiler-pro') ?>"></span></th>
 		<td>
 			<p><label><input type="radio" onclick="cpjspro_authenticated(0);" name="user" value="unauthenticated" id="user-unauthenticated"<?php checked( $cp_options['mem_user'], 'unauthenticated'); disabled( $cp_options['mem_where'], 'backend'); ?> /> <?php esc_html_e('Unauthenticated user', 'code-profiler-pro') ?></label></p>
 			<p><label><input type="radio" onclick="cpjspro_authenticated(1);" name="user" value="authenticated" id="user-authenticated"<?php checked( $cp_options['mem_user'], 'authenticated') ?> /> <?php esc_html_e('Authenticated user', 'code-profiler-pro') ?></label></p>
@@ -156,7 +152,7 @@ if ( isset( $cp_options['custom_headers'] ) ) {
 			foreach( CODE_PROFILER_PRO_UA as $types => $types_array ) {
 				echo '<optgroup label="'. esc_attr( $types ) .'">';
 				foreach( $types_array as $name => $value ) {
-					echo '<option value="'. esc_attr( $name ) .'"'. selected( $cp_options['ua'], $name, false ) .'>'. esc_html( $name ) .'</option>';
+					echo '<option value="'. esc_attr( $name ) .'"'. selected( $cp_options['ua'], $name ) .'>'. esc_html( $name ) .'</option>';
 				}
 				echo '</optgroup>';
 			}
@@ -173,7 +169,7 @@ if ( isset( $cp_options['custom_headers'] ) ) {
 	</tr>
 </table>
 <?php
-if (! empty( $cookies ) || ! empty( $custom_headers ) || $cp_options['mem_method'] == 'post') {
+if (! empty( $cookies ) || $cp_options['mem_method'] == 'post') {
 	echo '<div id="cp-advanced-settings">';
 	$disabled_button = ' disabled';
 } else {
@@ -196,13 +192,6 @@ if (! empty( $cookies ) || ! empty( $custom_headers ) || $cp_options['mem_method
 			<td>
 				<p><textarea name="cp-cookies" id="cp-cookies" class="regular-text code" maxlength="4000" rows="6"><?php echo esc_textarea( $cookies ) ?></textarea></p>
 				<p class="description"><?php printf( esc_html__('Optional cookie in %s format, one item per line.', 'code-profiler-pro'), '<code>name=value</code>') ?> <?php printf( esc_html__('%sView example%s', 'code-profiler-pro'), '<a href="'. plugins_url('/static/help/cookies.png', dirname( __FILE__ ) ) .'" target="_blank" rel="noopener noreferrer">', '</a>') ?></p>
-			</td>
-		</tr>
-		<tr>
-			<th scope="row" class="row-med"><?php esc_html_e('HTTP headers', 'code-profiler-pro'); ?> <span class="code-profiler-pro-tip" data-tip="<?php esc_attr_e('You can use this field to add custom HTTP headers or even override existing ones (e.g., host, user-agent, accept-language etc). HTTP header names are case-insensitive and Code Profiler will automatically convert them to lowercase. HTTP header values are case-sensitive and only ASCII printable characters are allowed.', 'code-profiler-pro') ?>"></span></th>
-			<td>
-				<textarea autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" id="custom-headers" name="custom_headers" class="regular-text code" rows="6"><?php echo esc_textarea( $custom_headers ) ?></textarea>
-				<p class="description"><?php printf( esc_html__('Optional HTTP header in %s format, one item per line.', 'code-profiler-pro'), '<code>name: value</code>') ?> <?php printf( esc_html__('%sView example%s', 'code-profiler-pro'), '<a href="'. plugins_url('/static/help/custom_headers.png', dirname( __FILE__ ) ) .'" target="_blank" rel="noopener noreferrer">', '</a>') ?></p>
 			</td>
 		</tr>
 	</table>
@@ -300,7 +289,7 @@ function code_profiler_pro_fetch_admin_pages( $home, $cp_options ) {
 		foreach( $GLOBALS[ 'menu' ] as $menu => $value ) {
 			if (! empty( $value[0] ) && substr( $value[2], -4 ) == '.php') {
 				// E.g., "Comments", "Plugins" etc
-				$value[0] = trim( preg_replace('/\s*<.+$/', '', $value[0] ) );
+				$value[0] = trim( preg_replace('/\s+<.+$/', '', $value[0] ) );
 
 				if ( $cp_options['mem_post'] == "{$home}wp-admin/{$value[2]}" ) {
 					$backend .= sprintf(

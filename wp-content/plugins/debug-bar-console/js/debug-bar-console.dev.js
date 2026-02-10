@@ -2,7 +2,7 @@
 
 var el = {},
 	iframe = {},
-	run, mode, output, nonce;
+	run, mode, nonce;
 
 run = function() {
 	var input = mode.inputs[ mode.mode ];
@@ -19,34 +19,12 @@ run = function() {
 		mode:   mode.mode,
 		data:   input.val(),
 		nonce:  nonce
-	}, output.render );
+	}, function( data ) {
+		iframe.body.html( data );
+	});
 	return false;
 };
 
-output = {
-	data: '',
-	mode: 'formatted',
-	render: function( data ) {
-		var html;
-
-		if ( arguments.length )
-			output.data = data;
-		else
-			data = output.data;
-
-		if ( output.mode === 'formatted' ) {
-			iframe.body.text( data );
-			html = iframe.body.html();
-			html = html.replace( / /g, '&nbsp;' ).replace(/[\r\n]+/g, '<br />');
-			iframe.body.html( html );
-		} else {
-			iframe.body.html( data );
-		}
-	},
-	refresh: function() {
-		return output.render();
-	}
-};
 
 mode =  {
 	mode: 'php',
@@ -81,8 +59,13 @@ mode =  {
 			indentUnit: 4,
 			indentWithTabs: true,
 			enterMode: 'keep',
-			extraKeys: {
-				'Shift-Enter': run
+			onKeyEvent: function(i, e) {
+				// Hook into shift-enter
+				if ( e.keyCode == 13 && e.shiftKey ) {
+					e.stop();
+					run();
+					return true;
+				}
 			}
 		}
 	},
@@ -113,7 +96,6 @@ $(document).ready( function(){
 	$.extend( el, {
 		form:   $('#debug-bar-console'),
 		submit: $('#debug-bar-console-submit a'),
-		input:  $('#debug-bar-console-wrap'),
 		output: $('#debug-bar-console-output')
 	});
 	el.wrap = el.form.parent();
@@ -140,7 +122,7 @@ $(document).ready( function(){
 	});
 
 	// Bind tab switching
-	$( '.debug-bar-console-tab', el.input ).each( function() {
+	$('.debug-bar-console-tab').each( function() {
 		var t = $(this),
 			slug = t.find('input').val(),
 			input;
@@ -155,19 +137,6 @@ $(document).ready( function(){
 
 	}).click( function() {
 		mode.change( $(this).data( 'console-tab' ) );
-	});
-
-	// Output tab switching
-	$( '.debug-bar-console-tab', el.output ).click( function() {
-		var t = $(this);
-
-		output.mode = t.data('outputMode');
-		output.refresh();
-
-		// Update tabs
-		t.siblings().removeClass('debug-bar-console-tab-active');
-		t.addClass('debug-bar-console-tab-active');
-
 	});
 });
 

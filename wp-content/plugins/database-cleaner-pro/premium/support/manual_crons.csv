@@ -1,0 +1,108 @@
+All in One SEO|aiosp_sitemap_daily_update_cron|all-in-one-seo-pack
+All in One SEO|aioseop_cron_check_remote_notices|all-in-one-seo-pack
+All in One SEO|aioseop_usage_tracking_cron|all-in-one-seo-pack
+All-in-One WP Migration|ai1wm_storage_cleanup|all-in-one-wp-migration
+Antispam Bee|antispam_bee_daily_cronjob|antispam-bee
+Astra|astra_addon_get_addon_usage|astra-addon
+Astra|astra_get_knowledge_base_data|astra-addon
+AutomateWoo|automatewoo_hourly_worker|automatewoo
+Autoptimize|ao_cachechecker|autoptimize
+Beaver Builder|fl_builder_notifications_event|bb-plugin
+Blocksy Companion|fs_data_sync_blocksy-companion|blocksy-companion
+Cache Enabler|cache_enabler_clear_expired_cache|cache-enabler
+CookieYes|GDPR Cookie Consent|cookielawinfo
+Divi Builder|et_core_page_resource_auto_clear|divi-builder
+Easy Digital Downloads|edd_recurring_daily_scheduled_events|easy-digital-downloads
+Easy Digital Downloads|edd_rp_suggestions|easy-digital-downloads
+Elementor|elementor/tracker/send_event|elementor
+Error Log Monitor|Elm_Plugin_emailErrors_hook|plugin
+Error Log Monitor|elm_start_incremental_summary_update|plugin
+Error Log Monitor|elm_continue_incremental_summary_update|plugin
+Error Log Monitor|Elm_Plugin_deleteOldFixedMessages_hook|error-log-monitor
+Error Log Monitor|Elm_Plugin_checkLogFileSize_hook|error-log-monitor
+FacetWP|facetwp_indexer_cron|index
+Favicon by RealFaviconGenerator|fbrfg_check_for_updates|favicon-by-realfavicongenerator
+FluentAuth - Auth Security Plugin|fluent_auth_daily_tasks|fluent-security
+FluentSMTP|fluentmail_do_daily_scheduled_tasks|fluent-smtp
+GeoDirectory|geodirectory_tracker_send_event|geodirectory
+Gravity Forms|gravityforms_cron|gravityforms
+Groups Newsletters|groups_newsletters_work|groups-newsletters
+Groups Newsletters|newsletters_countrieshook|groups-newsletters
+Happyforms|happyforms_schedule_privacy_cleanup|happyforms-upgrade
+Happyforms|_ttf_product_updater_license_check_happyforms-upgrade|happyforms-upgrade
+Happyforms|happyforms_schedule_pending_cleanup|happyforms-upgrade
+Happyforms|happyforms_remove_unassigned_attachments|happyforms-upgrade
+Happyforms|happyforms_schedule_cleanup_sessions|happyforms-upgrade
+Hide My WP Ghost|puc_cron_check_updates-hide-my-wp|hide-my-wp
+Hide My WP Ghost|hmwp_cron_process|hide-my-wp
+Image Regenerate & Select Crop|SIRSC-BULKR102bd491a94c84c910f2f4185e040b1c|image-regenerate-select-crop
+iThemes Security|itsec_cron|ithemes-security
+iThemes Security|itsec_cron_test|ithemes-security
+Jetpack|jetpack_sync_full_cron|jetpack
+Jetpack|jetpack_v2_heartbeat|jetpack
+Jetpack|jetpack_recommend_videopress|jetpack
+Jetpack Protect|jetpack_waf_rules_update_cron|jetpack-protect
+Kadence Conversions - Popups, slide-ins|kadence_countdown_daily_cleanup|kadence-conversions
+LiteSpeed Cache|litespeed_task_ucss|litespeed-cache
+LiteSpeed Cache|litespeed_task_lqip|litespeed-cache
+LiteSpeed Cache|litespeed_task_imgoptm_req|litespeed-cache
+LiteSpeed Cache|litespeed_task_imgoptm_pull|litespeed-cache
+LiteSpeed Cache|litespeed_task_avatar|litespeed-cache
+LiteSpeed Cache|litespeed_task_crawler|litespeed-cache
+LiteSpeed Cache|litespeed_task_vpi|litespeed-cache
+MC4WP: Mailchimp for WordPress|mc4wp_refresh_mailchimp_lists|mailchimp-for-wp
+MyBookProgress - Stormhill Media|mbp_do_email_update_period|mybookprogress
+MyBookProgress - Stormhill Media|mbp_periodic_apikey_check|mybookprogress
+MyBookProgress - Stormhill Media|mbp_periodic_tracking|mybookprogress
+Object Cache|objectcache_prune_analytics|redis-cache
+Rank Math SEO|rank_math/redirection/clean_trashed|rank-math
+Rank Math SEO|rank_math/links/internal_links|rank-math
+Redirection|redirection_log_delete|redirection
+SEOPress|seopress_404_cron_cleaning|wp-seopress
+SEOPress|seopress_google_analytics_cron|wp-seopress
+SEOPress|seopress_matomo_analytics_cron|wp-seopress
+SEOPress|seopress_page_speed_insights_cron|wp-seopress
+Site Kit by Google|googlesitekit_cron_update_remote_features|google-site-kit
+SiteGround Optimizer|siteground_delete_assets|sg-cachepress
+Subscribe2|subscribe2_tracker_send_event|subscribe2
+SUMO Subscriptions|sumosubscriptions_background_updater|sumosubscriptions
+TablePress Extension: Responsive Tables|check_plugin_updates-tablepress-responsive-tables|tablepress-responsive-tables
+The Events Calendar|fs_data_sync_the-events-calendar|the-events-calendar
+The Events Calendar|tribe_common_log_cleanup|the-events-calendar
+The Events Calendar|tribe_schedule_transient_purge|the-events-calendar
+The Events Calendar|fs_install_sync_the-events-calendar|the-events-calendar
+The SEO Framework|tsf_sitemap_cron_hook_before|autodescription
+The SEO Framework|tsf_sitemap_cron_hook|autodescription
+The SEO Framework|tsf_sitemap_cron_hook_after|autodescription
+UpdraftPlus - Backup/Restore|puc_cron_check_updates-updraftplus|updraftplus
+UpdraftPlus - Backup/Restore|updraftplus_clean_temporary_files|updraftplus
+Useful Blocks Pro-Addon|puc_cron_check_updates-useful-blocks-pro|useful-blocks
+vendidero Helper|vendidero_cron|vendidero-helper
+WooCommerce Matomo Analytics|woopiwik_validate_configuration|woocommerce-piwik-analytics
+WooCommerce Matomo Analytics|puc_cron_check_updates-woocommerce-piwik-analytics|woocommerce-piwik-analytics
+Woostify|woostify_delete_fonts_folder|woostify
+Wordfence Security|wf_scan_monitor|wordfence
+Wordfence Security|wordfence_start_scheduled_scan|wordfence
+Wordfence Security|wordfence_email_activity_report|wordfence
+WordPress Automatic|wp_automatic_hook|wp-automatic
+WordPress Mail Queue|wpmq_cron|wpmq
+WordPress Mail Queue|fs_data_sync_wpmq|wpmq
+WP Foto Vote|check_plugin_updates-wp-foto-vote|wp-foto-vote
+WP Grid Builder - Caching|wp_grid_builder_caching/cleanup_cache|wp-grid-builder-caching
+WP Rocket|rocket_purge_time_event|wp-rocket
+WP Rocket|action_scheduler_run_queue_rucss|wp-rocket
+WP Rocket|rocket_preload_process_pending|wp-rocket
+WP Rocket|rocket_database_optimization_time_event|wp-rocket
+WP Rocket|rocket_preload_revert_old_failed_rows|wp-rocket
+WP Rocket|rocket_update_dynamic_lists|wp-rocket
+WP Rocket|rocket_preload_clean_rows_time_event|wp-rocket
+WP-Cron Status Checker|fs_data_sync_wp-cron-status-checker|wp-cron-status-checker
+WPCodeBox|puc_cron_check_updates-wpcodebox|wpcodebox
+WPvivid Plugins|wpvivid_incremental_db_schedule_event627bf83a0ed79|wpvivid-backup
+WPvivid Plugins|wpvivid_incremental_files_schedule_event627bf83a0ed78|wpvivid-backup
+WPvivid Plugins|wpvivid_check_incremental_schedule_exist_event|wpvivid-backup
+WPvivid Plugins|wpvivid_clean_remote_schedule_event|wpvivid-backup
+WPvivid Plugins|wpvivid_dashboard_update_event|wpvivid-backup
+WPvivid Staging|wpvivid_staging_auto_update_schedule|wpvivid-staging
+YITH WooCommerce Gift Cards|ywgc_start_gift_cards_sending|init
+Yoast SEO Premium|wpseo-reindex|wordpress-seo-premium

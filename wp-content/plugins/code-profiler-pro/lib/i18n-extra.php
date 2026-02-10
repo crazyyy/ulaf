@@ -30,4 +30,5 @@ __('All charts and tables can be exported as a CSV file (comma-separated values)
 __('Learn more about Code Profiler Pro.', 'code-profiler-pro');
 __('The MU plugin is not loaded, please check the log', 'code-profiler-pro');
 __('Initializing Code Profiler v%s for %s (profile: %s)', 'code-profiler-pro');
+__('Code Profiler Pro is active on this site, please disable it first if you want to run the free version.', 'code-profiler-pro');
 __('Go Pro', 'code-profiler-pro');

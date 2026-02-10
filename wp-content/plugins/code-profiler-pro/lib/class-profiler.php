@@ -22,7 +22,7 @@ class CodeProfilerPro_Profiler {
 	static $tick_list = '';
 	static $connections_list = [];
 	static $connections_start;
-	static $buffer;
+	static $buffer = 10000000;
 	static $metrics;
 	private $tmp_iostats;
 	private $tmp_summary;
@@ -62,11 +62,10 @@ class CodeProfilerPro_Profiler {
 			unlink( $this->tmp_ticks );
 		}
 
-		if ( function_exists('hrtime') ) {
-			// PHP >=7.3
-			self::$metrics = 'hrtime';
-		} else {
+		if ( version_compare( PHP_VERSION, '7.3', '<') ) {
 			self::$metrics = 'microtime';
+		} else {
+			self::$metrics = 'hrtime';
 		}
 
 		// Enable queries debugging
@@ -93,30 +92,12 @@ class CodeProfilerPro_Profiler {
 			define('CODE_PROFILER_PRO_DBLIMIT', (int) $cp_options['backtrace_limit'] );
 		}
 
-		if ( empty( $cp_options['buffer'] ) ||
-			! preg_match('/^(?:[1-9]|10)$/', $cp_options['buffer'] ) ) {
-
-			$recommended = code_profiler_pro_suggested_memory();
-			self::$buffer = (int) $recommended * 1000000;
-		} else {
-			self::$buffer = $cp_options['buffer'] * 1000000;
-		}
-		code_profiler_pro_log_debug(
-			sprintf(
-				esc_html__('Setting size of memory buffer to %sMB', 'code-profiler-pro'),
-				self::$buffer / 1000000
-			)
-		);
-
 		add_filter('pre_http_request', [ $this, 'pre_http_request'], 10000, 3 );
 		add_action('http_api_debug', [ $this, 'http_api_debug'], 10000, 5 );
-		register_shutdown_function( [ $this, 'code_profiler_pro_shutdown'] );
-		code_profiler_pro_log_debug(
-			esc_html__('Starting profiler', 'code-profiler-pro')
-		);
+		register_shutdown_function( [$this, 'code_profiler_pro_shutdown'] );
 		require 'class-stream.php';
 		CodeProfilerPro_Stream::start();
-		register_tick_function( [ $this, 'code_profiler_pro_tick_handler'] );
+		register_tick_function( [$this, 'code_profiler_pro_tick_handler'] );
 	}
 
 
@@ -265,9 +246,7 @@ class CodeProfilerPro_Profiler {
 						"@-@{$backtrace[ $dbindex ]['line']}";
 			$dbindex++;
 		}
-		$backtrace	= null;
-		$ser_trace	= serialize( $trace );
-		$trace		= null;
+		$ser_trace = serialize( $trace );
 
 		// Buffer can grow *very* big (several hundred megabytes),
 		// hence we flush it every 10MB by default

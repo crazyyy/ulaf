@@ -102,16 +102,6 @@ class CPPro_Troubleshooter {
 		}
 
 		// WordPress
-		if ( defined('WP_MEMORY_LIMIT') ) {
-			$this->buffer[ $key ]['WordPress']['WP_MEMORY_LIMIT']	= WP_MEMORY_LIMIT;
-		} else {
-			$this->buffer[ $key ]['WordPress']['WP_MEMORY_LIMIT']	= 'N/A';
-		}
-		if ( defined('WP_MAX_MEMORY_LIMIT') ) {
-			$this->buffer[ $key ]['WordPress']['WP_MAX_MEMORY_LIMIT']	= WP_MAX_MEMORY_LIMIT;
-		} else {
-			$this->buffer[ $key ]['WordPress']['WP_MAX_MEMORY_LIMIT']	= 'N/A';
-		}
 		global $wp_version;
 		$this->buffer[ $key ]['WordPress']['version'] = $wp_version;
 		$wp_debug = '';
@@ -316,8 +306,7 @@ class CPPro_Troubleshooter {
 			'disable_db-php',
 			'http_response',
 			'backtrace_limit',
-			'accuracy',
-			'buffer'
+			'accuracy'
 		];
 		foreach( $list as $element ) {
 			$this->buffer['options'][ $element ] = isset( $cp_options[ $element ] ) ? $cp_options[ $element ]:0;

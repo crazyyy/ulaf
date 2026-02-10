@@ -22,8 +22,6 @@ function codeprofiler_pro_start_profiler() {
 
 	$response = ['status' => 'error'];
 
-	code_profiler_pro_hide_errors();
-
 	$cp_options = get_option('code-profiler-pro');
 
 	code_profiler_pro_log_debug(
@@ -185,40 +183,11 @@ function codeprofiler_pro_start_profiler() {
 		'timeout'       	=> 300,	// 300-second timeout instead of the default 5s
 		'redirection'		=> 0,		// We don't want to be redirected
 		'headers'       	=> [
-			// Lowercase header name
 			'code-profiler-pro-key'	=> $profiler_key,
-			'accept-language'			=> 'en-US,en;q=0.5',
-			'user-agent'				=> $ua_signature
+			'Accept-Language'			=> 'en-US,en;q=0.5',
+			'User-Agent'				=> $ua_signature
 		 ]
 	];
-
-	// Custom HTTP headers
-	if (! empty( $_POST['custom_headers'] ) ) {
-		$custom_headers = explode( PHP_EOL, trim( stripslashes( $_POST['custom_headers'] ) ) );
-		if (! empty( $custom_headers[0] ) ) {
-			code_profiler_pro_log_debug(
-				esc_html__('Building custom HTTP headers', 'code-profiler-pro')
-			);
-			$is_custom_headers = '';
-			foreach( $custom_headers as $custom_header ) {
-				list( $key, $value ) = explode( ':', "$custom_header:" );
-				// Lowercase header name
-				$key		= trim( strtolower( $key ) );
-				$value	= trim( $value );
-				// We want printable ASCII characters only
-				$value	= preg_replace('/[\x00-\x1f\x7f-\xff]/', '', $value);
-				if (! empty( $key ) && ! empty( $value ) ) {
-					$headers['headers'][ $key ] = $value;
-					$is_custom_headers .= "$key: $value\n";
-				}
-			}
-		}
-	}
-	if (! empty( $is_custom_headers ) ) {
-		$cp_options['custom_headers']	= json_encode( $is_custom_headers );
-	} else {
-		unset( $cp_options['custom_headers'] );
-	}
 
 	code_profiler_pro_log_debug(
 		esc_html__('Checking HTTP options', 'code-profiler-pro')
@@ -325,7 +294,7 @@ function codeprofiler_pro_start_profiler() {
 				esc_html__('Building POST payload', 'code-profiler-pro')
 			);
 
-			$payload_array = explode( PHP_EOL, trim( stripslashes( $_POST['payload'] ) ) );
+			$payload_array = explode( PHP_EOL, trim( $_POST['payload'] ) );
 			foreach( $payload_array as $item ) {
 				$payload = explode('=', trim( $item ), 2 );
 				if ( isset( $payload[1] ) ) {
@@ -335,9 +304,11 @@ function codeprofiler_pro_start_profiler() {
 				}
 			}
 			$cp_options['payload']		= json_encode( $_POST['payload'] );
+			$cp_options['mem_payload']	= $_POST['payload'];
 		} else {
 			// POST request without a payload
 			unset( $cp_options['payload'] );
+			$cp_options['mem_payload'] = '';
 		}
 	} else {
 		$safe_method					= 'wp_safe_remote_get';
@@ -351,7 +322,7 @@ function codeprofiler_pro_start_profiler() {
 			esc_html__('Building HTTP Cookies', 'code-profiler-pro')
 		);
 
-		$cookies_array = explode( PHP_EOL, trim( stripslashes( $_POST['cookies'] ) ) );
+		$cookies_array = explode( PHP_EOL, trim( $_POST['cookies'] ) );
 		foreach( $cookies_array as $item ) {
 			$cookie = explode('=', trim( $item ), 2 );
 			if ( isset( $cookie[1] ) ) {
@@ -479,8 +450,6 @@ function codeprofiler_pro_prepare_report() {
 
 	$response = ['status' => 'error'];
 
-	code_profiler_pro_hide_errors();
-
 	code_profiler_pro_log_debug(
 		esc_html__('Entering AJAX endpoint (report preparation)', 'code-profiler-pro')
 	);
@@ -574,8 +543,6 @@ function codeprofiler_pro_prepare_report() {
 add_action('wp_ajax_codeprofiler_pro_rename', 'codeprofiler_pro_rename');
 
 function codeprofiler_pro_rename() {
-
-	code_profiler_pro_hide_errors();
 
 	$response = ['status' => 'error'];
 
