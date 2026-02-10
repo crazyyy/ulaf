@@ -1,12 +1,12 @@
 <?php
 /*
-Plugin Name: Plugins Genius
-Plugin URI: http://www.marcocanestrari.it
-Description: Role-based active plugins manager
-Version: 2.1.1
-Author: Marco Canestrari
-Author URI: http://www.marcocanestrari.it
-License: GPL2
+	Plugin Name: Plugins Genius
+	Plugin URI: http://www.marcocanestrari.it
+	Description: Role-based active plugins manager
+	Version: 2.1.1
+	Author: Marco Canestrari
+	Author URI: http://www.marcocanestrari.it
+	License: GPL2
 */
 
 // some definition we will use
@@ -76,7 +76,6 @@ class PluginsGenius {
 	public static function active_plugins($validate = false) {
 
 
-
 		if(WP_ADMIN === true) {
 
 			if($_POST['pg_post_action'] == 'pg_save_new_settings') {
@@ -87,37 +86,29 @@ class PluginsGenius {
 
 			if(!$my_active_plugins && get_option('pg_plugin_genius_active') == '0') {
 
-				// if PG is first runnuning or has been reset
+				// If PG is first running or has been reset
 				if($validate) {
-					$active = self::wp_get_active_and_valid_genius_plugins(get_option('active_plugins'));
+					// Changed: use $this instead of self::
+					$active = $this->wp_get_active_and_valid_genius_plugins(get_option('active_plugins'));
 				} else {
 					$active = get_option('active_plugins');
-
-
 				}
-
-
-
 			} else {
-
-				// if PG is set, load active plugin role-based
+				// If PG is set, load active plugin role-based
 				$current_user = wp_get_current_user();
 
 				$current_role = $current_user->roles[0];
 				if(!$current_role) {
-						$current_role = 'front';
+					$current_role = 'front';
 				}
 
-				// load role-based active plugins
+				// Load role-based active plugins
 				if($validate) {
-					$active = self::wp_get_active_and_valid_genius_plugins($my_active_plugins[$current_role]);
+					// Changed: use $this instead of self::
+					$active = $this->wp_get_active_and_valid_genius_plugins($my_active_plugins[$current_role]);
 				} else {
 					$active = $my_active_plugins[$current_user->roles[0]];
-
 				}
-
-
-
 			}
 
 		} else {
@@ -310,7 +301,7 @@ class PluginsGenius {
 				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 					<input type="hidden" name="cmd" value="_s-xclick">
 					<input type="hidden" name="hosted_button_id" value="WGVV5FF7AKRBQ">
-					<input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal Ð The safer, easier way to pay online.">
+					<input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal ï¿½ The safer, easier way to pay online.">
 					<img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
 				</form>
 			</div>';
