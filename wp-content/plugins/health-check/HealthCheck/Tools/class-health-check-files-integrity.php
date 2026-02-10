@@ -294,4 +294,6 @@ class Health_Check_Files_Integrity extends Health_Check_Tool {
 	}
 }
 
-new Health_Check_Files_Integrity();
+add_action( 'init', function() {
+    new Health_Check_Files_Integrity();
+} );

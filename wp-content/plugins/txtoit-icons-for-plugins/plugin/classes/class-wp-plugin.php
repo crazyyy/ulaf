@@ -98,21 +98,29 @@ if ( ! class_exists( 'TxToIT\IFP\WP_Plugin' ) ) {
 		/**
 		 * Handles plugin localization
 		 *
-		 * @version 1.0.0
+		 * @version 1.0.1
 		 * @since   1.0.0
 		 */
 		public function handle_localization() {
+			// Prevent early loading - only run on 'init' hook or later
+			if ( ! did_action( 'init' ) && ! doing_action( 'init' ) ) {
+				return;
+			}
+			
+			// Check if args are set
+			if ( ! isset( $this->args ) || empty( $this->args['translation'] ) ) {
+				return;
+			}
+			
 			$args        = $this->args;
 			$text_domain = sanitize_text_field( $args['translation']['text_domain'] );
 			$locale      = apply_filters( 'plugin_locale', get_locale(), $text_domain );
 			
-			// Fixed: Added missing slash before dirname
 			load_textdomain( 
 				$text_domain, 
 				WP_LANG_DIR . '/' . dirname( $this->basename ) . '/' . $text_domain . '-' . $locale . '.mo' 
 			);
 			
-			// Load plugin textdomain from plugin's languages folder
 			load_plugin_textdomain( 
 				$text_domain, 
 				false, 

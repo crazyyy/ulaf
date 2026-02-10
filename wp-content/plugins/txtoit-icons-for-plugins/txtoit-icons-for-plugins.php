@@ -1,9 +1,9 @@
 <?php
 /*
-* Plugin Name: Icons for Plugins - TxToIT
+* Plugin Name: Icons for Plugins - (MOD)
 * Plugin URI: https://github.com/thanks-to-it/icons-for-plugins
 * Description: Displays icons for WordPress plugins
-* Version: 1.0.6
+* Version: 2026.02.10
 * Author: Pablo Pacheco
 * Author URI: https://github.com/pablo-sg-pacheco
 * License: GNU General Public License v3.0
@@ -14,18 +14,21 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
-// Initializes plugin
-$plugin = \TxToIT\IFP\Core::get_instance();
-$plugin->set_args( array(
-	'plugin_file_path' => __FILE__,
-	'action_links'     => array(
-		array(
-			'url'  => admin_url( 'options-general.php?page=txtoit-icons-for-plugins' ),
-			'text' => __( 'Settings', 'txtoit-icons-for-plugins' ),
-		),
-	),
-	'translation'      => array(
-		'text_domain' => 'txtoit-icons-for-plugins',
-	),
-) );
-$plugin->init();
+// Загортаємо ініціалізацію в хук init, щоб уникнути помилки "triggered too early"
+add_action( 'init', function() {
+    // Initializes plugin
+    $plugin = \TxToIT\IFP\Core::get_instance();
+    $plugin->set_args( array(
+        'plugin_file_path' => __FILE__,
+        'action_links'     => array(
+            array(
+                'url'  => admin_url( 'options-general.php?page=txtoit-icons-for-plugins' ),
+                'text' => __( 'Settings', 'txtoit-icons-for-plugins' ),
+            ),
+        ),
+        'translation'      => array(
+            'text_domain' => 'txtoit-icons-for-plugins',
+        ),
+    ) );
+    $plugin->init();
+});
