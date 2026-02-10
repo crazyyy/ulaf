@@ -1,0 +1,250 @@
+/**
+ * User Events Styles
+ * @package DiveWP
+ */
+
+/* Header Actions - Specific to User Events */
+.divewp-header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+}
+
+.divewp-cleanup-status {
+    color: #50575e;
+    font-size: 13px;
+}
+
+.cleanup-info {
+    display: inline-block;
+    line-height: 30px;
+}
+
+.divewp-actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Delete Logs Button, Refresh Logs Button - Specific to User Events */
+#divewp-delete-all-logs {
+    background-color: #D92D20;
+    color: #fff;
+    border-color: #D92D20;
+    border-radius: 6px;
+    padding: 4px 12px 4px 8px;
+    height: auto;
+    min-height: 30px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+#divewp-delete-all-logs::before {
+    content: "\f182";
+    font-family: dashicons;
+    font-size: 16px;
+    line-height: 1;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#divewp-refresh-logs,
+#divewp-load-more {
+    background-color: #4299e1;
+    color: #fff;
+    border-color: #4299e1;
+    border-radius: 6px;
+    padding: 4px 12px 4px 8px;
+    height: auto;
+    min-height: 30px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+#divewp-refresh-logs::before {
+    content: "\f463";
+    font-family: dashicons;
+    font-size: 16px;
+    line-height: 1;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#divewp-delete-all-logs:hover {
+    background-color: #b91c1c;
+    border-color: #b91c1c;
+}
+
+#divewp-refresh-logs:hover {
+    background-color: #3182ce;
+    border-color: #3182ce;
+}
+
+#divewp-delete-all-logs:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* User Events Table Specific Styles */
+.divewp-user-events-table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+/* Column width adjustments - Specific to User Events Table */
+.divewp-user-events-table th:nth-child(1),
+.divewp-user-events-table td:nth-child(1) {
+    width: 12%;
+    /* Administrator column */
+}
+
+.divewp-user-events-table th:nth-child(2),
+.divewp-user-events-table td:nth-child(2) {
+    width: 12%;
+    /* Activity Area column */
+}
+
+.divewp-user-events-table th:nth-child(3),
+.divewp-user-events-table td:nth-child(3) {
+    width: 12%;
+    /* Action column */
+}
+
+.divewp-user-events-table th:nth-child(4),
+.divewp-user-events-table td:nth-child(4) {
+    width: 52%;
+    /* Details column - takes most space */
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.divewp-user-events-table th:nth-child(5),
+.divewp-user-events-table td:nth-child(5) {
+    width: 12%;
+    /* Date & Time column */
+}
+
+.divewp-table-container .divewp-table .status-pill {
+    font-size: 12px;
+    padding: 4px 12px;
+    margin-top: 0;
+    display: inline-flex;
+    align-items: center;
+    height: 24px;
+}
+
+/* Pagination - Specific to User Events */
+.divewp-pagination {
+    margin-top: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+}
+
+.divewp-pagination-info {
+    color: #50575e;
+    font-size: 13px;
+}
+
+/* Load More button - disabled state */
+
+
+.divewp-load-more:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#divewp-load-more::before {
+    content: "\f347";
+    /* dashicons-plus */
+    font-family: dashicons;
+    font-size: 16px;
+    line-height: 1;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Add these rules to existing user-events.css */
+#divewp-refresh-email-logs,
+#divewp-delete-all-email-logs,
+#divewp-send-test-email {
+    background-color: #4299e1;
+    color: #fff;
+    border-color: #4299e1;
+    border-radius: 6px;
+    padding: 4px 12px 4px 8px;
+    height: auto;
+    min-height: 30px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+#divewp-delete-all-email-logs {
+    background-color: #D92D20;
+    border-color: #D92D20;
+}
+
+#divewp-send-test-email {
+    background-color: #48BB78;
+    border-color: #48BB78;
+}
+
+#divewp-refresh-email-logs::before {
+    content: "\f463";
+}
+
+#divewp-delete-all-email-logs::before {
+    content: "\f182";
+}
+
+#divewp-send-test-email::before {
+    content: "\f465";
+}
+
+#divewp-refresh-email-logs::before,
+#divewp-delete-all-email-logs::before,
+#divewp-send-test-email::before {
+    font-family: dashicons;
+    font-size: 16px;
+    line-height: 1;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#divewp-delete-all-email-logs:hover {
+    background-color: #b91c1c;
+    border-color: #b91c1c;
+}
+
+#divewp-refresh-email-logs:hover {
+    background-color: #3182ce;
+    border-color: #3182ce;
+}
+
+#divewp-send-test-email:hover {
+    background-color: #38a169;
+    border-color: #38a169;
+}

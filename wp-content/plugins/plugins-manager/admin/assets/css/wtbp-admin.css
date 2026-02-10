@@ -1,0 +1,126 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+#wtbp-delete-confirm
+{
+	color: #a00;
+	border: none;
+}
+
+#wtbp-delete-confirm:hover
+{
+	color: #dc3232;
+	text-decoration: underline;
+}
+
+.wtbp-plugin-icon
+{
+	border-radius: 5px;
+	background-size: cover;
+	height: 50px;
+	width: 50px;
+}
+
+.wtbp-plugin-icon-text
+{
+	background-color: #2271b1;
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 30px;
+	display: table-cell;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+table.plugins td.column-image
+{
+	width: 50px;
+}
+
+table.plugins td.column-image.inactive
+{
+	opacity: 0.7;
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+}
+
+table.plugins td.column-image.inactive:hover
+{
+	opacity: 1;
+	filter: none;
+	-webkit-filter: none;
+}
+
+table.wp-list-table.plugins tbody tr.inactive
+{
+	opacity: 0.7;
+}
+
+table.plugins tbody tr:hover
+{
+	background-color: #dff6ff !important;
+}
+
+table.plugins .active td, .plugins .active th
+{
+	background-color: inherit !important;
+	opacity: 1 !important;
+}
+
+.wtbp-git-icon
+{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+	width: 20px;
+	height: 20px;
+	background: url('../img/git.png') no-repeat center center;
+	background-size: contain;
+}
+
+.wtbp-git-version, .wtbp-git-version-branch
+{
+	display: inline-block;
+	color: #f05033;
+	font-weight: 500;
+}
+
+.wtbp-git-version-branch
+{
+	font-size: 12px;
+}
+
+.wtbp-update-message-changelog p:before, .wtbp-update-message-changelog ~ p:before
+{
+	content: none !important;
+}
+
+.wtbp-update-message-changelog
+{
+	margin-left: 25px;
+}
+
+.wtbp-update-message-changelog h4
+{
+	margin: 10px 0 0 0;
+}
+
+.wtbp-update-message-changelog ul
+{
+	margin-top: 5px;
+	list-style: disc;
+}
+
+.wtbp-update-message-changelog li
+{
+	line-height: 1.3;
+	margin: 0 0 0 25px;
+}
+
+.plugins .column-auto-updates
+{
+	width: 8.0em !important;
+	font-size: 10px;
+}

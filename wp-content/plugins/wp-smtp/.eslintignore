@@ -1,0 +1,7 @@
+assets
+bin
+dev_scripts
+node_modules
+vendor
+wp-www
+webpack.config.js

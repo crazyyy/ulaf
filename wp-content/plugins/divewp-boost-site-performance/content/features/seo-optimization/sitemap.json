@@ -1,0 +1,58 @@
+{
+    "title": "XML Sitemap",
+    "messages": {
+        "success": {
+            "title": "Sitemap Active",
+            "details": "Your site is using {value} which helps search engines discover and index your content.",
+            "steps": [
+                "Monitor sitemap updates regularly",
+                "Verify sitemap in search console",
+                "Check for crawl errors",
+                "Keep sitemap up to date"
+            ]
+        },
+        "warning": {
+            "title": "Basic Sitemap Detected",
+            "details": "Your site is using WordPress's default sitemap. While this provides basic functionality, it may not include all content types and lacks advanced features that could improve your site's visibility to search engines.",
+            "steps": [
+                "Consider enhancing sitemap functionality with a dedicated SEO plugin",
+                "Verify if all important content types are included (products, custom post types, etc.)",
+                "Check if media files and taxonomies need to be included",
+                "Monitor search engine indexing coverage in Google Search Console"
+            ]
+        },
+        "error": {
+            "title": "No Sitemap Detected",
+            "details": "We couldn't find a sitemap for your site. A sitemap helps search engines discover and index your content more effectively.",
+            "steps": [
+                "Enable WordPress's built-in sitemap or install an SEO plugin",
+                "Ensure your permalinks are configured properly",
+                "Submit your sitemap to search engines once created",
+                "Monitor indexing status in search console"
+            ]
+        }
+    },
+    "learn_more": {
+        "description": "An XML sitemap helps search engines discover and index your content more efficiently. While WordPress includes a basic sitemap, using an SEO plugin provides more features and control over your sitemap configuration.",
+        "benefits": [
+            "Better content discovery by search engines",
+            "Control over what content is included",
+            "Support for custom post types and media",
+            "Automatic updates when content changes"
+        ],
+        "recommended_plugins": [
+            {
+                "name": "Yoast SEO",
+                "description": "Most popular WordPress SEO solution with comprehensive sitemap features"
+            },
+            {
+                "name": "Rank Math",
+                "description": "Modern SEO plugin with advanced sitemap configuration"
+            },
+            {
+                "name": "All in One SEO Pack",
+                "description": "User-friendly SEO plugin with powerful sitemap controls"
+            }
+        ]
+    }
+}

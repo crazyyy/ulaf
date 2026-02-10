@@ -1,0 +1,46 @@
+# Suite for acceptance tests.
+
+actor: AcceptanceTester
+modules:
+    enabled:
+        - WPDb
+        - WPLoader
+        - WPBrowser
+        - \Helper\Acceptance
+        - WPCLI
+    config:
+        WPDb:
+            dsn: 'mysql:host=%WP_DB_HOST%;dbname=%WP_DB_NAME%'
+            user: '%WP_DB_USER%'
+            password: '%WP_DB_PASSWORD%'
+            dump: tests/_data/dump.sql
+            populate: true
+            cleanup: true
+            url: '%WP_URL%'
+            tablePrefix: '%WP_TABLE_PREFIX%'
+        WPLoader:
+            # just load WordPress using the same db as WPDb
+            loadOnly: true
+            wpRootFolder: '%WP_ROOT_FOLDER%'
+            dbName: '%WP_DB_NAME%'
+            dbHost: '%WP_DB_HOST%'
+            dbUser: '%WP_DB_USER%'
+            dbPassword: '%WP_DB_PASSWORD%'
+            constants:
+                SCRIPT_DEBUG: true
+        WPBrowser:
+            url: '%WP_URL%'
+            adminUsername: '%WP_ADMIN_USERNAME%'
+            adminPassword: '%WP_ADMIN_PASSWORD%'
+            adminPath: '/wp-admin'
+            headers:
+                X_TEST_REQUEST: 1
+                X_WPBROWSER_REQUEST: 1
+        WPCLI:
+            path: '%WP_ROOT_FOLDER%'
+            allow-root: true
+            env:
+                strict-args: true
+        \Helper\Acceptance:
+            depends:
+                - WPCLI

@@ -1,0 +1,24 @@
+.tweakmaster-scroll {
+	position: fixed;
+	top: calc(var(--tweakmaster-admin-bar-space, 0px) + var(--wp--custom--navbar--height, 0px));
+	left: 0;
+	z-index: 5;
+	width: 100dvw;
+	pointer-events: none;
+
+	.admin-bar & {
+		z-index: 9999;
+	}
+}
+
+@media (min-width: 603px) {
+	.admin-bar {
+		--tweakmaster-admin-bar-space: 46px;
+	}
+}
+
+@media (min-width: 783px) {
+	.admin-bar {
+		--tweakmaster-admin-bar-space: 32px;
+	}
+}

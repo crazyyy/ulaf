@@ -1,0 +1,32 @@
+.lws_support_element {
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    background-color: #1d2327;
+    padding: 10px;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.lws_tools_assistant_button {
+    z-index: 50;
+    position: fixed;
+    right: 36px;
+    bottom: 36px;
+    width: 56px;
+    height: 56px;
+    border: 2px solid #e2e8f0;
+    border-radius: 50%;
+    color-scheme: none;
+    background: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    align-content: center;
+    text-align: center;
+    cursor: pointer;
+    /* background: linear-gradient(to left top, transparent 45.5%, currentColor 47.5%, currentColor 52.5%, transparent 54.5%); */
+}
+.lws_tools_assistant_button.deactivated {
+    background: linear-gradient(to left top, #fff 45.5%, currentColor 47.5%, currentColor 52.5%, #fff 54.5%);
+}

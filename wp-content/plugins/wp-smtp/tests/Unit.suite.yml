@@ -1,0 +1,18 @@
+# Suite for unit and WordPress "unit" tests.
+
+modules:
+  enabled:
+    - WPLoader
+  config:
+    WPLoader:
+      wpRootFolder: '%WP_ROOT_FOLDER%'
+      dbName: '%WP_TEST_DB_NAME%'
+      dbHost: '%WP_TEST_DB_HOST%'
+      dbUser: '%WP_TEST_DB_USER%'
+      dbPassword: '%WP_TEST_DB_PASSWORD%'
+      tablePrefix: test_
+      domain: '%WP_DOMAIN%'
+      plugins:
+        - wp-smtp/wp-smtp.php
+      activatePlugins:
+        - wp-smtp/wp-smtp.php

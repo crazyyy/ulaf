@@ -1,0 +1,52 @@
+/** setting page style **/
+.awpr_main .awpr-api-table {
+    text-align: left;
+    line-height: 2;
+    font-size: 16px;
+}
+.awpr_main .awpr-api-table input, p {
+    margin-left: 20px;
+    margin-top: 0;
+}
+
+div.notice.awpr--notice{
+background-image: url('../images/bg_image.png');
+border: 1px solid #c3c4c7;
+padding: 12px 22px;
+}
+div.notice.awpr--notice h3, div.notice.awpr--notice p{
+color: #ffffff;
+}
+
+div.notice.awpr--notice p.e-note{
+    margin-top: 11px;
+}
+
+div.notice.awpr--notice .e-notice__actions a{
+margin-right: 6px;
+}
+
+div.notice.awpr--notice .e-button--cta.cta-secondary{
+color: #FFFFFF;
+background-color: #54375E;
+border-color: #54375E;
+}
+
+div.notice.awpr--notice .e-button--cta{
+box-shadow: none;
+color: #fff;
+display: inline-block;
+text-decoration: none;
+font-size: 13px;
+line-height: 2.15384615;
+min-height: 30px;
+margin: 0;
+padding: 0 10px;
+cursor: pointer;
+border-width: 1px;
+border-style: solid;
+-webkit-appearance: none;
+border-radius: 3px;
+white-space: nowrap;
+box-sizing: border-box;
+}

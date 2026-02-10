@@ -1,0 +1,42 @@
+{
+    "title": "WP Mail Status",
+    "messages": {
+        "success": {
+            "title": "WP Mail Function Available",
+            "details": "The WordPress mail function is properly configured and available.",
+            "steps": [
+                "Monitor email sending functionality",
+                "Test email delivery periodically",
+                "Check server mail logs if needed"
+            ]
+        },
+        "error": {
+            "title": "WP Mail Function Issues",
+            "details": "The WordPress mail function is not available or properly configured.",
+            "steps": [
+                "Check PHP mail configuration",
+                "Verify server mail settings",
+                "Contact your hosting provider for support"
+            ]
+        }
+    },
+    "learn_more": {
+        "description": "The WordPress mail function (wp_mail) is essential for sending emails from your website, including notifications, password resets, and contact form submissions.",
+        "benefits": [
+            "Core WordPress functionality",
+            "Contact form compatibility",
+            "Password reset capability",
+            "System notifications"
+        ],
+        "recommended_plugins": [
+            {
+                "name": "WP Mail SMTP",
+                "type": "Free/Pro"
+            },
+            {
+                "name": "Post SMTP",
+                "type": "Free"
+            }
+        ]
+    }
+}

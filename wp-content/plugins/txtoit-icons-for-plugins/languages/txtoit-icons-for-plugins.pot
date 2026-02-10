@@ -1,0 +1,89 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TxToIT - Icons for Plugins\n"
+"POT-Creation-Date: 2017-11-26 22:44-0200\n"
+"PO-Revision-Date: 2017-01-17 13:05-0200\n"
+"Last-Translator: \n"
+"Language-Team: Thanks to IT\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;eschtml_e;esc_html_x:1,2c;esc_html_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets\n"
+"X-Poedit-SearchPathExcluded-1: tasks\n"
+"X-Poedit-SearchPathExcluded-2: vendor\n"
+
+#: plugin/classes/class-admin-settings.php:114
+#: plugin/classes/class-admin-settings.php:135
+msgid "General Settings"
+msgstr ""
+
+#: plugin/classes/class-admin-settings.php:141
+msgid "Grayscale icons"
+msgstr ""
+
+#: plugin/classes/class-admin-settings.php:142
+msgid "Displays icons in grayscale"
+msgstr ""
+
+#: plugin/classes/class-admin-settings.php:149
+msgid "Icon column"
+msgstr ""
+
+#: plugin/classes/class-admin-settings.php:150
+msgid "Column number where icons will be displayed"
+msgstr ""
+
+#: plugin/classes/class-admin-settings.php:158
+msgid "Icon Dimensions"
+msgstr ""
+
+#: plugin/classes/class-admin-settings.php:163
+msgid "Width"
+msgstr ""
+
+#: plugin/classes/class-admin-settings.php:170
+msgid "Height"
+msgstr ""
+
+#: plugin/classes/class-admin-settings.php:177
+msgid "Background size"
+msgstr ""
+
+#: plugin/classes/class-admin-settings.php:180
+msgid "Cover"
+msgstr ""
+
+#: plugin/classes/class-admin-settings.php:181
+msgid "Contain"
+msgstr ""
+
+#: plugin/classes/class-admin-settings.php:188
+msgid "Empty icon"
+msgstr ""
+
+#: plugin/classes/class-admin-settings.php:194
+msgid "Image URL"
+msgstr ""
+
+#: plugin/classes/class-admin-settings.php:195
+msgid "Image displayed when a plugin has no icon."
+msgstr ""
+
+#: plugin/classes/class-admin-settings.php:202
+msgid "Opacity"
+msgstr ""
+
+#: plugin/classes/class-admin-settings.php:203
+msgid "Empty icon opacity. Min 0,  Max 1"
+msgstr ""
+
+#: txtoit-icons-for-plugins.php:33
+msgid "Settings"
+msgstr ""

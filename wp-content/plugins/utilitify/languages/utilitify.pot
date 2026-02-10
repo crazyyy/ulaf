@@ -1,0 +1,244 @@
+# Copyright (C) 2024 KaizenCoders
+# This file is distributed under the GPL-2.0+.
+msgid ""
+msgstr ""
+"Project-Id-Version: Utilitify 1.0.12\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/utilitify\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-09-17T10:36:54+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.9.0\n"
+"X-Domain: utilitify\n"
+
+#. Plugin Name of the plugin
+#: lite/includes/Admin.php:142
+#: lite/includes/Helper.php:453
+msgid "Utilitify"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/utilitify"
+msgstr ""
+
+#. Description of the plugin
+#: lite/includes/Admin/Templates/Dashboard.php:85
+msgid "Supercharge Your WordPress Site With Powerpack WordPress Utilities"
+msgstr ""
+
+#. Author of the plugin
+msgid "KaizenCoders"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://kaizencoders.com"
+msgstr ""
+
+#: lite/includes/Admin.php:144
+#: lite/includes/Admin/Request_404_Table.php:42
+#: lite/includes/Admin/Request_404_Table.php:84
+msgid "404 Requests"
+msgstr ""
+
+#: lite/includes/Admin/admin-settings.php:34
+msgid "General"
+msgstr ""
+
+#: lite/includes/Admin/admin-settings.php:44
+msgid "Hide Admin Bar From Frontend"
+msgstr ""
+
+#: lite/includes/Admin/admin-settings.php:52
+msgid "Hide Admin Bar From Backend"
+msgstr ""
+
+#: lite/includes/Admin/admin-settings.php:64
+msgid "Disable WordPress Core Auto Updates"
+msgstr ""
+
+#: lite/includes/Admin/admin-settings.php:72
+msgid "Disable Plugin Auto Updates"
+msgstr ""
+
+#: lite/includes/Admin/admin-settings.php:80
+msgid "Disable Theme Auto Updates"
+msgstr ""
+
+#: lite/includes/Admin/admin-settings.php:90
+msgid "Hide CSS File Version"
+msgstr ""
+
+#: lite/includes/Admin/admin-settings.php:98
+msgid "Hide JS File Version"
+msgstr ""
+
+#: lite/includes/Admin/admin-settings.php:106
+msgid "Disable Dashicons in Frontend"
+msgstr ""
+
+#: lite/includes/Admin/admin-settings.php:114
+msgid "Disable Embeds"
+msgstr ""
+
+#: lite/includes/Admin/admin-settings.php:126
+msgid "Remove RSD Link"
+msgstr ""
+
+#: lite/includes/Admin/admin-settings.php:133
+msgid "Hide WordPress Version"
+msgstr ""
+
+#: lite/includes/Admin/admin-settings.php:140
+msgid "Disable XML RPC"
+msgstr ""
+
+#: lite/includes/Admin/admin-settings.php:147
+msgid "Remove WLW Manifest Link"
+msgstr ""
+
+#: lite/includes/Admin/admin-settings.php:154
+msgid "Remove Shortlink"
+msgstr ""
+
+#: lite/includes/Admin/admin-settings.php:164
+msgid "Disable RSS Feed"
+msgstr ""
+
+#: lite/includes/Admin/admin-settings.php:172
+msgid "Remove RSS Feed Links"
+msgstr ""
+
+#: lite/includes/Admin/admin-settings.php:180
+msgid "Add Feature Image To RSS Feed"
+msgstr ""
+
+#: lite/includes/Admin/admin-settings.php:190
+msgid "Enable Shortcode in WP Widgets"
+msgstr ""
+
+#: lite/includes/Admin/admin-settings.php:202
+msgid "General Options"
+msgstr ""
+
+#: lite/includes/Admin/admin-settings.php:210
+msgid "WordPress Autoupdate Settings"
+msgstr ""
+
+#: lite/includes/Admin/admin-settings.php:218
+msgid "Script & Styles"
+msgstr ""
+
+#: lite/includes/Admin/admin-settings.php:226
+msgid "WordPress Meta Tag Settings"
+msgstr ""
+
+#: lite/includes/Admin/admin-settings.php:234
+msgid "RSS Feed Settings"
+msgstr ""
+
+#: lite/includes/Admin/admin-settings.php:242
+msgid "WordPress Widget Settings"
+msgstr ""
+
+#: lite/includes/Admin/Request_404_Table.php:41
+msgid "404 Request"
+msgstr ""
+
+#: lite/includes/Admin/Request_404_Table.php:63
+msgid "Number of Requests per page"
+msgstr ""
+
+#: lite/includes/Admin/Request_404_Table.php:106
+msgid "URL"
+msgstr ""
+
+#: lite/includes/Admin/Request_404_Table.php:107
+msgid "Created At"
+msgstr ""
+
+#: lite/includes/Admin/Request_404_Table.php:215
+msgid "Search Requests"
+msgstr ""
+
+#: lite/includes/Admin/Settings.php:40
+#: lite/includes/Admin/Settings.php:41
+msgid "Settings"
+msgstr ""
+
+#: lite/includes/Admin/Templates/Dashboard.php:90
+msgid "Get Started"
+msgstr ""
+
+#: lite/includes/Frontend.php:255
+msgid "No feed available, please visit the"
+msgstr ""
+
+#: lite/includes/Frontend.php:256
+msgid "homepage"
+msgstr ""
+
+#: lite/includes/Modules/Handle404.php:35
+msgid "404 Redirect"
+msgstr ""
+
+#: lite/includes/Modules/Handle404.php:47
+msgid "Enable 404 Redirect"
+msgstr ""
+
+#: lite/includes/Modules/Handle404.php:55
+msgid "Redirect All 404 Pages To"
+msgstr ""
+
+#: lite/includes/Modules/Recaptcha.php:68
+msgid "Google Recaptcha"
+msgstr ""
+
+#: lite/includes/Modules/Recaptcha.php:79
+msgid "Enable Recaptcha"
+msgstr ""
+
+#: lite/includes/Modules/Recaptcha.php:87
+msgid "Site Key (v2)"
+msgstr ""
+
+#: lite/includes/Modules/Recaptcha.php:88
+msgid "<a href=\"%s\" target=\"_blank\">Click here</a> to create or view keys for Google reCAPTCHA"
+msgstr ""
+
+#: lite/includes/Modules/Recaptcha.php:95
+msgid "Secret Key (v2)"
+msgstr ""
+
+#: lite/includes/Modules/Recaptcha.php:201
+#: lite/includes/Modules/Recaptcha.php:205
+msgid "<strong>ERROR</strong>&nbsp;: Incorrect ReCaptcha, please try again."
+msgstr ""
+
+#: lite/includes/Modules/Recaptcha.php:216
+#: lite/includes/Modules/Recaptcha.php:220
+msgid "<strong>ERROR</strong>&nbsp;: Please check the ReCaptcha box."
+msgstr ""
+
+#: lite/includes/Modules/Recaptcha.php:233
+msgid "The secret parameter is missing."
+msgstr ""
+
+#: lite/includes/Modules/Recaptcha.php:234
+msgid "The secret parameter is invalid or malformed."
+msgstr ""
+
+#: lite/includes/Modules/Recaptcha.php:235
+msgid "The response parameter is missing."
+msgstr ""
+
+#: lite/includes/Modules/Recaptcha.php:236
+msgid "The response parameter is invalid or malformed."
+msgstr ""
+
+#. translators: %s: PHP version
+#: utilitify.php:105
+msgid "Utilitify requires PHP version %s+, plugin is currently NOT RUNNING."
+msgstr ""

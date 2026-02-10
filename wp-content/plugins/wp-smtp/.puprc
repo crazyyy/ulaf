@@ -1,0 +1,40 @@
+{
+  "build": [
+    "rm -rf vendor",
+    "npm ci && npm run build",
+    "composer install --no-dev --ignore-platform-reqs",
+    "composer install --no-dev --ignore-platform-reqs --optimize-autoloader"
+  ],
+  "build_dev": [
+    "rm -rf vendor",
+    "npm ci && npm run build",
+    "composer install --ignore-platform-reqs"
+  ],
+  "checks": {
+    "tbd": {
+      "skip_directories": "bin|build|vendor|node_modules|.git|.github|tests|vendor-prefixed|dev_scripts|wp-www",
+      "skip_files": ".min.css|.min.js|.map.js|.css|.png|.jpg|.jpeg|.svg|.gif|.ico|.md|.sh|diff*.txt",
+      "dirs": [
+        "."
+      ]
+    }
+  },
+  "i18n": [
+    {
+      "path": "lang",
+      "textdomain": "wp-smtp"
+    }
+  ],
+  "paths": {
+    "build_dir": ".pup-build",
+    "versions": [
+      {
+        "file": "wp-smtp.php",
+        "regex": "(define\\( +['\"]WPSMTP_VERSION['\"], +['\"])([^'\"]+)"
+      }
+    ],
+    "zip_dir": ".pup-zip"
+  },
+  "zip_name": "wp-smtp",
+  "repo": "ithemes/wp-smtp"
+}

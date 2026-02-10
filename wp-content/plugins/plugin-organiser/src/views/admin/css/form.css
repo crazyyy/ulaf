@@ -1,0 +1,132 @@
+/*********************************
+ ** CSS for form elements.
+ ** Section 1: Flexbox scaffolding
+ ** Section 2: Form Elements;
+ **/
+
+/*****************************************
+ ** Flexbox Structure
+ **/
+
+.flex-column {
+  display: flex;
+  flex-direction: column; 
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5px;
+}
+
+.flex-column-1 { width: 100%; }
+.flex-column-2 { width: 50%; }
+.flex-column-3 { width: 33.33%; }
+.flex-column-4 { width: 25%; }
+.flex-column-5 { width: 20%; }
+.flex-column-6 { width: 16.66%; }
+
+.flex-row .flex-column-no-margin {
+  margin-right: 0px;
+}
+
+@media screen and (max-width: 768px) {
+   
+   .flex-row {
+     flex-direction: column;
+   }
+
+   .flex-column-1, 
+   .flex-column-2, 
+   .flex-column-3, 
+   .flex-column-4,
+   .flex-column-5, 
+   .flex-column-6{
+     width: 100%;
+   }
+
+   fieldset .input-control {
+     margin-top: 2px;
+   }
+   
+   fieldset label.right-inline {
+     text-align: left;  
+     padding-right: 0;
+     padding-left: 0;   
+   }
+
+}
+
+/*****************************************
+ ** Form Elements
+ **/
+
+fieldset {
+  margin-bottom: 15px;
+  border: 0px;
+}
+
+fieldset.border {
+  border: solid 1px #7e8993;
+  padding: 5px 15px;
+}
+
+fieldset.no-padding {
+  padding: 0px;
+}
+
+fieldset.no-margin {
+  margin: 0px auto;
+}
+
+fieldset legend {
+  font-weight: 600;
+  padding: 0px 10px;
+}
+
+fieldset input[type="text"],
+fieldset input[type="number"],
+fieldset input[type="email"],
+fieldset input[type="button"],
+fieldset input[type="submit"],
+fieldset select {
+  width: 100%;
+  max-width: initial;
+}
+
+fieldset input[type=checkbox] {
+  margin: 0;
+  margin-right: 3px;
+}
+
+fieldset input[type=submit] {
+  margin: 0 1px;
+}
+
+fieldset label {
+  padding: 2px;
+}
+
+fieldset .form-control-wrapper {
+  margin-right: 1em;
+}
+
+fieldset .form-control-wrapper.form-control-checkbox-line {
+  display: inline;
+  margin-top: 4px;
+}
+
+/** formatting **/
+  
+  input.datetime { background-color: #ffffff; }
+  input.datetime:disabled { background: rgba(255,255,255,.5); }
+
+  @media screen and (max-width: 768px) {
+
+    .wp-core-ui input[type="button"],
+    .wp-core-ui select {
+        width: 100%;
+        max-width: inherit;
+    }
+
+  }

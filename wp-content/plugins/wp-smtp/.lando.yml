@@ -1,0 +1,54 @@
+name: solid-mail
+recipe: wordpress
+
+config:
+    via: nginx
+    webroot: wp-www
+    database: mariadb
+    xdebug: true
+    php: '8.0'
+    composer_version: '2'
+
+services:
+    appserver:
+        overrides:
+            volumes:
+                - ./:/app/wp-www/wp-content/plugins/wp-smtp
+    pma:
+        type: phpmyadmin
+    mailhog:
+        type: mailhog
+        hogfrom:
+            - appserver
+    node:
+        type: node:18
+        dir: /app/wp-www/wp-content/plugins/wp-smtp
+
+proxy:
+    appserver_nginx:
+        - solid-mail.lndo.site
+
+events:
+    post-start:
+        - appserver:
+              - bash /app/bin/appserver-start.sh
+
+tooling:
+    wp:
+        service: appserver
+        cmd: /usr/local/bin/wp
+        dir: /app/wp-www
+    composer:
+        service: appserver
+        cmd: composer
+        dir: /app/wp-www/wp-content/plugins/wp-smtp
+    xdebug-on:
+        service: appserver
+        description: Enable xdebug for nginx.
+        cmd: docker-php-ext-enable xdebug && pkill -o -USR2 php-fpm
+        user: root
+    xdebug-off:
+        service: appserver
+        description: Disable xdebug for nginx.
+        cmd: rm /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && pkill -o -USR2 php-fpm
+        user: root

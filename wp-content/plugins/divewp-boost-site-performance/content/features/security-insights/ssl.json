@@ -1,0 +1,44 @@
+{
+    "title": "SSL Certificate Status",
+    "messages": {
+        "success": {
+            "title": "SSL is Used",
+            "details": "SSL is used on your site. Your site URL is {site_url}. Make sure there are no mixed content warnings and your site is secure.",
+            "steps": [
+                "Use SSL Sertificate and Monitor the certificate expiration",
+                "Keep your SSL certificate up to date",
+                "Regularly check for mixed content warnings, with the help of plugins like 'Really Simple SSL' or 'SSL Insecure Content Fixer'"
+            ]
+        },
+        "error": {
+            "title": "SSL Not Detected",
+            "details": "Your site is not using SSL or the SSL certificate is expired, or somethiing is preventing us from detecting it. Current URL: {site_url}",
+            "steps": [
+                "Contact your hosting provider to obtain an SSL certificate",
+                "Have your hosting provider install the SSL certificate",
+                "Update WordPress Address and Site Address to use https://",
+                "Use 'Better Search Replace' to update internal links"
+            ]
+        }
+    },
+    "learn_more": {
+        "description": "SSL certificates encrypt data transmitted between your website and visitors, protecting sensitive information like passwords and credit card details.",
+        "benefits": [
+            "Enhanced security for data transmission",
+            "Improved search engine rankings",
+            "Increased visitor trust",
+            "Protection against man-in-the-middle attacks",
+            "PCI compliance for e-commerce sites"
+        ],
+        "recommended_tools": [
+            {
+                "name": "Really Simple SSL",
+                "type": "Free Plugin"
+            },
+            {
+                "name": "SSL Insecure Content Fixer",
+                "type": "Free Plugin"
+            }
+        ]
+    }
+}

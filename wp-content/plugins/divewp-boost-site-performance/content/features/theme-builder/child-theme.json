@@ -1,0 +1,46 @@
+{
+    "title": "Child Theme Status",
+    "recommendation": "Using a child theme allows you to customize your theme without losing changes during updates.",
+    "messages": {
+        "success": {
+            "title": "Child Theme Status",
+            "details": "Your site is using a child theme. Theme customizations are protected from updates.",
+            "steps": [
+                "Child theme is properly configured",
+                "Theme customizations are protected",
+                "Parent theme can be safely updated",
+                "Custom functionality is preserved"
+            ]
+        },
+        "error": {
+            "title": "Child Theme Status",
+            "details": "Your site is not using a child theme. Consider using one for any customizations.",
+            "steps": [
+                "Create a child theme to protect your customizations",
+                "Keep parent theme clean and updateable",
+                "Prevent losing changes during theme updates",
+                "Safely add custom functionality"
+            ]
+        }
+    },
+    "learn_more": {
+        "description": "A child theme is a theme that inherits the functionality and styling of another theme, called the parent theme. Using a child theme is the safest way to modify an existing theme while preserving your changes during updates.",
+        "benefits": [
+            "Protect your customizations from being lost during theme updates",
+            "Make changes to your site's appearance while keeping the parent theme intact",
+            "Easily revert changes by deactivating the child theme",
+            "Keep a clean separation between your modifications and the parent theme",
+            "Safely update the parent theme without losing your customizations"
+        ],
+        "recommended_plugins": [
+            {
+                "name": "Child Theme Configurator",
+                "type": "Free"
+            },
+            {
+                "name": "Child Theme Generator",
+                "type": "Free"
+            }
+        ]
+    }
+}

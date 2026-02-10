@@ -1,0 +1,44 @@
+{
+    "title": "Builder Conflicts",
+    "description": "Check for potential conflicts between multiple page builders.",
+    "recommendation": "Use only one page builder to prevent conflicts and performance issues.",
+    "messages": {
+        "success": {
+            "title": "No Builder Conflicts",
+            "details": "No conflicts detected between page builders. Your site is using a single page builder efficiently.",
+            "steps": [
+                "Single page builder active",
+                "No compatibility issues detected",
+                "Resources are optimized",
+                "Clean builder configuration"
+            ]
+        },
+        "error": {
+            "title": "Builder Conflicts Detected",
+            "details": "Multiple page builders detected. This can cause conflicts and performance issues.",
+            "steps": [
+                "Choose a primary page builder",
+                "Backup existing content",
+                "Remove unused builders",
+                "Clean up builder data"
+            ]
+        }
+    },
+    "learn_more": {
+        "description": "Running multiple page builders can lead to conflicts, slower performance, and maintenance challenges.",
+        "benefits_title": "Benefits of using a single builder:",
+        "benefits": [
+            "Better site performance",
+            "Reduced plugin conflicts",
+            "Cleaner database",
+            "Easier maintenance",
+            "Consistent editing experience"
+        ],
+        "recommended_plugins": [
+            "WP Reset",
+            "Advanced Database Cleaner",
+            "WP-Optimize",
+            "WP Cleanup"
+        ]
+    }
+}

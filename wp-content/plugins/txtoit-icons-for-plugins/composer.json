@@ -1,0 +1,41 @@
+{
+	"name": "thanks-to-it/icons-for-plugins",
+	"description": "Displays icons for WordPress plugins",
+	"keywords": [
+		"wordpress",
+		"icon",
+		"icons",
+		"thumb",
+		"plugin"
+	],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Pablo Pacheco",
+			"email": "pablo.sg.pacheco@gmail.com"
+		}
+	],
+	"config": {
+		"preferred-install": "dist",
+		"optimize-autoloader": true
+	},
+	"type": "wordpress-plugin",
+	"require": {
+		"php": ">=5.3.2",
+		"composer/installers": ">=v1.2.0",
+		"tareq1988/wordpress-settings-api-class": "dev-master"
+	},
+	"extra": {
+		"installer-paths": {
+			"vendor/{$vendor}/{$name}": [
+				"type:wordpress-plugin",
+				"type:wordpress-muplugin"
+			]
+		}
+	},
+	"autoload": {
+		"classmap": [
+			"plugin/classes/"
+		]
+	}
+}

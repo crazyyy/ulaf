@@ -1,0 +1,43 @@
+{
+    "title": "Admin Username",
+    "messages": {
+        "success": {
+            "title": "Admin Username is Secure",
+            "details": "No user with the default 'admin' username was found. You can continue using strong, unique usernames. Never use easy to guess usernames like 'admin', 'administrator', 'root', 'user', '1', '2', '3', etc.",
+            "steps": [
+                "Continue using strong, unique usernames",
+                "Regularly audit user accounts",
+                "Remove or rename any unused admin accounts"
+            ]
+        },
+        "error": {
+            "title": "Default 'Admin' Username Found",
+            "details": "A user with the default 'admin' username exists, which is a security risk. Never use easy to guess usernames like 'admin', 'administrator', 'root', 'user', '1', '2', '3', etc.",
+            "steps": [
+                "Create a new administrator account with a unique username",
+                "Log in with the new administrator account",
+                "Delete or rename the 'admin' user account",
+                "Transfer content ownership if needed"
+            ]
+        }
+    },
+    "learn_more": {
+        "description": "Using the default 'admin' username makes it easier for attackers to guess login credentials, as they only need to focus on cracking the password.",
+        "benefits": [
+            "Protection against automated login attempts",
+            "Reduced risk of brute force attacks",
+            "Enhanced login security",
+            "Better user account management"
+        ],
+        "recommended_tools": [
+            {
+                "name": "iThemes Security",
+                "type": "Security Plugin"
+            },
+            {
+                "name": "Wordfence",
+                "type": "Security Plugin"
+            }
+        ]
+    }
+}

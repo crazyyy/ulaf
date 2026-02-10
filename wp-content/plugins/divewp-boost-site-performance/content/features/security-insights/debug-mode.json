@@ -1,0 +1,43 @@
+{
+    "title": "Debug Mode",
+    "messages": {
+        "success": {
+            "title": "Debug Mode Disabled",
+            "details": "WordPress debug mode is disabled on your live site, which is the recommended setting.",
+            "steps": [
+                "Keep WP_DEBUG set to false",
+                "Use local environment for debugging",
+                "Monitor error logs regularly"
+            ]
+        },
+        "error": {
+            "title": "Debug Mode Enabled",
+            "details": "WordPress debug mode is enabled, which could expose sensitive information.",
+            "steps": [
+                "Set WP_DEBUG to false in wp-config.php",
+                "Use debug mode only in development",
+                "Check for exposed error logs",
+                "Implement proper error logging"
+            ]
+        }
+    },
+    "learn_more": {
+        "description": "WordPress debug mode is useful for development but can expose sensitive information about your site's configuration and errors to visitors. It should always be disabled on production sites.",
+        "benefits": [
+            "Prevents exposure of sensitive information",
+            "Improves site security",
+            "Better error handling in production",
+            "Professional user experience"
+        ],
+        "recommended_tools": [
+            {
+                "name": "Query Monitor",
+                "type": "Development Plugin"
+            },
+            {
+                "name": "Debug Bar",
+                "type": "Development Plugin"
+            }
+        ]
+    }
+}

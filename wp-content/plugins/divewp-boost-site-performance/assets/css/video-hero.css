@@ -1,0 +1,218 @@
+/**
+ * DiveWP Video Hero Template Styles
+ *
+ * Reusable video hero section with YouTube embed.
+ * Used across multiple features for explainer videos.
+ *
+ * @package     DiveWP
+ * @version     2.2.0
+ * @author      Oleg Petrov
+ */
+
+/* ==========================================================================
+   Video Hero Section
+   ========================================================================== */
+
+.divewp-video-hero {
+    display: flex;
+    align-items: stretch;
+    gap: 32px;
+    background: linear-gradient(135deg, #1e3a5f 0%, #0f2744 100%);
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 24px;
+    overflow: hidden;
+    position: relative;
+}
+
+.divewp-video-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 60%;
+    height: 200%;
+    background: radial-gradient(ellipse, rgba(66, 153, 225, 0.15) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.divewp-video-hero__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    min-width: 280px;
+}
+
+.divewp-video-hero__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background: rgba(72, 187, 120, 0.2);
+    border: 1px solid rgba(72, 187, 120, 0.4);
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #68d391;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    width: fit-content;
+    margin-bottom: 16px;
+}
+
+.divewp-video-hero__badge .dashicons {
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+}
+
+.divewp-video-hero__title {
+    margin: 0 0 12px;
+    font-family: 'Literata', serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.3;
+}
+
+.divewp-video-hero__description {
+    margin: 0 0 20px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.divewp-video-hero__features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.divewp-video-hero__features li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.divewp-video-hero__features li .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    color: #68d391;
+}
+
+.divewp-video-hero__subscribe {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ff0000;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    width: fit-content;
+}
+
+.divewp-video-hero__subscribe:hover {
+    background: #cc0000;
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+.divewp-video-hero__subscribe:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.5);
+    outline-offset: 2px;
+}
+
+.divewp-video-hero__subscribe svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.divewp-video-hero__video {
+    flex: 1.2;
+    position: relative;
+    z-index: 1;
+    min-width: 320px;
+    max-width: 560px;
+}
+
+.divewp-video-hero__video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    background: #000;
+}
+
+.divewp-video-hero__video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ==========================================================================
+   Responsive Styles
+   ========================================================================== */
+
+@media screen and (max-width: 1024px) {
+    .divewp-video-hero {
+        flex-direction: column;
+        padding: 24px;
+        gap: 24px;
+    }
+
+    .divewp-video-hero__content {
+        min-width: 100%;
+    }
+
+    .divewp-video-hero__title {
+        font-size: 24px;
+    }
+
+    .divewp-video-hero__video {
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .divewp-video-hero {
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .divewp-video-hero__title {
+        font-size: 20px;
+    }
+
+    .divewp-video-hero__description {
+        font-size: 14px;
+    }
+
+    .divewp-video-hero__features {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+

@@ -1,0 +1,18 @@
+{
+    "messages": {
+        "info": {
+            "title": "Backups & Support",
+            "details": "Reliable backups (automatic, daily, off-site) and accessible, knowledgeable support (24/7 preferred) are crucial for peace of mind."
+        }
+    },
+    "learn_more": {
+        "description": "Don't overlook these essential services:",
+        "benefits_title": "What to look for:",
+        "benefits": [
+            "Backups: Look for automatic, daily backups stored off-site (not on the same server). Check the retention period (how long backups are kept) and how easily you can restore a backup yourself.",
+            "Support Channels: Common options include live chat, phone support, and email/ticket systems. Consider which channels you prefer and their availability (24/7 support is ideal).",
+            "Support Quality: Is the support team knowledgeable about WordPress? Check reviews or ask pre-sales questions to gauge their expertise and response times.",
+            "Self-Help: A good knowledge base or documentation section on the host's website can be very helpful for common issues."
+        ]
+    }
+} 

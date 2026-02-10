@@ -1,0 +1,38 @@
+{
+    "messages": {
+        "success": {
+            "title": "Database Version is Up to Date",
+            "details": "Your site is running {current_value}, which is optimal for performance and security. Well done!",
+            "steps": [
+                "Make sure your hosting provider is using the latest version of MySQL or MariaDB",
+                "Monitor your database regularly to ensure it's performing well. Database performance is key to your site's speed and security!",
+                "Regularly backup your database, to ensure you can recover from any issues!"
+            ]
+        },
+        "error": {
+            "title": "Your Database Needs an Update",
+            "details": "We've detected that your site is using an older database version ({current_value}). A newer version ({recommended_value}) is available that can help your site run better and be more secure.",
+            "steps": [
+                "Send this to your hosting provider: 'Hi, I noticed my WordPress database version is lower than the recommended version. Could you please help me upgrade it to the latest version? This will help improve my site's security and performance.'",
+                "Request that they create a backup before making any changes"
+            ]
+        }
+    },
+    "learn_more": {
+        "description": "Think of your database like your site's filing cabinet - keeping it up to date helps everything run smoothly and securely.",
+        "benefits": [
+            "Faster website loading times",
+            "Better protection against security threats",
+            "More reliable data storage",
+            "Access to newer features",
+            "Less server resource usage (which can save you money!)"
+        ],
+        "recommendations": [
+            "Keep your database up to date - just like you update WordPress",
+            "Use the latest stable version recommended by WordPress",
+            "Always have a backup before any updates",
+            "Ask your host to test the update first",
+            "Check your site after the update to make sure everything works"
+        ]
+    }
+}

@@ -1,0 +1,3033 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AdminEase\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-31 18:09+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.0; wp-6.8.1; php-8.3.21\n"
+"X-Domain: adminease"
+
+#. %d: number of posts remaining
+#: includes/Features/BulkDeletePosts.php:269
+#, php-format
+msgid "%1$d posts, %2$d pages"
+msgstr ""
+
+#. %1$s and %2$s are placeholders for the strong tag. %3$s is a placeholder for the br tag
+#: partials/dashboard.php:265
+#, php-format
+msgid ""
+"%1$sAuto-logout users%2$s%3$sSelecting which user roles are included in the "
+"auto logout feature."
+msgstr ""
+
+#. %1$s and %2$s are placeholders for the strong tag. %3$s is a placeholder for the br tag
+#: partials/dashboard.php:217
+#, php-format
+msgid "%1$sBlock Specific Countries%2$s%3$sWhitelist IP addresses and bots."
+msgstr ""
+
+#. %1$s and %2$s are placeholders for the strong tag. %3$s is a placeholder for the br tag
+#: partials/dashboard.php:345
+#, php-format
+msgid ""
+"%1$sBulk Delete Posts%2$s%3$sAbility to bulk delete posts based on various "
+"criteria like post type, status, date range, categories, tags, and custom "
+"taxonomies."
+msgstr ""
+
+#. %1$s and %2$s are placeholders for the strong tag. %3$s is a placeholder for the br tag
+#: partials/dashboard.php:329
+#, php-format
+msgid "%1$sDisable Comments%2$s%3$sAbility to disable comments per post type."
+msgstr ""
+
+#. %1$s and %2$s are placeholders for the strong tag. %3$s is a placeholder for the br tag
+#: partials/dashboard.php:297
+#, php-format
+msgid ""
+"%1$sDisable Gutenberg%2$s%3$sAbility to disable Gutenberg editor completely "
+"per post type."
+msgstr ""
+
+#. %1$s and %2$s are placeholders for the strong tag. %3$s is a placeholder for the br tag
+#: partials/dashboard.php:249
+#, php-format
+msgid "%1$sDisable REST-API%2$s%3$sAllowing specific ip addresses."
+msgstr ""
+
+#. %1$s and %2$s are placeholders for the strong tag. %3$s is a placeholder for the br tag
+#: partials/dashboard.php:233
+#, php-format
+msgid "%1$sDisable XML-RPC%2$s%3$sAllowing specific ip addresses."
+msgstr ""
+
+#. %1$s and %2$s are placeholders for the strong tag. %3$s is a placeholder for the br tag
+#: partials/dashboard.php:281
+#, php-format
+msgid ""
+"%1$sDrag and drop ordering%2$s%3$sSelecting which post type and taxonomies "
+"are included in the drag and drop feature."
+msgstr ""
+
+#. %1$s and %2$s are placeholders for the strong tag.
+#: partials/dashboard.php:136
+#, php-format
+msgid ""
+"%1$sHeads up! 🧐%2$s Some AdminEase features tweak core WordPress settings "
+"for extra power. Double-check your choices and consider testing on a staging "
+"site first. Always keep a backup handy, better safe than sorry! 🛡️"
+msgstr ""
+
+#. %1$s and %2$s are placeholders for the strong tag. %3$s is a placeholder for the br tag
+#: partials/dashboard.php:361
+#, php-format
+msgid ""
+"%1$sImport Export%2$s%3$sAbility to export plugin settings and import to "
+"another site."
+msgstr ""
+
+#. %1$s and %2$s are placeholders for the strong tag. %3$s is a placeholder for the br tag
+#: partials/dashboard.php:313
+#, php-format
+msgid ""
+"%1$sTaxonomy Meta Box%2$s%3$sAbility to control in which taxonomies the "
+"improved meta box will appear."
+msgstr ""
+
+#. %1$s and %2$s are placeholders for the strong tag.
+#: partials/dashboard.php:100
+#, php-format
+msgid ""
+"%1$s🚀 Your WordPress admin just got a major upgrade.%2$s Explore powerful "
+"tools, boost your site, and manage everything with ease!%3$s%4$sNo coding "
+"required%5$s. Let’s make your workflow a breeze! 😎"
+msgstr ""
+
+#. %d: number of seconds for the auto-logout interval
+#: includes/Features/AutoLogoutUser.php:75
+#, php-format
+msgid "%s day"
+msgstr ""
+
+#. %d: number of seconds for the auto-logout interval
+#: includes/Features/AutoLogoutUser.php:65
+#, php-format
+msgid "%s hour"
+msgstr ""
+
+#. %d: number of seconds for the auto-logout interval
+#: includes/Features/AutoLogoutUser.php:67
+#: includes/Features/AutoLogoutUser.php:69
+#: includes/Features/AutoLogoutUser.php:71
+#: includes/Features/AutoLogoutUser.php:73
+#, php-format
+msgid "%s hours"
+msgstr ""
+
+#. %d: number of seconds for the auto-logout interval
+#: includes/Features/AutoLogoutUser.php:51
+#, php-format
+msgid "%s minute"
+msgstr ""
+
+#. %d: number of seconds for the auto-logout interval
+#: includes/Features/AutoLogoutUser.php:53
+#: includes/Features/AutoLogoutUser.php:55
+#: includes/Features/AutoLogoutUser.php:57
+#: includes/Features/AutoLogoutUser.php:59
+#: includes/Features/AutoLogoutUser.php:61
+#: includes/Features/AutoLogoutUser.php:63
+#, php-format
+msgid "%s minutes"
+msgstr ""
+
+#. %d: number of seconds for the auto-logout interval
+#: includes/Features/AutoLogoutUser.php:79
+#, php-format
+msgid "%s month"
+msgstr ""
+
+#. %d: number of seconds for the auto-logout interval
+#: includes/Features/AutoLogoutUser.php:77
+#, php-format
+msgid "%s week"
+msgstr ""
+
+#. %d is the number of additional selected terms
+#: includes/Features/TaxonomyMetaBox.php:146
+msgid "+%d more"
+msgstr ""
+
+#: includes/Features/EmptyTrashDays.php:36
+msgid "1 Day"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:125
+msgid "1 Hour"
+msgstr ""
+
+#: includes/Features/WpDebug.php:183
+msgid "10,000 lines (recommended)"
+msgstr ""
+
+#: includes/Features/WpDebug.php:185
+msgid "100,000 lines (slower)"
+msgstr ""
+
+#: includes/Features/WpDebug.php:182
+msgid "1000 lines (faster)"
+msgstr ""
+
+#: includes/Features/EmptyTrashDays.php:38
+msgid "14 Days"
+msgstr ""
+
+#: includes/Features/EmptyTrashDays.php:42
+msgid "180 Days"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:126
+msgid "24 Hours"
+msgstr ""
+
+#: includes/Features/WpDebug.php:186
+msgid "250,000 lines (slowest)"
+msgstr ""
+
+#: includes/Features/EmptyTrashDays.php:39
+msgid "30 Days (Default)"
+msgstr ""
+
+#: includes/Features/EmptyTrashDays.php:43
+msgid "365 Days"
+msgstr ""
+
+#: includes/Features/WpDebug.php:184
+msgid "50,000 lines"
+msgstr ""
+
+#: includes/Features/WpDebug.php:187
+msgid "500,000 lines (hell)"
+msgstr ""
+
+#: includes/Features/EmptyTrashDays.php:40
+msgid "60 Days"
+msgstr ""
+
+#: includes/Features/EmptyTrashDays.php:37
+#: includes/Features/NetworkViewer.php:127
+msgid "7 Days"
+msgstr ""
+
+#: includes/Features/EmptyTrashDays.php:41
+msgid "90 Days"
+msgstr ""
+
+#: includes/Features/NumberPostsRevisions.php:48
+msgid ""
+"<p><strong>Post revisions</strong> in WordPress are automatically saved "
+"versions of your posts and pages, created every time you update or save "
+"content. This feature lets you <strong>undo changes, compare versions, and "
+"restore earlier drafts</strong>if needed, providing a safety net against "
+"mistakes or accidental deletions.</p><p>If you change the number of allowed "
+"revisions (for example, by setting a limit in <code>wp-config.php</code>) "
+"<strong>this only affects new revisions going forward</strong>. Existing "
+"posts will still keep all their current revisions unless you manually delete "
+"the extra ones. Limiting revisions does not automatically remove old ones; "
+"you must clean them up separately if you want to reduce database size.</p>"
+msgstr ""
+
+#: includes/Features/ForceStrongPasswords.php:58
+msgid ""
+"<p>Enforcing the use of <strong>strong passwords</strong> in WordPress helps "
+"protect your site from brute force attacks and unauthorized access. By "
+"requiring users to create passwords with a mix of uppercase and lowercase "
+"letters, numbers, and special characters, you ensure better account security "
+"for both administrators and regular users.</p><p>When enforced via PHP, this "
+"rule applies across the entire site — during registration, password resets, "
+"and profile updates. Weak passwords are rejected, and users are prompted to "
+"choose a stronger one. This level of control helps <strong>standardize "
+"security practices</strong> and ensures even third-party plugins follow your "
+"password policy.</p>"
+msgstr ""
+
+#: includes/Features/DisableXmlRpc.php:42
+msgid ""
+"<p>XML-RPC is a feature in WordPress that allows external apps and services "
+"to connect to your site—for example, to publish posts remotely or manage "
+"content via mobile apps. However, it's also a common target for brute force "
+"and DDoS attacks. If you're not using any tools that require XML-RPC, it's a "
+"good idea to disable it to improve your site's security.</p><p>If you need "
+"XML-RPC access from specific locations, you can add their IP addresses. One "
+"IP address per line, supporting both IPv4 and IPv6 formats.</p><p><strong>"
+"Examples:</strong><br>IPv4: 192.168.1.1<br>IPv6: 2001:db8:85a3::8a2e:370:"
+"7334</p><p><strong>Important:</strong> When XML-RPC is disabled, only "
+"requests from these IPs will be allowed, while all other requests will be "
+"denied. Leave empty to block all access to xmlrpc.php.</p>"
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:109
+msgid "A-Z"
+msgstr ""
+
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:462
+msgid "Access granted. Redirecting..."
+msgstr ""
+
+#: includes/Features/PasswordProtectSite/Themes/Classic.php:187
+msgid "Access Site"
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:239
+msgid "Actions"
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:116
+#: includes/Features/PostsMetadataBox.php:224
+#: includes/Features/PostsMetadataBox.php:269
+msgid "Add New Metadata"
+msgstr ""
+
+#. Name of the plugin
+#: partials/dashboard.php:16
+msgid "AdminEase"
+msgstr ""
+
+#: includes/Features/WpDebug.php:58
+msgid "AdminEase - WP Debug Auto-Disabled"
+msgstr ""
+
+#: adminease.php:47
+msgid "AdminEase isn’t running because PHP is outdated."
+msgstr ""
+
+#: adminease.php:65
+msgid "AdminEase isn’t running because WordPress is outdated."
+msgstr ""
+
+#: partials/dashboard.php:194
+msgid "AdminEase Pro Features"
+msgstr ""
+
+#: partials/network-viewer-log.php:29
+msgid "All"
+msgstr ""
+
+#. %s: link to upgrade to AdminEase Pro
+#: includes/Features/BulkDeletePosts.php:94
+#, php-format
+msgid ""
+"Allow bulk deletion of posts and pages with real-time progress tracking. "
+"Need custom post type support? %s"
+msgstr ""
+
+#: includes/Features/BulkDeletePosts.php:97
+msgid ""
+"Allow bulk deletion of posts, pages, and custom post types with real-time "
+"progress tracking."
+msgstr ""
+
+#: includes/Features/CorsHeader.php:40
+msgid ""
+"Allow Cross-Origin Resource Sharing. Add the 'Access-Control-Allow-Origin:' "
+"header to responses"
+msgstr ""
+
+#: includes/Features/AllowCustomFileExtensionUpload.php:41
+msgid "Allow Custom File Extension Upload"
+msgstr ""
+
+#: includes/Features/AllowSvgUpload.php:65
+msgid "Allow SVG Upload"
+msgstr ""
+
+#: includes/Features/AllowCustomFileExtensionUpload.php:53
+msgid "Allowed File Extensions"
+msgstr ""
+
+#: partials/field-groups/docs/block-specific-countries-enabled.php:13
+msgid ""
+"Alternatively works with server-side PHP GeoIP extension for country "
+"detection"
+msgstr ""
+
+#: includes/Features/ForceStrongPasswords.php:168
+#: includes/Features/ForceStrongPasswords.php:198
+#: includes/Features/ForceStrongPasswords.php:226
+#: includes/Features/NetworkViewer.php:897
+#: includes/Features/NetworkViewer.php:924
+#: includes/Features/BulkDeletePosts.php:261
+#: includes/Features/TaxonomyMetaBox.php:380
+#: includes/Features/TaxonomyMetaBox.php:493
+#: includes/Features/TaxonomyMetaBox.php:556
+#: includes/Features/TaxonomyMetaBox.php:608 includes/Features/WpDebug.php:260
+#: includes/Features/WpDebug.php:307 includes/Features/WpDebug.php:329
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:428
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:680
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:708
+#: includes/Features/PasswordProtectSite/Themes/Classic.php:128
+msgid "An error occurred. Refresh the page and try again."
+msgstr ""
+
+#: includes/Plugin.php:221
+msgid "An unknown error occurred. Refresh the page and try again."
+msgstr ""
+
+#: includes/Features/NumberPostsRevisions.php:63
+msgid ""
+"Any number greater than 0 (for example, 3): WordPress will only keep that "
+"many old versions for each post. (For example, if you set it to 3, only your "
+"3 most recent edits are saved. Older versions are deleted automatically when "
+"you make new edits.)"
+msgstr ""
+
+#: partials/network-viewer-log.php:59
+msgid "Apply Filters"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:244
+msgid "Are you sure you want to clear all network viewer logs?"
+msgstr ""
+
+#: includes/Features/WpDebug.php:209
+msgid "Are you sure you want to clear the debug log?"
+msgstr ""
+
+#: includes/Features/BulkDeletePosts.php:257
+msgid ""
+"Are you sure you want to delete the selected posts? This action cannot be "
+"easily undone."
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:225
+#: includes/Features/PostsMetadataBox.php:264
+msgid "Are you sure you want to delete this metadata?"
+msgstr ""
+
+#: includes/Features/ForceStrongPasswords.php:115
+msgid "At least one lowercase letter"
+msgstr ""
+
+#: includes/Features/ForceStrongPasswords.php:128
+msgid "At least one number"
+msgstr ""
+
+#: includes/Features/ForceStrongPasswords.php:141
+msgid "At least one special character"
+msgstr ""
+
+#: includes/Features/ForceStrongPasswords.php:102
+msgid "At least one uppercase letter"
+msgstr ""
+
+#: includes/Features/BlockAuthorScans.php:38
+msgid ""
+"Author scans are looking to find usernames of registered users (especially "
+"WordPress admin) and brute-force attack the login page of your website to "
+"gain access. This security option prevents such scans from exposing these "
+"usernames. Note: depending on the permalink configuration on your website "
+"this option might prevent visitors from accessing pages that list all "
+"articles written by a particular author."
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:122
+msgid "Auto Clear Logs After"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:199
+msgid "Auto-Load Network Viewer"
+msgstr ""
+
+#: includes/Features/AutoLogoutUser.php:40
+msgid "Auto-logout user"
+msgstr ""
+
+#: includes/Features/AutoLogoutUser.php:86
+msgid "Auto-logout user after X seconds"
+msgstr ""
+
+#: includes/Plugin.php:510
+msgid "Auto-logout user after X seconds cannot be empty"
+msgstr ""
+
+#. %s: number of seconds for the auto-refresh interval
+#: partials/wp-debug.php:83 partials/network-viewer-log.php:18
+#, php-format
+msgid "Auto-refresh every %s seconds"
+msgstr ""
+
+#: partials/field-groups/docs/block-specific-countries-enabled.php:15
+msgid "Automatic Detection"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:123
+msgid "Automatically delete logs older than this period."
+msgstr ""
+
+#: partials/field-groups/docs/block-specific-countries-enabled.php:15
+msgid "Automatically detects and uses the best available geolocation method"
+msgstr ""
+
+#: includes/Features/MediaLibraryInfiniteScrolling.php:44
+msgid ""
+"Automatically load more media items when you scroll to the bottom of the "
+"media library."
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:200
+msgid ""
+"Automatically load the network viewer log when the AdminEase admin page is "
+"opened."
+msgstr ""
+
+#: includes/Features/AutosaveInterval.php:39
+msgid "Autosave Interval"
+msgstr ""
+
+#: includes/Features/BulkDeletePosts.php:138
+msgid "Batch Size"
+msgstr ""
+
+#: includes/Features/BlockAccessSensitiveFiles.php:40
+msgid ""
+"Block access to configuration files, development files, backups, logs, and "
+"version control files"
+msgstr ""
+
+#: includes/Features/BlockAccessSensitiveFiles.php:39
+msgid "Block access to sensitive files"
+msgstr ""
+
+#: includes/Features/BlockAuthorScans.php:37
+msgid "Block author scans"
+msgstr ""
+
+#: includes/Features/BlockSpecificBots.php:54
+msgid "Block common bots"
+msgstr ""
+
+#: includes/Features/BlockDirectoryBrowsing.php:37
+msgid "Block directory browsing"
+msgstr ""
+
+#: includes/Features/BlockSpecificBots.php:41
+msgid ""
+"Block malicious or unwanted bots from accessing your site. <strong>Protect "
+"your server resources</strong> from aggressive crawlers, prevent content "
+"scraping, reduce bandwidth waste, and <strong>improve site "
+"performance</strong> by filtering out automated traffic that doesn't serve "
+"your business goals. Control which bots can access your content with "
+"precision."
+msgstr ""
+
+#: includes/Features/BlockSpecificBots.php:71
+msgid "Block specific bots"
+msgstr ""
+
+#: includes/Features/BlockSpecificCountries.php:73
+msgid "Block specific countries"
+msgstr ""
+
+#: includes/Features/BlockSpecificCountries.php:59
+msgid "Block visitors from specific countries based on geolocation."
+msgstr ""
+
+#: includes/Features/DisableRestApi.php:57
+msgid ""
+"Blocking Rest API also blocks communication to wordpress.org, by enabling "
+"this feature you will allow all HTTP requests to wordpress.org, including "
+"plugin/theme updates, version checks, and other API communications."
+msgstr ""
+
+#: partials/field-groups/docs/block-specific-countries-enabled.php:26
+msgid "Blocks happen before WordPress even loads"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Boosts your WordPress admin with tools for updates, security, performance, "
+"and user management - no coding required."
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:1043
+msgid "Bot"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:267
+#: includes/Features/NetworkViewer.php:1161
+msgid "Browser"
+msgstr ""
+
+#: partials/bulk-delete-posts.php:10
+msgid "Bulk deletion status"
+msgstr ""
+
+#: partials/field-groups/docs/cors-header.php:18
+msgid ""
+"But browsers have a security feature that blocks this kind of request by "
+"default. It's called the same-origin policy — it only allows a website to "
+"request data from its own domain unless told otherwise."
+msgstr ""
+
+#: includes/Features/UpdatesAndNotifications.php:234
+msgid ""
+"By default, recovery mode notification emails are sent to the site "
+"administrator email address. You can specify a different email address here "
+"to receive these notifications instead."
+msgstr ""
+
+#: includes/Features/AutosaveInterval.php:41
+msgid "By default, WordPress autosaves every <strong>60 seconds</strong>."
+msgstr ""
+
+#: includes/Features/HideWordpressVersion.php:52
+msgid ""
+"By default, WordPress includes its <strong>version number</strong> in your "
+"site's source code, RSS feeds, and sometimes in script URLs. While this "
+"seems harmless, it can give attackers clues about potential vulnerabilities "
+"if you're running an outdated version. Hiding the WordPress version helps "
+"<strong>improve your site's security</strong> by making it less obvious "
+"which version you're using. This can be done with a simple code snippet "
+"added to your theme or a security plugin."
+msgstr ""
+
+#: includes/Features/EmptyTrashDays.php:49
+msgid ""
+"By default, WordPress keeps deleted posts, pages, and comments in the trash "
+"for 30 days. After that, they are permanently deleted."
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:164
+msgid "Cancel"
+msgstr ""
+
+#: includes/Features/BulkDeletePosts.php:186
+msgid "Choose a date range to include posts published within that range."
+msgstr ""
+
+#: includes/Features/BulkDeletePosts.php:120
+msgid ""
+"Choose how posts should be deleted. WARNING: Permanent deletion cannot be "
+"undone!"
+msgstr ""
+
+#: partials/field-groups/docs/block-specific-countries-enabled.php:14
+msgid "Choose which countries you want to block from accessing your website"
+msgstr ""
+
+#: includes/Features/BulkDeletePosts.php:172
+msgid "Choose which post status to include in bulk deletion."
+msgstr ""
+
+#: includes/Features/BulkDeletePosts.php:157
+msgid "Choose which post types to include in bulk deletion."
+msgstr ""
+
+#: partials/wp-debug.php:77 partials/network-viewer-log.php:13
+msgid "Clear"
+msgstr ""
+
+#: includes/Field.php:218 includes/Features/TaxonomyMetaBox.php:144
+msgid "Clear all"
+msgstr ""
+
+#: includes/Features/TaxonomyMetaBox.php:282
+msgid "Clear search"
+msgstr ""
+
+#: partials/password-protect-site-log.php:43
+msgid "Click \"Refresh Log\" to view access attempts."
+msgstr ""
+
+#: partials/wp-debug.php:95
+msgid "Click on the Refresh button to see the current debug.log"
+msgstr ""
+
+#: includes/Features/BulkDeletePosts.php:196
+msgid "Click to begin the bulk deletion process based on selected criteria."
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:263
+#: includes/Features/NetworkViewer.php:1140
+msgid "Client Information"
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:135
+msgid "Close"
+msgstr ""
+
+#: partials/field-groups/docs/block-specific-countries-enabled.php:12
+msgid "Cloudflare Support"
+msgstr ""
+
+#: includes/Features/BulkDeletePosts.php:256
+msgid "Confirm Bulk Delete"
+msgstr ""
+
+#: partials/network-viewer-log.php:139 includes/Features/NetworkViewer.php:1094
+msgid "Connection Details"
+msgstr ""
+
+#: includes/Features/RedirectAfterLoginLogout.php:74
+msgid ""
+"Control where users are redirected after logging out. By default, WordPress "
+"redirects users to the login page, but you can customize this to send them "
+"to any page, such as the homepage or a custom goodbye page."
+msgstr ""
+
+#: includes/Features/RedirectAfterLoginLogout.php:46
+msgid ""
+"Control where users are redirected after successfully logging in. By default,"
+" WordPress redirects users to the admin dashboard, but you can customize "
+"this to send them to any page on your site, such as their profile, a welcome "
+"page, or the homepage."
+msgstr ""
+
+#: includes/Features/EmptyTrashDays.php:48
+msgid ""
+"Controls how many days WordPress keeps deleted content in trash before "
+"permanently deleting it. Set to \"Disable Trash\" to permanently delete "
+"items immediately without using trash."
+msgstr ""
+
+#: partials/dashboard.php:125
+msgid "Core Settings"
+msgstr ""
+
+#: includes/Features/CorsHeader.php:39
+msgid "CORS Header"
+msgstr ""
+
+#: includes/Features/AllowSvgUpload.php:336
+msgid "Could not read SVG file."
+msgstr ""
+
+#: includes/Features/AllowSvgUpload.php:170
+msgid "Could not read uploaded SVG file for sanitization."
+msgstr ""
+
+#: includes/Features/AllowSvgUpload.php:415
+msgid "Could not save sanitized SVG file."
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:266
+#: includes/Features/NetworkViewer.php:1153
+msgid "Country"
+msgstr ""
+
+#: partials/field-groups/docs/block-specific-countries-enabled.php:4
+msgid "Country Blocking Feature"
+msgstr ""
+
+#. %s is the singular name of the taxonomy
+#: includes/Features/TaxonomyMetaBox.php:351
+#, php-format
+msgid "Create new %s"
+msgstr ""
+
+#: includes/Features/WpDebug.php:214
+msgid "Critical:"
+msgstr ""
+
+#: includes/Features/AllowCustomFileExtensionUpload.php:70
+msgid "Custom File Extensions"
+msgstr ""
+
+#: includes/Features/AllowCustomFileExtensionUpload.php:71
+msgid ""
+"Custom file extensions and their corresponding MIME types here in the format,"
+" e.g. <mark>application/epub+zip</mark>, one per line."
+msgstr ""
+
+#: includes/Features/WpMemoryLimit.php:69
+#: includes/Features/WpMemoryLimit.php:120
+msgid "Custom memory limit"
+msgstr ""
+
+#: includes/Features/AutoLogoutUser.php:100
+msgid "Custom time"
+msgstr ""
+
+#: includes/Features/UpdatesAndNotifications.php:233
+msgid "Customize recovery mode recipient email"
+msgstr ""
+
+#: partials/dashboard.php:33 partials/dashboard.php:75
+msgid "Dashboard"
+msgstr ""
+
+#: includes/Plugin.php:620
+msgid "Debug"
+msgstr ""
+
+#: includes/Features/WpDebug.php:153
+msgid "Debug Log Auto-Refresh Interval"
+msgstr ""
+
+#: includes/Features/WpDebug.php:319
+msgid "Debug log cleared successfully."
+msgstr ""
+
+#: includes/Features/WpDebug.php:347
+msgid "Debug log file does not exist."
+msgstr ""
+
+#: includes/Features/WpDebug.php:272 includes/Features/WpDebug.php:341
+msgid "Debug log file is not readable."
+msgstr ""
+
+#: partials/wp-debug.php:65
+msgid ""
+"Debug log has exceeded safe limits. WP_DEBUG settings have been "
+"automatically disabled to prevent server issues. Please clear the debug log."
+msgstr ""
+
+#: includes/Features/WpDebug.php:215
+msgid ""
+"Debug log has exceeded safe limits. WP_DEBUG settings have been "
+"automatically disabled. Please clear the debug log."
+msgstr ""
+
+#: includes/Features/WpDebug.php:210
+msgid "Debug log is empty."
+msgstr ""
+
+#. 1: current file size, 2: percentage of memory limit
+#: partials/wp-debug.php:51
+#, php-format
+msgid ""
+"Debug log is getting large (%1$s, %2$s%% of PHP memory limit). Consider "
+"clearing it or WP_DEBUG will be automatically disabled when it reaches 90%% "
+"of the memory limit."
+msgstr ""
+
+#: includes/Features/WpDebug.php:217
+#, php-format
+msgid ""
+"Debug log is getting large (%s, %s%% of PHP memory limit). Consider clearing "
+"it or WP_DEBUG will be automatically disabled at 90%%."
+msgstr ""
+
+#: includes/Features/WpDebug.php:179
+msgid "Debug Log Lines to Show"
+msgstr ""
+
+#: partials/wp-debug.php:30
+msgid "Debug Log Size:"
+msgstr ""
+
+#: partials/wp-debug.php:19
+msgid "Debug log viewer"
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:234
+msgid "Delete"
+msgstr ""
+
+#: includes/Features/BulkDeletePosts.php:124
+msgid "Delete Permanently"
+msgstr ""
+
+#: partials/bulk-delete-posts.php:33 includes/Features/BulkDeletePosts.php:265
+msgid "Deleted Posts:"
+msgstr ""
+
+#: includes/Features/BulkDeletePosts.php:260
+msgid "Deletion Complete!"
+msgstr ""
+
+#: includes/Features/BulkDeletePosts.php:119
+msgid "Deletion Method"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:268
+#: includes/Features/NetworkViewer.php:1169
+msgid "Device"
+msgstr ""
+
+#: includes/Features/DisableAdminNotices.php:42
+msgid "Disable admin notices"
+msgstr ""
+
+#: includes/Features/UpdatesAndNotifications.php:145
+msgid "Disable auto core update send email"
+msgstr ""
+
+#: includes/Features/UpdatesAndNotifications.php:167
+msgid "Disable auto plugin update send email"
+msgstr ""
+
+#: includes/Features/UpdatesAndNotifications.php:156
+msgid "Disable auto theme update send email"
+msgstr ""
+
+#: includes/Features/UpdatesAndNotifications.php:101
+msgid "Disable auto update core"
+msgstr ""
+
+#: includes/Features/UpdatesAndNotifications.php:112
+msgid "Disable auto update plugins"
+msgstr ""
+
+#: includes/Features/UpdatesAndNotifications.php:123
+msgid "Disable auto update themes"
+msgstr ""
+
+#: includes/Features/UpdatesAndNotifications.php:134
+msgid "Disable auto update translations"
+msgstr ""
+
+#: includes/Features/UpdatesAndNotifications.php:200
+msgid "Disable comment admin notification email"
+msgstr ""
+
+#: includes/Features/UpdatesAndNotifications.php:211
+msgid "Disable comment post author notification email"
+msgstr ""
+
+#: includes/Features/DisableComments.php:56
+msgid "Disable Comments"
+msgstr ""
+
+#: includes/Features/DisableEmbeds.php:76
+msgid "Disable embeds"
+msgstr ""
+
+#: includes/Features/DisableEmojis.php:41
+msgid "Disable Emojis"
+msgstr ""
+
+#: includes/Features/DisableFileEdit.php:38
+msgid "Disable file edit"
+msgstr ""
+
+#: includes/Features/DisableGutenberg.php:56
+msgid "Disable Gutenberg"
+msgstr ""
+
+#: includes/Features/DisableComments.php:57
+msgid ""
+"Disable new comments and pings across specified post types. This hides the "
+"discussion metabox in the editor and closes comments on the frontend, but "
+"keeps existing data accessible in the admin menu."
+msgstr ""
+
+#: includes/Features/UpdatesAndNotifications.php:178
+msgid "Disable new user admin notification email"
+msgstr ""
+
+#: includes/Features/DisablePingbacksAndTrackbacks.php:48
+msgid "Disable pingbacks"
+msgstr ""
+
+#: includes/Features/UpdatesAndNotifications.php:222
+msgid "Disable recovery mode email notification"
+msgstr ""
+
+#: includes/Features/DisableRestApi.php:46
+msgid "Disable REST API"
+msgstr ""
+
+#: includes/Features/DisableScriptConcatenation.php:37
+msgid "Disable scripts concatenation in WordPress admin panel"
+msgstr ""
+
+#: includes/Features/DisableGutenberg.php:57
+msgid ""
+"Disable the Gutenberg block editor and revert to the classic editor for all "
+"post types. This is useful for users who prefer the classic editing "
+"experience or have compatibility issues with Gutenberg."
+msgstr ""
+
+#: includes/Features/EmptyTrashDays.php:35
+msgid "Disable Trash (Delete Permanently)"
+msgstr ""
+
+#: includes/Features/UpdatesAndNotifications.php:189
+msgid "Disable user password change admin notification email"
+msgstr ""
+
+#: includes/Features/DisableFrontendUserRegistration.php:46
+msgid "Disable user registration"
+msgstr ""
+
+#: includes/Features/DisableWpCron.php:37
+msgid "Disable WP Cron"
+msgstr ""
+
+#: includes/Features/DisableXmlRpc.php:41
+msgid "Disable XML-RPC"
+msgstr ""
+
+#: includes/Features/DisableFrontendUserRegistration.php:47
+msgid ""
+"Disabling user registration in WordPress using PHP gives you stronger "
+"control over who can create accounts on your site. This approach <strong>"
+"removes access to the default WordPress registration form</strong> (<code>wp-"
+"login.php?action=register</code>) and blocks programmatic registration "
+"attempts. If any third-party plugin tries to register users via WordPress "
+"core functions, it will trigger an error message instead of creating an "
+"account. This method is ideal for preventing spam, hardening site security, "
+"and fully locking down user sign-ups at the code level."
+msgstr ""
+
+#: includes/Features/DisallowFileMods.php:38
+msgid "Disallow file modifications"
+msgstr ""
+
+#: includes/Features/MaintenanceMode/MaintenanceMode.php:50
+msgid ""
+"Display a professional maintenance page to visitors during site updates or "
+"scheduled maintenance while allowing administrators to access the site "
+"normally. Customize the page with your logo, headlines, and HTML-formatted "
+"messages. Includes SEO-friendly 503 headers and Retry-After instructions for "
+"search engines."
+msgstr ""
+
+#: includes/Features/MaintenanceMode/MaintenanceMode.php:105
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:158
+msgid "Display the site logo from Customizer settings."
+msgstr ""
+
+#: includes/Features/NumberPostsRevisions.php:42
+msgid "Don't keep any revisions"
+msgstr ""
+
+#: partials/password-protect-site-log.php:20
+msgid "Download CSV"
+msgstr ""
+
+#: partials/wp-debug.php:89
+msgid "Download debug.log"
+msgstr ""
+
+#: includes/Features/DragAndDropOrdering.php:63
+msgid "Drag and drop ordering"
+msgstr ""
+
+#: includes/Features/UploadMaxFileSize.php:44
+msgid "e.g., 64"
+msgstr ""
+
+#: includes/Features/ForceStrongPasswords.php:69
+#: includes/Features/ForceStrongPasswords.php:86
+msgid "e.g., 8 or more characters"
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:233
+msgid "Edit"
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:134
+#: includes/Features/PostsMetadataBox.php:223
+#: includes/Features/PostsMetadataBox.php:270
+msgid "Edit Metadata"
+msgstr ""
+
+#: partials/field-groups/docs/block-specific-countries-enabled.php:25
+msgid "Efficient Blocking"
+msgstr ""
+
+#: includes/Features/EmptyTrashDays.php:47
+msgid "Empty Trash Days"
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:58
+msgid ""
+"Enable a metadata box on post edit screens to view and manage custom fields "
+"easily. In addition, it adds image sizes to images in the media library."
+msgstr ""
+
+#: includes/Features/BlockSpecificBots.php:40
+msgid "Enable bots blocking"
+msgstr ""
+
+#: includes/Features/BulkDeletePosts.php:107
+msgid "Enable Bulk Delete Posts"
+msgstr ""
+
+#: includes/Features/BlockSpecificCountries.php:58
+msgid "Enable country blocking"
+msgstr ""
+
+#: includes/Features/DisableRestApi.php:56
+msgid "Enable for logged-in users"
+msgstr ""
+
+#: includes/Features/MediaLibraryInfiniteScrolling.php:43
+msgid "Enable Infinite Scrolling"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:158
+msgid "Enable logging of WordPress AJAX requests (admin-ajax.php)."
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:172
+msgid "Enable logging of WordPress cron requests (wp-cron.php)."
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:186
+msgid "Enable logging of WordPress REST API requests."
+msgstr ""
+
+#: includes/Features/MaintenanceMode/MaintenanceMode.php:49
+msgid "Enable Maintenance Mode"
+msgstr ""
+
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:89
+msgid "Enable Password Protection"
+msgstr ""
+
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:90
+msgid "Enable password protection for the entire site."
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:57
+msgid "Enable Posts Metadata Box"
+msgstr ""
+
+#: includes/Features/AllowSvgUpload.php:66
+msgid ""
+"Enable SVG file uploads to the WordPress media library with built-in "
+"security validation. SVG files are automatically scanned for malicious "
+"content including JavaScript, dangerous elements, and external references."
+msgstr ""
+
+#: partials/network-viewer-log.php:98
+msgid ""
+"Enable the Network Viewer feature in the Debug settings and connections will "
+"appear here."
+msgstr ""
+
+#: includes/Features/AllowCustomFileExtensionUpload.php:42
+msgid ""
+"Enable this option to allow uploading of custom file extensions that are not "
+"natively supported by WordPress. This can be useful for uploading "
+"specialized file types required by your site or applications. Be cautious "
+"when enabling this feature, as it may pose security risks if untrusted file "
+"types are allowed."
+msgstr ""
+
+#: includes/Features/BulkDeletePosts.php:109
+msgid "Enable to activate the bulk delete feature for posts and pages."
+msgstr ""
+
+#: includes/Features/DisableComments.php:58
+msgid "Enable to disable comment functionality for public post types."
+msgstr ""
+
+#: includes/Features/DisableGutenberg.php:58
+msgid ""
+"Enable to disable the Gutenberg block editor and use the classic editor "
+"instead."
+msgstr ""
+
+#: includes/Features/DisableAdminNotices.php:44
+msgid "Enable to hide all global admin notices."
+msgstr ""
+
+#: includes/Features/WpDebug.php:140
+msgid "Enable WP Debug Display."
+msgstr ""
+
+#: includes/Features/WpDebug.php:126
+msgid "Enable WP Debug Log."
+msgstr ""
+
+#: partials/network-viewer-log.php:41
+msgid "Enter IP address"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:143
+msgid "Enter IP addresses to exclude from logging (one per line)."
+msgstr ""
+
+#: includes/Features/TaxonomyMetaBox.php:141
+msgid "Enter new term name"
+msgstr ""
+
+#: includes/Features/PasswordProtectSite/Themes/Classic.php:162
+msgid "Enter Password"
+msgstr ""
+
+#: includes/Features/UpdatesAndNotifications.php:245
+msgid ""
+"Enter the email address where recovery mode notifications should be sent."
+msgstr ""
+
+#: includes/Features/RedirectAfterLoginLogout.php:57
+msgid ""
+"Enter the full URL where users should be redirected after login. Leave empty "
+"to use WordPress default."
+msgstr ""
+
+#: includes/Features/RedirectAfterLoginLogout.php:85
+msgid ""
+"Enter the full URL where users should be redirected after logout. Leave "
+"empty to use WordPress default."
+msgstr ""
+
+#: includes/Features/WpMemoryLimit.php:70
+#: includes/Features/WpMemoryLimit.php:121
+msgid "Enter the memory limit in megabytes (MB)."
+msgstr ""
+
+#: includes/Plugin.php:237 includes/Plugin.php:299 includes/Plugin.php:327
+msgid "Error occurred. Refresh the page and try again."
+msgstr ""
+
+#. %d: number of seconds for the auto-refresh interval
+#: includes/Features/NetworkViewer.php:100
+#: includes/Features/NetworkViewer.php:102
+#: includes/Features/NetworkViewer.php:104
+#: includes/Features/NetworkViewer.php:106
+#: includes/Features/NetworkViewer.php:108 includes/Features/WpDebug.php:157
+#: includes/Features/WpDebug.php:159 includes/Features/WpDebug.php:161
+#: includes/Features/WpDebug.php:163 includes/Features/WpDebug.php:165
+msgid "Every %d seconds"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:142
+msgid "Exclude IP Addresses"
+msgstr ""
+
+#: includes/Features/WpDebug.php:322
+msgid "Failed to clear debug log."
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:249
+#: includes/Features/NetworkViewer.php:910
+msgid "Failed to clear network viewer log."
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:228
+#: includes/Features/PostsMetadataBox.php:266
+msgid "Failed to delete metadata. Please try again."
+msgstr ""
+
+#: includes/Features/WpDebug.php:219
+msgid "Failed to download debug log. Please try again."
+msgstr ""
+
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:649
+msgid "Failed to download password protection log. Please try again."
+msgstr ""
+
+#: includes/Features/WpDebug.php:211
+msgid "Failed to get debug log. Refresh the page and try again."
+msgstr ""
+
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:648
+msgid "Failed to get password protection log. Refresh the page and try again."
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:226
+msgid "Failed to load metadata. Please refresh the page and try again."
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:261
+msgid "Failed to load metadata. Please refresh the page."
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:247
+msgid "Failed to load network viewer log."
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:248
+msgid "Failed to refresh network viewer log."
+msgstr ""
+
+#: includes/Features/TaxonomyMetaBox.php:587
+msgid "Failed to retrieve created term"
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:227
+msgid "Failed to save metadata. Please try again."
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:263
+msgid "Failed to update metadata. Please try again."
+msgstr ""
+
+#: partials/dashboard.php:387
+msgid "Feature Request 💡"
+msgstr ""
+
+#. 1: uploaded file size, 2: maximum allowed file size
+#: includes/Features/UploadMaxFileSize.php:199
+#, php-format
+msgid "File size (%1$s) exceeds the maximum allowed size of %2$s."
+msgstr ""
+
+#: includes/Features/TaxonomyMetaBox.php:764
+msgid "First page"
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:155
+msgid "For arrays or objects, use JSON format. Example: {\"key\": \"value\"}"
+msgstr ""
+
+#: includes/Features/ForceStrongPasswords.php:57
+msgid "Force strong passwords"
+msgstr ""
+
+#: includes/Field.php:288
+msgid "From"
+msgstr ""
+
+#: partials/field-groups/docs/block-specific-countries-enabled.php:30
+msgid "Full guide"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:261
+#: includes/Features/NetworkViewer.php:1129
+msgid "Full URI"
+msgstr ""
+
+#: partials/field-groups/docs/block-specific-countries-enabled.php:13
+msgid "GeoIP Extension Support"
+msgstr ""
+
+#. %1$s is a placeholder for the br tag. %2$s is a placeholder for the opening a(href) tag. %3$s is a placeholder for the closing a(href) tag
+#: partials/dashboard.php:398
+#, php-format
+msgid ""
+"Got an idea to make AdminEase even better? We’d love to hear from you! "
+"🚀%1$s%1$s%2$sShare your feature requests%3$s and let us know what tools or "
+"improvements would make your WordPress experience smoother."
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:279
+#: includes/Features/NetworkViewer.php:964
+msgid "Guest"
+msgstr ""
+
+#: includes/Features/MaintenanceMode/MaintenanceMode.php:74
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:127
+msgid "Headline"
+msgstr ""
+
+#: partials/field-groups/docs/password-protect-site-remember-device-other.php:4
+msgid "Here is a table for ease of use."
+msgstr ""
+
+#: includes/Features/HideAdminBar.php:56
+msgid "Hide Admin Bar"
+msgstr ""
+
+#: includes/Features/HidePhpVersion.php:39
+msgid "Hide PHP Version"
+msgstr ""
+
+#: includes/Features/HideAdminBar.php:57
+msgid ""
+"Hide the WordPress admin bar for specific user roles. This helps create a "
+"cleaner frontend experience for non-administrative users while maintaining "
+"admin functionality where needed."
+msgstr ""
+
+#: includes/Features/HideWordpressVersion.php:51
+msgid "Hide WordPress version"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:265
+#: includes/Features/NetworkViewer.php:1148
+msgid "Hostname"
+msgstr ""
+
+#: partials/field-groups/docs/password-protect-site-remember-device-other.php:31
+#: partials/field-groups/docs/password-protect-site-remember-device-other.php:35
+#: partials/field-groups/docs/password-protect-site-remember-device-other.php:39
+#: partials/field-groups/docs/password-protect-site-remember-device-other.php:43
+msgid "hours"
+msgstr ""
+
+#: partials/field-groups/docs/cors-header.php:4
+#: partials/field-groups/docs/block-specific-countries-enabled.php:10
+msgid "How It Works"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://precisionwp.net/"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:1045
+msgid "Human"
+msgstr ""
+
+#: includes/Features/BlockDirectoryBrowsing.php:38
+msgid ""
+"If directory browsing is turned on, hackers can obtain various information "
+"about your website that can potentially compromise its security. Directory "
+"browsing is usually turned off by default, but if it is turned on, this "
+"security option can block it."
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:245
+msgid "Image size"
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:386
+msgid "Image size metadata cannot be deleted."
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:347
+msgid "Image size metadata cannot be edited."
+msgstr ""
+
+#: includes/Features/TaxonomyMetaBox.php:66
+msgid ""
+"Improve performance on the post edit screen by loading taxonomy terms (like "
+"categories or tags) dynamically via AJAX. This is especially useful when you "
+"have a large number of terms, as it prevents WordPress from loading them all "
+"at once, reducing page load time and memory usage. Enable this option to "
+"activate a searchable, paginated dropdown that loads terms on demand."
+msgstr ""
+
+#: includes/Features/TaxonomyMetaBox.php:65
+msgid "Improved Taxonomy Meta Box"
+msgstr ""
+
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:447
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:454
+msgid "Incorrect password. Please try again."
+msgstr ""
+
+#: includes/Features/WpDebug.php:212
+msgid "Info:"
+msgstr ""
+
+#: includes/Features/NumberPostsRevisions.php:43
+msgid "Insert number"
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:271
+msgid "Invalid JSON format in meta value."
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:235
+msgid "Invalid JSON format. Please check your value."
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:288
+#: includes/Features/PostsMetadataBox.php:338
+#: includes/Features/PostsMetadataBox.php:377
+msgid "Invalid post or insufficient permissions."
+msgstr ""
+
+#: includes/Features/AllowSvgUpload.php:342
+msgid "Invalid SVG file structure."
+msgstr ""
+
+#: partials/network-viewer-log.php:79 includes/Features/NetworkViewer.php:999
+msgid "IP"
+msgstr ""
+
+#: partials/password-protect-site-log.php:30
+#: includes/Features/NetworkViewer.php:264
+#: includes/Features/NetworkViewer.php:1039
+#: includes/Features/NetworkViewer.php:1143
+msgid "IP Address"
+msgstr ""
+
+#: includes/Features/NumberPostsRevisions.php:41
+msgid "Keep every revision"
+msgstr ""
+
+#: partials/field-groups/docs/password-protect-site-remember-device-other.php:9
+msgid "Label"
+msgstr ""
+
+#: includes/Features/TaxonomyMetaBox.php:788
+msgid "Last page"
+msgstr ""
+
+#: includes/Features/BlockSpecificBots.php:72
+msgid ""
+"List of custom bot user agents to block, one per line. You can use the "
+"Network Viewer Log feature to view bot traffic.<br>Example: <br><code>"
+"BadBot</code><br><code>SpamBot3000</code><br><code>EvilScraper</code>"
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:123
+#: includes/Features/PostsMetadataBox.php:236
+msgid "Loading metadata..."
+msgstr ""
+
+#: includes/Plugin.php:215 partials/password-protect-site-log.php:41
+#: includes/Features/TaxonomyMetaBox.php:139
+#: includes/Features/TaxonomyMetaBox.php:291
+msgid "Loading..."
+msgstr ""
+
+#: partials/network-viewer-log.php:78 includes/Features/NetworkViewer.php:998
+#: includes/Features/NetworkViewer.php:1038
+msgid "Location"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:171
+msgid "Log Cron Requests"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:185
+msgid "Log REST API Requests"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:157
+msgid "Log WP AJAX Requests"
+msgstr ""
+
+#: includes/Features/RedirectAfterLoginLogout.php:56
+msgid "Login redirect URL"
+msgstr ""
+
+#: includes/Features/RedirectAfterLoginLogout.php:84
+msgid "Logout redirect URL"
+msgstr ""
+
+#: includes/Features/MaintenanceMode/MaintenanceMode.php:88
+msgid "Maintenance Message"
+msgstr ""
+
+#: includes/Features/MaintenanceMode/MaintenanceMode.php:56
+#: includes/Features/MaintenanceMode/MaintenanceMode.php:245
+#: includes/Features/MaintenanceMode/Themes/Classic.php:48
+msgid "Maintenance Mode"
+msgstr ""
+
+#: includes/Features/MaxExecutionTime.php:57
+msgid "Max Execution Time"
+msgstr ""
+
+#: includes/Plugin.php:522
+msgid "Max log entries must be less than or equal to 100000"
+msgstr ""
+
+#: includes/Features/ForceStrongPasswords.php:85
+msgid "Maximum length"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:80
+msgid "Maximum Log Entries"
+msgstr ""
+
+#: includes/Plugin.php:469
+msgid "Maximum memory limit cannot be empty"
+msgstr ""
+
+#: includes/Plugin.php:476
+msgid "Maximum memory limit cannot be smaller than memory limit"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:81
+msgid "Maximum number of entries to keep in the log (100-100000)."
+msgstr ""
+
+#: includes/Plugin.php:625 includes/Utils.php:82
+msgid "Media"
+msgstr ""
+
+#: includes/Plugin.php:465
+msgid "Memory limit cannot be empty"
+msgstr ""
+
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:141
+msgid "Message"
+msgstr ""
+
+#: includes/Features/MaintenanceMode/MaintenanceMode.php:89
+msgid "Message to display to visitors during maintenance."
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:144
+#: includes/Features/PostsMetadataBox.php:237
+msgid "Meta Key"
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:231
+#: includes/Features/PostsMetadataBox.php:267
+#: includes/Features/PostsMetadataBox.php:342
+#: includes/Features/PostsMetadataBox.php:381
+msgid "Meta key is required."
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:151
+#: includes/Features/PostsMetadataBox.php:238
+msgid "Meta Value"
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:230
+#: includes/Features/PostsMetadataBox.php:265
+#: includes/Features/PostsMetadataBox.php:391
+msgid "Metadata deleted successfully."
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:229
+msgid "Metadata saved successfully."
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:262
+#: includes/Features/PostsMetadataBox.php:361
+msgid "Metadata updated successfully."
+msgstr ""
+
+#: partials/network-viewer-log.php:75 includes/Features/NetworkViewer.php:257
+#: includes/Features/NetworkViewer.php:995
+#: includes/Features/NetworkViewer.php:1023
+#: includes/Features/NetworkViewer.php:1109
+msgid "Method"
+msgstr ""
+
+#: partials/network-viewer-log.php:27
+msgid "Method:"
+msgstr ""
+
+#: partials/field-groups/docs/allowed-file-extensions-mime-types-other.php:4
+msgid "Mime Type Checker"
+msgstr ""
+
+#: includes/Features/ForceStrongPasswords.php:68
+msgid "Minimum length"
+msgstr ""
+
+#: partials/field-groups/docs/password-protect-site-remember-device-other.php:15
+#: partials/field-groups/docs/password-protect-site-remember-device-other.php:19
+#: partials/field-groups/docs/password-protect-site-remember-device-other.php:23
+#: partials/field-groups/docs/password-protect-site-remember-device-other.php:27
+msgid "minutes"
+msgstr ""
+
+#: includes/Features/BulkDeletePosts.php:123
+msgid "Move to Trash"
+msgstr ""
+
+#: partials/field-groups/docs/block-specific-countries-enabled.php:27
+msgid "Multiple Methods"
+msgstr ""
+
+#. %1$s and %2$s are placeholders for the a (href) tag.
+#: partials/dashboard.php:169
+#, php-format
+msgid ""
+"Need a hand or something’s not working right? Don’t stress! 🙌 %1$sDrop your "
+"question in our %2$ssupport forum%3$s and our friendly team will jump in to "
+"help. We’ve got your back! 🤝"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:69
+msgid "Network Viewer"
+msgstr ""
+
+#: partials/network-viewer-log.php:8
+msgid "Network viewer"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:96
+msgid "Network Viewer Log Auto-Refresh Interval"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:246
+#: includes/Features/NetworkViewer.php:908
+msgid "Network viewer log cleared successfully."
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:128
+msgid "Never"
+msgstr ""
+
+#: partials/network-viewer-log.php:111
+msgid "Next"
+msgstr ""
+
+#: includes/Features/TaxonomyMetaBox.php:784
+msgid "Next page"
+msgstr ""
+
+#: includes/Plugin.php:217
+msgid "No choices to choose from"
+msgstr ""
+
+#: includes/Plugin.php:248
+msgid "No data was provided"
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:232
+#: includes/Features/PostsMetadataBox.php:268
+msgid "No metadata found for this post."
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:244
+msgid "No metadata found matching your search."
+msgstr ""
+
+#: partials/network-viewer-log.php:97
+msgid "No network connections logged yet."
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:245
+msgid ""
+"No network connections yet. Enable the feature and connections will appear "
+"here."
+msgstr ""
+
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:647
+msgid "No password protection attempts logged yet."
+msgstr ""
+
+#: partials/field-groups/docs/block-specific-countries-enabled.php:26
+msgid "No PHP Overhead"
+msgstr ""
+
+#: includes/Features/BulkDeletePosts.php:262
+msgid "No posts found matching the criteria."
+msgstr ""
+
+#: includes/Plugin.php:216
+msgid "No results found"
+msgstr ""
+
+#: includes/Features/TaxonomyMetaBox.php:140
+msgid "No results found."
+msgstr ""
+
+#: includes/Features/TaxonomyMetaBox.php:619
+msgid "No term IDs provided"
+msgstr ""
+
+#: includes/Features/DragAndDropOrderingTaxonomies.php:217
+msgid "No terms to update"
+msgstr ""
+
+#: includes/Features/DisableRestApi.php:58
+msgid ""
+"Note: If you're disabling REST API but still want to edit your website using "
+"Gutenberg/Elementor or any other service that uses REST API, enable this "
+"option."
+msgstr ""
+
+#: includes/Features/WpDebug.php:180
+msgid ""
+"Number of most recent lines to display in the debug log viewer (showing "
+"fewer lines improves performance)."
+msgstr ""
+
+#: includes/Features/NumberPostsRevisions.php:62
+msgid "Number of post revisions"
+msgstr ""
+
+#: includes/Features/BulkDeletePosts.php:139
+msgid ""
+"Number of posts to process per batch. Lower values are safer for slower "
+"servers."
+msgstr ""
+
+#: includes/Plugin.php:484
+msgid "Number of revisions cannot be empty"
+msgstr ""
+
+#: partials/wp-debug.php:35 includes/Features/WpDebug.php:218
+msgid "of memory limit"
+msgstr ""
+
+#: includes/Features/TaxonomyMetaBox.php:395
+msgid "Only hierarchical taxonomies are supported"
+msgstr ""
+
+#: includes/Plugin.php:219
+msgid "Only unique values can be added"
+msgstr ""
+
+#: includes/Plugin.php:220
+msgid "Only values matching specific conditions can be added"
+msgstr ""
+
+#: includes/Features/DragAndDropOrderingPosts.php:60
+msgid "Order Posts using Drag and Drop"
+msgstr ""
+
+#: includes/Features/DragAndDropOrderingTaxonomies.php:55
+msgid "Order Taxonomies using Drag and Drop"
+msgstr ""
+
+#. %d: number of seconds for the auto-logout interval
+#: includes/Features/WpMemoryLimit.php:50
+#: includes/Features/WpMemoryLimit.php:101
+#: includes/Features/AutoLogoutUser.php:81
+msgid "Other"
+msgstr ""
+
+#: includes/Features/BulkDeletePosts.php:272
+#: includes/Features/TaxonomyMetaBox.php:322
+msgid "Page"
+msgstr ""
+
+#. 1: current page, 2: total pages
+#: includes/Features/NetworkViewer.php:251
+#, php-format
+msgid "Page %1$s of %2$s"
+msgstr ""
+
+#: includes/Features/MaintenanceMode/MaintenanceMode.php:60
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:113
+msgid "Page Title"
+msgstr ""
+
+#: partials/password-protect-site-log.php:33
+msgid "Password Hash"
+msgstr ""
+
+#: includes/Plugin.php:506
+msgid "Password maximum length must be smaller than 64 characters."
+msgstr ""
+
+#: includes/Plugin.php:496
+msgid "Password minimum length must be larger than 8 characters."
+msgstr ""
+
+#. %d is a placeholder for minimum password length
+#: includes/Features/ForceStrongPasswords.php:254
+msgid "Password must be at least %d characters long."
+msgstr ""
+
+#: includes/Features/ForceStrongPasswords.php:264
+msgid "Password must include at least one lowercase letter."
+msgstr ""
+
+#: includes/Features/ForceStrongPasswords.php:267
+msgid "Password must include at least one number."
+msgstr ""
+
+#: includes/Features/ForceStrongPasswords.php:270
+msgid "Password must include at least one special character."
+msgstr ""
+
+#: includes/Features/ForceStrongPasswords.php:261
+msgid "Password must include at least one uppercase letter."
+msgstr ""
+
+#. %d is a placeholder for maximum password length
+#: includes/Features/ForceStrongPasswords.php:258
+msgid "Password must not exceed %d characters."
+msgstr ""
+
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:109
+msgid "Password Protected"
+msgstr ""
+
+#: partials/password-protect-site-log.php:12
+msgid "Password Protection Access Log"
+msgstr ""
+
+#: partials/network-viewer-log.php:80 includes/Features/NetworkViewer.php:1000
+#: includes/Features/NetworkViewer.php:1040
+msgid "Path"
+msgstr ""
+
+#: partials/network-viewer-log.php:45
+msgid "Per page:"
+msgstr ""
+
+#: includes/Plugin.php:600
+msgid "Performance"
+msgstr ""
+
+#: partials/field-groups/docs/block-specific-countries-enabled.php:22
+msgid "Performance Benefits"
+msgstr ""
+
+#: partials/wp-debug.php:26
+msgid "PHP Memory Limit:"
+msgstr ""
+
+#: includes/Features/DisablePingbacksAndTrackbacks.php:49
+msgid ""
+"Pingbacks allow other WordPress websites to automatically leave comments "
+"under your posts when these websites link to these posts. Pingbacks can be "
+"abused to use your website for DDoS attacks on other sites. This security "
+"option turns off XML-RPC pingbacks for your whole website and also disables "
+"pingbacks for previously created posts with pingbacks enabled."
+msgstr ""
+
+#: includes/Plugin.php:455
+msgid "Please enter a valid email address for recovery mode notifications."
+msgstr ""
+
+#: includes/Plugin.php:450
+msgid "Please enter valid email addresses for recovery mode notifications."
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:91
+msgid "Please save this post first to manage metadata."
+msgstr ""
+
+#: includes/Features/BulkDeletePosts.php:303
+#: includes/Features/BulkDeletePosts.php:368
+msgid "Please select a valid post status."
+msgstr ""
+
+#: includes/Features/BulkDeletePosts.php:297
+#: includes/Features/BulkDeletePosts.php:362
+msgid "Please select a valid post type."
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:260
+#: includes/Features/NetworkViewer.php:1124
+msgid "Port"
+msgstr ""
+
+#: includes/Features/BulkDeletePosts.php:271
+msgid "Post"
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:72
+msgid "Post Metadata"
+msgstr ""
+
+#: includes/Features/DragAndDropOrdering.php:133
+#: includes/Features/DragAndDropOrderingPosts.php:124
+msgid "Post order updated successfully."
+msgstr ""
+
+#: includes/Features/NumberPostsRevisions.php:47
+msgid "Post revisions"
+msgstr ""
+
+#: includes/Plugin.php:605
+msgid "Posts"
+msgstr ""
+
+#. Author of the plugin
+msgid "PrecisionWP"
+msgstr ""
+
+#: includes/Plugin.php:218
+msgid "Press to select"
+msgstr ""
+
+#: includes/Features/BulkDeletePosts.php:195
+msgid "Preview"
+msgstr ""
+
+#: partials/network-viewer-log.php:105
+msgid "Previous"
+msgstr ""
+
+#: includes/Features/TaxonomyMetaBox.php:768
+msgid "Previous page"
+msgstr ""
+
+#: includes/Features/MaintenanceMode/MaintenanceMode.php:118
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:171
+msgid "Primary Color"
+msgstr ""
+
+#: partials/dashboard.php:211
+msgid "Pro Features"
+msgstr ""
+
+#: includes/Features/BulkDeletePosts.php:259
+msgid "Processing..."
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:240
+msgid "Protected meta key"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:259
+#: includes/Features/NetworkViewer.php:1119
+msgid "Protocol"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:262
+#: includes/Features/NetworkViewer.php:1134
+msgid "Query String"
+msgstr ""
+
+#: partials/dashboard.php:375
+msgid ""
+"Ready to supercharge your site? Upgrade to AdminEase Pro and unlock these "
+"exclusive features today! 🚀✨"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:70
+msgid ""
+"Real-time HTTP request logging. See <strong>exactly</strong> who's "
+"connecting to your site, where they're from, what they're accessing, and "
+"when. <strong>Identify security threats before they become problems</strong>,"
+" debug connection issues with precision, and gain valuable insights into "
+"visitor behavior, all from a single, powerful interface."
+msgstr ""
+
+#: includes/Features/DragAndDropOrderingPosts.php:61
+msgid ""
+"Rearrange items on your site exactly how you want <strong>just click, drag, "
+"and drop!</strong> Instantly organize posts with a simple, intuitive "
+"interface. <strong>No coding, no hassle</strong>, just smooth, visual "
+"control over your site’s order. Make your WordPress experience truly yours!"
+"<br><i>* Gutenberg should be deactivated for this feature to work.</i></i>"
+msgstr ""
+
+#: includes/Features/DragAndDropOrderingTaxonomies.php:56
+msgid ""
+"Rearrange items on your site exactly how you want <strong>just click, drag, "
+"and drop!</strong> Instantly organize taxonomies with a simple, intuitive "
+"interface. <strong>No coding, no hassle</strong>, just smooth, visual "
+"control over your site’s order. Make your WordPress experience truly yours!"
+msgstr ""
+
+#: includes/Features/DragAndDropOrdering.php:64
+msgid ""
+"Rearrange items on your site exactly how you want—<strong>just click, drag, "
+"and drop!</strong> Instantly organize posts or taxonomies with a simple, "
+"intuitive interface. <strong>No coding, no hassle</strong>—just smooth, "
+"visual control over your site’s order. Make your WordPress experience truly "
+"yours!"
+msgstr ""
+
+#: includes/Features/UpdatesAndNotifications.php:244
+msgid "Recovery mode recipient email"
+msgstr ""
+
+#: includes/Features/RedirectAfterLoginLogout.php:45
+msgid "Redirect after login"
+msgstr ""
+
+#: includes/Features/RedirectAfterLoginLogout.php:73
+msgid "Redirect after logout"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:274
+#: includes/Features/NetworkViewer.php:1196
+msgid "Referer"
+msgstr ""
+
+#: partials/wp-debug.php:75 partials/network-viewer-log.php:11
+msgid "Refresh"
+msgstr ""
+
+#: partials/password-protect-site-log.php:16
+msgid "Refresh Log"
+msgstr ""
+
+#: includes/Features/DisableFrontendUserRegistration.php:81
+msgid "Registration Disabled"
+msgstr ""
+
+#: includes/Features/PasswordProtectSite/Themes/Classic.php:178
+msgid "Remember this device"
+msgstr ""
+
+#. %s is the taxonomy name
+#: includes/Features/TaxonomyMetaBox.php:143
+#, php-format
+msgid "Remove %s"
+msgstr ""
+
+#: includes/Features/DisableEmojis.php:42
+msgid ""
+"Remove WordPress emoji detection scripts and styles to improve page load "
+"performance. WordPress loads emoji scripts on every page by default to "
+"convert emoji characters into images for browsers that don't support native "
+"emoji rendering. Modern browsers (Chrome 58+, Firefox 52+, Safari 10+, Edge "
+"79+) all support native emoji rendering, making these scripts unnecessary "
+"for most users. Disabling emojis eliminates extra HTTP requests and reduces "
+"page weight, resulting in faster load times."
+msgstr ""
+
+#: includes/Features/HidePhpVersion.php:40
+msgid ""
+"Remove X-Powered-By header that reveals your PHP version to potential "
+"attackers."
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:255
+#: includes/Features/NetworkViewer.php:1101
+msgid "Request Information"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:273
+#: includes/Features/NetworkViewer.php:1191
+msgid "Request Size"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:270
+#: includes/Features/NetworkViewer.php:1183
+msgid "Response Information"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:272
+msgid "Response Time"
+msgstr ""
+
+#: includes/Features/DisableRestApi.php:92
+msgid "REST API is disabled."
+msgstr ""
+
+#: includes/Features/TaxonomyMetaBox.php:315
+msgid "results"
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:167
+msgid "Save Changes"
+msgstr ""
+
+#: partials/dashboard.php:504
+msgid "Save settings"
+msgstr ""
+
+#: partials/network-viewer-log.php:40
+msgid "Search IP:"
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:102
+msgid "Search metadata"
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:104
+#: includes/Features/PostsMetadataBox.php:241
+msgid "Search metadata..."
+msgstr ""
+
+#: includes/Features/TaxonomyMetaBox.php:273
+#: includes/Features/TaxonomyMetaBox.php:277
+msgid "Search..."
+msgstr ""
+
+#: includes/Features/MaintenanceMode/MaintenanceMode.php:132
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:185
+msgid "Secondary Color"
+msgstr ""
+
+#: partials/field-groups/docs/password-protect-site-remember-device-other.php:10
+msgid "Seconds"
+msgstr ""
+
+#: includes/Plugin.php:595
+msgid "Security"
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:282
+#: includes/Features/PostsMetadataBox.php:329
+#: includes/Features/PostsMetadataBox.php:370
+msgid "Security check failed."
+msgstr ""
+
+#: includes/Features/DragAndDropOrderingPosts.php:202
+#: includes/Features/BulkDeletePosts.php:286
+#: includes/Features/BulkDeletePosts.php:351
+#: includes/Features/DragAndDropOrderingTaxonomies.php:206
+msgid "Security check failed. Refresh the page and try again."
+msgstr ""
+
+#: includes/Features/EmptyTrashDays.php:34
+#: includes/Features/EmptyTrashDays.php:50
+#: includes/Features/WpMemoryLimit.php:38
+#: includes/Features/WpMemoryLimit.php:57
+#: includes/Features/WpMemoryLimit.php:89
+#: includes/Features/WpMemoryLimit.php:108
+#: includes/Features/AutoLogoutUser.php:49
+#: includes/Features/NumberPostsRevisions.php:40
+#: includes/Features/NumberPostsRevisions.php:49
+msgid "Select"
+msgstr ""
+
+#: includes/Field.php:224
+msgid "Select all"
+msgstr ""
+
+#: includes/Features/BlockSpecificBots.php:42
+#: includes/Features/BlockSpecificBots.php:55
+msgid "Select common bots to block from accessing your site"
+msgstr ""
+
+#: partials/field-groups/docs/block-specific-countries-enabled.php:14
+msgid "Select Countries"
+msgstr ""
+
+#: includes/Plugin.php:214
+msgid "Select countries"
+msgstr ""
+
+#: includes/Features/BulkDeletePosts.php:185
+msgid "Select date range <small>(optional)</small>"
+msgstr ""
+
+#: partials/field-groups/docs/allowed-file-extensions-mime-types-other.php:8
+msgid "Select file"
+msgstr ""
+
+#: includes/Features/BulkDeletePosts.php:171
+msgid "Select post status"
+msgstr ""
+
+#: includes/Features/BulkDeletePosts.php:156
+msgid "Select post type"
+msgstr ""
+
+#: includes/Features/BulkDeletePosts.php:121
+msgid "Select the default deletion method."
+msgstr ""
+
+#: includes/Features/AllowCustomFileExtensionUpload.php:54
+msgid ""
+"Select the file extensions that you want to allow for upload when custom "
+"file extension upload is enabled. You can choose multiple extensions from "
+"the list."
+msgstr ""
+
+#: includes/Features/AutoLogoutUser.php:87
+msgid "Select the login session limit."
+msgstr ""
+
+#: includes/Features/MaintenanceMode/MaintenanceMode.php:119
+msgid "Select the primary color for the maintenance mode page."
+msgstr ""
+
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:172
+msgid "Select the primary color for the password protected page."
+msgstr ""
+
+#: includes/Features/MaintenanceMode/MaintenanceMode.php:133
+msgid "Select the secondary color for the maintenance mode page."
+msgstr ""
+
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:186
+msgid "Select the secondary color for the password protected page."
+msgstr ""
+
+#: includes/Features/MaintenanceMode/MaintenanceMode.php:147
+msgid "Select the text color for the maintenance mode page."
+msgstr ""
+
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:200
+msgid "Select the text color for the password protected page."
+msgstr ""
+
+#: includes/Features/HideAdminBar.php:69
+msgid ""
+"Select which user roles should have the admin bar hidden. Leave empty to "
+"hide for all non-admin users."
+msgstr ""
+
+#. %s is the taxonomy name
+#: includes/Features/TaxonomyMetaBox.php:341
+#, php-format
+msgid "Selected %s"
+msgstr ""
+
+#: includes/Features/MaintenanceMode/MaintenanceMode.php:160
+msgid "SEO Retry-After (seconds)"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:278
+#: includes/Features/NetworkViewer.php:1218
+msgid "Session ID"
+msgstr ""
+
+#: includes/Features/BulkDeletePosts.php:140
+msgid "Set between 10 and 100 posts per batch."
+msgstr ""
+
+#: includes/Features/AutoLogoutUser.php:101
+msgid "Set login session limit in seconds."
+msgstr ""
+
+#: includes/Features/WpDebug.php:154
+msgid "Set the interval for auto-refreshing the debug log viewer."
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:97
+msgid "Set the interval for auto-refreshing the network viewer viewer."
+msgstr ""
+
+#: includes/Features/UploadMaxFileSize.php:42
+msgid ""
+"Set the maximum file size allowed for uploads in megabytes (MB). Enter a "
+"numeric value only (e.g., \"64\" for 64MB, \"128\" for 128MB). Leave empty "
+"to use server default. This affects the upload_max_filesize PHP setting."
+msgstr ""
+
+#: includes/Features/WpMemoryLimit.php:71
+#: includes/Features/WpMemoryLimit.php:122
+msgid "Set the memory limit for WordPress in megabytes (MB)."
+msgstr ""
+
+#: includes/Features/MaxExecutionTime.php:58
+msgid ""
+"Sets the maximum time (in seconds) a PHP script can run before timing out. "
+"This is essential for resource-intensive operations like imports, exports, "
+"and database migrations. Default is typically 30 seconds, which may be "
+"insufficient for complex tasks.<br><br><strong>⚠️ Shared Hosting Limitation:"
+"</strong> This setting configures PHP-level timeouts via <code>.user."
+"ini</code>, <code>wp-config.php</code>, and <code>.htaccess</code>. However, "
+"<strong>many shared hosting providers enforce server-level timeout "
+"limits</strong> (commonly 120 seconds) that cannot be overridden without "
+"upgrading to VPS or dedicated hosting. If long-running operations still "
+"timeout after configuring this setting, contact your hosting provider to "
+"increase server-level timeout limits (<code>ExtAppTimeout</code>, <code>"
+"ConnectionTimeout</code> on LiteSpeed/Nginx) or consider upgrading your "
+"hosting plan."
+msgstr ""
+
+#: includes/Plugin.php:570
+msgid "Settings"
+msgstr ""
+
+#: includes/Plugin.php:266
+msgid "Settings saved successfully"
+msgstr ""
+
+#: includes/Features/TaxonomyMetaBox.php:305
+msgid "Show"
+msgstr ""
+
+#: includes/Features/MaintenanceMode/MaintenanceMode.php:104
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:157
+msgid "Show Site Logo"
+msgstr ""
+
+#. 1: start number, 2: end number, 3: total count
+#: includes/Features/NetworkViewer.php:253
+#, php-format
+msgid "Showing %1$s-%2$s of %3$s connections"
+msgstr ""
+
+#: includes/Features/WpDebug.php:213
+#, php-format
+msgid ""
+"Showing the last %s lines of %s total lines. File size: %s. Use the <strong>"
+"Download debug.log</strong> button to view the complete file."
+msgstr ""
+
+#: partials/field-groups/docs/block-specific-countries-enabled.php:12
+msgid "Sign up for free at cloudflare.com"
+msgstr ""
+
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:100
+msgid "Site Password"
+msgstr ""
+
+#: includes/Plugin.php:518
+msgid "Site password cannot be empty"
+msgstr ""
+
+#: includes/Plugin.php:26 includes/Plugin.php:35
+msgid "Something went wrong."
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:242
+msgid "Sort A-Z"
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:106
+msgid "Sort metadata"
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:243
+msgid "Sort Z-A"
+msgstr ""
+
+#: partials/bulk-delete-posts.php:18 includes/Features/BulkDeletePosts.php:270
+msgid "Start Bulk Delete"
+msgstr ""
+
+#: partials/password-protect-site-log.php:31 partials/network-viewer-log.php:76
+#: includes/Features/NetworkViewer.php:996
+#: includes/Features/NetworkViewer.php:1028
+msgid "Status"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:271
+#: includes/Features/NetworkViewer.php:1186
+msgid "Status Code"
+msgstr ""
+
+#: partials/dashboard.php:158
+msgid "Support"
+msgstr ""
+
+#: includes/Features/DisableAdminNotices.php:43
+msgid ""
+"Suppresses global admin notices from WordPress core, themes, and plugins to "
+"provide a distraction-free administration area."
+msgstr ""
+
+#: includes/Features/AllowSvgUpload.php:411
+msgid ""
+"SVG file became too small after sanitization. Upload rejected for security."
+msgstr ""
+
+#: includes/Features/AllowSvgUpload.php:407
+msgid "SVG file could not be sanitized. It may contain dangerous content."
+msgstr ""
+
+#. %s is the maximum allowed size in MB
+#: includes/Features/AllowSvgUpload.php:141
+#: includes/Features/AllowSvgUpload.php:317
+#, php-format
+msgid "SVG file is too large. Maximum allowed size is %s MB."
+msgstr ""
+
+#. %s is the error message from the exception
+#: includes/Features/AllowSvgUpload.php:448
+#, php-format
+msgid "SVG sanitization failed: %s"
+msgstr ""
+
+#: includes/Features/AllowSvgUpload.php:176
+msgid "SVG sanitization library not found. Please check composer dependencies."
+msgstr ""
+
+#: includes/Features/AllowSvgUpload.php:243
+msgid "SVG uploaded and sanitized successfully!"
+msgstr ""
+
+#: includes/Plugin.php:610
+msgid "Taxonomies"
+msgstr ""
+
+#: includes/Features/TaxonomyMetaBox.php:389
+#: includes/Features/TaxonomyMetaBox.php:500
+#: includes/Features/TaxonomyMetaBox.php:564
+#: includes/Features/TaxonomyMetaBox.php:615
+msgid "Taxonomy does not exist"
+msgstr ""
+
+#: includes/Features/DragAndDropOrderingTaxonomies.php:107
+msgid "Taxonomy order updated successfully."
+msgstr ""
+
+#: includes/Features/MaintenanceMode/MaintenanceMode.php:161
+msgid ""
+"Tells search engines when to check back (SEO).<br>Default: 3600 (1 hour). "
+"Use 0 to disable."
+msgstr ""
+
+#: includes/Features/TaxonomyMetaBox.php:568
+msgid "Term name is required"
+msgstr ""
+
+#: includes/Features/DragAndDropOrderingTaxonomies.php:222
+msgid "Terms order updated successfully"
+msgstr ""
+
+#: includes/Features/MaintenanceMode/MaintenanceMode.php:146
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:199
+msgid "Text Color"
+msgstr ""
+
+#: includes/Features/AutosaveInterval.php:40
+msgid ""
+"The <strong>Autosave Interval</strong> is how often WordPress automatically "
+"saves your posts and pages while you're editing them. This feature helps "
+"prevent data loss if your browser crashes or you accidentally close the tab. "
+"By default, WordPress autosaves every 60 seconds (1 minute). You can change "
+"this interval to save more frequently or less often, depending on your needs."
+msgstr ""
+
+#: includes/Features/UpdatesAndNotifications.php:201
+msgid ""
+"The <strong>Comment Moderator Notification Email</strong> is sent to the "
+"site moderator whenever a new comment is posted on the site. It includes the "
+"comment content, author details, and a direct link to moderate or reply. "
+"This feature helps you <strong>stay on top of user engagement</strong> and "
+"quickly catch spam or inappropriate comments."
+msgstr ""
+
+#: includes/Features/UpdatesAndNotifications.php:212
+msgid ""
+"The <strong>Comment Post Author Notification Email</strong> is sent to the "
+"site administrator whenever a new comment is posted on the site. It includes "
+"the comment content, author details, and a direct link to moderate or reply. "
+"This feature helps you <strong>stay on top of user engagement</strong> and "
+"quickly catch spam or inappropriate comments."
+msgstr ""
+
+#: includes/Features/AutoLogoutUser.php:41
+msgid ""
+"The <strong>Login Session Timeout</strong> setting controls how long a user "
+"stays logged in before WordPress automatically logs them out. For example, "
+"if it’s set to 30 minutes, a user will need to log in again after that time "
+"— even if they’re still active. This helps improve your site's security by "
+"limiting how long login sessions remain open. You can choose a shorter "
+"timeout for better protection or a longer one for convenience."
+msgstr ""
+
+#: includes/Features/UpdatesAndNotifications.php:179
+msgid ""
+"The <strong>New User Admin Notification Email</strong> is a message sent to "
+"the site administrator whenever a new user registers on the website. It "
+"includes the new user’s username and email address, helping you <strong>keep "
+"track of user activity</strong> and detect unwanted registrations. While "
+"useful, some site owners choose to disable this notification—especially on "
+"busy sites or when using custom user management tools—to reduce inbox "
+"clutter."
+msgstr ""
+
+#: includes/Features/UpdatesAndNotifications.php:223
+msgid ""
+"The <strong>Recovery Mode Email Notification</strong> is sent to the site "
+"administrator when recovery mode is activated. This email provides details "
+"about the activation and includes a link to deactivate recovery mode. This "
+"feature helps you <strong>monitor site security</strong> and take immediate "
+"action if necessary."
+msgstr ""
+
+#: includes/Features/UploadMaxFileSize.php:41
+msgid ""
+"The <strong>Upload Max File Size</strong> setting in WordPress controls the "
+"maximum size of files that can be uploaded to your site. This limit is set "
+"by your server configuration, but you can adjust it in WordPress to allow "
+"larger files like high-resolution images, videos, or documents. If you try "
+"to upload a file larger than this limit, WordPress will display an error "
+"message and prevent the upload."
+msgstr ""
+
+#: includes/Features/UpdatesAndNotifications.php:190
+msgid ""
+"The <strong>User Password Change Admin Notification Email</strong> is sent "
+"to the site administrator when any user changes their password. This alert "
+"helps you <strong>monitor account activity</strong> and quickly spot "
+"suspicious behavior—like unexpected password changes. While it adds a layer "
+"of security awareness, some admins may choose to disable it to avoid "
+"unnecessary notifications on high-traffic sites."
+msgstr ""
+
+#: includes/Features/DisableWpCron.php:38
+msgid ""
+"The <strong>WordPress Cron (WP-Cron)</strong> system is what handles "
+"scheduled tasks like publishing scheduled posts, checking for updates, or "
+"sending emails. By default, WP-Cron runs every time someone visits your "
+"site—which can lead to performance issues on busy or low-traffic websites. "
+"<strong>Disabling WP-Cron</strong> allows you to take control and replace it "
+"with a real server-side cron job that runs at set intervals. This improves "
+"reliability and efficiency, especially on larger or more dynamic sites."
+msgstr ""
+
+#: includes/Features/WpMemoryLimit.php:106
+msgid ""
+"The <strong>WP Max Memory Limit</strong> is the highest amount of memory "
+"WordPress can use when performing <strong>administrative tasks</strong>, "
+"such as updates, backups, or running large imports. It’s usually set higher "
+"than the regular memory limit to ensure smooth operation in the admin area. "
+"If this limit is too low, some tasks may fail or time out."
+msgstr ""
+
+#: includes/Features/WpMemoryLimit.php:55
+msgid ""
+"The <strong>WP Memory Limit</strong> is the maximum amount of memory that "
+"WordPress is allowed to use for running themes, plugins, and core functions. "
+"If your site runs out of memory, you may see errors or experience "
+"performance issues. Increasing the memory limit can help improve "
+"stability—especially on sites with advanced features or many plugins."
+msgstr ""
+
+#: includes/Features/WpDebug.php:115
+msgid ""
+"The <strong>WP_DEBUG</strong> setting in WordPress is used to turn on "
+"debugging mode. When enabled, it displays PHP errors, warnings, and notices "
+"directly on your site—helping developers and site owners identify problems "
+"during development or troubleshooting. It’s especially useful when plugins "
+"or themes aren’t working as expected. However, it should <strong>never be "
+"left on in a live site</strong> as it can expose sensitive information to "
+"visitors."
+msgstr ""
+
+#. 1: file size, 2: percentage
+#: includes/Features/WpDebug.php:62
+#, php-format
+msgid ""
+"The debug.log file has reached %1$s (%2$s%% of PHP memory limit). WP_DEBUG "
+"settings have been automatically disabled to prevent server issues. Please "
+"clear the debug log before re-enabling."
+msgstr ""
+
+#: includes/Features/WpMemoryLimit.php:56
+msgid ""
+"The default memory limit in WordPress is initially 32MB, but WordPress "
+"attempts to increase this to 40MB for single sites and 64MB for multisite "
+"installations.<br> WordPress defaults to a maximum memory limit of 40MB for "
+"a single site and 64MB for a WordPress Multisite network."
+msgstr ""
+
+#: includes/Features/MaintenanceMode/MaintenanceMode.php:75
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:128
+msgid "The main heading displayed on the maintenance page."
+msgstr ""
+
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:142
+msgid "The message displayed on the password protected page."
+msgstr ""
+
+#: includes/Features/MaintenanceMode/MaintenanceMode.php:61
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:114
+msgid "The title that appears in the browser tab."
+msgstr ""
+
+#: includes/Features/AllowSvgUpload.php:246
+msgid "The uploaded mime type is not recognized."
+msgstr ""
+
+#: includes/Features/DisableRestApi.php:47
+msgid ""
+"The WordPress REST API allows external applications and services to interact "
+"with your website’s data, such as posts, users, and settings. While it’s "
+"useful for developers building custom features or apps, it can also expose "
+"sensitive information(!) especially on sites that don’t need it. Disabling "
+"the REST API helps reduce potential security risks and protect user privacy. "
+"You can disable it completely or restrict access to logged-in users using "
+"code or a security plugin."
+msgstr ""
+
+#: partials/field-groups/docs/block-specific-countries-enabled.php:6
+msgid ""
+"This feature allows you to block visitors from specific countries by "
+"automatically generating .htaccess rules that deny access based on the "
+"visitor's country code. This feature works with Cloudflare or the PHP GeoIP "
+"extension."
+msgstr ""
+
+#: partials/field-groups/docs/cors-header.php:34
+msgid ""
+"This header tells the browser: \"It's okay to share this data with the other "
+"site.\""
+msgstr ""
+
+#: includes/Features/DisableScriptConcatenation.php:38
+msgid ""
+"This security option turns off concatenation of scripts running in the "
+"WordPress admin panel, preventing your website from being affected by "
+"certain DoS attacks. Turning off concatenation of scripts might slightly "
+"affect the performance of WordPress admin panel, but it should not affect "
+"visitors' experience on your WordPress website."
+msgstr ""
+
+#: includes/Features/DisallowFileMods.php:39
+msgid ""
+"This setting prevents all file modifications in WordPress, including "
+"installing, updating, and deleting plugins and themes. When enabled, "
+"WordPress won't be able to write any files to your server. This is a more "
+"restrictive security measure than disabling file editing alone. It's "
+"particularly useful for production sites where updates are managed through "
+"version control or staging environments. This can be enabled by adding a "
+"single line of code to your wp-config.php file."
+msgstr ""
+
+#. %s is the acronym CORS
+#: partials/field-groups/docs/cors-header.php:41
+#, php-format
+msgid ""
+"This setup is called Cross-Origin Resource Sharing, or %s for short. It's a "
+"way to safely let other websites use your data."
+msgstr ""
+
+#: includes/Features/PasswordProtectSite/Themes/Classic.php:49
+msgid ""
+"This site is password protected. Please enter the access password below."
+msgstr ""
+
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:137
+msgid ""
+"This site is password protected. Please enter the password to access the "
+"site."
+msgstr ""
+
+#: partials/network-viewer-log.php:74 includes/Features/NetworkViewer.php:994
+#: includes/Features/NetworkViewer.php:1020
+msgid "Time"
+msgstr ""
+
+#: partials/password-protect-site-log.php:29
+#: includes/Features/NetworkViewer.php:256
+#: includes/Features/NetworkViewer.php:1104
+msgid "Timestamp"
+msgstr ""
+
+#: includes/Field.php:294
+msgid "To"
+msgstr ""
+
+#. %s is the Access-Control-Allow-Origin header name
+#: partials/field-groups/docs/cors-header.php:26
+#, php-format
+msgid ""
+"To allow another website to access your data, your server must include a "
+"special instruction in its response headers: %s"
+msgstr ""
+
+#: partials/dashboard.php:18 partials/dashboard.php:57
+#: partials/dashboard.php:57 partials/dashboard.php:59
+#: partials/dashboard.php:59
+msgid "Toggle menu to Sidebar"
+msgstr ""
+
+#. %d: number of posts deleted so far
+#: includes/Features/BulkDeletePosts.php:267
+msgid "Total: %d posts deleted"
+msgstr ""
+
+#: partials/network-viewer-log.php:77 includes/Features/NetworkViewer.php:258
+#: includes/Features/NetworkViewer.php:997
+#: includes/Features/NetworkViewer.php:1033
+#: includes/Features/NetworkViewer.php:1114
+msgid "Type"
+msgstr ""
+
+#: includes/Plugin.php:311 includes/Plugin.php:337
+msgid "Unable to determine current user"
+msgstr ""
+
+#: includes/Features/BlockSpecificCountries.php:59
+msgid "Unfortunately your server does not support this feature."
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:961
+msgid "Unknown"
+msgstr ""
+
+#. %s: PHP version.
+#. %s: WordPress version.
+#: adminease.php:50 adminease.php:68
+#, php-format
+msgid "Update to version %s and get back to creating!"
+msgstr ""
+
+#: includes/Plugin.php:590
+msgid "Updates and Notifications"
+msgstr ""
+
+#: includes/Features/DragAndDropOrdering.php:132
+#: includes/Features/DragAndDropOrderingPosts.php:123
+msgid "Updating post order..."
+msgstr ""
+
+#: includes/Features/DragAndDropOrderingTaxonomies.php:106
+msgid "Updating taxonomy order..."
+msgstr ""
+
+#: partials/network-viewer-log.php:123 includes/Features/BulkDeletePosts.php:92
+msgid "Upgrade to AdminEasePro"
+msgstr ""
+
+#: includes/Plugin.php:652 partials/dashboard.php:200
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: partials/network-viewer-log.php:121
+msgid ""
+"Upgrade to Pro to view detailed insights for each connection including "
+"request burst rates, error counts, recent IP activity, and export your "
+"entire network log to CSV."
+msgstr ""
+
+#: includes/Features/UploadMaxFileSize.php:40
+msgid "Upload Max File Size"
+msgstr ""
+
+#: partials/password-protect-site-log.php:32
+#: includes/Features/NetworkViewer.php:269
+#: includes/Features/NetworkViewer.php:1177
+msgid "User Agent"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:276
+#: includes/Features/NetworkViewer.php:1205
+msgid "User ID"
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:275
+#: includes/Features/NetworkViewer.php:1202
+msgid "User Information"
+msgstr ""
+
+#: includes/Features/DisableFrontendUserRegistration.php:80
+msgid "User registration is disabled on this site."
+msgstr ""
+
+#: includes/Features/DisableFrontendUserRegistration.php:110
+msgid "User registration is disabled."
+msgstr ""
+
+#: includes/Features/NetworkViewer.php:277
+#: includes/Features/NetworkViewer.php:1213
+msgid "User Role"
+msgstr ""
+
+#: includes/Features/HideAdminBar.php:68
+msgid "User roles to hide admin bar for"
+msgstr ""
+
+#: includes/Plugin.php:615
+msgid "Users"
+msgstr ""
+
+#: partials/field-groups/docs/block-specific-countries-enabled.php:25
+msgid "Uses Apache's mod_rewrite for fast, server-level blocking"
+msgstr ""
+
+#: partials/field-groups/docs/block-specific-countries-enabled.php:12
+msgid ""
+"Uses Cloudflare's CF-IPCountry header to identify visitor locations "
+"(recommended)"
+msgstr ""
+
+#: partials/network-viewer-log.php:82 includes/Features/NetworkViewer.php:1002
+#: includes/Features/NetworkViewer.php:1048
+msgid "View"
+msgstr ""
+
+#: partials/network-viewer-log.php:81 includes/Features/NetworkViewer.php:1001
+#: includes/Features/NetworkViewer.php:1041
+msgid "Visitor"
+msgstr ""
+
+#: partials/field-groups/docs/block-specific-countries-enabled.php:20
+msgid ""
+"Visitors from blocked countries will receive an HTTP 403 Forbidden error "
+"when trying to access your site. This is a clean, efficient block that "
+"doesn't redirect or consume additional server resources."
+msgstr ""
+
+#: includes/Features/WpDebug.php:216
+msgid "Warning:"
+msgstr ""
+
+#: includes/Features/BulkDeletePosts.php:258
+msgid ""
+"WARNING: You are about to PERMANENTLY delete posts. This action CANNOT be "
+"undone. Are you absolutely sure?"
+msgstr ""
+
+#: includes/Features/MaintenanceMode/Themes/Classic.php:51
+msgid "We are currently performing scheduled maintenance."
+msgstr ""
+
+#: includes/Features/MaintenanceMode/MaintenanceMode.php:84
+msgid ""
+"We are currently performing scheduled maintenance. Please check back soon!"
+msgstr ""
+
+#. %1$s and %2$s are example domain names
+#: partials/field-groups/docs/cors-header.php:10
+#, php-format
+msgid ""
+"Websites often need to talk to each other. For example, a web app at %1$s "
+"might try to load data from %2$s."
+msgstr ""
+
+#: partials/dashboard.php:89
+msgid "Welcome to AdminEase! 🚀"
+msgstr ""
+
+#: partials/field-groups/docs/block-specific-countries-enabled.php:18
+msgid "What Happens When Blocked"
+msgstr ""
+
+#: includes/Features/UpdatesAndNotifications.php:168
+msgid ""
+"When a plugin is automatically updated in WordPress, the site administrator "
+"gets an email notification with information about the update. This email "
+"lists which plugin was updated and its new version, helping you keep track "
+"of changes to your site. These notifications are especially useful for "
+"monitoring plugin activity, ensuring everything still works correctly, and "
+"spotting potential issues early."
+msgstr ""
+
+#: includes/Features/UpdatesAndNotifications.php:157
+msgid ""
+"When a theme is automatically updated in WordPress, the site administrator "
+"receives an email notification with details about the update. This helps you "
+"stay informed about changes to your theme, especially if you’re using auto-"
+"updates. The email includes the theme name and version, so you know exactly "
+"what was updated. It’s a useful feature for tracking updates and making sure "
+"your site looks and functions as expected after the change."
+msgstr ""
+
+#: includes/Features/UpdatesAndNotifications.php:146
+msgid ""
+"When WordPress automatically updates its core software, it sends an email "
+"notification to the site administrator. This email lets you know that the "
+"update was successful and includes details about what was updated. It’s a "
+"helpful way to stay informed about changes to your site, especially if "
+"you're not logging in regularly. While you can disable these emails with "
+"custom code, they’re useful for keeping track of important updates and "
+"ensuring everything is working as expected."
+msgstr ""
+
+#: includes/Features/TaxonomyMetaBox.php:67
+msgid "Will work when Gutenberg is disabled."
+msgstr ""
+
+#: includes/Features/UpdatesAndNotifications.php:113
+msgid ""
+"WordPress also lets you automatically update your plugins to keep your site "
+"secure and running smoothly. This means you don’t have to manually check for "
+"updates—WordPress will do it for you. It’s a great way to save time and "
+"protect your site from security risks. However, some users prefer to disable "
+"auto-updates for plugins so they can test each update first, especially on "
+"websites with custom setups or many plugins. You can turn plugin auto-"
+"updates on or off individually from your WordPress dashboard."
+msgstr ""
+
+#: includes/Features/UpdatesAndNotifications.php:135
+msgid ""
+"WordPress also supports automatic updates for translations, which include "
+"language files for the WordPress core, themes, and plugins. These updates "
+"help keep your site’s content accurate and fully translated in your chosen "
+"language. Translation files are usually small and safe to update, so "
+"WordPress enables these auto-updates by default. Most users leave this "
+"feature on, as it improves the user experience without affecting the site’s "
+"design or functionality. If needed, advanced users can disable translation "
+"auto-updates through code or a plugin, but in most cases, it’s best to keep "
+"them enabled."
+msgstr ""
+
+#: includes/Features/DisableEmbeds.php:77
+msgid ""
+"WordPress automatically converts URLs from sites like YouTube or Twitter "
+"into embedded content, such as videos or tweets. This feature, called embeds,"
+" can make pages heavier and sometimes expose your site to unnecessary "
+"external requests. Disabling embeds helps improve performance, reduce "
+"privacy concerns, and prevent other sites from embedding your content "
+"without permission. You can disable embeds using a few lines of code or a "
+"lightweight plugin."
+msgstr ""
+
+#: includes/Features/WpMemoryLimit.php:107
+msgid ""
+"WordPress defaults to a maximum memory limit of 40MB for a single site and "
+"64MB for a WordPress Multisite network."
+msgstr ""
+
+#: includes/Features/UpdatesAndNotifications.php:124
+msgid ""
+"WordPress gives you the option to automatically update your themes, just "
+"like plugins. This helps ensure your site stays secure and compatible with "
+"the latest features. When auto-updates are enabled for a theme, WordPress "
+"will install new versions as they’re released, without requiring manual "
+"action. However, if you've made custom changes to your theme files, "
+"automatic updates could overwrite them. That’s why some users prefer to turn "
+"off auto-updates for themes and update them manually after testing. You can "
+"easily enable or disable theme auto-updates from the Appearance > Themes "
+"section in your dashboard."
+msgstr ""
+
+#: includes/Features/UpdatesAndNotifications.php:102
+msgid ""
+"WordPress has a built-in feature that can automatically update itself to the "
+"latest version. This helps keep your website secure and up to date without "
+"needing to do anything manually. However, some people prefer to disable "
+"automatic updates so they can test new versions first or avoid unexpected "
+"changes. You can easily turn this option on or off depending on how much "
+"control you want over updates."
+msgstr ""
+
+#: includes/Features/DisableFileEdit.php:39
+msgid ""
+"WordPress includes a built-in code editor that lets administrators edit "
+"theme and plugin files directly from the admin panel. While convenient, this "
+"feature can be risky—especially if someone gains access to your dashboard or "
+"makes accidental changes. Disabling file editing helps protect your site’s "
+"code from unwanted modifications. It’s a common security best practice and "
+"can be done easily by adding a single line of code to your wp-config.php "
+"file."
+msgstr ""
+
+#: partials/field-groups/docs/block-specific-countries-enabled.php:8
+msgid "Works with Cloudflare (recommended) or PHP GeoIP extension."
+msgstr ""
+
+#: partials/field-groups/docs/block-specific-countries-enabled.php:27
+msgid ""
+"Works with Cloudflare headers or server GeoIP extension for maximum "
+"compatibility"
+msgstr ""
+
+#: includes/Features/WpDebug.php:114
+msgid "WP Debug"
+msgstr ""
+
+#: includes/Features/WpDebug.php:139
+msgid "WP Debug Display"
+msgstr ""
+
+#: includes/Features/WpDebug.php:125
+msgid "WP Debug Log"
+msgstr ""
+
+#: includes/Features/WpMemoryLimit.php:105
+msgid "WP Max Memory Limit"
+msgstr ""
+
+#: includes/Features/WpMemoryLimit.php:54
+msgid "WP Memory Limit"
+msgstr ""
+
+#: includes/Features/UpdatesAndNotifications.php:246
+msgid "You can enter multiple email addresses separated by commas."
+msgstr ""
+
+#: includes/Features/MaintenanceMode/MaintenanceMode.php:90
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:143
+msgid "You can use basic HTML tags."
+msgstr ""
+
+#: includes/Features/TaxonomyMetaBox.php:574
+msgid "You do not have permission to create terms"
+msgstr ""
+
+#: includes/Plugin.php:119
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: includes/Plugin.php:241 includes/Plugin.php:303 includes/Plugin.php:331
+#: includes/Features/DragAndDropOrderingPosts.php:207
+#: includes/Features/NetworkViewer.php:902
+#: includes/Features/NetworkViewer.php:929
+#: includes/Features/BulkDeletePosts.php:291
+#: includes/Features/BulkDeletePosts.php:356
+#: includes/Features/DragAndDropOrderingTaxonomies.php:211
+#: includes/Features/WpDebug.php:265 includes/Features/WpDebug.php:312
+#: includes/Features/WpDebug.php:334
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:685
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:713
+msgid "You do not have sufficient permissions to perform this action"
+msgstr ""
+
+#: includes/Features/PasswordProtectSite/PasswordProtectSite.php:438
+msgid "You have made too many attempts. Please try again later."
+msgstr ""
+
+#: includes/Features/AllowSvgUpload.php:244
+msgid "Your SVG file has been professionally sanitized for security."
+msgstr ""
+
+#: includes/Features/PostsMetadataBox.php:110
+msgid "Z-A"
+msgstr ""
+
+#: includes/Features/AllowSvgUpload.php:245
+msgid "✓ Sanitized"
+msgstr ""
+
+#. %d: number of posts found
+#: includes/Features/BulkDeletePosts.php:264
+msgid "➜ Found %d posts matching criteria"
+msgstr ""
+
+#: partials/dashboard.php:413
+msgid ""
+"⭐ Enjoying AdminEase? We’d love your feedback!<br><a href=\"https:"
+"//wordpress.org/support/plugin/adminease/reviews/#new-post\" "
+"target=\"_blank\">Leave a quick review</a>"
+msgstr ""

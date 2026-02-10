@@ -1,0 +1,18 @@
+{
+    "messages": {
+        "info": {
+            "title": "Storage (SSD vs HDD)",
+            "details": "SSD (Solid State Drive) is much faster than HDD (Hard Disk Drive), affecting page load and database speed. Always prefer SSDs for both website files and databases."
+        }
+    },
+    "learn_more": {
+        "description": "Storage affects how quickly your site files and database can be accessed:",
+        "benefits_title": "Key Differences:",
+        "benefits": [
+            "SSD: Uses flash memory, significantly faster read/write speeds, resulting in faster page loads and quicker database operations. The modern standard.",
+            "HDD: Uses spinning magnetic disks, much slower than SSDs. Avoid hosts using HDDs for website hosting if possible.",
+            "NVMe SSD: An even faster type of SSD. Often found on premium hosting plans.",
+            "Requirement: Ensure the host uses SSD storage for *both* your website files (like WordPress core, themes, plugins, images) *and* the database."
+        ]
+    }
+} 

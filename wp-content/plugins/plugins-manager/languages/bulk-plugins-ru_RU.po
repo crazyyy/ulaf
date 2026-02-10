@@ -1,0 +1,114 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Bulk Plugin Manager\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-28 06:13+0000\n"
+"PO-Revision-Date: 2024-05-15 10:57+0000\n"
+"Last-Translator: \n"
+"Language-Team: Русский\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.4; wp-6.2.2"
+
+#: admin/includes/class-plugin-page-customizer.php:206
+msgid "Are you sure you want to deactivate and remove the plugin?"
+msgstr "Вы уверены, что хотите деактивировать и удалить этот плагин?"
+
+#: admin/pages/class.page-settings.php:54
+msgid "Check and show GIT"
+msgstr "Проверять и отображать статус GIT"
+
+#: admin/includes/class-plugin-page-customizer.php:236
+msgid "Deactivate and delete"
+msgstr "Деактивировать и удалить"
+
+#: admin/includes/class-plugin-page-customizer.php:293
+msgid "Delete"
+msgstr "Удалить"
+
+#: admin/class.page-base-settings.php:93
+msgid "Enable"
+msgstr "Включить"
+
+#: admin/pages/class.page-settings.php:39
+msgid "General settings"
+msgstr "Основные настройки"
+
+#: admin/includes/class-plugin-page-customizer.php:308
+msgid "Image"
+msgstr "Иконка"
+
+#: admin/includes/class-plugin-page-customizer.php:281
+msgid "Plugins deactivated and delete: "
+msgstr "Плагины деактивированы и удалены: "
+
+#. Name of the plugin
+#: admin/pages/class.page-settings.php:22
+#: admin/pages/class.page-settings.php:23
+msgid "Plugins Page Tweaker"
+msgstr "Plugins Page Tweaker"
+
+#: admin/pages/class.page-settings.php:64
+msgid "Replace autoupdate text to checkboxes"
+msgstr "Заменить текст автообновления на галочки"
+
+#: admin/includes/class-plugin-page-customizer.php:221
+msgid "Settings updated"
+msgstr "Настройки обновлены"
+
+#: admin/pages/class.page-settings.php:49
+msgid "Show changelog in update notice"
+msgstr "Показывать список изменений в уведомлении об обновлении"
+
+#: admin/pages/class.page-settings.php:59
+msgid "Show GIT branch"
+msgstr "Показывать ветку GIT"
+
+#: admin/pages/class.page-settings.php:44
+msgid "Show plugins icons column"
+msgstr "Показывать колонку иконок плагинов"
+
+#: admin/includes/class-plugin-page-customizer.php:346
+msgid "Sort plugins"
+msgstr "Сортировка плагинов"
+
+#. Author URI of the plugin
+msgid "temyk.ru"
+msgstr "temyk.ru"
+
+#: plugins-manager.php:46
+#, php-format
+#| msgid "The %s plugin has stopped. <b>Error:</b> %s Code: %s"
+msgid "The %1$s plugin has stopped. <b>Error:</b> %2$s Code: %3$s"
+msgstr "Плагин %1$s остановлен. <b>Ошибка:</b> %2$s Код ошибки: %3$s"
+
+#. Description of the plugin
+msgid ""
+"This plugin customizes plugins page and allows you to bulk deactivate and "
+"immediately remove other plugins"
+msgstr ""
+"Этот плагин настраивает страницу плагинов и позволяет вам массово "
+"деактивировать и немедленно удалять другие плагины"
+
+#: admin/includes/class-plugin-page-customizer.php:160
+#: admin/includes/class-plugin-page-customizer.php:161
+msgid "This plugin is installed as a GIT repository!"
+msgstr "Это плагин установлен через GIT репозиторий"
+
+#: includes/base/class.plugin-base.php:214
+msgid "This template does not exist!"
+msgstr "Шаблон не найден!"
+
+#. Author of the plugin
+msgid "Webtemyk"
+msgstr "Webtemyk"
+
+#: admin/includes/class-plugin-page-customizer.php:262
+#: admin/includes/class-plugin-page-customizer.php:384
+msgid "You do not have enough permissions to remove or deactivate plugins"
+msgstr "У вас недостаточно прав для удаления или деактивации плагинов"

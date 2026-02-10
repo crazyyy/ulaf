@@ -1,0 +1,158 @@
+# Translation of Plugins - REST API Toolbox - Stable (latest release) in Ukrainian
+# This file is distributed under the same license as the Plugins - REST API Toolbox - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-03-25 17:26:54+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: uk_UA\n"
+"Project-Id-Version: Plugins - REST API Toolbox - Stable (latest release)\n"
+
+#: includes/settings/class-rest-api-toolbox-settings-custom-post-types.php:95
+msgid "No Custom Post Types"
+msgstr "Немає користувацьких типів запису"
+
+#: includes/settings/class-rest-api-toolbox-settings-custom-post-types.php:22
+msgid "Custom Post Types"
+msgstr "Користувацькі типи запису"
+
+#: includes/settings/class-rest-api-toolbox-settings-core.php:46
+#: includes/settings/class-rest-api-toolbox-settings-core.php:55
+#: includes/settings/class-rest-api-toolbox-settings-custom-post-types.php:61
+#: includes/settings/class-rest-api-toolbox-settings-custom-post-types.php:70
+msgid "%s"
+msgstr "%s"
+
+#: includes/settings/class-rest-api-toolbox-settings-core.php:32
+msgid "All WordPress Core Endpoints"
+msgstr "Всі кінцеві точки ядра WordPress"
+
+#: includes/settings/class-rest-api-toolbox-settings-base.php:263
+msgid "Require Authentication"
+msgstr "Потребує аутентифікації"
+
+#: includes/class-rest-api-toolbox-common.php:312
+msgid "The REST API route %s requires authentication on this site."
+msgstr "REST API маршрут %s вимагає аутентифікації на цьому сайті."
+
+#: includes/class-rest-api-toolbox-common.php:118
+msgid "The REST API is disabled on this site."
+msgstr "REST API вимкнено на цьому сайті."
+
+#. Author URI of the plugin
+#: rest-api-toolbox.php
+msgid "https://github.com/petenelson/wp-rest-api-toolbox"
+msgstr "https://github.com/petenelson/wp-rest-api-toolbox"
+
+#. Author of the plugin
+#: rest-api-toolbox.php
+msgid "Pete Nelson"
+msgstr "Pete Nelson"
+
+#. Description of the plugin
+#: rest-api-toolbox.php
+msgid "Allows easy tweaks of several REST API settings"
+msgstr "Дозволяє легко налаштувати декілька налаштувань REST API"
+
+#. Plugin URI of the plugin
+#: rest-api-toolbox.php
+msgid "https://wordpress.org/plugins/rest-api-toolbox"
+msgstr "https://wordpress.org/plugins/rest-api-toolbox"
+
+#: includes/settings/class-rest-api-toolbox-settings.php:62
+msgid "Save Changes"
+msgstr "Зберегти зміни"
+
+#. Plugin Name of the plugin
+#: rest-api-toolbox.php
+#: includes/settings/class-rest-api-toolbox-settings.php:48
+msgid "REST API Toolbox"
+msgstr "REST API Toolbox"
+
+#: includes/class-rest-api-toolbox-admin.php:44
+#: includes/settings/class-rest-api-toolbox-settings.php:48
+#: includes/settings/class-rest-api-toolbox-settings.php:87
+msgid "Settings"
+msgstr "Налаштування"
+
+#: includes/settings/class-rest-api-toolbox-settings-base.php:179
+msgid "No"
+msgstr "Ні"
+
+#: includes/settings/class-rest-api-toolbox-settings-base.php:171
+msgid "Yes"
+msgstr "Так"
+
+#: includes/settings/class-rest-api-toolbox-settings-base.php:58
+#: includes/settings/class-rest-api-toolbox-settings-ssl.php:17
+msgid "SSL"
+msgstr "SSL"
+
+#: includes/settings/class-rest-api-toolbox-settings-base.php:57
+#: includes/settings/class-rest-api-toolbox-settings-core.php:17
+msgid "Core"
+msgstr "Ядро"
+
+#: includes/settings/class-rest-api-toolbox-settings-base.php:56
+#: includes/settings/class-rest-api-toolbox-settings-general.php:17
+msgid "General"
+msgstr "Загальне"
+
+#: includes/settings/class-rest-api-toolbox-settings-help.php:19
+msgid "Help"
+msgstr "Допомога"
+
+#: includes/settings/class-rest-api-toolbox-settings-ssl.php:30
+msgid "Require SSL"
+msgstr "Потребує SSL"
+
+#: includes/settings/class-rest-api-toolbox-settings-base.php:254
+msgid "Remove Endpoints"
+msgstr "Видалити кінцеві точки"
+
+#: includes/settings/class-rest-api-toolbox-settings-general.php:41
+msgid "Custom prefix, default is wp-json"
+msgstr "Користувацький префікс, за замовчанням це wp-json"
+
+#: includes/settings/class-rest-api-toolbox-settings-general.php:36
+msgid "REST API Prefix"
+msgstr "Префікс REST API"
+
+#: includes/settings/class-rest-api-toolbox-settings-general.php:33
+msgid "Disable JSONP Support"
+msgstr "Вимкнути підтримку JSONP"
+
+#: includes/settings/class-rest-api-toolbox-settings-general.php:30
+msgid "Disable REST API"
+msgstr "Вимкнути REST API"
+
+#: includes/settings/class-rest-api-toolbox-settings.php:34
+msgid "<strong>REST API Toolbox activated!</strong> Please <a href=\"%s\">visit the Settings page</a> to customize the settings."
+msgstr "<strong>REST API Toolbox активовано!</strong> Будь ласка <a href=\"%s\">відвідайте сторінку Налаштування</a> для налаштування параметрів."
+
+#: includes/class-rest-api-toolbox-common.php:169
+msgid "SSL is required to access the REST API"
+msgstr "SSL потребує доступу до REST API"
+
+#: admin/partials/admin-help.php:12
+msgid "GitHub"
+msgstr "GitHub"
+
+#: admin/partials/admin-help.php:11
+msgid "WordPress Repo"
+msgstr "WordPress репозіторій"
+
+#: admin/partials/admin-help.php:10
+msgid "Twitter"
+msgstr "Twitter"
+
+#: admin/partials/admin-help.php:9
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#: admin/partials/admin-help.php:7
+msgid "Contact"
+msgstr "Контакт"

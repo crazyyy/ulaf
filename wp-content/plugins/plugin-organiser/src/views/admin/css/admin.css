@@ -1,0 +1,33 @@
+
+body.plugins-php hr.wp-header-end {
+    margin-bottom: 5px;
+}
+
+body.plugins-php select#plugin-organiser-filter {    
+    float: left;
+    width: 100%;
+}
+
+#settings select.plugins-selected > option {
+    padding-top: 4px;
+}
+
+#settings fieldset.plugin-group {
+    background: #ffffff;
+    padding: 30px;
+    border: 1px solid #ccd0d4
+}
+
+#settings fieldset.plugin-group select {
+    max-width: unset;
+}
+
+.wrap div.notice.error { border-left: 5px solid #ed143d; }
+.wrap div.notice.success { border-left: 5px solid #2e8b57; }
+.wrap div.notice.warning { border-left: 5px solid #f3e037; }
+
+@media screen and (min-width: 768px) {
+    #settings button#tip {
+        float: right;
+    }
+}

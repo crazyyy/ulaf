@@ -1,0 +1,63 @@
+{
+    "title": "Database Size",
+    "messages": {
+        "success": {
+            "title": "Database Size is Optimal",
+            "details": "Your database size is {size}, which is under 250MB - perfect for most WordPress sites.",
+            "steps": [
+                "Continue monitoring your database size monthly",
+                "Keep regular backups of your database",
+                "Follow best practices for database management, like deleting old revisions, spam comments, and unused options."
+            ]
+        },
+        "warning": {
+            "title": "Database is Growing Large",
+            "details": "Your database size is {size}, which is between 250MB and 500MB. While this is manageable, keeping your database lean ensures faster performance and quicker backups.",
+            "steps": [
+                "Remove unnecessary post revisions",
+                "Delete spam comments and old drafts",
+                "Clean expired transients and unused options",
+                "Consider regular optimization maintenance"
+            ]
+        },
+        "error": {
+            "title": "Database Size May Need Attention",
+            "details": "Your database size is {size}, which is larger than 500MB. This may affect your site's performance and significantly slow down your backups. We recommend a deep cleanup to keep your database efficient.",
+            "steps": [
+                "Remove unnecessary post revisions (keep only the last 5 for example)",
+                "Delete spam comments and old drafts",
+                "Clean expired transients and unused options",
+                "Consider archiving old posts and comments",
+                "Use a database optimization plugin regularly",
+                "We recommend using plugins like Advanced Database Cleaner, WP-Sweep, or WP-DBManager, just to name a few."
+            ]
+        }
+    },
+    "learn_more": {
+        "description": "Your WordPress database stores all your content, settings, and important site data. A smaller, well-maintained database loads faster and is easier to backup.",
+        "benefits": [
+            "Faster page loading times and better user experience",
+            "Quicker and smaller backups",
+            "Reduced hosting resource usage - which will reduce your hosting costs",
+            "Lower risk of database corruption",
+            "Easier site migrations and updates"
+        ],
+        "recommended_plugins": [
+            {
+                "name": "WP-Optimize",
+                "type": "Free/Premium",
+                "description": "Complete database cleanup and optimization"
+            },
+            {
+                "name": "Advanced Database Cleaner",
+                "type": "Premium",
+                "description": "Deep database cleaning and optimization"
+            },
+            {
+                "name": "WP-Sweep",
+                "type": "Free",
+                "description": "Clean unnecessary database items"
+            }
+        ]
+    }
+}

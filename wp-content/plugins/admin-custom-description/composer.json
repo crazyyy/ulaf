@@ -1,0 +1,15 @@
+{
+    "name": "aminj/admin-custom-description",
+    "autoload": {
+        "psr-4": {
+            "AdminCustomDescription\\": "include/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Amin Jabari Asl",
+            "email": "amin.jabari.asl@gmail.com"
+        }
+    ],
+    "require": {}
+}
