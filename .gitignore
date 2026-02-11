@@ -100,3 +100,5 @@ Desktop.ini
 *.mov
 *.wmv
 
+/wp-content/plugins/*/logs/*.txt
+/wp-content/plugins/*/logs/*.log
