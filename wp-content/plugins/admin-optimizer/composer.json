@@ -1,0 +1,43 @@
+{
+    "name": "yipresser/admin-optimizer",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "autoload": {
+        "classmap": ["admin","includes","modules"]
+    },
+    "authors": [
+        {
+            "name": "Yipresser",
+            "email": "help@yipresser.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "allow-plugins": {
+            "typisttech/imposter-plugin": true
+        },
+        "platform-check": false
+    },
+    "require": {
+        "symfony/polyfill-php80":"^1.33",
+        "symfony/polyfill-php81":"^1.33",
+        "remotemerge/totp-php": "^1.0.2",
+        "woocommerce/action-scheduler": "^3.9.2",
+        "yipresser/wp-settings-api-helper":"^1.1.0",
+        "typisttech/imposter-plugin": "^0.6.1",
+        "enshrined/svg-sanitize": "^0.22.0"
+    },
+    "extra": {
+        "imposter": {
+            "namespace": "Yipresser\\AdminOptimizer\\Vendor",
+            "excludes": [
+                "woocommerce/action-scheduler",
+                "symfony/polyfill-php80",
+                "symfony/polyfill-php81"
+            ]
+        }
+    }
+}

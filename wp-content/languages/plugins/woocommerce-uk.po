@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-12-10 23:07:17+0000\n"
+"PO-Revision-Date: 2026-02-11 10:49:15+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,22 @@ msgstr ""
 "X-Generator: GlotPress/4.0.3\n"
 "Language: uk_UA\n"
 "Project-Id-Version: Plugins - WooCommerce - Stable (latest release)\n"
+
+#: src/Internal/Admin/Settings.php:356
+msgid "Updates"
+msgstr "Оновлення"
+
+#: src/Internal/Admin/Notes/ScheduledUpdatesPromotion.php:95
+msgid "Scheduled updates enabled"
+msgstr "Ввімкнено заплановані оновлення"
+
+#: src/Internal/Admin/Notes/ScheduledUpdatesPromotion.php:82
+msgid "This provides improved performance to your store, enable it in Analytics > Settings."
+msgstr "Це покращує продуктивність магазину, увімкніть його в розділі Аналітика > Налаштування."
+
+#: src/Internal/Admin/Notes/ScheduledUpdatesPromotion.php:81
+msgid "Analytics now supports scheduled updates"
+msgstr "Аналітика тепер підтримує заплановані оновлення"
 
 #: assets/client/blocks/category-description/block.json
 msgctxt "block description"
@@ -42,6 +58,19 @@ msgstr "Опис варіації (Beta)"
 msgctxt "block description"
 msgid "Displays the description of the selected variation."
 msgstr "Відображення опису вибраної варіації."
+
+#: src/Internal/Abilities/AbilitiesRestBridge.php:91
+msgid "Update Order"
+msgstr "Оновити замовлення"
+
+#: src/Internal/Abilities/AbilitiesRestBridge.php:55
+msgid "Update Product"
+msgstr "Оновити товар"
+
+#: src/Internal/RestApi/Routes/V4/AbstractController.php:269
+#: src/Internal/RestApi/Routes/V4/AbstractController.php:273
+msgid "Sorry, you cannot update resources."
+msgstr "На жаль, ви не можете оновлювати ресурси."
 
 #: includes/admin/settings/class-wc-settings-general.php:257
 msgid "Taxes and coupons"
@@ -88,6 +117,21 @@ msgstr "Товар не знайдено."
 #: src/Internal/StockNotifications/Admin/NotificationCreatePage.php:39
 msgid "Please select a product."
 msgstr "Виберіть товар."
+
+#: src/Internal/StockNotifications/Admin/NotificationEditPage.php:73
+#: src/Internal/StockNotifications/Admin/NotificationEditPage.php:86
+msgid "Notification updated."
+msgstr "Сповіщення оновлено."
+
+#. translators: %s: Notifications count
+#: src/Internal/StockNotifications/Admin/ListTable.php:767
+#: src/Internal/StockNotifications/Admin/ListTable.php:788
+msgctxt "notifications_status"
+msgid "%s notification updated."
+msgid_plural "%s notifications updated."
+msgstr[0] "%s сповіщення оновлено."
+msgstr[1] "%s сповіщення оновлено."
+msgstr[2] "%s сповіщень оновлено."
 
 #: src/Internal/StockNotifications/Admin/ListTable.php:285
 msgctxt "column_name"
@@ -18854,7 +18898,7 @@ msgstr "Зрозуміла мітка параметра."
 msgid "The specific chart this stat referrers to."
 msgstr "Конкретний графік, на який посилається цей параметр."
 
-#: includes/admin/class-wc-admin-dashboard.php:626
+#: includes/admin/class-wc-admin-dashboard.php:578
 #: src/Admin/API/Reports/PerformanceIndicators/Controller.php:147
 msgid "Sorry, fetching performance indicators failed."
 msgstr "На жаль, не вдалося отримати показники ефективності."
@@ -24558,7 +24602,7 @@ msgstr "Тиждень"
 msgid "Day(s)"
 msgstr "День"
 
-#: includes/admin/class-wc-admin-dashboard.php:559
+#: includes/admin/class-wc-admin-dashboard.php:511
 msgid "Loading network orders"
 msgstr "Завантаження замовлень мережі"
 
@@ -36962,7 +37006,7 @@ msgstr "Редагувати замовлення"
 msgid "Search orders"
 msgstr "Шукати замовлення"
 
-#: includes/admin/class-wc-admin-dashboard.php:577
+#: includes/admin/class-wc-admin-dashboard.php:529
 #: includes/class-wc-post-types.php:502
 msgid "No orders found"
 msgstr "Не знайдено жодного замовлення"
@@ -40043,7 +40087,7 @@ msgid "Shipping classes"
 msgstr "Класи доставки"
 
 #. translators: 1: total income 2: days
-#: includes/admin/class-wc-admin-dashboard.php:704
+#: includes/admin/class-wc-admin-dashboard.php:656
 #: includes/admin/reports/class-wc-admin-report.php:639
 msgid "Sold %1$s worth in the last %2$d days"
 msgstr "Продано на суму %1$s протягом останніх %2$d днів"
@@ -40198,7 +40242,7 @@ msgid "Number of orders."
 msgstr "Кількість замовлень."
 
 #. translators: 1: total items sold 2: days
-#: includes/admin/class-wc-admin-dashboard.php:707
+#: includes/admin/class-wc-admin-dashboard.php:659
 #: includes/admin/reports/class-wc-admin-report.php:642
 msgid "Sold %1$d item in the last %2$d days"
 msgid_plural "Sold %1$d items in the last %2$d days"
@@ -41663,7 +41707,7 @@ msgstr "Категорії"
 msgid "Date"
 msgstr "Дата"
 
-#: includes/admin/class-wc-admin-dashboard.php:567
+#: includes/admin/class-wc-admin-dashboard.php:519
 #: includes/admin/class-wc-admin-menus.php:190
 #: includes/admin/class-wc-admin-webhooks-table-list.php:51
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:125
@@ -41985,7 +42029,7 @@ msgstr "Використання / Обмеження"
 msgid "Expiry date"
 msgstr "Термін придатності"
 
-#: includes/admin/class-wc-admin-dashboard.php:568
+#: includes/admin/class-wc-admin-dashboard.php:520
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:128
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:263
 #: includes/admin/meta-boxes/views/html-order-item.php:158
@@ -42514,7 +42558,7 @@ msgstr[1] "%s замовлення перенесено до смітника."
 msgstr[2] "%s замовлень перенесено до смітника."
 
 #: includes/abstracts/abstract-wc-order.php:2531
-#: includes/admin/class-wc-admin-dashboard.php:566
+#: includes/admin/class-wc-admin-dashboard.php:518
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:123
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:214
 #: includes/admin/reports/class-wc-report-downloads.php:87
@@ -43069,7 +43113,6 @@ msgid "For more information:"
 msgstr "Для отримання додаткової інформації:"
 
 #: includes/admin/class-wc-admin-dashboard.php:472
-#: includes/admin/class-wc-admin-dashboard.php:527
 msgid "There are no product reviews yet."
 msgstr "Відгуків поки що немає."
 
