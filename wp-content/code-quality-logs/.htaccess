@@ -1,8 +1,0 @@
-# Deny direct access to this directory
-# Apache 2.4+:
-Require all denied
-
-# Backwards compatibility:
-<IfModule !mod_authz_core.c>
-    Deny from all
-</IfModule>

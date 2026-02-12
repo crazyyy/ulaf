@@ -1,9 +1,0 @@
-== Changelog ==
-= 1.0.0 =
-Release basic functionality
-
-= 1.0.1 =
-* Added dependency checks for WP_DEBUG_DISPLAY and WP_DEBUG_LOG
-* Improved error display in the browser
-* Backtrace logging added to error log if WP_DEBUG_LOG is enabled (writes to the default log file)
-* Enhanced admin area messages

@@ -1,9 +1,0 @@
-.ddtt-debug-enabled #wpadminbar {
-    background-image: repeating-linear-gradient(
-        135deg,
-        rgba( 220, 50, 50, 0.18 ),
-        rgba( 220, 50, 50, 0.18 ) 10px,
-        rgba( 0, 0, 0, 0 ) 10px,
-        rgba( 0, 0, 0, 0 ) 20px
-    );
-}
