@@ -1,3 +1,0 @@
-<div>
-    Others Content
-</div>

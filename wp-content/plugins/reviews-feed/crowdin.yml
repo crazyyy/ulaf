@@ -1,3 +1,0 @@
-files:
-  - source: '*.pot'
-    translation: '%file_name%.%file_extension%'

@@ -1,5 +1,5 @@
 <?php
-return ['po-revision-date'=>'2026-02-11 21:58:03+0000','mime-version'=>'1.0','content-type'=>'text/plain; charset=UTF-8','content-transfer-encoding'=>'8bit','plural-forms'=>'nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);','x-generator'=>'GlotPress/4.0.3','language'=>'uk_UA','project-id-version'=>'Plugins - WooCommerce - Stable (latest release)','messages'=>['
+return ['po-revision-date'=>'2026-02-12 08:44:39+0000','mime-version'=>'1.0','content-type'=>'text/plain; charset=UTF-8','content-transfer-encoding'=>'8bit','plural-forms'=>'nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);','x-generator'=>'GlotPress/4.0.3','language'=>'uk_UA','project-id-version'=>'Plugins - WooCommerce - Stable (latest release)','messages'=>['
 			This page is in "Coming soon" mode and is only visible to you and those who have permission. To make it public to everyone,&nbsp;<a href=\'%s\'>change visibility settings</a>
 		'=>'
 			Ця сторінка знаходиться у режимі "Скоро буде" і видна лише вам та тим, хто має дозвіл. Щоб зробити її загальнодоступною, <a href=\'%s\'>змініть налаштування видимості</a>
