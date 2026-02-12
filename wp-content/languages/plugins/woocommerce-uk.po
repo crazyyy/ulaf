@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-02-11 10:49:15+0000\n"
+"PO-Revision-Date: 2026-02-11 21:58:03+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,11 @@ msgstr ""
 "X-Generator: GlotPress/4.0.3\n"
 "Language: uk_UA\n"
 "Project-Id-Version: Plugins - WooCommerce - Stable (latest release)\n"
+
+#: assets/client/blocks/coupon-code/block.json
+msgctxt "block title"
+msgid "Coupon Code"
+msgstr "Код купону"
 
 #: src/Internal/Admin/Settings.php:356
 msgid "Updates"
@@ -10393,6 +10398,11 @@ msgstr "Дакар"
 msgid "Diourbel"
 msgstr "Діурбель"
 
+#. translators: %s: Payment provider name.
+#: src/Internal/Admin/Notes/PaymentsMoreInfoNeeded.php:67
+msgid "We recently asked you if you wanted more information about %s. Run your business and manage your payments in one place with the solution built and supported by WooCommerce."
+msgstr "Нещодавно ми запитали вас, чи хочете ви отримати більше інформації про %s. Ведіть свій бізнес та керуйте платежами в одному місці за допомогою рішення, створеного та підтримуваного WooCommerce."
+
 #: src/Blocks/BlockTypes/Cart.php:70 assets/client/blocks/cart.js:2
 #: assets/client/blocks/cart.js:12 assets/client/blocks/product-collection.js:1
 msgid "You may be interested in…"
@@ -12573,6 +12583,11 @@ msgstr "Приймайте кредитні картки та інші попу�
 #: src/Admin/API/Notes.php:465
 msgid "Please provide a valid promo note name."
 msgstr "Вкажіть дійсну назву промо-нотатки."
+
+#. translators: 1: Payment provider name.
+#: src/Internal/Admin/Notes/PaymentsRemindMeLater.php:67
+msgid "Save up to $800 in fees by managing transactions with %1$s. With %1$s, you can securely accept major cards, Apple Pay, and payments in over 100 currencies."
+msgstr "Заощаджуйте до 800 доларів на комісії, керуючи транзакціями за допомогою %1$s. Використовуючи %1$s ви можете безпечно приймати більшість карток, Apple Pay і платежі в понад 100 валютах."
 
 #: src/Internal/Admin/WCPayPromotion/WCPaymentGatewayPreInstallWCPayPromotion.php:85
 msgid "Dismiss the gateway"
@@ -25978,6 +25993,10 @@ msgstr "налаштування платежів, автоматизовані 
 #: includes/admin/class-wc-admin-setup-wizard.php:2117
 msgid "By connecting your site you agree to our fascinating <a href=\"%1$s\" target=\"_blank\">Terms of Service</a> and to <a href=\"%2$s\" target=\"_blank\">share details</a> with WordPress.com"
 msgstr "Підключивши ваш сайт, ви погоджуєтеся з нашими захоплюючими <a href=\"%1$s\" target=\"_blank\">Умовами надання послуг</a> та з <a href=\"%2$s\" target=\"_blank\">передачею даних</a> на WordPress.com"
+
+#: src/Internal/FraudProtection/AdminSettingsHandler.php:143
+msgid "Connected to Jetpack"
+msgstr "Підключено до Jetpack"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:1892
 msgid "Storefront Theme"

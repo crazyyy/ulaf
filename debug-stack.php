@@ -33,8 +33,8 @@ $is_production = ( WP_ENV === 'production' );
  * ------------------------------------------------------------------------
  */
 
-define( 'DEBUG_STACK_LOG_FILE', WP_CONTENT_DIR . '/debug-stack.log' );
-define( 'DEBUG_STACK_RATE_LIMIT', 30 );
+define( 'DEBUG_STACK_LOG_FILE', __DIR__ . '/wp-content/debug-stack.log' );
+define( 'DEBUG_STACK_RATE_LIMIT', 50 );
 
 /**
  * Limit logging to custom code only.

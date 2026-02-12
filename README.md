@@ -1,41 +1,41 @@
-# Українська Ліга американського футболу 
+# Українська Ліга американського футболу
 
-Some readme text 
+Some readme text
 
 ## Usefull Functions Catalog
 
-### Media 
-- Limit image upload file size https://www.adminoptimizer.com/docs/limit-image-upload-file-size/ 
+### Media
+- Limit image upload file size https://www.adminoptimizer.com/docs/limit-image-upload-file-size/
 - Set image filename as alt text https://www.adminoptimizer.com/docs/set-image-filename-as-alt-text/
 - Convert underscore (_) in image filename to hyphen (-) https://www.adminoptimizer.com/docs/convert-underscore-in-filename-to-hyphen/
 - Enable SVG image upload https://www.adminoptimizer.com/docs/enable-svg-image-upload/
 
 
-### Security 
+### Security
 - Hide WP version https://www.adminoptimizer.com/docs/hide-wp-version/
 
 
-### Disable Fuatures 
+### Disable Fuatures
 - Remove the REST API link from the header. 						# Admin Optimizer
 - Remove Really Simple Discovery (RSD) <link> tag from the header. 	# Admin Optimizer
 - Remove shortlink from the header. 								# Admin Optimizer
 - Remove links used for embedding your content on other sites. 		# Admin Optimizer
-- Disable jQuery Migrate	 Remove script bloat from your site. 	# Admin Optimizer	
+- Disable jQuery Migrate	 Remove script bloat from your site. 	# Admin Optimizer
 
 
-### User Managment 
+### User Managment
 - Track User's last login date 										# Admin Optimizer
 - Hide admin toolbar for all users									# Admin Optimizer
 
 
 
-## Usefull and Checked Plugins 
+## Usefull and Checked Plugins
 
-### Plugin Organizer 
+### Plugin Organizer
 - Plugin Notes Plus - Adds a column for plugin notes.
+- Plugin Organiser - categories but not usable https://uk.wordpress.org/plugins/plugin-organiser/
 
-
-## Server Config 
+## Server Config
 
 ### Nginx
 - How to Add Brotli to NginX in AaPanel https://hadezuka.dev/how-to-add-brotli-to-nginx-in-aapanel/
@@ -57,9 +57,17 @@ Some readme text
 - How to update to Nginx 1.28.1 if using multi server environment? https://www.aapanel.com/forum/d/25422-how-to-update-to-nginx-1281-if-using-multi-server-environment
 - Optimization reference for Nginx in high concurrency scenarios https://www.nginxer.com/records/optimization-reference-for-nginx-in-high-concurrency-scenarios/
 
-### fastcgi 
+
+### WodPress
+
+- brasofilo https://profiles.wordpress.org/brasofilo/#content-favorites
+- Useful WordPress Functions https://github.com/taniarascia/wp-functions
+- Awesome WP Developer Tools https://github.com/lukecav/awesome-wp-developer-tools
+- Solving life's little WordPress problems. https://github.com/chrisguitarguy/WPSE-Plugins
+
+### FastCGI
 How to enable fastcgi cache for WordPress with aapanel https://www.aapanel.com/blog/how-to-enable-fastcgi-cache-for-wordpress-with-aapanel/
 
-### memcached
+### Memcached
 - https://hadezuka.dev/memcached-untuk-wordpress/
 
