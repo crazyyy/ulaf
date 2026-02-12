@@ -1,0 +1,51 @@
+{
+    "title": "Code Minification",
+    "messages": {
+        "success": {
+            "title": "Code Minification Available",
+            "details": "Your site is using {plugin_name} for code minification, which helps reduce file sizes if enabled.",
+            "steps": [
+                "Verify minification settings are properly configured",
+                "Test your site after enabling minification",
+                "Monitor for any JavaScript or CSS issues"
+            ]
+        },
+        "error": {
+            "title": "Code Minification Not Detected",
+            "details": "We don't detect any of our recommended code minification plugins on your site. While you may be using a different minification solution that's not in our list, using popular and recommended plugins will help ensure optimal performance and compatibility. If you're using a different minification solution, make sure it's properly configured for your needs.",
+            "steps": [
+                "Using a minification plugin to reduce file sizes",
+                "Configure minification for CSS and JavaScript files",
+                "Test your site thoroughly after implementation",
+                "We recommend using plugins like Autoptimize, W3 Total Cache, LiteSpeed Cache, or WP Fastest Cache, just to name a few."
+            ]
+        }
+    },
+    "learn_more": {
+        "description": "Minification removes unnecessary characters from code without changing its functionality, reducing file sizes and improving load times.",
+        "benefits": [
+            "Reduced file sizes for faster loading",
+            "Lower bandwidth usage",
+            "Improved page load times",
+            "Better search engine rankings"
+        ],
+        "recommended_plugins": [
+            {
+                "name": "WP Rocket",
+                "type": "Premium"
+            },
+            {
+                "name": "Autoptimize",
+                "type": "Free"
+            },
+            {
+                "name": "W3 Total Cache",
+                "type": "Free"
+            },
+            {
+                "name": "LiteSpeed Cache ( for LiteSpeed servers)",
+                "type": "Free"
+            }
+        ]
+    }
+}

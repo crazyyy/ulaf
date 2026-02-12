@@ -1,0 +1,44 @@
+/**
+ * Debug/Dry Run styles for Auto Fixture Generator for SportsPress.
+ *
+ * Only loaded when WP_DEBUG and WP_DEBUG_LOG are both enabled.
+ *
+ * @package AFGSP
+ */
+
+/* Submit buttons container */
+.afgsp-submit-buttons {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+/* Red Dry Run button */
+.afgsp-dry-run-btn {
+	background: #dc3232 !important;
+	border-color: #b22222 !important;
+	color: #fff !important;
+	text-shadow: none !important;
+	box-shadow: 0 1px 0 #8b0000 !important;
+}
+
+.afgsp-dry-run-btn:hover,
+.afgsp-dry-run-btn:focus {
+	background: #c82323 !important;
+	border-color: #a01e1e !important;
+	color: #fff !important;
+}
+
+.afgsp-dry-run-btn:active {
+	background: #b22222 !important;
+	border-color: #8b0000 !important;
+	box-shadow: inset 0 2px 5px -3px rgba(0, 0, 0, 0.5) !important;
+}
+
+.afgsp-dry-run-btn:disabled {
+	background: #dc3232 !important;
+	border-color: #b22222 !important;
+	color: rgba(255, 255, 255, 0.5) !important;
+	cursor: not-allowed;
+}

@@ -1,0 +1,29 @@
+{
+	"name": "precisionwp/adminease",
+	"description": "AdminEase – free version",
+	"type": "wordpress-plugin",
+	"version": "1.5.3",
+	"require": {
+		"php": ">=7.4",
+		"enshrined/svg-sanitize": "0.22.0",
+		"ua-parser/uap-php": "^3.4",
+		"ext-json": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"AdminEase\\": "includes/"
+		}
+	},
+	"config": {
+		"autoloader-suffix": "AdminEase",
+		"optimize-autoloader": true
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"@composer dump-autoload --optimize"
+		],
+		"post-update-cmd": [
+			"@composer dump-autoload --optimize"
+		]
+	}
+}

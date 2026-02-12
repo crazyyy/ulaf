@@ -1,0 +1,127 @@
+{
+    "title": "WordPress Security & Protection Plugins",
+    "messages": {
+        "success": {
+            "title": "WordPress Security Available",
+            "details": "Active security protection: {value}",
+            "steps": [
+                "Ensure your security plugin is properly configured",
+                "Review security logs regularly",
+                "Keep the security plugin updated",
+                "Configure firewall settings if available",
+                "Enable two-factor authentication if supported"
+            ]
+        },
+        "info": {
+            "title": "Security Information",
+            "details": "We don't detect any of our recommended security plugins on your site. While you may be using a different security solution that's not in our list, using popular and recommended security plugins will help ensure comprehensive protection and regular updates. If you're using alternative security measures, make sure they cover essential features like firewall protection, malware scanning, and login security.",
+            "steps": [
+                "Review your current security setup to ensure your site is protected.",
+                "Consider evaluating a dedicated security plugin for enhanced protection."
+            ]
+        },
+        "warning": {
+            "title": "Multiple Security Plugins Detected",
+            "details": "Active plugins: {value}. Having multiple security plugins can cause conflicts and slow down your website.",
+            "steps": [
+                "Choose one primary security plugin that best fits your needs",
+                "Deactivate other security plugins to avoid potential conflicts",
+                "Make sure to backup your settings before deactivating plugins",
+                "Configure your chosen security plugin properly"
+            ]
+        }
+    },
+    "learn_more": {
+        "description": "WordPress security plugins provide essential protection against various threats including malware, brute force attacks, and vulnerabilities. They offer features like firewalls, malware scanning, login security, and activity monitoring.",
+        "benefits": [
+            "Real-time threat detection and prevention",
+            "Protection against brute force attacks",
+            "Regular malware scanning and removal",
+            "Security hardening features",
+            "IP blocking and firewall protection",
+            "Two-factor authentication",
+            "Security activity logging and monitoring",
+            "File integrity monitoring"
+        ],
+        "recommended_tools": [
+            {
+                "name": "Wordfence Security",
+                "description": "Comprehensive security solution with endpoint firewall and malware scanner"
+            },
+            {
+                "name": "iThemes Security",
+                "description": "Popular security plugin with extensive hardening features"
+            },
+            {
+                "name": "Sucuri Security",
+                "description": "Professional security platform with website firewall and monitoring"
+            },
+            {
+                "name": "All In One WP Security",
+                "description": "User-friendly security plugin with essential features"
+            },
+            {
+                "name": "MalCare Security",
+                "description": "Intelligent security plugin with automated malware cleaning"
+            },
+            {
+                "name": "BulletProof Security",
+                "description": "Provides comprehensive security protection including firewall, login security, and database backup"
+            },
+            {
+                "name": "Cerber Security",
+                "description": "Offers antispam, malware protection, and advanced security features"
+            },
+            {
+                "name": "Shield Security",
+                "description": "Simple and effective security solution to protect your website from hacks"
+            },
+            {
+                "name": "SecuPress Security",
+                "description": "Helps you scan and clean your website with an easy-to-use interface"
+            },
+            {
+                "name": "WP Hide & Security Enhancer",
+                "description": "Optimizes your WordPress site by hiding core files and paths to improve security"
+            }
+        ],
+        "security_features": [
+            {
+                "category": "Firewall Protection",
+                "features": [
+                    "Web Application Firewall (WAF)",
+                    "IP blocking and country blocking",
+                    "Rate limiting and DDoS protection",
+                    "Bad bot blocking"
+                ]
+            },
+            {
+                "category": "Malware Protection",
+                "features": [
+                    "Regular malware scanning",
+                    "Automatic malware removal",
+                    "File integrity monitoring",
+                    "Core file monitoring"
+                ]
+            },
+            {
+                "category": "Login Security",
+                "features": [
+                    "Two-factor authentication",
+                    "CAPTCHA protection",
+                    "Login attempt limiting",
+                    "Strong password enforcement"
+                ]
+            },
+            {
+                "category": "Monitoring",
+                "features": [
+                    "Real-time threat detection",
+                    "Security audit logging",
+                    "Email notifications",
+                    "Failed login tracking"
+                ]
+            }
+        ]
+    }
+}

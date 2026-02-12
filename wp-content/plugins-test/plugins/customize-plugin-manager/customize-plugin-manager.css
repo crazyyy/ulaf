@@ -1,0 +1,4 @@
+.customize-control-plugin input[type="checkbox"] {
+	float: right;
+	margin: -24px 0 0 8px;
+}

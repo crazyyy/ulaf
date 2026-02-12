@@ -1,0 +1,232 @@
+@use 'sass:color';
+@import "../constants.scss";
+
+.base-table-viewer-structure {
+	margin-top: 1rem;
+
+	#dbg_lv_log-table_processing.dt-processing {
+		position: absolute;
+		color: #0d6efd;
+		border: none;
+		box-shadow: none;
+		background: #fff;
+		height: 100%;
+		min-width: 100%;
+		border-radius: 3px;
+		display: flex !important;
+		align-items: center;
+		justify-content: center;
+		top: 0;
+		left: 0;
+		z-index: 10;
+		margin: 0;
+		padding: 0;
+	}
+
+	#dbg_lv_log-table {
+		border-radius: 5px;
+		border: none;
+		top: 25px;
+		position: relative;
+
+		.dt-button.dropdown-item.buttons-columnVisibility:before {
+			content: '\2713';
+			/* Unicode checkmark */
+			font-size: 14px;
+			margin-right: 8px;
+			visibility: hidden;
+			/* Hidden by default */
+		}
+
+		.dt-button.dropdown-item.buttons-columnVisibility.dt-button-active:before {
+			visibility: visible;
+			/* Show when active */
+		}
+
+		thead {
+			color: #fff;
+			border-radius: 5px 5px 0 0;
+			pointer-events: none;
+
+			tr {
+				vertical-align: top;
+				border: 1px solid $border-color;
+
+				th:nth-child(1) {
+					text-align: left;
+					padding-left: 15px;
+					border-radius: 5px 0 0 0;
+				}
+
+				th {
+					padding-top: 15px;
+					padding-bottom: 15px;
+					border-bottom: 0;
+					background-color: #eaecef;
+					color: rgb(135, 138, 153);
+					font-weight: 500;
+				}
+
+				th:last-child {
+					border-radius: 0 5px 0 0;
+					padding-right: 20px;
+				}
+			}
+		}
+
+		tbody {
+			tr {
+
+				td:nth-child(1) {
+					text-align: left;
+					padding-left: 20px;
+				}
+
+				td:last-child {
+					border-radius: 0 0 5px 0;
+				}
+				td:first-child {
+					border-radius: 0 0 0 5px;
+				}
+
+				td {
+					padding-top: 20px;
+					padding-bottom: 20px;
+					padding-left: 5px !important;
+					padding-right: 5px !important;
+
+					.stack-trace {
+						color: $main-theme-color;
+						text-decoration: none;
+						cursor: pointer;
+						display: block;
+						margin-top: 10px;
+					}
+
+					.dlv-stack-trace {
+						position: relative;
+						width: 100%;
+
+						&>pre {
+							border-radius: 5px;
+							padding: 10px;
+							font-family: monospace;
+							max-height: 400px;
+							overflow-y: auto;
+							box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+							color: #272822;
+							overflow-x: auto;
+							white-space: pre-line;
+							word-break: break-word;
+							width: 100%;
+							max-width: 100%;
+							box-sizing: border-box;
+							overflow-x: scroll;
+							margin-bottom: 0;
+							background-color: #f9f9fe;
+							line-height: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.table-wrapper {
+
+		.right-subheader {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-top: 10px;
+			margin-bottom: -5px;
+
+			.togglers-group {
+				display: flex;
+				gap: 15px;
+				margin-left: 15px;
+
+				.form-switch {
+					padding-left: 10px;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					transition: all 0.2s ease-in-out;
+
+					&:hover {
+						border-radius: 4px;
+					}
+
+					.form-check-label {
+						font-size: 14px;
+						color: #555;
+						font-weight: 500;
+						transition: color 0.2s ease;
+						margin-top: -4px;
+
+						&:hover {
+							color: #333;
+						}
+					}
+
+					input[type="checkbox"].form-check-input {
+						background-repeat: no-repeat;
+						margin: 0px 10px 0 0;
+						transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+						&:hover {
+							transform: scale(1.05);
+							box-shadow: 0 0 4px rgba(13, 110, 253, 0.4);
+						}
+
+						&:before {
+							content: "";
+						}
+					}
+				}
+			}
+
+				.search-input-wrapper {
+					position: relative;
+					display: flex;
+					align-items: center;
+					margin-right: 25px;
+				}
+
+				.search-icon {
+					position: absolute;
+					left: 12px;
+					color: #888;
+					font-size: 0.9em;
+				}
+
+				.search-input {
+					padding-left: 35px;
+					min-width: 200px;
+					border-color: $border-color;
+				}
+			}
+
+
+		.dt-buttons {
+			margin-left: 15px;
+
+			.dropdown-menu {
+				font-size: 14px;
+				margin-left: 5px;
+				margin-top: 4px;
+				border: none;
+				box-shadow: $block-box-shadow;
+			}
+		}
+
+		.pagination {
+			margin-top: 1rem;
+		}
+	}
+
+	.log-filesize-limitation {
+		text-align: center;
+		color: #fa9732;
+	}
+}

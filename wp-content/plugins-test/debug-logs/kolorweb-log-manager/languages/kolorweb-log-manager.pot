@@ -1,0 +1,621 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KolorWeb Log Manager\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-21 16:22+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.8; wp-5.9.1\n"
+"X-Domain: kwlm"
+
+#: libs/class-plugin.php:418
+msgid "Action"
+msgstr ""
+
+#: libs/class-plugin.php:359
+msgid "Actions"
+msgstr ""
+
+#: libs/class-plugin.php:346
+msgid "Add Custom Error"
+msgstr ""
+
+#: libs/class-plugin.php:352
+msgid "Add new"
+msgstr ""
+
+#: libs/class-plugin.php:456
+msgid "and the custom error key followed by a"
+msgstr ""
+
+#: libs/class-plugin.php:395
+msgid "Are you sure you want to delete"
+msgstr ""
+
+#: libs/class-plugin.php:323
+msgid "Back"
+msgstr ""
+
+#: libs/class-plugin.php:350
+msgid "Background"
+msgstr ""
+
+#: libs/class-plugin.php:442
+msgid ""
+"By default the sidebar will be folded when the log viewer is active. To "
+"disable, or toggle this behavior:"
+msgstr ""
+
+#: libs/class-plugin.php:369
+msgid "By Newest"
+msgstr ""
+
+#: libs/class-plugin.php:370
+msgid "By Oldest"
+msgstr ""
+
+#: libs/class-plugin.php:329
+msgid "Cancel"
+msgstr ""
+
+#: libs/class-plugin.php:480
+msgid "Check For New Errors"
+msgstr ""
+
+#: libs/class-plugin.php:387
+msgid "Checking for updates failed."
+msgstr ""
+
+#: libs/class-plugin.php:362 libs/class-plugin.php:488
+msgid "Clear Log"
+msgstr ""
+
+#: libs/class-plugin.php:324
+msgid "Close"
+msgstr ""
+
+#: libs/class-plugin.php:349
+msgid "Color"
+msgstr ""
+
+#: libs/class-plugin.php:431
+msgid "Configure Debug Toggling"
+msgstr ""
+
+#: libs/class-plugin.php:397
+msgid "Custom error could not be deleted"
+msgstr ""
+
+#: libs/class-plugin.php:448
+msgid ""
+"Custom error messages allow you to create custom errors when testing, color "
+"code those errors in the viewer and filter the entries by those errors."
+msgstr ""
+
+#: libs/class-plugin.php:392
+msgid "Custom error successfully added"
+msgstr ""
+
+#: libs/class-plugin.php:396
+msgid "Custom error successfully deleted"
+msgstr ""
+
+#: libs/class-plugin.php:394
+msgid "Custom error successfully updated"
+msgstr ""
+
+#: libs/class-plugin.php:414
+msgid "Custom Errors"
+msgstr ""
+
+#: libs/class-plugin.php:382
+msgid "Debbugging has been"
+msgstr ""
+
+#: libs/class-plugin.php:389
+msgid "Debugging is currently disabled."
+msgstr ""
+
+#: libs/class-plugin.php:388
+msgid ""
+"Debugging is enabled. However, the debug.log file does not exist or was not "
+"found."
+msgstr ""
+
+#: libs/class-plugin.php:328
+msgid "Delete"
+msgstr ""
+
+#: libs/class-plugin.php:330
+msgid "Disable"
+msgstr ""
+
+#: libs/class-plugin.php:319
+msgid "Disabled"
+msgstr ""
+
+#: libs/class-plugin.php:363
+msgid "Download"
+msgstr ""
+
+#: libs/class-plugin.php:494
+msgid "Download Log"
+msgstr ""
+
+#: libs/class-plugin.php:327
+msgid "Edit"
+msgstr ""
+
+#: libs/class-plugin.php:356
+msgid "Edit Custom Error"
+msgstr ""
+
+#: libs/class-plugin.php:410
+msgid "Enable Debug?"
+msgstr ""
+
+#: libs/class-plugin.php:318
+msgid "Enabled"
+msgstr ""
+
+#: libs/class-plugin.php:406
+msgid "entries"
+msgstr ""
+
+#: libs/class-plugin.php:405
+msgid "entry"
+msgstr ""
+
+#: libs/class-plugin.php:348
+msgid "Error Key"
+msgstr ""
+
+#: libs/class-plugin.php:457
+msgid "Example: If you defined a custom error with a key: my-custom-error"
+msgstr ""
+
+#: libs/class-plugin.php:384
+msgid "Failed to clear log file.  You might not have write permission"
+msgstr ""
+
+#: libs/class-plugin.php:353
+msgid "Feature must be configured."
+msgstr ""
+
+#: libs/class-plugin.php:340
+msgid "Filesize"
+msgstr ""
+
+#: libs/class-plugin.php:342
+msgid "Filter Errors by click on this labels..."
+msgstr ""
+
+#: libs/class-plugin.php:441
+msgid "Fold Sidebar"
+msgstr ""
+
+#: libs/class-plugin.php:412
+msgid "Fold sidebar to increase viewing area?"
+msgstr ""
+
+#: libs/class-plugin.php:403
+msgid "For more information visit"
+msgstr ""
+
+#: libs/class-plugin.php:413
+msgid "General"
+msgstr ""
+
+#: libs/class-plugin.php:320
+msgid "Go to Log Viewer"
+msgstr ""
+
+#: libs/class-plugin.php:376
+msgid "Group"
+msgstr ""
+
+#: libs/class-plugin.php:471
+msgid "Group View"
+msgstr ""
+
+#: libs/class-plugin.php:417
+msgid "Help"
+msgstr ""
+
+#: libs/class-plugin.php:334
+msgid "Hide details"
+msgstr ""
+
+#: libs/class-plugin.php:446
+msgid "How to add custom errors?"
+msgstr ""
+
+#: libs/class-plugin.php:479
+msgid "How to check for new log entries?"
+msgstr ""
+
+#: libs/class-plugin.php:487
+msgid "How to clear the log file?"
+msgstr ""
+
+#: libs/class-plugin.php:430
+msgid "How to configure debug toggling?"
+msgstr ""
+
+#: libs/class-plugin.php:493
+msgid "How to download the log file?"
+msgstr ""
+
+#: libs/class-plugin.php:391
+msgid "How to Enable Debugging?"
+msgstr ""
+
+#: libs/class-plugin.php:440
+msgid "How to fold sidebar to increase viewing space?"
+msgstr ""
+
+#: libs/class-plugin.php:461
+msgid "How to sort log entries?"
+msgstr ""
+
+#: libs/class-plugin.php:468
+msgid "How to switch between group and list views?"
+msgstr ""
+
+#: libs/class-plugin.php:423
+msgid "How to toggle debugging status?"
+msgstr ""
+
+#: libs/class-plugin.php:454
+msgid "How to Use Custom Errors"
+msgstr ""
+
+#: libs/class-plugin.php:453
+msgid "How to use custom errors?"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://kolorweb.it"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://wordpress.org/plugins/kolorweb-log-manager/"
+msgstr ""
+
+#: libs/class-plugin.php:489
+msgid ""
+"If file permissions allow, the debug.log file will be truncated. If that "
+"fails, the file will be deleted. If the file cannot be truncated or deleted, "
+"an error will be displayed."
+msgstr ""
+
+#: libs/class-plugin.php:433
+msgid ""
+"If toggle button does not appear in the settings means that your wp-config."
+"php is not writable or not found in the default WordPress configuration path."
+msgstr ""
+
+#: libs/class-plugin.php:434
+msgid ""
+"If wp-config is not writable, you will have to manually set the values for "
+"DEBUG constants and you will not be able to use the one-click debug toggle "
+"function. The plugin will continue to work without problems, but without the "
+"magic of this feature."
+msgstr ""
+
+#: libs/class-plugin.php:427
+msgid ""
+"If you do not see the debug toggle button, it means that the automatic "
+"WordPress debug activation procedure included in this Plugin has not been "
+"successful and you will have to proceed manually to edit the wp-config.php"
+msgstr ""
+
+#: libs/class-plugin.php:483
+msgid "If you still want to manually check for new errors:"
+msgstr ""
+
+#: libs/class-plugin.php:426
+msgid ""
+"In the sidebar, click on \"Settings\", then click on the slider to "
+"enable/disable debugging"
+msgstr ""
+
+#: libs/class-plugin.php:443
+msgid ""
+"In the sidebar, click on \"Settings\", then click on the slider to "
+"enable/disable sidebar folding"
+msgstr ""
+
+#: libs/class-plugin.php:464
+msgid "In the sidebar, click on the A-Z icon."
+msgstr ""
+
+#: libs/class-plugin.php:490
+msgid "In the sidebar, click on the clear icon under \"actions\"."
+msgstr ""
+
+#: libs/class-plugin.php:496
+msgid "In the sidebar, click on the download icon under \"actions\"."
+msgstr ""
+
+#: libs/class-plugin.php:475
+msgid "In the sidebar, click on the group icon."
+msgstr ""
+
+#: libs/class-plugin.php:476
+msgid "In the sidebar, click on the list icon."
+msgstr ""
+
+#: libs/class-plugin.php:484
+msgid "In the sidebar, click on the refresh icon under \"actions\"."
+msgstr ""
+
+#: libs/class-plugin.php:465
+msgid "In the sidebar, click on the Z-A icon."
+msgstr ""
+
+#: libs/class-plugin.php:458
+msgid "In your code:"
+msgstr ""
+
+#. Name of the plugin
+msgid "KolorWeb Log Manager: cleaver debugging management"
+msgstr ""
+
+#: libs/class-plugin.php:347
+msgid "Label"
+msgstr ""
+
+#: libs/class-plugin.php:339
+msgid "Last Modified"
+msgstr ""
+
+#: libs/class-plugin.php:419
+msgid "Learn more here..."
+msgstr ""
+
+#: libs/class-plugin.php:341
+msgid "Legend"
+msgstr ""
+
+#: libs/class-plugin.php:333
+msgid "Line:"
+msgstr ""
+
+#: libs/class-plugin.php:377
+msgid "List"
+msgstr ""
+
+#: libs/class-plugin.php:473
+msgid "List View"
+msgstr ""
+
+#: libs/class-plugin.php:317
+msgid "Loading entries ..."
+msgstr ""
+
+#: libs/class-plugin.php:344
+msgid "Loading Widget Data ..."
+msgstr ""
+
+#: libs/class-plugin.php:407
+msgid "Log Entries"
+msgstr ""
+
+#: libs/class-plugin.php:463
+msgid "Log entries can be sorted in descending or ascending order."
+msgstr ""
+
+#: libs/class-plugin.php:383
+msgid "Log file successfully cleared"
+msgstr ""
+
+#: libs/class-plugin.php:399
+msgid "Log Limit was updated"
+msgstr ""
+
+#: libs/class-plugin.php:447
+msgid "Manage Custom Errors"
+msgstr ""
+
+#: libs/class-plugin.php:335
+msgid "More details"
+msgstr ""
+
+#: libs/class-plugin.php:351
+msgid "No custom error messages defined."
+msgstr ""
+
+#: libs/class-plugin.php:322
+msgid "No entries found."
+msgstr ""
+
+#: libs/class-plugin.php:386
+msgid "No new entries found"
+msgstr ""
+
+#: libs/class-plugin.php:343
+msgid "Other"
+msgstr ""
+
+#: libs/class-plugin.php:393
+msgid "Please complete all required fields"
+msgstr ""
+
+#: libs/class-plugin.php:398
+msgid "Please insert only integer numbers values."
+msgstr ""
+
+#: libs/class-plugin.php:381
+msgid "Plugin could not be loaded.  Please try again."
+msgstr ""
+
+#: libs/class-plugin.php:361
+msgid "Refresh"
+msgstr ""
+
+#: libs/class-plugin.php:437
+msgid "Refresh the page in the browser (reload page)"
+msgstr ""
+
+#: libs/class-plugin.php:325
+msgid "Save"
+msgstr ""
+
+#: libs/class-plugin.php:336
+msgid "Search for ..."
+msgstr ""
+
+#: libs/class-plugin.php:337
+msgid "Searching for"
+msgstr ""
+
+#: libs/class-plugin.php:482
+msgid ""
+"seconds and will update the view when new errors are found. There is no need "
+"to refresh the page."
+msgstr ""
+
+#: libs/class-plugin.php:338
+msgid "See help"
+msgstr ""
+
+#: libs/class-plugin.php:411
+msgid ""
+"Sets the maximum number of lines in the debug.log file to consider. Leave "
+"the value at zero to get them all."
+msgstr ""
+
+#: libs/class-plugin.php:409
+msgid "Settings"
+msgstr ""
+
+#: libs/class-plugin.php:321
+msgid "Simulating"
+msgstr ""
+
+#: libs/class-plugin.php:390
+msgid "Sorry, we could not detect if debugging is enabled or disabled."
+msgstr ""
+
+#: libs/class-plugin.php:367
+msgid "Sort"
+msgstr ""
+
+#: libs/class-plugin.php:462
+msgid "Sort Entries"
+msgstr ""
+
+#: libs/class-plugin.php:420
+msgid "Step"
+msgstr ""
+
+#: libs/class-plugin.php:469
+msgid "Switch Between Group and List Views"
+msgstr ""
+
+#: libs/class-plugin.php:481
+msgid "The plugin automatically check for new log errors every"
+msgstr ""
+
+#: libs/class-plugin.php:472
+msgid ""
+"This view groups all similar entries and shows you just one entry with the "
+"latest timestamp for each error. It makes it much easier to analyze the log "
+"entries."
+msgstr ""
+
+#: libs/class-plugin.php:474
+msgid ""
+"This view lists every log entry which is similar to the standard log view."
+msgstr ""
+
+#: libs/class-plugin.php:449
+msgid ""
+"To add, edit or remove custom errors go to the \"Settings\" pane and click "
+"on the \"Custom Errors\" tab"
+msgstr ""
+
+#: libs/class-plugin.php:436
+msgid ""
+"To manually disable WordPress debugging you can paste these lines of code "
+"into the wp-config.php file"
+msgstr ""
+
+#: libs/class-plugin.php:435
+msgid ""
+"To manually enable WordPress debugging you can paste these lines of code "
+"into the wp-config.php file"
+msgstr ""
+
+#: libs/class-plugin.php:402
+msgid "To turn on debugging, add the following to your wp-config.php file."
+msgstr ""
+
+#: libs/class-plugin.php:331
+msgid "Today"
+msgstr ""
+
+#: libs/class-plugin.php:424
+msgid "Toggle Debugging"
+msgstr ""
+
+#: libs/class-plugin.php:332
+msgid "Type:"
+msgstr ""
+
+#: libs/class-plugin.php:326
+msgid "Update"
+msgstr ""
+
+#: libs/class-plugin.php:374
+msgid "View as"
+msgstr ""
+
+#: libs/class-plugin.php:385
+msgid "Viewer updated with new entries"
+msgstr ""
+
+#. Author of the plugin
+msgid "Vincenzo Casu"
+msgstr ""
+
+#: libs/class-plugin.php:425
+msgid "When configured, you can enable/disable WP_DEBUG with just one click."
+msgstr ""
+
+#: libs/class-plugin.php:432
+msgid ""
+"When the plugin is activated, the system tries to automatically set all the "
+"DEBUG constants in your wp-config.php"
+msgstr ""
+
+#: libs/class-plugin.php:495
+msgid ""
+"When you click to download the log view, a smart log will be downloaded.  "
+"The smart log contains a unique entry for each error with the latest "
+"timestamp.  This helps make it much easier to review and can considerably "
+"reduce filesize."
+msgstr ""
+
+#: libs/class-plugin.php:455
+msgid ""
+"When you write an error to the log, you have to start the error message with "
+"a"
+msgstr ""
+
+#. Description of the plugin
+msgid "WordPress Debug log Manager"
+msgstr ""
+
+#: libs/class-plugin.php:470
+msgid "You can switch between Group and List views."
+msgstr ""

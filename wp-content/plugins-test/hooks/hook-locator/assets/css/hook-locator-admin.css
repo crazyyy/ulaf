@@ -1,0 +1,767 @@
+/**
+ * Hook Locator Admin Styles
+ *
+ * Modern, clean styling for the Hook Locator plugin admin interface.
+ * Follows WordPress design principles with enhanced visual hierarchy.
+ *
+ * @package HookLocator
+ * @since   2.1.0
+ */
+
+/* ==== ROOT VARIABLES FOR COLORS, FONTS, SIZES, SPACING ==== */
+:root {
+	--color-primary: #3b82f6;
+	--color-secondary: #667eea;
+	--color-light: #3c5de942;
+	--color-black: #000;
+	--color-gray: #676767;
+	--color-white: #ffffff;
+	--color-border: #e2e8f0;
+	--color-shadow: rgba(0, 0, 0, 0.05);
+	--color-accent: #f0f9ff;
+	--color-error: #fef2f2;
+	--color-error-border: #fecaca;
+
+	/* Text & fonts */
+	--font-family: "SF Mono", "Monaco", "Inconsolata", "Roboto Mono", monospace;
+	--font-size-default: 14px;
+	--font-size-heading: 28px;
+	--font-size-subheading: 18px;
+	--font-size-small: 12px;
+	--font-weight-normal: 400;
+	--font-weight-semibold: 600;
+	--font-weight-bold: 700;
+
+	/* Spacing */
+	--spacing-small: 8px;
+	--spacing-medium: 16px;
+	--spacing-large: 24px;
+	--spacing-xlarge: 30px;
+	--padding-standard: 20px;
+	--border-radius: 12px;
+	--border-radius-small: 6px;
+}
+
+#wpcontent {
+	background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+/* ==== GLOBAL CONTAINER ==== */
+.hook-locator-wrap {
+	max-width: 1200px;
+	margin: 20px auto;
+	padding: 0 20px;
+}
+
+/* ==== HEADER STYLES ==== */
+.hook-locator-header {
+	margin-bottom: var(--spacing-large);
+	text-align: center;
+	padding: var(--padding-standard) 0;
+}
+
+.hook-locator-title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	font-size: var(--font-size-heading);
+	font-weight: var(--font-weight-semibold);
+	color: #1e293b;
+	/* Dark slate */
+	margin: 0 0 8px 0;
+	text-shadow: 0 1px 2px var(--color-shadow);
+}
+
+.hook-locator-title .dashicons {
+	font-size: 22px;
+	color: var(--color-primary);
+}
+
+.hook-locator-subtitle {
+	font-size: 16px;
+	color: #64748b;
+	/* Grayish */
+	margin: 0;
+	font-weight: var(--font-weight-normal);
+}
+
+/* ==== CARD STYLES ==== */
+.hook-locator-card {
+	background: var(--color-white);
+	border: 1px solid var(--color-border);
+	border-radius: var(--border-radius);
+	padding: 28px;
+	margin-bottom: var(--spacing-large);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+	transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+/* Title in cards */
+.hook-locator-search-card .hook-locator-card-title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 1.5em;
+	padding-bottom: 45px;
+	margin-bottom: 45px;
+	font-family: "Playfair Display", serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #05226aab;
+	position: relative;
+}
+
+.hook-locator-card-title .hook-locator-logo-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hook-locator-search-card .hook-locator-card-title:before {
+	position: absolute;
+	left: 0;
+	bottom: 20px;
+	width: 60%;
+	left: 50%;
+	margin-left: -30%;
+	height: 1px;
+	content: "";
+	background-color: #667eea40;
+	z-index: 4;
+}
+
+.hook-locator-search-card .hook-locator-card-title:after {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	left: 50%;
+	margin-left: -20px;
+	bottom: 0px;
+	content: '\00a7';
+	font-size: 30px;
+	line-height: 40px;
+	color: #667eea40;
+	font-weight: 400;
+	z-index: 5;
+	display: block;
+	background-color: var(--color-white);
+}
+
+
+.hook-locator-card-title .dashicons {
+	font-size: 22px;
+	color: var(--color-primary);
+}
+
+/* ==== SEARCH FORM STYLES ==== */
+.hook-locator-search-card {
+	background: var(--color-white);
+	color: var(--color-black);
+	border: none;
+}
+
+.hook-locator-search-card .hook-locator-card-title .dashicons {
+	color: var(--color-secondary);
+}
+
+.hook-locator-search-card .dashicons {
+	color: var(--color-accent);
+}
+
+.hook-locator-search-card .dashicons-update-alt {
+	color: var(--color-secondary);
+}
+
+.hook-locator-form-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 24px;
+	margin-bottom: var(--spacing-large);
+}
+
+.hook-locator-form-field {
+	display: flex;
+	flex-direction: column;
+}
+
+.hook-locator-label {
+	font-size: var(--font-size-subheading);
+	color: var(--color-black);
+	margin-bottom: var(--spacing-small);
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.hook-locator-form-row .hook-locator-select {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: url('data:image/svg+xml;utf8,<svg fill="%23333" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center/16px 16px;
+}
+
+.hook-locator-form-row .hook-locator-input,
+.hook-locator-form-row .hook-locator-select {
+	padding: 5px 12px;
+	border: 2px solid var(--color-light);
+	border-radius: var(--border-radius-small);
+	font-size: 15px;
+	background-color: rgba(255, 255, 255, 0.95);
+	color: #1e293b;
+	transition: all 0.2s ease;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hook-locator-form-row .hook-locator-input:focus,
+.hook-locator-form-row .hook-locator-select:focus {
+	border-color: var(--color-secondary);
+	background-color: var(--color-white);
+	box-shadow: 0 0 0 1px var(--color-secondary);
+	outline: none;
+}
+
+.hook-locator-input::placeholder {
+	color: #64748b;
+	opacity: 0.8;
+}
+
+.hook-locator-field-description {
+	font-size: 12px;
+	color: var(--color-gray);
+	margin-top: 6px;
+}
+
+.hook-locator-form-actions {
+	display: flex;
+	justify-content: center;
+}
+
+.button.hook-locator-search-btn {
+	font-size: 14px;
+	border: 1px solid transparent;
+	border-radius: var(--border-radius-small);
+	transition: all 0.2s ease;
+	padding: 5px 30px !important;
+	background-color: var(--color-secondary);
+	background-blend-mode: multiply, multiply;
+	color: var(--color-white);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
+
+.button.hook-locator-search-btn:hover,
+.button.hook-locator-search-btn:focus {
+	background: var(--color-accent);
+	color: var(--color-secondary);
+	border-color: var(--color-secondary)
+}
+
+.button.hook-locator-search-btn:focus .dashicons,
+.button.hook-locator-search-btn:hover .dashicons {
+	color: var(--color-secondary);
+}
+
+/* Icons inside buttons */
+.hook-locator-search-btn .dashicons {
+	font-size: 18px;
+}
+
+/* ==== RESULTS & NO RESULTS ==== */
+.hook-locator-results-summary {
+	margin-bottom: 20px;
+	padding: 16px;
+	background: var(--color-accent);
+	border: 1px solid #bae6fd;
+	border-radius: 8px;
+}
+
+.hook-locator-results-summary p {
+	margin: 0;
+	font-size: 15px;
+	color: #0c4a6e;
+}
+
+.hook-locator-no-results {
+	text-align: center;
+	padding: 60px 20px;
+	color: #64748b;
+}
+
+.hook-locator-no-results-icon {
+	font-size: 64px;
+	color: #cbd5e1;
+	margin-bottom: 20px;
+}
+
+.hook-locator-no-results h3 {
+	font-size: 22px;
+	color: #334155;
+	margin: 0 0 12px 0;
+}
+
+.hook-locator-no-results p {
+	font-size: 16px;
+	margin: 0 0 16px 0;
+}
+
+/* Results table styles */
+.hook-locator-results-table-wrapper {
+	overflow-x: auto;
+	border-radius: var(--border-radius);
+	border: 1px solid var(--color-border);
+	background: var(--color-white);
+}
+
+.hook-locator-results-table-wrapper .tablenav {
+	padding: 10px 16px;
+}
+
+.wp-list-table.hook_results {
+	border: none;
+}
+
+.wp-list-table.hook_results th {
+	background: var(--color-accent);
+	border-bottom: 2px solid var(--color-border);
+	font-weight: var(--font-weight-semibold);
+	font-size: 13px;
+	color: #374151;
+	padding: 16px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.wp-list-table.hook_results td {
+	padding: 16px;
+	border-bottom: 1px solid #f1f5f9;
+	vertical-align: middle;
+}
+
+.wp-list-table.hook_results tbody tr:nth-child(odd) {
+	background: #bac7ff42;
+}
+
+.wp-list-table.hook_results tbody tr:last-child td {
+	border-bottom: none;
+}
+
+.wp-list-table.hook_results tbody tr .hook-locator-detail-btn {
+	opacity: .8;
+}
+
+.wp-list-table.hook_results tbody tr:hover .hook-locator-detail-btn {
+	opacity: 1;
+}
+
+/* ==== FILE INFO & BADGES === */
+.hook-locator-file-info {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.hook-locator-file-info .dashicons {
+	color: #6b7280;
+	font-size: 16px;
+}
+
+.hook-locator-file-path {
+	font-family: var(--font-family);
+	font-size: 12px;
+	background: #f3f4f6;
+	padding: 4px 8px;
+	border-radius: 4px;
+	color: #374151;
+	max-width: 300px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	transition: all 0.8s ease-in-out;
+}
+
+/* Badge styles for hook types */
+.hook-locator-type-badge {
+	display: inline-block;
+	padding: 4px 12px;
+	border-radius: 20px;
+	font-size: 11px;
+	letter-spacing: 0.5px;
+}
+
+.hook-locator-type-add-action {
+	background: #dcfce7;
+	color: #166534;
+}
+
+.hook-locator-type-add-filter {
+	background: #dbeafe;
+	color: #1e40af;
+}
+
+.hook-locator-type-do-action {
+	background: #fef3c7;
+	color: #92400e;
+}
+
+.hook-locator-type-apply-filters {
+	background: #fce7f3;
+	color: #be185d;
+}
+
+.hook-locator-type-remove-action,
+.hook-locator-type-remove-filter {
+	background: #fee2e2;
+	color: #dc2626;
+}
+
+.hook-locator-type-has-action,
+.hook-locator-type-has-filter {
+	background: #f3e8ff;
+	color: #7c3aed;
+}
+
+/* ==== CODE SNIPPET STYLE ==== */
+.hook-locator-file-path,
+.hook-locator-code-snippet {
+	font-family: var(--font-family);
+	font-size: var(--font-size-small);
+	background: var(--color-accent);
+	padding: 8px 12px;
+	border-radius: var(--border-radius-small);
+	color: #475569;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	display: block;
+	max-width: 400px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.hook-locator-file-path:hover,
+.hook-locator-code-snippet:hover {
+	background: #e2e8f0;
+	color: #334155;
+}
+
+/* ==== BUTTONS & HEADERS ==== */
+.hook-locator-detail-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 8px 14px;
+	background: var(--color-secondary);
+	color: var(--color-white);
+	border: none;
+	border-radius: var(--border-radius-small);
+	font-size: 12px;
+	font-weight: var(--font-weight-semibold);
+	transition: all 0.2s ease;
+}
+
+.hook-locator-detail-btn:hover,
+.hook-locator-detail-btn:focus {
+	background: #2563eb;
+	box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+	transform: translateY(-1px);
+}
+
+.hook-locator-detail-btn .dashicons-visibility {
+	vertical-align: sub;
+}
+
+/* ==== DETAIL PAGE ==== */
+.hook-locator-detail-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: var(--spacing-large);
+	padding: 0 0 16px 0;
+	border-bottom: 2px solid #f1f5f9;
+}
+
+.hook-locator-detail-title {
+	line-height: 1.5em;
+	font-family: "Playfair Display", serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 22px;
+	font-weight: var(--font-weight-normal);
+	color: #05226aab;
+	padding: 0;
+	margin: 0;
+}
+
+.hook-locator-back-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 10px 16px;
+	background: var(--color-accent);
+	color: #475569;
+	border: 1px solid #e2e8f0;
+	border-radius: var(--border-radius-small);
+	font-weight: var(--font-weight-semibold);
+}
+
+.hook-locator-back-btn:hover,
+.hook-locator-back-btn:focus {
+	background: #f1f5f9;
+	color: #334155;
+	border-color: #cbd5e1;
+}
+
+/* File info grid layout */
+.hook-locator-file-info-section {
+	margin-bottom: 32px;
+}
+
+.hook-locator-file-info-section h3 {
+	font-size: 18px;
+	font-weight: var(--font-weight-semibold);
+	color: #1e293b;
+	margin-bottom: 16px;
+}
+
+.hook-locator-info-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	gap: 30px;
+}
+
+.hook-locator-info-item {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.hook-locator-info-label {
+	font-size: 13px;
+	font-weight: var(--font-weight-semibold);
+	color: #64748b;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.hook-locator-info-value {
+	font-size: 15px;
+	color: #1e293b;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.hook-locator-info-value code {
+	background: #c9d3ff;
+	color: var(--color-black);
+}
+
+.hook-locator-info-value .dashicons {
+	color: #05226aab;
+}
+
+/* Code display styles (full report) */
+.hook-locator-code-section {
+	margin-bottom: 32px;
+}
+
+.hook-locator-code-section h3 {
+	font-size: 18px;
+	font-weight: var(--font-weight-semibold);
+	color: #1e293b;
+	margin-bottom: 16px;
+}
+
+.hook-locator-code-wrapper {
+	border: 1px solid var(--color-border);
+	border-radius: var(--border-radius);
+	overflow: hidden;
+	background: #fafbfc;
+}
+
+.hook-locator-code-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px 16px;
+	background: var(--color-accent);
+	border-bottom: 1px solid var(--color-border);
+}
+
+.hook-locator-code-info {
+	font-size: 13px;
+	color: #64748b;
+	font-weight: var(--font-weight-medium);
+}
+
+.hook-locator-tips-list {
+	list-style: inside;
+	padding-left: 20px;
+}
+
+.hook-locator-analysis-item .dashicons {
+	vertical-align: bottom;
+	color: #05226aab;
+}
+
+/* Buttons in detailed view */
+.hook-locator-detail-card .button.hook-locator-copy-code,
+.column-detail .button.hook-locator-detail-btn,
+.hook-locator-detail-card .button {
+	padding: 2px 10px;
+	background-color: var(--color-secondary);
+	color: var(--color-white);
+	font-weight: var(--font-weight-normal);
+	font-size: 15px;
+	border: 1px solid transparent;
+	border-radius: var(--border-radius-small);
+	transition: all 0.2s ease;
+}
+
+.hook-locator-detail-card .button {
+	display: flex;
+	align-items: center;
+}
+
+.column-detail .button:hover,
+.hook-locator-detail-card .button:hover {
+	background-color: var(--color-white);
+	border-color: var(--color-secondary);
+	color: var(--color-secondary);
+}
+
+/* Copy code hover */
+.hook-locator-copy-code:hover {
+	background: #f9fafb;
+	border-color: #9ca3af;
+}
+
+/* Code content container (with syntax) */
+.hook-locator-code-display {
+	margin: 0;
+	padding: 0;
+	background: var(--color-white);
+	font-family: var(--font-family);
+	font-size: var(--font-size-small);
+	overflow-x: auto;
+	overflow-y: auto;
+}
+
+.hook-locator-context-line {
+	display: inline-block;
+	width: 100%;
+	padding: 0;
+	border-left: 4px solid transparent;
+}
+
+.hook-locator-target-line {
+	display: inline-block;
+	width: 100%;
+	padding: 0;
+	background: #dcfce7;
+	border-left: 4px solid #00852e;
+}
+
+.hook-locator-line-number {
+	display: inline-block;
+	padding: 8px 12px;
+	color: var(--color-gray);
+	text-align: right;
+	user-select: none;
+	font-weight: var(--font-weight-normal);
+}
+
+.hook-locator-target-line .hook-locator-line-number {
+	background: #84ffae;
+	color: #374151;
+	font-weight: var(--font-weight-normal);
+}
+
+/* line content */
+.hook-locator-line-content {
+	padding: 8px 16px;
+	color: #374151;
+	word-break: break-all;
+	white-space: pre-wrap;
+}
+
+/* highlight current line */
+.hook-locator-target-line .hook-locator-line-content {
+	color: #374151;
+	font-weight: var(--font-weight-normal);
+}
+
+/* Hover effects for code lines */
+.hook-locator-context-line:hover {
+	background: #eaf2ff;
+	border-left-color: #9ebbf6;
+}
+
+.hook-locator-context-line:hover .hook-locator-line-number {
+	background: #cfdcfeb0;
+}
+
+/* ==== RESPONSIVE STYLES ==== */
+@media(max-width: 1024px) {
+	.hook-locator-wrap {
+		max-width: 100%;
+		padding: 0 15px;
+	}
+
+	.hook-locator-form-row {
+		grid-template-columns: 1fr;
+		gap: 16px;
+	}
+
+	.hook-locator-info-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* Desktop only styles (your existing CSS) are untouched */
+@media(max-width: 768px) {
+	/* Existing mobile-specific styles */
+}
+
+@media(max-width: 600px) {
+	/* Your existing mobile-specific styles for padding, font size, etc. */
+}
+
+/* ==== FOCUS & REDUCED MOTION ==== */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+	}
+}
+
+@media (prefers-contrast: high) {
+	.hook-locator-card {
+		border-color: #000;
+	}
+
+	.hook-locator-code-snippet {
+		border: 1px solid #000;
+	}
+
+	.hook-locator-target-line {
+		background: #ffff00;
+		border-left-color: #000;
+	}
+}
+
+/* ==== Focus styles for accessibility ==== */
+.hook-locator-input:focus,
+.hook-locator-select:focus,
+.button:focus,
+.hook-locator-code-snippet:focus {
+	outline: 2px solid #3b82f6;
+	outline-offset: 2px;
+}

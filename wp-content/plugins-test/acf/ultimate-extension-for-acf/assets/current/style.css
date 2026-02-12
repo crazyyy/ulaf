@@ -1,0 +1,444 @@
+/**
+ * Ultimate Extension for ACF - Current ACF v6.5+ Styles
+ * 
+ * This stylesheet provides styling for the Ultimate Extension for ACF plugin
+ * when used with ACF versions 6.5 and newer. It includes styles for:
+ * 
+ * - Admin settings page layout and styling
+ * - Image preview table and form elements
+ * - Flexible content layout previews
+ * - Hover effects and popup previews
+ * - Responsive design for various screen sizes
+ * - ACF 6.5+ specific interface enhancements
+ * 
+ * @package Ultimate_Extension_for_ACF
+ * @subpackage Current
+ * @since 1.0.0
+ * @author Ultimate Agency
+ */
+
+/* ==========================================================================
+   Admin Settings Page Styles
+   
+   Styles for the main admin interface where users can manage
+   preview images for ACF flexible content layouts.
+   ========================================================================== */
+
+.image-preview-settings-wrap {
+    margin: 20px 20px 20px 0;
+}
+
+.image-preview-settings-title {
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #23282d;
+}
+
+/* ==========================================================================
+   Table Styles - Using WordPress Default Classes
+   
+   Leverages WordPress admin table styling for consistency
+   with the rest of the admin interface.
+   ========================================================================== */
+
+.image-preview-settings {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.image-preview-settings thead th {
+    background: #f1f1f1;
+    color: #23282d;
+    font-weight: 600;
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: 1px solid #ccd0d4;
+    position: relative;
+}
+
+.image-preview-settings tbody tr {
+    background: #fff;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.image-preview-settings tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.image-preview-settings tbody tr:hover {
+    background-color: #f0f6fc;
+}
+
+.image-preview-settings tbody td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #f1f1f1;
+    vertical-align: middle;
+}
+
+/* ==========================================================================
+   Column Specific Styles
+   
+   Individual column styling for the settings table including
+   row numbers, titles, images, and action buttons.
+   ========================================================================== */
+
+.image-preview-settings-wrap .column-number {
+    width: 60px;
+    text-align: center;
+}
+
+.image-preview-settings-wrap .column-number .number {
+    background: #0073aa;
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+.image-preview-settings-wrap .column-title .flex-component-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #23282d;
+}
+
+.image-preview-settings-wrap .column-image .flex-component-image {
+    position: relative;
+    text-align: center;
+}
+
+.image-preview-settings-wrap .image-preview-image {
+	width: 160px;
+	height: auto;
+	object-fit: cover;
+	border-radius: 4px;
+	border: 1px solid #ddd;
+	/* 
+	 * Note: Thumbnail display size is 80px, but optimal upload width is 420px
+	 * This ensures crisp display on high-DPI screens while maintaining
+	 * reasonable file sizes for web use.
+	 */
+}
+
+.image-preview-settings-wrap .image-preview-image:hover {
+    border-color: #0073aa;
+    box-shadow: 0 2px 8px rgba(0, 115, 170, 0.2);
+}
+
+.image-preview-settings-wrap .column-update .acf-icon-update {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-preview-settings-wrap .column-update {
+    max-width: 100px;
+    width: 100px;
+    text-align: center;
+}
+
+.image-preview-settings-wrap .column-preview-image {
+    text-align: center;
+}
+
+.image-preview-settings-wrap .acf-icon-update .acf-modal-upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 38px;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    position: relative;
+    text-align: center;
+    line-height: 28px;
+}
+
+.image-preview-settings-wrap .acf-icon-update .acf-modal-upload:hover {
+    background: #0073aa;
+    color: #ffffff;
+    border-color: #0073aa;
+}
+
+.image-preview-settings-wrap .acf-icon-update .acf-modal-upload::before {
+    content: "\f464";
+    font-family: "dashicons";
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1;
+    transition: transform 0.3s ease;
+}
+
+.image-preview-settings-wrap .acf-icon-update .acf-modal-upload:hover::before {
+    transform: scale(1.3);
+}
+
+/* ==========================================================================
+   No Image State
+   
+   Styling for when no preview image is set, providing
+   clear visual feedback to the user.
+   ========================================================================== */
+
+.image-preview-settings-wrap .no-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    color: #666;
+    font-style: italic;
+    font-size: 13px;
+    padding: 8px 12px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+/* ==========================================================================
+   Responsive Design
+   
+   Mobile-first responsive design ensuring the interface
+   works well on all device sizes and screen resolutions.
+   ========================================================================== */
+
+/* 
+ * Tablet Breakpoint - Adjusts layout for medium screens
+ * Optimizes spacing and typography for tablet devices
+ */
+@media (max-width: 768px) {
+	.image-preview-settings-wrap .image-preview-settings-title {
+		padding: 15px 20px;
+		font-size: 20px;
+	}
+
+    .image-preview-settings-wrap .image-preview-settings {
+        font-size: 14px;
+    }
+
+    .image-preview-settings-wrap .image-preview-settings thead th,
+    .image-preview-settings-wrap .image-preview-settings tbody td {
+        padding: 10px 8px;
+    }
+
+    .image-preview-settings-wrap .column-number {
+        width: 50px;
+    }
+
+    .image-preview-settings-wrap .column-number .number {
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .image-preview-settings-wrap .image-preview-image {
+        width: 200px;
+        height: auto;
+        /* Note: Responsive thumbnail size, optimal upload width remains 420px */
+    }
+}
+
+/* 
+ * Mobile Breakpoint - Optimizes layout for small screens
+ * Reduces margins and font sizes for mobile devices
+ */
+@media (max-width: 480px) {
+	.image-preview-settings-wrap {
+		margin: 10px 10px 10px 0;
+	}
+
+    .image-preview-settings-wrap .image-preview-settings-title {
+        padding: 12px 15px;
+        font-size: 18px;
+    }
+
+    .image-preview-settings-wrap .image-preview-settings thead th,
+    .image-preview-settings-wrap .image-preview-settings tbody td {
+        padding: 8px 6px;
+        font-size: 13px;
+    }
+
+    .image-preview-settings-wrap .column-title .flex-component-title {
+        font-size: 14px;
+    }
+
+    .image-preview-settings-wrap .image-preview-image {
+        width: 40px;
+        height: 40px;
+        /* Note: Mobile thumbnail size, optimal upload width remains 420px */
+    }
+}
+
+/* ==========================================================================
+   ACF Flexible Content Preview Styles
+   
+   Styles for the flexible content field interface where
+   layout handles display preview images and hover effects.
+   ========================================================================== */
+
+/* ==========================================================================
+   Layout Handle Preview Images
+   
+   Styling for thumbnail images displayed in flexible
+   content layout handles for better visual identification.
+   ========================================================================== */
+.acf-fields.-top > .acf-field-flexible-content > .acf-input > .acf-flexible-content > .values > .layout > .acf-fc-layout-handle {
+    position: relative;
+}
+
+.acf-fc-layout-handle .thumbnail {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.acf-fc-layout-handle .thumbnail img {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 100%;
+    height: auto;
+    max-width: 85px;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    animation: gentleGlow 2s ease-in-out;
+}
+
+.acf-fc-layout-handle .thumbnail img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-color: #0073aa;
+}
+
+.acf-fc-layout-handle .layout-title {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   ACF 6.5+ Specific Styles
+   
+   Enhanced styling specifically for ACF version 6.5 and newer,
+   taking advantage of modern interface improvements.
+   ========================================================================== */
+.acf-field-flexible-content .acf-actions.acf-fc-top-actions .acf-fc-expand-all {
+  display: none;
+}
+
+.acf-field-flexible-content .acf-actions.acf-fc-top-actions .acf-fc-collapse-all {
+  display: none;
+}
+
+.acf-field-flexible-content .acf-actions.acf-fc-top-actions .acf-separator {
+  display: none;
+}
+
+.acf-field-flexible-content .acf-fc-layout-handle {
+    position: relative;
+    padding: 8px 12px;
+}
+
+.acf-field-flexible-content .acf-fc-layout-handle .thumbnail {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+.acf-field-flexible-content .acf-fc-layout-handle .thumbnail img {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 85px;
+    height: auto;
+    max-width: 85px;
+    object-fit: cover;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+   Optimized Animations
+   
+   Consolidated keyframe animations for better performance
+   and smoother user experience across all interactions.
+   ========================================================================== */
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes gentleGlow {
+    0%, 100% {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        box-shadow: 0 1px 3px rgba(0, 115, 170, 0.2);
+    }
+}
+
+/* ==========================================================================
+   ACF Flexible Content Popup Preview
+   
+   Optimized styling for hover popup previews that show
+   larger images when hovering over layout options.
+   ========================================================================== */
+.acf-tooltip,
+.acf-fc-popup {
+    position: relative;
+}
+
+.acf-fc-popup a[data-layout] {
+    overflow: unset;
+}
+
+.acf-fc-popup a[data-layout]:after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: 1px solid #d0d5dd;
+    border-radius: 6px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    z-index: 100000;
+    	/* 
+	 * Performance Optimization: Single transform property for better performance
+	 * Using transform instead of multiple properties reduces repaints
+	 */
+	transform: scale(0.95);
+	/* 
+	 * Performance Optimization: Consolidated transition properties
+	 * Single transition declaration is more efficient than multiple
+	 */
+	transition: opacity 0.2s ease-out, visibility 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.acf-fc-popup a[data-layout]:hover:after {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}

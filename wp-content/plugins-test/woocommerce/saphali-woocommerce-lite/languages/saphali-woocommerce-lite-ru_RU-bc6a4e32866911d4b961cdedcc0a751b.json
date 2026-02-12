@@ -1,0 +1,33 @@
+{
+    "translation-revision-date": "2025-02-23 19:55+0000",
+    "generator": "WP-CLI\/2.11.0",
+    "source": "src\/field-datepicker.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "ru",
+                "plural-forms": "nplurals=2; plural=n != 1;"
+            },
+            "Done": [
+                "\u0413\u043e\u0442\u043e\u0432\u043e"
+            ],
+            "Now": [
+                "\u0421\u0435\u0439\u0447\u0430\u0441"
+            ],
+            "Time": [
+                "\u0412\u0440\u0435\u043c\u044f"
+            ],
+            "Hour": [
+                "\u0427\u0430\u0441"
+            ],
+            "Minute": [
+                "\u041c\u0438\u043d"
+            ],
+            "Choose Time": [
+                "\u0412\u044b\u0431\u0440\u0430\u0442\u044c \u0432\u0440\u0435\u043c\u044f"
+            ]
+        }
+    }
+}

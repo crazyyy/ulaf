@@ -1,0 +1,42 @@
+.d4p-panel-jobs {
+    .d4p-sweeper-content {
+        .sweeper-category-label {
+            max-width: 920px;
+        }
+
+        .d4p-group-with-settings {
+            max-width: 920px;
+        }
+
+        .sweeppress-item-wrapper {
+            max-width: 920px;
+
+            .sweeppress-item-inside {
+                padding: 1em;
+
+                .sweeppress-job-tasks-list {
+                    margin-left: 2em;
+                }
+            }
+        }
+    }
+
+    .tablenav.top {
+        display: none !important;
+    }
+
+    .sweeppress-table-jobs {
+        .column-id {
+            width: 100px;
+        }
+
+        .column-schedule,
+        .column-sweep {
+            width: 15%;
+        }
+
+        .column-timestamp {
+            width: 150px;
+        }
+    }
+}

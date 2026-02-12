@@ -1,0 +1,39 @@
+{
+    "messages": {
+        "success": {
+            "title": "All PHP Extensions are Installed",
+            "details": "All required PHP extensions are installed and active on your server.",
+            "steps": [
+                "Monitor plugin compatibility",
+                "Keep track of PHP updates",
+                "Maintain current configuration"
+            ]
+        },
+        "error": {
+            "title": "Missing PHP Extensions",
+            "details": "Your server is missing the following extensions: {current_value}. This may affect site functionality.",
+            "steps": [
+                "Contact your hosting provider about installing missing extensions",
+                "Consider switching to a hosting plan with better PHP support",
+                "Check plugin requirements before installation"
+            ]
+        }
+    },
+    "learn_more": {
+        "description": "PHP extensions add important functionality to your WordPress site. They enable features like image processing, secure connections, and database operations.",
+        "benefits": [
+            "Ensures plugin compatibility",
+            "Enables image manipulation",
+            "Supports secure connections",
+            "Powers database operations",
+            "Enables modern features"
+        ],
+        "recommendations": [
+            "Keep essential extensions installed",
+            "Monitor extension versions",
+            "Check hosting PHP configuration",
+            "Review plugin requirements",
+            "Choose compatible hosting"
+        ]
+    }
+}

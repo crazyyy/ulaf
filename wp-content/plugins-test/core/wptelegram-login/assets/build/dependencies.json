@@ -1,0 +1,21 @@
+{
+  "js/settings/index.ts": [
+    "react-dom",
+    "react",
+    "jquery",
+    "wp-i18n",
+    "react-dom",
+    "wp-api-fetch"
+  ],
+  "js/blocks/index.ts": [
+    "wp-blocks",
+    "wp-i18n",
+    "wp-element",
+    "wp-block-editor",
+    "wp-components"
+  ],
+  "js/web-app-login/index.ts": [],
+  "js/wp-login/index.ts": [
+    "jquery"
+  ]
+}

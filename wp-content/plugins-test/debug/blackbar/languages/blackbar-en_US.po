@@ -1,0 +1,201 @@
+# Copyright (C) 2024 blackbar
+# This file is distributed under the same license as the blackbar package.
+msgid ""
+msgstr ""
+"Project-Id-Version: undefined\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: Gemini Labs <support@geminilabs.io>\n"
+"Last-Translator: Paul Ryley <paul@geminilabs.io>\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Keywordslist: "
+"__;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_"
+"attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-Searchpath-0: .\n"
+"X-Poedit-Searchpathexcluded-0: *.js\n"
+"X-Poedit-Sourcecharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en_US\n"
+
+#: views/debug-bar.php:20
+msgid "Close"
+msgstr "Close"
+
+#: views/debug-bar.php:25
+msgid "Toggle"
+msgstr "Toggle"
+
+#: plugin/Modules/Console.php:70
+msgid "Console"
+msgstr "Console"
+
+#: plugin/Modules/Globals.php:37
+msgid "Globals"
+msgstr "Globals"
+
+#: plugin/Modules/Hooks.php:98
+msgid "Hooks"
+msgstr "Hooks"
+
+#: plugin/Modules/Profiler.php:52
+msgid "Profiler"
+msgstr "Profiler"
+
+#: plugin/Modules/Queries.php:67
+msgid "SQL"
+msgstr "SQL"
+
+#: plugin/Modules/Templates.php:40
+msgid "Templates"
+msgstr "Templates"
+
+#: views/panels/console.php:31
+msgid "Debug"
+msgstr "Debug"
+
+#: views/panels/console.php:32
+msgid "Info"
+msgstr "Info"
+
+#: views/panels/console.php:33
+msgid "Deprecated"
+msgstr "Deprecated"
+
+#: views/panels/console.php:34
+msgid "Notice"
+msgstr "Notice"
+
+#: views/panels/console.php:35
+msgid "Strict"
+msgstr "Strict"
+
+#: views/panels/console.php:36
+msgid "Warning"
+msgstr "Warning"
+
+#: views/panels/console.php:37
+msgid "Error"
+msgstr "Error"
+
+#: views/panels/console.php:38
+msgid "Unknown"
+msgstr "Unknown"
+
+#: views/panels/console.php:8
+msgid "No entries found."
+msgstr "No entries found."
+
+#: views/panels/hooks.php:14
+msgid "(Slowest 50)"
+msgstr "(Slowest 50)"
+
+#: views/panels/hooks.php:18
+msgid "Find callbacks containing"
+msgstr "Find callbacks containing"
+
+#: views/panels/hooks.php:19
+msgid "Minimum total time"
+msgstr "Minimum total time"
+
+#: views/panels/hooks.php:21
+msgid "Sort by total time"
+msgstr "Sort by total time"
+
+#: views/panels/hooks.php:22, views/panels/queries.php:17
+msgid "Sort by execution order"
+msgstr "Sort by execution order"
+
+#: views/panels/hooks.php:28
+msgid "Action or Filter"
+msgstr "Action or Filter"
+
+#: views/panels/hooks.php:29
+msgid "Callbacks"
+msgstr "Callbacks"
+
+#: views/panels/hooks.php:30
+msgid "Calls"
+msgstr "Calls"
+
+#: views/panels/hooks.php:31
+msgid "Per Call"
+msgstr "Per Call"
+
+#: views/panels/hooks.php:32
+msgid "Total"
+msgstr "Total"
+
+#: views/panels/hooks.php:7
+msgid "Please deactivate the Debug Bar Slow Actions plugin."
+msgstr "Please deactivate the Debug Bar Slow Actions plugin."
+
+#: views/panels/profiler.php:6
+msgid "Timer Name"
+msgstr "Timer Name"
+
+#: views/panels/profiler.php:7
+msgid "Memory Used"
+msgstr "Memory Used"
+
+#: views/panels/profiler.php:8
+msgid "Total Time"
+msgstr "Total Time"
+
+#: views/panels/queries.php:13
+msgid "Find SQL containing"
+msgstr "Find SQL containing"
+
+#: views/panels/queries.php:14
+msgid "Minimum execution time"
+msgstr "Minimum execution time"
+
+#: views/panels/queries.php:16
+msgid "Sort by execution time"
+msgstr "Sort by execution time"
+
+#: activate.php:102
+msgctxt "admin-text"
+msgid "The %s plugin was deactivated."
+msgstr "The %s plugin was deactivated."
+
+#: activate.php:103
+msgctxt "admin-text"
+msgid "PHP version"
+msgstr "PHP version"
+
+#: activate.php:104
+msgctxt "admin-text"
+msgid "You can use the %s plugin to restore %s to the previous version."
+msgstr "You can use the %s plugin to restore %s to the previous version."
+
+#: activate.php:105
+msgctxt "admin-text"
+msgid ""
+"Please contact your hosting provider or server administrator to upgrade the "
+"version of PHP on your server (your server is running PHP version %s), or "
+"try to find an alternative plugin."
+msgstr ""
+"Please contact your hosting provider or server administrator to upgrade the "
+"version of PHP on your server (your server is running PHP version %s), or "
+"try to find an alternative plugin."
+
+#: activate.php:106
+msgctxt "admin-text"
+msgid "Update WordPress"
+msgstr "Update WordPress"
+
+#: activate.php:107
+msgctxt "admin-text"
+msgid "WordPress version"
+msgstr "WordPress version"
+
+#: activate.php:108
+msgctxt "admin-text"
+msgid "This plugin requires %s or greater in order to work properly."
+msgstr "This plugin requires %s or greater in order to work properly."
+
+#: views/panels/queries.php:7
+msgctxt "SAVEQUERIES"
+msgid "must be enabled to view SQL queries"
+msgstr "must be enabled to view SQL queries"

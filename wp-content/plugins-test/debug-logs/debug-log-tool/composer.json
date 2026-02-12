@@ -1,0 +1,15 @@
+{
+    "name": "nsgawli/debug-log-tool",
+    "description": "A WordPress plugin for managing WP debug constants",
+    "type": "project",
+    "license": "GPL-2.0+",
+    "autoload": {
+        "psr-4": {
+            "Nsgawli\\DebugLogTool\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "wp-cli/wp-config-transformer": "^1.4"
+    }
+}

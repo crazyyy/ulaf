@@ -1,0 +1,18 @@
+{
+    "messages": {
+        "info": {
+            "title": "Hosting Types Explained",
+            "details": "Understanding the main types (Shared, VPS, Dedicated, Managed) helps you choose the right foundation based on resources, control, and cost."
+        }
+    },
+    "learn_more": {
+        "description": "Each hosting type offers different levels of resources, control, cost, and management:",
+        "benefits_title": "Common Hosting Types:",
+        "benefits": [
+            "Shared Hosting: Your site shares server resources (CPU, RAM) with many others. It's the cheapest option, good for small sites or beginners, but can be slower and has stricter limits (like inodes). You usually get a control panel like cPanel.",
+            "VPS (Virtual Private Server): You get a dedicated virtual slice of a server with guaranteed resources (RAM, CPU allocation). Offers more control and better performance than shared hosting. Good for growing sites, developers, or those needing specific configurations.",
+            "Dedicated Server: You rent an entire physical server. Maximum resources, control, and performance, but also the highest cost and requires technical expertise to manage.",
+            "Managed WordPress Hosting: Specialized hosting optimized for WordPress. Often built on Shared or VPS infrastructure but includes WordPress-specific features like automatic updates, enhanced security, expert support, and sometimes built-in caching. Can be more expensive but simplifies management."
+        ]
+    }
+} 

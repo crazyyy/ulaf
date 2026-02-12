@@ -1,0 +1,59 @@
+{
+    "title": "Robots.txt File",
+    "messages": {
+        "success": {
+            "title": "Robots.txt Properly Configured",
+            "details": "Your robots.txt file exists and contains valid directives. This file helps control how search engines crawl your site, ensuring efficient indexing and resource usage.",
+            "steps": [
+                "Periodically review robots.txt directives",
+                "Verify no important content is blocked",
+                "Monitor crawl errors in search console",
+                "Keep directives up to date with site changes"
+            ]
+        },
+        "warning": {
+            "title": "Basic Robots.txt Detected",
+            "details": "Your site has a basic robots.txt configuration. While functional, you might want to review if it properly addresses your site's crawling needs. A well-configured robots.txt helps manage search engine access efficiently.",
+            "steps": [
+                "Review current robots.txt directives",
+                "Consider adding specific rules for different bots",
+                "Ensure important content is accessible",
+                "Add sitemap location if not included"
+            ]
+        },
+        "error": {
+            "title": "Robots.txt Issues Detected",
+            "details": "We couldn't find or access your robots.txt file. While not mandatory, a robots.txt file helps manage how search engines interact with your site and can prevent unnecessary crawling of non-essential pages.",
+            "steps": [
+                "Create a robots.txt file in your site's root directory",
+                "Add basic directives for search engines",
+                "Include your sitemap location",
+                "Test your robots.txt in search console"
+            ]
+        }
+    },
+    "learn_more": {
+        "description": "The robots.txt file is a key tool for managing search engine crawling behavior. It helps optimize crawl efficiency, protect sensitive areas, and guide search engines to your important content.",
+        "benefits": [
+            "Control search engine crawling behavior",
+            "Prevent unnecessary server load",
+            "Protect private or development areas",
+            "Guide crawlers to important content",
+            "Improve crawl efficiency"
+        ],
+        "recommended_plugins": [
+            {
+                "name": "Yoast SEO",
+                "description": "Includes robots.txt management and validation"
+            },
+            {
+                "name": "Rank Math",
+                "description": "Advanced robots.txt editor with testing tools"
+            },
+            {
+                "name": "All in One SEO",
+                "description": "User-friendly robots.txt configuration"
+            }
+        ]
+    }
+}

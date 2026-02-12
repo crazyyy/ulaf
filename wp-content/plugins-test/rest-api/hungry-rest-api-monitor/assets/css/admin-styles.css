@@ -1,0 +1,690 @@
+/**
+ * Hungry REST API Monitor - Admin Styles
+ *
+ * @package HungryRestApiMonitor
+ */
+
+/* ============================================
+   Variables
+   ============================================ */
+:root {
+    --nandrestapi-primary: #2271b1;
+    --nandrestapi-primary-dark: #135e96;
+    --nandrestapi-success: #00a32a;
+    --nandrestapi-warning: #dba617;
+    --nandrestapi-error: #d63638;
+    --nandrestapi-info: #72aee6;
+    --nandrestapi-bg: #f0f0f1;
+    --nandrestapi-card-bg: #ffffff;
+    --nandrestapi-border: #c3c4c7;
+    --nandrestapi-text: #1d2327;
+    --nandrestapi-text-light: #646970;
+    --nandrestapi-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --nandrestapi-radius: 8px;
+}
+
+/* ============================================
+   Page Layout
+   ============================================ */
+.nandrestapi-admin-wrap {
+    max-width: 1400px;
+    margin: 20px 20px 20px 0;
+}
+
+.nandrestapi-page-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.nandrestapi-page-title .dashicons {
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    color: var(--nandrestapi-primary);
+}
+
+/* ============================================
+   Tabs
+   ============================================ */
+.nandrestapi-nav-tabs {
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--nandrestapi-border);
+}
+
+.nandrestapi-nav-tabs .nav-tab {
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    color: var(--nandrestapi-text-light);
+    font-weight: 500;
+    padding: 10px 20px;
+    margin-bottom: -1px;
+    transition: all 0.2s ease;
+}
+
+.nandrestapi-nav-tabs .nav-tab:hover {
+    color: var(--nandrestapi-primary);
+    background: transparent;
+}
+
+.nandrestapi-nav-tabs .nav-tab-active {
+    color: var(--nandrestapi-primary);
+    border-bottom-color: var(--nandrestapi-primary);
+}
+
+/* ============================================
+   Period Selector
+   ============================================ */
+.nandrestapi-period-selector {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    padding: 15px 20px;
+    background: var(--nandrestapi-card-bg);
+    border-radius: var(--nandrestapi-radius);
+    box-shadow: var(--nandrestapi-shadow);
+}
+
+.nandrestapi-period-selector label {
+    font-weight: 600;
+    color: var(--nandrestapi-text);
+}
+
+.nandrestapi-period-selector select {
+    min-width: 150px;
+}
+
+/* ============================================
+   Summary Cards
+   ============================================ */
+.nandrestapi-summary-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.nandrestapi-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    background: var(--nandrestapi-card-bg);
+    border-radius: var(--nandrestapi-radius);
+    box-shadow: var(--nandrestapi-shadow);
+    border-left: 4px solid var(--nandrestapi-primary);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nandrestapi-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nandrestapi-card-primary {
+    border-left-color: var(--nandrestapi-primary);
+}
+
+.nandrestapi-card-success {
+    border-left-color: var(--nandrestapi-success);
+}
+
+.nandrestapi-card-warning {
+    border-left-color: var(--nandrestapi-warning);
+}
+
+.nandrestapi-card-info {
+    border-left-color: var(--nandrestapi-info);
+}
+
+.nandrestapi-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--nandrestapi-bg);
+}
+
+.nandrestapi-card-icon .dashicons {
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+    color: var(--nandrestapi-primary);
+}
+
+.nandrestapi-card-success .nandrestapi-card-icon .dashicons {
+    color: var(--nandrestapi-success);
+}
+
+.nandrestapi-card-warning .nandrestapi-card-icon .dashicons {
+    color: var(--nandrestapi-warning);
+}
+
+.nandrestapi-card-info .nandrestapi-card-icon .dashicons {
+    color: var(--nandrestapi-info);
+}
+
+.nandrestapi-card-content h3 {
+    margin: 0 0 5px 0;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--nandrestapi-text);
+}
+
+.nandrestapi-card-content p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--nandrestapi-text-light);
+}
+
+/* ============================================
+   Charts
+   ============================================ */
+.nandrestapi-charts-row {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.nandrestapi-charts-half {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 1024px) {
+    .nandrestapi-charts-half {
+        grid-template-columns: 1fr;
+    }
+}
+
+.nandrestapi-chart-container {
+    background: var(--nandrestapi-card-bg);
+    border-radius: var(--nandrestapi-radius);
+    box-shadow: var(--nandrestapi-shadow);
+    padding: 20px;
+}
+
+.nandrestapi-chart-container h3 {
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--nandrestapi-text);
+}
+
+.nandrestapi-chart-large canvas {
+    max-height: 300px;
+}
+
+/* ============================================
+   Tables
+   ============================================ */
+.nandrestapi-table-container {
+    background: var(--nandrestapi-card-bg);
+    border-radius: var(--nandrestapi-radius);
+    box-shadow: var(--nandrestapi-shadow);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.nandrestapi-table-container h3 {
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nandrestapi-table {
+    border: none !important;
+    border-collapse: collapse !important;
+}
+
+.nandrestapi-table thead th {
+    background: var(--nandrestapi-bg) !important;
+    border: none !important;
+    padding: 12px 15px !important;
+    font-weight: 600;
+    text-align: left;
+}
+
+.nandrestapi-table tbody td {
+    padding: 12px 15px !important;
+    border-bottom: 1px solid var(--nandrestapi-bg) !important;
+    vertical-align: middle;
+}
+
+.nandrestapi-table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+.nandrestapi-sortable {
+    cursor: pointer;
+    user-select: none;
+}
+
+.nandrestapi-sortable:hover {
+    color: var(--nandrestapi-primary);
+}
+
+.nandrestapi-sortable .dashicons {
+    font-size: 16px;
+    vertical-align: middle;
+    margin-left: 5px;
+    opacity: 0.5;
+}
+
+.nandrestapi-loading {
+    text-align: center;
+    color: var(--nandrestapi-text-light);
+    padding: 40px !important;
+}
+
+/* Status Badges */
+.nandrestapi-status {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.nandrestapi-status-2xx {
+    background: #d4edda;
+    color: #155724;
+}
+
+.nandrestapi-status-3xx {
+    background: #cce5ff;
+    color: #004085;
+}
+
+.nandrestapi-status-4xx {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.nandrestapi-status-5xx {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* Method Badges */
+.nandrestapi-method {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nandrestapi-method-get {
+    background: #e3f2fd;
+    color: #1565c0;
+}
+
+.nandrestapi-method-post {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.nandrestapi-method-put {
+    background: #fff8e1;
+    color: #f57f17;
+}
+
+.nandrestapi-method-patch {
+    background: #fce4ec;
+    color: #c2185b;
+}
+
+.nandrestapi-method-delete {
+    background: #ffebee;
+    color: #c62828;
+}
+
+/* ============================================
+   Filters
+   ============================================ */
+.nandrestapi-filters {
+    background: var(--nandrestapi-card-bg);
+    border-radius: var(--nandrestapi-radius);
+    box-shadow: var(--nandrestapi-shadow);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.nandrestapi-filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-end;
+    margin-bottom: 15px;
+}
+
+.nandrestapi-filter-row:last-child {
+    margin-bottom: 0;
+}
+
+.nandrestapi-filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nandrestapi-filter-group label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--nandrestapi-text-light);
+    text-transform: uppercase;
+}
+
+.nandrestapi-filter-group input,
+.nandrestapi-filter-group select {
+    min-width: 150px;
+}
+
+.nandrestapi-filter-actions {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+/* ============================================
+   Pagination
+   ============================================ */
+.nandrestapi-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: var(--nandrestapi-card-bg);
+    border-radius: var(--nandrestapi-radius);
+    box-shadow: var(--nandrestapi-shadow);
+    margin-top: 20px;
+}
+
+.nandrestapi-pagination-info {
+    color: var(--nandrestapi-text-light);
+    font-size: 14px;
+}
+
+.nandrestapi-pagination-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nandrestapi-pagination-current {
+    font-weight: 600;
+    color: var(--nandrestapi-text);
+}
+
+/* ============================================
+   Info Bar
+   ============================================ */
+.nandrestapi-info-bar {
+    display: flex;
+    gap: 30px;
+    padding: 10px 20px;
+    background: var(--nandrestapi-bg);
+    border-radius: var(--nandrestapi-radius);
+    font-size: 13px;
+    color: var(--nandrestapi-text-light);
+}
+
+/* ============================================
+   Settings
+   ============================================ */
+.nandrestapi-settings {
+    max-width: 800px;
+}
+
+.nandrestapi-settings-section {
+    background: var(--nandrestapi-card-bg);
+    border-radius: var(--nandrestapi-radius);
+    box-shadow: var(--nandrestapi-shadow);
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.nandrestapi-settings-section h2 {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--nandrestapi-bg);
+}
+
+.nandrestapi-settings .form-table th {
+    padding-left: 0;
+    width: 200px;
+}
+
+/* Toggle Switch */
+.nandrestapi-toggle {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+}
+
+.nandrestapi-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.nandrestapi-toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.3s;
+    border-radius: 26px;
+}
+
+.nandrestapi-toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+
+.nandrestapi-toggle input:checked+.nandrestapi-toggle-slider {
+    background-color: var(--nandrestapi-primary);
+}
+
+.nandrestapi-toggle input:checked+.nandrestapi-toggle-slider:before {
+    transform: translateX(24px);
+}
+
+/* ============================================
+   Support
+   ============================================ */
+.nandrestapi-support-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.nandrestapi-support-card {
+    background: var(--nandrestapi-card-bg);
+    border-radius: var(--nandrestapi-radius);
+    box-shadow: var(--nandrestapi-shadow);
+    padding: 25px;
+}
+
+.nandrestapi-support-card h2 {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nandrestapi-info-table {
+    width: 100%;
+}
+
+.nandrestapi-info-table th,
+.nandrestapi-info-table td {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--nandrestapi-bg);
+}
+
+.nandrestapi-info-table th {
+    text-align: left;
+    font-weight: 600;
+    width: 40%;
+}
+
+.nandrestapi-support-card form p {
+    margin-bottom: 15px;
+}
+
+.nandrestapi-support-card label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.nandrestapi-support-card .required {
+    color: var(--nandrestapi-error);
+}
+
+.nandrestapi-support-card input[type="text"],
+.nandrestapi-support-card input[type="email"],
+.nandrestapi-support-card textarea {
+    width: 100%;
+}
+
+.nandrestapi-support-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.nandrestapi-support-links .button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* ============================================
+   Modal
+   ============================================ */
+.nandrestapi-modal {
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nandrestapi-modal-content {
+    background: var(--nandrestapi-card-bg);
+    border-radius: var(--nandrestapi-radius);
+    padding: 30px;
+    max-width: 700px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.nandrestapi-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--nandrestapi-text-light);
+}
+
+.nandrestapi-modal-close:hover {
+    color: var(--nandrestapi-text);
+}
+
+.nandrestapi-modal h2 {
+    margin: 0 0 20px 0;
+}
+
+/* Wide Modal for HTTP details */
+.nandrestapi-modal-wide {
+    max-width: 900px;
+}
+
+/* HTTP Request Detail Grid */
+.nandrestapi-http-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.nandrestapi-detail-section {
+    background: var(--nandrestapi-bg);
+    padding: 20px;
+    border-radius: var(--nandrestapi-radius);
+}
+
+.nandrestapi-detail-section h3 {
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--nandrestapi-text);
+    text-transform: uppercase;
+}
+
+.nandrestapi-detail-full {
+    grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+    .nandrestapi-http-detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nandrestapi-detail-full {
+        grid-column: span 1;
+    }
+}
+
+/* HTTP Header Section */
+.nandrestapi-http-header {
+    margin-bottom: 20px;
+}
+
+.nandrestapi-http-header h2 {
+    margin: 0 0 5px 0;
+}
+
+.nandrestapi-http-header .description {
+    margin: 0;
+    color: var(--nandrestapi-text-light);
+}
+
+/* ============================================
+   Spinner
+   ============================================ */
+.spinner {
+    float: none;
+    vertical-align: middle;
+    margin-left: 10px;
+}

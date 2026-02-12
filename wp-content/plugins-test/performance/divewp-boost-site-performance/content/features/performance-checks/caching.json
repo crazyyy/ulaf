@@ -1,0 +1,52 @@
+{
+    "title": "Caching",
+    "messages": {
+        "success": {
+            "title": "Caching Plugin is Active",
+            "details": "Your site is using {plugin_name} for caching, which helps improve loading times if configured correctly.",
+            "steps": [
+                "Verify caching settings are properly configured",
+                "Monitor cache expiration settings",
+                "Test site performance with caching enabled"
+            ]
+        },
+        "error": {
+            "title": "No Caching Plugin Detected",
+            "details": "We detected that your site is not using any of our recommended caching plugins. While you may be using a different caching solution that's not in our list, using popular and recommended caching plugins will help ensure optimal performance and compatibility. If you're using a different caching solution, make sure it's properly configured for your needs.",
+            "steps": [
+                "Install a caching plugin to improve site speed",
+                "Configure caching settings according to your needs",
+                "Test your site speed before and after implementation",
+                "We recommend using plugins like WP Rocket, W3 Total Cache, LiteSpeed Cache, or WP Super Cache, just to name a few."
+            ]
+        }
+    },
+    "learn_more": {
+        "description": "Caching creates static versions of your dynamic content, significantly reducing server load and improving load times.",
+        "benefits": [
+            "Faster page load times",
+            "Reduced server load",
+            "Better user experience",
+            "Improved SEO rankings",
+            "Lower resource usage - which will reduce your hosting costs"
+        ],
+        "recommended_plugins": [
+            {
+                "name": "WP Rocket",
+                "type": "Premium"
+            },
+            {
+                "name": "W3 Total Cache",
+                "type": "Free"
+            },
+            {
+                "name": "LiteSpeed Cache ( for LiteSpeed servers)",
+                "type": "Free"
+            },
+            {
+                "name": "WP Fastest Cache",
+                "type": "Free"
+            }
+        ]
+    }
+}

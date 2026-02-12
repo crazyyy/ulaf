@@ -1,0 +1,37 @@
+{
+    "messages": {
+        "success": {
+            "title": "Max Input Vars is Optimal",
+            "details": "Your site's max input vars is set to {current_value}, which is optimal for handling complex forms and large menus.",
+            "steps": [
+                "Always check the required max input vars for your plugins and themes to ensure your max input vars is optimal",
+                "Max input vars helps you handle large menus and complex forms",
+                "max input vars is a key factor in your site's performance, and affects modern page builders heavily!"
+            ]
+        },
+        "error": {
+            "title": "Max Input Vars is Too Low",
+            "details": "Your site's max input vars is set to {current_value}. We recommend increasing it to at least {recommended_value} for better form handling.",
+            "steps": [
+                "Contact your hosting provider about increasing max input vars",
+                "Add max_input_vars directive to php.ini will help you increase your max input vars or from your hosting providers control panel",
+                "Always check the required max input vars for your plugins and themes to ensure your max input vars is optimal"
+            ]
+        }
+    },
+    "learn_more": {
+        "description": "Max input vars determines how many input variables your site can process in a single request. This affects complex forms, large menus, and page builders.",
+        "benefits": [
+            "Supports complex form submissions",
+            "Enables large menu structures",
+            "Handles page builder data",
+            "Prevents data loss",
+            "Improves site flexibility",
+            "Max input vars is a key factor in your site's performance, and affects modern page builders heavily!"
+        ],
+        "recommendations": [
+            "Set max input vars to at least 5000",
+            "Always check the required max input vars for your plugins and themes to ensure your max input vars is optimal"
+        ]
+    }
+}

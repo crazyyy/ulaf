@@ -1,0 +1,42 @@
+{
+    "title": "Search Engine Visibility",
+    "messages": {
+        "success": {
+            "title": "Search Engine Visibility Status",
+            "details": "Your site is visible to search engines. The search engine visibility is the ability of your website to be found and indexed by search engines such as Google, Bing, and Yahoo. It is important to ensure that your site is visible to search engines to increase traffic and improve your SEO.",
+            "steps": [
+                "Monitor your search console for any indexing issues",
+                "Regularly check your site's visibility in search results"
+            ]
+        },
+        "error": {
+            "title": "Search Engine Visibility is Disabled",
+            "details": "Your site is hidden from search engines. The search engine visibility is the ability of your website to be found and indexed by search engines such as Google, Bing, and Yahoo. It is important to ensure that your site is visible to search engines to increase traffic and improve your SEO.",
+            "steps": [
+                "Go to Settings > Reading",
+                "Uncheck 'Discourage search engines from indexing this site'",
+                "Save changes"
+            ]
+        }
+    },
+    "learn_more": {
+        "description": "Search engine visibility is crucial for your site's discoverability online.",
+        "benefits": [
+            "Improved organic traffic",
+            "Better search engine rankings",
+            "Increased site visibility"
+        ],
+        "recommended_plugins": [
+            {
+                "name": "Yoast SEO",
+                "type": "Free/Premium",
+                "description": "Complete SEO solution with advanced visibility controls"
+            },
+            {
+                "name": "Rank Math",
+                "type": "Free/Premium",
+                "description": "Modern SEO plugin with powerful features"
+            }
+        ]
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "title": "Cart Fragments",
+    "recommendation": "Optimize cart fragments for better performance.",
+    "messages": {
+        "success": {
+            "title": "Cart Fragments Status",
+            "details": "Currently using {value}. Low fragment count indicates good performance. Cart fragments are used to update mini-cart contents without page reloads, but fewer fragments means better performance.",
+            "steps": [
+                "Current configuration is optimized for performance",
+                "Monitor fragment count during high traffic",
+                "Consider disabling if mini-cart isn't essential",
+                "Keep checking periodically for performance"
+            ]
+        },
+        "error": {
+            "title": "High Cart Fragment Usage",
+            "details": "Currently using {value}. High number of cart fragments may impact your site's performance. While cart fragments enable dynamic mini-cart updates, too many can slow down your site.",
+            "steps": [
+                "Review if mini-cart is needed in header/menu",
+                "Consider disabling cart fragments if not required",
+                "Implement alternative AJAX cart solutions",
+                "Enable fragment caching for logged-out users"
+            ]
+        }
+    },
+    "learn_more": {
+        "description": "Cart fragments make AJAX requests to update mini-cart contents, which can impact performance if not properly optimized.",
+        "benefits": [
+            "Improved page load times",
+            "Reduced server load",
+            "Better user experience",
+            "Optimized AJAX requests",
+            "Enhanced caching capabilities"
+        ],
+        "recommended_plugins": [
+            {
+                "name": "WP Rocket",
+                "description": "Optimize cart fragments and implement page caching"
+            },
+            {
+                "name": "Perfmatters",
+                "description": "Fine-tune cart fragment behavior"
+            },
+            {
+                "name": "Flying Cart",
+                "description": "Lightweight AJAX cart alternative"
+            }
+        ]
+    }
+}

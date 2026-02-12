@@ -1,0 +1,48 @@
+{
+    "messages": {
+        "success": {
+            "title": "Post Revisions is Normal",
+            "details": "Your site has {size} post revisions, which is within acceptable limits. Post revisions are used to track changes to posts, but too many can impact database performance.",
+            "steps": [
+                "Continue monitoring revision count",
+                "Keep minimal revisions for important posts",
+                "Consider using a revision control plugin",
+                "We recommend using plugins like WP-Optimize, Advanced Database Cleaner, or WP-DBManager, just to name a few."
+            ]
+        },
+        "error": {
+            "title": "Post Revisions are High",
+            "details": "Your site has {size} post revisions, which may impact database performance.",
+            "steps": [
+                "Clean up old post revisions",
+                "Configure maximum revision limit",
+                "Use a revision management plugin",
+                "Consider disabling revisions for certain post types",
+                "Back up database before cleanup"
+            ]
+        }
+    },
+    "learn_more": {
+        "description": "WordPress stores a copy of each saved draft as a revision. While this helps track changes, too many revisions can bloat your database.",
+        "benefits": [
+            "Reduced database size",
+            "Faster database queries",
+            "Improved backup efficiency",
+            "Better site performance"
+        ],
+        "recommended_plugins": [
+            {
+                "name": "WP-Optimize",
+                "type": "Free/Premium"
+            },
+            {
+                "name": "Advanced Database Cleaner",
+                "type": "Premium"
+            },
+            {
+                "name": "Better Delete Revision",
+                "type": "Free"
+            }
+        ]
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "messages": {
+        "success": {
+            "title": "Expired Transients are Normal",
+            "details": "Your site has {size} expired transients, which is within acceptable limits. The transients a form of a cache that is used to store data in the database. They are used to improve the performance of the site by reducing the number of queries to the database. They are automatically deleted after a certain period of time, but if they are not deleted, they will stay in the database and will be used to store data.",
+            "steps": [
+                "Continue monitoring transients",
+                "Regular automated cleanup recommended",
+                "Review transient usage in plugins"
+            ]
+        },
+        "error": {
+            "title": "Expired Transients are High",
+            "details": "Your site has {size} expired transients that should be cleaned up. The transients a form of a cache that is used to store data in the database. They are used to improve the performance of the site by reducing the number of queries to the database. They are automatically deleted after a certain period of time, but if they are not deleted, they will stay in the database and will be used to store data.",
+            "steps": [
+                "Delete expired transients to optimize database",
+                "Review plugins that heavily use transients",
+                "Consider implementing automated cleanup",
+                "Monitor transient creation patterns",
+                "Back up database before cleanup"
+            ]
+        }
+    },
+    "learn_more": {
+        "description": "Transients are temporary data stored in the WordPress database, a form of a cache. While they're designed to expire automatically, the cleanup doesn't happen until they're requested. A large number of expired transients can impact database performance.",
+        "benefits": [
+            "Improved database efficiency",
+            "Reduced database size",
+            "Better query performance",
+            "Optimized caching system"
+        ],
+        "recommended_plugins": [
+            {
+                "name": "WP-Optimize",
+                "type": "Free/Premium"
+            },
+            {
+                "name": "Advanced Database Cleaner",
+                "type": "Premium"
+            },
+            {
+                "name": "WP Rocket",
+                "type": "Premium"
+            }
+        ]
+    }
+}

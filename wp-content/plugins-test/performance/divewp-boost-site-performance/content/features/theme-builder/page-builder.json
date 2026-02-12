@@ -1,0 +1,67 @@
+{
+    "title": "Page Builders",
+    "recommendation": "Use a page builder to create and customize your site's layout easily.",
+    "messages": {
+        "success": {
+            "title": "Page Builder Active",
+            "details": "Your site is using {value} for page building.",
+            "steps": [
+                "Using popular page builders like Elementor, Divi, Beaver Builder, Oxygen, WPBakery, Bricks, etc. is a good idea, due to the fact that they are well supported and have a large community.",
+                "Always use the latest version of the page builder."
+            ]
+        },
+        "info": {
+            "title": "Editor Information",
+            "details": "We detect that you're using the default WordPress editor or your theme's built-in editor. While we specifically check for popular standalone page builders (like Elementor, Divi, Beaver Builder, Oxygen, etc.) and some theme-integrated builders (like Fusion Builder, Themify Builder, etc.), your theme might include its own custom editor or building tools that work well for your needs.",
+            "steps": [
+                "Your theme's built-in editor may provide all the functionality you need",
+                "You can always add a standalone page builder later if needed",
+                "Many themes provide their own custom blocks and layout tools",
+                "Consider exploring your theme's documentation for editor features"
+            ]
+        },
+        "error": {
+            "title": "Multiple Page Builders Detected",
+            "details": "Your site is using multiple page builders: {value}. This can cause conflicts, performance issues, and unnecessary resource usage.",
+            "steps": [
+                "Choose one primary page builder for your site",
+                "Deactivate unused page builders",
+                "Backup your content before making changes",
+                "Check content compatibility after deactivation",
+                "Remove unused builder data from database"
+            ]
+        }
+    },
+    "learn_more": {
+        "description": "A page builder provides drag-and-drop functionality and advanced layout options for creating professional-looking pages without coding. The WordPress block editor (Gutenberg) is also a powerful tool that might be sufficient for your needs.",
+        "benefits": [
+            "Visual drag-and-drop editing",
+            "Pre-designed templates and layouts",
+            "Responsive design controls",
+            "Custom styling options",
+            "Time-saving design features"
+        ],
+        "recommended_plugins": [
+            {
+                "name": "Elementor",
+                "type": "Free/Premium - Most popular"
+            },
+            {
+                "name": "Divi Builder",
+                "type": "Premium - Theme integrated"
+            },
+            {
+                "name": "Beaver Builder",
+                "type": "Free/Premium"
+            },
+            {
+                "name": "Oxygen Builder",
+                "type": "Premium"
+            },
+            {
+                "name": "Bricks",
+                "type": "Premium"
+            }
+        ]
+    }
+}

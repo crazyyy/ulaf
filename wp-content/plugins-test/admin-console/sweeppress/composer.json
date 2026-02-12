@@ -1,0 +1,7 @@
+{
+    "require": {
+		"ifsnop/mysqldump-php": "^2.12",
+        "dev4press/library": "~5.4",
+        "freemius/wordpress-sdk": "^2.12"
+    }
+}

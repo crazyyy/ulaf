@@ -1,0 +1,39 @@
+{
+    "messages": {
+        "success": {
+            "title": "Max Execution Time Optimal",
+            "details": "Your site's max execution time is set to {current_value}, which is optimal for processing complex operations.",
+            "steps": [
+                "Monitor long-running tasks",
+                "Keep track of timeout errors",
+                "Maintain current configuration"
+            ]
+        },
+        "error": {
+            "title": "Max Execution Time Needs Attention",
+            "details": "Your site's max execution time is set to {current_value}. We recommend increasing it to at least {recommended_value} for better reliability.",
+            "steps": [
+                "Contact your hosting provider about increasing max execution time",
+                "Add max_execution_time directive to php.ini or .htaccess",
+                "Monitor timeout errors after the change"
+            ]
+        }
+    },
+    "learn_more": {
+        "description": "Max execution time determines how long PHP scripts can run before timing out. This affects complex operations like imports, backups, and media processing.",
+        "benefits": [
+            "Allows complex operations to complete",
+            "Prevents timeout errors during backups",
+            "Enables large data imports",
+            "Supports media processing tasks",
+            "Improves reliability of admin operations"
+        ],
+        "recommendations": [
+            "Set max execution time to at least 60 seconds",
+            "Monitor for timeout errors in error logs",
+            "Consider using background processing for very long tasks",
+            "Optimize long-running operations",
+            "Set different limits for admin and frontend"
+        ]
+    }
+} 

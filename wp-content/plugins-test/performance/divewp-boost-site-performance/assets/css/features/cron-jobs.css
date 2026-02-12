@@ -1,0 +1,2092 @@
+/**
+ * DiveWP Cron Jobs Dashboard Styles
+ *
+ * Styling for the Unified Cron Intelligence Dashboard feature.
+ *
+ * @package     DiveWP
+ * @version     2.2.0
+ * @author      Oleg Petrov
+ */
+
+/* ==========================================================================
+   Dashboard Container
+   ========================================================================== */
+
+.divewp-cron-dashboard {
+    max-width: 100%;
+}
+
+.divewp-cron-intro {
+    /* Color and font size inherited from global */
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   Hero Context Bar
+   ========================================================================== */
+
+.divewp-cron-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    background: #fff;
+    border: 1px solid #dcdcde;
+    border-radius: 8px;
+    padding: 16px 24px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.divewp-cron-hero__status {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.divewp-cron-hero__health {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* Font styles inherited from global */
+}
+
+.divewp-cron-hero__health-link {
+    color: inherit;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.divewp-cron-hero__health-link:hover,
+.divewp-cron-hero__health-link:focus {
+    text-decoration: underline;
+}
+
+.divewp-cron-hero__health-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #dcdcde;
+}
+
+.divewp-cron-hero__health--good .divewp-cron-hero__health-indicator {
+    background: #00a32a;
+    box-shadow: 0 0 0 3px rgba(0, 163, 42, 0.2);
+}
+
+.divewp-cron-hero__health--warning .divewp-cron-hero__health-indicator {
+    background: #dba617;
+    box-shadow: 0 0 0 3px rgba(219, 166, 23, 0.2);
+}
+
+.divewp-cron-hero__health--critical .divewp-cron-hero__health-indicator {
+    background: #d63638;
+    box-shadow: 0 0 0 3px rgba(214, 54, 56, 0.2);
+}
+
+.divewp-cron-hero__timestamp {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #646970;
+    /* Font size inherited from global */
+}
+
+.divewp-cron-hero__timestamp .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.divewp-cron-hero__timezone {
+    color: #8c8f94;
+}
+
+/* Inline summary text for overdue tasks */
+.divewp-cron-hero__summary {
+    font-size: 13px;
+    color: #646970;
+    margin-left: 8px;
+    padding-left: 12px;
+    border-left: 1px solid #dcdcde;
+}
+
+.divewp-cron-hero__summary--warning {
+    color: #d97706;
+    font-weight: 500;
+}
+
+.divewp-cron-hero__actions {
+    display: flex;
+    gap: 8px;
+}
+
+/* Hero action buttons - DiveWP plugin style (matching user-events) */
+.divewp-cron-hero__actions .divewp-cron-refresh {
+    background-color: #4299e1;
+    color: #fff;
+    border-color: #4299e1;
+    border-radius: 6px;
+    padding: 4px 12px 4px 8px;
+    height: auto;
+    min-height: 30px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.divewp-cron-hero__actions .divewp-cron-refresh:hover {
+    background-color: #3182ce;
+    border-color: #3182ce;
+}
+
+.divewp-cron-hero__actions .divewp-cron-add {
+    background-color: #48bb78;
+    color: #fff;
+    border-color: #48bb78;
+    border-radius: 6px;
+    padding: 4px 12px 4px 8px;
+    height: auto;
+    min-height: 30px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.divewp-cron-hero__actions .divewp-cron-add:hover {
+    background-color: #38a169;
+    border-color: #38a169;
+}
+
+.divewp-cron-hero__actions .button .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    line-height: 1;
+}
+
+/* ==========================================================================
+   Workspace Tabs
+   ========================================================================== */
+
+.divewp-cron-workspace {
+    background: #fff;
+    border: 1px solid #dcdcde;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.divewp-cron-tabs {
+    display: flex;
+    gap: 0;
+    border-bottom: 1px solid #dcdcde;
+    padding: 0 16px;
+}
+
+.divewp-cron-tab {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: #646970;
+    /* Font styles inherited from global */
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+    margin-bottom: -1px;
+}
+
+.divewp-cron-tab:hover {
+    color: #2271b1;
+}
+
+.divewp-cron-tab.active {
+    color: #2271b1;
+    border-bottom-color: #2271b1;
+}
+
+.divewp-cron-tab__count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 6px;
+    background: #f0f0f1;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.divewp-cron-tab.active .divewp-cron-tab__count {
+    background: #2271b1;
+    color: #fff;
+}
+
+/* Warning state for Overdue tab when tasks are overdue */
+.divewp-cron-tab--warning {
+    color: #d97706;
+}
+
+.divewp-cron-tab--warning:hover {
+    color: #b45309;
+}
+
+.divewp-cron-tab--warning .divewp-cron-tab__count {
+    background: #fef3c7;
+    color: #d97706;
+}
+
+.divewp-cron-tab--warning.active {
+    color: #d97706;
+    border-bottom-color: #d97706;
+}
+
+.divewp-cron-tab--warning.active .divewp-cron-tab__count {
+    background: #d97706;
+    color: #fff;
+}
+
+/* ==========================================================================
+   Toolbar
+   ========================================================================== */
+
+.divewp-cron-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 16px;
+    border-bottom: 1px solid #f0f0f1;
+    flex-wrap: wrap;
+}
+
+.divewp-cron-toolbar__search {
+    flex: 1;
+    min-width: 200px;
+}
+
+.divewp-cron-search {
+    width: 100%;
+    max-width: 300px;
+    padding: 6px 12px;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.divewp-cron-toolbar__filters {
+    display: flex;
+    gap: 8px;
+}
+
+.divewp-cron-filter {
+    padding: 6px 12px;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+    font-size: 13px;
+    background: #fff;
+}
+
+.divewp-cron-toolbar__bulk {
+    display: flex;
+    gap: 8px;
+}
+
+.divewp-cron-bulk-action {
+    padding: 6px 12px;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+    font-size: 13px;
+    background: #fff;
+}
+
+/* ==========================================================================
+   Panels
+   ========================================================================== */
+
+.divewp-cron-panel {
+    display: none;
+    padding: 0;
+}
+
+.divewp-cron-panel.active {
+    display: block;
+}
+
+.divewp-cron-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 24px;
+    color: #646970;
+    text-align: center;
+}
+
+.divewp-cron-empty .dashicons {
+    font-size: 48px;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+    opacity: 0.5;
+}
+
+/* Success state for empty overdue */
+.divewp-cron-empty .dashicons-yes-alt {
+    color: #059669;
+    opacity: 1;
+}
+
+/* Overdue panel content */
+.divewp-cron-overdue-content {
+    padding: 16px;
+}
+
+.divewp-cron-overdue-content h5 {
+    margin: 0 0 12px 0;
+    font-family: 'Literata', serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.divewp-cron-overdue-content h5:not(:first-child) {
+    margin-top: 24px;
+}
+
+.divewp-cron-as-overdue-notice {
+    padding: 12px 16px;
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    border-radius: 6px;
+    color: #92400e;
+    font-size: 13px;
+}
+
+.divewp-cron-as-overdue-notice a {
+    color: #d97706;
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+.divewp-cron-as-overdue-notice a:hover {
+    color: #b45309;
+}
+
+/* ==========================================================================
+   Cron List Table (CSS Grid based - like hosting-benchmark)
+   ========================================================================== */
+
+/* List Table Container */
+.divewp-cron-list-table {
+    background: #fff;
+    border: 1px solid #dcdcde;
+    border-radius: 8px;
+    overflow: hidden;
+    overflow-x: auto;
+    margin-bottom: 16px;
+}
+
+/* Table Header */
+.divewp-cron-table-header {
+    display: grid;
+    background: #f8f9fa;
+    border-bottom: 2px solid #dcdcde;
+    padding: 12px 16px;
+    font-weight: 600;
+    color: #1e293b;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Grid columns for WP-Cron table (with checkbox) */
+.divewp-cron-table-header--wp {
+    grid-template-columns: 40px minmax(220px, 1fr) 180px 120px 140px 130px;
+    gap: 12px;
+}
+
+/* Grid columns for Overdue table (no checkbox) */
+.divewp-cron-table-header--overdue {
+    grid-template-columns: 40px minmax(220px, 1fr) 180px 120px 130px;
+    gap: 12px;
+}
+
+/* Grid columns for Action Scheduler Overdue table */
+.divewp-cron-table-header--as-overdue {
+    grid-template-columns: 40px minmax(220px, 1fr) 180px 100px 120px 130px;
+    gap: 12px;
+}
+
+/* Grid columns for Action Scheduler Queue table */
+.divewp-cron-table-header--as {
+    grid-template-columns: 40px minmax(220px, 1fr) 180px 100px 120px 130px;
+    gap: 12px;
+}
+
+/* Table Body */
+.divewp-cron-table-body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Table Rows */
+.divewp-cron-row {
+    display: grid;
+    padding: 14px 16px;
+    border-bottom: 1px solid #f0f0f1;
+    transition: background-color 0.2s ease;
+    align-items: center;
+}
+
+.divewp-cron-row--wp {
+    grid-template-columns: 40px minmax(220px, 1fr) 180px 120px 140px 130px;
+    gap: 12px;
+}
+
+/* Overdue rows (no checkbox) */
+.divewp-cron-row--overdue:not(.divewp-cron-row--wp):not(.divewp-cron-row--as) {
+    grid-template-columns: 40px minmax(220px, 1fr) 180px 120px 130px;
+    gap: 12px;
+}
+
+/* Action Scheduler overdue rows */
+.divewp-cron-row--as {
+    grid-template-columns: 40px minmax(220px, 1fr) 180px 100px 120px 130px;
+    gap: 12px;
+}
+
+/* Action Scheduler queue rows */
+.divewp-cron-row--as-queue {
+    grid-template-columns: 40px minmax(220px, 1fr) 180px 100px 120px 130px;
+    gap: 12px;
+}
+
+.divewp-cron-row:last-child {
+    border-bottom: none;
+}
+
+.divewp-cron-row:hover {
+    background: #f6f7f7;
+}
+
+.divewp-cron-row--overdue {
+    background: #fcf9e8;
+}
+
+.divewp-cron-row--overdue:hover {
+    background: #faf6e3;
+}
+
+/* Status Pill styles - override/extend global for cron context */
+.status-pill {
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 8px;
+    margin-top: 0; /* Align with text */
+    vertical-align: middle;
+}
+
+.status-pill-warning {
+    background-color: #fef3c7;
+    color: #d97706;
+    border: 1px solid #fcd34d;
+}
+
+.status-pill-danger {
+    background-color: #fee2e2;
+    color: #dc2626;
+    border: 1px solid #fecaca;
+}
+
+.divewp-cron-row--orphaned {
+    background: #fff5f5;
+}
+
+.divewp-cron-row--orphaned:hover {
+    background: #fff0f0;
+}
+
+/* Column Styles */
+.col-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-hook {
+    min-width: 0; /* Allow text truncation */
+}
+
+.col-next,
+.col-schedule,
+.col-source,
+.col-status,
+.col-group {
+    font-size: 13px;
+    color: #4a5568;
+}
+
+/* Hook Name */
+.divewp-cron-hook-name {
+    display: block;
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+    color: #1e293b;
+    word-break: break-word;
+}
+
+.divewp-cron-args {
+    display: block;
+    font-size: 11px;
+    color: #8c8f94;
+    margin-top: 4px;
+    max-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Next Run */
+.divewp-cron-next-run {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: #1e293b;
+}
+
+.divewp-cron-next-run--overdue {
+    color: #996800;
+}
+
+.divewp-cron-relative {
+    display: block;
+    font-size: 11px;
+    color: #8c8f94;
+    margin-top: 2px;
+}
+
+/* Schedule & Source */
+.divewp-cron-schedule {
+    font-size: 13px;
+}
+
+.divewp-cron-source {
+    font-size: 12px;
+}
+
+/* Actions Column */
+.col-actions {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+.col-actions .button {
+    font-size: 11px;
+    padding: 6px 10px;
+    height: auto;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.col-actions .button .dashicons {
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+    line-height: 1;
+}
+
+/* Delete button styling */
+.col-actions .button[data-action="delete"],
+.col-actions .button[data-action="cancel"] {
+    color: #dc3545 !important;
+    border-color: #dc3545 !important;
+}
+
+.col-actions .button[data-action="delete"]:hover,
+.col-actions .button[data-action="cancel"]:hover {
+    background-color: #dc3545 !important;
+    color: white !important;
+}
+
+/* ==========================================================================
+   Task Detail Modal (centered popup like hosting benchmark)
+   ========================================================================== */
+
+.divewp-cron-drawer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.3s, opacity 0.3s;
+}
+
+.divewp-cron-drawer.open {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.3s;
+}
+
+.divewp-cron-drawer__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.divewp-cron-drawer__panel {
+    position: relative;
+    background: #fff;
+    border: 2px solid #e5e7eb;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    max-width: 600px;
+    width: 92%;
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    animation: divewp-modal-fadein 0.3s ease-out;
+}
+
+@keyframes divewp-modal-fadein {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.divewp-cron-drawer__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e1e5e9;
+}
+
+.divewp-cron-drawer__title {
+    margin: 0;
+    font-family: 'Literata', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.divewp-cron-drawer__close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    background: #fff;
+    border: 1px solid #dcdcde;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #646970;
+    transition: all 0.2s;
+}
+
+.divewp-cron-drawer__close:hover {
+    background: #f0f0f1;
+    color: #d63638;
+    border-color: #d63638;
+}
+
+.divewp-cron-drawer__content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.divewp-cron-drawer__footer {
+    display: flex;
+    gap: 8px;
+    padding: 16px 20px;
+    background: #f8f9fa;
+    border-top: 1px solid #e1e5e9;
+}
+
+/* Modal footer buttons - DiveWP plugin style (matching user-events) */
+.divewp-cron-drawer__footer .divewp-cron-drawer__action {
+    border-radius: 6px;
+    padding: 4px 12px 4px 8px;
+    height: auto;
+    min-height: 30px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.divewp-cron-drawer__footer .divewp-cron-drawer__action[data-action="run-now"] {
+    background-color: #48bb78;
+    color: #fff;
+    border-color: #48bb78;
+}
+
+.divewp-cron-drawer__footer .divewp-cron-drawer__action[data-action="run-now"]:hover {
+    background-color: #38a169;
+    border-color: #38a169;
+}
+
+.divewp-cron-drawer__footer .divewp-cron-drawer__action[data-action="delete"] {
+    background-color: #D92D20;
+    color: #fff;
+    border-color: #D92D20;
+}
+
+.divewp-cron-drawer__footer .divewp-cron-drawer__action[data-action="delete"]:hover {
+    background-color: #b91c1c;
+    border-color: #b91c1c;
+}
+
+.divewp-cron-drawer__action .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    line-height: 1;
+}
+
+/* ==========================================================================
+   Add Task Form (inside drawer)
+   ========================================================================== */
+
+.divewp-cron-add-form__field {
+    margin-bottom: 16px;
+}
+
+.divewp-cron-add-form__label {
+    display: block;
+    margin: 0 0 6px 0;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.divewp-cron-add-form__input {
+    width: 100%;
+    max-width: 100%;
+}
+
+.divewp-cron-add-form__textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.divewp-cron-add-form__help {
+    margin: 6px 0 0 0;
+    font-size: 12px;
+    color: #64748b;
+}
+
+.divewp-cron-add-form__error {
+    margin: 6px 0 0 0;
+    font-size: 12px;
+    color: #b91c1c;
+    display: none;
+}
+
+/* ==========================================================================
+   Modal Content Styles
+   ========================================================================== */
+
+.divewp-modal-details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Modal Notice (Success Message) */
+.divewp-modal-notice {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    background: #dcfce7;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    color: #166534;
+    font-size: 13px;
+    font-weight: 500;
+    animation: divewp-fadein 0.3s ease-out;
+}
+
+.divewp-modal-notice .dashicons {
+    color: #16a34a;
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+}
+
+/* Orphaned Notice in Drawer */
+.divewp-orphaned-notice {
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.divewp-orphaned-notice--danger {
+    background: #fff5f5;
+    border-color: #feb2b2;
+}
+
+.divewp-orphaned-notice__header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.divewp-orphaned-notice--danger .divewp-orphaned-notice__header {
+    color: #c53030;
+}
+
+.divewp-orphaned-notice__header .dashicons {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+}
+
+.divewp-orphaned-notice__content {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+@keyframes divewp-fadein {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Status badge at top */
+.divewp-modal-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.divewp-modal-status .dashicons {
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+}
+
+.divewp-modal-status--scheduled {
+    background: #e0f2fe;
+    color: #0369a1;
+}
+
+.divewp-modal-status--overdue {
+    background: #fef3c7;
+    color: #d97706;
+}
+
+/* Hook name - prominent display */
+.divewp-modal-hook {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 12px 16px;
+}
+
+.divewp-modal-hook code {
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+    color: #1e293b;
+    background: none;
+    padding: 0;
+    word-break: break-all;
+}
+
+/* Info grid */
+.divewp-modal-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.divewp-modal-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    transition: border-color 0.2s;
+}
+
+.divewp-modal-item:hover {
+    border-color: #cbd5e1;
+}
+
+.divewp-modal-item__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: #f0f9ff;
+    border-radius: 8px;
+    color: #0284c7;
+    flex-shrink: 0;
+}
+
+.divewp-modal-item__icon .dashicons {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+}
+
+.divewp-modal-item__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+
+.divewp-modal-item__label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.divewp-modal-item__value {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1e293b;
+}
+
+.divewp-modal-item__meta {
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+/* Arguments section */
+.divewp-modal-args {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.divewp-modal-args__header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    background: #f1f5f9;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 12px;
+    font-weight: 600;
+    color: #475569;
+}
+
+.divewp-modal-args__header .dashicons {
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+    color: #64748b;
+}
+
+.divewp-modal-args__code {
+    margin: 0;
+    padding: 12px 14px;
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+    font-size: 12px;
+    color: #334155;
+    background: transparent;
+    white-space: pre-wrap;
+    word-break: break-all;
+    max-height: 120px;
+    overflow-y: auto;
+}
+
+/* Recent executions section */
+.divewp-modal-logs {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.divewp-modal-logs__header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    background: #f8fafc;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 12px;
+    font-weight: 600;
+    color: #475569;
+}
+
+.divewp-modal-logs__header .dashicons {
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+    color: #64748b;
+}
+
+.divewp-modal-logs__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.divewp-modal-log-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.divewp-modal-log-item:last-child {
+    border-bottom: none;
+}
+
+.divewp-modal-log-item__icon {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.divewp-modal-log-item--success .divewp-modal-log-item__icon {
+    color: #059669;
+}
+
+.divewp-modal-log-item--danger .divewp-modal-log-item__icon {
+    color: #dc2626;
+}
+
+.divewp-modal-log-item--warning .divewp-modal-log-item__icon {
+    color: #d97706;
+}
+
+.divewp-modal-log-item__time {
+    flex: 1;
+    font-size: 13px;
+    color: #475569;
+}
+
+.divewp-modal-log-item__duration {
+    font-size: 12px;
+    font-weight: 500;
+    color: #64748b;
+    background: #f1f5f9;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+/* Accent pills for important/recommendation notes in modal */
+.divewp-modal-pill {
+    margin: 8px 0;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 1.5;
+    border: 1px solid transparent;
+}
+
+.divewp-modal-pill--warning {
+    background: #fef3c7;
+    border-color: #fcd34d;
+    color: #92400e;
+}
+
+.divewp-modal-pill--info {
+    background: #e0f2fe;
+    border-color: #bae6fd;
+    color: #075985;
+}
+
+/* ==========================================================================
+   Diagnostics Section
+   ========================================================================== */
+
+.divewp-cron-diagnostics {
+    margin-top: 32px;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+}
+
+#divewp-cron-health {
+    scroll-margin-top: 120px;
+}
+
+#cron-jobs-health {
+    scroll-margin-top: 120px;
+}
+
+.divewp-cron-diagnostics h4 {
+    margin: 0 0 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+/* Info Grid - Status Items */
+.divewp-cron-info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.divewp-cron-info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.divewp-cron-info-item:hover {
+    border-color: #cbd5e1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.divewp-cron-info-item__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #e2e8f0;
+    border-radius: 10px;
+    color: #64748b;
+    flex-shrink: 0;
+}
+
+.divewp-cron-info-item__icon .dashicons {
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.divewp-cron-info-item--success .divewp-cron-info-item__icon {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.divewp-cron-info-item--neutral .divewp-cron-info-item__icon {
+    background: #f1f5f9;
+    color: #64748b;
+}
+
+.divewp-cron-info-item__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+
+.divewp-cron-info-item__label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.divewp-cron-info-item__value {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+/* Recommendations */
+.divewp-cron-recommendations {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.divewp-cron-recommendation {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.divewp-cron-recommendation--info {
+    background: #eff8ff;
+    border: 1px solid #bfdbfe;
+}
+
+.divewp-cron-recommendation--warning {
+    background: #fef3c7;
+    border: 1px solid #fcd34d;
+}
+
+.divewp-cron-recommendation__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.divewp-cron-recommendation--info .divewp-cron-recommendation__icon {
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+.divewp-cron-recommendation--warning .divewp-cron-recommendation__icon {
+    background: #fde68a;
+    color: #d97706;
+}
+
+.divewp-cron-recommendation__icon .dashicons {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+}
+
+.divewp-cron-recommendation__content {
+    flex: 1;
+    min-width: 0;
+}
+
+.divewp-cron-recommendation__title {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.divewp-cron-recommendation--info .divewp-cron-recommendation__title {
+    color: #1e40af;
+}
+
+.divewp-cron-recommendation--warning .divewp-cron-recommendation__title {
+    color: #92400e;
+}
+
+.divewp-cron-recommendation__message {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.divewp-cron-recommendation--info .divewp-cron-recommendation__message {
+    color: #1e40af;
+}
+
+.divewp-cron-recommendation--warning .divewp-cron-recommendation__message {
+    color: #92400e;
+}
+
+/* Server Cron Setup */
+.divewp-cron-setup {
+    padding-top: 24px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.divewp-cron-setup__title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 12px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.divewp-cron-setup__title .dashicons {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+    color: #64748b;
+}
+
+.divewp-cron-setup__intro {
+    margin: 0 0 20px;
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+/* Commands Grid */
+.divewp-cron-commands-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.divewp-cron-command {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: border-color 0.2s;
+}
+
+.divewp-cron-command:hover {
+    border-color: #cbd5e1;
+}
+
+.divewp-cron-command__header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    background: #f1f5f9;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.divewp-cron-command__header .dashicons {
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+    color: #64748b;
+}
+
+.divewp-cron-command__header label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.divewp-cron-command__code {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 12px 14px;
+    min-height: 60px;
+}
+
+.divewp-cron-command__code code {
+    flex: 1;
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+    font-size: 11px;
+    line-height: 1.5;
+    word-break: break-all;
+    background: none;
+    padding: 0;
+    color: #334155;
+}
+
+.divewp-cron-copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    color: #64748b;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: all 0.2s;
+}
+
+.divewp-cron-copy:hover {
+    background: #f1f5f9;
+    border-color: #cbd5e1;
+    color: #475569;
+}
+
+.divewp-cron-copy .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+/* Setup Note */
+.divewp-cron-setup-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 16px;
+    background: #fefce8;
+    border: 1px solid #fde047;
+    border-radius: 10px;
+}
+
+.divewp-cron-setup-note__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: #fef08a;
+    border-radius: 8px;
+    color: #ca8a04;
+    flex-shrink: 0;
+}
+
+.divewp-cron-setup-note__icon .dashicons {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+}
+
+.divewp-cron-setup-note__content {
+    flex: 1;
+    min-width: 0;
+}
+
+.divewp-cron-setup-note__content p {
+    margin: 0 0 10px;
+    font-size: 13px;
+    color: #713f12;
+    line-height: 1.5;
+}
+
+.divewp-cron-setup-note__content p strong {
+    font-weight: 600;
+}
+
+.divewp-cron-setup-note__content code {
+    display: block;
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+    font-size: 12px;
+    padding: 10px 14px;
+    background: #fff;
+    border: 1px solid #fde68a;
+    border-radius: 6px;
+    color: #92400e;
+}
+
+/* ==========================================================================
+   Execution Log Styles
+   ========================================================================== */
+
+.divewp-cron-log-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.divewp-cron-log-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 16px;
+    border-bottom: 1px solid #f0f0f1;
+}
+
+.divewp-cron-log-item:hover {
+    background: #f6f7f7;
+}
+
+.divewp-cron-log-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.divewp-cron-log-status--success {
+    background: #edfaef;
+    color: #00a32a;
+}
+
+.divewp-cron-log-status--error {
+    background: #fcf0f1;
+    color: #d63638;
+}
+
+.divewp-cron-log-status--warning {
+    background: #fcf9e8;
+    color: #996800;
+}
+
+.divewp-cron-log-status--running {
+    background: #f0f6fc;
+    color: #2271b1;
+}
+
+.divewp-cron-log-status .dashicons {
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+}
+
+.divewp-cron-log-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.divewp-cron-log-hook {
+    font-family: monospace;
+    font-size: 13px;
+    font-weight: 500;
+    word-break: break-all;
+}
+
+.divewp-cron-log-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 4px;
+    font-size: 12px;
+    color: #646970;
+}
+
+.divewp-cron-log-time,
+.divewp-cron-log-duration,
+.divewp-cron-log-source {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.divewp-cron-log-time .dashicons,
+.divewp-cron-log-duration .dashicons,
+.divewp-cron-log-source .dashicons {
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+    opacity: 0.6;
+}
+
+/* ==========================================================================
+   Grouped Execution Log Styles
+   ========================================================================== */
+
+.divewp-cron-log-grouped {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.divewp-cron-log-header {
+    display: grid;
+    grid-template-columns: 40px 1fr 160px 70px 80px 90px;
+    gap: 12px;
+    padding: 12px 16px;
+    background: #f8fafc;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 11px;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.divewp-cron-log-hook-row {
+    display: grid;
+    grid-template-columns: 40px 6px 1fr 160px 70px 80px 90px;
+    gap: 12px;
+    padding: 14px 16px;
+    border-bottom: 1px solid #f0f0f1;
+    cursor: pointer;
+    transition: background-color 0.15s;
+    align-items: center;
+}
+
+.divewp-cron-log-hook-row:hover {
+    background: #f8fafc;
+}
+
+.divewp-cron-log-hook-row:last-child {
+    border-bottom: none;
+}
+
+.divewp-cron-log-hook-row__status {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.divewp-cron-log-hook-row__check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divewp-cron-log-hook-row__status.divewp-cron-log-status--success {
+    background: #16a34a;
+}
+
+.divewp-cron-log-hook-row__status.divewp-cron-log-status--error {
+    background: #dc2626;
+}
+
+.divewp-cron-log-hook-row__status.divewp-cron-log-status--warning {
+    background: #d97706;
+}
+
+.divewp-cron-log-hook-row__status.divewp-cron-log-status--running {
+    background: #2563eb;
+}
+
+.divewp-cron-log-hook-row__hook {
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+    color: #1e293b;
+    word-break: break-all;
+}
+
+.divewp-cron-log-hook-row__last-run {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.divewp-cron-log-hook-row__runs,
+.divewp-cron-log-hook-row__success,
+.divewp-cron-log-hook-row__duration {
+    font-size: 12px;
+    color: #475569;
+}
+
+/* Badges */
+.divewp-cron-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 28px;
+    padding: 2px 8px;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 12px;
+    background: #f1f5f9;
+    color: #475569;
+}
+
+.divewp-cron-badge--success {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.divewp-cron-badge--warning {
+    background: #fef3c7;
+    color: #d97706;
+}
+
+.divewp-cron-badge--error {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+/* ==========================================================================
+   Hook History Modal Styles
+   ========================================================================== */
+
+.divewp-cron-hook-history {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.divewp-cron-hook-summary {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    padding: 20px;
+    background: #f8fafc;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+}
+
+.divewp-cron-hook-summary__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    text-align: center;
+}
+
+.divewp-cron-hook-summary__value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.divewp-cron-hook-summary__value--success {
+    color: #16a34a;
+}
+
+.divewp-cron-hook-summary__value--warning {
+    color: #d97706;
+}
+
+.divewp-cron-hook-summary__value--error {
+    color: #dc2626;
+}
+
+.divewp-cron-hook-summary__label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.divewp-cron-hook-timeline h5 {
+    margin: 0 0 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.divewp-cron-hook-timeline__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.divewp-cron-hook-timeline__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 16px;
+    background: #fff;
+    border-bottom: 1px solid #f0f0f1;
+}
+
+.divewp-cron-hook-timeline__item:last-child {
+    border-bottom: none;
+}
+
+.divewp-cron-hook-timeline__item:hover {
+    background: #f8fafc;
+}
+
+.divewp-cron-hook-timeline__status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.divewp-cron-hook-timeline__status .dashicons {
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+}
+
+.divewp-cron-hook-timeline__content {
+    flex: 1;
+    min-width: 0;
+}
+
+.divewp-cron-hook-timeline__time {
+    font-size: 13px;
+    font-weight: 500;
+    color: #1e293b;
+    margin-bottom: 4px;
+}
+
+.divewp-cron-hook-timeline__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 12px;
+    color: #64748b;
+}
+
+.divewp-cron-hook-timeline__duration {
+    font-weight: 500;
+}
+
+.divewp-cron-hook-timeline__source {
+    padding: 2px 8px;
+    background: #f1f5f9;
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+.divewp-cron-hook-timeline__error {
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    padding: 8px 12px;
+    background: #fee2e2;
+    border-radius: 6px;
+    color: #dc2626;
+    font-size: 12px;
+}
+
+.divewp-cron-empty-text {
+    text-align: center;
+    color: #64748b;
+    padding: 24px;
+}
+
+/* Responsive adjustments for grouped log */
+@media screen and (max-width: 1024px) {
+    .divewp-cron-log-header {
+        grid-template-columns: 1fr 140px 60px 70px 80px;
+    }
+
+    .divewp-cron-log-hook-row {
+        grid-template-columns: 6px 1fr 140px 60px 70px 80px;
+    }
+
+    .divewp-cron-hook-summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 782px) {
+    .divewp-cron-log-header {
+        display: none;
+    }
+
+    .divewp-cron-log-hook-row {
+        grid-template-columns: 6px 1fr;
+        grid-template-rows: auto auto;
+        gap: 8px;
+        padding: 12px;
+    }
+
+    .divewp-cron-log-hook-row__last-run,
+    .divewp-cron-log-hook-row__runs,
+    .divewp-cron-log-hook-row__success,
+    .divewp-cron-log-hook-row__duration {
+        display: none;
+    }
+
+    .divewp-cron-hook-summary {
+        grid-template-columns: 1fr 1fr;
+        padding: 16px;
+    }
+
+    .divewp-cron-hook-summary__value {
+        font-size: 20px;
+    }
+}
+
+/* ==========================================================================
+   Loading State
+   ========================================================================== */
+
+/* Loading styles removed - using .divewp-loading-container and .divewp-loader from global.css */
+
+/* ==========================================================================
+   Responsive Adjustments
+   ========================================================================== */
+
+@media screen and (max-width: 1024px) {
+    .divewp-cron-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .divewp-cron-commands-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 782px) {
+    .divewp-cron-hero {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .divewp-cron-hero__status {
+        align-items: center;
+        text-align: center;
+    }
+
+    .divewp-cron-hero__health {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .divewp-cron-hero__summary {
+        border-left: none;
+        margin-left: 0;
+        padding-left: 0;
+        margin-top: 4px;
+        display: block;
+        width: 100%;
+    }
+
+    .divewp-cron-hero__actions {
+        justify-content: center;
+    }
+
+    .divewp-cron-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .divewp-cron-toolbar__search {
+        width: 100%;
+    }
+
+    .divewp-cron-search {
+        max-width: none;
+    }
+
+    /* Hide source column on tablets */
+    .col-source {
+        display: none;
+    }
+
+    /* Adjust grid for WP-Cron table */
+    .divewp-cron-table-header--wp {
+        grid-template-columns: 40px minmax(200px, 1fr) 150px 100px 110px;
+    }
+
+    .divewp-cron-row--wp {
+        grid-template-columns: 40px minmax(200px, 1fr) 150px 100px 110px;
+    }
+
+    .divewp-cron-drawer__panel {
+        width: 100%;
+    }
+
+    .divewp-cron-info-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .divewp-cron-info-item {
+        padding: 12px;
+    }
+
+    .divewp-cron-info-item__icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .divewp-cron-diagnostics {
+        padding: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* Hide schedule column on mobile */
+    .col-schedule {
+        display: none;
+    }
+
+    /* Stack layout for mobile */
+    .divewp-cron-table-header {
+        display: none;
+    }
+
+    .divewp-cron-row {
+        grid-template-columns: 1fr !important;
+        gap: 8px;
+        padding: 12px 16px;
+    }
+
+    .col-check {
+        position: absolute;
+        top: 12px;
+        right: 16px;
+    }
+
+    .divewp-cron-row--wp {
+        position: relative;
+        padding-right: 50px;
+    }
+
+    .col-actions {
+        justify-content: flex-start;
+        margin-top: 8px;
+        padding-top: 8px;
+        border-top: 1px solid #f0f0f1;
+    }
+
+    .divewp-cron-tabs {
+        flex-wrap: wrap;
+    }
+
+    .divewp-cron-tab {
+        font-size: 12px;
+        padding: 10px 12px;
+    }
+
+    .divewp-cron-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .divewp-cron-info-item {
+        padding: 14px;
+    }
+
+    .divewp-cron-recommendation {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .divewp-cron-setup-note {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

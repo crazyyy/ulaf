@@ -1,0 +1,128 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2025-01-06 13:49+0530\n"
+"PO-Revision-Date: 2025-01-06 13:51+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: plugginsight-maintenance-status.php:52
+#: plugginsight-maintenance-status.php:53
+#: plugginsight-maintenance-status.php:137
+msgid "Maintenance Status"
+msgstr "Maintenance Status"
+
+#: plugginsight-maintenance-status.php:69
+msgid "Maintenance Status Settings"
+msgstr "Maintenance Status Settings"
+
+#: plugginsight-maintenance-status.php:70
+msgid "Manage Maintenance Status Cache"
+msgstr "Manage Maintenance Status Cache"
+
+#: plugginsight-maintenance-status.php:71
+msgid "Disclaimer:"
+msgstr "Disclaimer:"
+
+#: plugginsight-maintenance-status.php:71
+msgid ""
+"The plugin and its developer do not independently verify the accuracy or "
+"validity of each plugin's data. The data displayed is obtained from the WP "
+"plugin repository, where individual plugin authors have tested and reported "
+"that their plugins are compatible with the latest WordPress versions. All "
+"the displayed logic in this plugin is based on that data."
+msgstr ""
+"The plugin and its developer do not independently verify the accuracy or "
+"validity of each plugin's data. The data displayed is obtained from the WP "
+"plugin repository, where individual plugin authors have tested and reported "
+"that their plugins are compatible with the latest WordPress versions. All "
+"the displayed logic in this plugin is based on that data."
+
+#: plugginsight-maintenance-status.php:72
+msgid ""
+"The below process will depend on the number of plugins you have installed. "
+"More plugins installed, more time it will take to reload this cache."
+msgstr ""
+"The below process will depend on the number of plugins you have installed. "
+"More plugins installed, more time it will take to reload this cache."
+
+#: plugginsight-maintenance-status.php:78
+msgid "Clear Status Cache"
+msgstr "Clear Status Cache"
+
+#: plugginsight-maintenance-status.php:104
+msgid "Cache cleared and refreshed successfully."
+msgstr "Cache cleared and refreshed successfully."
+
+#: plugginsight-maintenance-status.php:107
+msgid "Invalid security token. Cache clearing and refreshing failed."
+msgstr "Invalid security token. Cache clearing and refreshing failed."
+
+#: plugginsight-maintenance-status.php:125
+msgid "Settings"
+msgstr "Settings"
+
+#: plugginsight-maintenance-status.php:139
+msgid "Update Status Cache"
+msgstr "Update Status Cache"
+
+#: plugginsight-maintenance-status.php:246
+msgid "Plugin Removed from WP"
+msgstr "Plugin Removed from WP"
+
+#: plugginsight-maintenance-status.php:247
+msgid "Date:"
+msgstr "Date:"
+
+#: plugginsight-maintenance-status.php:248
+msgid "Reason:"
+msgstr "Reason:"
+
+#: plugginsight-maintenance-status.php:253
+msgid "Latest Version:"
+msgstr "Latest Version:"
+
+#: plugginsight-maintenance-status.php:254
+msgid "Last Updated:"
+msgstr "Last Updated:"
+
+#: plugginsight-maintenance-status.php:255
+msgid "Tested Up to:"
+msgstr "Tested Up to:"
+
+#: plugginsight-maintenance-status.php:259
+msgid "Plugin not available in the repository"
+msgstr "Plugin not available in the repository"
+
+#: plugginsight-maintenance-status.php:291
+msgid "No name specified"
+msgstr "No name specified"
+
+#: plugginsight-maintenance-status.php:292
+msgid "No slug specified"
+msgstr "No slug specified"
+
+#: plugginsight-maintenance-status.php:293
+msgid "No version specified"
+msgstr "No version specified"
+
+#: plugginsight-maintenance-status.php:294
+msgid "No last updated date specified"
+msgstr "No last updated date specified"
+
+#: plugginsight-maintenance-status.php:295
+msgid "No tested version specified"
+msgstr "No tested version specified"
+
+#: plugginsight-maintenance-status.php:305
+msgid "No reason specified"
+msgstr "No reason specified"

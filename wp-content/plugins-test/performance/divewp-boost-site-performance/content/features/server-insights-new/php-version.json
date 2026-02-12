@@ -1,0 +1,39 @@
+{
+    "messages": {
+        "success": {
+            "title": "PHP Version is Up to Date",
+            "details": "Your site is running PHP version {current_value}, which is optimal for performance and security! Well done!",
+            "steps": [
+                "Keep PHP updated to the latest stable version",
+                "Monitor PHP version compatibility with your plugins and themes",
+                "Regularly check for new PHP releases"
+            ]
+        },
+        "error": {
+            "title": "PHP Version Needs Attention!",
+            "details": "Your site is running PHP version {current_value}. We recommend upgrading to at least version {recommended_value} for better performance and security.",
+            "steps": [
+                "Keep PHP updated to the latest stable version",
+                "Monitor PHP version compatibility with your plugins and themes",
+                "Regularly check for new PHP releases"
+            ]
+        }
+    },
+    "learn_more": {
+        "description": "PHP version plays a crucial role in your site's performance, security, and compatibility with modern WordPress features.",
+        "benefits": [
+            "Improved performance and speed",
+            "Better security with latest patches",
+            "Access to modern PHP features",
+            "Compatibility with latest WordPress features",
+            "Lower resource usage - which can save you money through your hosting provider!"
+        ],
+        "recommendations": [
+            "Keep PHP updated to the latest stable version",
+            "Use PHP 8.2 or higher for optimal performance",
+            "Always test compatibility before upgrading",
+            "Maintain a staging environment for testing",
+            "Monitor PHP error logs regularly"
+        ]
+    }
+}

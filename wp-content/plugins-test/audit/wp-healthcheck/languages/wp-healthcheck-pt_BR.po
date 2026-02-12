@@ -1,0 +1,536 @@
+# Copyright (C) 2017 WP Healthcheck Team
+# This file is distributed under the GPL-3.0+.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Healthcheck 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-healthcheck\n"
+"POT-Creation-Date: 2018-06-01 08:23:02+00:00\n"
+"PO-Revision-Date: 2018-01-20 13:50-0600\n"
+"Last-Translator: Tiago Hillebrandt <tiago@tiagohillebrandt.com>\n"
+"Language-Team: \n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: includes/class-wp-healthcheck-admin.php:102
+msgid "Transients"
+msgstr "Transients"
+
+#: includes/class-wp-healthcheck-admin.php:103
+msgid "Autoload Options"
+msgstr "Autoload Options"
+
+#: includes/class-wp-healthcheck-admin.php:104
+msgid "WordPress Automatic Background Updates"
+msgstr ""
+
+#: includes/class-wp-healthcheck-admin.php:105
+msgid "Support &amp; Services"
+msgstr "Suporte &amp; Serviços"
+
+#: views/admin/admin.php:10
+msgid "Welcome and thank you for choosing the WP Healthcheck plugin."
+msgstr "Bem-vindo e obrigado por usar o plugin WP Healthcheck."
+
+#: views/admin/autoload-history.php:17 views/admin/autoload-list.php:13
+msgid "Name"
+msgstr "Nome"
+
+#: views/admin/autoload-history.php:18
+msgid "Deactivation Time"
+msgstr "Hora de desativação"
+
+#: views/admin/autoload-history.php:36
+msgid "Reactivate Selected Options"
+msgstr "Reativar opções selecionadas"
+
+#: views/admin/autoload-history.php:38 views/admin/autoload-list.php:42
+msgid "Close"
+msgstr "Fechar"
+
+#: views/admin/autoload-list-status.php:18
+msgid "reactivate"
+msgstr "reativar"
+
+#: views/admin/autoload-list-status.php:18
+msgid "deactivate"
+msgstr "desativar"
+
+#. translators: %1$s is the option name, %2$s is the status ('deactivated' or
+#. 'reactivated')
+#: views/admin/autoload-list-status.php:28
+msgid "Yay, the <strong>%1$s</strong> option was %2$s successfully."
+msgstr "Yay, a opção <strong>%1$s</strong> foi %2$s com sucesso."
+
+#. translators: %1$s is the status ('deactivated' or 'reactivated')
+#: views/admin/autoload-list-status.php:35
+msgid "Yay, the below options were %1$s successfully:"
+msgstr "Yay, as seguintes opções foram %1$s com sucesso:"
+
+#. translators: %1$s is the status ('deactivate' or 'reactivate'), %2$s is the
+#. option name
+#: views/admin/autoload-list-status.php:51
+msgid ""
+"Oops, for some reason we couldn't %1$s the <strong>%2$s</strong> option."
+msgstr ""
+"Oops, por algum motivo não conseguimos %1$s a opção <strong>%2$s</strong>."
+
+#: views/admin/autoload-list.php:14
+msgid "Size"
+msgstr "Tamanho"
+
+#: views/admin/autoload-list.php:27
+msgid "You can't deactivate a WordPress core option."
+msgstr "Você não pode desativar uma opção do core do WordPress."
+
+#: views/admin/autoload-list.php:40
+msgid "Deactivate Selected Options"
+msgstr "Desativar opções selecionadas"
+
+#: views/admin/autoload-stats.php:12 views/admin/transients-stats.php:12
+msgid "Total:"
+msgstr "Total:"
+
+#: views/admin/autoload-stats.php:16 views/admin/transients-stats.php:16
+msgid "Size:"
+msgstr "Tamanho:"
+
+#: views/admin/autoload-stats.php:23
+msgid "Top Autoload Options"
+msgstr "Top autoload options"
+
+#: views/admin/autoload-stats.php:28
+msgid "History"
+msgstr "Histórico"
+
+#: views/admin/autoload-stats.php:32
+msgid "Help: Autoload Options"
+msgstr "Ajuda: Autoload options"
+
+#: views/admin/autoload.php:7
+msgid ""
+"WordPress autoload options are very similar to transients. The main "
+"difference is: transients are used to store temporary data, while options "
+"are used to store permanent data."
+msgstr ""
+"As autoload options do WordPress são muito similares aos transients. A "
+"principal diferença é: transients são usados para armazenar dados "
+"temporários, enquanto options são usadas para armazenar dados permanentes."
+
+#: views/admin/autoload.php:9
+msgid ""
+"All the autoload options, as well as transients, are loaded automatically "
+"when WordPress loads itself. Thus, the number and size of these options can "
+"directly affect your site performance."
+msgstr ""
+"Todas as autoload options, assim como os transients, são carregadas "
+"automaticamente quando o WordPress é carregado. Por isso, o número e o "
+"tamanho dessas options pode afetar diretamente a performance do seu site."
+
+#: views/admin/help.php:7
+msgid "Cleaning Up Transients"
+msgstr "Limpando os transients"
+
+#: views/admin/help.php:8
+msgid ""
+"You don't have to be afraid! Cleaning up transients won't affect your site "
+"functionality.<br/><br/>In fact, plugins, themes, and WordPress itself will "
+"recreate them according to their needs."
+msgstr ""
+"Não tenha medo! Limpar os transients não irá afetar o funcionamento do seu "
+"site.<br/><br/>De fato, os plugins, os temas e o próprio WordPress vão "
+"recriá-los, automaticamente, de acordo com sua necessidade."
+
+#: views/admin/help.php:12
+msgid "Deactivating An Autoload Option"
+msgstr "Desativando uma autoload option"
+
+#: views/admin/help.php:13
+msgid ""
+"No worries, when you deactivate an autoload option, you are not removing it."
+"<br/></br>You are just telling WordPress to not load that option "
+"automatically on every request it does.<br/><br/>In other words, the option "
+"will be loaded only when it is needed."
+msgstr ""
+"Não se preocupe, quando você desativa uma autoload option, você não está "
+"removendo ela.<br/></br>Você está apenas dizendo para o WordPress não "
+"carregá-la automaticamente a cada requisição que ele fizer.<br/><br/>Em "
+"outras palavras, a option será carregada somente quando ela for necessária."
+
+#. translators: %1$s is the URL to our community forum
+#: views/admin/support.php:10
+msgid ""
+"If you have any questions, you can post a new thread in our <a href=\"%1$s"
+"\">Community Forum</a>, available on WordPress.org. We review it weekly and "
+"our team will be happy to assist you there."
+msgstr ""
+"Se você tiver quaisquer dúvidas, você pode postá-las no nosso <a href=\"%1$s"
+"\">fórum da comunidade</a>, disponível no WordPress.org. Nós revisamos ele "
+"semanalmente e nosso time ficará feliz em lhe ajudar."
+
+#: views/admin/support.php:14
+msgid ""
+"<strong>Looking for professional services?</strong> We can help you to "
+"review your server configuration, improve your site performance, or even "
+"build a high-performance server from scratch to host your sites."
+msgstr ""
+"<strong>Procurando por serviços profissionais?</strong> Nós podemos revisar "
+"a configuração do seu servidor, melhorar a performance do seu site, ou ainda "
+"configurar do zero um servidor de alta performance para hospedar os seus "
+"sites."
+
+#. translators: %1$s is the URL to our premium services page
+#: views/admin/support.php:19
+msgid ""
+"You can read more details about our services and hire us through our <a href="
+"\"%1$s\">Premium Services</a> area."
+msgstr ""
+"Você pode ler mais detalhes sobre nossos serviços, ou nos contratar, por "
+"meio da nossa área de <a href=\"%1$s\">Serviços Premium</a>."
+
+#: views/admin/support.php:24
+msgid "Home Page"
+msgstr "Página do Projeto"
+
+#: views/admin/support.php:25
+msgid "Contributors"
+msgstr "Contribuidores"
+
+#: views/admin/support.php:26
+msgid "Report a Bug"
+msgstr "Reportar um Bug"
+
+#: views/admin/sysinfo.php:19
+msgid "WordPress"
+msgstr "WordPress"
+
+#: views/admin/sysinfo.php:23
+msgid "PHP"
+msgstr "PHP"
+
+#: views/admin/sysinfo.php:28
+msgid "MariaDB"
+msgstr "MariaDB"
+
+#: views/admin/sysinfo.php:30
+msgid "MySQL"
+msgstr "MySQL"
+
+#: views/admin/sysinfo.php:38
+msgid "Web Server"
+msgstr "Servidor Web"
+
+#: views/admin/transients-stats.php:23
+msgid "object cache items"
+msgstr "itens no object cache"
+
+#: views/admin/transients-stats.php:23
+msgid "transients"
+msgstr "transients"
+
+#. translators: %1$s is 'transients' or 'object cache items'
+#: views/admin/transients-stats.php:29
+msgid "Yay! The %1$s were cleaned up successfully."
+msgstr "Yay! Os %1$s foram removidos com sucesso."
+
+#. translators: %1$s is 'transients' or 'object cache items'
+#: views/admin/transients-stats.php:36
+msgid "Oops, for some reason we couldn't clean up your %1$s."
+msgstr "Oops, por algum motivo não foi possível apagar seus %1$s."
+
+#: views/admin/transients.php:7
+msgid ""
+"WordPress transients are used to temporarily cache specific data. For "
+"example, developers often use them to improve their themes and plugins "
+"performance by caching database queries and script results."
+msgstr ""
+"Os transients do WordPress são usados para armazenar em cache, "
+"temporariamente, alguns dados específicos. Por exemplo, desenvolvedores "
+"frequentemente usam transients para aprimorar a performance dos seus temas e "
+"plugins através do cache de resultados de scripts e requisições para o banco "
+"de dados."
+
+#: views/admin/transients.php:9
+msgid ""
+"However, some badly coded plugins and themes can store too much information "
+"on these transients, or can even create an excessively high number of "
+"transients, resulting in performance degradation."
+msgstr ""
+"No entanto, alguns temas e plugins mal codificados podem armazenar muita "
+"informação nesses transients, ou ainda criar um número excessivo deles, "
+"resultando em perda de performance."
+
+#: views/admin/transients.php:18
+msgid "Flush Object Cache"
+msgstr "Limpar object cache"
+
+#: views/admin/transients.php:22
+msgid "Clear All Transients"
+msgstr "Limpar todos os transients"
+
+#: views/admin/transients.php:27
+msgid "Clear Expired Transients"
+msgstr "Limpar os transients expirados"
+
+#: views/admin/transients.php:31
+msgid "Help: Transients"
+msgstr "Ajuda: Transients"
+
+#: views/admin/wp-updates.php:7
+msgid ""
+"The default WordPress behavior is to always update automatically to the "
+"latest minor release available. For example, WordPress 4.9.5 will "
+"automatically be updated to 4.9.6 upon release."
+msgstr ""
+
+#: views/admin/wp-updates.php:9
+msgid ""
+"<strong>Minor</strong> updates are released more often than major ones. "
+"These releases usually includes security updates, fixes, and enhancements. "
+"<strong>Major</strong> updates are released 3-4 times a year, and they "
+"always include new features, major enhancements, and bug fixes to WordPress."
+msgstr ""
+
+#: views/admin/wp-updates.php:14
+msgid "Install minor updates automatically."
+msgstr ""
+
+#: views/admin/wp-updates.php:15
+msgid "Install major and minor updates automatically."
+msgstr ""
+
+#: views/admin/wp-updates.php:16
+msgid "Disable automatic updates on my site (not recommended)."
+msgstr ""
+
+#: views/admin/wp-updates.php:20
+msgid "WordPress Update Policy:"
+msgstr ""
+
+#: views/admin/wp-updates.php:28
+msgid "Apply Update Policy"
+msgstr ""
+
+#: views/admin/wp-updates.php:30
+msgid "Done! The new WordPress Update Policy has been applied successfully."
+msgstr ""
+
+#: views/admin/wp-updates.php:31
+msgid "Something went wrong. Please try again!"
+msgstr ""
+
+#: views/admin/wp-updates.php:33
+msgid ""
+"Currently your WordPress Automatic Background Updates are being managed in "
+"your wp-config.php file. Please remove the WP_AUTO_UPDATE_CORE or "
+"AUTOMATIC_UPDATER_DISABLED constants to use this feature."
+msgstr ""
+
+#. translators: %1$s is the current database service (MySQL, MariaDB, etc),
+#. %2$s is the database version installed on server, %3$s is the version that
+#. WP team recommends
+#: views/notices/database.php:21
+msgid ""
+"Your %1$s version (%2$s) is compatible with the current WordPress install. "
+"However, the <a href=\"https://wordpress.org/about/requirements/\">WordPress "
+"team recommends</a> you upgrade your server to %3$s or greater."
+msgstr ""
+"Sua versão do %1$s (%2$s) é compatível com a versão atual do WordPress. No "
+"entanto, o <a href=\"https://wordpress.org/about/requirements/\">time do "
+"WordPress recomenda</a> que você atualize o %1$s para versão %3$s ou "
+"superior."
+
+#. translators: %1$s is the current database service (MySQL, MariaDB, etc),
+#. %2$s is the database version installed on server, %3$s is the version that
+#. WP team recommends
+#: views/notices/database.php:26
+msgid ""
+"The %1$s version you are using (%2$s) is not supported by WordPress anymore! "
+"Please contact your developers and/or hosting company to upgrade your %1$s "
+"to version %3$s or greater."
+msgstr ""
+"A versão do %1$s que você está utilizando (%2$s) não é mais suportada pelo "
+"WordPress! Por favor entre em contato com seus desenvolvedores e/ou empresa "
+"de hospedagem para atualizar o %1$s para versão %3$s ou superior."
+
+#: views/notices/https.php:14
+#, fuzzy
+msgid ""
+"Your site is not currently using HTTPS. This is insecure and can negatively "
+"impact your search engine rankings. Please contact your developer(s) and/or "
+"hosting company to enable HTTPS for you as soon as possible!"
+msgstr ""
+"Sua versão do %1$s (%2$s) está obsoleta e não é mais suportada oficialmente! "
+"Por favor entre em contato com seus desenvolvedores e/ou empresa de "
+"hospedagem para atualizar o %1$s para versão %3$s ou superior o quanto antes."
+
+#: views/notices/https.php:16
+msgid ""
+"<a href=\"https://letsencrypt.org/\">Let's Encrypt</a> offers free SSL "
+"certificates!"
+msgstr ""
+
+#. translators: %1$s is the MySQL version installed on server, %2$s is the one
+#. WP team recommends
+#: views/notices/mysql.php:19
+msgid ""
+"Your MySQL version (%1$s) is compatible with the current WordPress install. "
+"However, the <a href=\"https://wordpress.org/about/requirements/\">WordPress "
+"team recommends</a> you upgrade your server to MySQL %2$s or greater."
+msgstr ""
+"Sua versão do MySQL (%1$s) é compatível com a versão atual do WordPress. No "
+"entanto, o <a href=\"https://wordpress.org/about/requirements/\">time do "
+"WordPress recomenda</a> que você atualize o MySQL para versão %2$s ou "
+"superior."
+
+#. translators: %1$s is the MySQL version installed on server, %2$s is the one
+#. WP team recommends
+#: views/notices/mysql.php:24
+msgid ""
+"The MySQL version you are using (%1$s) is not supported by WordPress "
+"anymore! Please contact your developers and/or hosting company to upgrade "
+"your MySQL to version %2$s or greater."
+msgstr ""
+"A versão do MySQL que você está utilizando (%1$s) não é mais suportada pelo "
+"WordPress! Por favor entre em contato com seus desenvolvedores e/ou empresa "
+"de hospedagem para atualizar o MySQL para versão %2$s ou superior."
+
+#. translators: %1$s is the PHP version installed on current server, %2$s is
+#. the one WP team recommends
+#: views/notices/php.php:19
+msgid ""
+"Your PHP version (%1$s) is compatible with the current WordPress install. "
+"However, in order to get better performance and other improvements, the <a "
+"href=\"https://wordpress.org/about/requirements/\">WordPress team "
+"recommends</a> you upgrade your server to PHP version %2$s or greater."
+msgstr ""
+"Sua versão do PHP (%1$s) é compatível com a versão atual do WordPress. No "
+"entanto, para obter melhor desempenho e outras melhorias, o <a href="
+"\"https://wordpress.org/about/requirements/\">time do WordPress recomenda</"
+"a> que você atualize o PHP para versão %2$s ou superior."
+
+#. translators: %1$s is the PHP version installed on current server, %2$s is
+#. the one WP team recommends
+#: views/notices/php.php:24
+msgid ""
+"The PHP version you are using (%1$s) is not supported by WordPress anymore! "
+"Please contact your developers and/or hosting company to upgrade your PHP to "
+"version %2$s or greater."
+msgstr ""
+"A versão do PHP que você está utilizando (%1$s) não é mais suportada pelo "
+"WordPress! Por favor entre em contato com seus desenvolvedores e/ou empresa "
+"de hospedagem para atualizar o PHP para versão %2$s ou superior."
+
+#. translators: %s name of the outdated plugins
+#: views/notices/plugins.php:18
+msgid "We have found plugins that haven't been updated in over 2 years: %s."
+msgstr ""
+
+#: views/notices/plugins.php:22
+msgid "Please review them in your"
+msgstr ""
+
+#: views/notices/plugins.php:24
+msgid "plugins page"
+msgstr ""
+
+#: views/notices/plugins.php:26
+msgid ""
+"These plugins may no longer be maintained or supported and may have security "
+"and/or compatibility issues when used with the most recent versions of "
+"WordPress."
+msgstr ""
+
+#: views/notices/ssl.php:17
+msgid "day"
+msgid_plural "days"
+msgstr[0] "dia"
+msgstr[1] "dias"
+
+#. translators: %1$s is the certificate issuer, %2$d is the number of days,
+#. %3$s is 'day' or 'days' string
+#: views/notices/ssl.php:23
+msgid ""
+"Your SSL certificate%1$s will expire in %2$d %3$s. Please don't forget to "
+"renew it!"
+msgstr ""
+"Seu certificado SSL%1$s vai expirar em %2$d %3$s. Não esqueça de renová-lo!"
+
+#. translators: %1$s is the certificate issuer, %2$d is the number of days,
+#. %3$s is 'day' or 'days' string
+#: views/notices/ssl.php:28
+msgid ""
+"Your SSL certificate%1$s has expired %2$d %3$s ago. Please renew it as soon "
+"as possible!"
+msgstr ""
+"Seu certificado SSL%1$s expirou %2$d %3$s atrás. Por favor renove ele o mais "
+"breve possível!"
+
+#. translators: %1$s is the current web server (NGINX, Apache, etc), %2$s is
+#. the version of the web server installed on server, %3$s is the version that
+#. we recommend to use
+#: views/notices/web.php:25
+msgid ""
+"Your %1$s version (%2$s) is not officially supported anymore! In order to "
+"get better performance and improvements, we recommend you upgrade your "
+"server to %1$s %3$s or greater."
+msgstr ""
+"Sua versão do %1$s (%2$s) não é mais suportada oficialmente! Para obter "
+"melhor desempenho e outras melhorias, nós recomendamos que você atualize seu "
+"servidor para o %1$s %3$s ou superior."
+
+#. translators: %1$s is the current web server (NGINX, Apache, etc), %2$s is
+#. the version of the web server installed on server, %3$s is the version that
+#. we recommend to use
+#: views/notices/web.php:30
+msgid ""
+"Your %1$s version (%2$s) is obsolete and is not officially supported "
+"anymore! Please contact your developers and/or hosting company to upgrade "
+"your %1$s to version %3$s or greater as soon as possible."
+msgstr ""
+"Sua versão do %1$s (%2$s) está obsoleta e não é mais suportada oficialmente! "
+"Por favor entre em contato com seus desenvolvedores e/ou empresa de "
+"hospedagem para atualizar o %1$s para versão %3$s ou superior o quanto antes."
+
+#: views/notices/wordpress.php:15
+msgid "A newer version of WordPress is available."
+msgstr "Uma nova versão do WordPress está disponível."
+
+#: views/notices/wordpress.php:19
+msgid "The WordPress version you are running is not supported anymore!"
+msgstr "A versão do WordPress que você está utilizando não é mais suportada!"
+
+#: views/notices/wordpress.php:26
+msgid "Please update WordPress now"
+msgstr "Atualize o WordPress agora"
+
+#: views/notices/wordpress.php:26
+msgid "Please update it now"
+msgstr "Atualize agora"
+
+#. Description of the plugin/theme
+msgid "Checks the health of your WordPress install."
+msgstr "Verifica o estado da sua instalação WordPress."
+
+#: views/admin/autoload-list-status.php:20
+msgctxt "singular: option was reactivated"
+msgid "reactivated"
+msgstr "reativada"
+
+#: views/admin/autoload-list-status.php:20
+msgctxt "singular: option was disabled"
+msgid "deactivated"
+msgstr "desativada"
+
+#: views/admin/autoload-list-status.php:21
+msgctxt "plural: options were reactivated"
+msgid "reactivated"
+msgstr "reativadas"
+
+#: views/admin/autoload-list-status.php:21
+msgctxt "plural: options were disabled"
+msgid "deactivated"
+msgstr "desativadas"

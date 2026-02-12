@@ -1,0 +1,207 @@
+# Translation of Plugins - Profiling Tool For WP - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - Profiling Tool For WP - Stable (latest release) package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Plugins - Profiling Tool For WP - Stable (latest release)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2025-02-06 09:01-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 3.5\n"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:275
+#, fuzzy
+msgid "Run test in this Theme"
+msgstr "Ejecutar prueba en este tema"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:267
+msgid "Run test in this plugin"
+msgstr "Ejecutar prueba en este plugin"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:248
+msgid "Run test without any active plugin"
+msgstr "Ejecutar prueba sin ningún plugin activo"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:247
+msgid "All deactivated"
+msgstr "Todos desactivados"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:242
+msgid "Run test with all active plugins"
+msgstr "Ejecutar prueba con todos los plugins activos"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:241
+msgid "All activated"
+msgstr "Todos activados"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:237
+msgid "Results from test"
+msgstr "Resultados de la prueba"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:236
+msgid "Run test"
+msgstr "Ejecutar Prueba"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:235
+msgid "Plugin Name"
+msgstr "Nombre del Plugin"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:232
+msgid "Current plugin theme active"
+msgstr "Plugins y Temas Activos Actuales"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:181
+msgid "Every plugin have a link to run the test without that specific plugin"
+msgstr "Cada plugin tiene un enlace para ejecutar la prueba sin ese plugin específico"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:178
+msgid "You can run the test without any plugin or with all the active plugin with the links in the table"
+msgstr "Puedes ejecutar la prueba sin ningún plugin o con todos los plugins activos usando los enlaces en la tabla"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:175
+msgid "Table bellow show the current active plugins"
+msgstr "La tabla de abajo muestra los plugins activos actuales"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:172
+msgid "Press the blue botton bellow to measure plugins"
+msgstr "Presione el botón azul abajo para medir plugins"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:165
+msgid "Plugin use"
+msgstr "Uso del plugin"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:151
+msgid "Queries db"
+msgstr "Consultas a DB"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:150
+msgid "Memory"
+msgstr "Memoria"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:149
+msgid "Time"
+msgstr "Tiempo"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:148
+msgid "Items"
+msgstr "Elementos"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:147
+msgid "Type"
+msgstr "Tipo"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:146
+msgid "Date"
+msgstr "Fecha"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:145
+msgid "Profile"
+msgstr "Perfil"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:140
+msgid "Scan_history"
+msgstr "Historial de escaneo"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:133
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:195
+msgid "Start"
+msgstr "Comenzar"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:120
+msgid "Select a page to measure performance"
+msgstr "Selecciona una página para medir el rendimiento"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:112
+msgid "Best for optimization is achieve lower times"
+msgstr "Para una mejor optimización, es ideal lograr tiempos más bajos"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:109
+msgid "Load times always vary because they depend on internet speed site cache active plugins among other things"
+msgstr "Los tiempos de carga siempre varían porque dependen de la velocidad de internet, la caché del sitio, plugins activos, entre otros factores"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:106
+msgid "The input select bellow show all the site pages"
+msgstr "La selección de entrada de abajo muestra todas las páginas del sitio"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:103
+msgid "Press the blue botton bellow to measure the selected page"
+msgstr "Presiona el botón azul de abajo para medir la página seleccionada"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:96
+msgid "Use of this section"
+msgstr "Uso de esta sección"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:86
+msgid "Save changes"
+msgstr "Guardar cambios"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:80
+msgid "Downward"
+msgstr "Descendente"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:79
+msgid "Upward"
+msgstr "Ascendente"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:77
+msgid "Table sort order"
+msgstr "Orden de clasificación de la tabla"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:65
+msgid "Plugin Language"
+msgstr "Idioma del Plugin"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:58
+msgid "Options"
+msgstr "Opciones"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:57
+msgid "History"
+msgstr "Historial"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:56
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:93
+msgid "Pages"
+msgstr "Páginas"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:55
+msgid "Plugins and themes"
+msgstr "Plugins y Temas"
+
+#: admin/partials/profiling-tool-for-wp-admin-en-display.php:50
+msgid "Measure Page Performance"
+msgstr "Medir rendimiento de la pagina"
+
+#: admin/class-profiling-tool-for-wp-admin.php:183
+msgid "Settings"
+msgstr "Ajustes"
+
+#. Author URI of the plugin
+#: profiling-tool-for-wp.php
+msgid "https://www.dnsempresas.com/"
+msgstr "https://www.dnsempresas.com/"
+
+#. Author of the plugin
+#: profiling-tool-for-wp.php
+msgid "Dns Empresas"
+msgstr "Dns Empresas"
+
+#. Description of the plugin
+#: profiling-tool-for-wp.php
+msgid "Plugin to measure the performance and consumption of plugins installed on the site, with detailed statistics for each plugin and for the overall performance."
+msgstr "Plugin para medir el rendimiento y el consumo de los plugins instalados en el sitio, con estadísticas detalladas generales y para cada plugin."
+
+#. Plugin URI of the plugin
+#: profiling-tool-for-wp.php
+msgid "https://www.tbplugin.com/"
+msgstr "https://www.tbplugin.com/"
+
+#. Plugin Name of the plugin
+#: profiling-tool-for-wp.php
+msgid "Profiling Tool For WP"
+msgstr "Herramienta de Profiling para WP"

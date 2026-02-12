@@ -1,0 +1,109 @@
+.divewp-feedback-notice {
+    background: linear-gradient(135deg, #FDF2E9 0%, #FAE5D3 100%);
+    border-left: solid #48bb78 10px;
+
+    padding: 20px !important;
+    border-radius: 4px;
+    margin: 24px 0;
+}
+
+.divewp-feedback-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.divewp-feedback-logo {
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.divewp-feedback-message {
+    flex: 1;
+}
+
+.divewp-feedback-message h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    color: #1A5598;
+}
+
+.divewp-feedback-message p {
+    margin: 0 0 15px;
+    font-size: 14px;
+    color: #1A5598;
+}
+
+.divewp-feedback-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.divewp-feedback-actions .button-primary {
+    background: #48bb78;
+    border-color: #48bb78;
+    color: #fff;
+    padding: 6px 16px;
+    height: auto;
+    transition: all 0.2s ease;
+}
+
+.divewp-feedback-actions .button-primary:hover {
+    background: #38a169;
+    border-color: #38a169;
+}
+
+.divewp-feedback-actions .button-secondary {
+    color: #1A5598;
+    border-color: #1A5598;
+    background: transparent;
+    padding: 6px 16px;
+    height: auto;
+    transition: all 0.2s ease;
+}
+
+.divewp-feedback-actions .button-secondary:hover {
+    background: #f0f0f1;
+    border-color: #1A5598;
+    color: #1A5598;
+}
+
+.divewp-feedback-actions .button-link {
+    color: #1A5598;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.divewp-feedback-actions .button-link:hover {
+    color: #1A5598;
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 782px) {
+    .divewp-feedback-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .divewp-feedback-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .divewp-feedback-actions .button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Dashboard specific adjustments */
+.welcome-content + .divewp-feedback-notice {
+    margin-top: 0;
+}
+
+.divewp-feedback-notice + .divewp-dashboard-grid {
+    margin-top: 24px;
+} 

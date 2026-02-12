@@ -1,0 +1,36 @@
+/* dashboard */
+
+.av-introduction__description--type--fail {
+    color: #db0404;
+}
+
+.av-introduction__description--type--success {
+    color: #007300;
+}
+
+.av-introduction__description--type--light {
+    color: #6a6a6a;
+    font-size: 12px;
+}
+
+.av-license {
+    display: flex;
+}
+
+.av-license__label {
+    padding: 9px 20px 0 0;
+}
+
+.av-license__input {
+    border: 1px solid #d5d2d2 !important;
+    border-radius: 6px !important;
+    padding: 2px 10px !important;
+    font-size: 15px;
+    letter-spacing: 1px;
+    min-width: 270px;
+}
+
+.av-license__description {
+    padding: 9px 30px;
+    width: 270px;
+}

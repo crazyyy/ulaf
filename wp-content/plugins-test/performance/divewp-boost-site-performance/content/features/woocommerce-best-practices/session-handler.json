@@ -1,0 +1,46 @@
+{
+    "title": "Session Handler",
+    "recommendation": "Use database sessions for optimal performance and reliability.",
+    "messages": {
+        "success": {
+            "title": "Database Session Handler Active",
+            "details": "Your store is using {value} session storage (database-based). This is the recommended configuration as it provides better reliability, scalability, and works well with caching and load balancers.",
+            "steps": [
+                "Database sessions are properly configured",
+                "Session data is stored securely in your database",
+                "Compatible with caching and load balancers",
+                "Automatic cleanup of expired sessions"
+            ]
+        },
+        "error": {
+            "title": "File-Based Sessions Detected",
+            "details": "Your store is using {value} sessions. File-based sessions can cause issues with caching, load balancers, and may not clean up properly. We recommend switching to database sessions for better reliability.",
+            "steps": [
+                "Switch to database session handler for better reliability",
+                "Enable automatic session cleanup",
+                "Ensure compatibility with caching systems",
+                "Test cart and checkout functionality after changes"
+            ]
+        }
+    },
+    "learn_more": {
+        "description": "The session handler manages customer cart and checkout data. Database sessions provide better reliability and scalability compared to file-based sessions.",
+        "benefits": [
+            "Better reliability with load balancers",
+            "Improved multi-server support",
+            "Automatic session cleanup",
+            "Enhanced security",
+            "Easier maintenance"
+        ],
+        "recommended_plugins": [
+            {
+                "name": "WooCommerce Session Manager",
+                "description": "Manage and optimize WooCommerce sessions"
+            },
+            {
+                "name": "Redis Object Cache",
+                "description": "Alternative session storage solution"
+            }
+        ]
+    }
+}

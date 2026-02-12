@@ -1,0 +1,39 @@
+.d4p-panel-sitemeta {
+    .sweeppress-table-sitemeta {
+        tr {
+            th {
+                &.column-meta_id,
+                &.column-meta_size {
+                    width: 100px;
+                }
+            }
+
+            td {
+                &.column-status {
+                    div {
+                        display: flex;
+                        gap: 6px;
+                        flex-wrap: wrap;
+                    }
+                }
+
+                &.column-source {
+                    ul {
+                        list-style: disc outside;
+                        margin: 0 0 0 1.5em;
+
+                        li {
+                            margin: 0;
+                        }
+                    }
+                }
+
+                &.column-meta_value {
+                    .kint-rich {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

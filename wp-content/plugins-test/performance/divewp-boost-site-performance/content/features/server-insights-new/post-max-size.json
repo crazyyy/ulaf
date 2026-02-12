@@ -1,0 +1,36 @@
+{
+    "messages": {
+        "success": {
+            "title": "Post Max Size is Optimal",
+            "details": "Your site's post max size is set to {current_value}, which is optimal for handling large form submissions and uploads. Well done!",
+            "steps": [
+                "Post max size helps you handle large file uploads and form submissions.",
+                "Always check the required post max size for your plugins and themes to ensure your post max size is optimal"
+            ]
+        },
+        "error": {
+            "title": "Post Max Size is Too Low",
+            "details": "Your site's post max size is set to {current_value}. We recommend increasing it to at least {recommended_value} for better upload handling.",
+            "steps": [
+                "Contact your hosting provider about increasing post max size",
+                "Add post_max_size directive to php.ini will help you increase your post max size or from your hosting providers control panel",
+                "Ensure it's larger than upload_max_filesize to avoid upload errors!"
+            ]
+        }
+    },
+    "learn_more": {
+        "description": "Post max size determines the maximum size of data that can be sent to your site, including file uploads and form submissions. This affects your site's ability to handle large uploads and form data.",
+        "benefits": [
+            "Enables large file uploads",
+            "Supports multiple file uploads",
+            "Handles complex form submissions",
+            "Prevents upload failures (such as importing large CSV files, or bulkproduct uploads)",
+            "Improves user experience"
+        ],
+        "recommendations": [
+            "Set post max size to at least 64M",
+            "Make it larger than your upload_max_filesize",
+            "Always check the required post max size for your plugins and themes to ensure your post max size is optimal"
+        ]
+    }
+}

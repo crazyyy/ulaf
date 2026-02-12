@@ -1,0 +1,41 @@
+.wdfi_remove_image_button{
+	display: none !important;
+}
+.wdfi_remove_image_button.showbtnlcia{
+	display: inline-block !important;
+}
+.target_wdfi_addnewrule{
+	display: none;
+	margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid;
+    padding: 15px;
+}
+.target_wdfi_addnewrule_innder{
+	display: flex;
+	gap: 20px;
+}
+.wdfi_advacdedfilter_inner{
+	margin-top:20px;
+}
+.maileshcisla {
+    display: flex;
+    gap: 8px;
+    margin-top: 5px;
+}
+.maileshcisla_label {
+    margin-top: 10px;
+}
+.wdfi_pdf_logo_prvw_image_main {
+    margin-top: 10px;
+}
+.wdfi_pdf_logo_prvw_image img{
+	max-width: 90px;
+	    border: 1px solid;
+}
+.imagisl{
+	max-width: 90px;	
+}
+.wdfi_advacdedfilter_top{
+	margin-top: 20px;
+}

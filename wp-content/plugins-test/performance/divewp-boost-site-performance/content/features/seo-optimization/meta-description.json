@@ -1,0 +1,82 @@
+{
+    "title": "Homepage Meta Description",
+    "messages": {
+        "success": {
+            "title": "Homepage Meta Description Optimal",
+            "details": "Your homepage meta description is properly configured ({value}) in your site. Good length and implementation.",
+            "steps": [
+                "Keep monitoring your meta description",
+                "Update it when your homepage content changes",
+                "Maintain the optimal length of 120-160 characters"
+            ]
+        },
+        "warning": {
+            "title": "Meta Description Needs Review",
+            "details": "Your meta description lenght need review. Use your active plugin - {value} to make changes if needed. While you may have a custom implementation, we recommend ensuring it follows SEO best practices for length and content.",
+            "steps": [
+                "Aim for 120-160 characters in length",
+                "Include relevant keywords naturally",
+                "Make it compelling for search users",
+                "Test how it appears in search results"
+            ]
+        },
+        "danger": {
+            "title": "Meta Description Support Missing",
+            "details": "We don't detect any way to manage meta descriptions on your site. While you might have a custom solution we haven't detected, using a dedicated SEO plugin provides the most reliable way to manage meta descriptions and other SEO elements. Meta descriptions are crucial for search result appearance and click-through rates.",
+            "steps": [
+                "Consider installing a recommended SEO plugin for comprehensive meta tag management",
+                "Popular options include Yoast SEO, Rank Math, or All in One SEO",
+                "After installation, configure your homepage meta description",
+                "Follow plugin documentation for optimal setup",
+                "Ensure your meta description is between 120-160 characters",
+                "If using a custom solution, verify it properly outputs meta tags"
+            ]
+        },
+        "status_messages": {
+            "too_short": {
+                "title": "Meta Description Length Review",
+                "details": "Your Homepage meta description  is shorter than recommended. While you might have specific reasons for a shorter description, meta descriptions between 120-160 characters typically perform better in search results.",
+                "steps": [
+                    "Review your current meta description content",
+                    "Consider adding more relevant details",
+                    "Aim for at least 120 characters while maintaining quality",
+                    "Include key information about your page"
+                ]
+            },
+            "too_long": {
+                "title": "Meta Description Length Review",
+                "details": "Your meta description in {source} is {value} which is longer than recommended. While longer descriptions might contain more information, search engines typically display only the first 155-160 characters.",
+                "steps": [
+                    "Review your current meta description",
+                    "Focus on the most important information",
+                    "Keep it under 160 characters",
+                    "Ensure the key message appears in the first 120 characters"
+                ]
+            },
+            "empty": {
+                "title": "Empty Meta Description",
+                "details": "No meta description found in {source}. While search engines can generate their own descriptions, a custom meta description gives you more control over how your site appears in search results.",
+                "steps": [
+                    "Access your meta description settings",
+                    "Write a compelling description between 120-160 characters",
+                    "Include relevant keywords naturally",
+                    "Make it informative and engaging for users"
+                ]
+            }
+        }
+    },
+    "learn_more": {
+        "description": "A meta description is a brief summary of your page that appears in search engine results. It helps users understand what your page is about before clicking.",
+        "benefits": [
+            "Improves click-through rates from search results",
+            "Helps search engines understand your content",
+            "Makes your site more attractive in search listings",
+            "Gives users a clear preview of your page content"
+        ],
+        "recommended_plugins": [
+            "Yoast SEO - Most popular SEO plugin",
+            "Rank Math - Feature-rich SEO toolkit",
+            "All in One SEO - Comprehensive SEO solution"
+        ]
+    }
+}

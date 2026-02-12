@@ -1,0 +1,244 @@
+/* Activity Timeline Card */
+.divewp-card-timeline {
+    margin-top: 20px;
+}
+
+.divewp-card-timeline .divewp-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border-bottom: 1px solid #e2e4e7;
+}
+
+.divewp-card-timeline .divewp-card-header h3 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #1e1e1e;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.divewp-card-timeline .divewp-card-body {
+    padding: 20px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.divewp-timeline {
+    position: relative;
+    padding-left: 30px;
+}
+
+.divewp-timeline:before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #e2e4e7;
+}
+
+.divewp-timeline-date {
+    position: relative;
+    margin: 20px 0;
+    padding-left: 15px;
+}
+
+.divewp-timeline-date:before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    width: 20px;
+    height: 2px;
+    background: #e2e4e7;
+}
+
+.divewp-timeline-date .date-label {
+    background: #f0f0f1;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    color: #50575e;
+}
+
+.divewp-timeline-date.today .date-label {
+    background: #2271b1;
+    color: #fff;
+}
+
+.divewp-timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -36px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #e2e4e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline-marker .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    color: #50575e;
+}
+
+.timeline-marker.success {
+    border-color: #00a32a;
+}
+
+.timeline-marker.warning {
+    border-color: #dba617;
+}
+
+.timeline-marker.danger {
+    border-color: #d63638;
+}
+
+.timeline-marker.info {
+    border-color: #72aee6;
+}
+
+.timeline-content {
+    background: #f6f7f7;
+    border-radius: 4px;
+    padding: 12px;
+}
+
+.timeline-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.timeline-header .time {
+    font-size: 12px;
+    color: #50575e;
+}
+
+.event-type {
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: #e2e4e7;
+    color: #50575e;
+    display: inline-flex;
+    align-items: center;
+}
+
+.timeline-header .status-pill {
+    margin-top: 0;
+    display: inline-flex;
+    align-items: center;
+    height: 24px;
+    font-size: 12px;
+}
+
+.timeline-body p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #1e1e1e;
+}
+
+.divewp-card-timeline .divewp-card-footer {
+    padding: 12px 20px;
+    border-top: 1px solid #e2e4e7;
+    background: #f6f7f7;
+}
+
+.divewp-card-timeline .divewp-card-footer.divewp-actions {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#divewp-view-activity-log {
+    background-color: #4299e1;
+    color: #fff;
+    border: 1px solid #4299e1;
+    border-radius: 6px;
+    padding: 4px 12px;
+    height: auto;
+    min-height: 30px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+#divewp-view-activity-log:hover {
+    background-color: #3182ce;
+    border-color: #3182ce;
+}
+
+.divewp-view-all {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    color: #2271b1;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.divewp-view-all:hover {
+    color: #135e96;
+    background: rgba(34, 113, 177, 0.1);
+}
+
+.divewp-view-all:active {
+    color: #135e96;
+    background: rgba(34, 113, 177, 0.2);
+}
+
+.divewp-view-all .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    transition: transform 0.2s ease;
+}
+
+.divewp-view-all:hover .dashicons {
+    transform: translateX(2px);
+}
+
+.divewp-no-activity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 40px 20px;
+    color: #50575e;
+}
+
+.divewp-no-activity .dashicons {
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    color: #e2e4e7;
+}
+
+.divewp-no-activity p {
+    margin: 0;
+    font-size: 14px;
+}

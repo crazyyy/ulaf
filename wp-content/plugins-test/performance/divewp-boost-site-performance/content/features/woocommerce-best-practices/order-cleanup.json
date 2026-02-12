@@ -1,0 +1,45 @@
+{
+    "title": "Order Cleanup",
+    "recommendation": "Maintain optimal database performance by managing old orders.",
+    "messages": {
+        "success": {
+            "title": "Order Management Optimized",
+            "details": "You have {value}, which is within recommended limits.",
+            "steps": [
+                "Regular order cleanup will help you keep your database clean and optimized.",
+                "Database optimization scheduling is a good idea, but not required.",
+                "Regularly archive old orders to keep your database clean and optimized."
+            ]
+        },
+        "error": {
+            "title": "Order Cleanup Needed",
+            "details": "You have {value}, which may impact performance. You can archive old orders to keep your database clean and optimized.",
+            "steps": [
+                "Archive or delete orders older than 30 days",
+                "Set up automated order cleanup",
+                "Implement order archiving strategy",
+                "Optimize database tables"
+            ]
+        }
+    },
+    "learn_more": {
+        "description": "Managing old orders helps maintain database performance. Keep completed orders below 500 for optimal performance.",
+        "benefits": [
+            "Improved database performance",
+            "Faster order processing",
+            "Reduced backup size",
+            "Better admin panel responsiveness",
+            "Optimized search functionality"
+        ],
+        "recommended_plugins": [
+            {
+                "name": "WP-Optimize",
+                "description": "Clean and optimize WooCommerce database"
+            },
+            {
+                "name": "Advanced Order Export For WooCommerce",
+                "description": "Export and archive old orders"
+            }
+        ]
+    }
+}

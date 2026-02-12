@@ -1,0 +1,80 @@
+.d4p-plugin-sweeppress {
+    .sweeppress-badge {
+        border-radius: 3px;
+        color: #FFF;
+        display: inline-block;
+        padding: 0 6px 2px;
+        line-height: 1.5;
+
+        &.badge-active {
+            background: #090;
+        }
+
+        &.badge-missing,
+        &.badge-inactive {
+            background: #900;
+        }
+
+        &.badge-installed {
+            background: #050;
+        }
+
+        &.badge-serialized,
+        &.badge-core,
+        &.badge-theme {
+            background: #813E99;
+        }
+
+        &.badge-wordpress {
+            background: #511E65;
+        }
+
+        &.badge-blue,
+        &.badge-empty,
+        &.badge-plugin {
+            background: #0A63A5;
+        }
+
+        &.badge-component {
+            background: #085D65;
+        }
+
+        &.badge-widget {
+            background: #A16C00;
+        }
+
+        &.badge-unknown {
+            background: #111;
+        }
+
+        &.badge-sweep {
+            background: #67AF12;
+        }
+
+        &.badge-light-blue {
+            background: #E0F1FF;
+            color: #333
+        }
+    }
+
+    dl.sweeppress-list {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+
+        dt {
+            font-weight: bold;
+            flex: 0 0 50%;
+            margin: 0;
+            text-align: left;
+        }
+
+        dd {
+            flex: 0 0 50%;
+            margin: 0;
+            text-align: right;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+/*!
+This file is part of REST API Explorer. For copyright and licensing information, please see ../../license/license.txt
+*/
+
+#rest-api-explorer {
+	display: flex;
+	background: #fff;
+	padding: 0;
+	border: 3px solid #ccc;
+	max-height: 600px;
+}
+#rest-api-explorer > ul {
+	max-width: 300px;
+	overflow: auto;
+	border-right: 3px solid #ccc;
+	padding: 1em;
+	margin: 0;
+}
+#rest-api-explorer > div {
+	overflow: auto;
+	padding: 1em;
+	flex-grow: 2;
+}
+#rest-api-explorer > div > div {
+	border-top: 1px dotted #ccc;
+}
+#rest-api-explorer > div > div:first-child {
+	border-top: none;
+}
+#rest-api-explorer > div > div > h2 button {
+	margin-left: 2em;
+}
+#rest-api-explorer > div > p:first-child, #rest-api-explorer > div > div:first-child > h2:first-child {
+	margin-top: 0;
+}
+#rest-api-explorer > ul ul {
+	padding-left: 1em;
+	display: none;
+}
+#rest-api-explorer > ul li {
+	margin-bottom: 0.5em;
+}
+#rest-api-explorer > ul ul {
+	margin-top: 0.5em;
+}
+#rest-api-explorer .rest-api-explorer-method {
+	margin-right: 0.5em;
+}
+#rest-api-explorer .rest-api-explorer-toggle::before {
+	content: '+';
+	display: inline-block;
+	border: 1px solid #ccc;
+	width: 1.5em;
+	height: 1.5em;
+	text-align: center;
+	margin-right: 5px;
+}
+#rest-api-explorer li.rest-api-explorer-expanded > ul {
+	display: block;
+}
+#rest-api-explorer li.rest-api-explorer-expanded > .rest-api-explorer-toggle::before {
+	content: '-';
+}

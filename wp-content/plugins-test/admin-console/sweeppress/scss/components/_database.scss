@@ -1,0 +1,54 @@
+.d4p-panel-database {
+    .actions.bulkactions {
+        display: none !important;
+    }
+
+    .sweeppress-table-database {
+        .column-status,
+        .column-engine {
+            width: 100px;
+        }
+
+        .column-rows,
+        .column-free,
+        .column-size,
+        .column-index,
+        .column-increment {
+            width: 100px;
+        }
+
+        .column-created,
+        .column-updated {
+            width: 120px;
+        }
+
+        .column-source,
+        .column-collation {
+            width: 10%;
+        }
+
+        .sweeppress-database-table-flag {
+            float: right;
+
+            i.d4p-icon {
+                font-size: 2em;
+                width: 1.4em;
+                text-align: center;
+            }
+        }
+
+        tr {
+            &.sweeppress-table-is-wordpress {
+                background: #E8FAFF;
+            }
+
+            &.sweeppress-table-for-optimization {
+                background: #FFFFE6;
+            }
+
+            &.sweeppress-table-for-repair {
+                background: #FFE1E1;
+            }
+        }
+    }
+}

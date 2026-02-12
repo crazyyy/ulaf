@@ -1,0 +1,156 @@
+.bucs-button-secondary {
+    background: #1e1e1e !important;
+    border-color: #1e1e1e !important;
+    color: #FFFFFF !important;
+}
+
+.bucs-overlay {
+    /* display: none; */
+    position: absolute;
+    top: 0; 
+    left: -20px;
+    width: calc(100% - 20px);
+    height: 100%;
+    background: #FFFFFF;
+    filter: blur(10px);
+    z-index: 6;
+    padding: 20px;
+}
+
+.bucs-overlay.hidden {
+    display: none;
+}
+
+.bucs-overlay.show {
+    display: block;
+}
+
+.bucs-wrapper {
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: calc(100% - 20px);
+    height: 100%;
+    background: #FFF;
+    z-index: 5;
+    padding: 20px;
+}
+
+.bucs-wrapper.hidden {
+    display: none;
+}
+
+.bucs-wrapper.show {
+    display: block;
+}
+
+.bucs-wrapper > h2 {
+    font-size: 23px;
+    font-weight: 400;
+    margin: 0 !important;
+    padding: 9px 0 4px;
+    line-height: 1.3;
+    display: inline-block;
+}
+
+#hideHistory {
+    display: inline-block;
+    position: absolute;
+    top: 38px;
+    font-size: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#seeHistory {
+    margin-right: 0.5em;
+}
+
+.bucs-tab-editor.hidden {
+    display: none;
+}
+
+.bucs-code-editor {
+    background-color: #ffffff !important;
+    display: block;
+    width: 100%;
+    height: 300px;
+    border: 1px solid rgb(221, 221, 221);
+    padding: 20px;
+    font-family: monospace;
+    font-weight: 500;
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+    margin-top: 15px;
+}
+
+.bucs-code-editor:focus,
+.bucs-code-editor:hover,
+.bucs-code-editor:active {
+    border: 1px solid rgb(221, 221, 221);
+}
+
+/* Pending feature */
+/* .bucs-copy-to-clipboard {
+    margin-top: 1em !important;
+} */
+
+.bucs-hide-history {
+    margin-top: 1em !important;
+}
+
+.bucs-notification {
+    transition: bottom 0.3s linear;
+    position: fixed;
+    bottom: -50px;
+    left: 0;
+    width: 300px;
+    margin-left: calc(50% - 160px);
+    z-index: 5;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 5px 8px 10px #ddd;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.bucs-notification.show {
+    bottom: 50px;
+}
+
+@media only screen and (max-width: 781px) {
+    .bucs-overlay {
+        left: -10px;
+        width: calc(100% - 10px);
+        padding: 10px;
+    }
+
+    .bucs-wrapper {
+        left: -10px;
+        width: calc(100% - 10px);
+        padding: 10px;
+    }
+
+    #hideHistory {
+        right: 10px;
+        top: 28px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .bucs-overlay {
+        top: 46px;
+    }
+
+    .bucs-wrapper {
+        top: 46px;
+    }
+}

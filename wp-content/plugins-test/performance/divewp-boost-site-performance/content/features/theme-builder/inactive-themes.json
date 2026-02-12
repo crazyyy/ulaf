@@ -1,0 +1,50 @@
+{
+    "title": "Inactive Themes",
+    "recommendation": "Keep your WordPress installation clean by removing unused themes to enhance security and performance.",
+    "messages": {
+        "success": {
+            "title": "No Inactive Themes",
+            "details": "Great! Your site has no inactive themes.",
+            "steps": [
+                "Continue monitoring theme installations",
+                "Keep your active theme updated",
+                "Regularly review theme requirements",
+                "Maintain backups before theme changes"
+            ]
+        },
+        "error": {
+            "title": "Inactive Themes Found",
+            "details": "Found {value} inactive theme(s) on your site.",
+            "steps": [
+                "Review each inactive theme and decide if you need it",
+                "Delete unused themes through WordPress admin",
+                "Keep themes you plan to use later but ensure they stay updated",
+                "Consider creating a development environment for theme testing",
+                "Backup your site before removing themes"
+            ]
+        }
+    },
+    "learn_more": {
+        "benefits": [
+            "Enhanced security by reducing potential vulnerabilities",
+            "Improved site performance with less disk space usage",
+            "Cleaner WordPress admin interface",
+            "Faster backups and updates",
+            "Better server resource management"
+        ],
+        "recommended_plugins": [
+            {
+                "name": "WP Rollback",
+                "type": "Free"
+            },
+            {
+                "name": "Theme Check",
+                "type": "Free"
+            },
+            {
+                "name": "WP Theme Test",
+                "type": "Free"
+            }
+        ]
+    }
+}

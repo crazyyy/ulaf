@@ -1,0 +1,34 @@
+<?php
+/* Those extra strings come from the free version. */
+__('Explore the Pro version', 'code-profiler-pro');
+__('Rate it on WordPress.org', 'code-profiler-pro');
+__('The "%s" option is only available in the pro version of Code Profiler.', 'code-profiler-pro');
+__('Starting Code Profiler v%s (profile: %s)', 'code-profiler-pro');
+__('Run the profiler in the frontend', 'code-profiler-pro');
+__('Pro version only', 'code-profiler-pro');
+__('Profile your blog with Code Profiler.', 'code-profiler-pro');
+__('Pro Features', 'code-profiler-pro');
+__('This chart shows the execution time of all activated plugins and the current theme, in seconds and percentage, for the current profile.', 'code-profiler-pro');
+__('WordPress website performance profiling made easy.', 'code-profiler-pro');
+__('Code Profiler Pro makes it super easy to locate any performance problem in your themes or plugins by analyzing their scripts, classes & methods, functions as well as monitoring all file I/O operations and remote connections.', 'code-profiler-pro');
+__('Scripts performance', 'code-profiler-pro');
+__('That section shows the time it took for each PHP script to execute its code while the website was loading. The "Time" column shows their respective processing time in seconds and, with a green horizontal bar, the percentage it represents. ', 'code-profiler-pro');
+__('Click to enlarge image.', 'code-profiler-pro');
+__('Methods & functions performance', 'code-profiler-pro');
+__('That section shows the time it took for each class/method or function to execute its code while the website was loading. The "Time" column shows their respective processing time in seconds and, with a green horizontal bar, the percentage it represents. The "Caller" column shows the sum of all functions that called it.', 'code-profiler-pro');
+__('The two action links below each item let you view the corresponding function and the list of caller functions.', 'code-profiler-pro');
+__('It is also possible to generate a PHP backtrace for each caller function by enabling that feature in the "settings" page.', 'code-profiler-pro');
+__('Database queries performance', 'code-profiler-pro');
+__('That section shows the time it took to process each database query.', 'code-profiler-pro');
+__('Remote connections', 'code-profiler-pro');
+__('That section shows all HTTP connections originating from your WordPress website.', 'code-profiler-pro');
+__('The "View backtrace" action link below each item lets you view a clickable list of the scripts and function calls that lead to the HTTP request.', 'code-profiler-pro');
+__('File I/O list', 'code-profiler-pro');
+__('That section shows all files and directories with their respective I/O operations that occurred while the website was loading. The default sorting order is based on the control flow, i.e., the order in which the PHP code was executed while the website was loading. The following 10 operations are monitored by Code Profiler:', 'code-profiler-pro');
+__('Create your own graphs and reports effortlessly.', 'code-profiler-pro');
+__('All charts and tables can be exported as a CSV file (comma-separated values) that you can open with your favorite spreadsheet editor in order to create graphs and reports.', 'code-profiler-pro');
+__('Learn more about Code Profiler Pro.', 'code-profiler-pro');
+__('The MU plugin is not loaded, please check the log', 'code-profiler-pro');
+__('Initializing Code Profiler v%s for %s (profile: %s)', 'code-profiler-pro');
+__('Code Profiler Pro is active on this site, please disable it first if you want to run the free version.', 'code-profiler-pro');
+__('Go Pro', 'code-profiler-pro');

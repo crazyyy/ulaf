@@ -1,0 +1,85 @@
+// Plan Badge Component
+.plan-badge-container {
+	display: flex;
+	align-items: center;
+	margin-left: 16px;
+}
+
+.plan-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 6px 10px;
+	border-radius: 5px;
+	font-size: 12px;
+	font-weight: 500;
+	text-decoration: none;
+	transition: all 0.2s ease;
+	border: 1px solid #e5e7eb;
+	cursor: pointer;
+    position: relative;
+    top: -8px;
+
+	i {
+		font-size: 14px;
+	}
+
+	&.plan-badge-pro {
+		background: #fff;
+		cursor: default;
+        color: #444;
+		i {
+			color: #2c79fe;
+		}
+        &:hover {
+            transform: scale(1.02);
+        }
+	}
+
+	&.plan-badge-free {
+		background: #fff;
+		color: #444;
+        i {
+            color: #2c79fe;
+        }
+		&:hover {
+			transform: scale(1.02);
+		}
+	}
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+	.plan-badge-container {
+		margin-left: 12px;
+	}
+
+	.plan-badge {
+		padding: 6px 10px;
+		font-size: 0.7rem;
+		border-radius: 4px;
+
+		span {
+			display: none; // Hide text on mobile, show only icon
+		}
+
+		i {
+			font-size: 0.8rem;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.plan-badge-container {
+		margin-left: 8px;
+	}
+
+	.plan-badge {
+		padding: 4px 8px;
+		border-radius: 4px;
+		
+		i {
+			font-size: 0.75rem;
+		}
+	}
+}

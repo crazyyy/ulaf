@@ -1,0 +1,4663 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural - Forms: nplurals = INTEGER; plural = EXPRESSION;\n"
+"Project-Id-Version: SweepPress\n"
+"POT-Creation-Date: 03/11/2025 09:40:01 PM\n"
+"Language-Team: Milan Petrovic <support@dev4press.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: GD i18n 2.8; www.dev4press.com\n"
+
+#: core/base/sweep/ActionSchedulerActions.php:33
+msgid "%s action"
+msgid_plural "%s actions"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/base/sweep/CommentStatus.php:49
+#: core/sweeper/AkismetMeta.php:46
+#: core/sweeper/CommentsOrphans.php:35
+msgid "%s comment"
+msgid_plural "%s comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/base/sweep/PostStatus.php:42
+#: core/sweeper/PostsDraftRevisions.php:48
+#: core/sweeper/PostsRevisions.php:47
+msgid "%s post"
+msgid_plural "%s posts"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/base/Sweeper.php:269
+msgid "%s item"
+msgid_plural "%s items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/base/Sweeper.php:273
+msgid "%s task"
+msgid_plural "%s tasks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/pro/base/sweep/GravityFormsEntryStatus.php:47
+msgid "%s entry"
+msgid_plural "%s entries"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/pro/meta/tables/Blogmeta.php:41
+msgid "%s Blog"
+msgid_plural "%s Blogs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/pro/meta/tables/Commentmeta.php:45
+msgid "%s Comment"
+msgid_plural "%s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/pro/meta/tables/Logmeta.php:47
+msgid "%s Log"
+msgid_plural "%s Logs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/pro/meta/tables/Postmeta.php:46
+msgid "%s Post"
+msgid_plural "%s Posts"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/pro/meta/tables/Termmeta.php:49
+msgid "%s Term"
+msgid_plural "%s Terms"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/pro/meta/tables/Usermeta.php:48
+msgid "%s User"
+msgid_plural "%s users"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/pro/sweeper/GravityFormsFormsTrash.php:48
+msgid "%s form"
+msgid_plural "%s forms"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/pro/table/Crons.php:230
+msgid "%s arg"
+msgid_plural "%s args"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/sweeper/ElementorTrashedSubmissions.php:47
+msgid "%s submissions"
+msgid_plural "%s submissions"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/sweeper/InactiveSignups.php:46
+msgid "%s signup"
+msgid_plural "%s signups"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/sweeper/OptimizeTables.php:36
+#: core/sweeper/RepairTables.php:39
+#: core/sweeper/RepairTables.php:43
+msgid "%s table"
+msgid_plural "%s tables"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/sweeper/TermsOrphans.php:34
+#: core/sweeper/TermsUnused.php:41
+msgid "%s term"
+msgid_plural "%s terms"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/sweeper/UnhookedCronJobs.php:37
+msgid "%s job"
+msgid_plural "%s jobs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: forms/content-dashboard-cleanup.php:104
+#: forms/misc-sweep-single.php:59
+#: forms/misc-sweep-single.php:123
+msgid "%s record"
+msgid_plural "%s records"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/admin/panel/Backups.php:31
+#: core/admin/panel/Metadata.php:90
+#: core/admin/panel/Options.php:40
+#: core/admin/panel/Sitemeta.php:24
+#: core/pro/table/Database.php:53
+#: forms/panels/content-metadata-index.php:41
+msgid "Rows"
+msgstr ""
+
+#: core/admin/panel/Dashboard.php:20
+#: core/admin/Plugin.php:95
+#: core/basic/AdminBar.php:102
+#: core/pro/table/Crons.php:256
+msgid "Sweep"
+msgstr ""
+
+#: core/admin/panel/Dashboard.php:26
+msgid "Jobs"
+msgstr ""
+
+#: core/admin/panel/Jobs.php:20
+msgid "List of Jobs"
+msgstr ""
+
+#: core/admin/panel/Jobs.php:22
+msgid "All current scheduled jobs for the website sweeping."
+msgstr ""
+
+#: core/admin/panel/Jobs.php:25
+msgid "New Sweep Job"
+msgstr ""
+
+#: core/admin/panel/Jobs.php:27
+msgid "Add new job for website seeping."
+msgstr ""
+
+#: core/admin/panel/Jobs.php:30
+msgid "Sweep Job Report"
+msgstr ""
+
+#: core/admin/panel/Jobs.php:32
+msgid "Last job execution report."
+msgstr ""
+
+#: core/admin/panel/Jobs.php:38
+msgid "Edit Sweep Job"
+msgstr ""
+
+#: core/admin/panel/Jobs.php:40
+msgid "Edit sweep job."
+msgstr ""
+
+#: core/admin/panel/Metadata.php:29
+msgid "Metadata Index"
+msgstr ""
+
+#: core/admin/panel/Metadata.php:31
+msgid "Control over metadata for all the WordPress meta tables."
+msgstr ""
+
+#: core/admin/panel/Metadata.php:37
+msgid "%s Metadata"
+msgstr ""
+
+#: core/admin/panel/Metadata.php:39
+msgid "List of meta keys currently used in the %s table."
+msgstr ""
+
+#: core/admin/panel/Metadata.php:42
+msgid "%s Duplicates"
+msgstr ""
+
+#: core/admin/panel/Metadata.php:44
+msgid "List of duplicated meta records keys in the %s table."
+msgstr ""
+
+#: core/admin/panel/Metadata.php:47
+msgid "%s Preview"
+msgstr ""
+
+#: core/admin/panel/Metadata.php:50
+msgid "Preview values for selected key in the %s table."
+msgstr ""
+
+#: core/admin/panel/Metadata.php:80
+#: core/admin/Settings.php:456
+#: core/basic/AdminBar.php:130
+#: core/pro/admin/Help.php:101
+#: core/pro/admin/Help.php:136
+#: core/pro/admin/Help.php:137
+#: core/pro/table/Backups.php:44
+#: forms/content-statistics.php:114
+#: forms/content-statistics.php:49
+msgid "Metadata"
+msgstr ""
+
+#: core/admin/panel/Metadata.php:81
+#: core/pro/table/Metadata.php:282
+msgid "Preview"
+msgstr ""
+
+#: core/admin/panel/Metadata.php:82
+#: core/query/Meta.php:42
+#: forms/panels/content-metadata-index.php:59
+msgid "Duplicated Records"
+msgstr ""
+
+#: core/admin/panel/Options.php:19
+#: forms/sidebar-options.php:51
+msgid "Options Management"
+msgstr ""
+
+#: core/admin/panel/Options.php:21
+#: core/admin/Plugin.php:106
+#: forms/sidebar-options.php:52
+msgid "Review all the records in the WordPress options table with ability to remove them."
+msgstr ""
+
+#: core/admin/panel/Options.php:24
+#: forms/sidebar-options.php:88
+msgid "Options Quick Tasks"
+msgstr ""
+
+#: core/admin/panel/Options.php:26
+#: forms/sidebar-options.php:89
+msgid "Run quick cleanup tasks for the Options database table."
+msgstr ""
+
+#: core/admin/panel/Settings.php:20
+msgid "License"
+msgstr ""
+
+#: core/admin/panel/Settings.php:22
+msgid "Dev4Press"
+msgstr ""
+
+#: core/admin/panel/Settings.php:24
+msgid "Activate your plugin license on this website by entering the license code."
+msgstr ""
+
+#: core/admin/panel/Settings.php:40
+#: core/admin/Settings.php:451
+#: core/pro/table/Backups.php:42
+#: core/pro/table/Jobs.php:29
+msgid "Sweepers"
+msgstr ""
+
+#: core/admin/panel/Settings.php:42
+msgid "Global Settings"
+msgstr ""
+
+#: core/admin/panel/Settings.php:44
+msgid "Options to control some of the plugin sweepers."
+msgstr ""
+
+#: core/admin/panel/Settings.php:47
+msgid "Performance"
+msgstr ""
+
+#: core/admin/panel/Settings.php:49
+msgid "Options to various performance related options."
+msgstr ""
+
+#: core/admin/panel/Settings.php:52
+msgid "Advanced"
+msgstr ""
+
+#: core/admin/panel/Settings.php:54
+msgid "Additional options for more control over the plugin."
+msgstr ""
+
+#: core/admin/panel/Settings.php:57
+msgid "Expand"
+msgstr ""
+
+#: core/admin/panel/Settings.php:59
+msgid "Features"
+msgstr ""
+
+#: core/admin/panel/Settings.php:61
+msgid "Expand the plugin with additional and optional features."
+msgstr ""
+
+#: core/admin/panel/Settings.php:64
+msgid "Meta & Options"
+msgstr ""
+
+#: core/admin/panel/Settings.php:66
+msgid "Tracking of the metadata and options usage to identify what metadata and options can be removed."
+msgstr ""
+
+#: core/admin/panel/Settings.php:72
+#: core/pro/table/Crons.php:260
+#: core/table/Sweepers.php:34
+msgid "Monitor"
+msgstr ""
+
+#: core/admin/panel/Settings.php:74
+msgid "Controls for the daily and weekly sweeper monitoring."
+msgstr ""
+
+#: core/admin/panel/Settings.php:81
+#: core/basic/AdminBar.php:116
+#: core/basic/Sweep.php:206
+#: core/pro/admin/Help.php:76
+msgid "Database"
+msgstr ""
+
+#: core/admin/panel/Settings.php:83
+msgid "Options for the Database panel for additional features and actions that can be performed."
+msgstr ""
+
+#: core/admin/panel/Settings.php:90
+msgid "Backup Data"
+msgstr ""
+
+#: core/admin/panel/Settings.php:92
+msgid "Control backup of the data that has been removed by the Sweepers and from Management panels."
+msgstr ""
+
+#: core/admin/panel/Tools.php:32
+msgid "Cache and Storage Purge"
+msgstr ""
+
+#: core/admin/panel/Tools.php:35
+#: core/admin/panel/Tools.php:45
+msgid "Purge"
+msgstr ""
+
+#: core/admin/panel/Tools.php:36
+msgid "Using this tool, you can purge all cached and scanning storage data."
+msgstr ""
+
+#: core/admin/panel/Tools.php:42
+msgid "Backups Purge"
+msgstr ""
+
+#: core/admin/panel/Tools.php:46
+msgid "Using this tool, you can remove the data backup files."
+msgstr ""
+
+#: core/admin/AJAX.php:39
+#: core/admin/AJAX.php:74
+#: core/admin/AJAX.php:76
+#: core/admin/AJAX.php:93
+#: core/admin/AJAX.php:112
+#: core/admin/AJAX.php:117
+msgid "Invalid Request"
+msgstr ""
+
+#: core/admin/AJAX.php:41
+#: core/admin/AJAX.php:78
+#: core/admin/AJAX.php:119
+msgid "Unauthorized Request"
+msgstr ""
+
+#: core/admin/Help.php:34
+msgid "Sweeping Process"
+msgstr ""
+
+#: core/admin/Help.php:35
+msgid "There are few important things to know about the sweeping process."
+msgstr ""
+
+#: core/admin/Help.php:37
+msgid "All the sweepers use SQL queries to estimate the number of records to remove and data to save from the database."
+msgstr ""
+
+#: core/admin/Help.php:38
+msgid "And, every sweeper is using only SQL queries to perform the data removal. The main reason for this approach is performance, and to ensure that each sweeper finishes as fast as possible, even with huge data sets that need to be removed."
+msgstr ""
+
+#: core/admin/Help.php:40
+msgid "As for the list of records for deletion, database size you should know few more things."
+msgstr ""
+
+#: core/admin/Help.php:42
+msgid "Displayed number of records and sizes for each sweeper are just estimations. Actual data size depends on the database server configuration, indexing, encoding and more."
+msgstr ""
+
+#: core/admin/Help.php:43
+msgid "Estimated size is not taking into account index that tables always have (you have option to enable estimation using index too), and is estimation based on data size, so in most cases, actual gains after sweeping can be bigger than estimation."
+msgstr ""
+
+#: core/admin/Help.php:44
+msgid "After the sweeper has finished, displayed information about deleted records and recovered database space is also just an estimation!"
+msgstr ""
+
+#: core/admin/Help.php:51
+#: core/basic/AdminBar.php:76
+#: core/table/Sweepers.php:31
+#: forms/content-dashboard-auto.php:45
+#: forms/content-dashboard-auto.php:70
+#: forms/content-statistics.php:38
+msgid "Auto Sweep"
+msgstr ""
+
+#: core/admin/Help.php:52
+msgid "The fastest way to clean up the WordPress database is by using Auto Sweep."
+msgstr ""
+
+#: core/admin/Help.php:54
+msgid "Auto Sweep will run most of the sweepers with all the tasks, but not all."
+msgstr ""
+
+#: core/admin/Help.php:55
+#: core/admin/Help.php:67
+msgid "Make sure you check the list of all Sweepers included and where they can be used from."
+msgstr ""
+
+#: core/admin/Help.php:61
+#: core/basic/AdminBar.php:53
+#: core/table/Sweepers.php:32
+#: forms/content-dashboard-cleanup.php:16
+#: forms/content-statistics.php:37
+msgid "Quick Sweep"
+msgstr ""
+
+#: core/admin/Help.php:62
+msgid "If you want to quickly choose what to clean up, Quick Sweep on Dashboard will do that."
+msgstr ""
+
+#: core/admin/Help.php:64
+msgid "This method shows quick overview of only available sweepers and tasks."
+msgstr ""
+
+#: core/admin/Help.php:65
+msgid "You can choose one more sweepers and tasks to run from Dashboard."
+msgstr ""
+
+#: core/admin/Help.php:66
+msgid "Quick Sweep will run most of the sweepers with all the tasks."
+msgstr ""
+
+#: core/admin/Help.php:75
+#: core/table/Sweepers.php:29
+msgid "Sweeper"
+msgstr ""
+
+#: core/admin/Help.php:76
+msgid "This panel shows all the sweepers, all the tasks and more about sweepers."
+msgstr ""
+
+#: core/admin/Help.php:78
+msgid "From this panel, you can run all available sweepers."
+msgstr ""
+
+#: core/admin/Help.php:79
+msgid "For each sweeper, you can show explanation and other important information about each sweeper."
+msgstr ""
+
+#: core/admin/Help.php:86
+msgid "Sweeping Statistics"
+msgstr ""
+
+#: core/admin/Help.php:87
+msgid "The plugin keeps basic aggregated statistics information about sweepers cleanup, removed records and saved database space."
+msgstr ""
+
+#: core/admin/Help.php:89
+msgid "The plugin keeps overall statistics and the monthly statistics. Via this panel, you can view this by choosing from the dropdown."
+msgstr ""
+
+#: core/admin/Help.php:96
+#: core/admin/Plugin.php:175
+#: core/basic/AdminBar.php:109
+msgid "Sweepers List"
+msgstr ""
+
+#: core/admin/Help.php:97
+msgid "This panel shows the list of all available sweepers with the availability indicators."
+msgstr ""
+
+#: core/admin/Help.php:99
+msgid "For each sweeper you can see the category, name and code. Code is important for use with the REST API and WP-CLI."
+msgstr ""
+
+#: core/admin/Help.php:100
+msgid "Indicator columns show the sweeper modes where the each sweeper can be used. All sweepers work from the main Sweep panel, but some sweepers have various limitations when it comes to availability."
+msgstr ""
+
+#: core/admin/Help.php:107
+#: core/admin/Settings.php:455
+#: core/basic/AdminBar.php:123
+#: core/basic/Sweep.php:95
+#: core/pro/table/Backups.php:43
+#: forms/content-statistics.php:106
+#: forms/content-statistics.php:50
+msgid "Options"
+msgstr ""
+
+#: core/admin/Help.php:108
+msgid "This panel shows the options available in the WordPress `Options` database table with some exceptions."
+msgstr ""
+
+#: core/admin/Help.php:110
+#: core/pro/admin/Help.php:151
+msgid "Options added by the WordPress are not listed on this panel and SweepPress can't delete these options! It is a bad idea to remove any of the options added by WordPress by default!"
+msgstr ""
+
+#: core/admin/Help.php:111
+#: core/pro/admin/Help.php:152
+msgid "Transient cache records are not displayed on this panel."
+msgstr ""
+
+#: core/admin/Help.php:112
+msgid "Widgets settings can be deleted. Plugin will show if the widget is registered or not."
+msgstr ""
+
+#: core/admin/Help.php:113
+#: core/pro/admin/Help.php:153
+msgid "Options that are detected as installed and active (belonging to plugin or theme), will not have Delete option included."
+msgstr ""
+
+#: core/admin/Help.php:115
+msgid "SweepPress uses several methods to determine the source for the options inside the WordPress Options database table. It is important to know few thing about this process."
+msgstr ""
+
+#: core/admin/Help.php:117
+#: core/pro/admin/Help.php:109
+#: core/pro/admin/Help.php:157
+msgid "There is no guarantee that all sources are identified and there is no guarantee that the information presented on this panel is 100% correct."
+msgstr ""
+
+#: core/admin/Help.php:118
+msgid "To determine which plugin or theme owns settings in the Options table, plugin uses regular expressions with predefined values, and the scanner to find these settings in the plugin or theme source code."
+msgstr ""
+
+#: core/admin/Help.php:119
+#: core/pro/admin/Help.php:111
+#: core/pro/admin/Help.php:159
+msgid "Detection methods depend on plugins and themes being installed in the directory that plugin or theme authors initially released for. If you change the directory names for plugins or themes, SweepPress might not be able to use all detection methods properly."
+msgstr ""
+
+#: core/admin/Help.php:120
+#: core/pro/admin/Help.php:112
+#: core/pro/admin/Help.php:160
+msgid "Metadata and Options usage monitoring is most reliable method to exactly find which options and metadata are used and what is the source."
+msgstr ""
+
+#: core/admin/Help.php:56
+#: core/admin/Help.php:68
+msgid "List of all Sweepers and where they can be used"
+msgstr ""
+
+#: core/admin/Plugin.php:60
+msgid "Install"
+msgstr ""
+
+#: core/admin/Plugin.php:63
+msgid "Before you continue, make sure plugin installation was successful."
+msgstr ""
+
+#: core/admin/Plugin.php:67
+msgid "Update"
+msgstr ""
+
+#: core/admin/Plugin.php:70
+msgid "Before you continue, make sure plugin was successfully updated."
+msgstr ""
+
+#: core/admin/Plugin.php:77
+msgid "Overview"
+msgstr ""
+
+#: core/admin/Plugin.php:82
+msgid "About"
+msgstr ""
+
+#: core/admin/Plugin.php:87
+#: core/basic/AdminBar.php:144
+msgid "Settings"
+msgstr ""
+
+#: core/admin/Plugin.php:97
+msgid "Detailed view for all the available Sweeper tools with additional information about each tool."
+msgstr ""
+
+#: core/admin/Plugin.php:104
+msgid "Manage Options"
+msgstr ""
+
+#: core/admin/Plugin.php:113
+msgid "Manage Metadata"
+msgstr ""
+
+#: core/admin/Plugin.php:114
+msgid "Manage Meta"
+msgstr ""
+
+#: core/admin/Plugin.php:116
+msgid "Management of the various WordPress metadata tables with ability to remove them."
+msgstr ""
+
+#: core/admin/Plugin.php:124
+msgid "Manage Sitemeta"
+msgstr ""
+
+#: core/admin/Plugin.php:126
+msgid "Review all the records in the WordPress Sitemeta table with ability to remove them."
+msgstr ""
+
+#: core/admin/Plugin.php:134
+msgid "Manage Database"
+msgstr ""
+
+#: core/admin/Plugin.php:135
+msgid "Manage DB"
+msgstr ""
+
+#: core/admin/Plugin.php:137
+msgid "Management for the website database tables linked to the current WordPress instance."
+msgstr ""
+
+#: core/admin/Plugin.php:145
+#: forms/content-dashboard-features.php:44
+msgid "Sweeper Jobs"
+msgstr ""
+
+#: core/admin/Plugin.php:147
+msgid "Manage list of scheduled sweep jobs."
+msgstr ""
+
+#: core/admin/Plugin.php:155
+#: core/basic/AdminBar.php:137
+msgid "CRON Control"
+msgstr ""
+
+#: core/admin/Plugin.php:157
+msgid "List of all currently scheduled jobs in WordPress CRON."
+msgstr ""
+
+#: core/admin/Plugin.php:165
+msgid "Sweep Backups"
+msgstr ""
+
+#: core/admin/Plugin.php:167
+msgid "Management for the SQL export file backups from sweeping and options and meta removal operations."
+msgstr ""
+
+#: core/admin/Plugin.php:177
+msgid "List of all current sweepers, and where they can be used from."
+msgstr ""
+
+#: core/admin/Plugin.php:184
+msgid "Statistics"
+msgstr ""
+
+#: core/admin/Plugin.php:186
+msgid "Overview of the statistics gathered by the plugin with all time and monthly statistics."
+msgstr ""
+
+#: core/admin/Plugin.php:193
+#: core/basic/AdminBar.php:151
+msgid "Tools"
+msgstr ""
+
+#: core/admin/Plugin.php:228
+msgid "The deletion has been completed. Records removed in the process: %s."
+msgstr ""
+
+#: core/admin/Plugin.php:232
+msgid "The backups deletion has been completed. Files removed in the process: %s."
+msgstr ""
+
+#: core/admin/Plugin.php:235
+msgid "Table optimization has been completed."
+msgstr ""
+
+#: core/admin/Plugin.php:239
+msgid "The backups removal has been completed. Files removed in the process: %s."
+msgstr ""
+
+#: core/admin/Plugin.php:242
+msgid "Table repair has been completed."
+msgstr ""
+
+#: core/admin/Plugin.php:245
+msgid "Table truncate operation has been completed."
+msgstr ""
+
+#: core/admin/Plugin.php:248
+msgid "Table drop operation has been completed."
+msgstr ""
+
+#: core/admin/Plugin.php:251
+msgid "CRON job has been executed."
+msgstr ""
+
+#: core/admin/Plugin.php:254
+msgid "CRON job has been removed."
+msgstr ""
+
+#: core/admin/Plugin.php:257
+msgid "All instances of the CRON job have been removed."
+msgstr ""
+
+#: core/admin/Plugin.php:260
+#: forms/setup-cache.php:17
+msgid "Cached data has been purged."
+msgstr ""
+
+#: core/admin/Plugin.php:339
+msgid "Are you sure? This operation is not reversible. Make sure you have the backup in case you need removed data later."
+msgstr ""
+
+#: core/admin/Settings.php:26
+msgid "WP_CLI"
+msgstr ""
+
+#: core/admin/Settings.php:36
+#: core/admin/Settings.php:52
+#: core/admin/Settings.php:307
+#: core/admin/Settings.php:333
+#: core/admin/Settings.php:375
+#: core/basic/Results.php:90
+#: core/expand/CLI.php:300
+#: core/pro/table/Crons.php:38
+#: core/pro/table/Database.php:51
+#: core/pro/table/Metadata.php:66
+#: core/pro/table/Sitemeta.php:40
+#: core/table/Options.php:91
+#: forms/panels/content-jobs.php:37
+msgid "Status"
+msgstr ""
+
+#: core/admin/Settings.php:36
+msgid "Integrate access to plugin sweepers into WP-CLI."
+msgstr ""
+
+#: core/admin/Settings.php:36
+msgid "To get started with available commands, run the following CLI command:"
+msgstr ""
+
+#: core/admin/Settings.php:42
+msgid "REST API"
+msgstr ""
+
+#: core/admin/Settings.php:52
+msgid "Integrate access to plugin sweepers into WordPress REST API. To get data from endpoints or run DELETE operations, administrator account authentication is required!"
+msgstr ""
+
+#: core/admin/Settings.php:52
+msgid "The plugin adds new endpoint for all the sweeper controls:"
+msgstr ""
+
+#: core/admin/Settings.php:58
+#: forms/content-dashboard-features.php:136
+msgid "Log File"
+msgstr ""
+
+#: core/admin/Settings.php:65
+msgid "Sweeper Queries"
+msgstr ""
+
+#: core/admin/Settings.php:65
+msgid "All queries executed during the sweeper runs will be logged into a log file."
+msgstr ""
+
+#: core/admin/Settings.php:65
+msgid "Log Removals and Queries"
+msgstr ""
+
+#: core/admin/Settings.php:71
+msgid "Admin Bar Menu"
+msgstr ""
+
+#: core/admin/Settings.php:78
+msgid "SweepPress Menu"
+msgstr ""
+
+#: core/admin/Settings.php:78
+msgid "New menu will be added to the WordPress Admin Bar to quickly access SweepPress panels and features from anywhere on the website where Admin Bar is displayed."
+msgstr ""
+
+#: core/admin/Settings.php:78
+msgid "Add Menu to Admin Bar"
+msgstr ""
+
+#: core/admin/Settings.php:86
+msgid "Admin Bar Elements"
+msgstr ""
+
+#: core/admin/Settings.php:90
+msgid "Show Quick Sweep"
+msgstr ""
+
+#: core/admin/Settings.php:91
+msgid "Show Auto Sweep"
+msgstr ""
+
+#: core/admin/Settings.php:103
+msgid "Plugin Dashboard"
+msgstr ""
+
+#: core/admin/Settings.php:110
+msgid "Auto and Quick Cleanup"
+msgstr ""
+
+#: core/admin/Settings.php:110
+msgid "If you don't need to use Auto and Quick cleanup features via plugin Dashboard, you can disable them, and the box for Auto and Quick cleanup will be hidden from the Dashboard."
+msgstr ""
+
+#: core/admin/Settings.php:118
+msgid "Database Optimization"
+msgstr ""
+
+#: core/admin/Settings.php:121
+msgid "Thresholds"
+msgstr ""
+
+#: core/admin/Settings.php:125
+msgid "Minimal Fragmentation"
+msgstr ""
+
+#: core/admin/Settings.php:125
+msgid "How much of free space database table takes compared to the data and index."
+msgstr ""
+
+#: core/admin/Settings.php:130
+msgid "Minimal Table Size"
+msgstr ""
+
+#: core/admin/Settings.php:130
+msgid "The size of table includes usable space (data and index) and free space. If table size is smaller than value specified here, it will be skipped."
+msgstr ""
+
+#: core/admin/Settings.php:137
+msgid "Optimization"
+msgstr ""
+
+#: core/admin/Settings.php:141
+msgid "Method"
+msgstr ""
+
+#: core/admin/Settings.php:141
+msgid "There are different optimization methods that may have different effects on the optimization results and statistics reported."
+msgstr ""
+
+#: core/admin/Settings.php:151
+msgid "Number of days to skip"
+msgstr ""
+
+#: core/admin/Settings.php:154
+#: core/basic/Sweep.php:92
+msgid "Posts"
+msgstr ""
+
+#: core/admin/Settings.php:158
+#: core/sweeper/PostsAutoDraft.php:28
+msgid "Auto Drafts"
+msgstr ""
+
+#: core/admin/Settings.php:159
+#: core/sweeper/PostsSpam.php:30
+msgid "Spam Content"
+msgstr ""
+
+#: core/admin/Settings.php:160
+msgid "Trash Content"
+msgstr ""
+
+#: core/admin/Settings.php:161
+msgid "Revisions"
+msgstr ""
+
+#: core/admin/Settings.php:162
+msgid "Revisions for Draft Posts"
+msgstr ""
+
+#: core/admin/Settings.php:166
+#: core/basic/Sweep.php:93
+msgid "Comments"
+msgstr ""
+
+#: core/admin/Settings.php:170
+#: core/sweeper/CommentsSpam.php:30
+msgid "Spam Comments"
+msgstr ""
+
+#: core/admin/Settings.php:171
+msgid "Trash Comments"
+msgstr ""
+
+#: core/admin/Settings.php:172
+#: core/sweeper/CommentsUnapproved.php:29
+msgid "Unapproved Comments"
+msgstr ""
+
+#: core/admin/Settings.php:173
+msgid "Pingbacks"
+msgstr ""
+
+#: core/admin/Settings.php:174
+msgid "Trackbacks"
+msgstr ""
+
+#: core/admin/Settings.php:175
+msgid "User Agents"
+msgstr ""
+
+#: core/admin/Settings.php:176
+#: core/sweeper/AkismetMeta.php:50
+msgid "Akismet Meta"
+msgstr ""
+
+#: core/admin/Settings.php:180
+msgid "User Signups"
+msgstr ""
+
+#: core/admin/Settings.php:184
+msgid "Inactive Signups"
+msgstr ""
+
+#: core/admin/Settings.php:188
+#: core/basic/Sweep.php:186
+msgid "Elementor"
+msgstr ""
+
+#: core/admin/Settings.php:192
+msgid "Trash Submissions"
+msgstr ""
+
+#: core/admin/Settings.php:196
+msgid "Action Scheduler"
+msgstr ""
+
+#: core/admin/Settings.php:200
+msgid "Log Entries"
+msgstr ""
+
+#: core/admin/Settings.php:201
+msgid "Failed Actions"
+msgstr ""
+
+#: core/admin/Settings.php:202
+msgid "Completed Actions"
+msgstr ""
+
+#: core/admin/Settings.php:203
+msgid "Canceled Actions"
+msgstr ""
+
+#: core/admin/Settings.php:207
+msgid "GravityForms Entries"
+msgstr ""
+
+#: core/admin/Settings.php:211
+#: core/pro/sweeper/GravityFormsEntriesSpam.php:30
+msgid "Spam Entries"
+msgstr ""
+
+#: core/admin/Settings.php:212
+msgid "Trash Entries"
+msgstr ""
+
+#: core/admin/Settings.php:218
+msgid "Panel Options"
+msgstr ""
+
+#: core/admin/Settings.php:225
+msgid "Days To Keep Notices"
+msgstr ""
+
+#: core/admin/Settings.php:225
+msgid "Show notices about the items estimate and deletion related to the days to keep options."
+msgstr ""
+
+#: core/admin/Settings.php:231
+msgid "Duplicate Exceptions"
+msgstr ""
+
+#: core/admin/Settings.php:238
+#: core/admin/Settings.php:240
+msgid "Postmeta"
+msgstr ""
+
+#: core/admin/Settings.php:238
+#: core/admin/Settings.php:239
+#: core/admin/Settings.php:240
+#: core/admin/Settings.php:241
+msgid "List of meta keys that will not be checked for duplicated meta records."
+msgstr ""
+
+#: core/admin/Settings.php:239
+msgid "Commentmeta"
+msgstr ""
+
+#: core/admin/Settings.php:241
+msgid "Usermeta"
+msgstr ""
+
+#: core/admin/Settings.php:249
+msgid "Estimation Method"
+msgstr ""
+
+#: core/admin/Settings.php:256
+msgid "Processing"
+msgstr ""
+
+#: core/admin/Settings.php:256
+msgid "Depending on the database size, server type and server speed, some estimation queries can take a long time to finish. This option will control how the estimation is triggered, and for resources heavy queries, it can be skipped and run on demand only."
+msgstr ""
+
+#: core/admin/Settings.php:257
+msgid "Automatic based on the database size"
+msgstr ""
+
+#: core/admin/Settings.php:258
+msgid "Normal Estimation process for all Sweepers"
+msgstr ""
+
+#: core/admin/Settings.php:259
+msgid "Estimate on request for some Sweepers"
+msgstr ""
+
+#: core/admin/Settings.php:260
+msgid "Estimate on request for all Sweepers"
+msgstr ""
+
+#: core/admin/Settings.php:267
+msgid "Estimates Calculations"
+msgstr ""
+
+#: core/admin/Settings.php:274
+msgid "Full Mode"
+msgstr ""
+
+#: core/admin/Settings.php:274
+msgid "Full mode will estimate data size along with the number of records. But, estimating size on the large database can increase the time needed for the estimates queries to run, and that can increase the time needed to show the overviews for the dashboard and the Sweep panel (and other relevant plugin features)."
+msgstr ""
+
+#: core/admin/Settings.php:275
+msgid "Estimates with Index"
+msgstr ""
+
+#: core/admin/Settings.php:275
+msgid "By default estimations are related to actual data size, it doesn't take into account the index space that data needs. With this option, all size estimates will include the factored correction for the size to include approximated index size of the affected data. This works only with Full Mode estimations enabled."
+msgstr ""
+
+#: core/admin/Settings.php:276
+msgid "Cache Estimates"
+msgstr ""
+
+#: core/admin/Settings.php:276
+msgid "Estimates will be cached to avoid running them too often. This cache will be stored for the period of 2 hours, or until the sweeper is used. For large database it is highly recommended to use this option."
+msgstr ""
+
+#: core/admin/Settings.php:284
+msgid "Plugin Notices"
+msgstr ""
+
+#: core/admin/Settings.php:291
+msgid "Backup Notice"
+msgstr ""
+
+#: core/admin/Settings.php:291
+msgid "On every page where the sweeping is available, plugin will show notice about creating backup before running the sweeping process. If you understand the requirements of making backups, you can disable this notice."
+msgstr ""
+
+#: core/admin/Settings.php:291
+#: core/admin/Settings.php:292
+msgid "Hide the Notice"
+msgstr ""
+
+#: core/admin/Settings.php:292
+msgid "Meta Notice"
+msgstr ""
+
+#: core/admin/Settings.php:292
+msgid "On every page related to Options and Metadata management, plugin will show notice about the management process and removal of options and meta records. If you understand how the process works, you can disable this notice."
+msgstr ""
+
+#: core/admin/Settings.php:300
+#: forms/panels/sidebar-metadata.php:83
+#: forms/panels/sidebar-sitemeta.php:61
+#: forms/sidebar-options.php:71
+msgid "Usage Monitoring"
+msgstr ""
+
+#: core/admin/Settings.php:307
+msgid "Plugin will monitor GET and UPDATE operations for all non WordPress meta and options data and log where they have been used."
+msgstr ""
+
+#: core/admin/Settings.php:308
+msgid "This monitor can add some overhead to the page loading time, because it will intercept all meta and options GET and UPDATE calls to process the call for the source of the call."
+msgstr ""
+
+#: core/admin/Settings.php:309
+msgid "Use it only for a limited time, and usually one or two days are enough to identify all the used metadata and options sources."
+msgstr ""
+
+#: core/admin/Settings.php:311
+msgid "Monitor Updates"
+msgstr ""
+
+#: core/admin/Settings.php:311
+msgid "Monitor when the values are updated. This is more precise method, it is less demanding, but it can take more time to get full results."
+msgstr ""
+
+#: core/admin/Settings.php:312
+msgid "Monitor Reading"
+msgstr ""
+
+#: core/admin/Settings.php:312
+msgid "Monitor when the values are read. This method can generate multiple source for every meta or options, it is more demanding, but it can much faster to confirm the meta or options usage."
+msgstr ""
+
+#: core/admin/Settings.php:323
+msgid "Daily Monitor"
+msgstr ""
+
+#: core/admin/Settings.php:333
+msgid "Run the monitor task each day. Send notification if the minimal size of cleanup data or minimal number of records is reached."
+msgstr ""
+
+#: core/admin/Settings.php:337
+#: core/admin/Settings.php:379
+msgid "Notifications"
+msgstr ""
+
+#: core/admin/Settings.php:341
+#: core/admin/Settings.php:383
+msgid "Emails"
+msgstr ""
+
+#: core/admin/Settings.php:341
+#: core/admin/Settings.php:383
+msgid "If empty, notification will be sent to website administrator email."
+msgstr ""
+
+#: core/admin/Settings.php:341
+#: core/admin/Settings.php:383
+msgid "Add New Email"
+msgstr ""
+
+#: core/admin/Settings.php:345
+#: core/admin/Settings.php:387
+msgid "Threshold"
+msgstr ""
+
+#: core/admin/Settings.php:349
+#: core/admin/Settings.php:391
+#: core/pro/table/Backups.php:146
+#: core/pro/table/Database.php:54
+#: core/pro/table/Preview.php:88
+#: forms/panels/content-metadata-index.php:38
+#: forms/content-dashboard-auto.php:67
+#: forms/content-dashboard-cleanup.php:149
+#: forms/content-options-quick.php:34
+#: forms/content-options-quick.php:63
+#: forms/content-options-quick.php:92
+#: forms/content-options-quick.php:124
+#: forms/sidebar-sweep.php:63
+msgid "Size"
+msgstr ""
+
+#: core/admin/Settings.php:349
+#: core/admin/Settings.php:391
+msgid "Size of the data for sweeping based on percentage size of the whole database."
+msgstr ""
+
+#: core/admin/Settings.php:355
+#: core/admin/Settings.php:358
+#: core/admin/Settings.php:397
+#: core/admin/Settings.php:400
+#: core/pro/table/Metadata.php:68
+#: forms/content-dashboard-auto.php:65
+#: forms/content-dashboard-cleanup.php:148
+#: forms/content-options-quick.php:29
+#: forms/content-options-quick.php:58
+#: forms/content-options-quick.php:87
+#: forms/content-options-quick.php:119
+#: forms/sidebar-sweep.php:61
+msgid "Records"
+msgstr ""
+
+#: core/admin/Settings.php:355
+#: core/admin/Settings.php:397
+msgid "Number of the records detected for sweeping."
+msgstr ""
+
+#: core/admin/Settings.php:365
+msgid "Weekly Monitor"
+msgstr ""
+
+#: core/admin/Settings.php:375
+msgid "Run the monitor task once weekly (by default, night before Saturday and Sunday). Send notification if the minimal size of cleanup data or minimal number of records is reached."
+msgstr ""
+
+#: core/admin/Settings.php:409
+msgid "Additional Actions"
+msgstr ""
+
+#: core/admin/Settings.php:416
+#: forms/panels/content-tools-backups.php:16
+#: forms/content-tools-purge.php:11
+msgid "Important"
+msgstr ""
+
+#: core/admin/Settings.php:416
+msgid "Both actions available via these settings are destructible, and once you decide to use them, the only way to get back what is removed, is from database backup. Make sure you always have current database backup, when making changes that directly affect your website database."
+msgstr ""
+
+#: core/admin/Settings.php:416
+msgid "You are using these actions at your own risk!"
+msgstr ""
+
+#: core/admin/Settings.php:417
+msgid "Truncate Tables"
+msgstr ""
+
+#: core/admin/Settings.php:417
+msgid "Truncate option will empty database table, all data will be removed, but table will remain in database. Plugin will not show Truncate option for WordPress options, site, sitemeta, blogs and blog_versions table."
+msgstr ""
+
+#: core/admin/Settings.php:418
+msgid "Drop Tables"
+msgstr ""
+
+#: core/admin/Settings.php:418
+msgid "Drop option will delete both data and table from the database. Plugin will not show Drop option for WordPress default tables."
+msgstr ""
+
+#: core/admin/Settings.php:426
+msgid "Backup Status"
+msgstr ""
+
+#: core/admin/Settings.php:433
+#: core/table/Sweepers.php:35
+msgid "Backup"
+msgstr ""
+
+#: core/admin/Settings.php:433
+#: core/admin/Settings.php:455
+#: core/admin/Settings.php:456
+#: core/admin/Settings.php:457
+msgid "If enabled, backup will create export of the data before the data is removed."
+msgstr ""
+
+#: core/admin/Settings.php:434
+msgid "Backup will not be used if the plugin can't create export directory under the WordPress uploads."
+msgstr ""
+
+#: core/admin/Settings.php:435
+msgid "Plugin can export data into the file, and it will include data in the SQL format, with each record having own insert directive. Export contains data only, there are no table create directives."
+msgstr ""
+
+#: core/admin/Settings.php:436
+msgid "All exported rows will include the ID's at the time of export, and that will make it easier to just import them back into the database. These exports are made to be imported back into the database for this website only."
+msgstr ""
+
+#: core/admin/Settings.php:437
+msgid "Plugin can't import these backup files directly, but each file can be imported using PHPMyAdmin or similar software (every hosting company includes it)."
+msgstr ""
+
+#: core/admin/Settings.php:444
+msgid "What data to Backup"
+msgstr ""
+
+#: core/admin/Settings.php:451
+msgid "Backup will be created for each sweeper task."
+msgstr ""
+
+#: core/admin/Settings.php:452
+msgid "Not every sweeper supports creation of backups. Each sweeper shows the Backup enabled"
+msgstr ""
+
+#: core/admin/Settings.php:453
+msgid "If you run multiple sweepers at once, for each sweeper plugin will create one backup file that includes data only for that one sweeper."
+msgstr ""
+
+#: core/admin/Settings.php:457
+#: core/pro/admin/Help.php:148
+#: core/pro/table/Backups.php:45
+#: forms/content-statistics.php:51
+msgid "Sitemeta"
+msgstr ""
+
+#: core/admin/Settings.php:463
+msgid "Additional Settings"
+msgstr ""
+
+#: core/admin/Settings.php:470
+msgid "Compression"
+msgstr ""
+
+#: core/admin/Settings.php:470
+msgid "File content will be always in SQL format, and compression can significantly save space for bigger exports."
+msgstr ""
+
+#: core/admin/Settings.php:471
+msgid "Plugin can compress the backup in GZIP and BZIP2 formats, but only if your server has PHP extensions for these types of compression."
+msgstr ""
+
+#: core/admin/Settings.php:480
+msgid "Options and Metadata Panels"
+msgstr ""
+
+#: core/admin/Settings.php:483
+msgid "Data Viewing"
+msgstr ""
+
+#: core/admin/Settings.php:487
+msgid "View Serialized Data"
+msgstr ""
+
+#: core/admin/Settings.php:487
+msgid "If you have DebugPress plugin, SweerPress can use its pretty print functionality to display serialized data in a compact format with navigation deep into the data."
+msgstr ""
+
+#: core/admin/Settings.php:488
+msgid "DebugPress is a free plugin, available via WordPress.org repository."
+msgstr ""
+
+#: core/admin/Settings.php:489
+msgid "DebugPress viewer for serialized data will add overhead to the page loading, because the visualization of big data arrays or object will add a lot of HTML to the page."
+msgstr ""
+
+#: core/admin/Settings.php:494
+msgid "DebugPress Home"
+msgstr ""
+
+#: core/admin/Settings.php:501
+msgid "Install DebugPress"
+msgstr ""
+
+#: core/admin/Settings.php:508
+msgid "Metadata: Allow Deletion"
+msgstr ""
+
+#: core/admin/Settings.php:512
+msgid "For WordPress keys"
+msgstr ""
+
+#: core/admin/Settings.php:512
+msgid "If the meta key is detected to belong to WordPress, by default, Delete options will not be available."
+msgstr ""
+
+#: core/admin/Settings.php:513
+msgid "For Detected Active keys"
+msgstr ""
+
+#: core/admin/Settings.php:513
+msgid "If the meta key is detected to belong to plugin or theme that is currently active, by default, Delete options will not be available."
+msgstr ""
+
+#: core/admin/Settings.php:520
+msgid "Quick Sweep Sweepers"
+msgstr ""
+
+#: core/admin/Settings.php:524
+msgid "Sweepers to Include"
+msgstr ""
+
+#: core/admin/Settings.php:534
+msgid "The Pro version includes additional options for data preview and deletion."
+msgstr ""
+
+#: core/admin/Settings.php:535
+msgid "The Pro version includes additional to control list of Sweepers in the admin bar menu for quick sweeping."
+msgstr ""
+
+#: core/admin/Settings.php:545
+msgid "None"
+msgstr ""
+
+#: core/admin/Settings.php:549
+msgid "GZIP"
+msgstr ""
+
+#: core/admin/Settings.php:553
+msgid "BZIP2"
+msgstr ""
+
+#: core/base/sweep/ActionSchedulerActions.php:42
+#: core/sweeper/ActionSchedulerLog.php:50
+#: core/sweeper/ActionSchedulerLogOrphans.php:42
+msgid "ActionScheduler is a system shared and used by various WordPress plugins, including WooCommerce, RankMath and many others."
+msgstr ""
+
+#: core/base/sweep/ActionSchedulerActions.php:43
+msgid "Each action can be associated to the group. You can delete actions for selected groups only."
+msgstr ""
+
+#: core/base/sweep/ActionSchedulerActions.php:44
+#: core/sweeper/ActionSchedulerLog.php:52
+msgid "'No Group' actions are registered without the group. In some versions of the scheduler this was allowed."
+msgstr ""
+
+#: core/base/sweep/ActionSchedulerActions.php:45
+msgid "Deleting action with also remove all the associated log entries for the action."
+msgstr ""
+
+#: core/base/sweep/ActionSchedulerActions.php:51
+#: core/sweeper/ActionSchedulerLog.php:64
+msgid "This sweeper can't be used from the Dashboard for Quick or Auto Sweep."
+msgstr ""
+
+#: core/base/sweep/ActionSchedulerActions.php:52
+#: core/base/sweep/CommentType.php:35
+#: core/pro/base/sweep/GravityFormsEntryStatus.php:85
+#: core/pro/sweeper/GravityFormsFormsTrash.php:79
+#: core/sweeper/ActionSchedulerLog.php:65
+#: core/sweeper/AkismetMeta.php:74
+#: core/sweeper/AllNetworkTransients.php:46
+#: core/sweeper/AllTransients.php:47
+#: core/sweeper/CommentsUserAgent.php:69
+#: core/sweeper/CronJobs.php:65
+#: core/sweeper/ElementorTrashedSubmissions.php:67
+#: core/sweeper/InactiveSignups.php:71
+#: core/sweeper/OptimizeTables.php:63
+#: core/sweeper/PostmetaOembeds.php:58
+#: core/sweeper/PostmetaOld.php:71
+#: core/sweeper/RepairTables.php:64
+#: core/sweeper/RSSFeeds.php:43
+#: core/sweeper/TermsAMPErrors.php:60
+#: core/sweeper/UnhookedCronJobs.php:59
+msgid "Make sure to check out the Help information provided for this sweeper to better understand these limitations."
+msgstr ""
+
+#: core/base/sweep/CommentStatus.php:42
+#: core/sweeper/PingbacksCleanup.php:43
+#: core/sweeper/TrackbacksCleanup.php:47
+msgid "This sweeper will keep related comments from the past %s days. You can adjust the days to keep value in the plugin Settings."
+msgstr ""
+
+#: core/base/sweep/CommentType.php:34
+msgid "This sweeper can't be used from the Dashboard for Auto Sweep."
+msgstr ""
+
+#: core/base/sweep/MetaDuplicates.php:35
+msgid "While in theory, it is allowed to have such records, it is highly unlikely that they are needed and most likely they are product of some error."
+msgstr ""
+
+#: core/base/sweep/MetaDuplicates.php:36
+msgid "Deleting duplicated records will leave one instance of the record, and remove all other duplicates. The estimated number of records shows only records that will be removed."
+msgstr ""
+
+#: core/base/sweep/MetaDuplicates.php:37
+msgid "If there are some meta keys you want to exclude from duplicate check, you can add them in the plugin settings."
+msgstr ""
+
+#: core/base/sweep/MetaDuplicates.php:43
+#: core/sweeper/PingbacksCleanup.php:51
+#: core/sweeper/PostmetaEdits.php:59
+#: core/sweeper/PostmetaLocks.php:62
+msgid "This sweeper is not available from the Dashboard for Quick or Auto Sweep."
+msgstr ""
+
+#: core/base/table/Options.php:60
+#: core/pro/table/Metadata.php:223
+msgid "All Prefixes"
+msgstr ""
+
+#: core/base/table/Options.php:67
+#: core/pro/table/Crons.php:54
+#: core/pro/table/Metadata.php:230
+msgid "All Sources"
+msgstr ""
+
+#: core/base/table/Options.php:68
+#: core/pro/table/Metadata.php:232
+msgid "Plugins"
+msgstr ""
+
+#: core/base/table/Options.php:69
+#: core/pro/table/Metadata.php:233
+msgid "Themes"
+msgstr ""
+
+#: core/base/table/Options.php:70
+#: core/pro/table/Metadata.php:234
+msgid "Components"
+msgstr ""
+
+#: core/base/table/Options.php:71
+#: core/meta/Helper.php:141
+#: core/pro/table/Metadata.php:235
+#: forms/panels/sidebar-metadata.php:73
+#: forms/sidebar-sweep.php:48
+msgid "Cache"
+msgstr ""
+
+#: core/base/table/Options.php:72
+#: core/pro/table/Metadata.php:236
+msgid "Widgets"
+msgstr ""
+
+#: core/base/table/Options.php:73
+msgid "All Known"
+msgstr ""
+
+#: core/base/table/Options.php:74
+#: core/basic/Sweep.php:257
+#: core/meta/Helper.php:143
+#: core/meta/Helper.php:177
+#: core/pro/table/Crons.php:55
+#: core/pro/table/Crons.php:247
+#: core/pro/table/Jobs.php:76
+#: core/pro/table/Metadata.php:237
+msgid "Unknown"
+msgstr ""
+
+#: core/base/table/Options.php:78
+#: core/pro/table/Database.php:174
+#: core/pro/table/Metadata.php:241
+msgid "All Statuses"
+msgstr ""
+
+#: core/base/table/Options.php:79
+#: core/meta/Helper.php:166
+#: core/pro/table/Metadata.php:242
+msgid "Missing"
+msgstr ""
+
+#: core/base/table/Options.php:80
+#: core/meta/Helper.php:156
+#: core/pro/table/Metadata.php:243
+msgid "Installed"
+msgstr ""
+
+#: core/base/table/Options.php:81
+#: core/pro/table/Metadata.php:244
+msgid "Installed & Active"
+msgstr ""
+
+#: core/base/table/Options.php:105
+msgid "All Autoload"
+msgstr ""
+
+#: core/base/table/Options.php:106
+msgid "Yes"
+msgstr ""
+
+#: core/base/table/Options.php:107
+msgid "No"
+msgstr ""
+
+#: core/base/table/Options.php:116
+#: core/pro/table/Backups.php:171
+#: core/pro/table/Crons.php:177
+#: core/pro/table/Database.php:270
+#: core/pro/table/Metadata.php:266
+msgid "Filter"
+msgstr ""
+
+#: core/base/table/Options.php:122
+#: core/pro/table/Backups.php:116
+#: core/pro/table/Backups.php:155
+#: core/pro/table/Crons.php:205
+#: core/pro/table/Jobs.php:45
+#: core/pro/table/Metadata.php:216
+#: core/pro/table/Metadata.php:286
+#: core/pro/table/Preview.php:134
+#: core/pro/table/Preview.php:166
+#: core/pro/table/Sitemeta.php:129
+#: core/table/Options.php:110
+#: core/table/Options.php:136
+msgid "Delete"
+msgstr ""
+
+#: core/basic/AdminBar.php:43
+msgid "SweepPress"
+msgstr ""
+
+#: core/basic/Data.php:45
+msgid "Comment"
+msgstr ""
+
+#: core/basic/Data.php:46
+msgid "Trackback"
+msgstr ""
+
+#: core/basic/Data.php:47
+msgid "Pingback"
+msgstr ""
+
+#: core/basic/Data.php:48
+msgid "Rating User Review"
+msgstr ""
+
+#: core/basic/Data.php:162
+msgid "Trash"
+msgstr ""
+
+#: core/basic/Data.php:162
+#: core/meta/Helper.php:162
+#: core/pro/table/Crons.php:252
+#: core/pro/table/Jobs.php:83
+#: forms/panels/content-jobs.php:41
+msgid "Inactive"
+msgstr ""
+
+#: core/basic/Database.php:173
+msgid "Tiny"
+msgstr ""
+
+#: core/basic/Database.php:175
+msgid "Small"
+msgstr ""
+
+#: core/basic/Database.php:177
+msgid "Medium"
+msgstr ""
+
+#: core/basic/Database.php:179
+msgid "Big"
+msgstr ""
+
+#: core/basic/Database.php:181
+msgid "Large"
+msgstr ""
+
+#: core/basic/Database.php:183
+msgid "Huge"
+msgstr ""
+
+#: core/basic/DB.php:36
+msgid "Nothing Done"
+msgstr ""
+
+#: core/basic/DB.php:36
+msgid "Operation Failed"
+msgstr ""
+
+#: core/basic/Plugin.php:191
+#: core/query/Options.php:102
+#: core/query/Sitemeta.php:51
+msgid "All Transients"
+msgstr ""
+
+#: core/basic/Plugin.php:192
+#: core/query/Options.php:81
+#: core/query/Sitemeta.php:30
+#: core/sweeper/ExpiredTransients.php:28
+msgid "Expired Transients"
+msgstr ""
+
+#: core/basic/Plugin.php:193
+#: core/sweeper/RSSFeeds.php:33
+msgid "RSS Feeds"
+msgstr ""
+
+#: core/basic/Plugin.php:194
+msgid "Posts Auto Drafts"
+msgstr ""
+
+#: core/basic/Plugin.php:195
+msgid "Posts Draft Revisions"
+msgstr ""
+
+#: core/basic/Plugin.php:196
+#: core/sweeper/PostmetaLocks.php:44
+msgid "Postmeta Locks"
+msgstr ""
+
+#: core/basic/Plugin.php:197
+msgid "Postmeta Edits"
+msgstr ""
+
+#: core/basic/Plugin.php:198
+#: core/sweeper/PostmetaOembeds.php:40
+msgid "Postmeta Oembeds"
+msgstr ""
+
+#: core/basic/Plugin.php:202
+msgid "All Network Transients"
+msgstr ""
+
+#: core/basic/Plugin.php:203
+msgid "Network Network Transients"
+msgstr ""
+
+#: core/basic/Results.php:48
+#: core/basic/Results.php:93
+#: core/expand/CLI.php:303
+#: core/pro/table/Crons.php:270
+#: forms/content-statistics.php:65
+#: forms/content-statistics.php:91
+#: forms/content-statistics.php:133
+msgid "seconds"
+msgstr ""
+
+#: core/basic/Results.php:90
+#: core/expand/CLI.php:294
+#: core/expand/CLI.php:300
+#: core/pro/table/Database.php:330
+#: forms/content-dashboard-status.php:26
+msgid "OK"
+msgstr ""
+
+#: core/basic/Results.php:90
+#: core/expand/CLI.php:294
+#: core/expand/CLI.php:300
+msgid "Has Errors"
+msgstr ""
+
+#: core/basic/Results.php:30
+#: core/expand/CLI.php:282
+msgid "This sweeper was not run."
+msgstr ""
+
+#: core/basic/Results.php:48
+#: core/basic/Results.php:93
+#: core/expand/CLI.php:303
+msgid "Total Time"
+msgstr ""
+
+#: core/basic/Results.php:49
+#: core/basic/Results.php:94
+#: core/expand/CLI.php:305
+#: forms/content-statistics.php:60
+#: forms/content-statistics.php:86
+#: forms/content-statistics.php:128
+msgid "Records Removed"
+msgstr ""
+
+#: core/basic/Results.php:50
+#: core/basic/Results.php:95
+#: core/expand/CLI.php:306
+#: forms/content-statistics.php:62
+#: forms/content-statistics.php:88
+#: forms/content-statistics.php:130
+msgid "Space Recovered"
+msgstr ""
+
+#: core/basic/Results.php:53
+#: forms/content-dashboard-auto.php:63
+#: forms/sidebar-sweep.php:59
+msgid "Tasks"
+msgstr ""
+
+#: core/basic/Results.php:57
+msgid "Errors"
+msgstr ""
+
+#: core/basic/Results.php:70
+msgid "Error: %s (%s)"
+msgstr ""
+
+#: core/basic/Results.php:72
+msgid "Status: %s"
+msgstr ""
+
+#: core/basic/Results.php:88
+#: core/expand/CLI.php:298
+msgid "Sweeping Results"
+msgstr ""
+
+#: core/basic/Results.php:91
+#: core/expand/CLI.php:301
+msgid "Started"
+msgstr ""
+
+#: core/basic/Results.php:92
+#: core/expand/CLI.php:302
+msgid "Ended"
+msgstr ""
+
+#: core/basic/Results.php:96
+#: core/basic/Results.php:99
+#: core/expand/CLI.php:307
+msgid "Sweepers Used"
+msgstr ""
+
+#: core/basic/Results.php:97
+#: core/expand/CLI.php:308
+msgid "Tasks Completed"
+msgstr ""
+
+#: core/basic/Settings.php:321
+msgid "Since: %s"
+msgstr ""
+
+#: core/basic/Settings.php:321
+msgid "All Time"
+msgstr ""
+
+#: core/basic/Settings.php:324
+msgid "For Month: %s"
+msgstr ""
+
+#: core/basic/Settings.php:338
+msgid "All Time Statistics"
+msgstr ""
+
+#: core/basic/Sweep.php:87
+#: core/table/Sweepers.php:59
+msgid "Blog"
+msgstr ""
+
+#: core/basic/Sweep.php:88
+#: core/basic/Sweep.php:145
+#: core/table/Sweepers.php:59
+msgid "Network"
+msgstr ""
+
+#: core/basic/Sweep.php:94
+msgid "Terms"
+msgstr ""
+
+#: core/basic/Sweep.php:136
+msgid "Users"
+msgstr ""
+
+#: core/basic/Sweep.php:155
+msgid "ActionScheduler"
+msgstr ""
+
+#: core/basic/Sweep.php:167
+msgid "bbPress"
+msgstr ""
+
+#: core/basic/Sweep.php:175
+msgid "BuddyPress"
+msgstr ""
+
+#: core/basic/Sweep.php:195
+msgid "GravityForms"
+msgstr ""
+
+#: core/basic/Sweep.php:265
+msgid "Unknown Sweeper"
+msgstr ""
+
+#: core/expand/CLI.php:51
+msgid "This sweeper reported no tasks available for sweeping."
+msgstr ""
+
+#: core/expand/CLI.php:63
+msgid "The requested sweeper is not valid."
+msgstr ""
+
+#: core/expand/CLI.php:69
+msgid "No sweepers reported any data available for sweeping."
+msgstr ""
+
+#: core/expand/CLI.php:118
+#: core/expand/CLI.php:159
+msgid "No sweeper specified."
+msgstr ""
+
+#: core/expand/CLI.php:129
+msgid "No valid sweepers specified."
+msgstr ""
+
+#: core/expand/CLI.php:164
+msgid "Specified sweeper is not valid."
+msgstr ""
+
+#: core/expand/CLI.php:180
+msgid "Specified tasks are not valid."
+msgstr ""
+
+#: core/expand/CLI.php:211
+msgid "Important Notices"
+msgstr ""
+
+#: core/expand/CLI.php:213
+msgid "If the 'period' is empty, the CRON job is registered for single execution."
+msgstr ""
+
+#: core/expand/REST.php:42
+msgid "Name of the sweeper to get list of tasks."
+msgstr ""
+
+#: core/expand/REST.php:62
+msgid "Name of the sweeper to run."
+msgstr ""
+
+#: core/meta/Helper.php:133
+msgid "Theme"
+msgstr ""
+
+#: core/meta/Helper.php:135
+msgid "Widget"
+msgstr ""
+
+#: core/meta/Helper.php:137
+#: core/pro/table/Database.php:285
+#: core/pro/table/Database.php:285
+#: core/pro/table/Database.php:320
+#: core/pro/table/Metadata.php:231
+msgid "WordPress"
+msgstr ""
+
+#: core/meta/Helper.php:139
+#: core/pro/table/Crons.php:241
+msgid "Plugin"
+msgstr ""
+
+#: core/meta/Helper.php:141
+#: core/pro/table/Crons.php:244
+msgid "Component"
+msgstr ""
+
+#: core/meta/Helper.php:148
+msgid "Registered"
+msgstr ""
+
+#: core/meta/Helper.php:150
+msgid "Not Registered"
+msgstr ""
+
+#: core/meta/Helper.php:160
+msgid "Active"
+msgstr ""
+
+#: core/meta/Helper.php:97
+#: core/pro/table/Metadata.php:69
+msgid "Empty"
+msgstr ""
+
+#: core/meta/Helper.php:104
+msgid "Serialized Content"
+msgstr ""
+
+#: core/meta/Helper.php:110
+msgid "JSON Content"
+msgstr ""
+
+#: core/pro/admin/Help.php:39
+msgid "Scheduled Sweeps"
+msgstr ""
+
+#: core/pro/admin/Help.php:40
+msgid "If you want to create predefined sweeping jobs to run manually, or on schedule, you can do that from this panel."
+msgstr ""
+
+#: core/pro/admin/Help.php:42
+msgid "Some sweepers are not available from this panel, similar to Quick and Auto Sweeping."
+msgstr ""
+
+#: core/pro/admin/Help.php:43
+msgid "If you are scheduling created jobs, make sure to use bigger recurrence, and weekly sweeps are enough for most purposes."
+msgstr ""
+
+#: core/pro/admin/Help.php:50
+msgid "Data Backups"
+msgstr ""
+
+#: core/pro/admin/Help.php:51
+msgid "This panel shows all SQL export files with data removed by SweepPress."
+msgstr ""
+
+#: core/pro/admin/Help.php:53
+msgid "You can download each file directly from this page, or you can get all the files from your hosting, or via FTP. Location of the backup directory is displayed below."
+msgstr ""
+
+#: core/pro/admin/Help.php:54
+msgid "SweepPress Pro can't import back export files into the database. For that, you need to use PHPMyAdmin or similar tool you have on your website hosting."
+msgstr ""
+
+#: core/pro/admin/Help.php:56
+msgid "Backups location"
+msgstr ""
+
+#: core/pro/admin/Help.php:62
+#: core/sweeper/CronJobs.php:47
+msgid "CRON Jobs"
+msgstr ""
+
+#: core/pro/admin/Help.php:63
+msgid "This panel shows all currently scheduled jobs with the WordPress CRON."
+msgstr ""
+
+#: core/pro/admin/Help.php:65
+msgid "When the CRON is registered by any plugin, SweepPress will attempt to determine the Source plugin for the job. This is used in the Source column to help you identify each job."
+msgstr ""
+
+#: core/pro/admin/Help.php:66
+msgid "If the job is scheduled before SweepPress is installed, the plugin can't detect the source plugin."
+msgstr ""
+
+#: core/pro/admin/Help.php:67
+msgid "Option 'Delete' will effectively remove the scheduled job from the CRON."
+msgstr ""
+
+#: core/pro/admin/Help.php:68
+msgid "Option 'Delete All' will remove all instances of the CRON job hook."
+msgstr ""
+
+#: core/pro/admin/Help.php:69
+msgid "In most cases, when you delete the CRON job, on next page load the plugin or WordPress will recreate the job."
+msgstr ""
+
+#: core/pro/admin/Help.php:77
+msgid "This panel shows the database structure with all the database that current WordPress instance sees."
+msgstr ""
+
+#: core/pro/admin/Help.php:79
+msgid "Only tables registered with the WordPress database prefix or accessible via WordPress database object are listed. Tables that belong to WordPress Core all have the WordPress Logo Icon in the column with the table name."
+msgstr ""
+
+#: core/pro/admin/Help.php:80
+msgid "Displayed information is coming from the Database server, and in some cases, the data may not be completely accurate, due to the way some of the database operations are performed and how the statistics is updated and refreshed."
+msgstr ""
+
+#: core/pro/admin/Help.php:82
+msgid "Tables Actions"
+msgstr ""
+
+#: core/pro/admin/Help.php:83
+msgid "Actions available for each table depend on the table and what plugin settings allow."
+msgstr ""
+
+#: core/pro/admin/Help.php:85
+msgid "Optimize and Repair options are available if table should be optimized, or if the table has crashed and broken. Both these actions will essentially run the Sweepers."
+msgstr ""
+
+#: core/pro/admin/Help.php:86
+msgid "After optimization, it is possible that table still shows as not optimized, and that is either because server is unable to finish optimization in best way, or the server statistics is not updated in time, and this is normal behavior for the InnoDB tables."
+msgstr ""
+
+#: core/pro/admin/Help.php:87
+msgid "Repairing tables usually works without issues, but in some cases, repair is not possible."
+msgstr ""
+
+#: core/pro/admin/Help.php:88
+msgid "Some tables will be displayed differently and color coded based on their status."
+msgstr ""
+
+#: core/pro/admin/Help.php:90
+msgid "Database Backup"
+msgstr ""
+
+#: core/pro/admin/Help.php:91
+msgid "Some of the actions on this page can be dangerous to use."
+msgstr ""
+
+#: core/pro/admin/Help.php:93
+msgid "Truncate and Drop actions are available only if enabled in the plugin settings, and they can be run only on some database tables. Both these actions will destroy database data, and the operations are final, and will require special approval each time."
+msgstr ""
+
+#: core/pro/admin/Help.php:94
+msgid "If you use any of these by accident, the only way to get your data back would be with backup. Make sure to have backup ready before using any of these actions!"
+msgstr ""
+
+#: core/pro/admin/Help.php:102
+msgid "This panel shows all the unique meta keys in the metadata table. For each meta key, you will get number of times this key is used, how much space its values take, and how big the values for the key are on average. Most important information is the status and source for the meta key. Based on the detected source, plugin will determine the status of the key."
+msgstr ""
+
+#: core/pro/admin/Help.php:104
+msgid "All meta keys found in the metadata table are displayed, including WordPress based meta keys."
+msgstr ""
+
+#: core/pro/admin/Help.php:105
+msgid "Meta keys that are detected as installed and active (belonging to plugin or theme) and meta keys belonging to WordPress, will not have Delete option included."
+msgstr ""
+
+#: core/pro/admin/Help.php:107
+msgid "SweepPress uses several methods to determine the source for all the meta keys inside the metadata table. It is important to know few thing about this process."
+msgstr ""
+
+#: core/pro/admin/Help.php:110
+msgid "To determine which plugin or theme owns or uses the meta key, plugin uses regular expressions with predefined values, and the scanner to find these settings in the plugin or theme source code."
+msgstr ""
+
+#: core/pro/admin/Help.php:114
+#: core/pro/admin/Help.php:162
+msgid "When it comes to Multisite installations, there are some specific rules."
+msgstr ""
+
+#: core/pro/admin/Help.php:116
+msgid "Usermeta table will not show the 'Active' or 'Inactive' status flags."
+msgstr ""
+
+#: core/pro/admin/Help.php:116
+#: core/pro/admin/Help.php:164
+msgid "The reason for this is that in Multisite plugins can be active on some blogs only, but usermeta table is shared, and one blog can't know what plugins are used on other blogs (well, they can, but that will be very system performance intensive operation to run, especially on big networks)."
+msgstr ""
+
+#: core/pro/admin/Help.php:123
+#: core/pro/admin/Help.php:124
+msgid "Metadata Preview"
+msgstr ""
+
+#: core/pro/admin/Help.php:125
+msgid "This panel shows all individual metadata records for the selected meta key, linked to the main object record. Every record here can be deleted individually, or using bulk deletion."
+msgstr ""
+
+#: core/pro/admin/Help.php:127
+msgid "Value column will attempt to show the actual stored value. But, if the value is serialized PHP array or object, or serialized JSON object, the direct preview is not possible."
+msgstr ""
+
+#: core/pro/admin/Help.php:128
+msgid "To have full preview for such data, you need a free plugin called `DebugPress`, and there is an option in the Settings to enable this integration."
+msgstr ""
+
+#: core/pro/admin/Help.php:129
+msgid "If these records don't show the reference object relation, that means that record is orphaned. To remove all orphaned records all at once, SweepPress has sweepers for this very purpose."
+msgstr ""
+
+#: core/pro/admin/Help.php:138
+msgid "From this panel you can manage various metadata database tables."
+msgstr ""
+
+#: core/pro/admin/Help.php:140
+msgid "All default WordPress metadata tables are supported and listed here: `commentmeta`, `postmeta`, `termmeta`, `usermeta` and `blogmeta`. coreActivity `logmeta` table is also supported."
+msgstr ""
+
+#: core/pro/admin/Help.php:141
+msgid "Data and information presented on these panels is cached with 2 hours cache interval. Queries that deal with these tables can be very slow when used with big database tables."
+msgstr ""
+
+#: core/pro/admin/Help.php:149
+msgid "This panel shows the options available in the WordPress `Sitemeta` database table with some exceptions."
+msgstr ""
+
+#: core/pro/admin/Help.php:155
+msgid "SweepPress uses several methods to determine the source for the options inside the WordPress Sitemeta database table. It is important to know few thing about this process."
+msgstr ""
+
+#: core/pro/admin/Help.php:158
+msgid "To determine which plugin owns settings in the Sitemeta table, plugin uses regular expressions with predefined values, and the scanner to find these settings in the plugin or theme source code."
+msgstr ""
+
+#: core/pro/admin/Help.php:164
+msgid "Sitemeta table will not show the 'Active' or 'Inactive' status flags."
+msgstr ""
+
+#: core/pro/base/sweep/GravityFormsEntryStatus.php:40
+msgid "This sweeper will keep related entries from the past %s days. You can adjust the days to keep value in the plugin Settings."
+msgstr ""
+
+#: core/pro/base/sweep/GravityFormsEntryStatus.php:84
+msgid "This sweeper is not available from the Dashboard for Auto Sweep."
+msgstr ""
+
+#: core/pro/expand/Monitor.php:126
+msgctxt "Monitor Notification Subject"
+msgid "[%SITE_NAME%] SweepPress Monitor Alert"
+msgstr ""
+
+#: core/pro/expand/Monitor.php:127
+msgctxt "Monitor Notification Content"
+msgid ""
+"SweepPress Pro plugin Monitoring services has detected that your website has exceeded predefined threshold for website cleanup.\n"
+"\n"
+"Website:          %SITE_NAME%\n"
+"Monitor:          %MONITOR_PERIOD%\n"
+"---------------------------------\n"
+"Total DB Records: %TOTAL_RECORDS%\n"
+"Total DB Size:    %TOTAL_SIZE%\n"
+"---------------------------------\n"
+"Sweepers:         %SWEEP_COUNT%\n"
+"Sweep Records:    %SWEEP_RECORDS%\n"
+"Sweep Size:       %SWEEP_SIZE%\n"
+"Sweep Ratio:      %SWEEP_PERCENTAGE%\n"
+"\n"
+"To review data for sweeping and run the sweepers, please check out the main SweepPress panel:\n"
+"%SWEEP_PANEL_URL%"
+msgstr ""
+
+#: core/pro/expand/Monitor.php:111
+msgid "Daily"
+msgstr ""
+
+#: core/pro/expand/Monitor.php:111
+msgid "Weekly"
+msgstr ""
+
+#: core/pro/meta/tables/Blogmeta.php:29
+msgid "Distinct Blogs"
+msgstr ""
+
+#: core/pro/meta/tables/Blogmeta.php:30
+msgid "Blog ID"
+msgstr ""
+
+#: core/pro/meta/tables/Blogmeta.php:31
+msgid "Domain"
+msgstr ""
+
+#: core/pro/meta/tables/Commentmeta.php:27
+msgid "Distinct Comments"
+msgstr ""
+
+#: core/pro/meta/tables/Commentmeta.php:28
+msgid "Comment ID"
+msgstr ""
+
+#: core/pro/meta/tables/Commentmeta.php:29
+msgid "Author"
+msgstr ""
+
+#: core/pro/meta/tables/Logmeta.php:29
+msgid "Distinct Logs"
+msgstr ""
+
+#: core/pro/meta/tables/Logmeta.php:30
+msgid "Log ID"
+msgstr ""
+
+#: core/pro/meta/tables/Logmeta.php:31
+msgid "Event"
+msgstr ""
+
+#: core/pro/meta/tables/Postmeta.php:28
+msgid "Distinct Posts"
+msgstr ""
+
+#: core/pro/meta/tables/Postmeta.php:29
+msgid "Post ID"
+msgstr ""
+
+#: core/pro/meta/tables/Postmeta.php:30
+msgid "Post Title"
+msgstr ""
+
+#: core/pro/meta/tables/Termmeta.php:29
+msgid "Distinct Terms"
+msgstr ""
+
+#: core/pro/meta/tables/Termmeta.php:30
+msgid "Term ID"
+msgstr ""
+
+#: core/pro/meta/tables/Termmeta.php:31
+msgid "Term Name"
+msgstr ""
+
+#: core/pro/meta/tables/Usermeta.php:30
+msgid "Distinct Users"
+msgstr ""
+
+#: core/pro/meta/tables/Usermeta.php:31
+msgid "User ID"
+msgstr ""
+
+#: core/pro/meta/tables/Usermeta.php:32
+msgid "User Name"
+msgstr ""
+
+#: core/pro/query/GravityFormsForms.php:31
+#: core/pro/sweeper/GravityFormsFormsTrash.php:62
+msgid "Trashed Forms"
+msgstr ""
+
+#: core/pro/sweeper/GravityFormsEntriesSpam.php:34
+msgid "Remove spammed entries."
+msgstr ""
+
+#: core/pro/sweeper/GravityFormsEntriesTrash.php:30
+msgid "Trashed Entries"
+msgstr ""
+
+#: core/pro/sweeper/GravityFormsEntriesTrash.php:34
+msgid "Remove trashed entries."
+msgstr ""
+
+#: core/pro/sweeper/GravityFormsFormsTrash.php:66
+msgid "Remove trashed forms."
+msgstr ""
+
+#: core/pro/sweeper/GravityFormsFormsTrash.php:71
+msgid "This sweeper will remove all the forms currently in the Trash."
+msgstr ""
+
+#: core/pro/sweeper/GravityFormsFormsTrash.php:72
+msgid "This sweeper will also remove all the entries for the trashed forms!"
+msgstr ""
+
+#: core/pro/sweeper/GravityFormsFormsTrash.php:78
+#: core/sweeper/OptimizeTables.php:62
+#: core/sweeper/RepairTables.php:63
+msgid "This sweeper can't be used for scheduled jobs and it is not available from the Dashboard for Quick and Auto Sweep and Monitor Task."
+msgstr ""
+
+#: core/pro/table/Backups.php:142
+msgid "File"
+msgstr ""
+
+#: core/pro/table/Backups.php:143
+msgid "Type"
+msgstr ""
+
+#: core/pro/table/Backups.php:144
+msgid "Operation"
+msgstr ""
+
+#: core/pro/table/Backups.php:145
+msgid "Information"
+msgstr ""
+
+#: core/pro/table/Backups.php:147
+msgid "Extension"
+msgstr ""
+
+#: core/pro/table/Backups.php:148
+#: core/pro/table/Database.php:58
+msgid "Created"
+msgstr ""
+
+#: core/pro/table/Backups.php:154
+msgid "Download"
+msgstr ""
+
+#: core/pro/table/Backups.php:164
+msgid "All Types"
+msgstr ""
+
+#: core/pro/table/Crons.php:32
+#: core/pro/table/Jobs.php:32
+msgid "Next Run"
+msgstr ""
+
+#: core/pro/table/Crons.php:33
+msgid "Interval"
+msgstr ""
+
+#: core/pro/table/Crons.php:34
+msgid "Hook"
+msgstr ""
+
+#: core/pro/table/Crons.php:35
+msgid "Action"
+msgstr ""
+
+#: core/pro/table/Crons.php:36
+msgid "Arguments"
+msgstr ""
+
+#: core/pro/table/Crons.php:37
+#: core/pro/table/Database.php:50
+#: core/pro/table/Metadata.php:67
+#: core/pro/table/Sitemeta.php:41
+#: core/table/Options.php:92
+#: forms/panels/content-metadata-index.php:32
+msgid "Source"
+msgstr ""
+
+#: core/pro/table/Crons.php:56
+msgid "WordPress Core"
+msgstr ""
+
+#: core/pro/table/Crons.php:79
+#: core/pro/table/Crons.php:214
+#: core/pro/table/Crons.php:268
+msgid "&minus;"
+msgstr ""
+
+#: core/pro/table/Crons.php:156
+msgid "All Jobs"
+msgstr ""
+
+#: core/pro/table/Crons.php:157
+msgid "Single Run"
+msgstr ""
+
+#: core/pro/table/Crons.php:158
+msgid "Scheduled"
+msgstr ""
+
+#: core/pro/table/Crons.php:161
+msgid "All"
+msgstr ""
+
+#: core/pro/table/Crons.php:206
+msgid "Delete All"
+msgstr ""
+
+#: core/pro/table/Crons.php:207
+#: core/pro/table/Jobs.php:44
+msgid "Run Now"
+msgstr ""
+
+#: core/pro/table/Crons.php:238
+msgid "Core"
+msgstr ""
+
+#: core/pro/table/Database.php:49
+#: forms/panels/content-metadata-index.php:31
+msgid "Table Name"
+msgstr ""
+
+#: core/pro/table/Database.php:52
+msgid "Engine"
+msgstr ""
+
+#: core/pro/table/Database.php:55
+msgid "Free"
+msgstr ""
+
+#: core/pro/table/Database.php:56
+msgid "Index"
+msgstr ""
+
+#: core/pro/table/Database.php:57
+msgid "Increment"
+msgstr ""
+
+#: core/pro/table/Database.php:59
+msgid "Updated"
+msgstr ""
+
+#: core/pro/table/Database.php:60
+msgid "Collation"
+msgstr ""
+
+#: core/pro/table/Database.php:155
+#: forms/content-dashboard-database.php:34
+msgid "All Tables"
+msgstr ""
+
+#: core/pro/table/Database.php:156
+msgid "All Non WordPress"
+msgstr ""
+
+#: core/pro/table/Database.php:157
+msgid "WordPress: All"
+msgstr ""
+
+#: core/pro/table/Database.php:158
+msgid "WordPress: Blog"
+msgstr ""
+
+#: core/pro/table/Database.php:159
+msgid "WordPress: Global"
+msgstr ""
+
+#: core/pro/table/Database.php:160
+msgid "WordPress: Network"
+msgstr ""
+
+#: core/pro/table/Database.php:169
+msgid "Plugin: %s"
+msgstr ""
+
+#: core/pro/table/Database.php:178
+msgid "All Engines"
+msgstr ""
+
+#: core/pro/table/Database.php:182
+msgid "All Collations"
+msgstr ""
+
+#: core/pro/table/Database.php:186
+msgid "Valid Tables"
+msgstr ""
+
+#: core/pro/table/Database.php:189
+msgid "Tables to Optimize"
+msgstr ""
+
+#: core/pro/table/Database.php:193
+msgid "Tables to Repair"
+msgstr ""
+
+#: core/pro/table/Database.php:297
+msgid "Optimize"
+msgstr ""
+
+#: core/pro/table/Database.php:301
+msgid "Repair"
+msgstr ""
+
+#: core/pro/table/Database.php:305
+msgid "Truncate"
+msgstr ""
+
+#: core/pro/table/Database.php:309
+msgid "Drop"
+msgstr ""
+
+#: core/pro/table/Database.php:330
+msgid "Broken"
+msgstr ""
+
+#: core/pro/table/Duplicates.php:47
+#: core/pro/table/Metadata.php:65
+#: core/pro/table/Sitemeta.php:39
+#: core/table/Options.php:90
+msgid "Option"
+msgstr ""
+
+#: core/pro/table/Duplicates.php:48
+#: core/pro/table/Preview.php:87
+#: core/pro/table/Sitemeta.php:42
+#: core/table/Options.php:93
+msgid "Value"
+msgstr ""
+
+#: core/pro/table/Duplicates.php:51
+msgid "Duplicates"
+msgstr ""
+
+#: core/pro/table/Jobs.php:27
+#: core/pro/table/Sitemeta.php:38
+#: core/table/Options.php:89
+msgid "ID"
+msgstr ""
+
+#: core/pro/table/Jobs.php:28
+#: forms/panels/content-jobs-report.php:20
+msgid "Title"
+msgstr ""
+
+#: core/pro/table/Jobs.php:30
+msgid "Last Run"
+msgstr ""
+
+#: core/pro/table/Jobs.php:31
+#: forms/panels/content-jobs.php:53
+msgid "Schedule"
+msgstr ""
+
+#: core/pro/table/Jobs.php:43
+msgid "Edit"
+msgstr ""
+
+#: core/pro/table/Jobs.php:49
+msgid "Last Report"
+msgstr ""
+
+#: core/pro/table/Jobs.php:61
+msgid "Not yet run."
+msgstr ""
+
+#: core/pro/table/Jobs.php:63
+msgid "Started: %s"
+msgstr ""
+
+#: core/pro/table/Jobs.php:64
+msgid "Records: %s"
+msgstr ""
+
+#: core/pro/table/Jobs.php:65
+msgid "Saved: %s"
+msgstr ""
+
+#: core/pro/table/Jobs.php:75
+msgid "Run periodically"
+msgstr ""
+
+#: core/pro/table/Jobs.php:80
+msgid "Single run"
+msgstr ""
+
+#: core/pro/table/Jobs.php:92
+msgid "Not Scheduled"
+msgstr ""
+
+#: core/pro/table/Metadata.php:70
+#: forms/panels/content-dashboard-backup.php:31
+#: forms/content-dashboard-database.php:44
+#: forms/content-dashboard-database.php:64
+msgid "Total Size"
+msgstr ""
+
+#: core/pro/table/Metadata.php:71
+msgid "Average Size"
+msgstr ""
+
+#: core/pro/table/Preview.php:84
+msgid "Meta ID"
+msgstr ""
+
+#: core/pro/table/Sitemeta.php:43
+#: core/table/Options.php:94
+msgid "Value Size"
+msgstr ""
+
+#: core/query/ActionScheduler.php:32
+#: core/query/bbPress.php:32
+#: core/query/BuddyPress.php:31
+#: core/query/BuddyPress.php:53
+#: core/query/BuddyPress.php:75
+#: core/query/BuddyPress.php:97
+#: core/query/Comments.php:55
+#: core/query/Posts.php:33
+#: core/query/Terms.php:106
+#: core/query/Terms.php:128
+#: core/query/Terms.php:150
+#: core/query/Users.php:31
+msgid "Orphaned Records"
+msgstr ""
+
+#: core/query/Comments.php:32
+#: core/sweeper/CommentsOrphans.php:39
+msgid "Orphaned Comments"
+msgstr ""
+
+#: core/query/Comments.php:73
+msgid "Akismet Records"
+msgstr ""
+
+#: core/query/Comments.php:92
+msgid "Records with User Agent"
+msgstr ""
+
+#: core/query/Options.php:30
+msgid "All CRON Jobs"
+msgstr ""
+
+#: core/query/Options.php:58
+#: core/sweeper/UnhookedCronJobs.php:41
+msgid "Unhooked CRON Jobs"
+msgstr ""
+
+#: core/query/Options.php:123
+msgid "All Feeds"
+msgstr ""
+
+#: core/query/Posts.php:55
+msgid "OEmbed Records"
+msgstr ""
+
+#: core/query/Posts.php:77
+msgid "Meta key: %s"
+msgstr ""
+
+#: core/query/Posts.php:99
+msgid "Orphaned Revisions"
+msgstr ""
+
+#: core/query/Terms.php:37
+msgid "Assigned to Post"
+msgstr ""
+
+#: core/query/Terms.php:37
+msgid "Not Assigned to Post"
+msgstr ""
+
+#: core/query/Terms.php:83
+msgid "Orphaned Terms"
+msgstr ""
+
+#: core/query/Users.php:53
+msgid "Inactive Signup Records"
+msgstr ""
+
+#: core/sweeper/ActionSchedulerActionsCanceled.php:22
+msgid "ActionScheduler Canceled Actions"
+msgstr ""
+
+#: core/sweeper/ActionSchedulerActionsCanceled.php:26
+msgid "Remove all the canceled actions from the ActionScheduler."
+msgstr ""
+
+#: core/sweeper/ActionSchedulerActionsCanceled.php:32
+msgid "Only actions with the 'Canceled' status will be removed by this sweeper."
+msgstr ""
+
+#: core/sweeper/ActionSchedulerActionsCanceled.php:35
+msgid "This sweeper will keep canceled actions from the past %s days. You can adjust the days to keep value in the plugin Settings."
+msgstr ""
+
+#: core/sweeper/ActionSchedulerActionsComplete.php:22
+msgid "ActionScheduler Completed Actions"
+msgstr ""
+
+#: core/sweeper/ActionSchedulerActionsComplete.php:26
+msgid "Remove all the completed actions from the ActionScheduler."
+msgstr ""
+
+#: core/sweeper/ActionSchedulerActionsComplete.php:32
+msgid "Only actions with the 'Complete' status will be removed by this sweeper."
+msgstr ""
+
+#: core/sweeper/ActionSchedulerActionsComplete.php:33
+msgid "If you need list of completed actions, or you need to analyze the logs for these actions, either keep them, or delete old completed actions."
+msgstr ""
+
+#: core/sweeper/ActionSchedulerActionsComplete.php:36
+msgid "This sweeper will keep completed actions from the past %s days. You can adjust the days to keep value in the plugin Settings."
+msgstr ""
+
+#: core/sweeper/ActionSchedulerActionsFailed.php:22
+msgid "ActionScheduler Failed Actions"
+msgstr ""
+
+#: core/sweeper/ActionSchedulerActionsFailed.php:26
+msgid "Remove all the failed actions from the ActionScheduler."
+msgstr ""
+
+#: core/sweeper/ActionSchedulerActionsFailed.php:32
+msgid "Only actions with the 'Failed' status will be removed by this sweeper."
+msgstr ""
+
+#: core/sweeper/ActionSchedulerActionsFailed.php:35
+msgid "This sweeper will keep failed actions from the past %s days. You can adjust the days to keep value in the plugin Settings."
+msgstr ""
+
+#: core/sweeper/ActionSchedulerLog.php:41
+msgid "ActionScheduler Log"
+msgstr ""
+
+#: core/sweeper/ActionSchedulerLog.php:45
+msgid "Remove all records from the `actionscheduler_logs` database table based on the actions group."
+msgstr ""
+
+#: core/sweeper/ActionSchedulerLog.php:51
+msgid "Each log entry is associated to the action, and the action to the group. You can delete log entries for selected groups only."
+msgstr ""
+
+#: core/sweeper/ActionSchedulerLog.php:56
+msgid "This sweeper will keep log entries from the past %s days. You can adjust the days to keep value in the plugin Settings."
+msgstr ""
+
+#: core/sweeper/ActionSchedulerLogOrphans.php:33
+msgid "ActionScheduler Log Orphans"
+msgstr ""
+
+#: core/sweeper/ActionSchedulerLogOrphans.php:37
+msgid "Remove all records from the `actionscheduler_logs` database table that are no longer connected to actions."
+msgstr ""
+
+#: core/sweeper/ActionSchedulerLogOrphans.php:43
+msgid "Orphaned log records are usually product of broken actions deletion, or other issues."
+msgstr ""
+
+#: core/sweeper/AkismetMeta.php:54
+msgid "Remove meta records stored with comments by Akismet Anti Spam plugin."
+msgstr ""
+
+#: core/sweeper/AkismetMeta.php:59
+msgid "Akismet saves multiple meta records for each comment it checks."
+msgstr ""
+
+#: core/sweeper/AkismetMeta.php:60
+msgid "Over time, these records can take a lot of space."
+msgstr ""
+
+#: core/sweeper/AkismetMeta.php:61
+msgid "This sweeper removes Akismet records only for approved comments."
+msgstr ""
+
+#: core/sweeper/AkismetMeta.php:65
+msgid "This sweeper will keep Akismet meta records for comments from the past %s days. You can adjust the days to keep value in the plugin Settings."
+msgstr ""
+
+#: core/sweeper/AkismetMeta.php:73
+msgid "This sweeper can't be used for scheduled jobs and it is not available from the Dashboard for Quick and Auto Sweep."
+msgstr ""
+
+#: core/sweeper/AllNetworkTransients.php:29
+msgid "Network Transients"
+msgstr ""
+
+#: core/sweeper/AllNetworkTransients.php:33
+msgid "Remove all network transient records. These options are used for caching purposes by WordPress and plugins."
+msgstr ""
+
+#: core/sweeper/AllNetworkTransients.php:38
+#: core/sweeper/AllTransients.php:39
+msgid "Transients are very often used for cache by WordPress and plugins, and it is not advisable to remove them too often."
+msgstr ""
+
+#: core/sweeper/AllNetworkTransients.php:39
+#: core/sweeper/AllTransients.php:40
+msgid "When you remove transients, if the plugins that created them are still active, they will create them again when needed."
+msgstr ""
+
+#: core/sweeper/AllNetworkTransients.php:45
+#: core/sweeper/AllTransients.php:46
+#: core/sweeper/CronJobs.php:64
+#: core/sweeper/UnhookedCronJobs.php:58
+msgid "This sweeper can't be used from Dashboard for Auto Sweep and Monitor Task."
+msgstr ""
+
+#: core/sweeper/AllTransients.php:29
+msgid "Transients"
+msgstr ""
+
+#: core/sweeper/AllTransients.php:33
+msgid "Remove all transient records. These options are used for caching purposes by WordPress and plugins."
+msgstr ""
+
+#: core/sweeper/AllTransients.php:38
+msgid "This also includes all the RSS Feeds, they are all stored as transients."
+msgstr ""
+
+#: core/sweeper/bbPressOrphanedReplies.php:36
+msgid "Orphaned Replies"
+msgstr ""
+
+#: core/sweeper/bbPressOrphanedReplies.php:40
+msgid "Remove all bbPress replies and their meta records if those replies are orphaned and no longer connected to terms."
+msgstr ""
+
+#: core/sweeper/bbPressOrphanedReplies.php:45
+msgid "Orphaned Replies can still be accessed directly by the reply ID, they are just not associated with any topics."
+msgstr ""
+
+#: core/sweeper/bbPressOrphanedReplies.php:46
+msgid "Replies can be orphaned if the deletion of terms produces some error that stops the process and not every reply get deleted."
+msgstr ""
+
+#: core/sweeper/BuddyPressActivityMetaOrphans.php:34
+msgid "Activity Meta Orphans"
+msgstr ""
+
+#: core/sweeper/BuddyPressActivityMetaOrphans.php:38
+msgid "Remove all records from the BuddyPress activity meta database table that are no longer connected to terms."
+msgstr ""
+
+#: core/sweeper/BuddyPressActivityMetaOrphans.php:43
+msgid "Orphaned meta records are usually product of broken activity deletion, or other issues."
+msgstr ""
+
+#: core/sweeper/BuddyPressGroupsMetaOrphans.php:34
+msgid "Groups Meta Orphans"
+msgstr ""
+
+#: core/sweeper/BuddyPressGroupsMetaOrphans.php:38
+msgid "Remove all records from the BuddyPress groups meta database table that are no longer connected to terms."
+msgstr ""
+
+#: core/sweeper/BuddyPressGroupsMetaOrphans.php:43
+msgid "Orphaned meta records are usually product of broken groups deletion, or other issues."
+msgstr ""
+
+#: core/sweeper/BuddyPressMessagesMetaOrphans.php:34
+msgid "Messages Meta Orphans"
+msgstr ""
+
+#: core/sweeper/BuddyPressMessagesMetaOrphans.php:38
+msgid "Remove all records from the BuddyPress messages meta database table that are no longer connected to terms."
+msgstr ""
+
+#: core/sweeper/BuddyPressMessagesMetaOrphans.php:43
+msgid "Orphaned meta records are usually product of broken messages deletion, or other issues."
+msgstr ""
+
+#: core/sweeper/BuddyPressNotificationsMetaOrphans.php:34
+msgid "Notifications Meta Orphans"
+msgstr ""
+
+#: core/sweeper/BuddyPressNotificationsMetaOrphans.php:38
+msgid "Remove all records from the BuddyPress notifications meta database table that are no longer connected to terms."
+msgstr ""
+
+#: core/sweeper/BuddyPressNotificationsMetaOrphans.php:43
+msgid "Orphaned meta records are usually product of broken notifications deletion, or other issues."
+msgstr ""
+
+#: core/sweeper/CommentmetaDuplicates.php:44
+msgid "Commentmeta Duplicates"
+msgstr ""
+
+#: core/sweeper/CommentmetaDuplicates.php:48
+msgid "Remove all duplicated records from the `commentmeta` database table."
+msgstr ""
+
+#: core/sweeper/CommentmetaDuplicates.php:54
+msgid "Duplicated record in commentmeta table is the record with same `comment_id`, `meta_key` and `meta_value`."
+msgstr ""
+
+#: core/sweeper/CommentmetaOrphans.php:33
+msgid "Commentmeta Orphans"
+msgstr ""
+
+#: core/sweeper/CommentmetaOrphans.php:37
+msgid "Remove all records from the `commentmeta` database table that are no longer connected to comments."
+msgstr ""
+
+#: core/sweeper/CommentmetaOrphans.php:42
+msgid "Orphaned meta records are usually product of broken comments deletion, or other issues."
+msgstr ""
+
+#: core/sweeper/CommentsOrphans.php:43
+msgid "Remove comments that don't belong to any of the existing posts."
+msgstr ""
+
+#: core/sweeper/CommentsOrphans.php:48
+msgid "These comments are not visible via WordPress Comments panel."
+msgstr ""
+
+#: core/sweeper/CommentsOrphans.php:49
+msgid "If you plan to reassign the comments to other, available posts, you can do it only directly in database."
+msgstr ""
+
+#: core/sweeper/CommentsSpam.php:34
+msgid "Remove spammed comments."
+msgstr ""
+
+#: core/sweeper/CommentsTrash.php:30
+msgid "Trashed Comments"
+msgstr ""
+
+#: core/sweeper/CommentsTrash.php:34
+msgid "Remove trashed comments."
+msgstr ""
+
+#: core/sweeper/CommentsUnapproved.php:33
+msgid "Remove unapproved comments."
+msgstr ""
+
+#: core/sweeper/CommentsUserAgent.php:45
+msgid "Comments User Agents"
+msgstr ""
+
+#: core/sweeper/CommentsUserAgent.php:49
+msgid "Remove user agent information stored with every comment."
+msgstr ""
+
+#: core/sweeper/CommentsUserAgent.php:54
+msgid "User Agent is stored with every comment (if available)."
+msgstr ""
+
+#: core/sweeper/CommentsUserAgent.php:55
+msgid "User Agent is rarely used after initial comment creation and it can take a lot of space, based on number of comments."
+msgstr ""
+
+#: core/sweeper/CommentsUserAgent.php:56
+msgid "This sweeper removes value from column 'comment_agent' in 'comments' database table."
+msgstr ""
+
+#: core/sweeper/CommentsUserAgent.php:60
+msgid "This sweeper will keep user agent in comments from the past %s days. You can adjust the days to keep value in the plugin Settings."
+msgstr ""
+
+#: core/sweeper/CommentsUserAgent.php:68
+#: core/sweeper/PostmetaOld.php:70
+msgid "This sweeper can't be used for scheduled jobs and it is not available from the Dashboard for Quick or Auto Sweep."
+msgstr ""
+
+#: core/sweeper/CronJobs.php:51
+msgid "Remove all currently scheduled CRON Jobs in WordPress CRON Scheduler"
+msgstr ""
+
+#: core/sweeper/CronJobs.php:56
+msgid "Once cleared, jobs from active plugins and WordPress core will be recreated on next page load."
+msgstr ""
+
+#: core/sweeper/CronJobs.php:57
+#: core/sweeper/UnhookedCronJobs.php:51
+msgid "This is useful to remove scheduled jobs from plugins that are no longer in use."
+msgstr ""
+
+#: core/sweeper/CronJobs.php:58
+#: core/sweeper/UnhookedCronJobs.php:52
+msgid "All CRON Jobs are stored inside the single record."
+msgstr ""
+
+#: core/sweeper/ElementorTrashedSubmissions.php:51
+msgid "Elementor Trashed Submissions"
+msgstr ""
+
+#: core/sweeper/ElementorTrashedSubmissions.php:55
+msgid "Remove all all trashed submissions from forms in Elementor Pro."
+msgstr ""
+
+#: core/sweeper/ElementorTrashedSubmissions.php:60
+msgid "Forms submissions saving is feature of Elementor Pro plugin."
+msgstr ""
+
+#: core/sweeper/ElementorTrashedSubmissions.php:66
+msgid "This sweeper can't be used for auto or quick sweeping."
+msgstr ""
+
+#: core/sweeper/ExpiredTransients.php:32
+msgid "Remove all transient records that have expired. These options are used for caching purposes by WordPress and plugins."
+msgstr ""
+
+#: core/sweeper/ExpiredTransients.php:37
+#: core/sweeper/NetworkExpiredTransients.php:35
+msgid "Only transient records that have expired will be removed."
+msgstr ""
+
+#: core/sweeper/InactiveSignups.php:50
+msgid "Inactive User Signups"
+msgstr ""
+
+#: core/sweeper/InactiveSignups.php:54
+msgid "Remove all inactive records from the multisite user Signups database table."
+msgstr ""
+
+#: core/sweeper/InactiveSignups.php:59
+msgid "Signups table is used in Multisite network, and all uer signups are stored there, before they activate their accounts."
+msgstr ""
+
+#: core/sweeper/InactiveSignups.php:60
+msgid "If a user signs up, but never activates the account, the record remains in the Signups table forever."
+msgstr ""
+
+#: core/sweeper/InactiveSignups.php:61
+msgid "If a user activates account, his information goes to users tables, but it remains in Signups as well, just marked as Activated."
+msgstr ""
+
+#: core/sweeper/InactiveSignups.php:62
+msgid "If a username is logged in this table, and if the user doesn't activate the account, that username is basically no longer available for any one to use in the future."
+msgstr ""
+
+#: core/sweeper/InactiveSignups.php:63
+msgid "Email doesn't have to be unique, so you can have multiple signup attempts with same email, but different username."
+msgstr ""
+
+#: core/sweeper/InactiveSignups.php:64
+msgid "Depending on your website, this table can grow quite large over time."
+msgstr ""
+
+#: core/sweeper/InactiveSignups.php:70
+msgid "This sweeper can't be used for auto sweeping."
+msgstr ""
+
+#: core/sweeper/NetworkExpiredTransients.php:26
+msgid "Expired Network Transients"
+msgstr ""
+
+#: core/sweeper/NetworkExpiredTransients.php:30
+msgid "Remove all network transient records that have expired. These options are used for caching purposes by WordPress and plugins."
+msgstr ""
+
+#: core/sweeper/OptimizeTables.php:40
+msgid "Optimize Database Tables"
+msgstr ""
+
+#: core/sweeper/OptimizeTables.php:44
+msgid "Optimize database tables that need optimizations based on free space fragmentation."
+msgstr ""
+
+#: core/sweeper/OptimizeTables.php:49
+msgid "It is a bad idea to optimize every table without it being fragmented or with a lot of free space taken."
+msgstr ""
+
+#: core/sweeper/OptimizeTables.php:50
+msgid "It is a bad idea to optimize often, especially with large tables: in most cases, optimization will make full copy of the table first."
+msgstr ""
+
+#: core/sweeper/OptimizeTables.php:51
+#: core/sweeper/RepairTables.php:56
+msgid "Only tables related to WordPress installation will be taken into account (using proper prefix in table name)."
+msgstr ""
+
+#: core/sweeper/OptimizeTables.php:52
+msgid "Only tables with certain amount of fragmented data will be included for cleanup. You can change that in plugin settings."
+msgstr ""
+
+#: core/sweeper/OptimizeTables.php:53
+msgid "For smaller tables that experience changes often, fragmented space will remain even after optimization."
+msgstr ""
+
+#: core/sweeper/OptimizeTables.php:54
+msgid "InnoDB table engine doesn't report real time statistics, so even after optimization, it may show that nothing has changed."
+msgstr ""
+
+#: core/sweeper/OptimizeTables.php:55
+msgid "Even after optimization is done, depending on the database setup, it might still report fragmented data."
+msgstr ""
+
+#: core/sweeper/OptimizeTables.php:56
+msgid "In some cases, the process might not work at all if the optimization is not supported by the server."
+msgstr ""
+
+#: core/sweeper/OptimizeTables.php:73
+msgid "Fragmented Tables"
+msgstr ""
+
+#: core/sweeper/PingbacksCleanup.php:30
+msgid "Pingbacks Cleanup"
+msgstr ""
+
+#: core/sweeper/PingbacksCleanup.php:34
+msgid "Remove pingbacks from the database."
+msgstr ""
+
+#: core/sweeper/PingbacksCleanup.php:39
+msgid "Pingbacks are rarely used in recent years, because they can be a huge source of spam."
+msgstr ""
+
+#: core/sweeper/PostmetaDuplicates.php:44
+msgid "Postmeta Duplicates"
+msgstr ""
+
+#: core/sweeper/PostmetaDuplicates.php:48
+msgid "Remove all duplicated records from the `postmeta` database table."
+msgstr ""
+
+#: core/sweeper/PostmetaDuplicates.php:54
+msgid "Duplicated record in postmeta table is the record with same `post_id`, `meta_key` and `meta_value`."
+msgstr ""
+
+#: core/sweeper/PostmetaEdits.php:44
+msgid "Postmeta Last Edits"
+msgstr ""
+
+#: core/sweeper/PostmetaEdits.php:48
+msgid "Remove all '_edit_last' records from the `postmeta` database table."
+msgstr ""
+
+#: core/sweeper/PostmetaEdits.php:53
+msgid "Records for '_edit_last' are created to indicate user who edited the post last."
+msgstr ""
+
+#: core/sweeper/PostmetaLocks.php:48
+msgid "Remove all '_edit_lock' records from the `postmeta` database table."
+msgstr ""
+
+#: core/sweeper/PostmetaLocks.php:53
+msgid "Records for '_edit_lock' are created while any user edits any post."
+msgstr ""
+
+#: core/sweeper/PostmetaLocks.php:54
+msgid "While present, only one user can edit posts with '_edit_lock' in place."
+msgstr ""
+
+#: core/sweeper/PostmetaLocks.php:55
+msgid "In some cases, removal or update of these records can became problematic on some setups."
+msgstr ""
+
+#: core/sweeper/PostmetaLocks.php:56
+msgid "If you remove these records, try doing it when you are sure that posts are not edited."
+msgstr ""
+
+#: core/sweeper/PostmetaOembeds.php:44
+msgid "Remove all '_oembed_' and '_oembed_time_' records from the `postmeta` database table."
+msgstr ""
+
+#: core/sweeper/PostmetaOembeds.php:49
+msgid "These records are created as a cache for every embeddable link inside the post."
+msgstr ""
+
+#: core/sweeper/PostmetaOembeds.php:50
+msgid "If these records are missing, they will be generated next time post needs them."
+msgstr ""
+
+#: core/sweeper/PostmetaOembeds.php:51
+msgid "It is a bad idea to remove these records often. Do it only if you have issues with displaying embed content."
+msgstr ""
+
+#: core/sweeper/PostmetaOembeds.php:57
+msgid "This sweeper can't be used from the Dashboard for Quick and Auto Sweep."
+msgstr ""
+
+#: core/sweeper/PostmetaOld.php:50
+msgid "Postmeta Old Posts Data"
+msgstr ""
+
+#: core/sweeper/PostmetaOld.php:54
+msgid "Remove all '_wp_old_*' records from the `postmeta` database table."
+msgstr ""
+
+#: core/sweeper/PostmetaOld.php:59
+msgid "Currently, this includes '_wp_old_slug' and '_wp_old_date' meta records."
+msgstr ""
+
+#: core/sweeper/PostmetaOld.php:60
+msgid "Record for '_wp_old_slug' is used to redirect posts with changed URL slugs, and it is useful if you change post URL slugs after post is published."
+msgstr ""
+
+#: core/sweeper/PostmetaOld.php:61
+msgid "Do not remove records for '_wp_old_slug' if you change post URL slugs after post is published, because without these records, old URLs will no longer work."
+msgstr ""
+
+#: core/sweeper/PostmetaOld.php:62
+msgid "Record for '_wp_old_date' is used for finding posts by old dates, if you have changed post date after post publishing."
+msgstr ""
+
+#: core/sweeper/PostmetaOld.php:63
+msgid "Record for '_wp_old_date' is also linked to the old slug redirection code, and if you change post dates after publishing, these records should not be removed."
+msgstr ""
+
+#: core/sweeper/PostmetaOld.php:64
+msgid "Both of these record types should not be removed, unless you absolutely sure you understand their use, and you are sure that you will not need them later on!"
+msgstr ""
+
+#: core/sweeper/PostmetaOld.php:77
+msgid "WP Old Slug"
+msgstr ""
+
+#: core/sweeper/PostmetaOld.php:78
+msgid "WP Old Date"
+msgstr ""
+
+#: core/sweeper/PostmetaOrphans.php:34
+msgid "Postmeta Orphans"
+msgstr ""
+
+#: core/sweeper/PostmetaOrphans.php:38
+msgid "Remove all records from the `postmeta` database table that are no longer connected to posts."
+msgstr ""
+
+#: core/sweeper/PostmetaOrphans.php:43
+msgid "Orphaned meta records are usually product of broken posts deletion, or other issues."
+msgstr ""
+
+#: core/sweeper/PostsAutoDraft.php:32
+msgid "Remove auto draft posts."
+msgstr ""
+
+#: core/sweeper/PostsAutoDraft.php:37
+msgid "Auto drafts are automatically made when creating new posts, before posts are saved for the first time."
+msgstr ""
+
+#: core/sweeper/PostsAutoDraft.php:41
+msgid "This sweeper will keep auto draft posts from the past %s days. You can adjust the days to keep value in the plugin Settings."
+msgstr ""
+
+#: core/sweeper/PostsDraftRevisions.php:52
+msgid "Draft Posts Revisions"
+msgstr ""
+
+#: core/sweeper/PostsDraftRevisions.php:56
+msgid "Remove revisions for posts with draft status."
+msgstr ""
+
+#: core/sweeper/PostsDraftRevisions.php:61
+msgid "This sweeper will take into account revisions for posts with draft status only for every post type."
+msgstr ""
+
+#: core/sweeper/PostsDraftRevisions.php:62
+msgid "It is not a good idea to remove revisions while you are still writing the post, in case you need to go back and change things before publishing."
+msgstr ""
+
+#: core/sweeper/PostsDraftRevisions.php:63
+#: core/sweeper/PostsRevisions.php:63
+msgid "If you remove revisions, you will not be able to go back o previous versions of the post!"
+msgstr ""
+
+#: core/sweeper/PostsDraftRevisions.php:67
+#: core/sweeper/PostsRevisions.php:67
+msgid "This sweeper will keep revisions from the past %s days. You can adjust the days to keep value in the plugin Settings."
+msgstr ""
+
+#: core/sweeper/PostsDraftRevisions.php:75
+msgid "This sweeper can't be used from the Dashboard for Auto Sweeping."
+msgstr ""
+
+#: core/sweeper/PostsOrphanedRevisions.php:34
+msgid "Posts Orphaned Revisions"
+msgstr ""
+
+#: core/sweeper/PostsOrphanedRevisions.php:38
+msgid "Remove revisions that are no longer belong to any posts."
+msgstr ""
+
+#: core/sweeper/PostsOrphanedRevisions.php:43
+msgid "When posts are deleted, all revisions should be deleted, but that doesn't happen always."
+msgstr ""
+
+#: core/sweeper/PostsOrphanedRevisions.php:44
+msgid "Revisions no longer having parent posts can't be accessed by WordPress and just take space in the database."
+msgstr ""
+
+#: core/sweeper/PostsRevisions.php:51
+msgid "Posts Revisions"
+msgstr ""
+
+#: core/sweeper/PostsRevisions.php:55
+msgid "Remove posts revisions."
+msgstr ""
+
+#: core/sweeper/PostsRevisions.php:60
+msgid "This sweeper will take into account revisions for published posts only only for every post type."
+msgstr ""
+
+#: core/sweeper/PostsRevisions.php:61
+msgid "If bbPress plugin is active, the list of statuses will include 'hidden', 'private', 'closed', 'spam' and 'trash' topics."
+msgstr ""
+
+#: core/sweeper/PostsRevisions.php:62
+msgid "Plugin has a filter to modify the list of statuses that will be taken into account."
+msgstr ""
+
+#: core/sweeper/PostsSpam.php:34
+msgid "Remove spammed posts."
+msgstr ""
+
+#: core/sweeper/PostsSpam.php:39
+#: core/sweeper/PostsTrash.php:39
+msgid "This sweeper removes comments associated to removed posts."
+msgstr ""
+
+#: core/sweeper/PostsSpam.php:40
+#: core/sweeper/PostsTrash.php:40
+msgid "This sweeper also removes terms relationship records for all removed posts."
+msgstr ""
+
+#: core/sweeper/PostsSpam.php:44
+#: core/sweeper/PostsTrash.php:44
+msgid "This sweeper will keep related posts from the past %s days. You can adjust the days to keep value in the plugin Settings."
+msgstr ""
+
+#: core/sweeper/PostsTrash.php:30
+msgid "Trashed Content"
+msgstr ""
+
+#: core/sweeper/PostsTrash.php:34
+msgid "Remove trashed posts."
+msgstr ""
+
+#: core/sweeper/RepairTables.php:47
+msgid "Repair Database Tables"
+msgstr ""
+
+#: core/sweeper/RepairTables.php:51
+msgid "Attempt to repair database tables that are marked as broken or crashed."
+msgstr ""
+
+#: core/sweeper/RepairTables.php:57
+msgid "Repair process might fail in some cases, or it can result in loss of data (especially related to the time of the table crashing)."
+msgstr ""
+
+#: core/sweeper/RSSFeeds.php:37
+msgid "Remove all cached RSS feeds records."
+msgstr ""
+
+#: core/sweeper/RSSFeeds.php:42
+msgid "This sweeper can't be used for Monitor Task."
+msgstr ""
+
+#: core/sweeper/RSSFeeds.php:49
+msgid "These records will be recreated once the RSS Feeds functions are run next time."
+msgstr ""
+
+#: core/sweeper/TermmetaDuplicates.php:44
+msgid "Termmeta Duplicates"
+msgstr ""
+
+#: core/sweeper/TermmetaDuplicates.php:48
+msgid "Remove all duplicated records from the `termmeta` database table."
+msgstr ""
+
+#: core/sweeper/TermmetaDuplicates.php:54
+msgid "Duplicated record in termmeta table is the record with same `term_id`, `meta_key` and `meta_value`."
+msgstr ""
+
+#: core/sweeper/TermmetaOrphans.php:33
+msgid "Termmeta Orphans"
+msgstr ""
+
+#: core/sweeper/TermmetaOrphans.php:37
+msgid "Remove all records from the `termmeta` database table that are no longer connected to terms."
+msgstr ""
+
+#: core/sweeper/TermmetaOrphans.php:42
+msgid "Orphaned meta records are usually product of broken terms deletion, or other issues."
+msgstr ""
+
+#: core/sweeper/TermRelationshipsObjectOrphans.php:35
+msgid "Term Relationships Object Orphans"
+msgstr ""
+
+#: core/sweeper/TermRelationshipsObjectOrphans.php:39
+msgid "Remove all records from the `term_relationships` database table that are no longer connected to `posts` table."
+msgstr ""
+
+#: core/sweeper/TermRelationshipsObjectOrphans.php:44
+#: core/sweeper/TermRelationshipsTaxonomyOrphans.php:44
+msgid "Orphaned object relationship records with are usually product of broken terms or posts deletion, or other issues."
+msgstr ""
+
+#: core/sweeper/TermRelationshipsTaxonomyOrphans.php:35
+msgid "Term Relationships Taxonomy Orphans"
+msgstr ""
+
+#: core/sweeper/TermRelationshipsTaxonomyOrphans.php:39
+msgid "Remove all records from the `term_relationships` database table that are no longer connected to `term_teaxonomy` table."
+msgstr ""
+
+#: core/sweeper/TermsAMPErrors.php:40
+msgid "AMP Validation Errors Terms"
+msgstr ""
+
+#: core/sweeper/TermsAMPErrors.php:44
+msgid "Remove all records from all the terms related database tables belonging to the AMP plugin used for validation errors."
+msgstr ""
+
+#: core/sweeper/TermsAMPErrors.php:49
+msgid "This is related to taxonomy `amp_validation_error` registered by the official WordPress `AMP` plugin."
+msgstr ""
+
+#: core/sweeper/TermsAMPErrors.php:50
+msgid "Each error saved as term can have big description that takes a lot of space, and terms can't be reused!"
+msgstr ""
+
+#: core/sweeper/TermsAMPErrors.php:51
+msgid "If you use AMP plugin, make sure to check out the validation errors first, before deleting them."
+msgstr ""
+
+#: core/sweeper/TermsAMPErrors.php:52
+msgid "If you do not use AMP plugin anymore, removing these terms will not cause any issues."
+msgstr ""
+
+#: core/sweeper/TermsAMPErrors.php:53
+msgid "This will remove term and term meta data, and the connection of the term to posts."
+msgstr ""
+
+#: core/sweeper/TermsAMPErrors.php:59
+msgid "This sweeper can be used only from the main Sweep panel."
+msgstr ""
+
+#: core/sweeper/TermsOrphans.php:38
+msgid "Terms Orphans"
+msgstr ""
+
+#: core/sweeper/TermsOrphans.php:42
+msgid "Remove all records from the `terms` database table that are no longer connected to taxonomies."
+msgstr ""
+
+#: core/sweeper/TermsOrphans.php:47
+msgid "This is very rare issue, but it can happen with the terms deletion process."
+msgstr ""
+
+#: core/sweeper/TermsOrphans.php:48
+msgid "Terms no longer connected to taxonomies can't be used by WordPress."
+msgstr ""
+
+#: core/sweeper/TermsUnused.php:45
+msgid "Unused Terms"
+msgstr ""
+
+#: core/sweeper/TermsUnused.php:49
+msgid "Remove all terms that are no longer associated with any posts."
+msgstr ""
+
+#: core/sweeper/TermsUnused.php:54
+msgid "Even if they are currently unused, these terms can be used later. If you delete them, you will need to create them again."
+msgstr ""
+
+#: core/sweeper/TermsUnused.php:55
+msgid "If you had a lot of tags that are no longer used, it can be beneficial to remove them."
+msgstr ""
+
+#: core/sweeper/TrackbacksCleanup.php:34
+msgid "Trackbacks Cleanup"
+msgstr ""
+
+#: core/sweeper/TrackbacksCleanup.php:38
+msgid "Remove trackbacks from the database."
+msgstr ""
+
+#: core/sweeper/TrackbacksCleanup.php:43
+msgid "Trackbacks are rarely used in recent years, because they can be a huge source of spam."
+msgstr ""
+
+#: core/sweeper/UnhookedCronJobs.php:45
+msgid "Remove CRON Jobs from WordPress CRON Scheduler no longer having action hooked."
+msgstr ""
+
+#: core/sweeper/UnhookedCronJobs.php:50
+msgid "If the CRON job is no longer hooked to any action, that means that plugin that registered the job is no longer active."
+msgstr ""
+
+#: core/sweeper/UsermetaDuplicates.php:44
+msgid "Usermeta Duplicates"
+msgstr ""
+
+#: core/sweeper/UsermetaDuplicates.php:48
+msgid "Remove all duplicated records from the `usermeta` database table."
+msgstr ""
+
+#: core/sweeper/UsermetaDuplicates.php:54
+msgid "Duplicated record in usermeta table is the record with same `user_id`, `meta_key` and `meta_value`."
+msgstr ""
+
+#: core/sweeper/UsermetaOrphans.php:32
+msgid "Usermeta Orphans"
+msgstr ""
+
+#: core/sweeper/UsermetaOrphans.php:36
+msgid "Remove all records from the `usermeta` database table that are no longer connected to users."
+msgstr ""
+
+#: core/sweeper/UsermetaOrphans.php:41
+msgid "Orphaned meta records are usually product of broken users deletion, or other issues."
+msgstr ""
+
+#: core/table/Options.php:95
+msgid "Autoload"
+msgstr ""
+
+#: core/table/Options.php:111
+#: core/table/Options.php:139
+msgid "Disable Autoload"
+msgstr ""
+
+#: core/table/Options.php:112
+#: core/table/Options.php:139
+msgid "Enable Autoload"
+msgstr ""
+
+#: core/table/Options.php:158
+msgid "YES"
+msgstr ""
+
+#: core/table/Options.php:159
+msgid "NO"
+msgstr ""
+
+#: core/table/Sweepers.php:28
+msgid "Category"
+msgstr ""
+
+#: core/table/Sweepers.php:30
+msgid "Code"
+msgstr ""
+
+#: core/table/Sweepers.php:33
+msgid "Scheduled Sweep"
+msgstr ""
+
+#: core/table/Sweepers.php:36
+msgid "Scope"
+msgstr ""
+
+#: core/table/Sweepers.php:52
+#: forms/content-sweep.php:122
+msgid "This sweeper estimation process has high system requirements and it can be slow to estimate."
+msgstr ""
+
+#: core/table/Sweepers.php:63
+#: core/table/Sweepers.php:67
+#: core/table/Sweepers.php:71
+#: core/table/Sweepers.php:75
+#: core/table/Sweepers.php:79
+msgid "Available"
+msgstr ""
+
+#: core/table/Sweepers.php:63
+#: core/table/Sweepers.php:67
+#: core/table/Sweepers.php:71
+#: core/table/Sweepers.php:75
+#: core/table/Sweepers.php:79
+msgid "Not Available"
+msgstr ""
+
+#: forms/panels/content-backups.php:44
+#: forms/panels/content-backups.php:54
+#: forms/panels/content-crons.php:26
+#: forms/panels/content-crons.php:32
+#: forms/panels/content-database.php:27
+#: forms/panels/content-database.php:44
+#: forms/panels/content-jobs-index.php:25
+#: forms/panels/content-jobs-index.php:30
+#: forms/panels/content-metadata-metadata.php:35
+#: forms/panels/content-metadata-metadata.php:45
+#: forms/panels/content-metadata-preview.php:36
+#: forms/panels/content-metadata-preview.php:45
+#: forms/panels/content-sitemeta.php:37
+#: forms/panels/content-sitemeta.php:46
+#: forms/content-dashboard-auto.php:83
+#: forms/content-options.php:38
+#: forms/content-options.php:47
+msgid "Are you sure?"
+msgstr ""
+
+#: forms/panels/content-backups.php:27
+#: forms/panels/content-dashboard-backup.php:17
+msgid "Data Backup Status"
+msgstr ""
+
+#: forms/panels/content-backups.php:29
+msgid "Data Backup feature is currently disabled. Go to the settings page, enable the Data Backups and enable what data plugin should backup before it is removed."
+msgstr ""
+
+#: forms/panels/content-backups.php:32
+#: forms/panels/content-dashboard-backup.php:46
+msgid "Data Backup Settings"
+msgstr ""
+
+#: forms/panels/content-backups.php:46
+msgid "File to delete"
+msgstr ""
+
+#: forms/panels/content-backups.php:48
+msgid "Deleting this file is not reversible!"
+msgstr ""
+
+#: forms/panels/content-backups.php:50
+msgid "Make sure you have files backup downloaded, in case you later decide you want to restore them."
+msgstr ""
+
+#: forms/panels/content-backups.php:56
+msgid "Deleting selected files is not reversible!"
+msgstr ""
+
+#: forms/panels/content-backups.php:58
+msgid "Make sure you have files backup downloaded, in case you later decide you want to restore them"
+msgstr ""
+
+#: forms/panels/content-crons.php:28
+msgid "If you remove CRON job, in most cases it will be created again, if the CRON is part of WordPress, or used by the active plugin."
+msgstr ""
+
+#: forms/panels/content-crons.php:29
+#: forms/panels/content-database.php:34
+#: forms/panels/content-database.php:51
+#: forms/panels/content-jobs-index.php:27
+msgid "Are you sure you want to proceed? This operation is not reversible!"
+msgstr ""
+
+#: forms/panels/content-crons.php:34
+msgid "You can attempt to run any of the scheduled jobs, but there is no guarantee that every job will run correctly if called outside of CRON context."
+msgstr ""
+
+#: forms/panels/content-crons.php:35
+#: forms/panels/content-jobs-index.php:33
+msgid "Are you sure you want to proceed?"
+msgstr ""
+
+#: forms/panels/content-dashboard-backup.php:21
+msgid "Backups Path"
+msgstr ""
+
+#: forms/panels/content-dashboard-backup.php:27
+msgid "Backup Files"
+msgstr ""
+
+#: forms/panels/content-dashboard-backup.php:29
+msgid "Total Files"
+msgstr ""
+
+#: forms/panels/content-dashboard-backup.php:36
+msgid "Depending on the settings, plugin will backup data removed by the sweepers and from management panels in the Backup directory. Files are organized by the type of removal, and in case of sweepers, the name of the sweeper. This will help track the backups based on the removed content."
+msgstr ""
+
+#: forms/panels/content-dashboard-backup.php:37
+msgid "You can access the backup files via the hosting file manager or via the FTP. These files can't be accessed from the browser by anyone."
+msgstr ""
+
+#: forms/panels/content-dashboard-backup.php:39
+msgid "You can delete all backup files from the dedicated Tools panel."
+msgstr ""
+
+#: forms/panels/content-dashboard-backup.php:47
+msgid "Backups Management"
+msgstr ""
+
+#: forms/panels/content-dashboard-backup.php:48
+msgid "Remove Backup Files"
+msgstr ""
+
+#: forms/panels/content-database.php:29
+msgid "Table to truncate"
+msgstr ""
+
+#: forms/panels/content-database.php:31
+msgid "Truncating the table will remove all the data from the table, and table will remain in the database."
+msgstr ""
+
+#: forms/panels/content-database.php:32
+#: forms/panels/content-database.php:49
+#: forms/panels/content-metadata-metadata.php:41
+#: forms/panels/content-metadata-metadata.php:49
+#: forms/panels/content-metadata-preview.php:41
+#: forms/panels/content-metadata-preview.php:49
+#: forms/panels/content-sitemeta.php:42
+#: forms/panels/content-sitemeta.php:50
+#: forms/content-options.php:43
+#: forms/content-options.php:51
+msgid "Make sure you have the database backup ready before you do this. You are running this operation at your own risk!!!"
+msgstr ""
+
+#: forms/panels/content-database.php:37
+#: forms/panels/content-database.php:54
+msgid "To proceed, type the table name:"
+msgstr ""
+
+#: forms/panels/content-database.php:46
+msgid "Table to drop"
+msgstr ""
+
+#: forms/panels/content-database.php:48
+msgid "Dropping the table will remove all the data from the table and the table from the database."
+msgstr ""
+
+#: forms/panels/content-database.php:20
+msgid "Search Tables"
+msgstr ""
+
+#: forms/panels/content-jobs-index.php:32
+msgid "If you proceed, this job will be scheduled to run immediately in the background."
+msgstr ""
+
+#: forms/panels/content-jobs-report.php:17
+#: forms/panels/content-jobs.php:23
+msgid "Job Information"
+msgstr ""
+
+#: forms/panels/content-jobs-report.php:25
+msgid "Number of times job was run"
+msgstr ""
+
+#: forms/panels/content-jobs-report.php:32
+msgid "Last Run Report for this Job"
+msgstr ""
+
+#: forms/panels/content-jobs.php:32
+#: forms/panels/content-jobs.php:29
+msgid "Job Name"
+msgstr ""
+
+#: forms/panels/content-jobs.php:74
+#: forms/panels/content-jobs.php:70
+msgid "Start Date and Time"
+msgstr ""
+
+#: forms/panels/content-jobs.php:44
+msgid "Schedule to run periodically"
+msgstr ""
+
+#: forms/panels/content-jobs.php:47
+msgid "Schedule to run once"
+msgstr ""
+
+#: forms/panels/content-jobs.php:76
+msgid "If not configured or if the selected date is in the past, plugin will use next day at midnight."
+msgstr ""
+
+#: forms/panels/content-jobs.php:141
+#: forms/content-sweep.php:157
+msgid "This sweeper affects database tables listed below."
+msgstr ""
+
+#: forms/panels/content-jobs.php:154
+#: forms/content-sweep.php:170
+msgid "This sweeper has few limitations listed below."
+msgstr ""
+
+#: forms/panels/content-jobs.php:165
+msgid "Include This Sweeper"
+msgstr ""
+
+#: forms/panels/content-jobs.php:182
+msgid "Run all available tasks"
+msgstr ""
+
+#: forms/panels/content-jobs.php:105
+#: forms/content-sweep.php:105
+msgid "Toggle Help"
+msgstr ""
+
+#: forms/panels/content-jobs.php:108
+#: forms/content-sweep.php:108
+msgid "Toggle Limitations"
+msgstr ""
+
+#: forms/panels/content-jobs.php:112
+#: forms/content-sweep.php:112
+msgid "Toggle Affected Tables"
+msgstr ""
+
+#: forms/panels/content-jobs.php:130
+#: forms/content-sweep.php:145
+msgid "This sweeper was last used: %s ago."
+msgstr ""
+
+#: forms/panels/content-metadata-index.php:47
+msgid "Distinct Keys"
+msgstr ""
+
+#: forms/panels/content-metadata-index.php:50
+msgid "Distinct WordPress Keys"
+msgstr ""
+
+#: forms/panels/content-metadata-index.php:53
+msgid "Distinct Non-WordPress Keys"
+msgstr ""
+
+#: forms/panels/content-metadata-index.php:58
+msgid "All the Metadata"
+msgstr ""
+
+#: forms/panels/content-metadata-metadata.php:37
+msgid "Meta Key to delete"
+msgstr ""
+
+#: forms/panels/content-metadata-metadata.php:38
+msgid "Number of records"
+msgstr ""
+
+#: forms/panels/content-metadata-metadata.php:39
+msgid "Deleting records with this meta key is not reversible, and the meta values stored will be lost!"
+msgstr ""
+
+#: forms/panels/content-metadata-metadata.php:47
+msgid "Deleting selected meta keys is not reversible, and the records with meta values stored will be lost!"
+msgstr ""
+
+#: forms/panels/content-metadata-metadata.php:28
+msgid "Search Meta Keys"
+msgstr ""
+
+#: forms/panels/content-metadata-preview.php:38
+msgid "Key ID to delete"
+msgstr ""
+
+#: forms/panels/content-metadata-preview.php:39
+msgid "Deleting this meta record is not reversible, and the record value stored will be lost!"
+msgstr ""
+
+#: forms/panels/content-metadata-preview.php:47
+msgid "Deleting selected meta records is not reversible, and the meta record values stored will be lost!"
+msgstr ""
+
+#: forms/panels/content-metadata-preview.php:29
+msgid "Search Data"
+msgstr ""
+
+#: forms/panels/content-sitemeta.php:39
+#: forms/content-options.php:40
+msgid "Option to delete"
+msgstr ""
+
+#: forms/panels/content-sitemeta.php:40
+#: forms/content-options.php:41
+msgid "Deleting this option is not reversible, and the option value stored will be lost!"
+msgstr ""
+
+#: forms/panels/content-sitemeta.php:48
+#: forms/content-options.php:49
+msgid "Deleting selected options is not reversible, and the options values stored will be lost!"
+msgstr ""
+
+#: forms/panels/content-sitemeta.php:30
+#: forms/content-options.php:31
+msgid "Search Options"
+msgstr ""
+
+#: forms/panels/content-tools-backups.php:18
+msgid "This tool will remove the backup files with exports of the removed data. If you want to store this files for safe keeping, you need to download those files using your hosting file manager or via FTP."
+msgstr ""
+
+#: forms/panels/sidebar-jobs.php:49
+msgid "Save Job"
+msgstr ""
+
+#: forms/panels/sidebar-jobs.php:45
+msgid "Add new Job"
+msgstr ""
+
+#: forms/panels/sidebar-jobs.php:53
+#: forms/sidebar-statistics.php:67
+#: forms/sidebar-sweep.php:72
+msgid "Return to top"
+msgstr ""
+
+#: forms/panels/sidebar-jobs.php:29
+#: forms/panels/sidebar-metadata.php:46
+#: forms/panels/sidebar-sitemeta.php:32
+#: forms/misc-notices-meta.php:24
+#: forms/sidebar-options.php:33
+#: forms/sidebar-statistics.php:38
+#: forms/sidebar-sweep.php:30
+msgid "Knowledge Base"
+msgstr ""
+
+#: forms/panels/sidebar-metadata.php:74
+msgid "Results on this panel are cached for two hours."
+msgstr ""
+
+#: forms/panels/sidebar-metadata.php:75
+msgid "Clear Cache Now"
+msgstr ""
+
+#: forms/panels/sidebar-metadata.php:90
+#: forms/panels/sidebar-sitemeta.php:68
+#: forms/sidebar-options.php:78
+msgid "Meta & Options Usage Monitoring is not active. You can activate it in the plugin settings"
+msgstr ""
+
+#: forms/panels/sidebar-metadata.php:88
+msgid "Meta keys identified: %s."
+msgstr ""
+
+#: forms/panels/sidebar-sitemeta.php:49
+#: forms/sidebar-options.php:59
+msgid "Results Notice"
+msgstr ""
+
+#: forms/panels/sidebar-sitemeta.php:52
+#: forms/sidebar-options.php:62
+msgid "Plugin is currently scanning plugins and themes for use of various options and meta data, so some results displayed on this page may be incomplete."
+msgstr ""
+
+#: forms/panels/sidebar-sitemeta.php:55
+#: forms/sidebar-options.php:65
+msgid "Open the Help tab on top of this page to get more information about the results presented on this page."
+msgstr ""
+
+#: forms/panels/sidebar-sitemeta.php:66
+msgid "Site options identified: %s."
+msgstr ""
+
+#: forms/content-about-minor.php:12
+msgid "Maintenance and Security Releases"
+msgstr ""
+
+#: forms/content-about-minor.php:14
+#: forms/content-about-minor.php:18
+#: forms/content-about-minor.php:22
+#: forms/content-about-minor.php:26
+msgid "Version"
+msgstr ""
+
+#: forms/content-about-minor.php:30
+msgid "For more information, see <a href='%s'>the changelog</a>."
+msgstr ""
+
+#: forms/content-dashboard-auto.php:51
+msgid "From here, you can run automatic cleanup of WordPress database that includes some of the sweepers. Auto sweeping is not available for many of the sweepers, because of the limitations of some of the sweepers, or the performance issues that some sweepers can cause."
+msgstr ""
+
+#: forms/content-dashboard-auto.php:52
+msgid "Switch to Quick Sweep Mode to see all Sweepers available for quick cleanup. If you want to get full control over all Sweepers, read additional information and limitations for some sweepers, visit the Sweep panel."
+msgstr ""
+
+#: forms/content-dashboard-auto.php:53
+msgid "Make sure to check out plugin Settings panel and options related to additional Sweepers control."
+msgstr ""
+
+#: forms/content-dashboard-auto.php:57
+msgid "Auto Sweepers"
+msgstr ""
+
+#: forms/content-dashboard-auto.php:59
+msgid "Active Sweepers"
+msgstr ""
+
+#: forms/content-dashboard-auto.php:71
+msgid "Switch to Quick Sweep Mode"
+msgstr ""
+
+#: forms/content-dashboard-auto.php:77
+#: forms/content-dashboard-cleanup.php:166
+#: forms/content-sweep.php:53
+msgid "Please wait for the sweeping to finish..."
+msgstr ""
+
+#: forms/content-dashboard-auto.php:85
+msgid "Auto Sweep will run most of the available Sweepers and will show you results after it finishes the process. Do not close this window while the process is running."
+msgstr ""
+
+#: forms/content-dashboard-auto.php:86
+msgid "Are you sure you want to proceed with the auto sweeping process?"
+msgstr ""
+
+#: forms/content-dashboard-cleanup.php:17
+msgid "Toggle all Sweepers"
+msgstr ""
+
+#: forms/content-dashboard-cleanup.php:152
+msgid "Run the Sweep"
+msgstr ""
+
+#: forms/content-dashboard-cleanup.php:23
+msgid "This list currently shows only sweepers and tasks that have something to sweep. Some sweepers might be skipped, depending on the performance related settings."
+msgstr ""
+
+#: forms/content-dashboard-cleanup.php:34
+#: forms/content-dashboard-cleanup.php:140
+msgid "There are no sweepers currently available."
+msgstr ""
+
+#: forms/content-dashboard-cleanup.php:87
+#: forms/misc-sweep-single.php:37
+msgid "Not currently registered."
+msgstr ""
+
+#: forms/content-dashboard-cleanup.php:21
+msgid "There are total of %s sweepers available for Quick sweeping. All %s sweepers are only available via Sweep panel!"
+msgstr ""
+
+#: forms/content-dashboard-cleanup.php:25
+msgid "To see more information about all available sweepers, you can do it via %s."
+msgstr ""
+
+#: forms/content-dashboard-cleanup.php:25
+#: forms/content-statistics.php:36
+msgid "Sweep Panel"
+msgstr ""
+
+#: forms/content-dashboard-database.php:16
+msgid "Database Status"
+msgstr ""
+
+#: forms/content-dashboard-database.php:23
+msgid "Estimated Database Size"
+msgstr ""
+
+#: forms/content-dashboard-database.php:29
+msgid "Database Tables Overview"
+msgstr ""
+
+#: forms/content-dashboard-database.php:31
+msgid "Core Tables"
+msgstr ""
+
+#: forms/content-dashboard-database.php:40
+#: forms/content-dashboard-database.php:60
+msgid "Total Tables"
+msgstr ""
+
+#: forms/content-dashboard-database.php:42
+#: forms/content-dashboard-database.php:62
+msgid "Total Records"
+msgstr ""
+
+#: forms/content-dashboard-database.php:46
+#: forms/content-dashboard-database.php:66
+msgid "Data Size"
+msgstr ""
+
+#: forms/content-dashboard-database.php:48
+#: forms/content-dashboard-database.php:68
+msgid "Index Size"
+msgstr ""
+
+#: forms/content-dashboard-database.php:50
+#: forms/content-dashboard-database.php:70
+msgid "Data Free"
+msgstr ""
+
+#: forms/content-dashboard-database.php:52
+#: forms/content-dashboard-database.php:72
+msgid "Data Free (Percentage)"
+msgstr ""
+
+#: forms/content-dashboard-database.php:82
+msgid "Database Panel"
+msgstr ""
+
+#: forms/content-dashboard-features.php:11
+msgid "Plugin Features"
+msgstr ""
+
+#: forms/content-dashboard-features.php:17
+msgid "Enabled Sweepers"
+msgstr ""
+
+#: forms/content-dashboard-features.php:22
+msgid "Disabled Sweepers"
+msgstr ""
+
+#: forms/content-dashboard-features.php:30
+#: forms/content-dashboard-features.php:36
+#: forms/content-dashboard-features.php:42
+msgid "PRO"
+msgstr ""
+
+#: forms/content-dashboard-features.php:32
+msgid "Daily/Weekly Monitoring"
+msgstr ""
+
+#: forms/content-dashboard-features.php:38
+#: forms/content-dashboard-features.php:87
+msgid "Data Backup"
+msgstr ""
+
+#: forms/content-dashboard-features.php:53
+#: forms/content-dashboard-features.php:65
+#: forms/content-dashboard-features.php:80
+#: forms/content-dashboard-features.php:93
+#: forms/content-dashboard-features.php:105
+#: forms/content-dashboard-features.php:117
+#: forms/content-dashboard-features.php:129
+#: forms/content-dashboard-features.php:141
+msgid "On"
+msgstr ""
+
+#: forms/content-dashboard-features.php:57
+#: forms/content-dashboard-features.php:69
+#: forms/content-dashboard-features.php:84
+#: forms/content-dashboard-features.php:97
+#: forms/content-dashboard-features.php:109
+#: forms/content-dashboard-features.php:121
+#: forms/content-dashboard-features.php:133
+#: forms/content-dashboard-features.php:145
+msgid "Off"
+msgstr ""
+
+#: forms/content-dashboard-features.php:60
+msgid "Daily Monitoring"
+msgstr ""
+
+#: forms/content-dashboard-features.php:72
+msgid "Weekly Monitoring"
+msgstr ""
+
+#: forms/content-dashboard-features.php:100
+msgid "WP CLI Support"
+msgstr ""
+
+#: forms/content-dashboard-features.php:112
+msgid "WP REST API Support"
+msgstr ""
+
+#: forms/content-dashboard-features.php:124
+msgid "Estimation Cache"
+msgstr ""
+
+#: forms/content-dashboard-features.php:148
+msgid "Metadata Monitor"
+msgstr ""
+
+#: forms/content-dashboard-features.php:154
+msgid "Number of registered Sweeper Jobs"
+msgstr ""
+
+#: forms/content-dashboard-features.php:159
+msgid "Plugin Settings"
+msgstr ""
+
+#: forms/content-dashboard-status.php:31
+msgid "Plugin Status"
+msgstr ""
+
+#: forms/content-dashboard-status.php:16
+msgid "Invalid License"
+msgstr ""
+
+#: forms/content-dashboard-status.php:16
+msgid "Valid license is required to activate Pro features"
+msgstr ""
+
+#: forms/content-dashboard-status.php:17
+msgid "Add License Code"
+msgstr ""
+
+#: forms/content-dashboard-status.php:22
+msgid "Simulation"
+msgstr ""
+
+#: forms/content-dashboard-status.php:22
+msgid "The plugin works in simulation mode, data is not removed!"
+msgstr ""
+
+#: forms/content-dashboard-status.php:26
+msgid "Everything appears to be in order."
+msgstr ""
+
+#: forms/content-install.php:28
+#: forms/content-update.php:33
+msgid "All Done"
+msgstr ""
+
+#: forms/content-install.php:31
+msgid "Installation completed."
+msgstr ""
+
+#: forms/content-install.php:36
+#: forms/content-update.php:41
+msgid "Click here to continue"
+msgstr ""
+
+#: forms/content-options-quick.php:23
+msgid "Remove Settings for Missing Widgets"
+msgstr ""
+
+#: forms/content-options-quick.php:39
+msgid "Each widget has a option where it stores all widget instances settings. If the option is associated with the widget that is no longer registered on the website, it means it is no longer used, and it is safe to remove."
+msgstr ""
+
+#: forms/content-options-quick.php:43
+#: forms/content-options-quick.php:72
+#: forms/content-options-quick.php:104
+#: forms/content-options-quick.php:136
+msgid "Remove Options"
+msgstr ""
+
+#: forms/content-options-quick.php:44
+#: forms/content-options-quick.php:73
+#: forms/content-options-quick.php:105
+#: forms/content-options-quick.php:137
+msgid "Preview the Options"
+msgstr ""
+
+#: forms/content-options-quick.php:46
+#: forms/content-options-quick.php:75
+#: forms/content-options-quick.php:107
+#: forms/content-options-quick.php:140
+msgid "No data to remove for this task."
+msgstr ""
+
+#: forms/content-options-quick.php:52
+msgid "Remove Settings for Known but Missing Sources"
+msgstr ""
+
+#: forms/content-options-quick.php:68
+msgid "If you had a plugin that is no longer used, it most likely left options that are no longer needed. If the SweepPress can identify those options, it is safe to remove all the old settings belonging to plugins that are no longer installed and active."
+msgstr ""
+
+#: forms/content-options-quick.php:81
+msgid "Remove Settings for Installed and Inactive Sources"
+msgstr ""
+
+#: forms/content-options-quick.php:97
+msgid "You can have plugins installed, but not active, and if you don't plan to use those plugins in the future, their options records can be removed."
+msgstr ""
+
+#: forms/content-options-quick.php:99
+msgid "If you plan to use disabled plugins again, don't remove the options associated with those plugins. If you don't plan to use disabled plugins again, remove them from the website."
+msgstr ""
+
+#: forms/content-options-quick.php:113
+msgid "Remove Settings for Unknown Sources"
+msgstr ""
+
+#: forms/content-options-quick.php:129
+msgid "Unknown sources can point to options no longer been used, or plugin was unable to detect the source. Be careful with removal of all Unknown options, it can lead to problems."
+msgstr ""
+
+#: forms/content-options-quick.php:131
+msgid "To make sure that SweepPress has identified all the options sources, you should configure the plugin to detect which options are used by the currently active plugins and theme."
+msgstr ""
+
+#: forms/content-options-quick.php:138
+msgid "User Guide"
+msgstr ""
+
+#: forms/content-statistics.php:23
+msgid "There is no data to show here."
+msgstr ""
+
+#: forms/content-statistics.php:26
+msgid "Basic Statistics"
+msgstr ""
+
+#: forms/content-statistics.php:29
+msgid "Period"
+msgstr ""
+
+#: forms/content-statistics.php:34
+msgid "Sweeping Sources"
+msgstr ""
+
+#: forms/content-statistics.php:47
+msgid "Metadata Sweep Sources"
+msgstr ""
+
+#: forms/content-statistics.php:56
+msgid "Sweepers Run"
+msgstr ""
+
+#: forms/content-statistics.php:58
+msgid "Sweeper Tasks Run"
+msgstr ""
+
+#: forms/content-statistics.php:64
+#: forms/content-statistics.php:90
+#: forms/content-statistics.php:132
+msgid "Sweeping Time"
+msgstr ""
+
+#: forms/content-statistics.php:69
+msgid "Total Space Recovered (With Database Cleanup)"
+msgstr ""
+
+#: forms/content-statistics.php:75
+msgid "Individual Sweepers"
+msgstr ""
+
+#: forms/content-statistics.php:84
+#: forms/content-statistics.php:126
+msgid "Sweeps Counter"
+msgstr ""
+
+#: forms/content-statistics.php:98
+msgid "Options and Metadata"
+msgstr ""
+
+#: forms/content-statistics.php:109
+msgid "WordPress Options"
+msgstr ""
+
+#: forms/content-statistics.php:111
+msgid "Multisite Sitemeta"
+msgstr ""
+
+#: forms/content-statistics.php:39
+msgid "Scheduler Jobs"
+msgstr ""
+
+#: forms/content-statistics.php:40
+msgid "Admin Bar"
+msgstr ""
+
+#: forms/content-statistics.php:41
+msgid "Sweep via CLI"
+msgstr ""
+
+#: forms/content-statistics.php:42
+msgid "Sweep via REST"
+msgstr ""
+
+#: forms/content-sweep.php:48
+msgid "Sweep Progress Report"
+msgstr ""
+
+#: forms/content-sweep.php:61
+msgid "Sweepers Available"
+msgstr ""
+
+#: forms/content-sweep.php:211
+msgid "This sweeper estimation query can be slow, and based on your plugin performance settings and database size, it is not run automatically."
+msgstr ""
+
+#: forms/content-sweep.php:213
+msgid "Based on your plugin performance settings and database size, this sweeper estimate has not been run."
+msgstr ""
+
+#: forms/content-sweep.php:218
+msgid "Click the button to run this sweeper in the background."
+msgstr ""
+
+#: forms/content-sweep.php:221
+msgid "Estimate This Sweeper"
+msgstr ""
+
+#: forms/content-sweep.php:226
+#: forms/misc-sweep-single.php:152
+msgid "Please wait..."
+msgstr ""
+
+#: forms/content-sweep.php:68
+msgid "Toggle Empty Sweepers"
+msgstr ""
+
+#: forms/content-sweep.php:115
+msgid "Toggle Empty Tasks"
+msgstr ""
+
+#: forms/content-sweep.php:118
+msgid "This sweeper supports data backup before removal."
+msgstr ""
+
+#: forms/content-sweep.php:126
+#: forms/misc-sweep-single.php:70
+msgid "You can preview data that this sweeper will remove."
+msgstr ""
+
+#: forms/content-sweep.php:126
+#: forms/misc-sweep-single.php:70
+msgid "Preview Data."
+msgstr ""
+
+#: forms/content-sweep.php:65
+msgid "Active: %s / Total: %s"
+msgstr ""
+
+#: forms/content-sweep.php:184
+msgid "Only items older than %s days are included in the estimate, and will be affected by the sweeping. This is done to protect the latest items in case they are needed later."
+msgstr ""
+
+#: forms/content-sweep.php:186
+msgid "All items are included in the estimate, and will be affected by sweeping. This sweeper supports setting the number of days of items to keep from this sweeper."
+msgstr ""
+
+#: forms/content-sweep.php:189
+msgid "If you want to change the days limit, you can do it from plugin settings panel."
+msgstr ""
+
+#: forms/content-sweep.php:190
+#: forms/content-tools-import.php:26
+#: forms/content-tools-remove.php:31
+msgid "Sweepers Settings"
+msgstr ""
+
+#: forms/content-tools-import.php:12
+#: forms/content-tools-remove.php:12
+msgid "Important Information"
+msgstr ""
+
+#: forms/content-tools-import.php:14
+msgid "With this tool you can import all plugin settings from the export file made using the Export tool. If you made changes to the export file, the import will fail."
+msgstr ""
+
+#: forms/content-tools-import.php:15
+msgid "For import tools to work correctly, you must import a file made with the export tool running the same versions of the plugin for both import and export!"
+msgstr ""
+
+#: forms/content-tools-import.php:20
+msgid "What to import"
+msgstr ""
+
+#: forms/content-tools-import.php:23
+#: forms/content-tools-remove.php:28
+msgid "Main Plugin Settings"
+msgstr ""
+
+#: forms/content-tools-import.php:29
+#: forms/content-tools-remove.php:34
+msgid "Collected Statistics"
+msgstr ""
+
+#: forms/content-tools-import.php:32
+#: forms/content-tools-remove.php:37
+msgid "Sweeper Jobs (and all scheduled runs)"
+msgstr ""
+
+#: forms/content-tools-import.php:35
+#: forms/content-tools-remove.php:40
+msgid "Scan and Monitor Storage"
+msgstr ""
+
+#: forms/content-tools-import.php:41
+msgid "Import from File"
+msgstr ""
+
+#: forms/content-tools-import.php:44
+msgid "Select file you want to import from"
+msgstr ""
+
+#: forms/content-tools-purge.php:13
+msgid "These tools will remove all the data cached by the plugin. Right now that includes estimated sweeping results for every sweeper and results from the metadata scanner and monitoring."
+msgstr ""
+
+#: forms/content-tools-purge.php:18
+msgid "Remove Sweepers Cache"
+msgstr ""
+
+#: forms/content-tools-purge.php:21
+msgid "These results are cached for 2 hours only, and have auto purge implemented, but you can always run this purge manually, if you are doing some tests or making changes to the database that can impact results change."
+msgstr ""
+
+#: forms/content-tools-purge.php:25
+msgid "Sweepers Estimation"
+msgstr ""
+
+#: forms/content-tools-purge.php:31
+msgid "Remove Scanner Storage"
+msgstr ""
+
+#: forms/content-tools-purge.php:34
+msgid "Scanner data is auto updated every week, or automatically when new plugin is activated. When removed, this data will be regenerated in the background over time."
+msgstr ""
+
+#: forms/content-tools-purge.php:38
+msgid "Plugins Options and Metas"
+msgstr ""
+
+#: forms/content-tools-purge.php:41
+msgid "Themes Options and Metas"
+msgstr ""
+
+#: forms/content-tools-purge.php:47
+msgid "Remove Monitor Storage"
+msgstr ""
+
+#: forms/content-tools-purge.php:50
+msgid "Monitor data is result of the process that monitors updating and getting metadata and option values. Monitored data can take a long time to be generated and it is not recommended to remove if you plan to manage Metadata and Options o regular basis."
+msgstr ""
+
+#: forms/content-tools-purge.php:54
+msgid "Meta Monitor GET"
+msgstr ""
+
+#: forms/content-tools-purge.php:57
+msgid "Meta Monitor UPDATE"
+msgstr ""
+
+#: forms/content-tools-purge.php:60
+msgid "Option Monitor GET"
+msgstr ""
+
+#: forms/content-tools-purge.php:63
+msgid "Option Monitor UPDATE"
+msgstr ""
+
+#: forms/content-tools-purge.php:69
+msgid "Remove Detection Storage"
+msgstr ""
+
+#: forms/content-tools-purge.php:72
+msgid "Detected records are gathered via regular monitoring of the CRON registration process, and it is not recommended to remove it."
+msgstr ""
+
+#: forms/content-tools-purge.php:76
+msgid "CRON Detections"
+msgstr ""
+
+#: forms/content-tools-remove.php:15
+msgid "This tool can remove plugin settings saved in the WordPress options table added by the plugin."
+msgstr ""
+
+#: forms/content-tools-remove.php:18
+msgid "Deletion operations are not reversible, and it is highly recommended to create database backup before proceeding with this tool."
+msgstr ""
+
+#: forms/content-tools-remove.php:19
+msgid "If you choose to remove plugin settings, once that is done, all settings will be reinitialized to default values if you choose to leave plugin active."
+msgstr ""
+
+#: forms/content-tools-remove.php:25
+msgid "Remove plugin settings"
+msgstr ""
+
+#: forms/content-tools-remove.php:43
+msgid "Cached Data"
+msgstr ""
+
+#: forms/content-tools-remove.php:49
+msgid "Remove files"
+msgstr ""
+
+#: forms/content-tools-remove.php:52
+msgid "Remove LOG file"
+msgstr ""
+
+#: forms/content-tools-remove.php:58
+msgid "Disable Plugin"
+msgstr ""
+
+#: forms/content-tools-remove.php:61
+msgid "Disable plugin"
+msgstr ""
+
+#: forms/content-update.php:36
+msgid "Update completed."
+msgstr ""
+
+#: forms/misc-notices-backup.php:37
+msgid "Disable Backup notice display."
+msgstr ""
+
+#: forms/misc-notices-backup.php:19
+msgid "Backup your Database"
+msgstr ""
+
+#: forms/misc-notices-backup.php:23
+msgid "All the sweeping operations will remove data from the database, and these operations are not reversible!"
+msgstr ""
+
+#: forms/misc-notices-backup.php:24
+msgid "Sweeping operations are considered safe and are designed to remove the data that is actually not used by WordPress. But, to be extra safe, it is highly recommended to backup your database before you use any of the sweepers."
+msgstr ""
+
+#: forms/misc-notices-backup.php:27
+msgid "Pro version of the plugin has the ability to export all the data that is about to be removed (by sweeper or via management panels) into an SQL backup file."
+msgstr ""
+
+#: forms/misc-notices-backup.php:31
+msgid "Plugin Ultimate Guide"
+msgstr ""
+
+#: forms/misc-notices-backup.php:33
+msgid "Backup Data Settings"
+msgstr ""
+
+#: forms/misc-notices-backup.php:37
+#: forms/misc-notices-meta.php:25
+msgid "Hide"
+msgstr ""
+
+#: forms/misc-notices-meta.php:25
+msgid "Disable Meta notice display."
+msgstr ""
+
+#: forms/misc-notices-meta.php:18
+msgid "Options and Metadata Management"
+msgstr ""
+
+#: forms/misc-notices-meta.php:20
+msgid "SweepPress has several methods to detect if the options and meta keys are in use or not. Based on the identification, you can decide if you want to remove records belonging to a specific option or meta key."
+msgstr ""
+
+#: forms/misc-notices-meta.php:21
+msgid "To learn more about the process, and how to efficiently cleanup your options and meta tables, make sure to start with the user guide in the Knowledge Base, and all the relevant articles."
+msgstr ""
+
+#: forms/misc-simulation-mode.php:9
+msgid "Simulation Mode"
+msgstr ""
+
+#: forms/misc-simulation-mode.php:10
+msgid "Data will not be removed!"
+msgstr ""
+
+#: forms/misc-sweep-single.php:143
+msgid "Nothing to sweep."
+msgstr ""
+
+#: forms/misc-sweep-single.php:101
+msgid "Estimated from the total size of affected tables (%s)."
+msgstr ""
+
+#: forms/misc-sweep-single.php:109
+msgid "Totals"
+msgstr ""
+
+#: forms/misc-sweep-single.php:135
+msgid "From Cache"
+msgstr ""
+
+#: forms/misc-sweep-single.php:137
+msgid "Refresh"
+msgstr ""
+
+#: forms/setup-cache.php:10
+msgid "Purge estimates cache"
+msgstr ""
+
+#: forms/sidebar-options.php:53
+msgid "Back to Management"
+msgstr ""
+
+#: forms/sidebar-options.php:90
+msgid "Quick Tasks"
+msgstr ""
+
+#: forms/sidebar-options.php:76
+msgid "Options identified: %s."
+msgstr ""
+
+#: forms/sidebar-statistics.php:63
+msgid "Load Data"
+msgstr ""
+
+#: forms/sidebar-statistics.php:56
+msgid "Choose Period"
+msgstr ""
+
+#: forms/sidebar-sweep.php:69
+msgid "Run Sweeper"
+msgstr ""
+
+#: forms/sidebar-sweep.php:49
+msgid "Estimation data cache is enabled."
+msgstr ""
+
+#: forms/sidebar-sweep.php:50
+msgid "Clear Estimation Cache"
+msgstr ""
+
+#: forms/sidebar-sweep.php:57
+msgid "Selected Sweepers"
+msgstr ""
+

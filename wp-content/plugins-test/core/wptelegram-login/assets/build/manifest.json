@@ -1,0 +1,66 @@
+{
+  "__commonjsHelpers-CqkleIqs.js": {
+    "file": "dist/_commonjsHelpers-CqkleIqs.js",
+    "name": "_commonjsHelpers"
+  },
+  "_get-plugin-data-CQBhaGcS.js": {
+    "file": "dist/get-plugin-data-CQBhaGcS.js",
+    "name": "get-plugin-data",
+    "imports": [
+      "__commonjsHelpers-CqkleIqs.js"
+    ]
+  },
+  "_jquery-BNSPwlrv.js": {
+    "file": "dist/jquery-BNSPwlrv.js",
+    "name": "jquery",
+    "imports": [
+      "__commonjsHelpers-CqkleIqs.js"
+    ]
+  },
+  "js/blocks/index.ts": {
+    "file": "dist/blocks-CmyeYCxq.js",
+    "name": "blocks",
+    "src": "js/blocks/index.ts",
+    "isEntry": true,
+    "imports": [
+      "_get-plugin-data-CQBhaGcS.js",
+      "__commonjsHelpers-CqkleIqs.js"
+    ],
+    "css": [
+      "dist/blocks-Cg1mExvO.css"
+    ]
+  },
+  "js/settings/index.ts": {
+    "file": "dist/settings-DAMFAiS9.js",
+    "name": "settings",
+    "src": "js/settings/index.ts",
+    "isEntry": true,
+    "imports": [
+      "_get-plugin-data-CQBhaGcS.js",
+      "_jquery-BNSPwlrv.js",
+      "__commonjsHelpers-CqkleIqs.js"
+    ],
+    "css": [
+      "dist/settings-B4NYByKA.css"
+    ]
+  },
+  "js/web-app-login/index.ts": {
+    "file": "dist/web-app-login-CXB-N4Hv.js",
+    "name": "web-app-login",
+    "src": "js/web-app-login/index.ts",
+    "isEntry": true
+  },
+  "js/wp-login/index.ts": {
+    "file": "dist/wp-login-nu59GrMB.js",
+    "name": "wp-login",
+    "src": "js/wp-login/index.ts",
+    "isEntry": true,
+    "imports": [
+      "_jquery-BNSPwlrv.js",
+      "__commonjsHelpers-CqkleIqs.js"
+    ],
+    "css": [
+      "dist/wp-login-Be4DD3nf.css"
+    ]
+  }
+}

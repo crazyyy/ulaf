@@ -1,0 +1,57 @@
+{
+    "messages": {
+        "success": {
+            "title": "Tables Overhead is Normal",
+            "details": "Your database tables have {size} of overhead space. This is a normal amount of fragmentation for an active WordPress database and does not require immediate action.",
+            "steps": [
+                "Continue monitoring table overhead regularly",
+                "Run optimization during routine maintenance",
+                "Keep regular database backups"
+            ]
+        },
+        "warning": {
+            "title": "Moderate Tables Overhead Detected",
+            "details": "Your database tables have {size} of overhead (fragmented) space. While not critical yet, optimizing your tables soon will help reclaim this space and keep your database performing efficiently.",
+            "steps": [
+                "Schedule a database optimization soon",
+                "Consider using an optimization plugin",
+                "Check which tables have the most overhead",
+                "Always backup before optimization"
+            ]
+        },
+        "error": {
+            "title": "High Tables Overhead Detected",
+            "details": "Your database tables have {size} of fragmented overhead space. This is a significant amount of wasted space (over 15% of your total database size) that should be reclaimed to improve performance and reduce backup size.",
+            "steps": [
+                "Run table optimization immediately to reclaim space",
+                "Use a database optimization plugin for regular maintenance",
+                "Schedule automatic weekly optimizations",
+                "Monitor tables with high update frequency",
+                "Perform a full backup before running optimization"
+            ]
+        }
+    },
+    "learn_more": {
+        "description": "Table overhead occurs when MySQL tables have unused or fragmented space. Regular optimization can reclaim this space and improve database performance.",
+        "benefits": [
+            "Reduced database size and storage usage, remove old plugins and themes only by uninstalling them, which will delete their data from the database",
+            "Improved query performance",
+            "Better backup efficiency",
+            "Optimized server resource usage - which will reduce your hosting costs"
+        ],
+        "recommended_plugins": [
+            {
+                "name": "WP-Optimize",
+                "type": "Free/Premium"
+            },
+            {
+                "name": "Advanced Database Cleaner",
+                "type": "Premium"
+            },
+            {
+                "name": "WP-Sweep",
+                "type": "Free"
+            }
+        ]
+    }
+}
