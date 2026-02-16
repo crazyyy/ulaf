@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-02-12 08:44:39+0000\n"
+"PO-Revision-Date: 2026-02-12 18:39:08+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -15,6 +15,10 @@ msgstr ""
 msgctxt "block title"
 msgid "Coupon Code"
 msgstr "Код купону"
+
+#: src/Internal/FraudProtection/FraudProtectionController.php:115
+msgid "Fraud protection warning:"
+msgstr "Попередження про захист від шахрайства:"
 
 #: src/Internal/Admin/Settings.php:356
 msgid "Updates"

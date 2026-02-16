@@ -1,0 +1,19 @@
+p:0-day-analytics|0 Day Analytics
+p:admin-optimizer|Admin Optimizer
+p:admin-site-enhancements-pro|Admin and Site Enhancements (ASE) Pro
+p:buddypress|BuddyPress
+p:contact-form-cfdb7|Contact Form CFDB7
+p:fluent-smtp|FluentSMTP
+p:index-wp-mysql-for-speed|Index WP MySQL For Speed
+p:litespeed-cache|LiteSpeed Cache
+p:plugin-notes-plus|Plugin Notes Plus
+p:revslider|Slider Revolution
+p:updraftplus|UpdraftPlus - Backup/Restore
+p:woocommerce|WooCommerce
+p:wpcode-premium|WPCode Pro
+p:sportspress-pro|SportsPress Pro
+p:advanced-custom-fields-pro|Advanced Custom Fields PRO
+p:js_composer|WPBakery Page Builder
+p:google-site-kit|Site Kit by Google
+p:admin-menu-editor|Admin Menu Editor
+p:officials-templates-for-sportspress|Officials Templates for SportsPress

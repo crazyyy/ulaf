@@ -27,8 +27,6 @@ Some readme text
 - Track User's last login date 										# Admin Optimizer
 - Hide admin toolbar for all users									# Admin Optimizer
 
-
-
 ## Usefull and Checked Plugins
 
 ### Plugin Organizer
@@ -56,7 +54,6 @@ Some readme text
 - How to compile and install third-party modules in aaPanel nginx https://www.aapanel.com/forum/d/1015-how-to-compile-and-install-third-party-modules-in-aapanel-nginx
 - How to update to Nginx 1.28.1 if using multi server environment? https://www.aapanel.com/forum/d/25422-how-to-update-to-nginx-1281-if-using-multi-server-environment
 - Optimization reference for Nginx in high concurrency scenarios https://www.nginxer.com/records/optimization-reference-for-nginx-in-high-concurrency-scenarios/
-
 
 ### WodPress
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Alchemists\n"
 "POT-Creation-Date: 2025-12-24 14:44+0000\n"
-"PO-Revision-Date: 2026-02-09 12:50+0000\n"
+"PO-Revision-Date: 2026-02-13 21:27+0000\n"
 "Last-Translator: Vitalii A\n"
 "Language-Team: Українська\n"
 "Language: uk\n"
@@ -19,66 +19,66 @@ msgstr ""
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "Report-Msgid-Bugs-To: \n"
-"X-Loco-Version: 2.8.1; wp-6.9.1; php-8.3.30"
+"X-Loco-Version: 2.8.1; wp-6.9.1; php-8.4.17"
 
 #: inc/template-tags.php:322 inc/template-tags.php:385
 #, php-format
 msgid "%1$s"
-msgstr ""
+msgstr "%1$s"
 
 #. 1: formatted order total 2: total order items
 #: woocommerce/myaccount/orders.php:69
 #, php-format
 msgid "%1$s for %2$s item"
 msgid_plural "%1$s for %2$s items"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%1$s за %2$s товар"
+msgstr[1] "%1$s за %2$s товарів"
+msgstr[2] "%1$s за %2$s товарів"
 
 #. %1$s Action name, %2$s Order number.
 #: woocommerce/order/order-details.php:110 woocommerce/myaccount/orders.php:81
 #, php-format
 msgid "%1$s order number %2$s"
-msgstr ""
+msgstr "%1$s номер замовлення %2$s"
 
 #. 1: reviews count 2: product name
 #: woocommerce/single-product-reviews.php:49
 #, php-format
 msgid "%1$s review for %2$s"
 msgid_plural "%1$s reviews for %2$s"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%1$s відгук до %2$s"
+msgstr[1] "%1$s відгуків до %2$s"
+msgstr[2] "%1$s відгуків до %2$s"
 
 #: search.php:121
 #, php-format
 msgid "%1$s were found for your \"%2$s\" search."
-msgstr ""
+msgstr "%1$s знайдено за вашим запитом «%2$s»"
 
 #: search.php:123
 #, php-format
 msgid "%s article"
 msgid_plural "%s articles"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%s стаття"
+msgstr[1] "%s статті"
+msgstr[2] "%s статті"
 
 #: inc/wc-functions.php:180 template-parts/header/header-info-block.php:159
 #, php-format
 msgid "%s item"
 msgid_plural "%s items"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%s елемент"
+msgstr[1] "%s елементи"
+msgstr[2] "%s елементи"
 
 #: vc_templates/alc_twitch.php:64
 #, php-format
 msgid "%s plugin is not installed"
-msgstr ""
+msgstr "%s плагін не встановлено"
 
 #: woocommerce/order/order-downloads.php:54
 msgid "&infin;"
-msgstr ""
+msgstr "∞"
 
 #. %s is the product name
 #: woocommerce/cart/mini-cart.php:72
@@ -88,78 +88,78 @@ msgstr ""
 
 #: inc/template-tags.php:324 inc/template-tags.php:387
 msgid "(Edit)"
-msgstr ""
+msgstr "(Редагувати)"
 
 #: woocommerce/cart/cart-totals.php:108
 #, php-format
 msgid "(estimated for %s)"
-msgstr ""
+msgstr "(оцінено для %s)"
 
 #: woocommerce/single-product-reviews.php:159
 msgid "1 Star - Very poor"
-msgstr ""
+msgstr "1 зірка — Дуже погано"
 
 #: functions.php:285
 msgid "1st Footer Widget Area."
-msgstr ""
+msgstr "Перша область віджетів підвалу."
 
 #: vc_templates/alc_team_points_history/alc_team_points_history-soccer.php:50
 msgid "1st Half"
-msgstr ""
+msgstr "Перший тайм"
 
 #: woocommerce/single-product-reviews.php:158
 msgid "2 Stars - Not that bad"
-msgstr ""
+msgstr "2 зірки — Не так уже погано"
 
 #: functions.php:294
 msgid "2nd Footer Widget Area"
-msgstr ""
+msgstr "Друга область віджетів підвалу"
 
 #: vc_templates/alc_team_points_history/alc_team_points_history-soccer.php:69
 msgid "2nd Half"
-msgstr ""
+msgstr "Другий тайм"
 
 #: vc_templates/alc_player_stats/alc_player_stats-basketball.php:96
 #: sportspress/single-team/featured-player/content-player-default.php:58
 msgid "3 Points"
-msgstr ""
+msgstr "3 очки"
 
 #: vc_templates/alc_player_stats/alc_player_stats-basketball.php:116
 #: sportspress/single-team/featured-player/content-player-default.php:34
 msgid "3 Points Accuracy"
-msgstr ""
+msgstr "Точність трьох очок"
 
 #: woocommerce/single-product-reviews.php:157
 msgid "3 Stars - Average"
-msgstr ""
+msgstr "3 зірки — Середня"
 
 #: vc_templates/alc_player_stats_grid.php:131
 msgid "3-pointer %"
-msgstr ""
+msgstr "Відсоток триочкових кидків"
 
 #: functions.php:303
 msgid "3rd Footer Widget Area"
-msgstr ""
+msgstr "3-я область віджетів підвалу"
 
 #: woocommerce/single-product-reviews.php:156
 msgid "4 Stars - Good"
-msgstr ""
+msgstr "4 зірки — Добре"
 
 #: 404.php:82 404.php:107
 msgid "404 Error"
-msgstr ""
+msgstr "Помилка 404"
 
 #: 404.php:144
 msgid "404 Error Image"
-msgstr ""
+msgstr "Зображення помилки 404"
 
 #: functions.php:312
 msgid "4th Footer Widget Area"
-msgstr ""
+msgstr "4-та область віджетів підвалу"
 
 #: woocommerce/single-product-reviews.php:155
 msgid "5 Stars - Perfect"
-msgstr ""
+msgstr "5 зірок — Ідеально"
 
 #: woocommerce/myaccount/form-login.php:124
 msgid "A link to set a new password will be sent to your email address."
@@ -169,47 +169,47 @@ msgstr ""
 
 #: inc/wc-functions.php:556 inc/wc-functions.php:575
 msgid "Abbreviation"
-msgstr ""
+msgstr "Скорочення"
 
 #: inc/wc-functions.php:205 inc/wc-functions.php:214
 msgid "Account Details"
-msgstr ""
+msgstr "Деталі облікового запису"
 
 #: woocommerce/myaccount/navigation.php:30
 #: woocommerce/myaccount/navigation.php:54
 msgid "Account pages"
-msgstr ""
+msgstr "Сторінки облікового запису"
 
 #: woocommerce/order/order-details.php:102
 msgid "Actions"
-msgstr ""
+msgstr "Дії"
 
 #. %s is product title
 #: woocommerce/single-product-reviews.php:94
 msgid "Add a review"
-msgstr ""
+msgstr "Додати відгук"
 
 #: inc/acf-fields.php:608
 msgid "Add Event"
-msgstr ""
+msgstr "Додати подію"
 
 #: inc/acf-fields.php:2288 inc/acf-fields.php:2352
 msgid "Add full links to social networks or services."
-msgstr ""
+msgstr "Додати повні посилання на соціальні мережі або сервіси."
 
 #: inc/acf-fields.php:2300 inc/acf-fields.php:2364
 msgid "Add Link"
-msgstr ""
+msgstr "Додати посилання"
 
 #: inc/acf-fields.php:185 inc/acf-fields.php:2142
 msgid "Add Overlay?"
-msgstr ""
+msgstr "Додати оверлей?"
 
 #: functions.php:195 functions.php:204 functions.php:213 functions.php:222
 #: functions.php:231 functions.php:240 functions.php:249 functions.php:258
 #: functions.php:276
 msgid "Add widgets here."
-msgstr ""
+msgstr "Додайте віджети тут."
 
 #: woocommerce/checkout/form-shipping.php:77
 #: woocommerce/single-product/tabs/additional-information.php:25
@@ -221,48 +221,48 @@ msgstr "Додаткова інформація"
 #: sportspress/event/event-logos/esports-event-logos-block.php:341
 #: sportspress/event/event-logos/football-event-logos-block.php:410
 msgid "Additional Stats"
-msgstr ""
+msgstr "Додаткові показники"
 
 #: inc/wc-functions.php:208
 msgid "Addresses"
-msgstr ""
+msgstr "Адреси"
 
 #: inc/acf-fields.php:1286 inc/acf-fields.php:1703
 msgid "After Players"
-msgstr ""
+msgstr "Після гравців"
 
 #: sportspress/player-carousel-thumbs.php:38 sportspress/single-player.php:36
 #: sportspress/player-block-thumbnail.php:110
 msgid "Age"
-msgstr ""
+msgstr "Вік"
 
 #: inc/acf-fields.php:28
 msgid "Album Photos"
-msgstr ""
+msgstr "Фотографії альбому"
 
 #: inc/acf-fields.php:884
 msgid "Albums"
-msgstr ""
+msgstr "Альбоми"
 
 #: inc/acf-fields.php:24
 msgid "Albums Photos"
-msgstr ""
+msgstr "Фото альбомів"
 
 #. Name of the theme
 msgid "Alchemists"
-msgstr ""
+msgstr "Алхіміки"
 
 #: inc/vc-templates.php:29
 msgid "Alchemists Theme"
-msgstr ""
+msgstr "Тема «Алхіміки»"
 
 #: vc_templates/alc_post_slider.php:130
 msgid "All"
-msgstr ""
+msgstr "Усе"
 
 #: template-parts/post-filter.php:55
 msgid "All Articles"
-msgstr ""
+msgstr "Усі статті"
 
 #: template-parts/post-filter.php:117
 msgid "All Authors"
@@ -423,7 +423,7 @@ msgstr ""
 
 #: sportspress/single-player.php:37 sportspress/player-block-thumbnail.php:107
 msgid "Birthday"
-msgstr ""
+msgstr "День народження"
 
 #: sportspress/player-event-graph-log.php:109 inc/acf-fields.php:1006
 #: inc/acf-fields.php:1251 inc/acf-fields.php:1425 inc/acf-fields.php:1668
@@ -681,7 +681,7 @@ msgstr ""
 
 #: inc/wc-functions.php:199
 msgid "Downloads"
-msgstr ""
+msgstr "Завантаження"
 
 #: vc_templates/alc_player_stats_grid.php:149
 msgid "Draw Ratio"
